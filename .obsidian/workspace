@@ -9,19 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
+            "file": "inbox/Untitled.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "82012c9ed7777bdc",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
-            "mode": "preview"
           }
         }
       }
@@ -50,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#☀️",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
+                "file": "inbox/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,10 +88,13 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
-    "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
+    "inbox/Untitled.md",
+    "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
+    "Reference：用卡片盒筆記法，建立知識連結網路來活用筆記.md",
+    "Note.md",
+    "guide/Symbol Definition.md",
     "How-to-learn.md",
     "templates/citation-template.md",
-    "用卡片盒筆記法，建立知識連結網路來活用筆記.md",
-    "guide/Symbol Definition.md"
+    "用卡片盒筆記法，建立知識連結網路來活用筆記.md"
   ]
 }
