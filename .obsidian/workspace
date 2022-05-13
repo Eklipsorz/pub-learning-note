@@ -1,0 +1,104 @@
+{
+  "main": {
+    "id": "6d8cc76c7f85bcaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2943b1430bc06f9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Symbol Definition.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "94ebad2852eb796c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Symbol Definition.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e45dc2b6b2139d06",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5699feb111f0cbd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08d06571e28afec7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9b441903cbe41adc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4170726a448b8c71",
+    "type": "split",
+    "children": [
+      {
+        "id": "68b4a7a3a9798a45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3cc7d415dcc4ee9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Symbol Definition.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f2943b1430bc06f9",
+  "lastOpenFiles": [
+    "Symbol Definition.md"
+  ]
+}
