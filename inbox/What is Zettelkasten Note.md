@@ -1,11 +1,12 @@
 
 
-## Z
+##  Zettelkasten 筆記法命名由來
 引用[[用卡片盒筆記法，建立知識連結網路來活用筆記]]
 > Zettelkasten 是由德國社會學家Niklas Luhmann發明的方法，在德語中Zettel是卡片/筆記/紙條的意思，而Kasten則是盒子/箱子的意思，合併起來就是卡片盒筆記法。 
 
 Zettelkasten 是德語，zettel 是指卡片、筆記、紙條的意思；Kasten 則是指盒子、箱子，合併起來就是用盒子來添加卡片的筆記法
 
+## 具體實現方式
 
 
 
