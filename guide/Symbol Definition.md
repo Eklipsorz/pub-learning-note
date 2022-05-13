@@ -9,3 +9,9 @@
 
 
 
+
+### Where to store note
+以下目錄為目前專案下的目錄，目前有：
+forest folder ：會是存放已經成長為常青階段的筆記
+greenhouse folder ：會是存放培育階段的筆記
+inbox folder：會是存放種子箱階段(還未發芽)的筆記

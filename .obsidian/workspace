@@ -8,8 +8,11 @@
         "type": "leaf",
         "dimension": 58.333333333333336,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "guide/Symbol Definition.md",
+            "mode": "source"
+          }
         }
       },
       {
@@ -78,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "guide/Symbol Definition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,8 +103,8 @@
   "lastOpenFiles": [
     "guide/Symbol Definition.md",
     "inbox/傳統筆記法的侷限性.md",
-    "templates/citation-template.md",
     "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
+    "templates/citation-template.md",
     "Reference：用卡片盒筆記法，建立知識連結網路來活用筆記.md",
     "Note.md",
     "How-to-learn.md",
