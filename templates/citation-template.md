@@ -1,3 +1,7 @@
+
+
+%% note %%
+
 ---
 Status: 
 %% The degree of growth in this note %%
@@ -7,8 +11,4 @@ Links:
 <!---  --->
 %% which note to be linked by this note %%
 References:
-%% which third-party info to be referred by this note%%
----
-
-
-%% note %%
+%% which note to be referred by this note %%

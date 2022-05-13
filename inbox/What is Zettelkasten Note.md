@@ -1,10 +1,8 @@
+
+
+
 ---
 Status: #📥 
-Tags:
+Tags: 
 Links: 				
 References:
----
-
-wae
-d
-awfwaasdaadsasd

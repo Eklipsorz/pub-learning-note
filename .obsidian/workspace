@@ -7,8 +7,22 @@
         "id": "337912965773332b",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "inbox/What is Zettelkasten Note.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "76994c43934d0486",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/What is Zettelkasten Note.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -45,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/What is Zettelkasten Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +100,7 @@
   "active": "337912965773332b",
   "lastOpenFiles": [
     "inbox/What is Zettelkasten Note.md",
-    "guide/Symbol Definition.md",
-    "templates/citation-template.md"
+    "templates/citation-template.md",
+    "guide/Symbol Definition.md"
   ]
 }
