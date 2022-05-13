@@ -6,11 +6,11 @@
       {
         "id": "337912965773332b",
         "type": "leaf",
-        "dimension": 58.333333333333336,
+        "dimension": 58.33333333333334,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "guide/Symbol Definition.md",
+            "file": "pots/傳統筆記法的侷限性.md",
             "mode": "source"
           }
         }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/傳統筆記法的侷限性.md",
+            "file": "pots/傳統筆記法的侷限性.md",
             "mode": "preview"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guide/Symbol Definition.md",
+                "file": "pots/傳統筆記法的侷限性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,8 +101,8 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
+    "pots/傳統筆記法的侷限性.md",
     "guide/Symbol Definition.md",
-    "inbox/傳統筆記法的侷限性.md",
     "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
     "templates/citation-template.md",
     "Reference：用卡片盒筆記法，建立知識連結網路來活用筆記.md",
