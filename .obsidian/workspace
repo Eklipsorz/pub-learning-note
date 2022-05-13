@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "guide/Symbol Definition.md",
+            "file": "templates/citation-template.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guide/Symbol Definition.md",
+                "file": "templates/citation-template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +99,7 @@
   },
   "active": "f2943b1430bc06f9",
   "lastOpenFiles": [
+    "templates/citation-template.md",
     "guide/Symbol Definition.md"
   ]
 }
