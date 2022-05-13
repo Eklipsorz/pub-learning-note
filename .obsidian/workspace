@@ -6,26 +6,26 @@
       {
         "id": "337912965773332b",
         "type": "leaf",
-        "dimension": 58.33333333333334,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/傳統筆記法的侷限性.md",
+            "file": "inbox/傳統筆記法的侷限性.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "7c52b449accf43bc"
       },
       {
-        "id": "9898e730ff307c63",
+        "id": "879f54faf5fb2efa",
         "type": "leaf",
-        "dimension": 41.66666666666667,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/傳統筆記法的侷限性.md",
+            "file": "inbox/傳統筆記法的侷限性.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "7c52b449accf43bc"
       }
     ],
     "direction": "vertical"
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#☀️",
+                "query": "tag:#☀️_1_",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/傳統筆記法的侷限性.md",
+                "file": "inbox/傳統筆記法的侷限性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +101,8 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
-    "pots/傳統筆記法的侷限性.md",
+    "inbox/傳統筆記法的侷限性.md",
+    "inbox/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
     "guide/Symbol Definition.md",
     "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
     "templates/citation-template.md",
