@@ -15,11 +15,14 @@
         }
       },
       {
-        "id": "76994c43934d0486",
+        "id": "82012c9ed7777bdc",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "inbox/What is Zettelkasten Note.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -97,7 +100,8 @@
   "active": "337912965773332b",
   "lastOpenFiles": [
     "inbox/What is Zettelkasten Note.md",
-    "guide/Symbol Definition.md",
-    "templates/citation-template.md"
+    "templates/citation-template.md",
+    "用卡片盒筆記法，建立知識連結網路來活用筆記.md",
+    "guide/Symbol Definition.md"
   ]
 }
