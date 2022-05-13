@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f2943b1430bc06f9",
+        "id": "337912965773332b",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "templates/citation-template.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "94ebad2852eb796c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "guide/Symbol Definition.md",
-            "mode": "preview"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -52,14 +38,15 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +66,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/citation-template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +83,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f2943b1430bc06f9",
+  "active": "337912965773332b",
   "lastOpenFiles": [
-    "templates/citation-template.md",
-    "guide/Symbol Definition.md"
+    "inbox/What is Zettelkasten Note.md",
+    "guide/Symbol Definition.md",
+    "templates/citation-template.md"
   ]
 }
