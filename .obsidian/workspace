@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/What is Zettelkasten Note.md",
+            "file": "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/What is Zettelkasten Note.md",
+            "file": "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/What is Zettelkasten Note.md",
+                "file": "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +99,8 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
-    "inbox/What is Zettelkasten Note.md",
+    "inbox/Zettelkasten 筆記法會是與筆記1相關的筆記們紀錄在筆記1.md",
+    "How-to-learn.md",
     "templates/citation-template.md",
     "用卡片盒筆記法，建立知識連結網路來活用筆記.md",
     "guide/Symbol Definition.md"
