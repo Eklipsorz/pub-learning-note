@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Map Of Content.md",
+            "file": "pots/Metadata 放到最前面和放到最後面的差別.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Map Of Content.md",
+            "file": "pots/Metadata 放到最前面和放到最後面的差別.md",
             "mode": "preview"
           }
         },
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Map Of Content.md",
+                "file": "pots/Metadata 放到最前面和放到最後面的差別.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +101,15 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
-    "Map Of Content.md",
+    "pots/Metadata 放到最前面和放到最後面的差別.md",
+    "pots/Zettelkasten 筆記法會有的形式是什麼.md",
+    "greenhouse/傳統筆記法的侷限性.md",
     "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
     "greenhouse/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
-    "guide/Symbol Definition.md",
-    "greenhouse/傳統筆記法的侷限性.md",
-    "templates/citation-template.md",
-    "Reference：用卡片盒筆記法，建立知識連結網路來活用筆記.md",
-    "Note.md",
-    "How-to-learn.md",
-    "用卡片盒筆記法，建立知識連結網路來活用筆記.md"
+    "templates/Untitled.md",
+    "das.md",
+    "Untitled 1.md",
+    "Untitled 5.md",
+    "Untitled 4.md"
   ]
 }
