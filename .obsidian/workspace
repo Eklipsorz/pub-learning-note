@@ -7,11 +7,8 @@
         "id": "337912965773332b",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "pots/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "7c52b449accf43bc"
       },
@@ -21,7 +18,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
+            "file": "greenhouse/Zettelkasten 筆記法會有的形式是什麼.md",
             "mode": "preview"
           }
         },
@@ -65,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 492.5
   },
   "right": {
     "id": "4170726a448b8c71",
@@ -81,7 +78,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +97,15 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
-    "pots/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
-    "pots/Project-related Note是紀錄專注於特定專案的筆記.md",
-    "pots/Permanent Note 是Fleeting note轉換為更為完整筆記之產物.md",
-    "pots/Metadata 放到最前面和放到最後面的差別.md",
+    "greenhouse/Zettelkasten 筆記法會有的形式是什麼.md",
+    "greenhouse/Project-related Note是紀錄專注於特定專案的筆記.md",
+    "greenhouse/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
     "greenhouse/Fleeting note 是紀錄突然出現的想法和疑問.md",
+    "greenhouse/Permanent Note 是Fleeting note轉換為更為完整筆記之產物.md",
     "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
     "pots/How to cite and highlight in obsidian.md",
-    "greenhouse/Zettelkasten 筆記法會有的形式是什麼.md",
-    "greenhouse/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
+    "greenhouse/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
+    "pots/Metadata 放到最前面和放到最後面的差別.md",
     "greenhouse/傳統筆記法的侷限性.md"
   ]
 }
