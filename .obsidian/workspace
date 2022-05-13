@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Symbol Definition.md",
+            "file": "guide/Symbol Definition.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Symbol Definition.md",
+            "file": "guide/Symbol Definition.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Symbol Definition.md",
+                "file": "guide/Symbol Definition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +99,6 @@
   },
   "active": "f2943b1430bc06f9",
   "lastOpenFiles": [
-    "Symbol Definition.md"
+    "guide/Symbol Definition.md"
   ]
 }
