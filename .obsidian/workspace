@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
+            "file": "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
+                "file": "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "86643edf5aacd9c0",
   "lastOpenFiles": [
+    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
+    "inbox/Map vs. Filter 處理陣列每個元素的區別.md",
+    "Untitled.md",
     "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
     "how-to-note/安裝 Better BibTex for Zotero 來讓Zotero能夠自動輸出文獻資料JSON.md",
     "how-to-note/設定Obsidian 能夠引用Zotero輸出的文獻資料JSON並產生對應md檔案.md",
     "pots/How to cite and highlight in obsidian.md",
     "pots/Metadata 放到最前面和放到最後面的差別.md",
     "Note.md",
-    "how-to-note/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
-    "how-to-note/Evergreen Note 的撰寫原則是隨時保持迭代、維持原子和獨特、與其他筆記連結.md",
-    "how-to-note/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
-    "guide/Symbol Definition.md"
+    "how-to-note/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md"
   ]
 }
