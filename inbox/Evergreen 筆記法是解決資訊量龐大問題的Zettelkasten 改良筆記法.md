@@ -1,60 +1,46 @@
 
+## 總結
 
+## 原文
+
+### Zettelkasten 筆記方法的問題
+
+引用[[Reference: 什麼是 Evergreen Note (長青筆記)？]]的描述
 
 > ## Zettelkasten 卡片盒筆記法的問題
-
 > 在這套方法中，Niklas Luhmann 教授會將寫下的 Fleeting note, Literature note 發展成 Permanent note，透過觀察自己的大櫃子中是否有可以「互相關聯」的筆記，將關聯紀錄下來後再歸檔至大櫃子中。
-
 > Niklas Luhmann 教授使用的是筆跟實體的櫃子，而我們則可以用數位筆記軟體。我們將數位筆記放入到特定資料夾中，模擬教授將筆記歸檔到櫃子中。
 
+Zettelkasten 筆記法原本是每當建立一個筆記1時，剛開始會是以Fleeting note的形式，隨著不斷思考、分析來將Fleeting note轉化成Permanent note，接著再從大櫃子中尋找其他能夠與筆記1相關連的筆記，並接著這些筆記的索引位置紀錄在筆記1 以及將筆記1的新索引位置也紀錄在這些筆記，好方便在下一次能夠在同樣的筆記找到新相關連的紀錄。
+
+
+
+
+然後發明Zettelkasten 筆記方法的Luhmann教授是處於還未發生資料爆炸的時代，而現如今是由於網路的出現而導致隨時都有資料爆炸的時代，這衍生著專注 **把一個Fleeting note轉變成Permanent note會是件很沒效率的事情**，因為實際上潛在的Fleeting note會因為資料爆炸而大幅度增加，而將這些轉變Permanent note的時間是不夠在短時間內完成。
+
+
+### Evergreen Note 的產生
+Evergreen 在劍橋字典上的含義[[Reference: Evergreen 在劍橋字典上的意思]] 是：
+> **always seeming fresh or remaining popular**
+
+
+
+Evergreen是指總是保持活躍、新鮮狀態的
 
 > ## Evergreen Note 的核心概念
 在 2020 年時，一位 iOS 工程師 Andy Matuschak 提出了「Evergreen Note (長青筆記)」的概念。
 他認為：
 > > **_在 Zettelkasten 的 Fleeting note 階段，應該還是要有一段過渡期間，讓 Fleeting note 逐漸發展成 Permanent note。_**
 
+引用於[[Reference: [高效能職場筆記法-6] 維護一則長青筆記，而非不斷新增拋棄式筆記]]
+> 一則筆記應該是要被反覆更新，而非不斷建立新筆記。不停留在事情的完結，一個概念、想法、學習、問題也不會有完結的一天，重複地在這一則筆記進行修正與連結，才能建立可被好好使用的生命。
 
-> # 寫 Evergreen Note 的原則
-要實現 Evergreen Note 的概念 — 也就是將 Fleeting note 逐漸發展成 Permanent note，我們可以參考 Andy Matuschak 對於寫筆記的 5 大建議原則。
+發現此事的工程師，
 
-> 這 5 項原則在寫 Evergree note 時會時常用到，請大家可以多留意。
-> ## 1. Evergreen notes should be atomic
-> Evergreen note 應該要「原子化」。
-> 所謂的「原子化」，指的是 **一則筆記只記錄一個想法，複雜的知識是由數個想法連結堆積而成。**
-> 如果一則筆記超過 1 個以的概念，就要分拆筆記。
+就宣稱 讓處於Fleeting note的筆記都維持著隨時更新的狀態-evergreen，直到能夠成為Permanent note在進行額外歸檔，換言之，
 
-> ## 2. Evergreen notes should be densely linked
+**別急著讓Fleeting note轉換成Permanent note，而是先簡單消化這些筆記並寫出初步的想法和疑問，爾後可利用這些消化內容做再一次分析和解釋，以此來轉換成隨時更新的狀態，接著再處理其他Fleeting note對寫出的想法，等到都處理完畢才進行另外一輪的內容迭代**
 
-> Evergreen note 應該要「緊密連結」。
-> 這個原則就是 Zettelkasten 卡片盒筆記法不斷強調的。當我們建立一則新筆記時，最少要跟 1 則筆記相連 ，也就是被其他筆記提及、或是提及其他已存在的筆記。
-> 隨著筆記不斷被複習，會有愈來愈多的筆記被「連結」(提及)。
-
-> ## 3. Evergreen notes should be concept-oriented
-
-> Evergreen note 應該要「概念導向」。
-> 所謂的「概念導向」，指的是筆記標題必須能夠表達筆記內容的核心概念，也就是「看標題就能知道內容在講什麼」。
-> 有趣的是，Andy Matuschak 認為筆記標題應該用完整的句子來闡述概念 (Prefer note titles with complete phrases to sharpen claims)。例如：
-> -   番茄鐘 (x)
-> -    使用番茄鐘可以有效提升效率 (o)
-> 或是
-> -   和專案利益關係人溝通 (x)
-> -   保持和專案利益關係人的溝通頻率會關鍵性地影響專案成敗 (o)
-
-> 這其實就是「[抽象化](https://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E5%8C%96)」的能力，我們將龐大的內容壓縮成一個概念，只保存一部分特定的資訊。
-
-> 我在《[使用「漸進式總結」來寫筆記，逐步萃取出高含金量的知識內容](https://medium.com/pm的生產力工具箱/obsidian-使用教學-筆記篇-02-使用-漸進式總結-來寫筆記-建立一套可持續迭代的筆記系統-f34f069f99a)》有提到實際的作法。
-
-> ## 4. Prefer associative ontologies to hierarchical taxonomies
-> 讓知識自然湧現，盡量不要用分類。
-> 知識的形成應該是從零碎的片段開始，透過不斷的連結、組合，最後產生完整的知識體系。
-> 然而我們卻非常習慣從「架構」開始分類，將筆記依序放到分類之下。這其實反而不利知識的發展。
-
-> ## 5. Write notes for yourself by default, disregarding audience
-> 捨棄讀者，寫自己看得懂的文字即可。
-> 為了讓筆記方便在未來的公開場合發表，我們常常不自覺地加入大量論述、參考資料，讓筆記成為別人也能看得懂的文章。但這件事情其實是相當費力的。
-> 我們應該將「筆記」跟「文章」區分開來，讓寫筆記時的摩擦力降到最低，這樣才能自由地表述、連結筆記系統中的各種想法。
-> 當我們將筆記當作是一種思考工具時，記住：
-> **_讀者應該只有自己。_**
 
 
 
@@ -65,4 +51,6 @@ Tags:
 [[Note]] - [[Note]] - [[Zettelkasten Note]] - [[Evergreen Note]]
 Links: 				
 References:
+[### [高效能職場筆記法-6] 維護一則長青筆記，而非不斷新增拋棄式筆記](https://www.playpcesor.com/2022/03/6.html)
 [# 什麼是 Evergreen Note (長青筆記)？](https://medium.com/pm%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%AE%B1/%E4%BB%80%E9%BA%BC%E6%98%AF-evergreen-note-%E9%95%B7%E9%9D%92%E7%AD%86%E8%A8%98-5f0b2c7b6547)
+[Evergreen 在劍橋字典上的意思](https://dictionary.cambridge.org/us/dictionary/english-chinese-traditional/evergreen?q=Evergreen)

@@ -5,7 +5,7 @@ Permanent Note 本身是紀錄指長期所獲取到的想法或者疑問的筆�
 	- 與Fleeting Note相比，描述上較為完整，具有起承轉合或者論點、舉例、總結
 	- 為Zettelkasten 筆記的最小單位，多個Permanent Note可組成文章
 ## 原文
-Permanent Note中的Permanent 鑑於[[reference: permanent在劍橋字典上的意思 ]]的意思：
+Permanent Note中的Permanent 鑑於[[Reference: permanent在劍橋字典上的意思 ]]的意思：
 > lasting for a long time or for ever
 
 意為長期的或者永久的

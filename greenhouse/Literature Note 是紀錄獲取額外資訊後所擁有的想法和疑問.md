@@ -3,11 +3,11 @@ Literature Note 是紀錄著 **透過額外資訊所獲取到的想法或者疑�
 	- Fleeting note
 	- Permanent note
 ##  原文
-Literature Note 上的Literature引用於[[reference: literature在劍橋字典上的意思]]的意思為：
+Literature Note 上的Literature引用於[[Reference: literature在劍橋字典上的意思]]的意思為：
 > **all the information relating to a subject, especially information written by experts**
 
 
-而information 引用在[[reference: information在劍橋字典上的意思]]會是：
+而information 引用在[[Reference: information在劍橋字典上的意思]]會是：
 > **facts** **about a situation, person, event, etc.**
 
 Literature 是特定主題相關的資訊，尤其是以該主題相關的專家所寫的資訊，在這裡的資訊並不限定於書、電子文章、論文，而是不論其事實的呈現方式是如何，只要能夠透露著某項人事物的事實，都皆為資訊

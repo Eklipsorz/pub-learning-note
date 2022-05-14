@@ -10,8 +10,18 @@
           "type": "markdown",
           "state": {
             "file": "inbox/Evergreen 筆記法是解決資訊量龐大問題的Zettelkasten 改良筆記法.md",
-            "mode": "source",
-            "source": false
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "ac377a10a996fcda",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Evergreen 筆記法是解決資訊量龐大問題的Zettelkasten 改良筆記法.md",
+            "mode": "source"
           }
         }
       }
@@ -19,78 +29,93 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ec12dab85514e1b1",
-    "type": "mobile-drawer",
+    "id": "02d9e7bd2ce010aa",
+    "type": "split",
     "children": [
       {
-        "id": "fb1f37ce2fdef7ba",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "ffc79acc0c469203",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "3713389abbc6e118",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6faf5366d18f61bc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fe6e5c2ee5bea8fd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "reference:",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "770488b60737a18b",
-    "type": "mobile-drawer",
+    "id": "b63ea1cd797e56af",
+    "type": "split",
     "children": [
       {
-        "id": "4934c4cad4eec482",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "inbox/Evergreen 筆記法是解決資訊量龐大問題的Zettelkasten 改良筆記法.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "3eeccc278a5f4861",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c32bbbd6282ac336",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "inbox/Evergreen 筆記法是解決資訊量龐大問題的Zettelkasten 改良筆記法.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "11e2c07f688b03ce",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "30d6ec2d34b56f89",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
     "inbox/Evergreen 筆記法是解決資訊量龐大問題的Zettelkasten 改良筆記法.md",
-    "greenhouse/傳統筆記法的侷限性.md",
-    "greenhouse/Fleeting note 是紀錄突然出現的想法和疑問.md",
-    "greenhouse/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
+    "Untitled.md",
     "greenhouse/Permanent Note 是Fleeting note轉換為更為完整筆記之產物.md",
+    "greenhouse/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
+    "greenhouse/Fleeting note 是紀錄突然出現的想法和疑問.md",
+    "greenhouse/傳統筆記法的侷限性.md",
+    "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
     "greenhouse/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
     "greenhouse/Zettelkasten 筆記法會有的形式是什麼.md",
-    "greenhouse/Project-related Note是紀錄專注於特定專案的筆記.md",
-    "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
-    "pots/Metadata 放到最前面和放到最後面的差別.md"
+    "greenhouse/Project-related Note是紀錄專注於特定專案的筆記.md"
   ]
 }
