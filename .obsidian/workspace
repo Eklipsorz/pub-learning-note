@@ -7,17 +7,20 @@
         "id": "86643edf5aacd9c0",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
+            "mode": "source"
+          }
         }
       },
       {
-        "id": "4e59de61817bd20e",
+        "id": "4e23dc508a5296a9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "how-to-note/安裝 Better BibTex for Zotero 來讓Zotero能夠自動輸出文獻資料JSON.md",
+            "file": "how-to-note/設定Obsidian 能夠引用Zotero輸出的文獻資料JSON並產生對應md檔案.md",
             "mode": "preview"
           }
         }
@@ -60,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 508.5
   },
   "right": {
     "id": "b63ea1cd797e56af",
@@ -76,6 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,13 +107,13 @@
   },
   "active": "86643edf5aacd9c0",
   "lastOpenFiles": [
-    "Note.md",
+    "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
     "how-to-note/安裝 Better BibTex for Zotero 來讓Zotero能夠自動輸出文獻資料JSON.md",
-    "how-to-note/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
-    "inbox/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
-    "pots/Metadata 放到最前面和放到最後面的差別.md",
+    "how-to-note/設定Obsidian 能夠引用Zotero輸出的文獻資料JSON並產生對應md檔案.md",
     "pots/How to cite and highlight in obsidian.md",
-    "pots/設定Obsidian 能夠引用Zotero輸出的文獻資料JSON並產生對應md檔案.md",
+    "pots/Metadata 放到最前面和放到最後面的差別.md",
+    "Note.md",
+    "how-to-note/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
     "how-to-note/Evergreen Note 的撰寫原則是隨時保持迭代、維持原子和獨特、與其他筆記連結.md",
     "how-to-note/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
     "guide/Symbol Definition.md"

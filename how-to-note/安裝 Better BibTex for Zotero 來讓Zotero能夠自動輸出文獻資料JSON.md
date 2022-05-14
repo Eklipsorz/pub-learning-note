@@ -15,7 +15,7 @@
 ---
 Status:  #☀️
 Tags:
-[[Note]] - [[Zettelkasten Note]]
+[[Note]] - [[Zettelkasten Note]] - [[Obsidian]]
 Links:
 [[Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料]]
 References:
