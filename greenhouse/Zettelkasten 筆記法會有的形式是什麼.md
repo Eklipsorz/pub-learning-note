@@ -19,10 +19,16 @@
 > -   Project-related note (專案筆記)
 [[Project-related Note是紀錄專注於特定專案的筆記]]
 
+## 複習
+#🧠 Question Zettelkasten 筆記法有哪四種筆記形式? ->->-> `Fleeting note、Permanent note、Literature note、Project-related note`
 
-### 疑問
-#🧠 Question :: ->->->  `dadwaw`
+#🧠 Question Fleeting note 是什麼樣的筆記 ->->-> `專門紀錄突發性的想法和疑問 或者 短時間所獲取到的資訊`
 
+#🧠 Question Permanent note 是什麼樣的筆記 ->->-> `將Fleeting Note轉換成較為完整的筆記之產物`
+
+#🧠 Question Literature note 是什麼樣的筆記 ->->-> `是強調以吸收外部資料而額外獲取的想法和疑問，其形式可以是靈感筆記或者永久筆記`
+
+#🧠 Question Project-related note ->->-> `是強調以目的皆為同個目標下的筆記，其形式可以是靈感筆記或者擁有筆記`
 
 ---
 Status: #☀️
