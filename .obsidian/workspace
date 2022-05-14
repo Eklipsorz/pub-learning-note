@@ -7,20 +7,17 @@
         "id": "86643edf5aacd9c0",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "guide/Symbol Definition.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
-        "id": "832d63d8a67d9926",
+        "id": "4e59de61817bd20e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "how-to-note/Evergreen Note 的撰寫原則是隨時保持迭代、維持原子和獨特、與其他筆記連結.md",
+            "file": "how-to-note/安裝 Better BibTex for Zotero 來讓Zotero能夠自動輸出文獻資料JSON.md",
             "mode": "preview"
           }
         }
@@ -79,7 +76,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "guide/Symbol Definition.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +103,15 @@
   },
   "active": "86643edf5aacd9c0",
   "lastOpenFiles": [
-    "guide/Symbol Definition.md",
-    "templates/📝.md",
+    "Note.md",
+    "how-to-note/安裝 Better BibTex for Zotero 來讓Zotero能夠自動輸出文獻資料JSON.md",
+    "how-to-note/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
+    "inbox/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
+    "pots/Metadata 放到最前面和放到最後面的差別.md",
+    "pots/How to cite and highlight in obsidian.md",
+    "pots/設定Obsidian 能夠引用Zotero輸出的文獻資料JSON並產生對應md檔案.md",
     "how-to-note/Evergreen Note 的撰寫原則是隨時保持迭代、維持原子和獨特、與其他筆記連結.md",
     "how-to-note/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
-    "how-to-note/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
-    "how-to-note/Zettelkasten 筆記法會有的形式是什麼.md",
-    "how-to-note/傳統筆記法的侷限性.md",
-    "how-to-note/Evergreen 筆記法是解決資訊量龐大問題的Zettelkasten 改良筆記法.md",
-    "how-to-note/Fleeting note 是紀錄突然出現的想法和疑問.md",
-    "how-to-note/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md"
+    "guide/Symbol Definition.md"
   ]
 }
