@@ -7,22 +7,12 @@
         "id": "337912965773332b",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
-        },
-        "group": "7c52b449accf43bc"
-      },
-      {
-        "id": "879f54faf5fb2efa",
-        "type": "leaf",
-        "state": {
           "type": "markdown",
           "state": {
-            "file": "greenhouse/Zettelkasten 筆記法會有的形式是什麼.md",
-            "mode": "preview"
+            "file": "templates/Note tempate 🧠.md",
+            "mode": "source"
           }
-        },
-        "group": "7c52b449accf43bc"
+        }
       }
     ],
     "direction": "vertical"
@@ -78,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "templates/Note tempate 🧠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,6 +77,14 @@
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "5f4aca8aeb6575fd",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
             }
           }
         ]
@@ -97,15 +96,15 @@
   },
   "active": "337912965773332b",
   "lastOpenFiles": [
+    "templates/Note tempate 🧠.md",
     "greenhouse/Zettelkasten 筆記法會有的形式是什麼.md",
+    "pots/Metadata 放到最前面和放到最後面的差別.md",
+    "pots/How to cite and highlight in obsidian.md",
     "greenhouse/Project-related Note是紀錄專注於特定專案的筆記.md",
     "greenhouse/Zettelkasten 筆記法的使用原則-原子化、獨立性、相互連結.md",
     "greenhouse/Fleeting note 是紀錄突然出現的想法和疑問.md",
     "greenhouse/Permanent Note 是Fleeting note轉換為更為完整筆記之產物.md",
     "greenhouse/Zettelkasten 筆記法會是筆記們根據關聯來相互連接.md",
-    "pots/How to cite and highlight in obsidian.md",
-    "greenhouse/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md",
-    "pots/Metadata 放到最前面和放到最後面的差別.md",
-    "greenhouse/傳統筆記法的侷限性.md"
+    "greenhouse/Literature Note 是紀錄獲取額外資訊後所擁有的想法和疑問.md"
   ]
 }
