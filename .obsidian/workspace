@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "86643edf5aacd9c0",
+        "id": "e60cf42f2932d959",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/ACM.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "9e6eaaecb9b07c56",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/ACL是使用矩陣來定義每個物件所擁有的權限.md",
-            "mode": "preview"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -50,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reference:",
+                "query": "#🧠",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +45,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +66,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/ACM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +91,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "86643edf5aacd9c0",
+  "active": "e60cf42f2932d959",
   "lastOpenFiles": [
-    "inbox/ACM.md",
+    "inbox/Access Control Matrix 是用表格來定義每個使用者對於每個資源的存取權限.md",
+    "templates/🧠.md",
+    "how-to-note/Zettelkasten 筆記法會有的形式是什麼.md",
+    "how-to-note/Permanent Note 是Fleeting note轉換為更為完整筆記之產物.md",
+    "how-to-note/Fleeting note 是紀錄突然出現的想法和疑問.md",
+    "how-to-note/傳統筆記法的侷限性.md",
+    "inbox/ACL vs ACM 差別.md",
     "inbox/ACL是使用矩陣來定義每個物件所擁有的權限.md",
     "inbox/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
-    "pots/Metadata 放到最前面和放到最後面的差別.md",
-    "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
-    "inbox/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
-    "guide/Symbol Definition.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "inbox/Map vs. Filter 處理陣列每個元素的區別.md"
+    "pots/Metadata 放到最前面和放到最後面的差別.md"
   ]
 }

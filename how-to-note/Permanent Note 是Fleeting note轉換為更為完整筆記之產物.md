@@ -38,11 +38,11 @@ Permanent Note的特性：
 	-  Permanent note是Zettelkasten 筆記法的最小的組成元素，透過多個Permanent note能組合成一個文章
 
 ## 複習
-#🧠 Question Permanent Note的命名由來為何？ ->->-> `Permanent 是指長期的或者永久的，與Note合併就是紀錄長時間所獲取到的想法或者疑問的筆記，在這引申為從Fleeting Note轉換為更為完整的筆記，其中轉換過程通常會很長，因此來由是如此。`
+🧠 Question Permanent Note的命名由來為何？ ->->-> `Permanent 是指長期的或者永久的，與Note合併就是紀錄長時間所獲取到的想法或者疑問的筆記，在這引申為從Fleeting Note轉換為更為完整的筆記，其中轉換過程通常會很長，因此來由是如此。`
 
-#🧠 Question Permanent  Note特性為何 ->->-> `與Fleeting Note相比，是較完整且具有架構，而架構本身會有基本論點、舉例、總結`
+🧠 Question Permanent  Note特性為何 ->->-> `與Fleeting Note相比，是較完整且具有架構，而架構本身會有基本論點、舉例、總結`
 
-#🧠 Question Fleeting Note 和 Permanent Note誰才是Zettelkasten筆記法的最小單位 ->->-> `Permanent Note，通常會先從Fleeting Note開始，然後經過一系列思考和分析來寫出想法、疑問並做一個結案，與其他相關連的筆記進行排序然後歸檔在一個盒子，而這個結案內容會是Permanent Note`
+🧠 Question Fleeting Note 和 Permanent Note誰才是Zettelkasten筆記法的最小單位 ->->-> `Permanent Note，通常會先從Fleeting Note開始，然後經過一系列思考和分析來寫出想法、疑問並做一個結案，與其他相關連的筆記進行排序然後歸檔在一個盒子，而這個結案內容會是Permanent Note`
 
 
 
