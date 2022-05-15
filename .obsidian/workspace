@@ -7,11 +7,8 @@
         "id": "e60cf42f2932d959",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/以0或255結尾的位址不一定是識別用和廣播用的.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/以0或255結尾的位址不一定是識別用和廣播用的.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
