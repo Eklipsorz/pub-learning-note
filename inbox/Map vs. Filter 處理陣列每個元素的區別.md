@@ -61,7 +61,7 @@ const results = products.filter(product => {
 
 
 ---
-Status: #🌱 
+Status: #📥 
 Tags:
 [[JavaScript]] - [[Array]]
 Links:

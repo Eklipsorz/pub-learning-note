@@ -89,7 +89,7 @@ the first is the name of the attribute in the DB (or some kind of expression suc
 	  
 	  
 ---
-Status: #🌱 
+Status: #📥 
 Tags:
 [[JavaScript]] - [[Sequelize]] - [[MySQL]]
 Links:
