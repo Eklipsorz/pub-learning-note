@@ -10,6 +10,10 @@ Class C:
 ```
 
 
+[[@lokeshgallaIPv4ClassesRanges]]
+
+![](https://www.researchgate.net/profile/Lokesh-Galla/publication/260622269/figure/fig1/AS:340713477820416@1458243831010/1-1-IPv4-Classes-Ranges.png)
+
 https://zh.m.wikipedia.org/wiki/%E5%88%86%E7%B1%BB%E7%BD%91%E7%BB%9C
 
 &
@@ -38,3 +42,4 @@ Links:
 [[網路遮罩是用來判斷目前IP所屬的子網域是什麼]]
 References:
 [[@wikidataZiWangYu2021]]
+[[@lokeshgallaIPv4ClassesRanges]]
