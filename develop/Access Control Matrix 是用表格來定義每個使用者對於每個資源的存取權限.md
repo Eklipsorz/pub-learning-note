@@ -16,7 +16,7 @@ ACM 是 Access Control Matrix 的縮寫，定義在特定系統上，某些特�
 1. 可透過索引容易了解特定物件對於特定資源的權限是什麼
 
 ## 缺點
-1. 相較於ACL而言，會佔取更多空間，因為會ACM不論如何存取需求為何，都會算到表格本身這個固定空間成本，而ACL會根據需求來增加或者減少空間成本
+1. 相較於ACL[[Access Control List 是使用串列來定義每個物件所擁有的權限]]而言，會佔取更多空間，因為會ACM不論如何存取需求為何，都會算到表格本身這個固定空間成本，而ACL會根據需求來增加或者減少空間成本
 
 
 ## Note
@@ -44,7 +44,8 @@ ACM 是 Access Control Matrix 的縮寫，定義在特定系統上，某些特�
 ---
 Status: #☀️  
 Tags:
-[[Operating System]]
+[[Operating System]]  - [[Array]] - [[LinkedList]]
 Links:
+[[Access Control List 是使用串列來定義每個物件所擁有的權限]]
 References:
 [[@jamesb.d.joshiAccessControlMatrix]]

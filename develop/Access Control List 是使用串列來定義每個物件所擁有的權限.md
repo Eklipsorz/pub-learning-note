@@ -40,7 +40,7 @@ note:
 ---
 Status: #☀️  
 Tags:
-[[Operating System]]
+[[Operating System]]  - [[Array]] - [[LinkedList]]
 Links:
 [[Access Control Matrix 是用表格來定義每個使用者對於每個資源的存取權限]]
 References:
