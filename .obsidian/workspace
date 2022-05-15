@@ -7,17 +7,20 @@
         "id": "e60cf42f2932d959",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "inbox/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+            "mode": "source"
+          }
         }
       },
       {
-        "id": "82d8d250d0d58fae",
+        "id": "d4deffece5945fee",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Map vs. Filter 差別在於會不會根據原陣列的元素數量來回傳.md",
+            "file": "inbox/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
             "mode": "preview"
           }
         }
@@ -76,6 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +107,15 @@
   },
   "active": "e60cf42f2932d959",
   "lastOpenFiles": [
-    "develop/Map vs. Filter 差別在於會不會根據原陣列的元素數量來回傳.md",
-    "inbox/Map vs. Filter 差別的實際案例.md",
-    "guide/Symbol Definition.md",
+    "inbox/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+    "inbox/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
     "inbox/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "develop/Map vs. Filter 差別的實際案例.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "develop/Access Control Matrix 是用表格來定義每個使用者對於每個資源的存取權限.md",
-    "develop/Access Control List 是使用串列來定義每個物件所擁有的權限.md",
-    "develop/ACL vs ACM 是差在定義權限的結構是不一樣.md",
-    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md"
+    "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
+    "develop/Map vs. Filter 差別在於會不會根據原陣列的元素數量來回傳.md",
+    "guide/Symbol Definition.md",
+    "develop/Access Control Matrix 是用表格來定義每個使用者對於每個資源的存取權限.md"
   ]
 }
