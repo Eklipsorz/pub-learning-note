@@ -1,8 +1,9 @@
-The **Blob** object represents a blob, which is a file-like object of immutable, raw data; they can be read as text or binary data, or converted into a [ReadableStream](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) so its methods can be used for processing the data.
 
+
+## 描述
   
-https://zh.wikipedia.org/zh-tw/不可變物件
-  
+
+### 純JS不擅於處理二進制
 
 writestream.end(chunk)
 
