@@ -51,5 +51,5 @@ Status: #📥
 Tags:
 [[GCP]]
 Links:
-[[Cloud Storage 是Google 用來儲存資料的雲端服務]] - [[ACL是使用矩陣來定義每個物件所擁有的權限]]
+[[Cloud Storage 是Google 用來儲存資料的雲端服務]] - [[Access Control List 是使用串列來定義每個物件所擁有的權限]]
 References:

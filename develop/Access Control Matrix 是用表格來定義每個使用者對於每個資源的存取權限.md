@@ -9,7 +9,7 @@ ACM 是 Access Control Matrix 的縮寫，定義在特定系統上，某些特�
 
 舉例來說，下圖是列舉三個特定物件A：s1、s2、s3，特定資源B則是指f1、f2、f3、f4、f5、f6，在這裡以(a,b)來表示欄位值，a為第a列，b為第b欄，若(1,2)的話就表示特定物件s1 對於f2的存取是擁有權限、讀寫權限，若(1,1)的話，就代表著特定物件s1對於f1的存取是毫無權限的。
 
-後面表格依此類推。
+後面權限定義依此類推。
 ![](https://www.researchgate.net/profile/James-Joshi/publication/27233516/figure/fig1/AS:638408414220289@1529219835691/An-access-control-matrix-and-its-access-control-list-and-capability-list.png)
 
 ## 優點
@@ -42,7 +42,7 @@ ACM 是 Access Control Matrix 的縮寫，定義在特定系統上，某些特�
 #🧠  Access Control Matrix 的缺點是什麼? ->->-> `相較於ACL而言，會佔取更多空間，因為會ACM不論如何存取需求為何，都會算到表格本身這個固定空間成本，而ACL會根據需求來增加或者減少空間成本`
 
 ---
-Status: #☀️ 
+Status: #☀️  
 Tags:
 [[Operating System]]
 Links:

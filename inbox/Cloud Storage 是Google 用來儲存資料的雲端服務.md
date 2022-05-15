@@ -15,5 +15,5 @@ Tags:
 [[GCP]]
 Links:
 [[gsutil 是用來遠端操控Cloud Storage的工具]]
-[[ACL是使用矩陣來定義每個物件所擁有的權限]]
+[[Access Control List 是使用串列來定義每個物件所擁有的權限]]
 References:
