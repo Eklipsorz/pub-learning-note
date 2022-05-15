@@ -1,6 +1,6 @@
 
 ## 描述
-網路遮罩是以0/1來當做IP的特定位置上的bit遮掩工具，目的是用來判斷該IP所屬的Network ID和HOST ID[[Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號]]分別是什麼，具體操作會使用由0/1所構成的序列來與實際IP做一次AND 計算，
+網路遮罩是以0/1來當做IP的特定位置上的bit遮掩工具，目的是用來判斷該IP所屬的Network ID和HOST ID[[Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號]]分別是什麼，具體操作會使用由0/1所構成的序列來與實際IP做一次AND 計算
 
 比如說：
 
@@ -36,6 +36,11 @@
 ## Note
 1. mask：遮掩特定部分的物件
 >  **a covering for all or part of the face that protects, hides, or decorates the person wearing it**
+
+
+## 複習
+
+#🧠 網路遮罩用途是什麼->->-> `目的是用來判斷該IP所屬的Network ID和HOST ID分別是什麼，具體操作會使用由0/1所構成的序列來與實際IP做一次AND 計算`
 
 ---
 Status: #🌱 
