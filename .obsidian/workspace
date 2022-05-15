@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
+            "file": "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
+                "file": "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "e60cf42f2932d959",
   "lastOpenFiles": [
+    "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
+    "develop/Access Control List 是使用串列來定義每個物件所擁有的權限.md",
+    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
+    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
+    "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+    "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
     "inbox/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
-    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
-    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
-    "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/Access Control Matrix 是用表格來定義每個使用者對於每個資源的存取權限.md",
-    "develop/ACL vs ACM 是差在定義權限的結構是不一樣.md",
-    "develop/Map vs. Filter 差別在於會不會根據原陣列的元素數量來回傳.md",
-    "develop/Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號.md"
+    "develop/ACL vs ACM 是差在定義權限的結構是不一樣.md"
   ]
 }
