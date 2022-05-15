@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
+            "file": "inbox/buffer.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
+                "file": "inbox/buffer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
+    "inbox/buffer.md",
+    "inbox/multer.md",
     "inbox/由於原生JS不擅長處理二進制資料而產生的Buffer物件和其他方法.md",
     "inbox/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/instanceof 是operator.md",
+    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "develop/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
-    "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
-    "develop/Access Control List 是使用串列來定義每個物件所擁有的權限.md",
-    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
-    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md"
+    "develop/子網域的切分不只類別定址，主要由遮罩來決定.md"
   ]
 }

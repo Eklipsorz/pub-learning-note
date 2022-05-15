@@ -37,7 +37,16 @@ Calling the writable.end() method signals that no more data will be written to t
 
 比如一個圖片的buffer會是
 
-<Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 02 00 00 00 02 00 08 06 00 00 00 f4 78 d4 fa 00 00 00 04 73 42 49 54 08 08 08 08 7c 08 64 88 00 ... 8567 more bytes>
+
+multer 回傳的file
+file:  {
+  fieldname: 'avatar',
+  originalname: '*\x16 2022-04-06 \x0BH7.44.32.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  buffer: <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 1a 00 00 00 f2 08 06 00 00 00 92 d3 0a e1 00 00 0c 6a 69 43 43 50 49 43 43 20 50 72 6f 66 69 ... 98994 more bytes>,
+  size: 99044
+}
 
 [https://morosedog.gitlab.io/nodejs-20200123-Nodejs-11/](https://morosedog.gitlab.io/nodejs-20200123-Nodejs-11/)
 
