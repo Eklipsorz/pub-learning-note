@@ -1,7 +1,8 @@
 
+## 描述
 
+### multer 使用本地端硬碟空間來(暫時)儲存被上傳的檔案
 
-使用本地端硬碟空間來(暫時)儲存被上傳的檔案
 
 ```
 const multer = require('multer')
@@ -9,6 +10,7 @@ const upload = multer({ dest: 'temp/' })
 module.exports = upload
 ```
 
+multer 會先在硬碟儲存檔案內容，接著建立一個file物件來儲存檔案資訊(位置、大小、檔案名稱)來供使用者能透過該物件來間接存取該檔案，但file物件本身不包含著檔案內容
 
 ```
 const { files } = req
@@ -45,9 +47,9 @@ files:  [Object: null prototype] {
 ```
 
 
+### multer 使用本地記憶體來(暫時)儲存被上傳的檔案
 
 
-使用本地記憶體來(暫時)儲存被上傳的檔案
 ```
 static getMulter() {
 	const upload = multer({
@@ -61,7 +63,7 @@ static getMulter() {
 }
 ```
 
-
+multer 會先於記憶體建立一個Node.js Buffer[[Node.js Buffer 是為JS提供能夠處理二進制資料的API]]類別的物件來儲存檔案的二進制內容，接著再建立對應file 物件並成為它屬性-buffer
 ```
 console.log('file: ', file, file.buffer instanceof Buffer)
 // result:  
@@ -75,3 +77,16 @@ file:  {
 } true
 
 ```
+
+## 兩者差別
+1. 放在硬碟的話，會以file物件來單純儲存(被上傳)檔案的檔案資訊；放在記憶體的話，會於記憶體構成buffer物件來儲存檔案內容，接著再建立file物件，並以屬性去指向該buffer。
+2. 放在硬碟的話，其file物件並不能夠直接讀取該檔案內容，只能以中間人的身份去存取；放在記憶體的話，其file物件能夠透過buffer直接讀取檔案內容。
+
+
+---
+Status: #🌱 
+Tags:
+[[JavaScript]]
+Links:
+[[Node.js Buffer 是為JS提供能夠處理二進制資料的API]]
+References:

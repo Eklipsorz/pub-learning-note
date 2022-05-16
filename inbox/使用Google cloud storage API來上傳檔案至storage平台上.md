@@ -5,6 +5,55 @@
 
 ### 純JS不擅於處理二進制
 
+```
+static getMulter() {
+	const upload = multer({
+		storage: multer.memoryStorage(),
+		limits: {
+			fileSize: MAXFILESIZE
+		}
+	})
+	return upload
+}
+```
+
+
+
+```
+static cloudStorageHandler(file) {
+
+	return new Promise((resolve, reject) => {
+
+		const blob = bucket.file(file.originalname)
+		const blobStream = blob.createWriteStream({ resumable: false })
+		blobStream.on('error', err => reject(err))
+		blobStream.on('finish', () => {
+			const dirname = bucket.name
+			const filename = encodeURI(blob.name)
+			
+			const publicURL = format(
+			`https://storage.googleapis.com/${dirname}/${filename}`
+			)
+
+			return resolve(publicURL)
+
+		})
+		blobStream.end(file.buffer)
+	})
+}
+
+static async fileUpload(file) {
+	try {
+		const resultURL = await this.cloudStorageHandler(file)
+		return resultURL
+	} catch (_) {
+		return DEFAULT_AVATAR
+	}
+}
+```
+
+
+
 writestream.end(chunk)
 
 Chunk => 以什麼做為結尾來寫完內容
@@ -35,24 +84,7 @@ Calling the writable.end() method signals that no more data will be written to t
 
   
 
-比如一個圖片的buffer會是
 
-
-multer 回傳的file
-file:  {
-  fieldname: 'avatar',
-  originalname: '*\x16 2022-04-06 \x0BH7.44.32.png',
-  encoding: '7bit',
-  mimetype: 'image/png',
-  buffer: <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 1a 00 00 00 f2 08 06 00 00 00 92 d3 0a e1 00 00 0c 6a 69 43 43 50 49 43 43 20 50 72 6f 66 69 ... 98994 more bytes>,
-  size: 99044
-}
-
-[https://morosedog.gitlab.io/nodejs-20200123-Nodejs-11/](https://morosedog.gitlab.io/nodejs-20200123-Nodejs-11/)
-
-[https://nodejs.org/en/knowledge/advanced/buffers/how-to-use-buffers/](https://nodejs.org/en/knowledge/advanced/buffers/how-to-use-buffers/)
-
-  
 
   
 
@@ -68,15 +100,6 @@ Buffers in Node.js => 代表資料內容，且以原始二進制來表示
 
   
 
-Pure JavaScript, while great with unicode-encoded strings, does not handle straight binary data very well. This is fine on the browser, where most data is in the form of strings. However, Node.js servers have to also deal with TCP streams and reading and writing to the filesystem, both of which make it necessary to deal with purely binary streams of data.
-
-  
-
-One way to handle this problem is to just use strings anyway, which is exactly what Node.js did at first. However, this approach is extremely problematic to work with; It's slow, makes you work with an API designed for strings and not binary data, and has a tendency to break in strange and mysterious ways.
-
-  
-
-Don't use binary strings. Use buffers instead!
 
   
 
@@ -90,8 +113,7 @@ IMGUR_CLIENT_ID = 5bdc8196b8d4cb2
 
   });
 
-  
-
+ 
 [https://googleapis.dev/nodejs/storage/latest/global.html#:%7E:text=CreateWriteStreamOptions](https://googleapis.dev/nodejs/storage/latest/global.html#:%7E:text=CreateWriteStreamOptions)
 
   
@@ -102,9 +124,6 @@ resumable upload graph api
 
   
 
-  
-
-  
 
     "status": "success",
 
@@ -127,6 +146,9 @@ Status: #📥
 Tags:
 [[JavaScript]] 
 Links:
+[[multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案]]
+[[Node.js Buffer 是為JS提供能夠處理二進制資料的API]]
+[[Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件]]
 References:
 [[@GlobalDocumentation]]
 [[@huangNodeJsBuffer]]
