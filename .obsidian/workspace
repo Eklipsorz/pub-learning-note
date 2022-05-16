@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
-            "mode": "source"
+            "file": "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -18,93 +19,78 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "02d9e7bd2ce010aa",
-    "type": "split",
+    "id": "eac63fc8132347e7",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "3713389abbc6e118",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6faf5366d18f61bc",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "fe6e5c2ee5bea8fd",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": true,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "e77ef577e39efc7f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "6a4b34c5668d254f",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 508.5
+    "currentTab": 0
   },
   "right": {
-    "id": "b63ea1cd797e56af",
-    "type": "split",
+    "id": "068c7267dff75fdb",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "3eeccc278a5f4861",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c32bbbd6282ac336",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "11e2c07f688b03ce",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "326faa6791c906cc",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "c57d564e481386ab",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
+    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
     "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/Metadata 放到最前面和放到最後面的差別.md",
     "inbox/How to cite and highlight in obsidian.md",
-    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
     "inbox/Untitled.md",
     "annotation/@GlobalDocumentation.md",
     "pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
-    "pots/multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md"
+    "pots/multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案.md"
   ]
 }
