@@ -7,8 +7,11 @@
         "id": "1b99f5f70632ddb6",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "inbox/使用Google cloud storage API來上傳檔案至storage平台上.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -49,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5,
-    "collapsed": true
+    "width": 508.5
   },
   "right": {
     "id": "b63ea1cd797e56af",
@@ -66,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/使用Google cloud storage API來上傳檔案至storage平台上.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,14 +97,14 @@
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
     "inbox/使用Google cloud storage API來上傳檔案至storage平台上.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "inbox/Untitled.md",
+    "annotation/@GlobalDocumentation.md",
     "inbox/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
     "inbox/multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案.md",
     "inbox/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
-    "inbox/instanceof 是operator.md",
-    "develop/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
-    "develop/子網域的切分不只類別定址，主要由遮罩來決定.md"
+    "inbox/instanceof 是operator.md"
   ]
 }

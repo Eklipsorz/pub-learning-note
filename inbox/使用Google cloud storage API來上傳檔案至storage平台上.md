@@ -3,7 +3,8 @@
 ## 描述
   
 
-### 純JS不擅於處理二進制
+### 設定multer 將上傳檔案放置伺服器的記憶體
+當伺服器接收到上傳檔案的請求，會於記憶體內建立一個Node.js Buffer 類別的物件來慢慢接收其檔案內容，接著再建立一個file物件，以物件的buffer屬性來指向Buffer 類別的物件
 
 ```
 static getMulter() {
@@ -17,9 +18,22 @@ static getMulter() {
 }
 ```
 
+接著當伺服器完成在記憶體儲存上傳檔案的內容時，隨後就會呼叫fileUpload來將檔案上傳至GCP中的Cloud Storage
+
+### 將記憶體的檔案上傳至GCP的Cloud Storage
+
+- 首先建立能與Cloud Storage上的Bucket容器進行連接的bucket物件[[Cloud Storage 是Google 用來儲存資料的雲端服務]]
+```
+// PROD_GCLOUD_STORAGE_BUCKET 指定要連接的Bucket 容器名稱
+// storage.bucket會回傳能操控對應容器的物件
+const bucket = storage.bucket(PROD_GCLOUD_STORAGE_BUCKET)
+```
+
+
 
 
 ```
+const bucket = storage.bucket(PROD_GCLOUD_STORAGE_BUCKET)
 static cloudStorageHandler(file) {
 
 	return new Promise((resolve, reject) => {
@@ -146,6 +160,7 @@ Status: #📥
 Tags:
 [[JavaScript]] 
 Links:
+[[Cloud Storage 是Google 用來儲存資料的雲端服務]]
 [[multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案]]
 [[Node.js Buffer 是為JS提供能夠處理二進制資料的API]]
 [[Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件]]

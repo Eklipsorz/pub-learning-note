@@ -1,3 +1,6 @@
+## 描述
+
+
 **Cloud Storage**
 
 -   **Cloud Storage**：  
@@ -8,6 +11,10 @@
     可擴充、全代管的 NoSQL 寬欄資料庫服務，適合處理大型分析和大量低延遲工作負載，可用性高達 99.999%
 -   **Cloud SQL**：  
     MySQL、PostgreSQL 和 SQL Server 皆適用的全代管關聯資料庫服務
+	
+## Cloud Storage 
+Bucket：儲存特定資料的容器
+	
 	
 ---
 Status: #📥  
