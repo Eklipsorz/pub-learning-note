@@ -9,9 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-            "mode": "source",
-            "source": false
+            "file": "inbox/switch 不能夠放let 或者 const 宣告？.md",
+            "mode": "source"
           }
         }
       }
@@ -19,76 +18,91 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "eac63fc8132347e7",
-    "type": "mobile-drawer",
+    "id": "ee2bf00e7013f890",
+    "type": "split",
     "children": [
       {
-        "id": "e77ef577e39efc7f",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "6a4b34c5668d254f",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "1f87f90f886db658",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eef65e49effa9b8d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a87cd9b5364033f2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "068c7267dff75fdb",
-    "type": "mobile-drawer",
+    "id": "adf16f6615fe6b64",
+    "type": "split",
     "children": [
       {
-        "id": "326faa6791c906cc",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "b8e1a7c83dc86438",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b2f4d39c18325b7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "inbox/switch 不能夠放let 或者 const 宣告？.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "53470455c90503a8",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "c57d564e481386ab",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
+    "inbox/switch 不能夠放let 或者 const 宣告？.md",
     "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
     "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
     "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/Metadata 放到最前面和放到最後面的差別.md",
     "inbox/How to cite and highlight in obsidian.md",
-    "inbox/Untitled.md",
     "annotation/@GlobalDocumentation.md",
     "pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
     "pots/multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案.md"
