@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/git 系統會存取每個檔案的權限？.md",
+            "file": "inbox/belazy shop 作品集 - reply 路徑設計.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/git 系統會存取每個檔案的權限？.md",
+                "file": "inbox/belazy shop 作品集 - reply 路徑設計.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
+    "inbox/belazy shop 作品集 - reply 路徑設計.md",
+    "inbox/switch 不能夠放let 或者 const 宣告？.md",
+    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
+    "inbox/Metadata 放到最前面和放到最後面的差別.md",
+    "inbox/instanceof 是operator.md",
+    "inbox/How to cite and highlight in obsidian.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/git 系統會存取每個檔案的權限？.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/switch 不能夠放let 或者 const 宣告？.md",
-    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-    "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "inbox/Metadata 放到最前面和放到最後面的差別.md",
-    "inbox/How to cite and highlight in obsidian.md",
-    "annotation/@GlobalDocumentation.md",
-    "pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md"
+    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md"
   ]
 }
