@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+            "file": "develop/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "4bb542d16563b69b",
+        "id": "ffc1d52281ce96fc",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+            "file": "develop/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
             "mode": "preview"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "VLSM",
+                "query": "[[CIDR 取代分類定址",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+                "file": "develop/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
+    "develop/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
     "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
-    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
-    "inbox/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
-    "inbox/網路IP的子網域是從8位元演變至classful addressing.md",
-    "inbox/git 系統會存取每個檔案的權限？.md",
-    "inbox/switch 不能夠放let 或者 const 宣告？.md",
-    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
-    "inbox/Metadata 放到最前面和放到最後面的差別.md",
-    "inbox/instanceof 是operator.md",
-    "inbox/How to cite and highlight in obsidian.md"
+    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
+    "develop/網路IP的子網域是從8位元演變至classful addressing.md",
+    "develop/ACL vs ACM 是差在定義權限的結構是不一樣.md",
+    "develop/Map vs. Filter 差別的實際案例.md",
+    "develop/Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號.md",
+    "inbox/定義子網域從分類定址演變至改由CIDR來實現.md",
+    "develop/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
+    "inbox/Metadata 放到最前面和放到最後面的差別.md"
   ]
 }

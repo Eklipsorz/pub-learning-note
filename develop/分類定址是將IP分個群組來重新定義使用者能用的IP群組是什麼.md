@@ -12,10 +12,6 @@
 	- 多少個子網域、每一個子網路能夠分到多少
 
 
-
-
-
-
 ### IP結構
 IP由Network ID、Host ID所構成，而Network ID最前面幾位元會是代表該IP是屬於哪一類：
 - Class A：IP上起始位(第一個bit)是0
@@ -38,6 +34,7 @@ Class A 的IP範圍和遮罩分別為：
 - 具體每個子網路能分到IP的總主機數為$2^{24}-2$個主機，扣2是指扣掉識別用的IP和廣播用的IP[[一個IP群組上一定會有負責用來識別整個IP群組以及廣播位址]]
 - 傳播模式：單播
 
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1652890427/obsidian/network/classA-IP_ose9qj.png)
 ### Class B
 
 Class B 的IP範圍和遮罩分別為：
@@ -46,6 +43,9 @@ Class B 的IP範圍和遮罩分別為：
 - 具體能分到的子網路數是$64*256 = 16384$個
 - 具體每個子網路能分到IP的總主機數為$2^{16}-2$個主機
 - 傳播模式：單播
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1652890427/obsidian/network/classB-IP_anrihm.png)
+
 ### Class C
 Class C的IP範圍和遮罩分別為：
 - IP: 192.0.0.0~223.255.255.255
@@ -54,14 +54,17 @@ Class C的IP範圍和遮罩分別為：
 - 具體每個子網路能分到IP的總主機數為$256-2=254$個主機
 - 傳播模式：單播
 
-
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1652890427/obsidian/network/classC-IP_dedinz.png)
 ### Class D
 Class D的IP範圍和遮罩分別為：
 - 224.0.0.0~239.255.255.255
 - Mask： 255.255.255.255
-- 具體能分到的子網路數是 個
+- 具體能分到的子網路數是 $2^{28} = 268435456$個
 - 具體每個子網路能分到IP的總主機數為 $0$個主機
 - 傳播模式：多播 or 廣播
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1652890427/obsidian/network/classD-IP_bamrv4.png)
+
 ## 複習
 #🧠 分類定址的提出主因為 ->->-> `由於區域網域的盛行而導致那時定義的256個子網域不太能滿足需求 和 一個子網域分配的IP遠超於需求`
 
