@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/instanceof 是operator.md",
+            "file": "inbox/git 系統會存取每個檔案的權限？.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/instanceof 是operator.md",
+                "file": "inbox/git 系統會存取每個檔案的權限？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,10 +96,10 @@
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
-    "inbox/instanceof 是operator.md",
     "inbox/git 系統會存取每個檔案的權限？.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/belazy shop 作品集 - reply 路徑設計.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "inbox/instanceof 是operator.md",
     "inbox/switch 不能夠放let 或者 const 宣告？.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "inbox/Metadata 放到最前面和放到最後面的差別.md",
