@@ -1,7 +1,12 @@
 ## 描述
 
 
-分類定址原文為 **Classful Addressing**，用途是將IP分成五大種類的IP，並給予每個種類不同的
+分類定址原文為 **Classful Addressing**，被提出的背景是出自於業界對於網路區隔的需求逐漸擴大
+目的是透過IP的分類來定義不同網路的大小和傳播種類，
+
+是將IP分成五大種類的IP，並給予每個種類不同的設定：
+	- 網路下的所有主機之間的傳播模式是什麼
+	- 多少個子網域、每一個子網路能夠分到多少
 
 
 
@@ -14,6 +19,9 @@
 引用於[[@lokeshgallaIPv4ClassesRanges]]所提供的圖，
 ![](https://www.researchgate.net/profile/Lokesh-Galla/publication/260622269/figure/fig1/AS:340713477820416@1458243831010/1-1-IPv4-Classes-Ranges.png)
 
+
+### IP結構
+由Network ID、Host ID所構成，而Network ID最前面幾位元會是代表該IP是屬於哪一類
 
 ### Class A
 Class A 的IP範圍和遮罩分別為：
