@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/git 系統會存取每個檔案的權限？.md",
+            "file": "develop/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "VLSM",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/git 系統會存取每個檔案的權限？.md",
+                "file": "develop/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +97,15 @@
   },
   "active": "1b99f5f70632ddb6",
   "lastOpenFiles": [
-    "inbox/git 系統會存取每個檔案的權限？.md",
-    "inbox/belazy shop 作品集 - reply 路徑設計.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/instanceof 是operator.md",
-    "inbox/switch 不能夠放let 或者 const 宣告？.md",
-    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
-    "inbox/Metadata 放到最前面和放到最後面的差別.md",
-    "inbox/How to cite and highlight in obsidian.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md"
+    "develop/CIDR 解決分類定址無法彈性分配適當數量的IP給使用者.md",
+    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
+    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
+    "develop/Map vs. Filter 差別的實際案例.md",
+    "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
+    "develop/Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號.md",
+    "develop/Access Control List 是使用串列來定義每個物件所擁有的權限.md",
+    "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+    "develop/一個IP群組上一定會有負責用來識別整個IP群組以及廣播位址.md",
+    "inbox/git 系統會存取每個檔案的權限？.md"
   ]
 }
