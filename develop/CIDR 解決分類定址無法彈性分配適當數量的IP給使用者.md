@@ -26,7 +26,7 @@ CIDR 是 Classless Inter-Domain Routing 的縮寫，其技術主要是
 	- 由於傳統上還是以全網路制定的規則來區分子網域，但仍會有實際分配大於需求或者小於需求的配給問題
 	- 在這樣背景之下，CIDR技術是以現有從外部公認拿到的子網域進一步在內部區分更細的子網域，其具體技術為VLSM (Variable Length Subnet Masking)
 	- VLSM技術具體會以此實際外部公認的子網域遮罩來增加遮罩位數來獲取更細小的網域 
-	- IP在CIDR 表示方法為如下，A.B.C.D為IP位址，N定義是指遮罩從左邊到右邊有多少個連續1
+	- IP在CIDR 表示方法為如下，A.B.C.D為IP位址，N定義是原意為指定IP位址上的前N位元為該IP所屬的網域，實際上是控制遮罩序號上從左邊到右邊有N個連續1
 	```
 	A.B.C.D/N
 	```
@@ -35,6 +35,7 @@ CIDR 是 Classless Inter-Domain Routing 的縮寫，其技術主要是
 	1111 1111 . 111 1111 . 1111 1110 . xxxx xxxx
 	```
 	- 若兩個A.B.C.D/N的IP中，前面N位bit皆為一樣且N也一樣的話，兩個IP皆是在同一個子網域。
+	- 命名由來，由於本身是和Classful Addressing屬於專門替IP分成不同子網域好方便管理的策略之一，但相對於Classful Adddressing而言，該方法本身沒和前者一樣將IP固定分成ABC分類來處理，而是透過N來定義所屬IP為何並進一步分類因此被稱之為classless，而inter-domain routing 則是強調著這技術緣由是從內部額外切分外部分配過來的網域，並於內部做了相關路由設計，好透過切分出來的子網域能傳達至內部網路所要抵達的主機
 	
 舉例：
 引用[[@hukaizhiWuLeiBieQuGeLuYouCIDRJiShuYiXuQiuShanYongYouXianIPWeiZhiWangGuanRen]]所提到的例子來說明：
