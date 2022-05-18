@@ -14,7 +14,8 @@
 ### CIDR取代分類定址
 由於分類定址會有IP配給問題，所以改由CIDR(Classless Inter-Domain Routing)來取代分類定址來實現子網域定義，該概念主要是：
 - 捨棄將IP依據用途來分類，故此名為Classless
-- 透過IP和可變動子網路遮罩數(**VLSM**,Variable Length Subnet Masking)來定義IP所屬的子網域為何以及其子網域能夠分配多少個IP
+- 透過IP和可變動子網路遮罩數(**VLSM**,Variable Length Subnet Masking)來定義IP所屬的子網域為何以及其子網域能夠分配多少個IP，CIDR 可進一步對已分配的網域在額外內部切分。
+
 - 整體IP和VLSM格式為如下，其中A.B.C.D為IP位址，N定義是原意為指定IP位址上的前N位元為該IP所屬的網域，實際上是控制遮罩序號上從左邊到右邊有N個連續1
 ```
 A.B.C.D/N
@@ -23,9 +24,10 @@ A.B.C.D/N
 ```
 1111 1111 . 111 1111 . 1111 1110 . xxxx xxxx
 ```
-- CIDR 可進一步對已分配的網域在額外內部切分。
+-  CIDR 能幫助多個網域能夠依據共同序號來合併一個網域來簡化路由表
+[[CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域]]
 	
-舉例：
+### CIDR 對於內部切分的舉例
 引用[[@hukaizhiWuLeiBieQuGeLuYouCIDRJiShuYiXuQiuShanYongYouXianIPWeiZhiWangGuanRen]]所提到的例子來說明：
 
 假若自己被分配172.16.32.0/20這個網域，然而實際上要分配IP的主機數量是10個，所以理論以上述提到的網域設定，每一個子網域可以分配
@@ -89,6 +91,7 @@ Links:
 [[分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼]]
 [[網路遮罩是用來判斷目前IP所屬的子網域是什麼]]
 [[一個IP群組上一定會有負責用來識別整個IP群組以及廣播位址]]
+[[CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域]]
 References:
 [[@WuLeiBieYuJianLuYou2022]]
 [[@hukaizhiWuLeiBieQuGeLuYouCIDRJiShuYiXuQiuShanYongYouXianIPWeiZhiWangGuanRen]]
