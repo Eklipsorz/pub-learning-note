@@ -9,17 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+            "file": "inbox/git 系統會存取每個檔案的權限？.md",
             "mode": "source"
           }
-        }
-      },
-      {
-        "id": "b112cc07734b9152",
-        "type": "leaf",
-        "state": {
-          "type": "graph",
-          "state": {}
         }
       }
     ],
@@ -76,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/git 系統會存取每個檔案的權限？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b112cc07734b9152",
+  "active": "ffc1d52281ce96fc",
   "lastOpenFiles": [
+    "inbox/git 系統會存取每個檔案的權限？.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "inbox/belazy shop 作品集 - reply 路徑設計.md",
+    "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
+    "inbox/switch 不能夠放let 或者 const 宣告？.md",
     "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
     "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
-    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
-    "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
-    "develop/ACL vs ACM 是差在定義權限的結構是不一樣.md",
-    "develop/Access Control Matrix 是用表格來定義每個使用者對於每個資源的存取權限.md",
-    "develop/Access Control List 是使用串列來定義每個物件所擁有的權限.md",
-    "develop/網路IP的子網域是從8位元演變至classful addressing.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md"
+    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md"
   ]
 }
