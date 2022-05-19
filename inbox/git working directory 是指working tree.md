@@ -1,4 +1,10 @@
 
+
+git 系統當中，有三個主要的空間名詞，
+- working directory
+- working tree
+- repository
+
 引用git 官方repo備註所說明的：
 
 > "git status" used to say "working directory" when it meant "working tree"
