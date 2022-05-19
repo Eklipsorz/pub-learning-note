@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
-            "mode": "source"
+            "file": "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+            "mode": "source",
+            "source": false
           }
         }
       },
@@ -18,98 +19,79 @@
         "id": "b112cc07734b9152",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
-            "mode": "preview"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ee2bf00e7013f890",
-    "type": "split",
+    "id": "0f5cae2ca2d36462",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "1f87f90f886db658",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "eef65e49effa9b8d",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "a87cd9b5364033f2",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "[[CIDR 取代分類定址",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "4609334715e4e264",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "54be1572b9bfc3bd",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 383.5
+    "currentTab": 0
   },
   "right": {
-    "id": "adf16f6615fe6b64",
-    "type": "split",
+    "id": "9b593e1823d2dee7",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "b8e1a7c83dc86438",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8b2f4d39c18325b7",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "53470455c90503a8",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "0bc208aec9fbcdf6",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "dbcab1f2d2b1ab6f",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
-  "active": "ffc1d52281ce96fc",
+  "active": "b112cc07734b9152",
   "lastOpenFiles": [
+    "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
     "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
-    "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
     "develop/子網域的切分不只類別定址，主要由遮罩來決定.md",
     "develop/ACL vs ACM 是差在定義權限的結構是不一樣.md",
