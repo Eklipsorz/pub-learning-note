@@ -10,8 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
-            "mode": "source",
-            "source": false
+            "mode": "source"
           }
         }
       },
@@ -27,65 +26,80 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0f5cae2ca2d36462",
-    "type": "mobile-drawer",
+    "id": "92be3bda132f9602",
+    "type": "split",
     "children": [
       {
-        "id": "4609334715e4e264",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "54be1572b9bfc3bd",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "a974913d6c8bc6c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b641889187cb483e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "81779932b873d02a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "9b593e1823d2dee7",
-    "type": "mobile-drawer",
+    "id": "8aad0483a47ac8ee",
+    "type": "split",
     "children": [
       {
-        "id": "0bc208aec9fbcdf6",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "b0d53146db1b4cbd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c3aa97500c79061",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1a1b96b4ee0c4371",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "dbcab1f2d2b1ab6f",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "b112cc07734b9152",
   "lastOpenFiles": [
