@@ -1,9 +1,10 @@
 
 
 git 系統當中，有三個主要的空間名詞，
-- working directory
-- working tree
-- repository
+- working directory：git 系統用作於對repo內的物件進行加工
+- working tree：
+- repository：
+- staged area 
 
 引用git 官方repo備註所說明的：
 
