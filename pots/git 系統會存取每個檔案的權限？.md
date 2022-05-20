@@ -28,11 +28,11 @@ create mode 100644 routes/modules/reply.js
 
 
 ## note
-git ls-files 呈現目前GIT工作目錄下的所有檔案，包含目前在暫存區的檔案。
+git ls-files 呈現目前GIT working directory下的所有檔案，包含目前在暫存區的檔案。
 
 git ls-files 參數
 ```
-git ls-files --stage 呈現檔案被暫存內容
+git ls-files --stage 呈現哪些曾被暫存的檔案之資訊，包含權限bit、物件名稱、原先在暫存區的編號
 
 Show staged contents' mode bits, object name and stage number in the output.
 ```
