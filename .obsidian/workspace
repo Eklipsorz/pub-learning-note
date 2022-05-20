@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
+            "file": "inbox/Untitled.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
+                "file": "inbox/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "9ab7ec4db6da5203",
   "lastOpenFiles": [
-    "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
     "inbox/Untitled.md",
+    "inbox/兩個process都同時要求上鎖？如何處理.md",
+    "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
     "inbox/switch 不能夠放let 或者 const 宣告？.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "inbox/Metadata 放到最前面和放到最後面的差別.md",
     "inbox/How to cite and highlight in obsidian.md",
     "Pasted image 20220518202901.png",
     "Pasted image 20220518202859.png",
-    "Map Of Content.md",
-    "pots/instanceof 是operator.md"
+    "Map Of Content.md"
   ]
 }
