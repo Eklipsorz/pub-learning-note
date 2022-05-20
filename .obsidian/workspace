@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
+            "file": "inbox/redis + node.js 實作購物車機制.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
+                "file": "inbox/redis + node.js 實作購物車機制.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "9ab7ec4db6da5203",
   "lastOpenFiles": [
+    "inbox/redis + node.js 實作購物車機制.md",
     "inbox/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
     "inbox/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
     "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
@@ -115,7 +116,6 @@
     "inbox/多個執行緒同時搶鎖就依據.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/同步 和 互斥是不同的.md",
-    "inbox/Lock & Table lock & row lock.md",
-    "inbox/兩個process都同時要求上鎖？如何處理.md"
+    "inbox/Lock & Table lock & row lock.md"
   ]
 }
