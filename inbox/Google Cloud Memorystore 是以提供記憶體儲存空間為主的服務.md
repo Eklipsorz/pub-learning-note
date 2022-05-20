@@ -19,3 +19,6 @@ To access the Redis instance, the App Engine app must be configured to use your 
 To send requests to your VPC network and receive the corresponding responses without using the public internet, you must use a Serverless VPC Access connector.
 
 You can create a connector by using the Google Cloud console, Google Cloud CLI, or Terraform:
+
+
+https://www.gushiciku.cn/pl/ptVE/zh-tw
