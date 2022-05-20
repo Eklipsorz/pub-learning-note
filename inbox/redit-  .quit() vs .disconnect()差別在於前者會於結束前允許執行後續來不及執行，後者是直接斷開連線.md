@@ -2,6 +2,7 @@
 ## 描述
 
 
+### quit 範例
 redit- .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線
 
 
@@ -30,6 +31,8 @@ try {
 }
 ```
 
+### disconnect 範例
+
 > Forcibly close a client's connection to Redis immediately. Calling `disconnect` will not send further pending commands to the Redis server, or wait for or parse outstanding responses.
 
 client.disconnect() 是請求server斷開對應client的連接。
@@ -40,6 +43,46 @@ client.disconnect() 是請求server斷開對應client的連接。
 ```
 await client.disconnect();
 ```
+
+### disconnect 斷線後的值是否存在
+問題disconnect 斷線後的值是否存在？
+答案是會存在的，直到記憶體完全被釋放，不管以下狀況，皆能獲取曾在記憶體儲存的值：
+- 先關閉主要應用伺服器，再重開應用伺服器
+- 先關閉redis 資料庫，再重開該資料庫
+
+範例說明：
+- get / 路由會嘗試與redis server連接並建立一筆紀錄為key和value1
+- get /get 路由會嘗試與redis server連接並獲取對應key的值
+- get /close 路由會嘗試斷線
+
+流程為：
+- 先執行get / 來嘗試紀錄key:value1這紀錄
+- 接著執行get /close來斷線，實現key:value1是否被釋放
+- 最後執行 get /get 來重新獲取對應key值，結果是仍能回傳原先的值-value1
+
+
+
+```
+app.get('/', async () => {
+	console.log('hi')
+	await client.connect()
+	await client.set('key', 'value1')
+	const value = await client.get('key')
+	console.log(value)
+})
+
+app.get('/get', async () => {
+	await client.connect()
+	const value = await client.get('key')
+	console.log('in get route:', value)
+})
+
+app.get('/close', async () => {
+	await client.disconnect()
+	console.log('disconnected')
+})
+```
+
 
 ---
 Status: #🌱 
