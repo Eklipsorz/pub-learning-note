@@ -36,3 +36,6 @@ ServiceException: 409 A Cloud Storage bucket named 'belazy-shop' already exists.
 
 gsutil mb gs://belazy-shop                                                   21:26:08
 Creating gs://belazy-shop/...
+
+
+資料庫和客戶端之間可以添加SSL來加強資料傳遞是加密的
