@@ -13,3 +13,17 @@ createBucket().catch(console.error);
 https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-nodejs
 
 
+
+temp/
+若這些
+config/credentials/*
+config/ssl/db/client-*
+config/ssl/db/server-*
+.env 
+放入.gcloudignore
+
+
+會省略掉
+config/ssl/db/client-*
+config/ssl/db/server-*
+.env 
