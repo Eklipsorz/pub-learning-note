@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+            "file": "cloud storage-bucket- A bucket name is needed to use.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+                "file": "cloud storage-bucket- A bucket name is needed to use.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "c5b8c4139061ddcc",
   "lastOpenFiles": [
+    "cloud storage-bucket- A bucket name is needed to use.md",
     "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
     "inbox/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
@@ -104,7 +105,6 @@
     "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "inbox/switch 不能夠放let 或者 const 宣告？.md",
-    "inbox/多個執行緒同時搶鎖就依據.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md"
+    "inbox/多個執行緒同時搶鎖就依據.md"
   ]
 }

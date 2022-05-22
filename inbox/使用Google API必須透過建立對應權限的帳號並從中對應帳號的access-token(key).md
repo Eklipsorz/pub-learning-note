@@ -79,3 +79,7 @@ async function main() {
 
 
 key ca cert 集中放在一起，開發時不必因爲這些檔案在別的電腦而到處轉移，只需要從集中存放區重新下載回來就行
+
+
+
+https://github.com/eashish93/imgsquash/issues/2
