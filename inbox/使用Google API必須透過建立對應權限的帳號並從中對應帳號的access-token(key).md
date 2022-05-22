@@ -34,3 +34,42 @@ Create a service account key:
 3.  Click **Add key**, and then click **Create new key**.
 4.  Click **Create**. A JSON key file is downloaded to your computer.
 5.  Click **Close**.
+
+
+```
+export GOOGLE_APPLICATION_CREDENTIAL=KEY_PATH
+```
+
+讓google api 透過key來獲取對應權限來使用
+
+
+
+
+
+讀取檔案可以夾帶著檔案所在的目錄，如xxxxx/xxxx.pem中的xxxxx目錄
+
+```
+function readCloudStorageFile(filepath) {
+	return new Promise((resolve, reject) => {
+		const chunks = []
+		const blob = bucket.file(filepath)
+		const readStream = blob.createReadStream()
+		.on('error', (error) => reject(error))
+		.on('end', (data) => resolve(chunks))
+		.on('data', chunk => {
+			chunks.push(chunk)
+		})	
+	})
+}
+
+async function main() {
+	const content = await readCloudStorageFile('xxxxx/xxxx.pem')
+	const result = Buffer.concat([content[0], content[1]])
+	console.log(content, result)
+
+}
+
+```
+
+
+對指定bucket設定acl，只允許擁有者能夠存取
