@@ -39,3 +39,10 @@ Creating gs://belazy-shop/...
 
 
 資料庫和客戶端之間可以添加SSL來加強資料傳遞是加密的
+
+
+---
+Status: 
+Tags:
+Links:
+References:
