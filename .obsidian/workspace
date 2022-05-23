@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "8e8a762f993bc900",
+        "id": "da0590c26d3176b7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
+            "file": "VPC vs. Subnet.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "4e07e9b7be3cdfb5",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "pots/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
-            "mode": "preview"
           }
         }
       }
@@ -63,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 663.5
   },
   "right": {
     "id": "eed195b8e19ac70d",
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
+                "file": "VPC vs. Subnet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8e8a762f993bc900",
+  "active": "da0590c26d3176b7",
   "lastOpenFiles": [
-    "pots/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
-    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-    "pots/instanceof 是operator.md",
-    "pots/git 系統會存取每個檔案的權限？.md",
-    "develop/Untitled.md",
-    "inbox/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
-    "inbox/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
-    "inbox/redis + node.js 實作購物車機制.md",
-    "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
-    "inbox/Lock & Table lock & row lock.md"
+    "VPC vs. Subnet.md",
+    "Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+    "annotation/@googlecloudServerlessVPCAccess.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "inbox/cloud storage-bucket- A bucket name is needed to use.md",
+    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/How to cite and highlight in obsidian.md",
+    "inbox/Lock & Table lock & row lock.md",
+    "inbox/Metadata 放到最前面和放到最後面的差別.md"
   ]
 }
