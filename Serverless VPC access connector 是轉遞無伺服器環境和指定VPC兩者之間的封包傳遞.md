@@ -6,7 +6,6 @@
 > **a device that holds a wire in position in a piece of electrical equipment**
 
 
-
 引用[[@googlecloudServerlessVPCAccess]]所描述的Serverless VPC access connector 意思：
 > Serverless VPC Access makes it possible for you to connect directly to your Virtual Private Cloud network from serverless environments such as Cloud Run, App Engine, or Cloud Functions.
 > Serverless VPC Access sends internal traffic from your VPC network to your serverless environment only when that traffic is a response to a request that was sent from your serverless environment through the Serverless VPC Access connector.
@@ -32,6 +31,7 @@ Tags:
 [[Network]] - [[Serverless]] - [[GCP]]
 Links:
 [[Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來]]
-[[Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來]]
+[[設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格]]
+[[VPC 如同實體網路可以擁有屬於自己的子網域]]
 References:
 [[@googlecloudServerlessVPCAccess]]
