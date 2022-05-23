@@ -39,6 +39,7 @@ Status: #🌱
 Tags:
 [[Network]] - [[Serverless]] - [[GCP]]
 Links:
+[[GCP- region & zone，region 是指資料中心的所在地，zone會是指實際資料中心]]
 [[Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞]]
 [[VPC 如同實體網路可以擁有屬於自己的子網域]]
 References:
