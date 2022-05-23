@@ -4,23 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "c5b8c4139061ddcc",
+        "id": "8e8a762f993bc900",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
+            "file": "inbox/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "57b65bdfd72503f5",
+        "id": "4e07e9b7be3cdfb5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
+            "file": "inbox/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
+                "file": "inbox/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +105,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c5b8c4139061ddcc",
+  "active": "8e8a762f993bc900",
   "lastOpenFiles": [
+    "inbox/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
     "inbox/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
+    "inbox/兩個process都同時要求上鎖？如何處理.md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
     "inbox/cloud storage-bucket- A bucket name is needed to use.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/belazy shop 作品集 - reply 路徑設計.md",
     "inbox/多個執行緒同時搶鎖就依據.md",
-    "inbox/兩個process都同時要求上鎖？如何處理.md",
     "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-    "inbox/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
-    "inbox/redis + node.js 實作購物車機制.md"
+    "inbox/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md"
   ]
 }
