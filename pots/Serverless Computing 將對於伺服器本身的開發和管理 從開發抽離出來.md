@@ -31,6 +31,7 @@ Serverless service:
 ## 複習
 
 #🧠 無伺服器計算的命名緣由 ->->-> `serverless computing 真正描述是以使用者的角度來說，而非是提供者，所以對於使用者來說，不必考慮伺服器本身所需的開發和維護並為此親自實現，只需要考慮如何開發開發項目本身，所以使用者來說，等同於無伺服器為主的開發，而提供者會是要替使用者處理伺服器本身所需要做的開發、設定、維護`
+<!--SR:!2022-05-25,1,230-->
 
 #🧠 這圖說明nonserverless environment，請解釋Provider和User負責了什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653314112/blog/network/serverless/non-serverless-env_bbi9ve.png) ->->-> `提供者會負責處理使用者主機所在的環境是否穩定，使用者負責處理提供者所給予的主機(Host)環境以及如何在主機環境進行開發`
 

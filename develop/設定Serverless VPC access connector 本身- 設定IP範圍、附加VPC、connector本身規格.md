@@ -29,6 +29,7 @@ connector 具體有幾項設定：
 ## 複習
 
 #🧠 說明一下App Engine、Cloud Functions Cloud Run在GCP的網路狀況以及對外情形![](https://cloud.google.com/vpc/images/serverless-vpc-access.svg) ->->-> `App Engine 、Cloud Functions、Cloud Run原本就是以提供外部存取的serverless service，所以會有外部IP，而在內部裡這些服務皆會包在某個特定VPC下的子網域，所以會有私人IP可以與GCP套件進行交流。`
+<!--SR:!2022-05-27,3,250-->
 
 #🧠 說明一下connector 的情況，所處哪個網路？ ![](https://cloud.google.com/vpc/images/serverless-vpc-access.svg) ->->-> `當設定完connector，指定VPC網路會有一個connector，而他在VPC的網路IP會是10.8.0.0/28`
 
