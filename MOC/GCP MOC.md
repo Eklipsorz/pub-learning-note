@@ -67,6 +67,6 @@
 
 - IAM
 [[使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key)]]
-
+[[Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可]]
 - MemoryStore
 [[Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務]]
