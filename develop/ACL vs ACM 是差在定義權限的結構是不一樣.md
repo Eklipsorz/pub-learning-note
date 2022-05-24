@@ -19,7 +19,7 @@ ACM 是指Access Control Matrix
 ## 複習
 
 #🧠 Access Control  List vs. Access Control Matrix ->->-> `差別是在於定義權限的結構是不同的，ACL是用鏈結串列，ACM則是用表格或者矩陣來表示`
-<!--SR:!2022-05-21,3,250-->
+<!--SR:!2022-06-05,12,250-->
 
 
 

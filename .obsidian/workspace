@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+            "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 427.5
+    "width": 557.5
   },
   "right": {
     "id": "eed195b8e19ac70d",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+                "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "957d676cc17b7a5a",
   "lastOpenFiles": [
-    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+    "inbox/belazy shop 作品集 - reply 路徑設計.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/cloud storage-bucket- A bucket name is needed to use.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
     "pots/git 系統會存取每個檔案的權限？.md",
     "pots/instanceof 是operator.md",
     "pots/multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案.md",
-    "pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
-    "pots/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
-    "pots/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
-    "pots/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
-    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md"
+    "pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md"
   ]
 }
