@@ -19,6 +19,7 @@ Staging area
 
 ## 複習
 #🧠 Staging area 和 Index 是什麼關係 ->->-> `兩者是一樣的，用途皆為檔案形式來紀錄哪些檔案的內容要當下一個版本的內容，只是index會是Git對於staging area的實現用語`
+<!--SR:!2022-05-27,3,250-->
 
 
 ---

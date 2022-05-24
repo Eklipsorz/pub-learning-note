@@ -11,21 +11,27 @@
 > Serverless VPC Access sends internal traffic from your VPC network to your serverless environment only when that traffic is a response to a request that was sent from your serverless environment through the Serverless VPC Access connector.
 
 重點：
-- Serverless VPC Access 技術本身目的是允許Serverless Service能與特定VPC進行特定連接並相互傳遞訊息，Serverless Service能傳送/接收源自於VPC下的Service，而處於VPC下的Service能傳送/接受源自於VPC外部的Service
+- Serverless VPC Access 背景是在 **Serverless Service本身只能對外開發，無法與VPC下的service進行連接，這使得部分服務無法間接提供給使用者**
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653397252/blog/network/serverless/serverless-service-network-when-built_gehol8.png)
+- 為了解決第一點問題，就衍生Serverless VPC Access的概念，目的在於轉遞Serverless environment和VPC之間的封包轉遞，具體會使用connector來進行轉遞
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653398292/blog/network/serverless/serverless-service-network-to-connector_pb4710.png)
+- 如上述，具體來說conenctor會被建立在VPC內部，由特定服務A所管理著，只要設定讓Serverless Service去指定使用哪一個connector，Serverless Service就能直接透過特定服務A來找到指定的connector來轉遞封包
 
+- 當serviceless service向指定的connector轉發封包至VPC的Service，而connector收到後便以自己於VPC的IP轉遞封包給VPC下的Service，而Service收到就便處理，處理完畢後就將結果回傳至connector，麻煩轉遞至Serverless service，最後就從connector轉送至Serverless service，使它們收到
 
-- 具體來說會使用一個轉接器或者連接器(connector)的實體物件來協助Serverless Server和VPC兩者間的資料傳遞，該連接器名為Serverless VPC access connector。
-
-- 當建立好connector時，只要指定connectors哪一個VPC要被連接以及替Serverless Service指定哪一個connector進行連接，在這裡會是指定App Engine與connector進行連接，而附加至connector的VPC會是Virtual Private Cloud，這時只要VPC想向App Engine發送封包或者接收封包就只需透過Connector，反之；App Engine想向處於VPC 下的Server 發送封包或者接收封包，也只需要透過connector就能轉送
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653319253/blog/network/serverless/serverless-vpc-access-connector_myh7pz.png)
 
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 GCP - Serverless VPC access  背景是什麼 ->->-> `原本Serverless Service 是沒有與任何VPC進行連接，只能對外使用，但由於使用者若要索求VPC內的Service，則必須讓Serverless Server去連接VPC來獲取，所以就衍生出Serverless VPC access  `
+<!--SR:!2022-05-27,3,250-->
+
+#🧠 GCP - Serverless VPC access  是什麼樣的技術 ->->->  `具體透過access connector來轉遞VPC和Serverless environment兩者間的封包轉遞`
+<!--SR:!2022-05-27,3,250-->
 
 #🧠 Serverless VPC access connector 是什麼？->->-> `負責轉遞指定VPC和Serverless environment兩者間的封包轉遞`
 <!--SR:!2022-05-27,3,250-->
 
-#🧠 試說明一下VPC下的server1和VPC以外的App Engine之間的連接情形 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653319253/blog/network/serverless/serverless-vpc-access-connector_myh7pz.png) ->->-> `只要指定connectors哪一個VPC要被連接以及替Serverless Service指定哪一個connector進行連接，在這裡會是指定App Engine與connector進行連接，而附加至connector的VPC會是Virtual Private Cloud，這時只要VPC想向App Engine發送封包或者接收封包就只需透過Connector，反之；App Engine想向處於VPC 下的Server 發送封包或者接收封包，也只需要透過connector就能轉送`
+#🧠 試說明一下VPC以外的App Engine傳遞請求封包至VPC的Service !![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653398292/blog/network/serverless/serverless-service-network-to-connector_pb4710.png)->->-> `在這裡App Engine為了傳送請求封包至VPC下的Service，而將封包轉遞給connector，由處於VPC的connector將封包傳給指定的VPC下Service，接著Service收到後就處理並向connector回傳結果，而connector就將結果轉遞至App Engine`
+<!--SR:!2022-05-27,3,250-->
 
 ---
 Status: #🌱 

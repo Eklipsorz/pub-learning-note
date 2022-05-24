@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "957d676cc17b7a5a",
+        "id": "f39d9f6a9665fdd7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/GCP serverless service 在一開始被建立後所處的網路能夠對外，但不是處於VPC.md",
+            "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "81402a78a8fbc104",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "pots/GCP serverless service 在一開始被建立後所處的網路能夠對外，但不是處於VPC.md",
-            "mode": "preview"
           }
         }
       }
@@ -50,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "serverless",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/GCP serverless service 在一開始被建立後所處的網路能夠對外，但不是處於VPC.md",
+                "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "957d676cc17b7a5a",
+  "active": "f39d9f6a9665fdd7",
   "lastOpenFiles": [
+    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+    "MOC/GCP MOC.md",
     "pots/GCP serverless service 在一開始被建立後所處的網路能夠對外，但不是處於VPC.md",
-    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
-    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
-    "develop/Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號.md",
-    "develop/git working directory 是指working tree.md",
-    "develop/Map vs. Filter 差別在於會不會根據原陣列的元素數量來回傳.md",
-    "develop/git 有working tree、working directory、repository、staged area、index.md",
-    "develop/網路IP的子網域是從8位元演變至classful addressing.md",
-    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
-    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md"
+    "pots/git 系統會存取每個檔案的權限？.md",
+    "pots/instanceof 是operator.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "pots/Compute engine VM 和 memoryStore會是在VPC內部的服務.md",
+    "pots/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
+    "pots/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
+    "pots/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md"
   ]
 }
