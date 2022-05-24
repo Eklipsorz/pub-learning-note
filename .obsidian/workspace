@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cloud shell 可連線至指定專案下的Serverless Service主機.md",
+            "file": "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "20a2a4d89a8eef41",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gcloud",
+                "query": "cloud run",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,11 +59,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 374.5
+    "width": 499.5
   },
   "right": {
     "id": "818cdd2c8d559c63",
@@ -68,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cloud shell 可連線至指定專案下的Serverless Service主機.md",
+                "file": "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +108,15 @@
   },
   "active": "957d676cc17b7a5a",
   "lastOpenFiles": [
-    "cloud shell 可連線至指定專案下的Serverless Service主機.md",
-    "inbox/cloud storage-bucket- A bucket name is needed to use.md",
-    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
-    "develop/GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "inbox/How to cite and highlight in obsidian.md",
-    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md"
+    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+    "develop/Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號.md",
+    "develop/git working directory 是指working tree.md",
+    "develop/Map vs. Filter 差別在於會不會根據原陣列的元素數量來回傳.md",
+    "develop/git 有working tree、working directory、repository、staged area、index.md",
+    "develop/網路IP的子網域是從8位元演變至classful addressing.md",
+    "develop/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
+    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
+    "develop/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md"
   ]
 }
