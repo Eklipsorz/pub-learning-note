@@ -1,3 +1,6 @@
+## 描述
+
+
 使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key)
 
 
