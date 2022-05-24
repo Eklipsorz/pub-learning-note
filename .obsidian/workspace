@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "da5018ee3197c326",
+        "id": "676a87cfca6a144d",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/cloud storage-bucket- A bucket name is needed to use.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/cloud storage-bucket- A bucket name is needed to use.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,15 +90,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "da5018ee3197c326",
+  "active": "676a87cfca6a144d",
   "lastOpenFiles": [
-    "inbox/cloud storage-bucket- A bucket name is needed to use.md",
-    "Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
     "MOC/GCP MOC.md",
+    "Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密.md",
+    "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
+    "Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
     "讀取指定google storage bucket下的指定物件.md",
     "cloud shell 可連線至指定專案下的Serverless Service主機.md",
     "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
-    "Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密.md",
     "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
     "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
     "pots/Compute engine VM 和 memoryStore會是在VPC內部的服務.md"

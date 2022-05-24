@@ -1,16 +1,4 @@
 
-
-
-```
-// Imports the Google Cloud client library
-const {Storage} = require('@google-cloud/storage');
-// For more information on ways to initialize Storage, please see
-// https://googleapis.dev/nodejs/storage/latest/Storage.html
-// Creates a client using Application Default Credentialsconst storage = new Storage();// Creates a client from a Google service account key// const storage = new Storage({keyFilename: 'key.json'});/** * TODO(developer): Uncomment these variables before running the sample. */// The ID of your GCS bucket// const bucketName = 'your-unique-bucket-name';async function createBucket() {  // Creates the new bucket  await storage.createBucket(bucketName);  console.log(`Bucket ${bucketName} created.`);}
-createBucket().catch(console.error);
-```
-
-https://cloud.google.com/storage/docs/reference/libraries#client-libraries-usage-nodejs
 ## 描述
 引用[[@googlecloudGcloudTopicGcloudignore]]所描述：
 
@@ -94,7 +82,46 @@ console.log(process.env)
 
 而這使得部分功能因為沒載入正確的環境變數而失敗。
 
-若將第一個步驟還原的話，
+若將.gcloudignore內的.env去掉的話，就會正常讀取我想要系統讀取的環境變數，且系統也恢復正常
+```
+2022-05-24 17:34:52 default[20220524t173310]  {
+2022-05-24 17:34:52 default[20220524t173310]    S2A_ACCESS_TOKEN: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_MEMORY_MB: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    NO_UPDATE_NOTIFIER: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_INSTANCE: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    HOME: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PORT: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    NODE_OPTIONS: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_SERVICE: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PATH: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_DEPLOYMENT_ID: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    DEBIAN_FRONTEND: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GOOGLE_CLOUD_PROJECT: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_ENV: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_APPLICATION: ’skip’
+2022-05-24 17:34:52 default[20220524t173310]    PWD: ’skip’
+2022-05-24 17:34:52 default[20220524t173310]    GAE_RUNTIME: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    GAE_VERSION: ’skip’
+2022-05-24 17:34:52 default[20220524t173310]    NODE_ENV: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_SSL_DBCERT_PATH: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_DB_HOSTNAME: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_DB_NAME: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_DB_PORT: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_REFRESH_TOKEN_SECRET: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_GCLOUD_STORAGE_BUCKET: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_DB_PASSWORD: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_DB_USERNAME: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_ACCESS_TOKEN_SECRET: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_SEEDER_EMAIL_PREFIX: ’skip’
+2022-05-24 17:34:52 default[20220524t173310]    PROD_SSL_DBKEY_PATH: ’skip’
+2022-05-24 17:34:52 default[20220524t173310]    PROD_SEEDER_EMAIL_SUFFIX: ’skip’',
+2022-05-24 17:34:52 default[20220524t173310]    PROD_STORAGE_CONFIG_BUCKET: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_SSL_DBCA_PATH: ’skip’,
+2022-05-24 17:34:52 default[20220524t173310]    PROD_IMGUR_CLIENT_ID: ’skip’
+2022-05-24 17:34:52 default[20220524t173310]  }
+```
+
+
 
 ---
 Status: #🌱 

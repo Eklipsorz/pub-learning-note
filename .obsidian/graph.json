@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "gcp",
+  "search": "",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0125935290450918,
-  "close": true
+  "scale": 0.2616139447179033,
+  "close": false
 }

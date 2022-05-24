@@ -55,7 +55,7 @@
 - Google Cloud Storage 
 [[使用Google cloud storage API來上傳檔案至storage平台上]]
 [[Cloud Storage 是Google 用來儲存資料的雲端服務]] 
-[[cloud storage-bucket- A bucket name is needed to use]]
+[[gcloudignore造成.env檔案無法正常上傳至app engine]]
 [[gsutil 是用來遠端操控Cloud Storage的工具]]
 [[讀取指定google storage bucket下的指定物件]]
 
