@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+            "file": "cloud shell 可連線至指定專案下的Serverless Service主機.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "connector",
+                "query": "gcloud",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+                "file": "cloud shell 可連線至指定專案下的Serverless Service主機.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +96,15 @@
   },
   "active": "957d676cc17b7a5a",
   "lastOpenFiles": [
+    "cloud shell 可連線至指定專案下的Serverless Service主機.md",
+    "inbox/cloud storage-bucket- A bucket name is needed to use.md",
     "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
     "develop/GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/cloud storage-bucket- A bucket name is needed to use.md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
     "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/How to cite and highlight in obsidian.md",
-    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-    "inbox/belazy shop 作品集 - reply 路徑設計.md"
+    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md"
   ]
 }
