@@ -49,7 +49,7 @@ Status: #🌱
 Tags:
 [[Network]] - [[VPC]] - [[GCP]]
 Links:
-[[GCP- region & zone，region 是指資料中心的所在地，zone會是指實際資料中心]]
+[[GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心]]
 [[Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞]]
 [[設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格]]
 References:

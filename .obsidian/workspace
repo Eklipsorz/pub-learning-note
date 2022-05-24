@@ -7,85 +7,104 @@
         "id": "957d676cc17b7a5a",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "develop/GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心.md",
+            "mode": "source"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ca1e5d3b30957ab3",
-    "type": "mobile-drawer",
+    "id": "c14f85f051c47b19",
+    "type": "split",
     "children": [
       {
-        "id": "78c1da3209f1f22c",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "780e5532142e160d",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "cb59ae0977574a2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cafff7fd047a3d6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d2335b6cc36453b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "zone",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 374.5
   },
   "right": {
-    "id": "bd3550761ea0f5f8",
-    "type": "mobile-drawer",
+    "id": "818cdd2c8d559c63",
+    "type": "split",
     "children": [
       {
-        "id": "fa4445755ae88926",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "d660f5648f3292d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc2c437bbcb9c81a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "develop/GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1d6a45ea9d33bb93",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "33cbfdcc501514d4",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "957d676cc17b7a5a",
   "lastOpenFiles": [
-    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-    "inbox/belazy shop 作品集 - reply 路徑設計.md",
+    "develop/GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心.md",
+    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
     "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
     "inbox/cloud storage-bucket- A bucket name is needed to use.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
-    "pots/git 系統會存取每個檔案的權限？.md",
-    "pots/instanceof 是operator.md",
-    "pots/multer： 以硬碟來儲存被上傳的檔案 vs 以記憶體來儲存被上傳的檔案.md",
-    "pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md"
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/How to cite and highlight in obsidian.md",
+    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+    "inbox/belazy shop 作品集 - reply 路徑設計.md",
+    "pots/git 系統會存取每個檔案的權限？.md"
   ]
 }

@@ -32,6 +32,7 @@ connector 具體有幾項設定：
 <!--SR:!2022-05-27,3,250-->
 
 #🧠 說明一下connector 的情況，所處哪個網路？ ![](https://cloud.google.com/vpc/images/serverless-vpc-access.svg) ->->-> `當設定完connector，指定VPC網路會有一個connector，而他在VPC的網路IP會是10.8.0.0/28`
+<!--SR:!2022-05-27,3,250-->
 
 #🧠 說明一下connector 的情況，當外部網路想透過它轉發，會是？![](https://cloud.google.com/vpc/images/serverless-vpc-access.svg) ->->-> `當當VPC外部的服務想要透過connector來轉發封包至內部的服務時，其實能透過serviceless VPC Access來找到對應的connector來進行轉發，這時connector就會透上述IP來轉發封包`
 
@@ -40,7 +41,7 @@ Status: #🌱
 Tags:
 [[Network]] - [[Serverless]] - [[GCP]]
 Links:
-[[GCP- region & zone，region 是指資料中心的所在地，zone會是指實際資料中心]]
+[[GCP- region & zone，region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心]]
 [[Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞]]
 [[VPC 如同實體網路可以擁有屬於自己的子網域]]
 References:
