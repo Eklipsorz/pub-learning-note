@@ -7,92 +7,73 @@
         "id": "957d676cc17b7a5a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "954b9a3e0a6e7469",
-    "type": "split",
+    "id": "ca1e5d3b30957ab3",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "c22df9a76afca0f9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1e9054f6b3e563a5",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "32b71cb703a3cc53",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "78c1da3209f1f22c",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "780e5532142e160d",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 557.5
+    "currentTab": 0
   },
   "right": {
-    "id": "eed195b8e19ac70d",
-    "type": "split",
+    "id": "bd3550761ea0f5f8",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "3c1bacebbed7f551",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "13716e89ef193256",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "6c9a521059146e5f",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "fa4445755ae88926",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "33cbfdcc501514d4",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "active": "957d676cc17b7a5a",
   "lastOpenFiles": [
