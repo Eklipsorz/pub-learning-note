@@ -20,6 +20,7 @@
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653319253/blog/network/serverless/serverless-vpc-access-connector_myh7pz.png)
 
 ## 複習
+#🧠 Question :: ->->-> ``
 
 #🧠 Serverless VPC access connector 是什麼？->->-> `負責轉遞指定VPC和Serverless environment兩者間的封包轉遞`
 <!--SR:!2022-05-27,3,250-->
