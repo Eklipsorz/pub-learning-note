@@ -1,88 +1,34 @@
 ## 描述
 
+若要在其他客戶端環境下來使用GCP SDK建立特定storage bucket以及在bucket建立物件的話，必須要先讓SDK能夠擁有足夠權限來調用對應API的資源，其方式主要有：
+ - 使用對應權限的access-token
 
-使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key)
+在這裡會探討著**使用對應權限的access-token**
 
-
-
-Create a service account:
-
-1.  In the Cloud console, go to the **Create service account** page.
-    
-    [Go to Create service account](https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts/create?supportedpurview=project&_ga=2.195391724.1532012106.1653075287-1061095323.1651492866&_gac=1.250609140.1653101683.Cj0KCQjw-JyUBhCuARIsANUqQ_KGPwgT76S49-UR_g1OggGZhVMqQ3ZB3UIpkbue7nYf0-24rNhzrxAaAjIhEALw_wcB)
-2.  Select your project.
-3.  In the **Service account name** field, enter a name. The Cloud console fills in the **Service account ID** field based on this name.
-    
-    In the **Service account description** field, enter a description. For example, `Service account for quickstart`.
-    
-4.  Click **Create and continue**.
-5.  To provide access to your project, grant the following role(s) to your service account: **Project > Owner**.
-    
-    In the **Select a role** list, select a role.
-    
-    For additional roles, click add **Add another role** and add each additional role.
-    
-    **Note**: The **Role** field affects which resources your service account can access in your project. You can revoke these roles or grant additional roles later. In production environments, do not grant the Owner, Editor, or Viewer roles. Instead, grant a [predefined role](https://cloud.google.com/iam/docs/understanding-roles#predefined_roles) or [custom role](https://cloud.google.com/iam/docs/understanding-custom-roles) that meets your needs.
-    
-6.  Click **Continue**.
-7.  Click **Done** to finish creating the service account.
-    
-    Do not close your browser window. You will use it in the next step.
-    
-
-Create a service account key:
-
-1.  In the Cloud console, click the email address for the service account that you created.
-2.  Click **Keys**.
-3.  Click **Add key**, and then click **Create new key**.
-4.  Click **Create**. A JSON key file is downloaded to your computer.
-5.  Click **Close**.
-
-
+流程有：
+- 建立對應服務帳號
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653406080/blog/network/iam/create-service-account-first-step_epbv3e.png)
+- 設定對應服務帳號所擁有的權限：在這裡會是Owner、Storage Admin、Storage Object Viewer、Storage Object Creator
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653406080/blog/network/iam/create-service-account-second-step_hfribp.png)
+- 替對應服務帳號建立一組代表它權限的key或者access token
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653406552/blog/network/iam/create-access-token_cjyxma.png)
+- 指定key格式為json，並下載至本地端存放
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653406552/blog/network/iam/access-token-type_nz2cnx.png)
+- 設定環境變數GOOGLE_APPLICATION_CREDENTIAL，並指定為key目前所在
 ```
 export GOOGLE_APPLICATION_CREDENTIAL=KEY_PATH
 ```
 
-讓google api 透過key來獲取對應權限來使用
+這樣就能讓SDK透過環境變數來讀取到key值，並確認它的權限是否能夠允許執行接下來使用者要求SDK要做的事情。
 
+## 複習
+#🧠 讓SDK能夠擁有足夠權限來調用對應API的資源，其方式主要有哪個方法？ ->->-> `使用對應權限的access-token`
 
-
-
-
-讀取檔案可以夾帶著檔案所在的目錄，如xxxxx/xxxx.pem中的xxxxx目錄
-
-```
-function readCloudStorageFile(filepath) {
-	return new Promise((resolve, reject) => {
-		const chunks = []
-		const blob = bucket.file(filepath)
-		const readStream = blob.createReadStream()
-		.on('error', (error) => reject(error))
-		.on('end', (data) => resolve(chunks))
-		.on('data', chunk => {
-			chunks.push(chunk)
-		})	
-	})
-}
-
-async function main() {
-	const content = await readCloudStorageFile('xxxxx/xxxx.pem')
-	const result = Buffer.concat([content[0], content[1]])
-	console.log(content, result)
-
-}
-
-```
-
-
-對指定bucket設定acl，只允許擁有者能夠存取
-
-
-
-
-
-key ca cert 集中放在一起，開發時不必因爲這些檔案在別的電腦而到處轉移，只需要從集中存放區重新下載回來就行
-
-
-
-https://github.com/eashish93/imgsquash/issues/2
+---
+Status: #🌱 
+Tags: 
+[[GCP]] - [[IAM]]
+Links:
+References:
+[[@googlecloudCreateManageService]]
+[[@eashish93BucketNameNeeded]]

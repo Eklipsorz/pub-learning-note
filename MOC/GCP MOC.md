@@ -48,11 +48,16 @@
 - cloud shell
 [[cloud shell 可連線至指定專案下的Serverless Service主機]] 
 
+
+- Cloud SQL
+[[Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密]]
+
 - Google Cloud Storage 
 [[使用Google cloud storage API來上傳檔案至storage平台上]]
 [[Cloud Storage 是Google 用來儲存資料的雲端服務]] 
 [[cloud storage-bucket- A bucket name is needed to use]]
 [[gsutil 是用來遠端操控Cloud Storage的工具]]
+[[讀取指定google storage bucket下的指定物件]]
 
 - VPC
 [[VPC 如同實體網路可以擁有屬於自己的子網域]]
