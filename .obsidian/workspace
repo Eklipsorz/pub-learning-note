@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+            "file": "inbox/Redis Command.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "2508fa74992a1ebf",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Redis Command.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+                "file": "inbox/Redis Command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +107,7 @@
   },
   "active": "275bda0c058bb8d9",
   "lastOpenFiles": [
+    "inbox/Redis Command.md",
     "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/staging area 和 index 兩者皆為一樣.md",
     "develop/VPC 如同實體網路可以擁有屬於自己的子網域.md",
@@ -104,7 +116,6 @@
     "MOC/GCP MOC.md",
     "pots/Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
     "pots/Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密.md",
-    "pots/cloud shell 可連線至指定專案下的Serverless Service主機.md",
-    "pots/讀取指定google storage bucket下的指定物件.md"
+    "pots/cloud shell 可連線至指定專案下的Serverless Service主機.md"
   ]
 }
