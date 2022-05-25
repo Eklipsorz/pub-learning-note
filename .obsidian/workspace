@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/GCP MOC.md",
+            "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bucket.file",
+                "query": "區域",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/GCP MOC.md",
+                "file": "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "275bda0c058bb8d9",
   "lastOpenFiles": [
+    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+    "develop/staging area 和 index 兩者皆為一樣.md",
+    "develop/VPC 如同實體網路可以擁有屬於自己的子網域.md",
+    "pots/redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線.md",
+    "pots/Serverless Computing 將對於伺服器本身的開發和管理 從開發抽離出來.md",
     "MOC/GCP MOC.md",
     "pots/Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
     "pots/Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密.md",
     "pots/cloud shell 可連線至指定專案下的Serverless Service主機.md",
-    "pots/讀取指定google storage bucket下的指定物件.md",
-    "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
-    "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
-    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-    "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
-    "pots/Compute engine VM 和 memoryStore會是在VPC內部的服務.md"
+    "pots/讀取指定google storage bucket下的指定物件.md"
   ]
 }
