@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "676a87cfca6a144d",
+        "id": "275bda0c058bb8d9",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -90,14 +90,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "676a87cfca6a144d",
+  "active": "275bda0c058bb8d9",
   "lastOpenFiles": [
+    "pots/Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
+    "pots/Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密.md",
+    "pots/cloud shell 可連線至指定專案下的Serverless Service主機.md",
+    "pots/讀取指定google storage bucket下的指定物件.md",
     "MOC/GCP MOC.md",
-    "Cloud SQL 與客戶端之間的傳輸過程使用SSL來加密.md",
     "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
-    "Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
-    "讀取指定google storage bucket下的指定物件.md",
-    "cloud shell 可連線至指定專案下的Serverless Service主機.md",
     "pots/使用Google cloud storage API來上傳檔案至storage平台上.md",
     "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
     "pots/Blob 在JavaScript 中是一個專門處理和儲存二進制檔案內容的物件.md",
