@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "fa9c52a3f79dbd14",
+        "id": "2b725bc55301558b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
+            "file": "Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "b5af109fe92f142e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
-            "mode": "preview"
           }
         }
       }
@@ -50,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Redis Hash是儲存多個key-value的字典",
+                "query": "Redis",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
+                "file": "Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fa9c52a3f79dbd14",
+  "active": "2b725bc55301558b",
   "lastOpenFiles": [
-    "Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
+    "Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "MOC/Redis MOC.md",
-    "inbox/Redis 的Value主要結構為 String 和 Hash.md",
-    "MOC/GCP MOC.md",
+    "annotation/@RedisCunjsonZiLiaoShiXuanZestringHuanShihash.md",
+    "inbox/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
     "inbox/Redis Hash是儲存多個key-value的字典.md",
     "inbox/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
-    "pots/dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述.md",
-    "annotation/@yunshu_youpaiyunRedisCunChuDuiXiangXinXiShiYongHash.md",
-    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
-    "develop/staging area 和 index 兩者皆為一樣.md"
+    "inbox/Redis 的Value主要結構為 String 和 Hash.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "MOC/GCP MOC.md",
+    "pots/dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述.md"
   ]
 }
