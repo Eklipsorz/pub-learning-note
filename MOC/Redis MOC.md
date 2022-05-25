@@ -12,3 +12,6 @@
 
 - Simple Dynamic String
 [[Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間]]
+
+- Hash
+[[Redis Hash是儲存多個key-value的字典]]

@@ -20,13 +20,13 @@ age = 28
 
 ### Hash
 
-
-
 ---
 Status: #🌱 
 Tags:
 [[Redis]] - [[Operating System]]
 Links:
 [[Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間]]
+[[Redis Hash是儲存多個key-value的字典]]
 References:
+
 [[@yunshu_youpaiyunRedisCunChuDuiXiangXinXiShiYongHash]]
