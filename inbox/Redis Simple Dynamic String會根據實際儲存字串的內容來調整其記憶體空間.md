@@ -32,7 +32,9 @@ struct __attribute__ ((__packed__)) sdshdr16 {
 };
 ```
 
-### SDS 建立
+### SDS 建立的記憶體
+當Redis要分配記憶體空間來儲存字串時，會讓實際儲存字串的記憶體大於實際字串大小，通常會是實際字串大小的一倍。
+
 
 
 ### 當SDS在被建立後更改字串時的動態調整 
@@ -64,6 +66,9 @@ if (newlen < SDS_MAX_PREALLOC)  // SDS_MAX_PREALLOC = 1024*1024
 else
    newlen += SDS_MAX_PREALLOC;
 ```
+
+
+但若新存放的字串大小是小於目前SDS所分配的buff大小，那麼就不更改其SDS結構
 
 ---
 Status: #🌱 

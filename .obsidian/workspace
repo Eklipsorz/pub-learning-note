@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/Redis MOC.md",
+            "file": "inbox/Redis 的Value主要結構為 String 和 Hash.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/Redis MOC.md",
+                "file": "inbox/Redis 的Value主要結構為 String 和 Hash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,9 +107,9 @@
   },
   "active": "2508fa74992a1ebf",
   "lastOpenFiles": [
+    "inbox/Redis 的Value主要結構為 String 和 Hash.md",
     "MOC/Redis MOC.md",
     "inbox/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
-    "inbox/Redis Command.md",
     "annotation/@yunshu_youpaiyunRedisCunChuDuiXiangXinXiShiYongHash.md",
     "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/staging area 和 index 兩者皆為一樣.md",

@@ -1,4 +1,8 @@
+## 描述
+
+
 Redis  主要是以key-value pair為主，
+
 
 value  可以是string 和 hash ，比如以下是某個使用者的資料
 ```
@@ -10,8 +14,19 @@ age = 28
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/10/3/1663a75da4aca1ed~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.image)
 
-redis string 會是Simple Dynamic String(SDS)
+
+### String
+主要會是採用SDS(Simple Dynamic String)來儲存字串
+
+### Hash
 
 
 
-HSET、HGET、
+---
+Status: #🌱 
+Tags:
+[[Redis]] - [[Operating System]]
+Links:
+[[Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間]]
+References:
+[[@yunshu_youpaiyunRedisCunChuDuiXiangXinXiShiYongHash]]
