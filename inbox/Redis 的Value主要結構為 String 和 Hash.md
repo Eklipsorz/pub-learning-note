@@ -1,8 +1,6 @@
 ## 描述
 
-
 Redis  主要是以key-value pair為主，
-
 
 value  可以是string 和 hash ，比如以下是某個使用者的資料
 ```
@@ -16,9 +14,13 @@ age = 28
 
 
 ### String
-主要會是採用SDS(Simple Dynamic String)來儲存字串
-
+主要會是採用SDS(Simple Dynamic String)來定義字串
+[[Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間]]
 ### Hash
+主要是以Dictionary形式來定義Hash
+[[Redis Hash是儲存多個key-value的字典]]
+
+### String 和 Hash 適用場景
 
 ---
 Status: #🌱 
