@@ -10,4 +10,8 @@ age = 28
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/10/3/1663a75da4aca1ed~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.image)
 
+redis string 會是Simple Dynamic String(SDS)
+
+
+
 HSET、HGET、
