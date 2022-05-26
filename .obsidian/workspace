@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Redis 伺服器若讀取到錯誤格式的資料庫會無法執行.md",
+            "file": "MOC/Redis MOC.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Redis 伺服器若讀取到錯誤格式的資料庫會無法執行.md",
+                "file": "MOC/Redis MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
-    "inbox/Redis 伺服器若讀取到錯誤格式的資料庫會無法執行.md",
-    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
     "MOC/Redis MOC.md",
+    "inbox/redis.conf 是設定Redis 伺服器預設要執行的參數.md",
+    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
+    "inbox/Redis 伺服器若讀取到錯誤格式的資料庫會無法執行.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "inbox/cargo 是 Rust's package manager.md",
     "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
     "develop/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
     "develop/Redis 的Value主要結構為 String 和 Hash.md",
-    "develop/Redis Hash是儲存多個key-value的字典.md",
-    "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md"
+    "develop/Redis Hash是儲存多個key-value的字典.md"
   ]
 }
