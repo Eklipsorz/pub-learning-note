@@ -13,3 +13,11 @@
 
 記得賦予cloud build 一個能夠存取serverless vpc 的權限
 Serverless VPC Access Admin
+
+
+https://stackoverflow.com/questions/69849117/gcloud-app-deploy-eror-the-vpcaccess-connectors-use-permission-is-required
+
+
+## 問題：
+1. Cloud build 權限問題
+2. app.yaml設定的connector是錯誤的，如projectid、地區、connector名稱
