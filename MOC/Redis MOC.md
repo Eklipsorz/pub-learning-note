@@ -24,3 +24,6 @@
 
 - RedisJSON
 [[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]
+
+- 問題：若一開始於Redis載入RedisJSON模組並設定JSON格式的value讓其儲存db的話，接著若以沒載入其模組的情況下執行Redis Server 會出錯
+[[Redis 伺服器若讀取到錯誤格式的資料庫會無法執行]]
