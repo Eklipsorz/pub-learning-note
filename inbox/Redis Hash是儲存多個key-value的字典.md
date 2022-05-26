@@ -36,12 +36,16 @@
 
 ## 複習
 #🧠 redis hash 是怎麼樣的型別->->-> `redis 的hash實際上是字典結構，字典上的每一個元素皆為key-value pair，每一個key都會對應特定的value。`
+<!--SR:!2022-05-29,3,250-->
 
 #🧠 redis hash 是賦予給誰的型別？ ->->-> `具體來說redis來說，它是一種以key-value pair為基本資料型態來儲存的資料庫，所以key通常會是字串或者數字，而value則是任意型別，hash則是可指定value的型別之一`
+<!--SR:!2022-05-29,3,250-->
 
 #🧠 redis hash vs. string 兩者間是如何儲存資料的？->->-> `較於String而言，hash可以將資料細分好幾個區塊來儲存，而String則是一股腦兒儲存整塊資料。`
+<!--SR:!2022-05-27,1,230-->
 
 #🧠 redis 如何在 hash 結構上存取資料? CRUD為？->->-> `讀取資料：根據key值和其對應hash上的key值來讀取對應的value，寫入資料：根據key值和其對應hash上的key值來寫入對應的value，更新資料：根據key值和其對應hash上的key值來更新對應的value，根據key值和其對應hash上的key值來刪除指定的key-value pair(在hash上的key-value pair)`
+<!--SR:!2022-05-29,3,250-->
 
 ---
 Status: #🌱 

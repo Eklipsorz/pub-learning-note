@@ -34,7 +34,7 @@ Serverless service:
 <!--SR:!2022-05-27,2,230-->
 
 #🧠 這圖說明nonserverless environment，請解釋Provider和User負責了什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653314112/blog/network/serverless/non-serverless-env_bbi9ve.png) ->->-> `提供者會負責處理使用者主機所在的環境是否穩定，使用者負責處理提供者所給予的主機(Host)環境以及如何在主機環境進行開發`
-<!--SR:!2022-05-26,2,248-->
+<!--SR:!2022-05-31,5,248-->
 
 #🧠 這圖說明serverless environment，請解釋Provider和User負責了什麼？  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653314112/blog/network/serverless/serverless-env_a6j5mv.png) ->->-> `提供者會負責使用者主機所在的環境是否穩定以及負責原本執行開發項目的主機，使用者只需要負責開發項目的開發，並且將項目部署至開發者指定的主機上`
 <!--SR:!2022-05-27,3,250-->

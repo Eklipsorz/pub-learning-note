@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "2b725bc55301558b",
+        "id": "8d754fffd4a55217",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -90,7 +90,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2b725bc55301558b",
+  "active": "8d754fffd4a55217",
   "lastOpenFiles": [
     "Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "MOC/Redis MOC.md",

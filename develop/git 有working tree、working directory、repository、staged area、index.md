@@ -35,7 +35,7 @@ git 系統當中，有五個主要的空間名詞，
 預設上會是無內容的目錄來代表目前所處於的版本。
 ## 複習
 #🧠 working directory & working tree  是什麼？ 用途是什麼？ ->->-> `以目錄來存放特定版本下的檔案內容，之所以會用tree來描述，也是強調著目錄會是以tree來構成`
-<!--SR:!2022-05-26,2,248-->
+<!--SR:!2022-05-30,4,248-->
 
 #🧠 staging area & index 是什麼？用途是什麼？ ->->-> `兩者都是一樣的，皆檔案形式來專門儲存哪些內容是 **準備提交至下一個版本的內容**。`
 <!--SR:!2022-05-27,3,250-->
@@ -44,13 +44,13 @@ git 系統當中，有五個主要的空間名詞，
 <!--SR:!2022-05-27,2,230-->
 
 #🧠  若於一開始下達git init來建立git系統的話，請問working directory 會是什麼 ->->-> `預設上會是無內容的目錄來代表目前所處於的版本`
-<!--SR:!2022-05-26,2,248-->
+<!--SR:!2022-05-30,4,248-->
 
 #🧠 請描述Working Directory、Staging Area、.git directory(Repository)會是指什麼 ![](https://git-scm.com/book/en/v2/images/areas.png) ->->-> `在這裡會是以某個版本的內容來作為working directory，staging area則是準備提交至repo資料庫的站存區，.git directory則是代表著repository`
 <!--SR:!2022-05-27,3,250-->
 
 #🧠 請描述這些流程如何運作？ ![](https://git-scm.com/book/en/v2/images/areas.png) ->->-> `1. 當特定版本的內容有出現變動時，也就是Working Directory包含的內容有變動的話。2. 下達git add 指定哪些內容成為下一個版本的內容，這時會是從working directory至staging area，3. 接著再下達git commit來提交目前暫存的內容至下一個版本，具體會存進repository，也就是從staging area傳至repository` 
-<!--SR:!2022-05-26,2,248-->
+<!--SR:!2022-05-31,5,248-->
 
 ---
 Status: #🌱 
