@@ -61,6 +61,9 @@ cargo test --features test
 /target/release/librejson.dylib
 ```
 
+## 測試伺服器是否支援
+執行JSON.SET、JSON.GET等RedisJSON額外提供的API於redis-cli或者以client library 來執行對應的API
+
 ## 模組相關問題
 [[Redis 伺服器若讀取到錯誤格式的資料庫會無法執行]]
 
