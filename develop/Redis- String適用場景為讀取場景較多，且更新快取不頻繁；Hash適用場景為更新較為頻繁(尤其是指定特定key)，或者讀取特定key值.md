@@ -126,7 +126,7 @@ Hash 適用場景為：
 ---
 Status: #🌱 
 Tags:
-[[Redis]]
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]
 Links:
 [[Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間]]
 [[Redis Hash是儲存多個key-value的字典]]

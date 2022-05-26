@@ -63,7 +63,7 @@ app.listen(port, () => {
 ---
 Status: #🌱 
 Tags:
-[[Redis]] - [[NoSQL]]
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]] - [[NoSQL]]
 Links:
 [[redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式]]
 References:

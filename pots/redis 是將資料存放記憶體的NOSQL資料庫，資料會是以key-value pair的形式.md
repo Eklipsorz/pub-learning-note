@@ -93,7 +93,7 @@ e.g., GET something
 ---
 Status: #🌱 
 Tags:
-[[Redis]] - [[NoSQL]]
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]] - [[NoSQL]]
 Links:
 [[node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令]]
 References:

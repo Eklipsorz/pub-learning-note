@@ -104,7 +104,7 @@ else
 ---
 Status: #🌱 
 Tags:
-[[Redis]] - [[Operating System]]
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]] - [[Operating System]]
 Links:
 References:
 [[@redisHIREDIS2022]]

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
+            "file": "RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
             "mode": "source"
           }
         }
@@ -48,13 +48,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 499.5,
-    "collapsed": true
+    "width": 499.5
   },
   "right": {
     "id": "818cdd2c8d559c63",
@@ -70,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
+                "file": "RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,15 +96,15 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
-    "inbox/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
-    "Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
+    "RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
+    "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
+    "develop/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
+    "develop/Redis 的Value主要結構為 String 和 Hash.md",
+    "develop/Redis Hash是儲存多個key-value的字典.md",
+    "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "MOC/Redis MOC.md",
     "MOC/GCP MOC.md",
     "annotation/@RedisCunjsonZiLiaoShiXuanZestringHuanShihash.md",
-    "inbox/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
-    "inbox/Redis Hash是儲存多個key-value的字典.md",
-    "inbox/Redis 的Value主要結構為 String 和 Hash.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "pots/dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述.md"
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md"
   ]
 }

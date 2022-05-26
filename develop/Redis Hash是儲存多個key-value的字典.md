@@ -50,7 +50,7 @@
 ---
 Status: #🌱 
 Tags:
-[[Redis]]-[[Data Structure]]
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]-[[Data Structure]]
 Links:
 [[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
 References:
