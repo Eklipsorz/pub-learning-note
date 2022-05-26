@@ -19,3 +19,8 @@
 
 - Hash
 [[Redis Hash是儲存多個key-value的字典]]
+
+## 模組
+
+- RedisJSON
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]
