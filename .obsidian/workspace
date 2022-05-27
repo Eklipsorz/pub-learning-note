@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+            "file": "Untitled.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
+    "Untitled.md",
     "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
     "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
     "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
@@ -115,7 +116,6 @@
     "develop/XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
     "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
-    "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
-    "MOC/Redis MOC.md"
+    "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md"
   ]
 }
