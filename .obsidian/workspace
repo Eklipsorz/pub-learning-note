@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
+            "file": "Untitled.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
+    "Untitled.md",
     "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
     "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
     "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
@@ -115,7 +116,6 @@
     "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
     "MOC/Redis MOC.md",
-    "MOC/JSONPath MOC.md",
-    "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md"
+    "MOC/JSONPath MOC.md"
   ]
 }
