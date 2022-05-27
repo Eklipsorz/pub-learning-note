@@ -7,8 +7,11 @@
         "id": "8d754fffd4a55217",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
+            "mode": "source"
+          }
         }
       },
       {
@@ -76,6 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,6 +107,8 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
+    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
     "develop/XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
     "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
@@ -110,8 +116,6 @@
     "MOC/Redis MOC.md",
     "MOC/JSONPath MOC.md",
     "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
-    "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
-    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
-    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md"
+    "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md"
   ]
 }
