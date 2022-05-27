@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+            "file": "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+            "file": "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+                "file": "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,9 +107,9 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
-    "express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
     "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+    "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
     "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
     "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
     "develop/XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
