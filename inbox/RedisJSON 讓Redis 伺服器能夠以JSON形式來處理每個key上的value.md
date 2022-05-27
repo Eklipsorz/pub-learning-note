@@ -70,7 +70,7 @@ cargo test --features test
 ---
 Status: #📥 
 Tags:
-[[JSON]] - [[Redis]]
+[[JSON]] - [[connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數]]
 Links:
 [[Redis 伺服器若讀取到錯誤格式的資料庫會無法執行]]
 References:

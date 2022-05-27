@@ -17,7 +17,7 @@
 ---
 Status: #🌱 
 Tags:
-[[JSON]] - [[Redis]]
+[[JSON]] - [[connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數]]
 Links:
 [[JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言]]
 [[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]

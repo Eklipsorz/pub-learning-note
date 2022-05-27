@@ -33,7 +33,7 @@ FLUSHALL
 ---
 Status: #📥 
 Tags:
-[[Redis]]
+[[connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數]]
 Links:
 [[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]
 References:
