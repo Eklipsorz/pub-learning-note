@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
+            "file": "Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
+                "file": "Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
+    "Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
     "XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "MOC/JSONPath MOC.md",
     "MOC/Redis MOC.md",
@@ -115,7 +116,6 @@
     "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
     "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
     "MOC/GCP MOC.md",
-    "inbox/redis.conf 是設定Redis 伺服器預設要執行的參數.md",
-    "inbox/Redis 伺服器若讀取到錯誤格式的資料庫會無法執行.md"
+    "inbox/redis.conf 是設定Redis 伺服器預設要執行的參數.md"
   ]
 }
