@@ -72,9 +72,6 @@ app.method(path, callback)
 > Forces the session to be saved back to the session store, even if the session was never modified during the request. Depending on your store this may be necessary, but it can also create race conditions where a client makes two parallel requests to your server and changes made to the session in one request may get overwritten when the other request ends, even if it made no changes (this behavior also depends on what store you're using).
 
 
-#### 如何實現產生/管理對應的cookie和session？
- 具體來說，當載入該模組時，客戶端和伺服器端只要處於request/response cycle的話，就會建立session來紀錄兩者的連線過程，同時間會賦予session id 給該session並讓客戶端建立cookie去儲存session id，而到時cookie只要拿著這session id發送請求至伺服器，伺服器收到便拿該id獲取對應先前的連線過程是什麼。
-
 
 ## 複習
 #🧠 Express-Session 是Express 框架的模組，用途是什麼？->->-> `主要幫助開發者產生/管理對應的cookie和session，具體是以middleware來攔截每個請求來管理/產生session，並且要求客戶端儲存對應的session id當作其cookie的內容、等到客戶端持著夾帶合法session id的cookie來向伺服器發送請求，伺服器上該套件就會攔截並輸出對應的session內容至req.session來給後續middleware使用`
@@ -84,7 +81,7 @@ app.method(path, callback)
 
 #🧠 session(options)的options 所描述的saveUninitialized是 ->->-> `原本當客戶端與伺服器開始進行連線時，就會開始建立session物件來紀錄兩者在連線時的狀態，且剛建立的session物件的屬性未在伺服器中被任意值來寫入，此session就會被當作未初始化的session，而若saveUninitialized被設定為true時，就便會將未初始化的session儲存在伺服器的session store，而saveUninitialized被設定為false時，就便不會將未初始化的session儲存在伺服器session store`
 
-#🧠 session(options)的options 所描述的resave是 ->->-> `定義session儲存在哪？選項有內建的MemoryStore、資料庫、redis`
+#🧠 session(options)的options 所描述的resave是 ->->-> `每一次客戶端和伺服器之間只要出現連線互動，所對應的session都會重新寫進至session store，即使從store取出來的session 沒有被伺服器修改，也會重新寫進store並更新過期時間；若為false，就直接關閉這項功能`
 
 ---
 Status: #🌱 

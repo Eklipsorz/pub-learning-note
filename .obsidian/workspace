@@ -7,18 +7,21 @@
         "id": "676f0807f7ded4ee",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
+            "mode": "source"
+          }
         }
       },
       {
-        "id": "cebb7459aa8af7bc",
+        "id": "df7d13e12301638c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
-            "mode": "source"
+            "file": "develop/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+            "mode": "preview"
           }
         }
       }
@@ -76,6 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +107,15 @@
   },
   "active": "676f0807f7ded4ee",
   "lastOpenFiles": [
-    "session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
-    "若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session.md",
-    "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
-    "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
-    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
-    "MOC/Express MOC.md",
-    "客戶端每當發送請求時，會根據請求的Domain會是什麼而根據cookie上 Domain欄位來添加對應的cookie內容至請求封包.md",
     "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
-    "在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md"
+    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
+    "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
+    "develop/在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
+    "develop/客戶端每當發送請求時，會根據請求的Domain會是什麼而根據cookie上 Domain欄位來添加對應的cookie內容至請求封包.md",
+    "develop/若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session.md",
+    "develop/session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
+    "develop/Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+    "develop/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md"
   ]
 }
