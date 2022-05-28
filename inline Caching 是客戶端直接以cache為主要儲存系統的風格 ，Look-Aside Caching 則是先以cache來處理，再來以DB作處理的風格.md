@@ -23,7 +23,8 @@
 ---
 Status: #🌱 
 Tags:
-[[客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略]] - [[Redis]] - [[Database]]
+[[Caching]] - [[Redis]] - [[Database]]
 Links:
+[[客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略]]
 References:
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]

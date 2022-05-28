@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/Caching Strategy MOC.md",
+            "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "78f5cf1ce7c5aae3",
+        "id": "bd76b838eb158995",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
+            "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/Caching Strategy MOC.md",
+                "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "676f0807f7ded4ee",
   "lastOpenFiles": [
+    "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
+    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
+    "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
+    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
     "MOC/Caching Strategy MOC.md",
     "MOC/Redis MOC.md",
-    "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
     "MOC/JSONPath MOC.md",
-    "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
     "MOC/GCP MOC.md",
-    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
     "templates/📖 +🤔.md",
-    "templates/📝.md",
-    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md"
+    "templates/📝.md"
   ]
 }
