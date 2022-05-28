@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
+            "file": "MOC/Caching Strategy MOC.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "8eeff4f8f5dd7c0e",
+        "id": "78f5cf1ce7c5aae3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
+            "file": "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
             "mode": "preview"
           }
         }
@@ -63,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 578.5
+    "width": 620.5
   },
   "right": {
     "id": "818cdd2c8d559c63",
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
+                "file": "MOC/Caching Strategy MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "676f0807f7ded4ee",
   "lastOpenFiles": [
-    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
-    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
-    "develop/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+    "MOC/Caching Strategy MOC.md",
     "MOC/Redis MOC.md",
-    "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
-    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
-    "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
-    "develop/在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
-    "develop/客戶端每當發送請求時，會根據請求的Domain會是什麼而根據cookie上 Domain欄位來添加對應的cookie內容至請求封包.md",
-    "develop/若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session.md"
+    "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
+    "MOC/JSONPath MOC.md",
+    "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
+    "MOC/GCP MOC.md",
+    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
+    "templates/📖 +🤔.md",
+    "templates/📝.md",
+    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md"
   ]
 }

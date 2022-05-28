@@ -39,5 +39,5 @@
 
 
 ## 使用策略
-- redis dirty read
-[[redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料]]
+- Caching Strategy
+[[Caching Strategy MOC]]
