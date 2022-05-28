@@ -22,16 +22,16 @@
 
 ## 複習
 #🧠 GCP - Serverless VPC access  背景是什麼 ->->-> `原本Serverless Service 是沒有與任何VPC進行連接，只能對外使用，但由於使用者若要索求VPC內的Service，則必須讓Serverless Server去連接VPC來獲取，所以就衍生出Serverless VPC access  `
-<!--SR:!2022-05-27,3,250-->
+<!--SR:!2022-06-08,11,250-->
 
 #🧠 GCP - Serverless VPC access  是什麼樣的技術 ->->->  `具體透過access connector來轉遞VPC和Serverless environment兩者間的封包轉遞`
-<!--SR:!2022-05-27,3,250-->
+<!--SR:!2022-06-06,9,250-->
 
 #🧠 Serverless VPC access connector 是什麼？->->-> `負責轉遞指定VPC和Serverless environment兩者間的封包轉遞`
-<!--SR:!2022-05-27,3,250-->
+<!--SR:!2022-06-07,10,250-->
 
 #🧠 試說明一下VPC以外的App Engine傳遞請求封包至VPC的Service !![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653398292/blog/network/serverless/serverless-service-network-to-connector_pb4710.png)->->-> `在這裡App Engine為了傳送請求封包至VPC下的Service，而將封包轉遞給connector，由處於VPC的connector將封包傳給指定的VPC下Service，接著Service收到後就處理並向connector回傳結果，而connector就將結果轉遞至App Engine`
-<!--SR:!2022-05-27,3,250-->
+<!--SR:!2022-06-08,11,250-->
 
 ---
 Status: #🌱 

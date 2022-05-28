@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
+            "file": "Untitled.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "50a0404cef89fd03",
+        "id": "74125ce04cff02e8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+            "file": "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
             "mode": "preview"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "yaml",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "8d754fffd4a55217",
   "lastOpenFiles": [
+    "Untitled.md",
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
+    "pots/dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述.md",
+    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
+    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
     "connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
     "body parser 是express內建套件且 用來將請求封包下的message body轉換成伺服器可讀取的形式.md",
     "async function 會報錯.md",
     "只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
-    "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
-    "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
-    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
-    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
-    "develop/XPath 是基於XML樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md"
+    "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md"
   ]
 }

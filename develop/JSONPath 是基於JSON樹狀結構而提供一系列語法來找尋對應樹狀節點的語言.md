@@ -10,8 +10,10 @@
 ## 複習
 
 #🧠 JSONPath 是什麼樣的語言？ ->->-> `是一種Expression Language，受到XPath啟發，也是基於JSON結構上也可以如同樹狀結構而提供一系列語法能夠對應特定樹狀節點`
+<!--SR:!2022-05-31,3,250-->
 
 #🧠 JSONPath 的 root 節點會是什麼？ 為什麼？->->-> `由於JSON 本身並沒有declaration 來定義其文件內容以及沒有主要的root節點，所以在JSONPath上的root節點會是以整個JSON object 作為代表，並以**$** 來表示`
+<!--SR:!2022-05-31,3,250-->
 
 
 ---
