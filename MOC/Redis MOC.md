@@ -36,3 +36,8 @@
 
 - RedisJSON JSONPath
 [[RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品]]
+
+
+## 使用策略
+- redis dirty read
+[[redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料]]
