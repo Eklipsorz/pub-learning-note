@@ -44,6 +44,7 @@ Tags:
 [[Data Structure]]
 Links:
 [[Redis 的Value主要結構為 String 和 Hash]]
+[[Abstract Data Type 是一種描述資料種類的模型，主要定義特定資料是什麼以及能對其資料做什麼樣的操作]]
 References:
 [[@isaaccomputerscienceDictionariesADT]]
 

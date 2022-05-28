@@ -1,4 +1,14 @@
-## body parser
+## 描述
+
+### body parser
+根據[[@expressExpressBodyparserMiddleware]]所描述：
+> Node.js body parsing middleware.
+> Parse incoming request bodies in a middleware before your handlers, available under the `req.body`property.
+
+它在Express 4.17前是第三方套件，隨後就內建在Express 框架下，功能有：
+- body-parser 本身是一個主要能接收請求封包或封包並解析成對應結果的middleware
+- 當請求經過該middleware時，只要在處理後就會將解析結果放至req.body
+
 
 1. 它本身是一個middleware function，用來解析request object所包含的Message Body並轉換成伺服器可讀取的形式，該形式會另外替middleware function用上的request物件增加一個新屬性-body，而新屬性值為內容轉換後的內容。
 
@@ -21,3 +31,18 @@ express.urlencoded([options])
 ```
 express.urlencoded({ extended: true })
 ```
+
+
+## 複習
+#🧠 Question :: ->->-> ``
+#🧠 Question :: ->->-> ``
+#🧠 Question :: ->->-> ``
+#🧠 Question :: ->->-> ``
+
+---
+Status: #🌱 
+Tags:
+[[Express]]
+Links:
+References:
+[[@expressExpressBodyparserMiddleware]]
