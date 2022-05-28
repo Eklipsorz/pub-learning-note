@@ -5,6 +5,7 @@
 > In computer science, an **abstract data type** (**ADT**) is a mathematical model for data types. An abstract data type is defined by its behavior (semantics) from the point of view of a _user_, of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations.
 
 重點：
+- Abstract Data Type 的 Abstract 是強調Data Type會是以概念來描述，而非以實際的實現來描述
 - Abstract data type 是一種對於資料種類的描述模型
 - 其模型主要描述特定資料，描述特定資料的具體形式是什麼以及能對它做些什麼樣的操作
 - 操作會是以函式來表示，主要會是表達函式回傳什麼、處理什麼、輸入是什麼
@@ -49,6 +50,8 @@ isFull()
 ```
 
 ## 複習
+
+#🧠 Abstract Data Type 的 Abstract 是指什麼？ ->->-> `是強調Data Type會是以概念來描述，而非以實際的實現來描述`
 
 #🧠 Abstract Data Type 是什麼？ ->->-> `是一種對於資料種類的描述模型，其模型主要描述特定資料，描述特定資料的具體形式是什麼以及能對它做些什麼樣的操作，操作會是以函式來表示，主要會是表達函式回傳什麼、處理什麼、輸入是什麼`
 

@@ -4,7 +4,10 @@
 ### Express-Session
 
 #### 它是什麼？用途是什麼
-一種實現在express框架上的第三方套件，非官方套件，主要幫助開發者產生/管理對應的cookie和session
+1. 一種實現在express框架上的套件，主要幫助開發者產生/管理對應的cookie和session
+2. express-session 具體是以middleware來攔截每個請求來管理/產生session，並且要求客戶端儲存對應的session id當作其cookie的內容，並於伺服器內輸出其session結果至req.session來給後續middleware使用
+3. 
+
 
 
 #### 安裝/設定方式
@@ -13,7 +16,16 @@ express-session 套件安裝方式：
 npm install express-session
 ```
 
-套件載入至主程式(伺服器)的方式：由於該套件是以middleware為主，該middleware會攔截請求封包並設定對應的cookie、session等資訊，設定為
+套件載入至主程式(伺服器)的方式：由於該套件是以middleware為主，
+```
+// load express-session
+// 其套件的回傳內容是本身是一個middleware function
+const session = require('express-session')
+app.use('/', seession( options ))
+
+```
+
+該middleware會攔截請求封包並設定對應的cookie、session等資訊，設定為
 ```
 // 替req增加屬性，如req.session
 req.session = .....
@@ -27,7 +39,7 @@ req.cookie = .....
 const session = require('express-session')
 app.use('/', seession( options ))
 
-// other routes (other middleware functions)
+// 給其他middleware得知
 app.method(path, callback)
 app.method(path, callback)
 .
@@ -59,11 +71,17 @@ app.method(path, callback)
  具體來說，當載入該模組時，客戶端和伺服器端只要處於request/response cycle的話，就會建立session來紀錄兩者的連線過程，同時間會賦予session id 給該session並讓客戶端建立cookie去儲存session id，而到時cookie只要拿著這session id發送請求至伺服器，伺服器收到便拿該id獲取對應先前的連線過程是什麼。
 
 
+## 複習
+#🧠 Express-Session 是Express 框架的模組，用途是什麼？->->-> `主要幫助開發者產生/管理對應的cookie和session，具體是以middleware來攔截每個請求來管理/產生session，並且要求客戶端儲存對應的session id當作其cookie的內容，並於伺服器內輸出其session結果至req.session來給後續middleware使用`
+#🧠 當客戶端拿到session id時，要如何 ->->-> ``
+#🧠 Question :: ->->-> ``
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
 Tags:
 [[Express]] 
 Links:
-
+[[Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改]]
+[[body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body]]
 References:

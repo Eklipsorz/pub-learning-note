@@ -4,13 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "8be615444dda28d9",
+        "id": "676f0807f7ded4ee",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "0772865b57530ea9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ADT",
+                "query": "abstract",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body.md",
+                "file": "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,17 +105,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8be615444dda28d9",
+  "active": "676f0807f7ded4ee",
   "lastOpenFiles": [
-    "body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body.md",
+    "Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+    "只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
     "MOC/Express MOC.md",
+    "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+    "body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body.md",
     "develop/Abstract Data Type 是一種描述資料種類的模型，主要定義特定資料是什麼以及能對其資料做什麼樣的操作.md",
     "annotation/@expressExpressBodyparserMiddleware.md",
     "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
-    "Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
     "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
-    "pots/dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述.md",
-    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md"
+    "pots/dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述.md"
   ]
 }

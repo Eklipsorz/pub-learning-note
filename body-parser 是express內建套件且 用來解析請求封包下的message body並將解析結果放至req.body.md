@@ -1,28 +1,43 @@
 ## 描述
 
-### body parser
+### body-parser
 根據[[@expressExpressBodyparserMiddleware]]所描述：
 > Node.js body parsing middleware.
 > Parse incoming request bodies in a middleware before your handlers, available under the `req.body`property.
 
 它在Express 4.17前是第三方套件，隨後就內建在Express 框架下，功能有：
-- body-parser 本身是一個主要能接收請求封包或封包並解析成對應結果的middleware
-- 當請求經過該middleware時，只要在處理後就會將解析結果放至req.body
+- body-parser 本身是一個主要能接收請求封包內的body部分或封包內的body部分並解析成對應結果的middleware
+- 當請求經過該middleware時，就會從請求封包內取出body內並經過處理，處理後就將解析結果放至req.body
 
 
-1. 它本身是一個middleware function，用來解析request object所包含的Message Body並轉換成伺服器可讀取的形式，該形式會另外替middleware function用上的request物件增加一個新屬性-body，而新屬性值為內容轉換後的內容。
-
-  
-
-2. body parser 在Express 4.17之前是第三方套件，隨後就內建在Express，且body parser本身能解析不同形式的內容，其中一個最知名的是解析URL編碼，在這裏內建的function 是如下，其中options會是option物件，用來設計解析過程如何實現，option物件較常使用的屬性為extended，這是用指定解析URL 編碼的函式庫是什麼，若是true的話，就是指定qs 函式庫，若是false的話，就是指定querystring函式庫
-
-  
-
+### body-parser 模組下還具有以下子模組
+根據body內容種類的不同，大致上可以區分成：
+- 以JSON格式所組成的Body：
+- 以URL 編碼表格格式所組成的：以多個key-value pair所組成，每一個key和value都適用URL 編碼(百分比編碼)，若有多個key-value pair會用&相接，比如
 ```
-express.urlencoded([options])
+key1=value1&key2=value2
 ```
 
+> This module provides the following parsers:
+> -   [JSON body parser](http://expressjs.com/en/resources/middleware/body-parser.html#bodyparserjsonoptions)
+> -   [URL-encoded form body parser](http://expressjs.com/en/resources/middleware/body-parser.html#bodyparserurlencodedoptions)
 
+若要解析JSON格式的Body，可用JSON body-parser，會如同body-parser將解析結果輸出至req.body，載入方式如下：
+
+```
+// app.use若沒指定路徑，就預設為/，並且每當任意請求發送過來就會使用json解析
+app.use(express.json())
+```
+
+
+若要解析URL編碼表格格式的Body，可用 URL-encoded form body parser，會如同body-parser將解析結果輸出至req.body，載入方式如下：
+
+```
+// app.use若沒指定路徑，就預設為/，並且每當任意請求發送過來就會使用urlencoded解析
+app.use(express.urlencoded({ extended: true }))
+```
+
+其中extended 是指定
 
 > This option allows to choose between parsing the URL-encoded data with the `querystring` library (when `false`) or the `qs` library (when `true`). The “extended” syntax allows for rich objects and arrays to be encoded into the URL-encoded format, allowing for a JSON-like experience with URL-encoded. For more information,
 
@@ -34,10 +49,11 @@ express.urlencoded({ extended: true })
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
-#🧠 Question :: ->->-> ``
-#🧠 Question :: ->->-> ``
-#🧠 Question :: ->->-> ``
+#🧠 body-parser 是express 框架的套件，其套件用途是做什麼？->->-> `body-parser 本身是一個主要能接收請求封包內的body部分或封包內的body部分並解析成對應結果的middleware，當請求經過該middleware時，就會從請求封包內取出body內並經過處理，處理後就將解析結果放至req.body`
+#🧠 body-parser 和 express.json 關係是什麼？express.json做啥用？ ->->-> `body-parser是解析請求封包的body，而express.json是body-parser的子模組，負責解析請求封包內的JSON格式body，並回傳解析結果放置req.body`
+#🧠 body-parser 和 express.urlencoded 關係是什麼? express.urlencoded做啥用？ ->->-> `body-parser是解析請求封包的body，而express.urlencoded是body-parser的子模組，負責解析請求封包內的url編碼表格格式的body，並回傳解析結果放置req.body`
+
+#🧠 URL-encoded form body是什麼樣的格式？ ->->-> `以多個key-value pair所組成，每一個key和value都適用URL 編碼(百分比編碼)來傳送，若有多個key-value pair會用&相接`
 
 ---
 Status: #🌱 
