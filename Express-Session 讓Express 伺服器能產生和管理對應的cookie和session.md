@@ -67,11 +67,10 @@ app.method(path, callback)
 
 > When an empty session object is created and no properties are set, it is the uninitialized state. So, setting saveUninitialized to false will not save the session if it is not modified.
 
-- resave：布林值，若設為true，每一次客戶端和伺服器之間只要出現連線互動，所對應的session都會強制繼續存在session store，在請求過程中，無論對應session內容是否有被伺服器修改，也都會繼續存至session store，若為false，則不會只因為出現連線互動而強制保留對應的session至session store
+- resave：布林值，若設定為true，每一次客戶端和伺服器之間只要出現連線互動，所對應的session都會重新寫進至session store，即使從store取出來的session 沒有被伺服器修改，也會重新寫進store並更新過期時間；若為false，就直接關閉這項功能。
+	[[session的resave功能是盡可能讓潛在可用的session繼續留在session store]]
+> Forces the session to be saved back to the session store, even if the session was never modified during the request. Depending on your store this may be necessary, but it can also create race conditions where a client makes two parallel requests to your server and changes made to the session in one request may get overwritten when the other request ends, even if it made no changes (this behavior also depends on what store you're using).
 
-3. 需要注意的點：
-
-- 伺服器要求客戶端儲存session id至cookie時，此cookie會被稱之為session id cookie
 
 #### 如何實現產生/管理對應的cookie和session？
  具體來說，當載入該模組時，客戶端和伺服器端只要處於request/response cycle的話，就會建立session來紀錄兩者的連線過程，同時間會賦予session id 給該session並讓客戶端建立cookie去儲存session id，而到時cookie只要拿著這session id發送請求至伺服器，伺服器收到便拿該id獲取對應先前的連線過程是什麼。
@@ -80,8 +79,12 @@ app.method(path, callback)
 ## 複習
 #🧠 Express-Session 是Express 框架的模組，用途是什麼？->->-> `主要幫助開發者產生/管理對應的cookie和session，具體是以middleware來攔截每個請求來管理/產生session，並且要求客戶端儲存對應的session id當作其cookie的內容、等到客戶端持著夾帶合法session id的cookie來向伺服器發送請求，伺服器上該套件就會攔截並輸出對應的session內容至req.session來給後續middleware使用`
 
-#🧠 Question :: ->->-> ``
-#🧠 Question :: ->->-> ``
+#🧠  session(options)的options是 ->->-> `是藉由物件來設定Express-Session所提供的middleware`
+#🧠 session(options)的options 所描述的store是 ->->-> `定義session儲存在哪？選項有內建的MemoryStore、資料庫、redis`
+
+#🧠 session(options)的options 所描述的saveUninitialized是 ->->-> `原本當客戶端與伺服器開始進行連線時，就會開始建立session物件來紀錄兩者在連線時的狀態，且剛建立的session物件的屬性未在伺服器中被任意值來寫入，此session就會被當作未初始化的session，而若saveUninitialized被設定為true時，就便會將未初始化的session儲存在伺服器的session store，而saveUninitialized被設定為false時，就便不會將未初始化的session儲存在伺服器session store`
+
+#🧠 session(options)的options 所描述的resave是 ->->-> `定義session儲存在哪？選項有內建的MemoryStore、資料庫、redis`
 
 ---
 Status: #🌱 
@@ -92,3 +95,4 @@ Links:
 [[Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改]]
 [[body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body]]
 References:
+[[@express-sessionExpressjsSessionSimple]]

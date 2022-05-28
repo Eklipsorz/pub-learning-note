@@ -36,7 +36,6 @@ Set-Cookie: food=icecream; flavor=cheese; Domain=xxxxx; Path=xxx
 
 ### 客戶端發送請求時
 
-
 **客戶端每當發送請求時，會根據請求的Domain會是什麼而根據Domain來提供對應的cookie至請求封包**
 
 
@@ -57,5 +56,4 @@ Status: #🌱
 Tags:
 [[Cookie]]
 Links:
-
 References:
