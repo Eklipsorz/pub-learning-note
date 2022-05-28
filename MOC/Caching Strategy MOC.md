@@ -6,3 +6,6 @@
 
 - 以讀法來分類的的策略
 [[客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略]]
+
+ - 以寫法來分類的的策略
+ [[以write-hit為主要分為write through caching和write back(write behind) caching]]

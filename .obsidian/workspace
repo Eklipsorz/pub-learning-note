@@ -4,23 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "676f0807f7ded4ee",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "bd76b838eb158995",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
+            "file": "以write-hit為主要分為write through caching和write back(write behind) caching.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "077af3420a75c0c6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "以write-hit為主要分為write through caching和write back(write behind) caching.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
+                "file": "以write-hit為主要分為write through caching和write back(write behind) caching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +105,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "676f0807f7ded4ee",
+  "active": "bd76b838eb158995",
   "lastOpenFiles": [
+    "以write-hit為主要分為write through caching和write back(write behind) caching.md",
+    "MOC/Caching Strategy MOC.md",
+    "MOC/Redis MOC.md",
     "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略.md",
+    "MOC/Express MOC.md",
+    "MOC/JSONPath MOC.md",
     "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
     "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
     "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
-    "MOC/Caching Strategy MOC.md",
-    "MOC/Redis MOC.md",
-    "MOC/JSONPath MOC.md",
-    "MOC/GCP MOC.md",
-    "templates/📖 +🤔.md",
-    "templates/📝.md"
+    "MOC/GCP MOC.md"
   ]
 }
