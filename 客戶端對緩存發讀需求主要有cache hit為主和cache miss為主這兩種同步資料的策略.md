@@ -1,4 +1,6 @@
 ## 描述
+
+
 引用[[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]所描述的策略：
 > 客戶直接向緩存發讀需求
 > cache hit(就是東西在cache): 那就直接回傳 皆大歡喜
@@ -9,21 +11,30 @@
 
 重點：假設環境有客戶端、緩存、資料庫
 - 以Cache hit 為主：當客戶端要找的東西A就在緩存，就直接回傳處於緩存中的東西A。
-- 以Cache miss 為主：當客戶端要的東西A在緩存裡找不到，就會去資料庫裡找，找法有分種
-	- Read Through ：如同字面上的意思，讀取會穿過緩存來進行，首先，客戶端會向緩存找東西，但找不到，所以由緩存負責向資料庫索要東西A，找到後就寫進緩存，然後再回傳緩存中的東西A，這樣過程會像是下圖這樣，透過(穿過緩存)來存取東西A
+- 以Cache miss 為主：當客戶端要的東西A在緩存裡找不到，就會去資料庫裡找，而這表示緩存資料不是最新的，可以選擇是否讓緩存與資料庫保持同步，若不同步的話，總會花更多時間去資料庫尋找資料，通常會選擇同步
+- 同步策略主要會有：
+	- Read Through
+	- Read Aside
+
+### Read Through
+Read Through ：如同字面上的意思，讀取會穿過緩存來進行，首先，客戶端會向緩存找東西，但找不到，所以由緩存負責向資料庫索要東西A，找到後就寫進緩存，然後再回傳緩存中的東西A，這樣過程會像是下圖這樣，透過(穿過緩存)來存取東西A：
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Diagram_w98usw.png)
-	Read Through 步驟：
-	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有
-	步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得
-	步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。
+Read Through 步驟：
+- 步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有
+- 步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得
+- 步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)
-	- Read Aside：如同字面上的意思，讀取會先讀取一旁的緩存，接著再從資料庫找，首先，客戶端會負責向緩存索要東西A，但找不到，所以再由客戶端向另一邊的資料庫找東西A，找到東西A後，就由客戶端來將東西A寫入至緩存，過程就如下圖這樣，就先往一邊找，找不到就往另一邊找
+	
+### Read Aside
+Read Aside：如同字面上的意思，讀取會先讀取一旁的緩存，接著再從資料庫找，首先，客戶端會負責向緩存索要東西A，但找不到，所以再由客戶端向另一邊的資料庫找東西A，找到東西A後，就由客戶端來將東西A寫入至緩存，過程就如下圖這樣，就先往一邊找，找不到就往另一邊找：
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653767516/blog/database/caching/Read-Aside-Diagram_koz5ym.png)
-	Read Aside 步驟：
-	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有
-	步驟2 緩存由於沒有東西A，客戶端就向資料庫索要東西A，並從那獲得
-	步驟3 客戶端將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。
+	
+Read Aside 步驟：
+- 步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有
+- 步驟2 緩存由於沒有東西A，客戶端就向資料庫索要東西A，並從那獲得
+- 步驟3 客戶端將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653767516/blog/database/caching/Read-Aside-Steps_fmb5p7.png)
+	
 ### note
 cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用語：
 1. cache hit: 當CPU能夠從緩存找到想要的東西，就表示cache hit
@@ -51,11 +62,11 @@ cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用�
 <!--SR:!2022-06-01,3,250-->
 
 ---
-Status: #🌱 
+Status: #☀️ 
 Tags:
 [[Caching]] - [[Redis]] - [[Database]]
 Links:
-[[以write-hit為主要分為write through caching和write back(write behind) caching]]
+[[以write-hit為主要分為write through和write back(write behind)這兩種同步策略]]
 [[inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格]]
 References:
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]
