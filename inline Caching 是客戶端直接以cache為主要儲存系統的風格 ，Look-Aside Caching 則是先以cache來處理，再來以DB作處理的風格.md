@@ -28,6 +28,6 @@ Status: #🌱
 Tags:
 [[Caching]] - [[Redis]] - [[Database]]
 Links:
-[[客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種讀取策略]]
+[[cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步]]
 References:
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]
