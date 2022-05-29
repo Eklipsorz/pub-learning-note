@@ -54,10 +54,12 @@ isFull()
 #🧠 Abstract Data Type 的 Abstract 是指什麼？ ->->-> `是強調Data Type會是以概念來描述，而非以實際的實現來描述`
 
 #🧠 Abstract Data Type 是什麼？ ->->-> `是一種對於資料種類的描述模型，其模型主要描述特定資料，描述特定資料的具體形式是什麼以及能對它做些什麼樣的操作，操作會是以函式來表示，主要會是表達函式回傳什麼、處理什麼、輸入是什麼`
+<!--SR:!2022-06-01,3,250-->
 
 #🧠 Abstract Data Type 帶來的好處是？->->-> `1. 由於ADT等同於設計特定資料模型的草圖，可以以不呈現實現細節來設計程式如何實現、2. 透過ADT可以更快發現錯誤，更專注目標`
 
 #🧠 以下是描述List的ADT，請說明哪些是ADT所描述的資料描述和操作？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653732192/blog/algorithm/adt/listADT_nizmww.png) ->->-> ``
+<!--SR:!2022-06-01,3,250-->
 
 ---
 Status: #🌱 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "以write-hit為主要分為write through caching和write back(write behind) caching.md",
+            "file": "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "abstract",
+                "query": "記憶體成本",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "以write-hit為主要分為write through caching和write back(write behind) caching.md",
+                "file": "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +108,7 @@
   },
   "active": "bd76b838eb158995",
   "lastOpenFiles": [
+    "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "以write-hit為主要分為write through caching和write back(write behind) caching.md",
     "MOC/Caching Strategy MOC.md",
     "MOC/Redis MOC.md",
@@ -115,7 +117,6 @@
     "MOC/JSONPath MOC.md",
     "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
     "inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
-    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
-    "MOC/GCP MOC.md"
+    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md"
   ]
 }
