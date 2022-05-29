@@ -2,6 +2,13 @@
 引用[[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]所描述的：
 >  ### Write-hit(就是你要更新的東西 也在緩存裡):
 >  在這種情況下，客戶直接向緩存發寫需求沒問題，看是寫新資料或是更新舊資料都可以，更新了緩存之後 這時緩存就可以選擇同步(Synchronous) 或是非同步的(Asynchronous)更新DB 同步的更新叫做Write through 非同步的叫做Write back或是Write behind
+
+重點：是以緩存(Cache/Memory)、資料庫(Disk)、客戶端(CPU)為主
+- write hit 在這裡是指客戶端能夠在緩存寫入或者客戶端要更改的資料是在緩存
+- 由於能夠在緩存進行寫入資料，這時會有選擇是否要把緩存上的資料同步在資料庫：
+	- write-through
+	- write-back
+
 ### write-through caching
 引用[[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]所描述的：
 > #### Write through優缺點
@@ -22,9 +29,27 @@
 
 > 使用時機就是讀寫發生的很平均 Write back機制讓讀寫都不會latency太高 但是要小心Crash的問題
 
+
+
+
+### note
+引用[[@cloud-leeCPUCacheYuanLiTanTao]]所描述的 write hit & write miss 概念：
+> ### [](https://hackmd.io/@drwQtdGASN2n-vt_4poKnw/H1U6NgK3Z?type=view#44-When-CPU-Wants-to-Write "44-When-CPU-Wants-to-Write")4.4 When CPU Wants to Write
+>-   如果在 Cache 裡可以找到想要寫入的資料位置 -> **Write Hit**
+>-   相反的，如果找不到 -> **Write Miss**
+
+
+write hit 和 write miss 原理源自於CPU要寫入的位置或者要變更的資料是否源自於緩存(cache)：
+1. hit 和 miss 是指的是CPU能夠寫入資料至緩存 和 CPU不能夠寫入資料至資料，等同於失去(miss)儲存緩存的機會
+2. write hit：若CPU能夠在緩存找到的資料來更改或者能夠在緩存寫入(考慮緩存是否還有空間能夠寫)，那就表示write hit
+3. write miss：若CPU不能夠在緩存找到的資料來更改或者不能夠在緩存寫入(考慮緩存是否還有空間能夠寫)，那就表示write miss
+
+
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-06-01,3,250-->
+#🧠 write hit 和 write miss 的 hit 和 miss 是指？ ->->-> `hit 和 miss 是指的是CPU能夠寫入資料至緩存 和 CPU不能夠寫入資料至資料，等同於失去(miss)儲存緩存的機會`
+
+#🧠 write hit 和 write miss 原理源自於？請盡可能考量到空間是否還能夠存->->-> `CPU要寫入的位置是否還能夠在緩存寫或者要變更的資料是否源自於緩存(cache)，前者要考量緩存還有空間存，後者要考量變更的資料位置`
+
 
 ---
 Status: #🌱 
@@ -34,4 +59,5 @@ Links:
 [[客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種策略]]
 [[inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格]]
 References:
+[[@cloud-leeCPUCacheYuanLiTanTao]]
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]
