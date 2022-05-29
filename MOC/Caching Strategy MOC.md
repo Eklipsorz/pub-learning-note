@@ -8,4 +8,4 @@
 [[客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種讀取策略]]
 
  - 以寫法來分類的的策略
- [[以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入兼同步策略]]
+ [[以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入策略]]

@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種讀取策略.md",
+            "file": "以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入策略.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "077af3420a75c0c6",
+        "id": "c897d71db652db72",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入兼同步策略.md",
+            "file": "以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入策略.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種讀取策略.md",
+                "file": "以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入策略.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,8 @@
   },
   "active": "bd76b838eb158995",
   "lastOpenFiles": [
+    "以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入策略.md",
     "客戶端對緩存發讀需求主要有cache hit為主和cache miss為主這兩種讀取策略.md",
-    "以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入兼同步策略.md",
     "MOC/Caching Strategy MOC.md",
     "MOC/Express MOC.md",
     "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",

@@ -64,13 +64,12 @@ cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用�
 #🧠 以Cache hit 為主的讀取策略會是什麼(提示：就如同我要吃東西，就要打開裝滿食物的箱子，接著會做？？)->->-> `當客戶端要找的東西A就在緩存，就直接回傳處於緩存中的東西A。`
 <!--SR:!2022-06-01,3,250-->
 
-#🧠 以Cache miss 為主的讀取策略若假定不會為了同步而回寫資料至緩存，其結果會是->->-> `那麼客戶端就會一直讀取資料庫而使效能下降`
+#🧠 以Cache miss 為主的讀取策略，若假定不會為了同步而回寫資料至緩存，其結果會是->->-> `那麼客戶端就會一直讀取資料庫而使效能下降`
 
 #🧠 無論是否同步，以Cache miss 為主的讀取策略會是什麼？ ->->-> `Read Through ：如同字面上的意思，讀取會穿過緩存來進行，首先，客戶端會向緩存找東西，但找不到，所以由緩存負責向資料庫索要東西A，找到後，緩存就有選擇是否就寫進緩存，無論是否同步，緩存都會回傳東西A至客戶端，Read Aside：如同字面上的意思，讀取會先讀取一旁的緩存，接著再從資料庫找，首先，客戶端會負責向緩存索要東西A，但找不到，所以再由客戶端向另一邊的資料庫找東西A，找到東西A。`
 
 
-
-#🧠 Caching 讀取策略：Read Through步驟是什麼？這裏假定客戶端決定回寫，以這圖來說明	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)  ->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得，步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
+#🧠 Caching 讀取策略：Read Through步驟是什麼？這裏假定緩存決定回寫，以這圖來說明	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)  ->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得，步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
 <!--SR:!2022-06-01,3,250-->
 
 #🧠 Caching 讀取策略：Read Aside步驟是什麼？這裏假定客戶端決定回寫，以這圖來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653767516/blog/database/caching/Read-Aside-Diagram_koz5ym.png)->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，客戶端就向資料庫索要東西A，並從那獲得，步驟3 客戶端將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
@@ -81,7 +80,7 @@ Status: #☀️
 Tags:
 [[Caching]] - [[Redis]] - [[Database]]
 Links:
-[[以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入兼同步策略]]
+[[以write-hit為主且為了確保同步而分為write through和write back(write behind)這兩種寫入策略]]
 [[inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格]]
 References:
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]
