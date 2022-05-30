@@ -55,6 +55,7 @@ Tags:
 Links:
 [[Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存]]
 [[Cache Avalanche 是指大量請求在cache上的大量key失效下而從cache被導向至處於硬碟的資料庫]]
+[[Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫]]
 References:
 [[@manbucoding2022NianRedisZuiXinMianShiTiDi8PianRedisHuanCunWenTiWx624642a80743cDeJiShuBoKe]]
 [[@liuRedisKuaiQuXueBengJiChuan2021]]

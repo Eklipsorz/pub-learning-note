@@ -5,6 +5,9 @@
 - Cache Penetration
 [[Cache Penetration 是指請求因索取的東西原本就不存在資料庫而直接被導向至處於硬碟的資料庫]]
 
+- Hotspot Invalid
+[[Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫]]
+
 ## Client + Cache + DB 策略
 - 以結構來分類的策略
 [[inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格]]
