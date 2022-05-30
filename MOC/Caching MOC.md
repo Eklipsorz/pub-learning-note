@@ -1,5 +1,9 @@
 ## Cache本身所衍生出的問題
+- Cache Avalanche
 [[Cache Avalanche 是指大量請求在cache上的大量key失效下而從cache被導向至處於硬碟的資料庫]]
+
+- Cache Penetration
+[[Cache Penetration 是指請求因索取的東西原本就不存在資料庫而直接被導向至處於硬碟的資料庫]]
 
 ## Client + Cache + DB 策略
 - 以結構來分類的策略
