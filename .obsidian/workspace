@@ -7,8 +7,11 @@
         "id": "bd76b838eb158995",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+            "mode": "source"
+          }
         }
       },
       {
@@ -47,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "記憶體成本",
+                "query": "write around 場景",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -76,6 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +108,15 @@
   },
   "active": "bd76b838eb158995",
   "lastOpenFiles": [
-    "MOC/Caching Strategy MOC.md",
     "以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
     "以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
+    "express-session 內建的MemoryStore並不會監測每個session的狀態來進行記憶體釋放或者管理.md",
+    "develop/若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session.md",
+    "develop/session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
+    "develop/Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+    "redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
+    "MOC/Caching Strategy MOC.md",
     "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
-    "MOC/Express MOC.md",
-    "templates/📖 +🤔.md",
-    "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
-    "MOC/Redis MOC.md",
-    "MOC/JSONPath MOC.md"
+    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md"
   ]
 }
