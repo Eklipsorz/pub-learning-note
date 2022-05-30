@@ -40,4 +40,4 @@
 
 ## 使用策略
 - Caching Strategy
-[[Caching Strategy MOC]]
+[[Caching MOC]]
