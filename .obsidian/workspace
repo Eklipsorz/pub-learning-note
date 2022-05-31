@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "node redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤.md",
+            "file": "ioredis.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "node redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤.md",
+                "file": "ioredis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,8 @@
   },
   "active": "f9b528f66ef42e39",
   "lastOpenFiles": [
-    "node redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤.md",
     "ioredis.md",
+    "node redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤.md",
     "Warming up the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
     "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
     "redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
