@@ -30,7 +30,9 @@ Keyspace notifications
 - Key-space notification：以指定key上的任意事件來進行publish 和 subscribe
 - Key-event notification：以任意key上的指定事件來進行publish 和 subscribe
 
-
+頻道則會因而分成兩種:
+- Key-space notification：在特定key值的任意事件上的事件訊息接收和傳遞
+- Key-event notification：在發生特定事件的任意key值上的事件訊息接收和傳遞
 ### 舉例
 
 > Keyspace notifications are implemented by sending two distinct types of events for every operation affecting the Redis data space. For instance a [`DEL`](https://redis.io/commands/del) operation targeting the key named `mykey` in database `0` will trigger the delivering of two messages, exactly equivalent to the following two [`PUBLISH`](https://redis.io/commands/publish) commands:
@@ -48,26 +50,29 @@ PUBLISH __keyspace@0__:mykey del
 // 向__keyevent@0__頻道 傳遞現在出現del處理的key是 mykey
 PUBLISH __keyevent@0__:del mykey
 ```
+- 當訂閱以下頻道，就能接收到0號資料庫下所有發生在mykey的事件
+```
+__keyspace@0__:mykey
+```
+- 當訂閱以下頻道，就能接收0號資料庫下所有發生del事件的鍵之事件
+```
+__keyevent@0__:del
+```
+## 複習
+
+#🧠 Redis Pub/Sub 是什麼樣的機制 ->->-> `是Redis 用來在資料庫上實現key上的事件監聽和事件處理的手段，主要透過資料庫本身會在特定事件下向特定頻道發送(Publish)特定訊息，而使用者只需訂閱該頻道就能接收到訊息，就能夠順勢根據特定事件下的結果來實現事件處理`
+
+#🧠  Redis Pub/Sub 這Publish-Subscribe下有哪兩個實現方式？(提示：鍵和事件) ->->-> `Key-space notification：以指定key上的任意事件來進行publish 和 subscribe、Key-event notification：以任意key上的指定事件來進行publish 和 subscribe`
+
+#🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是什麼->->-> `前者專注於特定key值的任意事件，後者則是專注於發生特定事件下的任意key值`
 
 
-订阅第一个频道 `__keyspace@0__:mykey` 可以接收 `0` 号数据库中所有修改键 `mykey` 的事件， 而订阅第二个频道 `__keyevent@0__:del` 则可以接收 `0` 号数据库中所有执行 `del` 命令的键。
+#🧠 當0號資料庫上的mykey 鍵進行DEL處理，redis就會自動傳遞訊息至指定頻道，並且會一次傳遞兩種訊息，傳遞訊息方式會是PUBLISH __keyspace@0__:mykey del或者PUBLISH __keyevent@0__:del mykey，請解釋這些語法主要做了什麼？ ->->-> `向__keyspace@0__頻道 傳遞mykey 出現del處理、向__keyevent@0__頻道 傳遞現在出現del處理的key是 mykey`
 
-
-
-> The first channel listens to all the events targeting the key `mykey` and the other channel listens only to `del` operation events on the key `mykey`
-
-> The first kind of event, with `keyspace` prefix in the channel is called a **Key-space notification**, while the second, with the `keyevent` prefix, is called a **Key-event notification**.
-> In the previous example a `del` event was generated for the key `mykey` resulting in two messages:
-
-> -   The Key-space channel receives as message the name of the event.
-> -   The Key-event channel receives as message the name of the key.
-
-> It is possible to enable only one kind of notification in order to deliver just the subset of events we are interested in.
-
-
+#🧠 若資料庫發送PUBLISH  __keyspace@0__:mykey del 和PUBLISH __keyevent@0__:del mykey，如何接收對應頻道的del 和 mykey ->->-> ` 訂閱名為__keyspace@0__:mykey頻道就能接收del；後者則是訂閱名為__keyevent@0__:del頻道就能接收mykey`
 
 ---
-Status: #📥 
+Status: #🌱 
 Tags:
 [[Subscribe & Publish]] - [[Redis]]
 Links:
