@@ -3,6 +3,19 @@
 老牌的redis client - node redis本身有版本上的相容性問題，且後面沒金主可以支持開發者，因此轉而使用ioredis
 
 
+
+> By default, ioredis will try to reconnect when the connection to Redis is lost except when the connection is closed manually
+> 
+>   by `redis.disconnect()` or `redis.quit()`.
+
+ioredis 每一次當開發者對redis存取會自動與資料庫連線，但不會自己斷線，除非自己手動執行
+```
+redis.disconnect() 
+or 
+redis.quit()
+```
+
+
 > ## Connect to Redis
 
 > When a new `Redis` instance is created, a connection to Redis will be created at the same time. You can specify which Redis to connect to by:
@@ -29,3 +42,5 @@ new Redis("redis://:authpassword@127.0.0.1:6380/4");
 // Username can also be passed via URI.
 new Redis("redis://username:authpassword@127.0.0.1:6380/4");
 ```
+
+
