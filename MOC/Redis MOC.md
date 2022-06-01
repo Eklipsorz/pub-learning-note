@@ -10,6 +10,14 @@
 - redis.conf
 [[redis.conf 是設定Redis 伺服器預設要執行的參數]]
 
+
+## Redis Client 
+- ioredis 
+[[由於node-redis本身穩定性不高且沒金主支持而轉而較穩定的client - ioredis]]
+[[ioredis - 只要redis client 實例一被建立就會自動連線，若要斷線就必須手動斷線]]
+
+- node-redis
+
 ## 型別
 
 - String vs. Hash
