@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "哨兵模式 redis.md",
+            "file": "將調用config的名稱一律以config來稱呼.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "哨兵模式 redis.md",
+                "file": "將調用config的名稱一律以config來稱呼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,8 @@
   },
   "active": "0657c75ea8b9dc61",
   "lastOpenFiles": [
+    "將調用config的名稱一律以config來稱呼.md",
+    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
     "哨兵模式 redis.md",
     "app.locals 讓專案共享同一個實例.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
@@ -114,8 +116,6 @@
     "argument vector (argv).md",
     "MOC/JavaScript MOC.md",
     "pots/Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
-    "MOC/Redis MOC.md",
-    "cartId 使用UUIDv4來確保每一個使用者的購物車是獨立且不用再寫檢查是否重複.md",
-    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md"
+    "MOC/Redis MOC.md"
   ]
 }
