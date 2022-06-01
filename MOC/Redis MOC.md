@@ -1,14 +1,5 @@
 
 
-## 前置概念
-- Dictionary (HashTable)
-[[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
-
-
-## 設定檔案
-
-- redis.conf
-[[redis.conf 是設定Redis 伺服器預設要執行的參數]]
 
 
 ## Redis Client 
@@ -18,7 +9,43 @@
 
 - node-redis
 [[node-redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤]]
-## 型別
+
+- disconnent vs quit
+[[redit-  .quit() vs .disconnect()差別在於前者會於結束前允許執行後續來不及執行，後者是直接斷開連線]]
+
+## 模組
+
+- RedisJSON
+[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]
+
+- 問題：若一開始於Redis載入RedisJSON模組並設定JSON格式的value讓其儲存db的話，接著若以沒載入其模組的情況下執行Redis Server 會出錯
+[[Redis 伺服器若讀取到錯誤格式的資料庫會無法執行]]
+
+
+- RedisJSON JSONPath
+[[RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品]]
+
+- connect-redis
+[[connect-redis 替伺服器建構以redis為主的session 儲存空間]]
+[[connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數]]
+
+## 使用策略
+- Caching Strategy
+[[Caching MOC]]
+
+## Redis 基礎知識
+- 資料庫是否能自行建立？其名稱為
+[[redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的]]
+
+### 前置概念
+- Dictionary (HashTable)
+[[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
+
+### 設定檔案
+- redis.conf
+[[redis.conf 是設定Redis 伺服器預設要執行的參數]]
+
+### 型別
 
 - String vs. Hash
 [[Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值]]
@@ -33,28 +60,14 @@
 - Hash
 [[Redis Hash是儲存多個key-value的字典]]
 
-## 模組
-
-- RedisJSON
-[[RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value]]
-
-- 問題：若一開始於Redis載入RedisJSON模組並設定JSON格式的value讓其儲存db的話，接著若以沒載入其模組的情況下執行Redis Server 會出錯
-[[Redis 伺服器若讀取到錯誤格式的資料庫會無法執行]]
-
-
-- RedisJSON JSONPath
-[[RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品]]
-
-
-## 使用策略
-- Caching Strategy
-[[Caching MOC]]
-
-
-## Redis Sub/Pub
+### Redis Sub/Pub
 - 前置知識
 [[messaging pattern 是定義兩個程式模組如何連接和交流的風格]]
 [[publish–subscribe是傳遞者可將訊息發布在指定頻道，接收者只需要訂閱指定頻道來接收訊息的messaging pattern]]
 
 - Keyspace notification & Keyevent notification
 [[Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub]]
+
+### Redis 資料庫本身的指令
+- quit
+[[redis.quit 和 redis.disconnect 是對應redis上的指令嗎]]
