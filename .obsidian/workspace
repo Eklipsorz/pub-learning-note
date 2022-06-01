@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/Redis MOC.md",
+            "file": "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "1431f165c48542dd",
+        "id": "48958458e5d62839",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的.md",
+            "file": "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/Redis MOC.md",
+                "file": "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "0657c75ea8b9dc61",
   "lastOpenFiles": [
+    "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
+    "argument vector (argv).md",
+    "MOC/JavaScript MOC.md",
+    "pots/Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
     "MOC/Redis MOC.md",
-    "redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的.md",
-    "redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
-    "Warming up the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
+    "cartId 使用UUIDv4來確保每一個使用者的購物車是獨立且不用再寫檢查是否重複.md",
     "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
     "express-session 內建的MemoryStore並不會監測每個session的狀態來進行記憶體釋放或者管理.md",
-    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "develop/Cache Avalanche 是指大量請求在cache上的大量key失效下而從cache被導向至處於硬碟的資料庫.md",
-    "develop/connect-redis 支援 redis 4.x (npm) 必須要添加 legacyMode 為true的參數.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md"
+    "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
+    "pots/redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的.md"
   ]
 }

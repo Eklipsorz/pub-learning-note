@@ -33,6 +33,9 @@
 - Caching Strategy
 [[Caching MOC]]
 
+- Warmup the cache
+[[Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率]]
+
 ## Redis 基礎知識
 - 資料庫是否能自行建立？其名稱為
 [[redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的]]
@@ -59,6 +62,10 @@
 
 - Hash
 [[Redis Hash是儲存多個key-value的字典]]
+
+### Redis 如何處理過期的key
+- passive deletion vs. active deletion
+[[redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除]]
 
 ### Redis Sub/Pub
 - 前置知識
