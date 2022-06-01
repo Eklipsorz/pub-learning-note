@@ -54,10 +54,10 @@ express.urlencoded({ extended: true })
 #🧠 body-parser 和 express.json 關係是什麼？express.json做啥用？ ->->-> `body-parser是解析請求封包的body，而express.json是body-parser的子模組，負責解析請求封包內的JSON格式body，並回傳解析結果放置req.body`
 <!--SR:!2022-06-01,3,250-->
 #🧠 body-parser 和 express.urlencoded 關係是什麼? express.urlencoded做啥用？ ->->-> `body-parser是解析請求封包的body，而express.urlencoded是body-parser的子模組，負責解析請求封包內的url編碼表格格式的body，並回傳解析結果放置req.body`
-<!--SR:!2022-06-01,3,250-->
+<!--SR:!2022-06-11,10,250-->
 
 #🧠 URL-encoded form body是什麼樣的格式？ ->->-> `以多個key-value pair所組成，每一個key和value都適用URL 編碼(百分比編碼)來傳送，若有多個key-value pair會用&相接`
-<!--SR:!2022-06-01,2,230-->
+<!--SR:!2022-06-05,4,230-->
 
 ---
 Status: #🌱 
