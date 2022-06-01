@@ -17,7 +17,7 @@
 [[ioredis - 只要redis client 實例一被建立就會自動連線，若要斷線就必須手動斷線]]
 
 - node-redis
-
+[[node-redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤]]
 ## 型別
 
 - String vs. Hash
@@ -49,3 +49,12 @@
 ## 使用策略
 - Caching Strategy
 [[Caching MOC]]
+
+
+## Redis Sub/Pub
+- 前置知識
+[[messaging pattern 是定義兩個程式模組如何連接和交流的風格]]
+[[publish–subscribe是傳遞者可將訊息發布在指定頻道，接收者只需要訂閱指定頻道來接收訊息的messaging pattern]]
+
+- Keyspace notification & Keyevent notification
+[[Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub]]

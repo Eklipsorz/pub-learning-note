@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "lodash 是以開發者常用的功能來提供對應函式的函式庫.md",
+            "file": "redis.quit 和 redis.disconnect 是對應redis上的指令嗎.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "27b31cc157b23b56",
+        "id": "0657c75ea8b9dc61",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/ioredis - 只要redis client 實例一被建立就會自動連線，若要斷線就必須手動斷線.md",
-            "mode": "source"
+            "file": "develop/publish–subscribe是傳遞者可將訊息發布在指定頻道，接收者只需要訂閱指定頻道來接收訊息的messaging pattern.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lodash 是以開發者常用的功能來提供對應函式的函式庫.md",
+                "file": "redis.quit 和 redis.disconnect 是對應redis上的指令嗎.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "f9b528f66ef42e39",
   "lastOpenFiles": [
-    "lodash 是以開發者常用的功能來提供對應函式的函式庫.md",
-    "pots/由於node-redis本身穩定性不高且沒金主支持而轉而較穩定的client - ioredis.md",
-    "develop/ioredis - 只要redis client 實例一被建立就會自動連線，若要斷線就必須手動斷線.md",
-    "messaging pattern 是定義兩個程式模組如何連接和交流的風格.md",
-    "node redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤.md",
-    "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
-    "publish–subscribe是傳遞者可將訊息發布在指定頻道，接收者只需要訂閱指定頻道來接收訊息的messaging pattern.md",
-    "redis 有分0號資料庫和1號資料庫.md",
+    "redis.quit 和 redis.disconnect 是對應redis上的指令嗎.md",
     "redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
-    "redis.quit 和 redis.disconnect 是對應redis上的指令嗎.md"
+    "redis 有分0號資料庫和1號資料庫.md",
+    "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
+    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
+    "MOC/Redis MOC.md",
+    "pots/node-redis - 當createClient 帶有legacyMode參數時會於connect和quit出現錯誤.md",
+    "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
+    "develop/messaging pattern 是定義兩個程式模組如何連接和交流的風格.md"
   ]
 }

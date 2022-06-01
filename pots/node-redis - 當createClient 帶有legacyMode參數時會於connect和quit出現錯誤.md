@@ -1,10 +1,10 @@
 
+## 描述
 
-
+### 問題描述
 當createClient 帶有legacyMode參數時，只允許以下連線和斷線語法
 - connect
 - disconnect
-
 
 當createClient 帶有legacyMode參數時，出現：
 - connnect
@@ -12,6 +12,7 @@
 
 會報錯
 
+比如說以下方式
 ```
 (async function main() {
 	const redis = require('redis')
@@ -26,3 +27,13 @@
 	//await redisClient.disconnect()
 })()
 ```
+### 解法為
+後來發現node-redis本身擁有相容性問題，且依賴於node-redis的connect-redis以及其套件都因此而受害，後來改採用ioredis來實現
+redis client
+
+---
+Status: #🌱 
+Tags:
+[[Redis Client]] - [[Redis]]
+Links:
+References:
