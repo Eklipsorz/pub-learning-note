@@ -18,7 +18,7 @@
 ## 複習
 
 #🧠  session store 如何釋放沒在使用的session？(提示：跟時間有關)->->-> `session store本身會為了釋放空間，而清除掉沒在使用的session，通常做法會是替每個session設定過期時間`
-<!--SR:!2022-06-01,3,250-->
+<!--SR:!2022-06-09,8,250-->
 
 #🧠 express-session上的resave機制上目的是什麼 ->->-> `session的resave功能是盡可能讓潛在可用的session繼續留在session store，繼而延續先前處理結果來增加效率`
 
@@ -26,7 +26,7 @@
 <!--SR:!2022-06-11,10,250-->
 
 #🧠 若resave被關閉的話，如何釋放閒置sesion->->-> `若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session`
-<!--SR:!2022-06-01,3,250-->
+<!--SR:!2022-06-10,9,250-->
 
 ---
 Status: #🌱 
