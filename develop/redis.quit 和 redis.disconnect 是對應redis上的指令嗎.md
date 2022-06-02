@@ -45,8 +45,10 @@
 
 ## 複習
 #🧠 redis client實現上在斷線上會有相關的disconnect和quit，請問這兩個有什麼差別->->-> `disconnect只會直接與伺服器斷線，而quit則是除了斷線以外，還會注意斷線前有哪些請求還未完成，並先讓伺服器處理這些請求並且不再接收任何請求，接著再來斷線`
+<!--SR:!2022-06-05,3,250-->
 
 #🧠 redis client 端上的.quit()和.disconnect()對應哪些redis 本身提供的指令->->-> `.quit()對應至quit指令，而.disconnect()則對應著直接斷線的client kill指令`
+<!--SR:!2022-06-05,3,250-->
 
 ---
 Status: #🌱 

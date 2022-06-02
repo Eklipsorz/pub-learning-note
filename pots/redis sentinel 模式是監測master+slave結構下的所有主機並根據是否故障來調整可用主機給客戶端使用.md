@@ -26,14 +26,18 @@
 
 ## 複習
 #🧠 redis sentinel 是什麼樣的技術？ ->->-> `sentinel 是以master/slave為基礎來解決其問題-自動監測哪些主機已經故障並試著將可用的主機分配給客戶端使用`
+<!--SR:!2022-06-05,3,250-->
 
-#🧠 edis sentinel 主旨是監測master/slave模式下哪些主機可用並自動調整，請問監控哪些主機？->->-> `master主機和slave主機`
+#🧠 redis sentinel 主旨是監測master/slave模式下哪些主機可用並自動調整，請問監控哪些主機？->->-> `master主機和slave主機`
+<!--SR:!2022-06-05,3,250-->
 
 #🧠 redis sentinel 主旨是監測master/slave模式下哪些主機可用並自動調整？請問若master主機壞掉後，會如何挑選 ->->-> `sentinel 組鄧從原本master主機下的slave主機找到可用的主機來替代master主機，並由剩下的slave主機來擔任新master主機的slave主機`
+<!--SR:!2022-06-05,3,250-->
 
 #🧠 redis sentinel 主旨是監測master/slave模式下哪些主機可用並自動調整？請問若slave主機壞掉後，會如何挑選 ->->-> `若slave主機壞掉的話，就自動從剩下可用的slave主機來替代`
 
 #🧠 redis 採用 master/slave 主要解決了哪些問題 ->->-> `主要負責解決讀寫分離、資料備份`
+<!--SR:!2022-06-05,3,250-->
 
 #🧠 redis 採用 master/slave模式後，若部分主機掛掉的話，該模式如何解決 ->->-> `當某個主機因當機或者無法及時處理時，就必須手動調整可用的主機來替代它去為客戶端實現`
 
