@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0657c75ea8b9dc61",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "c0bc57cbb057af20",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數.md",
-            "mode": "preview"
+            "file": "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
+                "file": "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0657c75ea8b9dc61",
+  "active": "c0bc57cbb057af20",
   "lastOpenFiles": [
+    "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
+    "庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
+    "pots/app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數.md",
     "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
     "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
     "develop/Cache Penetration 是指請求因索取的東西原本就不存在資料庫而直接被導向至處於硬碟的資料庫.md",
     "cartId 使用UUIDv4來確保每一個使用者的購物車是獨立且不用再寫檢查是否重複.md",
     "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
-    "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
-    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
-    "將調用config的名稱一律以config來稱呼.md"
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md"
   ]
 }
