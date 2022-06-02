@@ -4,6 +4,10 @@
 - cookie
 [[客戶端每當發送請求時，會根據請求的Domain會是什麼而根據cookie上 Domain欄位來添加對應的cookie內容至請求封包]]
 
+## req object
+- app.locals 和 req.app.locals
+[[app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數]]
+
 ## middleware
 - express-session
 [[Express-Session 讓Express 伺服器能產生和管理對應的cookie和session]]

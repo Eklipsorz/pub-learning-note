@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "將調用config的名稱一律以config來稱呼.md",
+            "file": "app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "48958458e5d62839",
+        "id": "c0bc57cbb057af20",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
+            "file": "app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "將調用config的名稱一律以config來稱呼.md",
+                "file": "app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "0657c75ea8b9dc61",
   "lastOpenFiles": [
-    "將調用config的名稱一律以config來稱呼.md",
-    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
-    "哨兵模式 redis.md",
-    "app.locals 讓專案共享同一個實例.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+    "app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數.md",
+    "async function 會報錯.md",
+    "MOC/Express.js MOC.md",
+    "MOC/Redis MOC.md",
+    "redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
+    "MOC/JSONPath MOC.md",
+    "假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
+    "cartId 使用UUIDv4來確保每一個使用者的購物車是獨立且不用再寫檢查是否重複.md",
     "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
-    "argument vector (argv).md",
-    "MOC/JavaScript MOC.md",
-    "pots/Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
-    "MOC/Redis MOC.md"
+    "express-session 內建的MemoryStore並不會監測每個session的狀態來進行記憶體釋放或者管理.md"
   ]
 }

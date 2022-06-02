@@ -78,3 +78,8 @@
 ### Redis 資料庫本身的指令
 - quit
 [[redis.quit 和 redis.disconnect 是對應redis上的指令嗎]]
+
+
+### master/slave
+- redis sentinel
+[[redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用]]
