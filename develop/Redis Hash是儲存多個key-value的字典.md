@@ -42,7 +42,7 @@
 <!--SR:!2022-06-11,13,270-->
 
 #🧠 redis hash vs. string 兩者間是如何儲存資料的？->->-> `較於String而言，hash可以將資料細分好幾個區塊來儲存，而String則是一股腦兒儲存整塊資料。`
-<!--SR:!2022-06-03,2,210-->
+<!--SR:!2022-06-07,4,210-->
 
 #🧠 redis 如何在 hash 結構上存取資料? CRUD為？->->-> `讀取資料：根據key值和其對應hash上的key值來讀取對應的value，寫入資料：根據key值和其對應hash上的key值來寫入對應的value，更新資料：根據key值和其對應hash上的key值來更新對應的value，根據key值和其對應hash上的key值來刪除指定的key-value pair(在hash上的key-value pair)`
 <!--SR:!2022-06-10,12,270-->
