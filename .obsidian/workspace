@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cold backup 是指在實際備份資料的系統離線下進行備份.md",
+            "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "4d6706c6832e7d1a",
+        "id": "1e6323a509d0d33e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
+            "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cold backup 是指在實際備份資料的系統離線下進行備份.md",
+                "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "c0bc57cbb057af20",
   "lastOpenFiles": [
-    "cold backup 是指在實際備份資料的系統離線下進行備份.md",
-    "hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
-    "warm backup 是備份系統與實際要備份資料的系統同時執行下進行備份頻率介於cold和hot之間的備份.md",
+    "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+    "develop/cold backup 是指在實際備份資料的系統離線下進行備份.md",
+    "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
+    "develop/hot、cold、warm 是強調著資料的使用率，hot是頻繁存取的資料、cold是偶爾存取的資料、warm則是之間.md",
+    "develop/warm backup 是備份系統與實際要備份資料的系統同時執行下進行備份頻率介於cold和hot之間的備份.md",
     "MOC/Database MOC.md",
     "MOC/Redis MOC.md",
     "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
-    "hot、cold、warm 是強調著資料的使用率，hot是頻繁存取的資料、cold是偶爾存取的資料、warm則是之間.md",
     "MOC/Caching MOC.md",
-    "MOC/JSONPath MOC.md",
-    "MOC/JavaScript MOC.md"
+    "MOC/JSONPath MOC.md"
   ]
 }
