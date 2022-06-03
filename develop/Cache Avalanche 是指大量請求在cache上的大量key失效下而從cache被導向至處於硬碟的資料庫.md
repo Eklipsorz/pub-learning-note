@@ -60,7 +60,7 @@ Cache 在這裡會是緩存，Avalanche 本身會是指雪崩，但在這裡雪�
 ---
 Status: #🌱 
 Tags:
-[[Redis]] - [[Caching]]
+[[Redis] - [[Caching]]
 Links:
 [[Cache Penetration 是指請求因索取的東西原本就不存在資料庫而直接被導向至處於硬碟的資料庫]]
 [[Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫]]

@@ -81,5 +81,8 @@
 
 
 ### master/slave
+- master/slave 
+[[redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取]]
+
 - redis sentinel
 [[redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用]]
