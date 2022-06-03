@@ -44,8 +44,13 @@
 - Dictionary (HashTable)
 [[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
 
-- backup type
+- hot、warm、cold
+[[hot、cold、warm 是強調著資料的使用率，hot是頻繁存取的資料、cold是偶爾存取的資料、warm則是之間]]
 
+- backup type
+[[hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務]]
+[[cold backup 是指在實際備份資料的系統離線下進行備份]]
+[[warm backup 是備份系統與實際要備份資料的系統同時執行下進行備份頻率介於cold和hot之間的備份]]
 
 ### 設定檔案
 - redis.conf
