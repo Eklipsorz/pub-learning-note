@@ -64,11 +64,14 @@ __keyevent@0__:del
 <!--SR:!2022-06-05,2,230-->
 
 #🧠  Redis Pub/Sub 這Publish-Subscribe下有哪兩個實現方式？(提示：鍵和事件) ->->-> `Key-space notification：以指定key上的任意事件來進行publish 和 subscribe、Key-event notification：以任意key上的指定事件來進行publish 和 subscribe`
+<!--SR:!2022-06-05,2,246-->
 
-#🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是什麼->->-> `__keyspace@0__ 和 __keyevnt@0__前者專注於特定key值的任意事件，後者則是專注於發生特定事件下的任意key值`
+#🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是什麼->->-> `__keyspace@0__ 和 __keyevnt@0__`
+<!--SR:!2022-06-04,1,226-->
 
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 兩者專注什麼 (任意key？任意事件？)->->-> `前者專注於特定key值的任意事件，後者則是專注於發生特定事件下的任意key值`
+<!--SR:!2022-06-05,2,246-->
 
 
 
