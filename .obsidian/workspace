@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+            "file": "hot、cold、warm 用在資料同步上是指資料一致性，hot是最新、cold是較舊、warm是hot和cold之間.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "b3a8897f39e9b8c1",
+        "id": "4d6706c6832e7d1a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+            "file": "hot backup 是指備份系統與實際系統同時併行，並且備份系統實時更新備份.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+                "file": "hot、cold、warm 用在資料同步上是指資料一致性，hot是最新、cold是較舊、warm是hot和cold之間.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "c0bc57cbb057af20",
   "lastOpenFiles": [
-    "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+    "hot、cold、warm 用在資料同步上是指資料一致性，hot是最新、cold是較舊、warm是hot和cold之間.md",
+    "hot backup 是指備份系統與實際系統同時併行，並且備份系統實時更新備份.md",
     "MOC/Redis MOC.md",
+    "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "pots/Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
     "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
     "develop/redis.quit 和 redis.disconnect 是對應redis上的指令嗎.md",
     "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
     "develop/inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
-    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "develop/Cache Penetration 是指請求因索取的東西原本就不存在資料庫而直接被導向至處於硬碟的資料庫.md",
-    "develop/redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md"
+    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md"
   ]
 }

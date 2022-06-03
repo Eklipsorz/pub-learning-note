@@ -44,6 +44,9 @@
 - Dictionary (HashTable)
 [[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
 
+- backup type
+
+
 ### 設定檔案
 - redis.conf
 [[redis.conf 是設定Redis 伺服器預設要執行的參數]]
