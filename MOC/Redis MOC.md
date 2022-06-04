@@ -52,6 +52,9 @@
 [[cold backup 是指在實際備份資料的系統離線下進行備份]]
 [[warm backup 是備份系統與實際要備份資料的系統同時執行下進行備份頻率介於cold和hot之間的備份]]
 
+- database cursor
+[[Database Cursor 是一個將連續資料按照指定數量來分群組，並從而給定名為cursor至每個群組來代表它們]]
+
 ### 設定檔案
 - redis.conf
 [[redis.conf 是設定Redis 伺服器預設要執行的參數]]

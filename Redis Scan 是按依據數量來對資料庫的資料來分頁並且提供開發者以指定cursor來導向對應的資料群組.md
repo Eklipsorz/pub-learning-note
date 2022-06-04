@@ -1,3 +1,7 @@
+
+
+
+引用[[@redisSCAN]]所描述的：
 > SCAN is a cursor based iterator. This means that at every call of the command, the server returns an updated cursor that the user needs to use as the cursor argument in the next call.
 
 > An iteration starts when the cursor is set to 0, and terminates when the cursor returned by the server is 0. The following is an example of SCAN iteration:
@@ -34,3 +38,21 @@ redis 127.0.0.1:6379> scan 17
 > In the example above, the first call uses zero as a cursor, to start the iteration. The second call uses the cursor returned by the previous call as the first element of the reply, that is, 17.
 
 > As you can see the **SCAN return value** is an array of two values: the first value is the new cursor to use in the next call, the second value is an array of elements.
+
+
+
+
+## 描述
+
+## 複習
+#🧠 Question :: ->->-> ``
+
+---
+Status: #🌱 
+Tags:
+[[Redis]] - [[Databse]]
+Links:
+References:
+
+[[@redisSCAN]]
+[[@RedisZhongYouBiaoDieDaiQiScanGuMingDiPen]]
