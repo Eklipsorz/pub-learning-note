@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
+            "file": "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "記憶體動態",
+                "query": "session store",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
+                "file": "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "c0bc57cbb057af20",
   "lastOpenFiles": [
-    "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
-    "develop/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
-    "develop/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md",
-    "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
-    "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
-    "develop/hot、cold、warm 是強調著資料的使用率，hot是頻繁存取的資料、cold是偶爾存取的資料、warm則是之間.md",
-    "MOC/Database MOC.md",
+    "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
+    "MOC/Express.js MOC.md",
+    "develop/在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
+    "購物車資料同步方案會以客戶端能看到的正確資料為主.md",
+    "Session 的去留會依據過期時間和登出，cookie的去留會依據過期時間、登出、自行清除cookie.md",
+    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
     "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
-    "develop/cold backup 是指在實際備份資料的系統離線下進行備份.md",
-    "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md"
+    "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
+    "develop/belazy-shop/Untitled.md",
+    "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md"
   ]
 }

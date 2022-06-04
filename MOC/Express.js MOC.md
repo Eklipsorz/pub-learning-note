@@ -20,7 +20,7 @@
 [[若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session]]
 - express-session store:
 [[express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store]]
-
+[[Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定]]
 
 ### body-parser
 - body-parser
