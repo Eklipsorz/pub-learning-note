@@ -91,6 +91,12 @@
 - quit
 [[redis.quit 和 redis.disconnect 是對應redis上的指令嗎]]
 
+- Scan
+ [[Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組]]
+
+- KEYS
+[[Redis KEYS 可以使用表達式來找到符合表達式的key]]
+[[Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題]]
 
 ### master/slave
 - master/slave 
