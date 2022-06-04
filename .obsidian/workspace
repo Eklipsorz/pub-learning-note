@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
+            "file": "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "1e6323a509d0d33e",
+        "id": "5be0f26860d65d01",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+            "file": "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
+                "file": "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "c0bc57cbb057af20",
   "lastOpenFiles": [
+    "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
     "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
     "MOC/Express.js MOC.md",
     "develop/在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
@@ -115,7 +116,6 @@
     "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
     "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
-    "develop/belazy-shop/Untitled.md",
-    "develop/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md"
+    "develop/belazy-shop/Untitled.md"
   ]
 }
