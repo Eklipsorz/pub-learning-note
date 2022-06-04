@@ -37,6 +37,7 @@ Status: #🌱
 Tags:
 [[Operating System]] - [[Database]]
 Links:
+[[資料庫的Exclusive lock是一旦有人鎖死就只允許在鎖死期間給第一個鎖上的人進行讀寫存取，其他人不能參與存取]]
 References:
 [[@laowudemaoMySqlGongXiangSuoPaiTaSuo]]
 [[@ZiLiaoKuZhongDeGongXiangSuoYuPaiTaSuoChengShiRenSheng]]

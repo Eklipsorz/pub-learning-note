@@ -1,6 +1,11 @@
 
 
 ## 描述
+KEYS 是Redis 指令，形式會是：
+```
+KEYS <pattern>
+```
+
 
 引用[[@redisKEYS]]所述：
 ```
@@ -26,5 +31,6 @@ Status: #📥
 Tags:
 [[Redis]] 
 Links:
+[[Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題]]
 References:
 [[@redisKEYS]]

@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "c0bc57cbb057af20",
+        "id": "2ba9279e97901038",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/Database MOC.md",
+            "file": "Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "25c36ab0fde6a97b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Database Cursor 是一個將連續資料按照指定數量來分群組，並透過群組名稱來滑動資料來改變顯示資料的元件.md",
-            "mode": "preview"
           }
         }
       }
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/Database MOC.md",
+                "file": "Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c0bc57cbb057af20",
+  "active": "2ba9279e97901038",
   "lastOpenFiles": [
-    "MOC/Database MOC.md",
-    "資料庫的Exclusive lock是一旦有人鎖死就只允許在鎖死期間給第一個鎖上的人進行讀寫存取，其他人不能參與存取.md",
-    "資料庫的Shared Lock是一旦有人鎖死就只允許在鎖死期間給任何人觀看，但無人能夠修改和刪除.md",
-    "Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
-    "Database Cursor 是一個將連續資料按照指定數量來分群組，並透過群組名稱來滑動資料來改變顯示資料的元件.md",
-    "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
-    "將調用config的名稱一律以config來稱呼.md",
-    "庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
-    "develop/belazy-shop-sideproject/購物車資料同步方案會以客戶端能看到的正確資料為主.md",
-    "redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md"
+    "Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
+    "Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題.md",
+    "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
+    "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
+    "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md",
+    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
+    "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+    "Database cursor 的 Forward-Only Cursor 只會.md",
+    "express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md"
   ]
 }
