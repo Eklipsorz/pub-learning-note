@@ -54,6 +54,7 @@
 
 - database cursor
 [[Database Cursor 是一個將連續資料按照指定數量來分群組，並透過群組名稱來滑動資料來改變顯示資料的元件]]
+[[Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改]]
 
 ### 設定檔案
 - redis.conf
