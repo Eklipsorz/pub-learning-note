@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "pots/UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號.md",
+            "file": "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
             "mode": "source"
           }
         }
@@ -48,13 +48,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 655.5,
-    "collapsed": true
+    "width": 370.5
   },
   "right": {
     "id": "818cdd2c8d559c63",
@@ -70,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pots/UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號.md",
+                "file": "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +96,8 @@
   },
   "active": "c0bc57cbb057af20",
   "lastOpenFiles": [
+    "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
+    "Redis Scan.md",
     "pots/UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號.md",
     "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md",
     "express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md",
@@ -105,8 +105,6 @@
     "Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
     "MOC/Express.js MOC.md",
     "develop/在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
-    "購物車資料同步方案會以客戶端能看到的正確資料為主.md",
-    "Session 的去留會依據過期時間和登出，cookie的去留會依據過期時間、登出、自行清除cookie.md",
-    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md"
+    "購物車資料同步方案會以客戶端能看到的正確資料為主.md"
   ]
 }
