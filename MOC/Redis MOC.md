@@ -53,7 +53,7 @@
 [[warm backup 是備份系統與實際要備份資料的系統同時執行下進行備份頻率介於cold和hot之間的備份]]
 
 - database cursor
-[[Database Cursor 是一個將連續資料按照指定數量來分群組，並從而給定名為cursor至每個群組來代表它們]]
+[[Database Cursor 是一個將連續資料按照指定數量來分群組，並透過群組名稱來滑動資料來改變顯示資料的元件]]
 
 ### 設定檔案
 - redis.conf
