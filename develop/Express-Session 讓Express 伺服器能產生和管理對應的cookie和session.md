@@ -86,7 +86,7 @@ app.method(path, callback)
 <!--SR:!2022-06-07,6,248-->
 
 #🧠 session(options)的options 所描述的resave是 ->->-> `每一次客戶端和伺服器之間只要出現連線互動，所對應的session都會重新寫進至session store，即使從store取出來的session 沒有被伺服器修改，也會重新寫進store並更新過期時間；若為false，就直接關閉這項功能`
-<!--SR:!2022-06-04,3,210-->
+<!--SR:!2022-06-10,6,210-->
 
 ---
 Status: #🌱 

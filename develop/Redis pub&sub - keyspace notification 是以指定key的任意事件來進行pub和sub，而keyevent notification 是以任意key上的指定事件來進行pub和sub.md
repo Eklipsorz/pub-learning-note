@@ -67,7 +67,7 @@ __keyevent@0__:del
 <!--SR:!2022-06-05,2,246-->
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是什麼->->-> `__keyspace@0__ 和 __keyevnt@0__`
-<!--SR:!2022-06-04,1,226-->
+<!--SR:!2022-06-06,2,226-->
 
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 兩者專注什麼 (任意key？任意事件？)->->-> `前者專注於特定key值的任意事件，後者則是專注於發生特定事件下的任意key值`
@@ -79,7 +79,7 @@ __keyevent@0__:del
 <!--SR:!2022-06-05,3,250-->
 
 #🧠 若資料庫發送PUBLISH  __keyspace@0__:mykey del 和PUBLISH __keyevent@0__:del mykey，如何接收對應頻道的del 和 mykey ->->-> ` 訂閱名為__keyspace@0__:mykey頻道就能接收del；後者則是訂閱名為__keyevent@0__:del頻道就能接收mykey`
-<!--SR:!2022-06-04,1,228-->
+<!--SR:!2022-06-06,2,228-->
 
 ---
 Status: #🌱 
