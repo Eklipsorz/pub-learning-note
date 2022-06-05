@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "HSCAN 是針對value為hash的SCAN指令.md",
+            "file": "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scan",
+                "query": "PUBLISH keyspace",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HSCAN 是針對value為hash的SCAN指令.md",
+                "file": "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +97,15 @@
   },
   "active": "2ba9279e97901038",
   "lastOpenFiles": [
+    "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
+    "develop/redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
+    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "HSCAN 是針對value為hash的SCAN指令.md",
     "MOC/Redis MOC.md",
     "develop/Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題.md",
     "develop/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
     "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
     "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
-    "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md",
-    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "connect-redis 替伺服器建構以redis為主的session 儲存空間.md",
-    "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md"
+    "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md"
   ]
 }
