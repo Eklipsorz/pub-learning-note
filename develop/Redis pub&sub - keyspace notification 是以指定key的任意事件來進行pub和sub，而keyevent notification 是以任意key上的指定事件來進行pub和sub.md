@@ -61,10 +61,10 @@ __keyevent@0__:del
 ## 複習
 
 #🧠 Redis Pub/Sub 是什麼樣的機制 ->->-> `是Redis 用來在資料庫上實現key上的事件監聽和事件處理的手段，主要透過資料庫本身會在特定事件下向特定頻道發送(Publish)特定訊息，而使用者只需訂閱該頻道就能接收到訊息，就能夠順勢根據特定事件下的結果來實現事件處理`
-<!--SR:!2022-06-05,2,230-->
+<!--SR:!2022-06-09,4,230-->
 
 #🧠  Redis Pub/Sub 這Publish-Subscribe下有哪兩個實現方式？(提示：鍵和事件) ->->-> `Key-space notification：以指定key上的任意事件來進行publish 和 subscribe、Key-event notification：以任意key上的指定事件來進行publish 和 subscribe`
-<!--SR:!2022-06-05,2,246-->
+<!--SR:!2022-06-11,6,246-->
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是什麼->->-> `__keyspace@0__ 和 __keyevnt@0__`
 <!--SR:!2022-06-06,2,226-->
@@ -76,7 +76,7 @@ __keyevent@0__:del
 
 
 #🧠 當0號資料庫上的mykey 鍵進行DEL處理，redis就會自動傳遞訊息至指定頻道，並且會一次傳遞兩種訊息，傳遞訊息方式會是PUBLISH __keyspace@0__:mykey del或者PUBLISH __keyevent@0__:del mykey，請解釋這些語法主要做了什麼？ ->->-> `向__keyspace@0__頻道 傳遞mykey 出現del處理、向__keyevent@0__頻道 傳遞現在出現del處理的key是 mykey`
-<!--SR:!2022-06-05,3,250-->
+<!--SR:!2022-06-15,10,250-->
 
 #🧠 若資料庫發送PUBLISH  __keyspace@0__:mykey del 和PUBLISH __keyevent@0__:del mykey，如何接收對應頻道的del 和 mykey ->->-> ` 訂閱名為__keyspace@0__:mykey頻道就能接收del；後者則是訂閱名為__keyevent@0__:del頻道就能接收mykey`
 <!--SR:!2022-06-06,2,228-->
