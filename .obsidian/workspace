@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
+            "file": "develop/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PUBLISH keyspace",
+                "query": "有哪些設定",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
+                "file": "develop/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "2ba9279e97901038",
   "lastOpenFiles": [
-    "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
-    "develop/redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md",
-    "cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "HSCAN 是針對value為hash的SCAN指令.md",
-    "MOC/Redis MOC.md",
-    "develop/Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題.md",
+    "develop/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
+    "develop/Database Cursor 是一個將連續資料按照指定數量來分群組，並透過群組名稱來滑動資料來改變顯示資料的元件.md",
     "develop/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
-    "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
-    "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
-    "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md"
+    "develop/資料庫的Shared Lock是一旦有人鎖死就只允許在鎖死期間給任何人觀看，但無人能夠修改和刪除.md",
+    "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
+    "pots/redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的.md",
+    "pots/UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號.md",
+    "pots/Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率.md",
+    "develop/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
+    "develop/redis dirty read 是指redis儲存(讀取)與資料庫不一致的資料.md"
   ]
 }
