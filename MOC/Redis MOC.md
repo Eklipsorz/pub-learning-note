@@ -60,6 +60,9 @@
 [[Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制]]
 [[Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改]]
 
+- Binary-Safe function
+[[Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式]]
+
 ### 設定檔案
 - redis.conf
 [[redis.conf 是設定Redis 伺服器預設要執行的參數]]
@@ -75,6 +78,7 @@
 
 - Simple Dynamic String
 [[Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間]]
+[[Redis 面對String 會以Binary-safe來處理，這表示它會以二進制格式來看待String]]
 
 - Hash
 [[Redis Hash是儲存多個key-value的字典]]

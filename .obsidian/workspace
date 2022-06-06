@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Binary-Safe.md",
+            "file": "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "43b7b2d58c80b772",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "master-slave 架構",
+                "query": "string 場景",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Binary-Safe.md",
+                "file": "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +107,15 @@
   },
   "active": "2ba9279e97901038",
   "lastOpenFiles": [
-    "Binary-Safe.md",
-    "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
-    "Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
-    "MOC/Database MOC.md",
+    "develop/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
+    "Redis KEYS 可以使用表達式來找到符合表達式的key.md",
+    "process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
+    "HSCAN 是針對value為hash的SCAN指令.md",
+    "JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
+    "develop/Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式.md",
+    "develop/Redis 面對String 會以Binary-safe來處理，這表示它會以二進制格式來看待String.md",
     "MOC/Redis MOC.md",
-    "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
-    "develop/Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
-    "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
-    "develop/資料庫的Shared Lock是一旦有人鎖死就只允許在鎖死期間給任何人觀看，但無人能夠修改和刪除.md",
-    "develop/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md"
+    "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
+    "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md"
   ]
 }
