@@ -25,7 +25,7 @@
 <!--SR:!2022-06-08,11,250-->
 
 #🧠 GCP - Serverless VPC access  是什麼樣的技術 ->->->  `具體透過access connector來轉遞VPC和Serverless environment兩者間的封包轉遞`
-<!--SR:!2022-06-06,9,250-->
+<!--SR:!2022-06-30,24,250-->
 
 #🧠 Serverless VPC access connector 是什麼？->->-> `負責轉遞指定VPC和Serverless environment兩者間的封包轉遞`
 <!--SR:!2022-06-07,10,250-->

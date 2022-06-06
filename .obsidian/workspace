@@ -7,93 +7,73 @@
         "id": "2ba9279e97901038",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "c14f85f051c47b19",
-    "type": "split",
+    "id": "b0b013930e4b9196",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "cb59ae0977574a2f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6cafff7fd047a3d6",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "d2335b6cc36453b9",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "缺點",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "ee5d5cbfcfaa341a",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "d4dbdfcd3748a4f5",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ],
-        "currentTab": 1
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 605.5
+    "currentTab": 0
   },
   "right": {
-    "id": "818cdd2c8d559c63",
-    "type": "split",
+    "id": "2d1c59a3fe0e8264",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "d660f5648f3292d8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dc2c437bbcb9c81a",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "develop/Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "1d6a45ea9d33bb93",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "2ace487af81ac45d",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "df34099cd38aed50",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "active": "2ba9279e97901038",
   "lastOpenFiles": [
