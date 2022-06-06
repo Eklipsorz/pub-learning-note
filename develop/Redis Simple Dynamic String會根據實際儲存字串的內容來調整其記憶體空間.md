@@ -103,7 +103,7 @@ else
 <!--SR:!2022-06-13,10,248-->
 
 #🧠 Redis string: 如何在string做處理? CRUD ->->-> `讀取資料：根據key來讀取對應的value、新增資料：根據key來新增對應的value、更新資料：根據key來更新對應的value、移除資料：根據key來移除指定的key-value pair`
-<!--SR:!2022-06-06,8,250-->
+<!--SR:!2022-06-27,21,250-->
 
 ---
 Status: #🌱 
