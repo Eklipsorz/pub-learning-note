@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "讀寫分離是藉由讓多個主機共享資料庫並給予這些主機.md",
+            "file": "讀寫分離是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "讀寫分離是藉由讓多個主機共享資料庫並給予這些主機.md",
+                "file": "讀寫分離是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
   },
   "active": "2ba9279e97901038",
   "lastOpenFiles": [
-    "讀寫分離是藉由讓多個主機共享資料庫並給予這些主機.md",
+    "讀寫分離是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
     "develop/Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
