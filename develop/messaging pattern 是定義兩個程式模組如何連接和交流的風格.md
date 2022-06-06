@@ -9,7 +9,7 @@
 
 
 ## 複習
-#🧠 messaging pattern 中的message在電腦科學裡是指 ->->-> `兩個程式模組下之間的訊息傳遞`
+#🧠 messaging pattern 中的messaging在電腦科學裡是指 ->->-> `兩個程式模組下之間的訊息傳遞`
 <!--SR:!2022-06-16,10,250-->
 
 #🧠 messaging pattern 是什麼 ->->-> `定義兩個程式模組之間如何傳遞訊息的風格。`

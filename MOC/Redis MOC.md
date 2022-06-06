@@ -1,7 +1,4 @@
 
-
-
-
 ## Redis Client 
 - ioredis 
 [[由於node-redis本身穩定性不高且沒金主支持而轉而較穩定的client - ioredis]]
@@ -59,6 +56,7 @@
 - database cursor
 [[Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制]]
 [[Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改]]
+[[Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放]]
 
 - Binary-Safe function
 [[Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式]]
