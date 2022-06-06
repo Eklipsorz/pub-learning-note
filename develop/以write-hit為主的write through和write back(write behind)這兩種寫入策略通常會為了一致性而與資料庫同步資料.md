@@ -114,7 +114,7 @@ write hit 和 write miss 原理源自於CPU能否成功對緩存進行寫入(新
 <!--SR:!2022-06-12,10,250-->
 
 #🧠 客戶端、資料庫、緩存間的寫入兼同步策略：請用下圖來說明write-back(behind)流程 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653840575/blog/database/caching/Write-Back-Steps_xngliy.png) ->->-> `步驟一、當客戶端想要新增/變更東西A時，就會優先去緩存、步驟二、客戶端挑時間點去同步東西A至資料庫`
-<!--SR:!2022-06-06,5,249-->
+<!--SR:!2022-06-20,14,249-->
 
 #🧠 客戶端、資料庫、緩存間的 write-back(behind)：如何標記哪些緩存資料是要同步至資料庫 ->->-> `通常若要實作write-back的資料庫同步，會先替每一個在緩存的資料增加dirty bit，若有經過新增或者變更，就設dirty bit為true，來告知系統哪些資料是需要同步的；若沒有經過新增或變更，就維持dirty bit為false`
 <!--SR:!2022-06-12,10,250-->
