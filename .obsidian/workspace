@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+            "file": "Binary-Safe.md",
             "mode": "source"
           }
         }
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+                "file": "Binary-Safe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +96,7 @@
   },
   "active": "2ba9279e97901038",
   "lastOpenFiles": [
+    "Binary-Safe.md",
     "develop/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "MOC/Database MOC.md",
@@ -105,7 +105,6 @@
     "develop/Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
     "develop/資料庫的Shared Lock是一旦有人鎖死就只允許在鎖死期間給任何人觀看，但無人能夠修改和刪除.md",
-    "develop/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
-    "develop/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md"
+    "develop/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md"
   ]
 }
