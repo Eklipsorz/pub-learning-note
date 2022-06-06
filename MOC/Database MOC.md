@@ -21,9 +21,14 @@
 [[UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號]]
 
 
+## 資料存取策略
+- Read/Write Splitting
+[[Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機]]
+
 ## ORM/ODM
 
 
 ### Sequelize
 - Sequelize 上的UUID
 [[Sequelize 上的UUID 具體來說會在不同資料庫系統有著不同的資料型別]]
+

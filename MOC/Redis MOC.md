@@ -36,6 +36,10 @@
 - Warmup the cache
 [[Warmup the cache 是指正式之前插入常見key至緩存來增加cache hit機率]]
 
+- Read/Write Splitting
+[[Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機]]
+
+
 ## Redis 基礎知識
 - 資料庫是否能自行建立？其名稱為
 [[redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的]]
