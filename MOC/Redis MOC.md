@@ -82,8 +82,11 @@
 [[Redis Hash是儲存多個key-value的字典]]
 
 ### Redis 如何處理過期的key
-- passive deletion vs. active deletion
+- passive deletion 和. active deletion
 [[redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除]]
+
+- redis key 的過期策略
+[[redis key上的過期策略為active deletion + passive deletion]]
 
 ### Redis Sub/Pub
 - 前置知識

@@ -48,6 +48,7 @@ Status: #🌱
 Tags:
 [[Redis]]
 Links:
+[[redis key上的過期策略為active deletion + passive deletion]]
 References:
 [[@redisEXPIRE]]
 [[@notesRedisKeyExpiration2022]]
