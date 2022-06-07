@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
+            "file": "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
+            "file": "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
+                "file": "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "5ae2a941dfc6df32",
   "lastOpenFiles": [
-    "緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
-    "Key eviction 是Redis 釋放記憶體空間的策略.md",
+    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
+    "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
+    "develop/Key eviction 是Redis 釋放記憶體空間的策略.md",
+    "MOC/Redis MOC.md",
     "develop/redis key上的過期策略為active deletion + passive deletion.md",
     "Redis.md",
     "async function 會報錯.md",
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "MOC/Redis MOC.md",
     "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
-    "inbox/JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md",
-    "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md"
+    "inbox/JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md"
   ]
 }

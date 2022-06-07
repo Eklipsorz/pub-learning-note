@@ -88,6 +88,10 @@
 - redis key 的過期策略
 [[redis key上的過期策略為active deletion + passive deletion]]
 
+- key eviction
+[[Key eviction 是Redis 釋放記憶體空間的策略]]
+[[緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO]]
+
 ### Redis Sub/Pub
 - 前置知識
 [[messaging pattern 是定義兩個程式模組如何連接和交流的風格]]
