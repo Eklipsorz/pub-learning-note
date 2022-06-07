@@ -83,7 +83,7 @@ app.method(path, callback)
 <!--SR:!2022-06-08,7,248-->
 
 #🧠 session(options)的options 所描述的saveUninitialized是 ->->-> `原本當客戶端與伺服器開始進行連線時，就會開始建立session物件來紀錄兩者在連線時的狀態，且剛建立的session物件的屬性未在伺服器中被任意值來寫入，此session就會被當作未初始化的session，而若saveUninitialized被設定為true時，就便會將未初始化的session儲存在伺服器的session store，而saveUninitialized被設定為false時，就便不會將未初始化的session儲存在伺服器session store`
-<!--SR:!2022-06-07,6,248-->
+<!--SR:!2022-06-24,17,248-->
 
 #🧠 session(options)的options 所描述的resave是 ->->-> `每一次客戶端和伺服器之間只要出現連線互動，所對應的session都會重新寫進至session store，即使從store取出來的session 沒有被伺服器修改，也會重新寫進store並更新過期時間；若為false，就直接關閉這項功能`
 <!--SR:!2022-06-10,6,210-->
