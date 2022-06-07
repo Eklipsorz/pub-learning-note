@@ -4,87 +4,99 @@
     "type": "split",
     "children": [
       {
-        "id": "5ae2a941dfc6df32",
-        "type": "leaf",
-        "state": {
-          "type": "graph",
-          "state": {}
-        }
-      },
-      {
         "id": "2c3fb96976c95896",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Switch(true) 寫法.md",
+            "mode": "source"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d5267f9b9ff7d914",
-    "type": "mobile-drawer",
+    "id": "9424d6daf816041c",
+    "type": "split",
     "children": [
       {
-        "id": "1a085646177cceb0",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "46008818ca8ee4b2",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "6c8e49f813f5a025",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6831a2e367eb5f04",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "973806f2eeddc5d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "efbe6f26f9085549",
-    "type": "mobile-drawer",
+    "id": "61fcac898af00226",
+    "type": "split",
     "children": [
       {
-        "id": "35fb3cfff232b70c",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "f1d6e765e3034eeb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "850a6e07a47bb3dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Switch(true) 寫法.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "972806fe0388c9cc",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "855ca1a211711798",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
-  "active": "5ae2a941dfc6df32",
+  "active": "2c3fb96976c95896",
   "lastOpenFiles": [
+    "Switch(true) 寫法.md",
     "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
     "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
     "develop/Key eviction 是Redis 釋放記憶體空間的策略.md",
@@ -93,7 +105,6 @@
     "Redis.md",
     "async function 會報錯.md",
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
-    "inbox/JS物件解構可以依據屬性名稱來獲取對應屬性值並賦予在新的變數值.md"
+    "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md"
   ]
 }
