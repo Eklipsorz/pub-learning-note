@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Switch(true) 寫法.md",
+            "file": "UNIX Timestamp 是.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Switch(true) 寫法.md",
+                "file": "UNIX Timestamp 是.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
+    "UNIX Timestamp 是.md",
+    "redis expire 指令設定指定Key的過期時間.md",
+    "Redis TTL 指令回傳已設定過期時間的鍵還剩多少秒要過期.md",
     "Switch(true) 寫法.md",
     "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
     "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
     "develop/Key eviction 是Redis 釋放記憶體空間的策略.md",
     "MOC/Redis MOC.md",
     "develop/redis key上的過期策略為active deletion + passive deletion.md",
-    "Redis.md",
-    "async function 會報錯.md",
-    "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md"
+    "Redis.md"
   ]
 }
