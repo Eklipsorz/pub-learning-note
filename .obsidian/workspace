@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis發送建立對應session來儲存，一開始不會那麼快建立好.md",
+            "file": "設定cookie的path指定對應cookie內容只能給定特定伺服器下的path.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis發送建立對應session來儲存，一開始不會那麼快建立好.md",
+                "file": "設定cookie的path指定對應cookie內容只能給定特定伺服器下的path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
+    "設定cookie的path指定對應cookie內容只能給定特定伺服器下的path.md",
     "redis發送建立對應session來儲存，一開始不會那麼快建立好.md",
     "ioredis 回傳結果會依據著redis指令原本指定的回傳來決定，成功就1，失敗就0.md",
     "inbox/假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
@@ -104,7 +105,6 @@
     "Redis TTL 指令回傳已設定過期時間的鍵還剩多少秒要過期.md",
     "inbox/Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定.md",
     "Switch(true) 寫法.md",
-    "UNIX Timestamp 是指從UTC1970年1月1日0時0分0秒起至現今的經過秒數.md",
-    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md"
+    "UNIX Timestamp 是指從UTC1970年1月1日0時0分0秒起至現今的經過秒數.md"
   ]
 }
