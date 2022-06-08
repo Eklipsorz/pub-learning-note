@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+            "file": "express.js 每個資源下勢必會有middleware負責建立對應資源的session和cookie.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+                "file": "express.js 每個資源下勢必會有middleware負責建立對應資源的session和cookie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
+    "express.js 每個資源下勢必會有middleware負責建立對應資源的session和cookie.md",
     "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
     "app.use(session(...)) 在一開始會建立對應middleware，之後請求來的時候就以該middleware來處理.md",
     "redis expire 指令設定指定Key的過期時間.md",
@@ -104,7 +105,6 @@
     "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
     "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
     "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md",
-    "express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md",
-    "express - redis發送建立對應session來儲存，一開始不會那麼快建立好.md"
+    "express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md"
   ]
 }

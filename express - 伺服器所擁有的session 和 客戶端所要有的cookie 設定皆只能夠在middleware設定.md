@@ -27,7 +27,7 @@
 	req.app.locals.redisStore.ttl = config.days * 86400
 ```
 
-另外redisStore本身就含有ttl變數來指定持續時間，參考
+
 
 
 ```
@@ -58,6 +58,30 @@ static async getSession(req, _, next) {
 ```
 
 
+另外redisStore本身就含有ttl變數來指定持續時間，參考[[@holowaychukTjConnectredis2022]]:
+
+```
+// redis store的建構式：
+constructor(options = {}) {
+
+	super(options)
+	if (!options.client) {
+		throw new Error("A client must be directly provided to the RedisStore")
+	}
+
+	this.prefix = options.prefix == null ? "sess:" : options.prefix
+	this.scanCount = Number(options.scanCount) || 100
+	this.serializer = options.serializer || JSON
+	this.client = options.client
+	this.ttl = options.ttl || 86400 // One day in seconds.
+	this.disableTTL = options.disableTTL || false
+	this.disableTouch = options.disableTouch || false
+
+}
+```
+
+
+
 ## 複習
 #🧠 Question :: ->->-> ``
 
@@ -70,3 +94,4 @@ Links:
 [[express - 設定cookie的path指定對應cookie內容只能給定特定伺服器下的path]]
 [[app.use(session(...)) 在一開始會建立對應middleware，之後請求來的時候就以該middleware來處理]]
 References:
+[[@holowaychukTjConnectredis2022]]
