@@ -55,22 +55,30 @@
 
 ## 複習
 #🧠 redis 如何處理key的過期？採取什麼樣策略->->-> `redis 系統一旦執行時就會同時執行passive deletion 和 active deletion，並不會挑選其中一樣來實現`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠 redis passive deletion 是什麼樣的技術(重複)？ ->->-> `系統不主動檢查哪些key已經過期以及進行過期刪掉，只會在客戶端對著key存取時，才會檢查key是否過期和過期的話就刪掉的回應`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠 redis active deletion 是什麼樣的技術(重複)? ->->-> `系統主動檢查哪些key已經過期以及進行過期刪掉，每一秒會做十次執行以下具體行為：隨機挑選20個key來檢查是否過期、將對應過期key的key-value pair進行刪除；將對應沒過期key的key-value pair進行保留、如果過期的key佔整體key的比率超過25%，就回到第一個步驟，直到過期key的比率低於25%`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠  redis active deletion 的策略是出自於？->->-> `官方的經驗法則`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠 使用著passive deletion和active deletion之後，是不是還存在著過期key仍未釋放的情況？->->-> `答案是可能的`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況 ，那麼原因會是什麼？->->-> `若是這樣，也表明著KEY過期機制上出現著：1. passive deletion 漏洞：從未存取過的過期key 2. active deletion 漏洞：過期key的數量增加速率大於過期key的數量刪除速率下，會出現部分過期key無法被隨機挑選到，接而被刪除釋放。`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法可能可以朝著passive deletion 和 active deletion的缺失走嗎 ->->-> `passive deletion為因依據使用者來控制所以對於伺服器而言，是一個不可控因素，就只能透過active deletion漏洞來解決`
+<!--SR:!2022-06-11,3,250-->
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法朝著active deletion漏洞解決，那麼方向會是如何(提示：增加速率大於釋放速率)>->-> `從該漏洞可以得知其問題源自於過期key的數量增加速率大於釋放速率，那麼就表示過期key數量一直在增加`
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法朝著active deletion的方向，會構成什麼樣的解法(提示：記憶體遲早有一天會被塞爆) ->->-> `記憶體遲早有一天會被塞爆，那麼就從記憶體釋放來淘汰掉一些無法從passive deletion 和 active deletion機制刪掉的key`
+<!--SR:!2022-06-11,3,250-->
 
 
 ---

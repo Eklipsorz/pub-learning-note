@@ -21,6 +21,7 @@ EXPIRE key seconds [ NX | XX | GT | LT]
 
 ## 複習
 #🧠 Question :: ->->-> ``
+<!--SR:!2022-06-11,3,250-->
 
 ---
 Status: 

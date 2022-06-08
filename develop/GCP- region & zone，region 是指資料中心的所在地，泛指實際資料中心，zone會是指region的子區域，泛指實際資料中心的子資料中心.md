@@ -31,7 +31,7 @@
 ## 複習
 
 #🧠 GCP中的region和zone是指什麼？->->-> `region 是指資料中心的所在地，泛指實際資料中心，zone會是指region的子區域，泛指實際資料中心的子資料中心`
-<!--SR:!2022-06-08,11,250-->
+<!--SR:!2022-07-09,31,250-->
 
 #🧠 說明這張圖的region和zone再說明什麼，以GCP的region和zone概念來敘述 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653328292/blog/network/serverless/GCP-region_zone_zrcusp.png) ->->-> `在這裡會有三個資料中心的所在地，分別有拉斯維加斯、東京、台灣彰化，每一個區域上皆會有三個子資料中心(zone)所組成`
 <!--SR:!2022-07-01,25,250-->
