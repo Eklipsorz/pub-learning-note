@@ -120,7 +120,7 @@ Tags:
 [[Redis]] - [[Databse]]
 Links:
 [[Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改]]
-[[Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制]]
+[[Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制]]
 [[Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題]]
 [[Redis KEYS 可以使用表達式來找到符合表達式的key]]
 References:

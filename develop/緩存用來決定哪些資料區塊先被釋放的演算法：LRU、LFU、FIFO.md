@@ -19,7 +19,7 @@
 LRU 全名為Least Recently Used：
 - Least 是指在某種程度上少於任何事物，Recently 是指最近地， Used則是指被使用的
 - Recently Used 表明為最近有被使用
-- 最前面的Least 是形容 Recently Used  來表達在 **最近有使用過的程度上，是很少的**，換言之，離最近使用的時間是最晚的 或者說 在最近一段時間內未被存取
+- 最前面的Least 是形容 Recently Used  來表達在 有使用過的最近程度上，是很少的，換言之， 離最近使用的時間是最晚的 或者說 在最近一段時間內未被存取
 - 強調著一段時間內使用的時間是最晚的
 
 ### LFU 命名緣由
@@ -55,7 +55,7 @@ First In First Out 的理念為先進先出，即為當緩存存滿資料，就�
 
 
 ## 複習
-#🧠 緩存 Least Recently Used 命名緣由是什麼？  ->->-> `Least 是指在某種程度上少於任何事物，Recently 是指最近地，Used則是指被使用的。 Recently Used 表明為最近有被使用。 最前面的Least 是形容 Recently Used  來表達在 最近有使用過的程度上，是很少的，換言之，離最近使用的時間是最晚的 或者說 在最近一段時間內未被存取`
+#🧠 緩存 Least Recently Used 命名緣由是什麼？  ->->-> `最前面的Least 是形容 Recently Used  來表達在 有使用過的最近程度上，是很少的，換言之， 離最近使用的時間是最晚的 或者說 在最近一段時間內未被存取`
 <!--SR:!2022-06-11,3,250-->
 
 #🧠 緩存 Least Frequently Used 命名緣由是什麼 ->->-> `Least 是指在某種程度上少於任何事物，Frequently 是指頻繁地，Used則是指被使用的。Frequently Used 表明為頻繁地有被使用。最前面的Least 是形容 Frequently Used 來表達 在頻繁地使用的程度，是很少的，換言之，使用頻率最小`

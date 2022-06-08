@@ -37,7 +37,7 @@ Status: #🌱
 Tags:
 [[Databse]] - [[Redis]] - [[Database Cursor]]
 Links:
-[[Database Cursor 是一個用數字索引值去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制]]
+[[Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制]]
 [[Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放]]
 References:
 [[@ZhiBiaoZiLiaoKu2021]]

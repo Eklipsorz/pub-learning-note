@@ -37,7 +37,7 @@
 ### 是不是還存在著過期key仍未釋放的情況
 使用著passive deletion和active deletion之後，是不是還存在著過期key仍未釋放的情況？ 答案是可能的，若是這樣，也表明著KEY過期機制上出現著：
 	- passive deletion 漏洞：從未存取過的過期key
-	- active deletion 漏洞：過期key的數量增加速率大於過期key的數量刪除速率下，會出現部分過期key無法被隨機挑選到，接而被刪除釋放。
+	- active deletion 漏洞：(所有種類)key增加速率大於key被釋放速率，會出現部分過期key無法被隨機挑選到，接而被刪除釋放。
 	
 那麼這問題的解法可以根據：
 [[@wljRedisZiLiaoYiJingGuoQiLiaoWeiShiMoHuanZhanYongJiYiTi]]：
@@ -69,7 +69,7 @@
 #🧠 使用著passive deletion和active deletion之後，是不是還存在著過期key仍未釋放的情況？->->-> `答案是可能的`
 <!--SR:!2022-06-11,3,250-->
 
-#🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況 ，那麼原因會是什麼？->->-> `若是這樣，也表明著KEY過期機制上出現著：1. passive deletion 漏洞：從未存取過的過期key 2. active deletion 漏洞：過期key的數量增加速率大於過期key的數量刪除速率下，會出現部分過期key無法被隨機挑選到，接而被刪除釋放。`
+#🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況 ，那麼原因會是什麼？->->-> `若是這樣，也表明著KEY過期機制上出現著：1. passive deletion 漏洞：從未存取過的過期key 2. active deletion 漏洞：(所有種類)key增加速率大於key被釋放速率，會出現部分過期key無法被隨機挑選到，接而被刪除釋放。`
 <!--SR:!2022-06-11,3,250-->
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法可能可以朝著passive deletion 和 active deletion的缺失走嗎 ->->-> `passive deletion為因依據使用者來控制所以對於伺服器而言，是一個不可控因素，就只能透過active deletion漏洞來解決`
