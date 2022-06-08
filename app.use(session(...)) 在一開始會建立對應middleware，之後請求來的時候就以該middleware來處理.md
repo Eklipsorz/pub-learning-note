@@ -7,3 +7,10 @@ app.use(
 	session(sessConfig)
 )
 ```
+
+---
+Status: #🌱 
+Tags:
+[[Express]] - [[Session]]
+Links:
+References:
