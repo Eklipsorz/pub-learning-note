@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+            "file": "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "read aside",
+                "query": "forward",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+                "file": "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,8 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
+    "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
+    "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
     "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "develop/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "develop/資料庫的Shared Lock是一旦有人鎖死就只允許在鎖死期間給任何人觀看，但無人能夠修改和刪除.md",
@@ -104,8 +106,6 @@
     "develop/redis key上的過期策略為active deletion + passive deletion.md",
     "develop/資料庫的Exclusive lock是一旦有人鎖死就只允許在鎖死期間給第一個鎖上的人進行讀寫存取，其他人不能參與存取.md",
     "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
-    "develop/belazy-shop-sideproject/belazy-session、cookie 、購物車過期時間同步機制.md",
-    "develop/belazy-shop-sideproject/cartId 使用UUIDv4來確保每一個使用者的購物車是獨立且不用再寫檢查是否重複.md",
-    "develop/belazy-shop-sideproject/Session 的去留會依據過期時間和登出，cookie的去留會依據過期時間、登出、自行清除cookie.md"
+    "develop/belazy-shop-sideproject/belazy-session、cookie 、購物車過期時間同步機制.md"
   ]
 }
