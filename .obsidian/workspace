@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Javascript的isNaN會將空字串當作數字0.md",
-            "mode": "source"
+            "file": "Belazy - 如何判斷是否填入欄位.md",
+            "mode": "preview"
           }
         }
       },
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Javascript的isNaN會將空字串當作數字0.md",
+                "file": "Belazy - 如何判斷是否填入欄位.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
-    "Javascript的isNaN會將空字串當作數字0.md",
+    "Belazy - 如何判斷是否填入欄位.md",
+    "MOC/JavaScript MOC.md",
+    "Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換錢比對.md",
     "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
     "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
-    "MOC/JavaScript MOC.md",
     "develop/belazy-shop-sideproject/Belazy - 確保讀取的值是否為0或者空值，這兩者在布林值都會呈現false.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
     "redis - flushall 是移除所有資料庫下的所有key-value pair的指令.md",
     "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
-    "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
-    "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md"
+    "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md"
   ]
 }

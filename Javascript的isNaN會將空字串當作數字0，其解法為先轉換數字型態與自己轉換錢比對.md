@@ -20,19 +20,28 @@
 	- 這類型的問題是出自於 IEEE-754規範，並非實際isNaN實現上的錯誤，而是規範上的解釋
 
 ### 解法
+> 一個 `isNaN` 的 polyfill 可以理解為（這個 polyfill 利用了 `NaN` 自身永不等於自身這一特性）：
 
 ```
-let isNaN = function(value) {
-    var n = Number(value);
-    return n !== n;
-};
+static isNaN(value) {
+	const number = Number(value)
+	return number !== value
+}
 ```
 
-
-
-
+重點：
+- 該解法是憑藉著 
+	- **Number內參數若是非數字的話，會回傳NaN** 
+	- **NaN不等於任何值，包括它自己**
+- 那麼將比對值丟入Number進行轉換，再和原本轉換前的比對值比對的話，若假如比對值是數字，那麼勢必是一樣的；若比對值是非數字，那麼勢必是不一樣。
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 JavaScript 的 isNaN有什麼樣的特殊狀況(比如遇到空字串，也請說明整體問題點是什麼) ->->-> `可能會將原本判定為字串的值誤判成數字，比如空字串會被視為數字，這是由於空字串轉換數字型態會是0`
+
+#🧠 JavaScript 的 isNaN 會將字串誤判數字是出於本身問題？->->-> `這類型的問題是出自於 IEEE-754規範，並非實際isNaN實現上的錯誤，而是規範上的解釋`
+
+#🧠 由於JavaScript 的 isNaN 會將字串誤判數字，請試著撰寫能夠解決這樣問題的isNaN 函式->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)`
+
+#🧠 由於JavaScript 的 isNaN 會將字串誤判數字，其解法會是如圖![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)，請說明解法是怎麼樣的思路(提示 NaN、Number回傳) ->->-> `**Number內參數若是非數字的話，會回傳NaN**、NaN不等於任何值，包括它自己，那麼將比對值丟入Number進行轉換，再和原本轉換前的比對值比對的話，若假如比對值是數字，那麼勢必是一樣的；若比對值是非數字，那麼勢必是不一樣。`
 
 ---
 Status: #🌱 
