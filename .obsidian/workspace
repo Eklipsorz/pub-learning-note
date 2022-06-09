@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
+            "file": "Javascript的isNaN會將空字串當作數字0.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
+                "file": "Javascript的isNaN會將空字串當作數字0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,8 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
+    "Javascript的isNaN會將空字串當作數字0.md",
+    "develop/belazy-shop-sideproject/Belazy - 確保讀取的值是否為0或者空值，這兩者在布林值都會呈現false.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
     "redis - flushall 是移除所有資料庫下的所有key-value pair的指令.md",
     "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
@@ -114,8 +116,6 @@
     "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "develop/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "develop/資料庫的Shared Lock是一旦有人鎖死就只允許在鎖死期間給任何人觀看，但無人能夠修改和刪除.md",
-    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
-    "develop/redis key上的過期策略為active deletion + passive deletion.md",
-    "develop/資料庫的Exclusive lock是一旦有人鎖死就只允許在鎖死期間給第一個鎖上的人進行讀寫存取，其他人不能參與存取.md"
+    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md"
   ]
 }
