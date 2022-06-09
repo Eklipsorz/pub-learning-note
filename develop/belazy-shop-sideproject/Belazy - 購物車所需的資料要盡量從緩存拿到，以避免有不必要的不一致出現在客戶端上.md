@@ -26,7 +26,7 @@ product schema inside Redis
 product:<productId>
 ```
 
-- hash value 架構：
+- hash value 架構(這部分比stock資料還少更新，比較多的操作是讀取)：
 	- id 
 	- name
 	- image
@@ -34,7 +34,8 @@ product:<productId>
 	- refreshAt
 
 
-### stock schema in DB
+
+### stock schema
 stock schema 會是：
 - id (stock id)
 - productId
@@ -56,13 +57,16 @@ stock:<stockId>
 	- resetQuantity
 	- price
 	- createdAt
-	- updatedAt
+	- updatedAt：由於經常性變動，所以為求方便而紀錄何時更改
 	- dirtyBit
 	- refreshAT
 
 
 
-### products
+### product API
+除了庫存量以外，所有與產品相關的API皆不能存取和輸出價格和庫存量
+### stock API
+除了庫存量本身能夠存取和輸出價格和庫存量以外，其餘則不能存取
 
 
 
