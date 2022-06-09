@@ -30,8 +30,8 @@ product:<productId>
 	- id 
 	- name
 	- image
-	- dirtyBit
-	- refreshAt
+	- dirtyBit：不需要，由於product本來就只有讀取的用途，所以不需要更新機制
+	- refreshAt：不需要，由於product本來就只有讀取的用途，所以不需要更新機制
 
 
 
