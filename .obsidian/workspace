@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Belazy - 如何判斷是否填入欄位.md",
-            "mode": "preview"
+            "file": "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",
+            "mode": "source"
           }
         }
       },
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belazy - 如何判斷是否填入欄位.md",
+                "file": "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
   },
   "active": "2c3fb96976c95896",
   "lastOpenFiles": [
-    "Belazy - 如何判斷是否填入欄位.md",
+    "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",
     "MOC/JavaScript MOC.md",
     "Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換錢比對.md",
     "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
