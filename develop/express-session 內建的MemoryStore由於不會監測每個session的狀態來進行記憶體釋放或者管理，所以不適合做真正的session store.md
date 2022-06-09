@@ -31,7 +31,7 @@ session store主要有三種形式來實現：
 <!--SR:!2022-06-10,5,248-->
 
 #🧠 session store主要有三種形式來實現 (提示：硬碟、記憶體) ->->-> `以硬碟為主的資料庫來管理session：MongoDB、以記憶體為主的資料庫來管理session：Redis、以記憶體空間來管理session：Memcached`
-<!--SR:!2022-06-09,4,248-->
+<!--SR:!2022-06-20,11,248-->
 
 ---
 Status: #🌱 
