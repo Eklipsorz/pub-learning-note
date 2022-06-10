@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Database - N + 1 問題.md",
+            "file": "Database - N + 1 Queries Problem 原本可以以.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Database - N + 1 問題.md",
+            "file": "Database - N + 1 Queries Problem 原本可以以.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Database - N + 1 問題.md",
+                "file": "Database - N + 1 Queries Problem 原本可以以.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
   },
   "active": "0d06cc36bd907ffb",
   "lastOpenFiles": [
-    "Database - N + 1 問題.md",
+    "Database - N + 1 Queries Problem 原本可以以.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
     "develop/belazy-shop-sideproject/Belazy - 確保讀取的值是否為0或者空值，這兩者在布林值都會呈現false.md",
     "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",

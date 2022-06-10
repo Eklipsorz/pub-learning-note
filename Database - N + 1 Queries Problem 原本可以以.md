@@ -1,6 +1,8 @@
 
 ## 描述
 
+### 案例1 
+引用[[@0xbooShiMeShiWenTiYiJiRuHeJieJue]]所描述：
 > `N+1` 是ORM（对象关系映射）关联数据读取中存在的一个问题。
 
 > 在介绍什么是`N+1`问题之前，首先思考一个问题：
@@ -24,9 +26,11 @@ foreach($users as $user){
 
 > 其实，如果稍微了解一点SQL，根本不用这么麻烦，直接使用`IN` 一次就搞定了。对于这类问题，ORM 其实为我们提供了相应的方案，那就是使用『预加载功能』
 
+重點：
+- N + 1  Queri
 
-
-
+### 案例2
+引用[[@huyangKePuWenShiMeShiORMZhongDeNZhiHu]]所描述
 > 接下来我们有一个需求，展示一个文章列表页，列表页上展示的信息包括：文章标题，文章作者名称。就这两个字段，也不需要分页。
 
 > 我们要查询出这样的数据要怎么做呢。在ORM的世界中，我们直观的做法是这样:
@@ -65,3 +69,5 @@ Tags:
 [[Database]] - [[ORM]]
 Links:
 References:
+[[@0xbooShiMeShiWenTiYiJiRuHeJieJue]]
+[[@huyangKePuWenShiMeShiORMZhongDeNZhiHu]]
