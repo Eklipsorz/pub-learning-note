@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "de6a184b96c48671",
+        "id": "543ae1363efef856",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -36,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "isNaN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,17 +90,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "de6a184b96c48671",
+  "active": "543ae1363efef856",
   "lastOpenFiles": [
+    "Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換錢比對.md",
+    "Javascript - Date.parse() 是將輸入參數轉換成從1970,01.01 至指定參數之間的經過秒數(毫秒).md",
+    "MOC/JavaScript MOC.md",
+    "Untitled 1.md",
     "驗證字串原本是否為數字.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
     "develop/belazy-shop-sideproject/Session 的去留會依據過期時間和登出，cookie的去留會依據過期時間、登出、自行清除cookie.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換錢比對.md",
     "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
-    "MOC/Database MOC.md",
-    "develop/session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
-    "develop/Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
-    "develop/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md"
+    "MOC/Database MOC.md"
   ]
 }
