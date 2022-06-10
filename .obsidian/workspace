@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "0d06cc36bd907ffb",
+        "id": "de6a184b96c48671",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "a207d2ffaf5da310",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
-            "mode": "preview"
           }
         }
       }
@@ -50,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "forward",
+                "query": "resave",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0d06cc36bd907ffb",
+  "active": "de6a184b96c48671",
   "lastOpenFiles": [
     "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
+    "develop/session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
+    "develop/若session的resave關閉後，會依賴著store本身是否具有機制能夠刷新閒置不用的session之過期時間.md",
     "MOC/Database MOC.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
     "develop/belazy-shop-sideproject/Belazy - 確保讀取的值是否為0或者空值，這兩者在布林值都會呈現false.md",
     "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",
     "MOC/JavaScript MOC.md",
     "Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換錢比對.md",
-    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
-    "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
-    "redis - flushall 是移除所有資料庫下的所有key-value pair的指令.md"
+    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
   ]
 }

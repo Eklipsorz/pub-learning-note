@@ -55,6 +55,16 @@ for post in posts:   # 此时会执行select * from post的查询
 SELECT t1.title, t2.name from post as t1 INNER JOIN user as t2 ON t2.id = t1.owner_id;
 ```
 
+
+https://zhuanlan.zhihu.com/p/27323883
+
+https://dosmanthus.medium.com/rails-n-1-queries-problem-73dfe5f99182
+https://medium.com/@chaowu.dev/rails-n-1-query-41aa92ffb92e
+https://segmentfault.com/a/1190000039421843
+https://chuyi.inow.tw/2013/02/eager-loading-and-lazy-loading/
+https://www.796t.com/content/1519841049.html
+https://ithelp.ithome.com.tw/articles/10223194
+
 ### 為何衍生？
 
 
@@ -77,12 +87,19 @@ SELECT t1.title, t2.name from post as t1 INNER JOIN user as t2 ON t2.id = t1.own
 ### 實務層面：為何要特別提起這問題
 N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫負擔就越重，所以實務上提到它乃是因為它是在增加資料庫的不必要處理負擔前提下，來實現主要的Query 。
 
-### 常見的起因
+### 常見的發生地點
 一般來說，SQL官方提供的語法都會特別事先紀錄相關連的表格，但若考慮ORM需要從應用程式層面來轉換SQL語法的話，就不一定能夠特別關注這問題，因此常見的問題乃是因為 **ORM 是否會事先儲存相關連的表格來做處理**
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 Database：N+1 問題是什麼？ ->->-> `N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現`
+
+#🧠 Database：N+1 問題的發生主因是什麼？ ->->-> `沒事先紀錄與特定集合相關連的集合`
+
+#🧠 Database：N+1 問題發生在哪個常見場合 ->->-> `一般來說，SQL官方提供的語法都會特別事先紀錄相關連的表格，但若考慮ORM需要從應用程式層面來轉換SQL語法的話，就不一定能夠特別關注這問題，因此常見的問題乃是因為 **ORM 是否會事先儲存相關連的表格來做處理**
+`
+
+#🧠 Database：N+1 問題之前，系統預期如何處理1個索要特定集合的Query?->->-> `預期會有的實現：當向資料庫發送一筆Query來索要特定集合A的N筆紀錄，那麼會預期系統會事先向資料庫索要與特定集合相關連的表格集合B並記錄下來，接著讓特定集合A的每一筆紀錄(總數為N筆)都去從表格集合B找到相關連的紀錄`
 
 ---
 Status: #🌱 

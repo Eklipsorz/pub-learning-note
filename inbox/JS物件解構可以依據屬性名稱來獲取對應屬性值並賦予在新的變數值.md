@@ -29,7 +29,7 @@ const {p: foo, q: bar} = o;
 
 ## 複習
 #🧠 請說明下面語法在做啥？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654493334/blog/javascript/destructure/js-destructure-example_y814dg.png)->->-> `物件解構會依據屬性名稱來從指定物件o來取得對應的p屬性值和q屬性值，接著把p屬性值賦予至foo這個變數以及把q屬性值賦予至bar這個變數`
-<!--SR:!2022-06-10,3,250-->
+<!--SR:!2022-06-20,10,250-->
 
 
 ---

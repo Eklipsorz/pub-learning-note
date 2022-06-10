@@ -17,7 +17,7 @@
 [[Express-Session 讓Express 伺服器能產生和管理對應的cookie和session]]
 [[在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session]]
 [[session的resave功能是盡可能讓潛在可用的session繼續留在session store]]
-[[若session的resave關閉後，會依賴著store本身是否具有機制能夠移除閒置不用的session]]
+[[若session的resave關閉後，會依賴著store本身是否具有機制能夠刷新閒置不用的session之過期時間]]
 - express-session store:
 [[express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store]]
 [[Session 過期時間由session store來規定或者由負責管理和建立的session套件來指定]]
