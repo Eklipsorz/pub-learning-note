@@ -13,7 +13,7 @@
 - 若resave為true就啟用該功能；反之，若為false就關閉
 
 ### 如何釋放閒置sesion
-由於express-session與session-store進行分割，express-session管理好自己的業務-管理整體的session和cookie，同時也委託session-store負責管理儲存/釋放session存在session，所以具體來說會依賴著store本身是否具有機制能夠移除閒置不用的session
+由於express-session與session-store進行分割，express-session管理好自己的業務-管理每個請求下的session和cookie，同時也委託session-store負責管理儲存/釋放session存在session，所以具體來說會依賴著store本身是否具有機制能夠移除閒置不用的session
 
 ## 複習
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
+            "file": "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "resave",
+                "query": "master",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
+                "file": "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +97,15 @@
   },
   "active": "de6a184b96c48671",
   "lastOpenFiles": [
-    "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
-    "develop/session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
-    "develop/若session的resave關閉後，會依賴著store本身是否具有機制能夠刷新閒置不用的session之過期時間.md",
+    "develop/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "MOC/Database MOC.md",
-    "develop/belazy-shop-sideproject/Belazy - 購物車所需的資料要盡量從緩存拿到，以避免有不必要的不一致出現在客戶端上.md",
-    "develop/belazy-shop-sideproject/Belazy - 確保讀取的值是否為0或者空值，這兩者在布林值都會呈現false.md",
-    "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",
-    "MOC/JavaScript MOC.md",
-    "Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換錢比對.md",
-    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
+    "develop/session的resave功能是盡可能讓潛在可用的session繼續留在session store.md",
+    "develop/Express-Session 讓Express 伺服器能產生和管理對應的cookie和session.md",
+    "develop/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
+    "develop/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md",
+    "develop/在沒有任何session的情況下，只要當req.session下任一屬性被寫入，express-session就會為它建立對應的cookie和session.md",
+    "develop/Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式.md",
+    "Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
+    "develop/若session的resave關閉後，會依賴著store本身是否具有機制能夠刷新閒置不用的session之過期時間.md"
   ]
 }
