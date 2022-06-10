@@ -27,7 +27,8 @@
 [[Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機]]
 
 ## ORM/ODM
-
+- N + 1 Queries Problem
+[[Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現]]
 
 ### Sequelize
 - Sequelize 上的UUID
