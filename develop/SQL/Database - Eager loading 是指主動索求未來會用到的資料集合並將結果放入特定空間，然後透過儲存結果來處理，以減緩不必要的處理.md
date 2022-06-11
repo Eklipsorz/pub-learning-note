@@ -88,11 +88,14 @@ console.log('Amount of Sails:', awesomeCaptain.ship.amountOfSails);
 #🧠  Database: eager loading 命名緣由->->-> `eager 表示當需求來臨時，強調某些人事物迫切地需要某些人事物、loading 為載入資料，在這裡會是指向資料庫系統索要資料並成功獲取、eager 搭配 loading 代表著當需求來臨時，迫切地需要某些人事物的 loading，或者指當需求來臨時，迫切地載入所有內容，而先預先載入會處理到的資料`
 
 #🧠 Database: eager loading 是什麼樣的技術(別說緣由) ->->-> `是預先加載的意思，也就是在用到資料前就先去資料庫把會用到的資料A先取出來，存在特定空間中，接著等要用到的時候，直接從特定空間取出儲存結果來處理，而不是重複地向資料庫系統索要資料A`
+<!--SR:!2022-06-14,3,250-->
 
 #🧠  假如有個導覽列，當被點開的時候，會呈現三個用圖片做成的選項；當沒被點開的時候，不會呈現三個選項 ，試說明Eager loading ->->-> `在這裡，若是eager loading的話，不管有沒有點開，都會先載入那三個選項，然後最後呈現時就直接呈現`
+<!--SR:!2022-06-14,3,250-->
 
 
 #🧠 Database：sequelize 如何在find系列操作觸發eager loading ->->-> `添加options.include就能觸發`
+<!--SR:!2022-06-14,3,250-->
 
 #🧠 sequelize find 系列的 include 語法 為何可以觸發eager loading? ->->-> `對應著SQL裡頭的 JOIN查詢，通常該查詢在對應資料庫系統中是以eager loading來處理`
 

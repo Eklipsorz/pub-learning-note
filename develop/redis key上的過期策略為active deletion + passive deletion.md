@@ -67,7 +67,7 @@
 <!--SR:!2022-06-21,10,250-->
 
 #🧠 使用著passive deletion和active deletion之後，是不是還存在著過期key仍未釋放的情況？->->-> `答案是可能的`
-<!--SR:!2022-06-11,3,250-->
+<!--SR:!2022-06-19,8,250-->
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況 ，那麼原因會是什麼？->->-> `若是這樣，也表明著KEY過期機制上出現著：1. passive deletion 漏洞：從未存取過的過期key 2. active deletion 漏洞：(所有種類)key增加速率大於key被釋放速率，會出現部分過期key無法被隨機挑選到，接而被刪除釋放。`
 <!--SR:!2022-06-21,10,250-->
@@ -78,7 +78,7 @@
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法朝著active deletion漏洞解決，那麼方向會是如何(提示：增加速率大於釋放速率)>->-> `從該漏洞可以得知其問題源自於過期key的數量增加速率大於釋放速率，那麼就表示過期key數量一直在增加`
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法朝著active deletion的方向，會構成什麼樣的解法(提示：記憶體遲早有一天會被塞爆) ->->-> `記憶體遲早有一天會被塞爆，那麼就從記憶體釋放來淘汰掉一些無法從passive deletion 和 active deletion機制刪掉的key`
-<!--SR:!2022-06-11,3,250-->
+<!--SR:!2022-06-20,9,250-->
 
 
 ---

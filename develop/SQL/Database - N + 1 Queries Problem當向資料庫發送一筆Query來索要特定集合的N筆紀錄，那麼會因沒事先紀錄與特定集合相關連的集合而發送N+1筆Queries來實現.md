@@ -139,9 +139,11 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 <!--SR:!2022-06-13,3,250-->
 
 #🧠 以下為N+1 Queries Problems 的範例，請說明為何是N+1 Queries Problem? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example1_xqkmom.png)->->-> `案例中是先從客戶端對資料庫發送索要歲數要大於18的使用者集合，然後在客戶端遍歷那集合上的每個使用者來向資料庫發送索要balance集合、 一開始索要使用者集合的Query 是算一個，並且那集合上的使用者總數為N，那麼每個使用者都各向資料庫發送索要balance集合，所以總共有N個Query，再加上最前面一個，所以算是N+1 個Queries。`
+<!--SR:!2022-06-14,3,250-->
 
 
 #🧠 以下為N+1 Queries Problems 的範例，請說明為何是N+1 Queries Problem? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example2_dme7so.png)->->-> `一開始會向資料庫發送索要擁有所有文章的資料集合，那集合會有N個文章，接著會遍歷該集合的每個文章，並於每次就向資料庫系統索要使用者資料集合、一開始索要所有文章的資料集合是一個Query，而文章集合的N個文章會每個向資料庫系統發送索要使用者資料集合的Query，共為N個Query ，所以總計為N+1 Queries `
+<!--SR:!2022-06-14,3,250-->
 
 
 #🧠 Database : N+1 Queries Problems 解法為何？ ->->-> `人為因素：改寫程式碼，先向資料庫系統索求相關連的集合然後儲存起來，接著再從該儲存結果找到相關連紀錄、系統因素：尋找可以直接引發eager loading語法或者功能，比如讓ORM轉換成JOIN查詢，該查詢本身會是eager loading`
