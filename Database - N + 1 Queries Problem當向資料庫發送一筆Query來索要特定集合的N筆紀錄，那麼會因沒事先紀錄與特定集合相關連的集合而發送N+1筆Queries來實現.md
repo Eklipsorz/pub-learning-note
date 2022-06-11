@@ -27,7 +27,7 @@ foreach($users as $user){
 > 其实，如果稍微了解一点SQL，根本不用这么麻烦，直接使用`IN` 一次就搞定了。对于这类问题，ORM 其实为我们提供了相应的方案，那就是使用『预加载功能』
 
 重點：
-- N + 1  Queri
+-  案例中是先對資料庫發送
 
 ### 案例2
 引用[[@huyangKePuWenShiMeShiORMZhongDeNZhiHu]]所描述
