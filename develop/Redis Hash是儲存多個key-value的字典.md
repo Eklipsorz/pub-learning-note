@@ -7,7 +7,7 @@
 
 重點：
 - redis 的hash實際上是字典結構
-- hash上的每一個元素皆為key-value pair
+- hash上的每一個元素皆為key-value pair，hash上的key和value皆為字串
 - 相較於String而言，hash可以將資料細分好幾個區塊來儲存，而String則是一股腦兒儲存整塊資料，假如使用者資訊是由年齡、身高、性別、名稱、電話所構成，字串就直接儲存一個大字串來包含這些內容
 	```
 	年齡：身高：性別：名稱：電話
@@ -38,7 +38,7 @@
 #🧠 redis hash 是怎麼樣的型別->->-> `redis 的hash實際上是字典結構，字典上的每一個元素皆為key-value pair，每一個key都會對應特定的value。`
 <!--SR:!2022-06-18,14,250-->
 
-#🧠 redis hash 是賦予給誰的型別？ ->->-> `具體來說redis來說，它是一種以key-value pair為基本資料型態來儲存的資料庫，所以key通常會是字串或者數字，而value則是任意型別，hash則是可指定value的型別之一`
+#🧠 redis hash 是賦予給誰的型別？ ->->-> `具體來說redis來說，它是一種以key-value pair為基本資料型態來儲存的資料庫，所以key通常會是字串，而value則是任意型別，hash則是可指定value的型別之一`
 <!--SR:!2022-07-17,36,270-->
 
 #🧠 redis hash vs. string 兩者間是如何儲存資料的？->->-> `較於String而言，hash可以將資料細分好幾個區塊來儲存，而String則是一股腦兒儲存整塊資料。`
