@@ -26,7 +26,7 @@
 ---
 Status: #🌱 
 Tags:
-[[Redis]] - [[Databse]]
+[[Redis]] - [[Database]]
 Links:
 [[Redis KEYS 可以使用表達式來找到符合表達式的key]]
 References:
