@@ -30,6 +30,11 @@
 - N + 1 Queries Problem
 [[Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現]]
 
+## 前置知識
+- query 是向資料庫索要特定資料的請求或者要求讀取
+[[SQL 中的Query 是向資料庫索要特定資料的請求或者詢問]]
+
+
 ### Sequelize
 - Sequelize 上的UUID
 [[Sequelize 上的UUID 具體來說會在不同資料庫系統有著不同的資料型別]]

@@ -27,7 +27,15 @@ foreach($users as $user){
 > 其实，如果稍微了解一点SQL，根本不用这么麻烦，直接使用`IN` 一次就搞定了。对于这类问题，ORM 其实为我们提供了相应的方案，那就是使用『预加载功能』
 
 重點：
--  案例中是先對資料庫發送
+-  案例中是先從客戶端對資料庫發送索要歲數要大於18的使用者集合，然後在客戶端遍歷那集合上的每個使用者來向資料庫發送索要balance集合
+-  一開始索要使用者集合的Query 是算一個，並且那集合上的使用者總數為N，那麼每個使用者都各向資料庫發送索要balance集合，所以總共有N個Query，再加上最前面一個，所以算是N+1 個Queries。
+```
+$users = User::where("age", ">", 18)->select();
+foreach($users as $user){
+  $balance = User::getFieldByUserId($user->user_id, "balance");
+  $user['balance'] = $balance;
+}
+```
 
 ### 案例2
 引用[[@huyangKePuWenShiMeShiORMZhongDeNZhiHu]]所描述
@@ -55,9 +63,19 @@ for post in posts:   # 此时会执行select * from post的查询
 SELECT t1.title, t2.name from post as t1 INNER JOIN user as t2 ON t2.id = t1.owner_id;
 ```
 
+重點：
+- 一開始會向資料庫發送索要擁有所有文章的資料集合，那集合會有N個文章
+```text
+posts = Post.objects.all()  #  获取所有的文章数据，注意此时不会执行sql语句  by the5fire
+result = []
+for post in posts:   # 此时会执行select * from post的查询
+    result.append({
+        'title': post.title,
+        'owner': post.owner.name,  # 此时会执行  select * from user where user_id = <post.user_id>
+    })
+```
 
 https://zhuanlan.zhihu.com/p/27323883
-
 https://dosmanthus.medium.com/rails-n-1-queries-problem-73dfe5f99182
 https://medium.com/@chaowu.dev/rails-n-1-query-41aa92ffb92e
 https://segmentfault.com/a/1190000039421843
