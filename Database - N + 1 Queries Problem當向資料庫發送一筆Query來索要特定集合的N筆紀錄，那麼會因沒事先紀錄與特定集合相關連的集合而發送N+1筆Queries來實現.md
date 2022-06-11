@@ -120,6 +120,9 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 
 
 ### Solution: N + 1 Queries Problem
+1. 解法為：
+	- 人為因素：改寫程式碼，先向資料庫系統索求相關連的集合然後儲存起來，接著再從該儲存結果找到相關連紀錄 
+	- 系統因素：尋找可以直接引發eager loading語法或者功能，比如讓ORM轉換成JOIN查詢，該查詢本身會是eager loading
 
 ## 複習
 #🧠 Database：N+1 問題是什麼？ ->->-> `N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現`
@@ -135,8 +138,13 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 #🧠 Database：N+1 問題之前，系統預期如何處理1個索要特定集合的Query?->->-> `預期會有的實現：當向資料庫發送一筆Query來索要特定集合A的N筆紀錄，那麼會預期系統會事先向資料庫索要與特定集合相關連的表格集合B並記錄下來，接著讓特定集合A的每一筆紀錄(總數為N筆)都去從表格集合B找到相關連的紀錄`
 <!--SR:!2022-06-13,3,250-->
 
+#🧠 以下為N+1 Queries Problems 的範例，請說明為何是N+1 Queries Problem? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example1_xqkmom.png)->->-> `案例中是先從客戶端對資料庫發送索要歲數要大於18的使用者集合，然後在客戶端遍歷那集合上的每個使用者來向資料庫發送索要balance集合、 一開始索要使用者集合的Query 是算一個，並且那集合上的使用者總數為N，那麼每個使用者都各向資料庫發送索要balance集合，所以總共有N個Query，再加上最前面一個，所以算是N+1 個Queries。`
 
 
+#🧠 以下為N+1 Queries Problems 的範例，請說明為何是N+1 Queries Problem? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example2_dme7so.png)->->-> `一開始會向資料庫發送索要擁有所有文章的資料集合，那集合會有N個文章，接著會遍歷該集合的每個文章，並於每次就向資料庫系統索要使用者資料集合、一開始索要所有文章的資料集合是一個Query，而文章集合的N個文章會每個向資料庫系統發送索要使用者資料集合的Query，共為N個Query ，所以總計為N+1 Queries `
+
+
+#🧠 Database : N+1 Queries Problems 解法為何？ ->->-> `人為因素：改寫程式碼，先向資料庫系統索求相關連的集合然後儲存起來，接著再從該儲存結果找到相關連紀錄、系統因素：尋找可以直接引發eager loading語法或者功能，比如讓ORM轉換成JOIN查詢，該查詢本身會是eager loading`
 
 ---
 Status: #🌱 
@@ -145,6 +153,7 @@ Tags:
 Links:
 [[Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求]]
 [[Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理]]
+[[SQL 語法中的JOIN 查詢 皆先將相關連的表格連結再一起並另外儲存，然後再從中讓集合的每個元素去從儲存結果找到相關連的紀錄]]
 References:
 [[@0xbooShiMeShiWenTiYiJiRuHeJieJue]]
 [[@huyangKePuWenShiMeShiORMZhongDeNZhiHu]]
