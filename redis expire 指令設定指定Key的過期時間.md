@@ -7,21 +7,16 @@
 重點：
 - expiry 意指為過期時間
 - 設定對對
-- NX
-- XX
-- GX
-- LT
+ 
 
 
 ```
-EXPIRE key seconds [ NX | XX | GT | LT]
+EXPIRE key seconds 
 ```
 
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-06-11,3,250-->
 
 ---
 Status: 

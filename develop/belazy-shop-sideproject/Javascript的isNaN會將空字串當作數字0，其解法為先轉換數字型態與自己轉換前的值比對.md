@@ -50,6 +50,7 @@ static isNaN(value) {
 ---
 Status: #🌱 
 Tags:
+[[JavaScript]] - [[Side Project]]
 Links:
 References:
 [[@avengerWhyDoesIsNaN2019]]

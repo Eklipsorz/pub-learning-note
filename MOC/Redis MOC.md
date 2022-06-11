@@ -112,6 +112,9 @@
 [[Redis KEYS 可以使用表達式來找到符合表達式的key]]
 [[Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題]]
 
+- TTL
+[[Redis TTL 指令回傳的鍵還剩多少秒要過期或者還能存活在緩存的時間]]
+
 ### master/slave
 - master/slave 
 [[redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取]]

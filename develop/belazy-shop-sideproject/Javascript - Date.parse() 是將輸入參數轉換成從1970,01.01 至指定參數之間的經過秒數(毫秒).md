@@ -18,7 +18,7 @@ Date.parse('0')
 ---
 Status: #🌱 
 Tags:
-[[JavaScript]]
+[[JavaScript]] - [[Side Project]]
 Links:
 References:
 [[@DateParseJavaScript]]
