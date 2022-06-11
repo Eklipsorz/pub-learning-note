@@ -1,6 +1,9 @@
 
 ## 描述
 
+### Query 是什麼？
+[[SQL 中的Query 是向資料庫索要特定資料的請求或者詢問]]
+
 ### 案例1 
 引用[[@0xbooShiMeShiWenTiYiJiRuHeJieJue]]所描述：
 > `N+1` 是ORM（对象关系映射）关联数据读取中存在的一个问题。
@@ -64,7 +67,8 @@ SELECT t1.title, t2.name from post as t1 INNER JOIN user as t2 ON t2.id = t1.own
 ```
 
 重點：
-- 一開始會向資料庫發送索要擁有所有文章的資料集合，那集合會有N個文章
+- 一開始會向資料庫發送索要擁有所有文章的資料集合，那集合會有N個文章，接著會遍歷該集合的每個文章，並於每次就向資料庫系統索要使用者資料集合
+- 一開始索要所有文章的資料集合是一個Query，而文章集合的N個文章會每個向資料庫系統發送索要使用者資料集合的Query，共為N個Query ，所以總計為N+1 Queries 
 ```text
 posts = Post.objects.all()  #  获取所有的文章数据，注意此时不会执行sql语句  by the5fire
 result = []
@@ -83,7 +87,8 @@ https://chuyi.inow.tw/2013/02/eager-loading-and-lazy-loading/
 https://www.796t.com/content/1519841049.html
 https://ithelp.ithome.com.tw/articles/10223194
 
-### 為何衍生？
+### N + 1 Queries Problem 是什麼？
+N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現
 
 
 1. 原本預期： 當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼實際資料庫收到的Query就一個
@@ -102,6 +107,11 @@ https://ithelp.ithome.com.tw/articles/10223194
 1 + N 個Queries
 ```
 
+### 為何衍生？起因？
+起因源自於：
+- 人為開發因素：開發者面對一個資料集合的索求，可能會先向資料庫系統索取該集合，然後再利用該集合的遍歷來索求與該集合相關連的集合，加起來會是N+1 Queries
+- 系統因素：通常會是因爲負責轉換SQL的ORM因開發者沒強迫使用預先加載(Eager Loading)，所以才演變成先向資料庫索要特定集合，然後遍歷那集合的每個元素來向資料庫索求相關連的集合來找到相關連的紀錄
+
 ### 實務層面：為何要特別提起這問題
 N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫負擔就越重，所以實務上提到它乃是因為它是在增加資料庫的不必要處理負擔前提下，來實現主要的Query 。
 
@@ -109,12 +119,14 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 一般來說，SQL官方提供的語法都會特別事先紀錄相關連的表格，但若考慮ORM需要從應用程式層面來轉換SQL語法的話，就不一定能夠特別關注這問題，因此常見的問題乃是因為 **ORM 是否會事先儲存相關連的表格來做處理**
 
 
+### Solution: N + 1 Queries Problem
+
 ## 複習
 #🧠 Database：N+1 問題是什麼？ ->->-> `N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現`
 <!--SR:!2022-06-13,3,250-->
 
-#🧠 Database：N+1 問題的發生主因是什麼？ ->->-> `沒事先紀錄與特定集合相關連的集合`
-<!--SR:!2022-06-13,3,250-->
+#🧠 Database：N+1 問題的發生主因是什麼？ (提示：先說明主因，再說明主因是誰引起？ 人為？系統? )->->-> `主因是沒事先紀錄與特定集合相關連的集合，人為開發因素：開發者面對一個資料集合的索求，可能會先向資料庫系統索取該集合，然後再利用該集合的遍歷來索求與該集合相關連的集合，加起來會是N+1 Queries、系統因素：通常會是因爲負責轉換SQL的ORM因開發者沒強迫使用預先加載(Eager Loading)，所以才演變成先向資料庫索要特定集合，然後遍歷那集合的每個元素來向資料庫索求相關連的集合來找到相關連的紀錄`
+
 
 #🧠 Database：N+1 問題發生在哪個常見場合 ->->-> `一般來說，SQL官方提供的語法都會特別事先紀錄相關連的表格，但若考慮ORM需要從應用程式層面來轉換SQL語法的話，就不一定能夠特別關注這問題，因此常見的問題乃是因為 **ORM 是否會事先儲存相關連的表格來做處理**
 <!--SR:!2022-06-13,3,250-->
@@ -123,11 +135,16 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 #🧠 Database：N+1 問題之前，系統預期如何處理1個索要特定集合的Query?->->-> `預期會有的實現：當向資料庫發送一筆Query來索要特定集合A的N筆紀錄，那麼會預期系統會事先向資料庫索要與特定集合相關連的表格集合B並記錄下來，接著讓特定集合A的每一筆紀錄(總數為N筆)都去從表格集合B找到相關連的紀錄`
 <!--SR:!2022-06-13,3,250-->
 
+
+
+
 ---
 Status: #🌱 
 Tags:
 [[Database]] - [[ORM]]
 Links:
+[[Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求]]
+[[Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理]]
 References:
 [[@0xbooShiMeShiWenTiYiJiRuHeJieJue]]
 [[@huyangKePuWenShiMeShiORMZhongDeNZhiHu]]

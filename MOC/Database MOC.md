@@ -17,6 +17,13 @@
 [[Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改]]
 [[Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放]]
 
+### 資料操作
+- Eager Loading
+[[Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理]]
+
+- Lazy Loading
+[[Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求]]
+
 ## 序號的唯一性
 - UUID
 [[UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號]]
