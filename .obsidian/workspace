@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
+            "file": "develop/belazy-shop-sideproject/Belazy-postman bug會因為接收源自於自製錯誤物件而陷入無限循環.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
+                "file": "develop/belazy-shop-sideproject/Belazy-postman bug會因為接收源自於自製錯誤物件而陷入無限循環.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "07f572f50b6bbfb8",
   "lastOpenFiles": [
+    "develop/belazy-shop-sideproject/Belazy-postman bug會因為接收源自於自製錯誤物件而陷入無限循環.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
     "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
     "SQL 語法中的JOIN 查詢 皆先將相關連的表格連結再一起並另外儲存，然後再從中讓集合的每個元素去從儲存結果找到相關連的紀錄.md",
@@ -104,7 +105,6 @@
     "develop/Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題.md",
     "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
     "develop/belazy-shop-sideproject/購物車資料同步方案會以客戶端能看到的正確資料為主.md",
-    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
-    "develop/inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md"
+    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md"
   ]
 }
