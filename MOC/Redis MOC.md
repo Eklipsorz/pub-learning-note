@@ -44,6 +44,8 @@
 - Redis 為什麼是以單執行緒作為主要處理
 [[redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行]]
 
+- Redis 多ㄓ
+
 ### 前置概念
 - Dictionary (HashTable)
 [[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
