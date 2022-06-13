@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis 單執行緒.md",
+            "file": "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "單執行緒",
+                "query": "allocate on write 場景",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis 單執行緒.md",
+                "file": "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +97,15 @@
   },
   "active": "07f572f50b6bbfb8",
   "lastOpenFiles": [
-    "redis 單執行緒.md",
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+    "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
+    "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
     "pots/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
     "develop/hot、cold、warm 是強調著資料的使用率，hot是頻繁存取的資料、cold是偶爾存取的資料、warm則是之間.md",
     "develop/SQL/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
     "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
     "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
     "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
-    "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "develop/belazy-shop-sideproject/Belazy-postman bug會因為接收源自於自製錯誤物件而陷入無限循環.md",
-    "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md"
+    "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md"
   ]
 }
