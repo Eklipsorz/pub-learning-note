@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
+            "file": "redis 單執行緒.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "build",
+                "query": "單執行緒",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
+                "file": "redis 單執行緒.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "07f572f50b6bbfb8",
   "lastOpenFiles": [
+    "redis 單執行緒.md",
+    "pots/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md",
+    "develop/hot、cold、warm 是強調著資料的使用率，hot是頻繁存取的資料、cold是偶爾存取的資料、warm則是之間.md",
+    "develop/SQL/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
     "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
     "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
     "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
     "develop/belazy-shop-sideproject/Belazy-postman bug會因為接收源自於自製錯誤物件而陷入無限循環.md",
-    "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
-    "develop/Database Cursor 會使用Shared Lock來將要給開發者存取的資料集合鎖死，以避免被人修改.md",
-    "SQL 語法中的JOIN 查詢 皆先將相關連的表格連結再一起並另外儲存，然後再從中讓集合的每個元素去從儲存結果找到相關連的紀錄.md",
-    "develop/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
-    "Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md"
+    "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md"
   ]
 }
