@@ -9,19 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+            "file": "redis  的多執行緒會負責處理網路請求IO、.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "3a8802b7b7bea895",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
-            "mode": "preview"
           }
         }
       }
@@ -50,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "BIO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+                "file": "redis  的多執行緒會負責處理網路請求IO、.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +97,15 @@
   },
   "active": "07f572f50b6bbfb8",
   "lastOpenFiles": [
-    "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
-    "執行緒切換(Thread switch) 是指N個執行緒實際無法從環境同時拿到N個實體核心執行時，就會輪流獲取核心來執行.md",
-    "將調用config的名稱一律以config來稱呼.md",
-    "將serverless vpc access connector附加至特定serverless service，使它能夠轉發封包至VPC.md",
-    "async function 會報錯.md",
-    "develop/SQL/Forward-only cursor 是只紀錄使用者接下來要指向的資料集合，過去所遍歷的資料集合將會直接釋放.md",
-    "MOC/Redis MOC.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
-    "pots/redis 是將資料存放記憶體的NOSQL資料庫，資料會是以key-value pair的形式.md"
+    "redis  的多執行緒會負責處理網路請求IO、.md",
+    "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
+    "redis expire 指令設定指定Key的過期時間.md",
+    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
+    "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md",
+    "express.js 每個資源下勢必會有middleware負責建立對應資源的session和cookie.md",
+    "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
+    "develop/OS/執行緒切換(Thread switch) 是指N個執行緒實際無法從環境同時拿到N個實體核心執行時，就會輪流獲取核心來執行.md",
+    "develop/OS/Blocking IO 是指只要任務發起IO請求，在獲得結果之前，任務會一直等待直到其請求回應結果.md"
   ]
 }
