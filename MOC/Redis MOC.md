@@ -41,6 +41,9 @@
 - 資料庫是否能自行建立？其名稱為
 [[redis 本身的資料庫名稱皆為數字，且由系統自行建立，每個資料庫都是獨立的]]
 
+- Redis 為什麼是以單執行緒作為主要處理
+[[redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行]]
+
 ### 前置概念
 - Dictionary (HashTable)
 [[dictionary 是如同字典一般儲存多個key-value pairs，key會是關鍵字，value則是解釋關鍵字的描述]]
@@ -60,6 +63,9 @@
 
 - Binary-Safe function
 [[Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式]]
+
+- Thread switch
+[[執行緒切換(Thread switch) 是指N個執行緒實際無法從環境同時拿到N個實體核心執行時，就會輪流獲取核心來執行]]
 
 ### 設定檔案
 - redis.conf
