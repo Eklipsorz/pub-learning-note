@@ -13,31 +13,20 @@
             "mode": "source"
           }
         }
-      },
-      {
-        "id": "1d76239663df5447",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-            "mode": "preview"
-          }
-        }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "66416f18f29f34fa",
+    "id": "9d30ea8e68b6aa4a",
     "type": "split",
     "children": [
       {
-        "id": "42a59f4bf034c0cb",
+        "id": "4a8baa4d5ef06988",
         "type": "tabs",
         "children": [
           {
-            "id": "adddaf817b9157f2",
+            "id": "6c3be5ec03814784",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -45,12 +34,12 @@
             }
           },
           {
-            "id": "adf600677adb91a9",
+            "id": "d8ec2032b6d52b22",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "BIO",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,18 +52,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5
+    "width": 300
   },
   "right": {
-    "id": "22f1abebee47890e",
+    "id": "941cbcabc64dcb0b",
     "type": "split",
     "children": [
       {
-        "id": "d5f1f2a4e417c6ed",
+        "id": "b41123639c62d56b",
         "type": "tabs",
         "children": [
           {
-            "id": "e51959da82f4dbd1",
+            "id": "b0bf450dbcccd30b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -91,7 +80,7 @@
             }
           },
           {
-            "id": "f2886ad285f31bd5",
+            "id": "2fe1f5fa3a3f14bf",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
