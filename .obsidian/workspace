@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Express Middleware Function 是客戶端特定請求至伺服器特定回應之間的處理函式.md",
+            "file": "switch 作用域問題.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Express Middleware Function 是客戶端特定請求至伺服器特定回應之間的處理函式.md",
+                "file": "switch 作用域問題.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "92df1d6b7f1dc74d",
   "lastOpenFiles": [
+    "switch 作用域問題.md",
     "Express Middleware Function 是客戶端特定請求至伺服器特定回應之間的處理函式.md",
     "MOC/Redis MOC.md",
     "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
@@ -104,7 +105,6 @@
     "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
     "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
     "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
-    "express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md"
+    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md"
   ]
 }
