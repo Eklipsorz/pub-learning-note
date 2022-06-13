@@ -65,7 +65,7 @@ console.log('Amount of Sails:', hisShip.amountOfSails);
 <!--SR:!2022-06-14,3,250-->
 
 #🧠 試著用Lazy Loading 來說明 sequelize 語法 (提示：船和船長) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654935600/blog/database/orm/sequelize-lazy-loading-example_kumr5g.png)->->-> `假如有船和船長表格，一開始會索要船長表格上的資訊，那麼就回傳其資訊，直到需要船長相關的船資訊，那麼就會從船表格找到與該船長相關的船，在這裡會是由getShip來實現，接著從船資訊來回傳`
-<!--SR:!2022-06-13,2,248-->
+<!--SR:!2022-06-18,5,248-->
 
 #🧠 Database：Lazy Loading 是什麼？->->-> `Lazy loading 是索求需求來臨時才會索求特定資料，其餘時間點都維持不執行索求或者保持懶惰。`
 <!--SR:!2022-06-14,2,230-->

@@ -32,7 +32,7 @@
 <!--SR:!2022-07-01,21,230-->
 
 #🧠  Data Structure ADT：dictionary是概念嗎？還是具體實現？ ->->-> `字典為一種資料模型上的概念，實際上會是ADT，描述字典該有的特點和操作`
-<!--SR:!2022-06-13,12,248-->
+<!--SR:!2022-07-15,32,248-->
 
 #🧠 Data Structure ADT：dictionary 會有哪些操作 ->->-> `讀取：使用特定key來找到對應value、新增：使用一個key-value pair來新增至字典、移除：使用特定key來移除對應key-value pair、 更新：使用特定key來更新對應value`
 <!--SR:!2022-06-19,15,250-->
