@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "be1f53f11668c4b9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "redis  的多執行緒會負責處理網路請求IO、.md",
+            "mode": "preview"
+          }
+        }
       }
     ],
     "direction": "vertical"
