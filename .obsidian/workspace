@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "switch 作用域問題.md",
+            "file": "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "多執行緒",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "switch 作用域問題.md",
+                "file": "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +97,15 @@
   },
   "active": "92df1d6b7f1dc74d",
   "lastOpenFiles": [
+    "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
+    "develop/OS/Blocking IO 是指只要任務發起IO請求，在獲得結果之前，任務會一直等待直到其請求回應結果.md",
+    "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
+    "develop/OS/執行緒切換(Thread switch) 是指N個執行緒實際無法從環境同時拿到N個實體核心執行時，就會輪流獲取核心來執行.md",
+    "pots/GCP serverless service 在一開始被建立後所處的網路能夠對外，但不是處於VPC.md",
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
     "switch 作用域問題.md",
     "Express Middleware Function 是客戶端特定請求至伺服器特定回應之間的處理函式.md",
-    "MOC/Redis MOC.md",
-    "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-    "redis expire 指令設定指定Key的過期時間.md",
-    "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
-    "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
-    "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
-    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
-    "google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md"
+    "MOC/Redis MOC.md"
   ]
 }
