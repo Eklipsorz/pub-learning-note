@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "58a8a109b4f82b5b",
+        "id": "57a0b0536a98de62",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "switch 若沒設定每個scope至每個case的話，switch帶來的scope會將能夠存取到的識別自紀錄起來.md",
+            "file": "原生forEach 的callback並不支援promise為主的callback.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "switch 若沒設定每個scope至每個case的話，switch帶來的scope會將能夠存取到的識別自紀錄起來.md",
+                "file": "原生forEach 的callback並不支援promise為主的callback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "58a8a109b4f82b5b",
+  "active": "57a0b0536a98de62",
   "lastOpenFiles": [
-    "switch 若沒設定每個scope至每個case的話，switch帶來的scope會將能夠存取到的識別自紀錄起來.md",
-    "develop/JavaScript/Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope.md",
+    "原生forEach 的callback並不支援promise為主的callback.md",
+    "develop/JavaScript/switch 若沒給每個case一個Execution context的話，switch帶來的Execution context會將能夠存取到的識別字紀錄起來.md",
     "MOC/JavaScript MOC.md",
+    "develop/JavaScript/Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope.md",
     "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
     "develop/OS/Blocking IO 是指只要任務發起IO請求，在獲得結果之前，任務會一直等待直到其請求回應結果.md",
     "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
     "develop/OS/執行緒切換(Thread switch) 是指N個執行緒實際無法從環境同時拿到N個實體核心執行時，就會輪流獲取核心來執行.md",
     "pots/GCP serverless service 在一開始被建立後所處的網路能夠對外，但不是處於VPC.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md"
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md"
   ]
 }

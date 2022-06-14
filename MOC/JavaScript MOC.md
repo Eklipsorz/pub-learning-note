@@ -3,7 +3,7 @@
 
 - Lexical Evironment
 [[Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope]]
-
+[[switch 若沒給每個case一個Execution context的話，switch帶來的Execution context會將能夠存取到的識別字紀錄起來]]
 
 ## 技術用語
 - polyfill
@@ -29,3 +29,9 @@
 ## 日期
 - Date.parse()
 [[Javascript - Date.parse() 是將輸入參數轉換成從1970,01.01 至指定參數之間的經過秒數(毫秒)]]
+
+
+## Promise
+
+- forEach 的callback 放入promise?
+[[原生forEach 的callback並不支援promise為主的callback]] 
