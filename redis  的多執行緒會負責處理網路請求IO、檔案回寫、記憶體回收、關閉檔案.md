@@ -21,9 +21,16 @@
 ![](https://programmer.ink/images/think/50216a37090eb07355566e7e29242bbd.jpg)
 
 重點：
-- 單執行緒下會與客戶端建立連線以及socket來接收對應的指令
-- 這些指令會依序放在指令佇列中，redis 主要執行緒會從佇列中取出指令執行並將結果放入緩衝區
-- 等到所有指令執行完畢後，就負責按照socket資訊將所有指令的結果回寫至對應client端
+1. 單執行緒下會與客戶端建立連線以及socket來
+2. 單執行緒透過socket來接收對應的封包
+3. 解析封包並解析出指令，並將這些指令會依序放在指令佇列中，
+4. 等到所有指令被解析出來，redis 主要執行緒會從佇列中取出指令執行
+5. 將執行結果放入一個佇列
+6. 等到所有指令執行完畢以及佇列放置完畢後，就負責按照socket資訊將所有指令的結果回寫至對應client端
+7. 發送結果
+8. 客戶端接收結果
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187843/blog/database/caching/redis/non-multithread-how-redis-works_aohtyn.png)
 
 ### 版本6.0
 
@@ -74,15 +81,41 @@ Process Description:
 6. Unbind and empty the waiting queue
 
 ![](https://programmer.ink/images/think/a0d97ae13fed61789fe16adc66babc65.jpg)
+
+#### 理解內容
+
+流程是：
+1. 客戶端向redis建立連接
+2. redis主執行緒收到便將對應socket放置佇列，該佇列會由負責管理網路請求I/O的模組A來負責處理
+3. 放置完，主執行緒就保持等待，由模組A負責分配網路請求I/O執行緒來對這些socket 進行綁定-換言之，在這裡有三個客戶端，共有3個socket，在這裡會拿三個執行緒透過這三個socket接收源自於各自對應的客戶端之封包
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187884/blog/database/caching/redis/multithread-how-redis-works-part1_iuozuf.png)
+
+綁定完socket之後的流程：
+1. 客戶端就會透過socket發送封包至對應的I/O網路請求執行緒
+2. 由I/O執行緒從封包內解析指令並放置至Task Queue
+3. 當所有指令都被解析完成並全都放入Task Queue後，就會喚醒主要執行緒去從Task Queue挑指令來執行
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187884/blog/database/caching/redis/multithread-how-redis-works-part2_xx6bd2.png)
+
+
+4. 主執行緒每一次執行完指令就會將結果和socket放置在等待I/O佇列
+5. 等待所有指令都執行完畢並都放到佇列時，就由負責處理I/O執行緒的模組來分配原有綁定socket的執行緒來回寫至socket
+6. 透過I/O執行緒回傳socket內容至客戶端
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187883/blog/database/caching/redis/multithread-how-redis-works-part3_tpblc2.png)
 ### socket 內容
 1. 含有請求內容/回應內容、請求方資訊(IP、域名、Port)、回應方資訊(IP、域名、Port)
 
 ## 複習
-#🧠 無多執行緒的redis版本下，如何處理每個請求的？(提示：請考量socket、queue、緩衝區buffer、回寫) ![](https://programmer.ink/images/think/50216a37090eb07355566e7e29242bbd.jpg)->->-> `- 單執行緒下會與客戶端建立連線以及socket來接收對應的指令 - 這些指令會依序放在指令佇列中，redis 主要執行緒會從佇列中取出指令執行並將結果放入緩衝區 - 等到所有指令執行完畢後，就負責按照socket資訊將所有指令的結果回寫至對應client端`
-<!--SR:!2022-06-17,3,250-->
+#🧠 無多執行緒的redis版本下，如何處理每個請求的？(提示：請考量socket、queue、緩衝區buffer、回寫) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187843/blog/database/caching/redis/non-multithread-how-redis-works_aohtyn.png)>->-> `1. 單執行緒下會與客戶端建立連線以及socket來 2. 單執行緒透過socket來接收對應的封包 3. 解析封包並解析出指令，並將這些指令會依序放在指令佇列中 4. 等到所有指令被解析出來，redis 主要執行緒會從佇列中取出指令執行 5. 將執行結果放入一個佇列 6. 等到所有指令執行完畢以及佇列放置完畢後，就負責按照socket資訊將所有指令的結果回寫至對應client端 7. 發送結果 8. 客戶端接收結果`
 
-#🧠 多執行緒的redis版本下，如何處理每個請求的？(提示：請考量socket、io執行緒、queue、緩衝區buffer、回寫)  ![](https://programmer.ink/images/think/50216a37090eb07355566e7e29242bbd.jpg)->->-> `- 先替負責管理I/O多執行緒的模組建立多個佇列，每一次客戶端向redis伺服器發送請求時，主執行緒就先將該請求的socket放進佇列中。 - 等到佇列滿的時候或者沒請求的時候，主執行緒就平均分攤給I/O執行緒並由執行緒綁定特定Socket來專門接收其客戶端傳送過來的封包。 - 接著在I/O執行緒開始解析前，主執行緒會保持等待， I/O執行緒接收到封包內容並解析成指令放置redis的執行佇列中，等到I/O執行緒都解析完畢之就會緩醒主執行緒，redis主執行緒就從執行佇列中取出任務並將結果寫入緩衝區，並且將結果和對應socket 來放入為負責管理I/O多執行緒的模組所建立的多個佇列 - 等到沒任何內容能夠傳送至佇列，就在根據socket來源將結果分發當初綁定socket的IO執行緒，由這些執行緒按照緩衝區位置和socket回寫至對應的客戶端，接著主執行緒就等待I/O執行緒回寫完畢 - 寫完就緩醒主執行緒來清空所有佇列(I/O 執行緒的等待佇列、執行佇列)`
-<!--SR:!2022-06-15,1,230-->
+
+
+#🧠 多執行緒的redis版本下，如何處理每個請求的？ 先說明如何制定連線？(提示：請考量socket、io執行緒、queue、緩衝區buffer、回寫) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187884/blog/database/caching/redis/multithread-how-redis-works-part1_iuozuf.png)->->-> `1. 客戶端向redis建立連接 2. redis主執行緒收到便將對應socket放置佇列，該佇列會由負責管理網路請求I/O的模組A來負責處理 3. 放置完，主執行緒就保持等待，由模組A負責分配網路請求I/O執行緒來對這些socket 進行綁定-換言之，在這裡有三個客戶端，共有3個socket，在這裡會拿三個執行緒透過這三個socket接收源自於各自對應的客戶端之封包`
+
+
+#🧠 多執行緒的redis版本下，如何處理每個請求的？ (不提如何建立連線) (提示：請考量socket、io執行緒、queue、緩衝區buffer、回寫) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187884/blog/database/caching/redis/multithread-how-redis-works-part2_xx6bd2.png)>->-> `1. 客戶端就會透過socket發送封包至對應的I/O網路請求執行緒 2. 由I/O執行緒從封包內解析指令並放置至Task Queue 3. 當所有指令都被解析完成並全都放入Task Queue後，就會喚醒主要執行緒去從Task Queue挑指令來執行 4. 主執行緒每一次執行完指令就會將結果和socket放置在等待I/O佇列 5. 等待所有指令都執行完畢並都放到佇列時，就由負責處理I/O執行緒的模組來分配原有綁定socket的執行緒來回寫至socket 6. 透過I/O執行緒回傳socket內容至客戶端
+`
+
 
 #🧠 Redis 單執行緒在3.0原本是做什麼用途？->->-> `負責網路請求I/O、解析、指令執行`
 <!--SR:!2022-06-17,3,250-->
