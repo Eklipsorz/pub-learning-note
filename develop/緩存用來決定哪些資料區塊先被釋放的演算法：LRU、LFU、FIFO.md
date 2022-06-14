@@ -57,11 +57,11 @@ First In First Out 的理念為先進先出，即為當緩存存滿資料，就�
 
 ## 複習
 #🧠 緩存 Least Recently Used 命名緣由是什麼？  ->->-> `- Least 是指在某種程度上少於任何事物，Recently 是指最近地， Used則是指被使用的 - Recently Used 表明為最近有被使用 - 最前面的Least 主要形容 Recently ，也就是在最近程度上，是最少的，離最近使用的時間是最晚的  - Least Recently 搭配Used 就是指 離最近使用的時間是最晚的 使用 - 強調著一段時間內使用的時間是最晚的`
-<!--SR:!2022-06-14,2,249-->
+<!--SR:!2022-06-20,6,249-->
 
 
 #🧠 緩存 Least Frequently Used 命名緣由是什麼 ->->-> `- Least 是指在某種程度上少於任何事物，Frequently 是指頻繁地，Used則是指被使用的 - Least 是形容Frequently 來表明在頻繁程度上，是最少的，換言之，使用程度最少的 - Least Frequently 搭配 Used就是表明使用程度最少的使用 - 強調著在一段時間內的使用次數`
-<!--SR:!2022-06-14,2,249-->
+<!--SR:!2022-06-19,5,249-->
 
 
 
