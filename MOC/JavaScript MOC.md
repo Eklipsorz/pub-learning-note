@@ -1,4 +1,10 @@
 
+## 背景技術
+
+- Lexical Evironment
+[[Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope]]
+
+
 ## 技術用語
 - polyfill
 [[polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼]]
