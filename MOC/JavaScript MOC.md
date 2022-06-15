@@ -1,6 +1,9 @@
 
 ## 背景技術
 
+- Execution Context
+[[JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態]]
+
 - Lexical Evironment
 [[Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope]]
 [[switch 若沒給每個case一個Execution context的話，switch帶來的Execution context會將能夠存取到的識別字紀錄起來]]

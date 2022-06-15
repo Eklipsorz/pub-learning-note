@@ -11,13 +11,17 @@
 
 
 ### Non-Blocking I/O Model命名緣由
-1. 相對於Blocking I/O Model而言，是一種I/O請求不會阻塞呼叫一方的模式
+1. Non 是指無、沒有，Blocking是指阻塞他人的行為，I/O原指電腦的INPUT/OUTPUT，可以泛指著輸入資料的任務/請求和輸出資料的任務/請求
+2. Non 形容 Blocking 就是不會阻塞他人的行為
+3. Non-Blocking 形容 I/O 就是不會阻塞任何人的輸入輸出請求，任何人會是指呼叫方
+4. 總結就是不會阻塞呼叫方的請求模式
+
 
 ## 複習
 #🧠  Non-Blocking I/O Model 是什麼樣的概念？ 該如何獲取結果->->-> `該模型是當任務發送I/O請求，在獲取結果之前，任務可以做自己的事情，不用等待，而其結果可以是：任務主動詢問負責處理I/O請求的一方是否完成-輪詢 、由負責處理I/O請求的一方自行通知任務、程序、應用程式來處理、由任務告知負責處理I/O請求後續獲取結果該如何做`
 <!--SR:!2022-06-17,3,250-->
 
-#🧠 Non-Blocking I/O Model命名緣由->->-> `相對於Blocking I/O Model而言，是一種I/O請求不會阻塞呼叫一方的模式`
+#🧠 Non-Blocking I/O Model命名緣由->->-> `1. Non 是指無、沒有，Blocking是指阻塞他人的行為，I/O原指電腦的INPUT/OUTPUT，可以泛指著輸入資料的任務/請求和輸出資料的任務/請求 2. Non 形容 Blocking 就是不會阻塞他人的行為 3. Non-Blocking 形容 I/O 就是不會阻塞任何人的輸入輸出請求，任何人會是指呼叫方 4. 總結就是不會阻塞呼叫方的請求模式`
 
 ---
 Status: #🌱 
@@ -25,5 +29,6 @@ Tags:
 [[I/O handling]] - [[Operating System]]
 Links:
 [[Blocking IO 是指只要任務發起IO請求，在獲得結果之前，任務會一直等待直到其請求回應結果]]
+[[電腦 IO(I和O之間有斜線)的IO通常分別泛指著輸入資料的任務和輸出資料的任務，Input是由特定系統A接收過來的信號，Ouput是由特定系統A輸出出去的信號]]
 References:
 [[@StudyNotesModels]]
