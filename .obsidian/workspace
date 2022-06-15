@@ -7,8 +7,11 @@
         "id": "36e2074d63baf94c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "購物車內項目檢查.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "購物車內項目檢查.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,6 +96,7 @@
   },
   "active": "36e2074d63baf94c",
   "lastOpenFiles": [
+    "購物車內項目檢查.md",
     "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
     "pots/Sequelize 上的UUID 具體來說會在不同資料庫系統有著不同的資料型別.md",
     "sequelize model 面向應用程式那面要設定主鍵的話，請在對應model檔案設定.md",
@@ -100,7 +105,6 @@
     "develop/belazy-shop-sideproject/cartId 使用UUIDv4來確保每一個使用者的購物車是獨立且不用再寫檢查是否重複.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "MOC/JavaScript MOC.md",
-    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
-    "嚴格模式下this是undefined.md"
+    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md"
   ]
 }
