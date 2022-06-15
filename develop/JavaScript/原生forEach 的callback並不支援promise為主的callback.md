@@ -141,6 +141,7 @@ value1
 
 
 #🧠  這是JavaScript程式碼，請問非同步任務和同步任務會如何執行？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655196893/blog/promise/asynctask-promise_sm80it.png) ->->-> `由於添加了async和await，這使得內部的同步任務會等待著產生出來的非同步任務執行完畢才執行下一行。因此每一次迭代會生出非同步任務以及非同步任務執行完畢才會輪到下一個迭代，直到所有迭代完畢，就執行disconnect，此時沒非同步任務，所以可以安全地中斷連線`
+<!--SR:!2022-06-18,3,250-->
 
 #🧠 如何解決原生forEach 的callback不支援promise為主的callback？->->-> `撰寫另一個可支援promise為主的forEach(async/await)或者以async/await來包裝同步任務的for-loop和非同步任務就能達成同樣效果`
 

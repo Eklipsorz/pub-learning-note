@@ -139,6 +139,7 @@ switch (..) {
 
 
 #🧠 JavaScript：若不想讓每個case都能存取其他case的識別字，該如何做？(提示：也建立環境吧) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193210/blog/javascript/lexical%20scope/switch-lexcial-scope-1_rryoim.png) 和  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193339/blog/javascript/lexical%20scope/switch-lexcial-scope-2_wpzxli.png)->->-> `替每個case增加execution context，也就是用{}`
+<!--SR:!2022-06-18,3,250-->
 
 ---
 Status: #🌱 
