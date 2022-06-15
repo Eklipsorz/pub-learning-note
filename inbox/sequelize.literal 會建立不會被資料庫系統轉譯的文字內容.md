@@ -91,6 +91,6 @@ the first is the name of the attribute in the DB (or some kind of expression suc
 ---
 Status: #📥 
 Tags:
-[[JavaScript]] - [[Sequelize]] - [[MySQL]]
+[[JavaScript]] - [[sequelize]] - [[MySQL]]
 Links:
 References:

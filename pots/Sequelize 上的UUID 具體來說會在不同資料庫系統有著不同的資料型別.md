@@ -15,7 +15,7 @@
 ---
 Status: #🌱 
 Tags:
-[[Database]] - [[Sequelize]]
+[[Database]] - [[sequelize]]
 Links:
 [[UUID 是憑藉著產出的序號所給予的重疊率近為0而產出之特性的獨特序號]]
 References:

@@ -47,7 +47,7 @@ module.exports = {
 ---
 Status: #📥 
 Tags:
-[[Sequelize]] - [[MySQL]]
+[[sequelize]] - [[MySQL]]
 Links:
 References:
 [[@ModelBasicsSequelize]]
