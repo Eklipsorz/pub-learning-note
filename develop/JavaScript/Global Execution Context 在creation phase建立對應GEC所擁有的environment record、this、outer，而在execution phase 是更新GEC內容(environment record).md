@@ -52,7 +52,7 @@ identifier: <const variable>
 identifier: <let variable>
 ```
 
-在這裡由於只有函式宣告本身沒有scope概念，所以不受到對應值無法確定的問題，而是以具體的函式物件來指派，而const/let的變數宣告會受限於擁有scope概念而致使一開始是呈現沒任何記憶體分配且沒設定初始值，因此對應let/const的變數宣告會是uninitialized來表示該變數還沒有任何記憶體分配以及未指定初始值
+在這裡由於函式宣告本身是有scope概念，只是在GEC和FEC的creation phase期間由於一開始可以直接用函式物件來設定函式識別字所對應的內容，所以才能不在execution phase定義其內容；而const/let的變數宣告會受限於擁有scope概念而且一開始是呈現沒任何記憶體分配且沒設定初始值，因此對應let/const的變數宣告會是uninitialized來表示該變數還沒有任何記憶體分配以及未指定初始值
 
 ```
 GlobalExectionContext = {
@@ -98,6 +98,49 @@ GlobalExectionContext = {
 4. 最終結果會是如下：
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1646750816/backend/lexical%20environment/GlobalExecContext_ylw8a9.png)
 
+#### scope 概念代表著什麼？
+若一個變數具有scope概念，代表該變數是具有一定程度的識別空間、定義該變數何時分配記憶體、內容指派、記憶體釋放
+
+反之，若沒有scope概念的話，就代表著該變數從一開始的執行就已經以整個檔案作為識別空間，並且一開始就分配記憶體並先設定初始值為undefined、內容指派，並於檔案執行結束後釋放其記憶體位置
+
+#### function 宣告本身是有scope概念嗎？
+答案是有的，在這裡舉一個例子：這裡有兩個函式-testFunction1和testFunction2，而前者是放在全域，後者是放在testFunction1內，若function宣告本身是沒有scope概念的話，那麼就能在全域環境下呼叫到原本只能在testFunction1呼叫得到的testFunction2
+
+```
+function testFunction1() {
+	console.log('test func1')
+	function testFunction2() {
+		console.log('test func2')
+	}
+}
+testFunction1()
+testFunction2()
+```
+
+結果是：
+```
+test func1
+ReferenceError: testFunction2 is not defined
+```
+
+若改在testFunction1呼叫testFunction2的話，
+```
+function testFunction1() {
+	console.log('test func1')
+	function testFunction2() {
+		console.log('test func2')
+	}
+	testFunction2()
+}
+testFunction1()
+```
+
+就會是
+```
+test func1
+test func2
+```
+證明函式宣告本身是有scope概念，只是在GEC和FEC的creation phase期間由於一開始可以直接用函式物件來設定函式識別字所對應的內容，所以才能不在execution phase定義其內容
 #### Outer reference 是什麼？
 1. Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找
 2. Outer reference通常會是指向建立目前EC的EC
@@ -117,13 +160,22 @@ GlobalExectionContext = {
 
 
 ## 複習
+
+#🧠  JavaScript： 一個變數擁有scope概念就代表著？(提示：識別、何時記憶體分配、指派、釋放)->->-> `若一個變數具有scope概念，代表該變數是具有一定程度的識別空間、定義該變數何時分配記憶體、內容指派、記憶體釋放`
+
+#🧠  JavaScript： 一個變數沒擁有scope概念就代表著？(提示：識別、何時記憶體分配、指派、釋放)->->-> `反之，若沒有scope概念的話，就代表著該變數從一開始的執行就已經以整個檔案作為識別空間，並且一開始就分配記憶體並先設定初始值為undefined、內容指派，並於檔案執行結束後釋放其記憶體位置`
+
 #🧠 GEC - creation phase 的發生時機點->->-> `當引擎要開始執行某個檔案上的JS程式碼時，就會先建立GEC`
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
 
 #🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域變數、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域變數、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域變數、建立Lexical Environment`
 
-#🧠 Global Execution Context 在Creation phase遇上函式時，會設定識別字以及對應的函式嗎？ ->->-> `會，由於函式宣告並不受到scope的影響`
+#🧠 Global Execution Context 在Creation phase遇上函式時，會設定識別字以及對應的函式嗎？ ->->-> `在這裡由於函式宣告本身是有scope概念，只是在GEC和FEC的creation phase期間由於一開始可以直接用函式物件來設定函式識別字所對應的內容，所以才能不在execution phase定義其內容`
+
+#🧠 Global Execution Context 在Creation phase遇上const/let變數時，會設定識別字以及對應的變數嗎？(提示：scope、沒記憶體分配、初始值) ->->-> `const/let的變數宣告會受限於擁有scope概念而且一開始是呈現沒任何記憶體分配且沒設定初始值，因此對應let/const的變數宣告會是uninitialized來表示該變數還沒有任何記憶體分配以及未指定初始值`
+
+#🧠Global Execution Context 在Creation phase遇上var變數時，會設定識別字以及對應的變數嗎->->-> `只有var變數本身由於沒有scope的概念，所以能夠先分配記憶體給該變數以及預設初始值-undefined，因此對應var的變數值會是undefined代表已經宣告但只是還沒有除了預設指派以外的手段來給予任何初始值給予`
 
 
 #🧠 Global Execution Context 的Lexical Environment 分為哪兩個？->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
@@ -135,7 +187,6 @@ GlobalExectionContext = {
 
 #🧠 Global Execution Context ：VariablEenvironment 主要記錄著什麼？ ->->-> `從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中`
 
-從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
 
 #🧠 Global Execution Context ：Lexical Environment 中的Environment Records 是什麼(在Creation phase和Execution phase) ->->-> `一開始在Creation 階段中，EnvironmentRecord的Type可以定義為Declarative或者Object來決定EnvironmentRecord的類型是什麼，最後Lexical Environment主要定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式，在Execution 階段中，會是JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
 
