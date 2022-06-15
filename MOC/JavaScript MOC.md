@@ -8,6 +8,7 @@
 [[Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope]]
 [[switch 若沒給每個case一個Execution context的話，switch帶來的Execution context會將能夠存取到的識別字紀錄起來]]
 [[Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record)]]
+[[Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record)]]
 ## 技術用語
 - polyfill
 [[polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼]]
