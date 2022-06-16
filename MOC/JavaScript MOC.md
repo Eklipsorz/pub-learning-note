@@ -9,6 +9,9 @@
 [[switch 若沒給每個case一個Execution context的話，switch帶來的Execution context會將能夠存取到的識別字紀錄起來]]
 [[Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record)]]
 [[Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record)]]
+
+- 函式
+[[JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容]]
 ## 技術用語
 - polyfill
 [[polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼]]
