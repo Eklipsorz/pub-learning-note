@@ -12,6 +12,9 @@
 
 - 函式
 [[JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容]]
+
+- var
+[[JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope]]
 ## 技術用語
 - polyfill
 [[polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼]]

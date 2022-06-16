@@ -108,8 +108,8 @@
   "active": "afdcaa789020d50b",
   "lastOpenFiles": [
     "JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
-    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "MOC/JavaScript MOC.md",
+    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
     "JavaScript - 函式宣告本身就是指向一塊儲存s.md",
     "develop/JavaScript/Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope.md",
