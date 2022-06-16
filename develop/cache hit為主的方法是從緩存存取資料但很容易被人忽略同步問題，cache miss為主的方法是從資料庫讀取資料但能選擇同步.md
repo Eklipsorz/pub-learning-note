@@ -33,6 +33,16 @@ Read Through 步驟：
 - 步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)
 	
+### Read Through 和 Read Aside差別
+
+[[@itrendeyitianHuanCunDeWuZhongSheJiMoShiMeiRiTouTiao]]描述：
+> Read-Through 的方式與 Cache-Aside 的方式很接近，區別在於，Cache-Aside 是通過應用程式來更新緩存中的數據，而 Read-Through 則是通過緩存自身來更新數據，也就是說應用和資料庫之間不直接進行連接。  
+  
+  重點：
+  - Read Through 和 Read Aside 共同點是在於兩者都是在cache miss情況下而跑去讀取資料庫
+  - Read Through 和 Read Aside 差別是在於後者是客戶端通過存取資料庫的資料，來同步緩存資料，前者則是因爲客戶端向緩存索要，但它沒有，所以只好由緩存自己向資料庫索要資料來同步緩存，接著回傳給客戶端
+
+	
 ### Read Aside
 Read Aside：如同字面上的意思，讀取不到東西就往另一邊讀取，在這裡會優先讀取一旁的緩存，接著找不到東西再從資料庫找，首先，客戶端會負責向緩存索要東西A，但找不到，所以再由客戶端向另一邊的資料庫找東西A，找到東西A後，就由客戶端來決定是否將東西A寫入至緩存，這裏假定是客戶端是決定回寫，過程就如下圖這樣，就先往一邊找，找不到就往另一邊找：
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653767516/blog/database/caching/Read-Aside-Diagram_koz5ym.png)
@@ -96,6 +106,11 @@ cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用�
 #🧠 Caching 讀取策略：Read Aside步驟是什麼？這裏假定客戶端決定回寫，以這圖來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653767516/blog/database/caching/Read-Aside-Diagram_koz5ym.png)->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，客戶端就向資料庫索要東西A，並從那獲得，步驟3 客戶端將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
 <!--SR:!2022-07-08,27,250-->
 
+#🧠 以Cache miss為主的同步方式：Read Through 和 Read Aside兩者間的共同點為？->->-> `Read Through 和 Read Aside 共同點是在於兩者都是在cache miss情況下而跑去讀取資料庫`
+
+#🧠 以Cache miss為主的同步方式：Read Through 和 Read Aside兩者間的差異點為？ ->->-> `Read Through 和 Read Aside 差別是在於後者是客戶端通過存取資料庫的資料，來同步緩存資料，前者則是因爲客戶端向緩存索要，但它沒有，所以只好由緩存自己向資料庫索要資料來同步緩存，接著回傳給客戶端`
+
+
 ---
 Status: #☀️ 
 Tags:
@@ -105,3 +120,4 @@ Links:
 [[inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格]]
 References:
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]
+[[@itrendeyitianHuanCunDeWuZhongSheJiMoShiMeiRiTouTiao]]

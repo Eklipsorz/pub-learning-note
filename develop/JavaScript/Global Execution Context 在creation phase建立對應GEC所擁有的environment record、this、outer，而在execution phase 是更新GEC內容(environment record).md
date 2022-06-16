@@ -98,7 +98,18 @@ GlobalExectionContext = {
 4. 最終結果會是如下：
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1646750816/backend/lexical%20environment/GlobalExecContext_ylw8a9.png)
 
+
+#### lexical environment是什麼？
+[[@manishkumarWhatLexicalEnvironmenta]] 所描述的
+> A lexical environment is **a data structure that holds identifier-variable mapping**. (here identifier refers to the name of variables/functions, and the variable is the reference to actual object
+
+重點：
+- lexical environment 是一種資料結構，主要儲存每個識別字對應的物件是什麼、識別空間、記憶體位置
+-  Global Execution Context 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？
+	-   Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容
+
 #### scope 概念代表著什麼？
+scope 
 若一個變數具有scope概念，代表該變數是具有一定程度的識別空間、定義該變數何時分配記憶體、內容指派、記憶體釋放
 
 反之，若沒有scope概念的話，就代表著該變數從一開始的執行就已經以整個檔案作為識別空間，並且一開始就分配記憶體並先設定初始值為undefined、內容指派，並於檔案執行結束後釋放其記憶體位置
@@ -165,29 +176,42 @@ test func2
 <!--SR:!2022-06-19,3,250-->
 
 #🧠  JavaScript： 一個變數沒擁有scope概念就代表著？(提示：識別、何時記憶體分配、指派、釋放)->->-> `反之，若沒有scope概念的話，就代表著該變數從一開始的執行就已經以整個檔案作為識別空間，並且一開始就分配記憶體並先設定初始值為undefined、內容指派，並於檔案執行結束後釋放其記憶體位置`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 GEC - creation phase 的發生時機點->->-> `當引擎要開始執行某個檔案上的JS程式碼時，就會先建立GEC`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域變數、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域變數、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域變數、建立Lexical Environment`
 <!--SR:!2022-06-19,3,250-->
 
 #🧠 Global Execution Context 在Creation phase遇上函式時，會設定識別字以及對應的函式嗎？ ->->-> `在這裡由於函式宣告本身是有scope概念，只是在GEC和FEC的creation phase期間由於一開始可以直接用函式物件來設定函式識別字所對應的內容，所以才能不在execution phase定義其內容`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 Global Execution Context 在Creation phase遇上const/let變數時，會設定識別字以及對應的變數嗎？(提示：scope、沒記憶體分配、初始值) ->->-> `const/let的變數宣告會受限於擁有scope概念而且一開始是呈現沒任何記憶體分配且沒設定初始值，因此對應let/const的變數宣告會是uninitialized來表示該變數還沒有任何記憶體分配以及未指定初始值`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 Global Execution Context 在Creation phase遇上var變數時，會設定識別字以及對應的變數嗎->->-> `只有var變數本身由於沒有scope的概念，所以能夠先分配記憶體給該變數以及預設初始值-undefined，因此對應var的變數值會是undefined代表已經宣告但只是還沒有除了預設指派以外的手段來給予任何初始值給予`
+<!--SR:!2022-06-18,2,248-->
 
 
-#🧠 Global Execution Context 的Lexical Environment 分為哪兩個？->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
+#🧠 Global Execution Context 的Lexical Environment 分為哪兩個？(提示：紀錄種類，哪個紀錄const？哪個紀錄var)->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
+
+#🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
+
+#🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間`
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariablEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 Global Execution Context ：LexicalEnvironment 主要記錄著什麼？ ->->-> ` LexicalEnvironment 從GEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 Global Execution Context ：VariablEenvironment 主要記錄著什麼？ ->->-> `從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中`
+<!--SR:!2022-06-18,2,248-->
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Environment Records 是什麼(在Creation phase和Execution phase) ->->-> `一開始在Creation 階段中，EnvironmentRecord的Type可以定義為Declarative或者Object來決定EnvironmentRecord的類型是什麼，最後Lexical Environment主要定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式，在Execution 階段中，會是JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
@@ -197,12 +221,15 @@ test func2
 <!--SR:!2022-06-19,3,250-->
 
 #🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：更新) ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
+<!--SR:!2022-06-18,2,248-->
 
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Outer reference 是什麼？ 做什麼用？->->-> `Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找，主要會指向呼叫建立目前EC的EC，比如GEC呼叫一個函式，那麼其函式的FEC之outer就會是指向於呼叫FEC的GEC`
+<!--SR:!2022-06-18,2,248-->
 
 #🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域變數`
+<!--SR:!2022-06-18,2,248-->
 
 
 #🧠  若於Global Execution Context的建立期間遇到函式、變數的話，其對應識別字會是如何？對應內容是否能有值？(提示：函式不受scope影響，變數會->->-> `在這裡由於只有函式宣告本身可以透過函式名稱來呼叫，所以不受到對應值無法確定的問題，而const/let的變數宣告會受限於對應值無法確定的問題，因此對應let/const的變數宣告會是uninitialized來表示該變數還未宣告`
@@ -215,3 +242,4 @@ Tags:
 Links:
 [[JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態]]
 References:
+[[@manishkumarWhatLexicalEnvironmenta]]
