@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "redis 採用單執行緒",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -109,6 +108,7 @@
   "active": "afdcaa789020d50b",
   "lastOpenFiles": [
     "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+    "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
     "JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
     "MOC/JavaScript MOC.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
@@ -116,7 +116,6 @@
     "JavaScript - 函式宣告本身就是指向一塊儲存s.md",
     "develop/JavaScript/Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope.md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
-    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md"
+    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md"
   ]
 }
