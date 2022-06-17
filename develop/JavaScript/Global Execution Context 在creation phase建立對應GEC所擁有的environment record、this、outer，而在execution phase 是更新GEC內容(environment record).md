@@ -160,6 +160,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context 在Creation phase遇上var變數時，會設定識別字以及對應的變數嗎->->-> `在這裡由於只有var變數本身由於出自於只有global scope和function scope的ES版本的概念，var變數會依據自己所在是不是函式來決定是否為scope，在這會是global scope，並且能夠按照特性先分配記憶體和設定初始值-undefined給定var變數，因此對應var的變數值會是undefined代表已經宣告但只是還沒有除了預設指派以外的手段來給予任何初始值給予`
+<!--SR:!2022-06-19,2,248-->
 
 
 #🧠 Global Execution Context 的Lexical Environment 分為哪兩個？(提示：紀錄種類，哪個紀錄const？哪個紀錄var)->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
@@ -167,6 +168,7 @@ GlobalExectionContext = {
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間`
+<!--SR:!2022-06-19,2,248-->
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariablEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
@@ -198,7 +200,7 @@ GlobalExectionContext = {
 
 
 #🧠  若於Global Execution Context的建立期間遇到函式、變數的話，其對應識別字會是如何？對應內容是否能有值？(提示：函式不受scope影響，變數會->->-> `在這裡由於只有函式宣告本身可以透過函式名稱來呼叫，所以不受到對應值無法確定的問題，而const/let的變數宣告會受限於對應值無法確定的問題，因此對應let/const的變數宣告會是uninitialized來表示該變數還未宣告`
-<!--SR:!2022-06-17,1,230-->
+<!--SR:!2022-06-19,2,230-->
 
 ---
 Status: #🌱 
