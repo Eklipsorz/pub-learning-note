@@ -1,0 +1,1 @@
+belazy - 修改model和migration請重新新增再來修改會比較妥當，有時ORM會紀錄舊有的model和migration資訊而沒根據新修改的內容來修正

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+            "file": "belazy - 修改model和migration請重新新增再來修改會比較妥當.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+                "file": "belazy - 修改model和migration請重新新增再來修改會比較妥當.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "afdcaa789020d50b",
   "lastOpenFiles": [
+    "belazy - 修改model和migration請重新新增再來修改會比較妥當.md",
     "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
     "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
     "JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
@@ -115,7 +116,6 @@
     "JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
     "JavaScript - 函式宣告本身就是指向一塊儲存s.md",
     "develop/JavaScript/Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope.md",
-    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
-    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md"
+    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md"
   ]
 }
