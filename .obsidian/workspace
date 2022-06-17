@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Belazy - Sequelize 查找時會利用對應物件之間的關係來查找.md",
+            "file": "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belazy - Sequelize 查找時會利用對應物件之間的關係來查找.md",
+                "file": "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "afdcaa789020d50b",
   "lastOpenFiles": [
+    "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
     "Belazy - Sequelize 查找時會利用對應物件之間的關係來查找.md",
     "Belazy - Sequelize 對於原本是key的屬性無法使用find的where找尋，只能夠用findByPk.md",
     "Belazy - 修改model和migration請重新新增model和migration再來修改會比較妥當.md",
@@ -115,7 +116,6 @@
     "MOC/Sequelize MOC.md",
     "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
     "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-    "JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
-    "MOC/JavaScript MOC.md"
+    "JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md"
   ]
 }
