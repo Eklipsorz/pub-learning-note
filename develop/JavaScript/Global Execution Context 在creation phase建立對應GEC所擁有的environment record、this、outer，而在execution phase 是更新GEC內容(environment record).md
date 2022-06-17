@@ -153,10 +153,12 @@ GlobalExectionContext = {
 <!--SR:!2022-06-19,3,250-->
 
 #🧠 Global Execution Context 在Creation phase遇上函式時，會設定識別字以及對應的函式嗎？ ->->-> `在這裡由於函式宣告具有以下特性**JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容** 在GEC和FEC的creation phase期間由於一開始可以直接用識別字對應的物件，其物件的初始值會是函式內容本身`
+<!--SR:!2022-06-19,2,248-->
 
 
 
 #🧠 Global Execution Context 在Creation phase遇上const/let變數時，會設定識別字以及對應的變數嗎？(提示：scope、沒記憶體分配、初始值) ->->-> `const/let的變數宣告會受限於擁有scope概念，必須執行到對應scope才能有記憶體分配且並設定初始值，因此對應let/const的識別字對應物件之初始值會設定成uninitialized來表示該變數還沒有任何記憶體分配以及未指定初始值`
+<!--SR:!2022-06-19,2,248-->
 
 
 #🧠 Global Execution Context 在Creation phase遇上var變數時，會設定識別字以及對應的變數嗎->->-> `在這裡由於只有var變數本身由於出自於只有global scope和function scope的ES版本的概念，var變數會依據自己所在是不是函式來決定是否為scope，在這會是global scope，並且能夠按照特性先分配記憶體和設定初始值-undefined給定var變數，因此對應var的變數值會是undefined代表已經宣告但只是還沒有除了預設指派以外的手段來給予任何初始值給予`
@@ -164,8 +166,10 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context 的Lexical Environment 分為哪兩個？(提示：紀錄種類，哪個紀錄const？哪個紀錄var)->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
+<!--SR:!2022-06-19,2,248-->
 
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
+<!--SR:!2022-06-19,2,248-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間`
 <!--SR:!2022-06-19,2,248-->
