@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
+            "file": "Untitled.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "ffad7ebae9552e0a",
+        "id": "050e902a0b93fe55",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
+            "file": "Untitled.md",
             "mode": "preview"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "請舉出對應代碼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "afdcaa789020d50b",
   "lastOpenFiles": [
+    "Untitled.md",
+    "MOC/JavaScript MOC.md",
+    "this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
+    "develop/JavaScript/原生forEach 的callback並不支援promise為主的callback.md",
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
     "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
     "develop/JavaScript/JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
     "develop/JavaScript/JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
     "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
-    "develop/belazy-shop-sideproject/Belazy - Sequelize 對於id、updatedAt、createdAt有預設設定，要修改的話請基於許可之下來修改.md",
-    "develop/belazy-shop-sideproject/Belazy - 修改model和migration請重新新增model和migration再來修改會比較妥當.md",
-    "develop/belazy-shop-sideproject/Belazy - Sequelize 查找時會利用對應物件之間的關係來查找.md",
-    "develop/belazy-shop-sideproject/Belazy - 購物車內項目檢查.md",
-    "redis expire 指令設定指定Key的過期時間.md",
-    "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md"
+    "develop/belazy-shop-sideproject/Belazy - Sequelize 對於id、updatedAt、createdAt有預設設定，要修改的話請基於許可之下來修改.md"
   ]
 }

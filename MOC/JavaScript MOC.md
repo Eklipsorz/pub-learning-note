@@ -45,3 +45,9 @@
 
 - forEach 的callback 放入promise?
 [[原生forEach 的callback並不支援promise為主的callback]] 
+
+
+## 物件
+
+- this
+[[this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件]]
