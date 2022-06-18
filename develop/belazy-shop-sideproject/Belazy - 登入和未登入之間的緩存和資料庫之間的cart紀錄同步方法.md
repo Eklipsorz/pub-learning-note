@@ -15,12 +15,13 @@
 ### 緩存無資料/資料庫有資料
 登入前沒有sessionId
 
-1. 先透過登入者的ID取得資料庫上的所有cart紀錄，依最接近"現今"的cart紀錄為主，並從中取得cartId
-2. 透過第一步驟取到的cartId來從cartItem紀錄找到相對應的紀錄
-3. 將符合第一步驟的cartId的cart紀錄和cartItem紀錄同步至緩存中的新cartId中：	
-	- 資料庫cart紀錄同步至緩存中的新cartId中
-	- 資料庫cartItem紀錄同步至緩存中的新cartItem中
-4. 對緩存上的cart紀錄和cartItem紀錄設定緩存上的過期時間
+0. 先取得目前所產生的cartId當作newCartId
+1. 先透過登入者的ID取得資料庫上的所有cart紀錄，依最接近"現今"的cart紀錄為主，並從中取得cartId來當作oldCartId，在這會獲取cart紀錄
+2. 透過oldCartId來從cartItem紀錄找到相對應的紀錄
+3.  將符合oldCartId的cart紀錄和cartItem紀錄同步至緩存中的紀錄，其中紀錄會是以newCartId
+4.  對緩存上的cart紀錄和cartItem紀錄設定緩存上的過期時間
+5. 將存放於資料庫的cart紀錄和cartItem紀錄更改對應的cartId為newCartId
+
 
 
 

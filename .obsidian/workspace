@@ -97,6 +97,7 @@
   "active": "686a9b5a5ba37dd3",
   "lastOpenFiles": [
     "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
+    "develop/belazy-shop-sideproject/Belazy - sequelize 部分update不能修改身為主鍵的屬性.md",
     "develop/Redis/Redis TTL 指令回傳的鍵還剩多少秒要過期或者還能存活在緩存的時間.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
     "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md",
@@ -104,7 +105,6 @@
     "MOC/JavaScript MOC.md",
     "develop/JavaScript/原生forEach 的callback並不支援promise為主的callback.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
-    "develop/JavaScript/JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md"
+    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md"
   ]
 }
