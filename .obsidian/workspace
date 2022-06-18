@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
+            "file": "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
+            "file": "develop/JavaScript/JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
+                "file": "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "afdcaa789020d50b",
   "lastOpenFiles": [
-    "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
-    "Belazy - Sequelize 查找時會利用對應物件之間的關係來查找.md",
-    "Belazy - Sequelize 對於原本是key的屬性無法使用find的where找尋，只能夠用findByPk.md",
-    "Belazy - 修改model和migration請重新新增model和migration再來修改會比較妥當.md",
-    "Belazy - Sequelize 對於id、updatedAt、createdAt有預設設定，要修改的話請基於許可之下來修改.md",
-    "async function 會報錯.md",
-    "MOC/Sequelize MOC.md",
-    "redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
-    "redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-    "JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md"
+    "sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
+    "develop/JavaScript/JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容.md",
+    "develop/JavaScript/JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
+    "Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
+    "develop/belazy-shop-sideproject/Belazy - Sequelize 對於id、updatedAt、createdAt有預設設定，要修改的話請基於許可之下來修改.md",
+    "develop/belazy-shop-sideproject/Belazy - 修改model和migration請重新新增model和migration再來修改會比較妥當.md",
+    "develop/belazy-shop-sideproject/Belazy - Sequelize 查找時會利用對應物件之間的關係來查找.md",
+    "develop/belazy-shop-sideproject/Belazy - 購物車內項目檢查.md",
+    "redis expire 指令設定指定Key的過期時間.md",
+    "redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md"
   ]
 }
