@@ -42,18 +42,11 @@
 	- 建立一個productHashMap
 	- 緩存紀錄對productHashMap做標記和加總
 	- 資料庫記錄對productHashMap做標記和加總
+	- 合併紀錄上的cartId皆以緩存為主，並另外儲存舊有cartId以方便修改
+	- 合併紀錄上的ORM物件另外儲存
+5. 將cart、cartItem合併紀錄同步至緩存
+6. 將cart、cartItem合併紀錄同步至資料庫
 	
-
-3. 先透過添加userId至cart紀錄來同步緩存資料
-4. 透過目前cartId來取得緩存裡的cartItem紀錄
-5. 取得緩存的總計
-6. 先透過登入者的ID取得資料庫上的所有cart紀錄，依最接近"現今"的cart紀錄為主，並從中取得cartId
-7. 透過cartId來取得資料庫上的總計
-8. 透過第一步驟取到的cartId來從cartItem紀錄找到相對應的紀錄
-9. 將緩存中的cartItem和資料庫上的cartItem 合併
-10. 將緩存中的總計和資料庫上的總計加總
-11. 將前兩者結果更新至緩存目前的cartId
-
 ---
 Status: #🌱 
 Tags:
