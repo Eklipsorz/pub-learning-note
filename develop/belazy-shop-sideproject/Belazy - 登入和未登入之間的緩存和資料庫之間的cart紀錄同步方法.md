@@ -8,6 +8,8 @@
 1. 先透過添加userId至cart紀錄來同步緩存資料
 2. 直接將cartItem紀錄和添加後cart紀錄同步至資料庫上的cart紀錄
 
+不用設置緩存上的過期時間，因緩存的過期時間會在操作上設定
+
 
 
 ### 緩存無資料/資料庫有資料
@@ -15,7 +17,10 @@
 
 1. 先透過登入者的ID取得資料庫上的所有cart紀錄，依最接近"現今"的cart紀錄為主，並從中取得cartId
 2. 透過第一步驟取到的cartId來從cartItem紀錄找到相對應的紀錄
-3. 將符合第一步驟的cartId的cart紀錄和cartItem紀錄同步至緩存中，並存在客戶端新建立出來的session，換言之，新的cartId
+3. 將符合第一步驟的cartId的cart紀錄和cartItem紀錄同步至緩存中的新cartId中：	
+	- 資料庫cart紀錄同步至緩存中的新cartId中
+	- 資料庫cartItem紀錄同步至緩存中的新cartItem中
+4. 對緩存上的cart紀錄和cartItem紀錄設定緩存上的過期時間
 
 
 
