@@ -28,7 +28,7 @@ Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯，在這�
 
 cart資料庫紀錄轉換成資料邏輯：
 - 新增一個空物件template，其屬性為id、userId、sum、createdAt、updatedAt、dirtyBit、refreshAt、oldId
-- 以cartHashMap屬性值來作為其template，其cartHashMap會與緩存共享，key為每一個cartId
+- 以cartHashMap屬性值來作為其template，其cartHashMap會與緩存共享，key為每一個~~cartId~~ userId
 ```
 key -> {....}
 ```
@@ -115,7 +115,7 @@ template.quantity = template.quantity + quantity
 
 cart緩存紀錄轉換成資料邏輯：
 - 新增一個空物件template，其屬性為id、userId、sum、createdAt、updatedAt、dirtyBit、refreshAt、oldId
-- 以cartHashMap屬性值來作為其template，其cartHashMap會與資料庫共享，key為每一個cartId
+- 以cartHashMap屬性值來作為其template，其cartHashMap會與資料庫共享，key為每一個~~cartId~~ userId
 ```
 key -> {....}
 ```

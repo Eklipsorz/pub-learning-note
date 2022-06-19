@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "8ce3419960eae1a3",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/belazy-shop-sideproject/Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯.md",
+            "mode": "preview"
+          }
+        }
       }
     ],
     "direction": "vertical"
