@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "686a9b5a5ba37dd3",
+        "id": "afb5c82b85b2dc5f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md",
+            "file": "develop/belazy-shop-sideproject/Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯.md",
             "mode": "source"
           }
         }
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md",
+                "file": "develop/belazy-shop-sideproject/Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,8 +94,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "686a9b5a5ba37dd3",
+  "active": "afb5c82b85b2dc5f",
   "lastOpenFiles": [
+    "develop/belazy-shop-sideproject/Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯.md",
     "develop/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md",
     "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
     "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
@@ -105,7 +105,6 @@
     "develop/belazy-shop-sideproject/Belazy - sequelize 部分update不能修改身為主鍵的屬性.md",
     "develop/Redis/Redis TTL 指令回傳的鍵還剩多少秒要過期或者還能存活在緩存的時間.md",
     "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
-    "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md",
-    "MOC/JavaScript MOC.md"
+    "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md"
   ]
 }
