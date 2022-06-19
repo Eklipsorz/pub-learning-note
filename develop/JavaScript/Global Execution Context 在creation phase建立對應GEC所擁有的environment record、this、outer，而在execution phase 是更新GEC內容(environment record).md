@@ -10,7 +10,7 @@
 3. 製作流程：
 
 - 建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域物件
-- 建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域變數
+- 建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域物件
 
 - 建立Lexical Environment，主要分為：
 	- LexicalEnvironment：包含Environment Records、Outer reference、Thisbinding這三種主要屬性
@@ -149,7 +149,7 @@ GlobalExectionContext = {
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
 <!--SR:!2022-06-24,6,248-->
 
-#🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域變數、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域變數、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域變數、建立Lexical Environment`
+#🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域物件、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域物件、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域物件、建立Lexical Environment`
 <!--SR:!2022-06-26,7,250-->
 
 #🧠 Global Execution Context 在Creation phase遇上函式時，會設定識別字以及對應的函式嗎？ ->->-> `在這裡由於函式宣告具有以下特性**JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容** 在GEC和FEC的creation phase期間由於一開始可以直接用識別字對應的物件，其物件的初始值會是函式內容本身`
@@ -168,7 +168,7 @@ GlobalExectionContext = {
 #🧠 Global Execution Context 的Lexical Environment 分為哪兩個？(提示：紀錄種類，哪個紀錄const？哪個紀錄var)->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
 <!--SR:!2022-06-25,6,248-->
 
-#🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
+#🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？(提示：請以資料結構來看待Lexical Environment)->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
 <!--SR:!2022-06-20,1,228-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間`
@@ -199,7 +199,7 @@ GlobalExectionContext = {
 #🧠 Global Execution Context ：Lexical Environment 中的Outer reference 是什麼？ 做什麼用？->->-> `Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找，主要會指向呼叫建立目前EC的EC，比如GEC呼叫一個函式，那麼其函式的FEC之outer就會是指向於呼叫FEC的GEC`
 <!--SR:!2022-06-24,6,248-->
 
-#🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域變數`
+#🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域物件`
 <!--SR:!2022-06-23,5,248-->
 
 
