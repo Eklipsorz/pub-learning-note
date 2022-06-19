@@ -115,10 +115,10 @@ FunctionExectionContext = {
 ## 複習
 
 #🧠 Function Execution Context的creation phase時機點為何？ ->->-> `當從GEC的執行過程呼叫了某個區塊或者某個函式時，就會在正式執行該函式或者該區塊之前建立該FEC`
-<!--SR:!2022-06-19,3,250-->
+<!--SR:!2022-06-29,10,250-->
 
 #🧠 Function Execution Context 的 FEC範圍是？->->-> `以區塊內或者函式內的所有區域變數、函式為主、不包含內部額外的函式，不包含額外用區塊和函式包住的程式碼`
-<!--SR:!2022-06-19,3,250-->
+<!--SR:!2022-06-27,8,250-->
 
 
 #🧠 Function Execution Context的creation phase 製作流程為何(提示：this物件、lexicalEnvironment、variableEnvironment、outer)->->-> `建立this物件並決定this參照於誰、建立Arguments物件來儲存賦予對應函數的參數並放置FEC中的LexicalEnvironment區塊、掃描所有函式呼叫、const/let變數識別字並放入LexicalEnvironment區塊、掃描所有var變數識別字並放入VariableEnvironment區塊、設定outer。`
@@ -134,7 +134,7 @@ FunctionExectionContext = {
 <!--SR:!2022-06-25,6,230-->
 
 #🧠 function Execution Context的creation phase ：outer 會指向什麼？->->-> `outer會是指向呼叫該EC的EC，也就是代表從全域呼叫的GlobalExectionContext或者代表從其他函式呼叫的EC`
-<!--SR:!2022-06-19,3,250-->
+<!--SR:!2022-06-29,10,250-->
 
 #🧠 function Execution Context的execution phase ：會如何對context更新->->-> `建立完FEC後，JavaScript 引擎隨後就會在FEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
 <!--SR:!2022-06-26,7,250-->

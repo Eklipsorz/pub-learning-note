@@ -35,7 +35,7 @@
 <!--SR:!2022-06-22,5,246-->
 
 #🧠 Lexical Environment vs. Lexical Scope 差別是什麼 ->->-> `就是 Lexical Environment 是在程式執行中存放環境資訊的地方，而 Lexical Scope 則為在程式編譯時就已經決定好的作用域-每個識別字對應特定實體的合法使用範圍`
-<!--SR:!2022-06-19,2,210-->
+<!--SR:!2022-06-23,4,210-->
 
 ---
 Status: #🌱 
