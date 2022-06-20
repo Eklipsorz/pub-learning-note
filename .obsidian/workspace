@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+            "file": "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Bloom Filter 缺點",
+                "query": "聚合",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+                "file": "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "aebcb9f0763076fd",
   "lastOpenFiles": [
+    "develop/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
+    "MOC/GCP MOC.md",
+    "develop/以0或255結尾的位址不一定是識別用和廣播用的.md",
     "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
     "develop/belazy-shop-sideproject/Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯.md",
     "develop/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md",
     "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
     "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
-    "develop/belazy-shop-sideproject/Belazy - sequelize 部分update不能修改身為主鍵的屬性.md",
-    "develop/Redis/Redis TTL 指令回傳的鍵還剩多少秒要過期或者還能存活在緩存的時間.md",
-    "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md"
+    "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md"
   ]
 }
