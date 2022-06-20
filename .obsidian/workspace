@@ -7,8 +7,11 @@
         "id": "aebcb9f0763076fd",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,6 +96,7 @@
   },
   "active": "aebcb9f0763076fd",
   "lastOpenFiles": [
+    "express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
     "develop/belazy-shop-sideproject/Belazy - cart 和 cartItem 同步緩存 和同步資料的實現邏輯.md",
     "develop/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md",
     "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
@@ -100,7 +105,6 @@
     "develop/belazy-shop-sideproject/Belazy - 登入和未登入之間的緩存和資料庫之間的cart紀錄同步方法.md",
     "develop/belazy-shop-sideproject/Belazy - sequelize 部分update不能修改身為主鍵的屬性.md",
     "develop/Redis/Redis TTL 指令回傳的鍵還剩多少秒要過期或者還能存活在緩存的時間.md",
-    "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md",
-    "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md"
+    "develop/belazy-shop-sideproject/Belazy - 購物車內項目刪除時的緩存和資料庫之間同步方案.md"
   ]
 }
