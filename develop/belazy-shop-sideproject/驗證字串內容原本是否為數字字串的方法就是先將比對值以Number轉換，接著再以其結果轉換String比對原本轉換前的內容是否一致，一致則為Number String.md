@@ -38,7 +38,7 @@ static isNumberString(value) {
 <!--SR:!2022-06-24,10,250-->
 
 #🧠 JavaScript  驗證字串內容原本是否為數字字串的方法，如何用代碼實現？->->-> `const number = Number(value)、return String(number) === value`
-<!--SR:!2022-06-21,7,250-->
+<!--SR:!2022-07-10,19,250-->
 
 ---
 Status: #🌱 
