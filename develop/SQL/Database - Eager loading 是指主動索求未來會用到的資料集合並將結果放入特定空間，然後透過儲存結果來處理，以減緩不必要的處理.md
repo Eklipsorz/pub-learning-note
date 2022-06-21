@@ -16,10 +16,13 @@
 > 3.  Load only the displayed images on page load. After the page has loaded preload the other images in the background _in case you need them_ (**over-eager**).
 
 [[@chuyi.inowEagerLoadingYuLazyLoading]] 描述：
-> lazy loading指的是在用到該筆資料時才去動態載入，而與之相反的則是eager loading，顧名思義就是在用到資料前就先用sql語法取出存在變數中。
+> lazy loading指的是在用到該筆資料時才去載入，而與之相反的則是eager loading，顧名思義就是在用到資料前就先用sql語法取出存在變數中。
 
 Eager loading：
 - 是預先加載的意思，也就是在用到資料前就先去資料庫把會用到的資料A先取出來，存在特定空間中，接著等要用到的時候，直接從特定空間取出儲存結果來處理，而不是重複地向資料庫系統索要資料A
+
+Lazy loading：
+- 是惰性加載的意思，當需求來時，只會按照需求所要的內容A來載入內容A，不會載入需求所沒有的或者與內容A相關的內容。
 
 ### eager loading example
 

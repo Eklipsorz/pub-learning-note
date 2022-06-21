@@ -21,9 +21,11 @@
 
 
 ### Lazy Loading 命名緣由
-- Lazy 是指懶惰的，被動的，在這裡是指除了真正需要，否則什麼都不做
+- Lazy 是指懶惰的，被動的，在這裡是指除了只做真正需要的，否則什麼都不做
 - Loading 是指載入資料，在這裡會是指向資料庫索要資料並成功獲取
-- Lazy 強調 Loading是相對於Eagerly Loading或者Eager loading，當需求來臨時，才會去做載入資料，否則就保持懶惰，什麼都不做
+- Lazy 強調 Loading是相對於Eagerly Loading或者Eager loading，當需求來臨時，只會載入需求想要的內容A，不會額外載入與需求不需要的內容B，甚至該內容B與內容A是相關，也不會額外載入。
+
+
 
 ### Sequelize: Lazy Loading
 在 sequelize 中的 Lazy loading 則是指的先用到的資料不會先用 SQL 語法取出並放入特定空間，而是等到真正需要存取該資料的時候才會用 SQL 語法去處理
@@ -61,14 +63,16 @@ console.log('Amount of Sails:', hisShip.amountOfSails);
 #🧠  假如有個導覽列，當被點開的時候，會呈現三個用圖片做成的選項；當沒被點開的時候，不會呈現三個選項 ，試說明Lazy loading ->->-> `假如有個導覽列，當被點開的時候，會呈現三個用圖片做成的選項；當沒被點開的時候，不會呈現三個選項。在這裡，若是lazy loading的話，會按照是否點開來載入那三個選項才呈現，若點開就載入，若不點開就不載入`
 <!--SR:!2022-06-23,9,250-->
 
-#🧠  Database：Lazy Loading 命名緣由->->-> `Lazy 是指懶惰的，被動的，在這裡是指除了真正需要，否則什麼都不做， Loading 是指載入資料，在這裡會是指向資料庫索要資料並成功獲取，Lazy 強調 Loading是相對於Eagerly Loading或者Eager loading，當需求來臨時，才會去做載入資料，否則就保持懶惰，什麼都不做`
-<!--SR:!2022-06-24,10,250-->
+#🧠  Database：Lazy Loading 命名緣由->->-> `- Lazy 是指懶惰的，被動的，在這裡是指除了只做真正需要的，否則什麼都不做 - Loading 是指載入資料，在這裡會是指向資料庫索要資料並成功獲取 - Lazy 強調 Loading是相對於Eagerly Loading或者Eager loading，當需求來臨時，只會載入需求想要的內容A，不會額外載入與需求不需要的內容B，甚至該內容B與內容A是相關，也不會額外載入。`
 
 #🧠 試著用Lazy Loading 來說明 sequelize 語法 (提示：船和船長) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654935600/blog/database/orm/sequelize-lazy-loading-example_kumr5g.png)->->-> `假如有船和船長表格，一開始會索要船長表格上的資訊，那麼就回傳其資訊，直到需要船長相關的船資訊，那麼就會從船表格找到與該船長相關的船，在這裡會是由getShip來實現，接著從船資訊來回傳`
 <!--SR:!2022-06-30,12,248-->
 
-#🧠 Database：Lazy Loading 是什麼？->->-> `Lazy loading 是索求需求來臨時才會索求特定資料，其餘時間點都維持不執行索求或者保持懶惰。`
-<!--SR:!2022-07-04,14,230-->
+#🧠 Database：Lazy Loading 是什麼？->->-> `Lazy loading 是索求需求來臨時才會索求需求想要的特定資料，不會載入需求無關的內容，即使是與內容相關的資料也是一樣。`
+
+
+
+
 
 ---
 Status: #🌱 
