@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Belazy - Productsnap 緩存紀錄的策略為write through.md",
+            "file": "Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belazy - Productsnap 緩存紀錄的策略為write through.md",
+                "file": "Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "Belazy - Productsnap 緩存紀錄的策略為write through.md",
+    "Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
+    "Belazy - 移除產品的業務邏輯.md",
+    "develop/belazy-shop-sideproject/Belazy - Productsnap 緩存紀錄的策略為write through.md",
     "Belazy - 後台增加產品業務邏輯.md",
     "develop/belazy-shop-sideproject/驗證字串內容原本是否為數字字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
     "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/Database/通常ORM 到真正需要資料的時候，才會替應用程式轉換對應SQL語法來向資料庫系統發送請求.md",
-    "MOC/Database MOC.md",
-    "templates/📝.md",
-    "develop/SQL/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md"
+    "MOC/Database MOC.md"
   ]
 }
