@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/驗證字串內容原本是否為數字字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
+            "file": "Belazy - Productsnap 緩存紀錄的策略為write through.md",
             "mode": "source"
           }
         }
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/驗證字串內容原本是否為數字字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
+                "file": "Belazy - Productsnap 緩存紀錄的策略為write through.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +96,8 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
+    "Belazy - Productsnap 緩存紀錄的策略為write through.md",
+    "Belazy - 後台增加產品業務邏輯.md",
     "develop/belazy-shop-sideproject/驗證字串內容原本是否為數字字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
     "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
@@ -104,8 +105,6 @@
     "develop/Database/通常ORM 到真正需要資料的時候，才會替應用程式轉換對應SQL語法來向資料庫系統發送請求.md",
     "MOC/Database MOC.md",
     "templates/📝.md",
-    "develop/SQL/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
-    "develop/JavaScript/JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用來減緩單執行緒所產生出來的blocking問題.md",
-    "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md"
+    "develop/SQL/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md"
   ]
 }
