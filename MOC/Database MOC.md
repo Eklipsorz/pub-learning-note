@@ -38,6 +38,9 @@
 - N + 1 Queries Problem
 [[Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現]]
 
+- ORM 何時轉換SQL語法
+[[通常ORM 到真正需要資料的時候，才會替應用程式轉換對應SQL語法來向資料庫系統發送請求]]
+
 ## 前置知識
 - query 是向資料庫索要特定資料的請求或者要求讀取
 [[SQL 中的Query 是向資料庫索要特定資料的請求或者詢問]]

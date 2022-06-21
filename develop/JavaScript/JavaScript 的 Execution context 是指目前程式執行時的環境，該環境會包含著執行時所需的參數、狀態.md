@@ -1,7 +1,11 @@
 
 ## 描述
 ### Execution context 命名緣由
-Execution 是指程式執行時的背景、過程，而context是指某種事物存在/發生的背景或者情況，兩者加起來就等同於描述執行時會是什麼樣的狀態或者背景，換言之，就是目前程式的執行環境
+Execution 是指程式執行時的背景、過程，而context是指場景，一個透過某個事物A所存在或者所發生的場景來解釋某個事物，兩者合併起來就是程式執行時所在的場景，而這個場景可以解釋程式執行，換言之，execution context就是定義依照什麼樣的情況/狀況來定義/解釋如何執行。
+
+
+context：是指場景，一個透過某個事物A所存在或者所發生的場景來解釋某個事物
+> **the situation within which something exists or happens, and that can help explain it**
 
 
 ### 在JS上的Execution context
@@ -38,8 +42,7 @@ test(a)
 
 ## 複習
 
-#🧠 Execution context 命名緣由 是什麼？->->-> `Execution 是指程式執行時的背景、過程，而context是指某種事物存在/發生的背景或者情況，兩者加起來就等同於描述執行時會是什麼樣的狀態或者背景，換言之，就是目前程式的執行環境`
-<!--SR:!2022-06-27,6,230-->
+#🧠 Execution context 命名緣由 是什麼？->->-> `Execution 是指程式執行時的背景、過程，而context是指場景，一個透過某個事物A所存在或者所發生的場景來解釋某個事物，兩者合併起來就是程式執行時所在的場景，而這個場景可以解釋程式執行，換言之，execution context就是定義依照什麼樣的情況/狀況來定義/解釋如何執行。`
 
 #🧠 在JS上的Execution context 會是指什麼？ ->->-> `在JavaScript中，會是引擎執行JavaScript的執行環境，其環境會由輔助引擎執行程式碼的內容所構成`
 <!--SR:!2022-06-28,9,250-->
