@@ -1,15 +1,25 @@
 
 ## 描述
 
-[[@martingibbsWhatQuerySQL]] 所描述：
-> A **query** is really a question or request for data. For example, ''Tell me how many books there are on computer programming'' or ''How many Rolling Stones albums were produced before 1980?'' When we query databases, we can use a common language to get the information. **Structured Query Language SQL)**, is a fairly universal language. There are some different flavors, but once you know the basics you can easily adapt your questions.
 
-[[@wikidataSQL2022]] 所描述：
-> The scope of SQL includes data query, data manipulation (insert, update and delete), data definition ([schema](https://en.wikipedia.org/wiki/Database_schema "Database schema") creation and modification), and data access control. Although SQL is essentially a [declarative language](https://en.wikipedia.org/wiki/Declarative_programming "Declarative programming") ([4GL](https://en.wikipedia.org/wiki/4GL "4GL")), it also includes [procedural](https://en.wikipedia.org/wiki/Procedural_programming "Procedural programming") elements.
+[[@quamisWhatEagerLoading2012]] 描述：
+> There are three levels:
+
+> 1.  **Eager loading:** you do everything when asked. Classic example is when you multiply two matrices. You do all the calculations. That's eager loading;
+> 2.  **Lazy loading:** you only do a calculation when required. In the previous example, you don't do any calculations until you access an element of the result matrix; and
+> 3.  **Over-eager loading:** this is where you try and anticipate what the user will ask for and preload it.
+
+> Let me give you a "Webby" example.
+
+> Imagine a page with rollover images like for menu items or navigation. There are three ways the image loading could work on this page:
+
+> 1.  Load every single image required before you render the page (**eager**);
+> 2.  Load only the displayed images on page load and load the others if/when they are required (**lazy**); and
+> 3.  Load only the displayed images on page load. After the page has loaded preload the other images in the background _in case you need them_ (**over-eager**).
 
 
 重點：
-- Lazy loading 是索求需求來臨時才會索求特定資料，其餘時間點都維持不執行索求或者保持懶惰。
+-  Lazy loading 是當資料庫接收索求資料的請求時，只會載入請求所要的目標資料，不會載入沒指定的內容，即使是與內容相關的資料也是一樣。
 
 ### Lazy loading example
 
@@ -64,11 +74,13 @@ console.log('Amount of Sails:', hisShip.amountOfSails);
 <!--SR:!2022-06-23,9,250-->
 
 #🧠  Database：Lazy Loading 命名緣由->->-> `- Lazy 是指懶惰的，被動的，在這裡是指除了只做真正需要的，否則什麼都不做 - Loading 是指載入資料，在這裡會是指向資料庫索要資料並成功獲取 - Lazy 強調 Loading是相對於Eagerly Loading或者Eager loading，當需求來臨時，只會載入需求想要的內容A，不會額外載入與需求不需要的內容B，甚至該內容B與內容A是相關，也不會額外載入。`
+<!--SR:!2022-06-24,3,250-->
 
 #🧠 試著用Lazy Loading 來說明 sequelize 語法 (提示：船和船長) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654935600/blog/database/orm/sequelize-lazy-loading-example_kumr5g.png)->->-> `假如有船和船長表格，一開始會索要船長表格上的資訊，那麼就回傳其資訊，直到需要船長相關的船資訊，那麼就會從船表格找到與該船長相關的船，在這裡會是由getShip來實現，接著從船資訊來回傳`
 <!--SR:!2022-06-30,12,248-->
 
-#🧠 Database：Lazy Loading 是什麼？->->-> `Lazy loading 是索求需求來臨時才會索求需求想要的特定資料，不會載入需求無關的內容，即使是與內容相關的資料也是一樣。`
+#🧠 Database：Lazy Loading 是什麼？->->-> `Lazy loading 是當資料庫接收索求資料的請求時，只會載入請求所要的目標資料，不會載入沒指定的內容，即使是與內容相關的資料也是一樣。`
+
 
 
 
