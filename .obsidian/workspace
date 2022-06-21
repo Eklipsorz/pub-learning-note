@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
+            "file": "ORM 碰上應用程式.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lazy loading 是什麼",
+                "query": "User::where",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
+                "file": "ORM 碰上應用程式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +96,15 @@
   },
   "active": "aebcb9f0763076fd",
   "lastOpenFiles": [
+    "ORM 碰上應用程式.md",
+    "develop/SQL/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
+    "JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用來減緩單執行緒所產生出來的blocking問題.md",
     "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
     "develop/SQL/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
     "develop/SQL/SQL 中的Query 是向資料庫索要特定資料的請求或者詢問.md",
     "develop/JavaScript/JavaScript 本身是操作DOM節點的語言以及每個DOM節點的事件綁定來實現客戶端能與網頁互動，而為了確保DOM節點不受race condition影響而設計成允許一個主執行緒來負責執行.md",
-    "JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用來減緩單執行緒所產生出來的blocking問題.md",
     "templates/🧠.md",
     "MOC/JavaScript MOC.md",
-    "JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用並在執行環境上建立除了主執行緒以外的執行緒，而這些執行緒會受到主執行緒來控制，並且不能夠操作DOM節點，這樣子的提供不僅增加效能，也保證DOM節點會是單個執行緒(也就是主執行緒)來執行.md",
-    "develop/JavaScript/JavaScript之所以為直譯語言，是原本就為了盡可能讓開發者快速進行網頁上開發好拓展網景瀏覽器的市場，同時也盡可能減少編譯時所帶來的額外成本.md",
-    "develop/JavaScript/JavaScript 是出自於網景和微軟的瀏覽器大戰所衍生出來的產品，主張允許使用者能對網頁進行互動並獲得對應互動的效果.md"
+    "JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用並在執行環境上建立除了主執行緒以外的執行緒，而這些執行緒會受到主執行緒來控制，並且不能夠操作DOM節點，這樣子的提供不僅增加效能，也保證DOM節點會是單個執行緒(也就是主執行緒)來執行.md"
   ]
 }
