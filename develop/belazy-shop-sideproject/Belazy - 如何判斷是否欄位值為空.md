@@ -31,7 +31,7 @@ if (!isFilledField(quantity))
 <!--SR:!2022-07-15,23,250-->
 
 #🧠 這兩個程式碼都是實現在欄位空值驗證，請問差異在哪![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654774739/blog/javascript/String/empty-field-problem-solution_tcesu5.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654774739/blog/javascript/String/empty-field-problem_g52iqy.png)->->-> `後者是欄位值為0也會觸發，這對於判斷欄位是未填寫的目標是起衝突的，前者是不會`
-<!--SR:!2022-06-22,9,250-->
+<!--SR:!2022-07-14,22,250-->
 
 ---
 Status: #🌱 
