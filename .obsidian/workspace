@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
+            "file": "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
+                "file": "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,10 +107,10 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
     "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
+    "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
     "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
+    "develop/belazy-shop-sideproject/Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
     "develop/belazy-shop-sideproject/Belazy - 修改model和migration請重新新增model和migration再來修改會比較妥當.md",
     "develop/Database/Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性.md",
     "MOC/Database MOC.md",
