@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Belazy - 後台刪除產品業務邏輯.md",
+            "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Belazy - 後台刪除產品業務邏輯.md",
+            "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belazy - 後台刪除產品業務邏輯.md",
+                "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "Belazy - 後台刪除產品業務邏輯.md",
+    "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
     "develop/belazy-shop-sideproject/Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
     "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
     "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
