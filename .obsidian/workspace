@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+            "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+                "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+    "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
     "MOC/JavaScript MOC.md",
     "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
     "develop/SQL/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
