@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+            "file": "inbox/Untitled.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "8b84279ee0d28eb2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Untitled.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+                "file": "inbox/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +107,15 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
-    "MOC/JavaScript MOC.md",
-    "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
-    "develop/SQL/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
-    "annotation/@chuyi.inowEagerLoadingYuLazyLoading.md",
-    "develop/belazy-shop-sideproject/Belazy - 如何判斷是否欄位值為空.md",
-    "develop/belazy-shop-sideproject/驗證字串內容原本是否為數字字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
-    "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
-    "關係資料庫的外鍵關係使用ORM來維護，而不是直接在資料庫上設定實際的外鍵.md"
+    "inbox/Untitled.md",
+    "inbox/將調用config的名稱一律以config來稱呼.md",
+    "inbox/HSCAN 是針對value為hash的SCAN指令.md",
+    "develop/publish–subscribe是傳遞者可將訊息發布在指定頻道，接收者只需要訂閱指定頻道來接收訊息的messaging pattern.md",
+    "develop/Redis/redis.quit 和 redis.disconnect 是對應redis上的指令嗎.md",
+    "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
+    "develop/Network/Network ID描述IP所屬的網域，Host ID描述主機在網域上的獨特序號.md",
+    "develop/Network/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
+    "develop/Database/資料庫的Exclusive lock是一旦有人鎖死就只允許在鎖死期間給第一個鎖上的人進行讀寫存取，其他人不能參與存取.md",
+    "develop/Redis/Bloom Filter 是透過K個雜湊函式和M個bit array 來組成一個快速篩檢元素是否存在緩存.md"
   ]
 }
