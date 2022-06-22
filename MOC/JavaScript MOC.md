@@ -24,6 +24,10 @@
 
 - var
 [[JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope]]
+
+- truthy vs. falsy
+[[CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false]]
+
 ## 技術用語
 - polyfill
 [[polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼]]

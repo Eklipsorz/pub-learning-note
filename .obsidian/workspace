@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
+            "file": "CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
             "mode": "source"
           }
         }
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
+                "file": "CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +96,8 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
+    "CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+    "MOC/JavaScript MOC.md",
     "develop/SQL/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
     "develop/SQL/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
     "annotation/@chuyi.inowEagerLoadingYuLazyLoading.md",
@@ -104,8 +105,6 @@
     "develop/belazy-shop-sideproject/驗證字串內容原本是否為數字字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
     "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
     "develop/belazy-shop-sideproject/Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
-    "關係資料庫的外鍵關係使用ORM來維護，而不是直接在資料庫上設定實際的外鍵.md",
-    "Belazy - 移除產品的業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - Productsnap 緩存紀錄的策略為write through.md"
+    "關係資料庫的外鍵關係使用ORM來維護，而不是直接在資料庫上設定實際的外鍵.md"
   ]
 }
