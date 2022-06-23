@@ -80,7 +80,7 @@ app.method(path, callback)
 #🧠  session(options)的options是 ->->-> `是藉由物件來設定Express-Session所提供的middleware`
 <!--SR:!2022-06-26,18,248-->
 #🧠 session(options)的options 所描述的store是 ->->-> `定義session儲存在哪？選項有內建的MemoryStore、資料庫、redis`
-<!--SR:!2022-06-23,15,248-->
+<!--SR:!2022-07-30,37,248-->
 
 #🧠 session(options)的options 所描述的saveUninitialized是 ->->-> `原本當客戶端與伺服器開始進行連線時，就會開始建立session物件來紀錄兩者在連線時的狀態，且剛建立的session物件的屬性未在伺服器中被任意值來寫入，此session就會被當作未初始化的session，而若saveUninitialized被設定為true時，就便會將未初始化的session儲存在伺服器的session store，而saveUninitialized被設定為false時，就便不會將未初始化的session儲存在伺服器session store`
 <!--SR:!2022-06-24,17,248-->

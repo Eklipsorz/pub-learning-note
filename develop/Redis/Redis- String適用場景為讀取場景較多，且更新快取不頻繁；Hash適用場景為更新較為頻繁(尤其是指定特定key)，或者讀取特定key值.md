@@ -140,7 +140,7 @@ userId -> 短信亂數字串
 
 
 #🧠  Redis 記憶體成本: string vs. hash ->->-> `以String作為Value的成本，相較於Hash，比較單純且比較少；以Hash作為Value的成本，相較於String，比較繁複且由於將資料切分開來儲存，每個要儲存的形式又是以key-value的形式，所以成本上會比較多`
-<!--SR:!2022-06-23,18,250-->
+<!--SR:!2022-08-08,46,250-->
 
 #🧠 Redis上 string 和 hash 分別如何表示存在多個屬性值的資料的形式(提示：string有兩個方法，hash有一個方法)->->-> `string主要有兩個方法分別為將多個屬性值組合一個字串作為value，或者將key與屬性名稱構成新的key，然後其value為對應key上的特定屬性值；hash就直接以dictionary來製作多個key-value pairs就即可完成`
 <!--SR:!2022-07-03,25,250-->
