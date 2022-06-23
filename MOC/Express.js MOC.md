@@ -26,4 +26,5 @@
 - body-parser
 [[body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body]]
 
-
+- 解析multipart/form-data格式的套件 - multer
+[[multer 是一個套件，專門解析multipart中的form-data格式。]]
