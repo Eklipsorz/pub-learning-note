@@ -31,6 +31,7 @@ Tags:
 [[Database]]
 Links:
 [[Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性]]
+[[Database - 外鍵的產生是為了讓原本資料很好地被切割以及很好地透過外鍵來將切割資料合併成原本資料]]
 References:
 [[@piotrkononowReasonsWhyThere]]
 [[@postgresdexiaodaogushiYiZiLiaoKuZhongBuShiYongWaiBuJianDeGeLiYou]]

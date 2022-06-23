@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
+            "file": "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lazy loading 命名",
+                "query": "referential integrity",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -80,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
+                "file": "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,15 +107,15 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
+    "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
+    "MOC/Database MOC.md",
+    "Database - 外鍵的產生是為了讓原本資料很好地被切割以及很好地透過外鍵來將切割資料合併成原本資料.md",
+    "develop/Database/Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性.md",
+    "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
+    "develop/Database/Database - N + 1 Queries Problem當向資料庫發送一筆Query來索要特定集合的N筆紀錄，那麼會因沒事先紀錄與特定集合相關連的集合而發送N+1筆Queries來實現.md",
+    "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
     "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
     "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - 移除產品所需要的資料同步，除了訂單會因為本身會包含過去紀錄以外，其餘都一律刪除.md",
-    "develop/belazy-shop-sideproject/Belazy - 修改model和migration請重新新增model和migration再來修改會比較妥當.md",
-    "develop/Database/Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性.md",
-    "MOC/Database MOC.md",
-    "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
-    "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
-    "inbox/將調用config的名稱一律以config來稱呼.md"
+    "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md"
   ]
 }

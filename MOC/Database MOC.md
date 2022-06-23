@@ -20,6 +20,7 @@
 - referential integrity
 [[Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性]]
 [[Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係]]
+[[Database - 外鍵的產生是為了讓原本資料很好地被切割以及很好地透過外鍵來將切割資料合併成原本資料]]
 
 ### 資料操作
 - Eager Loading
