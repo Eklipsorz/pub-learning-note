@@ -84,7 +84,7 @@ __keyevent@0__:del
 
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 兩者專注什麼 (任意key？任意事件？)->->-> `前者專注於特定key值的任意事件，後者則是專注於發生特定事件下的任意key值`
-<!--SR:!2022-06-24,14,246-->
+<!--SR:!2022-07-31,37,246-->
 
 
 
