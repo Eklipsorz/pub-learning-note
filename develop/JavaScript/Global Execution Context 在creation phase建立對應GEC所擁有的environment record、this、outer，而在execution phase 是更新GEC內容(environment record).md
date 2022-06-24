@@ -144,10 +144,10 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `當引擎要開始執行某個檔案上的JS程式碼時，就會先建立GEC`
-<!--SR:!2022-06-24,6,248-->
+<!--SR:!2022-07-10,16,248-->
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
-<!--SR:!2022-06-24,6,248-->
+<!--SR:!2022-07-09,15,248-->
 
 #🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域物件、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域物件、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域物件、建立Lexical Environment`
 <!--SR:!2022-06-26,7,250-->
@@ -172,7 +172,7 @@ GlobalExectionContext = {
 <!--SR:!2022-06-27,5,228-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在執行之前儲存每個識別字對應的物件是什麼以及識別空間`
-<!--SR:!2022-06-24,5,248-->
+<!--SR:!2022-07-05,11,248-->
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariablEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
@@ -192,12 +192,12 @@ GlobalExectionContext = {
 <!--SR:!2022-06-29,10,250-->
 
 #🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：更新) ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
-<!--SR:!2022-06-24,6,248-->
+<!--SR:!2022-07-08,14,248-->
 
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Outer reference 是什麼？ 做什麼用？->->-> `Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找，主要會指向呼叫建立目前EC的EC，比如GEC呼叫一個函式，那麼其函式的FEC之outer就會是指向於呼叫FEC的GEC`
-<!--SR:!2022-06-24,6,248-->
+<!--SR:!2022-07-10,16,248-->
 
 #🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域物件`
 <!--SR:!2022-07-06,13,248-->

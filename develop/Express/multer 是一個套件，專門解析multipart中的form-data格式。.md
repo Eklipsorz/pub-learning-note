@@ -22,13 +22,18 @@ multer 是一個套件，專門解析multipart中的form-data格式，並將解�
 ```
 ## 複習
 #🧠 multipart/form-data 是什麼樣的格式 ->->-> `本身是前端中的表格資料傳遞形式，可以從前端傳遞擁有文字和圖片的表格資料至後端`
+<!--SR:!2022-06-27,3,250-->
 #🧠 multipart/form-data  提出背景為？->->-> `背景：過去表格的資料傳遞形式只能固定統一皆為文字或者皆為圖片`
+<!--SR:!2022-06-27,3,250-->
 
 #🧠 前端表格如何設定成multipart/form-data？ ->->-> `在表格元件上加入enctype屬性來設定，如<form action="/admin/restaurants" method="POST" enctype="multipart/form-data">`
+<!--SR:!2022-06-27,3,250-->
 
 #🧠 express框架 本身能夠解析multipart/form-data格式嗎 ->->-> `不能解析，需要載入專門解析其格式的套件，如multer`
+<!--SR:!2022-06-27,3,250-->
 
 #🧠 multer 是什麼套件？->->-> `multer 是一個套件，專門解析multipart中的form-data格式，並將解析結果分成圖片和文字，文字就以req.body來回傳，圖片則另外以req.files來表示`
+<!--SR:!2022-06-25,1,230-->
 
 ---
 Status: #🌱 
