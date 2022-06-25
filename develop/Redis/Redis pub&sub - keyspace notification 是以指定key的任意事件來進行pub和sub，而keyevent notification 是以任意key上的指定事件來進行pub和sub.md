@@ -75,7 +75,7 @@ __keyevent@0__:del
 <!--SR:!2022-07-14,25,230-->
 
 #🧠  Redis Pub/Sub 這Publish-Subscribe下有哪兩個方式來傳遞？(提示：鍵和事件) ->->-> `Key-space notification：以指定key上的任意事件來進行publish 和 subscribe、Key-event notification：以任意key上的指定事件來進行publish 和 subscribe`
-<!--SR:!2022-06-25,12,247-->
+<!--SR:!2022-07-26,31,247-->
 
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是以什麼作為前綴(prefix) ->->-> `__keyspace@<db>__ 和 __keyevnt@<db>__，而<db>為redis database name`

@@ -1,5 +1,6 @@
 
-
+## 描述
+[[@davidtaylorDatabaseVsData]] 所描述：
 > ## What is a Data Warehouse?
 
 > A data warehouse is an information system which stores historical and commutative data from single or multiple sources. It is designed to analyze, report, integrate transaction data from different sources.
@@ -14,3 +15,16 @@
 > -   Database uses Online Transactional Processing (OLTP) whereas Data warehouse uses Online Analytical Processing (OLAP).
 > -   Database tables and joins are complicated because they are normalized whereas Data Warehouse tables and joins are easy because they are denormalized.
 > -   ER modeling techniques are used for designing Database whereas data modeling techniques are used for designing Data Warehouse.
+
+
+
+
+## 複習
+
+
+---
+Status: 
+Tags:
+Links:
+References:
+[[@davidtaylorDatabaseVsData]]

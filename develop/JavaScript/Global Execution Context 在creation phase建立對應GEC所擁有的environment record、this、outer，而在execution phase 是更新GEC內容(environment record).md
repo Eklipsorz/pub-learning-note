@@ -162,7 +162,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context 在Creation phase遇上var變數時，會設定識別字以及對應的變數嗎->->-> `在這裡由於只有var變數本身由於出自於只有global scope和function scope的ES版本的概念，var變數會依據自己所在是不是函式來決定是否為scope，在這會是global scope，並且能夠按照特性先分配記憶體和設定初始值-undefined給定var變數，因此對應var的變數值會是undefined代表已經宣告但只是還沒有除了預設指派以外的手段來給予任何初始值給予`
-<!--SR:!2022-06-25,6,248-->
+<!--SR:!2022-07-11,16,248-->
 
 
 #🧠 Global Execution Context 的Lexical Environment 分為哪兩個？(提示：紀錄種類，哪個紀錄const？哪個紀錄var)->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`

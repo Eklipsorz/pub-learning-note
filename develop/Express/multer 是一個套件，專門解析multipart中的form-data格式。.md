@@ -33,7 +33,7 @@ multer 是一個套件，專門解析multipart中的form-data格式，並將解�
 <!--SR:!2022-06-27,3,250-->
 
 #🧠 multer 是什麼套件？ 以及如何把解析結果傳遞給每個middleware->->-> `multer 是一個套件，專門解析multipart中的form-data格式，並將解析結果分成圖片和文字，文字就以req.body來回傳，圖片則另外以req.files來表示`
-<!--SR:!2022-06-25,1,230-->
+<!--SR:!2022-06-27,2,230-->
 
 ---
 Status: #🌱 

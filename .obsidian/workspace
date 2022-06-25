@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+            "file": "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "a161f0b0c468dffe",
+        "id": "67528a9162622e87",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+            "file": "data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+                "file": "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
     "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
+    "data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
+    "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+    "MOC/Database MOC.md",
     "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
     "develop/Database/Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性.md",
     "develop/Database/Database - 外鍵的產生是為了讓原本資料很好地被切割以及很好地透過外鍵來將切割資料合併成原本資料.md",
     "develop/Express/multer 是一個套件，專門解析multipart中的form-data格式。.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "develop/Express/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md",
-    "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
-    "develop/Express/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md"
+    "develop/Express/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md"
   ]
 }

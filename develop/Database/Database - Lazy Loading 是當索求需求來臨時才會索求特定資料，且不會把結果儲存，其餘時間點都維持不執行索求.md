@@ -81,7 +81,7 @@ console.log('Amount of Sails:', hisShip.amountOfSails);
 <!--SR:!2022-06-30,12,248-->
 
 #🧠 Database：Lazy Loading 是什麼？->->-> `Lazy loading 是當資料庫接收索求資料的請求時，只會載入請求所要的目標資料，不會載入沒指定的內容，即使是與內容相關的資料也是一樣。`
-<!--SR:!2022-06-25,3,250-->
+<!--SR:!2022-07-05,10,250-->
 
 
 
