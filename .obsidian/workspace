@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "develop/Database/Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "67528a9162622e87",
+        "id": "0a2a4956ea15e92d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
+            "file": "develop/Database/Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "develop/Database/Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,8 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
-    "Untitled.md",
+    "develop/Database/Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則.md",
+    "MOC/Database MOC.md",
     "data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
     "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
     "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
@@ -115,7 +116,6 @@
     "inbox/javascript - var變數在解析之前就分配記憶體？.md",
     "develop/Express/multer 是一個套件，專門解析multipart中的form-data格式。.md",
     "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md"
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md"
   ]
 }
