@@ -67,7 +67,7 @@ Multicast ：
 
 ## 複習
 
-#🧠 Question unicast、brordcast、multicast中的cast是指 ->->-> `cast 指的是從(一個/多個)客戶端發送資料至(一個/多個)接收方 的行爲`
+#🧠 Question unicast、broadcast、multicast中的cast是指 ->->-> `cast 指的是從(一個/多個)客戶端發送資料至(一個/多個)接收方 的行爲`
 <!--SR:!2022-08-22,58,250-->
 
 #🧠 Question Unicast 是什麼樣的傳播方式？->->-> `在網路傳遞中，只會有一個主機A傳遞資訊至另一個主機B，也就是說只會有一個傳送者和一個接收者`
