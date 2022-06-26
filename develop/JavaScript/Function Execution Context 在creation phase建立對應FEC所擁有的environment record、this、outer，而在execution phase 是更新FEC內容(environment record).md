@@ -137,7 +137,7 @@ FunctionExectionContext = {
 <!--SR:!2022-06-29,10,250-->
 
 #🧠 function Execution Context的execution phase ：會如何對context更新->->-> `建立完FEC後，JavaScript 引擎隨後就會在FEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
-<!--SR:!2022-06-26,7,250-->
+<!--SR:!2022-07-14,18,250-->
 
 ---
 Status: #🌱 
