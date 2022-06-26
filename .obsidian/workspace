@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
+            "file": "Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只能夠全部完成或者全部不完成.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
+                "file": "Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只能夠全部完成或者全部不完成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "2894061e490e7231",
   "lastOpenFiles": [
+    "Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只能夠全部完成或者全部不完成.md",
+    "develop/Database/Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則.md",
     "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
     "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
     "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md",
     "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
-    "develop/Database/Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則.md",
     "MOC/Database MOC.md",
     "data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
     "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
-    "inbox/javascript - var變數在解析之前就分配記憶體？.md",
-    "develop/Express/multer 是一個套件，專門解析multipart中的form-data格式。.md"
+    "inbox/javascript - var變數在解析之前就分配記憶體？.md"
   ]
 }
