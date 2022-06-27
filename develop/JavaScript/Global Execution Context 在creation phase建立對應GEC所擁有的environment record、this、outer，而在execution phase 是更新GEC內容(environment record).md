@@ -140,7 +140,7 @@ GlobalExectionContext = {
 ## 複習
 
 #🧠  JavaScript： 一個變數擁有scope概念就代表著？(提示：識別、何時記憶體分配、指派、釋放)->->-> `若一個變數具有scope概念，代表該變數是具有一定程度的識別空間、定義該變數何時分配記憶體、內容指派、記憶體釋放`
-<!--SR:!2022-06-27,8,250-->
+<!--SR:!2022-07-20,23,250-->
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `當引擎要開始執行某個檔案上的JS程式碼時，就會先建立GEC`
@@ -169,7 +169,7 @@ GlobalExectionContext = {
 <!--SR:!2022-07-11,16,248-->
 
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？(提示：請以資料結構來看待Lexical Environment)->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
-<!--SR:!2022-06-27,5,228-->
+<!--SR:!2022-07-10,13,228-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間`
 <!--SR:!2022-07-05,11,248-->
