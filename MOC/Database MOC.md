@@ -68,7 +68,8 @@
 - query 是向資料庫索要特定資料的請求或者要求讀取
 [[SQL 中的Query 是向資料庫索要特定資料的請求或者詢問]]
 
-
+- commit 
+[[CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為]]
 ### Sequelize
 - Sequelize 上的UUID
 [[Sequelize 上的UUID 具體來說會在不同資料庫系統有著不同的資料型別]]

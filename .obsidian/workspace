@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
+            "file": "develop/Database/Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只有全部任務完成或者全部任務不完成.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "consistency 加入",
+                "query": "atomicity",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
+                "file": "develop/Database/Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只有全部任務完成或者全部任務不完成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +96,15 @@
   },
   "active": "2e148c26ea530c6e",
   "lastOpenFiles": [
+    "develop/Database/Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只有全部任務完成或者全部任務不完成.md",
+    "MOC/Database MOC.md",
+    "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",
     "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
     "develop/Database/Transaction - Isolation 是指在資料庫上則是指每個同時被執行的協議在存取同筆紀錄時，得為了確保資料庫的一致性和完整性，要與部分協議保持隔離的狀態，讓自己能在確保資料的狀態下存取同.md",
     "develop/belazy-shop-sideproject/Momo - 忘記密碼的正向流程.md",
     "develop/belazy-shop-sideproject/Shopee - 忘記密碼的正向流程.md",
     "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
     "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
-    "MOC/General Service MOC.md",
-    "develop/belazy-shop-sideproject/Belazy - 後台刪除產品業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - 後台增加產品業務邏輯.md",
-    "develop/belazy-shop-sideproject/Belazy - 後台編輯產品業務邏輯.md"
+    "MOC/General Service MOC.md"
   ]
 }
