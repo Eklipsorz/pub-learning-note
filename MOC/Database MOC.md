@@ -70,6 +70,10 @@
 
 - commit 
 [[CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為]]
+
+- rollback
+[[Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態]]
+
 ### Sequelize
 - Sequelize 上的UUID
 [[Sequelize 上的UUID 具體來說會在不同資料庫系統有著不同的資料型別]]

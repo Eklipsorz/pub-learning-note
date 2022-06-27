@@ -13,11 +13,12 @@
 
 
 ### 具體實現手段為
-1. 提供語法來讓開發者制定哪些任務為協議上所要做的任務並且將資料變更分為暫時性修改和永久性修改，從begin至commit之前的資料庫變更都是暫時的，可以被撤銷的，除了執行到commit就會轉換成永久性修改並結束transaction。
+1. 提供語法來讓開發者制定哪些任務為協議上所要做的任務並且將資料變更分為暫時性修改(可被還原的修改)和永久性修改(不可被還原修改)，從begin至commit之前的資料庫變更都是暫時的，可以被撤銷的，除了執行到commit就會轉換成永久性修改並結束transaction。
 	- begin ：定義協議從何開始
 	- commit /end：定義協議上的結尾以及執行到commit就自動轉換永久性修改
 	[[CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為]]
-	- rollback：當協議上的任一任務執行失敗就回到協議的一開始，也就是begin
+	- rollback：當協議執行失敗時所會執行的操作，該操作會將目前暫時性修改撤銷，如同從未執行過transaction，另外會不會從協議開頭執行，一切都看系統支援，若不支援就跳出整個協議，若支援就從協議開頭執行
+	[[Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態]]
 - transaction atomicity
 ![](https://docs.oracle.com/cd/E18283_01/server.112/e16508/img/cncpt025.gif)
 
@@ -39,9 +40,17 @@
 #🧠 Database：每一個Transaction上都必定有Atomicitiy這特性嗎？ ->->-> `Atomicity 是 Database Transaction 協議內容的附加執行規則之一，不過並不是所有Transaction都會有這樣子的特性，得看實際資料庫系統或開發者是否提供對應特性`
 <!--SR:!2022-06-30,3,250-->
 
-#🧠 Database Transaction：具體上是如何實現Atomicity? (提示：制定範圍、回報、rollback) ->->-> ` 提供語法來讓開發者制定哪些任務為協議上所要做的任務，換言之，將特定任務協議： - begin ：制定哪個任務定義為協議的一部分 - commit /end：制定哪個任務做協議上的結尾以及執行到commit就自動 - rollback：當協議上的任一任務執行失敗就回到協議的一開始，也就是begin`
-<!--SR:!2022-06-30,3,250-->
+#🧠 Database Transaction：具體上是如何實現Atomicity? (提示：制定修改種類、制定範圍、回報、rollback) ->->-> `首先會制定修改種類：(可被還原的修改)暫時性修改、(不可被還原的修改)永久性修改，並且以begin、commit作為一個協議的範圍，當系統執行到begin，就即為執行協議，此時還未到達commit的資料庫修改都算是暫時性修改，當執行失敗時，就執行rollback，所有暫時性修改立刻被撤銷，並且跳出協議或者從頭執行，若都沒失敗一直執行到commit時，所有暫時性修改就會轉換為永久性修改，並宣布結束協議`
 
+#🧠 Database Transaction具體上是如何實現Atomicity：進入transaction時，修改種類分為哪兩類 ->->-> `暫時性修改、永久性修改`
+
+
+#🧠 Database Transaction具體上是如何實現Atomicity：進入transaction時的暫時性修改是指？ 何時觸發->->-> `暫時性修改是指可被還原的修改，換言之，會事先儲存修改前的狀態，並根據修改狀況來還原，觸發時間為從進入協議就會觸發`
+
+
+#🧠 Database Transaction具體上是如何實現Atomicity：進入transaction時的永久性修改是指？ 何時觸發？->->-> `永久性修改是指不可被還原的修改，換言之，不會有事先儲存修改前的狀態來還原，觸發時間為執行到commit就轉換`
+
+#🧠 Database Transaction：當transaction 執行到rollback 會是指什麼？是否會從協議開頭重新執行？ ->->-> `所有暫時性修改將會被撤銷，並且根據系統是否允許從協議開頭執行來進行，若沒允許就跳出協議，若允許就從協議開頭執行。`
 
 ---
 Status: #🌱 
@@ -49,5 +58,7 @@ Tags:
 [[Database]] - [[Transaction]]
 Links:
 [[Database transaction 是指資料庫要替特定對象A提供特定資料的存取所要滿足的協議，其協議內容為一些資料庫系統所要執行的代碼和附加執行規則]]
+[[Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態]]
+[[CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為]]
 References:
 [[@wikidataACID2022]]
