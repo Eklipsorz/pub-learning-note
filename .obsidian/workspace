@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/Database MOC.md",
+            "file": "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/Database MOC.md",
+                "file": "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "2e148c26ea530c6e",
   "lastOpenFiles": [
+    "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
     "MOC/Database MOC.md",
     "Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
     "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
@@ -104,7 +105,6 @@
     "develop/belazy-shop-sideproject/sendgrid 快速使用手冊.md",
     "develop/belazy-shop-sideproject/sendGrid - 是一個以傳遞email信息為主的雲計算服務公司，主要會以兩種SMTP帳號來幫忙傳遞訊息，一種是用事先申請的電子郵件帳號，另一種則是用sendGrid內建帳號並且用DNS包裹.md",
     "inbox/Simple Mail Transfer Protocol 是專門用作於以email傳遞為主的服務協定.md",
-    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
-    "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md"
+    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md"
   ]
 }
