@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proxy server.md",
+            "file": "MOC/OS MOC.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "proxy server.md",
+            "file": "develop/OS/forward proxy 會代理原客戶端去發送請求，reverse proxy會代理原伺服器來管理外部發送至原伺服器的請求和回應.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "proxy server.md",
+                "file": "MOC/OS MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "2e148c26ea530c6e",
   "lastOpenFiles": [
-    "proxy server.md",
+    "MOC/OS MOC.md",
+    "develop/OS/forward proxy 會代理原客戶端去發送請求，reverse proxy會代理原伺服器來管理外部發送至原伺服器的請求和回應.md",
     "crypto 是指加密貨幣.md",
     "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
     "MOC/Database MOC.md",
-    "Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
+    "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
     "pots/redis sentinel 模式是監測master+slave結構下的所有主機並根據是否故障來調整可用主機給客戶端使用.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/Database/Transaction - Atomicity 是指協議上所有被執行的任務直接都視為一個不可分割的原子，任何一個任務不能單獨被完成，只有全部任務完成或者全部任務不完成.md",
-    "develop/belazy-shop-sideproject/sendgrid 快速使用手冊.md",
-    "develop/belazy-shop-sideproject/sendGrid - 是一個以傳遞email信息為主的雲計算服務公司，主要會以兩種SMTP帳號來幫忙傳遞訊息，一種是用事先申請的電子郵件帳號，另一種則是用sendGrid內建帳號並且用DNS包裹.md"
+    "develop/belazy-shop-sideproject/sendgrid 快速使用手冊.md"
   ]
 }
