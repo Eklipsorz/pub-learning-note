@@ -79,7 +79,7 @@ __keyevent@0__:del
 
 
 #🧠 Redis Pub/Sub 下的 Key-space notification 和 Key-event notification 頻道各是以什麼作為前綴(prefix) ->->-> `__keyspace@<db>__ 和 __keyevnt@<db>__，而<db>為redis database name`
-<!--SR:!2022-06-28,14,247-->
+<!--SR:!2022-08-05,38,247-->
 
 
 
