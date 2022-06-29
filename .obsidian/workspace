@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+            "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+            "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+                "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
   },
   "active": "cbfd85941091ad2c",
   "lastOpenFiles": [
-    "gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
     "express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
     "MOC/Express.js MOC.md",
     "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
