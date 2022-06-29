@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/OS/電腦 IO(I和O之間有斜線)的IO通常分別泛指著輸入資料的任務和輸出資料的任務，Input是由特定系統A接收過來的信號，Ouput是由特定系統A輸出出去的信號.md",
+            "file": "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
             "mode": "source"
           }
         }
@@ -76,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/電腦 IO(I和O之間有斜線)的IO通常分別泛指著輸入資料的任務和輸出資料的任務，Input是由特定系統A接收過來的信號，Ouput是由特定系統A輸出出去的信號.md",
+                "file": "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,6 +104,7 @@
   },
   "active": "2e148c26ea530c6e",
   "lastOpenFiles": [
+    "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
     "develop/OS/電腦 IO(I和O之間有斜線)的IO通常分別泛指著輸入資料的任務和輸出資料的任務，Input是由特定系統A接收過來的信號，Ouput是由特定系統A輸出出去的信號.md",
     "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "develop/OS/forward proxy 會代理原客戶端去發送請求，reverse proxy會代理原伺服器來管理外部發送至原伺服器的請求和回應.md",
@@ -112,7 +113,6 @@
     "crypto 是指加密貨幣.md",
     "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
     "develop/JavaScript/Execution Context 中的outer reference 適用以實現scope chain.md",
-    "MOC/JavaScript MOC.md",
-    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md"
+    "MOC/JavaScript MOC.md"
   ]
 }
