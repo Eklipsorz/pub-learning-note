@@ -7,8 +7,11 @@
         "id": "cbfd85941091ad2c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "gcp - app.yaml.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "gcp - app.yaml.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,6 +96,7 @@
   },
   "active": "cbfd85941091ad2c",
   "lastOpenFiles": [
+    "gcp - app.yaml.md",
     "express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
     "MOC/Express.js MOC.md",
     "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
@@ -100,7 +105,6 @@
     "develop/OS/forward proxy 會代理原客戶端去發送請求，reverse proxy會代理原伺服器來管理外部發送至原伺服器的請求和回應.md",
     "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
     "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
-    "crypto 是指加密貨幣.md",
-    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md"
+    "crypto 是指加密貨幣.md"
   ]
 }

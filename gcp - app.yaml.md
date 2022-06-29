@@ -1,0 +1,1 @@
+`handlers`: Optional. A list of URL patterns and descriptions of how they should be handled. App Engine can handle URLs by executing application code, or by serving static files uploaded with the code, such as images, CSS, or JavaScript.
