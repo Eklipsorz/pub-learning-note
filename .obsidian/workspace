@@ -4,18 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "2e148c26ea530c6e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "2ba05355c7edf998",
+        "id": "cbfd85941091ad2c",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -76,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,8 +90,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2e148c26ea530c6e",
+  "active": "cbfd85941091ad2c",
   "lastOpenFiles": [
+    "express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
+    "MOC/Express.js MOC.md",
     "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
     "develop/OS/電腦 IO(I和O之間有斜線)的IO通常分別泛指著輸入資料的任務和輸出資料的任務，Input是由特定系統A接收過來的信號，Ouput是由特定系統A輸出出去的信號.md",
     "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
@@ -111,8 +101,6 @@
     "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md",
     "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
     "crypto 是指加密貨幣.md",
-    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
-    "develop/JavaScript/Execution Context 中的outer reference 適用以實現scope chain.md",
-    "MOC/JavaScript MOC.md"
+    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md"
   ]
 }

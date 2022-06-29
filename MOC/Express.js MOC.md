@@ -28,3 +28,9 @@
 
 - 解析multipart/form-data格式的套件 - multer
 [[multer 是一個套件，專門解析multipart中的form-data格式。]]
+
+
+
+### 常見問題
+- return res.send() vs res.send 問題
+[[express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續]]
