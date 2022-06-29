@@ -20,16 +20,20 @@
 > the quality of being able to last a long time without becoming damaged:
 > the fact of being able to continue to exist:
 重點：
-- Durability是指能夠持續正常狀態至很長一段時間都不受到損害的性質
+- Durability是指能夠維持特定狀態至很長一段時間都不受到改變的性質
 
 ## 複習
-#🧠 Durability命名緣由是什麼？ ->->-> `是指能夠持續正常狀態至很長一段時間都不受到損害的性質`
+#🧠 Durability命名緣由是什麼？ ->->-> `是指能夠維持特定狀態至很長一段時間都不受到改變的性質`
+<!--SR:!2022-06-30,1,230-->
 
 #🧠  Durability 套用在Database的Transaction會是指？(從Durability命名來描述，不用實際談論Durability 在資料庫上的約束) ->->-> `Durability 本意為能夠持續特定正常狀態至很長一段時間的性質，在這裡會是指協議修改後的資料庫內容會持續存在很長一段時間，意旨為當從協議的暫時性修改轉換成永久性修改，其內容將會永久存在`
+<!--SR:!2022-07-02,3,250-->
 
 #🧠 Database： Durability 在Transaction是什麼樣的規則 ->->-> `-  Durability 意旨為當成功執行Transaction，其資料庫的修改內容將會以Transaction指定修改的內容來永久性儲存`
+<!--SR:!2022-07-02,3,250-->
 
 #🧠 Database：若給你Commit 和Rollback的話， 會如何描述Durability 在Transaction是什麼樣的規則   ->->-> ` Durability 性質是保證協議只要執行到commit從而使資料庫內容轉換成永久性修改時，其內容將會永久存在，不會還原`
+<!--SR:!2022-07-02,3,250-->
 
 
 
