@@ -103,16 +103,16 @@ function xxx() {
 
 ## 複習
 #🧠 在ES6之前的scope是有哪些種類(提示：全x、函x)->->-> `只有global scope、function scope`
-<!--SR:!2022-06-30,10,250-->
+<!--SR:!2022-07-28,28,250-->
 
 #🧠  var 變數有沒有scope 概念？ 具體來說是什麼？ 它出自於ES6? ES6以前？->->-> `var變數是有的，具體來說它出自於只有global scope、function scope的ES6以前版本，而var變數的scope本身會依賴著自己所處的環境是不是函式而決定是否為function scope？還是global scope`
 <!--SR:!2022-07-23,24,250-->
 
 #🧠  var 變數若處於function scope，這說明什麼？(提示：識別、記憶體、初始值、釋放) ->->-> `var 變數只會在該函式能夠被識別，並且當執行到該函式之前，系統會先賦予記憶體空間以及初始值undefined給定所有處在function的var變數，直到正式執行時，就更改其內容，最後執行到函式要結束時，就會釋放var變數的記憶體`
-<!--SR:!2022-06-30,10,250-->
+<!--SR:!2022-07-28,28,250-->
 
 #🧠  var 變數若處於global scope，這說明什麼？(提示：識別、記憶體、初始值、釋放) ->->->  `var變數會變成整個檔案都能夠被識別，並且當JS核心執行之前就會先賦予記憶體空間以及初始值undefined給定所有處在全域的var變數，直到正式執行時，就會更改其內容，最後執行到檔案要結束執行，就會釋放var變數的記憶體`
-<!--SR:!2022-06-30,10,250-->
+<!--SR:!2022-07-28,28,250-->
 
 #🧠 var 變數若放在block scope的話，系統會如何決定var變數的scope ->->-> `var 變數由於是出自於只有global scope和function scope的ES6以前版本，若遇到ES6出現的block scope，會直接忽視block scope，並且依據其block scope原本處於的scope是否為function scope來決定自己的scope是否為function scope`
 <!--SR:!2022-07-21,23,250-->
