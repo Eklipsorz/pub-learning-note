@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "encodeURIComponent vs encodeURI.md",
+            "file": "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "encodeURIComponent vs encodeURI.md",
+            "file": "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "encodeURIComponent vs encodeURI.md",
+                "file": "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,9 +105,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "df885c430379fd06",
+  "active": "cbfd85941091ad2c",
   "lastOpenFiles": [
-    "encodeURIComponent vs encodeURI.md",
+    "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
     "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "MOC/General Service MOC.md",
     "MOC/JavaScript MOC.md",
