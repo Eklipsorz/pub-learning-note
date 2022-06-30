@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "QueryString 加號問題 - 伺服器在解析query參數就會自動以解碼.md",
+            "file": "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "ed5f6cbca9bcb75f",
+        "id": "f53dcc96dd768b92",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
-            "mode": "preview"
+            "file": "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+            "mode": "source"
           }
         }
       }
@@ -63,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 778.5
+    "width": 377.5
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "QueryString 加號問題 - 伺服器在解析query參數就會自動以解碼.md",
+                "file": "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
   },
   "active": "cbfd85941091ad2c",
   "lastOpenFiles": [
-    "QueryString 加號問題 - 伺服器在解析query參數就會自動以解碼.md",
+    "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
     "express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
