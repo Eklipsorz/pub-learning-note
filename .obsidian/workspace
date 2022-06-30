@@ -21,7 +21,7 @@
           "type": "markdown",
           "state": {
             "file": "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -108,14 +108,14 @@
   "active": "cbfd85941091ad2c",
   "lastOpenFiles": [
     "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+    "MOC/General Service MOC.md",
+    "MOC/JavaScript MOC.md",
     "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
     "express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
     "MOC/Express.js MOC.md",
     "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md",
     "develop/OS/電腦 IO(I和O之間有斜線)的IO通常分別泛指著輸入資料的任務和輸出資料的任務，Input是由特定系統A接收過來的信號，Ouput是由特定系統A輸出出去的信號.md",
-    "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
-    "develop/OS/forward proxy 會代理原客戶端去發送請求，reverse proxy會代理原伺服器來管理外部發送至原伺服器的請求和回應.md",
-    "develop/hot backup 是指在備份系統與實際要備份資料的系統同時併行下進行實時備份或者頻率高到像實時的備份任務.md"
+    "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md"
   ]
 }
