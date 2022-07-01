@@ -58,7 +58,7 @@ isFull()
 <!--SR:!2022-08-23,54,250-->
 
 #🧠 Abstract Data Type 帶來的好處是？->->-> `1. 由於ADT等同於設計特定資料模型的草圖，可以以不呈現實現細節來設計程式如何實現、2. 透過ADT可以更快發現錯誤，更專注目標`
-<!--SR:!2022-07-01,22,250-->
+<!--SR:!2022-08-25,55,250-->
 
 #🧠 以下是描述List的ADT，請說明哪些是ADT所描述的資料描述和操作？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653732192/blog/algorithm/adt/listADT_nizmww.png) ->->-> ``
 <!--SR:!2022-07-08,27,250-->

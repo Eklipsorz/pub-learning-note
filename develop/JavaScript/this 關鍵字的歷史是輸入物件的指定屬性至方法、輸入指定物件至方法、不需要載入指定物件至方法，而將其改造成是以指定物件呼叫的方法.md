@@ -194,7 +194,7 @@ function sayBye() {
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件屬性來宣告的話，會有什麼樣的缺點？(提示：所需的屬性數越多和呼叫形式很累贅) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method1_lgbab7.png)->->-> `-   需要的參數是person物件下的特定屬性，卻要跟著實際屬性來填入，這樣若要N個屬性，那麼呼叫的參數就要載入N個 -   對於人類開發而言，這種呼叫形式是很累贅的，因為.前面就有person，參數卻還要填入person物件 `
-<!--SR:!2022-07-01,9,250-->
+<!--SR:!2022-07-24,23,250-->
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，能否縮減至一個參數的函式，而不是要N個屬性就給N個參數 (提示：object.name object.age)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png) ->->-> `person的sayHi和sayBye函式宣告為一個物件，稱作為self參數名稱，當要呼叫person.sayHi和person.sayBye時就載入指定要存取的物件，比如person.sayHi(person1)，然後由函式本身自己向物件索要屬性來要，而不是從參數那邊指定要哪個屬性。`
@@ -205,14 +205,14 @@ function sayBye() {
 <!--SR:!2022-07-02,10,250-->
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，還存在著什麼樣的缺點 （提示：呼叫形式好像很多餘) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   對於人類開發而言，這種呼叫形式是很累贅的，因為.前面就有person，參數卻還要填入person物件`
-<!--SR:!2022-07-01,9,250-->
+<!--SR:!2022-07-27,26,250-->
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，能否不用參數就能索要？ (提示：this)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png)  ->->-> `將原本語法形式改造成不需要參數的語法形式，使其讓人類變得很容易理解和使用，比如依然採用將想要存取的物件當作參數來載入但不顯示，這樣每次呼叫下的方法都不會呈現出需要多一個物件參數，但在執行函式時會以一個隱藏變數this來表示對應被隱藏的參數物件，換言之，this等同於呼叫該方法的物件，或者說要存取的物件被載入特定物件的方法來處理`
 <!--SR:!2022-07-02,10,250-->
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，最佳實踐有哪兩個 (提示：不用參數和用一個參數)？python 會用哪個？ js會用哪個  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png)  ->->-> `-   方法1： 依然採用將想要存取的物件當作參數來載入並且顯示，這樣每次呼叫物件下的方法都會多出一個物件參數-   方法2： 依然採用將想要存取的物件當作參數來載入但不顯示，這樣每次呼叫下的方法都不會呈現出需要多一個物件參數，但在執行函式時會以一個隱藏變數this來表示對應被隱藏的參數物件，換言之，this等同於呼叫該方法的物件，或者說要存取的物件被載入特定物件的方法來處理，python 會用前者；js會用後者`
-<!--SR:!2022-07-01,9,250-->
+<!--SR:!2022-07-26,25,250-->
 
 
 
