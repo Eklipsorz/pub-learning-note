@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "stripe API - checkout session 開發使用手冊.md",
+            "file": "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "架構缺點",
+                "query": "sub/pu",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "stripe API - checkout session 開發使用手冊.md",
+                "file": "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,8 @@
   },
   "active": "df885c430379fd06",
   "lastOpenFiles": [
+    "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
+    "MOC/Redis MOC.md",
     "stripe API - checkout session 開發使用手冊.md",
     "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
     "develop/dev-log/Belazy - API的每個輸入欄位是否實際存在，而非只是單純空字串.md",
@@ -114,8 +116,6 @@
     "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "MOC/General Service MOC.md",
     "MOC/JavaScript MOC.md",
-    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
-    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
-    "express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md"
+    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md"
   ]
 }
