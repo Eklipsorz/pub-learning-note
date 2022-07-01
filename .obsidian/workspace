@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
+            "file": "javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
+                "file": "javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "df885c430379fd06",
   "lastOpenFiles": [
+    "javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
     "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
     "MOC/Redis MOC.md",
     "stripe API - checkout session 開發使用手冊.md",
@@ -115,7 +116,6 @@
     "develop/dev-log/Belazy - API 上傳檔案可以重構成utils類別的程式模組.md",
     "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "MOC/General Service MOC.md",
-    "MOC/JavaScript MOC.md",
-    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md"
+    "MOC/JavaScript MOC.md"
   ]
 }
