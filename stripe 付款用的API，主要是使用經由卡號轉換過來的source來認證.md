@@ -1,3 +1,5 @@
+To charge a credit card or other payment source, you create a `Charge` object. If your API key is in test mode, the supplied payment source (e.g., card) won’t actually be charged, although everything else will occur as if in live mode. (Stripe assumes that the charge would have completed successfully).
+
 ```js
 // `source` is obtained with Stripe.js; see https://stripe.com/docs/payments/accept-a-payment-charges#web-create-token
 const charge = await stripe.charges.create({

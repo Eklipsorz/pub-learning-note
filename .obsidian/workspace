@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "URL輸入參數會遇到的問題.md",
+            "file": "stripe 將卡號轉換成付款用的序號.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "URL輸入參數會遇到的問題.md",
+                "file": "stripe 將卡號轉換成付款用的序號.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "df885c430379fd06",
   "lastOpenFiles": [
+    "stripe 將卡號轉換成付款用的序號.md",
+    "stripe API - checkout session 開發使用手冊.md",
+    "stripe 付款用的API，主要是使用經由卡號轉換過來的source來認證.md",
     "URL輸入參數會遇到的問題.md",
     "express app 所建立的middleware和router獨立建立的middleware是獨立的.md",
     "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
-    "stripe 付款.md",
     "javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
     "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
     "MOC/Redis MOC.md",
-    "stripe API - checkout session 開發使用手冊.md",
-    "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
-    "develop/dev-log/Belazy - API的每個輸入欄位是否實際存在，而非只是單純空字串.md"
+    "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md"
   ]
 }
