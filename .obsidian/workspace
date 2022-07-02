@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "stripe 付款.md",
+            "file": "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sub/pu",
+                "query": "是什麼樣的規則",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "stripe 付款.md",
+                "file": "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +108,7 @@
   },
   "active": "df885c430379fd06",
   "lastOpenFiles": [
+    "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
     "stripe 付款.md",
     "javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
     "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
@@ -115,7 +117,6 @@
     "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
     "develop/dev-log/Belazy - API的每個輸入欄位是否實際存在，而非只是單純空字串.md",
     "develop/dev-log/Belazy - API 上傳檔案可以重構成utils類別的程式模組.md",
-    "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
-    "MOC/General Service MOC.md"
+    "QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md"
   ]
 }
