@@ -34,3 +34,4 @@
 ### 常見問題
 - return res.send() vs res.send 問題
 [[express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續]]
+[[res.redirect會負責撰寫回應封包要轉向的位置和狀態碼，res.writeHead則是指定寫回應標頭，res.location純粹寫location header]]
