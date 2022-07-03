@@ -9,7 +9,7 @@
 [[app.locals + req.app 兩者一起使用的話，可以進一步讓每一個路徑下的middleware都能使用app.locals變數]]
 
 ## middleware
-
+[[Express Server 錯誤處理的順序]]
 ### express-session 
 - express-session 安全：
 [[Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改]]
