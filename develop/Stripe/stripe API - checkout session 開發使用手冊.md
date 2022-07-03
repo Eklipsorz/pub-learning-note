@@ -82,7 +82,7 @@ line_items: [
 
 
 ### checkout session 和 網頁 時限
-[[@scripeAcceptPayment]] 所描述
+[[@AcceptPayment]]所描述
 > Checkout Sessions expire 24 hours after creation.
 
 
@@ -104,4 +104,4 @@ Tags:
 [[Stripe]]
 Links:
 References:
-[[@scripeAcceptPayment]]
+[[@AcceptPayment]]

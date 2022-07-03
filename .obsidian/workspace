@@ -9,8 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Stripe/stripe 將卡號轉換成付款用的序號.md",
+            "file": "Untitled.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "974b8a6bd1e55610",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "res.redirect會負責撰寫回應封包要轉向的位置和狀態碼，res.writeHead則是指定寫回應標頭，res.location純粹寫location header",
+                "query": "scripeAcceptPayment",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Stripe/stripe 將卡號轉換成付款用的序號.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +107,15 @@
   },
   "active": "6e45708a02984b79",
   "lastOpenFiles": [
+    "Untitled.md",
+    "annotation/@scripeAcceptPayment.md",
+    "develop/Stripe/stripe API - checkout session 開發使用手冊.md",
+    "Stripe Payment Element 是Stripe 提供於UI開發的元件來從而讓使用者透過元件產出伺服器容易處理的結果，其元件具體會是由部分DOM節點和事件綁定.md",
     "develop/Stripe/stripe 將卡號轉換成付款用的序號.md",
     "Stripe 付款整體流程：客戶端建立卡元素、透過卡元素建立對應token、向伺服器傳遞token、伺服器透過token向stripe付款.md",
-    "Stripe Payment Element 是Stripe 提供於UI開發的元件來從而讓使用者透過元件產出伺服器容易處理的結果，其元件具體會是由部分DOM節點和事件綁定.md",
     "develop/Express/Express Server 錯誤處理的順序.md",
     "develop/Stripe/stripe 付款用的API，主要是使用經由卡號轉換過來的source來認證.md",
-    "develop/Stripe/stripe API - checkout session 開發使用手冊.md",
     "develop/Express/res.redirect會負責撰寫回應封包要轉向的位置和狀態碼，res.writeHead則是指定寫回應標頭，res.location純粹寫location header.md",
-    "MOC/Express.js MOC.md",
-    "express app 所建立的middleware和router獨立建立的middleware是獨立的.md",
-    "express() 回傳的內容是主要回應各個網路請求的callback，而該callback可以進一步定義可接受處理的請求以及回應處理.md"
+    "MOC/Express.js MOC.md"
   ]
 }

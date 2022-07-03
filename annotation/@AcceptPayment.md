@@ -1,6 +1,6 @@
 ---
 title: Accept a payment
-authors:  Scripe
+authors: 
 year: 
 ---
 
