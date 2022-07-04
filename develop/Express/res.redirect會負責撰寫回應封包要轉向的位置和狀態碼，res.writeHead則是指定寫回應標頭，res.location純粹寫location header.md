@@ -39,6 +39,7 @@
 
 #🧠 在express server中，res.writeHead是做什麼用的 ->->-> `是直接設定回應封包內的標頭內容和狀態碼`
 #🧠 在express server中，res.writeHead 與res.location、res.redirect之間差別會是什麼 ->->-> `跟前兩者比較起來，該方法可以寫除了location以外的標頭設定`
+<!--SR:!2022-07-07,3,250-->
 
 ---
 Status: #🧠 
