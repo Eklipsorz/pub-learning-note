@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+            "file": "develop/Express/Express Server 錯誤處理的順序.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "04b690e13ca32707",
+        "id": "4e8c0669459df9f9",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+            "file": "develop/Express/Express Server 錯誤處理的順序.md",
             "mode": "preview"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "解碼形式",
+                "query": "middleware架構會是如下圖",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+                "file": "develop/Express/Express Server 錯誤處理的順序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +108,7 @@
   },
   "active": "42e503d95d81d4dd",
   "lastOpenFiles": [
+    "develop/Express/Express Server 錯誤處理的順序.md",
     "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "Untitled.md",
     "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
@@ -116,7 +117,6 @@
     "MOC/General Service MOC.md",
     "MOC/Payment Dev MOC.md",
     "金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
-    "develop/Stripe/Stripe Tokens + Charge API 適用於美加地區，Payment Intents API適用於全球.md",
-    "develop/Stripe/Stripe Token+Charges整體流程：客戶端建立卡元素、透過卡元素建立對應token、向伺服器傳遞token、伺服器透過token向stripe付款.md"
+    "develop/Stripe/Stripe Tokens + Charge API 適用於美加地區，Payment Intents API適用於全球.md"
   ]
 }

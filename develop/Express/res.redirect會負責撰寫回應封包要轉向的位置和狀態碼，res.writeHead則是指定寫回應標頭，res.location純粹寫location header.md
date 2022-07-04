@@ -30,14 +30,19 @@
 
 ## 複習
 #🧠 回應封包內的location 標頭 是做什麼？會搭配狀態碼嗎 ->->-> `location是主要是伺服器要求客戶端導向指定路由的標頭，通常會搭配`
+<!--SR:!2022-07-07,3,250-->
 
 #🧠  在express server中，res.location是做什麼用的 ->->-> `直接設定回應封包內的location標頭`
+<!--SR:!2022-07-07,3,250-->
 
 #🧠 在express server中，res.redirect是做什麼用的 ->->-> `res.redirect 是直接設定回應封包內的location標頭和狀態碼`
+<!--SR:!2022-07-07,3,250-->
 
 #🧠 在express server中，伺服器執行res.redirect會直接使客戶端導向嗎 ->->-> `並不會，只是先撰寫回應封包內的location標頭和狀態碼`
+<!--SR:!2022-07-07,3,250-->
 
 #🧠 在express server中，res.writeHead是做什麼用的 ->->-> `是直接設定回應封包內的標頭內容和狀態碼`
+<!--SR:!2022-07-07,3,250-->
 #🧠 在express server中，res.writeHead 與res.location、res.redirect之間差別會是什麼 ->->-> `跟前兩者比較起來，該方法可以寫除了location以外的標頭設定`
 <!--SR:!2022-07-07,3,250-->
 
