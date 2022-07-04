@@ -62,11 +62,33 @@ https://www.cnblogs.com/CrazyCoder/archive/2007/10/17/928261.html
 
 > 如果傳送的是HTTP GET請求，application/x-www-form-urlencoded資料包含在所請求URI的查詢成分中。如果傳送的是HTTP POST請求或通過email，資料被放置在訊息體中，媒體類型的名字被包含在訊息的Content-Type頭內部。
 
+#### querystring 和 網址的編碼
+querystring 和 網址一率皆以URL編碼算法或者百分比算法來進行解碼和編碼
+
+#### 只支援ASCII編碼的URL編碼
+URL編碼系統將編碼前的字元分為兩種：
+	- 未保留字元：URL編碼認定沒特定用途的字元，編碼並不會編碼；解碼並不會解析，只會跟編碼前一樣
+	> Characters from the unreserved set never need to be percent-encoded.
+	- 保留字元：URL編碼認定具有特殊用途的字元，解碼時會按照用途解析成特定內容
+	> When a character from the reserved set (a "reserved character") has a special meaning (a "reserved purpose") in a certain context
+	
+URL編碼系統的編碼遇到以下內容：
+ - 保留字元要轉換成未保留字元：則需要從保留字元轉換成以百分比為主的字元符號
+ - 未保留字元：被編碼的形式還是會跟編碼前一樣
+ - 保留字元：被編碼的形式還是會跟編碼前一樣
+
+URL 編碼系統的解碼遇到以下內容：
+- 百分比為主的字元符號：從百分比為主的字元符號轉換成被編碼前的樣子
+- 未保留字元：被解碼的形式還是會跟編碼前一樣
+- 保留字元：被解碼的形式會按照其字元在編碼系統所擁有的用途來解析
+
+
+#### 支援ASCII編碼和UTF編碼的URL編碼
 
 
 
 重點：
-- querystring 和 網址一率皆以URL編碼算法或者百分比算法來進行解碼和編碼
+- 
 - 其URL編碼算法或者百分比算法會考慮UTF編碼系統而加以擴充自己編碼庫，但早期的URL編碼算法沒考慮UTF編碼系統而擴充，導致只有UTF-8編碼能辨識的字元無法在URL編碼和解碼上獲得正確的值，比如：
 - 編碼系統的字元依據編碼前的內容而分為未保留字元和保留字元：
 	- 未保留字元：不具有特殊用途，可以直接被編解碼
