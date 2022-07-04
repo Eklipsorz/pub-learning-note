@@ -175,14 +175,14 @@ GlobalExectionContext = {
 <!--SR:!2022-07-05,11,248-->
 
 
-#🧠 Global Execution Context ： LexicalEnvironment 和VariablEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
+#🧠 Global Execution Context ： LexicalEnvironment 和VariableEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
 <!--SR:!2022-08-01,29,248-->
 
 #🧠 Global Execution Context ：LexicalEnvironment 主要記錄著什麼？ ->->-> ` LexicalEnvironment 從GEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
 <!--SR:!2022-07-06,13,248-->
 
 #🧠 Global Execution Context ：VariablEenvironment 主要記錄著什麼？ ->->-> `從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中`
-<!--SR:!2022-07-04,12,248-->
+<!--SR:!2022-08-07,34,248-->
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Environment Records 是什麼(在Creation phase和Execution phase) ->->-> `一開始在Creation 階段中，EnvironmentRecord的Type可以定義為Declarative或者Object來決定EnvironmentRecord的類型是什麼，最後Lexical Environment主要定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式，在Execution 階段中，會是JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
