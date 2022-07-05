@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Belazy - 產品價格皆以美金來計算.md",
+            "file": "小數點計算比整數計算還需要成本嗎？.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Belazy - 產品價格皆以美金來計算.md",
+                "file": "小數點計算比整數計算還需要成本嗎？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "42e503d95d81d4dd",
   "lastOpenFiles": [
+    "小數點計算比整數計算還需要成本嗎？.md",
     "Belazy - 產品價格皆以美金來計算.md",
     "當傳遞JSON stringify的字元至express伺服器時， 伺服器會在處理請求求先解析其stringify化並轉換成Javascript Object.md",
     "pots/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
@@ -115,7 +116,6 @@
     "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/Express/Express Server 錯誤處理的順序.md",
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
-    "MOC/Payment Dev MOC.md",
-    "Untitled.md"
+    "MOC/Payment Dev MOC.md"
   ]
 }
