@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "小數點計算比整數計算還需要成本嗎？.md",
+            "file": "Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小數點計算比整數計算還需要成本嗎？.md",
+                "file": "Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +107,7 @@
   },
   "active": "42e503d95d81d4dd",
   "lastOpenFiles": [
+    "Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md",
     "小數點計算比整數計算還需要成本嗎？.md",
     "Belazy - 產品價格皆以美金來計算.md",
     "當傳遞JSON stringify的字元至express伺服器時， 伺服器會在處理請求求先解析其stringify化並轉換成Javascript Object.md",
@@ -115,7 +116,6 @@
     "develop/Network/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
     "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/Express/Express Server 錯誤處理的順序.md",
-    "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
-    "MOC/Payment Dev MOC.md"
+    "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md"
   ]
 }
