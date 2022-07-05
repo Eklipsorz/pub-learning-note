@@ -11,5 +11,19 @@
 
 
 ```
+req.body = {
 
+	stripeToken: "1234",
+	items: [
+		{
+			id: "5",
+			quantity: "1"
+		},
+		{
+			id: "6",
+			quantity: "10"
+		}
+	]
+
+}
 ```
