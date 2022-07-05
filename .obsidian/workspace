@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
+            "file": "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "4060f27a97dd54dd",
+        "id": "4c43331dca7b3e54",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
+            "file": "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
             "mode": "preview"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "purchase",
+                "query": "#🧠r",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
+                "file": "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "42e503d95d81d4dd",
   "lastOpenFiles": [
+    "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
+    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
+    "develop/Redis/redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+    "develop/JavaScript/JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用來減緩單執行緒所產生出來的blocking問題.md",
+    "develop/JavaScript/JavaScript 本身是操作DOM節點的語言以及每個DOM節點的事件綁定來實現客戶端能與網頁互動，而為了確保DOM節點不受race condition影響而設計成允許一個主執行緒來負責執行.md",
+    "MOC/OS MOC.md",
+    "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
     "JSON內容能填些什麼型別的資料？.md",
-    "Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md",
-    "小數點計算比整數計算還需要成本嗎？.md",
-    "Belazy - 產品價格皆以美金來計算.md",
-    "當傳遞JSON stringify的字元至express伺服器時， 伺服器會在處理請求求先解析其stringify化並轉換成Javascript Object.md",
-    "pots/虛擬雲 或 虛擬網路 是以軟體形式來實現組成網路所需的儀器以及機制，從而組成虛擬網路.md",
-    "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
-    "develop/Network/網路遮罩是用來判斷目前IP所屬的子網域是什麼.md",
-    "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md"
+    "Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md"
   ]
 }

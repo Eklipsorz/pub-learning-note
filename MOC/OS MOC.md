@@ -1,4 +1,5 @@
-
+## race condition
+[[race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果]]
 
 ## I/O
 - Blocking I/O (BIO) Model
