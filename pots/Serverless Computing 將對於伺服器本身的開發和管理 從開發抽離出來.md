@@ -37,7 +37,7 @@ Serverless service:
 <!--SR:!2022-07-20,35,248-->
 
 #🧠 這圖說明serverless environment，請解釋Provider和User負責了什麼？  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653314112/blog/network/serverless/serverless-env_a6j5mv.png) ->->-> `提供者會負責使用者主機所在的環境是否穩定以及負責原本執行開發項目的主機，使用者只需要負責開發項目的開發，並且將項目部署至開發者指定的主機上`
-<!--SR:!2022-07-05,28,250-->
+<!--SR:!2022-09-13,70,250-->
 
 ---
 Status: #🌱 

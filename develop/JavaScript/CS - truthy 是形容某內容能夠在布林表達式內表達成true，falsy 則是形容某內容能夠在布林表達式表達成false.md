@@ -72,7 +72,7 @@ if (NaN)
 
 ## 複習
 #🧠 Computer science： truthy 是指什麼？ ->->-> `- truthy 是形容詞，是程式開發領域所定義的 - 主要形容能夠在布林表達式內被當作是true的，形容目標為內容，通常會是truthy value來形容能夠在布林表達式內被當作true的值`
-<!--SR:!2022-07-05,9,250-->
+<!--SR:!2022-07-28,23,250-->
 
 #🧠 Computer science： 誰制定哪些value 為 truthy value或者 falsy value ->->-> `程式語言`
 <!--SR:!2022-07-27,23,250-->
@@ -90,10 +90,10 @@ if (NaN)
 <!--SR:!2022-07-06,10,250-->
 
 #🧠 JS：請問undefined、NaN是算falsy value？還是truthy value？->->-> `是算falsy value`
-<!--SR:!2022-07-05,9,250-->
+<!--SR:!2022-07-31,26,250-->
 
 #🧠 字串要怎麼才能夠在JS被當作是falsy value? ->->-> `""、``、''`
-<!--SR:!2022-07-05,9,250-->
+<!--SR:!2022-07-31,26,250-->
 
 #🧠 "0" 在JS裏是算falsy value嗎？為什麼？->->-> `會被當作是truthy，若要判定字串為falsy value，字串內容必須為空，但內容是存放0，因此為truthy value`
 <!--SR:!2022-07-22,19,250-->

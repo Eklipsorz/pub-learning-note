@@ -55,7 +55,7 @@ handlers:
 
 ## 複習
 #🧠 如何透過app.yaml 來設定app engine 能夠將http請求導向成https請求 (提示handlers、url、secure、redirect_http_response_code、script) ->->-> `- 	url: /.* secure: always redirect_http_response_code: 301 script: auto`
-<!--SR:!2022-07-05,2,230-->
+<!--SR:!2022-07-10,5,230-->
 
 #🧠 app.yaml 中的handlers 是做什麼用的->->-> `是在app.yaml定義了app engine所要處理的URL是哪些(會以app engine所在的DOMAIN為主)以及這些URL該如何處理`
 <!--SR:!2022-07-13,10,250-->

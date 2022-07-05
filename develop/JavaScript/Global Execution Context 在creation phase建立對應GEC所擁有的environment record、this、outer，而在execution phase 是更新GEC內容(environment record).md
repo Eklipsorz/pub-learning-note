@@ -153,7 +153,7 @@ GlobalExectionContext = {
 <!--SR:!2022-07-14,18,250-->
 
 #🧠 Global Execution Context 在Creation phase遇上函式時，會設定識別字以及對應的函式嗎？ ->->-> `在這裡由於函式宣告具有以下特性**JavaScript：函式宣告本身就是識別字去對應一塊儲存函式內容的物件，所以在執行之前的掃描就可以以識別字去對應其函式，且初始值會是其函式內容** 在GEC和FEC的creation phase期間由於一開始可以直接用識別字對應的物件，其物件的初始值會是函式內容本身`
-<!--SR:!2022-07-05,12,248-->
+<!--SR:!2022-08-08,34,248-->
 
 
 
@@ -172,7 +172,7 @@ GlobalExectionContext = {
 <!--SR:!2022-07-10,13,228-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間`
-<!--SR:!2022-07-05,11,248-->
+<!--SR:!2022-08-04,30,248-->
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariableEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
