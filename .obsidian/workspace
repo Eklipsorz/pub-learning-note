@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "小數點計算比整數計算還需要成本嗎？.md",
+            "file": "redis 分散式鎖.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "小數點計算比整數計算還需要成本嗎？.md",
+                "file": "redis 分散式鎖.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,6 +96,7 @@
   },
   "active": "d48fa68f9fb2940d",
   "lastOpenFiles": [
+    "redis 分散式鎖.md",
     "小數點計算比整數計算還需要成本嗎？.md",
     "金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
     "MOC/JSON MOC.md",
@@ -103,7 +104,6 @@
     "develop/belazy-shop-sideproject/Belazy - 產品價格皆以美金來計算.md",
     "develop/belazy-shop-sideproject/Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md",
     "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
-    "Untitled.md",
     "develop/Database/Database - Referential integrity 是指一筆資料紀錄上的外鍵是否都能在原本參考到表格上找到對應的紀錄之特性.md",
     "develop/Redis/redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md"
   ]
