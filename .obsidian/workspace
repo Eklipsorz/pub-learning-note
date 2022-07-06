@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
+            "file": "develop/Redis/redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#🧠r",
+                "query": "race condition",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
+                "file": "develop/Redis/redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,11 +108,11 @@
   },
   "active": "42e503d95d81d4dd",
   "lastOpenFiles": [
-    "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
-    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "develop/Redis/redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
+    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "develop/JavaScript/JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用來減緩單執行緒所產生出來的blocking問題.md",
     "develop/JavaScript/JavaScript 本身是操作DOM節點的語言以及每個DOM節點的事件綁定來實現客戶端能與網頁互動，而為了確保DOM節點不受race condition影響而設計成允許一個主執行緒來負責執行.md",
+    "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
     "MOC/OS MOC.md",
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",

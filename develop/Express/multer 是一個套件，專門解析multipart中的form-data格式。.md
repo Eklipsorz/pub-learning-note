@@ -24,7 +24,7 @@ multer 是一個套件，專門解析multipart中的form-data格式，並將解�
 #🧠 multipart/form-data 是什麼樣的格式 ->->-> `本身是前端中的表格資料傳遞形式，可以從前端傳遞擁有文字和圖片的表格資料至後端`
 <!--SR:!2022-07-07,10,250-->
 #🧠 multipart/form-data  提出背景為？->->-> `背景：過去表格的資料傳遞形式只能固定統一皆為文字或者皆為圖片`
-<!--SR:!2022-07-06,9,250-->
+<!--SR:!2022-08-01,26,250-->
 
 #🧠 前端表格如何設定成multipart/form-data？ ->->-> `在表格元件上加入enctype屬性來設定，如<form action="/admin/restaurants" method="POST" enctype="multipart/form-data">`
 <!--SR:!2022-07-07,10,250-->

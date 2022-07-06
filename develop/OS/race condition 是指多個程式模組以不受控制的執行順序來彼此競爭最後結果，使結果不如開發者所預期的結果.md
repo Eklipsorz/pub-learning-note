@@ -7,10 +7,10 @@
 > 
 > 競爭危害常見於不良設計的電子系統，尤其是邏輯電路。但它們在軟體中也比較常見，尤其是有採用多執行緒技術的軟體。
 
-[[@RaceCondition2022]] 描述
+[[@RaceCondition2022]] 描述：
 > A **race condition** or **race hazard** is the condition of an electronics, software, or other system where the system's substantive behavior is dependent on the sequence or timing of other uncontrollable events. It becomes a bug when one or more of the possible behaviors is undesirable.
 
-
+[[@techtargetWhatRaceCondition]] 描述：
 > A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.
 
 
@@ -51,11 +51,11 @@ race 原意為競爭，condition 是指狀態、狀況，在電腦科學是指�
 #🧠 race condition 命名緣由 ->->-> `race 原意為競爭，condition 是指狀態、狀況，在電腦科學是指多個程式模組在彼此競爭誰能夠影響最後結果`
 
 ---
-Status: #🌱 
+Status: #☀️ 
 Tags:
 [[Operating System]]
 Links:
 References:
-
+[[@techtargetWhatRaceCondition]]
 [[@RaceCondition2022]]
 [[@wikidataJingZhengWeiHai2022]]
