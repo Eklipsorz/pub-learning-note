@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d48fa68f9fb2940d",
+        "id": "c7fe1666177d55c8",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "redis 分散式鎖 - 上鎖.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis 分散式鎖 - 上鎖.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +90,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d48fa68f9fb2940d",
+  "active": "c7fe1666177d55c8",
   "lastOpenFiles": [
     "redis 分散式鎖 - 上鎖.md",
     "為什麼需要Lua指令碼.md",
