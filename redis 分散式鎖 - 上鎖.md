@@ -43,6 +43,79 @@ set key value [EX seconds] [PX milliseconds] [NX|XX]
 
 
 
+
+### Node.js 上鎖
+
+**初始化自定义 RedisLock**
+```text
+class RedisLock {
+    /**
+     * 初始化 RedisLock
+     * @param {*} client 
+     * @param {*} options 
+     */
+    constructor (client, options={}) {
+        if (!client) {
+            throw new Error('client 不存在');
+        }
+
+        if (client.status !== 'connecting') {
+            throw new Error('client 未正常链接');
+        }
+
+        this.lockLeaseTime = options.lockLeaseTime || 2; // 默认锁过期时间 2 秒
+        this.lockTimeout = options.lockTimeout || 5; // 默认锁超时时间 5 秒
+        this.expiryMode = options.expiryMode || 'EX';
+        this.setMode = options.setMode || 'NX';
+        this.client = client;
+    }
+}
+```
+
+**上锁**
+> 通过 set 命令传入 setnx、expire 扩展参数开始上锁占坑，上锁成功返回，上锁失败进行重试，在 lockTimeout 指定时间内仍未获取到锁，则获取锁失败。
+```text
+class RedisLock {
+    
+    /**
+     * 上锁
+     * @param {*} key 
+     * @param {*} val 
+     * @param {*} expire 
+     */
+    async lock(key, val, expire) {
+        const start = Date.now();
+        const self = this;
+
+        return (async function intranetLock() {
+            try {
+                const result = await self.client.set(key, val, self.expiryMode, expire || self.lockLeaseTime, self.setMode);
+        
+                // 上锁成功
+                if (result === 'OK') {
+                    console.log(`${key} ${val} 上锁成功`);
+                    return true;
+                }
+
+                // 锁超时
+                if (Math.floor((Date.now() - start) / 1000) > self.lockTimeout) {
+                    console.log(`${key} ${val} 上锁重试超时结束`);
+                    return false;
+                }
+
+                // 循环等待重试
+                console.log(`${key} ${val} 等待重试`);
+                await sleep(3000);
+                console.log(`${key} ${val} 开始重试`);
+
+                return intranetLock();
+            } catch(err) {
+                throw new Error(err);
+            }
+        })();
+    }
+}
+```
 ## 複習
 
 
