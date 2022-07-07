@@ -56,7 +56,7 @@
 
 ## 複習
 #🧠 Express Server 提供哪幾種middleware來攔截錯誤並處理 (提示有三種) ->->-> `App層級的自製錯誤處理middleware、Router層級的自製錯誤處理middleware、Express 預設的錯誤處理middleware`
-<!--SR:!2022-07-07,3,250-->
+<!--SR:!2022-07-15,8,250-->
 
 #🧠 假如Express Server上任何層級(App和Router)都沒有自製錯誤處理middleware，請問還會有誰能夠處理錯誤 ->->-> `Express 所預設的錯誤處理middleware`
 <!--SR:!2022-07-07,3,250-->
@@ -69,7 +69,7 @@
 <!--SR:!2022-07-07,3,250-->
 
 #🧠  Express上若App 層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，在這裡若所有相關的錯誤處理middleware都有next，那麼假如app層級有7個自製的錯誤處理middleware，如何執行 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `第一個自製的錯誤處理middleware先執行，然後藉由next()去執行系統預設的錯誤處理middleware`
-<!--SR:!2022-07-07,3,250-->
+<!--SR:!2022-07-16,9,250-->
 
 #🧠 Express上若Router層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，那麼其middleware會如何處理？(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `會先查看Router層級有沒有自製的錯誤處理middleware；若都沒有，就去查看App層級的自製錯誤處理middleware；再沒有的話，就直接執行系統預設的錯誤處理middleware`
 <!--SR:!2022-07-07,3,250-->
