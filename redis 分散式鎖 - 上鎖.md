@@ -116,6 +116,11 @@ class RedisLock {
     }
 }
 ```
+
+其中執行下面這若出現是OK，代表著執行成功，反之，若出現nil，代表著執行失敗
+```
+SET key value NX
+```
 ## 複習
 
 
