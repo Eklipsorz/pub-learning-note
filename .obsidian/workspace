@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "redis 分散式鎖 - 上鎖.md",
+            "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Database 誰來保證",
+                "query": "編碼前",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis 分散式鎖 - 上鎖.md",
+                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +97,15 @@
   },
   "active": "c7fe1666177d55c8",
   "lastOpenFiles": [
+    "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+    "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
+    "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
+    "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
+    "develop/inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
     "redis 分散式鎖 - 上鎖.md",
     "redis 分散式鎖 - 釋放.md",
     "為什麼需要Lua指令碼.md",
     "小數點計算比整數計算還需要成本嗎？.md",
-    "金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
-    "MOC/JSON MOC.md",
-    "當傳遞JSON stringify的字元至express伺服器時， 伺服器會在處理請求求先解析其stringify化並轉換成Javascript Object.md",
-    "develop/belazy-shop-sideproject/Belazy - 產品價格皆以美金來計算.md",
-    "develop/belazy-shop-sideproject/Belazy - 編輯購物車的API採用的參數為一組陣列，每一個元素皆代表著使用者所要的產品物件，物件包含id和數量.md",
-    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md"
+    "金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md"
   ]
 }
