@@ -7,8 +7,11 @@
         "id": "c7fe1666177d55c8",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "為什麼需要Lua指令碼.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "為什麼需要Lua指令碼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,8 +96,8 @@
   },
   "active": "c7fe1666177d55c8",
   "lastOpenFiles": [
-    "redis 分散式鎖 - 上鎖.md",
     "為什麼需要Lua指令碼.md",
+    "redis 分散式鎖 - 上鎖.md",
     "redis 分散式鎖 - 釋放.md",
     "小數點計算比整數計算還需要成本嗎？.md",
     "金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
