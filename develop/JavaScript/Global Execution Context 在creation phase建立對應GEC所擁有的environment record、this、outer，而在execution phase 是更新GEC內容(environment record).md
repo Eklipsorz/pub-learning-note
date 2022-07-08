@@ -192,7 +192,7 @@ GlobalExectionContext = {
 <!--SR:!2022-07-27,28,250-->
 
 #🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：更新) ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
-<!--SR:!2022-07-08,14,248-->
+<!--SR:!2022-08-14,37,248-->
 
 
 
@@ -204,7 +204,7 @@ GlobalExectionContext = {
 
 
 #🧠  若於Global Execution Context的建立期間遇到函式、變數的話，其對應識別字會是如何？對應內容是否能有值？(提示：函式不受scope影響，變數會->->-> `在這裡由於只有函式宣告本身可以透過函式名稱來呼叫，所以不受到對應值無法確定的問題，而const/let的變數宣告會受限於對應值無法確定的問題，因此對應let/const的變數宣告會是uninitialized來表示該變數還未宣告`
-<!--SR:!2022-07-08,14,230-->
+<!--SR:!2022-08-10,33,230-->
 
 ---
 Status: #🌱 
