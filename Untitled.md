@@ -37,7 +37,7 @@
 > cache层面直接用sharedict和worker缓存，比传统的redis+mysql又往前加速了几个量级。
 > 不爽了直接c来实现，用lua调用。
 
-  
+  https://www.zhihu.com/question/303020868
 
 
 ## 複習
