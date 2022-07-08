@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "c7fe1666177d55c8",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Redis Lua 程式碼.md",
     "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+    "Redis Lua 程式碼.md",
+    "redis subscribe 訂閱特定頻道來收內容，具體會保持等到，直到有訊息接收才會有所動作.md",
+    "Untitled.md",
     "URL輸入參數會遇到的問題.md",
     "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
     "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "MOC/Redis MOC.md",
     "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
-    "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md",
-    "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md"
+    "develop/OS/race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果.md"
   ]
 }
