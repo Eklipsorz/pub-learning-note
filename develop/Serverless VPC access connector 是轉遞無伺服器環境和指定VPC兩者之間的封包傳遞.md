@@ -22,7 +22,7 @@
 
 ## 複習
 #🧠 GCP - Serverless VPC access  背景是什麼 ->->-> `原本Serverless Service 是沒有與任何VPC進行連接，只能對外使用，但由於使用者若要索求VPC內的Service，則必須讓Serverless Server去連接VPC來獲取，所以就衍生出Serverless VPC access  `
-<!--SR:!2022-07-08,30,250-->
+<!--SR:!2022-09-22,76,250-->
 
 #🧠 GCP - Serverless VPC access  是什麼樣的技術 ->->->  `具體透過access connector來轉遞VPC和Serverless environment兩者間的封包轉遞`
 <!--SR:!2022-08-28,59,250-->
