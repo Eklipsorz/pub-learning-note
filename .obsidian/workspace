@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "對資源上鎖 vs. 對程式碼上鎖？.md",
+            "file": "develop/belazy-shop-sideproject/Belazy - 訂單資訊的填寫不讓客戶端發送，而是經由購買API來代替發送.md",
             "mode": "source"
           }
         }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 681.5,
-    "collapsed": true
+    "width": 681.5
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "對資源上鎖 vs. 對程式碼上鎖？.md",
+                "file": "develop/belazy-shop-sideproject/Belazy - 訂單資訊的填寫不讓客戶端發送，而是經由購買API來代替發送.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +96,7 @@
   },
   "active": "c7fe1666177d55c8",
   "lastOpenFiles": [
+    "develop/belazy-shop-sideproject/Belazy - 訂單資訊的填寫不讓客戶端發送，而是經由購買API來代替發送.md",
     "對資源上鎖 vs. 對程式碼上鎖？.md",
     "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
     "develop/Database/Transaction - Isolation 是指在資料庫上則是指每個同時被執行的協議在存取同筆紀錄時，得為了確保資料庫的一致性和完整性，要與部分協議保持隔離的狀態，讓自己能在確保資料的狀態下存取同.md",
@@ -105,7 +105,6 @@
     "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
     "Untitled.md",
     "Redis Lua 程式碼.md",
-    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
-    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md"
+    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md"
   ]
 }
