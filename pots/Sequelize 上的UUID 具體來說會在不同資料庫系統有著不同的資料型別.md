@@ -7,7 +7,7 @@
 - Sequelize 上的UUID會在PostgreSQL和SQLite上會是對應著UUID
 ## 複習
 #🧠  Sequelize 上的UUID會在MySQL對應成什麼樣的資料型別(提示：數字呢？還是字元呢？) ->->-> `Sequelize 上的UUID會在MySQL對應成char(36)`
-<!--SR:!2022-07-09,23,250-->
+<!--SR:!2022-09-04,57,250-->
 
 #🧠 Sequelize 上的UUID會在PostgreSQL和SQLite上會是對應著什麼樣的資料型別 ->->-> `Sequelize 上的UUID會在PostgreSQL和SQLite上會是對應著UUID`
 <!--SR:!2022-07-10,24,250-->

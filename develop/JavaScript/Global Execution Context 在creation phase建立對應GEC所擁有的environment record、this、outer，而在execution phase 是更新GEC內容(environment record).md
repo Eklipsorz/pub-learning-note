@@ -147,7 +147,7 @@ GlobalExectionContext = {
 <!--SR:!2022-07-10,16,248-->
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
-<!--SR:!2022-07-09,15,248-->
+<!--SR:!2022-08-18,40,248-->
 
 #🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域物件、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域物件、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域物件、建立Lexical Environment`
 <!--SR:!2022-07-14,18,250-->

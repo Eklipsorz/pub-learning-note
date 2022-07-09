@@ -35,6 +35,7 @@
 
 ## 複習
 #🧠 Redis 如何刪除過期的鍵值或者刪掉過期的key-value pair (有三種方式) ->->-> `passive deletion、active deletion、key eviction`
+<!--SR:!2022-07-12,3,250-->
 
 
 #🧠 Redis 上的passive deletion 是如何解決過期的key->->-> `是指系統不主動去查哪些key已經過期，而是當因為請求讀取到key才會檢查是否過期，若過期就直接刪除`
