@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c7fe1666177d55c8",
+        "id": "49b01e056a425d68",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Accessing non-existent property 'padLevels' of module exports inside circular dependency.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Accessing non-existent property 'padLevels' of module exports inside circular dependency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +90,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c7fe1666177d55c8",
+  "active": "49b01e056a425d68",
   "lastOpenFiles": [
     "Accessing non-existent property 'padLevels' of module exports inside circular dependency.md",
     "develop/belazy-shop-sideproject/Belazy - 訂單資訊的填寫不讓客戶端發送，而是經由購買API來代替發送.md",

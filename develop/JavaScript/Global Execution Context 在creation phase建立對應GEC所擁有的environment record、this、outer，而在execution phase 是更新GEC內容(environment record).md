@@ -144,7 +144,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `當引擎要開始執行某個檔案上的JS程式碼時，就會先建立GEC`
-<!--SR:!2022-07-10,16,248-->
+<!--SR:!2022-08-20,41,248-->
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
 <!--SR:!2022-08-18,40,248-->
@@ -169,7 +169,7 @@ GlobalExectionContext = {
 <!--SR:!2022-07-11,16,248-->
 
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？(提示：請以資料結構來看待Lexical Environment)->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
-<!--SR:!2022-07-10,13,228-->
+<!--SR:!2022-08-12,33,228-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間`
 <!--SR:!2022-08-04,30,248-->
@@ -197,7 +197,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Outer reference 是什麼？ 做什麼用？->->-> `Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找，主要會指向呼叫建立目前EC的EC，比如GEC呼叫一個函式，那麼其函式的FEC之outer就會是指向於呼叫FEC的GEC`
-<!--SR:!2022-07-10,16,248-->
+<!--SR:!2022-08-19,40,248-->
 
 #🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域物件`
 <!--SR:!2022-08-08,33,248-->
