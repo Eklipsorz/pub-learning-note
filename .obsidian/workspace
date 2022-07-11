@@ -4,13 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c225688b48f9b598",
+        "id": "cde0ba3a56fc692c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md",
+            "file": "Untitled.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "b9db9d053816778a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,17 +105,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c225688b48f9b598",
+  "active": "cde0ba3a56fc692c",
   "lastOpenFiles": [
-    "膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md",
+    "Untitled.md",
+    "develop/Language/膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md",
+    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
     "javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
-    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
     "原地算法.md",
     "Redis Lua 程式碼.md",
     "redis 分散式鎖 - 上鎖.md",
-    "redis 分散式鎖 - 釋放.md",
-    "Untitled.md"
+    "redis 分散式鎖 - 釋放.md"
   ]
 }

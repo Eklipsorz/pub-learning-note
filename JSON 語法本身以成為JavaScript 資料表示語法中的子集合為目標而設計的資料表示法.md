@@ -67,7 +67,7 @@ JSON 設計本身為了能夠讓JavaScript快速解析，而將自己的資料�
 ---
 Status: #🌱 
 Tags:
-[[JSON]]
+[[JSON]] - [[Language]]
 Links:
 References:
 [[@java3yJSONRuMenKanZheYiPianJiuGouLiaoZhiHu]]
