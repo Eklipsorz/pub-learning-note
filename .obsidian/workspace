@@ -7,8 +7,11 @@
         "id": "49b01e056a425d68",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,6 +96,7 @@
   },
   "active": "49b01e056a425d68",
   "lastOpenFiles": [
+    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
     "Accessing non-existent property 'padLevels' of module exports inside circular dependency.md",
     "develop/belazy-shop-sideproject/Belazy - 訂單資訊的填寫不讓客戶端發送，而是經由購買API來代替發送.md",
     "對資源上鎖 vs. 對程式碼上鎖？.md",
@@ -100,7 +105,6 @@
     "MOC/Database MOC.md",
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
-    "Untitled.md",
-    "Redis Lua 程式碼.md"
+    "Untitled.md"
   ]
 }
