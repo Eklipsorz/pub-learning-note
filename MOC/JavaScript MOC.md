@@ -60,6 +60,11 @@
 [[原生forEach 的callback並不支援promise為主的callback]] 
 
 
+## 排序
+
+- 原生sort
+[[JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序]]
+
 ## 物件
 
 - this
