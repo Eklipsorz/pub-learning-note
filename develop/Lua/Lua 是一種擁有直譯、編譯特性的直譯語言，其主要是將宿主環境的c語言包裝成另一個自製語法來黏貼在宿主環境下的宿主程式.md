@@ -75,16 +75,20 @@
 #🧠 Lua 包裝的宿主語言是什麼  ->->-> `通常會是宿主環境(host environment)所能夠執行的C語言`
 
 #🧠 Lua可不可以在宿主程式執行期間做更改，然後以更改後來執行？可以的話，為什麼？ ->->-> `Lua 由於語言特性仍屬於直譯，並且並不會立刻執行，為此可以在宿主程式在執行期間更改Lua代碼`
+<!--SR:!2022-07-13,1,230-->
 
 #🧠 Lua 是直譯語言？還是編譯語言？->->-> `Lua 不是傳統的直譯語言，擁有編譯、直譯特性的直譯語言，主要有： - 先將Lua語法轉換成ByteCode，接著從ByteCode解析執行 - 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行 - 直接以Lua語法來邊解析邊執行 - 先將Lua語法轉換成ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行
+<!--SR:!2022-07-15,3,250-->
 `
 
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說：具體來說是如何編譯和執行？(不用考慮事先編譯和捨棄編譯) ->->-> `	- 程式語言B要開始呼叫Lua語法時：Lua就會被編譯成ByteCode並存放在宿主環境的記憶體或者快取中，並將ByteCode丟進Lua 虛擬機，由它負責邊解析ByteCode邊執行對應的C語言代碼 - 只要宿主程式一開始執行且沒遇到Lua時：Lua就會被編譯成ByteCode並存放在宿主環境的記憶體，接著等宿主程式一執行到Lua就把ByteCode丟進虛擬機邊解析邊執行 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555608/blog/compilation/LuaCode-ByteCode-Execute_znwxg0.png)`
+<!--SR:!2022-07-15,3,250-->
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說，編譯後的ByteCode會放在哪邊(提示：請強調宿主) ->->-> `每一次從Lua編譯成ByteCode時，會將對應的ByteCode放置宿主的記憶體或者快取，並不另外存放在硬碟`
+<!--SR:!2022-07-15,3,250-->
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說，編譯後的ByteCode會存在記憶體或者快取，那麼當編譯前的代碼與先前不一樣的話，會如何？->->-> `Lua會重新編譯成ByteCode來執行`
@@ -92,13 +96,16 @@
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說，編譯後的ByteCode會存在記憶體或者快取，那麼當編譯前的代碼與先前一樣的話，會如何？ ->->-> `Lua會以現成編譯好的ByteCode來執行，並不會重新編譯`
 
 #🧠 Lua語法轉換至ByteCode，其ByteCode是什麼？ ->->-> `獨立於Lua、任何程式語言、機械碼、組合語言的代碼形式，只有Lua虛擬機能解析`
+<!--SR:!2022-07-15,3,250-->
 
 #🧠 Lua 虛擬機是做什麼？ ->->-> `1.  Lua 虛擬機主要是負責邊解析ByteCode邊執行的解析器`
 
 #🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮事先編譯就好)->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 可在執行之前，先將Lua程式碼轉換成ByteCode，並儲存在宿主環境下的硬碟，等到要使用時，就將ByteCode載入至Lua 虛擬機來邊解析邊執行。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Offline-ByteCode-Execute_ig1wxn.png)`
+<!--SR:!2022-07-15,3,250-->
 
 
 #🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮直接執行，不要編譯ByteCode) ->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 除了執行前的編譯以外，還有就是當宿主環境要執行Lua程式碼就將Lua Code丟進Lua虛擬機直接邊解析邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Execute-without-ByteCode_vwbcz4.png)`
+<!--SR:!2022-07-15,3,250-->
 
 #🧠 先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行，具體來說是如何編譯和執行，時機點為何？ ->->-> `另一種編譯的形式就是先從Lua程式碼轉換成ByteCode，並經由Lua Compiler從ByteCode 轉換成對應機械碼並儲存在宿主環境下的記憶體或者快取，接著讓宿主環境直接以機械碼的形式來執行轉換的機械碼，通常整體編譯時機點：	 - 會是在快要執行Lua Code時就編譯 - 宿主程式一執行就編譯`
  
