@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+            "file": "Untitled.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hotspot 解法",
+                "query": "just-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,15 +96,15 @@
   },
   "active": "cde0ba3a56fc692c",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
+    "develop/Language/膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md",
+    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md",
+    "develop/Database/Transaction - Isolation 是指在資料庫上則是指每個同時被執行的協議在存取同筆紀錄時，得為了確保資料庫的一致性和完整性，要與部分協議保持隔離的狀態，讓自己能在確保資料的狀態下存取同.md",
+    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
+    "Redis 為何會採用Lua來實現原子化？.md",
     "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
-    "Redis Lua 程式碼.md",
-    "當傳遞JSON stringify的字元至express伺服器時， 伺服器會在處理請求求先解析其stringify化並轉換成Javascript Object.md",
-    "小數點計算比整數計算還需要成本嗎？.md",
-    "金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
-    "原地算法.md",
-    "對資源上鎖 vs. 對程式碼上鎖？.md",
-    "crypto 是指加密貨幣.md",
-    "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
-    "encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md"
+    "Redis Lua 程式碼.md"
   ]
 }
