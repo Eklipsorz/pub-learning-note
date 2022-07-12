@@ -1,3 +1,8 @@
+
+## compilation
+- JIT Compilation
+[[Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行]]
+
 ## race condition
 [[race condition 是指多個程式模組以不受控制的執行順序來彼此競爭最後結果，使結果不如開發者所預期的結果]]
 

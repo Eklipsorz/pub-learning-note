@@ -59,13 +59,13 @@
 ###  先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行
 
 另一種編譯的形式就是先從Lua程式碼轉換成ByteCode，並經由Lua Compiler從ByteCode 轉換成對應機械碼並儲存在宿主環境下的記憶體或者快取，接著讓宿主環境直接以機械碼的形式來執行轉換的機械碼，通常整體編譯時機點：	
-- 會是在快要執行Lua Code時就編譯
-- 宿主程式一執行就編譯
+- 會是在要執行Lua Code時就編譯
+
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/LuaCode-ByteCode-Machine_Code-Execute_tlfe2q.png)
 
 
-
+[[Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行]]
 
 
 
@@ -113,8 +113,8 @@
 #🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮直接執行，不要編譯ByteCode) ->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 除了執行前的編譯以外，還有就是當宿主環境要執行Lua程式碼就將Lua Code丟進Lua虛擬機直接邊解析邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Execute-without-ByteCode_vwbcz4.png)`
 <!--SR:!2022-07-15,3,250-->
 
-#🧠 先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行，具體來說是如何編譯和執行，時機點為何？ ->->-> `另一種編譯的形式就是先從Lua程式碼轉換成ByteCode，並經由Lua Compiler從ByteCode 轉換成對應機械碼並儲存在宿主環境下的記憶體或者快取，接著讓宿主環境直接以機械碼的形式來執行轉換的機械碼，通常整體編譯時機點：	 - 會是在快要執行Lua Code時就編譯 - 宿主程式一執行就編譯`
-<!--SR:!2022-07-14,2,249-->
+#🧠 先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行，具體來說是如何編譯和執行，時機點為何？ ->->-> `通常整體編譯時機點- 會是要執行Lua Code前就編譯 `
+
  
  
 
@@ -128,6 +128,7 @@ Tags:
 Links:
 [[Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作]] 
 [[膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言]]
+[[Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行]]
 References:
 [[@LuaShiZenYangYiMenYuYanZhiHu]]
 [[@wikidataLuaProgrammingLanguage2022]]
