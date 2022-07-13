@@ -80,10 +80,8 @@
 
 #🧠 Lua可不可以在宿主程式執行期間做更改，然後以更改後來執行？可以的話，為什麼？ ->->-> `能，Lua 本身是直譯，未讀取到並不會直接執行，所以當還沒被宿主程式呼叫到之前，都能進行修改，等到真正呼叫到時，會以最後的內容為主來進行編譯、解析、執行`
 
-#🧠 Lua 是直譯語言？還是編譯語言？->->-> `Lua 不是傳統的直譯語言，擁有編譯、直譯特性的直譯語言，主要有： - 先將Lua語法轉換成ByteCode，接著從ByteCode解析執行 - 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行 - 直接以Lua語法來邊解析邊執行 - 先將Lua語法轉換成ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行
+#🧠 Lua 是直譯語言？還是編譯語言？->->-> `Lua 不是傳統的直譯語言，擁有編譯、直譯特性的直譯語言，主要有： - 先將Lua語法轉換成ByteCode，接著從ByteCode解析執行 - 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行 - 直接以Lua語法來邊解析邊執行 - 先將Lua語法轉換成ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行`
 <!--SR:!2022-07-15,3,250-->
-`
-
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說：具體來說是如何編譯和執行？(不用考慮事先編譯和捨棄編譯) ->->-> `	- 程式語言B要開始呼叫Lua語法時：Lua就會被編譯成ByteCode並存放在宿主環境的記憶體或者快取中，並將ByteCode丟進Lua 虛擬機，由它負責邊解析ByteCode邊執行對應的C語言代碼 - 只要宿主程式一開始執行且沒遇到Lua時：Lua就會被編譯成ByteCode並存放在宿主環境的記憶體，接著等宿主程式一執行到Lua就把ByteCode丟進虛擬機邊解析邊執行 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555608/blog/compilation/LuaCode-ByteCode-Execute_znwxg0.png)`
