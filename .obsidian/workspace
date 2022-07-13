@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
+            "file": "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
             "mode": "source"
           }
         }
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "just-",
+                "query": "JIT 執行時編譯",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -79,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
+                "file": "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +108,15 @@
   },
   "active": "cde0ba3a56fc692c",
   "lastOpenFiles": [
+    "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
+    "develop/body-parser 是express內建套件且 用來解析請求封包下的message body並將解析結果放至req.body.md",
+    "develop/Cache Avalanche 是指大量請求在cache上的大量key失效下而從cache被導向至處於硬碟的資料庫.md",
+    "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "Redis Lua 程式碼.md",
     "Redis 為何會採用Lua來實現原子化？.md",
-    "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
     "MOC/OS MOC.md",
     "Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
-    "develop/Language/膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md",
-    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md",
-    "develop/Database/Transaction - Isolation 是指在資料庫上則是指每個同時被執行的協議在存取同筆紀錄時，得為了確保資料庫的一致性和完整性，要與部分協議保持隔離的狀態，讓自己能在確保資料的狀態下存取同.md",
-    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md"
+    "develop/Language/膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言.md"
   ]
 }
