@@ -45,10 +45,10 @@ stripe.charges.create({
 <!--SR:!2022-07-17,10,250-->
 
 #🧠 Stripe token+charges 結帳方法的特點？->->-> `1. 結帳決定權容易落在伺服器來決定 2. 由於結帳部分是由伺服器來決定，所以安全性會比intents來得高`
-<!--SR:!2022-07-13,6,250-->
+<!--SR:!2022-07-28,15,250-->
 
 #🧠 Stripe token+charges整體流程 是什麼？以這圖來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656922313/blog/paymentFlow/stripe/token_and_charge_flow_esf3go.png)->->-> `1. 使用者按下確定付款，並讓客戶端透過Payment Element擷取使用者所輸入的付款資料和Key來向Stripe 伺服器索要token，2. Stripe 伺服器收到後就檢驗付款資料和Key - 若檢驗失敗的話，Stripe伺服器就回傳失敗訊息 3. 若檢驗成功的話，Stripe 伺服器會建立對應token並紀錄下來，最後由它回傳token至客戶端 4. 客戶端收到token之後，就會向伺服器發送POST /purchase請求並夾帶著token以及結帳總金額 5. 伺服器接收到該請求，就使用自己的key、客戶端傳過來的token以及結帳總金額向Stripe伺服器發送結帳請求 6. Stripe 伺服器接收到結帳請求時，會檢測token、key是否正確 - 若檢驗失敗的話，Stripe 伺服器會回傳失敗訊息至伺服器，接著伺服器接收到失敗訊息也跟著轉遞給客戶端 7. 若檢驗成功的話，Stripe伺服器會回傳結帳成功訊息至伺服器，接著伺服器就會更新庫存，然後傳遞成功訊息至客戶端 8. 客戶端收到成功訊息`
-<!--SR:!2022-07-13,6,250-->
+<!--SR:!2022-07-30,17,250-->
 
 ---
 Status: #🌱 
