@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         }
       },
@@ -21,7 +22,8 @@
           "type": "markdown",
           "state": {
             "file": "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
-            "mode": "preview"
+            "mode": "preview",
+            "source": false
           }
         }
       }
