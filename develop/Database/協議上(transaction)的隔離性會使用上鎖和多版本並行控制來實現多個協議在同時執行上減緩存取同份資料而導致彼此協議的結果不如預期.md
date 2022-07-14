@@ -3,14 +3,23 @@
 [[@wikidataShiWuGeLi2022]] 所描述的：
 > 在資料庫事務的ACID四個屬性中，隔離性是一個限制最寬鬆的。為了獲取更高的隔離等級，資料庫系統的通常使用鎖機制或者多版本並發控制機制。 應用軟體也需要額外的邏輯來使其正常工作。
 
+
+[[@davidbrowerDatabaseArchitectureWhat]] 所描述的MVCC是什麼：
+> Pros: concurrency, clean semantics
+> 
+> Cons: less efficient with memory and disk space, complexity of code. There are some interesting issues with garbage collecting old, uninteresting versions vs keeping every version forever.
+> 
+> These days, the efficiencies don't matter much, so the downsides are mostly the complexities of doing it correctly.
+
 資料庫實現協議上的Isolation所關注的目標和具體實現方式：
 - 起源為：由於在多個協議上可以藉由同時存取同一份資料來彼此影響各自協議上的結果，而導致最終結果會不如開發者預期，即為race condition問題
 - Isolation 具體目標：在多個協議上存取同一份資料進行**只允許少量不影響結果的協議來存取，其餘協議必須等待**的隔離手段，或者說這些少量協議會與本來同時執行的協議保持隔離，藉此來避免所謂race condition問題
 - 具體實現方式為：
 	- 上鎖/解鎖：在協議上，讓少量不會影響結果的協議使用鎖住特定資源，其餘協議會因為上鎖而無法使用，而導致必須等待，等到目前使用的協議完成之後，就會自動解鎖，剩下就看哪些協議能夠先搶到上鎖權利
-	- 使用多版本並行控制(Multiversion concurrency control，MVCC)：換言之，使用寫時複製，當要對同份資源進行修改就複製一份來修改並製作特定版本，並按照情況來更新，讀取時則是會存取特定版本下的資料內容
-- 通常會採用於上鎖勢必會使同時執行的協議強制轉換成序列執行，間接影響整體存取效率，因此切分出不同隔離階級的策略
-- 相對於MVCC，
+	- 使用多版本並行控制(Multi-Version Concurrency Control，MVCC)：是一種無鎖方法，讀寫時的資料會是資料上的特定版本內容，不會是原本資料，而每一次要更新資料時，就會對同份資源進行修改就複製一份來修改並製作特定版本。
+- 相對於MVCC而言，優點是可以以無鎖的形式來讓多個協議在同時執行減緩因為存取同個資源而導致的race condition，缺點是實現其功能的代碼會相對複雜，且容易因為版本數而導致儲存空間出現不一致問題
+- 從MVCC和上鎖中，通常會考慮複雜性的程度而採用上鎖，勢必會使同時執行的協議強制轉換成序列執行，間接影響整體存取效率，因此切分出不同隔離階級的策略
+
 
 ## 複習
 #🧠 資料庫實現協議上的Isolation 起源自哪個背景上的問題 ->->-> `由於在多個協議上可以藉由同時存取同一份資料來彼此影響各自協議上的結果，而導致最終結果會不如開發者預期，即為race condition問題`
@@ -22,10 +31,12 @@
 #🧠 資料庫系統會有什麼手段來實現isolation ？->->-> `提供上鎖/解鎖、多版本並行控制`
 
 
-#🧠 資料庫實現協議上的Isolation：通常採用於 ->->-> ``
+#🧠 資料庫實現協議上的Isolation：Multi-Version Concurrency Control 是什麼？ ->->-> `是一種無鎖方法，讀寫時的資料會是資料上的特定版本內容，不會是原本資料，而每一次要更新資料時，就會對同份資源進行修改就複製一份來修改並製作特定版本。`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 資料庫實現協議上的Isolation：Multi-Version Concurrency Control 優缺點為何？->->-> `優點是可以以無鎖的形式來讓多個協議在同時執行減緩因為存取同個資源而導致的race condition，缺點是實現其功能的代碼會相對複雜，且容易因為版本數而導致儲存空間出現不一致問題`
+
+#🧠 基於上鎖系統為主的協議，會不會有效能的問題？如何解決？ ->->-> `通常會考慮複雜性的程度而採用上鎖，勢必會使同時執行的協議強制轉換成序列執行，間接影響整體存取效率，因此切分出不同隔離階級的策略`
 
 
 ---
@@ -37,3 +48,4 @@ Links:
 [[Transaction - Isolation 是指在資料庫上則是指每個同時被執行的協議在存取同筆紀錄時，得為了確保資料庫的一致性和完整性，要與部分協議保持隔離的狀態，讓自己能在確保資料的狀態下存取同]]
 References:
 [[@wikidataShiWuGeLi2022]]
+[[@davidbrowerDatabaseArchitectureWhat]]
