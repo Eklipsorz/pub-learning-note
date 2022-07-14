@@ -4,7 +4,7 @@ encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換�
 
 ## 複習
 #🧠 encodeURIComponent vs encodeURI 之間差異是什麼？->->-> `前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比`
-<!--SR:!2022-07-14,10,250-->
+<!--SR:!2022-08-11,28,250-->
 
 ---
 Status: #🌱 
