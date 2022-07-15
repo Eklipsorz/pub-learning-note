@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cde0ba3a56fc692c",
+        "id": "9ac282c927a6cb37",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "070c965caf93ca6b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/render/Imperative Programming 是開發者直接使用電腦解讀執行的指令來實現自己想要的目標，Declarative Programming則是開發者告訴系統目標是什麼，由系統產生對應指令來執行.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -81,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,11 +90,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "9ac282c927a6cb37",
   "lastOpenFiles": [
-    "MOC/Database MOC.md",
-    "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
     "develop/render/Imperative Programming 是開發者直接使用電腦解讀執行的指令來實現自己想要的目標，Declarative Programming則是開發者告訴系統目標是什麼，由系統產生對應指令來執行.md",
+    "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
+    "MOC/Database MOC.md",
     "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
     "develop/Redis/Redis SCAN 所切割出來的子任務會被分配key集合的不同部分，然後按照pattern來篩選出滿足的key，其處理結果會包含著未滿足和滿足的.md",
     "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
