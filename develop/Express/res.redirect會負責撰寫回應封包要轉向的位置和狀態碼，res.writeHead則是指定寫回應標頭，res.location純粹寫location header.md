@@ -33,7 +33,7 @@
 <!--SR:!2022-07-16,9,250-->
 
 #🧠  在express server中，res.location是做什麼用的 ->->-> `直接設定回應封包內的location標頭`
-<!--SR:!2022-07-15,8,250-->
+<!--SR:!2022-08-02,18,250-->
 
 #🧠 在express server中，res.redirect是做什麼用的 ->->-> `res.redirect 是直接設定回應封包內的location標頭和狀態碼`
 <!--SR:!2022-07-16,9,250-->

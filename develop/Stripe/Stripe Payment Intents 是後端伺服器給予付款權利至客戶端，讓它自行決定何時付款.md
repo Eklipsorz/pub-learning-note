@@ -81,7 +81,7 @@ stripe.confirmPayment(client_secret,paymentMethod)
 
 
 #🧠 Stripe Payment Intents  特點是什麼？ ->->-> `1. 結帳決定權容易全都在客戶端 2. 由於能夠決定付款的secret放在前端，所以安全性較低`
-<!--SR:!2022-07-15,8,250-->
+<!--SR:!2022-08-05,21,250-->
 
 ---
 Status: #🌱 
