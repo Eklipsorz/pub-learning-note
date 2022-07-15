@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
+            "file": "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "redis scan",
+                "query": "lua 語法",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
+                "file": "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9ac282c927a6cb37",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
-    "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
-    "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
-    "develop/Redis/Redis KEYS 指令的缺點主要有沒分頁、資料越多成本越高的O(n)、前兩者導致的阻塞問題.md",
-    "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
-    "develop/render/Imperative Programming 是開發者直接使用電腦解讀執行的指令來實現自己想要的目標，Declarative Programming則是開發者告訴系統目標是什麼，由系統產生對應指令來執行.md",
     "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
-    "MOC/Database MOC.md",
-    "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
-    "develop/JavaScript/encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
-    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md"
+    "templates/🧠.md",
+    "develop/Redis/Redis KEYS 可以使用表達式來找到符合表達式的key.md",
+    "inbox/UNIX Timestamp 是指從UTC1970年1月1日0時0分0秒起至現今的經過秒數.md",
+    "develop/Stripe/stripe API - checkout session 開發使用手冊.md",
+    "inbox/express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+    "inbox/Belazy - 庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
+    "templates/📖 +🤔.md",
+    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md"
   ]
 }

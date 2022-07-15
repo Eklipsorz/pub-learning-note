@@ -27,8 +27,7 @@ var unixTimeStamp = Math.floor(date.getTime() / 1000);
 > In this case it's important to return only a whole number (so a simple division won't do), and also to only return actually elapsed seconds (that's why this code uses `Math.floor()` and not `Math.round()`).
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-09-13,60,250-->
+
 
 ---
 Status: #📥 
