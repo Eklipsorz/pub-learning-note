@@ -28,7 +28,7 @@ var unixTimeStamp = Math.floor(date.getTime() / 1000);
 
 ## 複習
 #🧠 Question :: ->->-> ``
-<!--SR:!2022-07-15,24,250-->
+<!--SR:!2022-09-13,60,250-->
 
 ---
 Status: #📥 
