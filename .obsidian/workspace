@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
+            "file": "對資源上鎖 vs. 對程式碼上鎖？.md",
             "mode": "source",
             "source": false
           }
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
+                "file": "對資源上鎖 vs. 對程式碼上鎖？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,8 +95,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "423a385f7547e8c2",
+  "active": "9ac282c927a6cb37",
   "lastOpenFiles": [
+    "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
     "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
     "templates/🧠.md",
     "develop/Redis/Redis KEYS 可以使用表達式來找到符合表達式的key.md",
@@ -106,7 +106,6 @@
     "inbox/express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
     "inbox/Belazy - 庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
     "templates/📖 +🤔.md",
-    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
-    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md"
+    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md"
   ]
 }
