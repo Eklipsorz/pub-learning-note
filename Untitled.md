@@ -77,7 +77,7 @@ npm start
 
 create-react-app：是一個工具，主要是用來做快速建構基礎的react application開發環境
 
-
+當你準備好發佈到線上環境，執行 `npm run build` 會在 `build` 文件夾裡建立一個你的應用程式的最佳化版本，
 
 目錄結構：
 src folder 主要存放具體的原始碼
