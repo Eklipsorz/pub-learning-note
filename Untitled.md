@@ -81,7 +81,12 @@ create-react-app：是一個工具，主要是用來做快速建構基礎的reac
 
 目錄結構：
 src folder 主要存放具體的原始碼，具體包含了定義react元件的代碼
-public folder 
+public folder：
+
+> The `public` folder contains the HTML file so you can tweak it, for example, to [set the page title](https://create-react-app.dev/docs/title-and-meta-tags). The `<script>` tag with the compiled code will be added to it automatically during the build process.
+
+build folder：主要存放其React 原始碼經過編譯和優化後的產物
+> `npm run build` creates a `build` directory with a production build of your app.
 
 ## package.json
 
