@@ -69,13 +69,13 @@
 <!--SR:!2022-08-02,19,250-->
 
 #🧠  Express上若App 層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，在這裡若所有相關的錯誤處理middleware都有next，那麼假如app層級有7個自製的錯誤處理middleware，如何執行 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `第一個自製的錯誤處理middleware先執行，然後藉由next()去執行系統預設的錯誤處理middleware`
-<!--SR:!2022-07-16,9,250-->
+<!--SR:!2022-08-11,26,250-->
 
 #🧠 Express上若Router層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，那麼其middleware會如何處理？(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `會先查看Router層級有沒有自製的錯誤處理middleware；若都沒有，就去查看App層級的自製錯誤處理middleware；再沒有的話，就直接執行系統預設的錯誤處理middleware`
-<!--SR:!2022-07-16,9,250-->
+<!--SR:!2022-08-09,24,250-->
 
 #🧠 Express上router層級有許多自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `每個自製錯誤處理的middleware會先依出現順序來執行，最後自製的都處理完畢後，就接著執行系統預設的錯誤處理`
-<!--SR:!2022-07-16,9,250-->
+<!--SR:!2022-08-08,23,250-->
 
 
 #🧠 Express上router層級沒有自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `會先執行App層級的自製錯誤處理middleware，接著再執行系統預設的錯誤處理middleware`

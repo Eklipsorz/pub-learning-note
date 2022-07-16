@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "對資源上鎖 vs. 對程式碼上鎖？.md",
+            "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "對資源上鎖 vs. 對程式碼上鎖？.md",
+                "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "9ac282c927a6cb37",
   "lastOpenFiles": [
-    "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
-    "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
-    "templates/🧠.md",
-    "develop/Redis/Redis KEYS 可以使用表達式來找到符合表達式的key.md",
-    "inbox/UNIX Timestamp 是指從UTC1970年1月1日0時0分0秒起至現今的經過秒數.md",
-    "develop/Stripe/stripe API - checkout session 開發使用手冊.md",
-    "inbox/express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
-    "inbox/Belazy - 庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
-    "templates/📖 +🤔.md",
-    "Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md"
+    "develop/JavaScript/encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md",
+    "develop/JavaScript/Execution Context 中的outer reference 適用以實現scope chain.md",
+    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
+    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+    "develop/JavaScript/JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
+    "develop/JavaScript/JavaScript 本身是操作DOM節點的語言以及每個DOM節點的事件綁定來實現客戶端能與網頁互動，而為了確保DOM節點不受race condition影響而設計成允許一個主執行緒來負責執行.md",
+    "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
+    "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
+    "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
+    "express app 所建立的middleware和router獨立建立的middleware是獨立的.md"
   ]
 }
