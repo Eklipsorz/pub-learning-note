@@ -11,7 +11,7 @@
 	- 衍生問題：由於業務邏輯全集中同一份檔案，而開發時也是同一份檔案，導致面臨開發時會遇到一系列有關於scope、易讀性、維護性、大小的問題，即為衍生出開發難度較高的檔案
 
 
-> ## IIFEs - Immediately invoked function expressions[](https://webpack.js.org/concepts/why-webpack/#iifes---immediately-invoked-function-expressions)
+> ## IIFEs - Immediately invoked function expressions
 >
 > IIFEs solve scoping issues for large projects; when script files are wrapped by an IIFE, you can safely concatenate or safely combine files without worrying about scope collision.
 >
@@ -23,6 +23,21 @@
 
 
 
+
+> ## Birth of JavaScript Modules happened thanks to Node.js[](https://webpack.js.org/concepts/why-webpack/#birth-of-javascript-modules-happened-thanks-to-nodejs)
+> 
+> Webpack runs on Node.js, a JavaScript runtime that can be used in computers and servers outside a browser environment.
+> 
+> When Node.js was released a new era started, and it came with new challenges. Now that JavaScript is not running in a browser, how are Node applications supposed to load new chunks of code? There are no html files and script tags that can be added to it.
+> 
+> CommonJS came out and introduced `require`, which allows you to load and use a module in the current file. This solved scope issues out of the box by importing each module as it was needed.
+
+>  npm + Node.js + modules – mass distribution[](https://webpack.js.org/concepts/why-webpack/#npm--nodejs--modules--mass-distribution)
+
+
+> JavaScript is taking over the world as a language, as a platform and as a way to rapidly develop and create fast applications.
+
+But there is no browser support for CommonJS. There are no [live bindings](https://medium.com/webpack/the-state-of-javascript-modules-4636d1774358). There are problems with circular references. Synchronous module resolution and loading is slow. While CommonJS was a great solution for Node.js projects, browsers didn't support modules, so bundlers and tools like Browserify, RequireJS and SystemJS were created, allowing us to write CommonJS modules that run in a browser.
 
 [[@webpackWhyWebpack]]
 
