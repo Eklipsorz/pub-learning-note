@@ -21,7 +21,7 @@
 >
 > Even if you only use a single function from lodash, you have to add the entire library and then squish it together. How do you treeshake the dependencies on your code? Lazy loading chunks of code can be hard to do at scale and requires a lot of manual work from the developer.
 
-
+每一個JS業務邏輯皆以IIFE來表示，連接就以IIFE來連接
 
 
 > ## Birth of JavaScript Modules happened thanks to Node.js[](https://webpack.js.org/concepts/why-webpack/#birth-of-javascript-modules-happened-thanks-to-nodejs)
