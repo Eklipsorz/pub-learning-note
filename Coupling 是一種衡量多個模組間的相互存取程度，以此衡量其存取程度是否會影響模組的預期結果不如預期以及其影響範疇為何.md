@@ -7,6 +7,7 @@
 > In software engineering, coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are;[1] the strength of the relationships between modules
 
 重點：
+- Coupling 是一種軟體開發衡量標準
 - Coupling 是一種衡量多個模組間的**相互**存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何
 - 依賴是指存取、使用：
 	- 模組A 和 模組B 任一個模組都沒存取另一個，那麼代表著A和B並不會彼此影響各自的預期結果
@@ -118,5 +119,6 @@ Status: #🌱
 Tags:
 [[Software Engineering]]
 Links:
+[[Cohesion 是一種軟體開發衡量的標準，衡量哪些程式區塊可以依據功能相關是否相似或者關係層級越相近而轉換成基本組成單位並購成一個模組]]
 References:
 [[@wikidataCouplingComputerProgramming]]
