@@ -10,7 +10,11 @@
 > In software engineering, coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are;[1] the strength of the relationships between modules
 
 重點：
-- Coupling 是一種衡量模組間在模組內部的相互依賴程度
+- Coupling 是一種衡量模組間在模組間的**相互**依賴程度，以此衡量其依賴程度是否會影響模組的預期結果不如預期以及其影響範疇為何？
+- 依賴是指存取、使用：
+	- 模組A 單方面存取 模組B 意旨為 模組A 單方面依賴 模組B，當A去存取B時有可能改變著B的預期結果，因A有可能改變著決定結果的因素，而因素就在B裡頭
+	- 
+	- 模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B ，當A去存取B時有可能改變著B的預期結果，而B可能會因預期結果的改變而變更存取 A的方式，使B可能使用錯誤的存取方式來改變著A，甚至A下次執行時存取B會使情況更加惡化。
 - 每一個模組會由許多程式區塊所組成
 - 若Coupling程度越高，就代表著模組內的依賴於其他模組的程式區塊的程式區塊數就越多，反之，若Coupling程度越低，就代表著模組內的依賴於其他模組的程式區塊的程式區塊數就越少
 
