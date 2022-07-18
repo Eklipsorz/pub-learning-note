@@ -93,6 +93,31 @@ function() {
 
 > Because you have to wrap the function in parentheses in order to make it parse as an expression. More information is here:[http://benalman.com/news/2010/11/immediately-invoked-function-expression/](http://benalman.com/news/2010/11/immediately-invoked-function-expression/)
 
+
+- 以function和function 的closure為主的模組還存在一些問題：
+	- 以模組來說，呼叫方式很累贅：
+		- 模組的載入執行方式只需要一個指令就應該完成：實際上還得宣告和呼叫這兩個指令才能完成
+		- 預期是只需要執行一次就能使用它所擁有的功能代碼：可以通過函式名稱來重複呼叫
+	- 所以預期是如下：
+		- 定義完即為呼叫：實現模組的載入執行方式只需要一個指令就應該完成
+		- 函式名稱是匿名或者隱藏：實現預期是只需要執行一次就能使用它所擁有的功能代碼
+	```
+	function () {
+		const data = ....
+		return {
+			function xxx1() {
+				// execute some code with data
+			},
+			function xxx2() {
+				// execute some code with data
+			},
+			.
+			.
+			.
+		}
+	}()
+	```
+
 ### function 主要分有宣告式和表達式
 
 [[javascript - function 語法有分為function declaration 、function expression]]
