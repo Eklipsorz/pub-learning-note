@@ -44,7 +44,9 @@
 重點
 
 
-### function 是 expression ?
+### function 主要分有宣告式和表達式
+
+
 
 
 ### Grouping operator
