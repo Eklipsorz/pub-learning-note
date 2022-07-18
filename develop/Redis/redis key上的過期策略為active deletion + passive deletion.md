@@ -76,7 +76,7 @@
 
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法可能可以朝著passive deletion 和 active deletion的缺失走嗎 ->->-> `passive deletion為因依據使用者來控制所以對於伺服器而言，是一個不可控因素，就只能透過active deletion漏洞來解決`
-<!--SR:!2022-07-18,27,250-->
+<!--SR:!2022-09-27,71,250-->
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法朝著active deletion漏洞解決，那麼方向會是如何(提示：增加速率大於釋放速率)>->-> `從該漏洞可以得知其問題源自於過期key的數量增加速率大於釋放速率或者釋放速率太慢，那麼就表示過期key數量一直都會在`
 
