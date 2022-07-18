@@ -73,3 +73,6 @@
 [[this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法]]
 
 
+
+## 函式
+[[javascript - function 語法有分為function declaration 、function expression]]
