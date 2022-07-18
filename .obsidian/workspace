@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/software engineering/Cohesion 是一種軟體開發衡量的標準，衡量哪些程式區塊可以依據功能相關是否相似或者關係層級越相近而轉換成基本組成單位並購成一個模組.md",
+            "file": "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "declarative rendering",
+                "query": "coupling 原意是什麼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/software engineering/Cohesion 是一種軟體開發衡量的標準，衡量哪些程式區塊可以依據功能相關是否相似或者關係層級越相近而轉換成基本組成單位並購成一個模組.md",
+                "file": "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "af7ad7ce7eefb252",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
-    "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
     "develop/software engineering/Cohesion 是一種軟體開發衡量的標準，衡量哪些程式區塊可以依據功能相關是否相似或者關係層級越相近而轉換成基本組成單位並購成一個模組.md",
+    "develop/RWD/pots/讀取指定google storage bucket下的指定物件.md",
+    "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
+    "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
     "MOC/Software Engineering MOC.md",
     "Untitled 2.md",
     "Untitled.md",
     "Untitled 1.md",
     "develop/render/Imperative Programming 是開發者直接使用電腦解讀執行的指令來實現自己想要的目標，Declarative Programming則是開發者告訴系統目標是什麼，由系統產生對應指令來執行.md",
-    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-    "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
-    "develop/JavaScript/encodeURIComponent vs encodeURI：前者會將特殊字元和一般字元轉換成百分比，後者只會將一般字元轉換成百分比.md"
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md"
   ]
 }
