@@ -40,6 +40,9 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 > [`Window.document`](https://developer.mozilla.org/en-US/docs/Web/API/Window/document) Read only 
 > Returns a reference to the document that the window contains.
 
+
+> In a tabbed browser, each tab is represented by its own `Window` object; the global `window` seen by JavaScript code running within a given tab always represents the tab in which the code is running. That said, even in a tabbed browser, some properties and methods still apply to the overall window that contains the tab
+
 重點：
 - HTML 檔案下會有script標籤，來定義邊解析HTML時可以邊額外執行的程式碼或者可存取的資料，其程式碼會是以瀏覽器能夠解析並執行的為主，比如JavaScript
 ```
@@ -60,7 +63,8 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 - 當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言：
 	- 其JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document
 	- 每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree
-	- 結合前面兩者，每一個DOM document 都各有不同的Window物件，且每個物件都各代表著不同的JS全域執行環境
+	- 結合前面兩者，每一個DOM document 都各有不同的Window物件，且每個物件都各代表著不同的JS全域執行環境2
+- 瀏覽器可允許多個標籤頁，每個標籤頁都對應一個畫面，每個標籤頁都對應不同的window物件，那麼彼此間的JavaScript全域環境並不會共享
 
 ## 複習
 #🧠 當瀏覽器讀取到JS時，瀏覽器會如何做？ ->->-> `當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言`
@@ -73,6 +77,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 #🧠 假設有兩個HTML檔案，裡面有各自JS腳本程式碼，請問他們的全域變數會是共享的？ ->->-> `並不會，因為每個HTML檔案都會被解析成各自不同的window物件所構成的dom tree，因此全域變數會是各自享有，而非共享`
 
+#🧠 若瀏覽器可允許使用者開啟多個標籤頁，每個標籤頁都對應一個畫面，那麼對於window物件和javascript全域環境來說，是代表什麼？ ->->-> `每個標籤頁都對應不同的window物件，那麼彼此間的JavaScript全域環境並不會共享`
 
 #🧠 同一個HTML檔案中，JavaScript有哪些寫法？ ->->-> `<script src="javascript.js"></script> 和 <script>指令</script>`
 
@@ -84,6 +89,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 ---
 Status: #🌱  
 Tags: 
+[[HTML]] - [[JavaScript]]
 Links:
 References:
 [[@JavaScriptScope]]
