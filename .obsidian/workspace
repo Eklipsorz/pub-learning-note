@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "af7ad7ce7eefb252",
+        "id": "1291ddbc5d07831b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "IIFE.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "4e70656a91f04a60",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/JavaScript/javascript - function 語法有分為function declaration 、function expression.md",
+            "file": "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "請問檔案",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IIFE.md",
+                "file": "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "af7ad7ce7eefb252",
+  "active": "1291ddbc5d07831b",
   "lastOpenFiles": [
+    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+    "develop/Express/當傳遞JSON stringify的字元至express伺服器時， 伺服器會在處理請求求先解析其stringify化並轉換成Javascript Object.md",
+    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
+    "develop/Redis/Key eviction 是Redis 釋放記憶體空間的策略.md",
+    "annotation/@LeetCode30Day11146.md",
+    "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
+    "annotation/@KuaiQuYanSuanFaLRULFU.md",
     "develop/JavaScript/javascript - function 語法有分為function declaration 、function expression.md",
-    "MOC/JavaScript MOC.md",
-    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
-    "IIFE.md",
-    "接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組.md",
-    "對資源上鎖 vs. 對程式碼上鎖？.md",
-    "MOC/Rendering MOC.md",
-    "Untitled 2.md",
-    "Untitled.md",
-    "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md"
+    "develop/RWD/pots/redis 刪除過期鍵值有兩種方式：鍵值有被存取才去檢查過期和刪除、每隔一段時間挑選幾個鍵來檢查過期和刪除.md",
+    "MOC/Redis MOC.md"
   ]
 }

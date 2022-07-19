@@ -33,6 +33,8 @@
 #🧠 Redis key eviction決定哪些KEY要被移除的策略是 (過期key)->->-> `其策略主要會依據著過期key、LRU、LFU來決定哪些KEY要被移除`
 <!--SR:!2022-09-04,55,250-->
 
+
+
 ---
 Status: #🌱 
 Tags:
