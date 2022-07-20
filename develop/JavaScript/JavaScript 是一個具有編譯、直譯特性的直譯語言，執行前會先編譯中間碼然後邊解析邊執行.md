@@ -172,9 +172,11 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 ---
 Status: #🌱 
 Tags:
-[[JavaScript]] 
+[[JavaScript]] - Scope
 Links:
-[[javascript - var變數在解析之前就分配記憶體？]]
+[[JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態]]
+[[Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope]]
+[[Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行]]
 References:
 [[@Compiler2022]]
 [[@simpsonYouDonKnow2022]]
