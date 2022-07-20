@@ -55,8 +55,7 @@ iifeModule.increase();
 iifeModule.reset();
 ```
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-07-22,3,250-->
+
 
 ---
 Status: 
