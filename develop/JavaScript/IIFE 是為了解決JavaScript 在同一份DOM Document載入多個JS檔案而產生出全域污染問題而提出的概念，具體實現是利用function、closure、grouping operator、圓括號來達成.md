@@ -237,40 +237,53 @@ a * c + b * c // 9
 #🧠 IIFE (Immediately Invoked Function Expression)中的第一個圓括號是做什麼 ->->-> `讓系統能將function看待成function expression`
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第二個圓括號是做什麼，與前面括號有什麼關係 ->->-> `第一個括號讓系統能將function看待成function expression，而第二個括號則是將expression當作函式來呼叫`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為了解決什麼樣的問題而被提出的？ ->->-> `JavaScript 在 **同一份DOM Document載入多個JS檔案而產生出全域污染問題** 而提出的概念`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠  IIFE (Immediately Invoked Function Expression) 具體是什麼？ ->->-> `IIFE實際上是一個function一被定義/宣告就直接執行`
+<!--SR:!2022-07-23,3,250-->
 
 
 #🧠 IIFE (Immediately Invoked Function Expression)是官方標準所提出的？ ->->-> `Ben Alman，並非標準下所提供的語法`
+<!--SR:!2022-07-23,3,250-->
 
 
 #🧠  IIFE (Immediately Invoked Function Expression) 大致上使用了哪些技術->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope、以function作為基礎於內部進行函式擴充以此實現模組scope和global scope：具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料、grouping operator 強制將function 轉換成 function expression 來看待、() 將轉換後的function expression以function來呼叫`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為何採用function ->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
 
 #🧠 IIFE所要實現的模組化目標為？ ->->-> `1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成`
+<!--SR:!2022-07-21,1,230-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，還會遇到什麼樣的問題![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png) ->->-> `模組的載入執行方式只需要一個指令就應該完成：實際上還得宣告和呼叫這兩個指令才能完成、預期是只需要執行一次就能使用它所擁有的功能代碼：可以通過函式名稱來重複呼叫`
 
 
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，若要實現1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成 這兩個目標，預期會是什麼？請用程式碼來描述 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)->->-> `定義完即為呼叫：實現模組的載入執行方式只需要一個指令就應該完成、函式名稱是匿名或者隱藏：實現預期是只需要執行一次就能使用它所擁有的功能代碼`
+<!--SR:!2022-07-23,3,250-->
 
 
 #🧠 以下為IIFE的雛型，請問現在會出現什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658248963/blog/javascript/lexical%20scope/iife-draft_pllabp.png) ->->-> `解析器會因為一開始沒在function 之前遇到可將function 視為 function expression 的話，解析器會直接把function declaration來解析function，而它沒有函式名稱而報錯`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 以下為IIFE的雛型，但解析器會把function視為function declaration而報錯，請問如何改善？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658248963/blog/javascript/lexical%20scope/iife-draft_pllabp.png)->->-> `為了強制將可以被當作expression而被誤會成declaration的function轉成function expression，會使用()這個grouping expression來強制系統先以expression 來看待function，也就是如同下面的形式：當解析器讀到括號時，會先以expression的形式來執行其包含內容，此時內容是function(){}，那麼就會使該function轉換成function expression，接著再透過expression之後放置圓括號的特性就能讓轉換成function expression的function以被呼叫的函式來執行，並將圓括號內的參數視為函式要用的參數來使用`
+<!--SR:!2022-07-23,3,250-->
 
 
 #🧠 Grouping Operator 是什麼樣的運算子，參數是什麼？回傳什麼？ ->->-> `grouping operator 是一種運算子，主要參數為一個expression，形式會是如下，最後回傳的值會是expression`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠  Grouping Operator 用途是什麼？ ->->-> `強制使語法轉換成expression 形式、在混雜其他expression中，會將指定的expression的執行權提高至最高，換言之，優先被解析器邊解析邊執行`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 expression 之後放置圓括號的作用是什麼 ->->-> `若將圓括號()放置在expression之後，就會告知解析器expression是一個被呼叫的function，而括號()裡頭的參數將會是該function會使用到的參數`
+<!--SR:!2022-07-23,3,250-->
 
 
 

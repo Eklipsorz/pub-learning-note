@@ -84,6 +84,7 @@ First In First Out 的理念為先進先出，即為當緩存存滿資料，就�
 <!--SR:!2022-10-01,74,250-->
 `
 #🧠  Least Frequently Used 和 Least Recently Used 通常運用在哪個場景 ->->-> `通常用作於記憶體釋放、空間釋放的場景`
+<!--SR:!2022-07-22,2,249-->
 
 
 #🧠 First In First Out  緩存策略是基於什麼理念？->->-> `先進先出`
