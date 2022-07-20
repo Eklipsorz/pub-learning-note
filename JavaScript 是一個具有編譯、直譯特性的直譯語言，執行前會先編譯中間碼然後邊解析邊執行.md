@@ -70,6 +70,12 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 比如拿var - a - 2所構成的AST來轉換對應形式的代碼，那麼其代碼最後會是建立一個名為a的變數，然後分配記憶體區塊來存放2，並讓變數對應該記憶體區塊。
 > The JS engine takes the just described AST for `var a = 2;` and turns it into a set of machine instructions to actually _create_ a variable called `a` (including reserving memory, etc.), and then store a value into `a`.
 
+### 編譯期間：函式宣告和var變數宣告會發生什麼
+替函式宣告和var變數宣告分配了記憶體區塊給他們，並定義其初始值，函式部分的記憶體區塊是存放著函式內容，var變數部分的記憶體區塊是存放著undefined
+
+### 編譯期間：const/let變數宣告會發生什麼
+編譯期間並不會分配記憶體給他們，也不會分配初始值
+
 ### 編譯和執行的時機
 - 當開始執行特定JS檔案時，就會進入Global區塊並對區塊內的程式碼進行編譯、解析，而編譯、解析，編譯/解析之後，就會開始執行。
 
@@ -131,6 +137,11 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 #🧠 interpreter的編譯器能將原始碼編譯成什麼？ ->->-> `ByteCode 或者 Machine Code`
 
 #🧠 JavaScript 是什麼樣特性的語言？編譯特性？直譯特性？ ->->-> `同時擁有編譯和直譯特性的程式語言`
+
+#🧠 除了產生的中間碼以外，JavaScript 編譯後，函式宣告和var變數宣告發生了什麼->->-> `替函式宣告和var變數宣告分配了記憶體區塊給他們，並定義其初始值，函式部分的記憶體區塊是存放著函式內容，var變數部分的記憶體區塊是存放著undefined`
+
+#🧠 除了產生的中間碼以外，JavaScript 編譯後，const/let變數宣告發生了什麼->->-> `不會分配記憶體給這些識別字，更不會分配初始值給他們`
+
 
 #🧠 JavaScript 會是編譯和執行嗎？還是直接執行 ->->-> `是編譯和執行`
 
