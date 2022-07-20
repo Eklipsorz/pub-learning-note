@@ -279,6 +279,7 @@ Status: #🌱
 Tags:
 [[JavaScript]] - [[IIFE]]
 Links:
+[[接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組]]
 [[javascript - function 語法有分為function declaration 、function expression]]
 References:
 [[@BenAlmanImmediatelyInvoked]]
