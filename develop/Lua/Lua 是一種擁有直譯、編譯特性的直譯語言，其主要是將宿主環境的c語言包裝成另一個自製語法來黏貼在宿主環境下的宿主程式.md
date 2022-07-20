@@ -68,8 +68,17 @@
 [[Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行]]
 
 
+### Lua 虛擬機主要負責？
+大致上會如同Java Virtual Machine，主要會有Interpreter、JIT Compiler：
+- Interpreter：
+	- 邊將 事先(還未讓Lua虛擬機處理之前)解析成的ByteCode 解析成 Machine Code 邊執行
+	- 先將Lua 原始碼 解析成 ByteCode ，並存放在記憶體或者暫存中，解析完成後才將ByteCode解析成Machine Code來執行
+	- 邊將 Lua 原始碼 解析成Machine Code，然後邊執行
+- JIT Compiler：Lua 虛擬機需支援這項功能
+	- 將ByteCode 解析成對應的Machine Code，並存放在記憶體或者暫存，解析完成後，才執行對應的Machine Code
 
 
+![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c)
 
 ## 複習
 #🧠  Lua 是什麼樣的語言？(請以它會包裝什麼樣的語言來說明) ->->-> `Lua 是膠水語言的一種，以自製的語法和語言來包裝C語言為主的功能模組`
@@ -102,8 +111,15 @@
 #🧠 Lua語法轉換至ByteCode，其ByteCode是什麼？ ->->-> `獨立於Lua、任何程式語言、機械碼、組合語言的代碼形式，只有Lua虛擬機能解析`
 <!--SR:!2022-07-24,9,250-->
 
-#🧠 Lua 虛擬機是做什麼？ ->->-> `1.  Lua 虛擬機主要是負責邊解析ByteCode邊執行的解析器2. 邊解析Lua 原始碼邊執行`
-<!--SR:!2022-08-06,17,249-->
+#🧠 Lua 虛擬機內容包含哪兩個重要元件負責解析和執行 ->->-> `Interpreter、JIT Compiler`
+
+#🧠 Lua 虛擬機是做什麼？ 若考量到沒JIT Compiler的話 (提示有三個) ->->-> `	- 邊將 事先(還未讓Lua虛擬機處理之前)解析成的ByteCode 解析成 Machine Code 邊執行 - 先將Lua 原始碼 解析成 ByteCode ，並存放在記憶體或者暫存中，解析完成後才將ByteCode解析成Machine Code來執行 - 邊將 Lua 原始碼 解析成Machine Code，然後邊執行`
+
+#🧠 Lua 虛擬機是做什麼？ 若考量到JIT Compiler的話->->-> `將ByteCode 解析成對應的Machine Code，並存放在記憶體或者暫存，解析完成後，才執行對應的Machine Code`
+
+
+#🧠 Lua 虛擬機會有JIT 這項功能嗎？ ->->-> `沒`
+
 
 #🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮事先編譯就好)->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 可在執行之前，先將Lua程式碼轉換成ByteCode，並儲存在宿主環境下的硬碟，等到要使用時，就將ByteCode載入至Lua 虛擬機來邊解析邊執行。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Offline-ByteCode-Execute_ig1wxn.png)`
 <!--SR:!2022-07-25,10,250-->

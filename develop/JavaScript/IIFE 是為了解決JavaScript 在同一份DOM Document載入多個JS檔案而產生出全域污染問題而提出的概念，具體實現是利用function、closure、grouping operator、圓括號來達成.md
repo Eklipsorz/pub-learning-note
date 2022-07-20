@@ -235,6 +235,7 @@ a * c + b * c // 9
 ## 複習
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第一個圓括號是做什麼 ->->-> `讓系統能將function看待成function expression`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第二個圓括號是做什麼，與前面括號有什麼關係 ->->-> `第一個括號讓系統能將function看待成function expression，而第二個括號則是將expression當作函式來呼叫`
 <!--SR:!2022-07-23,3,250-->
@@ -257,11 +258,13 @@ a * c + b * c // 9
 <!--SR:!2022-07-23,3,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
+<!--SR:!2022-07-23,3,250-->
 
 #🧠 IIFE所要實現的模組化目標為？ ->->-> `1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成`
 <!--SR:!2022-07-21,1,230-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，還會遇到什麼樣的問題![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png) ->->-> `模組的載入執行方式只需要一個指令就應該完成：實際上還得宣告和呼叫這兩個指令才能完成、預期是只需要執行一次就能使用它所擁有的功能代碼：可以通過函式名稱來重複呼叫`
+<!--SR:!2022-07-23,3,250-->
 
 
 
