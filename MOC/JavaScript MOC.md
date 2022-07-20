@@ -10,6 +10,8 @@
 
 ## 背景技術
 
+[[JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行]]
+
 - Execution Context
 [[JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態]]
 [[Execution Context 中的outer reference 適用以實現scope chain]]
