@@ -141,7 +141,7 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 
 
 #🧠 以下為N+1 Queries Problems 的範例，請說明為何是N+1 Queries Problem? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example2_dme7so.png)->->-> `一開始會向資料庫發送索要擁有所有文章的資料集合，那集合會有N個文章，接著會遍歷該集合的每個文章，並於每次就向資料庫系統索要使用者資料集合、一開始索要所有文章的資料集合是一個Query，而文章集合的N個文章會每個向資料庫系統發送索要使用者資料集合的Query，共為N個Query ，所以總計為N+1 Queries `
-<!--SR:!2022-07-20,26,250-->
+<!--SR:!2022-09-24,66,250-->
 
 
 #🧠 Database : N+1 Queries Problems 解法為何？ ->->-> `人為因素：改寫程式碼，先向資料庫系統索求相關連的集合然後儲存起來，接著再從該儲存結果找到相關連紀錄、系統因素：尋找可以直接引發eager loading語法或者功能，比如讓ORM轉換成JOIN查詢，該查詢本身會是eager loading`
