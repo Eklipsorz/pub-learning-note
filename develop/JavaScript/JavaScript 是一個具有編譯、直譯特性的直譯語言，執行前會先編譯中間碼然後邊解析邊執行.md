@@ -37,13 +37,13 @@ JavaScript 是一種具有編譯、直譯特性的直譯程式語言，在執行
 	- 會替var變數宣告、函式宣告分配記憶體以及給予初始值
 	- 定義每個識別字所對應的變數、函式
 	- 定義Execution Context
-
+	[[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
 轉換成最大效能的程式碼
 [[@mdnTiShengHoistingShuYuBiao]]
 > 變數和函數的宣告會在編譯階段就被放入記憶體，但實際位置和程式碼中完全一樣。
 
 編譯基本流程：
-- **Tokenizing**：先將程式碼依據用途來拆分成字串來處理，具體是根據特徵來設定特定狀態至這些字串，作為Parsing的依據
+- **Tokenizing**：先將程式碼依據用途來拆分成字串來處理，通常會按照空白當間隔來取
 > breaking up a string of characters into meaningful (to the language) chunks, called tokens
 
 比如以下程式碼，會經過tokenizing的流程，先拆成var、a、=、2、; 這五個字串，並構成存放五個字串的陣列
@@ -51,7 +51,7 @@ JavaScript 是一種具有編譯、直譯特性的直譯程式語言，在執行
 var a = 2;	
 ```
 
--  **Parsing** ：將Tokenizing所組成的陣列依據字串間的關係來分析並組成樹狀結構，該結構為AST(Abstract Syntax Tree)，組成原因是為了更方便程式分析並轉換
+-  **Parsing** ：將Tokenizing所組成的陣列依據程式語言所定義的語義和語法規則來將陣列的字串組裝合法的語意和語法，若合法就會構成樹狀結構，該結構為AST(Abstract Syntax Tree)；若不會就報錯，樹狀的組成原因是為了更方便程式分析並轉換
 
 比如以下程式碼
 ```
@@ -62,8 +62,7 @@ var a = 2;
 一開始會以var這關鍵字作為root節點，接著它的子節點會是a這個識別字，接著在a這個節點構成另一個子節點來存放2，也就是var - a - 2。
 > might start with a top-level node called `VariableDeclaration`, with a child node called `Identifier` (whose value is `a`), and another child called `AssignmentExpression` which itself has a child called `NumericLiteral`
 
-
-- **Code Generation** ：將樹狀結構轉換成對應形式的程式語言，不一定會是機械碼，很有可能會是比先前更為效率執行的程式碼，如JS碼、介於JS和機械碼之間的ByteCode
+- **Code Generation** ：將樹狀結構轉換成對應形式的程式語言，不一定會是機械碼，很有可能會是比先前更為效率執行的程式碼，介於JS和機械碼之間的ByteCode
 
 p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效率執行的程式碼
 
@@ -77,9 +76,8 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 編譯期間並不會分配記憶體給他們，也不會分配初始值
 
 ### 編譯和執行的時機
-- 當開始執行特定JS檔案時，就會進入Global區塊並對區塊內的程式碼進行編譯、解析，而編譯、解析，編譯/解析之後，就會開始執行。
-
-- 當進入函式時，就會進入Function區塊並對區塊內的程式碼進行編譯、解析，編譯/解析之後，就會開始執行。
+- 當開始執行特定JS檔案時，就會進入針對各種Scope下的內容進行編譯
+[[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
 
 ### compiler 命名緣由
 [[@Compiler2022]] 所描述的：
@@ -121,6 +119,8 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 解釋器和編譯器之間的差別：
 	- 解釋器是負責編譯＋執行
 	- 編譯器是負責編譯
+
+
 ## 複習
 #🧠 compiler 是什麼->->-> `是一個電腦程式，主要將特定形式的程式語言轉換成另一種形式的程式語言`
 
@@ -164,9 +164,9 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 <!--SR:!2022-07-24,3,250-->
 
 
-#🧠 JavaScript 編譯中的**Tokenizing**是什麼？ ->->-> `先將程式碼依據用途來拆分成字串來處理，具體是根據特徵來設定特定狀態至這些字串，作為Parsing的依據`
+#🧠 JavaScript 編譯中的**Tokenizing**是什麼？ ->->-> `先將程式碼依據用途來拆分成字串來處理，通常會按照空白當間隔來取`
 
-#🧠 JavaScript 編譯中的**Parsing**是什麼？->->-> `將Tokenizing所組成的陣列依據字串間的關係來分析並組成樹狀結構，該結構為AST(Abstract Syntax Tree)，組成原因是為了更方便程式分析並轉換`
+#🧠 JavaScript 編譯中的**Parsing**是什麼？->->-> `將Tokenizing所組成的陣列依據程式語言所定義的語義和語法規則來將陣列的字串組裝合法的語意和語法，若合法就會構成樹狀結構，該結構為AST(Abstract Syntax Tree)；若不會就報錯，樹狀的組成原因是為了更方便程式分析並轉換`
 
 #🧠 JavaScript 編譯中的**Code Generation** 是什麼？ ->->-> `將樹狀結構轉換成對應形式的程式語言，不一定會是機械碼，很有可能會是比先前更為效率執行的程式碼，如JS碼、介於JS和機械碼之間的ByteCode`
 <!--SR:!2022-07-24,3,250-->
