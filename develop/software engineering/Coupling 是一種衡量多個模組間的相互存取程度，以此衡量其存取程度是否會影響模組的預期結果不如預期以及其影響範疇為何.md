@@ -81,20 +81,20 @@ coupling
 <!--SR:!2022-07-31,10,250-->
 
 #🧠 電腦科學裡的coupling  是什麼？ 其目的做啥->->-> `是一種衡量多個模組間的**相互**存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何`
-<!--SR:!2022-07-21,3,250-->
+<!--SR:!2022-07-28,7,250-->
 
 #🧠 電腦科學裡的coupling：依賴會是什麼意思 ->->-> `存取、使用`
 <!--SR:!2022-07-31,10,250-->
 
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-NoCoupling_wrtd6f.png)->->-> `並沒有coupling， 由於模組A 和 模組B 任一個模組都沒存取另一個，`
-<!--SR:!2022-07-21,3,250-->
+<!--SR:!2022-07-28,7,250-->
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/A-to-B-Coupling_uvdngb.png) ->->-> `有coupling 程度， 模組A 單方面存取 模組B 意旨為 模組A 單方面依賴 模組B`
-<!--SR:!2022-07-21,3,250-->
+<!--SR:!2022-07-31,10,250-->
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/A-to-B-Coupling_uvdngb.png) ->->-> `，當A去存取B時有可能改變著B的預期結果，因A有可能改變著決定結果的因素，而因素就在B裡頭`
-<!--SR:!2022-07-21,3,250-->
+<!--SR:!2022-07-30,9,250-->
 
 #🧠  電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png)->->-> `模組B 單方面存取 模組A 意旨為 模組B 單方面依賴 模組A`
 <!--SR:!2022-07-30,9,250-->
@@ -115,7 +115,7 @@ coupling
 <!--SR:!2022-07-30,9,250-->
 
 #🧠 試著說明第三個下的ABCD模組的coupling情況，說明連接/使用關係就好![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在且Coupling 程度較高：若模組間的彼此使用頻繁，就增加改變模組預期結果的可能性，如同模組A和模組C原本就只有A使用C、C和A，但隨著後續開發而使得C多使用A的程式區塊，而這使得A和C之間的Coupling 程度增加`
-<!--SR:!2022-07-21,3,250-->
+<!--SR:!2022-07-29,8,250-->
 
 
 #🧠 coupling 程度高的話，可以稱作為什麼？ ->->-> `tight coupling (緊密耦合)`
