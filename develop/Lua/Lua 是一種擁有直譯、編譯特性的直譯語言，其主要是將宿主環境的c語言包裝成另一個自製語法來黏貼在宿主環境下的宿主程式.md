@@ -114,11 +114,13 @@
 #🧠 Lua 虛擬機內容包含哪兩個重要元件負責解析和執行 ->->-> `Interpreter、JIT Compiler`
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到沒JIT Compiler的話 (提示有三個) ->->-> `	- 邊將 事先(還未讓Lua虛擬機處理之前)解析成的ByteCode 解析成 Machine Code 邊執行 - 先將Lua 原始碼 解析成 ByteCode ，並存放在記憶體或者暫存中，解析完成後才將ByteCode解析成Machine Code來執行 - 邊將 Lua 原始碼 解析成Machine Code，然後邊執行`
+<!--SR:!2022-07-23,2,247-->
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到JIT Compiler的話->->-> `將ByteCode 解析成對應的Machine Code，並存放在記憶體或者暫存，解析完成後，才執行對應的Machine Code`
 
 
 #🧠 Lua 虛擬機會有JIT 這項功能嗎？ ->->-> `沒`
+<!--SR:!2022-07-23,2,247-->
 
 
 #🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮事先編譯就好)->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 可在執行之前，先將Lua程式碼轉換成ByteCode，並儲存在宿主環境下的硬碟，等到要使用時，就將ByteCode載入至Lua 虛擬機來邊解析邊執行。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Offline-ByteCode-Execute_ig1wxn.png)`
@@ -129,7 +131,7 @@
 <!--SR:!2022-07-25,10,250-->
 
 #🧠 先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行，具體來說是如何編譯和執行，時機點為何？ ->->-> `通常整體編譯時機點- 會是要執行Lua Code前就編譯 `
-<!--SR:!2022-07-21,6,249-->
+<!--SR:!2022-08-05,15,249-->
 
  
  
