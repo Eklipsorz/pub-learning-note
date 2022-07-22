@@ -30,6 +30,7 @@ function arraySum(arr) {
 [[JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行]]
 - JIT 來臨時，JavaScript 會依據每個程式碼的執行頻率來進一步編譯成更為效率的程式碼，主要會使用monitor，其monitor會負責：
 	- 觀察正在執行的程式碼，並將為每段程式碼的**行數**和**所用到的資料類型**作為索引，並以此計算程式碼的執行次數
+- 執行次數超過x1，就會將對應索引的代碼設定為warm；如果執行次數超過x1且又超過x2，就會將對應索引的代碼設定hot，來分別使用頻率低和高。
 - 依據monitor所得到的次數，會將次數高的程式碼試著再下一次執行前優化成更為效率的機械碼，具體會由：
 	- Baseline Compiler：依據索引值來給定對應每次解析得到的機械碼，下次執行時直接從這取出機械碼執行，不用再解析
 	- Optimizing Compiler：依據索引值來給定對應每次解析得到的機械碼，下次執行時直接從這取出機械碼執行，不用再解析，但這裡的機械碼會比Baseline Compiler來得有效率
@@ -43,9 +44,12 @@ function arraySum(arr) {
 ![](https://pic2.zhimg.com/80/v2-235cefb3de1873276264e6597d3d0819_720w.jpg)
 
 
-重點：當JavaScript被編譯成ByteCode時，此時是剛執行的階段
+重點：當JavaScript被編譯成ByteCode時，此時是剛執行的階段，
 - 由於每段程式碼都是剛執行，所以一開始都會按照解釋器邊解析邊執行
-- 
+- 每段程式碼都會在執行時都根據行數、資料類型來當索引在monitor那邊更新對應的執行次數：
+	- 如果索引在monitor是不存在的話，就建立索引以及對應的執行次數為1
+	- 如果索引在monitor是存在的話，就以對應索引來增加對應執行次數，如count = count + 1
+
 ### Baseline Compiler
 
 > ## 2nd step - Baseline compiler
