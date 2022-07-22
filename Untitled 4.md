@@ -50,6 +50,8 @@ function arraySum(arr) {
 	- 如果索引在monitor是不存在的話，就建立索引以及對應的執行次數為1
 	- 如果索引在monitor是存在的話，就以對應索引來增加對應執行次數，如count = count + 1
 
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/first-count-example_mbzuwv.png)
+
 ### Baseline Compiler
 
 > ## 2nd step - Baseline compiler
@@ -64,6 +66,9 @@ function arraySum(arr) {
 重點：使用次數超過x1就為warm，使用次數超過x1且超過x2就為hot
 - 使用次數次數超過x1但並不超過x2 的 索引所對應的程式碼會放在Baseline Compiler 並編譯成機械碼，並將機械碼放對應索引的機械碼欄位
 - 下一次執行時，若發現命中同樣的索引，就以該對應的機械碼執行，而不需要重新編譯
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/baseline-compiler-example_ofixlw.png)
+
 
 ### Optimizing compiler
 
@@ -107,9 +112,9 @@ function arraySum(arr) {
 
 
 重點：使用次數超過x1就為warm，使用次數超過x1且超過x2就為hot
-- Optimizing compiler 採用的是 **假設一些常出現的索引，並為索引對應的原始碼編譯出更有效能的機械碼**，並依據假設成立概率來決定其機械碼的去留，若太低就會去除；若適當就會保留
-- 使用次數超過x2的索引，並假設該索引對應型別作為指定行數會一直出現的型別，並針對其對應的ByteCode和目前執行狀況來編譯成更為有效率的機械碼，至少比Baseline Compiler來得有效率
-- 當能在Optimizing compiler紀錄透過索引找到紀錄時，就以索引對應的機械碼來執行；若不是的話，就以baseline compiler能夠挑到的索引為主來挑對應機械碼
+- Optimizing compiler 採用的是 **假設特定行數和常出現的型別為主要前提，並為特定行數和型別所對應的原始碼編譯出更有效能的機械碼**，並依據假設成立概率來決定其機械碼的去留，若太低就會去除；若適當就會保留
+- 使用次數超過x2的索引，並假設該索引的型別對應型別作為指定行數會是一直出現的型別，並且以索引內的行數作為 Optimizing compiler的索引，而前提就是目前索引內的型別，接著將對應的ByteCode和目前執行狀況來編譯成更為有效率的機械碼，至少比Baseline Compiler來得有效率，最後機械碼會是由行數來當索引，型別會是驗證是否繼續使用的標準 (line-> type, code)
+- 當能在Optimizing compiler紀錄透過行數找到紀錄時，並目前索引下的型別與架設的型別一樣的話，就以索引對應的機械碼來執行；若型別不一樣的話，就以baseline compiler能夠挑到的索引為主來挑對應機械碼，並計數錯誤次數
 - 當違反假設超過一定次數時，就捨棄目前索引對應的機械碼
 - 效能部分：
 	- 若假設成功率很高，效能會非常好
@@ -125,6 +130,34 @@ function arraySum(arr) {
 > Answer 1: The optimizing compiler **uses the information the monitor has gathered by watching code execution to make these judgments**. If something has been true for all previous passes through a loop, it assumes it will continue to be true.  
 >   
 > Answer 2: Most browsers have **added limits to break out of these optimization/deoptimization cycles** when they happen. If the JIT has made more than, say, 10 attempts at optimizing and keeps having to throw it out, it will just stop trying
+
+
+### 整體流程
+
+若使用次數沒超過x1就：
+bytecode -> interepeter (邊編譯邊執行) -> 紀錄對應索引(line, type)的執行次數
+
+若使用次數超過x1就且沒超過x2
+- 未使用baseline 生成機械碼
+bytecode -> 經過baseline compiler編譯成機械碼 -> 根據索引將機械碼紀錄至對應紀錄上的欄位 -> 以機械碼執行  ->  紀錄對應索引(line, type)的執行次數
+
+- 已用baseline 生成機械碼
+bytecode ->  透過索引從monitor紀錄表格中找到對應機械碼 -> 以機械碼執行 ->  紀錄對應索引(line, type)的執行次數
+
+若使用次數超過x2
+- 未使用optimizing compiler生成機械碼
+bytecode -> 經過optimizing compiler來根據目前執行狀態來編譯成更為有效執行的機械碼 ->將目前索引上的行數索引，並以型別作為是否能使用的假設標準 -> 以行數作為索引來儲存對應的機械碼：(line -> (type, code)) -> 以optimizing compiler對應的機械碼來執行->  紀錄對應索引(line, type)的執行次數
+
+- 已用optimizing compiler 且假設成立
+bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 -> 比較目前索引的型別是否與假設一樣 -> 若一樣的話，就以optimizing compiler對應的機械碼來執行 ->  紀錄對應索引(line, type)的執行次數
+
+- 已用optmizing compiler 且假設錯誤
+bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 紀錄對應索引(line, type)的執行次數
+
+
+
+- 已用optmizing compiler 且錯誤次數達標
+bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數
 
 ## 複習
 
