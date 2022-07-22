@@ -72,14 +72,14 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？ ->->-> `其JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document`
-<!--SR:!2022-07-22,3,250-->
+<!--SR:!2022-08-01,10,250-->
 
 #🧠 每一個DOM document 對於Window物件來說，是指多個document共享同一個window物件？還是每個document 都有各自的window物件？ 為什麼？->->-> `每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree，而JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document，結合前面兩者，每一個DOM document 都各有不同的Window物件，且每個物件都各代表著不同的JS全域執行環境`
 <!--SR:!2022-08-01,10,250-->
 
 
 #🧠 假設有兩個HTML檔案，裡面有各自JS腳本程式碼，請問他們的全域變數會是共享的？ ->->-> `並不會，因為每個HTML檔案都會被解析成各自不同的window物件所構成的dom tree，因此全域變數會是各自享有，而非共享`
-<!--SR:!2022-07-22,3,250-->
+<!--SR:!2022-07-30,8,250-->
 
 #🧠 若瀏覽器可允許使用者開啟多個標籤頁，每個標籤頁都對應一個畫面，那麼對於window物件和javascript全域環境來說，是代表什麼？ ->->-> `每個標籤頁都對應不同的window物件，那麼彼此間的JavaScript全域環境並不會共享`
 <!--SR:!2022-07-22,3,250-->
