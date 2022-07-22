@@ -80,7 +80,7 @@
 
 
 #🧠  假設有三個JS檔案，分別叫做xxx1、xxx2、xxx3，而它們對應的程式碼分別為jscode1、jscode2、jscode3，這些JS檔案會被一個DOM Document 給載入，若這些jscode會使用著共同都會有的變數名稱作為變數，那麼會發生什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658155529/blog/javascript/html/before-js-module_quixaq.png) ->->-> `很有可能會使這些jscode的預期不如預期，最後使得整份Document下的JS結果也跟著不如預期。`
-<!--SR:!2022-07-22,3,250-->
+<!--SR:!2022-07-29,7,250-->
 
 
 
