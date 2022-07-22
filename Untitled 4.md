@@ -62,8 +62,8 @@ function arraySum(arr) {
 ![](https://pic1.zhimg.com/80/v2-de48ac228fa2e580ee301097df649dfc_720w.jpg)
 
 重點：使用次數超過x1就為warm，使用次數超過x1且超過x2就為hot
-- 使用次數次數超過x1但並不超過x2 的 索引所對應的程式碼會放在Baseline Compiler
-
+- 使用次數次數超過x1但並不超過x2 的 索引所對應的程式碼會放在Baseline Compiler 並編譯成機械碼，並將機械碼放對應索引的機械碼欄位
+- 下一次執行時，若發現命中同樣的索引，就以該對應的機械碼執行，而不需要重新編譯
 
 ### Optimizing compiler
 
@@ -104,6 +104,11 @@ function arraySum(arr) {
 > 可以看出，只要假设的成功率足够高，那么代码的执行速度就会快。但是如果假设的成功率很低，那么会导致比没有任何优化的时候还要慢（因为要经历 optimize => deoptimize 的过程）
 
 ![](https://pic3.zhimg.com/80/v2-3d59f5542434ae6d07e4223fb7e32fce_720w.jpg)
+
+
+重點：使用次數超過x1就為warm，使用次數超過x1且超過x2就為hot
+- 使用次數超過x2的索引，並假設該索引對應型別作為指定行數會一直出現的型別，並針對其對應的ByteCode和目前執行狀況來編譯成更為有效率的機械碼，至少比Baseline Compiler來得有效率
+- 
 
 这里就引申出两个问题，
 
