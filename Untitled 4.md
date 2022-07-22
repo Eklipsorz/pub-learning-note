@@ -43,8 +43,9 @@ function arraySum(arr) {
 ![](https://pic2.zhimg.com/80/v2-235cefb3de1873276264e6597d3d0819_720w.jpg)
 
 
-重點：當JavaScript被編譯成ByteCode時，此時是剛執行
+重點：當JavaScript被編譯成ByteCode時，此時是剛執行的階段
 - 由於每段程式碼都是剛執行，所以一開始都會按照解釋器邊解析邊執行
+- 
 ### Baseline Compiler
 
 > ## 2nd step - Baseline compiler

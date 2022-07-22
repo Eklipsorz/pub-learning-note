@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "aed45369cfb5372f",
+        "id": "9aaab48f14beef68",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "annotation/@naihuJavaScriptBianYiJIT.md",
+            "file": "Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "annotation/@naihuJavaScriptBianYiJIT.md",
+                "file": "Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aed45369cfb5372f",
+  "active": "9aaab48f14beef68",
   "lastOpenFiles": [
+    "Untitled 2.md",
+    "annotation/@naihuJavaScriptBianYiJIT.md",
     "Untitled 4.md",
     "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
     "JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
     "develop/JavaScript/Execution Context 中的outer reference 適用以實現scope chain.md",
     "MOC/JavaScript MOC.md",
-    "Untitled 2.md",
     "Untitled 1.md",
     "develop/JavaScript/JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質.md",
-    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-    "annotation/@mdnTiShengHoistingShuYuBiao.md"
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md"
   ]
 }
