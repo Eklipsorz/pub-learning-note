@@ -2,6 +2,9 @@
 
 [[@naihuJavaScriptBianYiJIT]]
 [[@linclarkCrashCourseJustintime]]
+
+### JIT 引入至 JavaScript
+
 > ## JIT
 
 > JavaScript 刚出现的时候，是一个典型的解释型语言，因此运行速度极慢，后来浏览器引入了 **JIT compiler**，大幅提高了 JavaScript 的运行速度。
@@ -11,7 +14,7 @@
 > 简单来说，浏览器在 JavaScript engine 中加入了一个 monitor，用来观察运行的代码。并记录下每段代码运行的次数和代码中的变量的类型。
 
 > 那么问题来了，为什么这样做能提高运行速度？  
-后面的所有内容都以下面这个函数的运行为例
+> 后面的所有内容都以下面这个函数的运行为例
 
 ```js
 function arraySum(arr) {
@@ -22,12 +25,27 @@ function arraySum(arr) {
 }
 ```
 
+重點：
+- JavaScript 在JIT之前，是屬於將原始碼編譯成中間碼，並存於記憶體或者緩存，接著再邊轉中間碼為機械碼邊執行
+[[JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行]]
+- JIT 來臨時，JavaScript 會依據每個程式碼的執行頻率來進一步編譯成更為效率的程式碼，主要會使用monitor，其monitor會負責：
+	- 觀察正在執行的程式碼，並將為每段程式碼的**行數**和**所用到的資料類型**作為索引，並以此計算程式碼的執行次數
+- 依據monitor所得到的次數，會將次數高的程式碼試著再下一次執行前優化成更為效率的機械碼，具體會由：
+	- Baseline Compiler：依據索引值來給定對應每次解析得到的機械碼，下次執行時直接從這取出機械碼執行，不用再解析
+	- Optimizing Compiler：依據索引值來給定對應每次解析得到的機械碼，下次執行時直接從這取出機械碼執行，不用再解析，但這裡的機械碼會比Baseline Compiler來得有效率
+
+### Interpreter 
+
 > ## 1st step - Interpreter
 
 > 一开始只是简单的使用解释器执行，当某一行代码被执行了几次，这行代码会被打上 **Warm** 的标签；当某一行代码被执行了很多次，这行代码会被打上 **Hot** 的标签
 
 ![](https://pic2.zhimg.com/80/v2-235cefb3de1873276264e6597d3d0819_720w.jpg)
 
+
+重點：當JavaScript被編譯成ByteCode時，此時是剛執行
+- 由於每段程式碼都是剛執行，所以一開始都會按照解釋器邊解析邊執行
+### Baseline Compiler
 
 > ## 2nd step - Baseline compiler
 
