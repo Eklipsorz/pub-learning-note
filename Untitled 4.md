@@ -61,6 +61,12 @@ function arraySum(arr) {
 
 ![](https://pic1.zhimg.com/80/v2-de48ac228fa2e580ee301097df649dfc_720w.jpg)
 
+重點：使用次數超過x1就為warm，使用次數超過x1且超過x2就為hot
+- 使用次數次數超過x1但並不超過x2 的 索引所對應的程式碼會放在Baseline Compiler
+
+
+### Optimizing compiler
+
 > ## 3rd step - Optimizing compiler
 
 > 被打上 **Hot** 标签的代码会被传给 **Optimizing compiler**，这里会对这部分带码做更优化的编译。怎么样做更优化的编译呢？关键点就在这里，没有别的办法，只能用概率模型做一些合理的 **”假设 (Assumptions)“**。
