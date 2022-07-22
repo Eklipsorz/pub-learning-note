@@ -107,8 +107,9 @@ function arraySum(arr) {
 
 
 重點：使用次數超過x1就為warm，使用次數超過x1且超過x2就為hot
+- Optimizing compiler 採用的是 **假設一些常出現的索引，並為索引對應的原始碼編譯出更有效能的機械碼**，並依據假設成立概率來決定其機械碼的去留，若太低就會去除；若適當就會保留
 - 使用次數超過x2的索引，並假設該索引對應型別作為指定行數會一直出現的型別，並針對其對應的ByteCode和目前執行狀況來編譯成更為有效率的機械碼，至少比Baseline Compiler來得有效率
-- 當能在Optimizing compiler紀錄透過索引找到紀錄時，就以索引對應的機械碼來執行；若不是的話，就以baseline compiler能夠挑到的索引為主或者無法在baseline compiler找到，就重新以解釋器編譯
+- 當能在Optimizing compiler紀錄透過索引找到紀錄時，就以索引對應的機械碼來執行；若不是的話，就以baseline compiler能夠挑到的索引為主來挑對應機械碼
 - 當違反假設超過一定次數時，就捨棄目前索引對應的機械碼
 - 效能部分：
 	- 若假設成功率很高，效能會非常好
@@ -134,7 +135,6 @@ Tags:
 [[JavaScript]]
 Links:
 References:
-
 [[@naihuJavaScriptBianYiJIT]]
 [[@linclarkCrashCourseJustintime]]
 [[@JSYinQingYiJSZhongDeJITYuJiBenZhiXingLuoJi]]
