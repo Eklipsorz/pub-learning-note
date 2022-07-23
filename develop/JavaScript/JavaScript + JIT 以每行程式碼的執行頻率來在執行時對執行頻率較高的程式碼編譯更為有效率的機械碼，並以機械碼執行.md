@@ -295,6 +295,7 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
+[[JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行]]
 References:
 [[@naihuJavaScriptBianYiJIT]]
 [[@linclarkCrashCourseJustintime]]

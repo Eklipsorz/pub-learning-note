@@ -14,6 +14,10 @@
 [[JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質]]
 [[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
 
+
+- JavaScript + JIT
+[[JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行]]
+
 - hoisting
 [[JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。]]
 
