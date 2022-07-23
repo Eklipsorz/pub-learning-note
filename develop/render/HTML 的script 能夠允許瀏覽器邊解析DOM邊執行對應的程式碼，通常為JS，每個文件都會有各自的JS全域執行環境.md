@@ -60,10 +60,11 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 	  alert("Hello World!");
 	</script>
 	```
+
 - 當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言：
 	- 其JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document
 	- 每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree
-	- 結合前面兩者，每一個DOM document 都各有不同的Window物件，且每個物件都各代表著不同的JS全域執行環境2
+	- 結合前面兩者，每一個DOM document 都各有不同的Window物件，且每個物件都各代表著不同的JS全域執行環境
 - 瀏覽器可允許多個標籤頁，每個標籤頁都對應一個畫面，每個標籤頁都對應不同的window物件，那麼彼此間的JavaScript全域環境並不會共享
 
 ## 複習
