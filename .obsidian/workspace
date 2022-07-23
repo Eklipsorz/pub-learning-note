@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dede6c21a7b0489d",
+        "id": "37ebde08e6b98bd2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "develop/render/Document Object Model 是以樹狀結構來表達HTML內容的模型、介面.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "全域",
+                "query": "document object",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 3.md",
+                "file": "develop/render/Document Object Model 是以樹狀結構來表達HTML內容的模型、介面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dede6c21a7b0489d",
+  "active": "37ebde08e6b98bd2",
   "lastOpenFiles": [
+    "develop/render/Document Object Model 是以樹狀結構來表達HTML內容的模型、介面.md",
+    "MOC/Rendering MOC.md",
+    "Untitled 4.md",
+    "MOC/JavaScript MOC.md",
+    "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
+    "當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
     "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
     "MOC/JSON MOC.md",
     "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
-    "Untitled 2.md",
-    "Untitled.md",
-    "Untitled 1.md",
-    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
-    "JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
-    "MOC/JavaScript MOC.md",
-    "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md"
+    "Untitled 2.md"
   ]
 }
