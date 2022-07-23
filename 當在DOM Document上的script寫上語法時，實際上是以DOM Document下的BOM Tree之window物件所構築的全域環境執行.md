@@ -40,6 +40,10 @@ var x = 5;
 
 #🧠 若在script標籤內寫下var x = 5，請問會相當於什麼 ->->-> `替window物件增加x屬性`
 
+#🧠 若在script標籤內寫下let x = 5，請問會替window物件增加屬性嗎->->-> `並不會`
+
+#🧠 哪些語法在script標籤內存在，會替window物件增加屬性？ ->->-> `函式宣告、var變數宣告`
+
 #🧠  若在script標籤內寫下函式宣告function test()，請問相當於什麼->->-> `替window物件增加對應函式物件。`
 
 
