@@ -9,7 +9,9 @@
 - DOM
 [[Document Object Model 是以樹狀結構來表達HTML內容的模型、介面]]
 
-
+## BOM
+- BOM
+[[Browser Object Model 是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面]]
 ## HTML + CSS + JS
 
 
