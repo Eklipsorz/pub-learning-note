@@ -35,16 +35,22 @@ var x = 5;
 ```
 ## 複習
 #🧠 請問在同一個DOM Document上，載入多個JS檔案，這些檔案會如何識別全域環境來執行 ->->-> `同一個DOM Document上，載入多個JS檔案相當於在DOM Document載入多個script標籤和其內容，而瀏覽器會為每一份DOM Document下建立以window物件為首的BOM tree來讓JS操作和以window物件作為全域環境來使用，所以實際上這些JS檔案的全域環境會是共享同份DOM Document上的window物件所構築的全域環境`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 declaration、assignment for var 在同一個DOM Document執行會是什麼？ ->->-> `替同個window物件增加屬性來存放對應的函式物件、var變數宣告`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 若在script標籤內寫下var x = 5，請問會相當於什麼 ->->-> `替window物件增加x屬性`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 若在script標籤內寫下let x = 5，請問會替window物件增加屬性嗎->->-> `並不會`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 哪些語法在script標籤內存在，會替window物件增加屬性？ ->->-> `函式宣告、var變數宣告`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠  若在script標籤內寫下函式宣告function test()，請問相當於什麼->->-> `替window物件增加對應函式物件。`
+<!--SR:!2022-07-27,3,250-->
 
 
 ---

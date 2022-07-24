@@ -74,23 +74,31 @@ DOM是種：
 
 
 #🧠 Document Object Model 是什麼？ ->->-> `Document Object Model 是以樹狀結構來表達HTML內容的模型、介面`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 Document Object Model 用途是什麼？ ->->-> `讓其他程式語言能夠透過此介面、模型來操作網頁內容，如標籤`
+<!--SR:!2022-07-27,3,250-->
 
 
 #🧠 Document Object Model 何時產生？ ->->-> `當瀏覽器向伺服器索取指定網頁時，伺服器將會以封包形式傳遞網頁至瀏覽器，瀏覽器會邊接收邊試著組建DOM Tree`
+<!--SR:!2022-07-27,3,250-->
 
 
 #🧠 DOM是種樹狀結構的模型，能簡單描述它常見的結構嗎？以一份html檔案為主，其檔案擁有html標籤、head標籤、body標籤 ->->-> `其根節點是目前網站的檔案本身-document，它的子節點會是html標籤，而html標籤下的子節點就是人人熟知的head節點和body節點，再往下細分的話，也就是分別為head內含的meta資料(註1)和body內含的實際網頁呈現資料。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1630065451/blog/dom/domHierarchy_tpuaxj.png)`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 DOM模型中，除了document這節點，其餘節點在網頁上是什麼？ ->->-> `其document對應文件的各個標籤`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 請問伺服器如何傳遞網頁？(網路封包) ->->-> `會以一個封包能乘載的大小來將整份網頁分割成好幾個部分來傳遞`
+<!--SR:!2022-07-27,3,250-->
 
 #🧠 請問瀏覽器接收到HTML檔案被切分出來的封包時，會做什麼？ ->->-> `當瀏覽器收到HTML檔案被切分出來的封包時，瀏覽器不會直接等待完整檔案被拼湊出來，而是邊收邊將收到的內容按照DOM形式來建立一個DOM節點`
+<!--SR:!2022-07-27,3,250-->
 
 
 #🧠 若伺服器傳遞一份HTML至瀏覽器，瀏覽器會如何解析成DOM？其結果會是？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658586368/blog/RenderingPath/dom-example-code_pxoigr.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629973153/blog/RenderingPath/domTreeExample_ep0cvp.png)`
+<!--SR:!2022-07-27,3,250-->
 
 
 ---
