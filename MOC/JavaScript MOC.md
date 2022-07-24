@@ -8,8 +8,12 @@
 [[JavaScript之所以為直譯語言，是原本就為了盡可能讓開發者快速進行網頁上開發好拓展網景瀏覽器的市場，同時也盡可能減少編譯時所帶來的額外成本]]
 [[JavaScript 因應HTML5所提出的Web Worker標準而開放額外的API來讓JavaScript去調用來減緩單執行緒所產生出來的blocking問題]]
 
+- Closure
+[[Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣]]
+
 ## 背景技術
 
+- what is javascript
 [[JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行]]
 [[JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質]]
 [[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
