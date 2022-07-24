@@ -9,6 +9,14 @@
 重點：
 - 除了函式以外，就只有function能夠構築closure
 
+
+在程式上，是一種多個scope層級之間的對應關係上的封閉空間，換言之，封閉空間內的每個元素將會是特定scopeA下的識別字 和 特定scope B 的實體物件之間的對應關係，在這裡的scope A和scope B會是不一樣的，而識別字可對應到scope B下的實體物件。
+
+- 
+   
+   會將識別字和對應物件綁定在一塊構成一個結構體，在這裡會是以Execution Context來表示。
+	- 嚴謹來說，一個EC
+
 > For closure to be observed, a function must be invoked, and specifically it must be invoked in a different branch of the scope chain from where it was originally defined. A function executing in the same scope it was defined would not exhibit any observably different behavior with or without closure being possible; by the observational perspective and definition, that is not closure.
 > 
 > Let's look at some code, annotated with its relevant scope bubble colors (see Chapter 2):
@@ -63,6 +71,10 @@ chosenStudents[1]("Howdy");
 
 > While `greetStudent(..)` does receive a single argument as the parameter named `greeting`, it also makes reference to both `students` and `studentID`, identifiers which come from the enclosing scope of `lookupStudent(..)`. Each of those references from the inner function to the variable in an outer scope is called a _closure_. In academic terms, each instance of `greetStudent(..)` _closes over_ the outer variables `students` and `studentID`.
 
+Each of those references from the inner function to the variable in an outer scope is called a _closure_. In academic terms, each instance of `greetStudent(..)` _closes over_ the outer variables `students` and `studentID`.
+
+
+
 > So what do those closures do here, in a concrete, observable sense?
 
 > Closure allows `greetStudent(..)` to continue to access those outer variables even after the outer scope is finished (when each call to `lookupStudent(..)` completes). Instead of the instances of `students` and `studentID` being GC'd, they stay around in memory. At a later time when either instance of the `greetStudent(..)` function is invoked, those variables are still there, holding their current values.
@@ -104,7 +116,7 @@ var student = students.find(
 [[@simpsonYouDonKnow2022]] 所描述：
 >  Closure is originally a mathematical concept, from lambda calculus. But I'm not going to list out math formulas or use a bunch of notation and jargon to define it.
 
-1. 從數學概念-Closure衍伸過來的術語，意為著包含著特定物件的封閉空間，在程式上，是一種scope層級上的封閉空間，換言之，會將識別字和對應物件綁定在一塊構成一個結構體，在這裡會是以Execution Context來表示。
+1. 從數學概念-Closure衍伸過來的術語，意為著包含著特定物件的封閉空間
 
 
 
