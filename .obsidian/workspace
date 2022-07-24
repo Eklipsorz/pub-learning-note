@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "73573befc48964ba",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled 3.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -40,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "creation phase",
+                "query": "tag:#🧠",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,7 +108,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "37ebde08e6b98bd2",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
     "Untitled 1.md",
     "Untitled 2.md",

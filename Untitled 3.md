@@ -4,13 +4,16 @@
 
 ## 描述
 
+
+
+### closure 在電腦語言下的意思
+> 是在支援頭等函式的程式語言中實現詞法繫結的一種技術。閉包在實現上是一個結構體，它儲存了一個函式（通常是其入口位址）和一個關聯的環境（相當於一個符號尋找表）。環境裡是若干對符號和值的對應關係，它既要包括約束變數（該函式內部繫結的符號），也要包括自由變數（在函式外部定義但在函式內被參照），有些函式也可能沒有自由變數。閉包跟函式最大的不同在於，當捕捉閉包的時候，它的自由變數會在捕捉時被確定，這樣即便脫離了捕捉時的上下文，它也能照常執行。捕捉時對於值的處理可以是值拷貝，也可以是名稱參照，這通常由語言設計者決定，也可能由使用者自行指定（如C++）。
+
 > Closure is a behavior of functions and only functions. If you aren't dealing with a function, closure does not apply. An object cannot have closure, nor does a class have closure (though its functions/methods might). Only functions have closure.
 
 重點：
 - 除了函式以外，就只有function能夠構築closure
 
-### closure 在電腦語言下的意思
-> 是在支援頭等函式的程式語言中實現詞法繫結的一種技術。閉包在實現上是一個結構體，它儲存了一個函式（通常是其入口位址）和一個關聯的環境（相當於一個符號尋找表）。環境裡是若干對符號和值的對應關係，它既要包括約束變數（該函式內部繫結的符號），也要包括自由變數（在函式外部定義但在函式內被參照），有些函式也可能沒有自由變數。閉包跟函式最大的不同在於，當捕捉閉包的時候，它的自由變數會在捕捉時被確定，這樣即便脫離了捕捉時的上下文，它也能照常執行。捕捉時對於值的處理可以是值拷貝，也可以是名稱參照，這通常由語言設計者決定，也可能由使用者自行指定（如C++）。
 
 1. 在程式上，是一種多個scope層級之間的對應關係上的封閉空間
 2. 換言之，封閉空間內的每個元素將會是特定scopeA下的識別字 和 特定scope B 的實體物件之間的對應關係，**在這裡的scope A和scope B 可能會是不一樣的**，而識別字可對應到scope B下的實體物件
@@ -18,6 +21,10 @@
 	- 以載入結構體的形式來允許程式碼能夠調用其他scope下的實體物件
 4.  該概念會運用在函式A和包含函式A的函式B上，函式A的scope 會是上述的scope A，函式B的scope 會是上述的scope B，並且以scope A 為主來構築closure結構體或者集合，裡頭的元素會是多個scope A識別字和對應實體物件，這些scope A識別字部分對應著scope B的實體物件，部分對應著scope A的實體物件，且為了能讓**函式A繼續使用著函式B的實體物件，而允許即使函式B的EC要被釋放掉的情況下，還是會在具體實現上盡可能保留著函式A還會用到的函式B的實體物件**
 > A closure is a function having access to the parent scope, even after the parent function has closed.
+
+5. 該概念會運用在函式A和包含函式A的函式B，可以使：
+	- 讓函式擁有屬於自己的變數來存取和操作
+	- 打造成模組，並將function scope作為module scope來讓function回傳的function擁有module專有的變數
 
 總結來說的話：
 - 每個函式A會具備closure結構體，其結構體會儲存每個函式A所用到的識別字以及對應的實體物件，該實體物件會是在函式A存在的實體物件或者是包含函式A的函式B所存在的實體物件
@@ -128,7 +135,10 @@ chosenStudents[1]("Howdy");
 > But we don't get an error. The fact that the execution of `chosenStudents[0]("Hello")` works and returns us the message "Hello, Sarah!", means it was still able to access the `students` and `studentID` variables. This is a direct observation of closure!
 
 
-
+重點：
+- 每一個lookupStudent 函式會回傳一個greetStudent這函式物件，
+- 每個greetStudent由於是在被其他函式包含，所以會在編譯期間建立closure，來替每個識別字找到對應實體，除了students 和 studentId 這兩個識別字並不是greetStudent有的識別字，所以會根據scope chain往上尋找對應著包含greetStudent的函式所擁有的students 和 studentID
+- 而students 和 studentID並不會因為每次lookupStudent呼叫完畢才被釋放，而是因為能夠在編譯期間判定呼叫完畢後還會被使用，因此即使lookupStudent呼叫完畢，也會在使用的人還未結束執行會保留students 和 studentID
 
 
 
@@ -147,7 +157,28 @@ https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 closure 命名緣由為何？ ->->-> `Closure衍伸過來的術語，意為著包含著特定物件的封閉空間`
+
+
+#🧠 在程式上，closure是什麼樣的概念 ->->-> `是一種多個scope層級之間的對應關係上的封閉空間，具體會是一個結構體來當作封閉空間，並將空間內的每個元素將會是特定scopeA下的識別字 和 特定scope B 的實體物件之間的對應關係，**在這裡的scope A和scope B 可能會是不一樣的**，而識別字可對應到scope B下的實體物件`
+
+
+#🧠 在程式上，closure是什麼樣的概念會有什麼樣的用途？ ->->-> `以載入結構體的形式來允許程式碼能夠調用其他scope下的實體物件`
+
+#🧠 若將closure套用在函式A和包含函式A的函式B上，且目前語言是支援first-class function，那麼closure具體是什麼樣的概念？ 以及如何保留closure所對應的實體物件是還在記憶體的？->->-> `函式A的scope 會是上述的scope A，函式B的scope 會是上述的scope B，並且以scope A 為主來構築closure結構體或者集合，裡頭的元素會是多個scope A識別字和對應實體物件，這些scope A識別字部分對應著scope B的實體物件，部分對應著scope A的實體物件，且為了能讓**函式A繼續使用著函式B的實體物件，而允許即使函式B的EC要被釋放掉的情況下，還是會在具體實現上盡可能保留著函式A還會用到的函式B的實體物件**`
+
+
+
+
+
+#🧠 若將closure套用在函式A和包含函式A的函式B上，能做什麼樣用途？ ->->-> `讓函式擁有屬於自己的變數來存取和操作、打造成模組，並將function scope作為module scope來讓function回傳的function擁有module專有的變數`
+
+#🧠 若要將closure套用在函式A和包含函式A的函式B上，程式語言要具備什麼樣的特性才行？ ->->-> `必須要能夠把函式當作物件/值來看待的程式語言，即為支援first-class function的程式語言`
+
+#🧠 若要將closure套用在函式A和包含函式A的函式B上，並且以JS來說明的話，每個closure如何獲取？如何對應？如何保留對應內容(Garbage Collector)？ ->->-> `- 每個函式A會具備closure結構體，其結構體會儲存每個函式A所用到的識別字以及對應的實體物件，該實體物件會是在函式A存在的實體物件或者是包含函式A的函式B所存在的實體物件 - 若closure中的識別字對應著包含著函式A的函式B所擁有的實體物件時，會為了讓closure正常使用，而保留函式B的部分EC資訊，其資訊具會是函式A所用到的對應實體物件 - 至於函式B的EC資訊釋放則是看目前情況是否還滿足Garbage collector所依據的保留機制-若實體物件還繼續被參照使用的話，就會保留其記憶體，直到沒被使用，到時就會釋放 `
+
+
+
 
 ---
 Status: #🌱 
