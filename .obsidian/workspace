@@ -14,18 +14,6 @@
             "source": false
           }
         }
-      },
-      {
-        "id": "3aab79e5a2ad9daf",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/render/Browser Object Model 是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面.md",
-            "mode": "source",
-            "source": false
-          }
-        }
       }
     ],
     "direction": "vertical"

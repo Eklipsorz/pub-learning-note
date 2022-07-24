@@ -4,20 +4,17 @@
 
 ## 描述
 
-
-> Closure is originally a mathematical concept, from lambda calculus. But I'm not going to list out math formulas or use a bunch of notation and jargon to define it.
-> 
-> Instead, I'm going to focus on a practical perspective. We'll start by defining closure in terms of what we can observe in different behavior of our programs, as opposed to if closure was not present in JS. However, later in this chapter, we're going to flip closure around to look at it from an _alternative perspective_.
-> 
 > Closure is a behavior of functions and only functions. If you aren't dealing with a function, closure does not apply. An object cannot have closure, nor does a class have closure (though its functions/methods might). Only functions have closure.
-> 
+
+重點：
+- 除了函式以外，就只有function能夠構築closure
+
 > For closure to be observed, a function must be invoked, and specifically it must be invoked in a different branch of the scope chain from where it was originally defined. A function executing in the same scope it was defined would not exhibit any observably different behavior with or without closure being possible; by the observational perspective and definition, that is not closure.
 > 
 > Let's look at some code, annotated with its relevant scope bubble colors (see Chapter 2):
 
 
 ```
-
 // outer/global scope: RED(1)
 
 function lookupStudent(studentID) {
@@ -104,9 +101,10 @@ var student = students.find(
 
 
 ### Closure 命名緣由
+[[@simpsonYouDonKnow2022]] 所描述：
+>  Closure is originally a mathematical concept, from lambda calculus. But I'm not going to list out math formulas or use a bunch of notation and jargon to define it.
 
-
-1. 從數學概念-Closure衍伸過來，在這裏會是如果對一個函式X中所擁有的函式進行呼叫，其回傳值仍會受限於函式X的lexical environment，故此稱之為Lexical Closure
+1. 從數學概念-Closure衍伸過來的術語，意為著包含著特定物件的封閉空間，在程式上，是一種scope層級上的封閉空間，換言之，會將識別字和對應物件綁定在一塊構成一個結構體，在這裡會是以Execution Context來表示。
 
 
 
@@ -139,3 +137,4 @@ Links:
 [[Execution Context 中的outer reference 適用以實現scope chain]]
 [[JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態]]
 References:
+[[@simpsonYouDonKnow2022]]
