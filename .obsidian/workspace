@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 2.md",
+            "file": "Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,13 +109,13 @@
   },
   "active": "37ebde08e6b98bd2",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
     "MOC/JavaScript MOC.md",
     "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
     "develop/render/Browser Object Model 是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面.md",
-    "Untitled.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md"
