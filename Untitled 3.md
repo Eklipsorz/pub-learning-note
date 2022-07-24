@@ -9,13 +9,52 @@
 重點：
 - 除了函式以外，就只有function能夠構築closure
 
+### closure 在電腦語言下的意思
+> 是在支援頭等函式的程式語言中實現詞法繫結的一種技術。閉包在實現上是一個結構體，它儲存了一個函式（通常是其入口位址）和一個關聯的環境（相當於一個符號尋找表）。環境裡是若干對符號和值的對應關係，它既要包括約束變數（該函式內部繫結的符號），也要包括自由變數（在函式外部定義但在函式內被參照），有些函式也可能沒有自由變數。閉包跟函式最大的不同在於，當捕捉閉包的時候，它的自由變數會在捕捉時被確定，這樣即便脫離了捕捉時的上下文，它也能照常執行。捕捉時對於值的處理可以是值拷貝，也可以是名稱參照，這通常由語言設計者決定，也可能由使用者自行指定（如C++）。
 
-在程式上，是一種多個scope層級之間的對應關係上的封閉空間，換言之，封閉空間內的每個元素將會是特定scopeA下的識別字 和 特定scope B 的實體物件之間的對應關係，在這裡的scope A和scope B會是不一樣的，而識別字可對應到scope B下的實體物件。
+1. 在程式上，是一種多個scope層級之間的對應關係上的封閉空間
+2. 換言之，封閉空間內的每個元素將會是特定scopeA下的識別字 和 特定scope B 的實體物件之間的對應關係，**在這裡的scope A和scope B 可能會是不一樣的**，而識別字可對應到scope B下的實體物件
+3. 具體用途為：
+	- 以載入結構體的形式來允許程式碼能夠調用其他scope下的實體物件
+4.  該概念會運用在函式A和包含函式A的函式B上，函式A的scope 會是上述的scope A，函式B的scope 會是上述的scope B，並且以scope A 為主來構築closure結構體或者集合，裡頭的元素會是多個scope A識別字和對應實體物件，這些scope A識別字部分對應著scope B的實體物件，部分對應著scope A的實體物件，且為了能讓**函式A繼續使用著函式B的實體物件，而允許即使函式B的EC要被釋放掉的情況下，還是會在具體實現上盡可能保留著函式A還會用到的函式B的實體物件**
+> A closure is a function having access to the parent scope, even after the parent function has closed.
 
-- 
-   
-   會將識別字和對應物件綁定在一塊構成一個結構體，在這裡會是以Execution Context來表示。
-	- 嚴謹來說，一個EC
+總結來說的話：
+- 每個函式A會具備closure結構體，其結構體會儲存每個函式A所用到的識別字以及對應的實體物件，該實體物件會是在函式A存在的實體物件或者是包含函式A的函式B所存在的實體物件
+- 若closure中的識別字對應著包含著函式A的函式B所擁有的實體物件時，會為了讓closure正常使用，而保留函式B的部分EC資訊，其資訊具會是函式A所用到的對應實體物件
+- 至於函式B的EC資訊釋放則是看目前情況是否還滿足Garbage collector所依據的保留機制-若實體物件還繼續被參照使用的話，就會保留其記憶體，直到沒被使用，到時就會釋放
+
+
+### 運用在函式A和包含函式A的函式B的closure ：garbage collector
+
+在JS中，garbage collector 由於會觀察每個記憶體區塊被使用的情況來釋放，若確定記憶體區塊後續未被使用就會釋放；反之，若確定記憶體區塊後續還會被使用就會繼續保留。
+
+如何判定後續是否會繼續被使用：
+- 編譯時來查看是否後續會被使用
+- 執行時根據演算法來確定
+
+
+所以當透過baz 來接收foo()所回傳的函式物件時，並且以該函式物件來呼叫時，而函式物件本身使用著foo下的a所對應的實體物件，理論上只要呼叫完foo，foo內的記憶體區塊將會被釋放，換言之，a也會被釋放，所以baz所印出的a會報錯，但實際上是可以印出2。
+
+
+而這是因為函式宣告肯定會從編譯時期就分配記憶體以及查看每個識別字對應的實體物件是否後續有被使用，在這裏可以由於可從編譯時期確定後續會呼叫bar()，而bar會使用著foo下的a對應的對應實體物件，所以garbage collector確定後續會使用，所以不會釋放掉foo下的a對應的實體物件，**但就是沒釋放掉a對應的實體物件**，因而讓呼叫baz()時還能印出foo下的a的實體物件
+```
+function foo() {
+	var a = 2;
+
+	function bar() {
+		console.log(a)
+	}
+
+	return bar
+}
+
+var baz = foo()
+baz()
+```
+
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658653407/blog/javascript/closure/You_Don_t_Know_JS_Yet-Closure2_xo614o.jpg)
 
 > For closure to be observed, a function must be invoked, and specifically it must be invoked in a different branch of the scope chain from where it was originally defined. A function executing in the same scope it was defined would not exhibit any observably different behavior with or without closure being possible; by the observational perspective and definition, that is not closure.
 > 
@@ -71,8 +110,13 @@ chosenStudents[1]("Howdy");
 
 > While `greetStudent(..)` does receive a single argument as the parameter named `greeting`, it also makes reference to both `students` and `studentID`, identifiers which come from the enclosing scope of `lookupStudent(..)`. Each of those references from the inner function to the variable in an outer scope is called a _closure_. In academic terms, each instance of `greetStudent(..)` _closes over_ the outer variables `students` and `studentID`.
 
-Each of those references from the inner function to the variable in an outer scope is called a _closure_. In academic terms, each instance of `greetStudent(..)` _closes over_ the outer variables `students` and `studentID`.
 
+### 從觀察獲取closure 
+
+
+> Each of those references from the inner function to the variable in an outer scope is called a _closure_. In academic terms, each instance of `greetStudent(..)` _closes over_ the outer variables `students` and `studentID`.
+
+JavaScript
 
 
 > So what do those closures do here, in a concrete, observable sense?
@@ -119,22 +163,9 @@ var student = students.find(
 1. 從數學概念-Closure衍伸過來的術語，意為著包含著特定物件的封閉空間
 
 
-
-
-
 閉包可以用來在一個函式與一組「私有」變數之間建立關聯關係
 https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 
-
-Closure 從數學引申過來成封閉的空間，也就是將函式與一組資料變數綁定在一個封閉空間，以至於只有該函式能夠修改該資料變數
-
-
-
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658653407/blog/javascript/closure/You_Don_t_Know_JS_Yet-Closure1_wbgcko.jpg)
-
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658653407/blog/javascript/closure/You_Don_t_Know_JS_Yet-Closure2_xo614o.jpg)
 
 
 ## 複習
