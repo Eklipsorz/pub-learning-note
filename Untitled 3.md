@@ -103,19 +103,23 @@ var student = students.find(
 
 
 
-## Closure
+### Closure 命名緣由
+
 
 1. 從數學概念-Closure衍伸過來，在這裏會是如果對一個函式X中所擁有的函式進行呼叫，其回傳值仍會受限於函式X的lexical environment，故此稱之為Lexical Closure
 
-> 如果對一個集合的元素進行運算，回傳值仍會受限於這個集合
 
-2. 在JavaScript中，所有函式皆被設定為Closure，且本身為包含函式以及記住函式被建立時當下環境內容的資料結構
 
-3. closure特性是藉由\[\[Environment\]\]或者\[\[Scope\]\]來實現
 
-4. 參考資料：
 
-[Closure 閉包](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/closure.html)
+閉包可以用來在一個函式與一組「私有」變數之間建立關聯關係
+https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
+
+
+Closure 從數學引申過來成封閉的空間，也就是將函式與一組資料變數綁定在一個封閉空間，以至於只有該函式能夠修改該資料變數
+
+
+
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658653407/blog/javascript/closure/You_Don_t_Know_JS_Yet-Closure1_wbgcko.jpg)
 
