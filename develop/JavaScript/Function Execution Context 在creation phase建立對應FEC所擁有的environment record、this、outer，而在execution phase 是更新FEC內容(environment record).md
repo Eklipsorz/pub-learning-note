@@ -2,7 +2,7 @@
 
 這裡的概念以ECMA2015-ECMA2019為主，Function Execution Context 簡稱為FEC。
 ### FEC - creation phase
-1. 發生時間點：當從GEC的執行過程呼叫了某個區塊或者某個函式時，就會在正式執行該函式或者該區塊之前建立該FEC
+1. 發生時間點：編譯時期會對所有EC進行建立
 2. FEC範圍：以區塊內或者函式內的所有區域變數、函式為主、不包含額外用區塊和函式包住的程式碼
 3. 製作流程：
 - 建立this物件並決定this參照於誰：
@@ -114,8 +114,7 @@ FunctionExectionContext = {
 
 ## 複習
 
-#🧠 Function Execution Context的creation phase時機點為何？ ->->-> `當從GEC的執行過程呼叫了某個區塊或者某個函式時，就會在正式執行該函式或者該區塊之前建立該FEC`
-<!--SR:!2022-07-27,28,250-->
+#🧠 Function Execution Context的creation phase時機點為何？ ->->-> `編譯時期會對所有EC進行建立`
 
 #🧠 Function Execution Context 的 FEC範圍是？->->-> `以區塊內或者函式內的所有區域變數、函式為主、不包含內部額外的函式，不包含額外用區塊和函式包住的程式碼`
 <!--SR:!2022-09-16,58,250-->

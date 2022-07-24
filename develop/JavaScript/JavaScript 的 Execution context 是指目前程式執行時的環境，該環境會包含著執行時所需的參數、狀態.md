@@ -22,11 +22,11 @@ context：是指場景，一個透過某個事物A所存在或者所發生的場
 - exection phase：程式依據著初期設定的execution context執行的時候，在這時候會邊依據邊把需要更動的資訊紀錄至context
 
 ### Execution Context 種類
-Execution Context主要共分為兩種：
+Execution Context主要共分為三種：當JS檔案進行編譯時，就會對各種scope建立對立的EC，分別為GEC和FEC
 
 - Global Execution Context(GEC): 以程式碼全域所在的程式碼為主來構成，不包含function的內部執行、block的內部執行。
 
-- Function Execution Context(FEC):  通常會是function關鍵字以及{}來構築，在這裡當GEC呼叫function並執行function時或者執行對應block的內部執行時就會以當時所要執行的內部程式碼為範疇來建構，比如説：當GEC呼叫了test(a)時，系統就便會執行test內部的第一行，此時就會進入該函式的FEC並開始進入creation phase和execution phase
+- Function Execution Context(FEC):  通常會是function關鍵字以及{}來構築
 
 ```
 let a = 0
@@ -38,7 +38,7 @@ function test(num) {
 test(a)
 ```
 
-- 以{}所建立的Execution Context：通常會是由一對{}所建立，如同function execution context，只要一進入就會進入該context的creation  phase，然後建立完之後就進入execution phase
+- Block Execution Context (BEC)：以{}所建立的Execution Context，沒function的前綴。
 
 ## 複習
 
@@ -48,7 +48,7 @@ test(a)
 #🧠 在JS上的Execution context 會是指什麼？ ->->-> `在JavaScript中，會是引擎執行JavaScript的執行環境，其環境會由輔助引擎執行程式碼的內容所構成`
 <!--SR:!2022-08-05,13,230-->
 
-#🧠 在JS引擎一執行檔案時，會先建立什麼樣的Context ? 又是如何做啥（建立和更新)->->-> `先替該檔案建立Global Execution Context(GEC)來設定執行會需要的環境變數以及儲存過程，當建立完之後，引擎就隨後執行JS程式碼，便以該context為基礎來執行以及更新context所需的資訊至context`
+#🧠 在JS引擎一執行檔案時，會先建立什麼樣的Context ? 又是如何做啥（建立和更新)->->-> `編譯期間先替該檔案建立Global Execution Context(GEC)和Function Execution Context來設定執行會需要的環境變數以及儲存過程，當建立完之後，引擎就隨後執行JS程式碼，便以該context為基礎來執行以及更新context所需的資訊至context`
 <!--SR:!2022-08-04,11,230-->
 
 #🧠 JS：每個Execution Context 所面臨的階段是什麼？ ->->-> `- creation phase：execution context建立的階段或者程式剛開始被執行的階段，此階段會掃描該context的程式碼並解析其識別字，並於context紀錄其結果 - exection phase：程式依據著初期設定的execution context執行的時候，在這時候會邊依據邊把需要更動的資訊紀錄至context`
