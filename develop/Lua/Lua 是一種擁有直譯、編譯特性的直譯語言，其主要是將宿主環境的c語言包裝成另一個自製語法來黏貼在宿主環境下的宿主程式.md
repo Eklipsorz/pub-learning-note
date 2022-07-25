@@ -102,10 +102,12 @@
 
 
 #🧠 假設正式執行前不先將Lua編譯成ByteCode，那麼具體來說是如何編譯和執行 ->->-> ` 當偵測到Lua語法時，就會先將Lua原始碼編譯成ByteCode，並放入宿主環境下的記憶體或者緩存，接著以緩存或者記憶體的ByteCode，並將儲存在宿主環境之記憶體或者快取中的ByteCode丟進虛擬機邊解析成機械碼邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555608/blog/compilation/LuaCode-ByteCode-Execute_znwxg0.png)`
+<!--SR:!2022-07-26,1,225-->
 
 
 
 #🧠 假設正式執行前不先將Lua編譯成ByteCode，那麼具體來說是如何挑時機點來編譯執行的？ ->->-> `編譯時機點為宿主程式執行但還未執行對應的Lua語法、宿主程式執行到對應的Lua語法，執行時機點為宿主程式執行到對應的Lua語法`
+<!--SR:!2022-07-27,2,245-->
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說，編譯後的ByteCode會放在哪邊(提示：請強調宿主) ->->-> `每一次從Lua編譯成ByteCode時，會將對應的ByteCode放置宿主的記憶體或者快取，並不另外存放在硬碟`

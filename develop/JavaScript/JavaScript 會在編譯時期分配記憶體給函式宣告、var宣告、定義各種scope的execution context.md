@@ -88,6 +88,7 @@ _Fig. 2: Colored Scope Bubbles_
 <!--SR:!2022-07-30,6,230-->
 
 #🧠 lexically scoped language 在編譯時期會做些什麼？ (scope、生成)->->-> `確定所有種類的lexical scope 和 生成對應的ByteCode`
+<!--SR:!2022-07-27,2,248-->
 
 ---
 Status: #🌱 

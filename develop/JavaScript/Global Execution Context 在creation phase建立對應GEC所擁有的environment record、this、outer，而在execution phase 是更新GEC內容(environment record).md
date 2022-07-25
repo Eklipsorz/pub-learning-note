@@ -144,6 +144,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `編譯時期會對所有EC進行建立`
+<!--SR:!2022-07-27,2,247-->
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
