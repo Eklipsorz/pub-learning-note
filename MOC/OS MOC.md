@@ -20,3 +20,8 @@
 
 ## Server
 [[forward proxy 會代理原客戶端去發送請求，reverse proxy會代理原伺服器來管理外部發送至原伺服器的請求和回應]]
+
+
+## task
+
+[[synchronous 和 asynchronous 在電腦科學是分別指每個任務會等待前面任務完成才執行與每個任務都為獨立，不會等前面任務完成才執行]]
