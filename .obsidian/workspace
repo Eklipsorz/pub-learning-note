@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
+            "file": "Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
+                "file": "Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,9 +109,9 @@
   },
   "active": "bfb9258cacfd6d2c",
   "lastOpenFiles": [
+    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
     "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "Untitled 3.md",
     "Untitled 2.md",
