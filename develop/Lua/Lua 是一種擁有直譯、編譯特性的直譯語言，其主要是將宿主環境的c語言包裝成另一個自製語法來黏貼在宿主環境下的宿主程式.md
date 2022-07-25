@@ -109,7 +109,7 @@
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說，編譯後的ByteCode會放在哪邊(提示：請強調宿主) ->->-> `每一次從Lua編譯成ByteCode時，會將對應的ByteCode放置宿主的記憶體或者快取，並不另外存放在硬碟`
-<!--SR:!2022-07-25,10,250-->
+<!--SR:!2022-08-20,26,250-->
 
 
 #🧠 先將Lua語法轉換至ByteCode，接著從ByteCode解析執行來說，編譯後的ByteCode會存在記憶體或者快取，那麼當編譯前的代碼與先前不一樣的話，會如何？->->-> `Lua會重新編譯成ByteCode來執行`
@@ -121,6 +121,7 @@
 #🧠 Lua語法轉換至ByteCode，其ByteCode是什麼？ ->->-> `獨立於Lua、任何程式語言、機械碼、組合語言的代碼形式，只有Lua虛擬機能解析`
 <!--SR:!2022-08-19,26,250-->
 
+#🧠 若要減少系統儲存Lua的Bytecode在記憶體的成本，具體有哪些方法？ ->->-> `直接以Lua原始碼來執行，不以ByteCode來執行、事先使用編譯器將Lua原始碼編譯成ByteCode，直接將ByteCode丟進Lua虛擬機執行`
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到沒JIT Compiler的話 (提示有三個) ->->-> `	- 邊將 事先(還未讓Lua虛擬機處理之前)解析成的ByteCode 解析成 Machine Code 邊執行 - 先將Lua 原始碼 解析成 ByteCode ，並存放在記憶體或者暫存中，解析完成後才將ByteCode解析成Machine Code來執行 - 邊將 Lua 原始碼 解析成Machine Code，然後邊執行`
 <!--SR:!2022-07-27,4,247-->
@@ -133,12 +134,14 @@
 <!--SR:!2022-07-28,5,247-->
 
 
-#🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮事先編譯就好)->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 可在執行之前，先將Lua程式碼轉換成ByteCode，並儲存在宿主環境下的硬碟，等到要使用時，就將ByteCode載入至Lua 虛擬機來邊解析邊執行。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Offline-ByteCode-Execute_ig1wxn.png)`
+#🧠 可不可以將Lua語法事先編譯成ByteCode？然後再以ByteCode執行？請具體說明過程->->-> `可以，直接拿事先編譯好的ByteCode丟進Lua虛擬機邊解析成機械碼邊執行`
 <!--SR:!2022-07-30,5,230-->
 
 
-#🧠 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行：具體來說是如何編譯和執行(請考慮直接執行，不要編譯ByteCode) ->->-> `由於執行Lua程式碼前會解析成ByteCode，並把其代碼儲存於宿主環境的記憶體或者快取上，若要使宿主環境減少這方面的儲存成本： - 除了執行前的編譯以外，還有就是當宿主環境要執行Lua程式碼就將Lua Code丟進Lua虛擬機直接邊解析邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555105/blog/compilation/Execute-without-ByteCode_vwbcz4.png)`
-<!--SR:!2022-07-25,10,250-->
+#🧠  若要直接以Lua語法來執行的話，解釋器會是如何執行 ->->-> `直接將Lua語法丟進Lua虛擬機邊解析成機械碼邊執行`
+
+#🧠 可不可以將Lua採用JIT來執行？請具體說明 ->->-> `可以，首先先將Lua語法編譯成ByteCode，接著在丟進JIT compiler 將ByteCode轉譯成機械碼，並放到記憶體或者緩存，接著以記憶體或者緩存的機械碼來執行`
+
 
 #🧠 先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行，具體來說是如何編譯和執行，時機點為何？ ->->-> `通常整體編譯時機點- 會是要執行Lua Code前就編譯 `
 <!--SR:!2022-08-05,15,249-->
