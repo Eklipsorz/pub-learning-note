@@ -92,3 +92,8 @@
 
 ## 函式
 [[javascript - function 語法有分為function declaration 、function expression]]
+
+
+
+## 模組
+[[在同一份DOM文件載入多個JS檔案下用IIFE製作模組]]

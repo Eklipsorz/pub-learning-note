@@ -114,7 +114,7 @@
 ---
 Status: #🌱 
 Tags:
-[[JavaScript]]
+[[JavaScript]] 
 Links:
 [[當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行]]
 References:
