@@ -33,6 +33,18 @@ var x = 5;
 	
 </script>
 ```
+
+## 若針對window增加屬性的話
+
+```
+<script>
+window.testvar = 5;
+console.log(testvar) // 5
+console.log(window.testvar) // 5
+</script>
+```
+
+
 ## 複習
 #🧠 請問在同一個DOM Document上，載入多個JS檔案，這些檔案會如何識別全域環境來執行 ->->-> `同一個DOM Document上，載入多個JS檔案相當於在DOM Document載入多個script標籤和其內容，而瀏覽器會為每一份DOM Document下建立以window物件為首的BOM tree來讓JS操作和以window物件作為全域環境來使用，所以實際上這些JS檔案的全域環境會是共享同份DOM Document上的window物件所構築的全域環境`
 <!--SR:!2022-07-27,3,250-->
@@ -52,6 +64,7 @@ var x = 5;
 #🧠  若在script標籤內寫下函式宣告function test()，請問相當於什麼->->-> `替window物件增加對應函式物件。`
 <!--SR:!2022-07-27,3,250-->
 
+#🧠 在html檔案內，針對script而寫下window.testvar = 5，會增加全域變數嗎？ ->->-> `會，等同於替全域環境增加一個全域變數testvar，並且等於5`
 
 ---
 Status: #🌱 
