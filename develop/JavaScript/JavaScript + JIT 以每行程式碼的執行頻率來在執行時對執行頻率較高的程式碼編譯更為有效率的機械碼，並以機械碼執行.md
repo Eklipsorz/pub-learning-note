@@ -132,6 +132,7 @@ function arraySum(arr) {
 > Answer 2: Most browsers have **added limits to break out of these optimization/deoptimization cycles** when they happen. If the JIT has made more than, say, 10 attempts at optimizing and keeps having to throw it out, it will just stop trying
 
 #### 檢查紀錄的優先權
+
 1. 若optimizing compiler上有任何紀錄的話：
 	每次執行時就去透過目前執行行數來在optimizing compiler紀錄上試著找到相對應的紀錄 -> 若找不到就看看目前執行行數和資料型別所構成的索引是否被標記warm -> 在沒有就去邊解析邊執行
 
@@ -177,16 +178,16 @@ function arraySum(arr) {
 
 ## 複習
 #🧠 JavaScript 在JIT之前，是如何編譯和執行(不用講得太仔細)->->-> `JavaScript 在JIT之前，是將原始碼編譯成中間碼，並存於記憶體或者緩存，接著再邊轉中間碼為機械碼邊執行`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-29,4,248-->
 
 
 
 #🧠 JavaScript 加入 JIT時，使用哪種辦法來應用？->->-> `JavaScript 會依據每個程式碼的執行頻率來進一步將執行頻率較高的程式碼編譯成更為效率的程式碼`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-30,5,248-->
 
 
 #🧠 JavaScript 加入 JIT時，會使用什麼來觀察每個程式碼的執行頻率，具體怎麼計算？->->-> `monitor，觀察正在執行的程式碼，並將為每段程式碼的**行數**和**所用到的資料類型**作為索引，並以此計算程式碼的執行次數`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-30,5,248-->
 
 #🧠 JavaScript 的 JIT：如何區分哪些程式碼的執行頻率為稍高、高 ->->-> `當程式碼的執行次數高於x1時，就設定為代表稍高的warm，若執行次數高於x1且高於x2的話，就將對應的程式碼設為代表高的hot`
 <!--SR:!2022-07-25,2,248-->
@@ -205,7 +206,7 @@ function arraySum(arr) {
 
 
 #🧠 整體來說，在JIT版本的JavaScript中，optimizing compiler具體會以什麼做為資料上紀錄的索引？ 以什麼標準作為可使用對應機械碼的許可->->-> `會以行數作為索引，並以設定的前提標準來當作標準，具體會是起初該行數被執行時的變數資料型別為標準，看每次同一行的資料型別是否和先前一樣，若一樣就核可。`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-31,6,248-->
 
 #🧠 JIT版本的JavaScript：以什麼標籤作為放進baseline compiler 的處理標準 ->->-> `擁有warm標籤的索引`
 <!--SR:!2022-07-25,2,248-->
@@ -217,7 +218,7 @@ function arraySum(arr) {
 <!--SR:!2022-07-25,2,248-->
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode並執行時，會如何monitor計數執行次數？ ->->-> `如果索引在monitor是不存在的話，就建立索引以及對應的執行次數為1、如果索引在monitor是存在的話，就以對應索引來增加對應執行次數，如count = count + 1`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-31,6,248-->
 
 
 #🧠 JIT版本的JavaScript：試說明以下紀錄是如何產生的![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/first-count-example_mbzuwv.png)->->-> `scope是指處於哪一個scope，如特定function或者global，line是指scope下的第幾行，type是該行數的程式碼是用哪些型別，count是對應程式碼被執行了多少次，在這裏是在arraySum函式下執行它的內容並從執行過程獲取出來的資料`
@@ -239,7 +240,7 @@ function arraySum(arr) {
 <!--SR:!2022-07-25,2,248-->
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設，會如何？->->-> `會計算不符合的次數，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-31,6,248-->
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設的次數達到某種程度時，會是？->->-> `當違反假設超過一定次數時，就捨棄目前索引對應的機械碼，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
 <!--SR:!2022-07-25,2,248-->
@@ -266,7 +267,7 @@ function arraySum(arr) {
 <!--SR:!2022-07-25,2,248-->
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若使用次數超過x1就且沒超過x2，已用baseline compiler 生成機械碼，流程會是什麼？ ->->-> `生成bytecode ->  透過索引從monitor紀錄表格中找到對應機械碼 -> 以機械碼執行 ->  紀錄對應索引(line, type)的執行次數`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-30,5,248-->
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，且未使用optimizing compiler生成機械碼，流程會是什麼？->->-> `生成bytecode -> 經過optimizing compiler來根據目前執行狀態來編譯成更為有效執行的機械碼 ->將目前索引上的行數索引，並以型別作為是否能使用的假設標準 -> 以行數作為索引來儲存對應的機械碼：(line -> (type, code)) -> 以optimizing compiler對應的機械碼來執行->  紀錄對應索引(line, type)的執行次數`
 <!--SR:!2022-07-25,2,248-->
@@ -281,14 +282,14 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且假設錯誤，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行 -> 紀錄錯誤 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-29,4,248-->
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
 <!--SR:!2022-07-26,2,230-->
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話) ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2022-07-25,2,248-->
+<!--SR:!2022-07-30,5,248-->
 
 
 ---
