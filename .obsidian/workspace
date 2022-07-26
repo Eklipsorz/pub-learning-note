@@ -6,24 +6,24 @@
       {
         "id": "0054eb4a25656b0b",
         "type": "leaf",
-        "dimension": 75.99660729431722,
+        "dimension": 62.25614927905004,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/OS/synchronous 和 asynchronous 在電腦科學是分別指每個任務會等待前面任務完成才執行與每個任務都為獨立，不會等前面任務完成才執行.md",
+            "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "775c458857bd5b9d",
+        "id": "2de6c96d46341ae8",
         "type": "leaf",
-        "dimension": 24.00339270568278,
+        "dimension": 37.74385072094996,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
+            "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
             "mode": "source",
             "source": false
           }
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "synchronous",
+                "query": "The dependencies between these different parts of your code are implicit. Any function can grab anything on the global, so you don’t know which functions depend on which scripts.",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/synchronous 和 asynchronous 在電腦科學是分別指每個任務會等待前面任務完成才執行與每個任務都為獨立，不會等前面任務完成才執行.md",
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,15 +112,15 @@
   },
   "active": "0054eb4a25656b0b",
   "lastOpenFiles": [
+    "html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+    "接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組.md",
+    "當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
+    "develop/OS/synchronous 和 asynchronous 在電腦科學是分別指每個任務會等待前面任務完成才執行與每個任務都為獨立，不會等前面任務完成才執行.md",
     "Untitled 2.md",
     "develop/Redis/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
     "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
-    "MOC/JavaScript MOC.md",
-    "develop/JavaScript/IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成.md",
-    "當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
-    "接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組.md"
+    "MOC/JavaScript MOC.md"
   ]
 }
