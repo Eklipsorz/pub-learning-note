@@ -26,11 +26,11 @@ Keyspace notifications
 
 ### Redis pub&sub 種類
 
-主要分為：
+Redis 觀測鍵和事件的種類主要分為：
 - Key-space notification：以指定key上的任意事件來進行publish 和 subscribe
 - Key-event notification：以任意key上的指定事件來進行publish 和 subscribe
 
-頻道則會因而分成兩種:
+內建頻道則會因而分成兩種:
 - Key-space notification：在特定key值的任意事件上的事件訊息接收和傳遞
 ```
 // keyspace 頻道會以下列作為其keyspace的prefix，而<db>為redis database name
@@ -74,7 +74,7 @@ __keyevent@0__:del
 #🧠 Redis Pub/Sub 是什麼樣的機制 ->->-> `是Redis 用來在資料庫上實現key上的事件監聽和事件處理的手段，主要透過資料庫本身會在特定事件下向特定頻道發送(Publish)特定訊息，而使用者只需訂閱該頻道就能接收到訊息，就能夠順勢根據特定事件下的結果來實現事件處理`
 <!--SR:!2022-09-10,58,230-->
 
-#🧠  Redis Pub/Sub 這Publish-Subscribe下有哪兩個方式來傳遞？(提示：鍵和事件) ->->-> `Key-space notification：以指定key上的任意事件來進行publish 和 subscribe、Key-event notification：以任意key上的指定事件來進行publish 和 subscribe`
+#🧠  Redis Pub/Sub 這Publish-Subscribe下主要有哪兩個方式來去監測鍵和事件？ ->->-> `Key-space notification：以指定key上的任意事件來進行publish 和 subscribe、Key-event notification：以任意key上的指定事件來進行publish 和 subscribe`
 <!--SR:!2022-10-13,79,247-->
 
 

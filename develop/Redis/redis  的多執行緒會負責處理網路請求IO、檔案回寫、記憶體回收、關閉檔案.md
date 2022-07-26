@@ -107,7 +107,7 @@ Process Description:
 
 ## 複習
 #🧠 無多執行緒的redis版本下，如何處理每個請求的？(提示：請考量socket、queue、緩衝區buffer、回寫) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187843/blog/database/caching/redis/non-multithread-how-redis-works_aohtyn.png)->->-> `1. 單執行緒下會與客戶端建立連線以及socket來 2. 單執行緒透過socket來接收對應的封包 3. 解析封包並解析出指令，並將這些指令會依序放在指令佇列中 4. 等到所有指令被解析出來，redis 主要執行緒會從佇列中取出指令執行 5. 將執行結果放入一個佇列 6. 等到所有指令執行完畢以及佇列放置完畢後，就負責按照socket資訊將所有指令的結果回寫至對應client端 7. 發送結果 8. 客戶端接收結果`
-<!--SR:!2022-07-26,28,250-->
+<!--SR:!2022-10-07,73,250-->
 
 
 
