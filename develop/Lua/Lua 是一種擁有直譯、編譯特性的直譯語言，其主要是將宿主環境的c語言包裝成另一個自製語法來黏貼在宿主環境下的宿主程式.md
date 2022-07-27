@@ -126,8 +126,8 @@
 #🧠 若要減少系統儲存Lua的Bytecode在記憶體的成本，具體有哪些方法？ ->->-> `直接以Lua原始碼來執行，不以ByteCode來執行、事先使用編譯器將Lua原始碼編譯成ByteCode，直接將ByteCode丟進Lua虛擬機執行`
 <!--SR:!2022-08-02,6,245-->
 
-#🧠 Lua 虛擬機是做什麼？ 若考量到沒JIT Compiler的話 (提示有三個) ->->-> `	- 邊將 事先(還未讓Lua虛擬機處理之前)解析成的ByteCode 解析成 Machine Code 邊執行 - 先將Lua 原始碼 解析成 ByteCode ，並存放在記憶體或者暫存中，解析完成後才將ByteCode解析成Machine Code來執行 - 邊將 Lua 原始碼 解析成Machine Code，然後邊執行`
-<!--SR:!2022-07-29,2,227-->
+#🧠 Lua 虛擬機是做什麼？ 若考量到沒JIT Compiler的話 (提示有二個) ->->-> `- 將Lua原始碼邊解析成機械碼邊執行 - 將ByteCode邊解析成機械碼邊執行`
+
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到JIT Compiler的話->->-> `將ByteCode 解析成對應的Machine Code，並存放在記憶體或者暫存，解析完成後，才執行對應的Machine Code`
 <!--SR:!2022-07-28,5,247-->

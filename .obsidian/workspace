@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
             "mode": "source",
             "source": false
           }
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "The dependencies between these different parts of your code are implicit. Any function can grab anything on the global, so you don’t know which functions depend on which scripts.",
+                "query": "lua 虛擬機是做什麼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 3.md",
+                "file": "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +112,7 @@
   },
   "active": "0054eb4a25656b0b",
   "lastOpenFiles": [
+    "Untitled 3.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
     "接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組.md",
@@ -119,7 +121,6 @@
     "Untitled 2.md",
     "develop/Redis/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
     "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
-    "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "MOC/JavaScript MOC.md"
+    "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md"
   ]
 }
