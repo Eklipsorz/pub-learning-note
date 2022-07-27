@@ -144,7 +144,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `編譯時期會對所有EC進行建立`
-<!--SR:!2022-07-27,2,247-->
+<!--SR:!2022-08-01,5,247-->
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
@@ -190,7 +190,7 @@ GlobalExectionContext = {
 <!--SR:!2022-09-23,62,250-->
 
 #🧠 Global Execution Context  (Creation phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：建立)  ->->-> `定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式`
-<!--SR:!2022-07-27,28,250-->
+<!--SR:!2022-10-06,71,250-->
 
 #🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：更新) ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
 <!--SR:!2022-08-14,37,248-->

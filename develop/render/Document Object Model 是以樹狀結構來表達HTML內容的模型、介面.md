@@ -91,14 +91,14 @@ DOM是種：
 <!--SR:!2022-08-06,10,250-->
 
 #🧠 請問伺服器如何傳遞網頁？(網路封包) ->->-> `會以一個封包能乘載的大小來將整份網頁分割成好幾個部分來傳遞`
-<!--SR:!2022-07-27,3,250-->
+<!--SR:!2022-08-05,9,250-->
 
 #🧠 請問瀏覽器接收到HTML檔案被切分出來的封包時，會做什麼？ ->->-> `當瀏覽器收到HTML檔案被切分出來的封包時，瀏覽器不會直接等待完整檔案被拼湊出來，而是邊收邊將收到的內容按照DOM形式來建立一個DOM節點`
 <!--SR:!2022-08-06,10,250-->
 
 
 #🧠 若伺服器傳遞一份HTML至瀏覽器，瀏覽器會如何解析成DOM？其結果會是？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658586368/blog/RenderingPath/dom-example-code_pxoigr.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629973153/blog/RenderingPath/domTreeExample_ep0cvp.png)`
-<!--SR:!2022-07-27,3,250-->
+<!--SR:!2022-08-05,9,250-->
 
 
 ---

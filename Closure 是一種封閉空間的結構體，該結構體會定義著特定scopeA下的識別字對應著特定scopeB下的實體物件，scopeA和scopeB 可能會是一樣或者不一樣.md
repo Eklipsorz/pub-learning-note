@@ -165,7 +165,7 @@ https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 
 
 #🧠 在程式上，closure會有什麼樣的用途？ ->->-> `以載入結構體的形式來允許程式碼能夠調用其他scope下的實體物件`
-<!--SR:!2022-07-27,2,249-->
+<!--SR:!2022-07-31,4,249-->
 
 #🧠 若將closure套用在函式A和包含函式A的函式B上，且目前語言是支援first-class function，那麼closure具體是什麼樣的概念？ 以及如何保留closure所對應的實體物件是還在記憶體的？->->-> `函式A的scope 會是上述的scope A，函式B的scope 會是上述的scope B，並且以scope A 為主來構築closure結構體或者集合，裡頭的元素會是多個scope A識別字和對應實體物件，這些scope A識別字部分對應著scope B的實體物件，部分對應著scope A的實體物件，且為了能讓**函式A繼續使用著函式B的實體物件，而允許即使函式B的EC要被釋放掉的情況下，還是會在具體實現上盡可能保留著函式A還會用到的函式B的實體物件**`
 <!--SR:!2022-07-28,2,230-->
@@ -188,14 +188,14 @@ https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 <!--SR:!2022-07-28,3,250-->
 
 #🧠 若要將closure套用在函式A和包含函式A的函式B上，程式語言要具備什麼樣的特性才行？ ->->-> `必須要能夠把函式當作物件/值來看待的程式語言，即為支援first-class function的程式語言`
-<!--SR:!2022-07-27,2,249-->
+<!--SR:!2022-08-02,6,249-->
 
 #🧠 若要將closure套用在函式A和包含函式A的函式B上，並且以JS來說明的話，每個closure如何獲取？如何對應？如何保留對應內容(Garbage Collector)？ ->->-> `- 每個函式A會具備closure結構體，其結構體會儲存每個函式A所用到的識別字以及對應的實體物件，該實體物件會是在函式A存在的實體物件或者是包含函式A的函式B所存在的實體物件 - 若closure中的識別字對應著包含著函式A的函式B所擁有的實體物件時，會為了讓closure正常使用，而保留函式B的部分EC資訊，其資訊具會是函式A所用到的對應實體物件 - 至於函式B的EC資訊釋放則是看目前情況是否還滿足Garbage collector所依據的保留機制-若實體物件還繼續被參照使用的話，就會保留其記憶體，直到沒被使用，到時就會釋放 `
 <!--SR:!2022-08-02,6,249-->
 
 
 #🧠 請說明以下程式碼的執行是如何執行，有closure就說明為什麼？會報錯嗎？所使用的students和studentId會因此不見嗎？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658673001/blog/javascript/closure/closure-example_qknepx.png) ->->-> `- 每一個lookupStudent 函式會回傳一個greetStudent這函式物件， - 每個greetStudent由於是在被其他函式包含，所以會在編譯期間建立closure，來替每個識別字找到對應實體，除了students 和 studentId 這兩個識別字並不是greetStudent有的識別字，所以會根據scope chain往上尋找對應著包含greetStudent的函式所擁有的students 和 studentID - 而students 和 studentID並不會因為每次lookupStudent呼叫完畢才被釋放，而是因為能夠在編譯期間判定呼叫完畢後還會被使用，因此即使lookupStudent呼叫完畢，也會在使用的人還未結束執行會保留students 和 studentID`
-<!--SR:!2022-07-27,2,249-->
+<!--SR:!2022-08-01,5,249-->
 
 
 ---
