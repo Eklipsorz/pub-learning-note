@@ -113,9 +113,13 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄以及如何�
 
 > is the process of judging something or someone based on a set of standards.
 
+
+[[@wikidataEvaluationDisambiguation2022]] 所描述：
 > Computer process to compute the value of an expression or subroutine argument:
 
 重點：
+- 通用說法：基於一組標準來判定某些人事物的過程
+- 在電腦科學裏，是用來確定/計算特定表達式的對應值之過程
 
 
 ## 複習
@@ -127,3 +131,4 @@ Tags:
 [[JavaScript]]
 Links:
 References:
+[[@wikidataEvaluationDisambiguation2022]]
