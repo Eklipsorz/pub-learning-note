@@ -48,18 +48,18 @@
 <!--SR:!2022-07-27,3,250-->
 
 #🧠 Browser Object Model 和 Document Object Model 之間的差別是什麼？ ->->-> `BOM會是以Browser作為根節點來連接DOM目前擁有的樹狀結構
-<!--SR:!2022-07-27,3,250-->
+<!--SR:!2022-08-06,10,250-->
 
 #🧠 BOM 的根節點為啥？->->-> `Browser 或者 Window 物件`
 <!--SR:!2022-07-27,3,250-->
 
 
 #🧠 BOM的window節點主要做啥? (全域和介面) ->->-> `定義全域環境歸屬於誰的全域物件，換言之，以window物件作為全域環境、JavaScript 用來與瀏覽器本身溝通的介面`
-<!--SR:!2022-07-27,2,230-->
+<!--SR:!2022-08-02,6,230-->
 
 
 #🧠 DOM 和 BOM的現況？ ->->-> `大部分瀏覽器都支援BOM和DOM這兩套模型`
-<!--SR:!2022-07-27,3,250-->
+<!--SR:!2022-08-06,10,250-->
 
 
 #🧠 請畫圖來表示BOM和DOM之間的關係？用樹狀圖->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1630066487/blog/dom/bomHierarchy_kp1icw.png)`
