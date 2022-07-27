@@ -1,4 +1,8 @@
 
+
+
+## 描述
+
   
   > But unlike function scopes, module scopes have a way of making their variables available to other modules as well. They can say explicitly which of the variables, classes, or functions in the module should be available. 
   
@@ -103,3 +107,23 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄以及如何�
  * 解析模組在哪裡可以載入
  * 從指定地址獲取對應模組
  * 解析模組成module record
+
+### evaluation 命名緣由
+
+
+> is the process of judging something or someone based on a set of standards.
+
+> Computer process to compute the value of an expression or subroutine argument:
+
+重點：
+
+
+## 複習
+
+
+---
+Status: #🌱 
+Tags:
+[[JavaScript]]
+Links:
+References:

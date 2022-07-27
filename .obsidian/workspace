@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+            "file": "Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,10 +97,10 @@
   },
   "active": "2de6c96d46341ae8",
   "lastOpenFiles": [
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "Untitled 3.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
     "接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組.md",
     "當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
