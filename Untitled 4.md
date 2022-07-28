@@ -42,8 +42,19 @@ CommonJS 本身是源自於伺服器端的模組化標準，其模組皆源自�
 4.  模組的依賴關係遍歷會是DFS
 
 
-
 ![](https://hacks.mozilla.org/files/2018/03/12_cjs_require-768x457.png)
+
+> The CommonJS approach has a few implications, and I will explain more about those later. But one thing that it means is that in Node with CommonJS modules, you can use variables in your module specifier. 
+> 
+> You are executing all of the code in this module (up to the `require` statement) before you look for the next module. That means the variable will have a value when you go to do module resolution.
+
+> But with ES modules, you’re building up this whole module graph beforehand… before you do any evaluation. This means you can’t have variables in your module specifiers, because those variables don’t have values yet.
+
+CommonJS 模組是指需求方只要以JS檔案來執行其模組，其模組就會在執行期間輸出模組內容至需求方，所以由於透過執行來獲取模組內容，所以本身可以透過執行狀況來變更要載入的模組
+
+而ES 模組是指在做任何執行前都會先解析模組本身和建構模組之間的依賴關係圖，所以沒辦法在透過執行狀況來變更要載入的模組
+
+
 ## 複習
 #🧠 Question :: ->->-> ``
 
