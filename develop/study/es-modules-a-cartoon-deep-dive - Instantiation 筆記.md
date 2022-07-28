@@ -49,7 +49,11 @@
 
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[JavaScript]]
 Links:
+[[es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記]]
+[[es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記]]
 References:
+[[@linclarkESModulesCartoon]]

@@ -6,23 +6,28 @@
 
 > These import statements are how the browser or Node knows exactly what code it needs to load. You give it a file to use as an entry point to the graph. From there it just follows any of the import statements to find the rest of the code.
 
+
+以一個模組檔案來控管專案中所要使用的模組，具體會先以main.js模組檔案來建立模組依賴關係圖(graph)的起始點，並由該節點的子節點來做為專案最一開始想要載入的模組，起始點與子節點之間關係會是起始點會依賴著代表子節點的模組，若代表子節點A的模組本身依賴其他模組的話，就以它為根節點來衍生出子節點B來表示子節點A的模組所依賴的模組，後續節點的關係就以這個作為展開
+
+比如說：專案最一開始想要載入counter.js和display.js，在這裡建立main.js來控管他們，以main.js作為依賴counter.js模組和display.js模組的模組來構成模組依賴關係圖(graph)
+
 [![A module with two dependencies. The top module is the entry. The other two are related using import statements](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph-500x291.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph.png)
 
 > But files themselves aren’t something that the browser can use. It needs to parse all of these files to turn them into data structures called Module Records. That way, it actually knows what’s going on in the file.
+
+在構築模組依賴關係圖(graph)的過程中，會先將一個模組簡化成模組紀錄，然後再透過模組紀錄得知該模組所依賴的模組
+
 
 
 [![A module record with various fields, including RequestedModules and ImportEntries](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record-500x287.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record.png)
 
 > After that, the module record needs to be turned into a module instance. An instance combines two things: the code and state.
 
-module record ：
-
-1.  會轉換成module instance
-2.  一個module instance 會將code和state結合在一塊
+組建成模組依賴關係圖後，就會將每個模組紀錄(module record)轉換成每一個模組實例(module instance)，每個模組實例會含有code 和 state 這兩大主要內容
 
 > The code is basically a set of instructions. It’s like a recipe for how to make something. But by itself, you can’t use the code to do anything. You need raw materials to use with those instructions.
 
-code 基本是做某件事情的一組指令，在這裡會是指依賴模組所匯出來的功能函式內容
+code 基本是做某件事情的一組指令，在這裡會是指依賴模組所需要執行
 
 > What is state? State gives you those raw materials. State is the actual values of the variables at any point in time. Of course, these variables are just nicknames for the boxes in memory that hold the values.
 
@@ -106,5 +111,6 @@ Tags:
 [[JavaScript]]
 Links:
 [[es-modules-a-cartoon-deep-dive - Instantiation 筆記]]
+[[es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記]]
 References:
 [[@linclarkESModulesCartoon]]
