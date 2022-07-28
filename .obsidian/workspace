@@ -97,15 +97,15 @@
   },
   "active": "2de6c96d46341ae8",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+    "es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+    "Untitled 4.md",
+    "URL輸入參數會遇到的問題.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
-    "Untitled 4.md",
     "Untitled.md",
     "Untitled 2.md",
-    "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
-    "develop/JavaScript/IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成.md",
-    "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md"
+    "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md"
   ]
 }

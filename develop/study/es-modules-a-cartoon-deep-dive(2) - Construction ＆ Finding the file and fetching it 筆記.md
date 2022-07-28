@@ -95,7 +95,7 @@ CommonJS 本身是源自於伺服器端的模組化標準，其模組皆源自�
 
 CommonJS 模組是指需求方只要以JS檔案來執行其模組，其模組本身是透過執行模組期間輸出模組內容至需求方，所以由於透過執行來獲取模組內容，所以本身可以透過執行狀況來變更其他要被載入的模組
 
-而ES 模組 本身是在模組編譯/解析期間才載入模組內容至需求方，所以在真正模組執行的時候就已經按照定義好的依賴關係(順序)來執行，換言之，本身無法在執行期間透過執行狀態來改變載入模組
+而ES 模組 本身是在模組編譯/解析期間就載入模組內容至需求方，所以在真正模組執行的時候就已經按照定義好的依賴關係(順序)來執行，換言之，本身無法在執行期間透過執行狀態來改變載入模組
 
 
 [![A require statement which uses a variable is fine. An import statement that uses a variable is not.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import-500x146.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import.png)
@@ -105,6 +105,14 @@ CommonJS 模組是指需求方只要以JS檔案來執行其模組，其模組本
 > To make this possible for ES modules, there’s a proposal called [dynamic import](https://github.com/tc39/proposal-dynamic-import). With it, you can use an import statement like ``import(`${path}/foo.js`)``.
 
 > The way this works is that any file loaded using `import()` is handled as the entry point to a separate graph. The dynamically imported module starts a new graph, which is processed separately.
+
+如果要根據執行狀態下載入ES module的話，可以使用dynamic import來實現，該技術會以產出非同步任務為主的promise為主，
+
+具體使用方式：import 為promise，當呼叫時會對系統發出以module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject。
+```
+import(module_path/module1)
+```
+
 
 [![Two module graphs with a dependency between them, labeled with a dynamic import statement](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/14dynamic_import_graph-500x389.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/14dynamic_import_graph.png)
 
@@ -116,13 +124,22 @@ CommonJS 模組是指需求方只要以JS檔案來執行其模組，其模組本
 
 > When the loader goes to fetch a URL, it puts that URL in the module map and makes a note that it’s currently fetching the file. Then it will send out the request and move on to start fetching the next file.
 
+
+
+
 [![The loader figure filling in a Module Map chart, with the URL of the main module on the left and the word fetching being filled in on the right](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map-500x170.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map.png)
 
 > What happens if another module depends on the same file? The loader will look up each URL in the module map. If it sees `fetching` in there, it will just move on to the next URL.
 
 > But the module map doesn’t just keep track of what files are being fetched. The module map also serves as a cache for the modules, as we’ll see next.
 
+### module map
 
+> A module map is a map keyed by tuples consisting of a URL record and a string. The URL record is the request URL at which the module was fetched, and the string indicates the type of the module (e.g. "javascript"). 
+> 
+> The module map's values are either a module script, null (used to represent failed fetches), or a placeholder value "fetching". Module maps are used to ensure that imported module scripts are only fetched, parsed, and evaluated once per Document or worker.
+
+重點
 
 ## 複習
 
