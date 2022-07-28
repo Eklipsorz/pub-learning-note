@@ -27,7 +27,7 @@
 
 > The code is basically a set of instructions. It’s like a recipe for how to make something. But by itself, you can’t use the code to do anything. You need raw materials to use with those instructions.
 
-code 基本是做某件事情的一組指令，在這裡會是指依賴模組所需要執行
+code 基本是做某件事情的一組指令，在這裡會是指模組內的
 
 > What is state? State gives you those raw materials. State is the actual values of the variables at any point in time. Of course, these variables are just nicknames for the boxes in memory that hold the values.
 
