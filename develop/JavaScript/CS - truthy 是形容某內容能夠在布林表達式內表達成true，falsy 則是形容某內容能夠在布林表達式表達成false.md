@@ -72,7 +72,7 @@ if (NaN)
 
 ## 複習
 #🧠 Computer science： truthy 是指什麼？ ->->-> `- truthy 是形容詞，是程式開發領域所定義的 - 主要形容能夠在布林表達式內被當作是true的，形容目標為內容，通常會是truthy value來形容能夠在布林表達式內被當作true的值`
-<!--SR:!2022-07-28,23,250-->
+<!--SR:!2022-09-24,58,250-->
 
 #🧠 Computer science： 誰制定哪些value 為 truthy value或者 falsy value ->->-> `程式語言`
 <!--SR:!2022-09-22,57,250-->

@@ -102,7 +102,7 @@
 
 
 #🧠 假設正式執行前不先將Lua編譯成ByteCode且想以ByteCode來執行，那麼具體來說是如何編譯和執行 ->->-> ` 當偵測到Lua語法時，就會先將Lua原始碼編譯成ByteCode，並放入宿主環境下的記憶體或者緩存，接著以緩存或者記憶體的ByteCode，並將儲存在宿主環境之記憶體或者快取中的ByteCode丟進虛擬機邊解析成機械碼邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555608/blog/compilation/LuaCode-ByteCode-Execute_znwxg0.png)`
-<!--SR:!2022-07-28,2,225-->
+<!--SR:!2022-08-03,6,225-->
 
 
 
@@ -127,6 +127,7 @@
 <!--SR:!2022-08-02,6,245-->
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到沒JIT Compiler的話 (提示有二個) ->->-> `- 將Lua原始碼邊解析成機械碼邊執行 - 將ByteCode邊解析成機械碼邊執行`
+<!--SR:!2022-07-30,2,244-->
  
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到JIT Compiler的話->->-> `將ByteCode 解析成對應的Machine Code，並存放在記憶體或者暫存，解析完成後，才執行對應的Machine Code`
@@ -134,7 +135,7 @@
 
 
 #🧠 Lua 虛擬機會有JIT 這項功能嗎？ ->->-> `沒`
-<!--SR:!2022-07-28,5,247-->
+<!--SR:!2022-08-09,12,247-->
 
 
 #🧠 可不可以將Lua語法事先編譯成ByteCode？然後再以ByteCode執行？請具體說明過程->->-> `可以，直接拿事先編譯好的ByteCode丟進Lua虛擬機邊解析成機械碼邊執行`

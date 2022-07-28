@@ -99,7 +99,7 @@ coupling
 #🧠  電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png)->->-> `模組B 單方面存取 模組A 意旨為 模組B 單方面依賴 模組A`
 <!--SR:!2022-07-30,9,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png) ->->-> `當B去存取A時有可能改變著A的預期結果，因B有可能改變著決定結果的因素，而因素就在A裡頭`
-<!--SR:!2022-07-28,7,250-->
+<!--SR:!2022-08-17,20,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B`
 <!--SR:!2022-07-29,8,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `當A去存取B時有可能改變著B的預期結果，而B可能會因預期結果的改變而變更存取 A的方式，使B可能使用錯誤的存取方式來改變著A，甚至A下次執行時存取B會使情況更加惡化。`
