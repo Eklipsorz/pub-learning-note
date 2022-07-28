@@ -27,15 +27,11 @@
 
 > The code is basically a set of instructions. It’s like a recipe for how to make something. But by itself, you can’t use the code to do anything. You need raw materials to use with those instructions.
 
-code 基本是做某件事情的一組指令，在這裡會是指模組內的
+code 基本是做某件事情的一組指令，在這裡會是指模組要進行evaluation時的code
 
 > What is state? State gives you those raw materials. State is the actual values of the variables at any point in time. Of course, these variables are just nicknames for the boxes in memory that hold the values.
 
-state 則是代表著特定時機點下特定變數所擁有的實際值，也就是所有變數值
-
-在這裡變數只不過用來稱呼並區分這些存放實際值的記憶體區塊
-
-state為每個用識別字對應的記憶體區塊
+state 則是代表著特定時機點下特定變數所擁有的實際值，也就是所有變數值，在這裡變數只不過用來稱呼並區分這些存放實際值的記憶體區塊，state為每個用識別字對應的記憶體區塊
 
 > So the module instance combines the code (the list of instructions) with the state (all the variables’ values).
 
@@ -81,7 +77,7 @@ ES modules 會是非同步載入，主要是因為：
 
 Common JS ：
 
--   將每個模組的載入分成construction、instantiation、evaluation三個階段
+-   將每個模組的載入分成construction、instantiation、evaluation三個階段(在這裡CommonJS並不會特意分割這三個階段)
 -   每個模組的載入皆是同步處理：目前模組的載入必須等待前面模組的載入階段都完成才能做
 
 > The [ES module spec](https://tc39.github.io/ecma262/#sec-modules) says how you should parse files into module records, and how you should instantiate and evaluate that module. However, it doesn’t say how to get the files in the first place.
@@ -101,8 +97,6 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄以及如何�
 瀏覽器會為了能夠處理ES模組，會將支援ES module spec - 如何解析、實例化、確定/判定值這些階段處理的實現納入至基於HTML spec的loader改造成當載入ES模組時，就呼叫對應方法來做每個模組下的階段任務
 
 [![The loader figure acting as a puppeteer to the ES module spec figure.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_loader_as_puppeteer-500x330.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_loader_as_puppeteer.png)
-
-## 複習
 
 
 ---

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+            "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +97,10 @@
   },
   "active": "2de6c96d46341ae8",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive - Instantiation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
     "Untitled 4.md",
     "Untitled.md",
     "Untitled 2.md",
