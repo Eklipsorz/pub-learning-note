@@ -81,14 +81,14 @@ coupling
 <!--SR:!2022-07-31,10,250-->
 
 #🧠 電腦科學裡的coupling  是什麼？ 其目的做啥->->-> `是一種衡量多個模組間的**相互**存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何`
-<!--SR:!2022-07-28,7,250-->
+<!--SR:!2022-08-16,19,250-->
 
 #🧠 電腦科學裡的coupling：依賴會是什麼意思 ->->-> `存取、使用`
 <!--SR:!2022-07-31,10,250-->
 
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-NoCoupling_wrtd6f.png)->->-> `並沒有coupling， 由於模組A 和 模組B 任一個模組都沒存取另一個，`
-<!--SR:!2022-07-28,7,250-->
+<!--SR:!2022-08-15,18,250-->
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/A-to-B-Coupling_uvdngb.png) ->->-> `有coupling 程度， 模組A 單方面存取 模組B 意旨為 模組A 單方面依賴 模組B`
 <!--SR:!2022-07-31,10,250-->
