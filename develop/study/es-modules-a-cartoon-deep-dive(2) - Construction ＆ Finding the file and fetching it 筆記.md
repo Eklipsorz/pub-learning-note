@@ -134,14 +134,17 @@ import(module_path/module1)
 > But the module map doesn’t just keep track of what files are being fetched. The module map also serves as a cache for the modules, as we’ll see next.
 
 ### module map
-
+[[@htmlspecHTMLStandard]] 所描述：
 > A module map is a map keyed by tuples consisting of a URL record and a string. The URL record is the request URL at which the module was fetched, and the string indicates the type of the module (e.g. "javascript"). 
 > 
 > The module map's values are either a module script, null (used to represent failed fetches), or a placeholder value "fetching". Module maps are used to ensure that imported module scripts are only fetched, parsed, and evaluated once per Document or worker.
 
-重點
+重點：
+- module map 由多個 key-value pairs所構成
+- key 為 URL record 和 string：URL record  是請求索要模組的目標主機位址，string則是標明模組的類型，如javascript
+- value 為 module script(表達模組獲取成功)、null(表達模組獲取失敗)、fetchning(正在獲取模組)
+- module map 是用來確定文件上所需要引入的模組之載入狀況：是否獲取？是否被解析？是否已經確定模組內容。
 
-## 複習
 
 
 ---
@@ -152,4 +155,5 @@ Links:
 [[es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記]]
 [[es-modules-a-cartoon-deep-dive - Instantiation 筆記]]
 References:
+[[@htmlspecHTMLStandard]]
 [[@wikidataEvaluationDisambiguation2022]]
