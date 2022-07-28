@@ -3,9 +3,60 @@
 
 ## 描述
 
-  
-  > But unlike function scopes, module scopes have a way of making their variables available to other modules as well. They can say explicitly which of the variables, classes, or functions in the module should be available. 
-  
+#### Construction
+
+> Three things happen for each module during the Construction phase.
+> 
+> 1.  Figure out where to download the file containing the module from (aka module resolution)
+> 2.  Fetch the file (by downloading it from a URL or loading it from the file system)
+> 3.  Parse the file into a module record
+
+
+在建構階段中，瀏覽器會替每個模組做三件事情：
+
+-   解析模組在哪裡可以載入
+-   從指定地址獲取對應模組
+-   解析模組成module record
+
+#### Finding the file and fetching it
+
+> The loader will take care of finding the file and downloading it. First it needs to find the entry point file. In HTML, you tell the loader where to find it by using a script tag.
+
+[![A script tag with the type=module attribute and a src URL. The src URL has a file coming from it which is the entry](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_script_entry-500x188.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_script_entry.png)
+
+> But how does it find the next bunch of modules — the modules that `main.js` directly depends on?
+
+> This is where import statements come in. One part of the import statement is called the module specifier. It tells the loader where it can find each next module.
+
+[![An import statement with the URL at the end labeled as the module specifier](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/09_module_specifier-500x105.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/09_module_specifier.png)
+
+> One thing to note about module specifiers: they sometimes need to be handled differently between browsers and Node. Each host has its own way of interpreting the module specifier strings. To do this, it uses something called a module resolution algorithm, which differs between platforms. Currently, some module specifiers that work in Node won’t work in the browser, but there is [ongoing work to fix this](https://github.com/domenic/package-name-maps).
+
+關於module specifier的細節：
+
+1.  module specifier 可以是使用URL、本地端的相對路徑和絕對路徑
+2.  有時ES module會用在瀏覽器和伺服器端
+3.  每個平台各有自己的方法來解析module specifier
+
+為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來以不同的方式解析
+
+> Until that’s fixed, browsers only accept URLs as module specifiers. They will load the module file from that URL. But that doesn’t happen for the whole graph at the same time. You don’t know what dependencies the module needs you to fetch until you’ve parsed the file… and you can’t parse the file until you fetched it.
+
+> This means that we have to go through the tree layer-by-layer, parsing one file, then figuring out its dependencies, and then finding and loading those dependencies.
+
+瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。
+
+[![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction.png)
+
+> If the main thread were to wait for each of these files to download, a lot of other tasks would pile up in its queue.
+> 
+> That’s because when you’re working in a browser, the downloading part takes a long time.
+
+![A chart of latencies showing that if a CPU cycle took 1 second, then main memory access would take 6 minutes, and fetching a file from a server across the US would take 4 years](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/11_latency-500x270.png)  
+
+
+
+> But unlike function scopes, module scopes have a way of making their variables available to other modules as well. They can say explicitly which of the variables, classes, or functions in the module should be available. 
   
 module scope 主要是指特定模組下的識別空間，該空間會有變數、函式、類別，且他們皆能透過同一個識別空間而共享。
 
@@ -108,18 +159,6 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄以及如何�
  * 從指定地址獲取對應模組
  * 解析模組成module record
 
-### evaluation 命名緣由
-
-
-> is the process of judging something or someone based on a set of standards.
-
-
-[[@wikidataEvaluationDisambiguation2022]] 所描述：
-> Computer process to compute the value of an expression or subroutine argument:
-
-重點：
-- 通用說法：基於一組標準來判定某些人事物的過程
-- 在電腦科學裏，是用來確定/計算特定表達式的對應值之過程
 
 
 ## 複習
