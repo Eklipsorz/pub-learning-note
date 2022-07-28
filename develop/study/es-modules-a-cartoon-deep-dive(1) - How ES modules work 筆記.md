@@ -17,7 +17,9 @@
 
 在構築模組依賴關係圖(graph)的過程中，會先將一個模組簡化成模組紀錄，然後再透過模組紀錄得知該模組所依賴的模組
 
+模組紀錄
 
+> 把解析出来的模块构成表 称为 Module Record（模块记录）。  Module Record 包含了当前模块的 AST，引用了哪些模块的变量，以及一些特定属性和方法。
 
 [![A module record with various fields, including RequestedModules and ImportEntries](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record-500x287.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record.png)
 

@@ -118,7 +118,15 @@ import(module_path/module1)
 
 > One thing to note, though — any module that is in both of these graphs is going to share a module instance. This is because the loader caches module instances. For each module in a particular global scope, there will only be one module instance.
 
+在為了載入特定模組A而產生出模組依賴關係圖中的任意模組，會是共享著特定模組A的對應模組
+
+當然可以設計成任意模組只要進行載入、解析、實例化、解析/確定就能夠更新module map，然而比如説模組A依賴於模組B，所以模組B因而被實例化和被存在module map，若下次單獨載入模組B或者其他模組C也依賴模組B的話，可以透過module map來找對應原本的實例內容，但這樣會出現一種異常現象 - **單獨載入B的情況和其他模組C依賴著模組B會共享著模組B的實例內容，而可從模組層級下去修改共同擁有的模組B之結果，換言之，產出不明確且不合理的coupling 關係**，理論上來說，每個情況所載入的模組B都不會彼此影響，都是獨立的，這是為了讓使用的人都能享有相同的服務，而非是不如預期的服務。 
+
+對於特定全域作用域下，只會有模組實例
+
 > This means less work for the engine. For example, it means that the module file will only be fetched once even if multiple modules depend on it. (That’s one reason to cache modules. We’ll see another in the evaluation section.)
+
+module map 的出現是為了減輕引擎的處理壓力，
 
 > The loader manages this cache using something called a [module map](https://html.spec.whatwg.org/multipage/webappapis.html#module-map). Each global keeps track of its modules in a separate module map.
 
@@ -130,6 +138,8 @@ import(module_path/module1)
 [![The loader figure filling in a Module Map chart, with the URL of the main module on the left and the word fetching being filled in on the right](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map-500x170.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map.png)
 
 > What happens if another module depends on the same file? The loader will look up each URL in the module map. If it sees `fetching` in there, it will just move on to the next URL.
+
+
 
 > But the module map doesn’t just keep track of what files are being fetched. The module map also serves as a cache for the modules, as we’ll see next.
 
