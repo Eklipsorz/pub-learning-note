@@ -39,6 +39,7 @@ JS 引擎會為每一個模組實例建立一個module environment record，來�
 
 > This means that if the exporting module changes that value later, the importing module doesn’t see that change.
 
+commonJS 模組A的實例化也是存放在記憶體，當需求方想要載入commonJS 模組A時，就複製存放記憶體內的實例並將副本放置另一個記憶體區塊任由需求方去存取，這時會有兩個記憶體分別存放著commonJS模組A和commonJS模組A副本
 
 ![](https://hacks.mozilla.org/files/2018/03/31_cjs_variable-768x174.png)
 
