@@ -190,7 +190,7 @@ function sayBye() {
 
 ## 複習
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，請先用最傻的方案 (提示：要什麼屬性就用什麼屬性)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png) ->->-> `person的sayHi和sayBye函式宣告會是要name、age、phone這三種person會有屬性，實際呼叫的話，就直接先獲取指定person物件，然後按照person.name、person.age、person.phone來呼叫`
-<!--SR:!2022-07-29,27,250-->
+<!--SR:!2022-10-08,71,250-->
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件屬性來宣告的話，會有什麼樣的缺點？(提示：所需的屬性數越多和呼叫形式很累贅) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method1_lgbab7.png)->->-> `-   需要的參數是person物件下的特定屬性，卻要跟著實際屬性來填入，這樣若要N個屬性，那麼呼叫的參數就要載入N個 -   對於人類開發而言，這種呼叫形式是很累贅的，因為.前面就有person，參數卻還要填入person物件 `
@@ -198,7 +198,7 @@ function sayBye() {
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，能否縮減至一個參數的函式，而不是要N個屬性就給N個參數 (提示：object.name object.age)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png) ->->-> `person的sayHi和sayBye函式宣告為一個物件，稱作為self參數名稱，當要呼叫person.sayHi和person.sayBye時就載入指定要存取的物件，比如person.sayHi(person1)，然後由函式本身自己向物件索要屬性來要，而不是從參數那邊指定要哪個屬性。`
-<!--SR:!2022-07-29,27,250-->
+<!--SR:!2022-10-07,70,250-->
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，並由函式本身自己向物件索要想要的屬性，這和單純要N個屬性就載入N個參數的形式相比，有什麼樣改善？(提示：所需的屬性數) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   函式所需的參數再也不會依據物件上的屬性數量來決定，比如說物件上的屬性數量是N個，那麼函式所需的參數最多會是N個(考量實際運用)。-   依據想要的person物件來填入，所以參數量只會是一個`

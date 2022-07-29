@@ -102,7 +102,7 @@ coupling
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B`
 <!--SR:!2022-07-29,8,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `當A去存取B時有可能改變著B的預期結果，而B可能會因預期結果的改變而變更存取 A的方式，使B可能使用錯誤的存取方式來改變著A，甚至A下次執行時存取B會使情況更加惡化。`
-<!--SR:!2022-07-29,8,250-->
+<!--SR:!2022-08-20,22,250-->
 
 #🧠 請問每個模組都由什麼什麼東西來組成？會不會這些基本組成單位就會有coupling問題(提示：程式區塊) ->->-> `由於每一個模組會由許多程式區塊所組成，每個程式區塊都有可能使用另一個模組下的程式區塊或者同一個模組下的程式區塊`
 <!--SR:!2022-07-31,10,250-->
@@ -114,7 +114,7 @@ coupling
 <!--SR:!2022-07-30,9,250-->
 
 #🧠 試著說明第三個下的ABCD模組的coupling情況，說明連接/使用關係就好![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在且Coupling 程度較高：若模組間的彼此使用頻繁，就增加改變模組預期結果的可能性，如同模組A和模組C原本就只有A使用C、C和A，但隨著後續開發而使得C多使用A的程式區塊，而這使得A和C之間的Coupling 程度增加`
-<!--SR:!2022-07-29,8,250-->
+<!--SR:!2022-08-21,23,250-->
 
 
 #🧠 coupling 程度高的話，可以稱作為什麼？ ->->-> `tight coupling (緊密耦合)`
@@ -129,7 +129,7 @@ coupling
 
 
 #🧠 上圖：假設B的B1想要使用A的A1的話，那麼coupling 會如何影響模組？ (請用較好、平均狀況、較糟的情況下來說明)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658068933/blog/SoftwareEngineering/tight-coupling-example_iumhzq.png) ->->-> `假設對B的B1想要使用A的A1的話，那麼較好的情況就是只會影響模組A，最糟糕的話，是A也使用B的B1，那麼就會可能以不如預期的方式來使用B1並可能改變B`
-<!--SR:!2022-07-29,8,250-->
+<!--SR:!2022-08-19,21,250-->
 
 
 #🧠 下圖：假設B的B1想要使用A的A1的話，那麼coupling 會如何影響模組？(請用較好、平均狀況、較糟的情況下來說明) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658068933/blog/SoftwareEngineering/tight-coupling-example_iumhzq.png) ->->-> `假設對B的B1想要使用A的A1的話，很有可能因為使用方向的關係而把影響範疇延伸至都會影響兩個模組，至少可能影響的機率會比上圖來得高，如B1改變A1，而A1改變A2，接著A2改變B5，B5改變著B4，後面以此類推。`
