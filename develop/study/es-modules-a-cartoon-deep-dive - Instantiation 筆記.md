@@ -45,7 +45,11 @@ commonJS 模組A的實例化也是存放在記憶體，當需求方想要載入c
 
 > In contrast, ES modules use something called live bindings. Both modules point to the same location in memory. This means that when the exporting module changes a value, that change will show up in the importing module.
 
+live bindings概念上會是輸出模組的輸出識別字和引用模組的引用識別字都各自指向相同的記憶體區塊，當負責輸出的模組改變記憶體區塊的內容，引用模組就會馬上看到其記憶體內的內容
+
 > Modules that export values can change those values at any time, but importing modules cannot change the values of their imports. That being said, if a module imports an object, it can change property values that are on that object.
+
+live： to be or continue alive，
 
 實例化：
 1. 先透過Depth First Post-Order Travesal來從模組依賴關係圖的起始點轉移至圖的底部，該底部的模組會是沒有使用任何依賴的模組，試圖先實例化沒有任何依賴的模組群組A，接著實例化依賴著模組群組A的模組群組B，然後一直往上實例，直到遍歷完所有模組並做完所有模組的實例
