@@ -31,9 +31,9 @@
 重點：
 - script 標籤沒添加任何強調使用asynchronous loading的語法，就以synchronous loading來載入，而被載入的內容會是script所指定的代碼或者檔案。
 - script 標籤上若添加defer或者async就即為使用asynchronous loading，而被載入的內容會是script所指定的代碼或者檔案。
-	- defer ：JS檔案或者JS Code的加載任務仍會與渲染任務同時間一起進行，但對應的JS執行必須要等所有DOM元素解析完成才開始執行
-	- async ：JS檔案或者JS Code的加載任務仍會與渲染任務同時間一起進行，但一旦JS檔案載入完就會立即開始執行JS
-	- 無添加defer或者async：JS檔案或者JS Code的加載任務必須等待前面任務做完，才能執行載入，而開始做載入的期間，後頭的渲染任務必須等待載入任務完成才能進行渲染
+	- defer ：JS檔案或者JS Code的加載任務將會與前面解析網頁的任務同時間一起進行，但對應的JS執行必須要等所有DOM元素解析完成才開始執行
+	- async ：JS檔案或者JS Code的加載任務仍會與前面解析網頁的任務同時間一起進行，但一旦JS檔案載入完就會立即開始執行JS
+	- 無添加defer或者async：JS檔案或者JS Code的加載任務必須等待前面解析網頁的任務做完，才能執行載入，而開始做載入的期間，後頭的渲染任務必須等待載入任務完成才能進行渲染
 
 ### asynchronous loading 命名緣由
 
@@ -53,10 +53,10 @@ synchronous loading 是指任務內容為載入資訊至特定地方的任務，
 <!--SR:!2022-08-08,10,250-->
 `
 
-#🧠 在HTML檔案中，添加defer的script，假設script是執行JS ，那麼會是如何處理？->->-> `JS檔案或者JS Code的加載任務仍會與渲染任務同時間一起進行，但對應的JS執行必須要等所有DOM元素解析完成才開始執行`
+#🧠 在HTML檔案中，添加defer的script，假設script是執行JS ，那麼會是如何處理？->->-> `JS檔案或者JS Code的加載任務會與前面解析網頁的任務同時間一起進行，但對應的JS執行必須要等所有DOM元素解析完成才開始執行`
 <!--SR:!2022-08-05,7,250-->
 
-#🧠 在HTML檔案中，添加async的script，假設script是執行JS ，那麼會是如何處理？ ->->-> `JS檔案或者JS Code的加載任務仍會與渲染任務同時間一起進行，但一旦JS檔案載入完就會立即開始執行JS`
+#🧠 在HTML檔案中，添加async的script，假設script是執行JS ，那麼會是如何處理？ ->->-> `JS檔案或者JS Code的加載任務會與前面解析網頁的任務同時間一起進行，但一旦JS檔案載入完就會立即開始執行JS`
 <!--SR:!2022-08-07,9,250-->
 
 #🧠 在HTML檔案中，無添加任何東西的script、添加defer的script、添加async的script，哪一個是synchronous loading? 哪一個是asynchronous loading?  ->->-> `無添加任何東西的script 是 synchronous loading、添加defer的script是asynchronous loading、添加async的script是asynchronous loading`
