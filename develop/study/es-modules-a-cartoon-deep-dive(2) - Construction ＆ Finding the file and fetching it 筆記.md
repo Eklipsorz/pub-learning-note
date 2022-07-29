@@ -118,20 +118,11 @@ import(module_path/module1)
 
 > One thing to note, though — any module that is in both of these graphs is going to share a module instance. This is because the loader caches module instances. For each module in a particular global scope, there will only be one module instance.
 
-在為了載入特定模組A而產生出模組依賴關係圖中的任意模組，會是共享著特定模組A的對應模組
-
-當然可以設計成任意模組只要進行載入、解析、實例化、解析/確定就能夠更新module map，然而比如説模組A依賴於模組B，所以模組B因而被實例化和被存在module map，若下次單獨載入模組B或者其他模組C也依賴模組B的話，可以透過module map來找對應原本的實例內容，但這樣會出現一種異常現象 - **單獨載入B的情況和其他模組C依賴著模組B會共享著模組B的實例內容，而可從模組層級下去修改共同擁有的模組B之結果，換言之，產出不明確且不合理的coupling 關係**，理論上來說，每個情況所載入的模組B都不會彼此影響，都是獨立的，這是為了讓使用的人都能享有相同的服務，而非是不如預期的服務。 
-
-對於特定全域作用域下，只會有模組實例
-
 > This means less work for the engine. For example, it means that the module file will only be fetched once even if multiple modules depend on it. (That’s one reason to cache modules. We’ll see another in the evaluation section.)
-
-module map 的出現是為了減輕引擎的處理壓力，
 
 > The loader manages this cache using something called a [module map](https://html.spec.whatwg.org/multipage/webappapis.html#module-map). Each global keeps track of its modules in a separate module map.
 
 > When the loader goes to fetch a URL, it puts that URL in the module map and makes a note that it’s currently fetching the file. Then it will send out the request and move on to start fetching the next file.
-
 
 
 
@@ -140,21 +131,15 @@ module map 的出現是為了減輕引擎的處理壓力，
 > What happens if another module depends on the same file? The loader will look up each URL in the module map. If it sees `fetching` in there, it will just move on to the next URL.
 
 
+系統要開始載入模組A而先從網路獲取模組檔案A時，會從Module Map檢查看看是否存在模組檔案A所在URL，若沒有的話，就設定對應的URL來表示模組A，並填入狀態為fetching，來表示該模組A正在被獲取中；反之，若有的話，就改處理另一個模組的載入
+
+接著其他模組想要載入模組A的話，就會先從Module Map檢查看看是否存放模組A所在的URL，在這裡是有，所以其他模組會改處理另一批模組的載入工作。
 
 > But the module map doesn’t just keep track of what files are being fetched. The module map also serves as a cache for the modules, as we’ll see next.
 
-### module map
-[[@htmlspecHTMLStandard]] 所描述：
-> A module map is a map keyed by tuples consisting of a URL record and a string. The URL record is the request URL at which the module was fetched, and the string indicates the type of the module (e.g. "javascript"). 
-> 
-> The module map's values are either a module script, null (used to represent failed fetches), or a placeholder value "fetching". Module maps are used to ensure that imported module scripts are only fetched, parsed, and evaluated once per Document or worker.
-
-重點：
-- module map 由多個 key-value pairs所構成
-- key 為 URL record 和 string：URL record  是請求索要模組的目標主機位址，string則是標明模組的類型，如javascript
-- value 為 module script(表達模組獲取成功)、null(表達模組獲取失敗)、fetchning(正在獲取模組)
-- module map 是用來確定文件上所需要引入的模組之載入狀況：是否獲取？是否被解析？是否已經確定模組內容。
-
+module map 主要的用途為：
+- 顯示每個正在被載入的模組之狀態
+- 若有被實例化，狀態會含有對應模組實例在記憶體中的位置，以此作為緩存實例的作用
 
 
 ---
@@ -164,6 +149,7 @@ Tags:
 Links:
 [[es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記]]
 [[es-modules-a-cartoon-deep-dive - Instantiation 筆記]]
+[[es-modules-a-cartoon-deep-dive  - module map]]
 References:
 [[@htmlspecHTMLStandard]]
 [[@wikidataEvaluationDisambiguation2022]]
