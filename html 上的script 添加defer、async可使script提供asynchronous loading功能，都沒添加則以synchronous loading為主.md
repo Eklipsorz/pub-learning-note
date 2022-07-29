@@ -38,6 +38,8 @@
 	- 無添加defer或者async：JS檔案或者JS Code的加載任務必須等待前面解析網頁的任務做完，才能執行載入，而開始做載入的期間，後頭的渲染任務必須等待載入任務完成才能進行渲染
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659094553/blog/html/script-tag_lup7vy.png)
 
+
+
 ### asynchronous loading 命名緣由
 
 asynchronous loading 是指任務內容為載入資訊至特定地方的任務，若每個載入資訊的任務不需要等待前任務完成就能執行任務的話，那麼就會是asynchronous loading
