@@ -99,6 +99,8 @@ Status: #🌱
 Tags: 
 [[HTML]] - [[JavaScript]]
 Links:
+[[parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染]]
+[[html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主]]
 References:
 [[@JavaScriptScope]]
 [[@HTMLScriptTag]]
