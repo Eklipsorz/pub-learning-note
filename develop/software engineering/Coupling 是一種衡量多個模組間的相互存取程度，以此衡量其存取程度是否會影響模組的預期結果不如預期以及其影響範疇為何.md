@@ -81,6 +81,7 @@ coupling
 <!--SR:!2022-07-31,10,250-->
 
 #🧠 電腦科學裡的coupling  是什麼？ 其目的做啥->->-> `Coupling 是一種衡量多個模組下的程式區塊之間的連接(呼叫/使用的)密集程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何`
+<!--SR:!2022-08-01,3,250-->
 
 #🧠 電腦科學裡的coupling：依賴會是什麼意思 ->->-> `存取、使用`
 <!--SR:!2022-07-31,10,250-->
@@ -100,7 +101,7 @@ coupling
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png) ->->-> `當B去存取A時有可能改變著A的預期結果，因B有可能改變著決定結果的因素，而因素就在A裡頭`
 <!--SR:!2022-08-17,20,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B`
-<!--SR:!2022-07-29,8,250-->
+<!--SR:!2022-08-20,22,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `當A去存取B時有可能改變著B的預期結果，而B可能會因預期結果的改變而變更存取 A的方式，使B可能使用錯誤的存取方式來改變著A，甚至A下次執行時存取B會使情況更加惡化。`
 <!--SR:!2022-08-20,22,250-->
 
