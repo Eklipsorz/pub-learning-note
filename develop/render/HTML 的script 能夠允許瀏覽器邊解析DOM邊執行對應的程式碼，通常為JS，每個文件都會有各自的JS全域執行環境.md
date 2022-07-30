@@ -80,7 +80,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 
 #🧠 假設有兩個HTML檔案，裡面有各自JS腳本程式碼，請問他們的全域變數會是共享的？ ->->-> `並不會，因為每個HTML檔案都會被解析成各自不同的window物件所構成的dom tree，因此全域變數會是各自享有，而非共享`
-<!--SR:!2022-07-30,8,250-->
+<!--SR:!2022-08-22,23,250-->
 
 #🧠 若瀏覽器可允許使用者開啟多個標籤頁，每個標籤頁都對應一個畫面，那麼對於window物件和javascript全域環境來說，是代表什麼？ ->->-> `每個標籤頁都對應不同的window物件，那麼彼此間的JavaScript全域環境並不會共享`
 <!--SR:!2022-08-14,17,250-->

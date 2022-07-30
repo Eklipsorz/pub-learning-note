@@ -75,7 +75,7 @@ coupling
 
 ## 複習
 #🧠 Coupling 原意是什麼？可以先描述couple，在來描述coupling ->->-> `couple 為動詞，主要是描述組合/連接，將事物A組合/連接至另一個事物B，coupling 為 動名詞，主要描述著組合/連接的行爲或者過程`
-<!--SR:!2022-07-30,9,250-->
+<!--SR:!2022-08-05,6,230-->
 
 #🧠 電腦科學裡的多個程式模組只要開始使用著對方模組，就會有coupling情形以及coupling帶來的缺失，為什麼？ ->->-> `因為只要有使用，就代表著程式模組單方面與另一個程式模組連接，而這樣就有可能因為使用而改變對方模組，進而讓對方模組在未來的預期結果不如預期`
 <!--SR:!2022-07-31,10,250-->
@@ -94,7 +94,7 @@ coupling
 <!--SR:!2022-07-31,10,250-->
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/A-to-B-Coupling_uvdngb.png) ->->-> `，當A去存取B時有可能改變著B的預期結果，因A有可能改變著決定結果的因素，而因素就在B裡頭`
-<!--SR:!2022-07-30,9,250-->
+<!--SR:!2022-08-23,24,250-->
 
 #🧠  電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png)->->-> `模組B 單方面存取 模組A 意旨為 模組B 單方面依賴 模組A`
 <!--SR:!2022-07-30,9,250-->
@@ -109,10 +109,10 @@ coupling
 <!--SR:!2022-07-31,10,250-->
 
 #🧠 試著說明第一個下的ABCD模組的coupling情況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png)->->-> `Coupling 就不存在：若所有模組下的所有程式區塊都沒使用其他模組下的任一程式區塊`
-<!--SR:!2022-07-30,9,250-->
+<!--SR:!2022-08-25,26,250-->
 
 #🧠 試著說明第二個下的ABCD模組的coupling情況，說明連接/使用關係就好 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在：若只要模組的程式區塊去存取另一個模組的任一區塊`
-<!--SR:!2022-07-30,9,250-->
+<!--SR:!2022-08-25,26,250-->
 
 #🧠 試著說明第三個下的ABCD模組的coupling情況，說明連接/使用關係就好![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在且Coupling 程度較高：若模組間的彼此使用頻繁，就增加改變模組預期結果的可能性，如同模組A和模組C原本就只有A使用C、C和A，但隨著後續開發而使得C多使用A的程式區塊，而這使得A和C之間的Coupling 程度增加`
 <!--SR:!2022-08-21,23,250-->

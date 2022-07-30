@@ -202,14 +202,14 @@ function sayBye() {
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，並由函式本身自己向物件索要想要的屬性，這和單純要N個屬性就載入N個參數的形式相比，有什麼樣改善？(提示：所需的屬性數) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   函式所需的參數再也不會依據物件上的屬性數量來決定，比如說物件上的屬性數量是N個，那麼函式所需的參數最多會是N個(考量實際運用)。-   依據想要的person物件來填入，所以參數量只會是一個`
-<!--SR:!2022-07-30,28,250-->
+<!--SR:!2022-10-12,74,250-->
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，還存在著什麼樣的缺點 （提示：呼叫形式好像很多餘) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   對於人類開發而言，這種呼叫形式是很累贅的，因為.前面就有person，參數卻還要填入person物件`
 <!--SR:!2022-10-03,68,250-->
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，能否不用參數就能索要？ (提示：this)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png)  ->->-> `將原本語法形式改造成不需要參數的語法形式，使其讓人類變得很容易理解和使用，比如依然採用將想要存取的物件當作參數來載入但不顯示，這樣每次呼叫下的方法都不會呈現出需要多一個物件參數，但在執行函式時會以一個隱藏變數this來表示對應被隱藏的參數物件，換言之，this等同於呼叫該方法的物件，或者說要存取的物件被載入特定物件的方法來處理`
-<!--SR:!2022-07-30,28,250-->
+<!--SR:!2022-10-11,73,250-->
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，最佳實踐有哪兩個 (提示：不用參數和用一個參數)？python 會用哪個？ js會用哪個  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png)  ->->-> `-   方法1： 依然採用將想要存取的物件當作參數來載入並且顯示，這樣每次呼叫物件下的方法都會多出一個物件參數-   方法2： 依然採用將想要存取的物件當作參數來載入但不顯示，這樣每次呼叫下的方法都不會呈現出需要多一個物件參數，但在執行函式時會以一個隱藏變數this來表示對應被隱藏的參數物件，換言之，this等同於呼叫該方法的物件，或者說要存取的物件被載入特定物件的方法來處理，python 會用前者；js會用後者`
 <!--SR:!2022-09-27,63,250-->
