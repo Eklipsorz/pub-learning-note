@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive - Instantiation 筆記.md",
+            "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive - Instantiation 筆記.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,14 +95,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2de6c96d46341ae8",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
-    "develop/study/es-modules-a-cartoon-deep-dive - Instantiation 筆記.md",
     "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
     "develop/render/parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染.md",
     "MOC/Express.js MOC.md",
