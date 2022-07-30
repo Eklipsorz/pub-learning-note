@@ -182,7 +182,7 @@ function arraySum(arr) {
 
 
 
-#🧠 JavaScript 加入 JIT時，使用哪種辦法來應用？->->-> `JavaScript 會依據每個程式碼的執行頻率來進一步將執行頻率較高的程式碼編譯成更為效率的程式碼`
+#🧠 JavaScript 加入 JIT時，使用哪種辦法來應用JIT？->->-> `JavaScript 會依據每個程式碼的執行頻率來進一步將執行頻率較高的程式碼編譯成更為效率的程式碼`
 <!--SR:!2022-08-12,13,248-->
 
 
@@ -286,7 +286,6 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2022-08-01,6,230-->
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話) ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
 <!--SR:!2022-08-12,13,248-->
