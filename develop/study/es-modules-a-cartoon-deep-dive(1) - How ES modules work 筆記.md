@@ -108,5 +108,7 @@ Tags:
 Links:
 [[es-modules-a-cartoon-deep-dive - Instantiation 筆記]]
 [[es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記]]
+[[es-modules-a-cartoon-deep-dive(3) - Parsing 筆記]]
+[[es-modules-a-cartoon-deep-dive  - 用語介紹]]
 References:
 [[@linclarkESModulesCartoon]]

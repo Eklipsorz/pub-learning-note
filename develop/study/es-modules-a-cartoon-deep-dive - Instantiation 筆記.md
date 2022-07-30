@@ -49,12 +49,7 @@ live bindings概念上會是輸出模組的輸出識別字和引用模組的引�
 
 > Modules that export values can change those values at any time, but importing modules cannot change the values of their imports. That being said, if a module imports an object, it can change property values that are on that object.
 
-live： 當它發生時就可以看到、紀錄、廣播
-> broadcast, recorded, or seen while it is happening
 
-
-bindings：bind表示用某事物綑綁另一群事物，在這裡泛指用識別字綁定對應實體物件這項動作，binding則是表示關係
-live bindings：表示當發生變動時，可以馬上觀察出變化的bindings
 
 實例化：
 1. 先透過Depth First Post-Order Travesal來從模組依賴關係圖的起始點轉移至圖的底部，該底部的模組會是沒有使用任何依賴的模組，試圖先實例化沒有任何依賴的模組群組A，接著實例化依賴著模組群組A的模組群組B，然後一直往上實例，直到遍歷完所有模組並做完所有模組的實例
