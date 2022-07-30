@@ -47,7 +47,9 @@
 
 > Supporting these cycles is a big rationale behind the design of ES modules. It’s this three-phase design that makes them possible.
 
-### 
+### cyclic dependency detect & solve
+
+
 
 ## 複習
 
