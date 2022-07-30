@@ -69,7 +69,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 ## 複習
 #🧠 當瀏覽器讀取到JS時，瀏覽器會如何做？ ->->-> `當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言`
-<!--SR:!2022-07-30,8,250-->
+<!--SR:!2022-08-22,23,250-->
 
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？ ->->-> `其JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document`
@@ -86,7 +86,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 <!--SR:!2022-08-14,17,250-->
 
 #🧠 同一個HTML檔案中，JavaScript有哪些寫法？ ->->-> `<script src="javascript.js"></script> 和 <script>指令</script>`
-<!--SR:!2022-07-30,8,250-->
+<!--SR:!2022-08-19,20,250-->
 
 
 #🧠  HTML 檔案下會有script標籤是做什麼？ ->->-> `來定義邊解析HTML時可以邊額外執行的程式碼或者可存取的資料，其程式碼會是以瀏覽器能夠解析並執行的為主，比如JavaScript`

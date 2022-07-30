@@ -97,7 +97,7 @@ coupling
 <!--SR:!2022-08-23,24,250-->
 
 #🧠  電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png)->->-> `模組B 單方面存取 模組A 意旨為 模組B 單方面依賴 模組A`
-<!--SR:!2022-07-30,9,250-->
+<!--SR:!2022-08-23,24,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png) ->->-> `當B去存取A時有可能改變著A的預期結果，因B有可能改變著決定結果的因素，而因素就在A裡頭`
 <!--SR:!2022-08-17,20,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B`
@@ -126,7 +126,7 @@ coupling
 
 
 #🧠 緊密耦合的系統在開發階段有以下的缺點 ->->-> ` 1.  一個模組的修改會產生漣漪效應，其他模組也需隨之修改。 2. 由於模組之間的相依性，模組的組合會需要更多的精力及時間。 3. 由於一個模組有許多的相依模組，模組的可復用性低。`
-<!--SR:!2022-07-30,9,250-->
+<!--SR:!2022-08-04,5,230-->
 
 
 #🧠 上圖：假設B的B1想要使用A的A1的話，那麼coupling 會如何影響模組？ (請用較好、平均狀況、較糟的情況下來說明)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658068933/blog/SoftwareEngineering/tight-coupling-example_iumhzq.png) ->->-> `假設對B的B1想要使用A的A1的話，那麼較好的情況就是只會影響模組A，最糟糕的話，是A也使用B的B1，那麼就會可能以不如預期的方式來使用B1並可能改變B`

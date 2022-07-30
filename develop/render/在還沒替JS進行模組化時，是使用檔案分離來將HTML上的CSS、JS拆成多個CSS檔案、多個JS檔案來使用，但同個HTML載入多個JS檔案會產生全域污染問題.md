@@ -72,7 +72,7 @@
 
 
 #🧠 網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，問題發生在同一個DOM Document調用多個JS檔案，為什麼？ ->->-> `由於1個DOM Document為1個Window 物件所構成的DOM tree，而JS的全域環境是依照Window物件來決定，所以每個DOM Document 為 每個獨立的JS全域環境，且沒有任何模組標準，接著使用同一個DOM Document 來載入多個JS檔案執行，但這些JS上的程式碼會直接捏貼至它們在DOM Document 被呼叫的地方，執行起來並非會將每個檔案視為每個全域環境來獨立執行，而是它們所依附的目前Window節點所構成之全域環境上執行，換言之，他們全都在同一個全域環境下執行`
-<!--SR:!2022-07-30,8,250-->
+<!--SR:!2022-08-21,22,250-->
 
 
 #🧠 假設有三個JS檔案，分別叫做xxx1、xxx2、xxx3，而它們對應的程式碼分別為jscode1、jscode2、jscode3，這些JS檔案會被一個DOM Document 給載入，請問實際上他們是如何被瀏覽器執行的？能否畫個圖表示 ->->-> `實際執行會是以捏貼後為主，這樣等同在同一個全域環境下執行 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658155529/blog/javascript/html/before-js-module_quixaq.png)`
