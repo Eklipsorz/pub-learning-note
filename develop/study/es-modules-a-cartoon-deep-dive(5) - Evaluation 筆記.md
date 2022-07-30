@@ -46,6 +46,9 @@
 > If the export were handled using live bindings, the counter module would see the correct value eventually. By the time the timeout runs, `main.js`’s evaluation would have completed and filled in the value.
 
 > Supporting these cycles is a big rationale behind the design of ES modules. It’s this three-phase design that makes them possible.
+
+### 
+
 ## 複習
 
 ---
