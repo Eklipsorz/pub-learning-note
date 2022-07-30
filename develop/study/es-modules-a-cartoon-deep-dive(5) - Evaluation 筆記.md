@@ -47,17 +47,10 @@
 
 > Supporting these cycles is a big rationale behind the design of ES modules. It’s this three-phase design that makes them possible.
 
+
+
 ### cyclic dependency detect & solve
-
-[[@DetectCycleDirected2012]]
-
-當模組依賴關係圖上發生環狀依賴的話
-- 背景：由於關係圖會是依據Depth First Post-Order Traversal來找到圖中最底部的模組-沒依賴其他模組的模組來優先建立對應實例/執行模組內容來賦予實際值給該模組所要輸出的內容
-- 問題：環狀依賴會使算法無限循環去遍歷而無法正確找到最底部的模組-沒依賴其他模組的模組
-[![A commonJS module, with a variable being exported from main.js after a require statement to counter.js, which depends on that import](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/41_cyclic_graph-500x281.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/41_cyclic_graph.png)
-- 解法：
-	- 先使用DFS為主的環狀依賴偵測算法
-	- 若算法得出有循環，就以最後一個從未遍歷的模組作為還最後一個模組
+[[環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構]]
 
 ## 複習
 
@@ -71,6 +64,7 @@ Links:
 [[es-modules-a-cartoon-deep-dive(3) - Parsing 筆記]]
 [[es-modules-a-cartoon-deep-dive  - 用語介紹]]
 [[es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記]]
+[[環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構]]
 References:
 [[@linclarkESModulesCartoon]]
 [[@DetectCycleDirected2012]]
