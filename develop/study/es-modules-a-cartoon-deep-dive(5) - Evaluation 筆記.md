@@ -7,11 +7,19 @@
 > 
 > Besides just filling in these boxes in memory, evaluating the code can also trigger side effects. For example, a module might make a call to a server.
 
+
+
 [![A module will code outside of functions, labeled top level code](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/40_top_level_code-500x146.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/40_top_level_code.png)
 
 > Because of the potential for side effects, you only want to evaluate the module once. As opposed to the linking that happens in instantiation, which can be done multiple times with exactly the same result, evaluation can have different results depending on how many times you do it.
 
 > This is one reason to have the module map. The module map caches the module by canonical URL so that there is only one module record for each module. That ensures each module is only executed once. Just as with instantiation, this is done as a depth first post-order traversal.
+
+最後一步：透過執行模組來將實際值分配至識別字對應的記憶體空間，流程是當第一個需求方(需要該模組的模組)已經替模組實例化時，就會執行evaluation這步驟，但為了確保後續多個需求方可能由於依賴關係圖而重複實例化＋evaluation，會藉由module map來讓多個需求方的情況下，每個需求方只會拿到對應模組的同一個實例，具體是：當第一個需求方(需要該模組的模組)已經替模組實例化時，還有其他需求方索要同一個模組時
+- 先透過模組(URL)來查看其模組在module map的狀態
+- 若狀態是module record，就從module record獲取對應模組實例的module environment record，該record會告知對應實例所要輸出的內容之記憶體位置
+
+
 
 > What about those cycles that we talked about before?
 > 
@@ -39,7 +47,6 @@
 
 > Supporting these cycles is a big rationale behind the design of ES modules. It’s this three-phase design that makes them possible.
 ## 複習
-#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
