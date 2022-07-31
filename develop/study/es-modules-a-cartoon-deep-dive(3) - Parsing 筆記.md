@@ -8,7 +8,7 @@
 
 > Once the module record is created, it is placed in the module map. This means that whenever it’s requested from here on out, the loader can pull it from that map.
 
-一旦瀏覽器獲取到對應模組檔案就會進行解析，具體就是就會將它轉換成模組紀錄(module record)
+一旦瀏覽器獲取到對應模組檔案就會進行解析，具體就是就會將它轉換成模組紀錄(module record)，並更新對應模組在module map上的狀態，其狀態為對應模組的module record
 
 [![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map.png)
 
@@ -49,6 +49,10 @@
 ## 複習
 
 #🧠 ES module：當獲取到檔案時，會如何解析檔案？ ->->-> `當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的目標形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析`
+
+#🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
+
+#🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
 
 #🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
 

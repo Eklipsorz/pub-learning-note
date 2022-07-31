@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "01ec47312da44e7e",
+        "id": "494ea50b5e577313",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -16,7 +16,7 @@
         }
       },
       {
-        "id": "555688bd5259b569",
+        "id": "32ea13cf70697b8b",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "01ec47312da44e7e",
+  "active": "32ea13cf70697b8b",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
-    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "CommonJS.md",
     "Untitled 2.md",
-    "Untitled 1.md",
-    "Untitled.md"
+    "Untitled 1.md"
   ]
 }
