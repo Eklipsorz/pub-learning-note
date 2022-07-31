@@ -15,7 +15,7 @@
 
 > This is one reason to have the module map. The module map caches the module by canonical URL so that there is only one module record for each module. That ensures each module is only executed once. Just as with instantiation, this is done as a depth first post-order traversal.
 
-最後一步：透過執行模組來將實際值分配至識別字對應的記憶體空間，流程是當第一個需求方(需要該模組的模組)已經替模組實例化時，就會執行evaluation這步驟，但為了確保後續多個需求方可能由於依賴關係圖而重複實例化＋evaluation，會藉由module map來讓多個需求方的情況下，每個需求方只會拿到對應模組的同一個實例，具體是：當第一個需求方(需要該模組的模組)已經替模組實例化時，還有其他需求方索要同一個模組時
+最後一步：透過執行模組的top-level code來將實際值分配至識別字對應的記憶體空間，流程是當第一個需求方(需要該模組的模組)已經替模組實例化時，就會執行evaluation這步驟，但為了確保後續多個需求方可能由於依賴關係圖而重複實例化＋evaluation，會藉由module map來讓多個需求方的情況下，每個需求方只會拿到對應模組的同一個實例，具體是：當第一個需求方(需要該模組的模組)已經替模組實例化時，還有其他需求方索要同一個模組時
 - 先透過模組(URL)來查看其模組在module map的狀態
 - 若狀態是module record，就從module record獲取對應模組實例的module environment record，該record會告知對應實例所要輸出的內容之記憶體位置
 
@@ -52,7 +52,16 @@
 ### cyclic dependency detect & solve
 [[環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構]]
 
+若以ES Module的實例化＋evaluation來說的話：
+- 不斷繞著環狀結構遍歷，直到超過時間，超過時間就結束環狀遍歷
+- 停止的時候，環狀結構的每個模組都指向到識別字對應的記憶體區塊
 ## 複習
+
+#🧠 ES module：evaluation 是什麼？ ->->-> `透過執行模組的top-level code來將實際值分配至識別字對應的記憶體空間`
+
+#🧠  ES module：如何解決以模組角度來解決cyclic dependency ？ ->->-> `不斷繞著環狀結構遍歷，直到超過時間，超過時間就結束環狀遍歷，停止的時候，環狀結構的每個模組都指向到識別字對應的記憶體區塊`
+
+#🧠 ES Module：當有多個模組想要對同一個模組進行實例化＋evaluation的話，請問會如何解決？ ->->-> `只允許一個模組做實例化+evaluation，第一個需求方(需要該模組的模組)已經替模組實例化時，就會執行evaluation這步驟，但為了確保後續多個需求方可能由於依賴關係圖而重複實例化＋evaluation，會藉由module map來讓多個需求方的情況下，每個需求方只會拿到對應模組的同一個實例，具體是：當第一個需求方(需要該模組的模組)已經替模組實例化＋evaluation時，還有其他需求方索要同一個模組時 - 先透過模組(URL)來查看其模組在module map的狀態 - 若狀態是module record，就從module record獲取對應模組實例的module environment record，該record會告知對應實例所要輸出的內容之記憶體位置`
 
 ---
 Status: #🌱 
