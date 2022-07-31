@@ -4,26 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "c98f4e36c42ae9cc",
+        "id": "fe881b1398fae3e4",
         "type": "leaf",
-        "dimension": 50.1734906315059,
         "state": {
           "type": "markdown",
           "state": {
             "file": "CommonJS 模組如何載入模組.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "fe881b1398fae3e4",
-        "type": "leaf",
-        "dimension": 49.8265093684941,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "CommonJS 模組解析全文.md",
             "mode": "source",
             "source": false
           }
@@ -109,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c98f4e36c42ae9cc",
+  "active": "fe881b1398fae3e4",
   "lastOpenFiles": [
-    "CommonJS 模組解析全文.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+    "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
     "CommonJS 模組如何載入模組.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+    "CommonJS 模組解析全文.md",
     "CommonJS.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
-    "JavaScript.md",
-    "Untitled 2.md"
+    "JavaScript.md"
   ]
 }
