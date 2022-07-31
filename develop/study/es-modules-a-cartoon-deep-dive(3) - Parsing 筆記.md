@@ -31,7 +31,7 @@
 
 > Either way, the loader will determine whether to parse the file as a module or not. If it is a module and there are imports, it will then start the process over again until all of the files are fetched and parsed.
 
-當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析，在這裏，同種同內容檔案若各定義不同解析目標，其結果也都會是獨立且不同：
+當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的目標形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析，在這裏，同種同內容檔案若各定義不同解析目標，其結果也都會是獨立且不同：
 - 瀏覽器：
 	- 解析目標設定方法為在script 標籤上設定type="module"，這會告知瀏覽器指定script內容會以ES模組來解析，同時該script載入的模組也會以type="module"來定義
 - 伺服器：
@@ -48,33 +48,21 @@
 
 ## 複習
 
-#🧠 ES module：當獲取到檔案時，會如何解析檔案？ ->->-> `當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析`
+#🧠 ES module：當獲取到檔案時，會如何解析檔案？ ->->-> `當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的目標形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析`
 
-#🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的形式會是如何`
+#🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
 
-#🧠  ES Module： 兩個不同的parse goal(goal1、goal2)都運用同一種檔案的話，會如何解析 ->->-> `會依據parse goal定義的形式來將檔案轉換成另一個形式，並不會轉換成一樣。`
+#🧠  ES Module： 兩個不同的parse goal(goal1、goal2)都運用同一種檔案的話，會如何解析 ->->-> `會依據parse goal定義的形式來將檔案轉換成另一個形式，並不會因為同一種檔案轉換成一樣。`
 
-#🧠 ES Module：瀏覽器如何設定ES module 的 parse goal ->->-> `在script 標籤上設定type="module"`
+#🧠 ES Module：前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES Module，得用ES Module Spec 來處理 ->->-> `在script 標籤上設定type="module"`
 
-#🧠 瀏覽器如何設定ES module 的 parse goal ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
+#🧠 前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
 
-#🧠  ES Module：瀏覽器如何設定ES module 的 parse goal->->-> ``
+#🧠  ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，得用ES Module Spec 來處理->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
 
-#🧠 Question :: ->->-> ``
+#🧠 ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，若要載入模組依賴的模組，那麼如何以ES Module Spec 來處理 ->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
 
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-
+#🧠 ES Module：從獲取檔案，並解析對應檔案，請問最後解析結果是什麼？會按照模組依賴關係圖來排嗎？->->-> `每個獲取到的模組都轉換成模組紀錄，並未按照模組依賴關係圖來排`
 
 
 ---
