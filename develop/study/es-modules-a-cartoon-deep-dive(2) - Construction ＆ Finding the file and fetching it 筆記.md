@@ -203,6 +203,7 @@ Links:
 [[es-modules-a-cartoon-deep-dive(3) - Parsing 筆記]]
 [[es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記]]
 [[es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記]]
+[[es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記]]
 [[es-modules-a-cartoon-deep-dive  - module map]]
 References:
 [[@htmlspecHTMLStandard]]

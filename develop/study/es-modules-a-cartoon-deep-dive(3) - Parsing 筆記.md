@@ -31,7 +31,7 @@
 
 > Either way, the loader will determine whether to parse the file as a module or not. If it is a module and there are imports, it will then start the process over again until all of the files are fetched and parsed.
 
-當要被解析前，會於內容解析上指定解析目標來定義特定檔案被解析後的形式會是如何，接著確定之後，才會開始解析，在這裏，同種同內容檔案若各定義不同解析目標，其結果也都會是獨立且不同：
+當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析，在這裏，同種同內容檔案若各定義不同解析目標，其結果也都會是獨立且不同：
 - 瀏覽器：
 	- 解析目標設定方法為在script 標籤上設定type="module"，這會告知瀏覽器指定script內容會以ES模組來解析，同時該script載入的模組也會以type="module"來定義
 - 伺服器：
@@ -46,13 +46,44 @@
 > The next step is to instantiate this module and link all of the instances together.
 
 
+## 複習
+
+#🧠 ES module：當獲取到檔案時，會如何解析檔案？ ->->-> `當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析`
+
+#🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的形式會是如何`
+
+#🧠  ES Module： 兩個不同的parse goal(goal1、goal2)都運用同一種檔案的話，會如何解析 ->->-> `會依據parse goal定義的形式來將檔案轉換成另一個形式，並不會轉換成一樣。`
+
+#🧠 ES Module：瀏覽器如何設定ES module 的 parse goal ->->-> `在script 標籤上設定type="module"`
+
+#🧠 瀏覽器如何設定ES module 的 parse goal ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
+
+#🧠  ES Module：瀏覽器如何設定ES module 的 parse goal->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
 
 ---
 Status: #🌱 
 Tags:
 [[JavaScript]]
 Links:
-
+[[es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記]]
+[[es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記]]
 [[es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記]]
 [[es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記]]
 References:
