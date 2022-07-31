@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "494ea50b5e577313",
+        "id": "91db31cfb9c3ebb3",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "32ea13cf70697b8b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -81,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +90,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "32ea13cf70697b8b",
+  "active": "91db31cfb9c3ebb3",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md",
-    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
     "CommonJS.md",
     "Untitled 2.md",
     "Untitled 1.md"

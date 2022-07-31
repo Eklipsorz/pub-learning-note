@@ -8,7 +8,7 @@
 
 > Once the module record is created, it is placed in the module map. This means that whenever it’s requested from here on out, the loader can pull it from that map.
 
-一旦瀏覽器獲取到對應模組檔案就會進行解析，具體就是就會將它轉換成模組紀錄(module record)，並更新對應模組在module map上的狀態，其狀態為對應模組的module record
+一旦瀏覽器獲取到對應模組檔案就會進行解析，具體就是就會將它轉換成模組紀錄(module record)，並更新對應模組在module map上的狀態，其狀態為剛轉換過來的模組紀錄
 
 [![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map.png)
 
@@ -37,7 +37,9 @@
 - 伺服器：
 	- 解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs，就能告知伺服器端得以ES模組來解析，同時當JS模組檔案要載入的模組也是以mjs的話，就以ES模組來解析
 - 不論是瀏覽器或者伺服器，都會試著檢查每個要被載入的模組是否為ES模組，確定才會做後續的解析
-- 最後的結果是：每個獲取到的模組都轉換成模組紀錄，並未按照模組依賴關係圖來排
+- 最後的結果是：
+	- 每個獲取到的模組都轉換成模組紀錄，並未按照模組依賴關係圖來排
+	- 將模組紀錄放置至對應模組在module map上的狀態，其狀態為對應模組的module record 
 
 > And we’re done! At the end of the loading process, you’ve gone from having just an entry point file to having a bunch of module records.
 
@@ -50,7 +52,7 @@
 
 #🧠 ES module：當獲取到檔案時，會如何解析檔案？ ->->-> `當要被解析檔案前，會試著依**指定解析目標**來定義特定檔案被解析後的目標形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析`
 
-#🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
+#🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record 參照位址`
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
 
@@ -66,7 +68,7 @@
 
 #🧠 ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，若要載入模組依賴的模組，那麼如何以ES Module Spec 來處理 ->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
 
-#🧠 ES Module：從獲取檔案，並解析對應檔案，請問最後解析結果是什麼？會按照模組依賴關係圖來排嗎？->->-> `每個獲取到的模組都轉換成模組紀錄，並未按照模組依賴關係圖來排`
+#🧠 ES Module：從獲取檔案，並解析對應檔案，請問最後解析結果是什麼？會按照模組依賴關係圖來排嗎？(有兩個)->->-> `- 每個獲取到的模組都轉換成模組紀錄，並未按照模組依賴關係圖來排 - 更新對應模組在module map上的狀態，其狀態為對應模組的module record 參照位址`
 
 
 ---
