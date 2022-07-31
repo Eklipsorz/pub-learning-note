@@ -244,7 +244,7 @@ a * c + b * c // 9
 <!--SR:!2022-08-02,10,250-->
 
 #🧠  IIFE (Immediately Invoked Function Expression) 具體是什麼？它是函式嗎？ ->->-> `IIFE實際上是一個function一被定義/宣告就直接執行`
-<!--SR:!2022-07-31,6,230-->
+<!--SR:!2022-08-16,16,230-->
 
 
 #🧠 IIFE (Immediately Invoked Function Expression)是官方標準所提出的？ ->->-> `Ben Alman，並非標準下所提供的語法`
@@ -261,7 +261,7 @@ a * c + b * c // 9
 <!--SR:!2022-08-01,9,250-->
 
 #🧠 要用IIFE來實現模組，對他而言的模組化目標為？ (函式可以重複呼叫誒、函式得宣告才能使用)->->-> `1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成`
-<!--SR:!2022-07-31,2,249-->
+<!--SR:!2022-08-05,5,249-->
 
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，還會遇到什麼樣的問題![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png) ->->-> `模組的載入執行方式只需要一個指令就應該完成：實際上還得宣告和呼叫這兩個指令才能完成、預期是只需要執行一次就能使用它所擁有的功能代碼：可以通過函式名稱來重複呼叫`
@@ -274,14 +274,14 @@ a * c + b * c // 9
 
 
 #🧠 以下為IIFE的雛型，請問現在會出現什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658248963/blog/javascript/lexical%20scope/iife-draft_pllabp.png) ->->-> `解析器會因為一開始沒在function 之前遇到可將function 視為 function expression 的話，解析器會直接把function declaration來解析function，而它沒有函式名稱而報錯`
-<!--SR:!2022-07-31,8,250-->
+<!--SR:!2022-08-21,21,250-->
 
 #🧠 以下為IIFE的雛型，但解析器會把function視為function declaration而報錯，請問如何改善？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658248963/blog/javascript/lexical%20scope/iife-draft_pllabp.png)->->-> `為了強制將可以被當作expression而被誤會成declaration的function轉成function expression，會使用()這個grouping expression來強制系統先以expression 來看待function，也就是如同下面的形式：當解析器讀到括號時，會先以expression的形式來執行其包含內容，此時內容是function(){}，那麼就會使該function轉換成function expression，接著再透過expression之後放置圓括號的特性就能讓轉換成function expression的function以被呼叫的函式來執行，並將圓括號內的參數視為函式要用的參數來使用`
 <!--SR:!2022-08-02,10,250-->
 
 
 #🧠 Grouping Operator 是什麼樣的運算子，參數是什麼？回傳什麼？ ->->-> `grouping operator 是一種運算子，主要參數為一個expression，形式會是如下，最後回傳的值會是expression`
-<!--SR:!2022-07-31,8,250-->
+<!--SR:!2022-08-22,22,250-->
 
 #🧠  Grouping Operator 用途是什麼？ ->->-> `強制使語法轉換成expression 形式、在混雜其他expression中，會將指定的expression的執行權提高至最高，換言之，優先被解析器邊解析邊執行`
 <!--SR:!2022-08-02,10,250-->

@@ -109,15 +109,15 @@
   },
   "active": "01ec47312da44e7e",
   "lastOpenFiles": [
-    "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
-    "MOC/Software Engineering MOC.md",
-    "JavaScript.md",
-    "Accessing non-existent property 'padLevels' of module exports inside circular dependency.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md"
+    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md",
+    "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
+    "MOC/Software Engineering MOC.md",
+    "JavaScript.md",
+    "Accessing non-existent property 'padLevels' of module exports inside circular dependency.md"
   ]
 }

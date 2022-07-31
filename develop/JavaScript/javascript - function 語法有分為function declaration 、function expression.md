@@ -96,13 +96,13 @@ function name(param0, param1, /* … ,*/ paramN) {
 <!--SR:!2022-08-01,10,250-->
 
 #🧠 function declaration 是什麼？  ->->-> `function declaration 是向系統告知 特定函式的存在 以及 特定識別字對應著存放函式內容的記憶體區塊`
-<!--SR:!2022-07-31,9,250-->
+<!--SR:!2022-08-26,26,250-->
 
 #🧠 具體如何實現function declaration->->-> `具體會使用function關鍵字、function名稱、function引數、function裡的語法來宣告函式的存在，並分配記憶體來存放對應函式內容，並讓function名稱去對應`
 <!--SR:!2022-08-14,17,250-->
 
 #🧠 function expression 是什麼？ ->->-> `function expression 在程式語言中是以 由 function 關鍵字和語法 來代表其對應function之回傳值  或者 以整個函式來表達整個函式`
-<!--SR:!2022-07-31,9,250-->
+<!--SR:!2022-08-26,26,250-->
 
 #🧠 在JavaScript 中，通常是由function 這關鍵字搭配哪些參數來代表其對應function 之回傳值或者代表整個函式 ->->-> `函式名稱：可選擇不填入，來當作匿名函式、函式引數(function argument)、函式內部執行語句`
 <!--SR:!2022-08-01,10,250-->
