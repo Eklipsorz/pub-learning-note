@@ -1,5 +1,10 @@
 ## 描述
 
+### 文獻1的說明
+[[@linclarkESModulesCartoon]]
+
+
+
 > Like I mentioned before, an instance combines code with state. That state lives in memory, so the instantiation step is all about wiring things up to memory.
 
 JS 引擎當做完實例化後，會替每一個模組實例建立一個module environment record來管理模組實例所使用到的識別字和對應識別字的實體物件，並讓(位處於module map之對應模組欄位)**module record 的屬性environment去指向module environment record**
@@ -65,6 +70,13 @@ live bindings：概念上會是exporting module輸出的識別字和importing mo
 
 > The reason to have live bindings like this is then you can wire up all of the modules without running any code. This helps with evaluation when you have cyclic dependencies, as I’ll explain below.
 
+### 文獻2的說明
+[[@zijieqianduanShenRuFenXiJavaScriptMoKuaiXunHuanYinYong]]
+
+
+
+
+
 ### 為何避免多個不同模組會替相同模組而做的重複性實例化
 N個模組索要模組做實例化代表有N個任務會同時索要模組做實例化，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組實例化，但若模組是相同的話，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，由於多做實例而使效能衰減
 
@@ -105,5 +117,9 @@ Tags:
 Links:
 [[es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記]]
 [[es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記]]
+[[es-modules-a-cartoon-deep-dive(3) - Parsing 筆記]]
+[[es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記]]
 References:
 [[@linclarkESModulesCartoon]]
+
+[[@zijieqianduanShenRuFenXiJavaScriptMoKuaiXunHuanYinYong]]
