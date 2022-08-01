@@ -84,7 +84,7 @@ function name(param0, param1, /* … ,*/ paramN) {
 
 ## 複習
 #🧠 電腦科學裡的expression是什麼 ->->-> `在程式語言可以被解析成特定值、特定物件的語法，換言之，表達其特定值、特定物件的語法`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-26,25,250-->
 
 #🧠 電腦科學裡的語法若本身就是 特定值、特定物件，那麼會可以算是expression？->->-> `可以`
 <!--SR:!2022-08-13,16,250-->
@@ -105,11 +105,11 @@ function name(param0, param1, /* … ,*/ paramN) {
 <!--SR:!2022-08-26,26,250-->
 
 #🧠 在JavaScript 中，通常是由function 這關鍵字搭配哪些參數來代表其對應function 之回傳值或者代表整個函式 ->->-> `函式名稱：可選擇不填入，來當作匿名函式、函式引數(function argument)、函式內部執行語句`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-27,26,250-->
 
 
 #🧠 在JavaScript 中，function declaration vs. function expression 差別？ ->->-> `function declaration 主要是向系統宣告函式存在，function expression則是以表達特定函式/特定物件/特定值的表達式，只是是使用function形式來表達、 function declaration 一定得要有 function 關鍵字、function 名稱、function 引數、function 語句、function expression 一定得要有 function 關鍵字、函式引數、函式內部執行語句，函式名稱是不一定有`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-28,27,250-->
 
 
 ---

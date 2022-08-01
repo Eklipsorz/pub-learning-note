@@ -59,7 +59,7 @@
 <!--SR:!2022-08-07,23,250-->
 
 #🧠 假如Express Server上任何層級(App和Router)都沒有自製錯誤處理middleware，請問還會有誰能夠處理錯誤 ->->-> `Express 所預設的錯誤處理middleware`
-<!--SR:!2022-08-01,18,250-->
+<!--SR:!2022-09-15,45,250-->
 
 
 #🧠 Express上若App 層級上的middleware出現錯誤時，其middleware會如何處理，假如其middleware架構會是如下圖(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png)->->-> `首先若App層級的middleware出現錯誤時，會先查看App層級是否有自製的錯誤處理middleware，若有的話就執行那個；若沒有自製的錯誤處理middleware，會先執行Express 預設的錯誤處理middleware`
