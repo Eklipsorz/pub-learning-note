@@ -60,7 +60,7 @@ live bindings：概念上會是exporting module輸出的識別字和importing mo
 1. 先透過Depth First Post-Order Travesal來從模組依賴關係圖的起始點轉移至圖的底部，該底部的模組會是沒有使用任何依賴或者使用著已經完成實例化模組的模組，試圖先實例化沒有任何依賴的模組群組A，接著實例化依賴著模組群組A的模組群組B，然後一直往上實例，直到遍歷完所有模組並做完所有模組的實例
 2. 每一次實例會按照順序做以下事情：
 	- 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；
-	- 設定export 和 import 指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊，這技術稱之為live bindings
+	- 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊
 	- 建立module environment record來紀錄每個模組下的每個識別字以及對應識別字的實體物件
 	- 藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record**
 
@@ -73,17 +73,62 @@ live bindings：概念上會是exporting module輸出的識別字和importing mo
 ### 文獻2的說明
 [[@zijieqianduanShenRuFenXiJavaScriptMoKuaiXunHuanYinYong]]
 
+![](https://pic2.zhimg.com/80/v2-72974a333dc76a845ef3aed4d9aa9dc5_720w.jpg)
+图 3
+
+> 模块执行顺序
+
+> ES6 模块有 5 种状态，分别为 unlinked、linking、linked、evaluating 和 evaluated，用循环模块记录（Module Environment Records）的 Status 字段表示。ES6 模块的处理包括连接（link）和评估（evaluate）两步。连接成功之后才能进行评估。
+
+> 连接主要由函数InnerModuleLinking实现。函数 InnerModuleLinking 会调用函数InitializeEnvironment，该函数会初始化模块的环境记录（Environment Records），主要包括创建模块的执行上下文（Execution Contexts）、给导入模块变量创建绑定并初始化为子模块的对应变量，给 var 变量创建绑定并初始化为 undefined、给函数声明变量创建绑定并初始化为函数体的实例化值、给其他变量创建绑定但不进行初始化。
+
+> 对于图 3 的模块关系，连接过程如图 7 所示。连接阶段采用深度优先遍历，通过函数HostResolveImportedModule获取子模块。完成核心操作的函数 InitializeEnvironment 是后置执行的，所以从效果上看，子模块先于父模块被初始化。
+
+![](https://pic1.zhimg.com/80/v2-30e4837c0538d925a507debd89af3180_720w.jpg)
+图 7
 
 
 
 
-### 為何避免多個不同模組會替相同模組而做的重複性實例化
-N個模組索要模組做實例化代表有N個任務會同時索要模組做實例化，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組實例化，但若模組是相同的話，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，由於多做實例而使效能衰減
+重點：
+- 每一個ES 模組都有五種狀態，並記錄在每個模組對應的module environment record的status
+	- unlinked：未被實例化
+	- linking：正在實例化
+	- linked：已完成實例化
+	- evaluating：正在執行模組
+	- evaluated：已完成執行模組
+- 每一次挑選模組會透過模組依賴關係圖來找出模組要來做實例化：
+	- 模組會是沒依賴任何模組的模組
+	- 模組會是依賴著已經完成實例化的模組的模組
+- 實例化會做：
+	- 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；輸出var變數宣告
+	- 建立module environment record來紀錄每個模組下的每個識別字以及對應識別字的實體物件
+	- 藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record**
+	- 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊
 
-#### 如何避免多個不同模組會替相同模組而做的重複性實例化？
-使用module map＋鎖的機制，只有一個任務能夠負責特定模組檔案的實例，建立完實例就在module map以模組所在的URL作為索引來標記 **對應record上的environment屬性對應著模組的environment record**，接著執行evaluation，執行完之後就便允許其他任務能夠從module map存取對應模組狀態來要不要做實例化：
-	- 若對應模組狀態顯示**對應record上的environment屬性對應著模組的environment record**，那麼任務當下就從record取出該模組下所對應的記憶體位置作為引入。
-	- 若找不到，任務就當那個第一個實例特定模組的任務，剩下要做同樣事情的任務就停留在正要讀取record的時候，由第一個任務來完成實例、標記 **對應record上的environment屬性對應著模組的environment record**，接著執行evaluation，最後解鎖讓其他任務去檢查
+- 注意細節：
+	- 做完實例化並不會直接做evaluation，會等全部模組的instantiation 的做完才會做evaluation
+
+### N個不同模組會替相同模組做N個重複性實例化？
+
+N個模組要求模組做實例化代表有N個任務會同時要求模組做實例化，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組實例化，但若模組是相同的話，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向
+
+#### 如何避免N個不同模組會替相同模組做N個重複性實例化？
+
+
+使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足：
+- module map的對應模組紀錄沒對應到environment record？
+- module map的對應模組紀錄上的environment record是顯示unlink？
+若任一條件滿足就做：
+- 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；輸出var變數宣告
+- 替對應模組建立environment record
+-  藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record**
+- 接著在對應模組的envinronment record更新狀態為linking
+- 對module map的對應上解鎖
+- 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊
+- 在對應模組的environment record更新狀態為linked
+
+若都不滿足，就挑下一個要實例化的模組。
 
 
 ## 複習
