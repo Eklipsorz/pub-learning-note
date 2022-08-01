@@ -61,7 +61,7 @@
 
 
 #🧠  網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，發生場景是在哪？為什麼會發生？  ->->-> `至於發生場景是在同一個DOM Document調用多個JS檔案`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-29,28,250-->
 
 #🧠 網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，請問多個DOM Document間會不會發生全域污染 ->->-> `依賴於DOM Document 1的JS 並不會污染另一個DOM Document 2的JS 上的作用域，因兩者的window 物件皆為不同，所以兩者全域環境也會是不同的`
 <!--SR:!2022-08-01,10,250-->
@@ -76,7 +76,7 @@
 
 
 #🧠 假設有三個JS檔案，分別叫做xxx1、xxx2、xxx3，而它們對應的程式碼分別為jscode1、jscode2、jscode3，這些JS檔案會被一個DOM Document 給載入，請問實際上他們是如何被瀏覽器執行的？能否畫個圖表示 ->->-> `實際執行會是以捏貼後為主，這樣等同在同一個全域環境下執行 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658155529/blog/javascript/html/before-js-module_quixaq.png)`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-29,28,250-->
 
 
 #🧠  假設有三個JS檔案，分別叫做xxx1、xxx2、xxx3，而它們對應的程式碼分別為jscode1、jscode2、jscode3，這些JS檔案會被一個DOM Document 給載入，若這些jscode會使用著共同都會有的變數名稱作為變數，那麼會發生什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658155529/blog/javascript/html/before-js-module_quixaq.png) ->->-> `很有可能會使這些jscode的預期不如預期，最後使得整份Document下的JS結果也跟著不如預期。`

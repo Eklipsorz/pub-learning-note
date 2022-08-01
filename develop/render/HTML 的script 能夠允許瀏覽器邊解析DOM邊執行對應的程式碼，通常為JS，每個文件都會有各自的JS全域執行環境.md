@@ -73,7 +73,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？ ->->-> `其JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-29,28,250-->
 
 #🧠 每一個DOM document 對於Window物件來說，是指多個document共享同一個window物件？還是每個document 都有各自的window物件？ 為什麼？->->-> `每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree，而JS語言的全域環境會是以目前的Window物件內容為主，一個Window物件會包含著目前畫面上的DOM document，結合前面兩者，每一個DOM document 都各有不同的Window物件，且每個物件都各代表著不同的JS全域執行環境`
 <!--SR:!2022-08-01,10,250-->
@@ -90,7 +90,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 
 #🧠  HTML 檔案下會有script標籤是做什麼？ ->->-> `來定義邊解析HTML時可以邊額外執行的程式碼或者可存取的資料，其程式碼會是以瀏覽器能夠解析並執行的為主，比如JavaScript`
-<!--SR:!2022-08-01,10,250-->
+<!--SR:!2022-08-07,6,230-->
 
 
 

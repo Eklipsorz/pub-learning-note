@@ -144,7 +144,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `編譯時期會對所有EC進行建立`
-<!--SR:!2022-08-01,5,247-->
+<!--SR:!2022-08-14,13,247-->
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `以檔案內的全域區塊為一個區塊(block)，不包含函式內部的執行環境、也不包含區塊的執行環境`
@@ -177,7 +177,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariableEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
-<!--SR:!2022-08-01,29,248-->
+<!--SR:!2022-10-14,74,248-->
 
 #🧠 Global Execution Context ：LexicalEnvironment 主要記錄著什麼？ ->->-> ` LexicalEnvironment 從GEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
 <!--SR:!2022-08-07,32,248-->
