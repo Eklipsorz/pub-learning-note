@@ -80,8 +80,24 @@
 	- 模組會是沒依賴任何模組的模組
 	- 模組會是依賴著已經完成實例化的模組的模組
 - evaluation會做：
-	- 透過執行模組的top-level code來將實際值分配至識別字對應的記憶體空間
 	- 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置
+	- 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間
+
+
+
+### N個不同模組會替相同模組做N個同個實例的執行？
+
+N個模組要求模組做evaluation代表有N個任務會同時要求模組做evaluation，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組做evaluation，但若模組是相同的話，將會有N個相同模組下的evaluation，然而，實際上也只需要執行一次evaluation，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向
+
+#### 如何避免N個不同模組會替相同模組做N個同個實例的執行？
+
+使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足：
+- module map的對應模組紀錄狀態上不是顯示evaluating？
+若任一條件滿足就做：
+	- 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置
+	- 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間
+
+若都不滿足，就挑下一個要執行evaluation的模組。
 
 
 ### cyclic dependency detect & solve
@@ -97,6 +113,10 @@
 #🧠  ES module：如何解決以模組角度來解決cyclic dependency ？ ->->-> `不斷繞著環狀結構遍歷，直到超過時間，超過時間就結束環狀遍歷，停止的時候，環狀結構的每個模組都指向到識別字對應的記憶體區塊`
 
 #🧠 ES Module：當有多個模組想要對同一個模組進行實例化＋evaluation的話，請問會如何解決？ ->->-> `只允許一個模組做實例化+evaluation，第一個需求方(需要該模組的模組)已經替模組實例化時，就會執行evaluation這步驟，但為了確保後續多個需求方可能由於依賴關係圖而重複實例化＋evaluation，會藉由module map來讓多個需求方的情況下，每個需求方只會拿到對應模組的同一個實例，具體是：當第一個需求方(需要該模組的模組)已經替模組實例化＋evaluation時，還有其他需求方索要同一個模組時 - 先透過模組(URL)來查看其模組在module map的狀態 - 若狀態是module record，就從module record獲取對應模組實例的module environment record，該record會告知對應實例所要輸出的內容之記憶體位置`
+
+
+
+
 
 ---
 Status: #🌱 
