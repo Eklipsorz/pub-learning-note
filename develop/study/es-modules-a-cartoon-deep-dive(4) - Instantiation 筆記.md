@@ -159,10 +159,11 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 #🧠 ES Module：  N個不同模組會替相同模組做N個重複性實例化？ ->->-> `N個模組要求模組做實例化代表有N個任務會同時要求模組做實例化，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組實例化，但若模組是相同的話，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`
 
 
-#🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？ ->->-> `使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足：- module map的對應模組紀錄沒對應到environment record？若任一條件滿足就做： - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 替對應模組建立environment record -  藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 對module map的對應上解鎖 - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊。若都不滿足，就挑下一個要實例化的模組。`
-
-
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，那要如何設定上鎖條件/解鎖條件？ ->->-> `每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足： - module map的對應模組紀錄沒對應到environment record？ - module map的對應模組紀錄是unlinked? 若滿足的話，就將module map的對應模組紀錄狀態更改：unlinked -> linking，接著解鎖；反之若不滿足的話，就解鎖然後就挑下一個要實例化的模組`
+
+#🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查一些條件是否滿足，哪些條件會是什麼？ ->->-> `- module map的對應模組紀錄沒對應到environment record？ - module map的對應模組紀錄是unlinked?`
+
+#🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查一些條件是否滿足，若滿足的話，會做什麼 ->->-> `- 將module map的對應模組紀錄狀態更改：unlinked -> linking - 對module map的對應上解鎖 - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 替對應模組建立environment record -  藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 將module map的對應模組紀錄狀態更改：linking -> linked`
 
 
 #🧠 ES Module：做完一個模組的實例化，會直接做它的evaluation嗎？ ->->-> `並不會，做完實例化並不會直接做evaluation，會等全部模組的instantiation 的做完才會做evaluation`
