@@ -1,12 +1,14 @@
 ## 描述
 
 
+
+### 文獻1說明
+
 #### Evaluation
 
 > The final step is filling in these boxes in memory. The JS engine does this by executing the top-level code — the code that is outside of functions.
 > 
 > Besides just filling in these boxes in memory, evaluating the code can also trigger side effects. For example, a module might make a call to a server.
-
 
 
 [![A module will code outside of functions, labeled top level code](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/40_top_level_code-500x146.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/40_top_level_code.png)
@@ -48,7 +50,8 @@
 > Supporting these cycles is a big rationale behind the design of ES modules. It’s this three-phase design that makes them possible.
 
 
-### 
+### 文獻2說明
+[[@zijieqianduanShenRuFenXiJavaScriptMoKuaiXunHuanYinYong]] 
 
 > 评估主要由函数InnerModuleEvaluation实现。函数 InnerModuleEvaluation 会调用函数ExecuteModule，该函数会评估模块代码（evaluating module.[[ECMAScriptCode]]）。ES6 规范并没有明确说明这里的评估模块代码具体指什么。我把 ES6 规范的相关部分反复看了至少十余遍，才得出一个比较合理的解释。这里的评估模块代码应该指根据代码语句顺序执行条款 13、条款 14和条款 15内的对应小节的“运行时语义：评估（Runtime Semantics: Evaluation）”。ScriptEvaluation中的评估脚本（evaluating scriptBody）应该也是这个意思。可以看到，ES6 规范虽然做了很多设计并且逻辑清晰和自洽，但仍有一些模棱两可的地方，没有达到一种绝对完善和无懈可击的状态。
 
@@ -59,6 +62,15 @@
 图 8
 
 > 由于连接阶段会给导入模块变量创建绑定并初始化为子模块的对应变量，子模块的对应变量在评估阶段会先被赋值，所以导入模块变量获得了和函数声明变量一样的提升效果。例如，代码 1 是能正常运行的。因此，ES6 模块的导入导出语句的位置不影响模块代码语句的执行结果。
+
+重點：
+- 每一次挑選模組會透過模組依賴關係圖來找出模組要來做evaluation：
+	- 模組會是沒依賴任何模組的模組
+	- 模組會是依賴著已經完成實例化的模組的模組
+- evaluation會做：
+	- 透過執行模組的top-level code來將實際值分配至識別字對應的記憶體空間
+
+
 ### cyclic dependency detect & solve
 [[環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構]]
 
@@ -87,3 +99,4 @@ Links:
 References:
 [[@linclarkESModulesCartoon]]
 [[@DetectCycleDirected2012]]
+[[@zijieqianduanShenRuFenXiJavaScriptMoKuaiXunHuanYinYong]]
