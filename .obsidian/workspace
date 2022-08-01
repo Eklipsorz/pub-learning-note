@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+            "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
             "mode": "source",
             "source": false
           }
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1044ed3c921dcf9c",
+  "active": "fc6dd639f73c893d",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+    "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
     "CommonJS 模組如何載入模組.md",
     "CommonJS 模組解析全文.md",
     "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
     "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
-    "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md",
-    "email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md"
+    "Data Warehouse 是專門用作資料分析的資料儲存中心，其資料源自多個資料庫或者多個資料來源.md"
   ]
 }
