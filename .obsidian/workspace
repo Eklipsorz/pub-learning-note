@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "每個平台都一樣",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
