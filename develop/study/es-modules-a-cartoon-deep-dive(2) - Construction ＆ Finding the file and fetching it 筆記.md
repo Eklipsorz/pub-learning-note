@@ -191,7 +191,10 @@ N個模組索要模組代表有N個任務會同時想要獲取模組，若執行
 #🧠 ES module：不能依據執行情況來載入特定模組，有辦法可以解決嗎->->-> `有，如果要根據執行狀態下載入ES module的話，可以使用dynamic import來實現，該技術會以產出非同步任務為主的promise為主`
 <!--SR:!2022-08-05,3,250-->
 
-#🧠 ES module：具體的dynamic import是什麼？ ->->-> `import 為promise，當呼叫時會對系統發出以module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject`
+
+#🧠 ES module：dynamic import 概念是什麼？ ->->-> `允許根據在執行時根據執行狀態來加載ES模組，並根據加載內容來進行引用處理`
+
+#🧠 ES module：具體的dynamic import是什麼？ (promise) ->->-> `import 為promise，建立一個工作來向對系統發出module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject`
 <!--SR:!2022-08-04,2,247-->
 
 #🧠  ES module：具體的dynamic import形式會是什麼？ ->->-> `import(module_path/module1)`
