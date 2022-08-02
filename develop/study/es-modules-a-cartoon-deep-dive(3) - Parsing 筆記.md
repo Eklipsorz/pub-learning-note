@@ -63,8 +63,10 @@
 #🧠 ES Module：前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES Module，得用ES Module Spec 來處理 ->->-> `在script 標籤上設定type="module"`
 
 #🧠 前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
+<!--SR:!2022-08-05,3,250-->
 
 #🧠  ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，得用ES Module Spec 來處理->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
+<!--SR:!2022-08-05,3,250-->
 
 #🧠 ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，若要載入模組依賴的模組，那麼如何以ES Module Spec 來處理 ->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
 
