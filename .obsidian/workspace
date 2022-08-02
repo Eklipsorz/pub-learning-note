@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "y",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +110,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d989c15d1ebcb9ee",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
