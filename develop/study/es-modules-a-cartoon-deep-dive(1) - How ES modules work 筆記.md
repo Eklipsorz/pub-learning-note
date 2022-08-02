@@ -104,6 +104,7 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄、如何實�
 ## 複習
 
 #🧠 ES module 的載入會需要哪三個步驟來完成？->->-> `建構階段、模組實例化、執行模組內容並確定模組實例的輸出內容`
+<!--SR:!2022-08-04,2,248-->
 
 #🧠 以這個圖示來說明如何執行ES module載入中的哪三個步驟 ![A module with two dependencies. The top module is the entry. The other two are related using import statements](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph-500x291.png)  ->->-> ``
 <!--SR:!2022-08-05,3,250-->
@@ -148,6 +149,7 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄、如何實�
 
 
 #🧠 若要讓瀏覽器的loader能夠在接收到檔案時就正常解析/實例化/確定的話，解決辦法為 ->->-> `將能夠處理ES模組，會將支援ES module spec - 如何解析、實例化、確定/判定值這些階段處理的實現納入至基於HTML spec的loader改造成當載入ES模組時，就呼叫對應方法來做每個模組下的階段任務`
+<!--SR:!2022-08-04,2,248-->
 
 
 ---

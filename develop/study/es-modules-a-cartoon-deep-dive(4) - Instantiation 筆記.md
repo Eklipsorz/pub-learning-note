@@ -148,18 +148,21 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 <!--SR:!2022-08-05,3,250-->
 
 #🧠 ES Module：從模組依賴關係圖要找到沒使用任何依賴或者使用著已經完成實例化模組的模組，那麼如何找？ ->->-> `模組依賴關係圖底部或者越往底部正是那些，所以會使用Depth First Post-Order Travesal來從模組依賴關係圖的起始點轉移至圖的底部，試圖先實例化沒有任何依賴的模組群組A，接著實例化依賴著模組群組A的模組群組B，然後一直往上實例，直到遍歷完所有模組並做完所有模組的實例`
+<!--SR:!2022-08-05,3,250-->
 
 
 #🧠 用這兩張圖來說明ES module 的實例化，其中右邊是main.js，左邊由先至後是counter.js和render.js，主要main.js會依賴這兩個模組![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_01-768x316.png) ![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_02-768x316.png)->->-> ``
 <!--SR:!2022-08-05,3,250-->
 
 #🧠 ES module的live bindings是什麼？ ->->-> `概念上會是exporting module輸出的識別字和importing module引用的識別字都各自指向相同的記憶體區塊，當exporting module改變識別字對應的記憶體區塊內容，importing module就會馬上看到其識別字對應的(記憶體區塊)內容`
+<!--SR:!2022-08-05,3,250-->
 `
 
 #🧠 ES module：一旦建立live bindings，會有哪些限制 ->->-> `相對來說，ES 模組會使用live bindings技術來讓模組間的export和import所指的識別字都指向同個記憶體區塊，這表示只要在模組上更改值，就會使用import的那一方拿到變更後的值，但只有exporting module那一方才能更改對應的值，importing module不能夠更改import識別字上的對應實體物件(記憶體內容)，最多只能增加屬性至物件上。`
 
 
 #🧠 ES Module：  N個不同模組會替相同模組做N個重複性實例化？ ->->-> `N個模組要求模組做實例化代表有N個任務會同時要求模組做實例化，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組實例化，但若模組是相同的話，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`
+<!--SR:!2022-08-05,3,250-->
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，那要如何設定上鎖條件/解鎖條件？ ->->-> `每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足： - module map的對應模組紀錄沒對應到environment record？ - module map的對應模組紀錄是unlinked? 若滿足的話，就將module map的對應模組紀錄狀態更改：unlinked -> linking，接著解鎖；反之若不滿足的話，就解鎖然後就挑下一個要實例化的模組`
