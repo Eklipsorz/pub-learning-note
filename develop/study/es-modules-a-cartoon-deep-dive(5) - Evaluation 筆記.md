@@ -115,6 +115,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 ## 複習
 
 #🧠 ES module：evaluation 是什麼？ ->->-> `透過執行模組的top-level code來將實際值分配至識別字對應的記憶體空間`
+<!--SR:!2022-08-05,3,250-->
 
 #🧠 ES Module：請問evaluation階段需要等待全部模組都完成instantiation階段？為何 ->->-> `對，這是因爲要確保生成的非同步任務都是在處理evaluation、解決模組依賴關係`
 <!--SR:!2022-08-05,3,250-->
@@ -127,6 +128,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 #🧠 ES Module：經過實例後的模組紀錄，在一開始進入evaluation時會拿到什麼狀態？ ->->-> `linked`
 
 #🧠 ES Module：每一個被挑到執行evaluation的模組如何實作evaluation？ ->->-> `	- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating - 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置 - 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間 - 更新module map上的對應模組紀錄狀態：從evaluating 變更至 evaluated`
+<!--SR:!2022-08-05,3,250-->
 
 
 #🧠 ES Module：N個不同模組會替相同模組做N個同個實例的執行？ ->->-> `N個模組要求模組做evaluation代表有N個任務會同時要求模組做evaluation，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組做evaluation，但若模組是相同的話，將會有N個相同模組下的evaluation，然而，實際上也只需要執行一次evaluation，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`
