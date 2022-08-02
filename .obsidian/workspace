@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+            "file": "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+                "file": "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,8 +111,8 @@
   },
   "active": "d989c15d1ebcb9ee",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
