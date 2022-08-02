@@ -136,6 +136,7 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 ## 複習
 
 #🧠 ES 模組各有5種狀態會紀錄每個模組的目前載入狀況，並記錄在module record，請問是哪五種狀態？具體做什麼？ ->->-> `	- unlinked：未被進行模組上初始化和識別字連接 - linking：正在進行模組上的初始化和識別字連接 - linked：已完成模組上的初始化和識別字連接 - evaluating：已完成實例化這步驟，並正在執行對應模組的top-level code - evaluated：已完成實例化這部分，且也完成了對應模組上top-level code的執行`
+<!--SR:!2022-08-05,3,250-->
 
 
 #🧠 ES Module：經過建構後的模組紀錄，在一開始進入實例化時會拿到什麼狀態？ ->->-> `unlinked`
@@ -173,6 +174,7 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 <!--SR:!2022-08-05,3,250-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，若滿足的話，會做什麼 ->->-> `- 將module map的對應模組紀錄狀態更改：unlinked -> linking - 對module map的對應紀錄上解鎖 - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 替對應模組建立environment record -  藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 將module map的對應模組紀錄狀態更改：linking -> linked`
+<!--SR:!2022-08-05,3,250-->
 
 
 #🧠 ES Module：做完一個模組的實例化，會直接做它的evaluation嗎？ ->->-> `並不會，做完實例化並不會直接做evaluation，會等全部模組的instantiation 的做完才會做evaluation`
