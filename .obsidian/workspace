@@ -6,7 +6,7 @@
       {
         "id": "d989c15d1ebcb9ee",
         "type": "leaf",
-        "dimension": 77.14884696016772,
+        "dimension": 53.037667071688944,
         "state": {
           "type": "markdown",
           "state": {
@@ -19,11 +19,11 @@
       {
         "id": "1044ed3c921dcf9c",
         "type": "leaf",
-        "dimension": 22.85115303983229,
+        "dimension": 46.962332928311056,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+            "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
             "mode": "source",
             "source": false
           }
@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 574
+    "width": 214
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -112,14 +112,14 @@
   "active": "d989c15d1ebcb9ee",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
     "CommonJS 模組如何載入模組.md",
     "CommonJS 模組解析全文.md",
-    "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
-    "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md"
+    "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md"
   ]
 }
