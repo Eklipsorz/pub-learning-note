@@ -235,7 +235,7 @@ a * c + b * c // 9
 ## 複習
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第一個圓括號是做什麼 ->->-> `讓系統能將function看待成function expression`
-<!--SR:!2022-08-02,10,250-->
+<!--SR:!2022-08-29,27,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第二個圓括號是做什麼，與前面括號有什麼關係 ->->-> `第一個括號讓系統能將function看待成function expression，而第二個括號則是將expression當作函式來呼叫`
 <!--SR:!2022-08-27,25,250-->
@@ -252,7 +252,7 @@ a * c + b * c // 9
 
 
 #🧠  IIFE (Immediately Invoked Function Expression) 大致上使用了哪些技術->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope、以function作為基礎於內部進行函式擴充以此實現模組scope和global scope：具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料、grouping operator 強制將function 轉換成 function expression 來看待、() 將轉換後的function expression以function來呼叫`
-<!--SR:!2022-08-02,10,250-->
+<!--SR:!2022-08-30,28,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為何採用function ->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope`
 <!--SR:!2022-08-30,28,250-->
