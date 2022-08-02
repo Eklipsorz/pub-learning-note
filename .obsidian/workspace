@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
+            "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
             "mode": "source",
             "source": false
           }
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "y",
+                "query": "瀏覽器建構在網路",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,17 +110,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "423a385f7547e8c2",
+  "active": "d989c15d1ebcb9ee",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
-    "CommonJS 模組如何載入模組.md",
-    "CommonJS 模組解析全文.md",
-    "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md"
+    "CommonJS 模組如何載入模組.md"
   ]
 }

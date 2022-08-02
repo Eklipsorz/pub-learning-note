@@ -20,8 +20,8 @@ live bindings：表示當bindings發生變動時，可以馬上觀察出變化�
 <!--SR:!2022-08-05,3,250-->
 
 
-#🧠 .mjs 副檔名是什麼？ ->->-> `mjs為EcmaScript module files的意思，用來告知系統目前讀取的檔案是滿足ES標準的模組檔案`
-<!--SR:!2022-08-03,1,230-->
+#🧠 .mjs 副檔名是什麼？ ->->-> `是ES module files`
+
 
 ---
 Status: #🌱 

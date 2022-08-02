@@ -139,11 +139,11 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 <!--SR:!2022-08-05,3,250-->
 
 
-#🧠 ES Module：經過建構後的模組紀錄，在一開始進入實例化時會拿到什麼狀態？ ->->-> `unlinked`
-<!--SR:!2022-08-05,3,250-->
+#🧠 ES Module：經過建構後的模組紀錄，在一開始進入實例化前會拿到什麼狀態？ ->->-> `unlinked`
 
-#🧠 ES Module： 每一個模組的實例會如何做？(提示：有四個步驟)->->-> `	- 更改對應module record上的狀態：unlinked -> linking - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 建立module environment record來紀錄每個模組下的每個識別字以及對應識別字的實體物件 - 藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 更改對應module record的狀態：linking->linked`
-<!--SR:!2022-08-05,3,250-->
+
+#🧠 ES Module： 每一個模組的實例會如何做？(提示：有六個步驟)->->-> `	- 更改對應module record上的狀態：unlinked -> linking - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 建立module environment record來紀錄每個模組下的每個識別字以及對應識別字的實體物件 - 藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 更改對應module record的狀態：linking->linked`
+
 
 
 #🧠 ES Module：從模組依賴關係圖要找到什麼才開始實例化->->-> `沒使用任何依賴或者使用著已經完成實例化模組的模組`
