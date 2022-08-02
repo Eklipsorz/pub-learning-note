@@ -125,6 +125,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 
 
 #🧠 ES Module：當有多個模組想要對同一個模組進行實例化＋evaluation的話，請問會如何解決？ ->->-> `只允許一個模組做實例化+evaluation，第一個需求方(需要該模組的模組)已經替模組實例化時，就會執行evaluation這步驟，但為了確保後續多個需求方可能由於依賴關係圖而重複實例化＋evaluation，會藉由module map來讓多個需求方的情況下，每個需求方只會拿到對應模組的同一個實例，具體是：當第一個需求方(需要該模組的模組)已經替模組實例化＋evaluation時，還有其他需求方索要同一個模組時 - 先透過模組(URL)來查看其模組在module map的狀態 - 若狀態是module record，就從module record獲取對應模組實例的module environment record，該record會告知對應實例所要輸出的內容之記憶體位置`
+<!--SR:!2022-08-04,2,248-->
 
 #🧠 ES Module：經過實例後的模組紀錄，在一開始進入evaluation時會拿到什麼狀態？ ->->-> `linked`
 
@@ -133,8 +134,10 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 
 
 #🧠 ES Module：N個不同模組會替相同模組做N個同個實例的執行？ ->->-> `N個模組要求模組做evaluation代表有N個任務會同時要求模組做evaluation，若執行緒數量和實際核心數夠讓每個任務執行的話，每個任務將會以執行緒同時要求模組做evaluation，但若模組是相同的話，將會有N個相同模組下的evaluation，然而，實際上也只需要執行一次evaluation，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`
+<!--SR:!2022-08-04,2,248-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個同個實例的執行？ 假如使用使用module map＋上鎖/解鎖的機制，那麼上鎖條件/解鎖條件會是？->->-> `每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查以下條件是否滿足：- module map的對應模組紀錄狀態上是顯示linked?，若不滿足，就解鎖然後挑下一個要執行evaluation的模組；若滿足，就- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating- 替module map上的對應模組紀錄進行解鎖`
+<!--SR:!2022-08-04,2,248-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個同個實例的執行？ 假如使用使用module map＋上鎖/解鎖的機制，那麼得滿足什麼樣條件才能做evaluation? ->->-> `module map的對應模組紀錄狀態上是顯示linked?`
 
