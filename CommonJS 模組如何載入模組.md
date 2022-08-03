@@ -28,23 +28,33 @@ CommonJS 本身是源自於伺服器端的模組化標準，由於那時其模�
 
 [![A require statement which uses a variable is fine. An import statement that uses a variable is not.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import-500x146.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import.png)
 
-當需求方以Require來指定特定JS檔案，就會將JS檔案視為CommonJS模組檔案，這時JS引擎會先於編譯期間替module 建立模組實例來存放要輸出給內容，接著執行該模組的top-level code 來產生模組要輸出的內容以及執行輸出模組內容的語句，如：
+當需求方以Require來指定特定JS檔案，就會將JS檔案視為CommonJS模組檔案，這時JS引擎會先於編譯期間做：
+- 分配記憶體空間給模組下的模組實例module物件、var變數宣告、函式宣告
+- 分配初始值給var變數為undefined、函式宣告會是拿到存放函式內容的記憶體區塊、模組實例(exports部分會是{} )
+- 建立EC來紀錄模組下的每個識別字和對應實體物件
+
+接著執行該模組的top-level code 來產生模組要輸出的內容以及執行輸出模組內容的語句，如：執行到下列語句才會把輸出內容從空物件轉換成指定內容
 
 ```
 exports = module.exports = ....
 ```
 
-實際上會將模組實例複製一份讓發送require的那一份獲取副本，所以實際上是透過執行模組來獲取模組所要輸出的內容。
+
 
 > This is different from CommonJS modules. In CommonJS, the entire export object is copied on export. This means that any values (like numbers) that are exported are copies.
 
 > This means that if the exporting module changes that value later, the importing module doesn’t see that change.
 
-
+編譯時期就會分配記憶體來存放模組所要輸出的內容，而執行下列語句只是確定輸出內容為何。
+```
+exports = module.exports = ....
+```
 ![](https://hacks.mozilla.org/files/2018/03/31_cjs_variable-768x174.png)
 
-
-
+而執行require的那一方會從實際上會將存放在記憶體的模組實例複製一份讓執行require的那一方獲取副本，所以實際上是透過執行該模組來產生對應模組實例，然後讓require的那一方獲取模組實例的副本。
+```
+const xxx = require(module1)
+```
 ### CommonJS 特點
 
 因此CommonJS設計上會是：
