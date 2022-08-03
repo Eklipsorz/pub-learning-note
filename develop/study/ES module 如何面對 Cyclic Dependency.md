@@ -64,7 +64,7 @@ ReferenceError: Cannot access 'parent' before initialization
 
 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659514781/blog/javascript/module/es-module/cyclic-dependency-digram-example_uupj04.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659514781/blog/javascript/module/es-module/cyclic-dependency-digram-example_uupj04.png)
 
-#### 若最後一個
+#### 若產生非同步任務來處理evaluation
 > 如果是异步执行，则没问题，因为异步执行的时候父模块已经被执行了。例如，代码 3 是能正常运行的。
 
 ```js
@@ -78,6 +78,9 @@ setTimeout(() => {
   console.log(parent) // 输出 'parent'
 }, 0);
 ```
+
+重點：在這裏parent.js會是依賴著child.js，並先執行parent.js
+- 那麼若在evaluation階段中，先讓JS引擎在child.js上產生非同步任務來印出parent.js所要輸出的識別字，是可以透過額外產出的任務在parent.js執行後才執行，並正確獲得對應記憶體內容
 
 ### 文獻2說明
 [[@linclarkESModulesCartoon]] ：
