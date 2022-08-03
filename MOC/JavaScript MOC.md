@@ -41,6 +41,9 @@
 - var
 [[JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope]]
 
+- let/const
+[[在JS中，let和const 宣告會是包含著分配記憶體給識別字以及分配初始值至對應記憶體區塊]]
+
 - truthy vs. falsy
 [[CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false]]
 
