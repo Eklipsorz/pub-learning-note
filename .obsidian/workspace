@@ -6,6 +6,7 @@
       {
         "id": "1de2cb1201c84e75",
         "type": "leaf",
+        "dimension": 49.922239502332815,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,6 +19,7 @@
       {
         "id": "0b9df3d7d6f11dcf",
         "type": "leaf",
+        "dimension": 50.07776049766719,
         "state": {
           "type": "markdown",
           "state": {
@@ -107,7 +109,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0b9df3d7d6f11dcf",
+  "active": "1de2cb1201c84e75",
   "lastOpenFiles": [
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "CommonJS 模組如何載入模組.md",
