@@ -118,6 +118,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 <!--SR:!2022-08-05,3,250-->
 
 #🧠 ES Module：請問evaluation階段需要等待全部模組都完成instantiation階段？為何 ->->-> `對，這是要為了確保多個非同步任務在同時執行的過程只會侷限於evaluation階段，避免有不一致的問題`
+<!--SR:!2022-08-05,2,245-->
 
 
 #🧠 ES Module：會重新在挑模組來執行evaluation嗎？是的話，如何挑 ->->-> `要重新挑，這是為了確保exporting module都能確實使用它所依賴的模組來輸出內容至importing module，至於如何挑，會以DFS post-order traversal來從模組依賴關係圖來優先從底部挑選模組會是沒依賴任何模組的模組、 模組會是依賴著已經完成evaluation的模組的模組`
@@ -126,7 +127,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 
 
 #🧠 ES Module：經過實例後的模組紀錄，在一開始進入evaluation前會拿到什麼狀態？ ->->-> `linked`
-<!--SR:!2022-08-03,1,228-->
+<!--SR:!2022-08-05,2,228-->
 
 #🧠 ES Module：每一個被挑到執行evaluation的模組如何實作evaluation？ ->->-> `	- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating - 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置 - 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間 - 更新module map上的對應模組紀錄狀態：從evaluating 變更至 evaluated`
 <!--SR:!2022-08-05,3,250-->
@@ -142,9 +143,10 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 <!--SR:!2022-08-04,2,248-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個同個實例的執行？ 假如使用使用module map＋上鎖/解鎖的機制，會設定條件且滿足條件的話，具體會如何做evaluation?  ->->-> `	- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating - 替module map上的對應模組紀錄進行解鎖 - 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置 - 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間 - 更新module map上的對應模組紀錄狀態：從evaluating 變更至 evaluated`
-<!--SR:!2022-08-03,1,230-->
+<!--SR:!2022-08-04,1,210-->
 
 #🧠 ES Module：主要在什麼時候會載入其模組內容？ ->->-> `編譯時期會將模組的import/export位置指向對應模組識別字在記憶體上的位置、執行時期會在透過執行exporting module的top-level code，並讓importing module在module map上來找到對應模組的緩存來將識別字指向至對應記憶體位置`
+<!--SR:!2022-08-05,2,245-->
 
 ---
 Status: #🌱 
