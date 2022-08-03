@@ -49,7 +49,25 @@ setTimeout(() => {
 代码 3
 
 重點：
-- 
+- ES module 會使用環狀依賴結構的檢測方法來檢測，若為環狀依賴結構就於下列階段進行：
+	- instantiation：
+		- DFS post-order traversal 遍歷到環狀結構上最後一個未曾遍歷的模組就停止該方向的遍歷並以該模組為那個方向的最後一個模組
+		- 不讓最後一個模組對環狀結構上的第一個遍歷到的模組進行import，由於第一個模組還未開始instantiation
+	- evaluation：等待所有模組的instantiation都做完
+		- DFS post-order traversal 遍歷到環狀結構上最後一個未曾遍歷的模組就停止該方向的遍歷並以該模組為那個方向的最後一個模組
+		- 執行最後一個模組的加載來從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址
+		- 執行最後一個模組的top-level code，通常若存取自第一個模組加載過來的識別字
+
+- 舉一例：假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是環狀模組依賴關係：
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659516780/blog/javascript/module/es-module/cyclic-dependency-code-example_dvfifa.png)
+	- instantiation：
+		-  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組
+		- 不讓b.js對環狀結構上的a.js進行import，因為a.js還未進行開始instantiation
+	- evaluation：等待所有模組的instantiation都做完
+		-  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組
+		-  執行b.js對於a.js模組的加載，具體加載會是：從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址
+		- 執行b.js模組上的top-level code，但結果
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659514781/blog/javascript/module/es-module/cyclic-dependency-digram-example_uupj04.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659514781/blog/javascript/module/es-module/cyclic-dependency-digram-example_uupj04.png)
 
 ### 文獻2說明
 [[@linclarkESModulesCartoon]] ：

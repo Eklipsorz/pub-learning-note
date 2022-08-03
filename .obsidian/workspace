@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/ES module 如何面對 Cyclic Dependency.md",
+            "file": "Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/ES module 如何面對 Cyclic Dependency.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c15c350dc98c8e51",
+  "active": "1044ed3c921dcf9c",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/study/ES module 如何面對 Cyclic Dependency.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
     "develop/Redis/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
