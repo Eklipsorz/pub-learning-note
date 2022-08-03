@@ -16,12 +16,12 @@
         }
       },
       {
-        "id": "4981305985f8ae71",
+        "id": "0b9df3d7d6f11dcf",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
+            "file": "CommonJS 模組如何載入模組.md",
             "mode": "source",
             "source": false
           }
@@ -107,9 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1de2cb1201c84e75",
+  "active": "0b9df3d7d6f11dcf",
   "lastOpenFiles": [
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
+    "CommonJS 模組如何載入模組.md",
     "develop/JavaScript/在JS中，let和const 宣告會是包含著分配記憶體給識別字以及分配初始值至對應記憶體區塊.md",
     "MOC/JavaScript MOC.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
@@ -117,7 +118,6 @@
     "develop/Redis/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md"
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md"
   ]
 }

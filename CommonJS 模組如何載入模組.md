@@ -15,11 +15,7 @@ CommonJS 本身是源自於伺服器端的模組化標準，由於那時其模�
 
 ### 是否擁有模組依賴關係圖
 
-1. 模組加載本身不會有多個執行緒去幫忙加載，只會有一個執行緒進行加載
-2. 模組加載是同步加載：每一個模組的加載都必須等待前一個模組的加載完成才能做
-3. 每個模組的加載任務內容會是一次做完construction、instantiation、evaluation這三階段
-
-整體來說只需要 stack ＋ DFS post-order traversal 就能實現優先挑選沒依賴任何模組的模組或者依賴著已經完成加載之模組的模組
+是，主要用來檢測是否發生環狀依賴關係結構
 
 
 ### 單個CommonJS模組的載入
@@ -57,12 +53,13 @@ const xxx = require(module1)
 ```
 ### CommonJS 特點
 
-因此CommonJS設計上會是：
+CommonJS設計上會是：
 
-1.  以模組在本機端儲存設備上為前提而設計
-2.  同步加載：每個模組的載入皆是同步處理：目前模組的載入必須等待前面模組的載入階段都完成才能做
-3.  載入形式：透過執行模組來載入模組實例至需求方
-4.  沒特意將模組載入細分成建構、實例化、確定值這幾個階段，而是會透過類似stack + DFS遍歷以script標籤指定的模組為主的底部模組，優先從沒依賴其他模組的模組進行執行並實例化，接著再從依賴完成實例化的模組之模組執行並實例化，後面依此類推
+1.  以單執行緒來去加載模組 
+2. 以模組在本機端儲存設備上為前提而設計
+3. 同步加載：目前模組的載入必須等待前面模組的載入階段都完成才能做
+4.  載入形式：透過執行模組來載入模組實例至需求方
+5.  沒特意將模組載入細分成建構、實例化、確定值這幾個階段，而是會透過類似stack + DFS遍歷 由script標籤指定的模組和require關鍵字之間所構成的關係圖來找到模組加載
 
 
 ### DFS遍歷模組依賴關係例子
@@ -108,8 +105,12 @@ Evaluation continues down to the end of the counter module’s top level code. W
 **[![main.js getting its export connection to memory and filling in the correct value, but counter.js still pointing to the other memory location with undefined in it](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/44_cjs_variable_2-500x216.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/44_cjs_variable_2.png)**
 
 
+重點：
+- CommonJS 沒準備手段去面對cyclic dependency問題時，肯定會因為DFS關係要繞好幾圈，導致無法正常產生模組實例給需求方
+- CommonJS解決的概念為：挑出環狀依賴結構上的最後一個會遍歷到的模組並構建出非環狀依賴結構的
+- 若有模組A想載入還沒執行evaluation的模組B，就讓模組A先獲取模組B預設設定的空物件，而非繼續
 
-[[環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構]]
+
 
 
 
@@ -122,5 +123,5 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
-
+[[環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構]]
 References:
