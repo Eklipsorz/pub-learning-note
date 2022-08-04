@@ -57,7 +57,7 @@
 <!--SR:!2022-08-04,2,248-->
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
-<!--SR:!2022-08-04,2,248-->
+<!--SR:!2022-08-08,4,248-->
 
 #🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
 <!--SR:!2022-08-04,2,247-->
@@ -66,7 +66,7 @@
 <!--SR:!2022-08-05,3,250-->
 
 #🧠 ES Module：前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES Module，得用ES Module Spec 來處理 ->->-> `在script 標籤上設定type="module"`
-<!--SR:!2022-08-04,2,248-->
+<!--SR:!2022-08-09,5,248-->
 
 #🧠 前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
 <!--SR:!2022-08-05,3,250-->
