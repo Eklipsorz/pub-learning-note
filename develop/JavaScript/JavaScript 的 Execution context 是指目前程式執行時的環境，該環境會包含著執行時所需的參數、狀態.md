@@ -11,11 +11,14 @@ context：是指場景，一個透過某個事物A所存在或者所發生的場
 ### 在JS上的Execution context
 1. 在JavaScript中，會是引擎執行JavaScript的執行環境，其環境會由輔助引擎執行程式碼的內容所構成
 2. 在JavaScript中，JavaScript引擎會於編譯時期：
-	- 會先準備好資料好建立未來會使用的Global Execution Context、Function Execution Context、Block Execution Context
-3. JavaScript引擎在快要執行之前做：
+	- 記憶體分配：將記憶體分配至var變數宣告、函式宣告，其初始值分別為undefined、函式內容
+	- 定義建立EC所需的資料：
+	- 建立未來會使用的Global Execution Context、Function Execution Context、Block Execution Context
+	- 會於編譯後期已準備
+4. JavaScript引擎在快要執行之前做：
 	- 以準備好的EC資料來建立EC
 	- 以目前EC來執行，並根據目前EC狀況來更新EC
-4. 舉例：
+5. 舉例：
 	 - GEC：當JS引擎進入到檔案執行時，就先進入編譯時期並準備各種資料來建各種EC，直到結束編譯就先以GEC資料來建立，並直接拿目前GEC和Code來執行，根據執行過程來更新GEC的內容
 	 - FEC：當JS引擎進入到Function時，就先於執行之前建立FEC，接著以FEC內容來執行和根據執行過程來更新FEC
 	 - BEC(Block Execution Context)：當JS引擎進入到Block，就先於執行之前建立BEC，接著以BEC內容來執行和根據執行過程來更新BEC內容
