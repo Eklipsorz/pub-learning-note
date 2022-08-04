@@ -124,39 +124,52 @@ const xxx = require(moduleA)
 <!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS 是什麼加載？同步？非同步？ ->->-> `目前模組的載入必須等待前面模組的載入階段都完成才能做`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS 會用到模組依賴關係圖嗎？主要是用啥 ->->-> `會，主要用來遍歷模組來找到需要處理的模組以及檢測是否發生環狀依賴關係結構`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS 是單執行緒來處理嗎？ ->->-> `對`
+<!--SR:!2022-08-07,3,250-->
 
 
 #🧠 當要載入CommonJS模組時，會如何挑依賴模組以及挑到了要做什麼？->->-> `會透過DFS Post-Order Traversal來從模組依賴關係圖中挑出沒依賴其他模組的模組或者依賴著已經處理完模組加載的模組，並對那個模組進行一次性的獲取&建構、實例化、執行evaluation，最後再將模組實例所要輸出的內容回傳至需求方`
 <!--SR:!2022-08-07,3,250-->
 
 #🧠 當需求方以require來載入CommonJS模組時，具體會做什麼樣的載入？->->-> `這時JS引擎會先於編譯期間做： - 分配記憶體空間給模組下的模組實例module物件、var變數宣告、函式宣告 - 分配初始值給var變數為undefined、函式宣告會是拿到存放函式內容的記憶體區塊、模組實例(exports部分會是{} ) - 建立EC來紀錄模組下的每個識別字和對應實體物件，接著在執行該模組的top-level code 來產生模組要輸出的內容以及執行輸出模組內容的語句，如：執行到下列語句才會把輸出內容從空物件轉換成指定內容最後再將模組實例所要輸出的內容回傳至需求方`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 當需求方以require來載入CommonJS模組時，JS引擎在編譯時會做什麼？->->-> `- 分配記憶體空間給模組下的模組實例module物件、var變數宣告、函式宣告 - 分配初始值給var變數為undefined、函式宣告會是拿到存放函式內容的記憶體區塊、模組實例(exports部分會是{} ) - 建立EC來紀錄模組下的每個識別字和對應實體物件`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 當需求方以require來載入CommonJS模組時，會如何定義exports的初始值->->-> `給予{}`
+<!--SR:!2022-08-07,3,250-->
 
 ``
 
 #🧠 當需求方以require來載入CommonJS模組時，如何確定exports的最終值？ ->->-> `執行module.exports =...，就能確定exports的最終值`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 請畫圖來表示實例是如何分配給需求方，當需求方以require來載入CommonJS模組時執行exports和回傳需求方的require ->->-> `![](https://hacks.mozilla.org/files/2018/03/31_cjs_variable-768x174.png)`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS 完成實例化並回傳需求方的require會是指什麼？ 模組實例本身嗎？->->-> `會直接拿到模組實例的副本`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS模組：main 模組依賴著M1模組、M2模組、M3模組；M1 模組依賴M4 模組、M5模組；M2 模組依賴M6模組，那麼當載入main模組時，JS引擎會如何處理？順序是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659287023/blog/javascript/module/commonjs-module-example_vovrps.png) ->->-> `首先一開始從main.js執行，並且為了載入module1而執行對應Module1模組來獲取對應模組輸出內容，接著module1模組在一開始表明依賴著module4，所以就轉而去執行module4來獲取其模組輸出內容，由於Module4模組沒再依賴任何模組，所以就直接印出this is module4並輸出指定 內容給module1當module4所參照的物件，接著執行權就從M4回轉至M1，並由M1來執行module5來獲取對應輸出內容，而module5並沒有任何依賴模組的需求就直接印出this is module5 並輸出指定內容給M1，接著執行權回到M1，M1已經載入完成，就印出this is module1，接著就輸出自己模組的內容至main模組所要參照的模組物件。 執行權回到main.js，並轉由執行module2來獲取其模組輸出內容，而module2依賴著Module6，因而執行module6來獲取其模組輸出內容，module6並沒有依賴模組，所以就執行印出this is module6，然後就輸出模組內容至module2當參照物件，接著執行權回到M2，M2也載入所有依賴模組，就直接印出this is module2，接著輸出自己模組內容至main.js當參照內容，執行權回到main.js，而main.js此時只剩module3還未載入，就執行Module3來獲取對應模組內容，module3本身沒有依賴模組，所以只需要執行印出this is module3，然後輸出自己模組內容至main.js當參照物件，最後執行權回到main.js，main.js也載入所有依賴模組，這時就會執行main.js的內容，也就是this is main。所以順序會是：this is module 4 -> this is module 5 -> this is module 1 -> this is module 6 -> this is module 2 -> this is module 3 -> this is main`
 
 #🧠 CommonJS 模組若沒有手段去面對cyclic dependency問題時，會出現什麼樣的問題？ ->->-> `肯定會因為DFS的關係要繞好幾圈，導致無法正常產生模組實例給需求方`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS 模組是如何面對cyclic dependency問題？（概念上)->->-> `挑出環狀依賴結構上的最後一個會遍歷到的模組並透過移除對於第一個會遍歷到的模組之間的依賴關係來轉換成非環狀依賴結構`
+<!--SR:!2022-08-07,3,250-->
 
 #🧠 CommonJS 模組是如何面對cyclic dependency問題？具體是如何幫最後一個會遍歷到的模組移除對於第一個會遍歷到的模組之間的依賴關係來轉換成非環狀依賴結構 ->->-> `回傳模組1處於evaluation執行之前的模組實例狀態給最後1個遍歷到的模組就能使最後1個遍歷到的模組移除掉對於模組1之間的依賴`
+<!--SR:!2022-08-07,3,250-->
 
 
 #🧠 以三個環狀依賴結構為例子，來說明CommonJS 模組是如何面對cyclic dependency問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203325/blog/javascript/module/cyclic-dependecy-example_dmfgnv.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203324/blog/javascript/module/cyclic-dependecy-solution-example_y97fcp.png)`
+<!--SR:!2022-08-07,3,250-->
 
 
 #🧠 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js![counter.js returning control to main.js, which finishes evaluating](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/43_cjs_cycle-500x224.png) ->->-> `一開始會先使用檢測環狀依賴結構的算法來判定，在這裡是能夠確定，所以會將counter.js對於main.js的依賴關係給移除。剛開始執行main.js時，會於編譯時期替main.js分配記憶體空間來建立實例，同時預設設定{}至module.exports，接著在建立EC來替每個識別字能夠對應其實體物件，接著就進入執行來調用counter.js模組，然後就跑到counter.js那邊進行編譯時的實例化和設定，在執行時會直接碰到對於main.js的require，在這裏由於是被算法指定要移除，所以會直接獲取main.js那邊還未執行evaluation來確定值的版本，所以message會是undefined，並接著繼續執行counter.js的top-level code並確定要輸出的內容為count = 5，執行完畢之後，就跳回main.js那邊，將5回傳給count，讓main.js去印以及去設定message的最終值為Eval complete。`

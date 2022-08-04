@@ -144,6 +144,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `在編譯時期先對所有EC準備建立EC所需的資料，並於執行之前先建立GEC`
+<!--SR:!2022-08-06,2,247-->
 
 
 
