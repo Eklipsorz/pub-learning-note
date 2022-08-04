@@ -194,7 +194,7 @@ module map 主要的用途為：
 <!--SR:!2022-08-05,2,230-->
 
 #🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> `為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來以不同的方式解析`
-<!--SR:!2022-08-04,2,249-->
+<!--SR:!2022-08-10,6,249-->
 
 #🧠 ES module：以圖中例子來說說明模組的建構階段 ![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png) ->->-> `瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。`
 <!--SR:!2022-08-04,2,248-->

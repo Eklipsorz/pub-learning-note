@@ -57,7 +57,7 @@ test(a)
 <!--SR:!2022-08-05,13,230-->
 
 #🧠 在JS引擎一執行檔案時，會先建立什麼樣的Context ? 又是如何做啥（建立和更新)->->-> `編譯期間先替該檔案建立Global Execution Context(GEC)和Function Execution Context來設定執行會需要的環境變數以及儲存過程，當建立完之後，引擎就隨後執行JS程式碼，便以該context為基礎來執行以及更新context所需的資訊至context`
-<!--SR:!2022-08-04,11,230-->
+<!--SR:!2022-09-01,28,230-->
 
 #🧠 JavaScript 引擎於完整的編譯時期(算執行之前的時期)會替EC做什麼？ ->->-> `記憶體分配：將記憶體分配至var變數宣告、函式宣告，其初始值分別為undefined、函式內容、定義建立EC所需的資料：identifier : instance、this、outer reference，將要執行時做(此時算編譯時期)：- 拿建立EC所需的資料去建立EC`
 
