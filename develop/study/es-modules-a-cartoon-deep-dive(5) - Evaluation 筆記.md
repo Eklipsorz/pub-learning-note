@@ -141,7 +141,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 <!--SR:!2022-08-10,6,248-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個同個實例的執行？ 假如使用module map＋上鎖/解鎖的機制，那麼得滿足什麼樣條件才能做evaluation? ->->-> `module map的對應模組紀錄狀態上是顯示linked?`
-<!--SR:!2022-08-04,2,248-->
+<!--SR:!2022-08-10,6,248-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個同個實例的執行？ 假如使用module map＋上鎖/解鎖的機制，會設定條件且滿足條件的話，具體會如何做evaluation?  ->->-> `	- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating - 替module map上的對應模組紀錄進行解鎖 - 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置 - 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間 - 更新module map上的對應模組紀錄狀態：從evaluating 變更至 evaluated`
 <!--SR:!2022-08-04,1,210-->
