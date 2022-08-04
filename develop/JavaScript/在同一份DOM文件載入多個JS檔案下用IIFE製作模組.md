@@ -1,13 +1,13 @@
 ## 描述
 
 ### IIFE 模組下的背景
-1. 同一份DOM Document 載入 多個JS檔案 即為在 DOM Document黏貼JS檔案對應的程式碼，並不會將各個檔案視為不同的全域環境
-2. 同一份DOM Document 會經由瀏覽器分析成以window物件構成的BOM或者DOM，而所有在DOM Document 上的JS程式碼將會其文件對應的BOM window物件作為全域環境 
+
+1. 同一份DOM文件載入多個JS檔案
+2. 多個JS檔案在同份DOM Document 下會共享著window所構成的全域環境 
+3. 這些檔案能夠共享window
+
 [[IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成]]
-	總結：
-		- 同一份DOM文件載入多個JS檔案
-		- 由於多個JS檔案在同份DOM Document 下會共享著window所構成的全域環境
-		- 這些檔案能夠共享window
+
 
 
 ### IIFE模組的構建
