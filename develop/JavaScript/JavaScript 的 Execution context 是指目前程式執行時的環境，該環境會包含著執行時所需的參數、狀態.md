@@ -83,4 +83,5 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
+[[Execution Context 中的outer reference 適用以實現scope chain]]
 References:

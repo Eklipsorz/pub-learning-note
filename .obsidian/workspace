@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "存在功能相依的情況",
+                "query": "Execution",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -107,7 +108,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca2ceca5cc43be33",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
     "CommonJS 模組如何載入模組.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
