@@ -100,7 +100,7 @@ setTimeout(() => {
 #🧠 ES module：為何要避免環狀結構發生？ ->->-> `這是怕DFS遍歷時會無限循環，而導致無法正常處理`
 <!--SR:!2022-08-07,3,250-->
 
-#🧠 ES module：避免環狀結構發生的解法概念為？ ->->-> `將環狀結構轉換成沒環狀結構的形式`
+#🧠 ES module：面對環狀結構發生的解法概念為？ ->->-> `將環狀結構轉換成沒環狀結構的形式`
 <!--SR:!2022-08-06,2,248-->
 
 #🧠 ES module：當遇到環狀依賴結構的話，會如何在evaluation階段面對？ ->->-> `evaluation：- DFS post-order traversal 遍歷到環狀結構上最後一個未曾遍歷的模組就停止該方向的遍歷並以該模組為那個方向的最後一個模組 - 執行最後一個模組的加載來從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址 - 執行最後一個模組的top-level code`
@@ -116,7 +116,7 @@ setTimeout(() => {
 #🧠 假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是有環狀模組依賴關係 ，那麼它會如何在instantiation階段和evaluation階段處理？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659516780/blog/javascript/module/es-module/cyclic-dependency-code-example_dvfifa.png) ->->-> `- instantiation： -  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組 - 不讓b.js對環狀結構上的a.js進行import，因為a.js還未進行開始instantiation。- evaluation：等待所有模組的instantiation都做完 -  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組 -  執行b.js對於a.js模組的加載，具體加載會是：從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址 - 執行b.js模組上的top-level code，但結果由於a.js必須等待b.js執行完evaluation才能輪到它執行，所以b.js無法獲取自a.js引入的記憶體空間而報錯`
 <!--SR:!2022-08-07,3,250-->
 
-#🧠 假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是有環狀模組依賴關係 ，那麼若在b.js添加非同步任務來印a，會發生什麼？ ->->-> `會印出'b'，這是因為在這裏會以類似於call stack結構來執行b.js 和 a.js，並將b.js產生的任務放入至task queue等待event loop能夠挑選到它，最後放至call stack來執行`
+#🧠 ES module: 假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是有環狀模組依賴關係 ，那麼若在b.js添加非同步任務來印a，會發生什麼？ ->->-> `會印出'b'，這是因為在這裏會以類似於call stack結構來執行b.js 和 a.js，並將b.js產生的任務放入至task queue等待event loop能夠挑選到它，最後放至call stack來執行`
 <!--SR:!2022-08-06,2,248-->
 
 

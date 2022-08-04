@@ -53,7 +53,7 @@
 #🧠 ES module：當平台獲取到檔案時，會如何解析檔案？ (提示：目標和平台)a->->-> `當要被解析檔案前，會試著依照平台上的**指定解析目標**來定義特定檔案被解析後的目標形式會是什麼，接著確定之後，才會按照目標並根據對應目標的(內定)解析算法開始解析`
 <!--SR:!2022-08-05,2,230-->
 
-#🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record 參照位址`
+#🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
 <!--SR:!2022-08-10,6,248-->
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``

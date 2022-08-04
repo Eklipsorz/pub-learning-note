@@ -50,7 +50,7 @@
 #🧠 Browser Object Model 和 Document Object Model 之間的差別是什麼？ ->->-> `BOM會是以Browser作為根節點來連接DOM目前擁有的樹狀結構
 <!--SR:!2022-08-06,10,250-->
 
-#🧠 BOM 的根節點為啥？->->-> `Browser 或者 Window 物件`
+#🧠 BOM 的根節點為何？->->-> `Browser 或者 Window 物件`
 <!--SR:!2022-08-23,19,250-->
 
 
