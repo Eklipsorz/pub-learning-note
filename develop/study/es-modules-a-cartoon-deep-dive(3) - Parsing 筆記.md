@@ -54,13 +54,13 @@
 <!--SR:!2022-08-05,2,230-->
 
 #🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record 參照位址`
-<!--SR:!2022-08-04,2,248-->
+<!--SR:!2022-08-10,6,248-->
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
 <!--SR:!2022-08-08,4,248-->
 
 #🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
-<!--SR:!2022-08-04,2,247-->
+<!--SR:!2022-08-09,5,247-->
 
 #🧠  ES Module： 兩個不同的parse goal(goal1、goal2)都運用同一種檔案的話，會如何解析 ->->-> `會依據parse goal定義的形式來將檔案轉換成另一個形式，並不會因為同一種檔案轉換成一樣。`
 <!--SR:!2022-08-05,3,250-->

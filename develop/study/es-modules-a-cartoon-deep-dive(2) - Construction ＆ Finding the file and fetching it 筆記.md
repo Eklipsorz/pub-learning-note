@@ -197,7 +197,7 @@ module map 主要的用途為：
 <!--SR:!2022-08-10,6,249-->
 
 #🧠 ES module：以圖中例子來說說明模組的建構階段 ![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png) ->->-> `瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。`
-<!--SR:!2022-08-04,2,248-->
+<!--SR:!2022-08-08,4,248-->
 
 
 #🧠 ES module：在前端開發上，會將模組放哪裡？ ->->-> `網路、本地端的儲存設備`
@@ -224,11 +224,11 @@ module map 主要的用途為：
 <!--SR:!2022-08-05,1,227-->
 
 #🧠  ES module：具體的dynamic import形式會是什麼？ ->->-> `import(module_path/module1)`
-<!--SR:!2022-08-04,2,249-->
+<!--SR:!2022-08-08,4,249-->
 
 
 #🧠 ES module：module map會用做什麼？ ->->-> `- 顯示每個正在被載入的模組之狀態 - 藉由狀態來避免重複實例、重複執行/確定、重複下載 - 若有被實例化，狀態會含有對應模組實例在記憶體中的位置，以此作為緩存實例的作用`
-<!--SR:!2022-08-04,2,248-->
+<!--SR:!2022-08-05,1,228-->
 
 #🧠 對於本地端存取和網路速率來說，最糟糕的速率會是如何以及如何解決？ ->->-> `在最糟糕的情況下，是可以把兩者的速率想成非常糟糕，然而本地端存取比起網路來得好解決，因為我們只需要更替更好的本地端設備就能直接解決，然而網路卻沒辦法好解決更替網路設備就能直接性解決速率問題，還得考慮網路節點間的傳遞問題，而這些節點卻是另一些主機來管理，這些主機往往都無法直接性調整`
 <!--SR:!2022-08-05,3,250-->
