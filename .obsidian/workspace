@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+            "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "ca2ceca5cc43be33",
+        "id": "05462797ce3f8a04",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+            "file": "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Execution",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "423a385f7547e8c2",
+  "active": "9d67d12fb0ac51c3",
   "lastOpenFiles": [
-    "CommonJS 模組如何載入模組.md",
+    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
+    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+    "CommonJS 模組如何載入模組.md",
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "develop/JavaScript/在JS中，let和const 宣告會是包含著分配記憶體給識別字以及分配初始值至對應記憶體區塊.md",
     "MOC/JavaScript MOC.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
-    "develop/Redis/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
-    "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md"
+    "develop/Redis/Redis pub&sub - keyspace notification 是以指定key的任意事件來進行pub和sub，而keyevent notification 是以任意key上的指定事件來進行pub和sub.md"
   ]
 }
