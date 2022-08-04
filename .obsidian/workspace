@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "ca2ceca5cc43be33",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -95,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9d67d12fb0ac51c3",
+  "active": "ca2ceca5cc43be33",
   "lastOpenFiles": [
     "CommonJS 模組如何載入模組.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
