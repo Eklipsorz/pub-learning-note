@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "annotation/@askieGuanYuWebpackTaShiShiMo.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "annotation/@askieGuanYuWebpackTaShiShiMo.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +110,7 @@
   "active": "9d67d12fb0ac51c3",
   "lastOpenFiles": [
     "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段.md",
+    "annotation/@askieGuanYuWebpackTaShiShiMo.md",
     "Untitled.md",
     "Untitled 1.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
@@ -117,7 +118,6 @@
     "annotation/@webpackWhyWebpack.md",
     "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
     "develop/JavaScript/IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
-    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md"
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
   ]
 }
