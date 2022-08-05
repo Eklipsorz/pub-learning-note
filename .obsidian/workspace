@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+            "file": "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "41dad98f41f4527e",
+        "id": "84d93c21f904adcf",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+            "file": "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "模組實例化是會",
+                "query": "Question :: ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+                "file": "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9d67d12fb0ac51c3",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
+    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+    "first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
-    "CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
     "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段.md",
-    "annotation/@askieGuanYuWebpackTaShiShiMo.md",
-    "Untitled.md",
-    "Untitled 1.md",
-    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段轉換過來的產物.md"
+    "annotation/@askieGuanYuWebpackTaShiShiMo.md"
   ]
 }
