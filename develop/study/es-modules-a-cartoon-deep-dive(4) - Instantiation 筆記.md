@@ -140,7 +140,7 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 ``
 
 #🧠 ES 模組各有5種狀態會紀錄每個模組的目前載入狀況，並記錄在module record，請問是哪五種狀態？具體做什麼？ ->->-> `	- unlinked：未被進行模組上初始化和識別字連接 - linking：正在進行模組上的初始化和識別字連接 - linked：已完成模組上的初始化和識別字連接 - evaluating：已完成實例化這步驟，並正在執行對應模組的top-level code - evaluated：已完成實例化這部分，且也完成了對應模組上top-level code的執行`
-<!--SR:!2022-08-05,3,250-->
+<!--SR:!2022-08-15,10,250-->
 
 
 #🧠 ES Module：經過建構後的模組紀錄，在一開始進入實例化前會拿到什麼狀態？ ->->-> `unlinked`
@@ -160,7 +160,7 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 
 
 #🧠 用這兩張圖來說明ES module 的實例化，其中右邊是main.js，左邊由先至後是counter.js和render.js，主要main.js會依賴這兩個模組![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_01-768x316.png) ![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_02-768x316.png)->->-> ``
-<!--SR:!2022-08-05,3,250-->
+<!--SR:!2022-08-13,8,250-->
 
 #🧠 ES module的live bindings是什麼？ ->->-> `概念上會是exporting module輸出的識別字和importing module引用的識別字都各自指向相同的記憶體區塊，當exporting module改變識別字對應的記憶體區塊內容，importing module就會馬上看到其識別字對應的(記憶體區塊)內容`
 <!--SR:!2022-08-07,2,230-->
@@ -185,7 +185,7 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 
 
 #🧠 ES Module：做完一個模組的實例化，會直接做它的evaluation嗎？ ->->-> `並不會，做完實例化並不會直接做evaluation，會等全部模組的instantiation 的做完才會做evaluation`
-<!--SR:!2022-08-05,3,250-->
+<!--SR:!2022-08-12,7,250-->
 
 ---
 Status: #🌱 

@@ -54,7 +54,7 @@ test(a)
 <!--SR:!2022-10-15,74,250-->
 
 #🧠 在JS上的Execution context 會是指什麼？ ->->-> `在JavaScript中，會是引擎執行JavaScript的執行環境，其環境會由輔助引擎執行程式碼的內容所構成`
-<!--SR:!2022-08-05,13,230-->
+<!--SR:!2022-09-08,34,230-->
 
 #🧠 在JS引擎一執行檔案時，會先建立什麼樣的Context ? 又是如何做啥（建立和更新)->->-> `編譯期間先替該檔案建立Global Execution Context(GEC)和Function Execution Context來設定執行會需要的環境變數以及儲存過程，當建立完之後，引擎就隨後執行JS程式碼，便以該context為基礎來執行以及更新context所需的資訊至context`
 <!--SR:!2022-09-01,28,230-->
