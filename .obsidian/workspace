@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 2.md",
+            "file": "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed15dd319aa6c4de",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "MOC/webpack MOC.md",
     "MOC/Rendering MOC.md",
+    "MOC/webpack MOC.md",
+    "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
+    "Untitled 2.md",
     "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
     "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md",
-    "Untitled 2.md",
     "develop/Language/strong type 和 weak type 的 強弱是相對的，沒有絕對的定義，需要拿其他語言特性來比較目前語言特性才有強弱之分，越強就代表資料型別越明確，越弱就代表資料型別越不明確.md",
     "develop/OS/transcompiler 是一種compiler ，只是強調著這類型的compiler會是將高階程式語言轉換成另一個高階程式語言.md",
     "annotation/@wikidataCompiler2022.md",
-    "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
-    "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md"
+    "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md"
   ]
 }
