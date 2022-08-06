@@ -39,15 +39,15 @@
 重點：
 - 在電腦科學裡，preprocessor 是一種程式A，用來處理輸入資料並產生出執行其他程式B所需要的輸入資料，對於程式B而言，程式A是先於它來處理資料並將結果當作是執行程式B的輸入資料
 - 執行順序為：preprocessor -> processor 
-- 若是探討postprocessor的話，在這裡會是指將程式B的處理結果當作執行程式C的輸入資料，並由程式C來處理最後的結果，而程式C會是指postprocessor
+- 若是探討postprocessor的話，會是指特定結果下的後製處理程式，在這裡會是指將程式B的處理結果當作執行程式C的輸入資料，並由程式C來處理最後的結果，而程式C會是指postprocessor
 
 
 
 ## 複習
 #🧠 preprocessor 是指什麼？ ->->-> `preprocessor 是一種程式A，用來處理輸入資料並產生出執行其他程式B所需要的輸入資料，對於程式B而言，程式A是先於它來處理資料並將結果當作是執行程式B的輸入資料`
 <!--SR:!2022-08-09,3,250-->
-#🧠 postprocessor 是指什麼？ ->->-> `若是探討postprocessor的話，在這裡會是指將程式B的處理結果當作執行程式C的輸入資料，並由程式C來處理最後的結果，而程式C會是指postprocessor`
-<!--SR:!2022-08-09,3,250-->
+#🧠 postprocessor 是指什麼？ ->->-> `若是探討postprocessor的話，會是指特定結果下的後製處理程式，在這裡會是指將程式B的處理結果當作執行程式C的輸入資料，並由程式C來處理最後的結果，而程式C會是指postprocessor`
+
 
 #🧠 CSS preprocessor 是什麼？ ->->-> `CSS preprocessor 是一個程式，能透過preprocessor提供的語法編譯成CSS的程式`
 <!--SR:!2022-08-09,3,250-->
@@ -58,7 +58,7 @@
 #🧠 CSS postprocessor 是什麼？->->-> `CSS postprocessor 是一個程式，主要會接收CSS原檔並根據指定規則來將CSS轉換成另一種CSS的程式`
 <!--SR:!2022-08-09,3,250-->
 
-#🧠 請從為何取preprocessor 來說明CSS postprocessor是什麼？ ->->-> `postprocessor 具體會是在確定CSS檔案的程式之後，來將確定CSS檔案的程式輸出出來的CSS當作輸入，並將輸入丟至postprocessor來根據指定規則來將CSS轉換成另一種CSS`
+#🧠 請從為何取postprocessor 來說明CSS postprocessor是什麼？ ->->-> `postprocessor 具體會是在確定CSS檔案的程式之後，來將確定CSS檔案的程式輸出出來的CSS當作輸入，並將輸入丟至postprocessor來根據指定規則來將CSS轉換成另一種CSS`
 <!--SR:!2022-08-09,3,250-->
 
 
