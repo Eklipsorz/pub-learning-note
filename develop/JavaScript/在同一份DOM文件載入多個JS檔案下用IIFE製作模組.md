@@ -104,7 +104,7 @@
 
 
 #🧠 如何在同份DOM文件載入多個JS檔案的情況下來用IIFE建立模組？一檔案一模組？如何提供給其他JS檔案？  ->->-> `一開始會為了維護問題，一檔案為一個模組，而每個模組皆以IIFE所構成的功能函式和該功能函式所能共享的資料集合，提供模組的形式就是設定一個全域變數或者替window物件增加屬性就能`
-<!--SR:!2022-08-06,6,230-->
+<!--SR:!2022-08-22,16,230-->
 
 
 #🧠 請試著用IIFE來構建一個模組，模組下的功能函式叫做increment和getCount，increment 必須能夠增加模組內的count資料，getCount則是取得對應count資料  ->->-> ``
@@ -116,7 +116,7 @@
 
 
 #🧠 如何將被依賴模組載入至IIFE模組下的功能函式使用，假設被依賴模組jQuery是以IIFE所構成且以全域變數來輸出模組，請用程式碼來表示->->-> `(function (window, $) { function changeColor() { console.log(++_count);  $('body').css('background', 'red') } window.module1 = {  // ES6 增強語法 changeColor } })(window, jQuery)`
-<!--SR:!2022-08-06,8,250-->
+<!--SR:!2022-08-24,18,250-->
 
 #🧠 如何在HTML載入以IIFE為主且以全域變數來輸出功能的模組 ->->-> ` <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-=QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>`
 <!--SR:!2022-08-08,10,250-->
