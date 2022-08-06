@@ -29,11 +29,27 @@
     -   是弱型別語言：TypeScript, flow
 ```
 
-JavaScript
+JavaScript 主要會有的開發問題：
+	- 宿主環境對於每個版本的語法支援度不一
+	- 宿主環境對於特定語言的語法支援度不一
+	- JavaScript本身是弱型別語言
 
+JavaScript 對於 **宿主環境對於每個版本的語法支援度不一** 問題的解法：
+	- 將語法轉換成方便於宿主環境識別/執行的版本語法，如使用Babel 來將ES6以上的語法轉換成ES5以下的對應語法
+
+JavaScript 對於 **宿主環境對於特定語言的語法支援度不一** 問題的解法：
+	- 將特定語言的語法轉換成適合於方便於宿主環境識別/執行的特定語言語法，如使用Babel 來將特定語言的語法轉換成JavaScript
+
+JavaScript 對於 **是弱型別語言** 問題的解法：
+	- 使用比JavaScript還要強的型別語言來作為開發上的語言，接著就透過轉譯器來轉成JavaScript，如TypeScript
 
 > Babel is a free and open-source JavaScript transcompiler that is mainly used to convert ECMAScript 2015+ (ES6+) code into a backwards compatible version of JavaScript that can be run by older JavaScript engines.
 
+重點：
+- Babel 是一個轉譯器(transcompiler)
+- 主要用途：
+	- 將ES6以上版本的語法轉換較低版本(如ES5或者ES5以下版本)的對應語法
+	- 將特定語言的語法轉換成JavaScript語法
 
 
 #### CSS 技術演進
