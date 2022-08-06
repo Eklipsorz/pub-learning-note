@@ -11,22 +11,26 @@
 ### webpack 是什麼？
 
 ## 基本介紹
+[[@ithomeXunMiWebpack04]] 描述
+> webpack 是 **JavaScript 應用程式的模組打包器**。
+> 它將各模組間的相依關係繪製成[相依圖](https://webpack.js.org/concepts/dependency-graph/)(dependency graph)，依照相依圖解析並處理每一個模組，最後建置成一個或多個 bundle 。
 
-webpack 是 **JavaScript 應用程式的模組打包器**。
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659807833/blog/webpack/webpack-js-bundle_jn830n.png)
 
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659807833/blog/webpack/webpack-image-bundle_gjk6o7.png)
 
- webpack之前，前端網頁得為了權衡開發者是否容易開發而搞模組化和瀏覽器執行效能這兩個目標，但後來發現不論走哪一個方向，另一個總是無法達成，因此那個時期沒辦法以模組化的形式來寫前端，為了解決這樣困境，有人就想出**開發時就以易於人類開發的結構來開發，而實際部署時就以易於瀏覽器執行的形式來呈現**這個目標，具體的話，就是找一個類似編譯器的程式來充當開發和部署之間的橋樑 (已编辑)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659807833/blog/webpack/webpack-asset-bundle_ewuwit.png)
 
-編譯器就為webpack
-
-
-webpack是一種工具，專門將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段轉換過來的產物。
-
-在這裏多個模組會是前端框架、CSS/CSS預處理器
-
-在這裏整合物會適應於瀏覽器的執行，但對於人類的開發上
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659807834/blog/webpack/webpack-css-bundle_w4jx7s.png)
 
 
+重點：
+- webpack 是一個網頁應用程式的模組打包器(bundler)
+- webpack 主要用途會是將開發階段的多個模組分別按照模組種類來進行轉換打包所需的基本元件，然後再將基本元件包在一塊以構成單個bundle或者數個bundle
+- webpack的產物會是模組或者稱之為bundle，可供人以模組形式來加載其內容
+- bundle 內容通常會是 js、css、image、html (若有template language的話)
+
+既然是模組，那必定有使用模組的一方
 
 
 webpack
@@ -35,7 +39,15 @@ webpack
 圖片 -> 壓縮
 css -> 遇到preprocessor就執行css，然後將css
 
+### bundle 命名緣由
+bundle
+> verb - to gather or tie in a bundle(一捆)
+> noun - a number of things that have been fastened or are held together
 
+重點：
+- bundle：動詞是將多個事物捆綁成一個群組；名詞是指一系列被捆棒在一起的產物。
+- bundling 是將多個事物捆綁成一個群組的行為
+- bundler：進行綑綁行為的一方
 ### What is module bundling?
 [[@askieGuanYuWebpackTaShiShiMo]]
 > # What is module bundling?
@@ -45,8 +57,6 @@ css -> 遇到preprocessor就執行css，然後將css
 > As with all aspects of web development, the devil is in the details. :)
 
 重點：
-- bundle：將多個事物捆綁成一個群組，bundling 是將多個事物捆綁成一個群組的行為，若加以延伸的話，可以將多個事物透過某種轉換手段來當作綑綁，並轉換成整合物
-> to gather or tie in a bundle(一捆)
 - module bundling 是會指將一組模組以特定順序來拼接成一個單一檔案或者一組檔案
 
 
@@ -93,5 +103,6 @@ Links:
 [[webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題]]
 [[HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML]]
 References:
+[[@ithomeXunMiWebpack04]]
 [[@wikidataJiJianHua2022]]
 [[@askieGuanYuWebpackTaShiShiMo]]
