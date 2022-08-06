@@ -13,12 +13,14 @@
 - BOM
 [[Browser Object Model 是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面]]
 ## HTML + CSS + JS
-
+- HTML + CSS + JS
+[[HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML]]
 
 - HTML + JS
 [[HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境]]
 
 [[parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染]]
+
 
 - CSS
 [[CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題]]

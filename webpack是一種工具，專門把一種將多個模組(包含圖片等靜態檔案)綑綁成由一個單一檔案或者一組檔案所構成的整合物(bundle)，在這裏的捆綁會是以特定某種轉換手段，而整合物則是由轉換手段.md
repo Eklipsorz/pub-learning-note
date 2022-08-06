@@ -8,6 +8,12 @@
 
 
 
+### webpack 是什麼？
+
+## 基本介紹
+
+webpack 是 **JavaScript 應用程式的模組打包器**。
+
 
  webpack之前，前端網頁得為了權衡開發者是否容易開發而搞模組化和瀏覽器執行效能這兩個目標，但後來發現不論走哪一個方向，另一個總是無法達成，因此那個時期沒辦法以模組化的形式來寫前端，為了解決這樣困境，有人就想出**開發時就以易於人類開發的結構來開發，而實際部署時就以易於瀏覽器執行的形式來呈現**這個目標，具體的話，就是找一個類似編譯器的程式來充當開發和部署之間的橋樑 (已编辑)
 
@@ -85,6 +91,7 @@ Tags:
 [[Rendering]] - [[JavaScript]] - [[webpack]]
 Links:
 [[webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題]]
+[[HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML]]
 References:
 [[@wikidataJiJianHua2022]]
 [[@askieGuanYuWebpackTaShiShiMo]]
