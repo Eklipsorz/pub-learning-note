@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+            "file": "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+            "file": "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+                "file": "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +109,15 @@
   },
   "active": "84d93c21f904adcf",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled 1.md",
+    "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+    "MOC/webpack MOC.md",
     "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
     "annotation/@zhushihuisheicsZuiXinBandeXuebuwebpack5RuMenJavaScriptnomoziyurubandora2016.md",
-    "webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
     "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段.md",
-    "Untitled 1.md",
     "URL輸入參數會遇到的問題.md",
-    "Untitled.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md"
+    "first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md"
   ]
 }

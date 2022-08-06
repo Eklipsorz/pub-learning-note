@@ -2,7 +2,8 @@
 
 
 
-
+### 提出原因
+[[webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題]]
 
 
 
@@ -81,8 +82,9 @@ css -> 遇到preprocessor就執行css，然後將css
 ---
 Status: #🌱 
 Tags:
-[[Rendering]]
+[[Rendering]] - [[JavaScript]] - [[webpack]]
 Links:
+[[webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題]]
 References:
 [[@wikidataJiJianHua2022]]
 [[@askieGuanYuWebpackTaShiShiMo]]
