@@ -29,7 +29,7 @@
     -   是弱型別語言：TypeScript, flow
 ```
 
-JavaScript 主要會有的開發問題：
+JavaScript 主要會遇到的技術演進問題：
 	- 宿主環境對於每個版本的語法支援度不一
 	- 宿主環境對於特定語言的語法支援度不一
 	- JavaScript本身是弱型別語言
@@ -60,12 +60,25 @@ JavaScript 對於 **是弱型別語言** 問題的解法：
     -   是靜態的：CSS in JS
 ```
 
+JavaScript 主要會遇到的技術演進問題：
+	- 宿主環境對於每個CSS語法的支援性都不一致
+	- 宿主環境對於特定語言的語法支援度不一
+	- JavaScript本身是弱型別語言
+
+
 #### HTML 技術演進
 ```
 -   HTML
     -   是靜態的：Pug, Template Syntax
 ```
 
+[[template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護]]
+
+HTML 主要會遇到的技術演進問題：
+	- 畫面和資料的切分，傳統上會將資料寫死在畫面上
+
+HTML 對於 **畫面和資料的切分，傳統上會將資料寫死在畫面上** 問題的解法：
+	- 用特定語言體系來建立一個可以填入資料並根據請求狀況的模板，以打造出資料和畫面的切分，其中模板是可以搭配原始的HTML、JS、CSS，接著再經過處理將模板和資料合併成一組由HTML、CSS、JS構成的網頁
 
 
 
@@ -83,5 +96,6 @@ Tags:
 Links:
 [[transcompiler 是一種compiler ，只是強調著這類型的compiler會是將高階程式語言轉換成另一個高階程式語言]]
 [[strong type 和 weak type 的 強弱是相對的，沒有絕對的定義，需要拿其他語言特性來比較目前語言特性才有強弱之分，越強就代表資料型別越明確，越弱就代表資料型別越不明確]]
+[[template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護]]
 References:
 [[@ithomeXunMiWebpack03]]

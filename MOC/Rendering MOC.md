@@ -22,3 +22,8 @@
 
 #### JS 模組化
 [[在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題]]
+
+
+## template
+
+[[template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護]]
