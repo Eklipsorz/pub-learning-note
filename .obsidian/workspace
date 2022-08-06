@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "postprocessor",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,8 +107,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "423a385f7547e8c2",
+  "active": "84d93c21f904adcf",
   "lastOpenFiles": [
+    "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
@@ -118,7 +118,6 @@
     "webpack是一種工具，專門把一種將多個模組(包含圖片等靜態檔案)綑綁成由一個單一檔案或者一組檔案所構成的整合物(bundle)，在這裏的捆綁會是以特定某種轉換手段，而整合物則是由轉換手段.md",
     "Untitled.md",
     "Untitled 1.md",
-    "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
     "annotation/@zhushihuisheicsZuiXinBandeXuebuwebpack5RuMenJavaScriptnomoziyurubandora2016.md"
   ]
 }
