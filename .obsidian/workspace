@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
+            "file": "Untitled 1.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
+                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "95b2f8023ef3cc72",
+  "active": "6edc0def891bc4fd",
   "lastOpenFiles": [
-    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
+    "MOC/Rendering MOC.md",
+    "develop/render/Window 物件是指顯示 特定文件所渲染出來的畫面 的顯示區塊物件.md",
     "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
+    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "develop/webpack/webpack 具體會是將開發階段的多個與JS相關的模組(圖片、CSS、JS)分別按照模組種類來進行轉換以建立打包所需的基本元件，然後再將基本元件包在一塊以構成單個bundle或者數個bundle.md",
     "develop/Language/strong type 和 weak type 的 強弱是相對的，沒有絕對的定義，需要拿其他語言特性來比較目前語言特性才有強弱之分，越強就代表資料型別越明確，越弱就代表資料型別越不明確.md",
     "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
     "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md",
-    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-    "develop/OS/transcompiler 是一種compiler ，只是強調著這類型的compiler會是將高階程式語言轉換成另一個高階程式語言.md",
-    "develop/study/es-modules-a-cartoon-deep-dive  - 用語介紹.md"
+    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md"
   ]
 }
