@@ -19,8 +19,8 @@
 重點：在還沒替JS進行模組化為主的開發時期
 - 檔案分離：初步的模組化，將DOM Document 上的CSS、JS拆分成多個CSS檔案、多個JS檔案來讓DOM Document能夠重複使用
 - 遇到問題：JS全域環境上的作用域污染問題
-	- 背景：由於1個DOM Document為1個Window 物件所構成的DOM tree，而JS的全域環境是依照Window物件來決定，所以每個DOM Document 為 每個獨立的JS全域環境，且沒有任何模組標準
-	- 依賴於DOM Document 1的JS 並不會污染另一個DOM Document 2的JS 上的作用域，因兩者的window 物件皆為不同，所以兩者全域環境也會是不同的
+	- 背景：由於每個DOM Document會在首次執行JS前建立window物件而從而構成GEC，接著同一份的JS就用該GEC延續著，所以每個DOM Document 會是 每個獨立的JS全域環境，且沒有任何模組標準
+	- 依賴於DOM Document 1的JS 並不會污染另一個DOM Document 2的JS 上的作用域，因兩者建立的GEC皆為不同，所以兩者全域環境也會是不同的
 	- 在同一個DOM Document 的JS 中的多個程式碼區塊會彼此污染同一個作用域
 
 在同一個DOM Document 的JS 中的多個程式碼區塊會彼此污染同一個作用域：
@@ -65,8 +65,8 @@
 #🧠  網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，發生場景是在哪？為什麼會發生？  ->->-> `至於發生場景是在同一個DOM Document調用多個JS檔案`
 <!--SR:!2022-08-29,28,250-->
 
-#🧠 網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，請問多個DOM Document間會不會發生全域污染 ->->-> `依賴於DOM Document 1的JS 並不會污染另一個DOM Document 2的JS 上的作用域，因兩者的window 物件皆為不同，所以兩者全域環境也會是不同的`
-<!--SR:!2022-08-29,28,250-->
+#🧠 網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，請問多個DOM Document間會不會發生全域污染 ->->-> `由於每個DOM Document會在首次執行JS前建立window物件而從而構成GEC，接著同一份的JS就用該GEC延續著，所以每個DOM Document 會是 每個獨立的JS全域環境，所以多個DOM Document也就因為各有自己的GEC而不互相影響。`
+
 
 
 #🧠 全域污染(global scope pollution)是什麼？ ->->-> `多個程式區塊在同一個全域環境下使用著彼此都會有的變數名稱/識別字作為變數來存取/變更，致使部分程式區塊的處理結果會是不如預期，甚至導致整個程式的最後結果也是不如預期`
