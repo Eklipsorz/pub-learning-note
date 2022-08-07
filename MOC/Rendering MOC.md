@@ -37,3 +37,9 @@
 ## template
 
 [[template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護]]
+
+
+
+## 資源
+
+[[靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動]]
