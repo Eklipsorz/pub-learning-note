@@ -63,35 +63,28 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 - 當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言：
 	-  同一份DOM Document 會經由瀏覽器分析成以window實例物件構成的BOM
-	-  首次執行JS程式碼時，會建立全域物件為window物件的Global Execution Context並記錄當時JS程式碼的識別字和對應實體物件
+	-  首次執行JS程式碼時，會建立全域物件為window物件為主的Global Execution Context並記錄當時JS程式碼的識別字和對應實體物件
 	- 後面執行的JS程式碼會延續著前面建立的GEC來執行並刷新識別字的對應實體物件內容
 	- 同一份DOM Document載入的多個JS檔案會因為同一份的DOM Document所產生出來的同個GEC而讓多個JS檔案在同一個全域環境上執行，
-- 每一個DOM document都有各自不同的Window 物件，透過window物件來決定GEC歸屬於誰，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行
-- 瀏覽器可允許多個標籤頁，每個標籤頁都對應一個畫面，每個標籤頁都對應不同的window物件，那麼彼此間的JavaScript全域環境並不會共享
+- 每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行
+- 瀏覽器可允許多個標籤頁，每個標籤頁都對應特定畫面，那麼每個標籤頁都對應不同的GEC，那麼彼此間的JavaScript全域環境並不會共享
 
 ## 複習
 #🧠 當瀏覽器讀取到JS時，瀏覽器會如何做？ ->->-> `當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言`
 <!--SR:!2022-08-22,23,250-->
 
 
-#🧠 JS語言上在瀏覽器上的全域環境是什麼？(GEC) ->->-> `其JS語言的全域環境會是以目前的Window物件內容為主來從而構成對應的GEC，並以GEC來輔助執行同一個DOM document上的JS代碼`
+#🧠 JS語言上在瀏覽器上的全域環境是什麼？(GEC) ->->-> `每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行`
 <!--SR:!2022-08-13,6,248-->
 
-#🧠 JS語言上在瀏覽器上的全域環境是什麼？->->-> `其JS語言的全域環境會是以目前的Window物件內容為主來從而構成對應的GEC，並以GEC來輔助執行同一個DOM document上的JS代碼`
+#🧠 JS語言上在瀏覽器上的全域環境是什麼？->->-> `每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行`
 <!--SR:!2022-08-13,6,248-->
-
-
-#🧠 每一個DOM document 對於Window物件來說，是指多個document共享同一個window物件？還是每個document 都有各自的window物件？ 為什麼？(GEC)->->-> `每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree，而JS語言的全域環境會是以目前的Window物件內容為主來構建GEC，而由同一個window物件構成GEC來執行同一個DOM document上的JS代碼`
-<!--SR:!2022-08-13,6,248-->
-
-#🧠 每一個DOM document 對於Window物件來說，是指多個document共享同一個window物件？還是每個document 都有各自的window物件？ 為什麼？->->-> `每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree，而JS語言的全域環境會是以目前的Window物件內容為主來構建GEC，而由同一個window物件構成GEC來執行同一個DOM document上的JS代碼`
-<!--SR:!2022-08-08,1,228-->
 
 
 #🧠 假設有兩個HTML檔案，裡面有各自JS腳本程式碼，請問他們的全域變數會是共享的？ ->->-> `並不會，因為每個HTML檔案都會被解析成各自不同的window物件，而每個window物件會構成不同的GEC，這兩個檔案的全域環境是不同，且兩者的變數並不會共享的`
 <!--SR:!2022-08-22,23,250-->
 
-#🧠 若瀏覽器可允許使用者開啟多個標籤頁，每個標籤頁都對應一個畫面，那麼對於window物件和javascript全域環境來說，是代表什麼？ ->->-> `每個標籤頁都對應不同的window物件，那麼就會有兩個不同的GEC，那麼彼此間的JavaScript全域環境並不會共享`
+#🧠 若瀏覽器可允許使用者開啟多個標籤頁，每個標籤頁都對應一個畫面，那麼對於javascript全域環境來說，是代表什麼？ ->->-> `每個標籤頁都對應特定畫面，那麼每個標籤頁都對應不同的GEC，那麼彼此間的JavaScript全域環境並不會共享`
 <!--SR:!2022-08-13,6,248-->
 
 

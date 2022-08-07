@@ -3,7 +3,7 @@
 ### IIFE 模組下的背景
 
 1. 同一份DOM文件載入多個JS檔案
-2. 多個JS檔案在同份DOM Document 下會共享著window所構成的全域環境 
+2. 多個JS檔案在同份DOM Document 下會因為共享著GEC而處於相同的JS全域環境
 3. 這些檔案能夠共享window
 
 [[IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成]]
