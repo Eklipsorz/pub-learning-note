@@ -21,7 +21,7 @@ ReferenceError: can't access lexical declaration 'X' before initialization
 <!--SR:!2022-08-07,3,250-->
 
 #🧠 在JS中，顯示以下訊息 ReferenceError: can't access lexical declaration 'X' before initialization 這代表著什麼？ ->->-> `代表著識別字X的宣告還未做完就先存取其識別字對應的記憶體區塊內容`
-<!--SR:!2022-08-07,3,250-->
+<!--SR:!2022-08-17,10,250-->
 
 
 ---
