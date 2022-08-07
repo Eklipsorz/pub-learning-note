@@ -28,14 +28,17 @@
 
 ## 複習
 #🧠 template processor 技術目的是什麼？ ->->-> `網頁切分成MVC(Model、View、Controller)來開發/維護`
+<!--SR:!2022-08-10,3,250-->
 
 #🧠 template language 是什麼？ ->->-> `是模板引擎用來製作模板的語言，語言是模板引擎提供且能夠識別並處理`
 
 
 
 #🧠 template processor 會用什麼來建立模板？ ->->-> ` template processor 會提供自己的語言體系語法以及HTML、CSS、JS來建立可填入資料的模板`
+<!--SR:!2022-08-10,3,250-->
 
 #🧠 template processor 會生成什麼結果？過程是？ ->->-> `template processor 會將模板和要放進模板填入的資料合併成一組HTML、CSS、JS組成的網頁`
+<!--SR:!2022-08-10,3,250-->
 
 ---
 Status: #🌱 
