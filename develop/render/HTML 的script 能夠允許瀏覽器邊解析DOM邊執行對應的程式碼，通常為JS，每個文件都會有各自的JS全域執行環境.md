@@ -78,11 +78,11 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 <!--SR:!2022-08-07,2,248-->
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？->->-> `其JS語言的全域環境會是以目前的Window物件內容為主來從而構成對應的GEC，並以GEC來輔助執行同一個DOM document上的JS代碼`
-<!--SR:!2022-08-07,2,248-->
+<!--SR:!2022-08-13,6,248-->
 
 
 #🧠 每一個DOM document 對於Window物件來說，是指多個document共享同一個window物件？還是每個document 都有各自的window物件？ 為什麼？(GEC)->->-> `每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree，而JS語言的全域環境會是以目前的Window物件內容為主來構建GEC，而由同一個window物件構成GEC來執行同一個DOM document上的JS代碼`
-<!--SR:!2022-08-07,2,248-->
+<!--SR:!2022-08-13,6,248-->
 
 #🧠 每一個DOM document 對於Window物件來說，是指多個document共享同一個window物件？還是每個document 都有各自的window物件？ 為什麼？->->-> `每一個DOM document都有各自的Window 物件：DOM document會是經由瀏覽器解析成另一個window 物件所構成的DOM tree，而JS語言的全域環境會是以目前的Window物件內容為主來構建GEC，而由同一個window物件構成GEC來執行同一個DOM document上的JS代碼`
 <!--SR:!2022-08-07,2,248-->
