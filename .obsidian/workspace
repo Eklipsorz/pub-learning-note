@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 1.md",
+            "file": "develop/React/React：create-react-app 專案下的npm run command.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "public",
+                "query": "npm run start",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "develop/React/React：create-react-app 專案下的npm run command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9aa014d408c4cdd4",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
+    "develop/React/React 啟動專案使用簡介.md",
+    "develop/React/React：create-react-app 專案下的npm run command.md",
+    "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
+    "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
     "Untitled 2.md",
+    "Untitled.md",
+    "Untitled 1.md",
     "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "MOC/webpack MOC.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
-    "develop/React/react 簡介.md",
-    "develop/React/React 啟動專案使用簡介.md",
-    "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
-    "develop/Redis/Redis Hash是儲存多個key-value的字典.md"
+    "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md"
   ]
 }
