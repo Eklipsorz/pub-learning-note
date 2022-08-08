@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "develop/React/React 使用簡介.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "develop/React/React 使用簡介.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,8 @@
   },
   "active": "7d3a05a72275ed74",
   "lastOpenFiles": [
+    "develop/React/react 簡介.md",
+    "develop/React/React 使用簡介.md",
     "develop/Redis/Redis Hash是儲存多個key-value的字典.md",
     "develop/Redis/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
     "develop/Redis/Redis 的Value主要結構為 String 和 Hash.md",
@@ -104,8 +106,6 @@
     "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
     "CommonJS 模組如何載入模組.md",
-    "MOC/Rendering MOC.md",
-    "MOC/webpack MOC.md",
-    "MOC/React MOC.md"
+    "MOC/Rendering MOC.md"
   ]
 }
