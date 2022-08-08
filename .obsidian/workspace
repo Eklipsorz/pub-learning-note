@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
+            "file": "develop/Redis/Redis Hash是儲存多個key-value的字典.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "window物件",
+                "query": "string 和 hash",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
+                "file": "develop/Redis/Redis Hash是儲存多個key-value的字典.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +98,15 @@
   },
   "active": "7d3a05a72275ed74",
   "lastOpenFiles": [
+    "develop/Redis/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
+    "develop/Redis/Redis 的Value主要結構為 String 和 Hash.md",
+    "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
     "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
     "CommonJS 模組如何載入模組.md",
     "MOC/Rendering MOC.md",
     "MOC/webpack MOC.md",
     "MOC/React MOC.md",
-    "Untitled.md",
-    "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
-    "develop/render/Window 物件是指顯示 特定文件所渲染出來的畫面 的顯示區塊物件.md",
-    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md"
+    "Untitled.md"
   ]
 }

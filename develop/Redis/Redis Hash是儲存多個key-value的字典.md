@@ -47,6 +47,8 @@
 #🧠 redis 如何在 hash 結構上存取資料? CRUD為？->->-> `讀取資料：根據key值和其對應hash上的key值來讀取對應的value，寫入資料：根據key值和其對應hash上的key值來寫入對應的value，更新資料：根據key值和其對應hash上的key值來更新對應的value，根據key值和其對應hash上的key值來刪除指定的key-value pair(在hash上的key-value pair)`
 <!--SR:!2022-10-13,91,270-->
 
+#🧠 redis： 為什麼string可以運用在處理大部分屬性值的操作上？為何不使用hash ->->-> `因爲比起使用hash來一個一個挑選屬性來找，不如直接一口氣獲取全部屬性值，然後去除不必要的屬性來會來得快`
+
 ---
 Status: #🌱 
 Tags:
