@@ -201,7 +201,7 @@ GlobalExectionContext = {
 <!--SR:!2022-08-19,40,248-->
 
 #🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域物件`
-<!--SR:!2022-08-08,33,248-->
+<!--SR:!2022-10-28,81,248-->
 
 
 #🧠  若於Global Execution Context的建立期間遇到函式、變數的話，其對應識別字會是如何？對應內容是否能有值？(提示：函式不受scope影響，變數會->->-> `在這裡由於只有函式宣告本身可以透過函式名稱來呼叫，所以不受到對應值無法確定的問題，而const/let的變數宣告會受限於對應值無法確定的問題，因此對應let/const的變數宣告會是uninitialized來表示該變數還未宣告`

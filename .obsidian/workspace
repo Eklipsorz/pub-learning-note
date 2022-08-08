@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6edc0def891bc4fd",
+        "id": "7d3a05a72275ed74",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CommonJS 模組如何載入模組.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "d8c9762322e5ca26",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
+            "file": "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CommonJS 模組如何載入模組.md",
+                "file": "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6edc0def891bc4fd",
+  "active": "7d3a05a72275ed74",
   "lastOpenFiles": [
-    "MOC/Rendering MOC.md",
+    "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/render/靜態資源是資源本身並不會隨著執行、處理請求而變動，動態資源是資源本身會隨著執行、處理請求而變動.md",
+    "CommonJS 模組如何載入模組.md",
+    "MOC/Rendering MOC.md",
     "MOC/webpack MOC.md",
     "MOC/React MOC.md",
-    "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "Untitled.md",
     "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
     "develop/render/Window 物件是指顯示 特定文件所渲染出來的畫面 的顯示區塊物件.md",
-    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
+    "develop/render/在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題.md"
   ]
 }
