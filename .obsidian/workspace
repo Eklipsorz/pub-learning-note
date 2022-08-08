@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React：create-react-app 專案下的npm run command.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "npm run start",
+                "query": "index.js",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：create-react-app 專案下的npm run command.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "9aa014d408c4cdd4",
   "lastOpenFiles": [
-    "develop/React/React 啟動專案使用簡介.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "develop/webpack/webpack 具體會是將開發階段的多個與JS相關的模組(圖片、CSS、JS)分別按照模組種類來進行轉換以建立打包所需的基本元件，然後再將基本元件包在一塊以構成單個bundle或者數個bundle.md",
+    "Untitled.md",
     "develop/React/React：create-react-app 專案下的npm run command.md",
+    "develop/React/React 啟動專案使用簡介.md",
     "postman 錯誤訊息無法正常接收是因爲res.json(..)並未如期執行完就從那停止，而是往後繼續執行.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
-    "Untitled 2.md",
-    "Untitled.md",
-    "Untitled 1.md",
     "前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
-    "MOC/webpack MOC.md",
-    "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md"
+    "MOC/webpack MOC.md"
   ]
 }

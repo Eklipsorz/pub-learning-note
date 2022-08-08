@@ -30,7 +30,32 @@ root.render(element);
 每個Virtual DOM節點都具有render方法能夠指定React 層級的 element 放入在對應DOM節點 或者告訴系統 root節點對應的dom節點要如何被渲染
 
 
+### public/index.html
 
+paths：設定wepback進行前的前置處理
+```
+appPublic: resolveApp('public'),
+appHtml: resolveApp('public/index.html'),
+appIndexJs: resolveModule(resolveApp, 'src/index'),
+```
+
+webpack.config.js：
+```
+	new HtmlWebpackPlugin(
+		Object.assign(
+			{},
+			{
+				inject: true,
+				template: paths.appHtml,
+			},
+			.
+			.
+		)
+	)
+```
+
+
+CRA 所設定的webpack 會將public/index.html
 
 public 下的 index.html是最主要載入bundle.js的html，由index.html來搭配互動來讓bundle.js產生對應的畫面
 
@@ -60,8 +85,14 @@ public 下的 index.html是最主要載入bundle.js的html，由index.html來搭
 </html>
 ```
 
+### src/index.js 總是為webpack的entry?
+```
+appPublic: resolveApp('public'),
+appHtml: resolveApp('public/index.html'),
+appIndexJs: resolveModule(resolveApp, 'src/index')
+```
 
-
+若沒特別設定webpack的entry，預設值會是 `./src/index.js`，換言之，一切會以它為主來構成javascript相關模組依賴關係來進行遍歷、轉換，最後整合成數個套件給html載入
 
 ### import
 另外import 細節  
@@ -73,7 +104,7 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 React：src/index.js 總是為webpack的entry?->->-> `若沒特別設定webpack的entry，預設值會是 \.\/src\/index.js`
 
 ---
 Status: #🌱 
