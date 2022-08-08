@@ -3,7 +3,10 @@
 >  - it simplifies building those user interfaces
 >
 
-react 本質上是一個JavaScript 函式庫，主要用途為透過它來簡化使用者介面的建構流程
+react ：
+1. 本質上是一個JavaScript 函式庫，
+2. react 程式碼具體為 JavaScript 程式碼
+3. 主要用途為透過它來簡化使用者介面的建構流程
 
 
 > react is all about components

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React 使用簡介.md",
+            "file": "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "string 和 hash",
+                "query": " CSS-in-JS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React 使用簡介.md",
+                "file": "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +98,8 @@
   },
   "active": "7d3a05a72275ed74",
   "lastOpenFiles": [
+    "develop/React/React 啟動專案使用簡介.md",
     "develop/React/react 簡介.md",
-    "develop/React/React 使用簡介.md",
     "develop/Redis/Redis Hash是儲存多個key-value的字典.md",
     "develop/Redis/Redis Hash 遇到 巢狀結構的資料的話，又是面臨到要以String或者Hash來儲存的問題.md",
     "develop/Redis/Redis 的Value主要結構為 String 和 Hash.md",

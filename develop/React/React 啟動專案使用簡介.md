@@ -11,11 +11,23 @@ cd <application>
 npm start
 ```
 
+
+
+
 create-react-app：
 1. 是一個工具，主要是用來做快速建構基礎的react application開發環境
 2. 算是鷹架開發技術
 3. 
 
+在\<application\> 目錄下，指令會有：
+
+1. 啟動開發用的網頁伺服器：只要客戶端對伺服器發送指令，伺服器就會先對目前專案做webpack優化，然後再將結果回傳給客戶端。
+	細節：
+		- 若原始碼有變動的話，會同等更新伺服器上的內容。
+```
+// 對應指令為 react-scripts start
+npm start
+```
 
 
 
@@ -23,8 +35,8 @@ create-react-app：
 當你準備好發佈到線上環境，執行 `npm run build` 會在 `build` 文件夾裡建立一個你的應用程式的最佳化版本，
 
 目錄結構：
-src folder 主要存放具體的原始碼，具體包含了定義react元件的代碼
-public folder：主要存放不被編譯和優化的內容，主要會是靜態檔案，如圖片、css
+src 目錄： 主要存放具體的原始碼，具體包含了定義react元件的代碼
+public 目錄：主要存放不被編譯和優化的內容，主要會是靜態檔案，如圖片、css
 
 > The `public` folder contains the HTML file so you can tweak it, for example, to [set the page title](https://create-react-app.dev/docs/title-and-meta-tags). The `<script>` tag with the compiled code will be added to it automatically during the build process.
 
