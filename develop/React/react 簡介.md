@@ -92,26 +92,8 @@ react-dom 是用來指示react如何對dom操作和對瀏覽器操作
 
 
 
-ReactDOM.createRoot => create the main entry point
-the main hook of the overall user interface you are about to build with React
-That's the idea behind createRoot
-
-
-createRoot()
-```
-createRoot(container[, options]);
-```
-Create a React root for the supplied `container` and return the root. The root can be used to render a React element into the DOM with `render`:
-```
-const root = createRoot(container);
-root.render(element);
-```
-
-- container ：會是指dom節點
-- createRooot：主要指定哪個dom節點或者容器會是react層級的root節點，並回傳root
-- 每個react層級的root節點可以呼叫render來將react element 指定放入在對應DOM節點 或者告訴系統 root節點對應的dom節點要如何被渲染
 
 
 
 
-public 下的 index.html是最主要載入bundle.js的html，由index.html來搭配互動來讓bundle.js產生對應的畫面
+
