@@ -57,7 +57,7 @@
 <!--SR:!2022-08-10,6,248-->
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
-<!--SR:!2022-08-08,4,248-->
+<!--SR:!2022-08-19,11,248-->
 
 #🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
 <!--SR:!2022-08-09,5,247-->
