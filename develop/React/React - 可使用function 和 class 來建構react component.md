@@ -43,17 +43,23 @@ function Welcome(props) {
 > 同樣的，你也可以使用 [ES6 Class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) 來定義 component：
 
 ```
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
-}
+// Your code  
+class Greeting extends React.Component {  
+  render() {  
+    return <p>Hello</p>;  
+  }  
+}// Inside React  
+const instance = new Greeting(props); // Greeting {}  
+const result = instance.render(); // <p>Hello</p>
 ```
 
 > 上述兩種 component 在 React 中是同等的。
 
 > Function 和 Class component 兩者都擁有額外的特性，我們將會在[下一個章節](https://zh-hant.reactjs.org/docs/state-and-lifecycle.html)探討。
 
+
+重點：
+- 利用class的話，實際上是利用建構式來建構出prototype，並且利用new按照prototype來建立實例，最後由實例呼叫對應render來得到對應react element
 
 ## 複習
 
@@ -68,6 +74,8 @@ class Welcome extends React.Component {
 #🧠 React：如何構建component?  ->->-> `使用function或者class`
 
 #🧠 React：使用function來構建的component 稱之為什麼 ->->-> `function component`
+
+#🧠 React： 使用class來建立component，具體會是什麼？ ->->-> `利用class的話，實際上是利用建構式來建構出prototype，並且利用new按照prototype來建立實例，最後由實例呼叫對應render來得到對應react element`
 
 ---
 Status: #🌱 
