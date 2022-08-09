@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "Untitled 1.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "ca9520f43a60229a",
+        "id": "531623fb85e70148",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react-dom",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca9520f43a60229a",
+  "active": "e3507c6eb583804c",
   "lastOpenFiles": [
+    "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
+    "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export則是以輸出對應單一值的記憶體位址，取出時只要用任意變數名.md",
+    "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
+    "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
+    "實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+    "接續著檔案分離的JS時代，採取IIFE和Closure來產生一個獨立的命名空間來存放不同函式和變數來作為模組.md",
     "Untitled 1.md",
+    "ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export則是以輸出對應單一值的記憶體位址，取出時只要用任意變數名稱去接收該位置就行.md",
     "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md",
-    "annotation/@mdnExportJavaScriptMDN.md",
-    "Untitled.md",
-    "develop/React/React - 可使用function 和 class 來建構react component.md",
-    "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
-    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
-    "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
-    "develop/React/react 簡介.md",
-    "develop/React/React：create-react-app 專案下的npm run command.md"
+    "annotation/@mdnExportJavaScriptMDN.md"
   ]
 }
