@@ -1,0 +1,119 @@
+## 描述
+
+### SGML vs. XML vs. HTML
+
+[[@guolijiaotongdaxueXMLYuHTML]] 所描述：
+> SGML（標準通用標示語言Standard Generalized Markup Language） [<註一>](http://yes.nctu.edu.tw/Lecture/NewTech/C05_NewEra/XML/IntroXML/chapter2.html#ps) 語法簡化而來的子集，SGML是屬與功能強大的標示、管理和排版語言。那為什麼不用 SGML呢？因為它的結構太複雜了，所以在1991年由Tim Berners-Lee建立了HTML語法，簡單易學，也使得今日網路上的資訊能 夠快速傳播，互相共享。但是後來被認為HTML語法太過於鬆散，不夠嚴謹，所以才有目前的XML出現，算是青出於藍的孫子輩， 它可說是取SGML之長補HTML之短。
+
+
+[[@heshijunFengSiXin65TiaoXiaoXi]] 所描述：
+>  XML是以 SGML 的格式精簡後制定出來的，制定者當然是全球資訊網協會 (World Wide Web Consortium，W3C)。XML是SGML 的一個子集合，誕生的目的是為了擴充網路的應用、靡補 HTML 的不完美， 以及讓 SGML 也能容易地在網路上應用。所以XML肩負著使得全球資訊網能夠傳輸或處理更豐富資訊的責任。
+>   
+>  在一般情況之中， HTML或是 JAVA 就已經相當夠用了，但隨著資訊的擴充，資料量的暴增，與資料的複雜化，HTML就顯得捉襟肘見，而 JAVA 又 顯得大才小用且不易學習。有了XML 與 HTML 的相輔相成，這些問題就解決了。所以 XML 並不是用來終結 HTML，取代 SGML，而或是廢除舊的標準。XML是用來制定新的標準、用來定義一種新的標記語言。 XML是一種用來定義其它語言的另一種語法系統，這正是XML功能強大的主因。
+
+
+> 当初HTML是SGML的一个应用（意思是SGML可以有许多应用，比如docbook最初也是SGML的一个应用），而XML是简化了的SGML并用来取代SGML的。而XHTML就是HTML从SGML转用XML语法的结果。所以它们是有关系，但不是同个层面的东西。
+
+> 注意今天的HTML已经不是当初意义上的HTML了（包含了当初的html/xhtml/dom等许多标准和api，而不是单单一个语言词汇集的定义），所以关系又弱了一层。
+
+
+
+重點：
+- SGML (Standard Gerneralized Markup Language) 是傳統標籤語言，基於其語言特性而衍生出來的標籤語言HTML，換言之，基於SGML特性建立的應用
+- XML 則是將SGML格式精簡後制訂出來的標籤語言，其中HTML從SGML轉換成以XML為基礎而建構的應用就是XHTML
+- SGML 和 XML 皆由W3C制定
+- 現今的HTML 標準本身支援著有 **以SGML特性建立的HTML**、**以XML特性建立的XHTML**、**DOM標準**，所以並不是純粹以SGML作為基礎
+	- 使用上仍以表示特定元件的格局和外觀為主的語法
+  
+### 基於SGML的HTML潛在問題
+
+
+
+[[@guolijiaotongdaxueXMLYuHTML]] 所描述：
+> 舉例來說，下面這段HTML碼，將成績結果以table的方式呈現：
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660045958/blog/html/html-early-example_gdqkdq.png)
+
+> 如上所見，HTML的問題正出在，HTML的標籤大多是設計來呈現文章的格局(layout)和外觀的，譬如像上例中的\<br\>、 \<table\>、\<td\>，還有像\<ul\>、\<ol\>、\<li\>、\<font\>等標籤比比皆是。但是在某些情況下， 同一種資料可能有很多種表示法，如在此是用\<tr\>、\<td\>等方式呈現，但是在另一個地方可能用完全不同的方法 呈現(如用\<ul\>、\<li\>...\</u\l>的條列方法)，如此的話，若想要用程式將這些不同網頁中相同的資料整合 起來的話將是一件十分困難的工作，因為不知道此標籤所代表的真正意義。更別提想將這些各式各樣的網頁去蕪存菁，找出關 鍵資訊，達成任務了。
+
+> W3C也發現到HTML的問題：
+
+> -   不能解決所有解釋資料的問題 - 像是影音檔或化學公式、音樂符號等其他形態的內容。
+> -   效能問題 - 需要下載整份檔案，才能開始搜尋檔案中的內容。
+> -   擴充性、彈性、易讀性均不佳。
+
+重點：
+- HTML 標籤語法都用表示特定元件的格局和外觀，如以下標籤
+```
+<br>、 <table>、<td>
+```
+
+
+但隨著資料量、資料種類大幅度的增加，就難以從HTML解決內容上的管理和識別 ：
+- 無法從標籤理解標籤包含的內容所代表的意義：如果單純想要進行資料整合，比如要從下述成績單中獲取小華的數學分數，這將會是很困難，通常會按照位置來取，但若位置變的話，就整個獲取方式都要改變
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660045958/blog/html/html-early-example_gdqkdq.png)
+- 當要以文件的特定內容進行特殊處理時，必需要下載整份文件
+- HTML由於是主要用來表示特定元件上的格局和外觀，能使用的標籤數量較為固定，沒辦法自己自建立標籤名稱來定義內容
+
+解法就是以納入XML語言納入至HTML做延伸使XML語法負責管理內容和識別，HTML就負責元件的格局和外觀。
+
+### XML 所能提供的功能
+
+> 如果這些網頁的功能只是單純地提供人類閱讀，消化，那就沒有問題了(假設一切都排列整齊)；但在資 訊爆炸的網路世界，人類需要仰賴機器來替我們分憂解勞，以HTML碼來標注的資訊，對機器和寫程式的人來說，處理起來實在 是太沒有效率了。
+
+> 此時若是利用XML，則可以將此成績結果以下列的方式呈現：
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660045958/blog/html/xml-example_pegvxz.png)
+
+> 我們可以發現XML的標籤竟然是中文的，這就是XML與HTML最大的不同點。在XML中，我們可以自由訂定標籤。定義出來的標籤， 可以按自己的意思充分表達文件的內容。
+
+重點：XML提供的主要功能
+- 透過標籤名稱來了解標籤包含著的內容是什麼
+- 自由訂定標籤，而名稱可按照其意思來充分表達內容
+
+
+
+
+### XML vs. 支援著SGML的HTML 差異
+
+差異主要有：
+1. XML 可自訂標籤名稱。HTML的標籤無法自訂
+2. XML的標籤名稱有分大小寫。HTML的標籤不分大小寫
+3. XML的標籤內若有內容content的話，就必須要有起始標籤和結尾標籤。HTML在某些情況下，可以不寫
+```
+// XML
+<tag1>content</tag1>
+```
+4. XML的標籤內若沒內容的話，可用\<tag1\/\>來當作結尾。HTML則是只需要添加起始標籤
+5. XML會視空白為內容的一部分。HTML則是會拋棄多餘的空白
+```
+// XML
+<tag1>content</tag1>
+```
+
+
+
+
+## 複習
+#🧠 請問SGML、HTML、XML這三者有何關係？ ->->-> `SGML (Standard Gerneralized Markup Language) 是傳統標籤語言，基於其語言特性而衍生出來的標籤語言HTML，換言之，基於SGML特性建立的應用。XML 則是將SGML格式精簡後制訂出來的標籤語言，其中HTML從SGML轉換成以XML為基礎而建構的應用就是XHTML`
+
+#🧠 請問現今的HTML還是只支援SGML版本嗎？ ->->-> `現今的HTML 標準本身支援著有 **以SGML特性建立的HTML**、**以XML特性建立的XHTML**、**DOM標準**，所以並不是純粹以SGML作為基礎`
+
+#🧠 現今的HTML 標準本身支援著有 **以SGML特性建立的HTML**、**以XML特性建立的XHTML**、**DOM標準**，所以並不是純粹以SGML作為基礎，使用上會是以什麼為主？ ->->-> `使用上仍以表示特定元件的格局和外觀為主的語法`
+
+#🧠 基於SGML的HTML所擁有的標籤主要都用做於什麼？->->-> `定義每個元件的格局和外觀`
+#🧠 基於SGML的HTML所擁有的標籤面對資料量、資料種類大幅度的增加，會出現問題嗎？ ->->-> `會，無法從標籤理解標籤包含的內容所代表的意義、當要以文件的特定內容進行特殊處理時，必需要下載整份文件、沒辦法自己自建立標籤名稱來定義內容`
+
+#🧠 XML 擁有的功能有？ ->->-> `- 透過標籤名稱來了解標籤包含著的內容是什麼、自由訂定標籤，而名稱可按照其意思來充分表達內容`
+
+#🧠 HTML vs. XML差異有啥(共5個) ->->-> `1. XML 可自訂標籤名稱。HTML的標籤無法自訂、2. XML的標籤名稱有分大小寫。HTML的標籤不分大小寫、3. XML的標籤內若有內容content的話，就必須要有起始標籤和結尾標籤。HTML在某些情況下，可以不寫 4. XML的標籤內若沒內容的話，可用<tag1 />來當作結尾。HTML則是只需要添加起始標籤 5. XML會視空白為內容的一部分。HTML則是會拋棄多餘的空白`
+
+
+---
+Status: #🌱 
+Tags:
+[[HTML]] - [[XML]]
+Links:
+References:
+[[@guolijiaotongdaxueXMLYuHTML]]
+[[@heshijunFengSiXin65TiaoXiaoXi]]
