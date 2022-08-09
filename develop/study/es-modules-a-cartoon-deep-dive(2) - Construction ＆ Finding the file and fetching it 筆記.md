@@ -191,7 +191,7 @@ module map 主要的用途為：
 
 
 #🧠 ES module：module specifier 具體是什麼？ ->->-> `是指定module是源自於哪裡的module，具體可以搭配URL、本地端的相對路徑和絕對路徑`
-<!--SR:!2022-08-09,5,247-->
+<!--SR:!2022-08-21,12,247-->
 
 #🧠 ES module：module specifier 在每個平台上的specifier 解析都為一樣嗎？為什麼->->-> `並不一樣，具體來說ES module 標準並未說明如何獲取檔案，所以每個平台會以自己平台上所提倡的實解析方式來解析specifier，並了解對應模組哪裡`
 <!--SR:!2022-08-11,6,230-->
