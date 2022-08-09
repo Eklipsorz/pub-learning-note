@@ -6,7 +6,9 @@ which is not normally supported in the browser
 
 為了什麼而提出額外的程式語言，然後進而轉譯成javascript?
 
-
+### JSX 起源
+JSX 全名為JavaScript XML
+1. 是由React團隊額外從JavaScript、
 
 
 

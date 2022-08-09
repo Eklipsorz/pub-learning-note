@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 1.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +98,7 @@
   "active": "9e9c8a414d517ff6",
   "lastOpenFiles": [
     "Untitled.md",
+    "Untitled 1.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
     "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
@@ -105,7 +106,6 @@
     "develop/React/React：create-react-app 專案下的npm run command.md",
     "develop/React/React 啟動專案使用簡介.md",
     "develop/React/react 簡介.md",
-    "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
-    "MOC/React MOC.md"
+    "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md"
   ]
 }
