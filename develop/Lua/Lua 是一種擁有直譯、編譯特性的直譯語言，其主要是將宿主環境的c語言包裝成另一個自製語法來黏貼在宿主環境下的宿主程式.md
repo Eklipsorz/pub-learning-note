@@ -98,7 +98,7 @@
 <!--SR:!2022-09-03,32,249-->
 
 #🧠 Lua 是直譯語言？還是編譯語言？->->-> `Lua 不是傳統的直譯語言，擁有編譯、直譯特性的直譯語言，主要有： - 先將Lua語法轉換成ByteCode，接著從ByteCode解析執行 - 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行 - 直接以Lua語法來邊解析邊執行 - 先將Lua語法轉換成ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行`
-<!--SR:!2022-08-09,18,250-->
+<!--SR:!2022-09-22,44,250-->
 
 
 #🧠 假設正式執行前不先將Lua編譯成ByteCode且想以ByteCode來執行，那麼具體來說是如何編譯和執行 ->->-> ` 當偵測到Lua語法時，就會先將Lua原始碼編譯成ByteCode，並放入宿主環境下的記憶體或者緩存，接著以緩存或者記憶體的ByteCode，並將儲存在宿主環境之記憶體或者快取中的ByteCode丟進虛擬機邊解析成機械碼邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555608/blog/compilation/LuaCode-ByteCode-Execute_znwxg0.png)`
@@ -135,7 +135,7 @@
 
 
 #🧠 Lua 虛擬機會有JIT 這項功能嗎？ ->->-> `沒`
-<!--SR:!2022-08-09,12,247-->
+<!--SR:!2022-09-12,34,247-->
 
 
 #🧠 可不可以將Lua語法事先編譯成ByteCode？然後再以ByteCode執行？請具體說明過程->->-> `可以，直接拿事先編譯好的ByteCode丟進Lua虛擬機邊解析成機械碼邊執行`

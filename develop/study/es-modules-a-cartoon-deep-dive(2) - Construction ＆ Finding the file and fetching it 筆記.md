@@ -187,7 +187,7 @@ module map 主要的用途為：
 
 
 #🧠 ES module： 在建構階段中，會做哪些事情(提示：有八件事情)->->-> `- 以要找的模組specifier作為module map為索引，並標記狀態為fetching - 在module map的對應模組紀錄進行解鎖 - 解析模組的所在位置- 從所在位置來下載模組檔案 - 將模組檔案解析成module record - 將module map的對應模組紀錄狀態改成module record- 設定module record狀態為unlinked - 更新模組依賴關係圖`
-<!--SR:!2022-08-09,4,247-->
+<!--SR:!2022-08-21,12,247-->
 
 
 #🧠 ES module：module specifier 具體是什麼？ ->->-> `是指定module是源自於哪裡的module，具體可以搭配URL、本地端的相對路徑和絕對路徑`
