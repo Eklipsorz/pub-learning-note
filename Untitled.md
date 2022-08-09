@@ -1,3 +1,16 @@
+JSX which is basically HTML code inside of JavaScript
+
+JSX stands for JavaScript XML (HTML)
+
+which is not normally supported in the browser
+
+為了什麼而提出額外的程式語言，然後進而轉譯成javascript?
+
+
+
+
+
+### JSX 語法
 
 ```
 function App() {
@@ -32,3 +45,8 @@ JSX：
 
 
 root.render(<App />); 中的 App 是指 App.js 下的 App
+
+
+```
+import './index.css';
+```

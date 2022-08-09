@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "be97d32a492da150",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "9e9c8a414d517ff6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
+            "file": "Untitled 1.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "declaration for var",
+                "query": "react-dom",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 518
+    "width": 668
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
+                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,10 +97,10 @@
   },
   "active": "9e9c8a414d517ff6",
   "lastOpenFiles": [
-    "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
-    "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
     "Untitled.md",
+    "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
+    "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
     "develop/React/React：create-react-app 專案下的npm run command.md",
     "develop/React/React 啟動專案使用簡介.md",

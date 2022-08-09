@@ -15,7 +15,7 @@
 createRoot 是 react-dom 的功能函式：
 - 用以建立React層級的Root節點 或者說Virtual DOM節點，其節點會對應著container
 - container可以是DOM節點
-- 會回傳React層級的Root節點
+- 會回傳React層級的Root節點 / Virtual DOM的Root 節點
 ```
 createRoot(container[, options]);
 ```
@@ -27,7 +27,9 @@ const root = ReactDOM.createRoot(container);
 root.render(element);
 ```
 
-每個Virtual DOM節點都具有render方法能夠指定React 層級的 element 放入在對應DOM節點 或者告訴系統 root節點對應的dom節點要如何被渲染
+每個Virtual DOM節點：
+- 都對應著實際情況下的DOM節點
+- 都具有render方法能夠指定React 層級的 element 放入在對應DOM節點 或者告訴系統 root節點對應的dom節點要如何被渲染
 
 
 ### public/index.html 用途
@@ -57,7 +59,7 @@ webpack.config.js：
 
 
 CRA 所設定的webpack ：
-	- 替前端框架所要參考的模板網頁做處理：
+	- 替前端框架所要參考的模板網頁做處理：但必須安裝html-webpack-plugin
 		- 預設為public/index.html，但該html是模板網頁
 		- 主要會做將指定的模板網頁和資料合併成HTML、優化、自動加載webpack產生出來的模組
 
@@ -106,9 +108,9 @@ appIndexJs: resolveModule(resolveApp, 'src/index')
 接著以index.js和以它為中心的模組依賴關係圖下的模組會綁定在bundle.js來交由模板網頁來載入
 
 ### import
-另外import 細節  
-1. 若想引入的import是js檔案，可以忽略副檔名
-
+另外import 細節 
+1. 若想引入的import是js檔案，可以忽略副檔名，系統會自己檢查
+2. 若JS支援CSS-in-JS的話，就可允許載入css檔案
 
 
 CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透過JavaScript的執行形式來根據執行狀態來更新對應CSS的內容
@@ -123,6 +125,23 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 
 #🧠 React：src/index.js 被設定為webpack的entry，那麼會模板網頁具體載入什麼？entry本身也會被載入嗎？->->-> `接著以index.js和以它為中心的模組依賴關係圖下的模組會綁定在bundle.js來交由模板網頁來載入`
 <!--SR:!2022-08-12,3,250-->
+
+#🧠 若設定html-webpack-plugin來安裝的話，webpack會對指定的模板網頁做什麼？ ->->-> `主要會將指定模板網頁和指定資料合併成HTML、優化、自動加載webpack所產生出來的模組`
+
+#🧠  react-dom 的 createRoot 是什麼樣功能函式？ ->->-> `用以建立React層級的Root節點 或者說Virtual DOM節點`
+
+#🧠   react-dom 的 createRoot 會回傳什麼樣的內容 ->->-> `Virtual DOM的Root 節點`
+
+#🧠 每一個Virtual DOM的節點會對應著什麼？ ->->-> `都對應著實際情況下的DOM節點`
+
+#🧠 react-dom 的 createRoot(container) 說明一下這什麼樣函式 ->->-> `用以建立React層級的Root節點 或者說Virtual DOM節點，其節點會對應著container、其container可以是DOM節點`
+
+#🧠 import 細節：import可以載入CSS嗎？->->-> `若JS支援CSS-in-JS的話，就可允許載入css檔案`
+
+#🧠 import 細節：若載入的是js檔案，可忽略副檔名嗎 ->->-> `可以`
+#🧠 import 細節：若載入的是css檔案，可忽略副檔名嗎  ->->-> `不可以`
+
+#🧠 CSS-in-JS g是什麼樣的技術？->->-> `一種允許JavaScript能夠解析CSS內容的技術，並讓它透過JavaScript的執行形式來根據執行狀態來更新對應CSS的內容`
 
 ---
 Status: #🌱 
