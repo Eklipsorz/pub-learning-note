@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md",
+            "file": "develop/React/React - 可使用function 和 class 來建構react component.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md",
+                "file": "develop/React/React - 可使用function 和 class 來建構react component.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,9 +109,9 @@
   },
   "active": "9e9c8a414d517ff6",
   "lastOpenFiles": [
-    "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
-    "develop/React/React - 可使用function 和 class 來建構react component.md",
     "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md",
+    "develop/React/React - 可使用function 和 class 來建構react component.md",
+    "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
     "Untitled 1.md",
     "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",

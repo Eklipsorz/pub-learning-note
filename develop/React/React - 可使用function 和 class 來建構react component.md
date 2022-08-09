@@ -57,6 +57,17 @@ class Welcome extends React.Component {
 
 ## 複習
 
+#🧠 構建React 應用程式的最小單位是什麼？ ->->-> `React element`
+
+#🧠 React element 語法形式是什麼？ ->->-> `以XML語法為主`
+
+#🧠 每一個React element 相當於Virtual DOM的什麼？ ->->-> `相當於Virtual DOM節點`
+
+#🧠 React：如何構建一個function component? ->->-> `使用function以及function回傳著react element構成的元件`
+
+#🧠 React：如何構建component?  ->->-> `使用function或者class`
+
+#🧠 React：使用function來構建的component 稱之為什麼 ->->-> `function component`
 
 ---
 Status: #🌱 
