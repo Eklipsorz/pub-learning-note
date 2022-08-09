@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "43c65b5d8ecf925b",
+        "id": "be97d32a492da150",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
+            "file": "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "be97d32a492da150",
+        "id": "9e9c8a414d517ff6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
+            "file": "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
             "mode": "source",
             "source": false
           }
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
+                "file": "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "be97d32a492da150",
+  "active": "9e9c8a414d517ff6",
   "lastOpenFiles": [
-    "develop/React/React：create-react-app 專案下的npm run command.md",
-    "develop/React/React 啟動專案使用簡介.md",
     "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
     "React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js為何是.md",
+    "Untitled.md",
     "develop/React/React 本身因為react本身支援介面就很多，為了很好專注在不同介面的渲染，所以額外切分react和react-dom.md",
-    "develop/React/react 簡介.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
-    "MOC/React MOC.md",
-    "MOC/webpack MOC.md",
-    "develop/webpack/webpack 具體會是將開發階段的多個與JS相關的模組(圖片、CSS、JS)分別按照模組種類來進行轉換以建立打包所需的基本元件，然後再將基本元件包在一塊以構成單個bundle或者數個bundle.md"
+    "develop/React/React：create-react-app 專案下的npm run command.md",
+    "develop/React/React 啟動專案使用簡介.md",
+    "develop/React/react 簡介.md",
+    "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
+    "MOC/React MOC.md"
   ]
 }

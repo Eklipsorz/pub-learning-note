@@ -56,7 +56,10 @@ webpack.config.js：
 ```
 
 
-CRA 所設定的webpack 會將public/index.html
+CRA 所設定的webpack ：
+	- 替前端框架所要參考的模板網頁做處理：
+		- 預設為public/index.html，但該html是模板網頁
+		- 主要會做將指定的模板網頁和資料合併成HTML、優化、自動加載webpack產生出來的模組
 
 [[html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案]]
 
