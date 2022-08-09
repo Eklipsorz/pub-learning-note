@@ -51,13 +51,13 @@
 
 
 #🧠 CSS preprocessor 是什麼？ ->->-> `CSS preprocessor 是一個程式，能透過preprocessor提供的語法編譯成CSS的程式`
-<!--SR:!2022-08-09,3,250-->
+<!--SR:!2022-08-19,10,250-->
 
 #🧠 請從為何取preprocessor 來說明CSS preprocessor是什麼？ ->->-> `具體會是會於確定CSS檔案的程式之前，來將preprocessor提供的語法所構成的檔案經過preprocesssor處理後而產生出對應的CSS`
-<!--SR:!2022-08-09,3,250-->
+<!--SR:!2022-08-18,9,250-->
 
 #🧠 CSS postprocessor 是什麼？->->-> `CSS postprocessor 是一個程式，主要會接收CSS原檔並根據指定規則來將CSS轉換成另一種CSS的程式`
-<!--SR:!2022-08-09,3,250-->
+<!--SR:!2022-08-18,9,250-->
 
 #🧠 請從為何取postprocessor 來說明CSS postprocessor是什麼？ ->->-> `postprocessor 具體會是在確定CSS檔案的程式之後，來將確定CSS檔案的程式輸出出來的CSS當作輸入，並將輸入丟至postprocessor來根據指定規則來將CSS轉換成另一種CSS`
 <!--SR:!2022-08-18,9,250-->
@@ -67,7 +67,7 @@
 <!--SR:!2022-08-19,10,250-->
 
 #🧠 CSS preprocessor 和 CSS postprocessor的關係這兩者的差別是什麼？(有三個) ->->-> `- 執行順序：前者會於確定CSS檔案的程式之前執行，後者會於確定CSS檔案的程式之後執行 - 輸入資料：前者會使用由preprocessor語法構成的檔案來處理，後者則是用確定CSS檔案的程式之處理結果來處理 - 處理方式：前者是將輸入編譯成CSS，後者則是按照指定規則來將輸入轉換成另一種形式的CSS`
-<!--SR:!2022-08-09,3,250-->
+<!--SR:!2022-08-19,10,250-->
 
 ---
 Status: #🌱 

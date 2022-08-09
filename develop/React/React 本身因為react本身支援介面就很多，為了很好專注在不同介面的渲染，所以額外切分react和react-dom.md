@@ -28,10 +28,13 @@
 
 ## 複習
 #🧠 React ：請問React支援哪些渲染畫面的介面？ ->->-> `網頁的DOM模型、由React Native所建立的畫面存取介面`
+<!--SR:!2022-08-12,3,250-->
 
 #🧠 React：請問React 為什麼要切分成react和react-dom這兩個函式庫？->->-> `由於React 支援較多的渲染畫面的介面，有DOM模型、React Native，但為了開發/維護，而根據介面而從react抽離出各個介面的支援程式碼，如抽離出DOM相關的程式碼並合併成react-dom`
+<!--SR:!2022-08-12,3,250-->
 
 #🧠 React：react 和 react-dom 的用途大致上是什麼？ ->->-> `	- react-dom本身是支援網頁dom和瀏覽器操作的函式庫 - react 本身是核心部分的功能`
+<!--SR:!2022-08-12,3,250-->
 
 ---
 Status: #🌱 

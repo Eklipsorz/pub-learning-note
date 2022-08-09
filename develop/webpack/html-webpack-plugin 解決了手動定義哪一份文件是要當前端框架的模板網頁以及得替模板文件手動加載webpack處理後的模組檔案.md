@@ -7,12 +7,14 @@
 > 
 > html-webpack-plugin 可以幫助我們指定任意的 HTML 模板，並透過傳遞選項方式，生成對應的 HTML 文件，同時也會將 entry 內的所有靜態文件做引入動作，解決手動引入的困擾
 
+> The [`HtmlWebpackPlugin`](https://github.com/jantimon/html-webpack-plugin) simplifies creation of HTML files to serve your webpack bundles
+
 重點：
 - html-webpack-plugin 沒出現前，webpack會有以下問題：
-	- 手動定義哪一份文件是要當前端框架的模板網頁
+	- 手動生成HTML來當前端框架參考的模板網頁
 	- 手動替模板文件載入webpack處理後的模組檔案
 - html-webpack-plugin 為了以上問題而提出
-	- 會定義哪份HTML作為框架所需的模板文件，好讓前端框架的原始碼能夠方便對應DOM節點
+	- 利用特定模板語言來方便生成前端框架參考的模板網頁
 	- 替模板文件自動載入webpack處理後的模組檔案
 
 ### html-webpack-plugin 設定
@@ -58,11 +60,14 @@ module.exports = {
 - 其中template會是指定哪個檔案作為模板文件以及作為自動加載webpack的產物的文件
 
 ## 複習
-#🧠 在html-webpack-plugin 出現之前，webpack會有哪些問題？->->-> `手動定義哪一份文件是要當前端框架的模板網頁、手動替模板文件載入webpack處理後的模組檔案`
+#🧠 在html-webpack-plugin 出現之前，webpack會有哪些問題？->->-> `	- 手動生成HTML來當前端框架參考的模板網頁 - 手動替模板文件載入webpack處理後的模組檔案`
+<!--SR:!2022-08-12,3,250-->
 
-#🧠 html-webpack-plugin 為了手動替前端框架所需要的模板文件而生成對應HTML、手動替模板文件載入webpack處理後的模組檔案而提出，那麼具體他會有何用途？->->-> `- 會定義哪份HTML作為前端框架所需的模板文件，好讓前端框架的原始碼能夠方便對應DOM節點 - 替模板文件自動載入webpack處理後的模組檔案`
+#🧠 html-webpack-plugin 為了手動生成HTML來當前端框架參考的模板網頁、手動替模板文件載入webpack處理後的模組檔案而提出，那麼具體他會有何用途？->->-> `	- 利用特定模板語言來方便生成前端框架參考的模板網頁- 替模板文件自動載入webpack處理後的模組檔案`
+<!--SR:!2022-08-12,3,250-->
 
-#🧠 html-webpack-plugin所設定的template會對react.js有何幫助？ ->->-> `好讓react.js的原始碼能夠方便對應DOM節點，並作為模板來修改`
+#🧠 html-webpack-plugin所設定的template會對react.js有何幫助？ ->->-> `- 利用特定模板語言來方便生成前端框架參考的模板網頁 - 替模板文件自動載入webpack處理後的模組檔案`
+<!--SR:!2022-08-12,3,250-->
 
 ---
 Status: #🌱 
