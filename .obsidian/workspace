@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e3507c6eb583804c",
+        "id": "f31f283568d0dd3f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
+            "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "25da812351413096",
+        "id": "215b48d40f89de7d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
+            "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
+                "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e3507c6eb583804c",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
-    "React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
     "Untitled 1.md",
+    "develop/OS/Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源.md",
+    "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
+    "MOC/OS MOC.md",
+    "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md",
+    "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
+    "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
     "MOC/React MOC.md",
     "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
-    "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md",
-    "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
-    "develop/render/Document Object Model 是以樹狀結構來表達HTML內容的模型、介面.md",
-    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
-    "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md"
+    "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md"
   ]
 }

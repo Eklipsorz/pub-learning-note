@@ -18,7 +18,7 @@
 ```
 <CourseGoalItem title=title1 amount=amount1 date=date1 />
 ```
-3. props 接收形式為：以對應component的參數來接收所有attributes，在這裡只允許用物件來接收所有attributes
+3. props 接收形式為：在對應component的function以物件來當參數接收所有attributes，每一個物件上的屬性(property)名稱皆對應著傳過來的屬性attribute名稱，其值根據屬性名稱來設定
 
 寫法1：按照attribute名稱來對應變數名稱並賦予 (這方法會被react阻止)
 ```
@@ -55,7 +55,14 @@ function CourseGoalItem(props) {
 
 #🧠 React：請問透過props來傳遞資料至component的形式為？ ->->-> `對代表指定元間的標籤設定屬性名稱和屬性值(attribute)，<Component attribute1=value1 ..../> 或者<Component attribute1=value1 .....> <Component />`
 
-#🧠 React：假設要傳入 ->->-> ``
+#🧠 React：假設要傳入title=title1、amount=amount1、date=date 給CourseGoalItem這自製的component->->-> `<CourseGoalItem title=title1 amount=amount1 date=date1 />`
+
+#🧠 React：請問從component如何接收到attributes來當參數？ ->->-> `在對應component的function以物件來當參數接收所有attributes，每一個物件上的屬性(property)名稱皆對應著傳過來的屬性attribute名稱，其值根據屬性名稱來設定`
+
+#🧠 React：請問從component如何接收到attributes來當參數？以代碼來表示 ->->-> `function CourseGoalItem(data) {....}或者function CourseGoalItem(props) {...}，接著在以props的屬性來取用對應的attribute值`
+
+#🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
+
 
 ---
 Status: #🌱 
