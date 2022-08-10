@@ -19,7 +19,7 @@
 <!--SR:!2022-10-03,60,250-->
 
 #🧠  JavaScript 引擎：如何實現scope chain 來找到每個識別字？ ->->-> `具體實現會是以Execution Context 中的 Outer reference是用來實現scope chain，每一次建立Execution Context A時，Execution Context A都會透過Outer reference來紀錄Execution Context A所處的Execution Context，這樣子往後找不到可以透過outer所指向的EC來尋找`
-<!--SR:!2022-08-10,28,250-->
+<!--SR:!2022-10-23,74,250-->
 
 
 ---
