@@ -45,6 +45,11 @@
 <!--SR:!2022-08-11,3,250-->
 
 
+#🧠 template language 本身通常由誰來識別和處理？ ->->-> `通常只有template engine 或者 template processor能識別和處理`
+
+#🧠 template processor 建立的模板網頁可加入HTML、CSS、JS嗎 ->->-> `都可以放入`
+
+
 ---
 Status: #🌱 
 Tags:

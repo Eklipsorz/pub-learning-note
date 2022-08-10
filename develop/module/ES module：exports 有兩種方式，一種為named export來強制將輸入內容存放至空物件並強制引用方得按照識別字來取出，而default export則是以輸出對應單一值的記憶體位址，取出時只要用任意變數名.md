@@ -87,10 +87,12 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 	```
 
 ### 總結：
-1. ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字``
+1. ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
+<!--SR:!2022-08-13,3,250-->`
 <!--SR:!2022-08-13,3,250-->
 
 2. default exports 是什麼？ ->->->  `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
+<!--SR:!2022-08-13,3,250-->
 
 
 ## 複習
@@ -98,6 +100,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-08-13,3,250-->
 
 #🧠 ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 ES module： named exports 是強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字，具體如何實現？ ->->->`強制輸出的內容放置空物件中來當屬性，其中屬性名稱會是輸出的識別字，屬性值是對應識別字的內容，取出的時候就用物件存取屬性方式來取`
 <!--SR:!2022-08-13,3,250-->
@@ -110,13 +113,16 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 `
 
 #🧠 請試著寫出exporting module來以named exports輸出特定property1和property2，並以importing module來引用這些property1、property2->->-> `exporting module: export { property1, property2,.... }, importing module: import { property1, property2, .... } from 'xxx'`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 請試著寫出exporting module來以default exports輸出特定variable，並以importing module來引用這些variable ->->-> `exporting module: export default expression, importing module: import variable from 'xxx'`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 ES module：使用default exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `不一定一樣，可以不一樣`
 <!--SR:!2022-08-13,3,250-->
 
 #🧠 ES module：使用named exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `得必須一樣，因為得用物件來存取以識別字名稱製作的屬性`
+<!--SR:!2022-08-13,3,250-->
 
 
 ---
