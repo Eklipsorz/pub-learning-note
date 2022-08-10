@@ -5,3 +5,9 @@
 [[html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案]]
 
 
+
+
+
+## data-view-separation
+
+[[React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分]]

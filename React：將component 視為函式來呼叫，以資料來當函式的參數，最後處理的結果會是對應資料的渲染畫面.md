@@ -14,7 +14,7 @@
 1. 使用props概念：
 > 將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props
 
-2. props 傳遞形式：對代表指定元間的標籤設定屬性名稱和屬性值，比如CourseGoalItem標籤被賦予title、amount、date這三個屬性，而屬性值分別為title1、amount1、date1
+2. props 傳遞形式：對代表指定元間的標籤設定屬性名稱和屬性值(attribute)，比如CourseGoalItem標籤被賦予title、amount、date這三個屬性，而屬性值分別為title1、amount1、date1
 ```
 <CourseGoalItem title=title1 amount=amount1 date=date1 />
 ```
@@ -43,13 +43,24 @@ function CourseGoalItem(props) {
 
 4. 在對應元件的函式善用{}和expression關係就能將從標籤獲取到來的attributes進行善用
 
+[[React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分]]
+
 
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 React：為了要讓component能夠因為資料的不同而有所不同，初步想會是什麼？->->-> `為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面`
+
+#🧠 React：為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面，解法會是？(描述概念) ->->-> `使用props概念`
+
+#🧠 React：請問props概念是什麼？ ->->-> `將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props`
+
+#🧠 React：請問透過props來傳遞資料至component的形式為？ ->->-> `對代表指定元間的標籤設定屬性名稱和屬性值(attribute)，<Component attribute1=value1 ..../> 或者<Component attribute1=value1 .....> <Component />`
+
+#🧠 React：假設要傳入 ->->-> ``
 
 ---
 Status: #🌱 
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分]]
 References:
