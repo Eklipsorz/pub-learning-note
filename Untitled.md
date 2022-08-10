@@ -1,36 +1,47 @@
 ## 描述
 
-資料和畫面寫在一塊的話，那麼就會是hard code
 
-若要解決的話，可以將資料和畫面分離：
-- 資料的出處：都源自於使用者所給予的、向後端發送的回應資料、假資料
-- 初步的切分：
-	- 使用{}：若要在React element 中添加JS表達式對應的值，可以使用{}並於內部添加JS表達式，就會優先執行JS表達式並將對應值替代表達式
-	```
-	<h2>{expression}</h2>
-	```
-	- expression 對應值能夠允許填入至element的型別是數字、字串，單純物件的話，會發生錯誤。
+
+### 將component 當函式呼叫並回傳對應畫面
+為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面，在react會使用props概念來實現
+
+
+#### 初始想法
+一般來說，會於**在App元件上的JS宣告一個變數A，並將變數A放置在App元件下的元件A上來顯示的話，若沒特別處理，是無法將變數A傳遞過去**
+
+
+#### 解法
+1. 使用props概念：
+> 將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props
+
+2. props 傳遞形式：對代表指定元間的標籤設定屬性名稱和屬性值，比如CourseGoalItem標籤被賦予title、amount、date這三個屬性，而屬性值分別為title1、amount1、date1
 ```
-function ExpenseItem() {
+<CourseGoalItem title=title1 amount=amount1 date=date1 />
+```
+3. props 接收形式為：以對應component的參數來接收所有attributes，在這裡只允許用物件來接收所有attributes
 
-	const expenseDate = new Date(2022, 8, 10);
-	const expenseTitle = 'Car Insurance';
-	const expenseAmount = 294.672;
-
-  
-	return (
-		<div className='expense-item'>
-			<div>{expenseDate.toISOString()}</div>
-			<div className='expense-item__description'>
-				<h2>{expenseTitle}</h2>
-				<div className='expense-item__price'>{expenseAmount}</div>
-			</div>
-		</div>
-	);
-
+寫法1：按照attribute名稱來對應變數名稱並賦予 (這方法會被react阻止)
+```
+function CourseGoalItem(title, amount, date) {
+     // ......
 }
 ```
-XML 資料和畫面分離的話，會使XML成為可填入資料的模板，而JavaScript負責獲取資料和輔助填入資料至模板
+寫法2：若以一個參數來寫，就會以物件形式來存放所有attributes，其屬性名稱會按照attribute名稱來填寫，而attribute值則是按照對應值來賦予對應屬性值(property)
+```
+function CourseGoalItem(data) {
+    // ......
+}
+```
+
+
+寫法3：若以一個參數來寫，就會以物件形式來存放所有attributes，其屬性名稱會按照attribute名稱來填寫，而attribute值則是按照對應值來賦予對應屬性值(property)
+```
+function CourseGoalItem(props) {
+    // ......
+}
+```
+
+4. 在對應元件的函式善用{}和expression關係就能將從標籤獲取到來的attributes進行善用
 
 
 ## 複習
