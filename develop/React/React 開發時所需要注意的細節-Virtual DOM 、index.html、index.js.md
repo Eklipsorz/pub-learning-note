@@ -127,21 +127,30 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 <!--SR:!2022-08-12,3,250-->
 
 #🧠 若設定html-webpack-plugin來安裝的話，webpack會對指定的模板網頁做什麼？ ->->-> `主要會將指定模板網頁和指定資料合併成HTML、優化、自動加載webpack所產生出來的模組`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠  react-dom 的 createRoot 是什麼樣功能函式？ ->->-> `用以建立React層級的Root節點 或者說Virtual DOM節點`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠   react-dom 的 createRoot 會回傳什麼樣的內容 ->->-> `Virtual DOM的Root 節點`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 每一個Virtual DOM的節點會對應著什麼？ ->->-> `都對應著實際情況下的DOM節點`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 react-dom 的 createRoot(container) 說明一下這什麼樣函式 ->->-> `用以建立React層級的Root節點 或者說Virtual DOM節點，其節點會對應著container、其container可以是DOM節點`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 import 細節：import可以載入CSS嗎？->->-> `若JS支援CSS-in-JS的話，就可允許載入css檔案`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 import 細節：若載入的是js檔案，可忽略副檔名嗎 ->->-> `可以`
+<!--SR:!2022-08-13,3,250-->
 #🧠 import 細節：若載入的是css檔案，可忽略副檔名嗎  ->->-> `不可以`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 CSS-in-JS g是什麼樣的技術？->->-> `一種允許JavaScript能夠解析CSS內容的技術，並讓它透過JavaScript的執行形式來根據執行狀態來更新對應CSS的內容`
+<!--SR:!2022-08-13,3,250-->
 
 ---
 Status: #🌱 

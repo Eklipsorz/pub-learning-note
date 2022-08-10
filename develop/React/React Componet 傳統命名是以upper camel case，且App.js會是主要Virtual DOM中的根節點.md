@@ -31,15 +31,19 @@
 
 ## 複習
 #🧠 React：component的最佳實踐是什麼？ ->->-> `每一個檔案各為一個component，並統一存放在src/components下目錄`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 React： component 檔名會是以什麼命名法為主？->->-> `upper camel case為主`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 React：component file內的函式名稱會是以什麼命名法為主 ->->-> `1. 函式名稱會和檔名一致、upper camel case為主`
+<!--SR:!2022-08-13,3,250-->
 
 #🧠 React：為何要採取upper case版本camel來命名component ->->-> `為了很好地區分出哪個才是原生HTML和自製的component：	- 若原生HTML會以小寫為主 - 若自製的會以大寫為主`
 
 
 #🧠 React：App.js 是什麼樣的檔案，對於Virtual DOM來說 ->->-> `App.js 是Virtual DOM中的根節點，最一開始會被渲染的檔案`
+<!--SR:!2022-08-13,3,250-->
 
 
 
