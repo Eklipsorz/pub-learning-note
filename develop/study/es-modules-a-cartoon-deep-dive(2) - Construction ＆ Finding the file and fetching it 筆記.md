@@ -197,7 +197,7 @@ module map 主要的用途為：
 <!--SR:!2022-08-11,6,230-->
 
 #🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> `為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來以不同的方式解析`
-<!--SR:!2022-08-10,6,249-->
+<!--SR:!2022-08-27,17,249-->
 
 #🧠 ES module：以圖中例子來說說明模組的建構階段 ![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png) ->->-> `瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。`
 <!--SR:!2022-08-20,12,248-->
@@ -221,7 +221,7 @@ module map 主要的用途為：
 
 
 #🧠 ES module：dynamic import 概念是什麼？ ->->-> `允許根據在執行時根據執行狀態來加載ES模組，並根據加載內容來進行引用處理`
-<!--SR:!2022-08-10,5,246-->
+<!--SR:!2022-08-24,14,246-->
 
 #🧠 ES module：具體的dynamic import是什麼？ (promise) ->->-> `import 為promise，建立一個工作來向對系統發出module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject`
 <!--SR:!2022-08-13,6,227-->
