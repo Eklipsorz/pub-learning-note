@@ -60,6 +60,7 @@ function CourseGoalItem(props) {
 #🧠 React：請問從component如何接收到attributes來當參數？ ->->-> `在對應component的function以物件來當參數接收所有attributes，每一個物件上的屬性(property)名稱皆對應著傳過來的屬性attribute名稱，其值根據屬性名稱來設定`
 
 #🧠 React：請問從component如何接收到attributes來當參數？以代碼來表示 ->->-> `function CourseGoalItem(data) {....}或者function CourseGoalItem(props) {...}，接著在以props的屬性來取用對應的attribute值`
+<!--SR:!2022-08-14,3,250-->
 
 #🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
 

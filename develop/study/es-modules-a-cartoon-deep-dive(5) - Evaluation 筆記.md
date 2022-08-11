@@ -127,7 +127,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 
 
 #🧠 ES Module：經過實例後的模組紀錄，在一開始進入evaluation前會拿到什麼狀態？ ->->-> `linked`
-<!--SR:!2022-08-11,6,228-->
+<!--SR:!2022-08-27,16,228-->
 
 #🧠 ES Module：每一個被挑到執行evaluation的模組如何實作evaluation？ ->->-> `	- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating - 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置 - 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間 - 更新module map上的對應模組紀錄狀態：從evaluating 變更至 evaluated`
 <!--SR:!2022-08-15,10,250-->
