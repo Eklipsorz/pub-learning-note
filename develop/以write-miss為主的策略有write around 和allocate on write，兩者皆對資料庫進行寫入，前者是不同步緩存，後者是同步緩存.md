@@ -13,6 +13,7 @@
 - 面對資料不一致問題有兩個常見方法：
 	- write around：不同步緩存內容
 	- allocate on write：同步緩存內容
+
 ### write around
 
 [[@jyt0532HuanCunDuXieJiZhiJyt0532Blog]]
