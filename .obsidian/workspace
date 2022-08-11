@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+            "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "allocate on write",
+                "query": "class",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+                "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +108,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
     "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
@@ -117,7 +119,6 @@
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
     "Untitled 1.md",
     "develop/OS/Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源.md",
-    "MOC/OS MOC.md",
-    "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md"
+    "MOC/OS MOC.md"
   ]
 }

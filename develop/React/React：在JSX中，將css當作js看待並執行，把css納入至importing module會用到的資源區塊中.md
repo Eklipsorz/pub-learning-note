@@ -57,7 +57,18 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 僅作為副作用（side effect）引入整個模塊，而不直接引入任何東西。這樣會在不引入實際數值的情況下，執行整個模塊的程式。
 
-1.  import '/modules/my-module.js';
+
+### 讓JSX中的XML表達元件增加樣式
+1. 理論上是得替每個元件以class來指定樣式：
+```
+<Component class='.....'></Component>
+```
+2. 由於XML是JSX語言的一部分，且class會跟JavaScript原生語法中的class起衝突，所以React會以className來替代指定每個元件的樣式
+```
+<Component className='.....'></Component>
+```
+
+
 
 ## 複習
 #🧠  import 'xxxx' 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
@@ -73,6 +84,10 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 #🧠 在JSX中，執行import './ExpenseItem.css'後，對應component的網頁會有這css嗎？ ->->-> `最後webpack針對這component所生成的網頁會自動載入對應css檔案`
 <!--SR:!2022-08-13,2,248-->
+
+#🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個名為Component的元件來表達->->-> `添加className，<Component className='.....'></Component>`
+
+#🧠 React：為何不讓JSX中的XML表達元件使用class？ ->->-> `由於XML是JSX語言的一部分，且class會跟JavaScript原生語法中的class起衝突，所以React會以className來替代指定每個元件的樣式`
 
 ---
 Status: #🌱 
