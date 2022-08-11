@@ -48,21 +48,28 @@ function CourseGoalItem(props) {
 
 ## 複習
 #🧠 React：為了要讓component能夠因為資料的不同而有所不同，初步想會是什麼？->->-> `為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面`
+<!--SR:!2022-08-14,3,250-->
 
 #🧠 React：為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面，解法會是？(描述概念) ->->-> `使用props概念`
+<!--SR:!2022-08-14,3,250-->
 
 #🧠 React：請問props概念是什麼？ ->->-> `將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props`
+<!--SR:!2022-08-14,3,250-->
 
 #🧠 React：請問透過props來傳遞資料至component的形式為？ ->->-> `對代表指定元間的標籤設定屬性名稱和屬性值(attribute)，<Component attribute1=value1 ..../> 或者<Component attribute1=value1 .....> <Component />`
+<!--SR:!2022-08-14,3,250-->
 
-#🧠 React：假設要傳入title=title1、amount=amount1、date=date 給CourseGoalItem這自製的component->->-> `<CourseGoalItem title=title1 amount=amount1 date=date1 />`
+#🧠 React：假設要傳入title=title1、amount=amount1、date=date1 給CourseGoalItem這自製的component，如何用代碼來表示->->-> `<CourseGoalItem title=title1 amount=amount1 date=date1 />`
+
 
 #🧠 React：請問從component如何接收到attributes來當參數？ ->->-> `在對應component的function以物件來當參數接收所有attributes，每一個物件上的屬性(property)名稱皆對應著傳過來的屬性attribute名稱，其值根據屬性名稱來設定`
+<!--SR:!2022-08-14,3,250-->
 
 #🧠 React：請問從component如何接收到attributes來當參數？以代碼來表示 ->->-> `function CourseGoalItem(data) {....}或者function CourseGoalItem(props) {...}，接著在以props的屬性來取用對應的attribute值`
 <!--SR:!2022-08-14,3,250-->
 
 #🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
+<!--SR:!2022-08-14,3,250-->
 
 
 ---

@@ -136,9 +136,11 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 <!--SR:!2022-08-13,3,250-->
 
 #🧠 每一個Virtual DOM的節點會對應著什麼？ ->->-> `都有可能對應著實際情況下的DOM節點`
+<!--SR:!2022-08-14,3,250-->
 
 
 #🧠 每一個Virtual DOM的節點都一定對應著real dom節點？ ->->-> `不一定，具體看操作是否有將(virtual dom)對應畫面渲染在實際上的DOM介面`
+<!--SR:!2022-08-14,3,250-->
 
 #🧠 react-dom 的 createRoot(container) 說明一下這什麼樣函式 ->->-> `用以建立React層級的Root節點 或者說Virtual DOM節點，其節點會對應著container、其container可以是DOM節點`
 <!--SR:!2022-08-13,3,250-->
