@@ -115,7 +115,7 @@ FunctionExectionContext = {
 ## 複習
 
 #🧠 Function Execution Context的creation phase時機點為何？ ->->-> `在編譯時期先對所有EC準備建立EC所需的資料，並於執行之前先建立FEC`
-<!--SR:!2022-08-11,5,249-->
+<!--SR:!2022-08-25,14,249-->
 
 #🧠 Function Execution Context 的 FEC範圍是？->->-> `以區塊內或者函式內的所有區域變數、函式為主、不包含內部額外的函式，不包含額外用區塊和函式包住的程式碼`
 <!--SR:!2022-09-16,58,250-->
