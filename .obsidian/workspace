@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "ff176b62b3b40446",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -96,7 +108,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5bca85b3fbe1d2cd",
+  "active": "ff176b62b3b40446",
   "lastOpenFiles": [
     "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
