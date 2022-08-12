@@ -6,7 +6,7 @@
 
 
 - cohesion
-[[Cohesion 是一種軟體開發衡量的標準，指同個模組下的每個區塊還能夠凝聚成模組的程度，主要衡量一個模組還能否維持模組來管理]]
+[[cohesion 是一種軟體開發衡量的標準，指個多個程式區塊能夠凝聚成模組的程度，主要衡量能否以模組來管理程式區塊]]
 
 - coupling vs. cohesing
 [[Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。]]
