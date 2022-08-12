@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
+            "file": "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "字串",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
+                "file": "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "1812363f7677764c",
   "lastOpenFiles": [
+    "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
+    "develop/React/React - 可使用function 和 class 來建構react component.md",
+    "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
     "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
     "develop/software engineering/cohesion 是一種軟體開發衡量的標準，指個多個程式區塊能夠凝聚成模組的程度，主要衡量能否以模組來管理程式區塊.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
-    "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
     "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
-    "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
-    "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
-    "develop/React/React：create-react-app 專案下的npm run command.md"
+    "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md"
   ]
 }
