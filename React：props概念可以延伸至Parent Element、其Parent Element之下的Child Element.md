@@ -1,6 +1,8 @@
 ## 描述
 
 ### 修改前
+將顯示日期的部分獨立出一個元件，並名為ExpenseDate.js，在這裡會和ExpenseItem形成Parent-Child之間的關係，接著把日期資訊以props傳遞至ExpenseDate 元件
+
 ExpenseItem.js
 ```
 import './ExpenseItem.css';
@@ -78,7 +80,7 @@ export default ExpenseDate;
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 
