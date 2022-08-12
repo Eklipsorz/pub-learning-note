@@ -118,13 +118,13 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 
 ## 複習
 #🧠 React：src/index.js 總是為webpack的entry?->->-> `若沒特別設定webpack的entry，預設值會是 \.\/src\/index.js`
-<!--SR:!2022-08-12,3,250-->
+<!--SR:!2022-08-21,9,250-->
 
 #🧠 React：src/index.js 被設定為webpack的entry，那麼具體會做什麼？ ->->-> `一切會以它為主來構成javascript相關模組依賴關係來進行遍歷、轉換，最後整合成數個套件給html載入
-<!--SR:!2022-08-12,3,250-->
+<!--SR:!2022-08-22,10,250-->
 
 #🧠 React：src/index.js 被設定為webpack的entry，那麼會模板網頁具體載入什麼？entry本身也會被載入嗎？->->-> `接著以index.js和以它為中心的模組依賴關係圖下的模組會綁定在bundle.js來交由模板網頁來載入`
-<!--SR:!2022-08-12,3,250-->
+<!--SR:!2022-08-22,10,250-->
 
 #🧠 若設定html-webpack-plugin來安裝的話，webpack會對指定的模板網頁做什麼？ ->->-> `主要會將指定模板網頁和指定資料合併成HTML、優化、自動加載webpack所產生出來的模組`
 <!--SR:!2022-08-13,3,250-->

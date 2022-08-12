@@ -63,23 +63,23 @@ test(a)
 <!--SR:!2022-08-24,13,246-->
 
 #🧠 請完整說明JavaScript 引擎在編譯時期、快要執行時期、執行時期替EC做了什麼？ ->->-> `JavaScript引擎會於編譯時期：- 記憶體分配：將記憶體分配至var變數宣告、函式宣告，其初始值分別為undefined、函式內容- 定義建立EC所需的資料：identifier : instance、this、outer reference。3. JavaScript引擎會於將要執行時做(此時算編譯時期)： - 拿建立EC所需的資料去建立EC 4. JavaScript引擎在執行時做： - 以目前EC來執行，並根據目前EC狀況來更新EC`
-<!--SR:!2022-08-12,6,246-->
+<!--SR:!2022-08-28,16,246-->
 
 #🧠 JavaScript 引擎於執行時期會替EC 做什麼？->->-> ` 以目前EC來執行，並根據目前EC狀況來更新EC`
-<!--SR:!2022-08-12,6,246-->
+<!--SR:!2022-08-28,16,246-->
 
 #🧠 請完整說明JavaScript 引擎在編譯時期、快要執行時期、執行時期替Global Scope的程式碼做了什麼樣的EC？ ->->-> `當JS引擎進入到檔案執行時，就先進入編譯時期並準備各種資料來建各種EC，直到開始執行前就先以GEC資料來建立，並直接拿目前GEC和Code來執行，根據執行過程來更新GEC的內容`
-<!--SR:!2022-08-12,6,246-->
+<!--SR:!2022-08-29,17,246-->
 
 #🧠 請完整說明JavaScript 引擎在編譯時期、快要執行時期、執行時期替Function Scope的程式碼做了什麼樣的EC？ ->->-> `當JS引擎進入到檔案執行時，就先進入編譯時期並準備各種資料來建各種EC，當JS引擎進入到Function執行時，就先於執行之前建立FEC，接著以FEC內容來執行和根據執行過程來更新FEC`
 <!--SR:!2022-08-29,17,246-->
 
 #🧠 請完整說明JavaScript 引擎在編譯時期、快要執行時期、執行時期替Block Scope的程式碼做了什麼樣的EC？ ->->-> `BEC(Block Execution Context)：當JS引擎進入到檔案執行時，就先進入編譯時期並準備各種資料來建各種EC，當JS引擎進入到Block執行，就先於執行之前建立BEC，接著以BEC內容來執行和根據執行過程來更新BEC內容`
-<!--SR:!2022-08-12,6,246-->
+<!--SR:!2022-08-26,14,246-->
 
 
 #🧠 JS：每個Execution Context 所面臨的階段是什麼？ ->->-> `- creation phase：execution context建立的階段，會拿編譯時期的資訊來建立EC所會有 identifier : instance、this、outer reference。 - exection phase：程式依據著初期設定的execution context執行的時候，在這時候會邊依據邊把需要更動的資訊紀錄至context`
-<!--SR:!2022-08-12,6,246-->
+<!--SR:!2022-08-27,15,246-->
 
 #🧠 JS：Execution Context 種類 (共三種：Block、Global、Function) ->->-> `Global Execution Context(GEC): 以程式碼全域所在的程式碼為主來構成，不包含function的內部執行、block的內部執行。 - Function Execution Context(FEC):  通常會是function關鍵字以及{}來構築，在這裡當GEC呼叫function並執行function時或者執行對應block的內部執行時就會以當時所要執行的內部程式碼為範疇來建構，比如説：當GEC呼叫了test(a)時，系統就便會執行test內部的第一行，此時就會進入該函式的FEC並開始進入creation phase和execution phase - 以{}所建立的Execution Context：通常會是由一對{}所建立，如同function execution context，只要一進入就會進入該context的creation  phase，然後建立完之後就進入execution phase`
 <!--SR:!2022-09-05,51,250-->

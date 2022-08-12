@@ -78,7 +78,7 @@ app.method(path, callback)
 <!--SR:!2022-11-29,112,248-->
 
 #🧠  session(options)的options是 ->->-> `是藉由物件來設定Express-Session所提供的middleware`
-<!--SR:!2022-08-12,47,248-->
+<!--SR:!2022-12-07,117,248-->
 #🧠 session(options)的options 所描述的store是 ->->-> `定義session儲存在哪？選項有內建的MemoryStore、資料庫、redis`
 <!--SR:!2022-10-30,92,248-->
 

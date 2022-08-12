@@ -101,7 +101,7 @@ setTimeout(() => {
 <!--SR:!2022-08-16,9,250-->
 
 #🧠 ES module：面對環狀結構發生的解法概念為？ ->->-> `將環狀結構轉換成沒環狀結構的形式`
-<!--SR:!2022-08-12,6,248-->
+<!--SR:!2022-08-28,16,248-->
 
 #🧠 ES module：當遇到環狀依賴結構的話，會如何在evaluation階段面對？ ->->-> `evaluation：- DFS post-order traversal 遍歷到環狀結構上最後一個未曾遍歷的模組就停止該方向的遍歷並以該模組為那個方向的最後一個模組 - 執行最後一個模組的加載來從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址 - 執行最後一個模組的top-level code`
 <!--SR:!2022-08-13,6,230-->
@@ -114,7 +114,7 @@ setTimeout(() => {
 <!--SR:!2022-08-15,6,248-->
 
 #🧠 ES module：在ES module處理環狀依賴結構時，有兩個模組A、模組B，其中模組A依賴著模組B、模組B依賴著模組A，在這裡會先挑選模組B做evaluation，但它出現Cannot access 'x' before initialization這錯誤訊息？ ->->-> `通常若存取自模組A加載過來的識別字所對應的記憶體區塊會顯示以下訊息來表示其識別字的記憶體還未分配，而此時的模組A會因為等待模組B執行完evaluation或者還未被挑到來執行evaluation等因素而沒先執行evaluation，因而發生在初始化前就先存取的錯誤訊息`
-<!--SR:!2022-08-12,6,248-->
+<!--SR:!2022-08-27,15,248-->
 
 #🧠 假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是有環狀模組依賴關係 ，那麼它會如何在instantiation階段和evaluation階段處理？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659516780/blog/javascript/module/es-module/cyclic-dependency-code-example_dvfifa.png) ->->-> `- instantiation： -  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組 - 不讓b.js對環狀結構上的a.js進行import，因為a.js還未進行開始instantiation。- evaluation：等待所有模組的instantiation都做完 -  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組 -  執行b.js對於a.js模組的加載，具體加載會是：從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址 - 執行b.js模組上的top-level code，但結果由於a.js必須等待b.js執行完evaluation才能輪到它執行，所以b.js無法獲取自a.js引入的記憶體空間而報錯`
 <!--SR:!2022-08-17,10,250-->
