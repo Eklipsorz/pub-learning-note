@@ -46,12 +46,33 @@ function CourseGoalItem(props) {
 [[React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分]]
 
 
+
+
+
+### props 具體是
+
+
+這裡的Component 會是由function所建立的
+```
+<Component attribute1=value1 attribute2=value2 ...>Content</Component>
+```
+
+原本在這裡所賦予的attributes會被存放在名為props的物件上，其屬性(property)名稱和值會按照attribute名稱和其值而對應，並且在React上會被是作為該Component 物件上所擁有的屬性
+```
+function Component(props) {
+	// ....
+}
+```
+
 ## 複習
 #🧠 React：為了要讓component能夠因為資料的不同而有所不同，初步想會是什麼？->->-> `為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面`
 <!--SR:!2022-08-14,3,250-->
 
 #🧠 React：為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面，解法會是？(描述概念) ->->-> `使用props概念`
 <!--SR:!2022-08-14,3,250-->
+
+
+#🧠 在代表特定元件A的特定函式中，其參數props對於其元件A會是代表什麼？ ->->-> `props會是被視作為元件物件A的屬性(properies)`
 
 #🧠 React：請問props概念是什麼？ ->->-> `將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props`
 <!--SR:!2022-08-14,3,250-->
