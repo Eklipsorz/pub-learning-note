@@ -50,8 +50,51 @@ return React.createElement('div', {}, h2Element, expenseElement);
 
 
   
+1. it should also be clear why you need some wrapping element as a root JSX element
+
+2. why you can't have just these two side-by-side elements. e.g.,
+
+
+
 
   
+
+每一個React Element 只能接受一個parent element的原因:
+
+```
+return (
+    <h2>Let's get started!</h2>
+    <Expenses expenses={expenses}></Expenses>
+)
+```
+
+1. 轉換後的形式會是如下，其結果會是兩個語句，各會回傳對應DOM節點，但return 只能接收一個單一值/單一物件
+
+
+```
+// 方式1：什麼也沒回傳
+return 
+React.createElement('h2', {}, 'Let\'s get started!');
+React.createElement(Expenses, { items: expenses });
+```
+
+```
+// 方式2：回傳h2
+return React.createElement('h2', {}, 'Let\'s get started!');
+React.createElement(Expenses, { items: expenses });
+```
+
+```
+// 方式3：回傳Expenses
+React.createElement('h2', {}, 'Let\'s get started!');
+return React.createElement(Expenses, { items: expenses });
+```
+
+
+
+
+
+
 
   
 
@@ -73,9 +116,8 @@ React.createElement(
 
 
 
-
 ## 複習
-#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 
