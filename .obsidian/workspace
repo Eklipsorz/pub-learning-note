@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
+            "file": "A closer look at jsx (1).md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
+                "file": "A closer look at jsx (1).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,10 +109,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "3490d539708f4dff",
   "lastOpenFiles": [
-    "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
     "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
+    "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
     "develop/React/React - 可使用function 和 class 來建構react component.md",
     "develop/React/React： composition 是利用has a關係來打造元件間的關係，而inheritance則是利用is a 關係來打造元件間的關係.md",
     "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
