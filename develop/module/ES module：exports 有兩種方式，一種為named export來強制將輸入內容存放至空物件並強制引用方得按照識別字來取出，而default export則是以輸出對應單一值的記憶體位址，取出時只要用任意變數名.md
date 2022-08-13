@@ -106,7 +106,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-08-13,3,250-->
 
 #🧠 ES module： default exports 是什麼？ ->->-> `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-23,10,250-->
 
 #🧠 ES module：default exports是不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，那麼具體如何實現？ ->->-> ``不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，而是將輸出內容以存放單一值的記憶體區塊來輸出，引用時則是以任意變數名稱參照著存放該值的記憶體區塊`
 <!--SR:!2022-08-13,3,250-->
