@@ -153,17 +153,17 @@ N個模組要求模組做實例化代表有N個任務會同時要求模組做實
 
 
 #🧠 ES Module：從模組依賴關係圖要找到什麼才開始實例化->->-> `沒使用任何依賴或者使用著已經完成實例化模組的模組`
-<!--SR:!2022-08-13,8,250-->
+<!--SR:!2022-09-05,23,250-->
 
 #🧠 ES Module：從模組依賴關係圖要找到沒使用任何依賴或者使用著已經完成實例化模組的模組，那麼如何找？ ->->-> `模組依賴關係圖底部或者越往底部正是那些，所以會使用Depth First Post-Order Travesal來從模組依賴關係圖的起始點轉移至圖的底部，試圖先實例化沒有任何依賴的模組群組A，接著實例化依賴著模組群組A的模組群組B，然後一直往上實例，直到遍歷完所有模組並做完所有模組的實例`
 <!--SR:!2022-08-14,9,250-->
 
 
 #🧠 用這兩張圖來說明ES module 的實例化，其中右邊是main.js，左邊由先至後是counter.js和render.js，主要main.js會依賴這兩個模組![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_01-768x316.png) ![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_02-768x316.png)->->-> ``
-<!--SR:!2022-08-13,8,250-->
+<!--SR:!2022-09-02,20,250-->
 
 #🧠 ES module的live bindings是什麼？ ->->-> `概念上會是exporting module輸出的識別字和importing module引用的識別字都各自指向相同的記憶體區塊，當exporting module改變識別字對應的記憶體區塊內容，importing module就會馬上看到其識別字對應的(記憶體區塊)內容`
-<!--SR:!2022-08-13,6,230-->
+<!--SR:!2022-08-27,14,230-->
 `
 
 #🧠 ES module：一旦建立live bindings，會有哪些限制 ->->-> `相對來說，ES 模組會使用live bindings技術來讓模組間的export和import所指的識別字都指向同個記憶體區塊，這表示只要在模組上更改值，就會使用import的那一方拿到變更後的值，但只有exporting module那一方才能更改對應的值，importing module不能夠更改import識別字上的對應實體物件(記憶體內容)，最多只能增加屬性至物件上。`

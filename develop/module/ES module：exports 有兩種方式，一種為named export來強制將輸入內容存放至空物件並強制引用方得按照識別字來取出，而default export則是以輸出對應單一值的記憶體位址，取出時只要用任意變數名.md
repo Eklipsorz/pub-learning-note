@@ -88,41 +88,41 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 
 ### 總結：
 1. ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
-<!--SR:!2022-08-13,3,250-->`
+<!--SR:!2022-08-23,10,250-->`
 <!--SR:!2022-08-13,3,250-->
 
 2. default exports 是什麼？ ->->->  `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-20,7,250-->
 
 
 ## 複習
 #🧠 ES module：有哪兩種方式來輸出(export)模組內容？ ->->-> `named export 和 default export`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-19,6,250-->
 
 #🧠 ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-23,10,250-->
 
 #🧠 ES module： named exports 是強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字，具體如何實現？ ->->->`強制輸出的內容放置空物件中來當屬性，其中屬性名稱會是輸出的識別字，屬性值是對應識別字的內容，取出的時候就用物件存取屬性方式來取`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-23,10,250-->
 
 #🧠 ES module： default exports 是什麼？ ->->-> `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
 <!--SR:!2022-08-23,10,250-->
 
 #🧠 ES module：default exports是不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，那麼具體如何實現？ ->->-> ``不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，而是將輸出內容以存放單一值的記憶體區塊來輸出，引用時則是以任意變數名稱參照著存放該值的記憶體區塊`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-20,7,250-->
 `
 
 #🧠 請試著寫出exporting module來以named exports輸出特定property1和property2，並以importing module來引用這些property1、property2->->-> `exporting module: export { property1, property2,.... }, importing module: import { property1, property2, .... } from 'xxx'`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-21,8,250-->
 
 #🧠 請試著寫出exporting module來以default exports輸出特定variable，並以importing module來引用這些variable ->->-> `exporting module: export default expression, importing module: import variable from 'xxx'`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-20,7,250-->
 
 #🧠 ES module：使用default exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `不一定一樣，可以不一樣`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-19,6,250-->
 
 #🧠 ES module：使用named exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `得必須一樣，因為得用物件來存取以識別字名稱製作的屬性`
-<!--SR:!2022-08-13,3,250-->
+<!--SR:!2022-08-23,10,250-->
 
 
 ---

@@ -75,17 +75,17 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？(GEC) ->->-> `每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行`
-<!--SR:!2022-08-13,6,248-->
+<!--SR:!2022-08-30,17,248-->
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？->->-> `每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行`
-<!--SR:!2022-08-13,6,248-->
+<!--SR:!2022-08-29,16,248-->
 
 
 #🧠 假設有兩個HTML檔案，裡面有各自JS腳本程式碼，請問他們的全域變數會是共享的？ ->->-> `並不會，因為每個HTML檔案都會被解析成各自不同的window物件，而每個window物件會構成不同的GEC，這兩個檔案的全域環境是不同，且兩者的變數並不會共享的`
 <!--SR:!2022-08-22,23,250-->
 
 #🧠 若瀏覽器可允許使用者開啟多個標籤頁，每個標籤頁都對應一個畫面，那麼對於javascript全域環境來說，是代表什麼？ ->->-> `每個標籤頁都對應特定畫面，那麼每個標籤頁都對應不同的GEC，那麼彼此間的JavaScript全域環境並不會共享`
-<!--SR:!2022-08-13,6,248-->
+<!--SR:!2022-08-30,17,248-->
 
 
 #🧠 同一個HTML檔案中，JavaScript有哪些寫法？ ->->-> `<script src="javascript.js"></script> 和 <script>指令</script>`

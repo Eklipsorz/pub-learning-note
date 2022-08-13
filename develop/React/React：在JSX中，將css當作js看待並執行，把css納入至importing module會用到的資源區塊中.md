@@ -75,7 +75,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 <!--SR:!2022-08-14,2,230-->
 
 #🧠 import 'xxxx' 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
-<!--SR:!2022-08-13,2,248-->
+<!--SR:!2022-08-18,5,248-->
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `把css納入至importing module會用到的資源區塊中`
 <!--SR:!2022-08-17,4,248-->
@@ -84,7 +84,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 <!--SR:!2022-08-14,2,248-->
 
 #🧠 在JSX中，執行import './ExpenseItem.css'後，對應component的網頁會有這css嗎？ ->->-> `最後webpack針對這component所生成的網頁會自動載入對應css檔案`
-<!--SR:!2022-08-13,2,248-->
+<!--SR:!2022-08-19,6,248-->
 
 #🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個名為Component的元件來表達->->-> `添加className，<Component className='.....'></Component>`
 <!--SR:!2022-08-14,2,248-->
