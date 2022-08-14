@@ -58,6 +58,28 @@ function clickHandler(...) {
 ```
 
 
+### 命名每個事件綁定的callback
+```
+function clickHandler(...) {
+	....
+}
+
+// JSX Code
+(
+	<button onClick={clickHandler()}></button>
+)
+```
+
+
+若沒特別命名法則來命名每個事件綁定的callback，那麼可以試著以 xxxx + Handler 來命名，其中xxxx為事件名稱。
+```
+const clickHandler = () => {
+	.....
+}
+```
+
+畢竟clickHandler最後會是由瀏覽器自己去幫忙執行，而非由React本身來處理
+
 ## 複習
 
 
