@@ -56,8 +56,12 @@ React.createElement(
 > -   `createElement()`
 > -   `createFactory()`   
 
+
+JSX 實際上來說是什麼？`是一個包裝建立&對應Virtual DOM原生方法的語法糖`
+
+
 為了讓開發者更容易地去開發Virtual DOM來對應實際的DOM，所以才提出JSX這 **語法糖** 語言體系，最主要是將以下語法來簡化：
-	- 建立Virtual DOM的方式
+	- 建立&對應Virtual DOM的React原生方法
 
 
 #### 當系統解析JSX語法時
@@ -122,13 +126,20 @@ const element = (
 )
 ```
 
+
+```
+(
+	<XML code>
+)
+```
+
 轉換後
 ```
 return React.createElement(...)
 ```
 
 
-2. 然而實際上出現多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點
+2. 然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點
 ```
 return React.createElement(...)
 ```
@@ -169,6 +180,25 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 React.createElement 語法是做什麼的？ 簡述一下用途？->->-> `該語法會建立Virtual DOM節點並回傳對應DOM節點物件`
+
+#🧠 React.createElement(A,B,C) 語法中的A、B和C各是做什麼的？ 簡述一下用途？ ->->-> `A指定建立後的DOM種類為何、B則是指定DOM節點會有什麼樣的attributes、C是指定DOM節點所包含的子節點`
+
+#🧠 React：在沒有使用JSX的時期，如何使用React函式庫來轉換以下對應DOM結構？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485103/blog/react/react-element/react-expected-result_cpazde.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485104/blog/react/react-element/react-actual-result_ajx4rn.png)`
+
+
+#🧠 JSX 實際上來說是什麼？->->-> `是一個包裝建立&對應Virtual DOM原生方法的語法糖`
+
+#🧠 JSX 實際上包裝了什麼來做成語法糖？ ->->-> `建立&對應Virtual DOM的React原生方法`
+
+#🧠 當系統解析JSX語法，會做什麼樣的轉換？->->-> `自動載入react import React from 'react'; 2. 轉換成React object的建立&對應DOM方法來得到對應畫面，比如
+`React.createElement(...)`
+
+
+#🧠 為什麼使用JSX語法糖的React Element 只能接受一個parent element，講個大概就好 ->->-> `每一個JSX語法都會是代表著React.createElement(...)回傳的節點，該節點會是一個包含多個子節點的parent節點、然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點，在這樣情況下，只能選擇一個或者都不選，哪一個都無法按照JSX代表意思來使原生方法實現。`
+
+#🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
+
+#🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
 
 
 ---

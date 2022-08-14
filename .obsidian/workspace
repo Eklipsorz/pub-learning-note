@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+            "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+            "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "040f9c935f989840",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
-    "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
     "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
