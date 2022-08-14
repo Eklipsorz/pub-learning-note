@@ -188,13 +188,16 @@ function WelcomeDialog() {
 <!--SR:!2022-08-17,3,250-->
 
 #🧠 Containment  命名緣由 ->->-> `containment 是指被包含和包含的行為、過程`
+<!--SR:!2022-08-17,3,250-->
 
 #🧠 在React 的 composition 具體實現方法 有哪兩種？->->-> `Containment、Specialization`
 <!--SR:!2022-08-17,3,250-->
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Containment 實現概念是什麼？ ->->-> `component A 會包含多個其他獨立的component`
+<!--SR:!2022-08-17,3,250-->
 
 #🧠 在React 的 composition ：Containment 的 概念為component A 會包含多個其他獨立的component，具體會是？ ->->-> `**建立一個component A來包含其他獨立的component B** `
+<!--SR:!2022-08-17,3,250-->
 
 #🧠 在React 的 composition：comtainment 概念為component A 會包含多個其他獨立的component，實現手段會有什麼？ ->->-> `props 和 component 之間的關係是：props會被React視作為component 物件的屬性、利用 props.children 來表示其對應標籤所包含的內容、被包含的內容會是多個獨立的Component`
 <!--SR:!2022-08-17,3,250-->
@@ -211,6 +214,7 @@ function WelcomeDialog() {
 <!--SR:!2022-08-17,3,250-->
 
 #🧠 在React 的 compositio：Specialization的 實現手段會有什麼？ (關係、載入、資訊)->->-> `- props 和 component 之間的關係是：props會被React視作為component 物件的屬性 - 載入特定元件B來讓目前元件A擁有元件B - 元件B 有提供props 來讓元件A以特定資訊來得到不同內容的元件B`
+<!--SR:!2022-08-17,3,250-->
 
 
 
