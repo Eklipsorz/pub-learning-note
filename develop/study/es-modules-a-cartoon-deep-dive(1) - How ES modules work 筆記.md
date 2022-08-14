@@ -107,7 +107,7 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄、如何實�
 <!--SR:!2022-08-23,14,248-->
 
 #🧠 以這個圖示來說明如何執行ES module載入中的哪三個步驟 ![A module with two dependencies. The top module is the entry. The other two are related using import statements](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph-500x291.png)  ->->-> ``
-<!--SR:!2022-08-14,9,250-->
+<!--SR:!2022-09-05,22,250-->
 
 #🧠 ES module 的載入： 建構階段中會做什麼 ->->-> `主要會去解讀模組所在的位置、並且向該位置索要模組、然後將模組解析成module record、接著再另外依據import/export來建立模組依賴關係圖`
 <!--SR:!2022-08-23,13,230-->

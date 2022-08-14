@@ -134,7 +134,7 @@ const xxx = require(moduleA)
 
 
 #🧠 當要載入CommonJS模組時，會如何挑依賴模組以及挑到了要做什麼？->->-> `會透過DFS Post-Order Traversal來從模組依賴關係圖中挑出沒依賴其他模組的模組或者依賴著已經處理完模組加載的模組，並對那個模組進行一次性的獲取&建構、實例化、執行evaluation，最後再將模組實例所要輸出的內容回傳至需求方`
-<!--SR:!2022-08-14,7,250-->
+<!--SR:!2022-09-01,18,250-->
 
 #🧠 當需求方以require來載入CommonJS模組時，具體會做什麼樣的載入？->->-> `這時JS引擎會先於編譯期間做： - 分配記憶體空間給模組下的模組實例module物件、var變數宣告、函式宣告 - 分配初始值給var變數為undefined、函式宣告會是拿到存放函式內容的記憶體區塊、模組實例(exports部分會是{} ) - 建立EC來紀錄模組下的每個識別字和對應實體物件，接著在執行該模組的top-level code 來產生模組要輸出的內容以及執行輸出模組內容的語句，如：執行到下列語句才會把輸出內容從空物件轉換成指定內容最後再將模組實例所要輸出的內容回傳至需求方`
 <!--SR:!2022-08-15,6,230-->
@@ -174,7 +174,7 @@ const xxx = require(moduleA)
 
 
 #🧠 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js![counter.js returning control to main.js, which finishes evaluating](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/43_cjs_cycle-500x224.png) ->->-> `一開始會先使用檢測環狀依賴結構的算法來判定，在這裡是能夠確定，所以會將counter.js對於main.js的依賴關係給移除。剛開始執行main.js時，會於編譯時期替main.js分配記憶體空間來建立實例，同時預設設定{}至module.exports，接著在建立EC來替每個識別字能夠對應其實體物件，接著就進入執行來調用counter.js模組，然後就跑到counter.js那邊進行編譯時的實例化和設定，在執行時會直接碰到對於main.js的require，在這裏由於是被算法指定要移除，所以會直接獲取main.js那邊還未執行evaluation來確定值的版本，所以message會是undefined，並接著繼續執行counter.js的top-level code並確定要輸出的內容為count = 5，執行完畢之後，就跳回main.js那邊，將5回傳給count，讓main.js去印以及去設定message的最終值為Eval complete。`
-<!--SR:!2022-08-14,7,250-->
+<!--SR:!2022-09-02,19,250-->
 
 ---
 Status: #🌱 
