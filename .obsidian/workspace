@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +109,15 @@
   },
   "active": "3490d539708f4dff",
   "lastOpenFiles": [
+    "React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
     "React 專案：普遍的命名法則.md",
-    "Untitled.md",
+    "CommonJS 模組如何載入模組.md",
+    "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+    "React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
     "react 事件處理.md",
     "Untitled 1.md",
     "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
-    "React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
     "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
-    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
-    "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
-    "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md"
+    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md"
   ]
 }
