@@ -80,6 +80,34 @@ const clickHandler = () => {
 
 畢竟clickHandler最後會是由瀏覽器自己去幫忙執行，而非由React本身來處理
 
+
+### 未變更對應元件內容的事件處理
+
+
+
+```
+function ExpenseItem(props) {
+
+	let title = props.title;
+	
+	const clickHandler = () => {
+		title = 'updated';
+	};
+
+return (
+	<Card className='expense-item' id={props.id}>	
+		<ExpenseDate date={props.date} />
+		<div className='expense-item__description'>
+			<h2>{title}</h2>
+			<div className='expense-item__price'>{props.amount}</div>
+		</div>
+		<button onClick={clickHandler}>test btn</button>
+	</Card>
+);
+
+}
+```
+
 ## 複習
 
 
