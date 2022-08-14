@@ -86,8 +86,8 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 #🧠 在JSX中，執行import './ExpenseItem.css'後，對應component的網頁會有這css嗎？ ->->-> `最後webpack針對這component所生成的網頁會自動載入對應css檔案`
 <!--SR:!2022-08-19,6,248-->
 
-#🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個名為Component的元件來表達->->-> `添加className，<Component className='.....'></Component>`
-<!--SR:!2022-08-18,4,248-->
+#🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個HTML元件來表達->->-> `添加className，<div className='.....'></div>`
+
 
 #🧠 React：為何不讓JSX中的XML表達元件使用class？ ->->-> `由於XML是JSX語言的一部分，且class會跟JavaScript原生語法中的class起衝突，所以React會以className來替代指定每個元件的樣式`
 <!--SR:!2022-08-18,4,248-->
