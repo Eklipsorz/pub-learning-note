@@ -6,24 +6,22 @@
       {
         "id": "3490d539708f4dff",
         "type": "leaf",
-        "dimension": 52.63919016630514,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
+            "file": "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "9a12a2067cb9eeab",
+        "id": "040f9c935f989840",
         "type": "leaf",
-        "dimension": 47.360809833694866,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
+            "file": "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
             "mode": "source",
             "source": false
           }
@@ -63,12 +61,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 688
+    "width": 200
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -84,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
+                "file": "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3490d539708f4dff",
+  "active": "040f9c935f989840",
   "lastOpenFiles": [
+    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
+    "JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+    "develop/React/React：在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/Stripe/Stripe Payment Element 是Stripe 提供於UI開發的元件來從而擷取使用者透過該元件的輸入結果並產出伺服器容易處理的結果，其元件具體會是由部分DOM節點和事件綁定來構成.md",
     "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
-    "A closer look at jsx (1).md",
-    "Untitled 1.md",
-    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
-    "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md"
+    "Untitled 1.md"
   ]
 }
