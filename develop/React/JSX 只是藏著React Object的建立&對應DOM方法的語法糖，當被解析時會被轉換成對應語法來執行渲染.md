@@ -175,6 +175,7 @@ return React.createElement(Expenses, { items: expenses });
 ## 複習
 
 #🧠 React：在沒有使用JSX的時期，都是用什麼來建立/對應DOM？->->-> `載入React函式庫並從中調用建立Virtual DOM和對應DOM的語法`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 React：使用著React 函式庫來調用建立Virtual DOM和對應DOM的語法，會有什麼樣的問題？ ->->-> `載入方式很多餘：每個代表元件的檔案都必須要載入、開發/維護難度提升，開發Virtual DOM會相當繁瑣、冗長`
 <!--SR:!2022-08-18,3,250-->
@@ -184,16 +185,20 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2022-08-18,3,250-->
 
 #🧠 React.createElement(A,B,C) 語法中的A、B和C各是做什麼的？ 簡述一下用途？ ->->-> `A指定建立後的DOM種類為何、B則是指定DOM節點會有什麼樣的attributes、C是指定DOM節點所包含的子節點`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 React：在沒有使用JSX的時期，如何使用React函式庫來轉換以下對應DOM結構？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485103/blog/react/react-element/react-expected-result_cpazde.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485104/blog/react/react-element/react-actual-result_ajx4rn.png)`
+<!--SR:!2022-08-18,3,250-->
 
 
 #🧠 JSX 實際上來說是什麼？->->-> `是一個包裝建立&對應Virtual DOM原生方法的語法糖`
 <!--SR:!2022-08-18,3,250-->
 
 #🧠 JSX 實際上包裝了什麼來做成語法糖？ ->->-> `建立&對應Virtual DOM的React原生方法`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 當系統解析JSX語法，會做什麼樣的轉換？->->-> `自動載入react import React from 'react'; 2. 轉換成React object的建立&對應DOM方法來得到對應畫面，比如
+<!--SR:!2022-08-18,3,250-->
 `React.createElement(...)`
 
 
@@ -201,8 +206,10 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2022-08-18,3,250-->
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
+<!--SR:!2022-08-18,3,250-->
 
 
 ---
