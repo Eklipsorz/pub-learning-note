@@ -20,12 +20,15 @@ useState
 
   
 
-react hooks：
+> react hooks：
+> 1. can be recognized by the fact that they start with the word "use" in their name
+> 2. and these hooks must only be called inside of react component function like ExpenseItem
+> 3. they can't be called outside of these functions, like this.
 
-1. can be recognized by the fact that they start with the word "use" in their name
-2. and these hooks must only be called inside of react component function like ExpenseItem
-3. they can't be called outside of these functions, like this.
 
+重點：
+- react hook 名稱都以use開頭來命名
+- react hook 都放置在元件對應的函式上，不可放在函式外
 
 
 ## sequelize hook 功能

@@ -89,8 +89,7 @@ function ExpenseItem(props) {
   
 畫面生成的整體流程會是：
 
-確定畫面->轉換成以畫面為主來生成實際DOM節點的指令->執行指令來渲染
-
+確定畫面->轉換成以畫面為主來生成實際DOM節點的指令->執行指令來渲染，確定畫面則是則會有自製元件和原生元件，自製元件就直接執行對應的函式來獲取對應原生元件來合併，原生元件就直接合併
 
 ### 總結
 1. 每個元件上都綁定著能夠渲染其元件樣貌和邏輯的函式
@@ -115,6 +114,10 @@ function ExpenseItem(props) {
 #🧠 React：以這個作為例子來說明，系統會如何執行、合併畫面、獲得畫面？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `當以這形式來表示ExpenseItem元件時，<ExpenseItem></ExpenseItem>，就是呼叫ExpenseItem元件對應的函式，並執行函式內容和會回傳對應元件畫面，而畫面則是會以return()內容為主，在這裡會有Card和ExpenseDate這兩個自製元件，在這裡會直接執行他們對應的函式來獲取對應畫面來與目前畫面做合併，而剩下非自製則是直接與目前畫面做合併，直到畫面能夠被確定，才會生成實際DOM節點的指令，並透過指令來實際渲染畫面`
 
 #🧠 React：以這個作為例子來說明，畫面生成的整體流程會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `確定畫面->轉換成以畫面為主來生成實際DOM節點的指令->執行指令來渲染`
+
+#🧠 React：是如何從return () 確定畫面的 ->->-> `確定畫面則是則會有自製元件和原生元件，自製元件就直接執行對應的函式來獲取對應原生元件來合併，原生元件就直接合併`
+
+
 
 ---
 Status: #🌱 
