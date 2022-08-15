@@ -9,6 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
+            "file": "React： useState 案例.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "3711ea41da198c9e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
             "file": "A Closer Look at the \"useState\" Hook.md",
             "mode": "source",
             "source": false
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A Closer Look at the \"useState\" Hook.md",
+                "file": "React： useState 案例.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +109,7 @@
   },
   "active": "018a318cd5e029a2",
   "lastOpenFiles": [
+    "A Closer Look at the \"useState\" Hook.md",
     "React： useState 案例.md",
     "React：hook.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
@@ -105,7 +118,6 @@
     "CommonJS 模組如何載入模組.md",
     "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
-    "MOC/Rendering MOC.md",
-    "develop/React/React 專案：普遍的命名法則.md"
+    "MOC/Rendering MOC.md"
   ]
 }
