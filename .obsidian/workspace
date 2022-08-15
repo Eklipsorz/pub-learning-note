@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 1.md",
+            "file": "React：hook.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "d02147fbd4083a38",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "React：hook.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "React：hook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,8 +107,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "018a318cd5e029a2",
+  "active": "d02147fbd4083a38",
   "lastOpenFiles": [
+    "Untitled 1.md",
     "React：hook.md",
     "React： useState 案例.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
@@ -105,7 +118,6 @@
     "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
     "MOC/Rendering MOC.md",
-    "develop/React/React 專案：普遍的命名法則.md",
-    "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md"
+    "develop/React/React 專案：普遍的命名法則.md"
   ]
 }
