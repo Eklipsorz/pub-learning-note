@@ -130,7 +130,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 <!--SR:!2022-08-27,16,228-->
 
 #🧠 ES Module：每一個被挑到執行evaluation的模組如何實作evaluation？ ->->-> `	- 更新module map上的對應模組紀錄狀態：從linked變更至evaluating - 執行時透過import來在執行時期加載該模組所依賴的模組，具體會透過模組所在的主機來在module map找到對應的module record，接著再從裡頭找到environment record來讓import識別字對應至正確的記憶體位置 - 透過執行模組的top-level code來將實際值分配至export那邊識別字對應的記憶體空間 - 更新module map上的對應模組紀錄狀態：從evaluating 變更至 evaluated`
-<!--SR:!2022-08-15,10,250-->
+<!--SR:!2022-09-10,26,250-->
 
 
 #🧠 ES Module：N個不同模組會替相同模組做N個同個實例的執行，請說明可能性？ ->->-> `通常會以模組依賴關係圖來找模組，依賴關係圖中會有被依賴的模組A和依賴模組A的模組B，當出現時，系統會為了方便執行兩個模組，會先從被依賴的模組A開始執行evaluation，換言之就是會產生任務去對模組A做evaluation，若有N個模組要同樣的模組A，即為發送N個任務來對模組A做evluation，將會有N個相同模組下的evaluation，然而，實際上也只需要一次evaluation，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`

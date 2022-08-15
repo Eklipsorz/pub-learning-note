@@ -177,9 +177,11 @@ return React.createElement(Expenses, { items: expenses });
 #🧠 React：在沒有使用JSX的時期，都是用什麼來建立/對應DOM？->->-> `載入React函式庫並從中調用建立Virtual DOM和對應DOM的語法`
 
 #🧠 React：使用著React 函式庫來調用建立Virtual DOM和對應DOM的語法，會有什麼樣的問題？ ->->-> `載入方式很多餘：每個代表元件的檔案都必須要載入、開發/維護難度提升，開發Virtual DOM會相當繁瑣、冗長`
+<!--SR:!2022-08-18,3,250-->
 
 
 #🧠 React.createElement 語法是做什麼的？ 簡述一下用途？->->-> `該語法會建立Virtual DOM節點並回傳對應DOM節點物件`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 React.createElement(A,B,C) 語法中的A、B和C各是做什麼的？ 簡述一下用途？ ->->-> `A指定建立後的DOM種類為何、B則是指定DOM節點會有什麼樣的attributes、C是指定DOM節點所包含的子節點`
 
@@ -187,6 +189,7 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 JSX 實際上來說是什麼？->->-> `是一個包裝建立&對應Virtual DOM原生方法的語法糖`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 JSX 實際上包裝了什麼來做成語法糖？ ->->-> `建立&對應Virtual DOM的React原生方法`
 
@@ -195,6 +198,7 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 為什麼使用JSX語法糖的React Element 只能接受一個parent element，講個大概就好 ->->-> `每一個JSX語法都會是代表著React.createElement(...)回傳的節點，該節點會是一個包含多個子節點的parent節點、然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點，在這樣情況下，只能選擇一個或者都不選，哪一個都無法按照JSX代表意思來使原生方法實現。`
+<!--SR:!2022-08-18,3,250-->
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
 

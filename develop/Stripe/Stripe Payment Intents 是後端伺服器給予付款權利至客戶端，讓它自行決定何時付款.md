@@ -73,7 +73,7 @@ stripe.confirmPayment(client_secret,paymentMethod)
 
 
 #🧠 Stripe Payment Intents 以下為客戶端索要client_secret並確認付款的流程，請說明流程 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656946813/blog/paymentFlow/stripe/payment_intents_flow_j2nigv.png)->->-> `1. 客戶端會透過GET /secret 向後端伺服器索要對應的stripe client_secret 2. 後端伺服器收到GET /secret請求，便呼叫以下函式來向Stripe伺服器索要client_secret，同時Stripe伺服器會產生對應secret並紀錄 3. Stripe伺服器做完產生和紀錄後，就把client_secret回傳到伺服器，伺服器在回傳給客戶端 4. 接著客戶端呼叫以下方法，其中會附加client_secret、預先建立的付款資料方法物件(定義如何付款和付款資訊)，這呼叫就等同客戶端向Stripe 伺服器發送確定付款的請求，並要求驗證附加的client_secret、預先建立的付款資料方法物件、key 5.  Stripe 伺服器收到後就驗證key、client_secret是否正確： - 若不正確的話，就告知客戶端是錯誤的 6 若正確的話，伺服器就會告知成功付款`
-<!--SR:!2022-08-15,28,250-->
+<!--SR:!2022-10-26,72,250-->
 
 
 #🧠  Stripe Payment Intents 流程會是？(以輸入信用卡、client_secret、確定付款為例)->->-> `- 使用者先填入信用卡資料，接著在取得client_secret，最後在呼叫confirmPayment來確認付款 -先取得client_secret，接著再填入信用卡資料，最後在呼叫confirmPayment，只要能讓最後的confirmPayment能拿到付款資訊和secret，前兩者順序皆可調換`
