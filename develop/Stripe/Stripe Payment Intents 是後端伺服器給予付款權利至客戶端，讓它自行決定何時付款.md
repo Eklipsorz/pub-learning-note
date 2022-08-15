@@ -77,7 +77,7 @@ stripe.confirmPayment(client_secret,paymentMethod)
 
 
 #🧠  Stripe Payment Intents 流程會是？(以輸入信用卡、client_secret、確定付款為例)->->-> `- 使用者先填入信用卡資料，接著在取得client_secret，最後在呼叫confirmPayment來確認付款 -先取得client_secret，接著再填入信用卡資料，最後在呼叫confirmPayment，只要能讓最後的confirmPayment能拿到付款資訊和secret，前兩者順序皆可調換`
-<!--SR:!2022-08-15,28,250-->
+<!--SR:!2022-10-28,74,250-->
 
 
 #🧠 Stripe Payment Intents  特點是什麼？ ->->-> `1. 結帳決定權容易全都在客戶端 2. 由於能夠決定付款的secret放在前端，所以安全性較低`
