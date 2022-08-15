@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+            "file": "React 專案：普遍的命名法則.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "040f9c935f989840",
+        "id": "c980ab344d7d970a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+            "file": "React 專案：普遍的命名法則.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+                "file": "React 專案：普遍的命名法則.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3490d539708f4dff",
+  "active": "c980ab344d7d970a",
   "lastOpenFiles": [
-    "React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
+    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
     "React 專案：普遍的命名法則.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+    "CommonJS 模組如何載入模組.md",
+    "React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
     "React： useState 案例.md",
     "React：hook.md",
     "React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
-    "CommonJS 模組如何載入模組.md",
-    "react 事件處理.md",
-    "Untitled 1.md",
-    "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md"
+    "react 事件處理.md"
   ]
 }
