@@ -1,19 +1,19 @@
 
 ## 描述
-
+[[@reactShiJianChuLiReact]]
 > 使用 React element 處理事件跟使用 DOM element 處理事件是十分相似的。它們有一些語法上的差異：
 > -   事件的名稱在 React 中都是 camelCase，而在 HTML DOM 中則是小寫。
 > -   事件的值在 JSX 中是一個 function，而在 HTML DOM 中則是一個 string。
 
 
-例如，在 HTML 中的語法：
+> 例如，在 HTML 中的語法：
 ```
 <button onclick="activateLasers()">
 	Activate Lasers
 </button>
 ```
 
-和在 React 中的語法有些微的不同：
+> 和在 React 中的語法有些微的不同：
 ```
 <button onClick={activateLasers}>  
 	Activate Lasers
@@ -28,8 +28,32 @@ JSX 為React Element提供事件綁定的API：
 
 
 
-
-
+重點：
+- 對於屬性(attribute)上的事件綁定來說，React官方和HTML DOM官方都有各自的語法規則，兩者並不互通：
+	- 當使用React 官方語法來建立事件綁定，並不會轉換成以HTML DOM來綁定，而是以JS來綁定
+	- 當使用HTML DOM官方語法來建立事件綁定，也不會影響React
+- 事件綁定的語法：
+	- React：名稱則以lower camel case為主，如負責點擊事件綁定的onClick
+	```
+	<button onClick={activateLasers}>  
+		Activate Lasers
+	</button>
+	```
+	- HTML DOM： 名稱則都是以小寫為主，因支援XHTML，如負責點擊事件綁定的onclick
+	```
+	<button onclick="activateLasers()">
+		Activate Lasers
+	</button>
+	```
+- 事件綁定的事件處理函式指派：
+	- React：指派函式則是以函式物件為主，不用特別添加()，如下的activateLasers函式物件。
+	```
+	onClick={activateLasers}
+	```
+	- HTML：指派函式則是以字串來表示，
+	```
+	onclick="activateLasers()"
+	```
 onClick 不用像HTML那樣要添加()
 
 ### onClick 夾雜的函式是否呼叫
@@ -117,3 +141,4 @@ Tags:
 [[React]] - [[JavaScript]]
 Links:
 References:
+[[@reactShiJianChuLiReact]]
