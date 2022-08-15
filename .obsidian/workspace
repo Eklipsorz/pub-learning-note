@@ -110,6 +110,7 @@
   "active": "3d528c50df6abb10",
   "lastOpenFiles": [
     "React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
+    "Untitled.md",
     "React：hook.md",
     "develop/React/React 專案：普遍的命名法則.md",
     "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
@@ -117,7 +118,6 @@
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
     "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
-    "CommonJS 模組如何載入模組.md",
-    "React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md"
+    "CommonJS 模組如何載入模組.md"
   ]
 }
