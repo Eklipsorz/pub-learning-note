@@ -39,13 +39,13 @@ JSX 為React Element提供事件綁定的API：
 		Activate Lasers
 	</button>
 	```
-	- HTML DOM： 屬性名稱形式會是onXXXX，XXXX會是指事件名稱，名稱則都是以小寫為主，因得考慮支援XHTML，如負責點擊事件綁定的onclick
+	- HTML DOM： 屬性名稱形式會是onXXXX，XXXX會是指事件名稱，名稱則都是以小寫為主，因得考慮支援XHTML、XML，如負責點擊事件綁定的onclick
 	```
 	<button onclick="activateLasers()">
 		Activate Lasers
 	</button>
 	```
-- 事件綁定的事件處理函式指派：
+- 屬性(attribute)事件綁定的事件處理函式指派：
 	- React：指派函式則是以函式物件為主，不用特別添加()，如下的activateLasers函式物件。
 	```
 	onClick={activateLasers}
@@ -112,7 +112,26 @@ const clickHandler = () => {
 
 #🧠 對於標籤上的屬性(attribute)事件綁定來說，React 官方語法和HTML DOM 官方語法之間是獨立，請試著以React官方語法角度和HTML DOM角度來說明 ->->-> `當使用React 官方語法來建立事件綁定，並不會轉換成以HTML DOM來綁定，而是以JS來綁定；當使用HTML DOM官方語法來建立事件綁定，由於React是基於HTML而產生的應用框架，本身底層不會影響到React`
 
-#🧠 標籤的屬性(attribute)事件綁定語法，React會是用何種形式 ->->-> ``
+#🧠 標籤的屬性(attribute)事件綁定語法，React會是用何種形式來表示 ->->-> `onXXXX，，XXXX會是指事件名稱，該屬性名稱則以lower camel case為主`
+
+#🧠 標籤的屬性(attribute)事件綁定語法，React會是用何種形式來表示，舉一個點擊事件的例子->->-> `onClick`
+
+#🧠 標籤的屬性(attribute)事件綁定語法，HTML DOM會是何種形式來表示？ ->->-> `屬性名稱形式會是onXXXX，XXXX會是指事件名稱，名稱則都是以小寫為主`
+
+#🧠 標籤的屬性(attribute)事件綁定語法，HTML DOM上為何是以小寫來表示？->->-> `因得考慮支援XHTML、XML`
+
+#🧠 標籤的屬性(attribute)事件綁定語法，HTML DOM會是用何種形式來表示，舉一個點擊事件的例子 ->->-> `onclick`
+
+#🧠 屬性(attribute)事件綁定的事件處理函式指派，React是如何指派的？ ->->-> `指派函式則是以函式物件為主`
+
+#🧠 屬性(attribute)事件綁定的事件處理函式指派，React會是用何種形式來指派 ->->-> `onXXXX={function}，其中function是函式物件`
+
+#🧠 屬性(attribute)事件綁定的事件處理函式指派，HTML會是用何種形式來指派 ->->-> `onXXXX="function();"，HTML是指定事件發生時要執行什麼指令，在這裡就直接指定執行function就好，也就是function()，同時並用字串符號來包覆`
+
+#🧠 屬性(attribute)事件綁定的事件處理函式指派，React是指派函式物件來指定對應事件處理，那麼要先需要添加()來先呼叫？若添加會發生什麼？？->->-> `不用特別添加()，若添加就等同於先執行函式，並以函式處理結果來替代整個函式呼叫的所在，最後以這內容作為渲染內容`
+
+
+#🧠  使用 React element 處理事件跟使用 DOM element 處理事件是十分相似的。它們有一些語法上的差異，有哪些？ ->->-> `1. 事件綁定屬性的名稱在React上是以lowerCamel；事件綁定屬性的名稱在HTML DOM上面是以小寫 2. 事件綁定屬性的對應值在React是以一個函式物件來表示；事件綁定屬性的對應值在HTML DOM是以字串指令來表示，其指令是直接下達事件發生時要執行什麼。`
 
 ---
 Status: #🌱 
