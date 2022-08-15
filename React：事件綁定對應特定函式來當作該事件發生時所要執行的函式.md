@@ -29,17 +29,17 @@ JSX 為React Element提供事件綁定的API：
 
 
 重點：
-- 對於屬性(attribute)上的事件綁定來說，React官方和HTML DOM官方都有各自的語法規則，兩者並不互通：
+- 對於標籤的屬性(attribute)事件綁定來說，React官方語法和HTML DOM官方語法都有各自的語法規則，兩者並不互通：
 	- 當使用React 官方語法來建立事件綁定，並不會轉換成以HTML DOM來綁定，而是以JS來綁定
-	- 當使用HTML DOM官方語法來建立事件綁定，也不會影響React
-- 事件綁定的語法：
-	- React：名稱則以lower camel case為主，如負責點擊事件綁定的onClick
+	- 當使用HTML DOM官方語法來建立事件綁定，由於React是基於HTML而產生的應用框架，本身底層不會影響到React
+- 標籤的屬性(attribute)事件綁定語法：
+	- React：屬性名稱形式會是onXXXX，XXXX會是指事件名稱，該屬性名稱則以lower camel case為主，如負責點擊事件綁定的onClick
 	```
 	<button onClick={activateLasers}>  
 		Activate Lasers
 	</button>
 	```
-	- HTML DOM： 名稱則都是以小寫為主，因支援XHTML，如負責點擊事件綁定的onclick
+	- HTML DOM： 屬性名稱形式會是onXXXX，XXXX會是指事件名稱，名稱則都是以小寫為主，因得考慮支援XHTML，如負責點擊事件綁定的onclick
 	```
 	<button onclick="activateLasers()">
 		Activate Lasers
@@ -50,11 +50,11 @@ JSX 為React Element提供事件綁定的API：
 	```
 	onClick={activateLasers}
 	```
-	- HTML：指派函式則是以字串來表示，
+	- HTML：指派函式則是以字串來表示來表示事件發生時要執行什麼樣的指令
 	```
 	onclick="activateLasers()"
 	```
-onClick 不用像HTML那樣要添加()
+
 
 ### onClick 夾雜的函式是否呼叫
 
@@ -105,40 +105,20 @@ const clickHandler = () => {
 畢竟clickHandler最後會是由瀏覽器自己去幫忙執行，而非由React本身來處理
 
 
-### 未變更對應元件內容的事件處理
-
-
-
-```
-function ExpenseItem(props) {
-
-	let title = props.title;
-	
-	const clickHandler = () => {
-		title = 'updated';
-	};
-
-return (
-	<Card className='expense-item' id={props.id}>	
-		<ExpenseDate date={props.date} />
-		<div className='expense-item__description'>
-			<h2>{title}</h2>
-			<div className='expense-item__price'>{props.amount}</div>
-		</div>
-		<button onClick={clickHandler}>test btn</button>
-	</Card>
-);
-
-}
-```
-
 ## 複習
 
+#🧠 對於標籤上的屬性(attribute)事件綁定來說，React 官方語法和HTML DOM 官方語法之間是否有關係？獨立？相依？->->-> `兩者都有各自的語法規則，兩者並不互通`
+
+
+#🧠 對於標籤上的屬性(attribute)事件綁定來說，React 官方語法和HTML DOM 官方語法之間是獨立，請試著以React官方語法角度和HTML DOM角度來說明 ->->-> `當使用React 官方語法來建立事件綁定，並不會轉換成以HTML DOM來綁定，而是以JS來綁定；當使用HTML DOM官方語法來建立事件綁定，由於React是基於HTML而產生的應用框架，本身底層不會影響到React`
+
+#🧠 標籤的屬性(attribute)事件綁定語法，React會是用何種形式 ->->-> ``
 
 ---
 Status: #🌱 
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令]]
 References:
 [[@reactShiJianChuLiReact]]
