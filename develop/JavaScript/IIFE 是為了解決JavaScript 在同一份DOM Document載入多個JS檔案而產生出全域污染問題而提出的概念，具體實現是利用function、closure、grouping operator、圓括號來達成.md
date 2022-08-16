@@ -244,7 +244,7 @@ a * c + b * c // 9
 <!--SR:!2022-08-30,28,250-->
 
 #🧠  IIFE (Immediately Invoked Function Expression) 具體是什麼？它是函式嗎？ ->->-> `IIFE實際上是一個function一被定義/宣告就直接執行`
-<!--SR:!2022-08-16,16,230-->
+<!--SR:!2022-09-22,37,230-->
 
 
 #🧠 IIFE (Immediately Invoked Function Expression)是官方標準所提出的？ ->->-> `Ben Alman，並非標準下所提供的語法`
