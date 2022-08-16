@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "為何React要使用Redux.md",
+            "file": "Untitled.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "為何React要使用Redux.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e21025b92e6ac953",
+  "active": "3711ea41da198c9e",
   "lastOpenFiles": [
+    "為何React要使用Redux.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
     "develop/React/React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
@@ -117,7 +118,6 @@
     "React：state 更新方式.md",
     "Untitled 1.md",
     "CommonJS 模組如何載入模組.md",
-    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
-    "MOC/Rendering MOC.md"
+    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md"
   ]
 }
