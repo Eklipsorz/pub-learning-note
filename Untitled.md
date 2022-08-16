@@ -96,3 +96,10 @@ event.target.value 皆以字串來表示，而非數字
     enteredTitle: event.target.value
   })
 ```
+
+當更新物件形式的內容時是使用只夾雜更新後內容的物件，則會以該物件來替代先前的狀態-物件，並不會如預期般那樣只更改想要更改的屬性值
+```
+  setUserInput({
+    enteredTitle: event.target.value
+  })
+```
