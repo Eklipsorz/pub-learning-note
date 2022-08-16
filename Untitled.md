@@ -37,3 +37,34 @@ So that no matter how often this component function might execute again, this st
 使用狀態來儲存是
 - 為了確保不受到component的對應函式因被執行而變更到內容 
 - 不被GC釋放
+
+
+there would be other ways of solving this as well but that works just fine
+
+adv:
+1. we'll need that state for updating and for re-rendering that component later anyways
+
+
+
+
+maybe a problem you also encountered, how can you manage more than one state。
+
+解法1:
+1. 替每個狀態都使用useState來註冊
+
+  
+
+舉例來說假設要以標題、價錢、日期作為三個狀態來儲存，那麼就是在同一個component的對應函式增加三個useState：(狀態變數=>儲存狀態的變數)
+   - 這個元件具有三個獨立的狀態變數
+   - 每個狀態對應的更新用函式並不會影響其他狀態變數，只會影響他們各自設定的對應狀態變數
+
+```
+function Component(props) {
+    const [title, setTitle] = useState('');
+    const [amount, setAmount] = useState('');
+    const [date, setDate] = useState('');
+    //..
+}
+```
+
+event.target.value 皆以字串來表示，而非數字
