@@ -103,3 +103,40 @@ event.target.value 皆以字串來表示，而非數字
     enteredTitle: event.target.value
   })
 ```
+
+
+
+### problem： depends on the previous state
+but in niche case it could fail, and it's simply not a good practice to update it like this
+```
+  const amountChangeHandler = (event) => {
+    setUserInput({
+      ...userInput,
+      enteredAmount: event.target.value,
+    });
+    
+  };
+```
+
+> whenever you update state and you depend on the previous state,
+> that reacts schedules state updates. it doesn't perform them instantly
+
+由於useInput本身就只是儲存特定時間點下的狀態值之變數，而要更新必須要：
+- 必須要重新執行元件上的對應函式來重新賦值
+- React 每次狀態一受到更新，就會產生非同步更新任務來排程，此時得等待擁有正確值的任務被執行成功
+
+> if you schedule a lot of state updates at the same time, you could be depending on an outdated or incorrect state snapshot if you use this approach
+
+
+那麼同時發生大量狀態更新的話，每一次執行對應元件的函式很有可能因為非同步任務的排程過多而無法及時獲得正確的狀態，以這樣狀態下去更新著依賴過去狀態的值，很有可能因而儲存到過期且不正確的狀態
+
+
+### solution：depends on the previous state
+
+
+
+
+備註：
+
+
+只要發生非同步操作，必然會發生race condition，那麼就意味著物件搭載著依賴先前未改變的狀態以及改變後的狀態的情況下，其先前未改變的狀態很有可能會是錯誤的狀態。
