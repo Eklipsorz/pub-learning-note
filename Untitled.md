@@ -19,3 +19,21 @@ const titleChangeHandler = (event) => {
 	console.log(event.target.value);
 };
 ```
+
+
+在這裡要實現表格發生提交時，就把目前的輸入欄位值發送至特定地方，有兩個解法：
+
+- 該輸入欄位發生value 變動事件時就先以狀態來儲存對應value，然後等到使用者按下提交時，就把這些狀態值以物件的形式來儲存，並發送
+
+  
+
+that will always happen when you update the state but i'm doing it to enure that we're storing this in some variable, which is kind of detached from the life cycle of this component function.
+
+So that no matter how often this component function might execute again, this state is stored and survives
+
+除了狀態系統來儲存以外，
+1. 還能以component function的區域變數和GC間的關係來儲存每一次所輸入的內容，只是GC是根據其記憶體是否還繼續參照使用才會保留，若之後都沒在使用區域變數或者輸入內容的話，其記憶體就會被GC被判定不被使用就直接被釋放掉
+
+使用狀態來儲存是
+- 為了確保不受到component的對應函式因被執行而變更到內容 
+- 不被GC釋放
