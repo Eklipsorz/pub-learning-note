@@ -68,3 +68,31 @@ function Component(props) {
 ```
 
 event.target.value 皆以字串來表示，而非數字
+
+
+
+第二個方法：
+
+2. 則是以物件來當作狀態，物件上的屬性名稱對應著不同的狀態名稱，其屬性值為狀態值，更新時就以搭載內容更新後的物件來更新
+
+  
+
+舉例：
+
+- 使用useState來註冊
+```
+  const [userInput, setUserInput] = useState({
+    enteredTitle: '',
+    enteredAmount: '',
+    enteredDate: ''
+  })
+```
+
+- 更新時：
+```
+  // 更新標題時，將夾雜更新後的標題以及其他屬性值等內容的物件來更新
+  setUserInput({
+    ...userInput,
+    enteredTitle: event.target.value
+  })
+```
