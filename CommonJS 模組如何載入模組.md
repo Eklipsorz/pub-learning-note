@@ -124,7 +124,7 @@ const xxx = require(moduleA)
 <!--SR:!2022-08-17,10,250-->
 
 #🧠 CommonJS 是什麼加載？同步？非同步？ ->->-> `目前模組的載入必須等待前面模組的載入階段都完成才能做`
-<!--SR:!2022-08-16,9,250-->
+<!--SR:!2022-09-10,25,250-->
 
 #🧠 CommonJS 會用到模組依賴關係圖嗎？主要是用啥 ->->-> `會，主要用來遍歷模組來找到需要處理的模組以及檢測是否發生環狀依賴關係結構`
 <!--SR:!2022-08-16,9,250-->
@@ -160,13 +160,13 @@ const xxx = require(moduleA)
 <!--SR:!2022-08-16,9,250-->
 
 #🧠 CommonJS 模組若沒有手段去面對cyclic dependency問題時，會出現什麼樣的問題？ ->->-> `肯定會因為DFS的關係要繞好幾圈，導致無法正常產生模組實例給需求方`
-<!--SR:!2022-08-16,9,250-->
+<!--SR:!2022-09-08,23,250-->
 
 #🧠 CommonJS 模組是如何面對cyclic dependency問題？（概念上)->->-> `挑出環狀依賴結構上的最後一個會遍歷到的模組並透過移除對於第一個會遍歷到的模組之間的依賴關係來轉換成非環狀依賴結構`
 <!--SR:!2022-08-17,10,250-->
 
 #🧠 CommonJS 模組是如何面對cyclic dependency問題？具體是如何幫最後一個會遍歷到的模組移除對於第一個會遍歷到的模組之間的依賴關係來轉換成非環狀依賴結構 ->->-> `回傳模組1處於evaluation執行之前的模組實例狀態給最後1個遍歷到的模組就能使最後1個遍歷到的模組移除掉對於模組1之間的依賴`
-<!--SR:!2022-08-16,9,250-->
+<!--SR:!2022-09-09,24,250-->
 
 
 #🧠 以三個環狀依賴結構為例子，來說明CommonJS 模組是如何面對cyclic dependency問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203325/blog/javascript/module/cyclic-dependecy-example_dmfgnv.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203324/blog/javascript/module/cyclic-dependecy-solution-example_y97fcp.png)`
