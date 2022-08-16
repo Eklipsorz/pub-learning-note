@@ -133,8 +133,42 @@ but in niche case it could fail, and it's simply not a good practice to update i
 
 ### solution：depends on the previous state
 
+> whenever you update state and you depend on the previous state,
+> 
+> that reacts schedules state updates. it doesn't perform them instantly
+> 
+> if you schedule a lot of state updates at the same time, you could be depending on an outdated or incorrect state snapshot if you use this approach
+
+  
+```
+    setUserInput((prevState) => {
+      return {
+          ...prevState,
+          enteredAmount: event.target.value
+      }
+    });
+
+```
 
 
+  
+
+> React will guarantee that the state snapshot it gives you here in this inner function will always be the latest state snapshot, keeping all scheduled state updates in mind
+
+若以回傳狀態的callback來當setUserInput的引數，React 會先提供最新的狀態來當作callback引數，並且同時進行著對應狀態的更新任務排程。
+
+```
+setUserInput((prevState) => ({
+	...userInput,
+	enteredTitle: event.target.value,
+}));
+```
+
+```
+setUserInput((prevState) => {
+	return { ...prevState, enteredTitle: event.target.value };	
+});
+```
 
 備註：
 
