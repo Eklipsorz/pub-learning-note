@@ -2,6 +2,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ### state updating is asynchronous?
 [[@dmitripavlutinHowReactUpdates2020]] 
 > When you update the component's state, does React update the state _immediately_ (synchronously) or rather _schedules a state update_ (asynchronously)? This post answers this question.
