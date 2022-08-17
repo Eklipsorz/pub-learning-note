@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4df3246410f232da",
+  "active": "e21025b92e6ac953",
   "lastOpenFiles": [
-    "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
     "Untitled.md",
+    "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "CommonJS 模組如何載入模組.md",
     "為何React要使用Redux.md",
-    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
-    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
-    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md"
+    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md"
   ]
 }
