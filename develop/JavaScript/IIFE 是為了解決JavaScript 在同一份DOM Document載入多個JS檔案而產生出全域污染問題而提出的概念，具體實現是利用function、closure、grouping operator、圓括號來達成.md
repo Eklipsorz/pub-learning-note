@@ -261,7 +261,7 @@ a * c + b * c // 9
 <!--SR:!2022-08-27,26,250-->
 
 #🧠 要用IIFE來實現模組，對他而言的模組化目標為？ (函式可以重複呼叫誒、函式得宣告才能使用)->->-> `1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成`
-<!--SR:!2022-08-17,12,249-->
+<!--SR:!2022-09-18,32,249-->
 
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，還會遇到什麼樣的問題![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png) ->->-> `模組的載入執行方式只需要一個指令就應該完成：實際上還得宣告和呼叫這兩個指令才能完成、預期是只需要執行一次就能使用它所擁有的功能代碼：可以通過函式名稱來重複呼叫`
