@@ -4,6 +4,19 @@
 
 
 
+當 prop 或 state 有變化時，就會產生更新。當一個 component 被重新 render 時，其生命週期將會依照下列的順序呼叫這些方法：
+
+```
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+```
+
+
+
+shouldComponentUpdate() 
 
 
 
