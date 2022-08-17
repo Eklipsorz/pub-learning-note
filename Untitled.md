@@ -35,10 +35,35 @@ componentDidUpdate()
 
 重點：
 
+- 流程：
+	- getDerviedStateFromPorps
+	- shouldComponentUpdate
+	- 更新狀態
+	- render
+	- getSnapshotBeforeUpdate
+	- 實際DOM節點渲染畫面
+	- componentDidUpdate
 
 ### componentDidUpdate
 
 
+### 更新狀態
+
+[[@chengmomorganSetStateZheGeAPISheJiDaoDiZenMeYang]]
+> 通过我的测试，我发现this.state的值在没有经过更新的情况下，也是可以累加的，再根据您的文章，我觉得我很困惑，这是我的测试连接
+
+[zhuanlan.zhihu.com/p/26](https://zhuanlan.zhihu.com/p/26659511)
+
+> 问题在于：为什么没有经过更新的组件，他的state竟然会在上次的基础上累加呢？您有空能帮我看看我哪里理解错了呢？谢谢
+
+
+> 谢谢反馈，我之前写得不大严谨，当shouldComponentUpdate函数返回false的时候，更新过程被中段了，render函数就不会被执行了，但是this.state的更新并不会被放弃，并不是在render函数执行中更新this.state，而是在render函数执行之前改变this.state，现在既然shouldComponentUpdate返回false让render失去了执行的机会，React就在这时候把this.state更改了。我在文中更正了文字。
+
+
+重點：
+- 更新狀態階段是在shouldComponentUpdate和render之間的階段
+- 無論shouldComponentUpdate回傳什麼，都會更新狀態
+- 更新完狀態，才會進入render階段
 
 ### render & 渲染畫面
 [[@SetStateWeiShiMoBuHuiTongBuGengXinYuanJianZhuangTaiBoXueDao]]
@@ -89,3 +114,4 @@ References:
 [[@ithomeReactJsRuMen19]]
 [[@reactReactComponentReact]]
 [[@SetStateWeiShiMoBuHuiTongBuGengXinYuanJianZhuangTaiBoXueDao]]
+[[@chengmomorganSetStateZheGeAPISheJiDaoDiZenMeYang]]
