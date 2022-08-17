@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useState",
+                "query": "從child元件",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e21025b92e6ac953",
+  "active": "423a385f7547e8c2",
   "lastOpenFiles": [
+    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
+    "為何React要使用Redux.md",
+    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "React：useState 使用案例(2).md",
     "React： useState 案例.md",
-    "為何React要使用Redux.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
     "develop/React/React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
-    "React：hook.md",
-    "React：state 更新方式.md",
-    "Untitled 1.md",
-    "CommonJS 模組如何載入模組.md"
+    "React：hook.md"
   ]
 }

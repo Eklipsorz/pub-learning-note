@@ -194,12 +194,12 @@ function WelcomeDialog() {
 <!--SR:!2022-08-25,8,250-->
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Containment 實現概念是什麼？ ->->-> `component A 會包含多個其他獨立的component`
-<!--SR:!2022-08-17,3,250-->
+<!--SR:!2022-08-25,8,250-->
 
 #🧠 在React 的 composition ：Containment 的 概念為component A 會包含多個其他獨立的component，具體會是？ ->->-> `**建立一個component A來包含其他獨立的component B** `
 <!--SR:!2022-08-27,10,250-->
 
-#🧠 在React 的 composition：comtainment 概念為component A 會包含多個其他獨立的component，實現手段會有什麼？ ->->-> `props 和 component 之間的關係是：props會被React視作為component 物件的屬性、利用 props.children 來表示其對應標籤所包含的內容、被包含的內容會是多個獨立的Component`
+#🧠 在React 的 composition：containment 概念為component A 會包含多個其他獨立的component，實現手段會有什麼？ ->->-> `props 和 component 之間的關係是：props會被React視作為component 物件的屬性、利用 props.children 來表示其對應標籤所包含的內容、被包含的內容會是多個獨立的Component`
 <!--SR:!2022-08-27,10,250-->
 
 
@@ -214,12 +214,12 @@ function WelcomeDialog() {
 <!--SR:!2022-08-25,8,250-->
 
 #🧠 在React 的 compositio：Specialization的 實現手段會有什麼？ (關係、載入、資訊)->->-> `- props 和 component 之間的關係是：props會被React視作為component 物件的屬性 - 載入特定元件B來讓目前元件A擁有元件B - 元件B 有提供props 來讓元件A以特定資訊來得到不同內容的元件B`
-<!--SR:!2022-08-17,3,250-->
+<!--SR:!2022-08-26,9,250-->
 
 
 
 #🧠 React Composition：Containment和Specialization這兩個為何會有類別A會擁有某個類別B的實例 的概念？ ->->-> `- Containment： component A 包含其他獨立的component B，換言之就是component A擁有多個獨立的component B 來構成component A本身 - Specialization：在不修改Component B的結構下，以Component B為基礎來開發成Component A，換言之就是Component A先擁有Component B，並在不修改其結構下來開發。`
-<!--SR:!2022-08-17,3,250-->
+<!--SR:!2022-08-26,9,250-->
 
 #🧠 wrapper component 是什麼？ ->->-> `- 一個會包裹其他元件(component)的component
 <!--SR:!2022-08-27,10,250-->
@@ -230,7 +230,7 @@ function WelcomeDialog() {
 <!--SR:!2022-08-25,8,250-->
 
 #🧠  React：請說明它使用哪個composition的技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-card_fajbai.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-expense-item_lcxg8f.png)->->-> `使用了containment，在這裡會以Card元件來以標籤包含每一筆消費紀錄(ExpenseItem)的資訊：日期、描述、並且在Card Component 上使用props.children 來找到Card 所包含的多個元件，並放到另一個div 元件上，從React角度來看，會是由Card元件來擁有日期元件、描述元件，並構成混雜其元件的組合物。`
-<!--SR:!2022-08-17,3,250-->
+<!--SR:!2022-08-27,10,250-->
 
 #🧠 React：請說明使用composition的哪個技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-dialog_rx2lo0.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-welcome-dialog_q2cdwu.png)->->-> `使用了specialization，在這裡會有Dialog.js 和 WelcomeDialog.js ，前者是代表通用Dialog元件，後者是經由通用Dialog元件而改造的元件。然而，在這裡並不是選擇繼承，而是打造一個WelcomDialog 這元件擁有通用Dialog 元件，並將特定資訊以attribute輸入給對應Dialog元件的函式來產生不同內容的Dialog元件，接著在不修改擁有的Dialog元件下，添加內容來開發WelcomDialog`
 <!--SR:!2022-08-27,10,250-->

@@ -82,7 +82,7 @@
 	- 先將Lua 原始碼 解析成 ByteCode ，並存放在記憶體或者暫存中，解析完成後才將ByteCode解析成Machine Code來執行
 	- 邊將 Lua 原始碼 解析成Machine Code，然後邊執行
 - JIT Compiler：Lua 虛擬機需支援這項功能
-	- 將ByteCode 解析成對應的Machine Code，並存放在記憶體或者暫存，解析完成後，才執行對應的Machine Code
+	- 快要執行時就將對應的byteCode丟進JIT compiler 讓ByteCode根據執行情況來轉譯成機械碼，並放到記憶體或者緩存，接著以記憶體或者緩存的機械碼來執行
 
 
 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c)
@@ -145,7 +145,7 @@
 #🧠  若要直接以Lua語法來執行的話，解釋器會是如何執行 ->->-> `直接將Lua語法丟進Lua虛擬機邊解析成機械碼邊執行`
 <!--SR:!2022-09-20,36,245-->
 
-#🧠 可不可以將Lua採用JIT來執行？請具體說明 ->->-> `可以，首先先將Lua語法編譯成ByteCode，接著在丟進JIT compiler 將ByteCode轉譯成機械碼，並放到記憶體或者緩存，接著以記憶體或者緩存的機械碼來執行`
+#🧠 可不可以將Lua採用JIT來執行？請具體說明 ->->-> `可以，首先先將Lua語法編譯成ByteCode，接著快要執行時就將對應的byteCode丟進JIT compiler 讓ByteCode根據執行情況來轉譯成機械碼，並放到記憶體或者緩存，接著以記憶體或者緩存的機械碼來執行`
 <!--SR:!2022-09-27,41,245-->
 
 

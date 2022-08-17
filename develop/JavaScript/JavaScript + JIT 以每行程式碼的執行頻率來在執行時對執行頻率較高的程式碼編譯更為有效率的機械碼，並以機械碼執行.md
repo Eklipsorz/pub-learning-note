@@ -218,7 +218,7 @@ function arraySum(arr) {
 <!--SR:!2022-09-13,29,228-->
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode並執行時，會如何monitor計數執行次數？ ->->-> `如果索引在monitor是不存在的話，就建立索引以及對應的執行次數為1、如果索引在monitor是存在的話，就以對應索引來增加對應執行次數，如count = count + 1`
-<!--SR:!2022-08-17,17,248-->
+<!--SR:!2022-09-29,43,248-->
 
 
 #🧠 JIT版本的JavaScript：試說明以下紀錄是如何產生的![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/first-count-example_mbzuwv.png)->->-> `scope是指處於哪一個scope，如特定function或者global，line是指scope下的第幾行，type是該行數的程式碼是用哪些型別，count是對應程式碼被執行了多少次，在這裏是在arraySum函式下執行它的內容並從執行過程獲取出來的資料`
