@@ -67,6 +67,59 @@ ReferenceError: Cannot access 'parent' before initialization
 
 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659514781/blog/javascript/module/es-module/cyclic-dependency-digram-example_uupj04.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659514781/blog/javascript/module/es-module/cyclic-dependency-digram-example_uupj04.png)
 
+#### 假若a.js所要匯出的是var變數或者函式
+
+##### 假若a.js所要匯出的是函式
+a.js：輸出內容為函式
+```
+import { b } from './cyclic-dependency-commjs-b.mjs';
+function a() {
+	console.log('hi')
+}
+console.log('b', b);
+export { a };
+```
+
+b.js ：輸出內容為let變數宣告
+```
+import { a } from './cyclic-dependency-commjs-a.mjs'
+let b = 'b'
+console.log('a', a)
+export { b }
+```
+
+當執行a.js時，會因為檢測到環狀結構而讓b.js那邊會先執行，但由於a.js在instantiation階段時就會在分配記憶體給函式宣告，其記憶體區塊的初始值是存放對應函式內容，在這裡會先執行對應的a呼叫，接著以它回傳的內容來印出，但由於沒回傳任何東西所以為undefined，接著執行完畢b.js後，就換a.js執行：
+```
+hi
+a undefined
+b b
+```
+
+
+##### 假若a.js所要匯出的是var變數宣告
+a.js：輸出內容為var 變數宣告
+```
+import { b } from './cyclic-dependency-commjs-b.mjs';
+var a = 'a';
+console.log('b', b);
+export { a };
+```
+
+b.js  ：輸出內容為let變數宣告
+```
+import { a } from './cyclic-dependency-commjs-a.mjs'
+let b = 'b'
+console.log('a', a)
+export { b }
+```
+
+當執行a.js時，會因為檢測到環狀結構而讓b.js那邊先執行，但由於a.js在instantiation階段時就會在分配記憶體給var變數宣告，其記憶體區塊的初始值會是undefined，這裡會先得到undefined，接著印完之後，就執行a.js部分：
+```
+a undefined
+b b
+```
+
+
 #### 若產生非同步任務來處理evaluation
 > 如果是异步执行，则没问题，因为异步执行的时候父模块已经被执行了。例如，代码 3 是能正常运行的。
 
@@ -115,6 +168,14 @@ setTimeout(() => {
 
 #🧠 ES module：在ES module處理環狀依賴結構時，有兩個模組A、模組B，其中模組A依賴著模組B、模組B依賴著模組A，在這裡會先挑選模組B做evaluation，但它出現Cannot access 'x' before initialization這錯誤訊息？ ->->-> `通常若存取自模組A加載過來的識別字所對應的記憶體區塊會顯示以下訊息來表示其識別字的記憶體還未分配，而此時的模組A會因為等待模組B執行完evaluation或者還未被挑到來執行evaluation等因素而沒先執行evaluation，因而發生在初始化前就先存取的錯誤訊息`
 <!--SR:!2022-08-27,15,248-->
+
+#🧠 ES module 環狀結構案例1：在ES module處理環狀依賴結構時，有兩個模組A(上圖)、模組B(下圖)，其中模組A依賴著模組B、模組B依賴著模組A，在這裡先執行模組A，會得什麼結果？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660738143/blog/javascript/module/es-module/cyclic-dependency-var-variable-example-a.js_jfgupi.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660738143/blog/javascript/module/es-module/cyclic-dependency-var-variable-example-b.js_zqi6ff.png)->->-> `第一行：a undefined 第二行：b b。原因是當執行a.js時，會因為檢測到環狀結構而讓b.js那邊先執行，但由於a.js在instantiation階段時就會在分配記憶體給var變數宣告，其記憶體區塊的初始值會是undefined，這裡會先得到undefined，接著印完之後，就執行a.js部分`
+
+
+
+#🧠 ES module 環狀結構案例2：在ES module處理環狀依賴結構時，有兩個模組A(上圖)、模組B(下圖)，其中模組A依賴著模組B、模組B依賴著模組A，在這裡先執行模組A，會得什麼結果？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660737832/blog/javascript/module/es-module/cyclic-dependency-function-example-b.js_vxtfsj.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660737831/blog/javascript/module/es-module/cyclic-dependency-function-example-a.js_x2vy2c.png)->->-> `第一行結果：hi 第二行結果：a undefined 第三行結果：b b。原因是當執行a.js時，會因為檢測到環狀結構而讓b.js那邊會先執行，但由於a.js在instantiation階段時就會在分配記憶體給函式宣告，其記憶體區塊的初始值是存放對應函式內容，在這裡會先執行對應的a呼叫，接著以它回傳的內容來印出，但由於沒回傳任何東西所以為undefined，接著執行完畢b.js後，就換a.js執行`
+
+
 
 #🧠 假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是有環狀模組依賴關係 ，那麼它會如何在instantiation階段和evaluation階段處理？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659516780/blog/javascript/module/es-module/cyclic-dependency-code-example_dvfifa.png) ->->-> `- instantiation： -  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組 - 不讓b.js對環狀結構上的a.js進行import，因為a.js還未進行開始instantiation。- evaluation：等待所有模組的instantiation都做完 -  DFS post-order traversal 遍歷到b.js就停下，並以b.js為這個依賴方向的最後一個模組 -  執行b.js對於a.js模組的加載，具體加載會是：從module map獲取對應紀錄的記憶體位址來將模組之import識別字對應其記憶體位址 - 執行b.js模組上的top-level code，但結果由於a.js必須等待b.js執行完evaluation才能輪到它執行，所以b.js無法獲取自a.js引入的記憶體空間而報錯`
 <!--SR:!2022-09-14,28,250-->
