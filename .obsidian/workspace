@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
+            "file": "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
+            "file": "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
+                "file": "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1a137d72eb4ed0f3",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "Untitled.md",
-    "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
+    "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",

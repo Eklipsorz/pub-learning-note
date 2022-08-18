@@ -127,6 +127,10 @@ function ExampleApplication() {
 
 #🧠 React.StrictMode 檢測每個元件的生命週期是否正確執行？具體會是如何執行 ->->-> `重複執行生命週期裡頭的函式，然後比對其結果是否出現問題。`
 
+#🧠 React.StrictMode 檢測每個元件的生命週期是否正確執行：舉一個週期會重複執行的例子 ->->-> `render()`
+
+#🧠 React.StrictMode 會不會發生在部署階段？為什麼？->->-> `這只會發生在開發階段，部署階段並不會將React.StrictMode加入至部署時的內容，所以可以在部署階段避免這樣子的試錯`
+
 ---
 Status: #🌱 
 Tags:
