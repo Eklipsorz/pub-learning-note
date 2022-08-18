@@ -1,16 +1,8 @@
 ## 描述
 
 
+### 生命週期
 
-
-
-
-
-
-
-
-## 生命週期
-當 prop 或 state 有變化時，就會產生更新。當一個 component 被重新 render 時，其生命週期將會依照下列的順序呼叫這些方法：
 [[@reactReactComponentReact]]
 ```
 static getDerivedStateFromProps()
@@ -31,11 +23,15 @@ componentDidUpdate()
 > 6.  componentDidUpdate(prevProps, prevState)
 ```
 
->
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660833335/blog/react/life-cycle/life-cycle-react_wzmir9.jpg)
 
 重點：
-
-- 流程：
+- 每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
+	- New props：由新的props來觸發渲染
+	- setState()：根據state是否改變來觸發渲染
+	- forceUpdate()：直接強制渲染
+- New props：Updating 完整流程 ：
 	- getDerviedStateFromPorps
 	- shouldComponentUpdate
 	- 更新狀態
@@ -43,6 +39,19 @@ componentDidUpdate()
 	- getSnapshotBeforeUpdate
 	- 實際DOM節點渲染畫面
 	- componentDidUpdate
+- setState()：Updating 完整流程：
+	- shouldComponentUpdate
+	- 更新狀態
+	- render
+	- getSnapshotBeforeUpdate
+	- 實際DOM節點渲染畫面
+	- componentDidUpdate
+- forceUpdate()：Updating 完整流程：
+	- render
+	- getSnapshotBeforeUpdate
+	- 實際DOM節點渲染畫面
+	- componentDidUpdate
+
 - 除了更新狀態、render、實際DOM節點渲染畫面以外，其餘開發者可自行開發每個元件下的生命週期函數，若沒設定就保持他們的預設行為
 
 ### getDerivedStateFromProps
@@ -92,9 +101,6 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 重點：
 - 做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染
 - 預設都會回傳true
-
-
-
 
 
 
@@ -181,6 +187,7 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段]]
 References:
 [[@w3schoolReactLifecycle]]
 [[@ithomeReactJsRuMen19]]
