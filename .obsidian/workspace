@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "4df3246410f232da",
+        "id": "1a137d72eb4ed0f3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 3.md",
+                "file": "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,9 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e21025b92e6ac953",
+  "active": "1a137d72eb4ed0f3",
   "lastOpenFiles": [
     "Untitled.md",
+    "React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
     "Untitled 1.md",
     "Untitled 2.md",
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
@@ -117,7 +118,6 @@
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "CommonJS 模組如何載入模組.md",
-    "為何React要使用Redux.md",
-    "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md"
+    "為何React要使用Redux.md"
   ]
 }
