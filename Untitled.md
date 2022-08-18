@@ -43,8 +43,59 @@ componentDidUpdate()
 	- getSnapshotBeforeUpdate
 	- 實際DOM節點渲染畫面
 	- componentDidUpdate
+- 除了更新狀態、render、實際DOM節點渲染畫面以外，其餘開發者可自行開發每個元件下的生命週期函數，若沒設定就保持他們的預設行為
 
-### componentDidUpdate
+### getDerivedStateFromProps
+[[@w3schoolReactLifecycle]]
+> The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
+
+```jsx
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {favoritecolor: "red"};
+  }
+  static getDerivedStateFromProps(props, state) {
+    return {favoritecolor: props.favcol };
+  }
+  render() {
+    return (
+      <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+    );
+  }
+}
+
+ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
+```
+
+重點：
+- 元件A 的 getDerivedStateFromProps 主要會做：
+	- 會從該元件A的props接收到源自parent節點所給予的狀態值
+	- 將狀態值更新至元件A的this.state
+- 預設上若沒設定getDerivedStateFromProps的內容，是不會做；反之，有設定就按照其內容來做
+
+### shouldComponentUpdate
+
+[[@ithomeReactJsRuMen19]]
+> ## shouldComponentUpdate(nextProps, nextState)
+
+> 這個函數的功用像是守門員，用來做確認是不是真的要update。這個函數要return一個布林值。當函數**回傳`false`時，元件就不會更新，也不會繼續執行接下來的`render()`以及剩下的update生命週期函數**。預設會回傳`true`。
+> 
+> 在這邊，`this.props`和`this.state`是更新之前的，新的props和state在參數中以`nextProps`和`nextState`存在。你可以在這裡對這四者做比較。
+
+[[@reactReactComponentReact]]
+> `shouldComponentUpdate()` 會在新的 prop 或 state 被接收之後並在該 component 被 render 之前被呼叫。其預設值是 `true`。這個方法並不會 component 初次 render 時或使用 `forceUpdate()` 時被呼叫。
+
+> `shouldComponentUpdate()` 會在新的 prop 或 state 被接收之後並在該 component 被 render 之前被呼叫
+
+
+重點：
+- 做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染
+- 預設都會回傳true
+
+
+
+
 
 
 ### 更新狀態
@@ -63,9 +114,9 @@ componentDidUpdate()
 重點：
 - 更新狀態階段是在shouldComponentUpdate和render之間的階段
 - 無論shouldComponentUpdate回傳什麼，都會更新狀態
-- 更新完狀態，才會進入render階段
+- 更新完狀態，才會進入下一階段
 
-### render & 渲染畫面
+### render 
 [[@SetStateWeiShiMoBuHuiTongBuGengXinYuanJianZhuangTaiBoXueDao]]
 > 每一次setState呼叫都走一圈生命週期，光是想一想也會覺得會帶來效能的問題，其實這四個函式都是純函式，效能應該還好，但是render函式返回的結果會拿去做Virtual DOM比較和更新DOM樹，這個就比較費時間。
 
@@ -84,26 +135,41 @@ componentDidUpdate()
 
 重點：
 - render 會負責解析對應元件並得到對應的Virtual DOM
-- 渲染畫面：
-	- 比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異
-	- 針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行
-### shouldComponentUpdate
 
-[[@ithomeReactJsRuMen19]]
-> ## shouldComponentUpdate(nextProps, nextState)
+### getSnapshotBeforeUpdate
 
-> 這個函數的功用像是守門員，用來做確認是不是真的要update。這個函數要return一個布林值。當函數**回傳`false`時，元件就不會更新，也不會繼續執行接下來的`render()`以及剩下的update生命週期函數**。預設會回傳`true`。
-> 
-> 在這邊，`this.props`和`this.state`是更新之前的，新的props和state在參數中以`nextProps`和`nextState`存在。你可以在這裡對這四者做比較。
+[[@w3schoolReactLifecycle]]
+> In the `getSnapshotBeforeUpdate()` method you have access to the `props` and `state` _before_ the update, meaning that even after the update, you can check what the values were _before_ the update.
+
 
 [[@reactReactComponentReact]]
-> `shouldComponentUpdate()` 會在新的 prop 或 state 被接收之後並在該 component 被 render 之前被呼叫。其預設值是 `true`。這個方法並不會 component 初次 render 時或使用 `forceUpdate()` 時被呼叫。
-
-> `shouldComponentUpdate()` 會在新的 prop 或 state 被接收之後並在該 component 被 render 之前被呼叫
-
+> `getSnapshotBeforeUpdate()` 在提交最新 render 的 output 之前立即被調用。它讓你在 DOM 改變之前先從其中抓取一些資訊
 
 重點：
-- 做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做炫染
+- 元件A 的 getSnapshotBeforeUpdate 主要用途：
+	- 專門獲取元件A畫面更新前的資訊、狀態、props 來做處理
+	- 預設是不會做的
+- 在提交render的輸出之前會被調用
+
+
+
+### 實際DOM節點渲染畫面
+
+- 實際DOM節點渲染畫面的主要用途：
+	- 比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異
+	- 針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行
+
+
+
+### componentDidUpdate
+[[@reactReactComponentReact]]
+> `componentDidUpdate()` 會在更新後馬上被呼叫。這個方法並不會在初次 render 時被呼叫。
+
+[[@w3schoolReactLifecycle]]
+> The `componentDidUpdate` method is called after the component is updated in the DOM.
+
+
+
 
 ---
 Status: #🌱  
@@ -111,6 +177,7 @@ Tags:
 [[React]] - [[JavaScript]]
 Links:
 References:
+[[@w3schoolReactLifecycle]]
 [[@ithomeReactJsRuMen19]]
 [[@reactReactComponentReact]]
 [[@SetStateWeiShiMoBuHuiTongBuGengXinYuanJianZhuangTaiBoXueDao]]
