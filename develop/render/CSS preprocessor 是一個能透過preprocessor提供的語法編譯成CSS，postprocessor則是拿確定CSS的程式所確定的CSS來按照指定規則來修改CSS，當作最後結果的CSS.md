@@ -60,7 +60,7 @@
 <!--SR:!2022-09-12,25,250-->
 
 #🧠 請從為何取postprocessor 來說明CSS postprocessor是什麼？ ->->-> `postprocessor 具體會是在確定CSS檔案的程式之後，來將確定CSS檔案的程式輸出出來的CSS當作輸入，並將輸入丟至postprocessor來根據指定規則來將CSS轉換成另一種CSS`
-<!--SR:!2022-08-18,9,250-->
+<!--SR:!2022-09-11,24,250-->
 
 
 #🧠 畫圖來說明CSS preprocessor、CSS、CSS postprocessor的關係 ->->-> `![](https://i.imgur.com/VCgqqTv.png)`

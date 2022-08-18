@@ -124,6 +124,7 @@ function DoubleIncreaser() {
 
 ## 複習
 #🧠 Question :: ->->-> ``
+<!--SR:!2022-08-21,3,250-->
 
 ---
 Status: #🌱 

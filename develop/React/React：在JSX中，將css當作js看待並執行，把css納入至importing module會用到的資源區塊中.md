@@ -72,10 +72,10 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 ## 複習
 #🧠  import 'xxxx' 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
-<!--SR:!2022-08-18,4,230-->
+<!--SR:!2022-08-29,11,230-->
 
 #🧠 import 'xxxx' 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
-<!--SR:!2022-08-18,5,248-->
+<!--SR:!2022-08-31,13,248-->
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `把css納入至importing module會用到的資源區塊中`
 <!--SR:!2022-08-28,11,248-->
@@ -91,7 +91,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 
 #🧠 React：為何不讓JSX中的XML表達元件使用class？ ->->-> `由於XML是JSX語言的一部分，且class會跟JavaScript原生語法中的class起衝突，所以React會以className來替代指定每個元件的樣式`
-<!--SR:!2022-08-18,4,248-->
+<!--SR:!2022-08-29,11,248-->
 
 ---
 Status: #🌱 
