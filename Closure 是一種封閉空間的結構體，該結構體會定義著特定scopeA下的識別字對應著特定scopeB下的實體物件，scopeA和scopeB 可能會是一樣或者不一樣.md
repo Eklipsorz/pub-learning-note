@@ -189,7 +189,7 @@ https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 
 
 #🧠 在有gc等記憶體保留政策下，請說明以下closure關係中的a在呼叫foo()時和之後的情況 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658674564/blog/javascript/closure/closure-garbage-collector-example_aszlox.png) ->->-> `因為函式宣告肯定會從編譯時期就分配記憶體以及查看每個識別字對應的實體物件是否後續有被使用，在這裏可以由於可從編譯時期確定後續會呼叫bar()，而bar會使用著foo下的a對應的對應實體物件，所以garbage collector確定後續會使用，所以不會釋放掉foo下的a對應的實體物件，**但就是沒釋放掉a對應的實體物件**，因而讓呼叫baz()時還能印出foo下的a的實體物件`
-<!--SR:!2022-08-18,16,249-->
+<!--SR:!2022-10-01,44,249-->
 
 #🧠 若將closure運用函式B能回傳函式A的情況下，能做什麼樣用途？ ->->-> `讓函式物件擁有屬於自己的變數來存取和操作、打造成模組，並將function scope作為module scope來讓function回傳的function擁有module專有的變數`
 <!--SR:!2022-09-07,27,250-->
