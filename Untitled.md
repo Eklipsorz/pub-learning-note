@@ -154,7 +154,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 ### 實際DOM節點渲染畫面
-
+重點：
 - 實際DOM節點渲染畫面的主要用途：
 	- 比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異
 	- 針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行
@@ -162,12 +162,17 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 ### componentDidUpdate
+
 [[@reactReactComponentReact]]
 > `componentDidUpdate()` 會在更新後馬上被呼叫。這個方法並不會在初次 render 時被呼叫。
 
 [[@w3schoolReactLifecycle]]
 > The `componentDidUpdate` method is called after the component is updated in the DOM.
 
+重點：
+- 元件A 的 componentDidUpdate 主要用途為：
+	- 主要指定更新對應元件的畫面要做些什麼
+	- 預設並不會有設定
 
 
 

@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "41ee1c1359c26dc5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1a137d72eb4ed0f3",
+  "active": "41ee1c1359c26dc5",
   "lastOpenFiles": [
+    "Untitled 3life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段  - updating 階段  - umounting 階段.md",
+    "Untitled 2.md",
+    "Untitled.md",
     "Untitled 1.md",
     "React：hook.md",
     "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
-    "Untitled.md",
-    "Untitled 2.md",
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
-    "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
-    "CommonJS 模組如何載入模組.md"
+    "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md"
   ]
 }
