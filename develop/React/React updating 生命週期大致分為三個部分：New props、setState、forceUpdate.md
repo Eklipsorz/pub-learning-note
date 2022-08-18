@@ -27,10 +27,10 @@ componentDidUpdate()
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660833335/blog/react/life-cycle/life-cycle-react_wzmir9.jpg)
 
 重點：
-- 每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
+- 每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
 	- New props：由新的props來觸發渲染
 	- setState()：根據state是否改變來觸發渲染
-	- forceUpdate()：直接強制渲染
+	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。
 - New props：Updating 完整流程 ：
 	- getDerviedStateFromPorps
 	- shouldComponentUpdate
@@ -179,6 +179,16 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 - 元件A 的 componentDidUpdate 主要用途為：
 	- 主要指定更新對應元件的畫面要做些什麼
 	- 預設並不會有設定
+
+
+## 複習
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
 
 
 
