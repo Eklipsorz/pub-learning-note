@@ -28,8 +28,8 @@ componentDidUpdate()
 
 重點：
 - 每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
-	- New props：由新的props來觸發渲染
-	- setState()：根據state是否改變來觸發渲染
+	- New props：由新的props來觸發渲染，由props所夾雜的新資訊來渲染。
+	- setState()：根據state是否改變來觸發渲染，由新state的來渲染。
 	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。
 - New props：Updating 完整流程 ：
 	- getDerviedStateFromPorps
@@ -37,22 +37,26 @@ componentDidUpdate()
 	- 更新狀態
 	- render
 	- getSnapshotBeforeUpdate
-	- 實際DOM節點渲染畫面
+	- React updates DOM and refs： 實際DOM節點渲染畫面
 	- componentDidUpdate
 - setState()：Updating 完整流程：
 	- shouldComponentUpdate
 	- 更新狀態
 	- render
 	- getSnapshotBeforeUpdate
-	- 實際DOM節點渲染畫面
+	- React updates DOM and refs： 實際DOM節點渲染畫面
 	- componentDidUpdate
 - forceUpdate()：Updating 完整流程：
 	- render
 	- getSnapshotBeforeUpdate
-	- 實際DOM節點渲染畫面
+	- React updates DOM and refs： 實際DOM節點渲染畫面
 	- componentDidUpdate
+- updating 子階段：
+	- render 階段：getDerivedStateFromProps、shouldComponentUpdate、更新狀態、render
+	- pre-commit 階段：getSnapshotBeforeUpdate
+	- commit 階段：React updates DOM and refs、componentDidUpdate
 
-- 除了更新狀態、render、實際DOM節點渲染畫面以外，其餘開發者可自行開發每個元件下的生命週期函數，若沒設定就保持他們的預設行為
+- 除了更新狀態、render、 React updates DOM and refs、，其餘開發者可自行開發每個元件下的生命週期函數，若沒設定就保持他們的預設行為
 
 ### getDerivedStateFromProps
 [[@w3schoolReactLifecycle]]
@@ -81,7 +85,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 - 元件A 的 getDerivedStateFromProps 主要會做：
 	- 會從該元件A的props接收到源自parent節點所給予的狀態值
 	- 將狀態值更新至元件A的this.state
-- 預設上若沒設定getDerivedStateFromProps的內容，是不會做；反之，有設定就按照其內容來做
+- 預設上是沒有任何處理內容
 
 ### shouldComponentUpdate
 
@@ -99,7 +103,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 重點：
-- 做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染
+- 做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做render、react updates dom、componentDidUpdate
 - 預設都會回傳true
 
 
@@ -140,7 +144,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 重點：
-- render 會負責解析對應元件並得到對應的Virtual DOM
+- render 會負責解析目前資訊以及對應元件並得到對應的Virtual DOM
 
 ### getSnapshotBeforeUpdate
 
@@ -154,12 +158,12 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 重點：
 - 元件A 的 getSnapshotBeforeUpdate 主要用途：
 	- 專門獲取元件A畫面更新前的資訊、狀態、props 來做處理
-	- 預設是不會做的
+- 預設上是沒有任何處理內容
 - 在提交render的輸出之前會被調用
 
 
 
-### 實際DOM節點渲染畫面
+### React updates DOM and refs： 實際DOM節點渲染畫面
 重點：
 - 實際DOM節點渲染畫面的主要用途：
 	- 比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異
@@ -177,20 +181,65 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 重點：
 - 元件A 的 componentDidUpdate 主要用途為：
-	- 主要指定更新對應元件的畫面要做些什麼
-	- 預設並不會有設定
+	- 主要指定在更新對應元件的畫面後要做些什麼
+- 預設上是沒有任何處理內容
 
 
 ## 複習
-#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> ``
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> `updating`
 
-#🧠 Question :: ->->-> ``
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪三個途徑？ ->->-> `New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
 
-#🧠 Question :: ->->-> ``
+#🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
 
-#🧠 Question :: ->->-> ``
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的setState 拿什麼資料來渲染畫面？ ->->-> `狀態`
+
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的 **forceUpdate()** 拿什麼資料來渲染畫面？ ->->-> `由props和state以外的資料來渲染`
 
 
+#🧠 react updating 階段若使用new props的流程會是什麼？ ->->-> ` - getDerviedStateFromPorps、- shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
+
+#🧠 react updating 子階段中的render包含哪些步驟？ ->->-> `getDerivedStateFromProps、shouldComponentUpdate、更新狀態、render`
+
+
+#🧠 react updating 子階段中的pre-commit包含哪些步驟？ ->->-> `getSnapshotBeforeUpdate`
+
+#🧠 react updating 子階段中的commit包含哪些步驟？->->-> `React updates DOM and refs、componentDidUpdate`
+
+
+#🧠  react updating 階段若使用setState的流程會是什麼？ ->->-> `-shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
+
+#🧠 react updating 階段若使用forceUpdate()的流程會是什麼？ ->->-> `- render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
+
+#🧠 react 生命週期中會用到的getDerivedStateFromProps是做什麼用的？->->-> `	- 會從該元件A的props接收到源自parent節點所給予的狀態值 - 將狀態值更新至元件A的this.state`
+
+#🧠 react 生命週期中會用到的getDerivedStateFromProps採用預設的話，會是什麼？ ->->-> ` 預設上是沒有任何處理內容`
+
+#🧠 react 生命週期中會用到的 shouldComponentUpdate是做什麼用的？ ->->-> `做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染`
+
+#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳true就表示？ ->->-> `做渲染`
+
+#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就表示？  ->->-> `render、react updates dom、componentDidUpdate`
+
+#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就還做不做狀態更新 ->->-> `做`
+
+#🧠 react 生命週期中會用到的shouldComponentUpdate採用預設的話，會是什麼？ ->->-> `會直接回傳true`
+
+#🧠 react 生命週期中會用到的**更新狀態** 何時會做？ ->->-> `通常會於shouldComponentUpdate和render之間。`
+
+#🧠 react 生命週期中會用到的**更新狀態** 是會做什麼？ ->->-> `無論shouldComponentUpdate回傳什麼，都會更新狀態，更新完狀態，才會進入下一階段`
+
+#🧠 react 生命週期中會用到的**render** 是會做什麼？(資訊和畫面)->->-> `會負責解析目前資訊以及對應元件並得到對應的Virtual DOM`
+
+#🧠 react 生命週期中會用到的**getSnapshotBeforeUpdate** 是會做什麼？ ->->-> `專門獲取元件A畫面更新前的資訊、狀態、props 來做處理`
+
+#🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
+
+#🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
+
+#🧠 react 生命週期中會用到的componentDidUpdate 是會做什麼？ ->->-> `主要指定在更新對應元件的畫面後要做些什麼`
+
+#🧠 react 生命週期中會用到的 componentDidUpdate採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
 
 ---
 Status: #🌱  

@@ -4,18 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "1a137d72eb4ed0f3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/React/React updating 生命週期大致分為三個部分：New props、setState、forceUpdate.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "54e05f01b1450565",
         "type": "leaf",
         "state": {
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "tag:#🧠歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的New",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -108,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "423a385f7547e8c2",
+  "active": "54e05f01b1450565",
   "lastOpenFiles": [
+    "develop/React/React 生命階段：mounting、updating、unmounting 還可以再切分三個子階段分別為render phase、pre-commit phase、commit phase.md",
+    "develop/React/React updating 生命週期大致分為三個部分：New props、setState、forceUpdate.md",
+    "Untitled.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "develop/React/life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
     "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "Untitled 1.md",
-    "develop/React/React updating 生命週期大致分為三個部分：New props、setState、forceUpdate.md",
-    "develop/React/React 生命階段：mounting、updating、unmounting 還可以再切分三個子階段分別為render phase、pre-commit phase、commit phase.md",
     "Untitled 2.md",
     "Untitled 3life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段  - updating 階段  - umounting 階段.md",
-    "React：hook.md",
-    "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md"
+    "React：hook.md"
   ]
 }
