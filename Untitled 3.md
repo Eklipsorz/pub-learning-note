@@ -59,6 +59,7 @@ https://codesandbox.io/s/heuristic-beaver-ufgfef?file=/src/App.js
 		- useEffect：大部分這類的effects會面對同個元件的mount->unmount->mount下保留其功能，但少部份則會是因爲mount->unmount，而導致同個元件的mount後無法正常使用
 ## 複習
 #🧠 Question :: ->->-> ``
+<!--SR:!2022-08-23,3,250-->
 
 ---
 Status: #🌱 
