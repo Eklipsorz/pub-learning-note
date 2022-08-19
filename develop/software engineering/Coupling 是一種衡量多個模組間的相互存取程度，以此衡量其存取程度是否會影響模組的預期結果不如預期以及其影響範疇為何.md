@@ -75,7 +75,7 @@ coupling
 
 ## 複習
 #🧠 Coupling 原意是什麼？可以先描述couple，在來描述coupling ->->-> `couple 為動詞，主要是描述組合/連接，將事物A組合/連接至另一個事物B，coupling 為 動名詞，主要描述著組合/連接的程度`
-<!--SR:!2022-08-20,15,230-->
+<!--SR:!2022-09-24,35,230-->
 
 #🧠 電腦科學裡的多個程式模組只要開始使用著對方模組，就會有coupling情形以及coupling帶來的缺失，為什麼？ ->->-> `因為只要有使用，就代表著程式模組單方面與另一個程式模組連接，而這樣就有可能因為使用而改變對方模組，進而讓對方模組在未來的預期結果不如預期`
 <!--SR:!2022-08-27,27,250-->
@@ -101,9 +101,9 @@ coupling
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png) ->->-> `當B去存取A時有可能改變著A的預期結果，因B有可能改變著決定結果的因素，而因素就在A裡頭`
 <!--SR:!2022-10-10,54,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B`
-<!--SR:!2022-08-20,22,250-->
+<!--SR:!2022-10-17,58,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `當A去存取B時有可能改變著B的預期結果，而B可能會因預期結果的改變而變更存取 A的方式，使B可能使用錯誤的存取方式來改變著A，甚至A下次執行時存取B會使情況更加惡化。`
-<!--SR:!2022-08-20,22,250-->
+<!--SR:!2022-10-15,56,250-->
 
 #🧠 請問每個模組都由什麼什麼東西來組成？會不會這些基本組成單位就會有coupling問題(提示：程式區塊) ->->-> `由於每一個模組會由許多程式區塊所組成，每個程式區塊都有可能使用另一個模組下的程式區塊或者同一個模組下的程式區塊`
 <!--SR:!2022-08-27,27,250-->
