@@ -97,7 +97,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 
 ## 複習
 #🧠 ES module：有哪兩種方式來輸出(export)模組內容？ ->->-> `named export 和 default export`
-<!--SR:!2022-08-19,6,250-->
+<!--SR:!2022-09-02,14,250-->
 
 #🧠 ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
 <!--SR:!2022-08-23,10,250-->
