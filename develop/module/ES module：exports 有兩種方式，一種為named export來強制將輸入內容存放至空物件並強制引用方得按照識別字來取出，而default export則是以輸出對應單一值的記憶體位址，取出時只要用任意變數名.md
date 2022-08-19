@@ -92,7 +92,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-08-13,3,250-->
 
 2. default exports 是什麼？ ->->->  `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
-<!--SR:!2022-08-20,7,250-->
+<!--SR:!2022-09-07,18,250-->
 
 
 ## 複習
@@ -116,7 +116,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-08-21,8,250-->
 
 #🧠 請試著寫出exporting module來以default exports輸出特定variable，並以importing module來引用這些variable ->->-> `exporting module: export default expression, importing module: import variable from 'xxx'`
-<!--SR:!2022-08-20,7,250-->
+<!--SR:!2022-09-08,19,250-->
 
 #🧠 ES module：使用default exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `不一定一樣，可以不一樣`
 <!--SR:!2022-09-03,15,250-->

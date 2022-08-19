@@ -82,7 +82,7 @@ _Fig. 2: Colored Scope Bubbles_
 <!--SR:!2022-08-24,22,250-->
 
 #🧠 JavaScript 編譯時期會分配記憶體const/let變數宣告嗎？->->-> `不分配記憶體給const/let變數宣告`
-<!--SR:!2022-08-20,20,250-->
+<!--SR:!2022-10-11,52,250-->
 
 #🧠 JavaScript 編譯時期是只在Global Scope編譯並生成EC，然後function scope等遇到在編譯以及生成EC嗎？ ->->-> `並不是，而是一次把Global Scope和所有function Scope的程式碼編譯，然後確定這兩邊的scope以及對應的EC，如GEC、FEC`
 <!--SR:!2022-09-25,41,230-->
