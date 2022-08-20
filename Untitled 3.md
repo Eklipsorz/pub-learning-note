@@ -64,10 +64,13 @@ https://codesandbox.io/s/heuristic-beaver-ufgfef?file=/src/App.js
 
 React 未來會朝著遵守以下規則來添加新功能：
 	- Component 在面對多次的 mount => unmount => mount 的循環中仍然保有原有元件的業務邏輯功能和渲染內容
+目前已知會與這規則起衝突的語法為：
+	- 大部分這類的effects會面對同個元件的mount->unmount->mount下保留其功能，但少部份effect則會是認為元件只會有一次mount->unmount的，而導致同個元件的mount後無法正常使用
 新功能預計會有：
 	- Offscreen API
 面對這規則會在開發階段中可以添加React.StrictMode元件進行相關檢測
-	- 當在React.StrictMode元件下加入新元件並做完mounting時，
+	- 當在React.StrictMode元件下加入新元件 A 並做完mounting時，React.StrictMode會替該mounting的元件 A暫存其狀態和實際DOM結構，然後再自行unmounting 新元件 A，然後再以暫存內容來再次進行其元件A的mounting。
+	- 過程中會檢測其元件上的effect是否正常運作
 
 	- useEffect：大部分這類的effects會面對同個元件的mount->unmount->mount下保留其功能，但少部份則會是因爲mount->unmount，而導致同個元件的mount後無法正常使用
 
