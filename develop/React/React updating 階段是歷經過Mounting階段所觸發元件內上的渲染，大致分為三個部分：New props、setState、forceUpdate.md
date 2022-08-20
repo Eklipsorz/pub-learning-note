@@ -27,11 +27,11 @@ componentDidUpdate()
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660833335/blog/react/life-cycle/life-cycle-react_wzmir9.jpg)
 
 重點：
-- 每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
+- updating 階段是每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
 	- New props：由新的props來觸發渲染，由props所夾雜的新資訊來渲染。
 	- setState()：根據state是否改變來觸發渲染，由新state的來渲染。
 	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。
-- New props：Updating 完整流程 ：
+- New props：Updating 完整流程 (以下皆以函式來代表)：
 	- getDerviedStateFromPorps
 	- shouldComponentUpdate
 	- 更新狀態
@@ -39,14 +39,14 @@ componentDidUpdate()
 	- getSnapshotBeforeUpdate
 	- React updates DOM and refs： 實際DOM節點渲染畫面
 	- componentDidUpdate
-- setState()：Updating 完整流程：
+- setState()：Updating 完整流程(以下皆以函式來代表)：
 	- shouldComponentUpdate
 	- 更新狀態
 	- render
 	- getSnapshotBeforeUpdate
 	- React updates DOM and refs： 實際DOM節點渲染畫面
 	- componentDidUpdate
-- forceUpdate()：Updating 完整流程：
+- forceUpdate()：Updating 完整流程(以下皆以函式來代表)：
 	- render
 	- getSnapshotBeforeUpdate
 	- React updates DOM and refs： 實際DOM節點渲染畫面
@@ -56,7 +56,7 @@ componentDidUpdate()
 	- pre-commit 階段：getSnapshotBeforeUpdate
 	- commit 階段：React updates DOM and refs、componentDidUpdate
 
-- 除了更新狀態、render、 React updates DOM and refs、，其餘開發者可自行開發每個元件下的生命週期函數，若沒設定就保持他們的預設行為
+- 除了更新狀態、 React updates DOM and refs 以外，其餘開發者可自行開發每個元件下的生命週期函數，若沒設定就保持他們的預設行為
 
 ### getDerivedStateFromProps
 [[@w3schoolReactLifecycle]]
@@ -144,7 +144,8 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 重點：
-- render 會負責解析目前資訊以及對應元件並得到對應的Virtual DOM
+- render 會以每個元件上的對應(render/渲染用的)函式來當作該元件對應的渲染內容，並且負責解析目前資訊並轉換成對應的Virtual DOM
+- 其render的元件渲染內容可由開發者來指定，至於解析和轉換由系統負責
 
 ### getSnapshotBeforeUpdate
 
@@ -186,6 +187,10 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 ## 複習
+
+#🧠 getDerviedStateFromPorps、shouldComponentUpdate、更新狀態、render、getSnapshotBeforeUpdate、React updates DOM & refs、componentDidUpdate 會是以什麼形式來表示？ ->->-> `以函式來表示`
+
+
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> `updating`
 <!--SR:!2022-08-23,3,250-->
 
@@ -231,10 +236,10 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 #🧠 react 生命週期中會用到的 shouldComponentUpdate是做什麼用的？ ->->-> `做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳true就表示？ ->->-> `做渲染`
+#🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳true就表示？ ->->-> `做渲染`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
+#🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
 <!--SR:!2022-08-23,3,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就還做不做狀態更新 ->->-> `做`
@@ -243,28 +248,29 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 #🧠 react 生命週期中會用到的shouldComponentUpdate採用預設的話，會是什麼？ ->->-> `會直接回傳true`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的**更新狀態** 何時會做？ ->->-> `通常會於shouldComponentUpdate和render之間。`
+#🧠 react 生命週期中會用到的**更新狀態** 函式何時會做？ ->->-> `通常會於shouldComponentUpdate和render之間。`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的**更新狀態** 是會做什麼？ ->->-> `無論shouldComponentUpdate回傳什麼，都會更新狀態，更新完狀態，才會進入下一階段`
+#🧠 react 生命週期中會用到的**更新狀態** 函式是會做什麼？ ->->-> `無論shouldComponentUpdate回傳什麼，都會更新狀態，更新完狀態，才會進入下一階段`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的**render** 是會做什麼？(資訊和畫面)->->-> `會負責解析目前資訊以及對應元件並得到對應的Virtual DOM`
+#🧠 react 生命週期中會用到的**render函式** 是會做什麼？(資訊和畫面)->->-> `- render 會以每個元件上的對應(render/渲染用的)函式來當作該元件對應的渲染內容，並且負責解析目前資訊並轉換成對應的Virtual DOM - 其render的元件渲染內容可由開發者來指定，至於解析和轉換由系統負責`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的**getSnapshotBeforeUpdate** 是會做什麼？ ->->-> `專門獲取元件A畫面更新前的資訊、狀態、props 來做處理`
+
+#🧠 react 生命週期中會用到的**getSnapshotBeforeUpdate** 函式是會做什麼？ ->->-> `專門獲取元件A畫面更新前的資訊、狀態、props 來做處理`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
+#🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate 函式 採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
 <!--SR:!2022-08-23,3,250-->
 
 #🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的componentDidUpdate 是會做什麼？ ->->-> `主要指定在更新對應元件的畫面後要做些什麼`
+#🧠 react 生命週期中會用到的componentDidUpdate函式 是會做什麼？ ->->-> `主要指定在更新對應元件的畫面後要做些什麼`
 <!--SR:!2022-08-21,1,230-->
 
-#🧠 react 生命週期中會用到的 componentDidUpdate採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
+#🧠 react 生命週期中會用到的 componentDidUpdate函式採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
 <!--SR:!2022-08-23,3,250-->
 
 ---
@@ -273,6 +279,8 @@ Tags:
 [[React]] - [[JavaScript]]
 Links:
 [[life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段]]
+[[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
+[[React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染]]
 References:
 [[@w3schoolReactLifecycle]]
 [[@ithomeReactJsRuMen19]]

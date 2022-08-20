@@ -39,7 +39,7 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
-[[React updating 生命週期大致分為三個部分：New props、setState、forceUpdate]]
+[[React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate]]
 [[life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段]]
 References:
 [[@hussainAnswerReactLifecyle2021]]

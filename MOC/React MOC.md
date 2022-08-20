@@ -25,3 +25,15 @@
 [[React ：Offscreen API 是允許Component 在面臨mount=>unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API]]
 
 [[React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題]]
+
+
+
+## Component life cycle
+
+[[life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段]]
+
+[[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
+
+[[React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染]]
+
+[[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
