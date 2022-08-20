@@ -69,9 +69,9 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 		import { property1, property2, .... } from 'xxx'
 		```
 	- default export：
-		- 則是不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字
-		- 引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容
-		- 使用方式主要為一種，會直接輸出該存放單一值的記憶體位址來處理，而引用時可以不必按照識別字來取用，只需要拿
+		- 不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字
+		- exporting module所輸出的內容是(識別字所對應的)單一值，importing module則是可用任意變數來分配空間來引用輸出的單一值
+		- 使用方式主要為一種，會直接輸出該存放單一值，而引用時可以不必按照識別字來取用，只需要拿
 	```
 	// way 1
 	// export default expression
@@ -87,12 +87,11 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 	```
 
 ### 總結：
-1. ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
-<!--SR:!2022-08-23,10,250-->`
-<!--SR:!2022-08-13,3,250-->
+1. ES module： named exports 是什麼？  `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
 
-2. default exports 是什麼？ ->->->  `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
-<!--SR:!2022-09-07,18,250-->
+
+2. default exports 是什麼？  `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
+
 
 
 ## 複習
@@ -105,11 +104,9 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 #🧠 ES module： named exports 是強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字，具體如何實現？ ->->->`強制輸出的內容放置空物件中來當屬性，其中屬性名稱會是輸出的識別字，屬性值是對應識別字的內容，取出的時候就用物件存取屬性方式來取`
 <!--SR:!2022-08-23,10,250-->
 
-#🧠 ES module： default exports 是什麼？ ->->-> `不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，引用當初exporting module所輸出(export)出來的識別字則是可用任意變數名稱去接收，接著系統按照預設的引用方式來讓變數名稱對應識別字所存下的內容`
-<!--SR:!2022-08-23,10,250-->
+#🧠 ES module： default exports 是什麼？ ->->-> `exporting module所輸出的內容是(識別字所對應的)單一值，importing module則是可用任意變數來分配空間來引用輸出的單一值。`
 
-#🧠 ES module：default exports是不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，那麼具體如何實現？ ->->-> ``不強制開發者引用(import)識別字必須是當初exporting module所輸出(export)出來的識別字，而是將輸出內容以存放單一值的記憶體區塊來輸出，引用時則是以任意變數名稱參照著存放該值的記憶體區塊`
-<!--SR:!2022-09-08,19,250-->
+
 `
 
 #🧠 請試著寫出exporting module來以named exports輸出特定property1和property2，並以importing module來引用這些property1、property2->->-> `exporting module: export { property1, property2,.... }, importing module: import { property1, property2, .... } from 'xxx'`

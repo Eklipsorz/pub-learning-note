@@ -234,7 +234,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 #🧠 react 生命週期中會用到的 shouldComponentUpdate回傳true就表示？ ->->-> `做渲染`
 <!--SR:!2022-08-23,3,250-->
 
-#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就表示？  ->->-> `render、react updates dom、componentDidUpdate`
+#🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
 <!--SR:!2022-08-23,3,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就還做不做狀態更新 ->->-> `做`
