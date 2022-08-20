@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
+            "file": "Untitled.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "866066e51c787ae1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Read/Write Splitting 的具體實現如何",
+                "query": "续调用了两次this.setState，但是只会引发一次更新生命周期，不是两次，因为React会将多个this.set",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "866066e51c787ae1",
   "lastOpenFiles": [
-    "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
-    "RDS 是一個負責提供關聯式資料庫服務種類，具體會是由N台主機的資料庫服務所構成的大型關聯式資料庫系統服務.md",
-    "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
-    "MOC/React MOC.md",
-    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "develop/React/React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段.md",
-    "develop/React/React 生命階段：mounting、updating、unmounting 還可以再切分三個子階段分別為render phase、pre-commit phase、commit phase.md",
-    "develop/React/React： composition 是利用has a關係來打造元件間的關係，而inheritance則是利用is a 關係來打造元件間的關係.md",
-    "develop/React/life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
-    "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md"
+    "React： useState 案例.md",
+    "React：useState 使用案例(2).md",
+    "Untitled.md",
+    "develop/Database/RDS 是一個負責提供關聯式資料庫服務種類，具體會是由N台主機的資料庫服務所構成的大型關聯式資料庫系統服務.md",
+    "為何React要使用Redux.md",
+    "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+    "React：hook.md",
+    "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
+    "Untitled 2.md",
+    "Untitled 1.md"
   ]
 }
