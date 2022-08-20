@@ -11,3 +11,17 @@
 ## data-view-separation
 
 [[React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分]]
+
+
+
+## Offscreen API
+
+[[React ：Offscreen API 是允許Component 在面臨mount=>unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API]]
+
+
+
+## React.StrictMode
+
+[[React ：Offscreen API 是允許Component 在面臨mount=>unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API]]
+
+[[React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題]]
