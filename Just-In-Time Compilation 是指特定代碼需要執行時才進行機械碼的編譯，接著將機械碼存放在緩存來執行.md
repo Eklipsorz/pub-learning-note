@@ -58,7 +58,7 @@
 <!--SR:!2022-08-22,27,250-->
 
 #🧠 Java 和JVM為例子分成兩個方向： 說明從 ByteCode -> JIT Compiler如何執行 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c) ->->-> `ByteCode -> JIT Compiler ： Java 檔案會經由Java Compiler 而編譯成Java ByteCode，並丟入JVM中的JIT Compiler 來將ByteCode編譯成目前執行環境下的machine code，最後丟給OS和硬體來執行`
-<!--SR:!2022-08-21,26,250-->
+<!--SR:!2022-10-29,69,250-->
 
 ---
 Status: #🌱 

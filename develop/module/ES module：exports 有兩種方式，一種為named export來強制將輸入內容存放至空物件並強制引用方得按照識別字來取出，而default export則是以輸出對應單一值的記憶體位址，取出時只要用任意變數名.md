@@ -110,7 +110,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 `
 
 #🧠 請試著寫出exporting module來以named exports輸出特定property1和property2，並以importing module來引用這些property1、property2->->-> `exporting module: export { property1, property2,.... }, importing module: import { property1, property2, .... } from 'xxx'`
-<!--SR:!2022-08-21,8,250-->
+<!--SR:!2022-09-11,21,250-->
 
 #🧠 請試著寫出exporting module來以default exports輸出特定variable，並以importing module來引用這些variable ->->-> `exporting module: export default expression, importing module: import variable from 'xxx'`
 <!--SR:!2022-09-08,19,250-->

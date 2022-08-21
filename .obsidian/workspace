@@ -6,6 +6,7 @@
       {
         "id": "930ae2466fa5b023",
         "type": "leaf",
+        "dimension": 33.30893118594436,
         "state": {
           "type": "markdown",
           "state": {
@@ -16,8 +17,22 @@
         }
       },
       {
+        "id": "2d8063b8b4b222a7",
+        "type": "leaf",
+        "dimension": 52.049780380673496,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
         "id": "866066e51c787ae1",
         "type": "leaf",
+        "dimension": 14.641288433382138,
         "state": {
           "type": "markdown",
           "state": {
@@ -81,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,11 +122,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "866066e51c787ae1",
+  "active": "2d8063b8b4b222a7",
   "lastOpenFiles": [
+    "Untitled.md",
     "React： useState 案例.md",
     "React：useState 使用案例(2).md",
-    "Untitled.md",
     "develop/Database/RDS 是一個負責提供關聯式資料庫服務種類，具體會是由N台主機的資料庫服務所構成的大型關聯式資料庫系統服務.md",
     "為何React要使用Redux.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
