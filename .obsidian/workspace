@@ -6,10 +6,24 @@
       {
         "id": "2d8063b8b4b222a7",
         "type": "leaf",
+        "dimension": 54.85327313769752,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "Untitled 3.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "ca9fae692b2d011c",
+        "type": "leaf",
+        "dimension": 45.146726862302486,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -49,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,9 +110,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2d8063b8b4b222a7",
+  "active": "ca9fae692b2d011c",
   "lastOpenFiles": [
     "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
+    "Untitled 3.md",
     "Untitled.md",
     "為何React要使用Redux.md",
     "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
@@ -105,7 +121,6 @@
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
     "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
-    "React： useState 案例.md",
-    "React：useState 使用案例(2).md"
+    "React： useState 案例.md"
   ]
 }

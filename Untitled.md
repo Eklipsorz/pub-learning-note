@@ -47,33 +47,8 @@ function updateName() {
 - 當非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期
 
 
-### what is batching 
 
-> ## What is batching?
 
-> Batching is when React **groups multiple state updates into a single re-render** for better performance.
-
-> For example, if you have two state updates inside of the same click event, React has always batched these into one re-render. If you run the following code, you’ll see that every time you click, React only performs a single render although you set the state twice:
-
-```
-function App() {
-  const [count, setCount] = useState(0);
-  const [flag, setFlag] = useState(false);
-
-  function handleClick() {
-    setCount(c => c + 1); // Does not re-render yet
-    setFlag(f => !f); // Does not re-render yet
-    // React will only re-render once at the end (that's batching!)
-  }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Next</button>
-      <h1 style={{ color: flag ? "blue" : "black" }}>{count}</h1>
-    </div>
-  );
-}
-```
 
 ### 案例2
 
@@ -98,8 +73,7 @@ function App() {
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-08-24,3,250-->
+
 
 ---
 Status: #🌱 
@@ -107,5 +81,5 @@ Tags:
 [[React]] - [[JavaScript]]
 Links:
 References:
-
+[[@gaearonAutomaticBatchingFewer]]
 [[@chengmomorganSetStateZheGeAPISheJiDaoDiZenMeYang]]
