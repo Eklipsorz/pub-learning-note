@@ -82,39 +82,56 @@ React updates DOM and refs 主要用途為：
 
 ## 複習
 #🧠 React Mounting 階段算是生命週期的一部分嗎？ ->->-> `對`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段是什麼？ ->->-> `是每一個元件轉換成對應DOM結構差入至目前DOM Tree進行渲染的階段`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 RReact Mounting 階段的流程有什麼 ->->-> `constructor、getDerivedStateFromProps、render、React updates DOM & refs、componentDidMount`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 constructor、getDerivedStateFromProps、render、React updates DOM & refs、componentDidMount 是函式嗎？ ->->-> `對`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的constructor函式是做什麼？ (實例、狀態、綁定)->->-> `- 建立根據元件的prototype來建立元件實例 - 初始化元件實例設定各自的狀態、事件綁定處理`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React ：this.setState 和 this.state 都各在哪個位置設定/開發 ->->-> `以function component方式來開發元件必須使用this.setState、以class component方式來開發元件必須使用this.state才能設定元件的初始狀態`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React ：當function component方式來設定狀態時，可用this.state來設定狀態嗎？  ->->-> `不能`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React ：當class component方式來設定狀態時，可用this.setState來設定狀態嗎？ ->->-> `不能`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的render函式是做什麼？ ->->-> `根據實例內容和render上對應元件的內容來解析成Virtual DOM結果`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的React updates DOM and refs函式是做什麼？ ->->-> `- 拿render獲取到的Virtual DOM結果和目前的Virtual DOM結果比對，看差異是如何 - 根據差異來轉換成實際DOM節點來渲染`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式是做什麼？ ->->-> `指定對應元件的實際DOM節點加入至DOM tree之後要做的事情`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式主要用途是做什麼？ ->->-> `	- 從該元件的props物件獲取狀態 - 並用獲取到的狀態值更新目前元件的狀態`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
+<!--SR:!2022-08-24,3,250-->
 
 
 #🧠 React Mounting 階段下的子階段render有什麼 ->->-> `constructor、getDerivedStateFromProps、render`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的子階段pre-commit有什麼 ->->-> `沒`
+<!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的子階段commit有什麼 ->->-> `React Updates DOM & refs、componentDidMount`
+<!--SR:!2022-08-22,1,230-->
 
 ---
 Status: #🌱 
