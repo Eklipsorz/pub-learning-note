@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
+            "file": "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
             "mode": "source",
             "source": false
           }
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "對著靜態資源",
+                "query": "import 可以載入css",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
+                "file": "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,6 +112,7 @@
   },
   "active": "2d8063b8b4b222a7",
   "lastOpenFiles": [
+    "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
     "Untitled.md",
     "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
@@ -120,7 +121,6 @@
     "develop/Database/RDS 是一個負責提供關聯式資料庫服務種類，具體會是由N台主機的資料庫服務所構成的大型關聯式資料庫系統服務.md",
     "為何React要使用Redux.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
-    "React：hook.md",
-    "Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md"
+    "React：hook.md"
   ]
 }
