@@ -116,9 +116,11 @@ element.addListenerEvent(event, function(event) {
 
 重點：
 - 由於執行前會編譯，會預先知道有沒有event.preventDefault()，不論其程式碼位置是否放到最後面，若有就先停止目前元件的預設事件處理來執行
-- preventDefault 本身不會停止事件傳遞，若要停止事件傳遞
+- preventDefault 本身不會停止事件傳遞，若要停止capturing和bubble這兩種事件傳遞：
+	- capturing：從window元件傳遞至form
+	- bubble：從form傳遞至window元件
 ```
-
+event.stopPropagation()
 ```
 
 ## 複習
@@ -130,6 +132,6 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
-
 References:
 [[@w3schoolHTMLFormTarget]]
+[[@mdnEventStopPropagationWeb]]
