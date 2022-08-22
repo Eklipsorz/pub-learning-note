@@ -9,6 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
+            "file": "Untitled 2.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "c57d5918c0c45af5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
             "file": "Untitled.md",
             "mode": "source",
             "source": false
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +109,8 @@
   },
   "active": "10f4b9be58a51b1a",
   "lastOpenFiles": [
-    "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
     "Untitled.md",
+    "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
     "為何React要使用Redux.md",
     "Untitled 1.md",
     "Untitled 2.md",
