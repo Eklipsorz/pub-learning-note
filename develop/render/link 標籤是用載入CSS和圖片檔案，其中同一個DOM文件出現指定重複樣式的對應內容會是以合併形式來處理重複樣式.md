@@ -112,7 +112,7 @@
 ```
 
 其結果會因為CSS解析緣故而
-- 會為每個DOM Document建立CSSOM Tree，每個DOM Document都擁有各自的樣式內容
+- 每個DOM Document 都因為載入CSS而建立屬於該文件上的CSSOM Tree，即每個DOM Document都因為CSSOM Tree擁有各自的樣式內容
 - CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併：
 	- 同樣樣式屬性，就以最新檔案的屬性值為主。
 	- 不同樣式屬性：就直接合併
@@ -142,7 +142,7 @@
 
 
 #🧠 同一個DOM文件出現指定重複樣式的對應內容，為何CSS會將![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png)解析成![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/css-inside-same-dom-result_vhks4m.png)->->-> `會為每個DOM Document建立CSSOM Tree，每個DOM Document都擁有各自的樣式內容、CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併。`
-<!--SR:!2022-08-25,3,250-->
+
 
 
 #🧠 CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併，會如何合併 ->->-> `同樣樣式屬性，就以最新檔案的屬性值為主；不同樣式屬性：就直接合併`
