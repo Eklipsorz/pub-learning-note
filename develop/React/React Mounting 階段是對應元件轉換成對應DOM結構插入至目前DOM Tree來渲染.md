@@ -132,7 +132,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的子階段commit有什麼 ->->-> `React Updates DOM & refs、componentDidMount`
-<!--SR:!2022-08-22,1,230-->
+<!--SR:!2022-08-24,2,230-->
 
 ---
 Status: #🌱 
