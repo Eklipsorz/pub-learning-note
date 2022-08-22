@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+            "file": "React：form.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+                "file": "React：form.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "7d76c08c38eaf010",
   "lastOpenFiles": [
+    "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "Untitled 1.md",
     "develop/React/setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數.md",
     "MOC/React MOC.md",
@@ -105,7 +106,6 @@
     "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
     "為何React要使用Redux.md",
     "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
-    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md"
+    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md"
   ]
 }
