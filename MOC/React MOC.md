@@ -43,3 +43,5 @@
 ## setState
 [[React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數]]
 [[React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染]]
+
+[[setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數]]

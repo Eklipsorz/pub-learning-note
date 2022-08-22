@@ -44,7 +44,13 @@ function DoubleIncreaser() {
 	- 第二次執行，也是拿目前的count = 0來做，而得到0 + 1
 	- 最後執行的時候，會是以1這個狀態值來更新，並同時只執行一次狀態更新 & 渲染
 
-- 要依據setCount每次執行而得到目前結果值，可以使用callback
+- 要依據setCount實際更新的狀態來執行setCount，可以使用callback
+	```
+	setState(currentStatus)
+	setState(newStatus1)
+	setState(newStatus2)
+	```
+
 	- callback會由React setState 函式內來呼叫的，預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值。
 	```
 	setState(callback)	
@@ -92,6 +98,14 @@ function DoubleIncreaser() {
 
 > Open the [demo](https://codesandbox.io/s/usestate-fixed-callback-e4pp3?file=/src/index.js), and click the _Double Increase_ button. The count updates by `2` as expected.
 
+重點：
+- 在這裡改使用callback來當setCount參數，所以新狀態值會是callback的回傳值
+- 第一次執行下面時，setCount 會拿目前的狀態值來當作actualCount並進行疊加，而得到1，其1會成為新的目前狀態值
+```
+setCount((actualCount) => actualCount + 1);
+```
+- 第二次執行類似語法時，setCount會拿目前的狀態值1來當作actualCount並進行疊加，而得到2，其2會成為新的目前狀態值
+- 最後沒setCount等狀態更新指令，就執行目前狀態值2來更新和渲染
 
 #### example: solution 2
 > Of course, you can use an intermediate `let` variable:
@@ -126,11 +140,24 @@ function DoubleIncreaser() {
 >  Try the [demo](https://codesandbox.io/s/usestate-fixed-interm-variable-xo3n7?file=/src/index.js) using intermediate variable.
 
 
-
+重點：
+- 除了callback以外的解法，還可以先做完邏輯計算並將結果設定至setCount來更新狀態
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-08-31,10,250-->
+#🧠 請問發生按鈕點擊事件後，其狀態會是如何，count渲染又是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `會是1，由於count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值，count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值，第二次執行，也是拿目前的count = 0來做，而得到0 + 1，最後執行的時候，會是以1這個狀態值來更新，並同時只執行一次狀態更新 & 渲染`
+
+
+#🧠 若要以下面形式![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png)來改造下面的話，解法有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `以callback作為setCount的引數、先處理兩次count疊加的邏輯計算並且以其結果來渲染和更新`
+
+#🧠 setState 參數為callback，會是如何進行的？->->-> `預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值`
+
+#🧠 setState 參數為callback，預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值，那麼setState、callback、狀態的執行順序->->-> `setState -> newState = callback(currentState) -> handling with newState`
+
+#🧠 若要以下面形式callback作為setCount的參數，來修改以下count為以每次執行setCount的更新來呼叫setState，那麼如何修改 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png)->->-> `將setCount的參數都設定為(count) => count + 1`
+
+
+#🧠 請說明當發生點擊事件時，會是如何更新狀態和渲染？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-solution_mbe5uf.png) ->->-> `第一次執行下面時，setCount 會拿目前的狀態值來當作actualCount並進行疊加，而得到1，其1會成為新的目前狀態值。第二次執行類似語法時，setCount會拿目前的狀態值1來當作actualCount並進行疊加，而得到2，其2會成為新的目前狀態值。最後沒setCount等狀態更新指令，就執行目前狀態值2來更新和渲染`
+
 
 ---
 Status: #🌱 
