@@ -119,25 +119,34 @@
 
 ## 複習
 #🧠 HTML：link 標籤是什麼？->->-> `主要用來定義目前文件與目前檔案以外的資源之間的關係是如何並載入至目前文件`
+<!--SR:!2022-08-25,3,250-->
 
 #🧠 HTML：link 標籤的rel 屬性是什麼？->->-> `定義要以什麼形式來將額外資源載入至目前文件上，會以字串來表示`
+<!--SR:!2022-08-25,3,250-->
 
 #🧠 HTML：link 標籤的href 屬性是什麼？ ->->-> `定義額外資料所在，會以網址來表示`
+<!--SR:!2022-08-25,3,250-->
 
 
 #🧠 HTML ：link標籤時常載入哪些檔案？ ->->-> `css、圖片`
+<!--SR:!2022-08-25,3,250-->
 
 #🧠 HTML ：link標籤如何載入CSS檔案 ->->-> `<link rel="stylesheet" href="xxxx">`
+<!--SR:!2022-08-25,3,250-->
 
 #🧠 同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
+<!--SR:!2022-08-25,3,250-->
 #🧠 不同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/two-css-inside-same-dom_gumjxf.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
+<!--SR:!2022-08-25,3,250-->
 `
 
 
 #🧠 同一個DOM文件出現指定重複樣式的對應內容，為何CSS會將![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png)解析成![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/css-inside-same-dom-result_vhks4m.png)->->-> `會為每個DOM Document建立CSSOM Tree，每個DOM Document都擁有各自的樣式內容、CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併。`
+<!--SR:!2022-08-25,3,250-->
 
 
 #🧠 CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併，會如何合併 ->->-> `同樣樣式屬性，就以最新檔案的屬性值為主；不同樣式屬性：就直接合併`
+<!--SR:!2022-08-25,3,250-->
 
 ---
 Status: #🌱 
