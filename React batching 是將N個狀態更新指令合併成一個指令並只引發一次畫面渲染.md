@@ -119,7 +119,7 @@ root.render(
 	</React.StrictMode>
 );
 ```
-- 在事件處理上，事件處理本身、Promise、setTimeOut所會做的Batching 皆為獨立，每種內含的狀態更新指令不會合併再一起，只會以同一種的狀態更新指令來進行合併，比如說：
+- 在同一個生命週期/事件綁定處理上，事件處理本身、Promise、setTimeOut所會做的Batching 皆為獨立，每種內含的狀態更新指令不會合併再一起，只會以同一種的狀態更新指令來進行合併，比如說：
 	- case 1 會和 case 3 合併
 	- case 2 會和 case 5 合併
 	- case 4 會和 case 6 合併

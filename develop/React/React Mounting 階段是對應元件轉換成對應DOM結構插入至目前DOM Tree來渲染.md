@@ -43,9 +43,13 @@ constructor(props) {
 [[@reactReactComponentReact]]
 > Constructor 是唯一一個你應該直接指定 this.state 的地方。在所有其他的方法中，你則需要使用 this.setState()。
 
-設定狀態的地點：
-- 以function component方式來開發元件必須使用this.setState
-- 以class component方式來開發元件必須使用this.state才能設定元件的初始狀態
+在class component 開發方式中：
+- this.state 和 this.setState 之間的作用：
+	- this.state 是儲存目前狀態值的變數，而非真正儲存狀態的特殊變數
+	- this.setState會是更新this.state、更新元件儲存狀態的狀態變數、觸發渲染的函式
+- 建議開發方式為
+	- 在constructor設定this.state
+	- 其餘地方使用this.setState來變更狀態、觸發渲染
 
 ### getDerivedStateFromProps
 [[React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate]]
@@ -96,14 +100,11 @@ React updates DOM and refs 主要用途為：
 #🧠 React Mounting 階段下的constructor函式是做什麼？ (實例、狀態、綁定)->->-> `- 建立根據元件的prototype來建立元件實例 - 初始化元件實例設定各自的狀態、事件綁定處理`
 <!--SR:!2022-08-24,3,250-->
 
-#🧠 React ：this.setState 和 this.state 都各在哪個位置設定/開發 ->->-> `以function component方式來開發元件必須使用this.setState、以class component方式來開發元件必須使用this.state才能設定元件的初始狀態`
-<!--SR:!2022-08-24,3,250-->
 
-#🧠 React ：當function component方式來設定狀態時，可用this.state來設定狀態嗎？  ->->-> `不能`
-<!--SR:!2022-08-24,3,250-->
+#🧠 在class component 開發方式中，this.state 和 this.setState 是什麼？ ->->-> `前者是儲存目前狀態值的變數、this.setState會是更新this.state、更新元件儲存狀態的狀態變數、觸發渲染的函式`
 
-#🧠 React ：當class component方式來設定狀態時，可用this.setState來設定狀態嗎？ ->->-> `不能`
-<!--SR:!2022-08-24,3,250-->
+#🧠 在class component 開發方式中，this.state 和 this.setState 被建議放在哪？ ->->-> `this.state 建議載constructor定義，剩餘要更改狀態並重新渲染就透過this.setState`
+
 
 #🧠 React Mounting 階段下的render函式是做什麼？ ->->-> `根據實例內容和render上對應元件的內容來解析成Virtual DOM結果`
 <!--SR:!2022-08-24,3,250-->

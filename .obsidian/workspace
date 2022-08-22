@@ -6,24 +6,22 @@
       {
         "id": "2d8063b8b4b222a7",
         "type": "leaf",
-        "dimension": 54.85327313769753,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+            "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "ca9fae692b2d011c",
+        "id": "9e07e6c66b841c50",
         "type": "leaf",
-        "dimension": 45.146726862302486,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+            "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
             "mode": "source",
             "source": false
           }
@@ -54,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "css",
+                "query": "this.setstate",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -83,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+                "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "9e07e6c66b841c50",
   "lastOpenFiles": [
-    "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
     "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
+    "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
     "Untitled.md",
     "為何React要使用Redux.md",
     "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
-    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
-    "React： useState 案例.md"
+    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md"
   ]
 }
