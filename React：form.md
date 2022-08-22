@@ -1,12 +1,5 @@
 ## 描述
 
-當在提交表格上的提交按鈕發生點擊時，會直接觸發form的提交事件
-
-```
-<form>
-	<button type="submit"> Add Expense </button>
-</form>
-```
 
 
 ### form的action屬性和method屬性
@@ -30,15 +23,6 @@
 
 > 3. method 指定何種形式來傳提交方式，有GET和POST
 
-> 一、透過 POST 傳遞資料： 把表單資料放到http要求封包內部並將此封包傳遞至action所指定的地方。
-```
-<form action="接收資料的 PHP 程式" method="post"></form>
-```
-
-> 二、透過 GET 傳遞資料： 雖然GET本身就是讀取，但在這裡是提交表單的方法之一，會將表單內容以key/value pair這個形式放置URL，好讓action能夠透過URL收到資料
-```
-<form action="接收資料的 PHP 程式" method="get"></form>
-```
 
 參考資料：
 https://www.w3schools.com/tags/att_form_method.asp
@@ -47,7 +31,61 @@ https://www.w3schools.com/tags/att_form_method.asp
 > 
 > 5. 若都正確設定action和method這兩個屬性，會將內容傳遞給指定位置，也就是action所指定的地方，若沒有設定action時，會自動導向回當前頁面
 
-  
+target 屬性
+> Indicates where to display the response after submitting the form
+
+[[@w3schoolHTMLFormTarget]]
+> The `target` attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+> 
+> _self -> The response is displayed in the same frame (this is default)
+
+重點：
+- form 表單本身就有預設事件處理，如
+	- 提交時的預設事件處理是以表格資料傳遞至指定頁面上，並按照target來將使用者導向至特定位置來顯示接收結果
+- form 屬性：
+	- method：指定表格資料的傳遞方法，如get、post
+		- 預設值為get
+	- action：指定表格資料要傳遞的目的頁面，若沒有填寫，會直接以目前頁面來傳遞
+		- 預設值為目前頁面
+	- target：指定提交表格後要在哪邊呈現接收結果，具體會有指向目前頁面的"\_self"
+		- 預設值為"\_self"
+
+#### 使用get 來傳遞表格
+
+> 二、透過 GET 傳遞資料： 雖然GET本身就是讀取，但在這裡是提交表單的方法之一，會將表單內容以key/value pair這個形式放置URL，好讓action能夠透過URL收到資料
+```
+<form action="接收資料的 PHP 程式" method="get"></form>
+```
+
+重點：
+- 使用get來傳遞，會將資料表格依照欄位和欄位值來組成多個key-value pairs，然後以URL夾帶這些資料，並傳遞至指定頁面
+
+#### 使用post 來傳遞表格
+
+> 一、透過 POST 傳遞資料： 把表單資料放到http要求封包內部並將此封包傳遞至action所指定的地方。
+```
+<form action="接收資料的 PHP 程式" method="post"></form>
+```
+
+重點：
+- 使用post來傳，會將資料表格依照欄位和欄位值來組成多個key-value pairs，然後以封包形式來傳遞至指定頁面。
+
+### 對著表單裡的表格按點擊時
+
+> 提交事件的發生會是由form內部具有type=submit屬性值的元件來決定，而通常只要對那個元件進行點擊，就發生submit事件，而當發生事件時，event object指向的target會是整個表單，而非那實際上被點擊的元件。
+
+
+
+```
+<form>
+	<button type="submit"> Add Expense </button>
+</form>
+```
+
+
+重點：
+- 當在提交表格上的提交按鈕發生點擊時，會直接觸發form的提交事件
+
 
 ### preventDefault()
 > 是event object的方法，用來去掉/避免/預防event object對應元件所要做的預設處理器內容
@@ -72,12 +110,26 @@ element.addListenerEvent(event, function(event) {
 > 3. 但只是告訴瀏覽器不要做預設的事件處理器內容，不會停止事件傳遞
 
 
+> Event.stopPropagation()
+>
+>Event 介面的 stopPropagation() 方法可阻止當前事件繼續進行捕捉（capturing）及冒泡（bubbling）階段的傳遞。
+
+重點：
+- 由於執行前會編譯，會預先知道有沒有event.preventDefault()，不論其程式碼位置是否放到最後面，若有就先停止目前元件的預設事件處理來執行
+- preventDefault 本身不會停止事件傳遞，若要停止事件傳遞
+```
+
+```
+
 ## 複習
 
 
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[React]]
 Links:
+
 References:
+[[@w3schoolHTMLFormTarget]]
