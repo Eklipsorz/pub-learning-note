@@ -142,6 +142,7 @@
 
 
 #🧠 同一個DOM文件出現指定重複樣式的對應內容，為何CSS會將![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png)解析成![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/css-inside-same-dom-result_vhks4m.png)->->-> `每個DOM Document會擁有各自CSSOM、CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併。`
+<!--SR:!2022-08-25,3,250-->
 
 
 
