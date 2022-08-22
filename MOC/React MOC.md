@@ -37,3 +37,9 @@
 [[React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染]]
 
 [[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
+
+
+
+## setState
+[[React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數]]
+[[React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染]]

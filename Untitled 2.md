@@ -37,8 +37,29 @@ function DoubleIncreaser() {
 重點：
 - 從上述案例來看，由於count本身因為以下因素：
 	- count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值
+	- 第一次執行setCount(count + 1);，就已經將目標狀態值設定為0 + 1，但由於啟用batching沒先更新count
+	```
+	setCount(count + 1);
+	```
+	- 第二次執行，也是拿目前的count = 0來做，而得到0 + 1
+	- 最後執行的時候，會是以1這個狀態值來更新，並同時只執行一次狀態更新 & 渲染
 
-
+- 要依據setCount每次執行而得到目前結果值，可以使用callback
+	- callback會由React setState 函式內來呼叫的，預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值。
+	```
+	setState(callback)	
+	// callback
+	function callback (xxx) { 
+		return .....
+	}
+	```
+	- 執行順序會是：
+		- setState -> newState = callback(currentState) -> handling with newState
+	- 若要成為解法的話，只需要設定callback為
+	```
+	// callback
+	(prevState) => (prevState) + 1
+	```
 #### example: solution 1
 
 > The state update function also accepts a callback to compute new state using the current state. In case of the `DoubleIncreaser`, you can use `setCount(actualCount => actualCount + 1)`:
@@ -105,18 +126,7 @@ function DoubleIncreaser() {
 >  Try the [demo](https://codesandbox.io/s/usestate-fixed-interm-variable-xo3n7?file=/src/index.js) using intermediate variable.
 
 
-### Why is State Update Async?
-[[@khatriWhyDonReact2021]]
-> # Why is State Update Async?
 
-> State updates alter the virtual DOM and cause re-rendering which may be an expensive operation. Making state updates synchronous could make the browser unresponsive due to huge number of updates.
-
-> To avoid these issues a careful choice was made to make state updates async, as well as to batch those updates.
-
-重點：
-- state update 是非同步操作，且一個非同步操作包含兩個行為：
-	- 更新對應元件的(專門儲存狀態值)特殊變數
-	- 重新
 
 ## 複習
 #🧠 Question :: ->->-> ``
@@ -127,6 +137,8 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數]]
+[[React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染]]
 References:
 [[@dmitripavlutinHowReactUpdates2020]]
 [[@khatriWhyDonReact2021]]
