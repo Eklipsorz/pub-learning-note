@@ -107,8 +107,54 @@ function App() {
 
 
 重點：
-- automatic batching 為 **不管是不是在事件處理執行N個狀態更新指令，都直接自動以Batching來執行**。
-- automatic batching 有個限制，同一個執行環境(EC)
+- automatic batching 為 **不管是不是在事件處理執行N個狀態更新指令，都直接自動以Batching來執行** 
+- 換言之，即使在Promise/setTimeOut中出現N個狀態更新指令，皆會像是在事件處理那樣可以被合併
+- automatic batching 只要使用createRoot來建立Virtual DOM的root節點，並於其節點建立子節點就會夠擁有automatic batching 特性
+```
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+);
+```
+- 在事件處理上，事件處理本身、Promise、setTimeOut所會做的Batching 皆為獨立，每種內含的狀態更新指令不會合併再一起，只會以同一種的狀態更新指令來進行合併，比如說：
+	- case 1 會和 case 3 合併
+	- case 2 會和 case 5 合併
+	- case 4 會和 case 6 合併
+
+```
+fimctopm handler() {
+	// case 1
+	setCount(count + 1);
+	setCount(count + 1);
+	
+	// case 2
+	setTimeout(() => {
+		setCount(count + 1);
+	}, 1000);
+
+	// case 3
+	setCount(count + 1);
+	setCount(count + 1);
+
+	// case 4
+	Promise.resolve().then(() => {
+		setCount(count + 1);
+	});
+
+	// case 5
+	setTimeout(() => {
+		setCount(count + 1);
+	}, 1000);
+
+	// case 6
+	Promise.resolve().then(() => {
+		setCount(count + 1);
+	});
+}
+```
 
 React will batch updates automatically, no matter where the updates happen, so this:
 ```

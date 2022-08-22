@@ -6,11 +6,11 @@
       {
         "id": "2d8063b8b4b222a7",
         "type": "leaf",
-        "dimension": 54.85327313769752,
+        "dimension": 54.85327313769753,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
             "mode": "source",
             "source": false
           }
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
             "mode": "source",
             "source": false
           }
@@ -63,8 +63,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -84,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 3.md",
+                "file": "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,10 +109,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca9fae692b2d011c",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
-    "Untitled 3.md",
+    "React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
     "Untitled.md",
     "為何React要使用Redux.md",
     "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
