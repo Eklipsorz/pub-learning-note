@@ -52,10 +52,10 @@
 
 
 #🧠 Just-In-Time Compilation 和 傳統在執行之前編譯整個檔案為機械碼的形式來相比，有什麼樣的差別 (以執行時的資訊來說吧)  ->->-> `前者可以根據特定程式被執行的資訊來對後續編譯進行調整和優化整個程式碼的效能，後者則不能獲取執行時的資訊來獲取，只能獲取到執行前的資訊`
-<!--SR:!2022-08-22,27,250-->
+<!--SR:!2022-11-02,72,250-->
 
 #🧠 Java 和JVM為例子分成兩個方向： 說明從  ByteCode -> Java Interpreter如何執行 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c)->->-> `Java 檔案會經由Java Compiler而編譯成Java ByteCode，並丟入JVM中的Java Interpreter來邊解析邊轉換成機械碼來給OS和硬體來執行`
-<!--SR:!2022-08-22,27,250-->
+<!--SR:!2022-11-02,72,250-->
 
 #🧠 Java 和JVM為例子分成兩個方向： 說明從 ByteCode -> JIT Compiler如何執行 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c) ->->-> `ByteCode -> JIT Compiler ： Java 檔案會經由Java Compiler 而編譯成Java ByteCode，並丟入JVM中的JIT Compiler 來將ByteCode編譯成目前執行環境下的machine code，最後丟給OS和硬體來執行`
 <!--SR:!2022-10-29,69,250-->
