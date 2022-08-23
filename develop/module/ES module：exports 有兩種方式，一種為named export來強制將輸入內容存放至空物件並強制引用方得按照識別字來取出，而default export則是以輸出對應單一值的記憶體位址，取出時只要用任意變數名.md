@@ -99,10 +99,10 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-09-02,14,250-->
 
 #🧠 ES module： named exports 是什麼？ ->->-> `強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字`
-<!--SR:!2022-08-23,10,250-->
+<!--SR:!2022-09-19,27,250-->
 
 #🧠 ES module： named exports 是強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字，具體如何實現？ ->->->`強制輸出的內容放置空物件中來當屬性，其中屬性名稱會是輸出的識別字，屬性值是對應識別字的內容，取出的時候就用物件存取屬性方式來取`
-<!--SR:!2022-08-23,10,250-->
+<!--SR:!2022-09-17,25,250-->
 
 #🧠 ES module： default exports 是什麼？ ->->-> `exporting module所輸出的內容是(識別字所對應的)單一值，importing module則是可用任意變數來分配空間來引用輸出的單一值。`
 <!--SR:!2022-08-24,3,250-->
@@ -120,7 +120,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-09-03,15,250-->
 
 #🧠 ES module：使用named exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `得必須一樣，因為得用物件來存取以識別字名稱製作的屬性`
-<!--SR:!2022-08-23,10,250-->
+<!--SR:!2022-09-15,23,250-->
 
 
 ---
