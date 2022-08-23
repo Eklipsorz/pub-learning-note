@@ -73,10 +73,10 @@ const result = instance.render(); // <p>Hello</p>
 <!--SR:!2022-09-14,23,250-->
 
 #🧠 React：如何構建一個function component? ->->-> `使用function以及function回傳著react element構成的元件`
-<!--SR:!2022-08-23,10,250-->
+<!--SR:!2022-09-20,28,250-->
 
 #🧠 React：如何構建component?  ->->-> `使用function或者class`
-<!--SR:!2022-08-23,10,250-->
+<!--SR:!2022-09-20,28,250-->
 
 #🧠 React：使用function來構建的component 稱之為什麼 ->->-> `function component`
 <!--SR:!2022-09-20,28,250-->
