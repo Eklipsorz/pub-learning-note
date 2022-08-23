@@ -199,7 +199,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-08-23,3,250-->
 
 #🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
-<!--SR:!2022-08-23,3,250-->
+<!--SR:!2022-09-01,9,250-->
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的setState 拿什麼資料來渲染畫面？ ->->-> `狀態`
 <!--SR:!2022-08-23,3,250-->
@@ -216,17 +216,17 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 #🧠 react updating 子階段中的pre-commit包含哪些步驟？ ->->-> `getSnapshotBeforeUpdate`
-<!--SR:!2022-08-23,3,250-->
+<!--SR:!2022-09-02,10,250-->
 
 #🧠 react updating 子階段中的commit包含哪些步驟？->->-> `React updates DOM and refs、componentDidUpdate`
-<!--SR:!2022-08-23,3,250-->
+<!--SR:!2022-09-01,9,250-->
 
 
 #🧠  react updating 階段若使用setState的流程會是什麼？ ->->-> `-shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
 <!--SR:!2022-08-23,3,250-->
 
 #🧠 react updating 階段若使用forceUpdate()的流程會是什麼？ ->->-> `- render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
-<!--SR:!2022-08-23,3,250-->
+<!--SR:!2022-09-02,10,250-->
 
 #🧠 react 生命週期中會用到的getDerivedStateFromProps是做什麼用的？->->-> `	- 會從該元件A的props接收到源自parent節點所給予的狀態值 - 將狀態值更新至元件A的this.state`
 <!--SR:!2022-08-23,3,250-->
