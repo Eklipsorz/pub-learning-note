@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7d76c08c38eaf010",
+  "active": "594083b54cf7a516",
   "lastOpenFiles": [
+    "Untitled.md",
     "Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
     "Untitled 1.md",
     "HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
@@ -117,7 +118,6 @@
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "develop/React/setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數.md",
     "MOC/React MOC.md",
-    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
-    "MOC/Redis MOC.md"
+    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md"
   ]
 }
