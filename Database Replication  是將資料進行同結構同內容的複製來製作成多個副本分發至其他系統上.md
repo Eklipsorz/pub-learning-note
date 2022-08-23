@@ -56,6 +56,13 @@
 		- replication：每個副本(replica)要如何與與目前原始資料保持一致
 		- 非同步的寫入
 
+### Replicate 命名緣由
+
+> If organisms and genetic or other structures replicate, they make exact copies of themselves.
+
+重點：
+- Replicate 動詞，製作與特定事物同結構同內容的副本
+
 ### Replication 命名緣由
 
 > the process by which organisms and genetic or other structures make exact copies of themselves
@@ -64,14 +71,15 @@
 
 
 重點：
-- 製作與特定事物同結構同內容的副本之流程、行為
+- Replication 名詞，製作與特定事物同結構同內容的副本之流程、行為
 
-### Replica
+### Replica 命名緣由
+
 
 > an exact copy of an object
 
 重點：
-- replica 是經由Replication而產出的副本
+- Replica 名詞，是經由Replication而產出的副本
 
 ## 複習
 
