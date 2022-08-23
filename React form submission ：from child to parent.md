@@ -28,7 +28,12 @@ A->C
 
 實現方式為：
 - 藉由函式物件和其closure結構體來實現
-	- 由parent 元件提供函式物件和讓closure結構體去
+	- 由parent 元件提供函式物件和其closure結構體，讓child元件去呼叫函式物件
+	- parent元件所提供的closure能方便讓使用者存取parent元件內的資源
+	- 當child元件呼叫函式物件，就以closure方式來從child元件角度去告知parent元件存取child資訊
+
+### 案例：communication between child to parent
+
 
 ## 複習
 
