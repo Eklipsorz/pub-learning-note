@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
+                "file": "React：form submission.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2357ba5393db8fb0",
+  "active": "69fa71015cc123de",
   "lastOpenFiles": [
-    "React：form submission.md",
     "Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
+    "React：form submission.md",
     "Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",

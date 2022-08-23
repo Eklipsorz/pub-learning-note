@@ -62,30 +62,142 @@ return (
 
 ##### 傳遞後，清除掉輸入欄上的目前所填寫之資料
 
-two-way binding
+直接以更新狀態用的函式來刷新對應的輸入欄位，其中畫面渲染部分使用每個input元件上的value屬性來填入空字串，表示清除掉：
+	- 當發生提交事件就執行setState('')來要更新title、amount、date
+	- 重新渲染後，就將新title、amount、date填入每個input元件上的value以示清空
+```
+const submitHandler = (event) => {
+
+	event.preventDefault();
+	event.stopPropagation();
+	
+	const expenseData = {
+		title: enteredTitle,
+		amount: enteredAmount,
+		date: new Date(enteredDate),
+	};
+	
+	setEnteredTitle('');
+	setEnteredAmount('');
+	setEnteredDate('');
+
+};
+```
 
 
-two-way binding
+```
+return (
+	<form onSubmit={submitHandler}>
+		<div>
+			<input 
+			  type='date'
+			  min='2019-01-01'
+			  max='2022-12-31'
+			  value={enteredDate}
+			  onChange={dateChangeHandler} 
+			 ></input>
+		</div>
+		<div>
+			<input
+			  type='text'
+			  value={enteredTitle}
+			  onChange={titleChangeHandler}
+			 ></input>
+		</div>
+		<div>
+			<input
+			  type='number'
+			  min='0.01'
+			  step='0.01'
+			  value={enteredAmount}
+			  onChange={amountChangeHandler}
+			 ></input>
+		</div>
+	</form>
+);
+```
 
-for inputs we don't just listen to changes, but we can also pass a new value back into the input.
 
-So that we can reset or change the input programmatically.
+### one-way：UI一改變，資料就跟著改變
+在這裡是以元件來攔截使用者所輸入的資訊，而目前資料/Data Model並沒有這資訊，因此從攔截並成為Data Model的一部分，會等同於UI(UI上的輸入欄位)一改變，資料就跟著改變
+```
+const submitHandler = (event) => {
+	event.preventDefault();
+	event.stopPropagation();
+	
+	const expenseData = {
+		title: enteredTitle,
+		amount: enteredAmount,
+		date: new Date(enteredDate)
+	};
+};
+```
 
-  
 
-HTML attributes
+```
+return (
+	<form onSubmit={submitHandler}>
+		<input type='text' onChange={titleChangeHandler}></input>
+		<input type='text' onChange={amountChangeHandler}></input>
+		<input type='text' onChange={dateChangeHandler}></input>
+	</form>
+);
+```
 
-`<input value="" />`
+### one-way：資料一改變，UI就跟著改變
+在這裡是要求每個輸入欄位為''，所以才以setState來間接引發渲染，進而以新資料來渲染。
+```
+const submitHandler = (event) => {
 
-input.value => 設定預設值
+	event.preventDefault();
+	event.stopPropagation();
+	
+	const expenseData = {
+		title: enteredTitle,
+		amount: enteredAmount,
+		date: new Date(enteredDate),
+	};
+	
+	setEnteredTitle('');
+	setEnteredAmount('');
+	setEnteredDate('');
 
-  
+};
+```
 
-  
 
-because it allows you to gather user input, but then also change it.
+```
+return (
+	<form onSubmit={submitHandler}>
+		<div>
+			<input 
+			  type='date'
+			  min='2019-01-01'
+			  max='2022-12-31'
+			  value={enteredDate}
+			  onChange={dateChangeHandler} 
+			 ></input>
+		</div>
+		<div>
+			<input
+			  type='text'
+			  value={enteredTitle}
+			  onChange={titleChangeHandler}
+			 ></input>
+		</div>
+		<div>
+			<input
+			  type='number'
+			  min='0.01'
+			  step='0.01'
+			  value={enteredAmount}
+			  onChange={amountChangeHandler}
+			 ></input>
+		</div>
+	</form>
+);
+```
 
-For example, upon form of mission
 ## 複習
 
 ---
