@@ -52,7 +52,7 @@ target 屬性
 		- 預設值為"\_self"
 
 #### 預設事件處理
-
+[[@dillionmegidaHowManageBrowser2022]]：
 > Browsers have default interactions and behaviors for different events.
 
 重點：
@@ -179,8 +179,10 @@ event.stopPropagation()
 ---
 Status: #🌱 
 Tags:
-[[React]]
+[[HTML]] - [[Rendering]]
 Links:
 References:
+[[@w3schoolHTMLFormMethod]]
+[[@dillionmegidaHowManageBrowser2022]]
 [[@w3schoolHTMLFormTarget]]
 [[@mdnEventStopPropagationWeb]]
