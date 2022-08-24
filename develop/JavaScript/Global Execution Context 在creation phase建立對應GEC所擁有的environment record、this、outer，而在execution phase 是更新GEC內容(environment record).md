@@ -4,7 +4,7 @@
 
 這裡的概念以ECMA2015-ECMA2019為主。
 ### GEC - creation phase
-1.  發生時間點：在編譯時期先對所有EC準備建立EC所需的資料，並於執行之前先建立GEC
+1.  發生時間點：在編譯時期先對所有EC準備建立EC所需的資料和對應ByteCode後，並於執行之前先執行對應ByteCode建立GEC
 2. GEC範圍：檔案裡的最外圍scope
 3. 製作流程：
 
@@ -142,9 +142,7 @@ GlobalExectionContext = {
 <!--SR:!2022-09-16,58,250-->
 
 
-#🧠 GEC - creation phase 的發生時機點->->-> `在編譯時期先對所有EC準備建立EC所需的資料，並於執行之前先建立GEC`
-<!--SR:!2022-09-26,34,247-->
-
+#🧠 GEC - creation phase 的發生時機點->->-> `在編譯時期先對所有EC準備建立EC所需的資料和對應ByteCode後，並於執行之前先執行對應ByteCode建立GEC`
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `檔案裡的最外圍scope`
