@@ -1,6 +1,31 @@
-controlled component
+[[@ithomeDay27JiShiTianQi]]
+> ## Controlled vs Uncontrolled Components
 
-this component controls the expenses filter component
+> 在 React 中表單元素的處理主要可以分成兩種 Controlled 和 Uncontrolled 這兩種，這裡**關於 Controlled 和 Uncontrolled 指的是「資料受不受到 React 所控制」，也就是「受 React 所控制的資料（Controlled）」或「不受 React 所控制的資料（Uncontrolled）」**。
 
 
-> 我們可以透過將 React 的 state 變成「唯一真相來源」來將這兩者結合。如此，render 表單的 React component 同時也掌握了後續使用者的輸入對表單帶來的改變。像這樣一個輸入表單的 element，被 React 用這樣的方式來控制它的值，就被稱為「controlled component」。
+
+
+[[@chidumennamdiControlledVsUncontrolled]]
+> Controlled components in React are those in which form data is handled by the component’s state.
+
+> Uncontrolled components are those for which the form data is handled by the DOM itself. “Uncontrolled” refers to the fact that these components are not controlled by React state.
+
+重點：
+- 若元件在資料處理上是以React來進行控管和處理，那麼該元件是Controlled Component
+- 若元件在資料處理上是以DOM本身和其API來進行控管和處理，那麼該元件該元件
+
+
+## 描述
+
+## 複習
+#🧠 Question :: ->->-> ``
+
+---
+Status: #🌱 
+Tags:
+[[React]] - [[JavaScript]]
+Links:
+References:
+[[@ithomeDay27JiShiTianQi]]
+[[@chidumennamdiControlledVsUncontrolled]]
