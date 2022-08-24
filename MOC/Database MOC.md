@@ -83,3 +83,12 @@
 - Sequelize 上的UUID
 [[Sequelize 上的UUID 具體來說會在不同資料庫系統有著不同的資料型別]]
 
+
+
+## Replication
+
+
+[[Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存]]
+
+[[Master-Master Replication 架構是每個資料庫系統皆為主要資料庫系統，都會將特定資料複製成副本給所有資料庫系統的資料庫，以此讓多個資料庫系統共享資料]]
+

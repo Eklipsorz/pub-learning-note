@@ -18,7 +18,7 @@
 >The implementation of read-write separation is based on the master-slave replication architecture: one master and multiple slaves, only write to the master library, and the master library will automatically synchronize the data to the slave library.
 
  重點：
- - Master-Slave Replication 是一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統上的資料庫來儲存，以此讓多個資料庫系統共享同份資料，並由主要資料庫伺服器進行資料上的維護&管理
+ - Master-Slave Replication 是一台主要資料庫系統將特定資料複製成副本分給多個資料庫系統上的資料庫來儲存，以此讓多個資料庫系統共享同份資料，並由主要資料庫伺服器進行資料上的維護&管理
  - 在這裡負責提供資料副本的資料庫伺服器是master主機，接收到副本的資料庫伺服器是slave主機
  - 技術細節：
 	 - Slave 主機可以切分額外的Slave子結構
@@ -77,7 +77,7 @@
 
 ## 複習
 
-#🧠 Master-Slave Replication 是什麼樣的技術？->->-> `Master-Slave Replication 是一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統上的資料庫來儲存，以此讓多個資料庫系統共享同份資料，並由主要資料庫伺服器進行資料上的維護&管理`
+#🧠 Master-Slave Replication 是什麼樣的技術？->->-> `Master-Slave Replication 是一台主要資料庫系統將特定資料複製成副本分給多個資料庫系統上的資料庫來儲存，以此讓多個資料庫系統共享同份資料，並由主要資料庫伺服器進行資料上的維護&管理`
 
 
 #🧠 Master-Slave Replication 技術下，Master 和Slave是指什麼？ ->->-> `在這裡負責提供資料副本的資料庫伺服器是master主機，接收到副本的資料庫伺服器是slave主機`
@@ -115,6 +115,7 @@ Tags
 Links:
 [[Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上]]
 [[Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機]]
+[[Master-Master Replication 架構是每個資料庫系統皆為主要資料庫系統，都會將特定資料複製成副本給所有資料庫系統的資料庫，以此讓多個資料庫系統共享資料]]
 References:
 [[@mariadbDatabaseMasterSlaveReplication2013]]
 [[@karanpratansinghSystemDesignComplete]]
