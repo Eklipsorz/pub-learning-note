@@ -65,7 +65,7 @@ function Component(props) {
 
 ## 複習
 #🧠 React：為了要讓component能夠因為資料的不同而有所不同，初步想會是什麼？->->-> `為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面`
-<!--SR:!2022-08-24,10,250-->
+<!--SR:!2022-09-21,28,250-->
 
 #🧠 React：為了要將component 當作函式來呼叫，並用資料當參數，直接將資料輸入至函式就能產生出對應資料的畫面，解法會是？(描述概念) ->->-> `使用props概念`
 <!--SR:!2022-08-24,10,250-->
@@ -92,7 +92,7 @@ function Component(props) {
 <!--SR:!2022-08-24,10,250-->
 
 #🧠 React：請問從component如何接收到attributes來當參數？以代碼來表示 ->->-> `function CourseGoalItem(data) {....}或者function CourseGoalItem(props) {...}，接著在以props的屬性來取用對應的attribute值`
-<!--SR:!2022-08-24,10,250-->
+<!--SR:!2022-09-21,28,250-->
 
 #🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
 <!--SR:!2022-08-24,10,250-->

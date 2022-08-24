@@ -60,7 +60,7 @@ XML 在 JSX 語言裡，是算 JavaScript 語法延伸的一部分，所以部�
 <!--SR:!2022-09-21,28,250-->
 
 #🧠 React：若畫面和資料寫在一塊的話，就相當於寫死在一塊，為了畫面和資料的分離，可以在單一畫面如何做才能實現？ ->->-> `在React element添加{}和表達式，並且表達式放在{}內部，由於資料本身就會是表達式，所以可以先將渲染外部做完處理並存放特定變數，由{變數}來在渲染那邊以結果來渲染，這樣就能做完簡單的分離`
-<!--SR:!2022-08-24,10,250-->
+<!--SR:!2022-08-30,6,230-->
 
 #🧠 React：假若在react element填上{}和在括號內部填上表達式的話，在最後渲染畫面的階段前，表達式可以是什麼型別->->-> `只能是字串、數字`
 <!--SR:!2022-08-25,9,250-->
@@ -71,7 +71,7 @@ XML 在 JSX 語言裡，是算 JavaScript 語法延伸的一部分，所以部�
 
 
 #🧠 如何將日期、標題、價格這三個資料分離出來？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660148304/blog/react/data-view-separation/before-simple-separation-result_mznm1z.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660148304/blog/react/data-view-separation/simple-separation-result_n7nkqb.png)`
-<!--SR:!2022-08-24,10,250-->
+<!--SR:!2022-09-21,28,250-->
 
 
 ---

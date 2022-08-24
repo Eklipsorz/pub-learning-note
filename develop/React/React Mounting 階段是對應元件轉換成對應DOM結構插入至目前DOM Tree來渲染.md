@@ -98,7 +98,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-08-24,3,250-->
 
 #🧠 React Mounting 階段下的constructor函式是做什麼？ (實例、狀態、綁定)->->-> `- 建立根據元件的prototype來建立元件實例 - 初始化元件實例設定各自的狀態、事件綁定處理`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-02,9,250-->
 
 
 #🧠 在class component 開發方式中，this.state 和 this.setState 是什麼？ ->->-> `前者是儲存目前狀態值的變數、this.setState會是更新this.state、更新元件儲存狀態的狀態變數、觸發渲染的函式`
@@ -115,7 +115,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式是做什麼？ ->->-> `指定對應元件的實際DOM節點加入至DOM tree之後要做的事情`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-01,8,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
 <!--SR:!2022-09-03,10,250-->
