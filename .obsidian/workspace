@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React form submission ：from child to parent.md",
+            "file": "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "binding",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React form submission ：from child to parent.md",
+                "file": "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2357ba5393db8fb0",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "React：lifting state up 概念 + pass state data via pros概念.md",
-    "React form submission ：from child to parent.md",
+    "develop/React/React ：Offscreen API 是允許Component 在面臨mount=>unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
+    "develop/Database/RDS 是一個負責提供關聯式資料庫服務種類，具體會是由N台主機的資料庫服務所構成的大型關聯式資料庫系統服務.md",
     "Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
+    "React form submission ：from child to parent.md",
+    "React：lifting state up 概念 + pass state data via pros概念.md",
     "React：form submission.md",
     "Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "develop/Redis/Read-Write Splitting 是指在多個主機共享同個資料庫資料的情況下專門提供專門讀取資料的主機和專門寫資料的主機.md",
     "Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
-    "HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
-    "Untitled 1.md",
-    "Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md"
+    "HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md"
   ]
 }
