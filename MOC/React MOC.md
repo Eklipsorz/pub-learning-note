@@ -31,12 +31,11 @@
 ## Component life cycle
 
 [[life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段]]
-
 [[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
-
 [[React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染]]
-
 [[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
+
+
 
 
 
@@ -45,3 +44,8 @@
 [[React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染]]
 
 [[setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數]]
+
+
+
+## props
+[[React：在還沒有使用Redux之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]

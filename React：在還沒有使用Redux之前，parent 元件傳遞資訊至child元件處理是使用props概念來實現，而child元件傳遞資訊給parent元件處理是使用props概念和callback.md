@@ -27,7 +27,7 @@ A->C
 1. 讓parent元件存取到child元件所給予的資訊，並於parent元件內進行處理
 
 實現方式為
-- 藉由callback來實現：
+- 藉由props概念＋callback來實現：
 	- 具體在parent元件上建立callback**來叫child元件去做parent接收到資料時會做的事情**，並以props給予child元件
 	- child元件呼叫callback即可，就會去做parent接收到資料時會做的事情。
 
