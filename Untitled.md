@@ -11,6 +11,11 @@
 
 > Uncontrolled components are those for which the form data is handled by the DOM itself. “Uncontrolled” refers to the fact that these components are not controlled by React state.
 
+
+> changes through callbacks like onChange. A parent component "controls" it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a "dumb component".
+
+> A Uncontrolled Component is one that stores its own state internally, and you query the DOM using a ref to find its current value when you need it. This is a bit more like traditional HTML.
+
 重點：
 - 若元件在資料處理上是以React來進行控管和處理，那麼該元件是Controlled Component
 - 若元件在資料處理上是以DOM本身和其API來進行控管和處理，那麼該元件該元件
