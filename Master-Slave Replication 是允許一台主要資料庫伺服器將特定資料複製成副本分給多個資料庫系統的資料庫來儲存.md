@@ -73,7 +73,7 @@
 
 
 重點：
-- replication lag：是指當master主機的資料庫系統上發生資料更改、寫入時，從資料一被更改到資料複製到slave主機且讓slave主機採用的時間差。
+- replication lag：是指當master主機的資料庫系統上發生資料更改、寫入時，從資料一被更改到資料複製到其他主機且讓其他主機採用的時間差。
 
 ## 複習
 
@@ -94,6 +94,19 @@
 
 #🧠 Master-Slave Replication 技術 可應用什麼技術？ ->->-> `Read/Write Splitting 技術`
 
+#🧠 Replication lag 是什麼？ ->->-> `是指當master主機的資料庫系統上發生資料更改、寫入時，從資料一被更改到資料複製到其他主機且讓其他主機採用的時間差。`
+
+
+#🧠 Replication lag 是指當master主機的資料庫系統上發生資料更改、寫入時，從資料一被更改到資料複製到其他主機且讓其他主機採用的時間差，請問其他主機有限定於slave主機嗎 ->->-> `並沒有，主要被分到的任意主機是否採用`
+
+
+#🧠 Master-Slave Replication 技術下，如果master主機離線，其他主機還能正常作用嗎？ ->->-> `能，如果master主機離線，同份資料的存取就僅剩下讀取，除非有slave主機承擔起master主機或者有新的master主機加入。`
+
+#🧠 Master-Slave Replication 技術下，如果其中一台slave主機離線，其他主機還能正常作用嗎？  ->->-> `能，還有其他slave主機可以提供同份資料的讀請求以及master提供同份資料的寫請求`
+
+#🧠 Master-Slave Replication 技術下，優點為何？(共有三個：備、分、獲取)->->-> `	- 資料備份 - 應用程式可從Slave 主機讀取資料，不用跑到Master主機 - Slave 主機可以憑藉數量優勢，暫時以離線去從Master 主機獲取新資料`
+
+#🧠  Master-Slave Replication 技術下，缺點為何？(共有四個：成本、遺失、寫、lag)->->-> `- 從master 主機製作副本並分發至slaves的成本較高：硬體需求、計算需求 - 當master 主機出現問題時，可能會出現資料上的遺失 - 所有寫入請求都只能集中在單一的master主機 - slave主機數量越多，製作副本並分發的成本就越高，同時會增加replication lag的情況`
 
 ---
 Status: #🌱 
