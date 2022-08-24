@@ -94,22 +94,22 @@ off-screen
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React：Offscreen API 具體如何實現其概念？(請以畫面A的元件和畫面B的元件來舉例) ->->-> `在要切換另一個畫面B前，就暫存讓目前畫面A上的元件它們各自的狀態以及他們所對應的實際DOM結構、從目前DOM Tree那 unmount 目前畫面A的元件所對應的實際DOM 結構、mount 畫面B上的元件所對應的實際DOM結構至目前DOM Tree、等到下一次切回畫面A時，就透過暫存的狀態和現有對應DOM結構快速在DOM結構再mount一遍畫面A上的元件，以節省得到狀態和對應DOM結構的時間`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-08-31,7,250-->
 
 #🧠 React：Offscreen API  能帶來什麼好處？ ->->-> `在mount=>unmount的循環場景，藉由切換前的緩存來提高畫面切換的效率`
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React：Offscreen API  會應用什麼場景 ->->-> `多個tab共享同一個顯示元件，並藉由點擊特定tabA來mounting 對應元件A，然後又想點擊另一個tab B的那麼就unmounting 對應元件A以及mounting 對應元件B，接著又點回tab A就又得unmounting 對應元件B和mounting 對應元件A、多個元件A共享著同一個用來顯示其元件對應畫面的元件B：每個元件A都有對應的渲染內容，但只會有一個元件A的對應渲染內容呈現在元件B上。`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-01,8,250-->
 
 #🧠  React：Offscreen API 應用至多個元件都各有一個顯示元件，那麼會帶來什麼好處？ ->->-> `那麼就朝著優化網頁對於瀏覽器的效能`
-<!--SR:!2022-08-24,2,230-->
+<!--SR:!2022-08-30,6,230-->
 
 #🧠 React：為了能添加Offscreen API 來給Component支援，必須要讓Component開發上遵守什麼？  ->->-> `Component 在面對多次的 mount => unmount => mount 的循環中仍然保有原有元件的業務邏輯功能和渲染內容`
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React：在支援Offscreen API的Component中， 目前已知會與這規則起衝突的語法為何 ->->-> `當使用Offscreen API開發Component時，Component上的大部分effects實現會面對同個元件的mount->unmount->mount下保留其功能，但少部份effects實現則會是認為元件只會有一次mount->unmount的，而導致同個元件只要unmount後就銷毀effect，接著再次以緩存來mount的時候就無法正常使用。`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-01,8,250-->
 
 
 #🧠 React：為了確保預計要支援Offscreen API的Component是能夠正常運行effects實現，所以會做什麼檢測？ ->->-> `開發階段中可以添加React.StrictMode元件進行相關檢測`
