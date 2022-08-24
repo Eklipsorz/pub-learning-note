@@ -91,7 +91,7 @@ off-screen
 <!--SR:!2022-08-24,3,250-->
 
 #🧠 React：Offscreen API是什麼樣的概念？  ->->-> `指在要切換另一個畫面B前，能夠暫存目前所顯示的畫面A，並將其畫面移動至人們看不到的地方，以方便渲染其他畫面B，等到要渲染畫面A時，就將以畫面A的暫存內容來快速渲染`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 #🧠 React：Offscreen API 具體如何實現其概念？(請以畫面A的元件和畫面B的元件來舉例) ->->-> `在要切換另一個畫面B前，就暫存讓目前畫面A上的元件它們各自的狀態以及他們所對應的實際DOM結構、從目前DOM Tree那 unmount 目前畫面A的元件所對應的實際DOM 結構、mount 畫面B上的元件所對應的實際DOM結構至目前DOM Tree、等到下一次切回畫面A時，就透過暫存的狀態和現有對應DOM結構快速在DOM結構再mount一遍畫面A上的元件，以節省得到狀態和對應DOM結構的時間`
 <!--SR:!2022-08-24,3,250-->
@@ -106,14 +106,14 @@ off-screen
 <!--SR:!2022-08-24,2,230-->
 
 #🧠 React：為了能添加Offscreen API 來給Component支援，必須要讓Component開發上遵守什麼？  ->->-> `Component 在面對多次的 mount => unmount => mount 的循環中仍然保有原有元件的業務邏輯功能和渲染內容`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 #🧠 React：在支援Offscreen API的Component中， 目前已知會與這規則起衝突的語法為何 ->->-> `當使用Offscreen API開發Component時，Component上的大部分effects實現會面對同個元件的mount->unmount->mount下保留其功能，但少部份effects實現則會是認為元件只會有一次mount->unmount的，而導致同個元件只要unmount後就銷毀effect，接著再次以緩存來mount的時候就無法正常使用。`
 <!--SR:!2022-08-24,3,250-->
 
 
 #🧠 React：為了確保預計要支援Offscreen API的Component是能夠正常運行effects實現，所以會做什麼檢測？ ->->-> `開發階段中可以添加React.StrictMode元件進行相關檢測`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 #🧠 React：為了確保預計要支援Offscreen API的Component是能夠正常運行effects實現，會做React.StrictMode元件進行相關檢測，其檢測內容為？ ->->-> `當在React.StrictMode元件下加入新元件 A 並做完mounting時，React.StrictMode會替該mounting的元件 A暫存其狀態和實際DOM結構，然後再自行unmounting 新元件 A，然後再以暫存內容來再次進行其元件A的mounting。、過程中會檢測其元件上的effect是否正常運作`
 <!--SR:!2022-08-24,3,250-->

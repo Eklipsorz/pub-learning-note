@@ -106,7 +106,7 @@ function ExpenseItem(props) {
 
 
 #🧠 在這裡按鈕綁定點擊事件的事件處理clickHandler，並且預期是透過點擊事件來變更title的內容，結果是不能實現，請問有何解法？ (概念) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `解法1： 透過事件處理來擷取該節點，並更改其內容、解法2：先更改內容，然後以內容更改後的畫面來渲染`
-<!--SR:!2022-08-24,6,248-->
+<!--SR:!2022-09-10,17,248-->
 
 #🧠 在React裡，每個元件在開發上實際綁定著什麼樣資料結構、函式？(提示有三個) ->->-> `能夠渲染其元件樣貌和邏輯的函式、state、props`
 <!--SR:!2022-08-25,4,230-->

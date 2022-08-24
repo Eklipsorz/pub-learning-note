@@ -32,7 +32,7 @@ Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除�
 <!--SR:!2022-08-24,3,250-->
 
 #🧠 React Unmounting 階段會有什麼流程？ ->->-> `componentWillUnmount`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 #🧠 React Unmounting 階段做完componentWillUnmount就會移除嗎 ->->-> `對`
 <!--SR:!2022-08-24,3,250-->
@@ -41,7 +41,7 @@ Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除�
 <!--SR:!2022-08-24,3,250-->
 
 #🧠 React Unmounting 階段的componentWillUnmount函式是做什麼 ->->-> `指定在對應元件的實際DOM節點要從DOM Tree移除之前所要做的事情`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 
 #🧠 React Unmounting 階段的componentWillUnmount函式預設是做什麼 ->->-> `預設沒有任何處理內容`

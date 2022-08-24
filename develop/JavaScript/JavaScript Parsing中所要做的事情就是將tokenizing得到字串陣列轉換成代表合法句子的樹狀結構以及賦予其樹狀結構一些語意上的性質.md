@@ -56,7 +56,7 @@
 
 
 #🧠 JavaScript 編譯時期中的Grammar Parser 是什麼？ ->->-> `主要會解析字串是否為程式語言能夠識別的語法以及是否能與其他文字組裝成合法的statement、expression、declaration`
-<!--SR:!2022-08-24,23,250-->
+<!--SR:!2022-10-24,61,250-->
 
 #🧠 JavaScript 編譯時期中的Grammar Parser 檢測tokenizing 文字，若有問題會是？ ->->-> `若有問題的話，會報錯`
 <!--SR:!2022-08-27,24,250-->

@@ -116,7 +116,7 @@
 
 
 #🧠 如何將被依賴模組載入至IIFE模組下的功能函式使用，假設被依賴模組jQuery是以IIFE所構成且以全域變數來輸出模組，請用程式碼來表示->->-> `(function (window, $) { function changeColor() { console.log(++_count);  $('body').css('background', 'red') } window.module1 = {  // ES6 增強語法 changeColor } })(window, jQuery)`
-<!--SR:!2022-08-24,18,250-->
+<!--SR:!2022-10-08,45,250-->
 
 #🧠 如何在HTML載入以IIFE為主且以全域變數來輸出功能的模組 ->->-> ` <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-=QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>`
 <!--SR:!2022-09-05,28,250-->
