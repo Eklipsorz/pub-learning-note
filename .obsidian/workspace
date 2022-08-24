@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/JavaScript MOC.md",
+            "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/JavaScript MOC.md",
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +97,9 @@
   },
   "active": "76b265dcbad50de9",
   "lastOpenFiles": [
+    "MOC/JavaScript MOC.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "MOC/JavaScript MOC.md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "develop/JavaScript/JavaScript 是出自於網景和微軟的瀏覽器大戰所衍生出來的產品，主張允許使用者能對網頁進行互動並獲得對應互動的效果.md",
     "develop/React/React：將component 視為函式來呼叫，以資料來當函式的參數，最後處理的結果會是對應資料的渲染畫面.md",
