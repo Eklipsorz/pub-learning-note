@@ -86,7 +86,7 @@ React updates DOM and refs 主要用途為：
 
 ## 複習
 #🧠 React Mounting 階段算是生命週期的一部分嗎？ ->->-> `對`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-02,9,250-->
 
 #🧠 React Mounting 階段是什麼？ ->->-> `是每一個元件轉換成對應DOM結構差入至目前DOM Tree進行渲染的階段`
 <!--SR:!2022-09-03,10,250-->
@@ -109,7 +109,7 @@ React updates DOM and refs 主要用途為：
 
 
 #🧠 React Mounting 階段下的render函式是做什麼？ ->->-> `根據實例內容和render上對應元件的內容來解析成Virtual DOM結果`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 #🧠 React Mounting 階段下的React updates DOM and refs函式是做什麼？ ->->-> `- 拿render獲取到的Virtual DOM結果和目前的Virtual DOM結果比對，看差異是如何 - 根據差異來轉換成實際DOM節點來渲染`
 <!--SR:!2022-09-03,10,250-->
@@ -121,14 +121,14 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式主要用途是做什麼？ ->->-> `	- 從該元件的props物件獲取狀態 - 並用獲取到的狀態值更新目前元件的狀態`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-03,10,250-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
 <!--SR:!2022-09-03,10,250-->
 
 
 #🧠 React Mounting 階段下的子階段render有什麼 ->->-> `constructor、getDerivedStateFromProps、render`
-<!--SR:!2022-08-24,3,250-->
+<!--SR:!2022-09-01,8,250-->
 
 #🧠 React Mounting 階段下的子階段pre-commit有什麼 ->->-> `沒`
 <!--SR:!2022-09-03,10,250-->

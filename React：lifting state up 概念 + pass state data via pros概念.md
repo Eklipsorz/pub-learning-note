@@ -40,6 +40,7 @@ So in that parent component which has access to both involved components by lift
 
 ## 複習
 #🧠 Question :: ->->-> ``
+<!--SR:!2022-08-27,3,250-->
 
 ---
 Status: #🌱 
