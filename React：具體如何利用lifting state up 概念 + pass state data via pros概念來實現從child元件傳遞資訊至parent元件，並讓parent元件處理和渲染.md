@@ -8,14 +8,12 @@
 
 
 重點：
-- 在元件間AB本身若沒有parent-child關係的情況下，元件AB不能夠直接互相傳遞資訊至對方元件，目前只允許props概念-由parent元件往child元件傳遞
 - lifting state up 概念： 將特定元件A的狀態往上傳遞至parent元件上
 - lifting state up 實現：將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動
-- lift state up 概念 + pass state data via props 概念： 將特定元件A的狀態往上傳遞至parent元件上，並讓parent元件接收到狀態來修改渲染用的資料，接著觸發渲染透過props往下將新資訊更新至子元件來重新渲染
+- lifting state up 概念 + pass state data via props 概念： 將特定元件A的狀態往上傳遞至parent元件上，並讓parent元件接收到狀態來修改渲染用的資料，接著觸發渲染透過props往下將新資訊更新至子元件來重新渲染
 -  lift state up 概念 + pass state data via props 實現：將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動，接著透過執行parent元件上的setState來依據資料更新以及觸發渲染，觸發後會透過props將新狀態往下傳遞來構築新的child元件和parent
 
-
-
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661350629/blog/react/state/lifting-state-up_props_be8lkl.png)
 
 ### 解析
 
@@ -35,12 +33,19 @@ So in that parent component which has access to both involved components by lift
 這裡指的是app component能夠存取其child元件下面的資訊(props夾帶的資訊)
 
 ## 複習
-#🧠 React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染? ->->-> `	- 若要讓元件AB共享彼此間的狀態並從他們的角度來渲染對方元件，則必須要讓元件AB所擁有的狀態往上提升至他們所共有的parent元件，並且在從parent元件那使用props概念來往下分享給元件AB他們彼此間的狀態 - 換言之，就在parent元件上註冊元件AB所擁有的狀態、對應狀態更新函式，然後藉由props概念接收狀態、函式並分發給元件AB`
+#🧠 React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染? 概念上要如何解決 ->->-> `	 將特定元件A的狀態往上傳遞至parent元件上，並讓parent元件接收到狀態來修改渲染用的資料，接著觸發渲染透過props往下將新資訊更新至子元件來重新渲染`
+<!--SR:!2022-08-27,3,250-->
 
 
-#🧠 Question :: ->->-> ``
-#🧠 Question :: ->->-> ``
-#🧠 Question :: ->->-> ``
+#🧠 React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染? 具體實現是如何？ ->->-> `將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動，接著透過執行parent元件上的setState來依據資料更新以及觸發渲染，觸發後會透過props將新狀態往下傳遞來構築新的child元件和parent`
+<!--SR:!2022-08-27,3,250-->
+
+
+#🧠 React： lifting state up 概念是什麼？ ->->-> `將特定元件A的狀態往上傳遞至parent元件上`
+<!--SR:!2022-08-27,3,250-->
+
+#🧠 React： lifting state up 概念是什麼？->->-> `將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動`
+<!--SR:!2022-08-25,1,230-->
 
 
 ---
