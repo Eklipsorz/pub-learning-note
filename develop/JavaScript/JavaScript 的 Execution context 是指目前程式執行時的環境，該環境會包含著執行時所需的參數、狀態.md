@@ -60,7 +60,7 @@ test(a)
 <!--SR:!2022-09-01,28,230-->
 
 #🧠 JavaScript 引擎於完整的編譯時期(算執行之前的時期)會替EC做什麼？ ->->-> `記憶體分配：將記憶體分配至var變數宣告、函式宣告，其初始值分別為undefined、函式內容、定義建立EC所需的資料：identifier : instance、this、outer reference，將要執行時做(此時算編譯時期)：- 拿建立EC所需的資料去建立EC`
-<!--SR:!2022-08-24,13,246-->
+<!--SR:!2022-09-28,35,246-->
 
 #🧠 請完整說明JavaScript 引擎在編譯時期、快要執行時期、執行時期替EC做了什麼？ ->->-> `JavaScript引擎會於編譯時期：- 記憶體分配：將記憶體分配至var變數宣告、函式宣告，其初始值分別為undefined、函式內容- 定義建立EC所需的資料：identifier : instance、this、outer reference。3. JavaScript引擎會於將要執行時做(此時算編譯時期)： - 拿建立EC所需的資料去建立EC 4. JavaScript引擎在執行時做： - 以目前EC來執行，並根據目前EC狀況來更新EC`
 <!--SR:!2022-08-28,16,246-->
