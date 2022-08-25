@@ -38,10 +38,23 @@ class Week extends React.Component {
 - stateless component  是指元件本身沒有註冊狀態、更新狀態用的函式，但可以透過props去接收其他元件下的狀態
 	- stateless component 被稱之為dumb component、presentational component
 
-## 複習
-#🧠 在React中，stateful component 是什麼？ ->->-> ``
+### stateful && stateless 命名緣由
 
-#🧠 Question :: ->->-> ``
+[[@Stateful2021]] stateful
+> That supports different states, reacting to the same input differently depending on the current state.
+
+[[@Stateless2022]] stateless
+>(computer science) Of a system or protocol, such that it does not keep a persistent state between transactions. 
+
+
+
+
+## 複習
+#🧠 在React中，stateful component 是什麼？ ->->-> `是指元件本身註冊狀態、更新狀態用的函式`
+
+#🧠 在React中，stateless component 是什麼？   ->->-> `是指元件本身沒有註冊狀態、更新狀態用的函式，但可以透過props去接收其他元件下的狀態`
+
+#🧠 在React中，若 stateless component 可以透過props來接收別人更新狀態用的函式，還能叫stateless component嗎？ ->->-> `不能`
 
 
 ---
@@ -53,3 +66,5 @@ Links:
 References:
 [[@ithomeDay06WangYeDeXiaoLingJianComponents]]
 [[@codecademyReactComponentState]]
+[[@Stateful2021]]
+[[@Stateless2022]]

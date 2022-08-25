@@ -16,11 +16,15 @@
         }
       },
       {
-        "id": "c470ab6766a693c6",
+        "id": "4563aaee8976c0f0",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "React：stateful component 是指本身註冊狀態以及對應狀態更新用函式，stateless component則是指本身沒有註冊狀態和沒註冊更新狀態用的函式.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -103,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "76b265dcbad50de9",
+  "active": "4563aaee8976c0f0",
   "lastOpenFiles": [
-    "React：dumb component 本身負責接收資訊來渲染內容的元件，並不負責改變其他元件的渲染內容，smart component是相對於dumb component，會負責控管child component的狀態並根據互動結果來改變child component.md",
     "React：stateful component 是指本身註冊狀態以及對應狀態更新用函式，stateless component則是指本身沒有註冊狀態和沒註冊更新狀態用的函式.md",
+    "React：dumb component 本身負責接收資訊來渲染內容的元件，並不負責改變其他元件的渲染內容，smart component是相對於dumb component，會負責控管child component的狀態並根據互動結果來改變child component.md",
     "MOC/React MOC.md",
     "React：dumb component 本身負責接收資訊來渲染內容的元件，並不負責改變其他元件的渲染內容，smart component是相對於dumb component，會負責控管child component的狀態並根據互動結果來改變child component的渲染內容.md",
     "為何React要使用Redux.md",
