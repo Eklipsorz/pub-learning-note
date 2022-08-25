@@ -213,6 +213,19 @@ setState
 
 
 ## 複習
+#🧠 在React中，controlled component & uncontrolled component 是用來描述著 ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
