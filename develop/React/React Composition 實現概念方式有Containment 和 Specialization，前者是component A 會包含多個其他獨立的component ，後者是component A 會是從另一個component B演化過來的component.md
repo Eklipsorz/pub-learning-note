@@ -191,7 +191,7 @@ function WelcomeDialog() {
 <!--SR:!2022-08-26,9,250-->
 
 #🧠 在React 的 composition 具體實現方法 有哪兩種？->->-> `Containment、Specialization`
-<!--SR:!2022-08-25,8,250-->
+<!--SR:!2022-09-13,19,250-->
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Containment 實現概念是什麼？ ->->-> `component A 會包含多個其他獨立的component`
 <!--SR:!2022-09-12,18,250-->

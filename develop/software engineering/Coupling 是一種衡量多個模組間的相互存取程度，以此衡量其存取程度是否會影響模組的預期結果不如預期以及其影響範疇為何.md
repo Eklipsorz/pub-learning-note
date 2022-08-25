@@ -109,7 +109,7 @@ coupling
 <!--SR:!2022-08-27,27,250-->
 
 #🧠 試著說明第一個下的ABCD模組的coupling情況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png)->->-> `Coupling 就不存在：若所有模組下的所有程式區塊都沒使用其他模組下的任一程式區塊`
-<!--SR:!2022-08-25,26,250-->
+<!--SR:!2022-11-01,68,250-->
 
 #🧠 試著說明第二個下的ABCD模組的coupling情況，說明連接/使用關係就好 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在：若只要模組的程式區塊去存取另一個模組的任一區塊`
 <!--SR:!2022-11-02,69,250-->

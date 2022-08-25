@@ -112,8 +112,8 @@
 ```
 
 其結果會因為CSS解析緣故而
-- 每個DOM Document 都因為載入CSS而建立屬於該文件上的CSSOM Tree，即每個DOM Document都因為CSSOM Tree擁有各自的樣式內容
-- CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併：
+1.  因為每一個DOM文件都各有一份CSSOM，必須要確保每一個樣式的最終內容
+2.  CSS解析方式會是以合併來處理：CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併：
 	- 同樣樣式屬性，就以最新檔案的屬性值為主。
 	- 不同樣式屬性：就直接合併
 
@@ -135,14 +135,14 @@
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-01,7,250-->
 #🧠 不同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/two-css-inside-same-dom_gumjxf.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
 <!--SR:!2022-09-02,8,250-->
 `
 
 
-#🧠 同一個DOM文件出現指定重複樣式的對應內容，為何CSS會將![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png)解析成![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/css-inside-same-dom-result_vhks4m.png)->->-> `每個DOM Document會擁有各自CSSOM、CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併。`
-<!--SR:!2022-08-25,3,250-->
+#🧠 同一個DOM文件出現指定重複樣式的對應內容，為何CSS會將![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png)解析成![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/css-inside-same-dom-result_vhks4m.png)->->-> `1.  因為每一個DOM文件都各有一份CSSOM，必須要確保每一個樣式的最終內容2.  CSS解析方式會是以合併來處理：CSS從上至下去定義每個樣式會有什麼內容，當遇到重複樣式，就會與過去樣式的對應內容合併： - 同樣樣式屬性，就以最新檔案的屬性值為主。 - 不同樣式屬性：就直接合併`
+<!--SR:!2022-08-31,6,250-->
 
 
 
