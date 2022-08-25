@@ -39,6 +39,9 @@ class Week extends React.Component {
 	- stateless component 被稱之為dumb component、presentational component
 
 ## 複習
+#🧠 在React中，stateful component 是什麼？ ->->-> ``
+
+#🧠 Question :: ->->-> ``
 
 
 ---
