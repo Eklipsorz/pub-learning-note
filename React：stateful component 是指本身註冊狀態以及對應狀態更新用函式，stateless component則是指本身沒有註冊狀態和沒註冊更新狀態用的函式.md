@@ -34,7 +34,8 @@ class Week extends React.Component {
 
 
 重點：
-
+- stateful component 概念上是指能夠對狀態進行處理、控管的元件
+- stateless component 概念上是指不對狀態進行處理、控管的元件
 - stateful component 是指元件本身註冊狀態、更新狀態用的函式
 - stateless component  是指元件本身沒有註冊狀態、更新狀態用的函式，也不會控管其他元件的狀態，但可以透過props去接收其他元件下的狀態
 	- stateless component 被稱之為dumb component、presentational component
@@ -56,6 +57,15 @@ class Week extends React.Component {
 
 
 ## 複習
+
+#🧠 stateful 在電腦科學裡的意思？ ->->-> `是指支持不同狀態並依據狀態的不同來進行處理或者能夠對狀態進行處理、控管`
+
+#🧠 stateless 在電腦科學裡的意思？ ->->-> `stateful 的反義詞，主要描述不依據狀態來進行處理`
+
+#🧠 stateful component 概念 是什麼？ ->->-> `是指能夠對狀態進行處理、控管的元件`
+
+#🧠 stateless component 概念 是什麼？ ->->-> `是指不對狀態進行處理、控管的元件`
+
 #🧠 在React中，stateful component 是什麼？ ->->-> `是指元件本身註冊狀態、更新狀態用的函式`
 
 #🧠 在React中，stateless component 是什麼？   ->->-> `是指元件本身沒有註冊狀態、更新狀態用的函式，是指元件本身沒有註冊狀態、更新狀態用的函式，也不會控管其他元件的狀態，但可以透過props去接收其他元件下的狀態`
