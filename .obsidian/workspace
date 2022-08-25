@@ -6,6 +6,7 @@
       {
         "id": "76b265dcbad50de9",
         "type": "leaf",
+        "dimension": 50,
         "state": {
           "type": "markdown",
           "state": {
@@ -16,8 +17,9 @@
         }
       },
       {
-        "id": "36ea1c7da6253c34",
+        "id": "de82aef210482a69",
         "type": "leaf",
+        "dimension": 50,
         "state": {
           "type": "markdown",
           "state": {
@@ -107,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "36ea1c7da6253c34",
+  "active": "de82aef210482a69",
   "lastOpenFiles": [
+    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
+    "React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態來渲染.md",
     "React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染.md",
-    "Untitled.md",
     "React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "為何React要使用Redux.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
     "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
-    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
-    "React：在還沒有使用Redux之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback.md"
+    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md"
   ]
 }
