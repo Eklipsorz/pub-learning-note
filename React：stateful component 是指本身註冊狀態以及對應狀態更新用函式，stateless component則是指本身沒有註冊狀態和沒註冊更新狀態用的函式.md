@@ -46,6 +46,7 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[React：dumb component 本身負責接收資訊來渲染內容的元件，並不負責改變其他元件的渲染內容，smart component是相對於dumb component，會負責控管child component的狀態並根據互動結果來改變child component]]
 References:
 [[@ithomeDay06WangYeDeXiaoLingJianComponents]]
 [[@codecademyReactComponentState]]
