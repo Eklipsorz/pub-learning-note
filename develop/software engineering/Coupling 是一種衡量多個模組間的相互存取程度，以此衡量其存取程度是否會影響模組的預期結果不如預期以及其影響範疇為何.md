@@ -112,7 +112,7 @@ coupling
 <!--SR:!2022-08-25,26,250-->
 
 #🧠 試著說明第二個下的ABCD模組的coupling情況，說明連接/使用關係就好 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在：若只要模組的程式區塊去存取另一個模組的任一區塊`
-<!--SR:!2022-08-25,26,250-->
+<!--SR:!2022-11-02,69,250-->
 
 #🧠 試著說明第三個下的ABCD模組的coupling情況，說明連接/使用關係就好![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在且Coupling 程度較高：若模組間的彼此使用頻繁，就增加改變模組預期結果的可能性，如同模組A和模組C原本就只有A使用C、C和A，但隨著後續開發而使得C多使用A的程式區塊，而這使得A和C之間的Coupling 程度增加`
 <!--SR:!2022-10-22,62,250-->

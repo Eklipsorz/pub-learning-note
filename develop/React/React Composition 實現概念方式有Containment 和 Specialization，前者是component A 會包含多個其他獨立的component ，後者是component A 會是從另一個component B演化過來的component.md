@@ -194,7 +194,7 @@ function WelcomeDialog() {
 <!--SR:!2022-08-25,8,250-->
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Containment 實現概念是什麼？ ->->-> `component A 會包含多個其他獨立的component`
-<!--SR:!2022-08-25,8,250-->
+<!--SR:!2022-09-12,18,250-->
 
 #🧠 在React 的 composition ：Containment 的 概念為component A 會包含多個其他獨立的component，具體會是？ ->->-> `**建立一個component A來包含其他獨立的component B** `
 <!--SR:!2022-08-27,10,250-->
@@ -211,7 +211,7 @@ function WelcomeDialog() {
 
 
 #🧠 React Specialization：當要載入來擁有component B 來當作基礎開發另一個component A，會修改到component B的結構嗎？->->-> `並不會`
-<!--SR:!2022-08-25,8,250-->
+<!--SR:!2022-09-12,18,250-->
 
 #🧠 在React 的 compositio：Specialization的 實現手段會有什麼？ (關係、載入、資訊)->->-> `- props 和 component 之間的關係是：props會被React視作為component 物件的屬性 - 載入特定元件B來讓目前元件A擁有元件B - 元件B 有提供props 來讓元件A以特定資訊來得到不同內容的元件B`
 <!--SR:!2022-08-26,9,250-->
@@ -227,7 +227,7 @@ function WelcomeDialog() {
 
 
 #🧠 React： props.children 會是什麼 ->->-> `- props 會是每個元件對應函式的參數props - 其props.children的children是保留字，會直接指向該元件所包含的內容 -  內容會是多個獨立元件所構成的結構體`
-<!--SR:!2022-08-25,8,250-->
+<!--SR:!2022-09-13,19,250-->
 
 #🧠  React：請說明它使用哪個composition的技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-card_fajbai.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-expense-item_lcxg8f.png)->->-> `使用了containment，在這裡會以Card元件來以標籤包含每一筆消費紀錄(ExpenseItem)的資訊：日期、描述、並且在Card Component 上使用props.children 來找到Card 所包含的多個元件，並放到另一個div 元件上，從React角度來看，會是由Card元件來擁有日期元件、描述元件，並構成混雜其元件的組合物。`
 <!--SR:!2022-08-27,10,250-->

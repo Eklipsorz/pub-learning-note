@@ -226,28 +226,28 @@ batch：
 
 
 #🧠 React Batching 是指什麼技術？ ->->-> `是指React 將N個狀態更新指令(setState)為一組來進行特定處理`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 是指將N個狀態更新指令(setState)為一組來進行特定處理，那麼特定處理會是什麼？跟上面那句結合會是指什麼意思？ >->-> `合併成一個具有特定狀態的狀態更新指令，具體是將N個狀態更新指令(setState)合併成一個特定狀態的狀態更新指令`
 
 
 #🧠 React Batching 是指將N個狀態更新指令(setState)為一組來合併成一個具有特定狀態的狀態更新指令，其特定狀態會是什麼？ ->->-> `具體是N個狀態更新指令所要求改變的狀態之合併後的狀態，若是單一值的狀態，就以最後一個接收到的狀態值為主；若是物件的話，首先會是以空物件來表示，接著將遍歷這n個指令看看狀態上屬性是什麼，接著將屬性納入物件或者直接以最新的屬性值覆蓋上去。`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 好處是什麼？ ->->-> `透過合併來減少大量重複渲染的操作：每一個狀態更新指令(setState)就會引發一次updating的渲染`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ ->->-> `主要依據著isBatchUpdate是否為true來決定是否執行Batching，若false，就不以Batching來執行；若true，就以Batching`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ 會開放在事件處理上嗎？為什麼？ ->->-> `Batching 只開放在事件處理，理由為React可以直接從瀏覽器的事件擷取`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ 會開放在Promise、setTimeOut嗎？為什麼？ ->->-> `Batching 在Promise、setTimeOut中無法被執行且被設定為**isBatchUpdate**為false，理由為React 無法從中控制，除非改寫Promise、setTimeOut`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 在 React 18起的版本會是？ ->->-> `Batching 開放在事件處理、Promise、setTimeOut。 Batching 在盡量將N個狀態更新指令合併的情況下，就自動按照算法判定如何合併`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React automatic batching 是什麼？ ->->-> `不管是不是在事件處理執行N個狀態更新指令，只要在root節點下的子節點都直接自動以Batching來執行`
 <!--SR:!2022-08-26,3,250-->
@@ -258,7 +258,7 @@ batch：
 
 
 #🧠 React automatic batching 啟用條件為何？ ->->-> `automatic batching 只要使用createRoot來建立Virtual DOM的root節點，並於其節點建立子節點就會夠擁有automatic batching 特性`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
 <!--SR:!2022-08-25,3,250-->
@@ -268,11 +268,11 @@ batch：
 <!--SR:!2022-08-25,3,250-->
 
 #🧠 若N個狀態更新指令遍佈在多個生命週期函式下的Promise，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含Promise的多個狀態更新指令來合併`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 
 #🧠 若N個狀態更新指令遍佈在多個生命週期函式下的setTimeOut，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含setTimeOut的多個狀態更新指令來合併`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 
 
@@ -281,33 +281,33 @@ batch：
 
 
 #🧠 在同一個生命週期函式下，那麼如果發生多個事件處理來處理，會如何處理batching？ 全部事件處理都算在一塊做batching? ->->-> `多個事件處理中的每個事件處理都自行做自己內部的batching`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠  在同一個生命週期函式下，那麼如果發生多個夾雜狀態更新指令的Promise，會如何處理batching？  ->->-> `多個夾雜狀態更新指令的Promise都算在一起做batching`
 <!--SR:!2022-08-25,3,250-->
 
 
 #🧠 在同一個生命週期函式下，那麼如果發生多個夾雜狀態更新指令的setTimeOut，會如何處理batching？->->-> `多個夾雜狀態更新指令的setTimeOut都算在一起做batching`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 考慮以下事件處理，請問react batching 會如何處理這內含的case1-case6，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `- case 1 會和 case 3 合併 - case 2 會和 case 5 合併 - case 4 會和 case 6 合併`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-03,9,250-->
 
 
 #🧠  react batching ：考慮以下事件處理，請問多個事件所衍生出來的handler 所衍生batching狀況是如何，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `由於多個事件處理中的每個事件處理都自行做自己內部的batching，所以每個handler都各自合併`
 <!--SR:!2022-08-25,3,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-setTimeOut-example_q337id.png) ->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-promise-example_oc4lrv.png)->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-handler-example_pjtidy.png) ->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 #🧠 React batching：同一個生命週期函式下，多個渲染狀態指令要求的狀態都不一樣，會如何做處理 ->->-> `通常會合併成一個特定狀態的狀態更新指令，特定狀態為多個渲染指令的狀態要求合併之結果`
-<!--SR:!2022-08-25,3,250-->
+<!--SR:!2022-09-04,10,250-->
 
 
 

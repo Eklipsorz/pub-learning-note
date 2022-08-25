@@ -54,7 +54,7 @@
 <!--SR:!2022-09-27,34,230-->
 
 #🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
-<!--SR:!2022-08-25,15,248-->
+<!--SR:!2022-10-05,41,248-->
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
 <!--SR:!2022-09-16,28,248-->
