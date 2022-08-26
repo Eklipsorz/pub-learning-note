@@ -145,20 +145,20 @@ function DoubleIncreaser() {
 
 ## 複習
 #🧠 請問發生按鈕點擊事件後，其狀態會是如何，count渲染又是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `會是1，由於count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值，count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值，第二次執行，也是拿目前的count = 0來做，而得到0 + 1，最後執行的時候，會是以1這個狀態值來更新，並同時只執行一次狀態更新 & 渲染`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 
 #🧠 若要以下面形式![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png)來改造下面的話，解法有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `以callback作為setCount的引數、先處理兩次count疊加的邏輯計算並且以其結果來渲染和更新`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 #🧠 setState 參數為callback，會是如何進行的？->->-> `預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 #🧠 setState 參數為callback，預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值，那麼setState、callback、狀態的執行順序->->-> `setState -> newState = callback(currentState) -> handling with newState`
 <!--SR:!2022-09-05,10,250-->
 
 #🧠 若要以下面形式callback作為setCount的參數，來修改以下count為以每次執行setCount的更新來呼叫setState，那麼如何修改 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png)->->-> `將setCount的參數都設定為(count) => count + 1`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 
 #🧠 請說明當發生點擊事件時，會是如何更新狀態和渲染？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-solution_mbe5uf.png) ->->-> `第一次執行下面時，setCount 會拿目前的狀態值來當作actualCount並進行疊加，而得到1，其1會成為新的目前狀態值。第二次執行類似語法時，setCount會拿目前的狀態值1來當作actualCount並進行疊加，而得到2，其2會成為新的目前狀態值。最後沒setCount等狀態更新指令，就執行目前狀態值2來更新和渲染`
