@@ -67,7 +67,7 @@ XML 在 JSX 語言裡，是算 JavaScript 語法延伸的一部分，所以部�
 
 
 #🧠  React：假若在react element填上{}和在括號內部填上表達式的話，請問若不是在最終確定渲染畫面的階段，表達式可以是什麼型別 ->->-> `若不是在最終確定渲染畫面的階段，可以以JS能接受的型別來傳輸/處理`
-<!--SR:!2022-08-26,10,250-->
+<!--SR:!2022-09-23,28,250-->
 
 
 #🧠 如何將日期、標題、價格這三個資料分離出來？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660148304/blog/react/data-view-separation/before-simple-separation-result_mznm1z.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660148304/blog/react/data-view-separation/simple-separation-result_n7nkqb.png)`

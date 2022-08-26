@@ -188,7 +188,7 @@ function WelcomeDialog() {
 <!--SR:!2022-08-26,9,250-->
 
 #🧠 Containment  命名緣由 ->->-> `containment 是指被包含和包含的行為、過程`
-<!--SR:!2022-08-26,9,250-->
+<!--SR:!2022-09-20,25,250-->
 
 #🧠 在React 的 composition 具體實現方法 有哪兩種？->->-> `Containment、Specialization`
 <!--SR:!2022-09-13,19,250-->
@@ -219,7 +219,7 @@ function WelcomeDialog() {
 
 
 #🧠 React Composition：Containment和Specialization這兩個為何會有類別A會擁有某個類別B的實例 的概念？ ->->-> `- Containment： component A 包含其他獨立的component B，換言之就是component A擁有多個獨立的component B 來構成component A本身 - Specialization：在不修改Component B的結構下，以Component B為基礎來開發成Component A，換言之就是Component A先擁有Component B，並在不修改其結構下來開發。`
-<!--SR:!2022-08-26,9,250-->
+<!--SR:!2022-09-19,24,250-->
 
 #🧠 wrapper component 是什麼？ ->->-> `- 一個會包裹其他元件(component)的component
 <!--SR:!2022-08-27,10,250-->
