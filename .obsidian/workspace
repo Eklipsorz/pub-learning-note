@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ES Module 標準是什麼？",
+                "query": "會有一些方法來獲取資訊",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
