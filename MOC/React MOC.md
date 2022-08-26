@@ -45,7 +45,7 @@
 
 [[setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數]]
 
-
+[[React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重]]
 
 ## props
 [[React：在還沒有使用Redux之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
