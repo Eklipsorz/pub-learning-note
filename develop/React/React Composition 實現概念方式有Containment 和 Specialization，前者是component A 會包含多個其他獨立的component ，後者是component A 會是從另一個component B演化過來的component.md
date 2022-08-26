@@ -185,7 +185,7 @@ function WelcomeDialog() {
 ## 複習
 
 #🧠 Specialization 命名緣由->->-> `specialize 是指朝著特定目標前進，在這裡會是以生物學來說明，生物 **朝著適應環境來演化身體結構**，specialization 則是指 **朝著適應環境來演化身體結構** 的過程、行為`
-<!--SR:!2022-08-26,9,250-->
+<!--SR:!2022-09-17,22,250-->
 
 #🧠 Containment  命名緣由 ->->-> `containment 是指被包含和包含的行為、過程`
 <!--SR:!2022-09-20,25,250-->
@@ -214,7 +214,7 @@ function WelcomeDialog() {
 <!--SR:!2022-09-12,18,250-->
 
 #🧠 在React 的 compositio：Specialization的 實現手段會有什麼？ (關係、載入、資訊)->->-> `- props 和 component 之間的關係是：props會被React視作為component 物件的屬性 - 載入特定元件B來讓目前元件A擁有元件B - 元件B 有提供props 來讓元件A以特定資訊來得到不同內容的元件B`
-<!--SR:!2022-08-26,9,250-->
+<!--SR:!2022-09-18,23,250-->
 
 
 

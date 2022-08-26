@@ -132,7 +132,7 @@ undefined
 ## 複習
 
 #🧠 React：setState 每一次呼叫時，概念會如何執行 ->->-> `會生成以下指定任務內容的非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染，指定任務內容為更新指定狀態值，當沒有再度接收setState時，非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 #🧠 React： setState **每一次呼叫時，會生成非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染** ，若狀態皆為單一值的話，其實際實現為何？->->-> `若狀態是以單一值來儲存的話，就直接拿目前任務的狀態去覆蓋先前任務所記錄的狀態`
 <!--SR:!2022-08-26,3,250-->
@@ -155,10 +155,10 @@ undefined
 <!--SR:!2022-08-26,3,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以單一值來表示，那麼會以何種狀態來渲染和更新狀態？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `4`
-<!--SR:!2022-08-26,3,250-->
+<!--SR:!2022-09-05,10,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
 <!--SR:!2022-08-26,3,250-->
