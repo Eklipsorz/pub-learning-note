@@ -189,7 +189,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 ## 複習
 
 #🧠 getDerviedStateFromPorps、shouldComponentUpdate、更新狀態、render、getSnapshotBeforeUpdate、React updates DOM & refs、componentDidUpdate 會是以什麼形式來表示？ ->->-> `以函式來表示`
-<!--SR:!2022-08-27,4,249-->
+<!--SR:!2022-09-08,12,249-->
 
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> `updating`
