@@ -210,7 +210,6 @@ function Expenses(props) {
 }
 
 export default Expenses;
-
 ```
 
 ## 複習

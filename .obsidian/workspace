@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：conditional content.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React：conditional content.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "9690ef922d5f6d9c",
   "lastOpenFiles": [
+    "React：conditional content.md",
     "React：Keys概念.md",
     "React案例(草稿)：wrong stateless component with setState & stateless component.md",
     "Untitled 1.md",
@@ -105,7 +106,6 @@
     "React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
     "React：form submission 實現.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "React： useState 案例.md",
-    "MOC/React MOC.md"
+    "React： useState 案例.md"
   ]
 }
