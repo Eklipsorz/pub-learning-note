@@ -238,7 +238,7 @@ a * c + b * c // 9
 <!--SR:!2022-08-29,27,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第二個圓括號是做什麼，與前面括號有什麼關係 ->->-> `第一個括號讓系統能將function看待成function expression，而第二個括號則是將expression當作函式來呼叫`
-<!--SR:!2022-08-27,25,250-->
+<!--SR:!2022-11-01,66,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為了解決什麼樣的問題而被提出的？ ->->-> `JavaScript 在 **同一份DOM Document載入多個JS檔案而產生出全域污染問題** 而提出的概念`
 <!--SR:!2022-08-30,28,250-->
@@ -258,7 +258,7 @@ a * c + b * c // 9
 <!--SR:!2022-08-30,28,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
-<!--SR:!2022-08-27,26,250-->
+<!--SR:!2022-11-04,69,250-->
 
 #🧠 要用IIFE來實現模組，對他而言的模組化目標為？ (函式可以重複呼叫誒、函式得宣告才能使用)->->-> `1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成`
 <!--SR:!2022-09-18,32,249-->

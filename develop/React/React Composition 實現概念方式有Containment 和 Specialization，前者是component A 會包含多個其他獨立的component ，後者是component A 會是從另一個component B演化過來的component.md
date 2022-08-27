@@ -200,11 +200,11 @@ function WelcomeDialog() {
 <!--SR:!2022-09-24,28,250-->
 
 #🧠 在React 的 composition：containment 概念為component A 會包含多個其他獨立的component，實現手段會有什麼？ ->->-> `props 和 component 之間的關係是：props會被React視作為component 物件的屬性、利用 props.children 來表示其對應標籤所包含的內容、被包含的內容會是多個獨立的Component`
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-24,28,250-->
 
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Specialization 實現概念是什麼？ ->->-> `Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A`
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-24,28,250-->
 
 #🧠 在React 的 composition ： Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A，具體會是？結構？ ->->-> `- **建立一個component A，其component A會透過載入來擁有一個獨立的component 實例B並以此作為基礎來開發** - 開發過程不會破壞component 實例B結構，但會將component 實例B當作函式呼叫，並夾雜對應資料來當參數來得到 **內容不一樣的的component 實例B**`
 <!--SR:!2022-08-27,10,250-->
@@ -233,7 +233,7 @@ function WelcomeDialog() {
 <!--SR:!2022-08-27,10,250-->
 
 #🧠 React：請說明使用composition的哪個技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-dialog_rx2lo0.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-welcome-dialog_q2cdwu.png)->->-> `使用了specialization，在這裡會有Dialog.js 和 WelcomeDialog.js ，前者是代表通用Dialog元件，後者是經由通用Dialog元件而改造的元件。然而，在這裡並不是選擇繼承，而是打造一個WelcomDialog 這元件擁有通用Dialog 元件，並將特定資訊以attribute輸入給對應Dialog元件的函式來產生不同內容的Dialog元件，接著在不修改擁有的Dialog元件下，添加內容來開發WelcomDialog`
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-24,28,250-->
 
 
 ---
