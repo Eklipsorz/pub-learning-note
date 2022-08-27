@@ -44,7 +44,7 @@
 2.  有時ES module會用在瀏覽器和伺服器端
 3.  每個平台各有自己的方法來解析module specifier
 
-為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來以不同的方式解析
+為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來統一成同個解析的方式
 
 > Until that’s fixed, browsers only accept URLs as module specifiers. They will load the module file from that URL. But that doesn’t happen for the whole graph at the same time. You don’t know what dependencies the module needs you to fetch until you’ve parsed the file… and you can’t parse the file until you fetched it.
 
@@ -196,8 +196,8 @@ module map 主要的用途為：
 #🧠 ES module：module specifier 在每個平台上的specifier 解析都為一樣嗎？為什麼->->-> `並不一樣，具體來說ES module 標準並未說明如何獲取檔案，所以每個平台會以自己平台上所提倡的實解析方式來解析specifier，並了解對應模組哪裡`
 <!--SR:!2022-09-23,30,230-->
 
-#🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> `為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來以不同的方式解析`
-<!--SR:!2022-09-07,11,229-->
+#🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> `為了統一各平台對於module specifier的解析，有人就提出module resolution algorithm，能根據平台來統一成同個解析的方式`
+
 
 #🧠 ES module：以圖中例子來說說明模組的建構階段 ![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png) ->->-> `瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。`
 <!--SR:!2022-09-18,29,248-->
