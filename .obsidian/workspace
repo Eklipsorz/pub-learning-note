@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6889a484438d13fc",
+        "id": "9690ef922d5f6d9c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React： useState 案例.md",
+            "file": "React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "9690ef922d5f6d9c",
+        "id": "a5fe772e50ebc524",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 680
+    "width": 680,
+    "collapsed": true
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -110,9 +111,9 @@
   "active": "9690ef922d5f6d9c",
   "lastOpenFiles": [
     "React： useState 案例.md",
+    "React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
     "React案例(草稿)：wrong stateless component with setState & stateless component.md",
     "MOC/React MOC.md",
-    "React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
     "develop/React/React：stateful component 是指本身註冊狀態以及對應狀態更新用函式，stateless component則是指本身沒有註冊狀態和沒註冊更新狀態用的函式.md",
     "React：stateful component 是指本身註冊狀態以及對應狀態更新用函式，stateless component則是指本身沒有註冊狀態和沒註冊更新狀態用的函式.md",
     "MOC/JavaScript MOC.md",
