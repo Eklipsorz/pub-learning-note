@@ -2,7 +2,13 @@
 
 ## 描述
 
-### 為什麼需要Keys
+### 需要Keys
+
+
+> if you wonder what you do, if you have no unique ID：
+> 1. 別使用map的callback上的第二參數index來當作ID
+> 2. 使用明確且獨特的id
+
 
 
 ### 為什麼需要Keys 案例
