@@ -11,6 +11,31 @@
 
 
 
+> Key 幫助 React 分辨哪些項目被改變、增加或刪除。在 array 裡面的每個 element 都應該要有一個 key，如此才能給予每個 element 一個固定的身份：
+
+
+Keys 主要用途為：
+- 用代表特定資料的識別字去對Virtual DOM和對應的實際DOM結構進行綁定，好方便判別哪些DOM節點對應哪些特定資料是被改變、增加或者移除
+
+只要讓系統能夠判別哪些DOM節點對應哪些特定資料的話，就能讓React針對需要處理的DOM節點來進行，而非是特定範圍內的所有DOM節點來進行
+
+當進行綁定會如同下圖：
+- 每個對應DOM節點都利用id來進行綁定
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661613698/blog/react/dynamic-list-rendering/before-vs-after-with-keys_cedmf3.png)
+
+#### 具體如何使用
+
+在對應component添加key屬性，其屬性值為對應某種資料的識別字：
+```
+<Component key=identifier1 />
+```
+
+identifier1 可以是：
+1. 字串、數字
+2. 建議要使用獨特且不重複
+3. 別使用map所產生的index來搭配
+
+
 ### 為什麼需要Keys 案例
 
 
