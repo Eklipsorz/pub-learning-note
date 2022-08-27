@@ -77,7 +77,7 @@ function Component(props) {
 
 
 #🧠 在代表特定元件A的特定函式中，其參數props對於其元件A會是代表什麼？ ->->-> `props會是被視作為元件物件A的屬性(properies)`
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-24,28,250-->
 
 #🧠 React：請問props概念是什麼？ ->->-> `將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props`
 <!--SR:!2022-09-21,28,250-->

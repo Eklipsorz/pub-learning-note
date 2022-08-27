@@ -207,7 +207,7 @@ function WelcomeDialog() {
 <!--SR:!2022-09-24,28,250-->
 
 #🧠 在React 的 composition ： Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A，具體會是？結構？ ->->-> `- **建立一個component A，其component A會透過載入來擁有一個獨立的component 實例B並以此作為基礎來開發** - 開發過程不會破壞component 實例B結構，但會將component 實例B當作函式呼叫，並夾雜對應資料來當參數來得到 **內容不一樣的的component 實例B**`
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-23,27,250-->
 
 
 #🧠 React Specialization：當要載入來擁有component B 來當作基礎開發另一個component A，會修改到component B的結構嗎？->->-> `並不會`
@@ -222,7 +222,7 @@ function WelcomeDialog() {
 <!--SR:!2022-09-19,24,250-->
 
 #🧠 wrapper component 是什麼？ ->->-> `- 一個會包裹其他元件(component)的component
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-23,27,250-->
 `
 
 
@@ -230,7 +230,7 @@ function WelcomeDialog() {
 <!--SR:!2022-09-13,19,250-->
 
 #🧠  React：請說明它使用哪個composition的技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-card_fajbai.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-expense-item_lcxg8f.png)->->-> `使用了containment，在這裡會以Card元件來以標籤包含每一筆消費紀錄(ExpenseItem)的資訊：日期、描述、並且在Card Component 上使用props.children 來找到Card 所包含的多個元件，並放到另一個div 元件上，從React角度來看，會是由Card元件來擁有日期元件、描述元件，並構成混雜其元件的組合物。`
-<!--SR:!2022-08-27,10,250-->
+<!--SR:!2022-09-24,28,250-->
 
 #🧠 React：請說明使用composition的哪個技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-dialog_rx2lo0.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-welcome-dialog_q2cdwu.png)->->-> `使用了specialization，在這裡會有Dialog.js 和 WelcomeDialog.js ，前者是代表通用Dialog元件，後者是經由通用Dialog元件而改造的元件。然而，在這裡並不是選擇繼承，而是打造一個WelcomDialog 這元件擁有通用Dialog 元件，並將特定資訊以attribute輸入給對應Dialog元件的函式來產生不同內容的Dialog元件，接著在不修改擁有的Dialog元件下，添加內容來開發WelcomDialog`
 <!--SR:!2022-09-24,28,250-->
