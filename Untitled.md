@@ -74,6 +74,34 @@ object 會以{}來表示，其屬性名稱和屬性值會搭配css樣式下的�
 ```
 
 
+value 代表著特定月份的總開支
+label 代表著特定月份的標籤
+maxValue 代表著一年中的最高開支
+
+
+```
+import './Char.css';
+import ChartBar from './ChartBar';
+function Chart(props) {
+  const { dataPoints } = props;
+  return (
+    <div className='chart'>
+      {dataPoints.map((datapoint) => (
+        <ChartBar
+          key={dataPoints.label}
+          value={dataPoints.value}
+          label={dataPoints.label}
+          maxValue={null}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default Chart;
+
+```
+
 
 ```
 import './ChartBar.css';
