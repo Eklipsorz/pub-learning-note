@@ -77,7 +77,7 @@ class Week extends React.Component {
 <!--SR:!2022-08-29,2,230-->
 
 #🧠 在React中，若 stateless component 可以透過props來接收別人更新狀態用的函式，還能叫stateless component嗎？ ->->-> `不能`
-<!--SR:!2022-08-28,2,248-->
+<!--SR:!2022-09-02,5,248-->
 
 
 ---
