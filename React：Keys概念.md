@@ -121,24 +121,24 @@ const DUMMY_EXPENSES = [
 > update all items and replace their content such that it again matches the order of the items in my Array and this is not great. because to React all these items look similar and it only sees that my Array changed that it's not longer than before. And hence it simply renders an additional div and it adds that at the end. And then it simply walks through all the items and updates the content inside of every item to match the Array content again
 
 當新增項目時，觀察到：
-1. 清單會增加一個項目的對應DOM結構
-2. 清單內的第一個項目的內容會是新增項目的內容
-3. 清單內的項目會是依照舊有項目內容往下移動的結果
+1. 清單會增加一個DOM結點
+2. 清單內的第一個DOM節點的內容會是新增項目的內容
+3. 清單內的剩下DOM節點會是依照舊有DOM節點內容往下移動的結果
 
 當發生新增項目時，React的清單實際上是處於生命週期的updating階段，這階段會是：
 1. 比較現在Virtual DOM結構和目前Virtual DOM結構之間的差異
 2. 以差異來轉換成對應實際DOM結構的對應指令
 
 當執行指令時，具體會在清單內
-1. 增加一個清單項目的對應DOM項目
-2. 並對著每個清單項目重新拜訪並依據目前陣列內容來填寫每個項目的內容
+1. 增加一個DOM節點至
+2. 並對著每個DOM節點重新拜訪並依據目前陣列內容來填寫每個項目的內容
 
 
 
 
 預期效果會是：
-1. 新增一個項目並存放最新內容
-2. 將新增項目插入至清單的第一個位置
+1. 新增一個DOM節點並存放最新內容
+2. 將新增的DOM節點插入至清單的第一個位置
 
 就預期效果的實現來說，是無法實現，原因會是由於不知道每個清單項目的對應DOM結構是與哪個資料做綁定，就如同下圖中的before那樣，每個灰球都代表著對應清單的實際DOM節點，React由於在這些節點無法判別哪個節點歸屬於哪個資料，就只好拜訪每個紀錄來填寫項目。
 
@@ -147,6 +147,13 @@ const DUMMY_EXPENSES = [
 所以只要一新增項目，在不清楚哪個清單項目是與哪個狀態進行綁定的情況下，會選擇做：
 1. 新增一個實際DOM節點
 2. 對每個實際DOM節點進行拜訪，然後按照順序填寫資料給這些節點
+
+####
+前提：
+1. 比較現在Virtual DOM結構和目前Virtual DOM結構之間的差異
+2. 以差異來轉換成對應實際DOM結構的對應指令
+
+但由於
 
 #### 造成的問題？
 1. 效能問題：每次新增都需要重新對整份清單渲染，而非針對新增的項目
@@ -182,6 +189,25 @@ const DUMMY_EXPENSES = [
 ```
 
 ## 複習
+#🧠 React：Keys 主要用途是什麼？ ->->-> `用代表特定資料的識別字去對Virtual DOM和對應的實際DOM結構進行綁定，好方便判別哪些DOM節點對應哪些特定資料是被改變、增加或者移除`
+
+#🧠 React：Keys 是用代表特定資料的識別字去對Virtual DOM和對應的實際DOM結構進行綁定，其好處是什麼？ ->->-> `只要讓系統能夠判別哪些DOM節點對應哪些特定資料的話，就能讓React針對需要處理的DOM節點來進行，而非是特定範圍內的所有DOM節點來進行`
+
+
+
+#🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，能從實際DOM結構發現什麼？->->-> `1. 清單會增加一個DOM結點 2. 清單內的第一個DOM節點的內容會是新增項目的內容 3. 清單內的剩下DOM節點會是依照舊有DOM節點內容往下移動的結果
+`
+
+#🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，對於整份清單而言會是處於什麼樣的生命週期？ ->->-> `updating`
+
+#🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，具體會是做什麼來實現新元素的渲染？(不用談論結構) ->->-> `1. 增加一個DOM節點至 2. 並對著每個DOM節點重新拜訪並依據目前陣列內容來填寫每個項目的內容`
+
+
+#🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，預期效果會是如何？ ->->-> `1. 新增一個DOM節點並存放最新內容 2. 將新增的DOM節點插入至清單的第一個位置`
+
+
+#🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，是新增DOM項目至清單並且重新渲染整份清單，為何不是針對新增的項目來渲染？ ->->-> `原因會是由於不知道每個清單項目的對應DOM結構是與哪個資料做綁定`
+
 
 
 ---
