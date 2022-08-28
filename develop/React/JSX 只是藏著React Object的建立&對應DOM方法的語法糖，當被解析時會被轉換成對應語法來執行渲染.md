@@ -195,7 +195,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2022-08-28,10,250-->
 
 #🧠 JSX 實際上包裝了什麼來做成語法糖？ ->->-> `建立&對應Virtual DOM的React原生方法`
-<!--SR:!2022-08-28,10,250-->
+<!--SR:!2022-09-25,28,250-->
 
 #🧠 當系統解析JSX語法，會做什麼樣的轉換？->->-> `自動載入react import React from 'react'; 2. 轉換成React object的建立&對應DOM方法來得到對應畫面，比如
 <!--SR:!2022-08-28,10,250-->
@@ -206,7 +206,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2022-08-28,10,250-->
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
-<!--SR:!2022-08-28,10,250-->
+<!--SR:!2022-09-25,28,250-->
 
 #🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
 <!--SR:!2022-08-28,10,250-->
