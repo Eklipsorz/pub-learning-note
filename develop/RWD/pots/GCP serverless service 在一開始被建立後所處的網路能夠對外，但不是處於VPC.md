@@ -9,7 +9,7 @@
 ## 複習
 
 #🧠 Google Cloud Platform：請畫圖說明是Serverless service 一被建立時的所處的網路會是對外使用以及對內使用嗎？->->-> `當Serverless service 一被建立時的所處的網路是可以對外使用，且並沒有與VPC的任何子網域進行連接，使用者可以透過外部網路來存取以及使用GCP下的Serverless service，如App Engine、Cloud Run 、Cloud Functions`
-<!--SR:!2022-08-28,32,210-->
+<!--SR:!2022-11-05,69,210-->
 
 
 ---

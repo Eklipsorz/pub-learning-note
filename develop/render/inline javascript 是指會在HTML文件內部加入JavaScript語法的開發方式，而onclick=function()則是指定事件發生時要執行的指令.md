@@ -43,7 +43,7 @@ inline ：
 
 
 #🧠 inline javascript 是什麼？ ->->-> `指會在夾雜其他內容的文件加入JavaScript語法的開發方式`
-<!--SR:!2022-08-28,9,250-->
+<!--SR:!2022-09-21,24,250-->
 
 #🧠 inline javascript 是指會在夾雜其他內容的文件加入JavaScript語法的開發方式，那麼文件通常會是指？ 整體組合在一起就是？->->-> `HTML，inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式`
 <!--SR:!2022-09-13,18,250-->
@@ -68,7 +68,7 @@ inline ：
 <!--SR:!2022-08-29,10,250-->
 
 #🧠 解釋一下瀏覽器和JS引擎如何處理？ \<div onclick="function();"\> \<\/div\> ->->-> `只要經由瀏覽器的JS引擎解析，就是告知引擎發生點擊事件時就執行function()`
-<!--SR:!2022-08-28,9,250-->
+<!--SR:!2022-09-22,25,250-->
 
 #🧠 \<div onclick="function();"\> \<\/div\> 和 \<div onclick="function"\> \<\/div\> 這兩者有啥差別->->-> `前者是事件發生時就執行function()；後者則是事件發生時就執行function`
 <!--SR:!2022-09-11,16,250-->
