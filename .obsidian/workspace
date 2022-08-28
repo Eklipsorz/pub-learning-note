@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：conditional content.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "2c21a286780ee262",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
+            "file": "develop/React/React：當元件因為conditional rendering集中於同一個元件而變得臃腫，可以試著將負責處理condition rendering的部分抽離出成一個獨立元件，並讓原本元件去載入獨立元件.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React：conditional content.md",
+                "file": "develop/React/React：當元件因為conditional rendering集中於同一個元件而變得臃腫，可以試著將負責處理condition rendering的部分抽離出成一個獨立元件，並讓原本元件去載入獨立元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +97,15 @@
   },
   "active": "4c71b27b092b5abe",
   "lastOpenFiles": [
+    "MOC/React MOC.md",
+    "MOC/Database MOC.md",
+    "develop/React/React：當元件因為conditional rendering集中於同一個元件而變得臃腫，可以試著將負責處理condition rendering的部分抽離出成一個獨立元件，並讓原本元件去載入獨立元件.md",
+    "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
+    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+    "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
     "develop/React/React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
     "develop/React/React：stateful component 是指本身註冊狀態以及對應狀態更新用函式，stateless component則是指本身沒有註冊狀態和沒註冊更新狀態用的函式.md",
-    "React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
-    "React：conditional content.md",
-    "Untitled 2.md",
-    "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
     "為何React要使用Redux.md",
-    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
-    "React：hook.md",
-    "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md"
+    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md"
   ]
 }
