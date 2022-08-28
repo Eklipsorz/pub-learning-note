@@ -6,7 +6,7 @@
 
 重點：
 - condition content 是根據執行情況來調整渲染內容的技術
--   具體有幾種形式：
+-  具體有幾種形式：
 	1. 使用 條件式 ? 滿足條件式會有的渲染內容 :  不滿足下會有的渲染內容 來構成
 	2. 使用 兩個條件式 && 滿足條件式會有的渲染內容  來構成
 	3. 從渲染層面移除條件判斷，在元件的業務邏輯下設定條件來指定要輸出的內容，並於渲染層級以輸出結果來渲染
@@ -212,6 +212,9 @@ function Expenses(props) {
 export default Expenses;
 ```
 
+
+
+
 ## 複習
 
 
@@ -220,4 +223,5 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容]]
 References:
