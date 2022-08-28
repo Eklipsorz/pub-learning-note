@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "9690ef922d5f6d9c",
+        "id": "4c71b27b092b5abe",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：Keys概念.md",
+            "file": "Untitled.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "9dd01d3e55528ec4",
+        "id": "2c21a286780ee262",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React：Keys概念.md",
+            "file": "Untitled.md",
             "mode": "source",
             "source": false
           }
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224
+    "width": 341
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React：Keys概念.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9dd01d3e55528ec4",
+  "active": "4c71b27b092b5abe",
   "lastOpenFiles": [
     "Untitled 2.md",
+    "為何React要使用Redux.md",
+    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
     "React：hook.md",
     "JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "develop/JavaScript/javascript - function 語法有分為function declaration 、function expression.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "React：conditional content.md",
-    "Untitled.md",
-    "React：Keys概念.md",
-    "React：form submission 實現.md"
+    "Untitled.md"
   ]
 }

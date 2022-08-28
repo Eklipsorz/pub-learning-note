@@ -3,9 +3,14 @@
 
 ## 描述
 
+渲染部分{expression}中的expression是指陣列的話，React會如何解析？
+1. React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容
+
 
 ### JSX 中{} 遇上陣列時
 > as array of JSX elements as part of your JSX code, react would simply render elements side by side
+
+
 
 
 JSX {}內 是以陣列來表示的話(如下)，
@@ -98,8 +103,19 @@ rendering content under certain conditions
 
 
 ## 複習
+#🧠 React：渲染部分{expression}中的expression是指陣列的話，React會如何解析？->->-> `React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容`
+
 #🧠 Question :: ->->-> ``
-<!--SR:!2022-08-30,3,250-->
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 

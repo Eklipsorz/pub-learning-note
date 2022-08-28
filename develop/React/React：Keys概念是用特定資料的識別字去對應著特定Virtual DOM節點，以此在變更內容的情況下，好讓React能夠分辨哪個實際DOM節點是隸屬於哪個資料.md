@@ -35,6 +35,8 @@ identifier1 可以是：
 2. 建議要使用獨特且不重複
 3. 別使用map所產生的index來搭配
 
+#### Keys 概念的適用場景
+1. 開發清單的CRUD
 
 ### 為什麼需要Keys 案例
 
@@ -148,12 +150,12 @@ const DUMMY_EXPENSES = [
 1. 新增一個實際DOM節點
 2. 對每個實際DOM節點進行拜訪，然後按照順序填寫資料給這些節點
 
-####
-前提：
-1. 比較現在Virtual DOM結構和目前Virtual DOM結構之間的差異
-2. 以差異來轉換成對應實際DOM結構的對應指令
+#### 為什麼React 不知道每個清單項目的對應DOM結構是與哪個資料做綁定
 
-但由於
+1. Virtual DOM節點 預設會對應著實際DOM節點
+2. 資料 預設並不會對應Virtual DOM節點
+
+
 
 #### 造成的問題？
 1. 效能問題：每次新增都需要重新對整份清單渲染，而非針對新增的項目
@@ -193,6 +195,9 @@ const DUMMY_EXPENSES = [
 
 #🧠 React：Keys 是用代表特定資料的識別字去對Virtual DOM和對應的實際DOM結構進行綁定，其好處是什麼？ ->->-> `只要讓系統能夠判別哪些DOM節點對應哪些特定資料的話，就能讓React針對需要處理的DOM節點來進行，而非是特定範圍內的所有DOM節點來進行`
 
+#🧠 React：當對著Virtual DOM設定Keys，那麼其實際DOM節點會是？ ->->-> `也會因此對應著特定資料。`
+
+#🧠 React：Keys概念的適用場景為何？ ->->-> `開發清單的CRUD`
 
 
 #🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，能從實際DOM結構發現什麼？->->-> `1. 清單會增加一個DOM結點 2. 清單內的第一個DOM節點的內容會是新增項目的內容 3. 清單內的剩下DOM節點會是依照舊有DOM節點內容往下移動的結果
@@ -208,6 +213,25 @@ const DUMMY_EXPENSES = [
 
 #🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，是新增DOM項目至清單並且重新渲染整份清單，為何不是針對新增的項目來渲染？ ->->-> `原因會是由於不知道每個清單項目的對應DOM結構是與哪個資料做綁定`
 
+#🧠 React：未使用Keys之前，為什麼React 不知道每個清單項目的對應DOM結構是與哪個資料做綁定->->-> `Virtual DOM節點 預設會對應著實際DOM節點、資料 預設並不會對應Virtual DOM節點`
+
+#🧠 React：未使用Keys之前，在面對React 不知道每個清單項目的對應DOM結構是與哪個資料做綁定，React如何實現新增項目至清單的？ ->->-> `直接新增一個DOM節點，並且對每個實際DOM節點進行拜訪，然後按照順序填寫資料給這些節點`
+
+
+#🧠 React：未使用Keys之前，一份4個元素的清單項目已經插入至實際DOM結構，那麼對著其清單加入新元素時，會有什麼潛在問題嗎？ ->->-> ` 效能問題：每次新增都需要重新對整份清單渲染，而非針對新增的項目、原有DOM節點上的狀態註冊會繼續保留在原有DOM節點上，不會根據實際轉換的位置來重新撤銷和註冊`
+
+
+#🧠 React：未使用Keys之前會有潛在問題之一：原有DOM節點上的狀態註冊會繼續保留在原有DOM節點上，不會根據實際轉換的位置來重新撤銷和註冊，舉例說明一下 ->->-> `以兩個項目內容的清單來說明，其中第一個項目Toilet Paper被註冊了特定狀態，那麼就表示對應該內容的第一個DOM節點會註冊那個狀態1，而當新資料進來時，第一個DOM節點內容會是新資料，而第二個DOM節點內容才是Toilet Paper，其中狀態1仍註冊在第一個DOM節點，而非轉移至第二個DOM節點。`
+
+
+#🧠 React：最左邊是要插入的資料，Before是實際建立的DOM節點，目前按照順序填入資料，After 是使用Keys技術，請詳細說明使用之後的概念![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661613698/blog/react/dynamic-list-rendering/before-vs-after-with-keys_cedmf3.png) ->->-> ``
+
+
+#🧠 React：如何使用Keys概念至Virtual DOM節點上？ 語法形式如何？->->-> `在對應component添加key屬性，其屬性值為對應某種資料的識別字：<Component key=identifier1 />`
+
+#🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1 主要是什麼？ 可填入什麼 ->->-> `主要是每個資料的識別字，可以填入字串、數字`
+
+#🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1  使用map所產生的index來搭配 會有什麼問題？ ->->-> `會因為index並不會根據資料而跟著變動，只是按照順序分配，所以仍會有效能、狀態註冊問題`
 
 
 ---
