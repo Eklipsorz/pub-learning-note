@@ -131,6 +131,7 @@ export default Expenses;
 
 
 #🧠  React：試著將下面的condition rendering抽離出成獨立元件來呈現 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661693270/blog/react/conditional-rendering/conditional-rendering-before-example_o3pacr.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661693269/blog/react/conditional-rendering/conditional-rendering-after-ExpenseList.js_s4dqvd.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661693269/blog/react/conditional-rendering/conditional-rendering-after-expenses.js_fcd1ko.png)` `
+<!--SR:!2022-09-01,3,250-->
 
 
 
