@@ -269,7 +269,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-08-31,8,250-->
 
 #🧠 react 生命週期中會用到的componentDidUpdate函式 是會做什麼？ ->->-> `主要指定在更新對應元件的畫面後要做些什麼`
-<!--SR:!2022-08-29,6,230-->
+<!--SR:!2022-09-12,14,230-->
 
 #🧠 react 生命週期中會用到的 componentDidUpdate函式採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
 <!--SR:!2022-09-01,9,250-->

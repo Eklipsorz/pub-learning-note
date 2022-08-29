@@ -1,4 +1,5 @@
 ## 描述
+[[@axinRedisFenSanShiSuoYi]]
 > 為什麼redis可以實現分散式鎖呢？
 > 我們以購票舉例，購票視窗前的這個鎖，是每位旅客都可以看到的。
 > 這裡我們可以得出一個結論，一把鎖首先要具有的屬性是：想要獲得鎖的人都可以看到。
@@ -129,3 +130,4 @@ Status:
 Tags:
 Links:
 References:
+[[@axinRedisFenSanShiSuoYi]]
