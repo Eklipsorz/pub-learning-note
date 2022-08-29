@@ -12,10 +12,10 @@
 
 
 重點：
-- Specificity 瀏覽器用來從眾多候選樣式宣告(CSS declaration)中挑出與指定元件最為相關的，而挑出來的declaration所擁有的屬性值會被採用至元件上
-- 
+- 由於每個元件A下會有多個selector 來指定元件A要什麼樣的外表，所以必須要有算法去從中選一個selector來表明元件A要什麼樣的外表 或者 在眾多selector中，哪一個declaration應該要被採用至元件A
+- Specificity 算法 則是在眾多selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A
 ### CSS declaration
-
+[[一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block]]
 
 ### Specificity 如何計算
 [[@mdnSpecificityCSSCascading]]
@@ -23,6 +23,11 @@
 
 > The specificity algorithm is basically a three-column value of three categories or weights - ID, CLASS, and TYPE - corresponding to the three types of selectors. The value represents the count of selector components in each weight category and is written as ID - CLASS - TYPE. The three columns are created by counting the number of selector components for each selector weight category in the selectors that match the element.
 
+
+
+重點：
+- Specificity 是一種算法，主要會用權重
+- 每一個declaration 會擁有三種欄位值來分別代表著同樣屬性名稱
 
 ### Specificity
 specificity
@@ -43,5 +48,6 @@ Status: #🌱
 Tags:
 [[CSS]]
 Links:
+[[一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block]]
 References:
 [[@mdnSpecificityCSSCascading]]
