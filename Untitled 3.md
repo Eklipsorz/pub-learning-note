@@ -3,15 +3,17 @@
 ## 描述
 
 [[@mdnSpecificityCSSCascading]]
-> Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element. The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element.
+> Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element. 
+> 
+> The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element.
 
 
 
 
 
 重點：
-- Specificity 瀏覽器用來從眾多候選樣式宣告(CSS declaration)中
-
+- Specificity 瀏覽器用來從眾多候選樣式宣告(CSS declaration)中挑出與指定元件最為相關的，而挑出來的declaration所擁有的屬性值會被採用至元件上
+- 
 ### CSS declaration
 
 

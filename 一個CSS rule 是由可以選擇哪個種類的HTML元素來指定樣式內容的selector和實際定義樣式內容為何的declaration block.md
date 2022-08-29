@@ -39,6 +39,7 @@
 
 
 重點：
+- CSS set 是由多個 CSS rule所組成
 - CSS rule 主要用作定義選擇到的HTML 元素會有什麼樣的樣式內容
 - selector 部分是用來選擇哪個種類的HTML 元素或者HTML DOM節點
 - 一個 declaration 是由一個屬性名稱(property)、屬性值(property value)、分號(;)，比如說color是屬性名稱、red是屬性值，屬性名稱和屬性值之間會有:，最後再來是分號
