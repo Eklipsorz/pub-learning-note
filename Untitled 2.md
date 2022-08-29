@@ -19,7 +19,7 @@ it would affect any element on the entire page
 ### 證明：預設下，元件所載入的css會是以全域來進行載入
 
 實際CourseGoalItem這元件載入的css是CourseGoalItem/CourseGoalItem.css，但
-實際上
+實際上另一個CourseInput.css
 
 CourseGoalItem/CourseGoalItem.css：
 ```
@@ -45,3 +45,8 @@ CourseInput/CourseInput.css：
   cursor: pointer;
 }
 ```
+
+
+具體是由webpack來確定css載入順序或者決定css樣式對應內容的先後順序
+順序
+ App.js -> CourseInput.css -> CourseGoalItem.css
