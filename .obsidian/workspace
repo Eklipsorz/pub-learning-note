@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
+            "file": "Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
+                "file": "Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "4c71b27b092b5abe",
   "lastOpenFiles": [
-    "原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
+    "(假設)JavaScript 並不會等待CSSOM 建立完才執行.md",
+    "Untitled 2.md",
     "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
+    "原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
     "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
     "develop/React/React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "React：form submission 實現.md",
     "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
-    "redis 分散式鎖 - 上鎖.md",
-    "React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
-    "React：chart 案例.md"
+    "redis 分散式鎖 - 上鎖.md"
   ]
 }
