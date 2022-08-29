@@ -78,7 +78,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 <!--SR:!2022-08-30,17,248-->
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？->->-> `每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行`
-<!--SR:!2022-08-29,16,248-->
+<!--SR:!2022-10-08,40,248-->
 
 
 #🧠 假設有兩個HTML檔案，裡面有各自JS腳本程式碼，請問他們的全域變數會是共享的？ ->->-> `並不會，因為每個HTML檔案都會被解析成各自不同的window物件，而每個window物件會構成不同的GEC，這兩個檔案的全域環境是不同，且兩者的變數並不會共享的`

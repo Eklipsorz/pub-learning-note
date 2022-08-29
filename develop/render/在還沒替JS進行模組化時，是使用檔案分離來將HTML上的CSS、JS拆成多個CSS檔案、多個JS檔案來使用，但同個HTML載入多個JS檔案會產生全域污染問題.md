@@ -63,7 +63,7 @@
 
 
 #🧠  網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，發生場景是在哪？為什麼會發生？  ->->-> `至於發生場景是在同一個DOM Document調用多個JS檔案`
-<!--SR:!2022-08-29,28,250-->
+<!--SR:!2022-11-10,73,250-->
 
 #🧠 網頁開發在還沒替JS進行模組化為主的開發時期，最主要是做了CSS、HTML、JS這三者間的檔案分離，但發生JS全域環境上的作用域污染問題，請問多個DOM Document間會不會發生全域污染 ->->-> `由於每個DOM Document會在首次執行JS前建立window物件而從而構成GEC，接著同一份的JS就用該GEC延續著，所以每個DOM Document 會是 每個獨立的JS全域環境，所以多個DOM Document也就因為各有自己的GEC而不互相影響。`
 <!--SR:!2022-09-10,22,250-->
@@ -79,7 +79,7 @@
 
 
 #🧠 假設有三個JS檔案，分別叫做xxx1、xxx2、xxx3，而它們對應的程式碼分別為jscode1、jscode2、jscode3，這些JS檔案會被一個DOM Document 給載入，請問實際上他們是如何被瀏覽器執行的？能否畫個圖表示 ->->-> `首先會先執行xxx1之前會先建立Window物件以及對應的GEC，接著後續的xxx2、xxx3全會以相同的GEC來執行並刷新 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658155529/blog/javascript/html/before-js-module_quixaq.png)`
-<!--SR:!2022-08-29,28,250-->
+<!--SR:!2022-11-11,74,250-->
 
 
 #🧠  假設有三個JS檔案，分別叫做xxx1、xxx2、xxx3，而它們對應的程式碼分別為jscode1、jscode2、jscode3，這些JS檔案會被一個DOM Document 給載入，若這些jscode會使用著共同都會有的變數名稱作為變數，那麼會發生什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658155529/blog/javascript/html/before-js-module_quixaq.png) ->->-> `很有可能會使這些jscode的預期不如預期，最後使得整份Document下的JS結果也跟著不如預期。`

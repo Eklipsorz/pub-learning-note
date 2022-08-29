@@ -127,7 +127,7 @@ hook 名詞：
 
 
 #🧠 在電腦科學裡，after部分的Module C是什麼？做什麼用？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660573336/blog/react/hook/hook-before-after_gnjt9w.png) ->->-> `模組C會被稱之為hook function，負責攔截、收集資料、根據攔截結果來決定繼續讓模組AB能以原有邏輯(沒有hook下)服務著對方或者改變模組呼叫的結果。`
-<!--SR:!2022-08-29,10,250-->
+<!--SR:!2022-09-26,28,250-->
 
 
 ---

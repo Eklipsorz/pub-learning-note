@@ -198,6 +198,7 @@ module map 主要的用途為：
 <!--SR:!2022-09-23,30,230-->
 
 #🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> ` module resolution algorithm 是每個平台主要用來解析module specifier所在的算法`
+<!--SR:!2022-08-31,2,241-->
 
 
 
@@ -227,7 +228,7 @@ module map 主要的用途為：
 <!--SR:!2022-09-29,36,246-->
 
 #🧠 ES module：具體的dynamic import是什麼？ (promise) ->->-> `import 為promise，建立一個工作來向對系統發出module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject`
-<!--SR:!2022-08-29,16,227-->
+<!--SR:!2022-10-04,36,227-->
 
 #🧠  ES module：具體的dynamic import形式會是什麼？ ->->-> `import(module_path/module1)`
 <!--SR:!2022-09-15,28,249-->
