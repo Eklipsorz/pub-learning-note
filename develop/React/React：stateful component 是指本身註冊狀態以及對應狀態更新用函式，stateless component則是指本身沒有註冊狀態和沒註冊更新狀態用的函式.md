@@ -74,7 +74,7 @@ class Week extends React.Component {
 <!--SR:!2022-09-01,4,248-->
 
 #🧠 在React中，stateless component 是什麼？   ->->-> `是指元件本身沒有註冊狀態、更新狀態用的函式，是指元件本身沒有註冊狀態、更新狀態用的函式，也不會控管其他元件的狀態，但可以透過props去接收其他元件下的狀態`
-<!--SR:!2022-08-29,2,230-->
+<!--SR:!2022-09-03,5,230-->
 
 #🧠 在React中，若 stateless component 可以透過props來接收別人更新狀態用的函式，還能叫stateless component嗎？ ->->-> `不能`
 <!--SR:!2022-09-02,5,248-->

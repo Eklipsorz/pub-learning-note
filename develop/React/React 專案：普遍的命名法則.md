@@ -47,7 +47,7 @@ const clickHandler = () => {
 <!--SR:!2022-09-14,19,250-->
 
 #🧠 Upper Camel Case 是怎麼樣的命名法？ ->->-> `每一個單字的首字母都是大寫，剩下皆為小寫`
-<!--SR:!2022-08-29,10,250-->
+<!--SR:!2022-09-26,28,250-->
 
 
 #🧠 請試著用lastname來舉一個upper camel case的例子？ ->->-> `LastName`
@@ -57,7 +57,7 @@ const clickHandler = () => {
 <!--SR:!2022-08-29,10,250-->
 
 #🧠 請試著用lastname來舉一個lower camel case的例子？ ->->-> `lastName`
-<!--SR:!2022-08-29,10,250-->
+<!--SR:!2022-09-26,28,250-->
 
 ---
 Status: #🌱 
