@@ -12,8 +12,7 @@
 
 
 重點：
-- 由於每個元件A下會有多個selector 來指定元件A要什麼樣的外表，多少會有發生衝突的屬性或者沒有發生衝突的屬性，沒發生衝突的屬性皆會合併成元件A會有的屬性，比如説 以下元件會有兩個selector指向它，分別是p和hightlight，這兩個selector所指定的屬性皆沒衝突，所以就直接合併。
-
+- Specificity 算法 是在眾多selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突。
 `<P class="highlight">這個段落將被顯示為黃底紅字粗體。</P>`
 
 ```
@@ -27,6 +26,7 @@ h2{
     color: red;
     background: white;
 }
+
 .highlight{
     color: red;
     background: yellow;
@@ -34,9 +34,6 @@ h2{
 }
 ```
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661802724/blog/cssTag/css-merge-example_ms662h.png)
-
-- 而若多個指向同個元件A的selector都有起衝突的屬性，如都指定color為什麼顏色，這時會採用Specificity算法
-- Specificity 算法 則是在眾多selector指向同一個元件A的情況下，決定哪一個起衝突的/無法明確的declaration要被採用至元件A
 ### CSS declaration
 [[一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block]]
 
@@ -49,8 +46,12 @@ h2{
 
 
 重點：
-- Specificity 是一種算法，主要會用權重來衡量每個
-- 每一個declaration 會擁有三種欄位值來分別代表著同樣屬性名稱
+- Specificity 是一種算法，主要會用權重來衡量每個declaration 
+- 每一個declaration的權重是使用三種欄位值來表示，分別為如下，主要會依據著declaration所在的selector 是用什麼形式來表示
+	- id : class : type
+	- id 表示目前declaration 所在的 selector 有使用 id 來描述 selector 的具體程度，會用數字表示
+	- class 表示目前declaration 所在的 selector 有使用 class 來描述 selector 的具體程度，會用數字表示
+	- type 表示目前declaration 所在的 selector 有使用 type 來描述 selector 的具體程度，會用數字表示
 
 ### Specificity
 specificity
