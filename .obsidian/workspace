@@ -6,24 +6,22 @@
       {
         "id": "4c71b27b092b5abe",
         "type": "leaf",
-        "dimension": 63.23417238749046,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JavaScript 會等待CSSOM 建立完才執行.md",
+            "file": "Untitled 4.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "bb609f6a8db29949",
+        "id": "820fb7c7c873414e",
         "type": "leaf",
-        "dimension": 36.76582761250953,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JavaScript 會等待CSSOM 建立完才執行.md",
+            "file": "Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript 會等待CSSOM 建立完才執行.md",
+                "file": "Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4c71b27b092b5abe",
+  "active": "820fb7c7c873414e",
   "lastOpenFiles": [
-    "(草稿)分散式鎖.md",
     "JavaScript 會等待CSSOM 建立完才執行.md",
+    "Untitled 4.md",
+    "(草稿)分散式鎖.md",
     "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "Untitled 3.md",
     "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
     "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
-    "Untitled 2.md",
-    "React：form submission 實現.md"
+    "Untitled 2.md"
   ]
 }

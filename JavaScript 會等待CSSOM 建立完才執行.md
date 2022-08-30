@@ -32,6 +32,14 @@
 > 原因是，**浏览器在构建 CSSOM 的过程中，不会渲染任何已处理的内容。即便 DOM 已经解析完毕了，只要 CSSOM 不没构建好，页面也不会显示内容。**
 
 
+重點：
+- 當瀏覽器的HTML 解析HTML內容，若發現 link標籤或者style標籤時，如果是指定CSS檔案，就會生成非同步任務A去負責載入CSS檔案、解析其內容轉成CSSOM，而C
+-  CSSOM的構建任務 本身不會阻塞DOM的建立，但會阻塞瀏覽器後續的渲染內容任務
+- 原本從HTML解析成DOM之後，就會執行渲染內容的任務(layout & paint)：
+	- 若HTML解析成DOM完成之後，CSSOM還未建立完成，就會阻塞渲染任務，直到CSSOM建立完成
+	- 若HTML解析成DOM完成之後，CSSOM也跟著建立完成，就會順勢執行渲染任務。
+
+
 #### 閃爍
 > **只有当我们遇到 link 标签或者 style 标签时，才会构建CSSOM**，所以如果 link 标签之前有dom元素，当加载css发生阻塞时，浏览器会将前面已经构建好的DOM元素渲染到屏幕上，以减少白屏的时间。比如下面这样：
 
@@ -48,6 +56,10 @@
 >
 > 为了避免页面闪烁，通常 link 标签都放在head中。
 
+重點：
+- 若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面
+- 若接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果
+- 若要減緩閃爍的效果，可以先把link標籤或者style標籤都放在所有DOM節點之前，比如head標籤內部。
 
 ###  CSSOM阻塞
 
@@ -76,9 +88,11 @@
 </html>
 ```
 
+重點：
+- CSSOM的建構任務會阻塞JS執行
+- 由於JS本身會修改DOM 和 CSSOM
 
-
-
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661871513/blog/cssTag/css-blocking/standard-css-block-js_m6u3pj.png)
 
 ## 複習
 
@@ -98,3 +112,4 @@ Tags:
 Links:
 References:
 [[@ithome30TianXueHuiWeb]]
+https://juejin.cn/post/6984658863735701517
