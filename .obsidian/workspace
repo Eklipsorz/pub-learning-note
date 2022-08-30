@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6a6d9ab65ae8e2e6",
+        "id": "224f4ae5b1f58443",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "selector",
+                "query": "inline style",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6a6d9ab65ae8e2e6",
+  "active": "224f4ae5b1f58443",
   "lastOpenFiles": [
+    "inline style 是在HTML內容標籤形式上所夾雜的一組特定樣式組合.md",
+    "React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
     "Untitled 3.md",
-    "develop/render/id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類.md",
     "(草稿)分散式鎖.md",
-    "develop/render/每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：type selector、id selector、class selector.md",
+    "原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
+    "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
+    "develop/render/每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：universal selector、type selector、id selector、class selector.md",
+    "develop/render/id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類.md",
     "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
-    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
-    "MOC/Rendering MOC.md",
-    "develop/render/客戶端利用link標籤或者style標籤來解析CSS檔案內容為CSSOM會是以接收完整份CSS檔案才開始解析成CSSOM，而非邊接收邊解析成CSSOM.md",
-    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
-    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md"
+    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md"
   ]
 }
