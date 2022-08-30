@@ -6,10 +6,11 @@
       {
         "id": "4c71b27b092b5abe",
         "type": "leaf",
+        "dimension": 76.81159420289855,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "(假設)JavaScript 會等待CSSOM 建立完才執行.md",
+            "file": "JavaScript 會等待CSSOM 建立完才執行.md",
             "mode": "source",
             "source": false
           }
@@ -18,10 +19,11 @@
       {
         "id": "5ff89141f205c2d6",
         "type": "leaf",
+        "dimension": 23.18840579710145,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "(假設)JavaScript 會等待CSSOM 建立完才執行.md",
+            "file": "JavaScript 會等待CSSOM 建立完才執行.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(假設)JavaScript 會等待CSSOM 建立完才執行.md",
+                "file": "JavaScript 會等待CSSOM 建立完才執行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +111,8 @@
   },
   "active": "4c71b27b092b5abe",
   "lastOpenFiles": [
+    "(草稿)分散式鎖.md",
+    "JavaScript 會等待CSSOM 建立完才執行.md",
     "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
@@ -116,8 +120,6 @@
     "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
     "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
     "Untitled 2.md",
-    "React：form submission 實現.md",
-    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-    "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md"
+    "React：form submission 實現.md"
   ]
 }
