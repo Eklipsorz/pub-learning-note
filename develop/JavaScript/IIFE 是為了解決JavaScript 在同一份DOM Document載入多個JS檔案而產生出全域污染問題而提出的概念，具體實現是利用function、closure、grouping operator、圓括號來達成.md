@@ -252,10 +252,10 @@ a * c + b * c // 9
 
 
 #🧠  IIFE (Immediately Invoked Function Expression) 大致上使用了哪些技術->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope、以function作為基礎於內部進行函式擴充以此實現模組scope和global scope：具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料、grouping operator 強制將function 轉換成 function expression 來看待、() 將轉換後的function expression以function來呼叫`
-<!--SR:!2022-08-30,28,250-->
+<!--SR:!2022-11-12,74,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為何採用function ->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope`
-<!--SR:!2022-08-30,28,250-->
+<!--SR:!2022-11-09,71,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
 <!--SR:!2022-11-04,69,250-->
@@ -284,7 +284,7 @@ a * c + b * c // 9
 <!--SR:!2022-10-16,55,250-->
 
 #🧠  Grouping Operator 用途是什麼？ ->->-> `強制使語法轉換成expression 形式、在混雜其他expression中，會將指定的expression的執行權提高至最高，換言之，優先被解析器邊解析邊執行`
-<!--SR:!2022-08-30,28,250-->
+<!--SR:!2022-11-11,73,250-->
 
 #🧠 expression 之後放置圓括號的作用是什麼 ->->-> `若將圓括號()放置在expression之後，就會告知解析器expression是一個被呼叫的function，而括號()裡頭的參數將會是該function會使用到的參數`
 <!--SR:!2022-10-07,50,250-->
