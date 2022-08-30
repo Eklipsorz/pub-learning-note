@@ -8,11 +8,8 @@
 > The specificity algorithm calculates the weight of a CSS selector to determine which rule from competing CSS declarations gets applied to an element.
 
 
-
-
-
 重點：
-- Specificity 算法 是在眾多selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突。
+- Specificity 算法 是在眾多selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突
 `<P class="highlight">這個段落將被顯示為黃底紅字粗體。</P>`
 
 ```
@@ -46,12 +43,20 @@ h2{
 
 
 重點：
-- Specificity 是一種算法，主要會用權重來衡量每個declaration 
+- Specificity 算法 是在眾多selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突
+- 主要會用權重來衡量每個declaration 
+	- 多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，就選擇權重最高的declaration，並納入至它所對應元件會有的樣式屬性
+	- 屬性名稱沒起衝突的declaration ，就直接納入至它所對應元件會有的樣式屬性
 - 每一個declaration的權重是使用三種欄位值來表示，分別為如下，主要會依據著declaration所在的selector 是用什麼形式來表示
 	- id : class : type
-	- id 表示目前declaration 所在的 selector 有使用 id 來描述 selector 的具體程度，會用數字表示
-	- class 表示目前declaration 所在的 selector 有使用 class 來描述 selector 的具體程度，會用數字表示
-	- type 表示目前declaration 所在的 selector 有使用 type 來描述 selector 的具體程度，會用數字表示
+	- id 表示目前declaration 所在的 selector 有使用 id 來描述 selector 的具體程度，會用數字表示，數字越高就表示在以用特定id形式描述該元件的具體程度就越高
+	- class 表示目前declaration 所在的 selector 有使用 class 來描述 selector 的具體程度，會用數字表示，數字越高就表示在以用特定class形式描述該元件的具體程度就越高
+	- type 表示目前declaration 所在的 selector 有使用 type 來描述 selector 的具體程度，會用數字表示，數字越高就表示在以用特定type形式描述該元件的具體程度就越高
+	- 在這裡可以將id部分為100分，class當作10分，type當作1分來分別表示以下意義：
+		- 描述具體程度：id會是最高，class是次高，type是最後
+- 特例：
+	-  在多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，declaration都拿到一樣的權重，就挑選最後出現的declaration為主
+	
 
 ### Specificity
 specificity
@@ -65,8 +70,7 @@ specific
 - specificity 是指清晰和正確的程度
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-09-02,3,250-->
+
 
 ---
 Status: #🌱 
@@ -74,5 +78,7 @@ Tags:
 [[CSS]]
 Links:
 [[一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block]]
+[[每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：type selector、id selector、class selector]]
+[[id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類]]
 References:
 [[@mdnSpecificityCSSCascading]]
