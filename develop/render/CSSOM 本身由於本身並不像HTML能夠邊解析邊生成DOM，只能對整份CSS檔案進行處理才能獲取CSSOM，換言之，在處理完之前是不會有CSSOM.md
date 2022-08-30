@@ -33,11 +33,12 @@
 
 
 重點：
-- 當瀏覽器的HTML 解析HTML內容，若發現 link標籤或者style標籤時，如果是指定CSS檔案，就會生成非同步任務A去負責載入CSS檔案、解析其內容轉成CSSOM，而C
+- 當瀏覽器的HTML 解析器解析HTML內容，若發現 link標籤或者style標籤時，如果是指定CSS檔案，就會生成非同步任務A去負責載入CSS檔案、解析其內容轉成CSSOM。
 -  CSSOM的構建任務 本身不會阻塞DOM的建立，但會阻塞瀏覽器後續的渲染內容任務
-- 原本從HTML解析成DOM之後，就會執行渲染內容的任務(layout & paint)：
-	- 若HTML解析成DOM完成之後，CSSOM還未建立完成，就會阻塞渲染任務，直到CSSOM建立完成
+- 原本從HTML解析成DOM之後，就會搭配CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)：
+	- 若HTML解析成DOM完成之後，CSSOM還未建立完成，就會阻塞打造Rendering Tree以及後續的渲染任務，直到CSSOM建立完成
 	- 若HTML解析成DOM完成之後，CSSOM也跟著建立完成，就會順勢執行渲染任務。
+- 由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保Rendering能夠使用到CSSOM，會讓CSSOM建構任務阻塞JS。
 
 
 #### 閃爍
@@ -90,7 +91,10 @@
 
 重點：
 - CSSOM的建構任務會阻塞JS執行
-- 由於JS本身會修改DOM 和 CSSOM
+- 由於JS本身會修改DOM 和 CSSOM：
+	- DOM：瀏覽器會從邊接收內容邊解析成DOM，換言之，只要能接收到一部分內容就會有DOM
+	- CSSOM：瀏覽器會先接收整份內容並解析成CSSOM，不會邊接收內容而邊解析成CSSOM，換言之，在還沒有處理完之前，都不會有CSSOM
+	- 由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保JS能夠使用到CSSOM，會讓CSSOM建構任務阻塞JS。
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661871513/blog/cssTag/css-blocking/standard-css-block-js_m6u3pj.png)
 
@@ -98,18 +102,36 @@
 
 #🧠 HTML 、 Javascript 以及 CSS 在同一個HTML DOM文件的載入關係為何->->-> `> 1.  Javascript 會阻擋 DOM 的建構 2.  CSS 會阻擋 Javascript 的執行 3.  CSS 會影響頁面的 Rendering`
 
-#🧠  請拿以下情況來說明CSSOM阻塞JS，假設在script.js執行之前還沒有載入CSSOM![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661865857/blog/cssTag/css-blocking/simple/css-block-js-example_kp6r9b.png) ->->-> ``
+#🧠 同一份DOM文件的載入，為何CSSOM會阻塞渲染？->->-> `由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保Rendering能夠使用到CSSOM，會讓CSSOM建構任務阻塞JS。`
 
 #🧠 同一份DOM文件的載入，CSSOM會導致什麼的阻塞 ->->-> `1.  CSS 會阻擋 Javascript 的執行 2.  CSS 會影響頁面的 Rendering`
 
-#🧠 同一份DOM文件的載入，為何CSSOM要阻塞1.  CSS 會阻擋 Javascript 的執行 2.  CSS 會影響頁面的 Rendering ->->-> `想盡可能以`
+#🧠 同一份DOM文件的載入，為何CSSOM要阻塞JS?  ->->-> `由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保JS能夠使用到CSSOM，會讓CSSOM阻塞JS。`
 
+
+#🧠 當瀏覽器的HTML 解析器解析HTML內容，若發現 link標籤或者style標籤時，如果是指定CSS檔案，會做什麼？ ->->-> `就會生成非同步任務A去負責載入CSS檔案、解析其內容轉成CSSOM`
+
+#🧠 CSSOM的構建任務會不會阻塞DOM的建立 ->->-> `不會`
+
+#🧠 在正常情況下，HTML解析成DOM之後，會做什麼？ ->->-> `就會搭配CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)`
+
+#🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話 ->->-> `就會阻塞打造Rendering Tree以及後續的渲染任務，直到CSSOM建立完成`
+
+#🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話，那就會就會阻塞打造Rendering Tree以及後續的渲染任務，如何做才會繼續停止阻塞？ ->->-> `直到CSSOM建立完成`
+
+
+#🧠   請問這會引發什麼問題？\<div class="woo-spinner-filled"\>hello world\<\/div\>
+  \<link rel="stylesheet" type="text/css" href="https://h5.sinaimg.cn/m/weibo-pro/css/chunk-vendors.d6cac585.css"> ->->-> `若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面，接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果`
+
+#🧠 這會引發閃爍問題，請問如何解決？ \<div class="woo-spinner-filled"\>hello world\<\/div\>
+  \<link rel="stylesheet" type="text/css" href="https://h5.sinaimg.cn/m/weibo-pro/css/chunk-vendors.d6cac585.css">  ->->-> `將link標籤或者style標籤都放在所有DOM之前，比如head標籤`
 
 ---
 Status: #🌱 
 Tags:
 [[JavaScript]] - [[CSS]]
 Links:
+[[客戶端利用link標籤或者style標籤來解析CSS檔案內容為CSSOM會是以接收完整份CSS檔案才開始解析成CSSOM，而非邊接收邊解析成CSSOM]]
 References:
 [[@ithome30TianXueHuiWeb]]
 https://juejin.cn/post/6984658863735701517

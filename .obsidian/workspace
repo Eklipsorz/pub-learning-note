@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 4.md",
+            "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "820fb7c7c873414e",
+        "id": "54a72e088a47ce0f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 4.md",
+            "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 4.md",
+                "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "820fb7c7c873414e",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "JavaScript 會等待CSSOM 建立完才執行.md",
-    "Untitled 4.md",
+    "MOC/Rendering MOC.md",
+    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
+    "develop/render/客戶端利用link標籤或者style標籤來解析CSS檔案內容為CSSOM會是以接收完整份CSS檔案才開始解析成CSSOM，而非邊接收邊解析成CSSOM.md",
     "(草稿)分散式鎖.md",
     "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "Untitled 3.md",
     "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
-    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
-    "Untitled 2.md"
+    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md"
   ]
 }
