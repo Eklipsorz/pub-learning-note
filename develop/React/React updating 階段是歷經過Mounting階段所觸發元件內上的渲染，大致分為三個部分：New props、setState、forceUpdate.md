@@ -209,7 +209,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 #🧠 react updating 階段若使用new props的流程會是什麼？ ->->-> ` - getDerviedStateFromPorps、- shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-19,19,250-->
 
 #🧠 react updating 子階段中的render包含哪些步驟？ ->->-> `getDerivedStateFromProps、shouldComponentUpdate、更新狀態、render`
 <!--SR:!2022-09-02,10,250-->
@@ -241,7 +241,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-02,10,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-22,22,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就還做不做狀態更新 ->->-> `做`
 <!--SR:!2022-09-01,9,250-->
@@ -253,7 +253,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-01,9,250-->
 
 #🧠 react 生命週期中會用到的**更新狀態** 函式是會做什麼？ ->->-> `無論shouldComponentUpdate回傳什麼，都會更新狀態，更新完狀態，才會進入下一階段`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-21,21,250-->
 
 #🧠 react 生命週期中會用到的**render函式** 是會做什麼？(資訊和畫面)->->-> `- render 會以每個元件上的對應(render/渲染用的)函式來當作該元件對應的渲染內容，並且負責解析目前資訊並轉換成對應的Virtual DOM - 其render的元件渲染內容可由開發者來指定，至於解析和轉換由系統負責`
 <!--SR:!2022-09-01,9,250-->
