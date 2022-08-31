@@ -6,7 +6,6 @@
       {
         "id": "fba158eb794bf321",
         "type": "leaf",
-        "dimension": 13.210039630118892,
         "state": {
           "type": "markdown",
           "state": {
@@ -17,26 +16,12 @@
         }
       },
       {
-        "id": "4ee6766caf54bd59",
+        "id": "442abc3a9292b325",
         "type": "leaf",
-        "dimension": 55.482166446499335,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "619ed2d9d0d6c605",
-        "type": "leaf",
-        "dimension": 31.307793923381773,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
+            "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
             "mode": "source",
             "source": false
           }
@@ -80,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 346
+    "width": 100
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -96,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
+                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "442abc3a9292b325",
   "lastOpenFiles": [
-    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
     "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
+    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
     "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
     "develop/render/客戶端利用link標籤或者style標籤來解析CSS檔案內容為CSSOM會是以接收完整份CSS檔案才開始解析成CSSOM，而非邊接收邊解析成CSSOM.md",
     "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
