@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
+            "file": "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inline style",
+                "query": "Redis 主從架構下的master 主機負責的業務是什麼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,11 +61,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 215
+    "width": 528
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -81,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
+                "file": "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +108,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c96ff029895601dd",
+  "active": "3e9108dc1cd539f1",
   "lastOpenFiles": [
+    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
     "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
     "MOC/Rendering MOC.md",
     "develop/render/inline style 是在HTML內容標籤形式上所夾雜的一組特定樣式組合.md",
@@ -117,7 +119,6 @@
     "原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
     "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
     "develop/render/每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：universal selector、type selector、id selector、class selector.md",
-    "develop/render/id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類.md",
-    "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md"
+    "develop/render/id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類.md"
   ]
 }
