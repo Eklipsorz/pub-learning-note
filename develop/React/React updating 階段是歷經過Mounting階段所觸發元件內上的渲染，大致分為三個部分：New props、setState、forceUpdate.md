@@ -196,13 +196,13 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-02,10,250-->
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪三個途徑？ ->->-> `New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-22,22,250-->
 
 #🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
 <!--SR:!2022-09-01,9,250-->
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的setState 拿什麼資料來渲染畫面？ ->->-> `狀態`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-22,22,250-->
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的 **forceUpdate()** 拿什麼資料來渲染畫面？ ->->-> `由props和state以外的資料來渲染`
 <!--SR:!2022-09-02,10,250-->
@@ -232,7 +232,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-02,10,250-->
 
 #🧠 react 生命週期中會用到的getDerivedStateFromProps採用預設的話，會是什麼？ ->->-> ` 預設上是沒有任何處理內容`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-23,23,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate是做什麼用的？ ->->-> `做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染`
 <!--SR:!2022-09-01,9,250-->
@@ -266,7 +266,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-02,10,250-->
 
 #🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
-<!--SR:!2022-08-31,8,250-->
+<!--SR:!2022-09-21,21,250-->
 
 #🧠 react 生命週期中會用到的componentDidUpdate函式 是會做什麼？ ->->-> `主要指定在更新對應元件的畫面後要做些什麼`
 <!--SR:!2022-09-12,14,230-->

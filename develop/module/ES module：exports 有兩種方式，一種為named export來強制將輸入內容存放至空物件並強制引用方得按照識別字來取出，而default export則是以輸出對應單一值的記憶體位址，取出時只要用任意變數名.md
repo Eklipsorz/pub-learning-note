@@ -105,7 +105,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-09-17,25,250-->
 
 #🧠 ES module： default exports 是什麼？ ->->-> `exporting module所輸出的內容是(識別字所對應的)單一值，importing module則是可用任意變數來分配空間來引用輸出的單一值。`
-<!--SR:!2022-08-31,7,250-->
+<!--SR:!2022-09-17,17,250-->
 
 
 `
