@@ -94,10 +94,13 @@ specific
 ## 複習
 
 #🧠 specificity 命名緣由為何？ ->->-> `是指清晰和正確的程度`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 specific 命名緣由為何？ ->->-> `是指清晰和正確`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 CSS specificity 是什麼？->->-> `Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，請問declaration包含了哪些？(名稱重複？！) ->->-> `這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突`
 
@@ -112,6 +115,7 @@ specific
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼class代表著什麼？ ->->-> ` class 表示目前declaration 所在的 selector 有使用 class 來描述對應元件的具體程度，會用數字表示`
 
+
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼class代表著目前declaration 所在的 selector 有使用 class 來描述對應元件的具體程度，會用數字表示，那麼具體如何用數字表示？->->-> `對應元件在同一個由多個selector構成的selector上相符N個class selector的描述，就0-+N-0、數字越高就表示在以用特定class形式描述該元件的具體程度就越高`
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼type代表著什麼？->->-> `type 表示目前declaration 所在的 selector 有使用 type 來描述對應元件的具體程度，會用數字表示`
@@ -124,16 +128,20 @@ specific
 #🧠 在CSS Specificity中的id-class-type 計算中，那如何將特例下的!important、inline style計算權重？那id、class、type的分數是如何？->->-> `每個!important 為10000分、每個inline style為1000分。每一個id、每一個class、每一個type分數分別為100、10、1分`
 
 #🧠 在CSS specificity中，多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，declaration都拿到一樣的權重，會如何決定最後的declaration? ->->-> `就挑選最後出現的declaration為主`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 在CSS specificity中，位處於universal selector 的 declaration 所獲得權重為何？ 換算上分數的話，會是多少分？->->-> `0-0-0，0分`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是最高的？形式會是如何？->->-> `用!important來綁定的declaration，形式會是 background-color: red !important;`
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是次高的？形式會是如何？ ->->-> `用inline style是來綁定declaration block，<div style="font-size:24px;color:red;"> </div>`
 
 #🧠 在CSS specificity中，被綁定!important的declaration 所獲得的權重為相當於是最高，那麼可以轉換成什麼形式和數字 ->->-> `1-0-0-0-0，分數為10000`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 在CSS specificity中，被綁定inline 的declaration 所獲得的權重為相當於是次高，那麼可以轉換成什麼形式和數字 ->->-> `0-1-0-0-0，分數為1000`
+<!--SR:!2022-09-03,3,250-->
 
 
 ---
