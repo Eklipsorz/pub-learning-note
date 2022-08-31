@@ -4,12 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "224f4ae5b1f58443",
+        "id": "3e9108dc1cd539f1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+            "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "c96ff029895601dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 549
+    "width": 215
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+                "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,10 +107,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "c96ff029895601dd",
   "lastOpenFiles": [
-    "MOC/Rendering MOC.md",
     "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+    "MOC/Rendering MOC.md",
     "develop/render/inline style 是在HTML內容標籤形式上所夾雜的一組特定樣式組合.md",
     "React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
     "(草稿)分散式鎖.md",

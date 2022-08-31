@@ -58,10 +58,18 @@
 > 为了避免页面闪烁，通常 link 标签都放在head中。
 
 重點：
-- 若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面
+
+- 若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染
 - 若接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果
 - 若要減緩閃爍的效果，可以先把link標籤或者style標籤都放在所有DOM節點之前，比如head標籤內部。
 
+
+#### 瀏覽器對於css的載入順序
+- 瀏覽器對於css的載入順序：
+	- 若沒先在HTML載入css的話，會被瀏覽器認為沒有樣式要載入，導致它會以預設樣式內容來渲染
+	- 若先在HTML載入css的話，瀏覽器的渲染會往後挪，直到後續的CSSOM和DOM產出而結合成Rendering Tree來渲染
+- 若沒先在HTML載入css的話，會被瀏覽器認為沒有樣式要載入，導致它會以預設樣式內容來直接渲染，請問為何會這樣？ 原因為 `因為瀏覽器此時認為沒特製的CSSOM要弄，所以它只好以預設的內容來做
+- 若先在HTML載入css的話，瀏覽器的渲染會往後挪，直到後續的CSSOM和DOM產出而結合成Rendering Tree來渲染，請問為何會這樣？ 原因為 `因為瀏覽器此時認為會有特製的CSSOM要弄，所以會先阻塞瀏覽器的後續渲染，好讓CSSOM能正常和DOM結合成Rendering Tree`
 ###  CSSOM阻塞
 
 > css会不会阻塞后面js执行？答案是会！
@@ -101,31 +109,55 @@
 ## 複習
 
 #🧠 HTML 、 Javascript 以及 CSS 在同一個HTML DOM文件的載入關係為何->->-> `> 1.  Javascript 會阻擋 DOM 的建構 2.  CSS 會阻擋 Javascript 的執行 3.  CSS 會影響頁面的 Rendering`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 同一份DOM文件的載入，為何CSSOM會阻塞渲染？->->-> `由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保Rendering能夠使用到CSSOM，會讓CSSOM建構任務阻塞JS。`
 <!--SR:!2022-09-03,3,250-->
 
 #🧠 同一份DOM文件的載入，CSSOM會導致什麼的阻塞 ->->-> `1.  CSS 會阻擋 Javascript 的執行 2.  CSS 會影響頁面的 Rendering`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 同一份DOM文件的載入，為何CSSOM要阻塞JS?  ->->-> `由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保JS能夠使用到CSSOM，會讓CSSOM阻塞JS。`
+<!--SR:!2022-09-03,3,250-->
 
 
 #🧠 當瀏覽器的HTML 解析器解析HTML內容，若發現 link標籤或者style標籤時，如果是指定CSS檔案，會做什麼？ ->->-> `就會生成非同步任務A去負責載入CSS檔案、解析其內容轉成CSSOM`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 CSSOM的構建任務會不會阻塞DOM的建立 ->->-> `不會`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 在正常情況下，HTML解析成DOM之後，會做什麼？ ->->-> `就會搭配CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話 ->->-> `就會阻塞打造Rendering Tree以及後續的渲染任務，直到CSSOM建立完成`
+<!--SR:!2022-09-03,3,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話，那就會就會阻塞打造Rendering Tree以及後續的渲染任務，如何做才會繼續停止阻塞？ ->->-> `直到CSSOM建立完成`
+<!--SR:!2022-09-03,3,250-->
+
+#🧠 瀏覽器會不會給予每個HTML DOM節點預設樣式，具體是以什麼形式 ->->-> `會是以type selector來設定`
+
+#🧠   請問這會引發什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) ->->-> `若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面，接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果`
+<!--SR:!2022-09-03,3,250-->
 
 
-#🧠   請問這會引發什麼問題？\<div class="woo-spinner-filled"\>hello world\<\/div\>
-  \<link rel="stylesheet" type="text/css" href="https://h5.sinaimg.cn/m/weibo-pro/css/chunk-vendors.d6cac585.css"> ->->-> `若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面，接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果`
+#🧠  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) 這會引發閃爍問題，請問如何解決？ ->->-> `將link標籤或者style標籤都放在所有DOM之前，比如head標籤`
 
-#🧠 這會引發閃爍問題，請問如何解決？ \<div class="woo-spinner-filled"\>hello world\<\/div\>
-  \<link rel="stylesheet" type="text/css" href="https://h5.sinaimg.cn/m/weibo-pro/css/chunk-vendors.d6cac585.css">  ->->-> `將link標籤或者style標籤都放在所有DOM之前，比如head標籤`
+#🧠  若遇到link標籤或者style標籤之前就有DOM，瀏覽器會如何處理？->->-> ` 若遇到link標籤或者style標籤之前就有DOM，因爲它會認為沒有樣式要載入，所以就以預設的設定就先渲染`
+
+
+#🧠 若先在HTML載入css的話，其瀏覽器的渲染會如何做？ ->->-> `若先在HTML載入css的話，瀏覽器的渲染會往後挪，直到CSSOM和DOM都能產生出來`
+
+#🧠 若沒先在HTML載入css的話，其瀏覽器的渲染會如何做？ ->->-> `會被瀏覽器認為沒有樣式要載入，導致它會以預設樣式內容來直接渲染`
+<!--SR:!2022-09-03,3,250-->
+
+#🧠 若沒先在HTML載入css的話，會被瀏覽器認為沒有樣式要載入，導致它會以預設樣式內容來直接渲染，請問為何？ ->->-> `因為瀏覽器此時認為沒特製的CSSOM要弄，所以它只好以預設的內容來做`
+
+#🧠 若先在HTML載入css的話，瀏覽器的渲染會往後挪，直到後續的CSSOM和DOM產出而結合成Rendering Tree來渲染，請問為何會這樣？ ->->-> `因為瀏覽器此時認為會有特製的CSSOM要弄，所以會先阻塞瀏覽器的後續渲染，好讓CSSOM能正常和DOM結合成Rendering Tree`
+
+
+
 
 ---
 Status: #🌱 
