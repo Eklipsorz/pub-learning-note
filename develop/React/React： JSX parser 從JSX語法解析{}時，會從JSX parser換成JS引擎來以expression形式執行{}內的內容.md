@@ -19,7 +19,7 @@ var css = { color: red }
 - JSX 語法本身是語法糖，包含住React原生建立 Virtual DOM & 對應 Virtual DOM的語法
 - JSX 語法形式為JavaScript 和 XML 融合在一起的產物 或者 純粹 XML 
 - 當解析到JSX語法就會以JSX解析器來解析，過程中解析器從JSX解析\{\}時，就會從JSX解析器更換成JavaScript引擎來負責解析內括號內容並以expression來執行
-
+- JSX 語法中唯一能夠執行JavaScript的地方是{expression}
 ## 複習
 #🧠 當解析到JSX語法時，會交給哪個解析器進行執行？ ->->-> `JSX parser`
 <!--SR:!2022-09-01,3,250-->
@@ -29,6 +29,8 @@ var css = { color: red }
 
 #🧠 當JSX parser從JSX語法解析到\{\}，會如何執行？->->-> `過程中解析器從JSX解析{}時，就會從JSX解析器更換成JavaScript引擎來負責解析內括號內容並以expression來執行`
 <!--SR:!2022-09-01,3,250-->
+
+#🧠 JSX 語法糖中哪個地方能夠執行JS？->->-> `JSX 語法中唯一能夠執行JavaScript的地方是{expression}`
 
 ---
 Status: #🌱 

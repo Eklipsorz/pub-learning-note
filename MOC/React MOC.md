@@ -36,7 +36,11 @@
 [[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
 
 
+## redux
 
+[[React：在還沒有使用Redux之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
+
+[[為何React要使用Redux]]
 
 
 ## setState

@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "fba158eb794bf321",
+        "id": "359bc76871444b5f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "442abc3a9292b325",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+            "file": "inbox/React：在不使用任何能夠將樣式侷限於元件的技術下，使用dynamic inline style來實現使用者輸入錯誤和重設正常的樣式.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "expression",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+                "file": "inbox/React：在不使用任何能夠將樣式侷限於元件的技術下，使用dynamic inline style來實現使用者輸入錯誤和重設正常的樣式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fba158eb794bf321",
+  "active": "359bc76871444b5f",
   "lastOpenFiles": [
-    "一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
     "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
-    "develop/render/CSS preprocessor 是一個能透過preprocessor提供的語法編譯成CSS，postprocessor則是拿確定CSS的程式所確定的CSS來按照指定規則來修改CSS，當作最後結果的CSS.md",
-    "develop/render/客戶端利用link標籤或者style標籤來解析CSS檔案內容為CSSOM會是以接收完整份CSS檔案才開始解析成CSSOM，而非邊接收邊解析成CSSOM.md",
-    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
-    "develop/render/id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類.md",
-    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-    "develop/render/Document Object Model 是以樹狀結構來表達HTML內容的模型、介面.md",
+    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+    "MOC/React MOC.md",
+    "inbox/React：在不使用任何能夠將樣式侷限於元件的技術下，使用dynamic inline style來實現使用者輸入錯誤和重設正常的樣式.md",
+    "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md",
+    "inbox/class 差異.md",
     "Untitled.md",
-    "Untitled 2.md"
+    "inbox/element.class selector  是一種選擇器，專門選擇同時符合type selector以及class selector的DOM節點.md",
+    "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇對應節點.md",
+    "inbox/CSS：使用specificity 過高的declaration 會破壞原有模組所要負責的declaration定義.md"
   ]
 }

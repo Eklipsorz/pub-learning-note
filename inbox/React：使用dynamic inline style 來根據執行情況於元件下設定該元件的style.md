@@ -21,13 +21,13 @@
 	```
 	<tag1 style="<css>">content</tag1>
 	```
-	- style能夠填寫的屬性值形式會是如下，且是用字串來表示，主要用途是以目前指定的樣式屬性來增加以及覆蓋對目前tag1所擁有的樣式屬性：
-		- 若是目前指定的樣式屬性是tag1原本所沒有的，就直接增加目前屬性至tag1上
-		- 若是目前指定的樣式屬性是tag1原本所有的，就直接以目前屬性值覆蓋至tag1的相同屬性
+	- style能夠填寫的屬性值形式會是如下
 	```
 	property1:value1;property2:value2
+	// 結合在tag1的話
+	<tag1 style="property1:value1;property2:value2">content</tag1>
 	```
-
+	
 ###  React體系所提供的設定方式 - dynamic inline style
 
 [[@heidi-liuWeek21React]]
@@ -89,6 +89,9 @@ object 會以{}來表示，其屬性名稱和屬性值會搭配css樣式下的�
 不同點：
 - 原生HTML DOM 設定方式 是用字串表示，React 體系下的 dynamic inline style則是可以混雜字串和JS表示屬性的方法。
 
+### inline style 會有的問題
+由於inline style 本身在CSS Specificity 上就擁有較高的權重，這使得未來開發上得注意是否會因為權重過高而難以調整
+
 ## 複習
 
 
@@ -97,6 +100,8 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]] - [[CSS]]
 Links:
+[[Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突]]
+[[inline style 是在HTML內容標籤形式上所夾雜的一組特定樣式組合]]
 References:
 [[@w3schoolHTMLStyleAttribute]]
 [[@heidi-liuWeek21React]]
