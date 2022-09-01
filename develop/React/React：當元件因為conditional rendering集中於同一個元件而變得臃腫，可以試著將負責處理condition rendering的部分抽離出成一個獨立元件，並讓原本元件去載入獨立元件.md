@@ -127,11 +127,11 @@ export default Expenses;
 ## 複習
 
 #🧠 React：condition rendering 若不想將集中一個元件的話，可以怎麼做 ->->-> `試著從該元件的condition rendering部分抽離出來成一個獨立元件，並讓獨立元件載入至原元件`
-<!--SR:!2022-09-01,3,250-->
+<!--SR:!2022-09-11,10,250-->
 
 
 #🧠  React：試著將下面的condition rendering抽離出成獨立元件來呈現 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661693270/blog/react/conditional-rendering/conditional-rendering-before-example_o3pacr.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661693269/blog/react/conditional-rendering/conditional-rendering-after-ExpenseList.js_s4dqvd.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661693269/blog/react/conditional-rendering/conditional-rendering-after-expenses.js_fcd1ko.png)` `
-<!--SR:!2022-09-01,3,250-->
+<!--SR:!2022-09-11,10,250-->
 
 
 

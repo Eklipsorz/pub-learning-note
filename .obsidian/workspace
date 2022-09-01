@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "359bc76871444b5f",
+        "id": "e96d4775da764e2d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：在不使用任何能夠將樣式侷限於元件的技術下，使用dynamic inline style來實現使用者輸入錯誤和重設正常的樣式.md",
+            "file": "inbox/Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "expression",
+                "query": "CommonJS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 424
+    "width": 378
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：在不使用任何能夠將樣式侷限於元件的技術下，使用dynamic inline style來實現使用者輸入錯誤和重設正常的樣式.md",
+                "file": "inbox/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "359bc76871444b5f",
+  "active": "e96d4775da764e2d",
   "lastOpenFiles": [
-    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
-    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+    "inbox/CommonJS 模組解析全文.md",
+    "develop/React/React：預設下，每個component 檔案所import的css並不會只限定於component才能使用，而是整個頁面上的元件都能存取.md",
+    "inbox/Untitled 2.md",
+    "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
     "MOC/React MOC.md",
-    "inbox/React：在不使用任何能夠將樣式侷限於元件的技術下，使用dynamic inline style來實現使用者輸入錯誤和重設正常的樣式.md",
-    "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md",
-    "inbox/class 差異.md",
-    "Untitled.md",
-    "inbox/element.class selector  是一種選擇器，專門選擇同時符合type selector以及class selector的DOM節點.md",
-    "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇對應節點.md",
+    "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+    "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
+    "inbox/React：hook.md",
+    "inbox/preventDefault 得放在開頭.md",
     "inbox/CSS：使用specificity 過高的declaration 會破壞原有模組所要負責的declaration定義.md"
   ]
 }

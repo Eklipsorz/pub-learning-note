@@ -44,14 +44,17 @@
 
 ## 複習
 #🧠 Multiple Class Selector 是什麼？ ->->-> `是用N個class selector 相接而成的selector，主要會選擇同時滿足N的class selector的DOM 節點`
+<!--SR:!2022-09-04,3,250-->
 
-#🧠 ID and Class Selectors 是由多個class selector 和一個 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點 ->->-> `是由多個class selector 和一個 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點`
 
 #🧠 Multiple Class Selector 和 ID and Class Selectors 如何形成，用程式碼表示 ->->-> `.class1.class2 {} 和 #id.class1 { }`
+<!--SR:!2022-09-04,3,250-->
 
 #🧠 \#one.two { color: red; } 意味著什麼樣DOM節點才能被選擇到 ->->-> `id屬性為one且class屬於two的DOM 節點`
+<!--SR:!2022-09-04,3,250-->
 
 #🧠 .class1.class2 {...} 意味著什麼樣DOM節點才能被選擇到 ->->-> `class同時屬於class1和class2的DOM 節點`
+<!--SR:!2022-09-04,3,250-->
 
 ---
 Status: #🌱 

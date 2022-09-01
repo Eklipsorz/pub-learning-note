@@ -100,7 +100,7 @@ off-screen
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React：Offscreen API  會應用什麼場景 ->->-> `多個tab共享同一個顯示元件，並藉由點擊特定tabA來mounting 對應元件A，然後又想點擊另一個tab B的那麼就unmounting 對應元件A以及mounting 對應元件B，接著又點回tab A就又得unmounting 對應元件B和mounting 對應元件A、多個元件A共享著同一個用來顯示其元件對應畫面的元件B：每個元件A都有對應的渲染內容，但只會有一個元件A的對應渲染內容呈現在元件B上。`
-<!--SR:!2022-09-01,8,250-->
+<!--SR:!2022-09-24,23,250-->
 
 #🧠  React：Offscreen API 應用至多個元件都各有一個顯示元件，那麼會帶來什麼好處？ ->->-> `那麼就朝著優化網頁對於瀏覽器的效能`
 <!--SR:!2022-09-13,14,230-->
@@ -109,7 +109,7 @@ off-screen
 <!--SR:!2022-09-03,10,250-->
 
 #🧠 React：在支援Offscreen API的Component中， 目前已知會與這規則起衝突的語法為何 ->->-> `當使用Offscreen API開發Component時，Component上的大部分effects實現會面對同個元件的mount->unmount->mount下保留其功能，但少部份effects實現則會是認為元件只會有一次mount->unmount的，而導致同個元件只要unmount後就銷毀effect，接著再次以緩存來mount的時候就無法正常使用。`
-<!--SR:!2022-09-01,8,250-->
+<!--SR:!2022-09-22,21,250-->
 
 
 

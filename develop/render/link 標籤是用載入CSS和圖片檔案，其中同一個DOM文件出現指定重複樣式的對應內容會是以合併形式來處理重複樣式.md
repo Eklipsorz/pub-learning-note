@@ -116,7 +116,7 @@
 
 ## 複習
 #🧠 HTML：link 標籤是什麼？->->-> `主要用來定義目前文件與目前檔案以外的資源之間的關係是如何並載入至目前文件`
-<!--SR:!2022-09-01,7,250-->
+<!--SR:!2022-09-19,18,250-->
 
 #🧠 HTML：link 標籤的rel 屬性是什麼？->->-> `定義要以什麼形式來將額外資源載入至目前文件上，會以字串來表示`
 <!--SR:!2022-09-04,10,250-->
@@ -132,7 +132,7 @@
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
-<!--SR:!2022-09-01,7,250-->
+<!--SR:!2022-09-20,19,250-->
 #🧠 不同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/two-css-inside-same-dom_gumjxf.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
 <!--SR:!2022-09-02,8,250-->
 `
