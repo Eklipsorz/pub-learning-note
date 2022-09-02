@@ -115,12 +115,12 @@ function ExampleApplication() {
 
 ## 複習
 #🧠  React.StrictMode 是用來作什麼？ ->->-> `是一個檢測開發時期是否有潛在問題的元件`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 
 
 #🧠 請問React.StrictMode 對於以下元件會如何挑選並做檢測？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660817785/blog/react/strictmode/strictmode-example_nb6aio.png)->->-> `React.StrictMode會直接以它包含的元件來做檢測，比如div元件。以外的元件則不會被檢測，比如Header、Footer`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 #🧠 React.StrictMode 具體會做什麼檢測？->->-> `檢測每個元件的生命週期是否正確執行、檢測每個元件的狀態、檢測是否有使用老舊語法&API、檢測每個元件對應的DOM節點是否有問題、檢測是否有其他副作用`
 <!--SR:!2022-09-07,11,230-->

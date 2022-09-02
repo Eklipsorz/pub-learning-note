@@ -222,7 +222,7 @@ batch：
 <!--SR:!2022-09-21,20,250-->
 
 #🧠 batching 命名緣由 ->->-> `以一群事物為單位為來進行特定處理之過程、行為`
-<!--SR:!2022-09-02,8,250-->
+<!--SR:!2022-09-23,21,250-->
 
 
 #🧠 React Batching 是指什麼技術？ ->->-> `是指React 將N個狀態更新指令(setState)為一組來進行特定處理`
@@ -261,7 +261,7 @@ batch：
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
-<!--SR:!2022-09-02,8,250-->
+<!--SR:!2022-09-22,20,250-->
 
 
 #🧠 React18: 若N個狀態更新指令遍佈在多個生命週期函式下的事件處理，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含事件處理下的多個狀態更新指令來合併`

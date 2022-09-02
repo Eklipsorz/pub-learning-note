@@ -51,10 +51,10 @@ class App extends Component {
 
 ## 複習
 #🧠 dumb component 是什麼？ ->->-> `dumb形容component是指該component 只會負責特定事物的渲染和渲染相關的業務邏輯，即使有人對component做出互動，他們本身也沒辦法透過互動來重新以互動結果來渲染自己、其他component`
-<!--SR:!2022-09-02,5,248-->
+<!--SR:!2022-09-14,12,248-->
 
 #🧠 在React 上， dumb component 是什麼元件？ ->->-> `沒註冊任何狀態、更新狀態用的函式、不會對任何元件進行狀態管理/更新、 只會從props給予資訊或者預設內容來渲染固定畫面，一渲染完畢之後，就不會再發生變化`
-<!--SR:!2022-09-02,5,248-->
+<!--SR:!2022-09-15,13,248-->
 
 #🧠 在React 上， dumb component 的別名是什麼？為什麼->->-> `由於dumb component本身只會渲染，所以又稱之為prsentational component。`
 <!--SR:!2022-09-13,12,248-->
@@ -63,7 +63,7 @@ class App extends Component {
 <!--SR:!2022-09-03,6,248-->
 
 #🧠 在React 上， smart component 是什麼元件？ ->->-> `註冊狀態、更新狀態用的函式、負責對它所包含的子元件進行狀態管理/更新、皆由狀態更新來負責渲染子元件`
-<!--SR:!2022-09-02,4,230-->
+<!--SR:!2022-09-13,11,230-->
 
 #🧠 在React 上， smart component  的別名是什麼？->->-> `container component`
 <!--SR:!2022-09-03,6,248-->

@@ -4,18 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "e96d4775da764e2d",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "7fa403c683cd9d19",
         "type": "leaf",
         "state": {
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CommonJS",
+                "query": "RReact",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
+                "file": "inbox/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e96d4775da764e2d",
+  "active": "7fa403c683cd9d19",
   "lastOpenFiles": [
+    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
+    "inbox/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
+    "inbox/element.class selector  是一種選擇器，專門選擇同時符合type selector以及class selector的DOM節點.md",
+    "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "inbox/Untitled 2.md",
-    "tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
-    "inbox/CommonJS 模組解析全文.md",
-    "develop/React/React：預設下，每個component 檔案所import的css並不會只限定於component才能使用，而是整個頁面上的元件都能存取.md",
-    "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
+    "inbox/React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染.md",
+    "inbox/CommonJS 模組如何載入模組.md",
     "MOC/React MOC.md",
-    "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
-    "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
-    "inbox/React：hook.md",
-    "inbox/preventDefault 得放在開頭.md"
+    "tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
+    "inbox/CommonJS 模組解析全文.md"
   ]
 }

@@ -60,20 +60,28 @@ myTag`that ${ person } is a ${ age }`
 ## 複習
 
 #🧠 tagged template literal  是算 template literal 嗎？ ->->-> `算`
+<!--SR:!2022-09-05,3,250-->
 
 #🧠 tagged template literal是什麼？->->-> `是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成`
+<!--SR:!2022-09-05,3,250-->
 
 #🧠 tagged template literal 的形式是什麼->->-> `functionName(反引號)<template literal>(反引號)`
+<!--SR:!2022-09-05,3,250-->
 
 #🧠 tagged template literal 是由什麼構成 ->->-> `tag function和特定字串`
+<!--SR:!2022-09-05,3,250-->
 
 #🧠 tag function 要如何把template literal 中的內容當作參數來使用？ ->->-> `沒用\$\{\}特別包住的字串結合成一個字串當作特定函式A的第一個參數，that is a ，該字串會用字串陣列來儲存、剩下後續參數都擷取\$\{\}`
+<!--SR:!2022-09-05,3,250-->
 
 #🧠 myTag `that ${ person } is a ${ age }` ，以這個為例，說明一下哪個是tag function，如何取參數？->->-> `myTag會是函式，其宣告為function myTag(strings, argu1, argu2, ...)、沒用\$\{\}特別包住的字串結合成一個字串當作特定函式A的第一個參數，that is a ，該字串會用字串陣列來儲存、第二個參數就取\$\{person\}、第三個參數就取\$\{age\}`
+<!--SR:!2022-09-05,3,250-->
 
 
 #🧠 tagged template literal中的tag function會是回傳什麼型別的資料？ ->->-> `任意型別的資料`
+<!--SR:!2022-09-05,3,250-->
 #🧠 tagged template literal中的tag function若沒指定回傳，那麼會回傳什麼？ ->->-> `undefined`
+<!--SR:!2022-09-05,3,250-->
 
 ---
 Status: #🌱 

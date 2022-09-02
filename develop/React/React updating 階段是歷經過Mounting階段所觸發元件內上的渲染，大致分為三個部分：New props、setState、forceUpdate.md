@@ -193,7 +193,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> `updating`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-28,26,250-->
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪三個途徑？ ->->-> `New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
 <!--SR:!2022-09-22,22,250-->
@@ -205,31 +205,31 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-22,22,250-->
 
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的 **forceUpdate()** 拿什麼資料來渲染畫面？ ->->-> `由props和state以外的資料來渲染`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-30,28,250-->
 
 
 #🧠 react updating 階段若使用new props的流程會是什麼？ ->->-> ` - getDerviedStateFromPorps、- shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
 <!--SR:!2022-09-19,19,250-->
 
 #🧠 react updating 子階段中的render包含哪些步驟？ ->->-> `getDerivedStateFromProps、shouldComponentUpdate、更新狀態、render`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-30,28,250-->
 
 
 #🧠 react updating 子階段中的pre-commit包含哪些步驟？ ->->-> `getSnapshotBeforeUpdate`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-30,28,250-->
 
 #🧠 react updating 子階段中的commit包含哪些步驟？->->-> `React updates DOM and refs、componentDidUpdate`
 <!--SR:!2022-09-24,23,250-->
 
 
 #🧠  react updating 階段若使用setState的流程會是什麼？ ->->-> `-shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 #🧠 react updating 階段若使用forceUpdate()的流程會是什麼？ ->->-> `- render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 #🧠 react 生命週期中會用到的getDerivedStateFromProps是做什麼用的？->->-> `	- 會從該元件A的props接收到源自parent節點所給予的狀態值 - 將狀態值更新至元件A的this.state`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-30,28,250-->
 
 #🧠 react 生命週期中會用到的getDerivedStateFromProps採用預設的話，會是什麼？ ->->-> ` 預設上是沒有任何處理內容`
 <!--SR:!2022-09-23,23,250-->
@@ -238,7 +238,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-25,24,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳true就表示？ ->->-> `做渲染`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
 <!--SR:!2022-09-22,22,250-->
@@ -247,7 +247,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-25,24,250-->
 
 #🧠 react 生命週期中會用到的shouldComponentUpdate採用預設的話，會是什麼？ ->->-> `會直接回傳true`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 #🧠 react 生命週期中會用到的**更新狀態** 函式何時會做？ ->->-> `通常會於shouldComponentUpdate和render之間。`
 <!--SR:!2022-09-27,26,250-->
@@ -263,7 +263,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-09-27,26,250-->
 
 #🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate 函式 採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
-<!--SR:!2022-09-02,10,250-->
+<!--SR:!2022-09-29,27,250-->
 
 #🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
 <!--SR:!2022-09-21,21,250-->

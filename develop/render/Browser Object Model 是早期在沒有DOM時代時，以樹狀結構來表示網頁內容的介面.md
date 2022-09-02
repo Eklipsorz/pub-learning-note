@@ -45,7 +45,7 @@
 
 ## 複習
 #🧠 Browser Object Model 是什麼？ ->->-> `是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面`
-<!--SR:!2022-09-02,27,250-->
+<!--SR:!2022-11-11,70,250-->
 
 #🧠 Browser Object Model 和 Document Object Model 之間的差別是什麼？ ->->-> `BOM會是以Browser作為根節點來連接DOM目前擁有的樹狀結構
 <!--SR:!2022-09-03,28,250-->
@@ -59,7 +59,7 @@
 
 
 #🧠 DOM 和 BOM的現況？ ->->-> `大部分瀏覽器都支援BOM和DOM這兩套模型`
-<!--SR:!2022-09-02,27,250-->
+<!--SR:!2022-11-10,69,250-->
 
 
 #🧠 請畫圖來表示BOM和DOM之間的關係？用樹狀圖->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1630066487/blog/dom/bomHierarchy_kp1icw.png)`
