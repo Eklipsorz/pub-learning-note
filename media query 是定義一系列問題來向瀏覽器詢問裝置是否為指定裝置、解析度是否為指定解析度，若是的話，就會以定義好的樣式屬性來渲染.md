@@ -37,7 +37,7 @@
 
 - 常見的為解析度：
 	- @media (max-width: xxxx px)：指定在xxxx px以下就採用
-	- @media (min-width: xxxx px)：
+	- @media (min-width: xxxx px)：指定在xxxx px以上就採用
 ### media 命名緣由
 
 > the main ways that large numbers of people receive information and entertainment, that is television, radio, newspapers and the internet
