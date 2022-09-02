@@ -1,5 +1,9 @@
 ## 描述
 
+
+> Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution
+
+[[@mdnUsingMediaQueries]]
 > Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width).
 
 
@@ -25,3 +29,4 @@ Tags:
 [[CSS]]
 Links:
 References:
+[[@mdnUsingMediaQueries]]
