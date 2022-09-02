@@ -69,6 +69,14 @@
 
 [[React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染]]
 
+#### styled-component
+
+[[styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件]]
+
+[[styled-component：在template-literal使用&表示目前透過style.<element> 所建立的元件]]
+
+
+
 
 ### condition rendering
 

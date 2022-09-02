@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "7fa403c683cd9d19",
+        "id": "d3e5e27e3ce749b7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 2.md",
+            "file": "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 2.md",
+                "file": "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7fa403c683cd9d19",
+  "active": "d3e5e27e3ce749b7",
   "lastOpenFiles": [
-    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "inbox/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
-    "inbox/element.class selector  是一種選擇器，專門選擇同時符合type selector以及class selector的DOM節點.md",
-    "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
+    "inbox/styled-component：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
+    "inbox/tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
+    "inbox/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
+    "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
     "inbox/Untitled 2.md",
-    "inbox/React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染.md",
-    "inbox/CommonJS 模組如何載入模組.md",
-    "MOC/React MOC.md",
-    "tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
-    "inbox/CommonJS 模組解析全文.md"
+    "guide/Symbol Definition.md",
+    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
+    "templates/📖 +🤔.md",
+    "templates/🧠.md",
+    "templates/📝.md"
   ]
 }
