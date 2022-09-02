@@ -23,8 +23,27 @@
 ```
 
 重點：
-- 是瀏覽器對於目前media
+- media 對於網頁而言，會是指能夠顯示網頁畫面的畫面
+- media query 則是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染
+- media query 是由 @media作為開頭 、向瀏覽器發問的問題、對於符合問題情景的樣式屬性
+```
+@media query {
+	property1: value1;
+	.
+	.
+	.
+}
+```
 
+- 常見的為解析度：
+	- @media (max-width: xxxx px)：指定在xxxx px以下就採用
+	- @media (min-width: xxxx px)：
+### media 命名緣由
+
+> the main ways that large numbers of people receive information and entertainment, that is television, radio, newspapers and the internet
+
+重點：
+- media 為讓人們接收資訊的裝置或者介質
 
 ## 複習
 
