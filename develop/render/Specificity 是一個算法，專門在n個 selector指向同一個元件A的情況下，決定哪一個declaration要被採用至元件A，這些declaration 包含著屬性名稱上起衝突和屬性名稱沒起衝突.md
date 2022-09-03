@@ -94,7 +94,7 @@ specific
 ## 複習
 
 #🧠 specificity 命名緣由為何？ ->->-> `是指清晰和正確的程度`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-09,6,250-->
 
 #🧠 specific 命名緣由為何？ ->->-> `是指清晰和正確`
 <!--SR:!2022-09-10,7,250-->
@@ -103,13 +103,13 @@ specific
 <!--SR:!2022-09-09,6,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，請問declaration包含了哪些？(名稱重複？！) ->->-> `這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-09,6,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，那麼主要會如何選擇？(面對於重複和沒重複的情況下) ->->-> `主要會用權重來衡量每個declaration、 多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，就選擇權重最高的declaration，並納入至它所對應元件會有的樣式屬性、屬性名稱沒起衝突的declaration ，就直接納入至它所對應元件會有的樣式屬性`
 <!--SR:!2022-09-03,3,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是何種形式 ->->-> `基本上會使用三種欄位值，分別為id、class、type，形式為id-class-type`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-11,8,250-->
 
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼id代表著什麼？ ->->-> `表示目前declaration 所在的 selector 有使用 id 來描述對應元件的具體程度，會用數字表示`
@@ -133,13 +133,13 @@ specific
 
 
 #🧠 CSS specificitiy上的id-class-type，若要統一轉換成數字來看的話，可以是如何計算？？ 如何比較->->-> `id-class-type，1個id為100分、1個class為10分、1個type為1分，並將計算總分，將轉換分數通通加起來。比較的話，就挑出最大者的declaration來使用`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-10,7,250-->
 
 #🧠 在CSS Specificity中的id-class-type 計算中，那如何將特例下的!important、inline style計算權重？那id、class、type的分數是如何？->->-> `每個!important 為10000分、每個inline style為1000分。每一個id、每一個class、每一個type分數分別為100、10、1分`
 <!--SR:!2022-09-10,7,250-->
 
 #🧠 在CSS specificity中，多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，declaration都拿到一樣的權重，會如何決定最後的declaration? ->->-> `就挑選最後出現的declaration為主`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-13,10,250-->
 
 #🧠 在CSS specificity中，位處於universal selector 的 declaration 所獲得權重為何？ 換算上分數的話，會是多少分？->->-> `0-0-0，0分`
 <!--SR:!2022-09-03,3,250-->

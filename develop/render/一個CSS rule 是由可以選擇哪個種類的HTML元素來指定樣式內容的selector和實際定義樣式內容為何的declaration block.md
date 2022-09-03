@@ -80,7 +80,7 @@ color: red;
 <!--SR:!2022-09-08,6,248-->
 
 #🧠  每個CSS rule 是由一個selector和一個declaration block所構成，那麼selector是什麼？->->-> `主要用來選擇哪個種類的HTML元素或者HTML DOM節點`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-12,9,250-->
 
 #🧠  每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration block 是什麼？->->-> `由同一個selector下的所有declaration所組成`
 <!--SR:!2022-09-03,2,230-->
