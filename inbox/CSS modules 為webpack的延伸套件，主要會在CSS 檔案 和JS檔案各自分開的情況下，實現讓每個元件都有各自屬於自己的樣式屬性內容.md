@@ -16,6 +16,7 @@
 ### CSS Modules 具體是webpack 延伸套件
 - 具體會是 webpack 延伸套件
 	- 若要使用的話，得確保webpack是否支援該套件以及相關設定檔案
+	- 預設下，React的CRA有支援CSS modules 和 其設定
 - 由於是由webpack負責將特定CSS轉換成CSS Module來處理和轉換，所以得要把要處理的CSS檔案名稱，改成以下形式：origin-file-name為原本檔案名，後面的module.css則是後綴字
 ```
 <origin-file-name>.module.css
@@ -45,16 +46,11 @@ import classes from <css-file>
 actually for code transformation, which behind the scenes to happen, you also need to rename your file a little bit
 
   
-
+#### 總結
 - 會將對應的css檔案視作為JS下的object
 - 每個object的屬性會是該css下的class selector name
 
   
-
-  
-
-為了讓webpack能夠識別哪些是CSS module，得讓對應CSS的檔案取名為
-
 
 
 ### 實際轉換
@@ -96,7 +92,7 @@ import styles from <css-file>
 }
 ```
 
-並且在React的
+並且在React的層級定義使用button這class selector作為button的外觀設定
 ```
 <button className={styles.button} />
 ```
@@ -126,7 +122,10 @@ import styles from <css-file>
 }
 ```
 
-而對應的button
+而對應button的實際DOM節點會是
+```
+<button class="Button_button_wae1232wer"></button>
+```
 
 
 ## 複習
