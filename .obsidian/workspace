@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "73e017d3ca558c53",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -95,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f51fcba44848b605",
+  "active": "73e017d3ca558c53",
   "lastOpenFiles": [
     "inbox/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
     "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
