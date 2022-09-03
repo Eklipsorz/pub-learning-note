@@ -144,7 +144,7 @@ import styles from <css-file>
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 #📓 
