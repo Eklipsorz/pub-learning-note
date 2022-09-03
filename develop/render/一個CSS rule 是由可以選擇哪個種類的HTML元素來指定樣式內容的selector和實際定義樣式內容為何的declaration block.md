@@ -71,7 +71,7 @@ color: red;
 <!--SR:!2022-09-08,6,248-->
 
 #🧠 CSS rule set 是由什麼所組成的？->->-> `由多個CSS rule所組成的`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-12,9,250-->
 
 #🧠 每個CSS rule 是由什麼所組成的？ ->->-> `每個CSS rule 是由一個selector和一個declaration block所構成`
 <!--SR:!2022-09-13,10,250-->
@@ -83,13 +83,13 @@ color: red;
 <!--SR:!2022-09-12,9,250-->
 
 #🧠  每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration block 是什麼？->->-> `由同一個selector下的所有declaration所組成`
-<!--SR:!2022-09-03,2,230-->
+<!--SR:!2022-09-08,5,230-->
 
 #🧠 每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration  是什麼？ ->->-> `主要是以樣式屬性(property)、屬性值、分號(;)來組成`
 <!--SR:!2022-09-07,5,248-->
 
 #🧠 每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration  用途為？->->-> `定義selector所選擇的DOM節點會有什麼樣樣式屬性`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-09,6,250-->
 
 #🧠 請用程式碼來表示一個表示會有文字顏色為紅色、字體大小為24px的css rule該如何定義？ 並選定哪些是selector、declaration、property、property。->->-> ``
 <!--SR:!2022-09-07,5,248-->

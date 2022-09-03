@@ -98,13 +98,13 @@ div {
 <!--SR:!2022-09-11,8,250-->
 
 #🧠 每個CSS rule 上的selector 部分，universal selector、type selector、id selector、class selector主要是用來做什麼？ ->->-> `用四種形式來描述所要選擇的DOM節點會是什麼`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-13,10,250-->
 
 #🧠 type selector 是什麼樣的selector->->-> `type selector  是用DOM節點種類來選擇相符的DOM節點`
 <!--SR:!2022-09-10,7,250-->
 
 #🧠 id selector 是什麼樣的selector->->-> `id selector 是用特定id名稱來選擇擁有符合id名稱的DOM節點`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-10,7,250-->
 
 #🧠 universal selector 是什麼樣的selector ->->-> `是用任意形式來選擇相符的DOM節點`
 <!--SR:!2022-09-03,3,250-->

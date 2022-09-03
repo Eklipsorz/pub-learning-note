@@ -126,7 +126,7 @@ specific
 <!--SR:!2022-09-03,3,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼type代表著什麼？->->-> `type 表示目前declaration 所在的 selector 有使用 type 來描述對應元件的具體程度，會用數字表示`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-10,7,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼type表示目前declaration 所在的 selector 有使用 type 來描述對應元件的具體程度，會用數字表示，具體如何用數字表示？ ->->-> `對應元件在同一個由多個selector構成的selector上相符N個type selector的描述，就0-0-+N、數字越高就表示在以用特定type形式描述該元件的具體程度就越高`
 <!--SR:!2022-09-03,3,250-->
@@ -151,7 +151,7 @@ specific
 <!--SR:!2022-09-09,6,250-->
 
 #🧠 在CSS specificity中，被綁定!important的declaration 所獲得的權重為相當於是最高，那麼可以轉換成什麼形式和數字 ->->-> `1-0-0-0-0，分數為10000`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-11,8,250-->
 
 #🧠 在CSS specificity中，被綁定inline 的declaration 所獲得的權重為相當於是次高，那麼可以轉換成什麼形式和數字 ->->-> `0-1-0-0-0，分數為1000`
 <!--SR:!2022-09-13,10,250-->
