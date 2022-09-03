@@ -46,7 +46,7 @@ render(
 ```
 
 重點：
-- 在styled-component 中，選擇器部分(或者template-literal部分)若使用&填入，就表示目前透過style.\<element\> 所建立的元件
+- 在styled-component 中，選擇器部分(或者template-literal部分)若使用&填入，就表示目前透過style.\<element\> 所建立的元件，並以此作為css 選擇器的一部分來定義選擇器
 ```
 const Element = styled.<element>`<template-literal>`
 ```
@@ -127,15 +127,23 @@ const FormControl = styled.div`
      background: salmon;
      border-color: red;
   }
+`
 ```
 
 `
 
 ## 複習
+#🧠 在styled-components 的 template-literal部分使用&來設定樣式屬性的話，其&代表著什麼？->->-> `目前用style.<element>所建立的元件，以此作為css 選擇器的一部分來定義選擇器`
+
+
+#🧠 在styled-components 的 template-literal部分使用&的話，其&代表著目前用style.\<element\>所建立的元件，以此作為css 選擇器的一部分來定義選擇器，那麼其&可運用的selector場景會有哪些？ ->->-> `CSS Combinator、element.class selector、pseudoelements、pseudoselectors`
+
+#🧠 請試著用styled-components 來綁定一個名為FormControl 的元件？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662216306/blog/react/style/css-in-js/styled-components-form-control-example_niwxzc.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662216412/blog/react/style/css-in-js/styled-components-form-control-result_ivn2gd.png)`
+
 
 
 ---
-Status: #🌱  #📓
+Status: #🌱 
 Tags:
 [[React]] - [[CSS]]
 Links:

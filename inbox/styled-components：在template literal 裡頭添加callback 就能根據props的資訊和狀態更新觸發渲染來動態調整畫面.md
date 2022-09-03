@@ -1,10 +1,10 @@
 ## 描述
 
 
-[[@styled-componentsStyledcomponentsBasics]]
+
 
 ### 在styled-components的literal 添加callback
-
+[[@styled-componentsStyledcomponentsBasics]]
 ```
 // Create an Input component that'll render an <input> tag with some styles
 const Input = styled.input`
@@ -168,9 +168,6 @@ const CourseInput = (props) => {
 
 export default CourseInput;
 ```
-
-
-
 
 
 

@@ -40,17 +40,37 @@ const Element = styled.<element>`<template-literal>`
 
 這個React Element 建構式預設會是回傳以下形式的內容：
 	- 具體會是由\lelement\> \<\/element\> 所包裹著，裡頭內容會是props.children 
-	- element 屬性(attribute)名稱和屬性值會是對應著該元件所擁有的props的屬性名稱(property)、屬性值來定義，比如props有type和onClick這兩個屬性(property)，這兩個會直接添加至對應element標籤下的屬性(attribute)
-- styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)
+	- styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)
 
+使用styled-component的元件為主的標籤，並賦予對應屬性(attribute)
+```
+<Element type={type1} onClick={onClick1}> </Element>
+```
+
+該屬性名和屬性值會接收到並轉換至styled-component的渲染內容裡：
 ```
   return (
-    <element type={props.type} onClick={props.onClick}>
+    <element type={type1} onClick={onClick1}>
       {props.children}
     </element>
   );
 ```
 
+
+#### 總結
+使用styled-components 套件所建立的元件，預設下會有：
+- 每個元件的對應渲染內容會包含props.children或者子節點
+- 每個元件的對應渲染內容的元件屬性名稱(attribute)和屬性值(attribute)會依據元件標籤所用的屬性名稱(attribute)和屬性值(attribute)
+```
+<Element type={type1} onClick={onClick1}> </Element>
+```
+```
+  return (
+    <element type={type1} onClick={onClick1}>
+      {props.children}
+    </element>
+  );
+```
 
 ## 複習
 
@@ -72,12 +92,14 @@ const Element = styled.<element>`<template-literal>`
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
 
-#🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214433/blog/react/style/css-in-js/styled-react-element_nksxq5.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
+#🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
 
-#🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214433/blog/react/style/css-in-js/styled-react-element_nksxq5.png) 中是如何定義該元件所包含的子節點？->->-> `具體會是由\lelement\> \<\/element\> 所包裹著，裡頭內容會是props.childre`
+#🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中是如何定義該元件所包含的子節點？->->-> `預設下會有依照要產生的元件種類來產生對應子節點來被包含，如<element> </element> 所包裹的props.children`
+
+#🧠 使用styled-components 套件所建立的元件，預設下會有什麼？ ->->-> `- 每個元件的對應渲染內容會包含props.children或者子節點 - 每個元件的對應渲染內容的元件屬性名稱(attribute)和屬性值(attribute)會依據元件標籤所用的屬性名稱(attribute)和屬性值(attribute)`
 
 ---
-Status: #🌱 #📓
+Status: #🌱 
 Tags:
 [[React]] - [[CSS]]
 Links:

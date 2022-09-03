@@ -73,7 +73,7 @@
 
 [[styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件]]
 
-[[styled-component：在template-literal使用&表示目前透過style.<element> 所建立的元件]]
+[[styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件]]
 
 
 
