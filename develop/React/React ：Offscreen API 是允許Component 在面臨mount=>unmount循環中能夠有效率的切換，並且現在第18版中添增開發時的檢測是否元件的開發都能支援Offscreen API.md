@@ -106,7 +106,7 @@ off-screen
 <!--SR:!2022-09-13,14,230-->
 
 #🧠 React：為了能添加Offscreen API 來給Component支援，必須要讓Component開發上遵守什麼？  ->->-> `Component 在面對多次的 mount => unmount => mount 的循環中仍然保有原有元件的業務邏輯功能和渲染內容`
-<!--SR:!2022-09-03,10,250-->
+<!--SR:!2022-09-30,27,250-->
 
 #🧠 React：在支援Offscreen API的Component中， 目前已知會與這規則起衝突的語法為何 ->->-> `當使用Offscreen API開發Component時，Component上的大部分effects實現會面對同個元件的mount->unmount->mount下保留其功能，但少部份effects實現則會是認為元件只會有一次mount->unmount的，而導致同個元件只要unmount後就銷毀effect，接著再次以緩存來mount的時候就無法正常使用。`
 <!--SR:!2022-09-22,21,250-->
