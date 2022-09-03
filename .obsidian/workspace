@@ -6,6 +6,7 @@
       {
         "id": "7d7de4430bf3fc01",
         "type": "leaf",
+        "dimension": 24.831309041835357,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,10 +19,24 @@
       {
         "id": "1a475ab0458d7e54",
         "type": "leaf",
+        "dimension": 57.28744939271255,
         "state": {
           "type": "markdown",
           "state": {
             "file": "inbox/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "2e60ff836ff82a81",
+        "type": "leaf",
+        "dimension": 17.88124156545209,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute).md",
             "mode": "source",
             "source": false
           }
@@ -109,15 +124,15 @@
   },
   "active": "1a475ab0458d7e54",
   "lastOpenFiles": [
-    "develop/React/React：預設下，每個component 檔案所import的css並不會只限定於component才能使用，而是整個頁面上的元件都能存取.md",
+    "styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute).md",
     "inbox/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
+    "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
+    "develop/React/React：預設下，每個component 檔案所import的css並不會只限定於component才能使用，而是整個頁面上的元件都能存取.md",
     "inbox/styled-components：在template literal 添加media query.md",
     "media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md",
     "MOC/Rendering MOC.md",
     "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
-    "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md",
-    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-    "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md"
+    "develop/render/CSS-in-JS 是種技術，主要是將CSS樣式寫在JS內容，並運用JS程式語言的執行特色來根據執行情況來更改樣式中的內容.md"
   ]
 }
