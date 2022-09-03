@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "fcd270e7a729a796",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/styled-components：在template literal 添加media query.md",
+                "file": "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,8 +107,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d3e5e27e3ce749b7",
+  "active": "fcd270e7a729a796",
   "lastOpenFiles": [
+    "inbox/styled-components：在template literal 添加media query.md",
     "inbox/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
     "inbox/Untitled 2.md",
     "media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md",
@@ -105,7 +118,6 @@
     "inbox/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
     "guide/Symbol Definition.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "templates/📖 +🤔.md",
-    "templates/🧠.md"
+    "templates/📖 +🤔.md"
   ]
 }
