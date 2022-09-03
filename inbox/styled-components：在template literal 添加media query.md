@@ -1,8 +1,7 @@
 ## 描述
-在使用styled-components的套件中，若想讓特定元件在滿足特定media query擁有特定樣式的話，可以直接在對應元件下的styled.\<element\>下添加media query 即可能讓特定元件擁有這特性
+在使用styled-components的套件中，若想讓特定元件在滿足特定media query時就擁有特定樣式的話，可以直接在對應元件下的styled.\<element\>下添加media query 即可能讓特定元件擁有這特性
 
-比如說以下media query 添加至對應元件由styled-components所構成的component中
-
+比如說以下media query 添加至對應元件中的template-literal
 ```
   @media (min-width: 768px) {
     width: auto;
@@ -56,11 +55,13 @@ export default Button;
 
 ## 複習
 
-#🧠 在使用styled-components的套件中，若想讓特定元件在滿足特定media query擁有特定樣式的話，該如何做？ ->->-> `將media query 添加至由styled-components所構成的component中，`
+#🧠 在使用styled-components的套件中，若想讓特定元件在滿足特定media query擁有特定樣式的話，該如何做？ ->->-> `以下media query 添加至對應元件中的template-literal ：@media (min-width: 768px) { width: auto; } `
+
+#🧠 在使用styled-components的套件中，若添加一個media query 至對應元件(styled-components)下的template-literal，會產生什麼功能？->->-> `使當該元件滿足特定media query的時候，讓元件採用對應滿足的樣式屬性`
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]- [[CSS]]
 Links:

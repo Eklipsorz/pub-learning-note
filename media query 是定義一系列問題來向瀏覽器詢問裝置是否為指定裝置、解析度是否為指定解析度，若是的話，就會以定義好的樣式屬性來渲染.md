@@ -61,7 +61,7 @@
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[CSS]]
 Links:
