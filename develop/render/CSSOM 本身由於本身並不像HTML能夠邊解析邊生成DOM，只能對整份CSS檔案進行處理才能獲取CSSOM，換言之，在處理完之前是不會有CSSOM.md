@@ -128,7 +128,7 @@
 <!--SR:!2022-09-03,3,250-->
 
 #🧠 在正常情況下，HTML解析成DOM之後，會做什麼？ ->->-> `就會搭配CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)`
-<!--SR:!2022-09-03,3,250-->
+<!--SR:!2022-09-12,9,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話 ->->-> `就會阻塞打造Rendering Tree以及後續的渲染任務，直到CSSOM建立完成`
 <!--SR:!2022-09-12,9,250-->
