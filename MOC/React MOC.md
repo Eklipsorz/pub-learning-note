@@ -74,8 +74,17 @@
 [[styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件]]
 
 [[styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件]]
+[[styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面]]
+
+[[styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)]]
+[[styled-components：在template literal 添加media query]]
 
 
+#### CSS modules
+
+[[CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容]]
+
+[[CSS modules：button 案例 + media query]]
 
 
 ### condition rendering

@@ -34,7 +34,7 @@
 }
 ```
 
-命名後：將重命名的
+命名後：將.button重命名後的內容替代所有.button原本所在的地方
 ```
 .Button_button__2lgkF {
   width: 100%;
@@ -62,6 +62,18 @@
   .Button_button__2lgkF {
     width: auto;
   }
+}
+```
+
+### CSS Modules：使用media query
+1. 若特定元件使用特定樣式，那麼就在特定樣式所在CSS module檔案中，增加以下內容：
+	- query：向瀏覽器詢問有關目前media的問題，滿足就開放解析後頭的selector
+	- xxxx 為特定樣式
+```
+@media query {
+	.xxxx {
+		....
+	}
 }
 ```
 
