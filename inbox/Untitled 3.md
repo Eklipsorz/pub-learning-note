@@ -1,9 +1,6 @@
 
-CSS Modules：
-- 實現讓每個元件都有各自屬於自己的樣式屬性內容
-
-The separation of CSS and JavaScript
-
+## 描述
+> The separation of CSS and JavaScript
 
 > css module
 >
@@ -12,7 +9,33 @@ The separation of CSS and JavaScript
 > - now the good thing is react projects created with create react app which we used are already configured to support CSS Modules
 
 
+### 主要用途為
+在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容
 
+
+### CSS Modules 具體是webpack 延伸套件
+- 具體會是 webpack 延伸套件
+	- 若要使用的話，得確保webpack是否支援該套件以及相關設定檔案
+- 由於是由webpack負責將特定CSS轉換成CSS Module來處理和轉換，所以得要把要處理的CSS檔案名稱，改成以下形式：origin-file-name為原本檔案名，後面的module.css則是後綴字
+```
+<origin-file-name>.module.css
+```
+- 舉例：
+	- test.module.css
+
+### 使用方式
+1. 載入特定 module.css 並以其CSS內容作為物件來存取，並且讓styles參照該物件
+```
+import styles from <css-file>
+```
+
+2. 依據著對應內容上的class-selector來選擇想要使用的樣式名稱，每個class-selector會是styles物件下的屬性。
+```
+<button className={styles.button} />
+```
+
+
+#### 物件名稱選擇
 ```
 import styles from <css-file>
 import classes from <css-file>
@@ -24,7 +47,6 @@ actually for code transformation, which behind the scenes to happen, you also ne
   
 
 - 會將對應的css檔案視作為JS下的object
-
 - 每個object的屬性會是該css下的class selector name
 
   
@@ -32,27 +54,25 @@ actually for code transformation, which behind the scenes to happen, you also ne
   
 
 為了讓webpack能夠識別哪些是CSS module，得讓對應CSS的檔案取名為
-```
-<origin-file-name>.module.css
-```
 
+
+
+### 實際轉換
+
+當webpack 將特定CSS以CSS Modules 來處理時，
 ```
 import styles from <css-file>
-<button className={styles.button} />
 ```
 
-
-當webpack 將特定CSS以CSS Modules 來處理時，會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，同時幫助系統來辨別這些class selector，接著若元件的樣式是採用裡頭的class selector，則是實際上對應DOM節點的class屬性值會以class selector的對應識別字
-
-
-對應識別字名稱形式會是：
+會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，接著若元件的樣式是採用裡頭的class selector，則是實際上對應DOM節點的class屬性值會以class selector的對應識別字，對應識別字名稱形式會是：
 ```
 <component-name>_<class-selector-name>_<unique-hash-value>
 ```
 
 
 
-案例：
+#### 案例
+假若CSS 檔案為如下：
 ```
 .button {
   font: inherit;
@@ -76,7 +96,13 @@ import styles from <css-file>
 }
 ```
 
+並且在React的
+```
+<button className={styles.button} />
+```
 
+
+經由webpack和CSS modules的轉換後的CSS內容為：
 ```
 .Button_button_wae1232wer {
   font: inherit;
@@ -99,3 +125,17 @@ import styles from <css-file>
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
 }
 ```
+
+而對應的button
+
+
+## 複習
+#🧠 Question :: ->->-> ``
+
+---
+Status: #🌱 #📓 
+Tags:
+[[React]] - [[CSS]]
+Links:
+References:
+
