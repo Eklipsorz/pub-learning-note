@@ -65,6 +65,13 @@ import styles from <css-file>
 .class1 {...}
 .class1.class2 {...}
 .class1 .class2 {...}
+// result
+.class1 => waer324
+.class2 => warewa32
+
+.class1 {...} => .waer324 {...}
+.class1.class2 {...} => .waer324.warewa32 {...}
+.class1 .class2 {...} => .waer324 .warewa32 {...}
 ```
 
 
