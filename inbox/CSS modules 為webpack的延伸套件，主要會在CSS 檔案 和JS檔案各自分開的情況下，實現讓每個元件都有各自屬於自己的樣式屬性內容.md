@@ -60,7 +60,15 @@ actually for code transformation, which behind the scenes to happen, you also ne
 import styles from <css-file>
 ```
 
-會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，接著若元件的樣式是採用裡頭的class selector，則是實際上對應DOM節點的class屬性值會以class selector的對應識別字，對應識別字名稱形式會是：
+會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，包括以下形式的class，皆會生成獨立且隨機的識別字來重新命名
+```
+.class1 {...}
+.class1.class2 {...}
+.class1 .class2 {...}
+```
+
+
+接著若元件的樣式是以物件形式來取得裡頭的class selector，實際上對應DOM節點的class屬性值會以class selector的對應識別字，對應識別字名稱形式會是：
 ```
 <component-name>_<class-selector-name>_<unique-hash-value>
 ```
