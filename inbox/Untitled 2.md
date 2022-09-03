@@ -9,8 +9,8 @@
 解決目標為：
 - 讓每個component 都擁有自己的css樣式
 
-### styled component
-> style components is a package that helps you build
+### styled-components
+> styled components is a package that helps you build
 > - components which have certain styles attached to them where the styles really only affect the components to which they were attached and not any other components
 
 [[@styled-componentsStyledcomponents]]
