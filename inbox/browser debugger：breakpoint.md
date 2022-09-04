@@ -1,21 +1,79 @@
 ## 描述
 
+### browser debugger：breakpoint
 
+[[@ithomeDay13Sources]]
 
+we can use this 
+
+step into next function call button
+
+step over next function
+
+resume script execution
+
+#### 
+> ### Step into next function call
+
+> 如果即將執行的 Function 正是問題所在，`Step into` 會停在該 Function 內的第一行。
+> 假設目前暫停在 A 行的 `double`
+
+```javascript
+const number = 3;
+const result = double(number); // A
+console.log(result); // D
+
+function double(n) {
+  const result = n * 2; // B
+  return result; // C
+}
+```
+
+> 點擊圖示後會跳至 B 行，也就是 `double` 的第一行。
+
+####
+
+### Step over next function call
+
+> 如果對即將執行的 Function 內部沒有興趣，`Step over` 會跳至該 Function 後方。
+>
+> 以下方程式碼為例，假設目前暫停在 A 行的 `double`：
+
+```javascript
+const number = 3;
+const result = double(number); // A
+console.log(result); // D
+
+function double(n) {
+  const result = n * 2; // B
+  return result; // C
+}
+```
+
+> 點擊圖示後會執行 `double` 內的所有程式碼並停在 D 行的 `console.log`。
 
 ### breakpoint 
 
+[[@wikidataDuanDian2021]]
 > 斷點（英語：Breakpoint）是程式中為了除錯而故意停止或者暫停的地方。
 
 > 除錯設定斷點可以讓程式執行到該行程式時停住，藉此觀察程式到斷點位置時，其變數、暫存器、I/O等相關的變數內容，有助於深入了解程式運作的機制，發現、排除程式錯誤的根源。 
 
+[[@wikidataBreakpoint2022]]
 > In software development, a breakpoint is an intentional stopping or pausing place in a program, put in place for debugging purposes. It is also sometimes simply referred to as a pause. 
+
+重點：
+- breakpoint ：在程式中，設定特定程式碼位置為暫時停止/中斷的地方，當程式執行到那個位置就會停止，並透露那時的執行狀態
+- breakpoint 用途：
+	- 除錯
 
 ### break 命名緣由
 break：
 > to interrupt or to stop something for a short period
 	打斷；中斷，中止
 
+重點：
+- 暫時停止特定行為/中斷特定行為
 
 ## 複習
 
@@ -26,3 +84,6 @@ Tags:
 [[React]]
 Links:
 References:
+[[@wikidataBreakpoint2022]]
+[[@wikidataDuanDian2021]]
+[[@ithomeDay13Sources]]
