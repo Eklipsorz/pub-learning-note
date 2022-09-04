@@ -18,7 +18,7 @@ p.intro {  background-color: yellow;}
 ## 複習
 
 #🧠 element.class selector 是什麼 ->->-> `element.class selector  是一種選擇器，專門選擇同時符合type selector以及class selector的DOM節點`
-<!--SR:!2022-09-04,2,230-->
+<!--SR:!2022-09-08,4,230-->
 
 
 ---
