@@ -202,10 +202,13 @@ export default CourseInput;
 
 
 #🧠 在styled-components的template-literal中所使用的callback會是取得什麼樣參數來處理？->->-> `callback 的參數是對應元件的props物件`
+<!--SR:!2022-09-07,3,250-->
 
 #🧠 對於JS來說，在template literal 使用\$\{callback\} 能夠先直接callback然後以其結果來替代嗎？->->-> `並不能，會被JS引擎無法識別，而直接被當作字串來處理。`
+<!--SR:!2022-09-07,3,250-->
 
 #🧠 在styled-components的template-literal中，為何可以使用callback？ ->->-> ` template literal ＋ ${} 對於expression 優先執行 + styled-components 對於expression 為callback的處理方式：當styled-components讀取到後，會先執行callback，並以其callback結果來替代${callback} 所在的位置`
+<!--SR:!2022-09-07,3,250-->
 
 
 ---
