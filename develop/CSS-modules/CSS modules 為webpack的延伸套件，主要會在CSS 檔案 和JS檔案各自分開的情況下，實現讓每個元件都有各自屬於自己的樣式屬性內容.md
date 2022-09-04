@@ -165,7 +165,20 @@ import styles from <css-file>
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式名稱會是什麼形式？ ->->-> `<component-name>_<class-selector-name>_<unique-hash-value>`
 
+#🧠 假若CSS 檔案為如下，並且在React的層級定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 經由webpack和CSS modules的轉換後的CSS內容為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> ``
 
+
+#🧠 假若CSS 檔案為如下，並且在React的層級定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
+
+
+#🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會替CSS內部的哪些內容來做轉換 ->->-> `針對class selector和替換class selector`
+
+#🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，假如內容有.class1 {...}，請問轉換結果為？ ->->-> `.class1 => waer324 結果為.class1 {...} => .waer324 {...}`
+
+#🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，假如內容有.class1.class2 {...}，請問轉換結果為？->->-> `.class1 => waer324  .class2 => warewa32 結果為.class1.class2 {...} => .waer324.warewa32 {...}`
+
+
+#🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，假如內容有.class1 .class2 {...}，請問轉換結果為？->->-> `.class1 => waer324  .class2 => warewa32 結果為.class1 .class2 {...} => .waer324 .warewa32 {...}`
 
 ---
 Status: #🌱 #📓 
