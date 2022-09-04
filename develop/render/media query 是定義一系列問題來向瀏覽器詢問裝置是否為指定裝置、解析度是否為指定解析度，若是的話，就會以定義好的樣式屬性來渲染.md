@@ -34,10 +34,10 @@
 	.
 }
 ```
-
+- media query 若滿足的話，裡頭的樣式屬性會如何加入至CSSOM? 利用CSS specificity 來決定CSSOM的最終內容
 - 常見的為解析度：
-	- @media (max-width: xxxx px)：指定在xxxx px以下就採用
-	- @media (min-width: xxxx px)：指定在xxxx px以上就採用
+	- @media (max-width: xxxx px)：指定在xxxx px以下就利用CSS specificity 來決定CSSOM的最終內容。
+	- @media (min-width: xxxx px)：指定在xxxx px以上就利用CSS specificity 來決定CSSOM的最終內容。
 ### media 命名緣由
 
 > the main ways that large numbers of people receive information and entertainment, that is television, radio, newspapers and the internet
@@ -57,11 +57,14 @@
 <!--SR:!2022-09-07,3,250-->
 
 #🧠 media query 形式大概是什麼？ ->->-> `@media query { properties }`
-
-#🧠 media query 中的 @media (max-width: xxxx px) 是什麼？ ->->-> `指定在xxxx px以下就採用對應樣式`
 <!--SR:!2022-09-07,3,250-->
 
-#🧠 media query 中的 @media (min-width: xxxx px) 是什麼？ ->->-> `指定在xxxx px以上就採用對應樣式`
+#🧠 media query 中的 @media (max-width: xxxx px) 是做什麼？ ->->-> `指定在xxxx px以下就利用CSS specificity 來決定CSSOM的最終內容。`
+
+#🧠 media query 若滿足的話，裡頭的樣式屬性會如何加入至CSSOM？ ->->-> `利用CSS specificity 來決定CSSOM的最終內容`
+
+#🧠 media query 中的 @media (min-width: xxxx px) 是做什麼？ ->->-> `指定在xxxx px以上就利用CSS specificity 來決定CSSOM的最終內容。`
+
 
 
 ---
