@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 3.md",
+            "file": "inbox/browser debugger：breakpoint.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 3.md",
+                "file": "inbox/browser debugger：breakpoint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +97,8 @@
   },
   "active": "cffdf89fb6fe191c",
   "lastOpenFiles": [
+    "inbox/React 常見錯誤 & 檢測錯誤.md",
     "inbox/Styled-Components 和 CSS modules 之間的差別.md",
-    "inbox/Untitled 3.md",
     "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
     "MOC/React MOC.md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",

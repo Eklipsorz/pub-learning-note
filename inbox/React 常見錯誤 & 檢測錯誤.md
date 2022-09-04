@@ -2,7 +2,7 @@
 
 
 
-### 問題1
+### 問題1：沒用額外的parent 元件來包覆
 
 > Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment
 > adjacent, which means side-by-side JSX elements, must be wrapped in an in closing tag
@@ -28,7 +28,7 @@ function Component(props) {
 ```
 
 
-### 問題2 
+### 問題2：使用沒定義的識別字
 
 > 'addGoalaHandler' is not defined
 
@@ -87,6 +87,25 @@ const App = () => {
 export default App;
 
 ```
+
+
+### 問題3：邏輯問題
+
+問題：每當新增兩個以上的項目時，對著第一個項目點擊刪除時，總會刪到其他項目
+
+#### 檢測方法1
+1. 先遍歷定義刪除邏輯的部份來找到真正錯誤的地方，在這裡會追溯至App.js的deleteItemHandler：
+	- 遍歷過程：CourseGoalItem -> CourseGoalList -> App.js
+2. 確定deleteItemHandler沒問題，就去看看新增項目時或者賦予id的地方會有什麼問題
+
+
+#### 檢測方法2
+
+觀看瀏覽器給予的資訊：
+- 增加第一個項目後，並不會出現以下訊息，直到增加第二個項目後，就產生以下訊息：
+> Warning: Encountered two children with the same key, `goal1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+
+
 
 ### 如果IDE能夠偵測到錯誤，通常會是語法錯誤
 
