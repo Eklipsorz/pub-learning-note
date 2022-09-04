@@ -235,7 +235,7 @@ batch：
 <!--SR:!2022-10-02,28,250-->
 
 #🧠 React Batching 好處是什麼？ ->->-> `透過合併來減少大量重複渲染的操作：每一個狀態更新指令(setState)就會引發一次updating的渲染`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ ->->-> `主要依據著isBatchUpdate是否為true來決定是否執行Batching，若false，就不以Batching來執行；若true，就以Batching`
 <!--SR:!2022-10-02,28,250-->
@@ -244,7 +244,7 @@ batch：
 <!--SR:!2022-10-02,28,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ 會開放在Promise、setTimeOut嗎？為什麼？ ->->-> `Batching 在Promise、setTimeOut中無法被執行且被設定為**isBatchUpdate**為false，理由為React 無法從中控制，除非改寫Promise、setTimeOut`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-01,27,250-->
 
 #🧠 React Batching 在 React 18起的版本會是？ ->->-> `Batching 開放在事件處理、Promise、setTimeOut。 Batching 在盡量將N個狀態更新指令合併的情況下，就自動按照算法判定如何合併`
 <!--SR:!2022-10-02,28,250-->
@@ -272,7 +272,7 @@ batch：
 
 
 #🧠 React18: 若N個狀態更新指令遍佈在多個生命週期函式下的setTimeOut，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含setTimeOut的多個狀態更新指令來合併`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 
 
@@ -304,7 +304,7 @@ batch：
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-handler-example_pjtidy.png) ->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-09-30,26,250-->
 
 #🧠 React batching：同一個生命週期函式下，多個渲染狀態指令要求的狀態都不一樣，會如何做處理 ->->-> `通常會合併成一個特定狀態的狀態更新指令，特定狀態為多個渲染指令的狀態要求合併之結果`
 <!--SR:!2022-09-04,10,250-->
