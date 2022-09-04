@@ -115,7 +115,7 @@ export default App;
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📓 
 Tags:
 [[React]]
 Links:

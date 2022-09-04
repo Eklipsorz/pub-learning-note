@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/browser debugger：breakpoint.md",
+            "file": "inbox/react development tools.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/browser debugger：breakpoint.md",
+                "file": "inbox/react development tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,14 +98,14 @@
   "active": "cffdf89fb6fe191c",
   "lastOpenFiles": [
     "inbox/React 常見錯誤 & 檢測錯誤.md",
+    "inbox/browser debugger：breakpoint.md",
+    "inbox/react development tools.md",
     "inbox/Styled-Components 和 CSS modules 之間的差別.md",
     "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
     "MOC/React MOC.md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
     "develop/render/media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md",
     "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
-    "MOC/Caching MOC 2.md",
-    "how-to-note/Zettelkasten 筆記法會有的形式是什麼 2.md",
-    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取 2.md"
+    "MOC/Caching MOC 2.md"
   ]
 }

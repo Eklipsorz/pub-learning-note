@@ -2,17 +2,14 @@
 
 ### browser debugger：breakpoint
 
-[[@ithomeDay13Sources]]
 
-we can use this 
+> but it also gives the browser extra information which the browser developer tools are able to pick up to allow us to actually debug our code in the raw form we wrote it in
 
-step into next function call button
+react development 工具會給予瀏覽器一些資訊：
+1. 用webpack轉換前的原始碼，以便除錯
+	- 位置會在/Users/xxxx.... 目錄下的src目錄
 
-step over next function
-
-resume script execution
-
-#### 
+#### step into next function call 
 
 [[@ithomeDay13Sources]]
 > ### Step into next function call
@@ -48,7 +45,7 @@ function double(n) {
 	  return result; // C
 	}
 	```
-####
+#### Step over next function call
 
 > ### Step over next function call
 > 如果對即將執行的 Function 內部沒有興趣，`Step over` 會跳至該 Function 後方。
