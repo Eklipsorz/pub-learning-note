@@ -92,15 +92,15 @@
   },
   "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
+    "how-to-note/Zettelkasten 筆記法會有的形式是什麼 2.md",
+    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取 2.md",
+    "develop/RWD/pots/Identity and Access Management 設定哪些使用者對哪些資料進行哪一種操作的許可.md",
+    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML 2.md",
     "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動 2.md",
     "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術 2.md",
     "develop/OS/Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源 2.md",
     "develop/Network/網路遮罩是用來判斷目前IP所屬的子網域是什麼 2.md",
     "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export則是以輸出對應單一值的記憶體位址，取出時只要用任意變數名 2.md",
-    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式 2.md",
-    "develop/Language/膠水語言(Glue Language)  是以自製的語言和語法來黏貼特定語言A的函式功能至特定語言B的產品下的 語言 2.md",
-    "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context 2.md",
-    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序 2.md",
-    "develop/Express/multer 是一個套件，專門解析multipart中的form-data格式。 2.md"
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式 2.md"
   ]
 }
