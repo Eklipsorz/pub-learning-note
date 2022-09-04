@@ -36,7 +36,7 @@
 <!--SR:!2022-09-04,3,250-->
 
 #🧠 CSS Combinator 使用特殊符號或者特定形式來將N種selector結合成result selector，其result selector會是什麼？->->-> `會根據多個selector所指向的DOM 之間關係來選擇特定DOM節點`
-<!--SR:!2022-09-04,3,250-->
+<!--SR:!2022-09-14,10,250-->
 
 ---
 Status: #🌱 

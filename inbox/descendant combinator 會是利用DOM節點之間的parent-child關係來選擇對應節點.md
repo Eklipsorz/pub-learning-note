@@ -26,13 +26,13 @@
 <!--SR:!2022-09-04,3,250-->
 
 #🧠 descendant combinator 的主要形式是什麼？ ->->-> `主要由多個基本selector和空格所構成，每個selector之間會用空格相連接`
-<!--SR:!2022-09-04,3,250-->
+<!--SR:!2022-09-14,10,250-->
 
 #🧠 selector1 selector2 { }這類的selector會選擇什麼？ ->->-> `會選擇符合selector1 的DOM 節點所擁有的子節點，且子節點是符合selector2`
 <!--SR:!2022-09-04,3,250-->
 
 #🧠 selector1 selector2 selector3 { } 這類的selector會選擇什麼？ ->->-> `會選擇符合selector1 和 selector 2 的DOM 節點所擁有的子節點，而子節點是符合selector3`
-<!--SR:!2022-09-04,3,250-->
+<!--SR:!2022-09-14,10,250-->
 
 ---
 Status: #🌱  

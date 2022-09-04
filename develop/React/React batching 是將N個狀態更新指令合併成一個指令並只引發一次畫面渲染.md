@@ -238,7 +238,7 @@ batch：
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ ->->-> `主要依據著isBatchUpdate是否為true來決定是否執行Batching，若false，就不以Batching來執行；若true，就以Batching`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ 會開放在事件處理上嗎？為什麼？ ->->-> `Batching 只開放在事件處理，理由為React可以直接從瀏覽器的事件擷取`
 <!--SR:!2022-10-02,28,250-->
@@ -247,7 +247,7 @@ batch：
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 React Batching 在 React 18起的版本會是？ ->->-> `Batching 開放在事件處理、Promise、setTimeOut。 Batching 在盡量將N個狀態更新指令合併的情況下，就自動按照算法判定如何合併`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 #🧠 React automatic batching 是什麼？ ->->-> `不管是不是在事件處理執行N個狀態更新指令，只要在root節點下的子節點都直接自動以Batching來執行`
 <!--SR:!2022-09-05,10,250-->
@@ -258,7 +258,7 @@ batch：
 
 
 #🧠 React automatic batching 啟用條件為何？ ->->-> `automatic batching 只要使用createRoot來建立Virtual DOM的root節點，並於其節點建立子節點就會夠擁有automatic batching 特性`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
 <!--SR:!2022-09-22,20,250-->
@@ -288,7 +288,7 @@ batch：
 
 
 #🧠 React18: 在同一個生命週期函式下，那麼如果發生多個夾雜狀態更新指令的setTimeOut，會如何處理batching？->->-> `多個夾雜狀態更新指令的setTimeOut都算在一起做batching`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 #🧠 React18: 考慮以下事件處理，請問react batching 會如何處理這內含的case1-case6，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `- case 1 會和 case 3 合併 - case 2 會和 case 5 合併 - case 4 會和 case 6 合併`
 <!--SR:!2022-09-29,26,250-->
@@ -298,7 +298,7 @@ batch：
 <!--SR:!2022-09-04,10,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-setTimeOut-example_q337id.png) ->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-promise-example_oc4lrv.png)->->-> `會合併成一個狀態更新指令，來觸發`
 <!--SR:!2022-09-04,10,250-->
