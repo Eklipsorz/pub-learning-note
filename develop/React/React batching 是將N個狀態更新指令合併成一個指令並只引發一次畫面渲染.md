@@ -295,19 +295,19 @@ batch：
 
 
 #🧠  react batching ：考慮以下事件處理，請問多個事件所衍生出來的handler 所衍生batching狀況是如何，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `由於多個事件處理中的每個事件處理都自行做自己內部的batching，所以每個handler都各自合併`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-01,27,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-setTimeOut-example_q337id.png) ->->-> `會合併成一個狀態更新指令，來觸發`
 <!--SR:!2022-10-02,28,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-promise-example_oc4lrv.png)->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-09-29,25,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-handler-example_pjtidy.png) ->->-> `會合併成一個狀態更新指令，來觸發`
 <!--SR:!2022-09-30,26,250-->
 
 #🧠 React batching：同一個生命週期函式下，多個渲染狀態指令要求的狀態都不一樣，會如何做處理 ->->-> `通常會合併成一個特定狀態的狀態更新指令，特定狀態為多個渲染指令的狀態要求合併之結果`
-<!--SR:!2022-09-04,10,250-->
+<!--SR:!2022-10-02,28,250-->
 
 
 

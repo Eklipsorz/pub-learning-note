@@ -1,1 +1,0 @@
-https://docs.sendgrid.com/for-developers/sending-email/quickstart-nodejs#how-to-send-an-api-email
