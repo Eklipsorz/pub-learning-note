@@ -13,6 +13,8 @@ step over next function
 resume script execution
 
 #### 
+
+[[@ithomeDay13Sources]]
 > ### Step into next function call
 
 > 如果即將執行的 Function 正是問題所在，`Step into` 會停在該 Function 內的第一行。
@@ -31,10 +33,24 @@ function double(n) {
 
 > 點擊圖示後會跳至 B 行，也就是 `double` 的第一行。
 
+
+重點：
+- step into next function call ：
+	- 若目前斷點不是夾帶著其他函式呼叫的程式碼的話，按下 step into next function call 只會往下一行執行並停止
+	```
+	-> console.log('hi')
+	```
+	- 若目前斷點是夾帶著其他函式的程式碼的話，按下 step into next function 會往被呼叫函式那裡執行並於函式第一行停止
+	```
+	-> const result = double(number); // A
+	function double(n) {
+	  const result = n * 2; // B
+	  return result; // C
+	}
+	```
 ####
 
-### Step over next function call
-
+> ### Step over next function call
 > 如果對即將執行的 Function 內部沒有興趣，`Step over` 會跳至該 Function 後方。
 >
 > 以下方程式碼為例，假設目前暫停在 A 行的 `double`：
@@ -51,6 +67,22 @@ function double(n) {
 ```
 
 > 點擊圖示後會執行 `double` 內的所有程式碼並停在 D 行的 `console.log`。
+
+重點：
+- step over next function call ：
+	- 若目前斷點不是夾帶著其他函式呼叫的程式碼的話，按下 step over next function call 只會往下一行執行並停止
+	```
+	-> console.log('hi')
+	```
+	- 若目前斷點是夾帶著其他函式的程式碼的話，按下 step over next function 會往被呼叫函式那裡執行後的第一行執行並停止
+	```
+	-> const result = double(number); // A
+	function double(n) {
+	  const result = n * 2; // B
+	  return result; // C
+	}
+	```
+
 
 ### breakpoint 
 
@@ -87,3 +119,4 @@ References:
 [[@wikidataBreakpoint2022]]
 [[@wikidataDuanDian2021]]
 [[@ithomeDay13Sources]]
+[[@chromeJavaScriptDebuggingReference]]
