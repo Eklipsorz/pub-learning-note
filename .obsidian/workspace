@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+            "file": "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "每個元件在開發上實際綁定著",
+                "query": " CSS modules 在什麼情況下確保",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+                "file": "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
+    "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
+    "develop/React/setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數.md",
+    "develop/React/為何React要使用Redux.md",
+    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
     "inbox/browser debugger：breakpoint.md",
     "inbox/React 常見錯誤 & 檢測錯誤.md",
     "inbox/Styled-Components 和 CSS modules 之間的差別.md",
     "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
-    "MOC/React MOC.md",
-    "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
-    "develop/render/media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md",
-    "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
-    "MOC/Caching MOC 2.md"
+    "MOC/React MOC.md"
   ]
 }
