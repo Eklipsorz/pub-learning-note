@@ -1,19 +1,17 @@
 ## 描述
 
 
-react development (React 專用的開發除錯工具)
+react development (React 專用的開發除錯工具) 是瀏覽器的延伸工具之一
 
-- React Dev tools (會在瀏覽器除錯工具那邊增加Components 和 Profiler)
+主要會提供：
+- Components 和 Profiler
 
-  
 
-Components tab：(只會以React的角度來觀看網頁)
+- React Dev tools (會在瀏覽器除錯工具那邊增加)
 
-- component tree (real react component and component structure that is responsible for this UI output.)
+#### Components tab
+Components tab：(只會以React的角度來觀看/編輯網頁)，並且以component tree呈現，並且裡頭的資訊可以編輯、讀取
 
-- component (props 資訊、hook資訊)
-
-props 資訊
 
 一般：
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662310818/blog/react/debug/component-info1_e9ywbc.png)

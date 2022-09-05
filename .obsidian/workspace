@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/react development tools.md",
+            "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react development tools.md",
+                "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +97,9 @@
   },
   "active": "cffdf89fb6fe191c",
   "lastOpenFiles": [
-    "inbox/React 常見錯誤 & 檢測錯誤.md",
     "inbox/browser debugger：breakpoint.md",
-    "inbox/react development tools.md",
+    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+    "inbox/React 常見錯誤 & 檢測錯誤.md",
     "inbox/Styled-Components 和 CSS modules 之間的差別.md",
     "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
     "MOC/React MOC.md",
