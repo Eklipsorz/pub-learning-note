@@ -128,7 +128,7 @@ React updates DOM and refs 主要用途為：
 
 
 #🧠 React Mounting 階段下的子階段render有什麼 ->->-> `constructor、getDerivedStateFromProps、render`
-<!--SR:!2022-09-05,4,230-->
+<!--SR:!2022-09-16,11,230-->
 
 #🧠 React Mounting 階段下的子階段pre-commit有什麼 ->->-> `沒`
 <!--SR:!2022-10-01,28,250-->
