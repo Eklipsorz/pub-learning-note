@@ -162,7 +162,7 @@ function DoubleIncreaser() {
 
 
 #🧠 請說明當發生點擊事件時，會是如何更新狀態和渲染？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-solution_mbe5uf.png) ->->-> `第一次執行下面時，setCount 會拿目前的狀態值來當作actualCount並進行疊加，而得到1，其1會成為新的目前狀態值。第二次執行類似語法時，setCount會拿目前的狀態值1來當作actualCount並進行疊加，而得到2，其2會成為新的目前狀態值。最後沒setCount等狀態更新指令，就執行目前狀態值2來更新和渲染`
-<!--SR:!2022-09-05,10,250-->
+<!--SR:!2022-10-03,28,250-->
 
 
 ---
