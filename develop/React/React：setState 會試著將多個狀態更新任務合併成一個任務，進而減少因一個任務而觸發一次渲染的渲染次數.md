@@ -161,7 +161,7 @@ undefined
 <!--SR:!2022-10-03,28,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
-<!--SR:!2022-09-05,10,250-->
+<!--SR:!2022-10-02,27,250-->
 
 
 ---

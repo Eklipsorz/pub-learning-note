@@ -81,7 +81,7 @@ CourseInput/CourseInput.css：
 ## 複習
 
 #🧠 React：預設下，每個對應component 的JS檔案所import 的css 會不會限定於該component才能存取？ ->->-> `不會`
-<!--SR:!2022-09-05,3,250-->
+<!--SR:!2022-09-15,10,250-->
 
 #🧠 React：預設下，每個對應component 的JS檔案所import 的css 不會限定於該component才能存取，為什麼？ ->->-> `其css的作用域最後會是由webpack來決定，預設下，代表所有component的JS模組會合併成一個JS檔案並加載至HTML DOM文件A、每個component所載入的CSS會分別合併成一個CSS檔案並加載至HTML DOM文件A，當瀏覽器解析HTML文件A時，就會將CSS轉換成CSSOM、HTML轉換成DOM、將CSSOM和DOM合併成Rendering Tree、渲染(layout & paint)。在同個DOM的情況下，每個經由JS模組產生出來的DOM節點都會共享著同一個CSSOM的內容來渲染，換言之，每個component都會因為js模組和css模組都合併在HTML DOM文件而共享著每個component的CSS`
 <!--SR:!2022-09-15,10,250-->
@@ -91,7 +91,7 @@ CourseInput/CourseInput.css：
 
 
 #🧠 React：預設下，假如有兩個css檔案分別為css1、css2，並同時定義名為.goal-item的selector，請問在css1被特定component載入並使用goal-item，其component會是使用css1的.goal-item嗎？ ->->-> `不一定，主要看webpack如何對CSS、JS、加載如何處理`
-<!--SR:!2022-09-05,3,250-->
+<!--SR:!2022-09-07,2,230-->
 
 ---
 Status: #🌱 

@@ -257,7 +257,7 @@ const DUMMY_EXPENSES = [
 
 
 #🧠 React：如何使用Keys概念至Virtual DOM節點上？ 語法形式如何？->->-> `在對應component添加key屬性，其屬性值為對應某種資料的識別字：<Component key=identifier1 />`
-<!--SR:!2022-09-05,5,248-->
+<!--SR:!2022-09-18,13,248-->
 
 #🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1 主要是什麼？ 可填入什麼 ->->-> `主要是每個資料的識別字，可以填入字串、數字`
 <!--SR:!2022-09-06,6,248-->
