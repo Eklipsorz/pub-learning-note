@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+            "file": "inbox/Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+                "file": "inbox/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +97,8 @@
   },
   "active": "7fb7dcb68ed99060",
   "lastOpenFiles": [
-    "inbox/browser debugger：breakpoint.md",
     "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+    "inbox/browser debugger：breakpoint.md",
     "inbox/React 常見錯誤 & 檢測錯誤.md",
     "develop/CSS-modules/CSS modules：button 案例 + media query.md",
     "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
