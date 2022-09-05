@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "cffdf89fb6fe191c",
+        "id": "7fb7dcb68ed99060",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -90,7 +90,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cffdf89fb6fe191c",
+  "active": "7fb7dcb68ed99060",
   "lastOpenFiles": [
     "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
     "inbox/browser debugger：breakpoint.md",
