@@ -7,8 +7,12 @@
         "id": "7fb7dcb68ed99060",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "每個元件在開發上實際綁定著",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,7 +95,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7fb7dcb68ed99060",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
     "inbox/browser debugger：breakpoint.md",
