@@ -102,6 +102,8 @@ export default CourseInput;
 
 ## 複習
 
+#🧠  請用要如何運用CSS modules來套用在CourseInput 元件並實現當輸入欄空白時，如何調整樣式以及當輸入欄有輸入時，如何調整樣式和CSS？ 假若輸入欄空白時，標籤文字是紅色，輸入欄背景是salmon，輸入欄線框顏色為紅色。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662385055/blog/react/style/css%20module/css-module-example1-class_kqjx0a.png)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662385055/blog/react/style/css%20module/css-module-example1-component_eoq7td.png)->->-> ``
+
 ---
 Status: #🌱 #📓 
 Tags:
