@@ -18,7 +18,7 @@ const Element = styled.<element>`<template-literal>`
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]] - [[CSS]]
 Links:

@@ -79,8 +79,12 @@
 
 ## 複習
 
+#🧠 假若使用CSS module來建立特定元件的media query，該如何添加語法![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662386338/blog/react/style/css%20module/css-module-example1-media-query_jfxqec.png) ->->-> `@media query { .xxxx { .... } } ，其中為button`
+
+
+
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]] - [[CSS]]
 Links:

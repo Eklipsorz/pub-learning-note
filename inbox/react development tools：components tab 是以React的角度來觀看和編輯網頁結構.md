@@ -6,7 +6,6 @@ react development (React 專用的開發除錯工具) 是瀏覽器的延伸工�
 主要會提供：
 - Components 和 Profiler
 
-
 - React Dev tools (會在瀏覽器除錯工具那邊增加)
 
 #### Components tab

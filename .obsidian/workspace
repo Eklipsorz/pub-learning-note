@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "8ece7f9f5aaf8445",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
+            "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
+                "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8ece7f9f5aaf8445",
+  "active": "7fb7dcb68ed99060",
   "lastOpenFiles": [
+    "inbox/browser debugger：breakpoint.md",
+    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+    "inbox/React 常見錯誤 & 檢測錯誤.md",
+    "develop/CSS-modules/CSS modules：button 案例 + media query.md",
+    "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
+    "develop/styled-components/styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute).md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
     "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
     "develop/React/setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數.md",
-    "develop/React/為何React要使用Redux.md",
-    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
-    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
-    "inbox/browser debugger：breakpoint.md",
-    "inbox/React 常見錯誤 & 檢測錯誤.md",
-    "inbox/Styled-Components 和 CSS modules 之間的差別.md",
-    "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md"
+    "develop/React/為何React要使用Redux.md"
   ]
 }
