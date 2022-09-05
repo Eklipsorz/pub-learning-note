@@ -145,7 +145,7 @@ undefined
 <!--SR:!2022-10-03,28,250-->
 
 #🧠 React： **當非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期** ，其實際實現為何？ ->->-> `實際實現為：當目前可以合併的指令都完成合併時，就執行以目前結果狀態來觸發實際狀態更新 & 渲染。`
-<!--SR:!2022-09-05,10,250-->
+<!--SR:!2022-10-03,28,250-->
 
 
 #🧠 React：負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
@@ -155,10 +155,10 @@ undefined
 <!--SR:!2022-09-05,10,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-09-05,10,250-->
+<!--SR:!2022-10-03,28,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以單一值來表示，那麼會以何種狀態來渲染和更新狀態？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `4`
-<!--SR:!2022-09-05,10,250-->
+<!--SR:!2022-10-03,28,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
 <!--SR:!2022-09-05,10,250-->

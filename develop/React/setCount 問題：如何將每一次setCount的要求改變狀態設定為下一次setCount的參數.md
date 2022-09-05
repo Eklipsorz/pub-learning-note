@@ -145,7 +145,7 @@ function DoubleIncreaser() {
 
 ## 複習
 #🧠 請問發生按鈕點擊事件後，其狀態會是如何，count渲染又是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `會是1，由於count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值，count只不過是儲存特定狀態值的變數，它一直保持著0這個狀態值，第二次執行，也是拿目前的count = 0來做，而得到0 + 1，最後執行的時候，會是以1這個狀態值來更新，並同時只執行一次狀態更新 & 渲染`
-<!--SR:!2022-09-05,10,250-->
+<!--SR:!2022-10-03,28,250-->
 
 
 #🧠 若要以下面形式![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png)來改造下面的話，解法有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `以callback作為setCount的引數、先處理兩次count疊加的邏輯計算並且以其結果來渲染和更新`
