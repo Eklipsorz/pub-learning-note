@@ -19,9 +19,9 @@
 > 這裡的維度計算為： width = border + padding + 內容的 width， height = border + padding + 內容的 height。 
 
 重點：
-- box-sizing：主要設定以哪個盒子的總高寬為主來決定元素的width、height這兩個屬性，可以填入的分別為：
-	- content-box：以content box的總高寬來計算決定元素的高寬，不包含padding和border
-	- border-box ：以border box的總高寬來決定元素的高寬：
+- box-sizing：主要設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性，可以填入的分別為：
+	- content-box：以content box的總高寬來當作元素的高寬屬性，不包含padding和border
+	- border-box ：以border box的總高寬來當作元素的高寬屬性，包含padding和border：
 		- width：border-width\*2 + padding-width\*2 + content box的width
 		- height：border-height\*2 + padding-height\*2 + context box的height
 
@@ -47,9 +47,12 @@
 重點：
 - 在這裡設定box-sizing 為content-box
 - 其width、height會是設定content box的部分
-- 元素實際所佔的大小為：
+- 元素實際所佔的大小為(content box + padding box本身大小 + border box本身大小)：
 	- 寬：(350px + 25\*2 + 5\*2) = 410 px
 	- 高：(150px + 25\*2 + 5\*2) = 210 px
+- content box所佔的大小為：
+	- 寬：350px
+	- 高：150px
 
 
 ### box-sizing：border-box
@@ -68,14 +71,38 @@
 ```
 
 重點：
-- 在這裡設定box-sizing 為content-box
-- 其width、height會是設定content box的部分
-- 元素實際所佔的大小為：
-	- 寬：(350px + 25\*2 + 5\*2) = 410 px
-	- 高：(150px + 25\*2 + 5\*2) = 210 px
-
+- 在這裡設定box-sizing 為border-box
+- 其width、height會是設定border box的總高寬部分
+- 元素實際所佔的大小為(content box + padding box本身大小 + border box本身大小)：
+	- 寬：350px
+	- 高：150px
+- content box 所佔的大小為
+	- 寬：350px - 25\*2  - 5\*2 = 290px
+	- 高：150px - 25\*2  - 5\*2 = 90px
 
 ## 複習
+
+#🧠 box-sizing 屬性是什麼？ ->->-> `主要設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性`
+<!--SR:!2022-09-09,3,250-->
+
+#🧠 box-sizing 屬性可填入什麼屬性值？->->-> `content-box、border-box`
+<!--SR:!2022-09-09,3,250-->
+
+#🧠 box-sizing 屬性是content-box，代表著？->->-> `以content box的總高寬來當作元素的高寬屬性，不包含padding和border`
+<!--SR:!2022-09-09,3,250-->
+
+
+#🧠 box-sizing 屬性是border-box，代表著 ->->-> `以border box的總高寬來當作元素的高寬屬性，包含padding和border`
+<!--SR:!2022-09-09,3,250-->
+
+
+#🧠 假如box-sizing是context box，請問元素實際所佔的大小為何？以及content box大小為何![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662479135/blog/css/box-model/box-sizing-question_riexdo.png) ->->-> `- 元素實際所佔的大小為(content box + padding box本身大小 + border box本身大小)： - 寬：(350px + 25\*2 + 5\*2) = 410 px - 高：(150px + 25\*2 + 5\*2) = 210 px - content box所佔的大小為： - 寬：350px - 高：150px`
+<!--SR:!2022-09-09,3,250-->
+
+
+#🧠 假如box-sizing是border box，請問元素實際所佔的大小為何？以及content box大小為何![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662479135/blog/css/box-model/box-sizing-question_riexdo.png)->->-> ` 元素實際所佔的大小為(content box + padding box本身大小 + border box本身大小)： - 寬：350px - 高：150px - content box 所佔的大小為 - 寬：350px - 25\*2  - 5\*2 = 290px - 高：150px - 25\*2  - 5\*2 = 90px`
+<!--SR:!2022-09-09,3,250-->
+
 
 
 ---

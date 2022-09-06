@@ -61,36 +61,49 @@
 ## 複習
 
 #🧠 padding 命名緣由 ->->-> `padding 一種放在盒子中的軟性填充物，專門包覆特定事物不受到破壞`
+<!--SR:!2022-09-09,3,250-->
 
 #🧠 margin 命名緣由 ->->-> `一個區域的外邊緣`
+<!--SR:!2022-09-09,3,250-->
 
 #🧠 每一個HTML 元素在渲染層面上，會是以什麼東西來構成？ ->->-> `CSS box model`
+<!--SR:!2022-09-09,3,250-->
 
 #🧠 CSS Box Model 是什麼結構？ ->->-> `是由多種Box組合在一起的結構，這些盒子都負責裝載特定內容，分別有Content Box、Padding Box、Border Box、Margin Box`
+<!--SR:!2022-09-09,3,250-->
 
 #🧠 在CSS Box Model，Content Box 是什麼？ ->->-> `裝載HTML 元素的主要內容`
+<!--SR:!2022-09-09,3,250-->
 
 
-#🧠 預設下，CSS Box Model，Content Box 的大小屬性由什麼決定？ ->->-> `width、height`
+#🧠 預設下，CSS Box Model，Content Box 本身的大小屬性由什麼決定？ ->->-> `width、height`
+<!--SR:!2022-09-09,3,250-->
 
 
-#🧠 在CSS Box Model，Padding Box 是什麼？ ->->-> `如其名，本身裝載會裝載有填充物和Content Box這些內容`
+#🧠 在CSS Box Model，Padding Box 是什麼？ ->->-> `如其名，本身裝載Content Box內容`
+<!--SR:!2022-09-09,3,250-->
 
 
-#🧠 在CSS Box Model，Padding Box  的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由padding-top、padding-bottom、padding-left、padding-right來決定`
+#🧠 在CSS Box Model，Padding Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由padding-top、padding-bottom、padding-left、padding-right來決定`
+<!--SR:!2022-09-09,3,250-->
 
 
 #🧠 在CSS Box Model，Border Box 是什麼？ ->->-> `本身負責裝載著Padding Box內容`
+<!--SR:!2022-09-09,3,250-->
 
 
-#🧠 在CSS Box Model，Border Box  的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由border-top、border-bottom、border-left、border-right來決定`
+#🧠 在CSS Box Model，Border Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由border-top、border-bottom、border-left、border-right來決定`
+<!--SR:!2022-09-09,3,250-->
 
 #🧠 在CSS Box Model，Margin Box 是什麼？ ->->-> `本身負責裝載著Border Box內容`
+<!--SR:!2022-09-09,3,250-->
 
 
 #🧠 在CSS Box Model， Margin Box  的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由Margin-top、Margin-bottom、Margin-left、Margin-right來決定`
+<!--SR:!2022-09-09,3,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``
+<!--SR:!2022-09-09,3,250-->
 
 
 
