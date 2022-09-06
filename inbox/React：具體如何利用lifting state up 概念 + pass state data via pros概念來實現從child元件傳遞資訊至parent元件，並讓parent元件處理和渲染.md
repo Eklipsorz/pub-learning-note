@@ -34,7 +34,7 @@ So in that parent component which has access to both involved components by lift
 
 ## 複習
 #🧠 React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染? 概念上要如何解決 ->->-> `	 將特定元件A的狀態往上傳遞至parent元件上，並讓parent元件接收到狀態來修改渲染用的資料，接著觸發渲染透過props往下將新資訊更新至子元件來重新渲染`
-<!--SR:!2022-09-06,10,250-->
+<!--SR:!2022-10-04,28,250-->
 
 
 #🧠 React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染? 具體實現是如何？ ->->-> `將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動，接著透過執行parent元件上的setState來依據資料更新以及觸發渲染，觸發後會透過props將新狀態往下傳遞來構築新的child元件和parent`
