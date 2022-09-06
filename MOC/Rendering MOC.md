@@ -21,7 +21,7 @@
 [[每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model]]
 [[box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性]]
 
-
+[[inline element 主要會將內容排成一行來呈現，與其他元素排版會是水平排列，block element則是以指定區塊來呈現內容，與其他元件排版只會是垂直排列]]
 
 ## HTML + CSS + JS
 - HTML + CSS + JS

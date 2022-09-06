@@ -28,12 +28,16 @@ flow layout 或者 normal flow 是系統預設對於元素的排版方式。
 > -   除了`替換元素`之外，寬高取決於內容(例如文字)的`長度`與`行高(line height)`。
 > -   呈現`水平排列`。
 > -   裡面只能放 inline 元素。
-  
+
+
+內部顯示(the inner display type)：會以inline element的容器來儲存和呈現內容
+外部顯示(the outer display type)：與其他元素排版，會以水平排列為主
+
 
 特點：
 1. 除了replaced element以外，無法透過width和height屬性來調整寬高
 2. 除了replaced element以外，元件的總高寬取決於元件內容的長度(寬度)和行高(高度)
-3. 每個inline元素的呈現內容會以水平排列為主
+3. 與其他元素排版：會以水平排列為主
 4. 裡面只能放inline元素
 
   
@@ -49,10 +53,13 @@ flow layout 或者 normal flow 是系統預設對於元素的排版方式。
 > -   裡面可放 inline 元素或 block 元素。
 
 
+內部顯示(the inner display type)：會以block element的容器來儲存和呈現內容
+外部顯示(the outer display type)：與其他元素排版，會以垂直排列為主
+
 特點：
 1. 預設寬度為容器的100%
 2. 可以透過width和height屬性調整高寬
-3. 強迫換行，每個block元素都會呈現垂直排列
+3. 與其他元素排版：強迫換行，元素都會呈現垂直排列
 4. 裡面可放inline元素和block元素
 
 
@@ -76,10 +83,10 @@ flow layout 或者 normal flow 是系統預設對於元素的排版方式。
 
 #🧠 inline element 是什麼？ ->->-> `該元件的內容主要會排成一行，且不會特別佔別據沒顯示內容的區塊而將元件和其他元件特別獨立開來，以此特性會讓該容器能夠與其他容器在同一行內呈現，而inline element就是由此而得名`
 
-#🧠 inline element 特點有哪些? (有四點)->->-> `除了replaced element以外，無法透過width和height屬性來調整寬高、除了replaced element以外，元件的總高寬取決於元件內容的長度(寬度)和行高(高度)、元件的元件呈現內容會以水平排列為主、裡面只能放inline元素`
+#🧠 inline element 特點有哪些? (有四點，高寬、排列、存放什麼) ->->-> `除了replaced element以外，無法透過width和height屬性來調整寬高、除了replaced element以外，元件的總高寬取決於元件內容的長度(寬度)和行高(高度)、元件的元件呈現內容會以水平排列為主、裡面只能放inline元素`
 
 
-#🧠 每個inline元素 的內容呈現是如何？ ->->-> `水平排列`
+#🧠 每個inline元素 與其他元素排版是如何？ ->->-> `水平排列`
 
 #🧠 inline element 能放什麼元素 ->->-> `只能放inline元素`
 
@@ -89,13 +96,13 @@ flow layout 或者 normal flow 是系統預設對於元素的排版方式。
 
 #🧠 block element 能放什麼元素？ ->->-> `裡面可放inline元素和block元素`
 
-#🧠 每個 block element元素呈現是如何 ->->-> `強迫換行，每個block元素都會呈現垂直排列`
+#🧠 每個 block element與其他元素排版是如何？ ->->-> ` 與其他元素排版：強迫換行，元素都會呈現垂直排列`
 
 #🧠 block element 的高寬如何決定 ->->-> `可以透過width和height屬性調整高寬`
 
 #🧠 block element的預設寬度為何？ ->->-> `為容器的100%`
 
-#🧠 block element的特點有什麼？(有四點，大小、高寬、排列、存放什麼) ->->-> ``
+#🧠 block element的特點有什麼？(有四點，大小、高寬、排列、存放什麼) ->->-> `1. 預設寬度為容器的100% 2. 可以透過width和height屬性調整高寬 3. 與其他元素排版：強迫換行，元素都會呈現垂直排列 4. 裡面可放inline元素和block元素`
 
 ---
 Status: #🌱 
