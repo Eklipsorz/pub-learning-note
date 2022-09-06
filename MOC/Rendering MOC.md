@@ -19,6 +19,9 @@
 ## Box Model
 
 [[每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model]]
+[[box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性]]
+
+
 
 ## HTML + CSS + JS
 - HTML + CSS + JS

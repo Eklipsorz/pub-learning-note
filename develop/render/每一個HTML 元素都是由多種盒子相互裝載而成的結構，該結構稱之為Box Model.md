@@ -32,7 +32,7 @@
 - CSS Box Model：是由多種Box組合在一起的結構，這些盒子都負責裝載特定內容，分別有：
 	- Content Box：裝載HTML 元素的主要內容
 		- Box 本身(不算裝載)高寬會分別由height、width來決定
-	- Padding Box：如其名，本身裝載會裝載有填充物和Content Box這些內容
+	- Padding Box：如其名，本身裝載Content Box內容
 		- Box 本身(不算裝載)高寬分別由padding-top、padding-bottom、padding-left、padding-right來決定
 	- Border Box ：本身負責裝載著Padding Box內容
 		- Box 本身(不算裝載)高寬分別由border-top、border-bottom、border-left、border-right來決定
@@ -99,7 +99,7 @@
 <!--SR:!2022-09-09,3,250-->
 
 
-#🧠 在CSS Box Model， Margin Box  的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由Margin-top、Margin-bottom、Margin-left、Margin-right來決定`
+#🧠 在CSS Box Model， Margin Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由Margin-top、Margin-bottom、Margin-left、Margin-right來決定`
 <!--SR:!2022-09-09,3,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``

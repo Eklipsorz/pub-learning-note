@@ -1,4 +1,18 @@
 ## 描述
+
+
+### 文獻：
+[[@mdnBlocklevelElementsHTML]]
+> A Block-level element occupies the entire horizontal space of its parent element (container), and vertical space equal to the height of its contents, thereby creating a "block".
+
+
+[[@mdnInlineElementsHTML]]
+> Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+
+[[@mdnCSSFlowLayout]]
+> In normal flow, inline elements display in the inline direction, that is in the direction words are displayed in a sentence according to the Writing Mode of the document. Block elements display one after the other, as paragraphs do in the Writing Mode of that document. In English therefore, inline elements display one after the other, starting on the left, and block elements start at the top and move down the page.
+
+
 ## inline element
 
 容器會以實際容器所存的內容為主且不會特別佔據沒顯示內容的區塊而將容器特別獨立開來，以此特性會讓該容器能夠與其他容器在同一行內呈現，而inline element就是由此而得名。
@@ -35,18 +49,20 @@
   
   
 
-## reference
 
-1. https://www.geeksforgeeks.org/difference-between-block-elements-and-inline-elements/
-
-2. https://www.freecodecamp.org/news/inline-elements-and-block-elements-in-html-explained/
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-09-09,3,250-->
+
 
 ---
 Status: #🌱 
 Tags:
 [[CSS]] - [[HTML]]
 Links:
+[[box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性]]
+[[每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model]]
 References:
+[[@DifferenceBlockElements2021]]
+[[@freecodecampInlineElementsBlock]]
+[[@mdnBlocklevelElementsHTML]]
+[[@mdnInlineElementsHTML]]
+[[@mdnCSSFlowLayout]]
