@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -96,7 +95,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7fb7dcb68ed99060",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/browser debugger：breakpoint.md",
