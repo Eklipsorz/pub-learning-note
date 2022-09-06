@@ -253,7 +253,7 @@ const DUMMY_EXPENSES = [
 
 
 #🧠 React：最左邊是要插入的資料，Before是實際建立的DOM節點，目前按照順序填入資料，After 是使用Keys技術，請詳細說明使用之後的概念![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661613698/blog/react/dynamic-list-rendering/before-vs-after-with-keys_cedmf3.png) ->->-> ``
-<!--SR:!2022-09-06,6,248-->
+<!--SR:!2022-09-22,16,248-->
 
 
 #🧠 React：如何使用Keys概念至Virtual DOM節點上？ 語法形式如何？->->-> `在對應component添加key屬性，其屬性值為對應某種資料的識別字：<Component key=identifier1 />`
