@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "e85c57006b62d0a2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Untitled 2 1.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -95,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d0ede25f72c56a6",
+  "active": "e85c57006b62d0a2",
   "lastOpenFiles": [
     "develop/render/box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性.md",
     "MOC/Rendering MOC.md",
