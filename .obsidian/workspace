@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "inbox/Untitled 1 1.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled 3.md",
+            "file": "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 3.md",
+                "file": "inbox/Untitled 1 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "775a38728a92946b",
+  "active": "7fb7dcb68ed99060",
   "lastOpenFiles": [
-    "Untitled 2.md",
-    "Untitled 1.md",
-    "Untitled.md",
+    "inbox/Untitled 4.md",
+    "inbox/Untitled 2 1.md",
+    "inbox/Untitled 1 1.md",
+    "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
+    "MOC/Rendering MOC.md",
     "develop/Database/Master-Master Replication 架構是每個資料庫系統皆為主要資料庫系統，都會將特定資料複製成副本給所有資料庫系統的資料庫，以此讓多個資料庫系統共享資料.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/browser debugger：breakpoint.md",
     "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
-    "inbox/Untitled 3.md",
-    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
-    "inbox/React 常見錯誤 & 檢測錯誤.md"
+    "inbox/Untitled 3.md"
   ]
 }

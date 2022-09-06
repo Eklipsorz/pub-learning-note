@@ -14,6 +14,12 @@
 [[Browser Object Model 是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面]]
 
 [[Window 物件是指顯示 特定文件所渲染出來的畫面 的顯示區塊物件]]
+
+
+## Box Model
+
+[[每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model]]
+
 ## HTML + CSS + JS
 - HTML + CSS + JS
 [[HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML]]
@@ -24,7 +30,6 @@
 [[inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令]]
 
 [[parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染]]
-
 
 
 - CSS
@@ -45,6 +50,9 @@
 [[每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：universal selector、type selector、id selector、class selector]]
 
 [[media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染]]
+
+
+
 #### JS 模組化
 [[在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題]]
 
