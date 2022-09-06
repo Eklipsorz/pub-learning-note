@@ -23,6 +23,9 @@
 
 [[inline element 主要會將內容排成一行來呈現，與其他元素排版會是水平排列，block element則是以指定區塊來呈現內容，與其他元件排版只會是垂直排列]]
 
+
+[[display：inline-block 是指定元素在內部呈現是以block形式為主，而外部呈現就是保持水平呈現]]
+
 ## HTML + CSS + JS
 - HTML + CSS + JS
 [[HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML]]
