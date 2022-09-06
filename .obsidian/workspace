@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "7fb7dcb68ed99060",
   "lastOpenFiles": [
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "Untitled.md",
     "develop/Database/Master-Master Replication 架構是每個資料庫系統皆為主要資料庫系統，都會將特定資料複製成副本給所有資料庫系統的資料庫，以此讓多個資料庫系統共享資料.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/browser debugger：breakpoint.md",
     "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
     "inbox/Untitled 3.md",
     "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
-    "inbox/React 常見錯誤 & 檢測錯誤.md",
-    "develop/CSS-modules/CSS modules：button 案例 + media query.md",
-    "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
-    "develop/styled-components/styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute).md"
+    "inbox/React 常見錯誤 & 檢測錯誤.md"
   ]
 }
