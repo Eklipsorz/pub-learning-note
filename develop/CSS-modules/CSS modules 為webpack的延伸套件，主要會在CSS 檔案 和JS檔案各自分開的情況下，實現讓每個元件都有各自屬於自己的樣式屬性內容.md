@@ -160,6 +160,7 @@ import styles from <css-file>
 
 
 #🧠 當要對特定CSS檔案進行CSS module的實際轉換，得滿足什麼條件？ ->->-> `1. 特定CSS檔案名稱為\<file\>.module.css 2. 要有元件去載入\<file\>.module.css `
+<!--SR:!2022-09-07,1,228-->
 
 #🧠 CSS modules 具體是什麼套件？ 就說明它源自哪裡->->-> ` 具體會是 webpack 延伸套件`
 <!--SR:!2022-09-08,3,250-->
@@ -197,10 +198,12 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1.class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1_waer324  .class2 => .Button_class2_warewa32 結果為.class1.class2 {...} => .Button_class1_waer324..Button_class2_warewa32 {...}`
+<!--SR:!2022-09-08,2,248-->
 
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1 .class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1.waer324  .class2 => .Button_class2.warewa32 結果為.class1 .class2 {...} => .Button_class1.waer324 .Button_class2.warewa32 {...}`
+<!--SR:!2022-09-08,2,247-->
 
 
 ---
