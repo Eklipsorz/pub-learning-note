@@ -63,6 +63,15 @@ position: sticky;
 - 在CSS中，poitioned element  會是指該元素是可受到top、bottom、left、right、z-index這五種屬性值來調整其位置，通常會是指帶有poition：relative | absolute | fixed | sticky 的元素。
 - 若position 為static的元素，就是non-positioned element
 
+
+#### positiond
+[[@mdnPositionCSSCascading]]
+> The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
+
+
+重點：
+- 若元件的position屬性是static，就按照文件的正常排版方式來排版呈現，不會被top、bottom、left、right、z-inde來影響
+
 ## 複習
 
 #🧠 CSS：position 屬性是什麼？ ->->-> `指定元件在同一份文件中的定位方式是如何`
@@ -79,6 +88,8 @@ position: sticky;
 #🧠 positioned element 是指該元素是可受到top、bottom、left、right這四種屬性值來調整其位置，具體是什麼？ ->->-> `通常會是指帶有poition：relative | absolute | fixed | sticky 的元素`
 
 #🧠 position 為static的元素是算positioned element？還是non-positioned element?  ->->-> `non-positioned element`
+
+#🧠 position 為static的元素 是什麼？會不會受到top、left、right、bottom、z-index這五個屬性的影響 ->->-> `意旨為遵從文件上的預設排版方式來排版，並且不會被top、left、right、bottom、z-index這五個屬性來調整其位置。`
 
 #🧠 top、right、bottom、left、z-index能夠調整non-positioned element的位置嗎？ ->->-> `並不能`
 
