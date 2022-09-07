@@ -7,36 +7,28 @@
 
 重點：
 - 當被設定position：relative，其元素的定義參考點會以position：static元素的放置起點為主
-- 其top、right、bottom、left 
+- 其top、right、bottom、left 會以定義參考點來位移
 
 ### position：relative
 
 
-3. 若position 設定為relative時，其容器大小並不會跟著內容而變化，而定位方式會從static改變，且以static模式下的元素之定位參考點為基準點(下圖橘點)來定位，由該橘點來構成其元素能夠位移的範圍(橘框)：
-
-  
+若position 設定為relative時，其容器大小並不會跟著內容而變化，而定位方式會從static改變，且以static模式下的元素之定位參考點為基準點(下圖橘點)來定位，由該橘點來構成其元素能夠位移的範圍(橘框)：
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png)
 
   
-
 而top、bottom、left、right在這裡的表現，會以橘點為主：
 
-  
+### value1為正值時
 
-a. value1為正值時，
+1. 當top被設定為value1時，為了讓被位移後的元素離橘點擁有value1 px的上方偏移量，而讓元素的黑點會以橘點為起始點向下移動value1 px
+2. 當bottom被設定為value1時，為了讓被位移後的元素離橘擁有value1 px的下方偏移量，而讓元素的黑點會以橘點為起始點向上移動value1 px
+3. 當left被設定為value1時，為了讓被位移後的元素離橘點擁有value1 px的左方偏移量，而讓元素的黑點會以橘點為起始點向右移動value1 px
+4. 當right被設定value1時，為了讓被位移後的元素離橘點擁有value1 px的右方偏移量，而讓元素的黑點會以橘點為起始點向左移動至value1 px 
 
-- 當top被設定為value1時，元素的黑點會以橘點為中心向下移動至value1
+### value1 為負值時
 
-- 當bottom被設定為value1時，元素的黑點會以橘點為中心向上移動至value1
-
-- 當left被設定為value1時，元素的黑點會以橘點為中心向右移動至value1
-
-- 當right被設定value1時，元素的黑點會以橘點為中心向左移動至value1
-
-  
-
-b. 當value1為負值時，top、bottom、left、right的移動方向會變成反方向，比如當top被設定為目前為負值的value1時，元素的黑點會以橘點為中心向上移動至value1。
+當value1為負值時，top、bottom、left、right的移動方向會變成反方向，比如當top被設定為目前為負值的value1時，元素的黑點會以橘點為中心向上移動至value1。
 
   
   
