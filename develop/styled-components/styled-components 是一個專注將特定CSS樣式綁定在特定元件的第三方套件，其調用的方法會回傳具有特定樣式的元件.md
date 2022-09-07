@@ -86,7 +86,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-09-07,2,230-->
 
 #🧠 styled-components 透過概念而實現的用途會是什麼？ ->->-> `主要是藉由實現CSS-in-JS的概念來讓特定樣式屬性綁定在特定元件下，不會產生CSS 相關的全域污染問題`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-16,9,250-->
 
 #🧠 styled-components 在實際DOM節點上，會綁定什麼樣class來當作class 屬性(attribute)值？ ->->-> `1. 自動替已經註冊在特定元件下的樣式內容生成一個獨特隨機名稱的className 2. 讓該元件的class屬性綁定於獨特隨機的className`
 <!--SR:!2022-09-07,3,250-->
@@ -95,13 +95,13 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-09-07,2,230-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是什麼？->->-> `React Element 或者對應元件的建構式`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-17,10,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-16,9,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-17,10,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中是如何定義該元件所包含的子節點？->->-> `預設下會有依照要產生的元件種類來產生對應子節點來被包含，如<element> </element> 所包裹的props.children`
 <!--SR:!2022-09-07,3,250-->

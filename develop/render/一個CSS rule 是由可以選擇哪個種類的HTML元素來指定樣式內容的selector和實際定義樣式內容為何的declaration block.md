@@ -86,7 +86,7 @@ color: red;
 <!--SR:!2022-09-08,5,230-->
 
 #🧠 每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration  是什麼？ ->->-> `主要是以樣式屬性(property)、屬性值、分號(;)來組成`
-<!--SR:!2022-09-07,5,248-->
+<!--SR:!2022-09-19,12,248-->
 
 #🧠 每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration  用途為？->->-> `定義selector所選擇的DOM節點會有什麼樣樣式屬性`
 <!--SR:!2022-09-09,6,250-->
