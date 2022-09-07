@@ -6,8 +6,9 @@
 [[@w3cCSSAbsoluteFixed]]
 > Fixed positioning is really just **a specialized form of absolute positioning**; elements with fixed positioning are fixed relative to the viewport/browser window rather than the containing element; even if the page is scrolled, they stay in exactly the same position inside the browser window
 
-
-
+重點：
+- fixed positioning 是以viewport window為主的定位方式，而非以特定容器，所以即使頁面有進行滾動，其定位方式仍會以整個window為主
+- 在這裡會以window的最左上角
 
 ###
 
@@ -73,17 +74,27 @@ right: value2
 
 
 ### port 命名緣由
+
 > A port on a computer is a place where you can attach another piece of equipment
 
-
+重點：
+- 在電腦科學中，port相當於一個存取介面，可允許裝置/資訊安裝至介面，以此讓使用介面的使用者能夠透過介面來存取裝置/資訊
 
 ### viewport 是什麼？
 [[@mdnViewportMDNWeb]]
 > A viewport represents a polygonal (normally rectangular) area in computer graphics that is currently being viewed. In web browser terms, it refers to the part of the document you're viewing which is currently visible in its window (or the screen, if the document is being viewed in full screen mode). Content outside the viewport is not visible onscreen until scrolled into view.
 
+[[@mdnViewportShuYuBiaoMDN]]
+> 一個 viewport（視圖、視區）在電腦圖像中表示一個正在被觀看的多邊型區域（通常是方形）。在瀏覽器的術語中，它指涉的是在視窗中（如果在全螢幕模式底下，那也可以是在螢幕中），正在瀏覽的文件中可被看見的一部分。在 viewport 外的內容在螢幕上是看不到的，直到內容被滾動到畫面中。
+
 viewport 就是瀏覽器的最大可視範圍：
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662570959/blog/htmlPosition/fixed-position/viewport_cubb2s.png)
+
+重點：
+- viewport 命名緣由：一個專門接收渲染資訊並渲染的存取介面
+- 在電腦科學中，就是指window，會是以一個固定大小的可視區塊來呈現特定渲染內容，其中該區塊會以邊線來表示區塊的範疇
+- 若進一步套用在瀏覽器的話，其瀏覽器的window本身就是viewport
 
 ## 複習
 
@@ -97,3 +108,4 @@ Links:
 References:
 [[@w3cCSSAbsoluteFixed]]
 [[@mdnViewportMDNWeb]]
+[[@mdnViewportShuYuBiaoMDN]]
