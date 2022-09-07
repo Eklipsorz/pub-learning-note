@@ -8,6 +8,7 @@
 重點：
 - 當被設定position：relative，其元素的位置參考點會以position：static元素的放置起點為主
 - 其top、right、bottom、left 會是指定被位移後的元素會離位移前之間有多少位移量，其方向是如何
+- 其元素的高寬不會因為為了滿足top、right、bottom、left而變化
 
 ### position：relative
 
@@ -142,6 +143,10 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 
 
 ## 複習
+
+#🧠 具有position：relative的元素A會不會因為滿足top、right、bottom、left而改變元素A的高寬？ ->->-> `不會`
+
+#🧠 具有position：relative的元素A 高寬和元素A的top、right、bottom、left這四種屬性之間的關係是如何？ (會不會改變之類的)->->-> `其元素的高寬不會因為為了滿足top、right、bottom、left而變化`
 
 #🧠 當被設定position：relative時，其位置會以什麼點做標準來位移？->->-> `其元素的位置參考點會以position：static元素的放置起點為主`
 

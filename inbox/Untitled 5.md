@@ -20,65 +20,6 @@ right: value
   
   
   
-
-4. 若position 設定為fixed時，其容器大小會跟著內容而變化，而定位方式會從static改變，且直接在viewport內部定位，定位方式是以元素和viewport這兩者間的邊界距離作為基準點，通常viewport會由body元素來承擔，整體來說會像是：
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711523/blog/htmlPosition/originFixed_gy0g62.png)
-
-  
-
-在這情況下設定top、bottom、left、right時，會以最近的邊線當作基準：
-
-  
-
-當value1為正值，會盡量使元素放置在viewport內部
-
-- top設定為value1，元素的上邊界(border-top)會跟viewport的上邊界在viewport內部保持value1的距離
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/topFixed_yavtfv.png)
-
-  
-
-- bottom設定value1，元素的下邊界(border-bottom)會跟viewport的下邊界在viewport內部保持value1的距離
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/bottomFiexd_h9olxv.png)
-
-  
-
-- left設定value1，元素的左邊界(border-left)會跟viewport的左邊界在viewport內部保持value1的距離
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/leftFixed_czb3te.png)
-
-  
-
-- right設定value1，元素的右邊界(border-right)會跟viewport的右邊界在viewport內部保持value1的距離
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/rightFixed_bewenm.png)
-
-  
-
-當value1為負值，其相關邊界會從viewport外部向內部展開，比如說當top的value1為負時，元素上邊界會與viewport上邊界在viewport在外部保持value1的距離。
-
-  
-
-另外當同時使用top、bottom、left、right時，會自動調整元素高寬來滿足其設定值，比如說若設定類似以下語法時，
-
-```
-
-left: value1
-
-right: value2
-
-```
-
-  
-
-其結果會是：
-
-  
-
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629713038/blog/htmlPosition/leftrightFixedExample_gfitur.png)
-
   
 
 5. 若position 設定為absolute時，其容器大小會跟著內容而變化，而定位方式會從static改變，且以離該元素最近的定位父元素(ancestor element，其position被設定static以外的值)所擁有定為參考點為基準點(圖中橘點)來定位，而定位方式是以該元素邊界和父元素邊界在父元素內部之間的距離作為基準點來調整top、bottom、left、right，類似於position: fixed的定位方式，只是差別在於還會挑有定位過的父元素，若一直都找不到合適的父元素(ancestor element)的話，才會以body/viewport邊界和其元素邊界之差來呈現。
