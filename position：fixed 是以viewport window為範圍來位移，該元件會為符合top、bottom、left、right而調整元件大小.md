@@ -7,23 +7,20 @@
 > Fixed positioning is really just **a specialized form of absolute positioning**; elements with fixed positioning are fixed relative to the viewport/browser window rather than the containing element; even if the page is scrolled, they stay in exactly the same position inside the browser window
 
 重點：
-- fixed positioning 是以viewport window為主的定位方式，而非以特定容器，所以即使頁面有進行滾動，其定位方式仍會以整個window為主
-- 在這裡會以window的最左上角
+- fixed positioning 是以viewport window為範圍來位移，而非以特定容器，所以即使頁面有進行滾動，其位移方式仍會以整個window為主，而非以特定頁面內容。
+- fixed positioning 的元件會為了符合top、bottom、left、right而調整其元件大小。
 
-###
-
-
-
-4. 若position 設定為fixed時，其容器大小會跟著內容而變化，而定位方式會從static改變，且直接在viewport內部定位，定位方式是以元素和viewport這兩者間的邊界距離作為基準點，通常viewport會由body元素來承擔，整體來說會像是：
+### position：fixed
+若position 設定為fixed時，其容器大小會跟著內容而變化，而定位方式會從static改變，且直接在viewport內部定位，定位方式是以元素和viewport這兩者間的邊界距離作為基準點，viewport會由window物件來承擔，整體來說會像是：
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711523/blog/htmlPosition/originFixed_gy0g62.png)
 
   
+### value1 為正值。
 
-在這情況下設定top、bottom、left、right時，會以最近的邊線當作基準：
+在這情況下設定top、bottom、left、right時，會以最近的window邊線當作基準：
 
   
-
 當value1為正值，會盡量使元素放置在viewport內部
 
 - top設定為value1，元素的上邊界(border-top)會跟viewport的上邊界在viewport內部保持value1的距離
@@ -31,7 +28,6 @@
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/topFixed_yavtfv.png)
 
   
-
 - bottom設定value1，元素的下邊界(border-bottom)會跟viewport的下邊界在viewport內部保持value1的距離
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/bottomFiexd_h9olxv.png)
@@ -49,27 +45,37 @@
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/rightFixed_bewenm.png)
 
   
+### value 1 為負值
 
 當value1為負值，其相關邊界會從viewport外部向內部展開，比如說當top的value1為負時，元素上邊界會與viewport上邊界在viewport在外部保持value1的距離。
 
-  
 
+- left設定value1，元素的左邊界(border-right)會跟viewport的左邊界之間的距離會是value1(不考慮正負)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-left-negative-case_ykvmvj.png)
+
+- right 設定value1，元素的右邊界(border-right)會跟viewport的右邊界之間的距離會是value1(不考慮正負)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-right-negative-case_kd9g5w.png)
+
+- top 設定value1，元素的上邊界(border-right)會跟viewport的上邊界之間的距離會是value1(不考慮正負)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-top-negative-case_a3xrje.png)
+
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-bottom-negative-case_n1vtz9.png)
+
+
+
+
+
+#### top、bottom、left、right共存案例：
 另外當同時使用top、bottom、left、right時，會自動調整元素高寬來滿足其設定值，比如說若設定類似以下語法時，
 
 ```
-
 left: value1
-
 right: value2
-
 ```
 
-  
 
 其結果會是：
-
-  
-
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629713038/blog/htmlPosition/leftrightFixedExample_gfitur.png)
 
 
@@ -100,7 +106,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📓 
 Tags:
 [[CSS]]
 Links:
