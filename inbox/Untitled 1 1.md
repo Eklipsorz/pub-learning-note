@@ -1,21 +1,18 @@
 ## 描述
 
+
+
+
 1. position 在CSS樣式中是一種屬性，它負責定義元素的定位方式，其參數為以下，通常會搭配top、bottom、left、right這四種屬性來指定位置在哪，若元素沒特別指定position時，系統預設上會指定元素為position為static。
 
   
 
 ```
-
 position: static | relative | absolute | fixed
-
 top: value
-
 bottom: value
-
 left: value
-
 right: value
-
 ```
 
   
