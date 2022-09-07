@@ -16,7 +16,14 @@
 
 ### Flow Layout 
 
-flow layout 或者 normal flow 是系統預設對於元素的排版方式。
+
+
+> 頁面流 (page flow)，也有人稱作佈局流 ([normal flow](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/normal_flow)) 或文字流，以下統稱頁面流。頁面流是指預設狀態下、還沒有設定任何 CSS 樣式時，網頁元素會遵循由左而右、由上而下的預設脈絡來排列、新增。下圖顏色由淺入深表示頁面流的流動脈絡：
+
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662568830/blog/htmlPosition/relative-direction/default-flow_twzmdl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662568830/blog/htmlPosition/relative-direction/default-flow_twzmdl.png)
+
+重點：
+- flow layout 或者 normal flow 是系統預設對於元素的排版方式，預設會是由左而右、由上而下的預設排版策略來新增、排列
 
 ### inline element
 
@@ -116,6 +123,13 @@ flow layout 或者 normal flow 是系統預設對於元素的排版方式。
 
 #🧠 block element的特點有什麼？(有四點，大小、高寬、排列、存放什麼) ->->-> `1. 預設寬度為容器的100% 2. 可以透過width和height屬性調整高寬 3. 與其他元素排版：強迫換行，元素都會呈現垂直排列 4. 裡面可放inline元素和block元素`
 <!--SR:!2022-09-10,3,250-->
+
+
+#🧠 flow layout 是什麼？ ->->-> `系統預設對於元素的排版方式`
+
+#🧠 normal flow 是什麼？ 和flow layout 有什麼差別->->-> `系統預設對於元素的排版方式`
+
+#🧠 flow layout 或者 normal flow 是系統預設對於元素的排版方式，預設會如何排？ ->->-> `預設會是由左而右、由上而下的預設排版策略來新增、排列`
 
 ---
 Status: #🌱 
