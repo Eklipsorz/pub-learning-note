@@ -75,24 +75,24 @@ const Element = styled.<element>`<template-literal>`
 ## 複習
 
 #🧠 styled-components 是什麼樣技術概念的實現？ ->->-> `CSS-in-JS`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-17,10,250-->
 
 
 #🧠  styled-components 的出現背景是什麼？ ->->-> `預設下，專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component。`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-17,10,250-->
 
 
 #🧠 styled-components 的出現背景是專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component，這會衍生出什麼樣問題？ ->->-> `難以維護、開發的問題`
-<!--SR:!2022-09-07,2,230-->
+<!--SR:!2022-09-12,5,230-->
 
 #🧠 styled-components 透過概念而實現的用途會是什麼？ ->->-> `主要是藉由實現CSS-in-JS的概念來讓特定樣式屬性綁定在特定元件下，不會產生CSS 相關的全域污染問題`
 <!--SR:!2022-09-16,9,250-->
 
 #🧠 styled-components 在實際DOM節點上，會綁定什麼樣class來當作class 屬性(attribute)值？ ->->-> `1. 自動替已經註冊在特定元件下的樣式內容生成一個獨特隨機名稱的className 2. 讓該元件的class屬性綁定於獨特隨機的className`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-16,9,250-->
 
 #🧠 styled-components 在實際DOM節點上，自動替已經註冊在特定元件下的樣式內容生成一個獨特隨機名稱的className 讓該元件的class屬性綁定於獨特隨機的className，請問目的為何？->->-> `在每個元件都能共享的CSSOM下，保證每個元件所使用的className 都對應著獨特且不重複的class selector `
-<!--SR:!2022-09-07,2,230-->
+<!--SR:!2022-09-13,6,230-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是什麼？->->-> `React Element 或者對應元件的建構式`
 <!--SR:!2022-09-17,10,250-->
@@ -107,7 +107,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-09-07,3,250-->
 
 #🧠 使用styled-components 套件所建立的元件，預設下會有什麼？ ->->-> `- 每個元件的對應渲染內容會包含props.children或者子節點 - 每個元件的對應渲染內容的元件屬性名稱(attribute)和屬性值(attribute)會依據元件標籤所用的屬性名稱(attribute)和屬性值(attribute)`
-<!--SR:!2022-09-07,3,250-->
+<!--SR:!2022-09-16,9,250-->
 
 ---
 Status: #🌱 

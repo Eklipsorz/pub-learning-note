@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "00834fe9ff81bd1e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 1 1.md",
+                "file": "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,12 +107,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "669cc8ecd11020c2",
+  "active": "00834fe9ff81bd1e",
   "lastOpenFiles": [
+    "inbox/Untitled 1 1.md",
     "develop/render/display：inline-block 是指定元素在內部呈現是以block形式為主，而外部呈現就是保持水平呈現.md",
     "develop/render/inline element 主要會將內容排成一行來呈現，與其他元素排版會是水平排列，block element則是以指定區塊來呈現內容，與其他元件排版只會是垂直排列.md",
     "MOC/Rendering MOC.md",
-    "inbox/Untitled 1 1.md",
     "inbox/Untitled 4.md",
     "develop/render/box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性.md",
     "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
