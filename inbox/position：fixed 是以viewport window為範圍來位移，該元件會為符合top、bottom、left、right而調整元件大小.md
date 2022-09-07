@@ -13,7 +13,7 @@
 ### position：fixed
 若position 設定為fixed時，其容器大小會跟著內容而變化，而定位方式會從static改變，且直接在viewport內部定位，定位方式是以元素和viewport這兩者間的邊界距離作為基準點，viewport會由window物件來承擔，整體來說會像是：
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711523/blog/htmlPosition/originFixed_gy0g62.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positioning-origin_afwu1z.png)
 
   
 ### value1 為正值。
@@ -25,24 +25,24 @@
 
 - top設定為value1，元素的上邊界(border-top)會跟viewport的上邊界在viewport內部保持value1的距離
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/topFixed_yavtfv.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-top-case_vzczxd.png)
 
   
 - bottom設定value1，元素的下邊界(border-bottom)會跟viewport的下邊界在viewport內部保持value1的距離
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/bottomFiexd_h9olxv.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-bottom-case_coyyts.png)
 
   
 
 - left設定value1，元素的左邊界(border-left)會跟viewport的左邊界在viewport內部保持value1的距離
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/leftFixed_czb3te.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-left-case_ec2f10.png)
 
   
 
 - right設定value1，元素的右邊界(border-right)會跟viewport的右邊界在viewport內部保持value1的距離
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629711353/blog/htmlPosition/rightFixed_bewenm.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-right-case_xa3f8t.png)
 
   
 ### value 1 為負值
@@ -59,7 +59,7 @@
 - top 設定value1，元素的上邊界(border-right)會跟viewport的上邊界之間的距離會是value1(不考慮正負)
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-top-negative-case_a3xrje.png)
 
-
+- bottom 設定value1，元素的下邊界(border-right)會跟viewport的下邊界之間的距離會是value1(不考慮正負)
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-bottom-negative-case_n1vtz9.png)
 
 
@@ -76,7 +76,7 @@ right: value2
 
 
 其結果會是：
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629713038/blog/htmlPosition/leftrightFixedExample_gfitur.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576351/blog/htmlPosition/fixed-position/leftrightFixedExample_qi6xtb.png)
 
 
 ### port 命名緣由
@@ -100,7 +100,7 @@ viewport 就是瀏覽器的最大可視範圍：
 重點：
 - viewport 命名緣由：一個專門接收渲染資訊並渲染的存取介面
 - 在電腦科學中，就是指window，會是以一個固定大小的可視區塊來呈現特定渲染內容，其中該區塊會以邊線來表示區塊的範疇
-- 若進一步套用在瀏覽器的話，其瀏覽器的window本身就是viewport
+- 若進一步套用在瀏覽器的話，其瀏覽器的window物件本身就是viewport
 
 ## 複習
 
