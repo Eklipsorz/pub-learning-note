@@ -64,7 +64,7 @@ position: sticky;
 - 若position 為static的元素，就是non-positioned element
 
 
-#### positiond
+#### position：static
 [[@mdnPositionCSSCascading]]
 > The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.
 
