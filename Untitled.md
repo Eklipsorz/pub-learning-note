@@ -28,3 +28,8 @@
 	<!-- modal body -->
 </div>
 ```
+
+
+modal：
+1. 範疇是整個viewport
+2. 
