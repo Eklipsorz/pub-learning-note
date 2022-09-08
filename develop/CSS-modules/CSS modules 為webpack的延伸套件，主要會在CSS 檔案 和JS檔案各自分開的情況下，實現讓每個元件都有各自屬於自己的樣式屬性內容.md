@@ -163,22 +163,22 @@ import styles from <css-file>
 <!--SR:!2022-09-09,2,228-->
 
 #🧠 CSS modules 具體是什麼套件？ 就說明它源自哪裡->->-> ` 具體會是 webpack 延伸套件`
-<!--SR:!2022-09-08,3,250-->
+<!--SR:!2022-09-18,10,250-->
 
 #🧠 CSS modules 具體是 webpack 延伸套件，所以要用的話，那如何做？->->-> `若要使用的話，得確保webpack是否支援該套件以及相關設定檔案`
-<!--SR:!2022-09-08,3,250-->
+<!--SR:!2022-09-18,10,250-->
 
 #🧠 CSS modules 由於會將載入的CSS檔案做轉換來給予JS來存取，所以要如何確保webpack不會把一般毫無關係的CSS檔案參與處理？ ->->-> `改成以下形式：origin-file-name為原本檔案名，後面的module.css則是後綴字，並且讓webpack以此作為特別的CSS來處理，就能避免`
 <!--SR:!2022-09-08,3,250-->
 
 #🧠 CSS modules 使用方式是如何？ 以一個裝載button樣式的test.module.css和class選擇器為button為例(載入、參考)->->-> `載入特定 module.css 並以其CSS內容作為物件來存取，並且讓styles參照該物件：import styles from <css-file>。依據著對應內容上的class-selector來選擇想要使用的樣式名稱，每個class-selector會是styles物件下的屬性。：<button className={styles.button} />`
-<!--SR:!2022-09-08,3,250-->
+<!--SR:!2022-09-18,10,250-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會在開發階段下如何看待和處理 ->->-> `- 會將對應的css檔案視作為JS下的object - 每個object的屬性會是該css下的class selector name`
 <!--SR:!2022-09-18,10,250-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式會是如何？ ->->-> `會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，包括以下形式的class，皆會生成獨立且隨機的識別字來重新命名，接著若元件的樣式是以物件形式來取得裡頭的class selector，實際上對應DOM節點的class屬性值會以class selector的對應識別字`
-<!--SR:!2022-09-08,3,250-->
+<!--SR:!2022-09-10,2,230-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式名稱會是什麼形式？ ->->-> `<component-name>_<class-selector-name>_<unique-hash-value>`
 <!--SR:!2022-09-08,3,250-->
@@ -188,14 +188,14 @@ import styles from <css-file>
 
 
 #🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
-<!--SR:!2022-09-08,2,230-->
+<!--SR:!2022-09-14,6,230-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會替CSS內部的哪些內容來做轉換 ->->-> `針對class selector和替換class selector`
 <!--SR:!2022-09-08,3,250-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理且以Button這元件來載入CSS module時，假如內容有.class1 {...}，請問轉換結果為？ ->->-> `.class1 => .Button_class1_waer324 結果為.class1 {...} => .Button_class1_waer324 {...}`
-<!--SR:!2022-09-08,2,247-->
+<!--SR:!2022-09-14,6,247-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1.class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1_waer324  .class2 => .Button_class2_warewa32 結果為.class1.class2 {...} => .Button_class1_waer324..Button_class2_warewa32 {...}`
@@ -204,7 +204,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1 .class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1.waer324  .class2 => .Button_class2.warewa32 結果為.class1 .class2 {...} => .Button_class1.waer324 .Button_class2.warewa32 {...}`
-<!--SR:!2022-09-08,2,247-->
+<!--SR:!2022-09-14,6,247-->
 
 
 ---
