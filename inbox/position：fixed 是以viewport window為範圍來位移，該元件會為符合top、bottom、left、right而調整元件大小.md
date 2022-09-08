@@ -144,19 +144,21 @@ viewport 就是瀏覽器的最大可視範圍：
 #🧠 當對fixed positioning的元件設定正值的value1給left屬性，會是代表著？ ->->-> `元素的左邊界(border-left)會跟viewport的左邊界在viewport內部保持value1的距離`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-right-case_xa3f8t.png) ->->-> `設定right屬性為value1`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 當對fixed positioning的元件設定正值的value1給right屬性，會是代表著？ ->->-> `元素的右邊界(border-right)會跟viewport的右邊界在viewport內部保持value1的距離`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-left-negative-case_ykvmvj.png)  ->->-> `left屬性值為負的value1`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-right-negative-case_kd9g5w.png) ->->-> `right屬性值為負的value1`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-top-negative-case_a3xrje.png) ->->-> `top屬性值為負的value1`
+
+#🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-bottom-negative-case_n1vtz9.png) ->->-> `bottom屬性值為負的value1`
 
 
-
+#🧠 若對fixed-positioning的元素同時設定top、bottom、left、right的話，元素會發生什麼變化 ->->-> `會為了滿足這四種屬性值而調整元素的大小`
 
 
 ---

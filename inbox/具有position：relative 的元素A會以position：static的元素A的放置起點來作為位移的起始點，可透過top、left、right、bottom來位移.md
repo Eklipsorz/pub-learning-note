@@ -9,7 +9,7 @@
 - 當被設定position：relative，其元素的位置參考點會以position：static元素的放置起點為主
 - 其top、right、bottom、left 會是指定被位移後的元素會離位移前之間有多少位移量，其方向是如何
 - 其元素的高寬不會因為為了滿足top、right、bottom、left而變化
-
+- relative positioning 的元素仍會受到normal flow/flow layout而控制，並在那情況下調整位置
 ### position：relative
 
 
@@ -143,6 +143,8 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 
 
 ## 複習
+
+#🧠 relative positioning 的元素和flow layout之間的關係？ ->->-> `relative positioning 的元素仍會受到normal flow/flow layout而控制，並在那情況下調整位置`
 
 #🧠 具有position：relative的元素A會不會因為滿足top、right、bottom、left而改變元素A的高寬？ ->->-> `不會`
 <!--SR:!2022-09-10,2,248-->
