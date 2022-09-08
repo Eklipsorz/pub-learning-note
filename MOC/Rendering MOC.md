@@ -63,6 +63,8 @@
 [[具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移]]
 [[當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置]]
 
+[[absolute-positioning 元素是依照最近的positioning parent 元素來作為位移的範疇並以範疇邊界移動]]
+
 #### JS 模組化
 [[在還沒替JS進行模組化時，是使用檔案分離來將HTML上的CSS、JS拆成多個CSS檔案、多個JS檔案來使用，但同個HTML載入多個JS檔案會產生全域污染問題]]
 

@@ -41,7 +41,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 當對absolute-positioning 元素的right為value1，其元素的右邊界和parent元素A的右邊界之間會保持著value1的距離
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-right-case_zxfga3.png)
 
-當對absolute-positioning 元素的top為value1，其元素的左邊界和parent元素A的左邊界之間會保持著value1的距離
+當對absolute-positioning 元素的left為value1，其元素的左邊界和parent元素A的左邊界之間會保持著value1的距離
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-left-case_orsgj2.png)
 
@@ -85,13 +85,29 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 
 #🧠 當對absolute-positioning 元素的right為value1，會是代表著什麼？->->-> `其元素的右邊界和parent元素A的右邊界之間會保持著value1的距離`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對absolute-positioning 元素的left為value1，會是代表著什麼？ ->->-> `其元素的左邊界和parent元素A的左邊界之間會保持著value1的距離`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對absolute-positioning 元素的bottom為value1，會是代表著什麼？->->-> `其元素的下邊界和parent元素A的下邊界之間會保持著value1的距離`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-top-case_y0kwrz.png): ->->-> `設定top為value1`
 
-#🧠 Question :: ->->-> ``
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-bottom-case_evsu4h.png) ->->-> `設定bottom為value1`
+
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-right-case_zxfga3.png)->->-> `設定right為value1`
+
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-left-case_orsgj2.png)  ->->-> `設定left為value1`
+
+
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662646096/blog/htmlPosition/absolute-position/absolute-positioning-top-negative-case_jbsam2.png) ->->-> `設定top為負的value1`
+
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662646095/blog/htmlPosition/absolute-position/absolute-positioning-bottom-negative-case_cez5ab.png) ->->-> `設定bottom為負的value1`
+
+
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662646095/blog/htmlPosition/absolute-position/absolute-positioning-right-negative-case_pgypxh.png)->->-> `設定right為負的value1`
+
+
+
+#🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662646094/blog/htmlPosition/absolute-position/absolute-positioning-left-negative-case_hxrfpd.png)->->-> `設定left為負的value1`
 
 
 ---

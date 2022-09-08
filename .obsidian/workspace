@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 6.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "2d12785c899dc4df",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/Untitled 6.md",
+            "file": "MOC/Rendering MOC.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "MOC/Rendering MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,12 +95,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2d12785c899dc4df",
+  "active": "b92aba8e7475c850",
   "lastOpenFiles": [
+    "inbox/absolute-positioning 元素是依照最近的positioning parent 元素來作為位移的範疇並以範疇邊界移動.md",
     "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
     "MOC/Rendering MOC.md",
     "develop/render/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
-    "inbox/Untitled 6.md",
     "inbox/Untitled 5.md",
     "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
     "inbox/Untitled 4.md",
