@@ -36,7 +36,7 @@ position: sticky;
 - top、bottom主要調整positioned element的垂直位置，即為上下這兩個方向
 - right、left主要調整positioned element的水平位置，即為左右這兩個方向
 - top、bottom、right、left 不會調整non-positioned element的水平垂直位置
-
+- 這些屬性值會考量每個元件的margin來位移
 
 ### z-index  屬性
 [[@mdnZindexCSSCascading]]
@@ -73,6 +73,10 @@ position: sticky;
 - 若元件的position屬性是static，就按照文件的正常排版方式來排版呈現，不會被top、bottom、left、right、z-inde來影響
 
 ## 複習
+
+#🧠 CSS：positioned element的位移會考量到元素的border？margin? ->->-> `margin`
+
+#🧠 CSS：若位移的話，positioned element 和margin之間的關係是什麼？比如拿什麼位移->->-> `若要位移的話，會以元素的margin為單位來位移。`
 
 #🧠 CSS：position 屬性是什麼？ ->->-> `指定元件在同一份文件中的定位方式是如何`
 <!--SR:!2022-09-11,3,250-->
