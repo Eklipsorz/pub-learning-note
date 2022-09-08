@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/CSS 開發常用使用法則.md",
+            "file": "inbox/Untitled 6.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/CSS 開發常用使用法則.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9546d4d0b544fb7",
+  "active": "b92aba8e7475c850",
   "lastOpenFiles": [
-    "inbox/Untitled 1 1.md",
+    "inbox/fixed-positioning 元素的高寬會受限於viewport的高寬 和 absolute-positioning 元素受限於最近的positioned parent 元素的高寬.md",
     "inbox/Untitled 6.md",
+    "inbox/CSS 開發常用使用法則.md",
     "MOC/Rendering MOC.md",
     "inbox/absolute-positioning 元素是依照最近的positioning parent 元素來作為位移的範疇並以範疇邊界移動.md",
     "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
     "develop/render/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
     "inbox/Untitled 5.md",
     "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
-    "inbox/Untitled 4.md",
-    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md"
+    "inbox/Untitled 4.md"
   ]
 }
