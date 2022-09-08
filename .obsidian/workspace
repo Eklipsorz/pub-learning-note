@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -108,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a7b48688519537eb",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
     "MOC/Rendering MOC.md",
