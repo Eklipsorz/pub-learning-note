@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "9d8a6225f68558bb",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+            "file": "inbox/Untitled 6.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b92aba8e7475c850",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "inbox/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
-    "MOC/Rendering MOC.md",
-    "inbox/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
     "inbox/Untitled 5.md",
+    "inbox/Untitled 6.md",
+    "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
+    "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+    "develop/render/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
+    "MOC/Rendering MOC.md",
     "inbox/Untitled 4.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
-    "develop/render/inline element 主要會將內容排成一行來呈現，與其他元素排版會是水平排列，block element則是以指定區塊來呈現內容，與其他元件排版只會是垂直排列.md",
-    "inbox/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
-    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md"
+    "develop/render/inline element 主要會將內容排成一行來呈現，與其他元素排版會是水平排列，block element則是以指定區塊來呈現內容，與其他元件排版只會是垂直排列.md"
   ]
 }
