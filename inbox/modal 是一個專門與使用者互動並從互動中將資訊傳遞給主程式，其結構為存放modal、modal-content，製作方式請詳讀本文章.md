@@ -192,15 +192,16 @@ modal content：對話窗內容
         </div>
 ```
 ### modal 是什麼
-
+[[@ModalWindow2022]]
 > In user interface design for computer applications, a modal window is a graphical control element subordinate to an application's main window. 
 
 > A modal window creates a mode that disables the main window but keeps it visible, with the modal window as a child window in front of it. Users must interact with the modal window before they can return to the parent application.
 
 
 重點：
-- 在電
-
+- 在程式開發中，modal是一個圖形化控制介面，隸屬於parent程式/主程式/由child程式製作，主要用途為代替主程式來與使用者進行互動，並從互動中回傳互動資訊給主程式來處理。
+- 常見案例為：
+	- 一個對話窗顯示錯誤訊息和ok按鈕
 
 ## 複習
 
@@ -213,4 +214,4 @@ Tags:
 Links:
 [[fixed-positioning 元素的高寬會受限於viewport的高寬 和 absolute-positioning 元素受限於最近的positioned parent 元素的高寬]]
 References:
-
+[[@ModalWindow2022]]
