@@ -145,50 +145,67 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 ## 複習
 
 #🧠 具有position：relative的元素A會不會因為滿足top、right、bottom、left而改變元素A的高寬？ ->->-> `不會`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 具有position：relative的元素A 高寬和元素A的top、right、bottom、left這四種屬性之間的關係是如何？ (會不會改變之類的)->->-> `其元素的高寬不會因為為了滿足top、right、bottom、left而變化`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 當被設定position：relative時，其位置會以什麼點做標準來位移？->->-> `其元素的位置參考點會以position：static元素的放置起點為主`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的上方偏移量，而讓元素的黑點會以橘點為起始點向下移動value1 px`
+<!--SR:!2022-09-09,1,228-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的下方偏移量，而讓元素的黑點會以橘點為起始點向上移動value1 px`
+<!--SR:!2022-09-11,3,250-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定left被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的左方偏移量，而讓元素的黑點會以橘點為起始點向右移動value1 px`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定right被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> ->->-> `為了讓被位移後的元素離橘點擁有value1 px的右方偏移量，而讓元素的黑點會以橘點為起始點向左移動至value1 px `
+<!--SR:!2022-09-09,1,228-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往上位移-value1`
+<!--SR:!2022-09-10,2,247-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往下位移-value1`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定right為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往右位移-value1`
 <!--SR:!2022-09-11,3,250-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定left為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往左位移-value1`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往下，為負就往上![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-top-offset_qybhfg.png)->->-> `如果是調整top屬性的話，其屬性值value1若是正的話，就會將元素往下偏移；其屬性值若是負的話，就會將元素往上偏移。`
+<!--SR:!2022-09-10,2,248-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往上，為負就往下 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-bottom-offset_x0jc6r.png)->->-> `如果是調整bottom屬性的話，其屬性值value1若是正的話，就會將元素往上偏移；其屬性值若是負的話，就會將元素往下偏移。`
+<!--SR:!2022-09-10,2,248-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往左，為負就往右![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-right-offset_au8dxj.png)->->-> `如果是調整right屬性的話，其屬性值value1若是正的話，就會將元素往左偏移；其屬性值若是負的話，就會將元素往右偏移。`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往右，為負就往左![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-left-offset_k59p4g.png) ->->-> `如果是調整left屬性的話，其屬性值value1若是正的話，就會將元素往右偏移；其屬性值若是負的話，就會將元素往左偏移。`
+<!--SR:!2022-09-10,2,248-->
 
 
 #🧠 在position：relative的元素下都設置著left、right這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄right這屬性，改選left為主`
+<!--SR:!2022-09-11,3,250-->
 
 #🧠 在position：relative的元素下都設置著top、bottom這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄bottom這屬性，改選top為主`
 <!--SR:!2022-09-11,3,250-->
 
 #🧠  在position：relative的元素下，top 和 bottom 中會挑選top的原因->->-> `採取normal flow所預設的排版方向，由上而下來排`
+<!--SR:!2022-09-11,3,250-->
 
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排`
+<!--SR:!2022-09-10,2,248-->
 
 #🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值 ->->-> `會選top和left這兩種屬性`
 <!--SR:!2022-09-09,1,230-->

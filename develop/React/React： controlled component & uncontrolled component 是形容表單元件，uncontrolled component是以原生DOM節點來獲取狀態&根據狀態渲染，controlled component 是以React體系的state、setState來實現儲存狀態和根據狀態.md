@@ -271,8 +271,8 @@ setState
 <!--SR:!2022-09-25,18,250-->
 
 
-#🧠 React ：對於controlled component的儲存狀態、根據狀態來更新畫面，會有什麼實際方式來實現 ->->-> `1. 由parent 元件的狀態和更新狀態(兼渲染)用的函式來透過props和callback來控管controlled component，即元件上的儲存狀態和根據狀態而渲染全由parent元間來控管、2. 元件本身會有狀態來決定元件自己的狀態儲存、根據狀態而渲染`
-<!--SR:!2022-09-14,6,230-->
+#🧠 React ：對於controlled component的儲存狀態、根據狀態來更新畫面，會有什麼實際方式來實現(parent 和自己) ->->-> `1. 由parent 元件的狀態和更新狀態(兼渲染)用的函式來透過props和callback來控管controlled component，即元件上的儲存狀態和根據狀態而渲染全由parent元間來控管、2. 元件本身會有狀態來決定元件自己的狀態儲存、根據狀態而渲染`
+
 
 
 ---

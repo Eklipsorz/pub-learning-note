@@ -177,8 +177,8 @@ import styles from <css-file>
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會在開發階段下如何看待和處理 ->->-> `- 會將對應的css檔案視作為JS下的object - 每個object的屬性會是該css下的class selector name`
 <!--SR:!2022-09-18,10,250-->
 
-#🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式會是如何？ ->->-> `會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，包括以下形式的class，皆會生成獨立且隨機的識別字來重新命名，接著若元件的樣式是以物件形式來取得裡頭的class selector，實際上對應DOM節點的class屬性值會以class selector的對應識別字`
-<!--SR:!2022-09-10,2,230-->
+#🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式會是如何？(增加命名和載入) ->->-> `會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，包括以下形式的class，皆會生成獨立且隨機的識別字來重新命名，接著若元件的樣式是以物件形式來取得裡頭的class selector，實際上對應DOM節點的class屬性值會以class selector的對應識別字`
+
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式名稱會是什麼形式？ ->->-> `<component-name>_<class-selector-name>_<unique-hash-value>`
 <!--SR:!2022-09-18,10,250-->
