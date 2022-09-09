@@ -96,11 +96,11 @@
 <!--SR:!2022-09-09,3,250-->
 
 #🧠 在CSS Box Model，Margin Box 是什麼？ ->->-> `本身負責裝載著Border Box內容`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-16,7,250-->
 
 
 #🧠 在CSS Box Model， Margin Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由Margin-top、Margin-bottom、Margin-left、Margin-right來決定`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-19,10,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``
 <!--SR:!2022-09-19,10,250-->
