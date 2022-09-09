@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 4.md",
+            "file": "Untitled.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "陣列",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 428
+    "width": 589
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 4.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "021bba6449d9780a",
   "lastOpenFiles": [
-    "develop/Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式.md",
-    "inbox/React - modal 實作案例.md",
-    "inbox/CSS 開發常用使用法則.md",
-    "inbox/Untitled 5.md",
-    "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放modal、modal-content，製作方式請詳讀本文章.md",
-    "develop/render/browser debugger：breakpoint.md",
-    "develop/render/fixed-positioning 元素的高寬會受限於viewport的高寬 和 absolute-positioning 元素受限於最近的positioned parent 元素的高寬.md",
-    "develop/render/absolute-positioning 元素是依照最近的positioning parent 元素來作為位移的範疇並以範疇邊界移動.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
-    "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md"
+    "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
+    "develop/React/React：預設下，每個component 檔案所import的css並不會只限定於component才能使用，而是整個頁面上的元件都能存取.md",
+    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+    "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
+    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+    "inbox/Untitled 4.md",
+    "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md",
+    "develop/React/React： composition 是利用has a關係來打造元件間的關係，而inheritance則是利用is a 關係來打造元件間的關係.md",
+    "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+    "develop/Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式.md"
   ]
 }
