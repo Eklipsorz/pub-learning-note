@@ -166,7 +166,7 @@ const xxx = require(moduleA)
 <!--SR:!2022-09-14,28,250-->
 
 #🧠 CommonJS 模組是如何面對cyclic dependency問題？具體是如何幫最後一個會遍歷到的模組移除對於第一個會遍歷到的模組之間的依賴關係來轉換成非環狀依賴結構 ->->-> `回傳模組1處於evaluation執行之前的模組實例狀態給最後1個遍歷到的模組就能使最後1個遍歷到的模組移除掉對於模組1之間的依賴`
-<!--SR:!2022-09-09,24,250-->
+<!--SR:!2022-11-10,62,250-->
 
 
 #🧠 以三個環狀依賴結構為例子，來說明CommonJS 模組是如何面對cyclic dependency問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203325/blog/javascript/module/cyclic-dependecy-example_dmfgnv.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203324/blog/javascript/module/cyclic-dependecy-solution-example_y97fcp.png)`

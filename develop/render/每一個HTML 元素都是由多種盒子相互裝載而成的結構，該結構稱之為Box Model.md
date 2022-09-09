@@ -64,7 +64,7 @@
 <!--SR:!2022-09-17,8,250-->
 
 #🧠 margin 命名緣由 ->->-> `一個區域的外邊緣`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-11,2,230-->
 
 #🧠 每一個HTML 元素在渲染層面上，會是以什麼東西來構成？ ->->-> `CSS box model`
 <!--SR:!2022-09-17,8,250-->
@@ -73,7 +73,7 @@
 <!--SR:!2022-09-19,10,250-->
 
 #🧠 在CSS Box Model，Content Box 是什麼？ ->->-> `裝載HTML 元素的主要內容`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-15,6,250-->
 
 
 #🧠 預設下，CSS Box Model，Content Box 本身的大小屬性由什麼決定？ ->->-> `width、height`
@@ -85,7 +85,7 @@
 
 
 #🧠 在CSS Box Model，Padding Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由padding-top、padding-bottom、padding-left、padding-right來決定`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-16,7,250-->
 
 
 #🧠 在CSS Box Model，Border Box 是什麼？ ->->-> `本身負責裝載著Padding Box內容`

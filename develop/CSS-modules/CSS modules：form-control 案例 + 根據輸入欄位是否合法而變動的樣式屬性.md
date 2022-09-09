@@ -107,7 +107,7 @@ export default CourseInput;
 
 
 #🧠 為什麼身為form-control的div元件會是用['form-control']，而不是用styles.form-control？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662385411/blog/react/style/css%20module/css-module-example2-component_fheh15.png) ->->-> `在這裡要取styles的form-control屬性的話，是用styles['form-control'] ，而不是styles.form-control是因爲-這個字元會被當作數字運算符號，所以只能用另一種方式`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-18,9,250-->
 
 #🧠 為什麼身為form-control的div元件會是用styles.invalid，而不是用invalid這固定字串？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662385411/blog/react/style/css%20module/css-module-example2-component_fheh15.png)->->-> `接著就是判斷目前輸入欄位是否合法，在這裡由於CSS Modules會把CSS內容的所有class selector全都重命名，所以必須以styles.invalid來表示，而不能夠以invalid這字元`
 <!--SR:!2022-09-19,10,250-->
