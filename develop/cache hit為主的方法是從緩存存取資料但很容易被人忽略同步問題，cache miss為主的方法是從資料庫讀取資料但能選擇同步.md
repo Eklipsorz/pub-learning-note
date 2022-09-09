@@ -19,18 +19,16 @@
 	- Read Aside
 
 ### Read Through
-Read Through ：如同字面上的意思，讀取會穿過緩存來進行，首先，客戶端會向緩存找東西，但找不到，所以由緩存負責向資料庫索要東西A，找到後，緩存可選擇是否寫進緩存
+Read Through ：如同字面上的意思，讀取會穿過緩存來進行，首先，客戶端會向緩存系統從緩存找東西，但找不到，由緩存系統負責向資料庫索要東西A，緩存系統會將找到的資料寫進緩存，並通知客戶端來讀取
 
-#### 若緩存不選擇回寫資料至緩存
-若選擇不寫緩存，那麼就會由緩存直接回傳資料庫結果，這樣會使效能因而下降，且客戶端只是麻煩緩存幫忙向資料庫要資料。
 
 #### 若緩存選擇回寫資料至緩存
 在這裏假定寫定緩存，然後再回傳緩存中的東西A，這樣過程會像是下圖這樣，透過(穿過緩存)來存取東西A：
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Diagram_w98usw.png)
 Read Through 步驟：
-- 步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有
-- 步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得
-- 步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。
+- 步驟1 是客戶端向緩存系統索要東西A讀取，但緩存系統那邊沒有
+- 步驟2 緩存系統由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得
+- 步驟3 緩存將獲取到的東西A寫入至緩存，並回傳該東西A給客戶端或者通知客戶端存取
 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)
 	
 ### Read Through 和 Read Aside差別
@@ -100,17 +98,17 @@ cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用�
 <!--SR:!2023-01-11,138,250-->
 
 
-#🧠 Caching 讀取策略：Read Through步驟是什麼？這裏假定緩存決定回寫，以這圖來說明	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)  ->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得，步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
-<!--SR:!2023-02-19,163,250-->
+#🧠 Caching 讀取策略：Read Through步驟是什麼？以這圖來說明	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653765958/blog/database/caching/Read-Through-Steps_zyjmyk.png)  ->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，緩存就向資料庫索要東西A，並從那獲得，步驟3 緩存將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
+
 
 #🧠 Caching 讀取策略：Read Aside步驟是什麼？這裏假定客戶端決定回寫，以這圖來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653767516/blog/database/caching/Read-Aside-Diagram_koz5ym.png)->->-> `	步驟1 是客戶端向緩存索要東西A讀取，但緩存沒有，步驟2 緩存由於沒有東西A，客戶端就向資料庫索要東西A，並從那獲得，步驟3 客戶端將獲取到的東西A寫入至緩存，以便未來客戶端直接向緩存尋找增加效率。`
-<!--SR:!2022-09-13,67,250-->
+
 
 #🧠 以Cache miss為主的同步方式：Read Through 和 Read Aside兩者間的共同點為？->->-> `Read Through 和 Read Aside 共同點是在於兩者都是在cache miss情況下而跑去讀取資料庫`
-<!--SR:!2022-11-13,89,244-->
+
 
 #🧠 以Cache miss為主的同步方式：Read Through 和 Read Aside兩者間的差異點為？ ->->-> `Read Through 和 Read Aside 差別是在於後者是客戶端通過存取資料庫的資料，來同步緩存資料，前者則是因爲客戶端向緩存索要，但它沒有，所以只好由緩存自己向資料庫索要資料來同步緩存，接著回傳給客戶端`
-<!--SR:!2022-10-24,79,244-->
+
 
 
 ---
