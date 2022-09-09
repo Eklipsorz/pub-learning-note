@@ -15,24 +15,29 @@
 
 1. Helper 是指以單一活動來幫助的某人事物，搭配function就是提供單一功能的函式
 > someone who helps with an activity
-2. Helper function 在電腦科學裡是被定調為提供單一功能的函式，那麼勢必會以簡單、短小、提供服務的對象也叫侷限來設計，因此helper function也被常指為提供一單一簡單功能給特定的對象。相對於Utility function，helper functionc會侷限於一個對象的函式。
+2. Helper function 在電腦科學裡是被定調為提供單一功能的函式，那麼勢必會以簡單、短小、提供服務的對象也較為侷限來設計，因此helper function也被常指為提供單一簡單功能給特定的對象。相對於Utility function，helper function會侷限於一個對象的函式。
 
   
-  
-
-### 參考資料
-
-1. [Whats the difference between utility class and Helper class in Java? Profile photo for James Loveday](https://www.quora.com/Whats-the-difference-between-utility-class-and-Helper-class-in-Java)
-
-2. [Reply: Whats the difference between utility class and Helper class in Java? Profile photo for James Loveday](https://www.quora.com/Whats-the-difference-between-utility-class-and-Helper-class-in-Java/answer/James-Loveday-9?ch=10&share=96b1d0aa&srid=NILSx)
-
-3. [helper和utils有什么区别吗？](https://www.zhihu.com/question/62207769)
-
 ## 複習
+#🧠 Utility 原意為何 ->->-> `大家都能使用的服務和資源`
 
+#🧠 utility function 是什麼？ ->->-> `在電腦科學裡頭，會是整個專案、整個系統、整個團隊都能呼叫使用的函式`
+
+#🧠 Helper 原意為何？ ->->-> `指以單一活動來幫助的某人事物`
+
+#🧠 helper function 是什麼？ ->->-> `搭配function就是提供單一功能的函式`
+
+
+#🧠 helper function 在電腦科學裡，又是什麼定義？ ->->-> `Helper function 在電腦科學裡是被定調為提供簡單、短小之功能的函式或者也被常指為提供單一簡單功能給特定的對象。`
+
+
+#🧠 helper 和 utility 在電腦科學裡，功能上是否通用？使用對象是如何？ ->->-> `前者提供的功能較為侷限，只提供功能給特定對象；後者則提供通用，提供功能給整個專案`
 
 ---
 Status: #🌱 #📓 
 Tags:
 Links:
 References:
+[[@shubhammarneWhatsDifferenceUtility]]
+[[@jameslovedayWhatsDifferenceUtility]]
+[[@FengSiXin80TiaoXiaoXi]]
