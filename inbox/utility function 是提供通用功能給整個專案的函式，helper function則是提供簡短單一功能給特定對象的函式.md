@@ -17,7 +17,12 @@
 > someone who helps with an activity
 2. Helper function 在電腦科學裡是被定調為提供單一功能的函式，那麼勢必會以簡單、短小、提供服務的對象也較為侷限來設計，因此helper function也被常指為提供單一簡單功能給特定的對象。相對於Utility function，helper function會侷限於一個對象的函式。
 
-  
+
+#### utility function 和 helper function 之間的差別
+
+utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式
+
+
 ## 複習
 #🧠 Utility 原意為何 ->->-> `大家都能使用的服務和資源`
 
