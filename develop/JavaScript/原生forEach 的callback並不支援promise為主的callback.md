@@ -146,7 +146,7 @@ value1
 <!--SR:!2022-09-26,65,250-->
 
 #🧠 如何解決原生forEach 的callback不支援promise為主的callback？->->-> `撰寫另一個可支援promise為主的forEach(async/await)或者以async/await來包裝同步任務的for-loop和非同步任務就能達成同樣效果`
-<!--SR:!2022-09-09,54,250-->
+<!--SR:!2023-01-22,135,250-->
 
 ---
 Status: #🌱 

@@ -119,25 +119,25 @@ break：
 <!--SR:!2022-09-19,10,250-->
 
 #🧠 react development 工具會在結果網頁中賦予瀏覽器一些資訊，比如？ ->->-> `用webpack轉換前的原始碼，以便除錯`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-18,9,250-->
 
 #🧠 若目前斷點不是夾帶著其他函式呼叫的程式碼的話，按下 step into next function call 會往哪邊走？ ->->-> `下一行執行並停止`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-15,6,250-->
 
 #🧠 若目前斷點是夾帶著其他函式的程式碼的話，按下 step into next function call 會往哪邊走？->->-> `往被呼叫函式那裡執行並於函式第一行停止`
 <!--SR:!2022-09-19,10,250-->
 
 #🧠 若目前斷點不是夾帶著其他函式呼叫的程式碼的話，按下 step over next function call 會往哪邊走？ ->->-> `下一行執行並停止`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-16,7,250-->
 
 #🧠 若目前斷點是夾帶著其他函式的程式碼的話，按下 step over next function 會往哪邊走？ ->->-> `會跳過被呼叫函式並執行下一行停止`
 <!--SR:!2022-09-17,8,250-->
 
 #🧠 假設目前暫停在 A 行的 `double`，點擊step-into-next-function call 按鈕後會往哪裡走？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662387052/blog/debugger/browser_debugger_breakpoint_upj2ov.png) ->->-> `點擊圖示後會跳至 B 行，也就是 `double` 的第一行。`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-17,8,250-->
 
 #🧠 假設目前暫停在 A 行的 `double`，點擊step-over-next-function call 按鈕後會往哪裡走？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662387052/blog/debugger/browser_debugger_breakpoint_upj2ov.png) ->->-> ` 點擊圖示後會執行 `double` 內的所有程式碼並停在 D 行的 `console.log`。`
-<!--SR:!2022-09-09,3,250-->
+<!--SR:!2022-09-15,6,250-->
 
 
 ---

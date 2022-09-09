@@ -94,13 +94,13 @@ specific
 ## 複習
 
 #🧠 specificity 命名緣由為何？ ->->-> `是指清晰和正確的程度`
-<!--SR:!2022-09-09,6,250-->
+<!--SR:!2022-09-22,13,250-->
 
 #🧠 specific 命名緣由為何？ ->->-> `是指清晰和正確`
 <!--SR:!2022-09-10,7,250-->
 
 #🧠 CSS specificity 是什麼？->->-> `Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A`
-<!--SR:!2022-09-09,6,250-->
+<!--SR:!2022-09-26,17,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，請問declaration包含了哪些？(名稱重複？！) ->->-> `這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突`
 <!--SR:!2022-09-26,17,250-->
@@ -148,7 +148,7 @@ specific
 <!--SR:!2022-09-10,7,250-->
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是次高的？形式會是如何？ ->->-> `用inline style是來綁定declaration block，<div style="font-size:24px;color:red;"> </div>`
-<!--SR:!2022-09-09,6,250-->
+<!--SR:!2022-09-23,14,250-->
 
 #🧠 在CSS specificity中，被綁定!important的declaration 所獲得的權重為相當於是最高，那麼可以轉換成什麼形式和數字 ->->-> `1-0-0-0-0，分數為10000`
 <!--SR:!2022-09-11,8,250-->
