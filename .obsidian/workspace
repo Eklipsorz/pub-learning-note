@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "inbox/Untitled 6.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "陣列",
+                "query": "conditional",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "021bba6449d9780a",
   "lastOpenFiles": [
+    "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略建立Virtual DOM.md",
+    "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
+    "inbox/Untitled 6.md",
+    "inbox/CSS 開發常用使用法則.md",
+    "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放modal、modal-content，製作方式請詳讀本文章.md",
     "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
     "develop/React/React：預設下，每個component 檔案所import的css並不會只限定於component才能使用，而是整個頁面上的元件都能存取.md",
     "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
     "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
-    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
-    "inbox/Untitled 4.md",
-    "develop/React/JSX 是源自於React團隊額外從JavaScript衍生出來的語言，會搭配XML標籤語言來表示想要渲染出的畫面，JS則是處理畫面會有的處理.md",
-    "develop/React/React： composition 是利用has a關係來打造元件間的關係，而inheritance則是利用is a 關係來打造元件間的關係.md",
-    "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
-    "develop/Binary-Safe function 是指一個在處理二進制內容的過程中會以二進制來處理且不會以特殊格式來看待並進而破壞內容的函式.md"
+    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md"
   ]
 }

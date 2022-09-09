@@ -112,9 +112,9 @@ modal content：對話窗內容
 1. 調整header大小
 	- padding: 0.1rem 1rem;
 2.  調整header背景顏色
-	- background: #4b0b56;
+	- background: `#4b0b56`;
 3. 設定文字顏色
-	- color: #fff;
+	- color: `#fff`;
 ```
 .modal-header {
   /* position */
@@ -139,7 +139,7 @@ modal content：對話窗內容
 1. 調整body大小
 	- padding: 1rem;
 2.  背景顏色按照指定顏色
-	- background: #fff;
+	- background: `#fff`;
 
 ```
 .modal-body {
@@ -166,7 +166,7 @@ modal content：對話窗內容
 2. 調整footer大小
 	- padding: 1rem;
 3. 調整顏色
-	- background: #fff;
+	- background: `#fff`;
 
 ```
 .modal-footer {
