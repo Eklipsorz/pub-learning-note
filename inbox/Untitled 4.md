@@ -1,15 +1,43 @@
 ## 描述
-JSX Limitations
 
-1. 一定要有parent element包覆內容
 
+### JSX Limitations
+1. 一定要有parent element包覆其他元素
 2. 最外圍的parent element只能有一個
-
-  
 
 one element which you are allowed to have may of course have more children which then also can be adjacent to each other
 
+
+###
+```
+return (
+	<Element1 />
+	<Element2 />
+)
+```
   
+#### 解法1：使用額外的元件來當wrapper element
+通常會拿div當wrapper element ，但不會是絕對
+
+```
+return (
+	<div> 
+		<Element1 />
+		<Element2 />
+	</div>
+)
+```
+
+#### 解法2：利用React解析陣列的特性來使用陣列表示
+```
+return (
+	[
+		<Element1 />,
+		<Element2 />
+	]
+)
+```
+
 
 your JSX code translates into React create element
 
@@ -61,6 +89,10 @@ return (
     </div>
   );
 ```
+
+
+
+
 
 ## 複習
 
