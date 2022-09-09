@@ -29,6 +29,17 @@ root.render(<Mailbox unreadMessages={messages} />);
 ```
 boolean expression && jsx element
 ```
+
+### boolean expression && JSX element 適用場景
+
+該語法只會在該元件本身就為boolean expression && JSX element 
+```
+return (
+	result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>
+);
+```
+
+
 ## 複習
 
 

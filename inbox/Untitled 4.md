@@ -1,5 +1,10 @@
 
 ## 描述
+
+
+### errorModal 未放入到{} vs. errorModal 放入到 {}
+
+前者使用boolean expression && JSX Element 來表示 JSX Element，雖然語法上可行，但由於
 ```
 const [error, setError] = useState(null);
 return (
@@ -60,6 +65,10 @@ return (
 
 
 ## 複習
+
+
+
+
 
 ---
 Status: #🌱 #📓 
