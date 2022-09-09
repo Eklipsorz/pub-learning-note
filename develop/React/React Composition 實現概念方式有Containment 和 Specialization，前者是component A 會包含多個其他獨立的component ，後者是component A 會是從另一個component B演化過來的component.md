@@ -135,6 +135,8 @@ function WelcomeDialog() {
 
 ### 細節
 
+
+
 #### HTML 元件的attributes vs. 自製元件的attributes
 
 1. HTML 元件特有的attribute (包含用className來替代class) 只能用在HTML原生元件上才能發揮出對應的效果。
@@ -142,9 +144,13 @@ function WelcomeDialog() {
 
 #### wrapper componet 
 
+wrapper
+> a piece of paper, plastic, or other material that covers and protects something
+
 > wrapper component => component to wrap something
 
 重點：
+- wrapper 會是指一個用來覆蓋並保護特定事物的特定包裝紙
 - 一個會包裹其他元件(component)的component
 - 在使用Containment 技術下，包裹住其他元件的元件會是叫做wrapper component
 
@@ -222,9 +228,8 @@ function WelcomeDialog() {
 <!--SR:!2022-09-19,24,250-->
 
 #🧠 wrapper component 是什麼？ ->->-> `- 一個會包裹其他元件(component)的component
-<!--SR:!2022-09-23,27,250-->
-`
 
+#🧠 wrapper 命名緣由是什麼？ ->->-> `wrapper 會是指一個用來覆蓋並保護特定事物的特定包裝紙`
 
 #🧠 React： props.children 會是什麼 ->->-> `- props 會是每個元件對應函式的參數props - 其props.children的children是保留字，會直接指向該元件所包含的內容 -  內容會是多個獨立元件所構成的結構體`
 <!--SR:!2022-09-13,19,250-->
