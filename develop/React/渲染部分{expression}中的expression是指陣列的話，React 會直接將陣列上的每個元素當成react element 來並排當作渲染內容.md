@@ -88,6 +88,20 @@ render(
 
 
 
+rendering list & rendering conditional content
+
+outputting dynamic lists of content
+
+
+dynamic lists of content 
+=> 在執行過程，根據執行時資訊來渲染內容
+
+
+
+
+rendering content under certain conditions
+
+
 ## 複習
 #🧠 React：渲染部分{expression}中的expression是指陣列的話，React會如何解析？->->-> `React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容`
 <!--SR:!2022-09-10,9,250-->
