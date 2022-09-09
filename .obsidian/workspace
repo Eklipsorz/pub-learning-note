@@ -97,6 +97,8 @@
   },
   "active": "e8dec88a1d9fb08c",
   "lastOpenFiles": [
+    "MOC/React MOC.md",
+    "inbox/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
     "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
     "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
@@ -104,8 +106,6 @@
     "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
     "inbox/Each child in a list should have a unique \"key\" prop. 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點.md",
     "inbox/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
-    "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
-    "inbox/CSS 開發常用使用法則.md",
-    "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放modal、modal-content，製作方式請詳讀本文章.md"
+    "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md"
   ]
 }

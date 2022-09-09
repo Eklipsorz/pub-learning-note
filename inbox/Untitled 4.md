@@ -1,40 +1,32 @@
 ## 描述
 
-使用div 來當wrapper element  
-a new problem arises where you have many nested React Components
-[[JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array]]
+### utility function vs. helper function
 
-由於JSX 侷限而採用wrapper element和array，其中array得要一直填寫key值才會減少不必要的誤判，所以通常會採取前者，但前者會是拿
-
-一直使用div來當wrapper element 會促使產生深度高到一定程度的div巢狀結構
-
-
-```
-<div>
-   <div>
-        <div>
-            <div>
-                ......
-            </div>
-        </div>
-   </div>
-</div>
-```
   
 
-> In bigger apps, you can easily end up with tons of unnecessary \<div\>s (or other elements)  which add no semantic meaning or structure to the page but are only there of React’s JSX requirement
+#### utility function
 
+1. Utility 原意為大家都能使用的服務和資源，搭配function就是大家都能使用的函式
+> a service that is used by the public
+2. 在電腦科學裡頭，會是整個專案、整個系統、整個團隊都能呼叫使用的函式
 
-而不一定是所有div都是必要的，比如div 目前所在並不會帶來特別語義或者結構，只是為了解決JSX侷限問題
+  
+#### helper function
 
+1. Helper 是指以單一活動來幫助的某人事物，搭配function就是提供單一功能的函式
+> someone who helps with an activity
+2. Helper function 在電腦科學裡是被定調為提供單一功能的函式，那麼勢必會以簡單、短小、提供服務的對象也叫侷限來設計，因此helper function也被常指為提供一單一簡單功能給特定的對象。相對於Utility function，helper functionc會侷限於一個對象的函式。
 
-### 帶來的問題
+  
+  
 
-過多的div 會造成
+### 參考資料
 
-1.  div 的增長有可能會破壞原有CSS 樣式選擇器所選擇的DOM節點
-2.  會讓瀏覽器渲染出不必要出現的HTML元素，甚至影響處理效率，比如每次渲染都會以深度有一定程度巢狀的div結構來重新渲染
+1. [Whats the difference between utility class and Helper class in Java? Profile photo for James Loveday](https://www.quora.com/Whats-the-difference-between-utility-class-and-Helper-class-in-Java)
 
+2. [Reply: Whats the difference between utility class and Helper class in Java? Profile photo for James Loveday](https://www.quora.com/Whats-the-difference-between-utility-class-and-Helper-class-in-Java/answer/James-Loveday-9?ch=10&share=96b1d0aa&srid=NILSx)
+
+3. [helper和utils有什么区别吗？](https://www.zhihu.com/question/62207769)
 
 ## 複習
 
@@ -42,7 +34,5 @@ a new problem arises where you have many nested React Components
 ---
 Status: #🌱 #📓 
 Tags:
-[[React]]
 Links:
-[[JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array]]
 References:
