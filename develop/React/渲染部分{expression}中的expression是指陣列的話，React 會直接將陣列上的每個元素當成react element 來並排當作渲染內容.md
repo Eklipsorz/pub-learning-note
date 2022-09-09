@@ -88,20 +88,6 @@ render(
 
 
 
-rendering list & rendering conditional content
-
-outputting dynamic lists of content
-
-
-dynamic lists of content 
-=> 在執行過程，根據執行時資訊來渲染內容
-
-
-
-
-rendering content under certain conditions
-
-
 ## 複習
 #🧠 React：渲染部分{expression}中的expression是指陣列的話，React會如何解析？->->-> `React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容`
 <!--SR:!2022-09-10,9,250-->
@@ -119,4 +105,6 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element]]
+[[Each child in a list should have a unique "key" prop. 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點]]
 References:

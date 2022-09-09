@@ -26,7 +26,8 @@ render()
 	<div /> 
 	<MyComponent /> 
 	```
-	- 使用Boolean expression && JSX Element 來表示 JSX 元素本身，其回傳內容會根據前者是否為true，若true，就以後者的JSX Element來呈現；若false，就忽略
+	- 使用Boolean expression && JSX Element 來表示 JSX 元素本身，其回傳內容會根據前者是否為true，若true，就以後者的JSX Element來呈現；若false，就忽略該Virtual DOM
+	- 使用陣列
 ## 複習
 
 
@@ -36,6 +37,6 @@ Tags:
 [[React]]
 Links:
 [[渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容]]
-[[React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略建立Virtual DOM]]
+[[React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM]]
 References:
 [[@reactReactComponentReact]]

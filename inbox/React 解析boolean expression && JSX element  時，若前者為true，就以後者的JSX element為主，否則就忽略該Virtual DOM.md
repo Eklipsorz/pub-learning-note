@@ -25,7 +25,7 @@ root.render(<Mailbox unreadMessages={messages} />);
 重點：
 - React 解析boolean expression && jsx element  時：
 	- 若表達前者是回傳true，就會以後者的 JSX Element來呈現
-	- 若表達前者是回傳false，React就會選擇忽略建立該Virtual DOM
+	- 若表達前者是回傳false，React就會選擇忽略該Virtual DOM
 ```
 boolean expression && jsx element
 ```
