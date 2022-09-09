@@ -30,15 +30,6 @@ root.render(<Mailbox unreadMessages={messages} />);
 boolean expression && jsx element
 ```
 
-### boolean expression && JSX element 適用場景
-
-該語法只會在該元件本身就為boolean expression && JSX element 
-```
-return (
-	result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>
-);
-```
-
 
 ## 複習
 
@@ -48,6 +39,7 @@ Status: #🌱 #📓
 Tags:
 [[React]] 
 Links:
+[[boolean expression && JSX element 只會在元件本身就是該形式才會變成JSX element，若混雜其他元件就會將boolean expression視為字串，JSX element則是無論如何都會被渲染的元件]]
 [[React：conditional rendering 是根據執行狀態來調整渲染內容的技術]]
 References:
 [[@reactTiaoJianRenderReact]]

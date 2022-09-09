@@ -75,4 +75,5 @@ Status: #🌱 #📓
 Tags:
 [[React]]
 Links:
+[[boolean expression && JSX element 只會在元件本身就是該形式才會變成JSX element，若混雜其他元件就會將boolean expression視為字串，JSX element則是無論如何都會被渲染的元件]]
 References:
