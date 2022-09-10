@@ -1,6 +1,17 @@
 ## 描述
+
+
+
+- fragement 本身是empty wrapper component
+- fragement 主要用途為
+	- 利用empty wrapper component 對於React建立DOM語法的合法來實現 一個 component 中回傳多個 element
+
+
 [[@reactFragmentsReact]]
 > React 其中一種常見的使用情況是在一個 component 中回傳多個 element，fragment 讓你能夠在不用增加額外 DOM 節點的情況下，重新組合 child component
+
+
+
 
 fragmenet 本身是內建的empty wrapper component機制
 
@@ -42,6 +53,17 @@ return (
 > November 28, 2017 by [Clement Hoang](https://twitter.com/c8hoang)
 >
 > React 16.2 is now available! The biggest addition is improved support for returning multiple children from a component’s render method. We call this feature _fragments_:
+
+
+重點：
+- Fragment 功能起源於React 16.2.0起
+### fragment 命名緣由
+fragment 
+> a small piece or a part, especially when broken from something whole
+
+重點：
+- 從一個特定事物切分出來的一小部分
+
 ## 複習
 
 

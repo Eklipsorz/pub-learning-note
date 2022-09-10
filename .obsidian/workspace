@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React Fragment.md",
+            "file": "inbox/React Portal.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React Fragment.md",
+                "file": "inbox/React Portal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "857d3b0f18b4f58c",
   "lastOpenFiles": [
+    "inbox/React Fragment.md",
     "MOC/React MOC.md",
     "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
     "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
@@ -105,7 +106,6 @@
     "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
     "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
     "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
-    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
-    "develop/React/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md"
+    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md"
   ]
 }
