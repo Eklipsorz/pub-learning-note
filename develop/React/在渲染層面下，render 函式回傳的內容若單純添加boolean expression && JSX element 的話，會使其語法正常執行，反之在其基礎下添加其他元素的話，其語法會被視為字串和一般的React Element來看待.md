@@ -48,6 +48,7 @@ return (
 #🧠 render函式若單獨回傳boolean expression && jsx element的話，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `其boolean expression && jsx element 整個會被當作是JSX 元素`
 
 #🧠 render函式若回傳boolean expression && jsx element的同時夾雜，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `boolean expression && 會被當作一般字串，而後頭JSX Element就以JSX元素來看待`
+<!--SR:!2022-09-13,3,250-->
 
 
 ---
