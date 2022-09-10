@@ -230,10 +230,10 @@ export default Expenses;
 
 
 #🧠 React：請用程式碼來展示Conditional Operator 如何實現Conditional Rendering  ->->-> `return ({enable ? <h1>enable</h1> : <h1>disable</h1>});`
-<!--SR:!2022-09-10,9,250-->
+<!--SR:!2022-10-05,25,250-->
 
 #🧠 React：請用程式碼來展示兩個And Operator 如何實現Conditional Rendering ->->-> `return ({enable && <h1>enable</h1>} {!enable && <h1>disable</h1>})`
-<!--SR:!2022-09-10,9,250-->
+<!--SR:!2022-10-06,26,250-->
 
 
 #🧠 React：為何不能夠在JSX語法直接添加if-else語法？而是改用operator ->->-> `因為JSX是由JS和XML所構成，其中JS只允許在{}內執行，在那裡只會被JS引擎當作是expression來執行，而不能以statement，這造成身為statement的if-else不能夠參與，只有能夠被當成expression來執行的operator才行`

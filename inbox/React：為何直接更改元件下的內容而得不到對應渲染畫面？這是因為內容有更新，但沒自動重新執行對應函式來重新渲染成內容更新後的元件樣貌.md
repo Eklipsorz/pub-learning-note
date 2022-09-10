@@ -106,7 +106,7 @@ function ExpenseItem(props) {
 
 
 #🧠 在這裡按鈕綁定點擊事件的事件處理clickHandler，並且預期是透過點擊事件來變更title的內容，結果是不能實現，請問有何解法？ (概念) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `解法1： 透過事件處理來擷取該節點，並更改其內容、解法2：先更改內容，然後以內容更改後的畫面來渲染`
-<!--SR:!2022-09-10,17,248-->
+<!--SR:!2022-10-25,45,248-->
 
 #🧠 在React裡，每個元件在開發上實際綁定著什麼樣資料結構、函式？(提示有四個) ->->-> `hooks 、props、建構式/function、生命週期函式`
 <!--SR:!2022-09-13,5,248-->
@@ -120,7 +120,7 @@ function ExpenseItem(props) {
 <!--SR:!2022-09-23,25,250-->
 
 #🧠 React：以這個作為例子來說明，畫面生成的整體流程會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `確定畫面->轉換成以畫面為主來生成實際DOM節點的指令->執行指令來渲染`
-<!--SR:!2022-09-10,17,248-->
+<!--SR:!2022-10-24,44,248-->
 
 #🧠 React：是如何從return () 確定畫面的，以自製元件和原生元件來說明？ ->->-> `確定畫面則是則會有自製元件和原生元件，自製元件就直接執行對應的函式來獲取對應原生元件來合併，原生元件就直接合併`
 <!--SR:!2022-10-12,34,230-->

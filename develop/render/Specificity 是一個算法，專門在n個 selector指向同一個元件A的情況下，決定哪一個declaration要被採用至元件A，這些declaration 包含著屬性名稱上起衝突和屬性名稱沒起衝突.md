@@ -106,7 +106,7 @@ specific
 <!--SR:!2022-09-26,17,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，那麼主要會如何選擇？(面對於重複和沒重複的情況下) ->->-> `主要會用權重來衡量每個declaration、 多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，就選擇權重最高的declaration，並納入至它所對應元件會有的樣式屬性、屬性名稱沒起衝突的declaration ，就直接納入至它所對應元件會有的樣式屬性`
-<!--SR:!2022-09-10,7,250-->
+<!--SR:!2022-09-28,18,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是何種形式 ->->-> `基本上會使用三種欄位值，分別為id、class、type，形式為id-class-type`
 <!--SR:!2022-09-11,8,250-->
@@ -145,7 +145,7 @@ specific
 <!--SR:!2022-09-13,10,250-->
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是最高的？形式會是如何？->->-> `用!important來綁定的declaration，形式會是 background-color: red !important;`
-<!--SR:!2022-09-10,7,250-->
+<!--SR:!2022-09-27,17,250-->
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是次高的？形式會是如何？ ->->-> `用inline style是來綁定declaration block，<div style="font-size:24px;color:red;"> </div>`
 <!--SR:!2022-09-23,14,250-->
