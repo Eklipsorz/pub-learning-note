@@ -27,8 +27,10 @@ render()
 	<MyComponent /> 
 	```
 	- 使用Boolean expression && JSX Element 來表示 JSX 元素本身，其回傳內容會根據前者是否為true，若true，就以後者的JSX Element來呈現；若false，就忽略該Virtual DOM
-	- 使用陣列
+	- 使用陣列包含多個React Element的形式
 ## 複習
+
+#🧠 在不使用fragment和portal 技術下，render函式還能夠回傳的JSX元素形式會有哪些？ ->->-> `單純JSX語法的元素、使用Boolean expression && JSX Element、使用陣列包含多個React Element的形式`
 
 
 ---
