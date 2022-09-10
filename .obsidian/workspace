@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e6dd40d454a77928",
+        "id": "857d3b0f18b4f58c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
+            "file": "develop/React/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請問React如何解析這表達式",
+                "query": "並且由section來包含Wrapper",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
+                "file": "develop/React/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,15 +107,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e6dd40d454a77928",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "develop/React/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
+    "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
     "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
+    "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+    "develop/React/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
     "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
     "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
-    "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "develop/React/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
-    "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
     "develop/React/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
     "develop/React/boolean expression && JSX Element案例：混雜其他元件＋boolean expression && JSX Element 未放入到{} vs. 混雜其他元件＋boolean expression && JSX Element 放入到 {}.md",
     "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md"
