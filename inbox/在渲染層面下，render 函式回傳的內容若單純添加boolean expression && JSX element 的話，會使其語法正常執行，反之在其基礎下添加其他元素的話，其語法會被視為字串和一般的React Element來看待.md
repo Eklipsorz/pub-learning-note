@@ -2,7 +2,7 @@
 
 ### 在渲染層面下，render 函式回傳的內容 是否影響boolean expression && JSX element 正常用途
 
-在渲染層面下，boolean expression && JSX element 只會在render只回傳它本身才會正常作用：會先判斷result是否為true，若true才回傳後面的JSX Element；否則不回傳。
+在渲染層面下，boolean expression && JSX element 只會在render只回傳它本身才會正常作用：會先判斷result是否為true，若true才回傳後面的JSX Element；若false，React會選擇忽略不渲染。
 ```
 return (
 	result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>
@@ -30,7 +30,7 @@ return (
 #🧠  boolean expression && JSX element 在渲染層面下，什麼樣使用用法下會正常處理前面的語法？請用程式碼來表示 ->->-> `return ( result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>);`
 
 
-#🧠 boolean expression && JSX element 在元件本身就boolean expression && JSX element 只會在render只回傳它、對著JSX元素{expression}替代expression本身才會正常作用，若正常的話，它是如何運作的？ ->->-> `會先判斷boolean expression是否為true，若true才回傳後面的JSX Element；否則不回傳。`
+#🧠 boolean expression && JSX element 在元件本身就boolean expression && JSX element 只會在render只回傳它、對著JSX元素{expression}替代expression本身才會正常作用，若正常的話，它是如何運作的？ ->->-> `會先判斷boolean expression是否為true，若true才回傳後面的JSX Element；若false，React會選擇忽略不渲染。`
 
 #🧠  boolean expression && JSX element 若搭配其他元件的話，boolean expression && JSX element 還能正常運作嗎？為什麼？ ->->-> `若混雜其他元件的話，boolean expression && 將被視為一般字串，而非boolean expression，而後者的JSX Element將會直接被當作內容而被渲染`
 
