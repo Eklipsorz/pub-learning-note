@@ -21,7 +21,7 @@ return (
 // 轉換前
 <Element1 />
 or 
-<Element1>...</Element>
+<Element1>...</Element1>
 
 // 轉換後
 React.createElement(Element1, {}, ...)
@@ -182,10 +182,10 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return (React.createElement(Element1, {}, ...) React.createElement(Element2, {}, ...))`
 
 
-#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
+#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
 
 
-#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element\>被React看作是？以文字來描述 ->->-> `被看作以React函式庫的createElement語法來建立對應元件。`
+#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以文字來描述 ->->-> `被看作以React函式庫的createElement語法來建立對應元件。`
 
 #🧠 請用這例子來說明JSX語法侷限會是**一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個** ？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return 只能回傳一個Element來建立，但依照現況來從Element1 和 Element2 中選擇一個來建立，甚至不選，都不會滿足JSX在表面上所提示的那樣，要一次回傳多個Element。所以才要開發者要有一個元素來包含所有元素、且最外圍的parent element只能一個`
 

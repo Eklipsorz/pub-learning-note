@@ -16,55 +16,64 @@
 JSX {}內 是以陣列來表示的話(如下)，
 
 ```
-render(
-	{[
-		a,
-		b,
-		c,
-	]}
-)
+render() {
+
+	return (
+		{[
+			a,
+			b,
+			c,
+		]}
+	);
+} 
 ```
 
 會將陣列中的每個元素並排渲染著(如下)：
 ```
-render (
-	a
-	b
-	c
-)
+render() {
+
+	return (
+		a
+		b
+		c
+	);
+
+}
 ```
 
 假若是存放著多個XML標籤所構成的陣列，那麼
 ```
-render(
-	{[
-		<ExpenseItem
-		  id={expenses[0].id}
-		  title={expenses[0].title}
-		  amount={expenses[0].amount}
-		  date={expenses[0].date}>
-		</ExpenseItem>
-		,
-		<ExpenseItem
-		  id={expenses[1].id}
-		  title={expenses[1].title}
-		  amount={expenses[1].amount}
-		  date={expenses[1].date}
-		</ExpenseItem>
-		,
-		.
-		.
-		.
-		.
-	
-	]}
-)
+render() {
+	return (
+		{[
+			<ExpenseItem
+			  id={expenses[0].id}
+			  title={expenses[0].title}
+			  amount={expenses[0].amount}
+			  date={expenses[0].date}>
+			</ExpenseItem>
+			,
+			<ExpenseItem
+			  id={expenses[1].id}
+			  title={expenses[1].title}
+			  amount={expenses[1].amount}
+			  date={expenses[1].date}
+			</ExpenseItem>
+			,
+			.
+			.
+			.
+			.
+		
+		]}
+	);
+}
 ```
 
 會將陣列中的每個元素並排渲染著(如下)：
 ```
-render(
-
+render() {
+	return (
 		<ExpenseItem
 		  id={expenses[0].id}
 		  title={expenses[0].title}
@@ -83,7 +92,8 @@ render(
 		.
 		.
 		.
-)
+	)
+}
 ```
 
 

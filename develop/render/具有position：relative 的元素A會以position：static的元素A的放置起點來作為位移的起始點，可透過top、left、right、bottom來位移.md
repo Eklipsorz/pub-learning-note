@@ -210,8 +210,8 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排`
 <!--SR:!2022-09-14,4,248-->
 
-#🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值 ->->-> `會選top和left這兩種屬性`
-<!--SR:!2022-09-12,2,210-->
+#🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值(提示：以屬性共存來說) ->->-> `會選top和left這兩種屬性`
+
 
 ---
 Status: 
