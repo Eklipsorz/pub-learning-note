@@ -2,20 +2,60 @@
 
 
 ### JSX Limitations
-1. 一定要有parent element包覆其他元素
+1. 一定要有最外圍的parent element包覆其他元素
 2. 最外圍的parent element只能有一個
 
 one element which you are allowed to have may of course have more children which then also can be adjacent to each other
 
 
-### 解法
+### 問題描述
 ```
 return (
 	<Element1 />
 	<Element2 />
 )
 ```
-  
+
+由於每個JSX 元素會轉換成以下語法：
+```
+// 轉換前
+<Element1 />
+or 
+<Element1>...</Element>
+
+// 轉換後
+React.createElement(Element1, {}, ...)
+```
+
+進而讓以下語法
+```
+(
+	<Element1 />
+	<Element2 />
+)
+```
+
+轉換成
+```
+(
+	React.createElement(Element1, {}, ...)
+	React.createElement(Element2, {}, ...)
+)
+```
+
+最後，搭配最外面的return，就會是
+```
+return (
+	React.createElement(Element1, {}, ...)
+	React.createElement(Element2, {}, ...)
+)
+```
+
+但return 只能回傳一個Element來建立，但依照現況來從Element1 和 Element2 中選擇一個來建立，甚至不選，都不會滿足JSX在表面上所提示的那樣，要一次回傳多個Element。所以才要開發者要有一個元素來包含所有元素、且最外圍的parent element只能一個
+
+
+### 解法
+
 #### 解法1：使用額外的元件來當wrapper element
 通常會拿div當wrapper element ，但不會是絕對
 
@@ -106,6 +146,22 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 ## 複習
+
+
+#🧠 JSX 語法侷限有什麼？  ->->-> `一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個`
+
+
+
+#🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return (React.createElement(Element1, {}, ...) React.createElement(Element2, {}, ...))`
+
+
+#🧠 請用這例子來說明JSX語法侷限會是**一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個** ？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `每個`
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
 
 
 ---

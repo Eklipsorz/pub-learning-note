@@ -118,7 +118,7 @@ const element = (
 ```
 
 具體來說，每一個React Element 只能接受一個parent element的原因：
-1. 每一個JSX語法都會是代表著React.createElement(...)回傳的節點，該節點會是一個包含多個子節點的parent節點
+1. 每一個JSX元素都會是代表著React.createElement(...)回傳的節點，該節點會是一個包含多個子節點的parent節點
 ```
 (
 	<h2>Let's get started!</h2>
@@ -133,13 +133,31 @@ const element = (
 )
 ```
 
-轉換後
+會分別轉換成：
+```
+(
+	React.createElement('h2', {}, ...)
+	React.createElement(Expenses, { expenses }, ....)
+)
+```
+和
+```
+React.createElement(...)
+```
+
+2. 搭配最外圍的return 會形成：
+```
+return (
+	React.createElement('h2', {}, ...)
+	React.createElement(Expenses, { expenses }, ....)
+)
+```
+和
 ```
 return React.createElement(...)
 ```
 
-
-2. 然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點
+3. 然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點
 ```
 return React.createElement(...)
 ```
@@ -205,11 +223,15 @@ return React.createElement(Expenses, { items: expenses });
 #🧠 為什麼使用JSX語法糖的React Element 只能接受一個parent element，講個大概就好 ->->-> `每一個JSX語法都會是代表著React.createElement(...)回傳的節點，該節點會是一個包含多個子節點的parent節點、然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點，在這樣情況下，只能選擇一個或者都不選，哪一個都無法按照JSX代表意思來使原生方法實現。`
 <!--SR:!2022-09-25,28,250-->
 
-#🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
-<!--SR:!2022-09-25,28,250-->
+#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element\>被React看作是？ ->->-> `React.createElement(...)`
 
-#🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485568/blog/react/react-element/Transformed-JSX-React-Element_et46zr.png)`
-<!--SR:!2022-09-25,28,250-->
+
+
+#🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `( React.createElement('h2', {}, ...) React.createElement(Expenses, { expenses }, ....) )`
+
+
+#🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `React.createElement(...)`
+
 
 
 ---

@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+            "file": "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "464b6306c824b0ac",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "styled-components",
+                "query": "createElement",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,11 +61,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 589
+    "width": 289
   },
   "right": {
     "id": "acffa8a6b0911db3",
@@ -69,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5cea1f09416d1ab5",
+  "active": "464b6306c824b0ac",
   "lastOpenFiles": [
-    "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
     "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
-    "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
+    "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
     "inbox/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
+    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+    "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
+    "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
     "inbox/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
     "inbox/boolean expression && JSX Element案例：混雜其他元件＋boolean expression && JSX Element 未放入到{} vs. 混雜其他元件＋boolean expression && JSX Element 放入到 {}.md",
     "MOC/React MOC.md",
-    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
-    "develop/React/Each child in a list should have a unique \"key\" prop. 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點.md",
-    "inbox/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md"
+    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md"
   ]
 }
