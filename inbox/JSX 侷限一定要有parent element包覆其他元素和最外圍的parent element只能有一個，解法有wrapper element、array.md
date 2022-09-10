@@ -84,6 +84,33 @@ return (
 
 
 ##### 案例
+```
+return (
+      {error && (
+        <ErrorModal
+          title={error.title}
+          text={error.text}
+          onErrorModal={onErrorModalClickHandler}
+        ></ErrorModal>
+      )}
+
+      <Card>
+        <form className={styles['form']} onSubmit={submitHandler}>
+          <div className={styles['form-control']}>
+            <label>Username</label>
+            <input value={userName} onChange={userNameChangeHandler} />
+          </div>
+          <div className={styles['form-control']}>
+            <label>Age(Years)</label>
+            <input value={age} onChange={ageChangeHandler} />
+          </div>
+          <Button type='submit'>Add User</Button>
+        </form>
+      </Card>
+  );
+```
+
+
 
 若要將下面案例轉成陣列形式，必須要注意的是ErrorModal是boolean expression && JSX Element 所構成
 ```
@@ -155,17 +182,34 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return (React.createElement(Element1, {}, ...) React.createElement(Element2, {}, ...))`
 
 
-#🧠 請用這例子來說明JSX語法侷限會是**一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個** ？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `每個`
+#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 每個JSX元素語法-\<Element1\>.... \<\/Element\>被React看作是？以文字來描述 ->->-> `被看作以React函式庫的createElement語法來建立對應元件。`
+
+#🧠 請用這例子來說明JSX語法侷限會是**一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個** ？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return 只能回傳一個Element來建立，但依照現況來從Element1 和 Element2 中選擇一個來建立，甚至不選，都不會滿足JSX在表面上所提示的那樣，要一次回傳多個Element。所以才要開發者要有一個元素來包含所有元素、且最外圍的parent element只能一個`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 面對JSX 局限性問題，會有什麼方法來解決？(先不論portal 和 fragment) ->->-> `使用額外的元件來當wrapper element、利用React解析陣列的特性來使用陣列表示`
+
+
+#🧠 面對JSX 局限性問題，會有什麼方法來解決？其中若選擇使用利用React解析陣列的特性來使用陣列表示，還會遇到什麼潛在問題？ 遇到該如何解決->->-> `可能會遇到Each child in a list should have a unique "key" prop 這訊息，要解決的話，要對陣列的每個項目添加key屬性`
+
+#🧠 以下程式碼能夠正常執行嗎？不能的話，會是什麼問題？解決思維為何？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png) ->->-> `不能夠執行、最主要是沒有額外的parent element來包覆著ErrorModal和Card這兩個元件，解決思維則是建立一個新的parent element來包覆著、使用陣列來將他們包含`
+
+
+
+
+#🧠 以下程式碼犯下了JSX 侷限問題，請用程式碼來表示如何用元素來包含以其解決![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-solution1_lzerbw.png)`
+
+#🧠 以下程式碼犯下了JSX 侷限問題，請用程式碼來表示如何用陣列來包含以其解決，為何陣列中的第一個項目可以被放進去？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-solution2_jzylbh.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-solution2_jzylbh.png)`
+
+#🧠 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-solution2_jzylbh.png) ->->-> `boolean expression && JSX Element 可以被當作一種JSX元素，只有前者為true，才以後者的JSX Element為主，若前者為false，就會被React給忽略。`
+
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:

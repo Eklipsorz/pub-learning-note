@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "5cea1f09416d1ab5",
+        "id": "e6dd40d454a77928",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "464b6306c824b0ac",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+            "file": "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "createElement",
+                "query": "{express",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
+                "file": "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "464b6306c824b0ac",
+  "active": "e6dd40d454a77928",
   "lastOpenFiles": [
+    "inbox/boolean expression && JSX Element案例：混雜其他元件＋boolean expression && JSX Element 未放入到{} vs. 混雜其他元件＋boolean expression && JSX Element 放入到 {}.md",
     "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+    "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
     "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
     "inbox/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
     "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
     "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
     "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
     "inbox/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
-    "inbox/boolean expression && JSX Element案例：混雜其他元件＋boolean expression && JSX Element 未放入到{} vs. 混雜其他元件＋boolean expression && JSX Element 放入到 {}.md",
-    "MOC/React MOC.md",
-    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md"
+    "MOC/React MOC.md"
   ]
 }
