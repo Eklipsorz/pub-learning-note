@@ -23,6 +23,11 @@ return (
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662743573/blog/frontend/conditional-rendering/boolean-expression-and-jsx-element-invalid_xgb64i.png)
 
 
+#### render函式若單獨回傳boolean expression && jsx element的話
+ render函式若單獨回傳boolean expression && jsx element的話，其boolean expression && jsx element 整個會被當作是JSX 元素
+
+ render函式若回傳boolean expression && jsx element的同時夾雜，其boolean expression && jsx element整體會被看作什麼東西？ `boolean expression && 會被當作一般字串，而後頭JSX Element就以JSX元素來看待`
+
 ## 複習
 
 #🧠  boolean expression && JSX element 在渲染層面下，什麼樣使用用法下會正常處理前面的語法？ ->->-> `boolean expression && JSX element 只會在render只回傳它、對著JSX元素{expression}替代expression本身才會正常作用`
@@ -40,6 +45,10 @@ return (
 
 #🧠 請用程式碼來舉例以表示在渲染層面下，boolean expression && JSX element 若搭配其他元件的話，來變成一般字串和一般React Element->->-> ``
 
+#🧠 render函式若單獨回傳boolean expression && jsx element的話，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `其boolean expression && jsx element 整個會被當作是JSX 元素`
+
+#🧠 render函式若回傳boolean expression && jsx element的同時夾雜，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `boolean expression && 會被當作一般字串，而後頭JSX Element就以JSX元素來看待`
+
 
 ---
 Status: #🌱 
@@ -48,4 +57,5 @@ Tags:
 Links:
 [[React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM]]
 [[React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element]]
+[[boolean expression && JSX Element案例：混雜其他元件＋boolean expression && JSX Element 未放入到{} vs. 混雜其他元件＋boolean expression && JSX Element 放入到 {}]]
 References:

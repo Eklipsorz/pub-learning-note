@@ -58,5 +58,6 @@ Tags:
 Links:
 [[在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待]]
 [[React：conditional rendering 是根據執行狀態來調整渲染內容的技術]]
+[[boolean expression && JSX Element案例：混雜其他元件＋boolean expression && JSX Element 未放入到{} vs. 混雜其他元件＋boolean expression && JSX Element 放入到 {}]]
 References:
 [[@reactTiaoJianRenderReact]]
