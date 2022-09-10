@@ -7,12 +7,12 @@
 [[React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染]]
 
 可行的解決思路為：
-1. 建立一個假的wrapper component，該component會對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構
-2. 由假的wrapper component來包含原有要用真的wrapper包起來的子節點
+1. 建立一個empty wrapper component，該component會對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構
+2. 由empty wrapper component來包含原有要用真的wrapper包起來的子節點
 
-### Wrapper.js 打造一個假的wrapper component
+### Wrapper.js 打造一個empty wrapper component
 
-假的wrapper component實際上會只內含著它所包含的子節點內容，不會有額外的元件來包含子節點內容，只要使用wrapper，就只會回傳它的子節點。
+empty wrapper component實際上會只內含著它所包含的子節點內容，不會有額外的元件來包含子節點內容，只要使用wrapper，就只會回傳它的子節點。
 
 ```
 const Wrapper = (props) => {
@@ -37,7 +37,7 @@ return (React.createElement(Wrapper,{}, React.createElemennt('div',{}....)))
 ```
 
 #### 總結
-製作假的wrapper component是：
+製作empty wrapper component是：
 1. 憑藉著wrapper轉換語法是合法而對應不到DOM節點
 2. wrapper單純包含子節點來回傳所有子節點
 
@@ -105,27 +105,27 @@ return (
   );
 ```
 
-使用假的parent element來充當wrapper component，並不會讓section和card元件多一個div元件
+使用empty parent element來充當wrapper component，並不會讓section和card元件多一個div元件
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745520/blog/frontend/conditional-rendering/after-wrapper_qieupz.png)
 
 ## 複習
 
-#🧠 React：為了解決過度使用wrapper element來解決JSX 侷限問題，在這裡的解法思路是什麼？ ->->-> `1. 建立一個假的wrapper component，該component會對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構 2. 由假的wrapper component來包含原有要用真的wrapper包起來的子節點`
+#🧠 React：為了解決過度使用wrapper element來解決JSX 侷限問題，在這裡的解法思路是什麼？ ->->-> `1. 建立一個empty wrapper component，該component會對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構 2. 由empty wrapper component來包含原有要用真的wrapper包起來的子節點`
 <!--SR:!2022-09-13,3,250-->
 
 
-#🧠 React：如何製作假的wrapper component，使該component本身會對應不存在的Virtaul DOM結構以及對應不到實際DOM結構，但可以夾帶著其他內容 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png)`
+#🧠 React：如何製作empty wrapper component，使該component本身會對應不存在的Virtaul DOM結構以及對應不到實際DOM結構，但可以夾帶著其他內容 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png)`
 <!--SR:!2022-09-13,3,250-->
 
-#🧠 React：下面是定義如何製作假的wrapper component，請問為何行得通？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png) ->->-> `因為return 那邊的Wrapper 元件和它包含的子元件可以看作為return (React.createElement(Wrapper,{}, React.createElemennt('div',{}....)))`
+#🧠 React：下面是定義如何製作empty wrapper component，請問為何行得通？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png) ->->-> `因為return 那邊的Wrapper 元件和它包含的子元件可以看作為return (React.createElement(Wrapper,{}, React.createElemennt('div',{}....)))`
 <!--SR:!2022-09-13,3,250-->
 
-#🧠 React：下面是定義如何製作假的wrapper component，請問為何行得通？盡可能以簡短兩句來說明。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png) ->->-> `1. 憑藉著wrapper轉換語法是合法而對應不到DOM節點 2. wrapper單純包含子節點來回傳所有子節點`
+#🧠 React：下面是定義如何製作empty wrapper component，請問為何行得通？盡可能以簡短兩句來說明。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png) ->->-> `1. 憑藉著wrapper轉換語法是合法而對應不到DOM節點 2. wrapper單純包含子節點來回傳所有子節點`
 <!--SR:!2022-09-13,3,250-->
 
 
 
-#🧠 以下是使用假的wrapper component來解決JSX侷限問題，wrapper component本身並沒有實際的元件，只包含子節點，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816315/blog/react/react-element/wrapper-for-div-hell/div-hell-solution-with-fake-component_ghxk5y.png) ->->-> `使用假的parent element來充當wrapper component，並不會讓section和card元件多一個div元件![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
+#🧠 以下是使用empty wrapper component來解決JSX侷限問題，wrapper component本身並沒有實際的元件，只包含子節點，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816315/blog/react/react-element/wrapper-for-div-hell/div-hell-solution-with-fake-component_ghxk5y.png) ->->-> `使用empty parent element來充當wrapper component，並不會讓section和card元件多一個div元件![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
 <!--SR:!2022-09-13,3,250-->
 
 
@@ -141,6 +141,7 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件]]
 [[JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array]]
 [[React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染]]
 References:
