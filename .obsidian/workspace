@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 4.md",
+            "file": "inbox/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 4.md",
+                "file": "inbox/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "e8dec88a1d9fb08c",
   "lastOpenFiles": [
-    "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
-    "inbox/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
-    "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
     "inbox/boolean expression && JSX element 只會在元件本身就是該形式才會變成JSX element，若混雜其他元件就會將boolean expression視為字串，JSX element則是無論如何都會被渲染的元件.md",
+    "inbox/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
+    "inbox/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
+    "inbox/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
+    "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
     "inbox/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
     "inbox/Each child in a list should have a unique \"key\" prop. 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點.md",
-    "inbox/Untitled 4.md",
-    "MOC/React MOC.md",
-    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md"
+    "inbox/boolean expression && JSX Element 未放入到{} vs. boolean expression && JSX Element 放入到 {}.md",
+    "MOC/React MOC.md"
   ]
 }

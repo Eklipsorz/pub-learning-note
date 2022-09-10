@@ -2,9 +2,9 @@
 ## 描述
 
 
-### errorModal 未放入到{} vs. errorModal 放入到 {}
+### boolean expression && JSX Element 未放入到{} vs. boolean expression && JSX Element 放入到 {}
 
-前者使用boolean expression && JSX Element 來表示 JSX Element，雖然語法上可行，但由於
+前者使用boolean expression && JSX Element 來表示 JSX Element，雖然語法上可行，但由於 混雜其他元件，導致error && 會構成字串來看待，而JSX Element則是必定被渲染上去，且附加著著以null物件來存取屬性，這會使系統報錯
 ```
 const [error, setError] = useState(null);
 return (
@@ -33,7 +33,7 @@ return (
   );
 ```
 
-
+後者將boolean expression && JSX Element放入JSX中的\{\}，會以JavaScript表達式來解析其error是否為true，才得到後面的JSX Element。
 
 ```
   const [error, setError] = useState(null);

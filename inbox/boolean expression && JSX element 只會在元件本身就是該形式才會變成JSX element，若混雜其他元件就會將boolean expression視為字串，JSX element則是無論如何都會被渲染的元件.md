@@ -2,7 +2,7 @@
 
 ### boolean expression && JSX element 適用場景
 
-該語法只會在該元件本身就為boolean expression && JSX element 形式才會將被認定為React Element 看待
+該語法只會在該元件本身就為boolean expression && JSX element 形式才會將被認定為React Element 看待：會先判斷result是否為true，若true才回傳後面的JSX Element；否則不回傳。
 ```
 return (
 	result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>
