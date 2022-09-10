@@ -107,7 +107,7 @@ rendering content under certain conditions
 <!--SR:!2022-09-10,9,250-->
 
 #🧠 React：請問React如何解析這表達式，請用程式碼來表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661681064/blog/react/dynamic-list/simple-array-example_hlcaww.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661681064/blog/react/dynamic-list/simple-array-result_cxugsx.png)`
-<!--SR:!2022-09-10,9,250-->
+<!--SR:!2022-10-05,25,250-->
 
 #🧠 React：請問React如何解析這表達式，請用程式碼來表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661681064/blog/react/dynamic-list/expense-array-example_wqhppu.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661681064/blog/react/dynamic-list/expense-array-to-template-example_q1bhds.png)`
 <!--SR:!2022-09-28,20,250-->
