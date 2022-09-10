@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e8dec88a1d9fb08c",
+        "id": "5cea1f09416d1ab5",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Each child in a list should have a unique \"key\" prop. 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/Each child in a list should have a unique \"key\" prop. 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e8dec88a1d9fb08c",
+  "active": "5cea1f09416d1ab5",
   "lastOpenFiles": [
+    "inbox/React：製作假的wrapper component來替代原本要用div包含的子節點，該wrapper component實際上並不會用額外元件來額外，.md",
+    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+    "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
+    "inbox/CSS 開發常用使用法則.md",
+    "Untitled.md",
     "inbox/Untitled 2.md",
     "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
     "MOC/React MOC.md",
     "inbox/Untitled 3.md",
-    "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md",
-    "inbox/boolean expression && JSX Element 未放入到{} vs. boolean expression && JSX Element 放入到 {}.md",
-    "inbox/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
-    "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放modal、modal-content，製作方式請詳讀本文章.md",
-    "develop/render/fixed-positioning 元素的高寬會受限於viewport的高寬 和 absolute-positioning 元素受限於最近的positioned parent 元素的高寬.md",
-    "develop/render/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md"
+    "inbox/React 解析boolean expression && JSX element  時，若前者為true，就以後者的JSX element為主，否則就忽略該Virtual DOM.md"
   ]
 }
