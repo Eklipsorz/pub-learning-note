@@ -2,7 +2,7 @@
 
 [[JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array]]
 
-由於JSX 侷限而採用wrapper element和array，其中array得要一直填寫key值才會減少不必要的誤判，所以通常會採取前者，但採用前者的話，可能會是一直拿div或者其他元件來當wrapper element ，這會促使產生深度高到一定程度的div巢狀結構
+由於JSX 侷限而得採用wrapper component和array，其中array得要一直填寫key值才會減少不必要的誤判，這樣會使得開發上變得較為不方便，所以通常會採取前者，但採用前者的話，可能會是一直拿div或者其他元件來當wrapper element ，這會促使產生深度高到一定程度的div巢狀結構
 
 ```
 <div>
@@ -33,6 +33,10 @@
 
 ## 複習
 
+#🧠 由於JSX 侷限而採用wrapper element 和 array 來解決，這兩者會有什麼樣問題？->->-> `前者會促使產生不必要的div元件或者wrapper element來包含，甚至產生深度高到一定程度的div巢狀結構，array得要一直填寫key值才會減少不必要的誤判，這樣會使得開發上變得較為不方便`
+
+#🧠 由於JSX 侷限而採用wrapper component，具體的wrapper component 通常會是拿什麼包含子節點 ->->-> `div元件`
+
 
 ---
 Status: #🌱 #📓 
@@ -40,4 +44,5 @@ Tags:
 [[React]]
 Links:
 [[JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array]]
+
 References:
