@@ -31,15 +31,32 @@ boolean expression && jsx element
 ```
 
 
+### 在渲染層級，能夠正常使用的場景
+
+1. render 函式只回傳boolean expression && jsx element
+```
+return (
+	boolean expression && jsx element
+)
+```
+
+2. JSX 夾雜著{expresssion}，其中expression就填入boolean expression && jsx element
+
+
 ## 複習
+#🧠 boolean expression && jsx element 在渲染層級上，哪些是能夠正常讓語法發揮正常用途的場景->->-> `render 函式只回傳boolean expression && jsx element、JSX 夾雜著{expresssion}，其中expression就填入boolean expression && jsx element`
+
+#🧠 React 解析JSX 元素中的{expressio}的expression，此時的expression是boolean expression && jsx element ，請問 boolean expression && jsx element會如何運作？->->-> `若表達前者是回傳true，就會以後者的 JSX Element來呈現、若表達前者是回傳false，React就會選擇忽略該Virtual DOM`
+
+
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]] 
 Links:
-[[boolean expression && JSX element 只會在元件本身就是該形式才會變成JSX element，若混雜其他元件就會將boolean expression視為字串，JSX element則是無論如何都會被渲染的元件]]
+[[在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待]]
 [[React：conditional rendering 是根據執行狀態來調整渲染內容的技術]]
 References:
 [[@reactTiaoJianRenderReact]]
