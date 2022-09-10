@@ -39,7 +39,7 @@ utility function 是提供通用功能給整個專案的函式，helper function
 #🧠 helper 和 utility 在電腦科學裡，功能上是否通用？使用對象是如何？ ->->-> `前者提供的功能較為侷限，只提供功能給特定對象；後者則提供通用，提供功能給整個專案`
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 Links:
 References:

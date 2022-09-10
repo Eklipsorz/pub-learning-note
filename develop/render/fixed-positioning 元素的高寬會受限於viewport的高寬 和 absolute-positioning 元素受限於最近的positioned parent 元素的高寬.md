@@ -20,7 +20,7 @@ absolute-position 元素的高寬則是受限於最近的positioned parent 元�
 <!--SR:!2022-09-12,3,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱
 Tags:
 [[CSS]] - [[HTML]]
 Links:

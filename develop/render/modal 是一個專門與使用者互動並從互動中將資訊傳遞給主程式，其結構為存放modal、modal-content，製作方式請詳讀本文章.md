@@ -253,7 +253,7 @@ modal content：對話窗內容
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 Links:
 [[fixed-positioning 元素的高寬會受限於viewport的高寬 和 absolute-positioning 元素受限於最近的positioned parent 元素的高寬]]
