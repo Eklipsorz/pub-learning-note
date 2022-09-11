@@ -84,10 +84,10 @@ position: sticky;
 <!--SR:!2022-09-11,3,250-->
 
 #🧠 CSS：position 屬性能填入的值是什麼？ ->->-> `static、relative、absolute、fixed、sticky`
-<!--SR:!2022-09-11,3,250-->
+<!--SR:!2022-09-21,10,250-->
 
 #🧠 CSS：position 屬性預設為何？ ->->-> `static`
-<!--SR:!2022-09-11,3,250-->
+<!--SR:!2022-09-21,10,250-->
 
 #🧠 position 屬性是指定元件在同一份文件中的定位方式是如何，具體是什麼？ ->->-> `**在特定定位方式中，來定義 top、bottom、left、right、z-index 屬性如何調整元素位置**`
 <!--SR:!2022-09-11,3,250-->
@@ -100,7 +100,7 @@ position: sticky;
 <!--SR:!2022-09-11,3,250-->
 
 #🧠 position 為static的元素是算positioned element？還是non-positioned element?  ->->-> `non-positioned element`
-<!--SR:!2022-09-11,3,250-->
+<!--SR:!2022-09-21,10,250-->
 
 #🧠 position 為static的元素 是什麼？會不會受到top、left、right、bottom、z-index這五個屬性的影響 ->->-> `意旨為遵從文件上的預設排版方式來排版，並且不會被top、left、right、bottom、z-index這五個屬性來調整其位置。`
 <!--SR:!2022-09-11,3,250-->
@@ -122,7 +122,7 @@ position: sticky;
 <!--SR:!2022-09-11,3,250-->
 
 #🧠 在多個元素呈現上重疊在一起的時候，z-index大小會如何控制呈現元素在深度這維度下的位置？->->-> `z-index數值越大的元素就越先呈現；其中z-index數值越小的元素就越後呈現`
-<!--SR:!2022-09-11,3,250-->
+<!--SR:!2022-09-21,10,250-->
 
 
 ---

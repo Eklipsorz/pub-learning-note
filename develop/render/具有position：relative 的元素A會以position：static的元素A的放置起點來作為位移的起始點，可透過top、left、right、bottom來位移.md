@@ -157,7 +157,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-09-14,4,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的上方偏移量，而讓元素的黑點會以橘點為起始點向下移動value1 px`
-<!--SR:!2022-09-11,2,228-->
+<!--SR:!2022-09-17,6,228-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的下方偏移量，而讓元素的黑點會以橘點為起始點向上移動value1 px`
@@ -168,7 +168,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-09-16,6,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定right被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> ->->-> `為了讓被位移後的元素離橘點擁有value1 px的右方偏移量，而讓元素的黑點會以橘點為起始點向左移動至value1 px `
-<!--SR:!2022-09-11,2,228-->
+<!--SR:!2022-09-17,6,228-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往上位移-value1`
 <!--SR:!2022-09-14,4,247-->
