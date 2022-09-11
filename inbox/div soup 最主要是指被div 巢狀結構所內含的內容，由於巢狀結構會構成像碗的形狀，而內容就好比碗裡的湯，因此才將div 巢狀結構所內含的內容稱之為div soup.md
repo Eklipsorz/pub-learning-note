@@ -27,7 +27,7 @@
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[Rendering]] - [[HTML]]
 Links:
