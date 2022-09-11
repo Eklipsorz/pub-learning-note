@@ -15,7 +15,7 @@
 
 
 重點：
-- portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會間接傳遞至特定元件A並進行渲染。
+- React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染
 - 問題背景為：
 	- 元件A本身原本是在其他元件C下擔任子元件來渲染，而其他元件B想拿元件A進行狀態傳遞並做渲染，問題是元件A和元件B之間的關係不能夠確定是否parent-child關係，而難以進行狀態上的傳遞，即使可以，也會花一定成本來時間
 - 功能：
@@ -50,7 +50,7 @@ ReactDOM.createPortal(children, container)
 	- 第二個引數：以pointer為主，專門接收特定實際DOM節點的記憶體位址，通常使用DOM API來抓取其特定DOM節點的參照位置
 - createPortal 回傳的是 react portal 介面
 
-#### 使用案例
+
 
 
 
@@ -60,7 +60,7 @@ ReactDOM.createPortal(children, container)
 
 ##### modal 案例
 
-modal 元件則是分為backdrop子元件和modal子元件，前者是背景，後者是modal本身，在這裡為了很好區分出這兩個子元件，才建立名為backdrop-root和modal-root這兩個實際DOM節點，好方便讓backdrop去掛載至backdrop-root下面以及讓modal掛載至modal-root的下面
+modal 元件則是分為backdrop子元件和modal子元件，前者是背景，後者是modal本身，在這裡為了很好區分出這兩個子元件，先在webpack要參考的結果網頁上建立id分別為backdrop-root和modal-root這兩個實際DOM節點，好方便讓backdrop去掛載至backdrop-root下面以及讓modal掛載至modal-root的下面
 ```
 1.  <body>
 2.      <div id="backdrop-root"></div>
@@ -69,6 +69,58 @@ modal 元件則是分為backdrop子元件和modal子元件，前者是背景，�
 5.  </body>
 ```
 
+##### 使用案例
+
+
+```
+import Button from './Button';
+import styles from './ErrorModal.module.css';
+import Card from '../UI/Card';
+import ReactDOM from 'react-dom';
+import React from 'react';
+
+const BackDrop = (props) => {
+  return <div className={styles['backdrop']} onClick={props.onConfirm}></div>;
+};
+
+const Modal = (props) => {
+  return (
+    <Card className={styles['modal']}>
+      <div className={styles['modal-header']}>
+        <h2>{props.title}</h2>
+      </div>
+      <div className={styles['modal-body']}>
+        <p>{props.text}</p>
+      </div>
+      <div className={styles['modal-footer']}>
+        <Button onClick={props.onConfirm}>Okay</Button>
+      </div>
+    </Card>
+  );
+};
+
+const ErrorModal = (props) => {
+  return (
+    <React.Fragment>
+      {ReactDOM.createPortal(
+        <BackDrop onConfirm={props.onConfirm} />,
+        document.getElementById('backdrop-root'),
+      )}
+      {ReactDOM.createPortal(
+        <Modal
+          title={props.title}
+          text={props.text}
+          onConfirm={props.onConfirm}
+        />,
+        document.getElementById('modal-root'),
+      )}
+    </React.Fragment>
+  );
+};
+
+export default ErrorModal;
+
+```
   
 #### 使用的函式庫是react-dom
 React library：React feature、state management

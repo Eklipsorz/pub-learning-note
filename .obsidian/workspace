@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React Portal.md",
+            "file": "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React Portal.md",
+                "file": "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +99,7 @@
   "lastOpenFiles": [
     "inbox/React：age-list-react-practice 改良.md",
     "inbox/(待研究)border-radius 失效，可能原因為overflow沒藏好.md",
-    "inbox/React Portal.md",
+    "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
     "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md",
     "inbox/div soup 最主要是指被div 巢狀結構所內含的內容，由於巢狀結構會構成像碗的形狀，而內容就好比碗裡的湯，因此才將div 巢狀結構所內含的內容稱之為div soup.md",
     "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
