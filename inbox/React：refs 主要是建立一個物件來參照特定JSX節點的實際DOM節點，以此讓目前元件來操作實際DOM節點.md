@@ -6,22 +6,28 @@
 > 在典型的 React 資料流裡，props 是 parent component 和 child component 唯一的互動方式。你會藉由使用新的 prop 重新 render 來改變你的 child。然而，有些情況下你需要在典型的資料流以外更改你的 child。這個被更改的 child 可能是 React component 的其中一個 instance，或他可能是個 DOM element。在這兩種情況下，React 提供了「逃生口」
 
 
-
+[[@linReactHookBiJi2022]]
 > `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument (`initialValue`). The returned object will persist for the full lifetime of the component.
 
-useRef 回傳的是一個可變的object，該物件會擁有current這屬性，這屬性的初始值會依照下面的initialVlaue為主，其物件會跟著綁定元件，直到該元件的生命週期結束才被釋放其hook。
+>useRef 回傳的是一個可變的object，該物件會擁有current這屬性，這屬性的初始值會依照下面的initialVlaue為主，其物件會跟著綁定元件，直到該元件的生命週期結束才被釋放其hook。
+
+
 ```
 const something = useRef(initialValue)
 ```
 
+> with refs, we can set up a connection between a HTML element which is being rendered in the end and our other JS code
+
+
+
+
 重點：
 - useRef 是一種hook，綁定於特定元件下，其存活時間會和特定元件一起共存，直到生命週期結束才被釋放其hook
-- useRef 主要是建立一個物件來參照特定實際DOM節點，以此讓目前元件來操作實際DOM節點
+- useRef 主要是建立一個物件特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點
 - useRef 函式本身會回傳一個mutable 物件，裡面夾雜了current屬性，其屬性值為對應參照的實際DOM節點
 
 ### 使用方法
 
-with refs, we can set up a connection between a HTML element which is being rendered in the end and our other JS code
 
 1. 首先要先從react函式庫載入useRefs函式
 ```
@@ -139,11 +145,6 @@ rarely use refs to manipulate the DOM.
 
 Here we're not really manipulating the DOM, we're not adding a new element.
 
-  
-
-use refs to manipulate the DOM ：
-
-1. 只是改變如何取得狀態
 
 
 
@@ -151,17 +152,14 @@ You will sometimes have use cases where you just want to quickly read a value
 
 and if you only want to read a value and you never plan on changing anything, well, then you don't really need state. because just to state as a keylogger is not that great. It's a lot of unnecessary code and work. 
 
-  
-
 so if you just want to read a value, refs are probably better.
 
-  
 refs, which are a little bit less code but you have this edge case of manipulating the DOM, or a state, which definitely cleaner but is a bit more code.
 
 
+### useRefs 的Refs 縮寫
 
-
-
+Refs 是指References
 
 ### mutable object 命名緣由
 [[@mdnMutableMDNWeb]]
@@ -197,3 +195,4 @@ Links:
 References:
 [[@reactRefsHeDOM]]
 [[@mdnMutableMDNWeb]]
+[[@linReactHookBiJi2022]]
