@@ -48,10 +48,8 @@ return (
 #### 案例
 ```
 return (
-    <React.Fragment>
         <h2>Hi there!</h2>
         <p>This does not work :-< </p>
-    </React.Fragment>
 );
 ```
 
@@ -97,14 +95,19 @@ fragment
 #🧠 React fragment 主要用途為既可以滿足JSX語法侷限又可以不用增加額外DOM節點的情況下，來回傳一組多個子節點，憑什麼可以滿足那些的？ ->->-> `利用empty wrapper component 對於React建立DOM語法的合法性`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 React Fragment 如何用程式碼表示它本身？ ->->-> `const Fragment = (props) => { return props.children;  }; export default Fragment;`
 
 
-#🧠 React fragment 語法會有哪些形式(提示兩ㄍㄜ) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>)`
+#🧠 React fragment 語法會有哪些形式(提示兩個) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>) 和 return ( <> <children> </> )`
 
-#🧠 Question :: ->->-> `return ( <> <children> </> )`
+#🧠 這是React fragment 語法嗎？ 還是什麼(嚴格來說)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894948/blog/react/fragment/react-fragment-sugar_xcazre.png) ->->-> `算是，但嚴格來說是fragment 的語法糖`
 
 
+
+#🧠 請用React Fragment的非語法糖來解決以下程式碼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894853/blog/react/fragment/react-fragment-example_l6fx92.png)->->-> ``
+
+
+#🧠 請用React Fragment的語法糖來解決以下程式碼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894853/blog/react/fragment/react-fragment-example_l6fx92.png)->->-> ``
 
 
 
