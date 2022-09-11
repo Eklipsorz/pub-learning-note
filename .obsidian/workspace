@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：refs 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+            "file": "inbox/React：為何不能過度使用refs.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：refs 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+                "file": "inbox/React：為何不能過度使用refs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,10 +95,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "67931e860b2bb647",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
-    "React：為何不能過度使用refs.md",
     "inbox/React：refs 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+    "inbox/React：為何不能過度使用refs.md",
     "develop/Cache Avalanche 是指大量請求在cache上的大量key失效下而從cache被導向至處於硬碟的資料庫.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
     "inbox/React：age-list-react-practice 改良.md",
