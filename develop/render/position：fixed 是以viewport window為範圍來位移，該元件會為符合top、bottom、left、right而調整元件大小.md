@@ -116,7 +116,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-12,3,250-->
 
 #🧠 viewport 命名緣由？ ->->-> `view為特定位置所能看到的畫面，port是存取介面，合併起來專門接收並存取畫面渲染資訊的存取介面`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 #🧠 viewport 在電腦科學會是指什麼？->->-> `就是指window，會是以一個固定大小的可視區塊來呈現特定渲染內容，其中該區塊會以邊線來表示區塊的範疇`
 <!--SR:!2022-09-12,2,230-->
@@ -125,10 +125,10 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-12,3,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 #🧠 fixed positioning 的元件會從normal flow/flow layout移除，換言之，normal flow/flow layout會不考量fixed positionging來處理，比如不會做哪些事？ ->->-> `不會為了呈現它而特意留些空間`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 #🧠 fixed positioning 會以什麼為主來位移？->->-> `fixed positioning 是以viewport window 邊界為範圍來位移`
 <!--SR:!2022-09-12,3,250-->
@@ -141,7 +141,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-12,3,250-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-top-case_vzczxd.png) ->->-> `是設定top:value1`
 <!--SR:!2022-09-12,3,250-->

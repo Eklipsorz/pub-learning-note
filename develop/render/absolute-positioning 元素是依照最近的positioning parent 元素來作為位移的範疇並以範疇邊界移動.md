@@ -78,7 +78,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 
 
 #🧠 absolute-positioning 元素和normal flow/flow layout之間的關係為何？ ->->-> `absolute-positioning 元素本身脫離normal flow/flow layout的控制，換言之，normal flow/flow layout不會考慮absolute-positioning來處理`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 
 #🧠 absolute-positioning 元素本身脫離normal flow/flow layout的控制，換言之，normal flow/flow layout不會考慮absolute-positioning來處理，具體不做哪些？ ->->-> `不會為了呈現它而多留空白`
@@ -97,7 +97,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2022-09-12,3,250-->
 
 #🧠 當對absolute-positioning 元素的bottom為value1，會是代表著什麼？->->-> `其元素的下邊界和parent元素A的下邊界之間會保持著value1的距離`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-top-case_y0kwrz.png): ->->-> `設定top為value1`
 <!--SR:!2022-09-12,3,250-->
