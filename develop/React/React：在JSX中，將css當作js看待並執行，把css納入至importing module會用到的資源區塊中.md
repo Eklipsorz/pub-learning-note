@@ -19,7 +19,9 @@ import '/modules/my-module.js';
 ```
 
 
-[[Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源]]
+
+
+[[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 
 重點：
 -  這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源
@@ -98,6 +100,6 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
-[[Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源]]
+[[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 References:
 [[@AddingStylesheetCreate]]
