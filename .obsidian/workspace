@@ -6,6 +6,7 @@
       {
         "id": "67931e860b2bb647",
         "type": "leaf",
+        "dimension": 63.91597899474869,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,6 +19,7 @@
       {
         "id": "d6ec721cdc02619b",
         "type": "leaf",
+        "dimension": 36.084021005251316,
         "state": {
           "type": "markdown",
           "state": {
@@ -108,7 +110,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d6ec721cdc02619b",
+  "active": "67931e860b2bb647",
   "lastOpenFiles": [
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
