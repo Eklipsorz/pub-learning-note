@@ -91,10 +91,19 @@ nameInputRef.current.value = ''
 ```
 
 ### 使用refs 技術的狀態管理
+> uncontrolled components
 
+  
+> because they're internal state, so to value which is reflected in them is not controlled by react.
+> 	- We rely on the default behavior of the input where a user of course is able to enter something and that entered value is reflected
 
+> nameInputRef.current -> DOM
 
-### useRefs 的Refs 縮寫
+基於refs來實現狀態管理實際上是基於瀏覽器對於原生DOM元件所會做的狀態管理實現來進行的。所以使用：
+	- refs來進行讀取 - 擷取特定DOM節點上的屬性
+	- refs來進行寫入 - 直接從DOM節點上的屬性進行寫入和觸發它對應的渲染行為
+
+### useRef 的Ref 縮寫
 
 Refs 是指References
 
@@ -152,8 +161,14 @@ immutable
 
 #🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> `！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part1_ifn9sn.png)！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part2_kgcbir.png)`
 
+#🧠 React ：基於refs來實現狀態管理是基於什麼基礎來實現？ ->->-> `基於瀏覽器對於原生DOM元件所會做的狀態管理實現來進行的`
 
 
+#🧠 React：使用refs來進行讀取元件資料，實際會是什麼行為？->->-> `擷取特定DOM節點上的屬性`
+
+#🧠 React：使用refs來進行對著元件寫入資料，實際會是什麼行為？ ->->-> `直接從DOM節點上的屬性進行寫入和觸發它對應的渲染行為`
+
+#🧠 React：useRef 的Ref縮寫是源自什麼？->->-> `Reference`
 
 
 ---
