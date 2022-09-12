@@ -112,7 +112,7 @@ fragment
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]] 
 Links:
