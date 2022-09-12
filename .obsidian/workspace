@@ -4,22 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "d6ec721cdc02619b",
+        "id": "8ccdb36b582f51a7",
         "type": "leaf",
-        "dimension": 53.86346586646662,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/React：refs 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "5d74f4dbc73e1074",
-        "type": "leaf",
-        "dimension": 46.13653413353339,
         "state": {
           "type": "markdown",
           "state": {
@@ -54,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "refs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d6ec721cdc02619b",
+  "active": "8ccdb36b582f51a7",
   "lastOpenFiles": [
-    "inbox/React：為何不能過度使用refs.md",
+    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
+    "develop/render/原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
     "inbox/React：refs 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+    "inbox/React：為何不能過度使用refs.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
     "inbox/React - modal 實作案例.md",
     "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
-    "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
-    "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md"
+    "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md"
   ]
 }

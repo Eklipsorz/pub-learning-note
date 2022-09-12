@@ -84,8 +84,13 @@ class NameForm extends React.Component {
 
 ### uncontrolled component
  對於uncontrolled component，會有一些方法來獲取資訊和渲染：
- - 獲取狀態 & 儲存狀態：擷取對應的DOM節點，並從節點中取得資訊來儲存
- - 渲染：從React的開發角度觸發原生元件的渲染，讓其根據狀態去渲染自己元件
+ - 獲取狀態 & 儲存狀態：擷取對應實際DOM節點，並從節點中取得資訊來儲存
+ - 渲染：
+	 - 透過擷取對應實際DOM節點，並從DOM節點上直接修改屬性來觸發更新狀態、渲染
+	 - 從React的開發角度觸發原生元件的預設渲染，讓其根據狀態去渲染自己元件
+
+產生來源：
+	- 使用ref技術而衍生的元件
 
 ### controlled component
  對於controlled component，會有一些方法來獲取資訊和渲染：
@@ -265,8 +270,9 @@ setState
 #🧠 請描述React 體系下的狀態儲存和根據狀態更新畫面是什麼？ ->->-> `React 本身也有自己的體系，分別為：state、setState`
 <!--SR:!2022-10-03,26,250-->
 
-#🧠 React ：對於uncontrolled component，會有一些方法來獲取資訊和渲染，具體能夠對該component本身做什麼來實現？->->-> `獲取狀態 & 儲存狀態：擷取對應的DOM節點，並從節點中取得資訊來儲存、渲染：利用瀏覽器對於原生DOM元素所設定的預設事件處理來進行額外的渲染開發`
-<!--SR:!2022-10-10,28,250-->
+#🧠 React ：對於uncontrolled component，會有一些方法來獲取資訊和渲染，具體能夠對該component本身做什麼來實現？->->-> ` - 獲取狀態 & 儲存狀態：擷取對應實際DOM節點，並從節點中取得資訊來儲存 - 渲染： - 透過擷取對應實際DOM節點，並從DOM節點上直接修改屬性來觸發更新狀態、渲染 - 從React的開發角度觸發原生元件的預設渲染，讓其根據狀態去渲染自己元件`
+
+#🧠 React：uncontrolled component 如何產生->->-> `基於ref技術來實現component的狀態管理。`
 
 
 #🧠 React ：對於controlled component，會有一些方法來獲取資訊和渲染，具體能夠對該component本身做什麼來實現？->->-> `替元件註冊狀態、更新狀態用函式來實現`
