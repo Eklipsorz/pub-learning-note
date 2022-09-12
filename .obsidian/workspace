@@ -6,6 +6,7 @@
       {
         "id": "d6ec721cdc02619b",
         "type": "leaf",
+        "dimension": 80.94523630907727,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,6 +19,7 @@
       {
         "id": "5d74f4dbc73e1074",
         "type": "leaf",
+        "dimension": 19.05476369092273,
         "state": {
           "type": "markdown",
           "state": {
@@ -52,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "refs",
+                "query": "tag:#🧠",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -107,7 +110,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5d74f4dbc73e1074",
+  "active": "d6ec721cdc02619b",
   "lastOpenFiles": [
     "inbox/React：為何不能過度使用refs.md",
     "inbox/React：refs 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",

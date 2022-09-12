@@ -119,6 +119,9 @@ immutable
 - 若一個物件被建立之後，物件內容不能夠被修改，該物件就是immutable object
 
 
+
+
+
 ## 複習
 
 #🧠 mutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容還能夠被修改，該物件就是mutable object`
@@ -133,7 +136,7 @@ immutable
 
 #🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
 
-#🧠 Question :: ->->-> ``
+#🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> ``
 
 
 
