@@ -83,31 +83,41 @@ fragment
 ## 複習
 
 #🧠  fragment 命名緣由 是什麼？ ->->-> `從一個特定完整事物切分出來的一小部分`
+<!--SR:!2022-09-15,3,250-->
 
 
 #🧠 fragment 在React上是指什麼意思？ ->->-> `fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。`
+<!--SR:!2022-09-15,3,250-->
 
 #🧠 fragment 在React上是什麼Component？(請用簡短的話來說) ->->-> `empty wrapper component`
+<!--SR:!2022-09-15,3,250-->
 
 
 #🧠 React fragment 主要用途為 ->->-> `既可以滿足JSX語法侷限又可以不用增加額外DOM節點的情況下，來回傳一組多個子節點`
+<!--SR:!2022-09-15,3,250-->
 
 #🧠 React fragment 主要用途為既可以滿足JSX語法侷限又可以不用增加額外DOM節點的情況下，來回傳一組多個子節點，憑什麼可以滿足那些的？ ->->-> `利用empty wrapper component 對於React建立DOM語法的合法性`
+<!--SR:!2022-09-15,3,250-->
 
 
 #🧠 React Fragment 如何用程式碼表示它本身？ ->->-> `const Fragment = (props) => { return props.children;  }; export default Fragment;`
+<!--SR:!2022-09-15,3,250-->
 
 
 #🧠 React fragment 語法會有哪些形式(提示兩個) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>) 和 return ( <> <children> </> )`
+<!--SR:!2022-09-15,3,250-->
 
 #🧠 這是React fragment 語法嗎？ 還是什麼(嚴格來說)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894948/blog/react/fragment/react-fragment-sugar_xcazre.png) ->->-> `算是，但嚴格來說是fragment 的語法糖`
+<!--SR:!2022-09-15,3,250-->
 
 
 
 #🧠 請用React Fragment的非語法糖來解決以下程式碼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894853/blog/react/fragment/react-fragment-example_l6fx92.png)->->-> ``
+<!--SR:!2022-09-15,3,250-->
 
 
 #🧠 請用React Fragment的語法糖來解決以下程式碼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894853/blog/react/fragment/react-fragment-example_l6fx92.png)->->-> ``
+<!--SR:!2022-09-15,3,250-->
 
 
 

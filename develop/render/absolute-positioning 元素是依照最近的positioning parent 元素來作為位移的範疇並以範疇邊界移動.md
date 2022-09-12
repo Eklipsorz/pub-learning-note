@@ -88,13 +88,13 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2022-09-22,10,250-->
 
 #🧠 當對absolute-positioning 元素的top為value1，會是代表著什麼？->->-> `其元素的上邊界和parent元素A的上邊界之間會保持著value1的距離`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-22,10,250-->
 
 #🧠 當對absolute-positioning 元素的right為value1，會是代表著什麼？->->-> `其元素的右邊界和parent元素A的右邊界之間會保持著value1的距離`
 <!--SR:!2022-09-22,10,250-->
 
 #🧠 當對absolute-positioning 元素的left為value1，會是代表著什麼？ ->->-> `其元素的左邊界和parent元素A的左邊界之間會保持著value1的距離`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-19,7,250-->
 
 #🧠 當對absolute-positioning 元素的bottom為value1，會是代表著什麼？->->-> `其元素的下邊界和parent元素A的下邊界之間會保持著value1的距離`
 <!--SR:!2022-09-22,10,250-->
@@ -120,12 +120,12 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662646095/blog/htmlPosition/absolute-position/absolute-positioning-right-negative-case_pgypxh.png)->->-> `設定right為負的value1`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-20,8,250-->
 
 
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662646094/blog/htmlPosition/absolute-position/absolute-positioning-left-negative-case_hxrfpd.png)->->-> `設定left為負的value1`
-<!--SR:!2022-09-12,3,250-->
+<!--SR:!2022-09-21,9,250-->
 
 
 ---
