@@ -10,6 +10,35 @@
 
 
 
+> now, it's recommended that you don't manipulate it.
+> Your DOM should really only be manipulated by React
+
+
+
+> 什麼時候該使用 Ref
+
+> 有幾種適合使用 ref 的情況：
+
+> - 管理 focus、選擇文字、或影音播放。
+> - 觸發即時的動畫。
+> - 與第三方 DOM 函式庫整合。
+
+
+rarely use refs to manipulate the DOM.
+
+Here we're not really manipulating the DOM, we're not adding a new element.
+
+
+
+
+You will sometimes have use cases where you just want to quickly read a value
+
+and if you only want to read a value and you never plan on changing anything, well, then you don't really need state. because just to state as a keylogger is not that great. It's a lot of unnecessary code and work. 
+
+so if you just want to read a value, refs are probably better.
+
+refs, which are a little bit less code but you have this edge case of manipulating the DOM, or a state, which definitely cleaner but is a bit more code.
+
 
 ## 複習
 ---

@@ -23,8 +23,8 @@ const something = useRef(initialValue)
 
 重點：
 - useRef 是一種hook，綁定於特定元件下，其存活時間會和特定元件一起共存，直到生命週期結束才被釋放其hook
-- useRef 主要是建立一個物件特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點
-- useRef 函式本身會回傳一個mutable 物件，裡面夾雜了current屬性，其屬性值為對應參照的實際DOM節點
+- useRef 主要是在對應元件下，建立一個特定物件去取得JSX元素的對應實際DOM節點，以此讓目前元件來操作實際DOM節點
+- useRef 函式本身會回傳一個mutable 物件，裡面夾雜了current屬性，其current屬性值為對應參照的實際DOM節點
 
 ### 使用方法
 
@@ -60,46 +60,11 @@ ref1.current.xxxx = xxxx1
 ```
 
 
-#### 使用案例1
-使用方法為：
+#### 使用案例
 
-1. 從react函式庫調用名為useRef的hook來綁定目前元件
+假設在一個特定元件下建立useRef這hook，並且拿它回傳的物件去設定專門輸入名字欄位的ref屬性(attribute)，接著做讀取和寫入
 
-1.  // 回傳兩個物件，其current屬性值皆因為useRef沒給任何初始值而變成為undefined
-2.  const nameInputRef = useRef()
-3.  const ageInputRef = useRef()
-
-  
-
-2. 對想要進行連接的DOM節點
-
-`<Element1 ref={nameInputRef} />`
-
-  
-
-3. 其nameInputRef會透過ref技術來擷取對應Element1的對應實際DOM節點
-
-  
-
-在對應DOM節點標籤上增加ref屬性
-
-  
-
-e.g.,
-
-useRef and input which allow us to enter a username
-
-useRef and input which allow us to enter a age
-
-  
-
-  
-
-該Ref 技術可以綁定任何Virtual DOM和任何實際DOM
-#### 使用案例2
-
-
-reading value:
+讀取輸入名字欄位的節點所擁有的value值：
 ```
   // 回傳兩個物件，其current屬性值皆因為useRef沒給任何初始值而變成為undefined
   const nameInputRef = useRef()
@@ -107,7 +72,7 @@ reading value:
 
   const submitHandler = (event) => {
       event.preventDefault()
-      // current -> the real dom of input for nmae
+      // current -> the real dom of input for name
       console.log(nameInputRef.current.value)
   }
 ```
@@ -120,41 +85,10 @@ reading value:
   );
 ```
 
-writing value:
+更新值:
 ```
 nameInputRef.current.value = ''
 ```
-
-
-
-> now, it's recommended that you don't manipulate it.
-> Your DOM should really only be manipulated by React
-
-
-
-> 什麼時候該使用 Ref
-
-> 有幾種適合使用 ref 的情況：
-
-> - 管理 focus、選擇文字、或影音播放。
-> - 觸發即時的動畫。
-> - 與第三方 DOM 函式庫整合。
-
-
-rarely use refs to manipulate the DOM.
-
-Here we're not really manipulating the DOM, we're not adding a new element.
-
-
-
-
-You will sometimes have use cases where you just want to quickly read a value
-
-and if you only want to read a value and you never plan on changing anything, well, then you don't really need state. because just to state as a keylogger is not that great. It's a lot of unnecessary code and work. 
-
-so if you just want to read a value, refs are probably better.
-
-refs, which are a little bit less code but you have this edge case of manipulating the DOM, or a state, which definitely cleaner but is a bit more code.
 
 
 ### useRefs 的Refs 縮寫
@@ -186,6 +120,24 @@ immutable
 
 
 ## 複習
+
+#🧠 mutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容還能夠被修改，該物件就是mutable object`
+
+#🧠 immutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容不能夠被修改，該物件就是immutable object`
+
+#🧠 mutable 和 immutable 意思分別為何？ ->->-> `mutable 指的是可改變的 和 immutable 指的是不能被改變的或者不變的 `
+
+#🧠 React： useRef 是什麼？->->-> `useRef 是一種hook，綁定於特定元件下，建立一個特定物件去取得JSX元素的對應實際DOM節點，以此讓目前元件來操作實際DOM節點`
+
+#🧠  React： useRef 會回傳什麼？ ->->-> `mutable 物件，裡面夾雜了current屬性，其current屬性值為對應參照的實際DOM節點`
+
+#🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
+
+#🧠 Question :: ->->-> ``
+
+
+
+
 
 ---
 Status: #🌱 #📓 
