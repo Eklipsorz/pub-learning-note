@@ -1,26 +1,28 @@
 ## 描述
 
 ### modal 製作架構為
-modal本身是一個元件，高寬皆為viewport的100%，且背景顏色為白色的透明色，元件中間會有個名為dialog-content的對話窗，對話窗內會含有header、body、footer這三個部分，當按下footer的okey或者點dialog任意位置就會讓對話窗消失
+主體分為：
+- 背景 (backdrop) - 本身是一個元件，高寬皆為viewport的100%，且背景顏色為白色的透明色，元件中間會有個名為modal 的對話視窗
+- 對話視窗本身 (modal) - 對話窗內會含有header、body、footer這三個部分，當按下footer的okey或者點dialog任意位置就會讓對話窗消失
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662660001/blog/frontend/dialog/dialog_xeooko.png)
 
 #### 總結
-modal：存放整個對話窗和顯示背景為白色的透明色
+backdrop：存放整個對話窗和顯示背景為白色的透明色
 ```
 <!-- The Modal -->  
-<div id="myModal" class="modal">
+<div id="myModal" class="backdrop">
 	<!-- modal content -->
 </div>
 ```
 
-modal content：對話窗內容
+modal ：對話窗內容
 	- header 對話窗上部分，主要放對話窗標題
 	- body 對話窗內容，主要放對話窗主要訊息內容
 	- footer 對話窗下部分，主要放按鈕
 ```
 <!-- Modal content -->  
-<div class="modal-content">  
+<div class="modal">  
   <div class="modal-header">  
     <span class="close">&times;</span>  
     <h2>Modal Header</h2>  
@@ -47,7 +49,7 @@ modal content：對話窗內容
 
 
 ```
-.modal {
+.backdrop {
   /* position */
   position: fixed;
   top: 0;
@@ -66,22 +68,22 @@ modal content：對話窗內容
 3. 能夠存放對話窗整個內容：
 ```
 	// modal
-    <div className={styles['modal']} onClick={clickHandler}>
+    <div className={styles['backdrop']} onClick={clickHandler}>
 	  // modal-content
-      <div className={styles['modal-content']}>
+      <div className={styles['modal']}>
 	        ........
       </div>
     </div>
 ```
 
-### modal content 需要的樣式和結構
+### modal 需要的樣式和結構
 1. 將對話窗整個內容擺放中間
 	- margin: 10% auto;
 2. 設定對話窗的大小
 	- width: 30%;
 
 ```
-.modal-content {
+.modal {
   /* position */
   /* display */
   /* box model */
@@ -94,7 +96,7 @@ modal content：對話窗內容
 3. 定義modal的header、body、footer部分
 	- 主要存放header、body、footer這三個部分
 ```
-	<div className={styles['modal-content']}>
+	<div className={styles['modal']}>
         <div className={styles['modal-header']}>
           <h2>{title}</h2>
         </div>
@@ -209,8 +211,12 @@ modal content：對話窗內容
 #🧠 在電腦科學的開發中，modal的案例是什麼？ ->->-> `一個顯示錯誤訊息和ok按鈕的小視窗`
 <!--SR:!2022-09-13,3,250-->
 
-#🧠 modal 主體架構有什麼？ ->->-> `存放modal本身並顯示白色透明背景顏色的區塊、一個modal主要內容區塊、內容區塊含有header、body、footer，header是modal的上半部、body則是modal所要傳遞的主體、footer則是modal的底部`
-<!--SR:!2022-09-13,3,250-->
+#🧠 modal 主體架構分成哪兩個部分？ ->->-> `- 背景 (backdrop) - 對話視窗本身 (modal)`
+
+
+#🧠 modal 主體架構中的backdrop是指什麼？->->-> ` 本身是一個元件，高寬皆為viewport的100%，且背景顏色為白色的透明色，元件中間會有個名為modal 的對話視窗`
+
+#🧠 modal 主體架構中的modal是指什麼？ ->->-> `對話窗內會含有header、body、footer這三個部分，當按下footer的okey或者點dialog任意位置就會讓對話窗消失`
 
 
 #🧠 modal 主體架構有什麼？請用下圖來畫出架構 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662724421/blog/frontend/dialog/dialog-origin_tf3iqi.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662660001/blog/frontend/dialog/dialog_xeooko.png)`
@@ -233,18 +239,18 @@ modal content：對話窗內容
 #🧠 modal主體架構中負責存放modal部分的區塊所要實現的目標是.能夠存放對話窗整個內容，要如何實現？ ->->-> `<div class="modal"> <div class="modal-content"></div> </div>`
 <!--SR:!2022-09-16,4,249-->
 
-#🧠 在modal主體架構中，modal-content是負責什麼？->->-> `負責呈現對話視窗本身`
-<!--SR:!2022-09-13,2,230-->
+#🧠 在modal主體架構中，modal是負責什麼？->->-> `負責呈現對話視窗本身`
 
 
-#🧠 在modal主體架構中，modal-content的開發目標是什麼？ ->->-> `將對話窗整個內容擺放中間、 設定對話窗的大小、定義modal的header、body、footer部分`
-<!--SR:!2022-09-13,3,250-->
 
-#🧠 在modal主體架構中，modal-content的樣式會是什麼？->->-> `  margin: 10% auto; width: 30%;`
-<!--SR:!2022-09-16,4,249-->
+#🧠 在modal主體架構中，modal的開發目標是什麼？ ->->-> `將對話窗整個內容擺放中間、 設定對話窗的大小、定義modal的header、body、footer部分`
 
-#🧠 在modal主體架構中，modal-content的html架構會是什麼？ ->->-> ``
-<!--SR:!2022-09-17,5,249-->
+
+#🧠 在modal主體架構中，modal的樣式會是什麼？->->-> `  margin: 10% auto; width: 30%;`
+
+
+#🧠 在modal主體架構中，modal的html架構會是什麼？ ->->-> ``
+
 `
 
 #🧠 在modal主體架構中，modal-header 要實現的目標是什麼？->->-> `調整header大小、調整header背景顏色、設定文字顏色、定義header要存的內容，如標題`

@@ -95,6 +95,6 @@ export default ErrorModal;
 Status: #🌱 #📓 
 Tags:
 Links:
-[[modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放modal、modal-content，製作方式請詳讀本文章]]
+[[modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章]]
 [[React - modal 實作案例]]
 References:
