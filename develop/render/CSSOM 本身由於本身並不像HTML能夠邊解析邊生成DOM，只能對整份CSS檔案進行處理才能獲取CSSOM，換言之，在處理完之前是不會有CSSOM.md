@@ -128,10 +128,10 @@
 <!--SR:!2022-10-03,22,250-->
 
 #🧠 在正常情況下，HTML解析成DOM之後，會做什麼？ ->->-> `就會搭配CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)`
-<!--SR:!2022-09-12,9,250-->
+<!--SR:!2022-10-05,23,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話 ->->-> `就會阻塞打造Rendering Tree以及後續的渲染任務，直到CSSOM建立完成`
-<!--SR:!2022-09-12,9,250-->
+<!--SR:!2022-10-06,24,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話，那就會就會阻塞打造Rendering Tree以及後續的渲染任務，如何做才會繼續停止阻塞？ ->->-> `直到CSSOM建立完成`
 <!--SR:!2022-10-08,26,250-->
