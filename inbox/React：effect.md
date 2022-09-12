@@ -35,6 +35,35 @@ you for example eventually change some state, you would even create an infinite 
   
 
 如果在沒使用useEffect的情況下，發送http 請求
+
+因為會造成無限迴圈，所以才額外製造一個hook或者特定執行環境
+
+useEffect() is hook：
+
+1. 基於hook而內建
+
+  
+
+useEffect 語法：
+
+- 第一個引數為callback，這些callback只會在dependencies 改變的時候才執行，而不是在component重新渲染的時候呼叫
+
+> a function that should be executed AFTER every component evaluation IF the specified dependencies changes
+
+-  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
+
+> dependencies of this effect - the function only runs if the dependencies changed
+
+  
+
+`useEffect(callback, [dependencies])`
+
+  
+
+可以把 `useEffect` 視為 `componentDidMount`，`componentDidUpdate` 和 `componentWillUnmount` 的組合。
+
+
+
 ## 複習
 
 
