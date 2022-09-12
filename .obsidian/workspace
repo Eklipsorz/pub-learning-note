@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：effect.md",
+            "file": "develop/OS/Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "refs",
+                "query": "side effect",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：effect.md",
+                "file": "develop/OS/Side Effect 是強調著特定操作、表達式、函式的處理過程，除了會影響自身所處於的執行環境以外，還會影響其他環境下本身或者其環境下的資料，如全域變數、共享用的資源.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,9 +98,9 @@
   },
   "active": "8ccdb36b582f51a7",
   "lastOpenFiles": [
+    "inbox/React：effect.md",
     "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
-    "inbox/React：effect.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "develop/render/原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
     "inbox/React：為何不能過度使用refs.md",
