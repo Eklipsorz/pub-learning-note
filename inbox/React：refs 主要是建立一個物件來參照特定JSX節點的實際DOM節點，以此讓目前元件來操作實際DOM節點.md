@@ -20,7 +20,6 @@ const something = useRef(initialValue)
 
 
 
-
 重點：
 - useRef 是一種hook，綁定於特定元件下，其存活時間會和特定元件一起共存，直到生命週期結束才被釋放其hook
 - useRef 主要是在對應元件下，建立一個特定物件去取得JSX元素的對應實際DOM節點，以此讓目前元件來操作實際DOM節點
@@ -90,6 +89,9 @@ ref1.current.xxxx = xxxx1
 nameInputRef.current.value = ''
 ```
 
+### 使用refs 技術的狀態管理
+
+
 
 ### useRefs 的Refs 縮寫
 
@@ -136,7 +138,14 @@ immutable
 
 #🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
 
-#🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> ``
+#🧠 React： 如何利用useRef來讀取名字的輸入欄位  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要讀取該JSX元素的對應DOM節點的話，可以使用ref1.current，ref1為useRef所回傳的變數`
+
+#🧠 React： 如何利用useRef來寫入名字的輸入欄位所顯示的內容  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要修改該JSX元素的對應DOM節點所擁有的屬性的話，可以使用 // 對著實際DOM節點的屬性增加內容 ref1.current.xxxx = xxxx1`
+
+
+
+
+#🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> `！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part1_ifn9sn.png)！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part2_kgcbir.png)`
 
 
 
