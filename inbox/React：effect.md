@@ -4,16 +4,14 @@
 ### React: effect
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 
-
-
 [[@academindReactcompleteguidecodeButtonModule]]
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663086596/blog/react/effect/react-vs-side-effect_yt8q3n.png)
 
 重點：
-- Effect 等同於 Side Effect
+- Effect 等同於 Side Effect，effect 本身是指特定處理的結果，在這裡泛指著功能
 - Side Effect 是指除了主要效果以外的額外效果：
 	- 主要效果會是指元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態，實際上會以元件被執行來產出Virtual DOM至渲染實際DOM結構的循環內所定義的任務內容來當作主要功能
-	- 額外效果會是指除了主要效果以外的任意功能，但功能種類會是處於 **脫離元件被執行來產出Virtual DOM至渲染實際DOM結構的循環** 的狀態下才能被正常執行，否則若是在能在那循環內執行的話，就會被React視為主要功能而執行
+	- 額外效果會是指除了主要效果以外的任意功能，但功能種類會是處於 **脫離元件被執行來產出Virtual DOM至渲染實際DOM結構的循環** 的狀態下才能被正常執行，否則若是在能在那循環內執行的話，就會被React視為主要功能而執行 或者 遇到無限循環的問題
 	- Side Effect 案例：
 		- 在瀏覽器儲存空間內儲存資料
 		- 傳遞請求至後端伺服器，然後接收到回應就觸發狀態更新。
@@ -24,25 +22,22 @@
 
 #### function component
 
+
 `useEffect(callback, [dependencies])`
 
-useEffect 語法：
-
+useEffect 語法：會替當前元件註冊effect。
 - 第一個引數為callback，這些callback只會在dependencies 改變的時候才執行，而不是在component重新渲染的時候呼叫
-
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
-
 -  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
-
 > dependencies of this effect - the function only runs if the dependencies changed
 
   
 
 
 
+### 潛在問題
 
-
-### effect 實現代碼放進render的話
+#### effect 實現代碼放進render的話
 > if we would send a http reqest
 > Then we would send this request whenever this function re-runs.
 
@@ -79,29 +74,25 @@ render() {
 ```
 
 #### 總結
-但如果排除掉http請求和回應的話，只要是能夠觸發狀態和渲染的side effect 放在render 皆會有無限迴圈的問題。
+但如果排除掉http請求和回應的話，只要是能夠觸發狀態更新和渲染的side effect 放在render 皆會有無限迴圈的問題，然而本身並不會觸發狀態更新和渲染的side effect 放在render 本身會因為不會再次呼叫render而不會有無限迴圈的問題。
 
 
-
-而這也是為什麼不能把side effect 直接放在component的render，因為會造成額外的無限迴圈。當然若考量到其他更新的方式，只要 請求放在render部分，就還是會衍生出以下循環
-
-呼叫元件的render -> 請求 -> 請求回應 -> 呼叫元件的render -> 請求 -> 請求回應 -> 呼叫元件的render ......
-
-  
-
-如果在沒使用useEffect的情況下，發送http 請求
-
-因為會造成無限迴圈，所以才額外製造一個hook或者特定執行環境
-
-useEffect() is hook：
-
-1. 基於hook而內建
-
-  
+總結：
+- 只要是能夠觸發狀態更新和渲染的side effect 放在 render 或者 function component內部的話，就會有無限迴圈的潛在問題
+- 只要不能夠觸發狀態更新和渲染的side effect 放在 render 或者 function component內部的話，就不會有無限迴圈的潛在問題
 
 
+#### 解法
 
+將能夠觸發狀態更新和渲染的side effect 改放進一個獨立的執行環境，比如
+	- function component：使用useEffect所建立的執行環境
+	- class：使用生命週期函式，通常會放在
+		- componentDidMount
+		- componentDidUpdate
+		- componentWillUnmount
 
+#### 現實層面
+通常會想透過effect來實現功能的實例會是前端向後端伺服器請求並以其請求回應觸發渲染，而使用頻率極為常見，並且這樣等同於需要能夠觸發狀態更新和渲染的side effect ，因此才必須考慮side effect要在哪個執行環境執行。
 
 ## 複習
 
