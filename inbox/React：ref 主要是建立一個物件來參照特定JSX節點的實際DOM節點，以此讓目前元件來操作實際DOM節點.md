@@ -139,22 +139,28 @@ immutable
 
 
 #🧠 mutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容還能夠被修改，該物件就是mutable object`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 immutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容不能夠被修改，該物件就是immutable object`
 <!--SR:!2022-09-15,2,248-->
 
 #🧠 mutable 和 immutable 意思分別為何？ ->->-> `mutable 指的是可改變的 和 immutable 指的是不能被改變的或者不變的 `
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 React： useRef 是什麼？->->-> `useRef 是一種hook，綁定於特定元件下，建立一個特定物件去取得JSX元素的對應實際DOM節點，以此讓目前元件來操作實際DOM節點`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠  React： useRef 會回傳什麼？ ->->-> `mutable 物件，裡面夾雜了current屬性，其current屬性值為對應參照的實際DOM節點`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 React： const ref1 = useRef(initialValue) 中的initialValue都沒設定的話，會怎麼樣？ ->->-> `會設定undefined作為其初始值。`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
 <!--SR:!2022-09-16,3,250-->
 
 #🧠 React： 如何利用useRef來讀取名字的輸入欄位  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要讀取該JSX元素的對應DOM節點的話，可以使用ref1.current，ref1為useRef所回傳的變數`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 React： 如何利用useRef來寫入名字的輸入欄位所顯示的內容  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要修改該JSX元素的對應DOM節點所擁有的屬性的話，可以使用 // 對著實際DOM節點的屬性增加內容 ref1.current.xxxx = xxxx1`
 <!--SR:!2022-09-16,3,250-->
@@ -175,6 +181,7 @@ immutable
 <!--SR:!2022-09-14,1,230-->
 
 #🧠 React：useRef 的Ref縮寫是源自什麼？->->-> `Reference`
+<!--SR:!2022-09-15,2,248-->
 
 
 ---
