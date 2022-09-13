@@ -123,7 +123,7 @@ FunctionExectionContext = {
 
 
 #🧠 Function Execution Context的creation phase 製作流程為何(提示：this物件、lexicalEnvironment、variableEnvironment、outer)->->-> `將呼叫的參數和引數以識別字來紀錄在LexicalEnvironment、建立this物件並決定this參照於誰、建立Arguments物件來儲存賦予對應函數的參數並放置FEC中的LexicalEnvironment區塊、掃描所有函式呼叫、const/let變數識別字並放入LexicalEnvironment區塊、掃描所有var變數識別字並放入VariableEnvironment區塊、設定outer。`
-<!--SR:!2022-09-13,55,250-->
+<!--SR:!2023-01-30,139,250-->
 
 #🧠 Function Execution Context的creation phase：建立this物件並決定this會是參照於誰->->-> ` 在這裡建立完會依據哪個物件呼叫該函式，而決定FEC的this為那個物件、若沒有物件呼叫就依照**outer reference**所指向的EC所擁有的this來決定this為誰：this = otherEC.this`
 <!--SR:!2022-10-08,73,250-->
