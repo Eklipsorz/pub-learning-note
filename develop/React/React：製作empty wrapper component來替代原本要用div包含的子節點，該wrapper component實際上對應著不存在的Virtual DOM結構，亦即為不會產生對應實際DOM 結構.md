@@ -111,7 +111,7 @@ return (
 ## 複習
 
 #🧠 React：為了解決過度使用wrapper element來解決JSX 侷限問題，在這裡的解法思路是什麼？ ->->-> `1. 建立一個empty wrapper component，該component會對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構 2. 由empty wrapper component來包含原有要用真的wrapper包起來的子節點`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-23,10,250-->
 
 
 #🧠 React：如何製作empty wrapper component，使該component本身會對應不存在的Virtaul DOM結構以及對應不到實際DOM結構，但可以夾帶著其他內容 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png)`
