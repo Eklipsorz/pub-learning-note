@@ -34,11 +34,11 @@ return (
 <!--SR:!2022-09-13,3,250-->
 
 #🧠  boolean expression && JSX element 在渲染層面下，什麼樣使用用法下會正常處理前面的語法？請用程式碼來表示 ->->-> `return ( result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>);`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-21,8,250-->
 
 
 #🧠 boolean expression && JSX element 在元件本身就boolean expression && JSX element 只會在render只回傳它、對著JSX元素{expression}替代expression本身才會正常作用，若正常的話，它是如何運作的？ ->->-> `會先判斷boolean expression是否為true，若true才回傳後面的JSX Element；若false，React會選擇忽略不渲染。`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-23,10,250-->
 
 #🧠  boolean expression && JSX element 若搭配其他元件的話，boolean expression && JSX element 還能正常運作嗎？為什麼？ ->->-> `若混雜其他元件的話，boolean expression && 將被視為一般字串，而非boolean expression，而後者的JSX Element將會直接被當作內容而被渲染`
 <!--SR:!2022-09-22,9,250-->
@@ -52,7 +52,7 @@ return (
 <!--SR:!2022-09-22,9,250-->
 
 #🧠 render函式若單獨回傳boolean expression && jsx element的話，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `其boolean expression && jsx element 整個會被當作是JSX 元素`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-20,7,250-->
 
 #🧠 render函式若回傳boolean expression && jsx element的同時夾雜其他元件，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `boolean expression && 會被當作一般字串，而後頭JSX Element就以JSX元素來看待`
 <!--SR:!2022-09-22,9,250-->

@@ -48,7 +48,7 @@ return (
 <!--SR:!2022-09-21,8,250-->
 
 #🧠 React 解析JSX 元素中的{expressio}的expression，此時的expression是boolean expression && jsx element ，請問 boolean expression && jsx element會如何運作？->->-> `若表達前者是回傳true，就會以後者的 JSX Element來呈現、若表達前者是回傳false，React就會選擇忽略該Virtual DOM`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-23,10,250-->
 
 
 

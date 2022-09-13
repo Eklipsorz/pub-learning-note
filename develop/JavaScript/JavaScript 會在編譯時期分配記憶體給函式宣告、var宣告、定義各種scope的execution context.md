@@ -79,7 +79,7 @@ _Fig. 2: Colored Scope Bubbles_
 
 ## 複習
 #🧠 JavaScript 編譯時期除了生成對應ByteCode以外，還會做什麼？（包含執行前)->->-> `分配記憶體給所有函式宣告、var變數宣告並賦予初始值：函式宣告會拿到存有函式內容的記憶體區塊，var變數宣告會拿到存有undefined的記憶體區塊、確定每一個scope：對Global Scope、Function Scope設定對應Execution Context`
-<!--SR:!2022-09-13,6,246-->
+<!--SR:!2022-09-30,17,246-->
 
 
 #🧠 JavaScript 編譯時期會分配記憶體const/let變數宣告嗎？->->-> `不分配記憶體給const/let變數宣告`
