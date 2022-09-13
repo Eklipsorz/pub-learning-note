@@ -2,8 +2,13 @@
 
 
 ### React: effect
+[[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 
 
+side effect 是指除了主要效果以外的額外效果：
+- 主要效果會是指元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態
+- 額外效果會是指
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663086596/blog/react/effect/react-vs-side-effect_yt8q3n.png)
 
 
 ### effect 使用方法
