@@ -176,7 +176,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 JSX 語法侷限有什麼？  ->->-> `一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-23,10,250-->
 
 
 
@@ -185,18 +185,18 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-20,7,250-->
 
 
 #🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以文字來描述 ->->-> `被看作以React函式庫的createElement語法來建立對應元件。`
 <!--SR:!2022-09-13,3,250-->
 
 #🧠 請用這例子來說明JSX語法侷限會是**一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個** ？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return 只能回傳一個Element來建立，但依照現況來從Element1 和 Element2 中選擇一個來建立，甚至不選，都不會滿足JSX在表面上所提示的那樣，要一次回傳多個Element。所以才要開發者要有一個元素來包含所有元素、且最外圍的parent element只能一個`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-20,7,250-->
 
 
 #🧠 面對JSX 局限性問題，會有什麼方法來解決？(先不論portal 和 fragment) ->->-> `使用額外的元件來當wrapper element、利用React解析陣列的特性來使用陣列表示`
-<!--SR:!2022-09-13,3,250-->
+<!--SR:!2022-09-19,6,250-->
 
 
 #🧠 面對JSX 局限性問題，會有什麼方法來解決？其中若選擇使用利用React解析陣列的特性來使用陣列表示，還會遇到什麼潛在問題？ 遇到該如何解決->->-> `可能會遇到Each child in a list should have a unique "key" prop 這訊息，要解決的話，要對陣列的每個項目添加key屬性`
