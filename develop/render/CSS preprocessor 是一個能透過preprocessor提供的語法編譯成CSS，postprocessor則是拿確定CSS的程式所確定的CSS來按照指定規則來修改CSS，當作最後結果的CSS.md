@@ -58,7 +58,7 @@
 <!--SR:!2022-09-16,28,250-->
 
 #🧠 請從為何取preprocessor 來說明CSS preprocessor是什麼？ ->->-> `具體會是會於確定CSS檔案的程式之前，來將preprocessor提供的語法所構成的檔案經過preprocesssor處理後而產生出對應的CSS`
-<!--SR:!2022-09-13,26,250-->
+<!--SR:!2022-11-20,68,250-->
 
 #🧠 CSS postprocessor 是什麼？->->-> `CSS postprocessor 是一個程式，主要會接收CSS原檔並根據指定規則來將CSS轉換成另一種CSS的程式`
 <!--SR:!2022-11-17,66,250-->

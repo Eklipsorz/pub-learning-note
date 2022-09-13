@@ -139,7 +139,7 @@ specific
 <!--SR:!2022-09-30,20,250-->
 
 #🧠 在CSS specificity中，多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，declaration都拿到一樣的權重，會如何決定最後的declaration? ->->-> `就挑選最後出現的declaration為主`
-<!--SR:!2022-09-13,10,250-->
+<!--SR:!2022-10-09,26,250-->
 
 #🧠 在CSS specificity中，位處於universal selector 的 declaration 所獲得權重為何？ 換算上分數的話，會是多少分？->->-> `0-0-0，0分`
 <!--SR:!2022-09-13,10,250-->
@@ -154,7 +154,7 @@ specific
 <!--SR:!2022-10-01,20,250-->
 
 #🧠 在CSS specificity中，被綁定inline 的declaration 所獲得的權重為相當於是次高，那麼可以轉換成什麼形式和數字 ->->-> `0-1-0-0-0，分數為1000`
-<!--SR:!2022-09-13,10,250-->
+<!--SR:!2022-10-10,27,250-->
 
 
 ---
