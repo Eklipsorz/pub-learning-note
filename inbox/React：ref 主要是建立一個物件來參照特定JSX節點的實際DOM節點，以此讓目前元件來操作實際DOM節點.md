@@ -141,6 +141,7 @@ immutable
 #🧠 mutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容還能夠被修改，該物件就是mutable object`
 
 #🧠 immutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容不能夠被修改，該物件就是immutable object`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 mutable 和 immutable 意思分別為何？ ->->-> `mutable 指的是可改變的 和 immutable 指的是不能被改變的或者不變的 `
 
@@ -151,10 +152,12 @@ immutable
 #🧠 React： const ref1 = useRef(initialValue) 中的initialValue都沒設定的話，會怎麼樣？ ->->-> `會設定undefined作為其初始值。`
 
 #🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
+<!--SR:!2022-09-16,3,250-->
 
 #🧠 React： 如何利用useRef來讀取名字的輸入欄位  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要讀取該JSX元素的對應DOM節點的話，可以使用ref1.current，ref1為useRef所回傳的變數`
 
 #🧠 React： 如何利用useRef來寫入名字的輸入欄位所顯示的內容  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要修改該JSX元素的對應DOM節點所擁有的屬性的話，可以使用 // 對著實際DOM節點的屬性增加內容 ref1.current.xxxx = xxxx1`
+<!--SR:!2022-09-16,3,250-->
 
 
 
@@ -162,11 +165,14 @@ immutable
 #🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> `！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part1_ifn9sn.png)！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part2_kgcbir.png)`
 
 #🧠 React ：基於refs來實現狀態管理是基於什麼基礎來實現？ ->->-> `基於瀏覽器對於原生DOM元件所會做的狀態管理實現來進行的`
+<!--SR:!2022-09-15,2,248-->
 
 
 #🧠 React：使用refs來進行讀取元件資料，實際會是什麼行為？->->-> `擷取特定DOM節點上的屬性`
+<!--SR:!2022-09-15,2,248-->
 
 #🧠 React：使用refs來進行對著元件寫入資料，實際會是什麼行為？ ->->-> `直接從DOM節點上的屬性進行寫入和觸發它對應的渲染行為`
+<!--SR:!2022-09-14,1,230-->
 
 #🧠 React：useRef 的Ref縮寫是源自什麼？->->-> `Reference`
 
