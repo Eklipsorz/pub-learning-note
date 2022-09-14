@@ -12,6 +12,50 @@
 比方說，使用者輸入字元時，就改在使用停止輸入字元的時候取得字元
 
 
+為了實現debounce而衍生出來的timer，若前面部分timer任務結果已經達成目標，那麼可以考慮清除後面多出來的timer，以節省後續的timer 成本
+
+  
+
+useEffect cleanup 技術能夠清除掉多出來負責執行side effect的任務，以確保效能不會受損
+
+```
+useEffect( () => {
+   ....
+   return callback
+}), [...] )
+```
+
+
+實際會以useEffect 所回傳的callback來定義如何清除多出來的side effect 任務
+
+callback 可以是匿名、箭頭、命名
+
+  
+
+當渲染週期到了且滿足dependency，React 會先透過useEffect 最一開始的callback執行，並取得對應callback，來當作清除用，順序會是
+
+useEffect(callback)-> cleanup = callback(...) -> run cleanup
+
+> before useEffect executes this function the next time / before every new side effect function execution and before the component is removed
+
+  
+
+在下一次side effect執行之前 就清除或者component被移除之前就清除
+
+
+The global **`clearTimeout()`** method cancels a timeout previously established by calling [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout).
+
+If the parameter provided does not identify a previously established action, this method does nothing.
+
+## [Syntax](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout#syntax "Permalink to Syntax")
+
+```
+clearTimeout(timeoutID)
+```
+
+
+
+
 ### Bounce
 >  When an object such as a ball bounces or when you bounce it, it moves upwards from a surface or away from it immediately after hitting it. 
 
