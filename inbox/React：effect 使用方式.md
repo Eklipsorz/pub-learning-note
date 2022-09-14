@@ -9,7 +9,9 @@
 
 
 ### 當畫面A被切換成畫面B時
-當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B
+當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B，在這裡可分為：
+- 畫面A 和 畫面B 都是畫面A
+- 畫面A 和 畫面B 都不一樣
 
 
 ### effect 使用方法
@@ -47,8 +49,6 @@ useEffect(() => {
 }, [prop, state]);
 ```
 
-
-
 dependencies：
 - dependencies 會是指目前執行環境所能夠存取的狀態、props
 - 主要會指定監聽哪些dependency有沒有變動或者沒建立
@@ -56,9 +56,6 @@ dependencies：
 - 特例：
 	- 若是空陣列[] 的話，就等同設定永不改變的dependency
 	- 若是沒設定任何dependency的話，就等同設定永遠改變的dependency
-
-
-
 
 
 #### 何時執行
@@ -162,10 +159,6 @@ this is rendering
 this is use effect
 ```
 
-
-
-
-useEffect(callback) -> is executed by react
 
 
 
