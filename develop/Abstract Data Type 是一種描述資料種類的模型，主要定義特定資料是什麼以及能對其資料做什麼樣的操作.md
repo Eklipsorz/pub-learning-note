@@ -61,7 +61,7 @@ isFull()
 <!--SR:!2023-01-10,138,250-->
 
 #🧠 以下是描述List的ADT，請說明哪些是ADT所描述的資料描述和操作？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653732192/blog/algorithm/adt/listADT_nizmww.png) ->->-> ``
-<!--SR:!2022-09-14,68,250-->
+<!--SR:!2023-03-05,172,250-->
 
 ---
 Status: #🌱 

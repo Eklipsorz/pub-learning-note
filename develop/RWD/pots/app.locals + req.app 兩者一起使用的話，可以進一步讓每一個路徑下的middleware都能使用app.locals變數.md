@@ -42,7 +42,7 @@ exports.route = function(req, res){
 ## 複習
 
 #🧠 Express 框架下的 app.locals 是什麼？ ->->-> `pp.locals 定義著整個express app下的區域變數，換言之，就是只屬於特定app的變數`
-<!--SR:!2022-09-14,66,250-->
+<!--SR:!2023-02-27,166,250-->
 
 #🧠  Express 框架下的 req.app 是什麼->->-> `req 物件是只有middleware會使用的，req.app 會指向正在使用該middleware的 express app，也就是相當於以下的app所指向的實例`
 <!--SR:!2022-09-20,64,230-->

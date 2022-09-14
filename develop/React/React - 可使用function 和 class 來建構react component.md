@@ -70,7 +70,7 @@ const result = instance.render(); // <p>Hello</p>
 <!--SR:!2022-09-20,28,250-->
 
 #🧠 每一個React element 相當於Virtual DOM的什麼？ ->->-> `相當於Virtual DOM節點`
-<!--SR:!2022-09-14,23,250-->
+<!--SR:!2022-11-12,59,250-->
 
 #🧠 React：如何構建一個function component? ->->-> `使用function以及function回傳著react element構成的元件`
 <!--SR:!2022-09-20,28,250-->

@@ -156,7 +156,7 @@ import styles from <css-file>
 <!--SR:!2022-09-18,10,250-->
 
 #🧠 CSS modules 在什麼情況下確保每個元件都有各自屬於自己的樣式屬性內容(提示：檔案) ->->-> `在CSS 檔案 和JS檔案各自分開的情況下`
-<!--SR:!2022-09-14,6,230-->
+<!--SR:!2022-09-30,16,230-->
 
 
 #🧠 當要對特定CSS檔案進行CSS module的實際轉換，得滿足什麼條件？ ->->-> `1. 特定CSS檔案名稱為\<file\>.module.css 2. 要有元件去載入\<file\>.module.css `
@@ -189,7 +189,7 @@ import styles from <css-file>
 
 
 #🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
-<!--SR:!2022-09-14,6,230-->
+<!--SR:!2022-09-28,14,230-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會替CSS內部的哪些內容來做轉換 ->->-> `針對class selector和替換class selector`
@@ -205,7 +205,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1 .class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1.waer324  .class2 => .Button_class2.warewa32 結果為.class1 .class2 {...} => .Button_class1.waer324 .Button_class2.warewa32 {...}`
-<!--SR:!2022-09-14,6,247-->
+<!--SR:!2022-09-29,15,247-->
 
 
 ---

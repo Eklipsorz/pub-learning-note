@@ -171,7 +171,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-09-17,6,228-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往上位移-value1`
-<!--SR:!2022-09-14,4,247-->
+<!--SR:!2022-09-25,11,247-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往下位移-value1`
 <!--SR:!2022-09-16,6,248-->
@@ -188,14 +188,14 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往上，為負就往下 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-bottom-offset_x0jc6r.png)->->-> `如果是調整bottom屬性的話，其屬性值value1若是正的話，就會將元素往上偏移；其屬性值若是負的話，就會將元素往下偏移。`
-<!--SR:!2022-09-14,4,248-->
+<!--SR:!2022-09-25,11,248-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往左，為負就往右![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-right-offset_au8dxj.png)->->-> `如果是調整right屬性的話，其屬性值value1若是正的話，就會將元素往左偏移；其屬性值若是負的話，就會將元素往右偏移。`
 <!--SR:!2022-09-15,5,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往右，為負就往左![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-left-offset_k59p4g.png) ->->-> `如果是調整left屬性的話，其屬性值value1若是正的話，就會將元素往右偏移；其屬性值若是負的話，就會將元素往左偏移。`
-<!--SR:!2022-09-14,4,248-->
+<!--SR:!2022-09-26,12,248-->
 
 
 #🧠 在position：relative的元素下都設置著left、right這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄right這屬性，改選left為主`
@@ -208,7 +208,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-09-21,10,250-->
 
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排`
-<!--SR:!2022-09-14,4,248-->
+<!--SR:!2022-09-26,12,248-->
 
 #🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值(提示：以屬性共存來說) ->->-> `會選top和left這兩種屬性`
 <!--SR:!2022-09-17,5,247-->
