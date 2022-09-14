@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 2.md",
+            "file": "inbox/React：effect 使用方式.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Master-Slave Replication",
+                "query": "React：effe",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 2.md",
+                "file": "inbox/React：effect 使用方式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "ebf5a44054f07942",
   "lastOpenFiles": [
-    "inbox/React：effect.md",
+    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
+    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，除了主要效果以外的任意功能，但功能種類會是處於 **脫離元件被執行來產出Virtual DOM至渲染實際DOM結構的循環**.md",
+    "inbox/React：effect 使用方式.md",
     "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md",
     "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇對應節點.md",
     "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
     "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md",
-    "inbox/Untitled 2.md",
     "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "develop/OS/side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果.md",
-    "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
-    "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md"
+    "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md"
   ]
 }
