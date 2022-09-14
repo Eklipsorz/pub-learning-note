@@ -50,7 +50,7 @@ useEffect(() => {
 ```
 
 dependencies：
-- dependencies 會是指目前執行環境所能夠存取的狀態、props
+- dependencies 會是定義著callback所需要的狀態、props、變數
 - 主要會指定監聽哪些dependency有沒有變動或者沒建立
 - 若沒建立或者任一變動就允許執行useEffect
 - 特例：
