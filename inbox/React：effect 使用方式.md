@@ -1,13 +1,21 @@
 ## 描述
 
-and it is executed after important, after component re-evaluation/evaluation
 
-but it will not just run after component evaluation but only if the dependencies here changed.
+### 每個effect hook皆為獨立的
 
-useEffect(callback, dependencies)
+當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，並觸發effect，隨後若發生updating或者unmounting的話，預設上會再去觸發effect。
+
+若同一個元件發生unmount並重新發生mounting，會再次產生額外的effect hook來綁定在該元件，觸發如同上述那樣
+
+
+### 當畫面A被切換成畫面B時
+當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B
+
 
 ### effect 使用方法
 
+
+#### effect 使用語法
 `useEffect(callback, [dependencies])`
 
 useEffect 語法：會替當前元件註冊effect。
@@ -18,18 +26,55 @@ useEffect 語法：會替當前元件註冊effect。
 
 
 #### dependencies
+[[@ReactUseEffect]]
+```jsx
+useEffect(() => {
+  //Runs on every render
+});
+```
+
+```jsx
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+```
+
+
+```jsx
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]);
+```
+
+
+
 dependencies：
 - dependencies 會是指目前執行環境所能夠存取的狀態、props
 - 主要會指定監聽哪些dependency有沒有變動或者沒建立
 - 若沒建立或者任一變動就允許執行useEffect
 - 特例：
 	- 若是空陣列[] 的話，就等同設定永不改變的dependency
-	- 若是
+	- 若是沒設定任何dependency的話，就等同設定永遠改變的dependency
+
+
+
+
 
 #### 何時執行
 
-1. 在mounting階段進行useEffect的hook綁定，就會直接執行
-2. 歷經mounting階段後的階段，只要發生updating階段或者unmounting階段的同時，depenedencies有發生變動或者
+[[@ithomeReactJsRuMen20]]
+> 是`componentDidMount`、`componentWillUnmount`和`componentDidUpdate`這三個函數，而React hook把這三者整合起來，變成了`useEffect`。
+
+每一次useEffect的觸發時間點會是同個元件的生命週期函式：
+- mounting階段時的componentDidMount週期函式
+- updating階段時的componentDidUpdate 週期函式
+- unmount階段時的componentWillUnmoun週期函式
+
+
+1. 在mounting階段進行useEffect的hook綁定，並於mounting階段的componentDidMount週期來直接執行useEffect的callback
+2. 若觸發updating階段，那麼就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
+3. 若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
 
 
 ##### 案例：
@@ -117,46 +162,13 @@ this is rendering
 this is use effect
 ```
 
-[[@ithomeReactJsRuMen20]]
-> 是`componentDidMount`、`componentWillUnmount`和`componentDidUpdate`這三個函數，而React hook把這三者整合起來，變成了`useEffect`。
+
 
 
 useEffect(callback) -> is executed by react
 
 
 
-### useEffect 執行頻率
-[[@ReactUseEffect]]
-```jsx
-useEffect(() => {
-  //Runs on every render
-});
-```
-
-```jsx
-useEffect(() => {
-  //Runs only on the first render
-}, []);
-```
-
-
-```jsx
-useEffect(() => {
-  //Runs on the first render
-  //And any time any dependency value changes
-}, [prop, state]);
-```
-
-
-### effect 綁定整個元件的生命週期
-
-當元件處於mounting時，就會建立effect hook來綁定在該元件，並觸發effect，隨後若發生updating或者unmounting的話，預設上會再去觸發effect。
-
-若同一個元件發生unmount並重新發生mounting，會再次產生額外的effect hook來綁定在該元件，觸發如同上述那樣
-
-
-### 當畫面A被切換成畫面B時
-當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B
 
 ## 複習
 
