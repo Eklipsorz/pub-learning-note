@@ -77,29 +77,22 @@ dependencies：
 ##### 案例：
 
 
-在首次渲染目前元件時，會註冊著useEffect這個effect，同時由於沒有任何
-
-由於沒有任何dependencies，才觸發useEffect，若下次evaluation後，dependencies沒變動，useEffect的callback並不會執行，直到下次evaluation後且dependencies變動，才會執行對應的callback
 
 
 
 
 
 
-進入登入頁前會先檢查特定儲存空間中是否指定使用者資料，若有就以指定資料來登入；若沒，就重新登入，藉由登入來儲存特定使用者資料至特定儲存空間中。
-
-  
+假設進入登入頁前會先檢查特定儲存空間中是否指定使用者資料，若有就以指定資料來登入；若沒，就重新登入，藉由登入來儲存特定使用者資料至特定儲存空間中。
 
 特定儲存空間為browser storage，這些空間是由瀏覽器內建的，分別為
-
 1. cookie
-
 2. local storage (選擇這個)
 
 
 
 ```
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
@@ -107,13 +100,14 @@ import MainHeader from './components/MainHeader/MainHeader';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  /// 會衍生無限迴圈
-  const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
 
-  if (storedUserLoggedInInformation === '1') {
-    setIsLoggedIn(true);
-  }
-  ///
+  useEffect(() => {
+    const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
+    if (storedUserLoggedInInformation === '1') {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   const loginHandler = (email, password) => {
     // We should of course check email and password
     // But it's just a dummy/ demo anyways
@@ -122,6 +116,7 @@ function App() {
   };
 
   const logoutHandler = () => {
+    localStorage.removeItem('isLoggedIn');
     setIsLoggedIn(false);
   };
 
@@ -137,10 +132,21 @@ function App() {
 }
 
 export default App;
-
 ```
 
 
+當App這個元件進行mounting來呈現實際DOM時，會註冊著useEffect這個hook：
+	- 第一個引數為callback
+	- 第二個引數為dependencies，在這裡是空陣列，表示著永不改變的dependency
+```
+useEffect(callback, [])
+```
+
+並於mounting階段下的componentDidMount生命週期函式觸發callback，由於是第一次執行，所以會直接先執行callback，而callback會檢查localStorage的isLoggedIn是否為1，若1就認為是合法使用者在登入，若不是就認為必須要進行登入來寫入isLoggedIn='1'至localStorage
+
+在這裡會沒這筆資料，所以就透過登入的成功來將isLoggedIn='1'寫入至localStorage，之後每一次只要重新進行App的mounting階段：
+	- 畫面A 切換成 畫面B (畫面AB都可以一樣和不一樣)
+就會直接被系統認定為合法使用者，而引領使用者登入成功的畫面
 
 
 ```
