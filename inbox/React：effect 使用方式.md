@@ -174,7 +174,7 @@ useEffect(callback) -> is executed by react
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📓 
 Tags:
 [[React]]
 Links:
