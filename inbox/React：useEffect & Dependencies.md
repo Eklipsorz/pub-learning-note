@@ -18,7 +18,10 @@ useEffect(callback, dependency)
 2. 給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環
 
 
-通常
+通常會為了讓side effect也能夠運用props、狀態、其他還能觸發渲染週期的資料來根據資訊的不同來渲染，而將dependency設定為：
+- props
+- 狀態
+- 其他還能觸發渲染週期的資料
 
 ### dependency 設定的注意事項
 [[@academindReactcompleteguidecodeButtonModule]]
@@ -36,14 +39,14 @@ useEffect(callback, dependency)
 > So long story short: You must add all "things" you use in your effect function **if those "things" could change because your component (or some parent component) re-rendered.** That's why variables or state defined in component functions, props or functions defined in component functions have to be added as dependencies!
 
 
-
+side effect也能夠運用props、狀態、其他還能觸發渲染週期的資料來根據資訊的不同來渲染
 
 重點：
-- 若useEffect 開發目的是產生出觸發元件狀態和渲染的side effect，那麼dependency 不需要添加的部分，主要會是不會觸發渲染週期的內容，：
+- 若useEffect 也想能夠運用props、狀態、其他還能觸發渲染週期的資料來根據資訊的不同來渲染，那麼dependency 不需要添加的部分，主要會是不會觸發渲染週期的內容：
 	- dependency 不需要添加更新狀態用的函式：因為React本身和使用者本身就不會變動該函式本身，所以函式不會被改變
 	- dependency 不要添加其他非React能夠支援的API 或者對應函式：因為他們本身就不會改變和跟元件渲染週期無關
 	- dependency 不要添加屬於其他元件或者元件以外的變數/函式，因為它們本身就屬於其他元件或者非元件，它們一改變就無法對目前元件觸發渲染，也就不會觸發useEffect。
-- 若useEffect 開發目的是產生出觸發元件狀態和渲染的side effect，那麼dependency 就需要添加的部分：
+- 若useEffect 也想能夠運用props、狀態、其他還能觸發渲染週期的資料來根據資訊的不同來渲染，那麼dependency 就需要添加的部分：
 	- dependency 本身一改變就會觸發目前元件下的狀態和渲染：因為他們可透過渲染週期來觸發useEffect
 
 
