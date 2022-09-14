@@ -5,16 +5,20 @@
 ### callback 常見目的
 
 
-在常見的開發中，useEffect 通常會是產生出觸發元件狀態和渲染的side effect，而callback則是定義side effect的內容。
+在常見的開發中，useEffect 通常會是產生出觸發渲染週期的side effect，而callback則是定義side effect的內容。
 
 [[瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染]]
 ### dependency 設定目的
 ```
 useEffect(callback, dependency)
 ```
+> 由於要在觸發渲染週期的期間內，執行到componentDidMount、componentDidUpdate、componentWillUnmount時所依賴的dependency是有變動，才會觸發side effect
 
-1. 定義callback 會用來觸發狀態的變數、狀態、props
+1. 決定能否觸發side effect的因素
 2. 給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環
+
+
+通常
 
 ### dependency 設定的注意事項
 [[@academindReactcompleteguidecodeButtonModule]]

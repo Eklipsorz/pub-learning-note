@@ -32,11 +32,11 @@
 
 
 
-如果effect 實現代碼會是發送http 請求，並且以回應作為狀態更新渲染，接著在把其實現代碼放進render的話，會衍生出無限重複呼叫：
+如果effect 實現代碼會是發送http 請求，並且以回應觸發渲染週期，接著在把其實現代碼放進render的話，會衍生出無限重複呼叫：
 	- 一開始執行元件的render來開始渲染，並發送請求，接著渲染當前元件
-	- 等到請求回應傳到元件，就觸發狀態更新和渲染
+	- 等到請求回應傳到元件，就觸發渲染週期
 	- 由於觸發渲染，又再一次呼叫render，接著又發送請求，渲染當前元件
-	- 等到請求回應傳到元件，就觸發狀態更新和渲染
+	- 等到請求回應傳到元件，就觸發渲染週期
 	- 後面全都是這兩個
 
 ```
@@ -57,17 +57,17 @@ render() {
 ```
 
 #### 總結
-但如果排除掉http請求和回應的話，只要是能夠觸發狀態更新和渲染的side effect 放在render 皆會有無限迴圈的問題，然而本身並不會觸發狀態更新和渲染的side effect 放在render 本身會因為不會再次呼叫render而不會有無限迴圈的問題。
+但如果排除掉http請求和回應的話，只要是能夠觸發渲染週期的side effect 放在render 皆會有無限迴圈的問題，然而本身並不會觸發渲染週期的side effect 放在render 本身會因為不會再次呼叫render而不會有無限迴圈的問題。
 
 
 總結：
-- 只要是能夠觸發狀態更新和渲染的side effect 放在 render 或者 function component內部的話，就會有無限迴圈的潛在問題
-- 只要不能夠觸發狀態更新和渲染的side effect 放在 render 或者 function component內部的話，就不會有無限迴圈的潛在問題
+- 只要是能夠觸發渲染週期的side effect 放在 render 或者 function component內部的話，就會有無限迴圈的潛在問題
+- 只要不能夠渲染週期的side effect 放在 render 或者 function component內部的話，就不會有無限迴圈的潛在問題
 
 
 #### 解法
 
-將能夠觸發狀態更新和渲染的side effect 改放進一個獨立的執行環境，比如
+將能夠觸發渲染週期的side effect 改放進一個獨立的執行環境，比如
 	- function component：使用useEffect所建立的執行環境
 	- class：使用生命週期函式，通常會放在
 		- componentDidMount
@@ -75,7 +75,7 @@ render() {
 		- componentWillUnmount
 
 #### 現實層面
-通常會想透過effect來實現功能的實例會是前端向後端伺服器請求並以其請求回應觸發渲染，而使用頻率極為常見，並且這樣等同於需要能夠觸發狀態更新和渲染的side effect ，因此才必須考慮side effect要在哪個執行環境執行。
+通常會想透過effect來實現功能的實例會是前端向後端伺服器請求並以其請求回應觸發渲染，而使用頻率極為常見，並且這樣等同於需要能夠觸發渲染週期的side effect ，因此才必須考慮side effect要在哪個執行環境執行。
 
 ## 複習
 
