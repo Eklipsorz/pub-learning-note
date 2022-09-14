@@ -36,16 +36,23 @@ callback 可以是匿名、箭頭、命名
 
 useEffect(callback)-> cleanup = callback(...) -> run cleanup
 
-> before useEffect executes this function the next time / before every new side effect function execution and before the component is removed
+> before useEffect executes this function the next time / before every new side effect function execution and before the component is removed And it does not run before the first side effect function execution
 
   
 
-在下一次side effect執行之前 就清除或者component被移除之前就清除
+除了第一次side effect 函式之前不會執行以外，在其他下一次side effect執行之前 就清除或者component被移除之前就清除
+
+
 
 
 The global **`clearTimeout()`** method cancels a timeout previously established by calling [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout).
 
 If the parameter provided does not identify a previously established action, this method does nothing.
+
+
+
+
+
 
 ## [Syntax](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout#syntax "Permalink to Syntax")
 
@@ -53,7 +60,20 @@ If the parameter provided does not identify a previously established action, thi
 clearTimeout(timeoutID)
 ```
 
+```
+useEffect( () => {
+   setTimeOut(callback2, xxx);
+   return callback3
+}), [...] )
 
+```
+
+  
+
+由於cleanup 的特性和useEffect(callback1)特性，使得只有一個setTimeOut會被執行，剩餘的setTimeOut都會因為cleanup的特性-下一個side effect之前執行callback3來清除setTimeOut任務，而唯一的setTimeOut任務會是使用者最近輸入的內容
+
+
+如果我們想要去透過UI的互動來送http 請求，若同樣以最近結果作為最後結果來處理，那麼就能使用setTimeout和cleanup來處理，以確保最後請求只會是一個且會是以最新最近的結果來發送
 
 
 ### Bounce
