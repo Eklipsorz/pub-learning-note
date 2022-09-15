@@ -45,7 +45,7 @@ So in that parent component which has access to both involved components by lift
 <!--SR:!2022-10-04,28,250-->
 
 #🧠 React： lifting state up 概念是什麼？->->-> `將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動`
-<!--SR:!2022-09-15,13,230-->
+<!--SR:!2022-10-18,33,230-->
 
 
 ---
