@@ -97,15 +97,15 @@
   },
   "active": "ebf5a44054f07942",
   "lastOpenFiles": [
+    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
+    "inbox/Untitled 2.md",
     "inbox/React：useEffect & Dependencies.md",
     "inbox/React：effect 使用方式.md",
-    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
     "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
     "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，除了主要效果以外的任意功能，但功能種類會是處於 **脫離元件被執行來產出Virtual DOM至渲染實際DOM結構的循環**.md",
     "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md",
     "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇對應節點.md",
     "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
-    "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md",
-    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md"
+    "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md"
   ]
 }
