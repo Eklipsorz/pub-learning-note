@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 2.md",
+            "file": "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "e4d5176579d9081e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 2.md",
+                "file": "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ebf5a44054f07942",
+  "active": "e4d5176579d9081e",
   "lastOpenFiles": [
-    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
-    "inbox/Untitled 2.md",
     "inbox/React：useEffect & Dependencies.md",
     "inbox/React：effect 使用方式.md",
-    "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
-    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，除了主要效果以外的任意功能，但功能種類會是處於 **脫離元件被執行來產出Virtual DOM至渲染實際DOM結構的循環**.md",
-    "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md",
-    "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇對應節點.md",
-    "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
-    "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md"
+    "inbox/div soup 最主要是指被div 巢狀結構所內含的內容，由於巢狀結構會構成像碗的形狀，而內容就好比碗裡的湯，因此才將div 巢狀結構所內含的內容稱之為div soup.md",
+    "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
+    "inbox/tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
+    "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md",
+    "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+    "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
+    "inbox/Untitled 2.md",
+    "inbox/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md"
   ]
 }
