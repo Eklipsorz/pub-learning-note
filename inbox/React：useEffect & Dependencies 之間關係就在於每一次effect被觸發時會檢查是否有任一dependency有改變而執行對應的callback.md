@@ -27,6 +27,9 @@ useEffect(callback, dependency)
 #### 表示互動狀態的資訊會是？？
 表示互動狀態的資訊通常會因為與使用者或者元件進行互動而有所不同，而這剛好可以促使effect 的 callback會因為狀態的改變而跟著渲染出不同的畫面
 
+
+
+
 ### dependency 設定的注意事項
 [[@academindReactcompleteguidecodeButtonModule]]
 > You learned, that you should add "everything" you use in the effect function as a dependency - i.e. all state variables and functions you use in there.
@@ -50,7 +53,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 	- dependency 不需要添加更新狀態用的函式：因為React本身和使用者本身就不會變動該函式本身，所以函式不會被改變
 	- dependency 不要添加其他非React能夠支援的API 或者對應函式：因為他們本身就不會改變和跟元件渲染週期無關
 	- dependency 不要添加屬於其他元件或者元件以外的變數/函式，因為它們本身就屬於其他元件或者非元件，它們一改變就無法對目前元件觸發渲染，也就不會觸發useEffect。
-- 若useEffect 也想能夠運用props、狀態、其他還能觸發渲染週期的資料來根據資訊的不同來渲染，那麼dependency 就需要添加的部分：
+- 若useEffect 想運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，那麼dependency 不需要添加的部分：
 	- props、狀態、其他還能觸發渲染週期的資料
 
 
@@ -102,37 +105,48 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 ## 複習
 
 #🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `callback則是定義side effect的內容。`
+<!--SR:!2022-09-19,3,250-->
 
 #🧠 React：useEffect(callback, dependencies) 的dependency設定目的 ->->-> `決定能否在每次觸發effect並執行side effect的因素、給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環`
+<!--SR:!2022-09-18,3,250-->
 
 #🧠 React：side effect 通常會應用在哪種場景？ ->->-> `side effect也能夠運用互動狀態的資訊來渲染特定內容`
+<!--SR:!2022-09-19,3,250-->
 
 #🧠 React：side effect 通常會應用在運用互動狀態的資訊來渲染特定內容，會需要什麼才能實現？->->-> `這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段`
+<!--SR:!2022-09-18,3,250-->
 
 #🧠 React：通常會為了讓side effect也能夠運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，而將dependency設定什麼？ ->->-> `- props - 狀態 - 其他還能表示狀態且能夠觸發渲染週期的資料`
+<!--SR:!2022-09-18,3,250-->
 
 #🧠 React：side effect 通常會應用在運用互動狀態的資訊來渲染特定內容，而表示互動狀態的資訊會是指什麼？ ->->-> `表示互動狀態的資訊通常會因為與使用者或者元件進行互動而有所不同`
+<!--SR:!2022-09-19,3,250-->
 
 #🧠 React：side effect 通常會應用在運用互動狀態的資訊來渲染特定內容，互動狀態的資訊會是指資訊會因為與使用者或者元件進行互動而有所不同，那麼互動狀態資訊和side effect、dependency之間有什麼樣關係 ->->-> `互動狀態資訊的變動剛好可以促使effect 的 callback會因為狀態的改變而跟著渲染出不同的畫面`
+<!--SR:!2022-09-18,3,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，那麼dependency 不需要添加的部分，主要會是什麼？->->-> `主要會是不能夠代表狀態的資訊或者不會觸發渲染週期的內容`
+<!--SR:!2022-09-19,3,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容那麼dependency 不需要添加的部分，主要會是不能夠代表狀態的資訊或者不會觸發渲染週期的內容，那麼內容具體是什麼？ ->->-> `更新狀態用的函式、其他非React能夠支援的API 或者對應函式、屬於其他元件或者元件以外的變數/函式`
+<!--SR:!2022-09-19,3,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加更新狀態用的函式嗎？為什麼 ->->-> `不建議，因為更新狀態用的函式本身就不會被改變`
+<!--SR:!2022-09-18,3,250-->
 
-#🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加非React能夠支援的API 或者對應函式嗎？為什麼  ->->-> `不建議，因爲它們本身就不會被改變且和React本身就無關`
+#🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加非React能夠支援的API 或者對應函式嗎？為什麼  ->->-> `不建議，因爲它們本身不會改變，更不會觸發當前元件的渲染週期`
+<!--SR:!2022-09-19,3,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加屬於其他元件或者元件以外的變數/函式嗎？為什麼  ->->-> `不建議，他們本身一改變就無法觸發當前元件的渲染週期。`
+<!--SR:!2022-09-18,3,250-->
 
-#🧠 Question :: ->->-> ``
-
-
+#🧠 React：請問timerIsActive、timerDuration、setTimerIsActive、myTimer、setTimeout 可不可以放到dependency裡頭，為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663256225/blog/react/effect/react-use-effect-dependency-example_q3poat.png) ->->-> `- timerIsActive 本身是狀態，狀態本身只要更新就觸發更新和渲染而進入渲染週期，也就可以觸發useEffect，所以可以加入至dependency - timerDuration 本身是props的值，只要parent元件給定的資訊一改變，其元件就會跟著渲染而進入渲染週期，也就可以觸發useEffect，所以可以加入至dependency - setTimerIsActive 本身是狀態更新用的函式，就不會改變，也不會因而改變而進入渲染週期，所以可以不用加入至dependency - myTimer 本身是元件外的變數，它的改變並不會觸發渲染週期，所以可以不用加入至dependency - setTimeOut 本身是非React的API，獨立於React，並不會觸發渲染週期，所以不用加入dependency`
+<!--SR:!2022-09-18,3,250-->
 
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
