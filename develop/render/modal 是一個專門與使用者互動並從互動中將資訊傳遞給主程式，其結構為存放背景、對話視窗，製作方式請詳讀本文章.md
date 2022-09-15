@@ -212,14 +212,14 @@ modal ：對話窗內容
 <!--SR:!2022-09-20,7,250-->
 
 #🧠 modal 主體架構分成哪兩個部分？ ->->-> `- 背景 (backdrop) - 對話視窗本身 (modal)`
-<!--SR:!2022-09-15,2,249-->
+<!--SR:!2022-09-20,5,249-->
 
 
 #🧠 modal 主體架構中的backdrop是指什麼？->->-> ` 本身是一個元件，高寬皆為viewport的100%，且背景顏色為白色的透明色，元件中間會有個名為modal 的對話視窗`
 <!--SR:!2022-09-15,2,248-->
 
 #🧠 modal 主體架構中的modal是指什麼？ ->->-> `對話窗內會含有header、body、footer這三個部分，當按下footer的okey或者點dialog任意位置就會讓對話窗消失`
-<!--SR:!2022-09-15,2,249-->
+<!--SR:!2022-09-19,4,249-->
 
 
 #🧠 modal 主體架構有什麼？請用下圖來畫出架構 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662724421/blog/frontend/dialog/dialog-origin_tf3iqi.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662660001/blog/frontend/dialog/dialog_xeooko.png)`
@@ -252,7 +252,7 @@ modal ：對話窗內容
 
 
 #🧠 在modal主體架構中，modal的樣式會是什麼？->->-> `  margin: 10% auto; width: 30%;`
-<!--SR:!2022-09-15,2,249-->
+<!--SR:!2022-09-21,6,249-->
 
 
 #🧠 在modal主體架構中，modal的html架構會是什麼？ ->->-> ``

@@ -69,7 +69,7 @@
 
 
 #🧠 畫圖來說明CSS preprocessor、CSS、CSS postprocessor的關係 ->->-> `![](https://i.imgur.com/VCgqqTv.png)`
-<!--SR:!2022-09-15,27,250-->
+<!--SR:!2022-11-24,70,250-->
 
 #🧠 CSS preprocessor 和 CSS postprocessor的關係這兩者的差別是什麼？(有三個) ->->-> `- 執行順序：前者會於確定使用CSS檔案之前執行，後者會於確定CSS檔案之後執行 - 輸入資料：前者會使用由preprocessor語法構成的檔案來處理，後者則是用原本要正式使用的CSS檔案當作輸入 - 輸出資料：前者是將由preprocessor語法構成的檔案編譯成CSS，後者則是按照指定規則來將輸入轉換成另一種形式的CSS`
 <!--SR:!2022-10-01,28,250-->
