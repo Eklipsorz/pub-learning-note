@@ -142,7 +142,7 @@ immutable
 <!--SR:!2022-09-21,6,248-->
 
 #🧠 immutable object 命名緣由 ->->-> `若一個物件被建立之後，物件內容不能夠被修改，該物件就是immutable object`
-<!--SR:!2022-09-15,2,248-->
+<!--SR:!2022-09-21,6,248-->
 
 #🧠 mutable 和 immutable 意思分別為何？ ->->-> `mutable 指的是可改變的 和 immutable 指的是不能被改變的或者不變的 `
 <!--SR:!2022-09-19,4,248-->
@@ -154,7 +154,7 @@ immutable
 <!--SR:!2022-09-20,5,248-->
 
 #🧠 React： const ref1 = useRef(initialValue) 中的initialValue都沒設定的話，會怎麼樣？ ->->-> `會設定undefined作為其初始值。`
-<!--SR:!2022-09-15,2,248-->
+<!--SR:!2022-09-19,4,248-->
 
 #🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
 <!--SR:!2022-09-16,3,250-->
@@ -169,7 +169,7 @@ immutable
 
 
 #🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> `！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part1_ifn9sn.png)！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part2_kgcbir.png)`
-<!--SR:!2022-09-15,2,248-->
+<!--SR:!2022-09-21,6,248-->
 
 #🧠 React ：基於refs來實現狀態管理是基於什麼基礎來實現？ ->->-> `基於瀏覽器對於原生DOM元件所會做的狀態管理實現來進行的`
 <!--SR:!2022-09-19,4,248-->
