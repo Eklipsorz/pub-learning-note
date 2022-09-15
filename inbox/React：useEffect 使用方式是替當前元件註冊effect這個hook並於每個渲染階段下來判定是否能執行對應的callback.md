@@ -194,7 +194,7 @@ this is use effect
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `了只會在元件的mounting階段下直接執行以外，updating、unmount階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`
 <!--SR:!2022-09-18,3,250-->
 
-#🧠 React：useEffect(callback, dependecies) 在unmount階段時的componentWillUnmoun週期函式會做什麼？ ->->-> `就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback`
+#🧠 React：useEffect(callback, dependecies) 在unmount階段時的componentWillUnmount週期函式會做什麼？ ->->-> `就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback`
 <!--SR:!2022-09-18,3,250-->
 
 #🧠 React：callback 和 dependencies之間的關係是如何 ->->-> `每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
