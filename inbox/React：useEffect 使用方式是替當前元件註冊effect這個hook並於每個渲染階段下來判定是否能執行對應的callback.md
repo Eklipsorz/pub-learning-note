@@ -218,7 +218,7 @@ this is use effect
 <!--SR:!2022-09-18,3,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
