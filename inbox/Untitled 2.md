@@ -81,20 +81,10 @@ useEffect(callback)-> cleanup = callback(...) -> run cleanup
 
 
 
-The global **`clearTimeout()`** method cancels a timeout previously established by calling [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout).
-
-If the parameter provided does not identify a previously established action, this method does nothing.
 
 
 
 
-
-
-## [Syntax](https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout#syntax "Permalink to Syntax")
-
-```
-clearTimeout(timeoutID)
-```
 
 ```
 useEffect( () => {
@@ -111,9 +101,26 @@ useEffect( () => {
 
 如果我們想要去透過UI的互動來送http 請求，若同樣以最近結果作為最後結果來處理，那麼就能使用setTimeout和cleanup來處理，以確保最後請求只會是一個且會是以最新最近的結果來發送
 
+### useEffect cleanup function
 
 
+### clearTimout 功用
 
+[[@mdnClearTimeoutWebAPIs]]
+>  The global clearTimeout() method cancels a timeout previously established by calling setTimeout().
+
+> If the parameter provided does not identify a previously established action, this method does nothing. 
+
+```
+clearTimeout(timeoutID)
+```
+
+
+重點：
+- clearTimeout 取消還未執行完成的setTimeout任務
+- clearTimeout(timeoutID) 的 timeoutID ：
+	- timeoutID 是 timeout任務ID
+	- timeoutID 可以setTimeout那邊取得
 
 ### Bounce
 >  When an object such as a ball bounces or when you bounce it, it moves upwards from a surface or away from it immediately after hitting it. 
@@ -176,5 +183,6 @@ Links:
 [[React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback]]
 [[React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能]]
 References:
+[[@mdnClearTimeoutWebAPIs]]
 [[@pomingleeDrLeeBlog2013]]
 [[@geeksforgeeksDebouncingJavaScript2018]]
