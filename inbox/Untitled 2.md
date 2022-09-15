@@ -52,32 +52,6 @@ useEffect 在遇到頻繁發送事件觸發的場景下是取得最近最新回�
 
   
 
-useEffect cleanup 技術能夠清除掉多出來負責執行side effect的任務，以確保效能不會受損
-
-```
-useEffect( () => {
-   ....
-   return callback
-}), [...] )
-```
-
-
-實際會以useEffect 所回傳的callback來定義如何清除多出來的side effect 任務
-
-callback 可以是匿名、箭頭、命名
-
-  
-
-當渲染週期到了且滿足dependency，React 會先透過useEffect 最一開始的callback執行，並取得對應callback，來當作清除用，順序會是
-
-useEffect(callback)-> cleanup = callback(...) -> run cleanup
-
-> before useEffect executes this function the next time / before every new side effect function execution and before the component is removed And it does not run before the first side effect function execution
-
-  
-
-除了第一次side effect 函式之前不會執行以外，在其他下一次side effect執行之前 就清除或者component被移除之前就清除
-
 
 
 
@@ -101,7 +75,10 @@ useEffect( () => {
 
 如果我們想要去透過UI的互動來送http 請求，若同樣以最近結果作為最後結果來處理，那麼就能使用setTimeout和cleanup來處理，以確保最後請求只會是一個且會是以最新最近的結果來發送
 
-### useEffect cleanup function
+
+
+
+
 
 
 ### clearTimout 功用
