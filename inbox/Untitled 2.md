@@ -1,6 +1,36 @@
 ## 描述
 
 
+### 問題背景
+
+useEffect 在遇到頻繁發送事件觸發的場景下是取得最近較新回應作為最後結果來處理的話，取得最近較新回應作為最後結果之前，會因為N個事件觸發而產生N個要執行effect的渲染請求，但這N個渲染請求對於結論而言，是不必要的浪費
+
+
+### 解決目標
+為了能在頻繁發送事件觸發的場景下是取得最近較新回應 並且 盡可能減少在取得之前的請求數，會採用以下策略：
+- 要求負責從事件觸發而獲取資訊的effect 等待一段時間，再接收事件出發來產生請求處理
+- 等待一定數量的請求量，並合併處理
+
+#### 使用setTimeout
+在這裡是採取
+	- 要求負責從事件觸發而獲取資訊的effect 等待一段時間，再接收事件出發來產生請求處理
+實現方式為：
+	- 在useEffect的callback中，產生一個500ms後才執行的setTimeout任務來做side effect
+
+```
+ useEffect(() => {
+    setTimeout(() => {
+	    // dosomething 
+    }, 500);
+  }, dependencies);
+```
+
+結果：
+- 藉由等待而放緩請求者和處理者之間的回應速率
+- 利用最後獲取到的setTimeout任務結果作為最後結果來
+
+
+
 每個keystroke都會觸發function component來渲染，而這等同於有每個keystroke會產生渲染請求，有N個keystrokes，就有N個渲染請求
 
   
@@ -133,6 +163,9 @@ Status: #🌱 #📓
 Tags:
 [[React]]
 Links:
+[[React：useEffect & Dependencies 之間關係就在於每一次effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
+[[React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback]]
+[[React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能]]
 References:
 [[@pomingleeDrLeeBlog2013]]
 [[@geeksforgeeksDebouncingJavaScript2018]]
