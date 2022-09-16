@@ -27,8 +27,9 @@
 
 
 ## 複習
-#🧠 template processor 技術目的是什麼？ ->->-> `網頁切分成MVC(Model、View、Controller)來開發/維護`
-<!--SR:!2022-09-24,8,190-->
+#🧠 template processor 所產生的渲染網頁和渲染網頁未出時期的一般網頁 相比，template processor 將一般網頁做了那些變化？ ->->-> `網頁切分成MVC(Model、View、Controller)來開發/維護`
+<!--SR:!2022-09-19,3,250-->
+
 
 #🧠 template language 是什麼？ ->->-> `是模板引擎用來製作模板的語言，語言是模板引擎提供且能夠識別並處理`
 <!--SR:!2022-10-21,47,250-->
