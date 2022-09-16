@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+            "file": "inbox/Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+                "file": "inbox/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aa13a2d1baf37501",
+  "active": "7a40245aaed2c65c",
   "lastOpenFiles": [
+    "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
     "inbox/Untitled 2.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
@@ -117,7 +118,6 @@
     "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
     "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
-    "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
-    "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md"
+    "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md"
   ]
 }
