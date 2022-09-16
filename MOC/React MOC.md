@@ -15,11 +15,13 @@
 [[React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element]]
 
 ### debouncing
+[[React：useEffect & Dependencies 之間關係就在於每一次effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
+[[React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback]]
+[[React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能]]
+[[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
 [[debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。]]
 
-[[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
-
-
+[[React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果]]
 
 ### empty wrapper component
 [[empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件]]
