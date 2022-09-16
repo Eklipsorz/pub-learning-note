@@ -143,7 +143,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `在編譯時期先對所有EC準備建立EC所需的資料和對應ByteCode後，並於執行之前先執行對應ByteCode建立GEC`
-<!--SR:!2022-09-16,15,247-->
+<!--SR:!2022-10-26,40,247-->
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `檔案裡的最外圍scope`

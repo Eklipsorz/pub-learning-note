@@ -163,7 +163,7 @@ immutable
 <!--SR:!2022-09-20,5,248-->
 
 #🧠 React： 如何利用useRef來寫入名字的輸入欄位所顯示的內容  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要修改該JSX元素的對應DOM節點所擁有的屬性的話，可以使用 // 對著實際DOM節點的屬性增加內容 ref1.current.xxxx = xxxx1`
-<!--SR:!2022-09-16,3,250-->
+<!--SR:!2022-09-26,10,250-->
 
 
 
