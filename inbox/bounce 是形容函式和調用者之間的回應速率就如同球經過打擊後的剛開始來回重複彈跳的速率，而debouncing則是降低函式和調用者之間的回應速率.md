@@ -16,12 +16,42 @@
 ### debouncing
 [[@geeksforgeeksDebouncingJavaScript2018]]
 
-> Debouncing is **a programming practice used to ensure that time-consuming tasks do not fire so often, that it stalls the performance of the web page**. In other words, it limits the rate at which a function gets invoked
+> Debouncing in JavaScript is a practice used to improve browser performance. There might be some functionality in a web page which requires time-consuming computations. If such a method is invoked frequently, it might greatly affect the performance of the browser, as JavaScript is a single threaded language. Debouncing is a programming practice used to ensure that time-consuming tasks do not fire so often, that it stalls the performance of the web page. In other words, it limits the rate at which a function gets invoked.
+
+
+```
+<html> 
+<body>
+<button id="debounce">
+    Debounce
+</button>
+<script>
+var button = document.getElementById("debounce");
+const debounce = (func, delay) => {
+    let debounceTimer
+    return function() {
+        const context = this
+        const args = arguments
+            clearTimeout(debounceTimer)
+                debounceTimer
+            = setTimeout(() => func.apply(context, args), delay)
+    }
+} 
+button.addEventListener('click', debounce(function() {
+        alert("Hello\nNo matter how many times you" +
+            "click the debounce button, I get " +
+            "executed once every 3 seconds!!")
+                        }, 3000));
+</script>
+</body>
+</html>
+```
 
 
 重點：
-- debouncing 在電腦開發實踐的手段，降低降低函式和調用者之間的回應速率或者降低請求方和處理方之間的回應速度，確保較為耗時的任務別那麼快去接收到請求來處理
-- 背景：函式和調用者之間的回應 或者 請求方和處理方之間的回應 本身是取最近的回應作為最後結果來處理
+- debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。
+- 背景：在連續發送事件觸發的場景下，處理方和請求方之間的回應速率會是請求方一發送請求，處理者就馬上處理請求，然而實際上卻是最後的事件觸發才是真正需要的，這導致拿到最後的事件觸發資訊之前，是有大量不必要的浪費
+
 - 具體策略會是以
 	- 強迫等待一段特定時間
 	- 收集指定數量的請求數後再來處理
