@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 2.md",
+            "file": "inbox/bounce 是形容函式和調用者之間的回應速率就如同球經過打擊後的剛開始來回重複彈跳的速率，而debouncing則是降低函式和調用者之間的回應速率.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 2.md",
+                "file": "inbox/bounce 是形容函式和調用者之間的回應速率就如同球經過打擊後的剛開始來回重複彈跳的速率，而debouncing則是降低函式和調用者之間的回應速率.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,8 +109,8 @@
   },
   "active": "7a40245aaed2c65c",
   "lastOpenFiles": [
-    "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
     "inbox/Untitled 2.md",
+    "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
     "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md",
