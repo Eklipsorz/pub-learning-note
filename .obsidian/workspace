@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/bounce 是形容函式和調用者之間的回應速率就如同球經過打擊後的剛開始來回重複彈跳的速率，而debouncing則是降低函式和調用者之間的回應速率.md",
+            "file": "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "aa13a2d1baf37501",
+        "id": "30b8bbe71fb64010",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 2.md",
+            "file": "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/bounce 是形容函式和調用者之間的回應速率就如同球經過打擊後的剛開始來回重複彈跳的速率，而debouncing則是降低函式和調用者之間的回應速率.md",
+                "file": "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7a40245aaed2c65c",
+  "active": "30b8bbe71fb64010",
   "lastOpenFiles": [
     "inbox/Untitled 2.md",
-    "inbox/bounce 是形容函式和調用者之間的回應速率就如同球經過打擊後的剛開始來回重複彈跳的速率，而debouncing則是降低函式和調用者之間的回應速率.md",
+    "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+    "MOC/React MOC.md",
+    "MOC/Rendering MOC.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
     "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md",
     "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
-    "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
-    "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
-    "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md"
+    "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md"
   ]
 }

@@ -87,6 +87,7 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。]]
 References:
 [[@megidaWhyYouShould]]
 [[@reactShiYongEffectHook]]
