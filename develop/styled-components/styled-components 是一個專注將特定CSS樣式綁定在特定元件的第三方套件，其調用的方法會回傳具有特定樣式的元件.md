@@ -92,8 +92,10 @@ const Element = styled.<element>`<template-literal>`
 
 
 #🧠 styled-components 是官方套件嗎？ 如何安裝->->-> `是第三方套件，安裝得用npm install styled-components`
+<!--SR:!2022-09-18,2,247-->
 
 #🧠 安裝styled-components好，若要使用其套件，要如何做？ ->->-> `先載入import styled from 'styled-components'; 然後該函式庫語法來將對應CSS內容和對應元件結合成syled-comoonents`
+<!--SR:!2022-09-18,2,247-->
 
 #🧠  styled-components 的出現背景是什麼？ ->->-> `預設下，專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component。`
 <!--SR:!2022-09-17,10,250-->
@@ -115,7 +117,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-09-17,10,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
-<!--SR:!2022-09-16,9,250-->
+<!--SR:!2022-10-12,26,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
 <!--SR:!2022-09-17,10,250-->

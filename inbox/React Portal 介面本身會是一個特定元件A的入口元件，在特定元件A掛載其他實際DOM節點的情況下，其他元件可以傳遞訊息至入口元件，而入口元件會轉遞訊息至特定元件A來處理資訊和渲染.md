@@ -183,7 +183,7 @@ portal：
 <!--SR:!2022-09-26,10,250-->
 
 #🧠 React Portal 除了能解決**元件B想傳遞資訊至元件A來渲染，且元件A和元件B之間不一定是parent-child的關係**以外，還能解決什麼？(樣式) ->->-> `若特定元件A被parent元件的樣式寫死了，可建立傳送門介面介面，將特定元件A的對應實際DOM節點實際寫在特定實際DOM節點之下，這樣其特定元件A的樣式就不會被原本的parent 元件給鎖死。`
-<!--SR:!2022-09-16,3,250-->
+<!--SR:!2022-09-25,9,250-->
 
 #🧠 React Portal 會破壞元件的渲染內容本身嗎？ 實質上是？ ->->-> `Portal 不會破壞元件的渲染內容本身，但會轉移其實際DOM節點至指定地點`
 <!--SR:!2022-09-26,10,250-->
@@ -207,7 +207,7 @@ portal：
 
 
 #🧠 React：上面是webpack會用到的參考網頁，其中backdrop-root負責存在著所有backdrop，而modal-root則是負責存放modal，下面是modal的實現代碼，請在裡頭使用portal來連接到參考網頁的backdrop-root和modal-root![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990506/blog/react/react-element/portal/modal-component-root_xotlt4.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990507/blog/react/react-element/portal/modal-portal-question_whaxq1.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990507/blog/react/react-element/portal/modal-portal_dsfg59.png)`
-<!--SR:!2022-09-16,3,250-->
+<!--SR:!2022-09-26,10,250-->
 
 
 ---

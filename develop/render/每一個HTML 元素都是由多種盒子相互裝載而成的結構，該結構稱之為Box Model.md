@@ -85,7 +85,7 @@
 
 
 #🧠 在CSS Box Model，Padding Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由padding-top、padding-bottom、padding-left、padding-right來決定`
-<!--SR:!2022-09-16,7,250-->
+<!--SR:!2022-10-05,19,250-->
 
 
 #🧠 在CSS Box Model，Border Box 是什麼？ ->->-> `本身負責裝載著Padding Box內容`
