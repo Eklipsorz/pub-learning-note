@@ -239,7 +239,7 @@ modal ：對話窗內容
 #🧠 modal主體架構中負責存放modal部分的區塊所要實現的目標是一個佔滿viewport的空間、背景色為白色的透明色，請問對應CSS要求 width為100% + height為100%＋z-index為 99，為什麼？->->-> `由於元素為fixed-positioning，其高寬的百分比會受限於viewport，直接設定為100%，就等同於在整個viewport上覆蓋一層`
 <!--SR:!2022-09-22,9,250-->
 
-#🧠 modal主體架構中負責存放modal部分的區塊所要實現的目標是.能夠存放對話窗整個內容，要如何實現？ ->->-> `<div class="modal"> <div class="modal-content"></div> </div>`
+#🧠 modal主體架構中負責存放modal部分的區塊所要實現的目標是.能夠存放對話窗整個內容，html要如何寫？ ->->-> `<div class="modal"> <div class="modal-content"></div> </div>`
 <!--SR:!2022-09-16,4,249-->
 
 #🧠 在modal主體架構中，modal是負責什麼？->->-> `負責呈現對話視窗本身`

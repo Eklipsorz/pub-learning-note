@@ -33,6 +33,19 @@ styled-component
 
 ### styled-components 回傳的內容
 
+#### 使用前的注意事項
+1. 確保有安裝styled-components這第三方套件
+```
+npm install --save styled-components
+```
+
+2. 使用前要載入其套件
+```
+import styled from 'styled-components';
+```
+
+#### 正式使用
+
 當使用style.\<element\> 時，其實會建立對應元件的建構式，也就是React Element
 ```
 const Element = styled.<element>`<template-literal>`
@@ -77,6 +90,10 @@ const Element = styled.<element>`<template-literal>`
 #🧠 styled-components 是什麼樣技術概念的實現？ ->->-> `CSS-in-JS`
 <!--SR:!2022-09-17,10,250-->
 
+
+#🧠 styled-components 是官方套件嗎？ 如何安裝->->-> `是第三方套件，安裝得用npm install styled-components`
+
+#🧠 安裝styled-components好，若要使用其套件，要如何做？ ->->-> `先載入import styled from 'styled-components'; 然後該函式庫語法來將對應CSS內容和對應元件結合成syled-comoonents`
 
 #🧠  styled-components 的出現背景是什麼？ ->->-> `預設下，專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component。`
 <!--SR:!2022-09-17,10,250-->
