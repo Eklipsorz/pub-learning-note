@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
+            "file": "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "styled-components &",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
+                "file": "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +98,8 @@
   },
   "active": "9ba7de4b28993e66",
   "lastOpenFiles": [
+    "develop/styled-components/styled-components：在template literal 裡頭添加callback 就能根據props的資訊和狀態更新觸發渲染來動態調整畫面.md",
+    "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
     "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
@@ -105,8 +107,6 @@
     "inbox/Untitled 2.md",
     "inbox/React：useEffect & Dependencies 之間關係就在於每一次effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-    "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
-    "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
-    "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md"
+    "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md"
   ]
 }
