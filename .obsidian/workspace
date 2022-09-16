@@ -61,8 +61,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -108,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7a40245aaed2c65c",
+  "active": "d9546d4d0b544fb7",
   "lastOpenFiles": [
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/render/template processor 技術目的是要將網頁切分成MVC(Model、View、Controller)來開發和維護.md",
