@@ -21,16 +21,15 @@
 
 
 重點：
-- useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務
+- useEffect cleanup 技術主要是執行當前side effect之前，停止上一個side effect所產生的非同步任務
 - 用途：
-	- 節省不必要side effect的執行開銷
+	- 節省不必要side effect所產生的非同步任務之執行開銷
 - 執行時機點：
-	- 除了第一次side effect函式之前不會執行cleanup以外，在其他下一次side effect執行之前就清除
+	- 除了第一次side effect函式之前不會執行cleanup以外，在其他下一次side effect執行之前就清除，在這裡的第一次是指該元件的mounting階段所觸發執行的side effect
 	- component被unmount前就清除
-- 執行順序(side effect + cleanup)：
-	-  每個side effect的執行順序會是( cleanup -> side effect )
 
-### cleanup function 使用方法
+
+### cleanup function 設定方法和使用
 
 
 ```
@@ -43,16 +42,34 @@ useEffect( () => {
 重點：
 - 在這裡side effect 任務本身會額外生成非同步任務為主
 - 實際會以useEffect 所回傳的callback來定義如何清除目前當前side effect任務
-- callback 可以是匿名、箭頭、命名，而callback內容會是實際定義如何清除多出來的side effect所產生出來的非同步任務。
-- useEffect ＋cleanup 執行順序：假如useEffect(callback, dependencies)
-```
-callback -> cleanup = callback(...) -> run cleanup
-```
+- callback 可以是匿名、箭頭、命名，而callback內容會是實際定義著如何清除多出來的side effect所產生出來的非同步任務。
+- 執行順序(side effect + cleanup)：
+	- 每個side effect的執行順序會是( cleanup -> side effect )，並不是執行每個side effect後才執行cleanup
+	- 第一個side effect前不會執行cleanup
 
+### useEffect + cleanup function 的使用場景為何？
 
+使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務
 
+### useEffect + cleanup function 要實現什麼？
+主要實現debounce
 
 ## 複習
+
+#🧠 React：useEffect cleanup 技術主要是什麼？ ->->-> `主要是執行當前side effect之前，停止上一個side effect所產生的非同步任務`
+
+#🧠 React：useEffect cleanup 技術的目的是什麼？ ->->-> `節省不必要side effect所產生的非同步任務之執行開銷`
+
+#🧠 React：useEffect cleanup 何時執行？ ->->-> `除了mounting 所觸發執行的side effect以外，執行每個side effect之前都會先執行cleanup 以及 component 被unmount前就執行清除`
+
+#🧠 React：useEffect cleanup  的執行時機是除了第一次side effect函式之前不會執行cleanup以外，在其他下一次side effect執行之前就清除，那麼第一次side effectc函式是指什麼？  ->->-> `該元件的mounting階段所觸發執行的side effect`
+
+#🧠 React：useEffect cleanup 何時執行？mounting 所觸發執行的side effect會不會執行cleanup？ ->->-> `並不會`
+
+#🧠 React：useEffect cleanup的使用場景為何？ cleanup又負責做些什麼？->->-> `使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務`
+
+
+#🧠 React：useEffect 如何設定cleanup 函式，其函式內容要寫些什麼？ ->->-> `在useEffect(callback, dependencies)當中的callback 定義著回傳特定callback，該callback正是cleanup函式，然後內容會是如何清除多出來的side effect所產生出來的非同步任務`
 
 
 ---
