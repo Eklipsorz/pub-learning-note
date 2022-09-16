@@ -27,7 +27,8 @@
 - 執行時機點：
 	- 除了第一次side effect函式之前不會執行cleanup以外，在其他下一次side effect執行之前就清除
 	- component被unmount前就清除
-
+- 執行順序(side effect + cleanup)：
+	-  每個side effect的執行順序會是( cleanup -> side effect )
 
 ### cleanup function 使用方法
 
