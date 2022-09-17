@@ -67,7 +67,7 @@
 <!--SR:!2022-10-02,15,230-->
 
 #🧠 每一個HTML 元素在渲染層面上，會是以什麼東西來構成？ ->->-> `CSS box model`
-<!--SR:!2022-09-17,8,250-->
+<!--SR:!2022-09-21,4,230-->
 
 #🧠 CSS Box Model 是什麼結構？ ->->-> `是由多種Box組合在一起的結構，這些盒子都負責裝載特定內容，分別有Content Box、Padding Box、Border Box、Margin Box`
 <!--SR:!2022-09-19,10,250-->
@@ -77,7 +77,7 @@
 
 
 #🧠 預設下，CSS Box Model，Content Box 本身的大小屬性由什麼決定？ ->->-> `width、height`
-<!--SR:!2022-09-17,8,250-->
+<!--SR:!2022-10-10,23,250-->
 
 
 #🧠 在CSS Box Model，Padding Box 是什麼？ ->->-> `如其名，本身裝載Content Box內容`

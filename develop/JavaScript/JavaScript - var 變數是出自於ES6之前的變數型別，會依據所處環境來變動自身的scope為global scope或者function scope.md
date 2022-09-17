@@ -115,7 +115,7 @@ function xxx() {
 <!--SR:!2022-10-07,71,250-->
 
 #🧠 var 變數若放在block scope的話，系統會如何決定var變數的scope ->->-> `var 變數由於是出自於只有global scope和function scope的ES6以前版本，若遇到ES6出現的block scope，會直接忽視block scope，並且依據其block scope原本處於的scope是否為function scope來決定自己的scope是否為function scope`
-<!--SR:!2022-09-17,58,250-->
+<!--SR:!2023-02-14,150,250-->
 
 
 ---

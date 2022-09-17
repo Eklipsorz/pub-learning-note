@@ -209,7 +209,7 @@ export default CourseInput;
 <!--SR:!2022-10-09,23,250-->
 
 #🧠 在styled-components的template-literal中，為何可以使用callback？ ->->-> ` template literal ＋ ${} 對於expression 優先執行 + styled-components 對於expression 為callback的處理方式：當styled-components讀取到後，會先執行callback，並以其callback結果來替代${callback} 所在的位置`
-<!--SR:!2022-09-17,10,250-->
+<!--SR:!2022-10-15,28,250-->
 
 
 ---
