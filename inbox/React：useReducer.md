@@ -1,97 +1,16 @@
 ## 描述
 
-useReducer：
-1. React 內建的HOOK
-2. 用作於狀態管理(與useState相似，但比較多功能來處理較為複雜狀態)
-
-
-> sometimes, you have more complex state - for example if it got multiple states, multiple ways of changing it or dependencies to other states
-
-
-multiple states that kind of belong together, that are managing the same thing, just different aspects of it
-
-比如實際上有多個狀態B可以組裝成一個狀態A，只是分離從龐大的狀態A分離成好幾個狀態B
-
-  
-
-  
-
-多個狀態＋這些狀態原本從一個大狀態分離出來 ，舉例：一個表單狀態本身可以按照輸入欄位的多寡而區分成好幾個狀態
-
 ```
-const [enteredEmail, setEnteredEmail] = useState('');
-const [emailIsValid, setEmailIsValid] = useState();
-const [enteredPassword, setEnteredPassword] = useState('');
-const [passwordIsValid, setPasswordIsValid] = useState();
-const [formIsValid, setFormIsValid] = useState(false);
+const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 ```
 
+useReducer 會回傳兩個元素的陣列：
+	- state 是目前狀態的snapshot
+	- dispatchFn 是更新狀態的snapshot
 
 
-多個狀態＋這些狀態彼此改變自己的狀態/多個狀態＋這些狀態彼此皆有關係：
-
-
-舉例：狀態A的改變會間接促使改變狀態B，而狀態B的改變會促使狀態A的改變。
-
-
-舉例來說：假如有enteredEmail、emailIsValid這兩個負責儲存兩個不同狀態值的變數，而emailIsValid儲存的狀態值是依據著enteredEmail儲存的狀態值是否包含@來決定的：
-- 若有包含@，emailIsValid就會預定更新成true
-- 若沒包含@，emailIsValid就會預定更新成false
-```
-const [enteredEmail, setEnteredEmail] = useState('');
-const [emailIsValid, setEmailIsValid] = useState();
-
-const emailChangeHandler = (event) => {
-	setEnteredEmail(event.target.value);
-};
-
-const validateEmailHandler = () => {
-	setEmailIsValid(enteredEmail.includes('@'));
-};
-```
-
-```
-return (
-	<input 
-	  type='email' 
-	  id='email'
-	  value={enteredEmail}
-	  onChange={emailChangeHandler}
-	  onBlur={validateEmailHandler}
-	/>
-);
-```
-
-這會引發一個潛在問題：
-- emailIsValid的狀態值會是依賴著另一個狀態值enteredEmail來做決定，而狀態值enteredEmail很有可能因為setState變更狀態的時間差而不會是最新的。
-- emailIsValid變更狀態用的函式所支援的callback只會以emailIsValid目前要求的最新狀態來更新，並不能夠以callback形式來取得enteredEmail目前要求的最新狀態值來更新
-
-
-
-狀態更新是全域
-
-### 繼續使用useState的潛在問題
-多個狀態＋這些狀態原本從一個大狀態分離出來
-
-多個狀態＋這些狀態彼此改變自己的狀態
-
-多個狀態＋這些狀態彼此皆有關係
-
-  
-
-繼續使用useState 來實現會衍生出 難以控管、維護狀態且bug眾多的代碼
-
-#### 替代方案
-
-會改用useReducer 來解決這複雜狀態的問題
-
-useReducer() can be used as a replacement for useState() if you need more powerful state management
-
-### reduce / reduction
-> reduction refers to **the rewriting of an expression into a simpler form**.
-
-重點：
-- reduce 是將複雜的事物轉換成單一簡單的事物
+dispatchFn 是 會
+> dispatch an action
 
 ## 複習
 
@@ -99,6 +18,5 @@ useReducer() can be used as a replacement for useState() if you need more powerf
 ---
 Status: #🌱 #📓 
 Tags:
-[[React]]
 Links:
 References:
