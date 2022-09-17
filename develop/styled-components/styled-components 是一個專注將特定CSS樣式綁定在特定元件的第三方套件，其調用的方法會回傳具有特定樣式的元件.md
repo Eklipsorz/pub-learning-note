@@ -88,7 +88,7 @@ const Element = styled.<element>`<template-literal>`
 ## 複習
 
 #🧠 styled-components 是什麼樣技術概念的實現？ ->->-> `CSS-in-JS`
-<!--SR:!2022-09-17,10,250-->
+<!--SR:!2022-10-14,27,250-->
 
 
 #🧠 styled-components 是官方套件嗎？ 如何安裝->->-> `是第三方套件，安裝得用npm install styled-components`
@@ -114,7 +114,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-09-28,15,230-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是什麼？->->-> `React Element 或者對應元件的建構式`
-<!--SR:!2022-09-17,10,250-->
+<!--SR:!2022-10-14,27,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
 <!--SR:!2022-10-12,26,250-->
