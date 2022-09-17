@@ -28,10 +28,42 @@ const [formIsValid, setFormIsValid] = useState(false);
 
 
 
-多個狀態＋這些狀態彼此改變自己的狀態，舉例：狀態A的改變會間接促使改變狀態B，而狀態B的改變會促使狀態A的改變。
+多個狀態＋這些狀態彼此改變自己的狀態/多個狀態＋這些狀態彼此皆有關係：
 
-多個狀態＋這些狀態彼此皆有關係
 
+舉例：狀態A的改變會間接促使改變狀態B，而狀態B的改變會促使狀態A的改變。
+
+
+舉例來說：假如有enteredEmail、emailIsValid這兩個負責儲存兩個不同狀態值的變數，而emailIsValid儲存的狀態值是依據著enteredEmail儲存的狀態值是否包含@來決定的：
+- 若有包含@，emailIsValid就會預定更新成true
+- 若沒包含@，emailIsValid就會預定更新成false
+```
+const [enteredEmail, setEnteredEmail] = useState('');
+const [emailIsValid, setEmailIsValid] = useState();
+
+const emailChangeHandler = (event) => {
+	setEnteredEmail(event.target.value);
+};
+
+const validateEmailHandler = () => {
+	setEmailIsValid(enteredEmail.includes('@'));
+};
+```
+
+```
+return (
+	<input 
+	  type='email' 
+	  id='email'
+	  value={enteredEmail}
+	  onChange={emailChangeHandler}
+	  onBlur={validateEmailHandler}
+	/>
+);
+```
+
+這會引發一個潛在問題：
+- emailIsValid的ㄓㄨㄤ
 
 
 ### 繼續使用useState的潛在問題
