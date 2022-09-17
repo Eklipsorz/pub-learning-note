@@ -12,6 +12,9 @@ useReducer：
 
 > multiple states that kind of belong together, that are managing the same thing, just different aspects of it
 
+
+![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)
+
 ### useReducer 語法介紹
 
 
@@ -20,21 +23,11 @@ const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 ```
 
 重點：
-- useReducer 會註冊一個hook 在目前元件上，並且主要以**多個狀態歸納成一個大狀態** 的方式來控管狀態。
+- useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。
 - useReducer 會回傳兩個元素的陣列：
 	- state 是目前狀態的snapshot，實際上是儲存當前狀態值的變數，並非真是負責儲存每次狀態的變數
 	- dispatchFn 是更新狀態的snapshot
-- dipatchFn 主要會派遣action至useReducer中的reducerFn中，其dipatchFn形式如下：
-	- action 是定義著分派給reduceFn的任務是什麼
-```
-dipatchFn(action)
-```
-
-舉例：
-```
- dispatch({ type: "COMPLETE", id: todo.id });
-```
-
+- dispatchFn
 reducerFn 為 
 - 依據action 來回傳狀態、更新狀態&觸發渲染週期，並於每一次渲染週期分配新狀態值給state，其引數為兩個，分別為prevState 和 action
 - prevState 為 先前狀態，其狀態會是指React 層級所管理的，action 則是指dispatch所製造的action
@@ -63,9 +56,35 @@ initFn
 
 ### dispatchFn
 
-action ： it can be a string identifier ，具體定義由開發者定義
 
-e.g., 'NEW_EMAIL_VALUE' or number or  {....}
+ dipatchFn 主要會派遣action至useReducer中的reducerFn中，並觸發reducerFn來處理狀態、渲染， 其dipatchFn形式如下：
+	- action 是定義著分派給reduceFn的任務是什麼
+```
+dipatchFn(action)
+```
+
+舉例：
+```
+ dispatch({ type: "COMPLETE", id: todo.id });
+```
+
+
+
+#### action 形式
+
+> An _action object_ is an object that describes how to update the state.
+
+> action ： it can be a string identifier 
+> e.g., 'NEW_EMAIL_VALUE' or number or  {....}
+
+重點：
+- action 本身主要是定義如何更新狀態
+- actio
+
+
+，具體定義由開發者定義
+
+
 
   
 
@@ -103,7 +122,7 @@ useReducer 中的 reducerFn 定義會另外定義成named function 並放在comp
 
 
 
-### reduce / reduction
+### reduce / reduction 命名緣由
 > reduction refers to **the rewriting of an expression into a simpler form**.
 
 重點：
@@ -111,6 +130,15 @@ useReducer 中的 reducerFn 定義會另外定義成named function 並放在comp
 
 ### reducer 命名緣由
 負責將複雜事物轉換成單一簡單事物的函式、儀器、機器，在這裡會是將多個狀態合併一個狀態來管理。
+
+### action 命名緣由
+> the process of doing something, especially when dealing with a problem or difficulty
+
+> something that you do
+
+
+重點：
+- 當要解決特定問題或者困難時所要做的行為
 
 ## 複習
 
