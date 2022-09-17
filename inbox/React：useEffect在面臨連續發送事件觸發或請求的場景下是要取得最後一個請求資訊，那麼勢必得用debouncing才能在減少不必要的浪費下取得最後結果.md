@@ -94,7 +94,7 @@ clearTimeout(timeoutID)
 
 ## 複習
 
-#🧠 React：實現debouncing的概念是採用什麼？ ->->-> `每一次事件觸發的處理會是以： - 清除上一個處理所產生的非同步計時任務(timer task) - 生成一個非同步計時任務 (timer task)。 每一次事件觸發的處理會是以： - 清除上一個處理所產生的非同步任務 - 生成一個非同步任務`
+#🧠 React：若要以非同步計時任務來實現debouncing的概念，具體要做什麼？ ->->-> `每一次事件觸發的處理會是以： - 清除上一個處理所產生的非同步計時任務(timer task) - 生成一個非同步計時任務 (timer task)。 每一次事件觸發的處理會是以： - 清除上一個處理所產生的非同步任務 - 生成一個非同步任務`
 <!--SR:!2022-09-18,1,230-->
 `
 
@@ -102,10 +102,7 @@ clearTimeout(timeoutID)
 <!--SR:!2022-09-18,1,230-->
 
 #🧠 React：useEffect是否會遇到bounce問題？為什麼 ->->-> `會，具體是因為useEffect 所註冊的effect 面對接收到的請求都是一個請求被接收到就馬上被處理，所以會有N個請求，就會有N個回應。`
-
-
-那麼若遇上連續發送事件觸發的場景下是要取得最後一個請求資訊的目標，勢必在取得最後一個請求資訊之前會有大量不必要的請求處理浪費著資源`
-<!--SR:!2022-09-20,3,250-->
+<!--SR:!2022-09-19,2,247-->
 
 
 #🧠 React：如何在useEffect的debouncing 實現是在useEffect 使用setTimemout 來夾雜side effect原本實現代碼，然後紀錄當前的timeout的任務ID，定義著useEffect的cleanup來依照timeoue任務ID來取消任務，那麼實際如何執行？如何確保就是最後一個請求？->->-> `首次元件開始mounting就生成setTimeout任務，並定義cleanup任務是要清除掉當前timeout的任務，接著若下一個effect被觸發就先執行cleanup任務來清除上一個timeout非同步任務，然後重新生成timeout任務，接著定義cleanup來清除這次生成的timeout任務，後面依此類推，直到沒觸發，代表當前timeout任務正執行著最後一個請求。`
@@ -116,6 +113,8 @@ clearTimeout(timeoutID)
 
 #🧠 React：在useEffect的debouncing 實現中， 是如何實現為當前effect觸發處理而生成一個非同步計時任務->->-> `以setTimeout(callback,500)來生成非同步任務，並回傳其任務ID作為cleanup的依據 const identifier = setTimeout(() => { // do something setState(....); }, 500);`
 <!--SR:!2022-09-20,3,250-->
+
+#🧠 React：以下是使用setTimeout + cleanup 來實現的debouncing代碼，請問其中的clearTimeout的identifier會是什麼？，若下一個side effect執行時執行cleanup又是指哪個identifier![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png) ->->-> `會是設定當前產生出來timeout任務ID，並於下一個side effect執行前就執行cleanup的identifier會是指上一個effect產生出來的timeout任務ID`
 
 
 #🧠 React：請用setTimeout + cleanup 程式碼來實現effect的debouncing概念 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png)`
