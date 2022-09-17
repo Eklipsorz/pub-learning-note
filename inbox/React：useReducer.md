@@ -46,6 +46,18 @@ initFn
 主要是定義如何設定初始值
 
 
+
+### reducerFn
+
+useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外，這是為了確保reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動以及保證只會用到全域或者reducer函式內所定義/接收到的資料
+
+  
+
+> All the data which will be required and used inside of the reducer function will be passed into this function when it's executed by React, automatically.
+
+
+
+
 ### reduce / reduction
 > reduction refers to **the rewriting of an expression into a simpler form**.
 
