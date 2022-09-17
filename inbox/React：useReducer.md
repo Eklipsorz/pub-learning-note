@@ -10,25 +10,21 @@ useReducer：
 > sometimes, you have more complex state - for example if it got multiple states, multiple ways of changing it or dependencies to other states
 
 
-multiple states that kind of belong together, that are managing the same thing, just different aspects of it
+> multiple states that kind of belong together, that are managing the same thing, just different aspects of it
 
-比如實際上有多個狀態B可以組裝成一個狀態A，只是分離從龐大的狀態A分離成好幾個狀態B
-
-
-
-
+### useReducer 語法介紹
 
 
 ```
 const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 ```
 
-useReducer 會回傳兩個元素的陣列：
-	- state 是目前狀態的snapshot
+重點：
+- useReducer 會註冊一個hook 在目前元件上，並且主要以**多個狀態歸納成一個大狀態** 的方式來控管狀態。
+- useReducer 會回傳兩個元素的陣列：
+	- state 是目前狀態的snapshot，實際上是儲存當前狀態值的變數，並非真是負責儲存每次狀態的變數
 	- dispatchFn 是更新狀態的snapshot
-
-
-dipatchFn 主要會派遣action至useReducer中的reducerFn中，其dipatchFn形式如下：
+- dipatchFn 主要會派遣action至useReducer中的reducerFn中，其dipatchFn形式如下：
 	- action 是定義著分派給reduceFn的任務是什麼
 ```
 dipatchFn(action)
