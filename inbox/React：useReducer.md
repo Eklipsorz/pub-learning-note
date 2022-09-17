@@ -9,8 +9,51 @@ useReducer 會回傳兩個元素的陣列：
 	- dispatchFn 是更新狀態的snapshot
 
 
-dispatchFn 是 會
-> dispatch an action
+dipatchFn 主要會派遣action至useReducer中的reducerFn中，其dipatchFn形式如下：
+	- action 是定義著分派給reduceFn的任務是什麼
+```
+dipatchFn(action)
+```
+
+舉例：
+```
+ dispatch({ type: "COMPLETE", id: todo.id });
+```
+
+reducerFn 為 
+- 依據action 來回傳狀態、更新狀態&觸發渲染週期，並於每一次渲染週期分配新狀態值給state，其引數為兩個，分別為prevState 和 action
+- prevState 為 先前狀態，其狀態會是指React 層級所管理的，action 則是指dispatch所製造的action
+- 只要一旦接收到由dispatch所製造的action 就自動執行：接收目前狀態的snapshot、處理並回傳新狀態、更新狀態、觸發渲染週期
+
+```
+(prevState, action) => {
+	.....
+}
+```
+
+
+
+ >(prevState, action) => newState
+> A function that is triggered automatically once an action is dispatched (via dispatchFn()) – it receives the latest state snapshot and should return the new, updated state.
+
+
+initialState ：定義初始狀態
+> The initial state
+
+initFn
+> a function to set the initial state programmatically
+
+主要是定義如何設定初始值
+
+
+### reduce / reduction
+> reduction refers to **the rewriting of an expression into a simpler form**.
+
+重點：
+- reduce 是將複雜的事物轉換成單一簡單的事物
+
+### reducer 命名緣由
+負責將複雜事物轉換成單一簡單事物的函式、儀器、機器，在這裡會是將多個狀態合併一個狀態來管理。
 
 ## 複習
 

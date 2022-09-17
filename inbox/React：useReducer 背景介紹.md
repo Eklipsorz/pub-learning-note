@@ -100,11 +100,7 @@ if you update a state, which depends on another state, then merging this into on
 
 useReducer() can be used as a replacement for useState() if you need more powerful state management
 
-### reduce / reduction
-> reduction refers to **the rewriting of an expression into a simpler form**.
 
-重點：
-- reduce 是將複雜的事物轉換成單一簡單的事物
 
 ## 複習
 
