@@ -1,5 +1,24 @@
 ## 描述
 
+
+### useReducer 介紹
+useReducer：
+1. React 內建的HOOK
+2. 用作於狀態管理(與useState相似，但比較多功能來處理較為複雜狀態)
+
+
+> sometimes, you have more complex state - for example if it got multiple states, multiple ways of changing it or dependencies to other states
+
+
+multiple states that kind of belong together, that are managing the same thing, just different aspects of it
+
+比如實際上有多個狀態B可以組裝成一個狀態A，只是分離從龐大的狀態A分離成好幾個狀態B
+
+
+
+
+
+
 ```
 const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn);
 ```
@@ -103,5 +122,7 @@ useReducer 中的 reducerFn 定義會另外定義成named function 並放在comp
 ---
 Status: #🌱 #📓 
 Tags:
+[[React]]
 Links:
+[[React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼]]
 References:
