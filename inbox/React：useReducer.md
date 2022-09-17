@@ -46,6 +46,22 @@ initFn
 主要是定義如何設定初始值
 
 
+### dispatchFn
+
+action ： it can be a string identifier ，具體定義由開發者定義
+
+e.g., 'NEW_EMAIL_VALUE' or number or  {....}
+
+  
+
+常見是將action當成任務代號，並由reducer解析代號來產生對應的狀態。
+
+  
+
+命名方式會是由物件包含著，屬性會有type和payload
+
+dispatchEmail({type: .....,value})
+
 
 ### reducerFn
 
@@ -54,6 +70,20 @@ useReducer 中的 reducerFn 定義會另外定義成named function 並放在comp
   
 
 > All the data which will be required and used inside of the reducer function will be passed into this function when it's executed by React, automatically.
+
+
+> now with the help of useReducer. And this allows us to group this emailState together and manage it in one place
+
+
+
+
+> reducer 給定的function(state, action)
+
+> state 會被保證一定是目前最新的狀態
+>
+> So therefore I'll use my last state snapshot, which i get here. And that this is guaranteed to be the absolute last state snapshot
+
+> reducer 開發上會依據action給予的資訊來調整要回傳的狀態是什麼？
 
 
 
