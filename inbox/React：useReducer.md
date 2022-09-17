@@ -87,16 +87,35 @@ reducerFn 為 一個函式，具體會有兩個引數分別為prevState和action
 - prevState 為 先前狀態，其狀態會是指React 層級所管理的，action 則是指dispatch所製造的action
 - 只要一旦接收到由dispatch所製造的action 就自動執行
 - 形式會是如下：
+	- new-state 會是新狀態
 ```
 (prevState, action) => {
-	.....
+	return new-state
 }
 ```
 
 
 
+#### (prevState, action) 函式常見形式
 
-#### useReducer 語法使用方式
+```
+function reducer(state, action) {
+  let newState;
+  switch (action.type) {
+    case 'increase':
+      newState = { counter: state.counter + 1 };
+      break;
+    case 'descrease':
+      newState = { counter: state.counter - 1 };
+      break;
+    default:
+      throw new Error();
+  }
+  return newState;
+}
+```
+
+#### reducerFn 語法使用方式
 
 1. useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外
 2. 目的：為了確保
@@ -134,6 +153,14 @@ export default Componet
 1. 目前狀態都會被React儲存。
 2. 狀態更新都是在dispatch 所發送的action 或者 由React內部提供。
 3. 狀態都歸納成同一個狀態，不會有依賴舊有狀態的問題。
+
+
+#### reducerFn 觸發的狀態渲染會有auto-batching
+對
+
+```
+
+```
 
 ### initialState
 initialState ：定義初始狀態
