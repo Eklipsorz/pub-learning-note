@@ -4,18 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "aa1a20cc12e7f161",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "MOC/React MOC.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "58b3aa1bb746a642",
         "type": "leaf",
         "state": {
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/React MOC.md",
+                "file": "inbox/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,14 +95,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "aa1a20cc12e7f161",
+  "active": "58b3aa1bb746a642",
   "lastOpenFiles": [
-    "inbox/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
+    "MOC/React MOC.md",
     "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
+    "inbox/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
     "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
     "inbox/(待研究)border-radius 失效，可能原因為overflow沒藏好.md",
     "inbox/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
-    "MOC/React MOC.md",
     "MOC/Rendering MOC.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",

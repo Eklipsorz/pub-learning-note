@@ -99,7 +99,7 @@ button.addEventListener('click', debounce(function() {
 <!--SR:!2022-09-20,3,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 Links:
 References:
