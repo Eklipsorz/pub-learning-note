@@ -156,11 +156,53 @@ export default Componet
 
 
 #### reducerFn 觸發的狀態渲染會有auto-batching
-對
+
+設定email輸入欄位的change事件處理會執行8次dispatch來向reducer提出8次更新狀態、渲染的請求，但結果最後執行一次狀態更新和渲染，並沒有8次的更新狀態、渲染
 
 ```
+const reducer = (prevState, action) => {
+  console.log('hi reducer');
+  switch (action.type) {
+    case 'INPUT_CHANGE':
+      return { value: action.value, isValid: action.value.includes('@') };
+    case 'INPUT_BLUR':
+      return { value: prevState.value, isValid: prevState.isValid };
+    default:
+      return { value: '', isValid: null };
+  }
+};
 
+const Login = (props) => {
+  const [emailState, emailDispatch] = useReducer(reducer, {
+    value: '',
+    isValid: null,
+  });
+  console.log('hi login component');
+  /*
+  
+	  do something
+	  
+  */
+  const emailChangeHandler = (event) => {
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+    emailDispatch({ type: 'INPUT_CHANGE', value: '2' });
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+    emailDispatch({ type: 'INPUT_CHANGE', value: '3' });
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+    setFormIsValid(
+      .........
+    );
+  };
+
+	
+}
 ```
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663439448/blog/react/state/useReducer/useReducer-auto-batching-experiment_k9ijrv.png)
+
 
 ### initialState
 initialState ：定義初始狀態
