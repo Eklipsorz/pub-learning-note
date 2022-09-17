@@ -6,6 +6,7 @@
       {
         "id": "58b3aa1bb746a642",
         "type": "leaf",
+        "dimension": 50.037509377344335,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,6 +19,7 @@
       {
         "id": "8e940ae554712328",
         "type": "leaf",
+        "dimension": 49.962490622655665,
         "state": {
           "type": "markdown",
           "state": {
@@ -107,7 +109,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8e940ae554712328",
+  "active": "58b3aa1bb746a642",
   "lastOpenFiles": [
     "inbox/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md",
     "inbox/React：useReducer.md",
