@@ -63,8 +63,12 @@ return (
 ```
 
 這會引發一個潛在問題：
-- emailIsValid的ㄓㄨㄤ
+- emailIsValid的狀態值會是依賴著另一個狀態值enteredEmail來做決定，而狀態值enteredEmail很有可能因為setState變更狀態的時間差而不會是最新的。
+- emailIsValid變更狀態用的函式所支援的callback只會以emailIsValid目前要求的最新狀態來更新，並不能夠以callback形式來取得enteredEmail目前要求的最新狀態值來更新
 
+
+
+狀態更新是全域
 
 ### 繼續使用useState的潛在問題
 多個狀態＋這些狀態原本從一個大狀態分離出來
