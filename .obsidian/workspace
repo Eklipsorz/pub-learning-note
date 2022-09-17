@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：useReducer.md",
+            "file": "inbox/React：useReducer 背景介紹.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useReducer.md",
+                "file": "inbox/React：useReducer 背景介紹.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,8 +97,8 @@
   },
   "active": "58b3aa1bb746a642",
   "lastOpenFiles": [
-    "inbox/React：useReducer 背景介紹.md",
     "inbox/React：useReducer.md",
+    "inbox/React：useReducer 背景介紹.md",
     "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "inbox/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
     "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
