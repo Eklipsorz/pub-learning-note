@@ -24,7 +24,7 @@
 <!--SR:!2022-10-22,83,230-->
 
 #🧠 express-session上的resave功能是什麼？->->-> ` resave功能是只要與client進行連線，那伺服器就會根據對應client的session內容重新寫進另一份session至store，最新的session會綁定新的過期時間，舊的session則會因為舊的過期時間而被釋放或者是直接被刪除`
-<!--SR:!2022-09-18,71,250-->
+<!--SR:!2023-03-14,177,250-->
 
 #🧠 express-session：如何釋放閒置sesion(提示：express-session 和session store是獨立的)->->-> `由於express-session與session-store進行分割，express-session管理好自己的業務-管理整體的session和cookie，同時也委託session-store負責管理儲存/釋放session存在session，所以具體來說會依賴著store本身是否具有機制能夠移除閒置不用的session`
 <!--SR:!2022-10-18,80,248-->
