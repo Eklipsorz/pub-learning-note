@@ -141,3 +141,15 @@
 [[React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
 
 [[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
+
+
+## useReducer
+
+[[React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback]]
+
+[[React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態]]
+[[useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜]]
+
+[[React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼]]
+
+[[(待研究)React：若component上的console在useReducer之後和之前，其印出的資訊順序皆為不同]]

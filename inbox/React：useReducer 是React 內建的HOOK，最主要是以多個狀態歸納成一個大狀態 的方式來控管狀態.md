@@ -314,9 +314,11 @@ initFn：主要是定義如何設定初始值
 
 
 
-#🧠 React：請用Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
+#🧠 React：請畫圖來表示Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
 
+#🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
 
+#🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
 
 
 
