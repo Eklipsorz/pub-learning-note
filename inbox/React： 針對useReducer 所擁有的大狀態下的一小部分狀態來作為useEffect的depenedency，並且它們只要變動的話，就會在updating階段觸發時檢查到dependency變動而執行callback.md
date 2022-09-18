@@ -1,6 +1,62 @@
 ## 描述
 
 
+
+
+
+### useReducer 的狀態組成
+
+通常使用useReducer將原本從useState所註冊的多個獨立狀態組合成一個物件，其物件屬性名稱和屬性值會是這些獨立狀態名稱和獨立狀態值。
+
+比如說以下由useState所註冊的狀態變數
+```
+state1 = value1
+state2 = value2
+state3 = value3
+.
+.
+```
+
+經過useReducer轉換就變成：
+```
+{
+	state1: value1,
+	state2: value2,
+	state3: value3,
+	.
+	.
+}
+```
+
+
+### useReducer 所回傳的狀態
+[[React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態]]
+
+
+useReducer 所回傳的狀態會由useReducer(reducer,..) 的reducer所決定，通常該函式主要會依據著dispatch給定的action來決定下一個新狀態是什麼？通常會是配給一個新記憶體來建立物件，物件屬性仍會以原有useState所註冊的狀態來組合。
+
+```
+function reducer(state, action) {
+  let newState;
+  switch (action.type) {
+    case 'increase':
+      newState = { counter: state.counter + 1 };
+      break;
+    case 'descrease':
+      newState = { counter: state.counter - 1 };
+      break;
+    default:
+      throw new Error();
+  }
+  return newState;
+}
+```
+
+
+### 使用useReducer的狀態來做為useEffect 的執行依據
+
+
+
 the effect runs too often
 
 
