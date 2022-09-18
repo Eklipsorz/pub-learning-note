@@ -1,0 +1,119 @@
+## 描述
+
+### 文獻
+[[@reactUsingEffectHook]]
+> **When exactly does React clean up an effect?** React performs the cleanup when the component unmounts
+
+> If you want to run an effect and clean it up only once (on mount and unmount), you can pass an empty array (`[]`) as a second argument. This tells React that your effect doesn’t depend on _any_ values from props or state, so it never needs to re-run. This isn’t handled as a special case — it follows directly from how the dependencies array always works.
+
+[[@heidi-liuWeek21Reacta]]
+> Hook 執行流程可分為三個部分：
+>
+> -   Mount：把 component 放到畫面上
+> -   Update：更新 state 流程
+>-   Unmount：清除 effect
+
+
+> ### cleanup function 執行時機
+> 結合上述範例，cleanup function 執行的時間點有兩個：
+> 
+> -   要執行下一個 useEffect 的時候，要先清除上一個 effect
+> -   component unmount 的時候，會清除 effect
+
+
+重點：
+- 從片面可得知，每當元件發生unmount就會執行cleanup：但不能夠確定只是執行cleanup
+- 從片面可得知，unmount會和mount不管dependency是什麼，都會執行
+- useEffect：cleanup function執行時機：
+	- 執行下一個useEffect之前，會執行effect cleanup
+	- component 被 unmount前，會執行effect cleanup
+### 實驗
+
+Container.js：分為Container和Child這兩個元件，前者是用class component來撰寫，後者則是用function component，Container元件包含著Child元件，當對Container元件上的按鈕進行點擊時，就會unmount Child元件，這時就會觸發Child 元件的componentWillUnmount週期函式，或者由useEffect來幫忙處理，在這裡還特定替useEffect 添加空陣列做為dependency，來觀察說是不是只有mount才會直接執行
+```
+import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
+
+class Container extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { show: true };
+  }
+  delHeader = () => {
+    this.setState({ show: false });
+  };
+  render() {
+    let myheader;
+    if (this.state.show) {
+      myheader = <Child />;
+    }
+    return (
+      <div>
+        {myheader}
+        <button type='button' onClick={this.delHeader}>
+          Delete Header
+        </button>
+      </div>
+    );
+  }
+}
+
+function Child(props) {
+  let test = 1
+  useEffect(() => {
+	alert('trigger effect');
+    return () => {
+      console.log('cleanup');
+    };
+  }, []);
+  
+  return <h1>Hello World!</h1>;
+}
+
+export default Container;
+```
+
+以及將dependency去掉：
+```
+function Child(props) {
+  let test = 1
+  useEffect(() => {
+	alert('trigger effect');
+    return () => {
+      console.log('cleanup');
+    };
+  });
+```
+
+結果：
+- 理論上，當Child元件發生unmount就會觸發effect，並檢查dependency是否變動，有變動才會執行useEffect(callback)中的callback，在這裡分別設定[]和去掉dependency，所以預期的話，[]不會執行，去掉dependency的話則是會執行
+- 實際上，無論dependency是什麼，它都不是執行useEffect(callback)的callback，而是去執行useEffect的cleanup 函式
+
+
+### 總結
+當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect，目的是為了移除不必要的effect
+
+
+
+## 複習
+
+#🧠 React：useEffect cleanup function 執行時機是什麼？ ->->-> `執行下一個useEffect前，會執行cleanup、component被unmount前，會執行effect cleanup`
+
+#🧠 當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？為什麼？ ->->-> `會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
+
+#🧠 當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？為什麼？若設定dependency為空陣列的話 ->->-> ``
+
+
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+---
+Status: #🌱 
+Tags:
+[[React]]
+Links:
+References:
+[[@reactUsingEffectHook]]
+[[@heidi-liuWeek21Reacta]]

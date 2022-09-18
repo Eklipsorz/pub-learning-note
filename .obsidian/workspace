@@ -6,24 +6,22 @@
       {
         "id": "58b3aa1bb746a642",
         "type": "leaf",
-        "dimension": 50.03750937734433,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 2.md",
+            "file": "inbox/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "8e940ae554712328",
+        "id": "4238c9925de72774",
         "type": "leaf",
-        "dimension": 49.96249062265567,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
+            "file": "inbox/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
             "mode": "source",
             "source": false
           }
@@ -83,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 2.md",
+                "file": "inbox/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,17 +107,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "58b3aa1bb746a642",
+  "active": "4238c9925de72774",
   "lastOpenFiles": [
-    "inbox/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
+    "inbox/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
+    "inbox/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
     "inbox/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md",
     "inbox/(待研究)React：若component上的console在useReducer之後和之前，其印出的資訊順序皆為不同.md",
     "inbox/React： useReducer 案例.md",
     "inbox/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-    "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md",
-    "develop/React/React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md"
+    "develop/render/CSS 只是定義特定樣式名稱是會有什麼樣外觀的規格書，本身會具有語法重複、可維護性低、可讀性很差這三大開發性問題.md"
   ]
 }
