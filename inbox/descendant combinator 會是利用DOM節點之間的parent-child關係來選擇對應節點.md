@@ -23,7 +23,7 @@
 ## 複習
 
 #🧠 descendant combinator 是什麼？ ->->-> `descendant combinator 會是利用DOM節點之間的parent-child關係來選擇對應節點`
-<!--SR:!2022-09-18,4,230-->
+<!--SR:!2022-09-29,11,230-->
 
 #🧠 descendant combinator 的主要形式是什麼？ ->->-> `主要由多個基本selector和空格所構成，每個selector之間會用空格相連接`
 <!--SR:!2022-10-12,28,250-->

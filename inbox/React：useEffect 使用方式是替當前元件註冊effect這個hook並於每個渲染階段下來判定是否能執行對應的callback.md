@@ -186,13 +186,13 @@ this is use effect
 `
 
 #🧠 React：當畫面A被切換成畫面B時，unmounting 和 mounting會是如何？ ->->-> `當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B`
-<!--SR:!2022-09-18,3,250-->
+<!--SR:!2022-09-27,9,250-->
 
 #🧠 React：當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B，請問畫面A會和畫面B一樣嗎？->->-> `- 畫面A 和 畫面B 都是畫面A - 畫面A 和 畫面B 都不一樣`
 <!--SR:!2022-09-18,3,250-->
 
 #🧠 React：useEffect(a, b) 語法中的a 和 b是什麼？useEffect又是做什麼？ ->->-> `useEffect 語法：會替當前元件註冊effect。第一個引數為callback，第二個引數為設定哪些dependencies 改變才會觸發前面的callback，用陣列表示`
-<!--SR:!2022-09-18,3,250-->
+<!--SR:!2022-09-28,10,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時觸發? ->->-> `會是同個元件的生命週期函式： - mounting階段時的componentDidMount週期函式 - updating階段時的componentDidUpdate 週期函式 `
 
@@ -218,13 +218,13 @@ this is use effect
 
 
 #🧠 React：callback 和 dependencies之間的關係是如何 ->->-> `每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
-<!--SR:!2022-09-18,3,250-->
+<!--SR:!2022-09-27,9,250-->
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、變數`
 <!--SR:!2022-09-18,3,250-->
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空陣列的話，會是指什麼？ ->->-> `若是空陣列[] 的話，就等同設定永不改變的dependency`
-<!--SR:!2022-09-18,3,250-->
+<!--SR:!2022-09-27,9,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
