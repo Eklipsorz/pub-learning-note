@@ -54,7 +54,23 @@ useEffect( () => {
 ### useEffect + cleanup function 要實現什麼？
 主要實現debouncing效果來在由互動而產生出的大量連續請求之下取出最後最新的請求來處理。
 
+
+### useEffect 的 cleanup function 執行時機
+
+
+> ### cleanup function 執行時機
+> 結合上述範例，cleanup function 執行的時間點有兩個：
+> 
+> -   要執行下一個 useEffect 的時候，要先清除上一個 effect
+> -   component unmount 的時候，會清除 effect
+
+useEffect：cleanup function執行時機：
+	- 執行下一個useEffect之前，會執行effect cleanup
+	- component 被 unmount前，會執行effect cleanup
+
 ## 複習
+
+#🧠 useEffect：cleanup function執行時機是什麼？ ->->-> `	- 執行下一個useEffect之前，會執行effect cleanup - component 被 unmount前，會執行effect cleanup`
 
 #🧠 React ：useEffect + cleanup function 要實現什麼？ ->->-> `主要實現debouncing效果來在由互動而產生出的大量連續請求之下取出最後最新的請求來處理。`
 <!--SR:!2022-09-19,3,250-->

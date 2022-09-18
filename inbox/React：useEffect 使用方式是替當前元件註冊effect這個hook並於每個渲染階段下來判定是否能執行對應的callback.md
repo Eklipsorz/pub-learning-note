@@ -58,20 +58,31 @@ dependencies：
 	- 若是沒設定任何dependency的話，就等同設定永遠改變的dependency
 
 
-#### 何時執行
+#### 何時執行side effect
 
 [[@ithomeReactJsRuMen20]]
 > 是`componentDidMount`、`componentWillUnmount`和`componentDidUpdate`這三個函數，而React hook把這三者整合起來，變成了`useEffect`。
 
-每一次useEffect的觸發時間點會是同個元件的生命週期函式：
+每一次useEffect的side effect 觸發時間點會是同個元件的生命週期函式：
 - mounting階段時的componentDidMount週期函式
 - updating階段時的componentDidUpdate 週期函式
-- unmount階段時的componentWillUnmoun週期函式
+- ~~unmount階段時的componentWillUnmoun週期函式~~
 
 
 1. 在mounting階段進行useEffect的hook綁定，並於mounting階段的componentDidMount週期來直接執行useEffect的callback
 2. 若觸發updating階段，那麼就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
-3. 若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
+3. ~~若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback~~
+3. 在unmounting 階段下，會無視dependency是什麼，直接執行side effect中的cleanup function
+
+[[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
+
+#### 總結
+
+React：useEffect註冊在一個元件下，請問元件下的哪些階段會執行useEffect的side effect ？ `mounting階段的componentDidMount、updating階段下的componentDidUpdate`
+
+React：useEffect註冊在一個元件下，請問元件下的哪些階段會觸發useEffect的檢查來執行 ？`updating階段下的componentDidUpdate`
+
+React：useEffect註冊在一個元件下，元件的unmount如何執行useEffect ？ `會無視dependency，直接執行useEffect下的cleanup`
 
 
 ##### 案例：
@@ -160,6 +171,13 @@ this is use effect
 
 ## 複習
 
+#🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會執行useEffect的side effect ->->-> `mounting階段的componentDidMount、updating階段下的componentDidUpdate`
+
+#🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會觸發useEffect的檢查來執行 ->->-> `updating階段下的componentDidUpdate`
+
+#🧠 React：useEffect註冊在一個元件下，元件的unmount如何執行useEffect ->->-> `會無視dependency，直接執行useEffect下的cleanup`
+
+
 #🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，並觸發effect，隨後若發生updating或者unmounting的話，預設上會再去觸發effect來檢查dependencies。
 <!--SR:!2022-09-18,3,250-->
 
@@ -185,10 +203,10 @@ this is use effect
 #🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback`
 <!--SR:!2022-09-18,3,250-->
 
-#🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating、unmount階段下觸發，並檢查，但檢查結果會是dependency一直變動而直接執行`
+#🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
 <!--SR:!2022-09-18,3,250-->
 
-#🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，其他階段會觸發並檢查，但檢查會認為dependency沒在變動而不執行`
+#🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
 <!--SR:!2022-09-18,3,250-->
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `了只會在元件的mounting階段下直接執行以外，updating、unmount階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`
@@ -223,6 +241,8 @@ Tags:
 [[React]]
 Links:
 [[React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能]]
+[[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
+[[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 References:
 [[@ReactUseEffect]]
 [[@ithomeReactJsRuMen20]]
