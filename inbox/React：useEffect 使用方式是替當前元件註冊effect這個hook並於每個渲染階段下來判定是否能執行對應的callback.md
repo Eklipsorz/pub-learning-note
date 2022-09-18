@@ -231,7 +231,7 @@ this is use effect
 <!--SR:!2022-09-18,3,250-->
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時後，會判斷任一dependency是否變動嗎 ->->-> `並不會，會直接執行callback`
-<!--SR:!2022-09-18,3,250-->
+<!--SR:!2022-09-26,8,250-->
 
 
 #🧠 React：請解釋以下的useEffect案例![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663250177/blog/react/effect/react-useeffect-example_knoaw1.png)->->-> `當App這個元件進行mounting來呈現實際DOM時，會註冊著useEffect這個hook，並於mounting階段下的componentDidMount生命週期函式觸發callback，由於是第一次執行，所以會直接先執行callback，而callback會檢查localStorage的isLoggedIn是否為1，若1就認為是合法使用者在登入，若不是就認為必須要進行登入來寫入isLoggedIn='1'至localStorage 在這裡會沒這筆資料，所以就透過登入的成功來將isLoggedIn='1'寫入至localStorage，之後每一次只要重新進行App的mounting階段： - 畫面A 切換成 畫面B (畫面AB都可以一樣和不一樣)，就會直接被系統認定為合法使用者，而引領使用者登入成功的畫面`
