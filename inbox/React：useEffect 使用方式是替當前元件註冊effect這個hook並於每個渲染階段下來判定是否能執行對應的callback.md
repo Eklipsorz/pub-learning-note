@@ -50,7 +50,7 @@ useEffect(() => {
 ```
 
 dependencies：
-- dependencies 會是定義著callback所需要的狀態、props、變數
+- dependencies 會是定義著callback所需要的狀態、props、其他能夠跟著互動而變動的資料
 - 主要會指定監聽哪些dependency有沒有變動
 - 若任一變動就允許執行useEffect
 - 特例：
@@ -172,13 +172,17 @@ this is use effect
 ## 複習
 
 #🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會執行useEffect的side effect ->->-> `mounting階段的componentDidMount、updating階段下的componentDidUpdate`
+<!--SR:!2022-09-21,3,250-->
 
 #🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會觸發useEffect的檢查來執行 ->->-> `updating階段下的componentDidUpdate`
+<!--SR:!2022-09-21,3,250-->
 
 #🧠 React：useEffect註冊在一個元件下，元件的unmount如何執行useEffect ->->-> `會無視dependency，直接執行useEffect下的cleanup`
+<!--SR:!2022-09-21,3,250-->
 
 
 #🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，並觸發effect，隨後若發生updating，預設上會再去觸發effect來檢查dependencies。
+<!--SR:!2022-09-21,3,250-->
 
 
 #🧠 React：若同一個元件因為viewport的畫面切換而發生unmount並重新發生mounting，請問會如何保留新舊的hook? ->->-> `在發生unmount 就會移除舊有effect，並於mounting時期會再次產生額外的effect hook來綁定在該元件，觸發如同上述那樣`
@@ -195,33 +199,41 @@ this is use effect
 <!--SR:!2022-09-28,10,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時觸發? ->->-> `會是同個元件的生命週期函式： - mounting階段時的componentDidMount週期函式 - updating階段時的componentDidUpdate 週期函式 `
+<!--SR:!2022-09-21,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
+<!--SR:!2022-09-21,3,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在mounting階段時的componentDidMount週期函式會做什麼？ ->->-> `直接執行useEffect的callback`
 <!--SR:!2022-09-25,7,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback`
+<!--SR:!2022-09-21,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
+<!--SR:!2022-09-21,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
+<!--SR:!2022-09-21,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `除了只會在元件的mounting階段下直接執行以外，updating階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`
 <!--SR:!2022-09-28,10,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時的componentWillUnmount週期函式會做什麼？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
+<!--SR:!2022-09-21,3,250-->
 
 
-#🧠 React：callback 和 dependencies之間的關係是如何 ->->-> `每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
-<!--SR:!2022-09-27,9,250-->
+#🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係在每個元件的生命週期階段(mounting、unmounting、updating)是如何 ->->-> `在mounting和unmount並不會將dependencies納入使用，只會在updating才納入使用，每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
 
-#🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、變數`
-<!--SR:!2022-09-28,10,250-->
+#🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下的componentDidUpdate`
+
+
+#🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他能夠跟著互動而變動的資料`
+
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空陣列的話，會是指什麼？ ->->-> `若是空陣列[] 的話，就等同設定永不改變的dependency`
 <!--SR:!2022-09-27,9,250-->
@@ -230,8 +242,8 @@ this is use effect
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
 <!--SR:!2022-09-27,9,250-->
 
-#🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時後，會判斷任一dependency是否變動嗎 ->->-> `並不會，會直接執行callback`
-<!--SR:!2022-09-26,8,250-->
+#🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時後，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
+
 
 
 #🧠 React：請解釋以下的useEffect案例![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663250177/blog/react/effect/react-useeffect-example_knoaw1.png)->->-> `當App這個元件進行mounting來呈現實際DOM時，會註冊著useEffect這個hook，並於mounting階段下的componentDidMount生命週期函式觸發callback，由於是第一次執行，所以會直接先執行callback，而callback會檢查localStorage的isLoggedIn是否為1，若1就認為是合法使用者在登入，若不是就認為必須要進行登入來寫入isLoggedIn='1'至localStorage 在這裡會沒這筆資料，所以就透過登入的成功來將isLoggedIn='1'寫入至localStorage，之後每一次只要重新進行App的mounting階段： - 畫面A 切換成 畫面B (畫面AB都可以一樣和不一樣)，就會直接被系統認定為合法使用者，而引領使用者登入成功的畫面`

@@ -115,6 +115,7 @@ clearTimeout(timeoutID)
 <!--SR:!2022-09-20,3,250-->
 
 #🧠 React：以下是使用setTimeout + cleanup 來實現的debouncing代碼，請問其中的clearTimeout的identifier會是什麼？，若下一個side effect執行時執行cleanup又是指哪個identifier![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png) ->->-> `會是設定當前產生出來timeout任務ID，並於下一個side effect執行前就執行cleanup的identifier會是指上一個effect產生出來的timeout任務ID`
+<!--SR:!2022-09-20,2,247-->
 
 
 #🧠 React：請用setTimeout + cleanup 程式碼來實現effect的debouncing概念 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png)`
@@ -125,7 +126,7 @@ Status: #🌱 #📓
 Tags:
 [[React]]
 Links:
-[[React：useEffect & Dependencies 之間關係就在於每一次effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
+[[React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
 [[React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback]]
 [[React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能]]
 [[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]

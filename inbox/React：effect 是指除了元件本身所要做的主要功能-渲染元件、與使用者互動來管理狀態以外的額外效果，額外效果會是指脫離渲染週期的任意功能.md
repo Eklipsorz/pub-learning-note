@@ -69,7 +69,7 @@ render() {
 
 將能夠觸發渲染週期的side effect 另外設定額外條件來執行(除了進入渲染週期以外的條件)，比如：
 - 判定某些指定內容是否有改變，有改變就執行；沒改變就不執行
-[[React：useEffect & Dependencies 之間關係就在於每一次effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
+[[React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
 
 	~~- function component：使用useEffect所建立的執行環境~~
 	~~- class：使用生命週期函式，通常會放在~~
@@ -142,7 +142,7 @@ Tags:
 [[React]]
 Links:
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
-[[React：useEffect & Dependencies 之間關係就在於每一次effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
+[[React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
 [[瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染]]
 References:
 [[@academindReactcompleteguidecodeButtonModule]]
