@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
+            "file": "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
+                "file": "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
