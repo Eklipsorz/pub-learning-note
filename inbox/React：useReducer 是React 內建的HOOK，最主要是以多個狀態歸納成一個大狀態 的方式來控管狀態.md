@@ -13,7 +13,7 @@ useReducer：
 > multiple states that kind of belong together, that are managing the same thing, just different aspects of it
 
 
-![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663521208/blog/react/state/useReducer/useReducer-relationship_iid2qe.png)
 
 ### useReducer 語法介紹
 
@@ -265,7 +265,16 @@ initFn：主要是定義如何設定初始值
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
 
 
-#🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> ``
+#🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
+
+#🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
+
+#🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
+
+#🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
+
+#🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
+
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
 
@@ -305,7 +314,7 @@ initFn：主要是定義如何設定初始值
 
 
 
-#🧠 Question :: ->->-> ``
+#🧠 React：請用Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
 
 
 
