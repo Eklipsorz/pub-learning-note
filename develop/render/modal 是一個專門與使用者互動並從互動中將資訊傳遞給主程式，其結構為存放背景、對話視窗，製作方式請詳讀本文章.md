@@ -219,11 +219,11 @@ modal ：對話窗內容
 <!--SR:!2022-09-21,6,248-->
 
 #🧠 modal 主體架構中的modal是指什麼？ ->->-> `對話窗內會含有header、body、footer這三個部分，當按下footer的okey或者點dialog任意位置就會讓對話窗消失`
-<!--SR:!2022-09-19,4,249-->
+<!--SR:!2022-10-01,12,249-->
 
 
 #🧠 modal 主體架構有什麼？請用下圖來畫出架構 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662724421/blog/frontend/dialog/dialog-origin_tf3iqi.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662660001/blog/frontend/dialog/dialog_xeooko.png)`
-<!--SR:!2022-09-19,6,250-->
+<!--SR:!2022-10-06,17,250-->
 
 
 #🧠 modal主體架構中負責存放modal部分的區塊所要實現的目標是什麼？ ->->-> `一個佔滿viewport的空間、背景為白色的透明色、能夠存放對話窗整個內容`

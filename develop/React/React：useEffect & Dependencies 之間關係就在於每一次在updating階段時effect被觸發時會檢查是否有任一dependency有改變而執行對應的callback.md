@@ -105,7 +105,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 ## 複習
 
 #🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `callback則是定義side effect的內容。`
-<!--SR:!2022-09-19,3,250-->
+<!--SR:!2022-09-29,10,250-->
 
 #🧠 React：useEffect(callback, dependencies) 的dependency設定目的 ->->-> `決定能否在每次觸發effect並執行side effect的因素、給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環`
 <!--SR:!2022-09-19,3,250-->
@@ -117,7 +117,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 <!--SR:!2022-09-19,3,250-->
 
 #🧠 React：通常會為了讓side effect也能夠運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，而將dependency設定什麼？ ->->-> `- props - 狀態 - 能代表互動並跟著互動而變動的資料`
-<!--SR:!2022-09-19,3,250-->
+<!--SR:!2022-09-29,10,250-->
 
 #🧠 React：side effect 通常會應用在運用互動狀態的資訊來渲染特定內容，而表示互動狀態的資訊會是指什麼？ ->->-> `能代表互動並跟著互動而變動的資料`
 <!--SR:!2022-09-19,3,250-->
@@ -126,13 +126,13 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 <!--SR:!2022-09-19,3,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，那麼dependency 不需要添加的部分，主要會是什麼？->->-> `主要會是不能夠代表互動狀態的資訊`
-<!--SR:!2022-09-19,3,250-->
+<!--SR:!2022-09-29,10,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容那麼dependency 不需要添加的部分，主要會是不能夠代表互動狀態的資訊，那麼內容具體是什麼？ ->->-> `更新狀態用的函式、其他非React能夠支援的API 或者對應函式、屬於其他元件或者元件以外的變數/函式`
-<!--SR:!2022-09-19,3,250-->
+<!--SR:!2022-09-29,10,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加更新狀態用的函式嗎？為什麼 ->->-> `不建議，因為更新狀態用的函式本身就不會被改變，且無法代表目前元件的互動狀態`
-<!--SR:!2022-09-19,3,250-->
+<!--SR:!2022-09-29,10,250-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加非React能夠支援的API 或者對應函式嗎？為什麼  ->->-> `不建議，因爲它們本身不會改變，且無法代表目前元件的互動狀態`
 <!--SR:!2022-09-19,3,250-->
@@ -141,7 +141,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 <!--SR:!2022-09-29,10,250-->
 
 #🧠 React：請問timerIsActive、timerDuration、setTimerIsActive、myTimer、setTimeout 可不可以放到dependency裡頭，為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663256225/blog/react/effect/react-use-effect-dependency-example_q3poat.png) ->->-> `- timerIsActive 本身是狀態，狀態本身只要更新就觸發更新和渲染而進入渲染週期，也就可以觸發useEffect，所以可以加入至dependency - timerDuration 本身是props的值，只要parent元件給定的資訊一改變，其元件就會跟著渲染而進入渲染週期，也就可以觸發useEffect，所以可以加入至dependency - setTimerIsActive 本身是狀態更新用的函式，就不會改變，無法代表目前元件的互動狀態，所以可以不用加入至dependency - myTimer 本身是元件外的變數，它的改變沒辦法代表目前元件的互動狀態，所以可以不用加入至dependency - setTimeOut 本身是非React的API，獨立於React，無法代表目前元件的互動狀態，所以不用加入dependency
-<!--SR:!2022-09-19,3,250-->
+<!--SR:!2022-09-29,10,250-->
 
 
 

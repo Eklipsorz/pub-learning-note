@@ -67,11 +67,11 @@
 <!--SR:!2022-10-02,15,230-->
 
 #🧠 每一個HTML元素在CSS上會被當成是什麼？ ->->-> `CSS box model`
-<!--SR:!2022-09-19,2,249-->
+<!--SR:!2022-09-24,5,249-->
 
 
 #🧠 CSS Box Model 是什麼結構？ ->->-> `是由多種Box組合在一起的結構，這些盒子都負責裝載特定內容，分別有Content Box、Padding Box、Border Box、Margin Box`
-<!--SR:!2022-09-19,10,250-->
+<!--SR:!2022-10-17,28,250-->
 
 #🧠 在CSS Box Model，Content Box 是什麼？ ->->-> `裝載HTML 元素的主要內容`
 <!--SR:!2022-10-02,17,250-->
@@ -90,7 +90,7 @@
 
 
 #🧠 在CSS Box Model，Border Box 是什麼？ ->->-> `本身負責裝載著Padding Box內容`
-<!--SR:!2022-09-19,10,250-->
+<!--SR:!2022-10-17,28,250-->
 
 
 #🧠 在CSS Box Model，Border Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由border-top、border-bottom、border-left、border-right來決定`
@@ -104,7 +104,7 @@
 <!--SR:!2022-09-19,10,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``
-<!--SR:!2022-09-19,10,250-->
+<!--SR:!2022-10-17,28,250-->
 
 
 
