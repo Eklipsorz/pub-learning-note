@@ -15,6 +15,23 @@
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661350629/blog/react/state/lifting-state-up_props_be8lkl.png)
 
+
+### 特定元件A的狀態改註冊至其parent元件上，算是lifting state up的技術一部分嗎？
+
+ 為什麼？ `並不算，其原因為lifting state up概念上是指將目前元件上的狀態往上傳遞至其parent元件，讓parent元件接收到並處理，而非註冊在parent元件`
+
+#### 總結差異：
+
+##### 狀態所有權
+1. 特定元件A的狀態註冊在其parent元件上 vs lifting state up ：
+	- 前者中，特定元件A由於轉移狀態，所以沒有被轉移過的狀態，而parent元件擁有特定元件A的狀態
+	- 後者中，特定元件A和parent元件的狀態還保有原有樣子
+
+##### 傳遞狀態方向
+1. lifting state up純粹將目前元件上的狀態往上傳遞至其parent元件，讓parent元件接收到並處理
+2. 特定元件A的狀態註冊在其parent元件：轉移後，parent元件就把狀態往下傳遞特定元件A
+
+
 ### 解析
 
 because we can now store our state in that closest involved component.
@@ -46,6 +63,18 @@ So in that parent component which has access to both involved components by lift
 
 #🧠 React： lifting state up 概念是什麼？->->-> `將特定元件A的狀態藉由parent元件給予的callback來通知parent元件有資料變動`
 <!--SR:!2022-10-18,33,230-->
+
+#🧠 React：特定元件A的狀態註冊在其parent元件上，特定元件A和parent元件的狀態所有權分別如何？ ->->-> `特定元件A由於轉移狀態，所以沒有被轉移過的狀態，而parent元件擁有特定元件A的狀態`
+
+#🧠 React：特定元件A利用lifting state up方式傳遞自己狀態至其parent元件上，特定元件A和parent元件的狀態所有權分別如何？ ->->-> `特定元件A和parent元件的狀態還保有原有樣子`
+
+#🧠 React：lifting state up vs.  特定元件A的狀態改註冊至其parent元件 差異是什麼？(簡答)->->-> `差異：狀態所有權、傳遞狀態方向`
+
+#🧠 React：特定元件A利用lifting state up方式傳遞自己狀態至其parent元件上，特定元件A和parent元件的傳遞狀態方向是？ ->->-> `lifting state up純粹將目前元件上的狀態往上傳遞至其parent元件，讓parent元件接收到並處理`
+
+#🧠 React：若特定元件A的狀態改註冊至其parent元件上，算是lifting state up的技術一部分嗎？ 為什麼？請試著以註冊的角度來開始說起->->-> `並不算，本質上就不一樣，註冊後，狀態會被轉移至parent元件，並由parent元件傳遞資訊至特定元件A；而lifting state up則是在保留狀態下，往上傳遞自己狀態至parent元件`
+
+
 
 
 ---
