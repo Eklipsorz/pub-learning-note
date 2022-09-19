@@ -48,7 +48,7 @@ useReducer 使用上可允許：
 #🧠 React 的 useState能和useReducer一同在同一個元件使用嗎？具體會是哪一種形式 ->->-> `可以，1. 1~N個useReducer 2. 1~N個useReducer + 1~N個useState`
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:

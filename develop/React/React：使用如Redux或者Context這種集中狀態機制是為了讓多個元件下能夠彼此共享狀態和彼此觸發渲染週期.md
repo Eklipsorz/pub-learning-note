@@ -37,16 +37,22 @@
 	- 元件間(A、B)不存在parent-child關係：
 		- 採用原生DOM方法：直接使用實際DOM節點來實現(不通過React本身來解決)
 		
-		- 將自己狀態轉移至共同parent元件下的狀態：在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式則是以props+callback傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。
+		- 將特定元件AB狀態轉移至共同parent元件下的狀態 + props傳遞：在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式則是以props+callback傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。
 		
 		- 利用lifting state up + props 傳遞：將元件AB的狀態、更新用狀態函式以child元件的角度往上傳遞至它們所共同的parent元件，途中會經過多個parent元件，這些parent元件會建立callback來幫助child元件以parent元件的角度來接收處理並網上傳遞，接著當元件AB的狀態、更新用狀態函式到達共同的parent元件時，就以共同parent元件來透過props+callback往下轉遞至各自元件A和元件B，讓它們都能彼此共享到狀態、更新用狀態函式
 	- 元件間(A、B)存在parent-child關係：
-		- 直接使用實際DOM節點來實現(不通過React本身來解決)
+		- 採用原生DOM方法：直接使用實際DOM節點來實現(不通過React本身來解決)
 
-		- 在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以props+callback來傳遞至所有child元件
+		- 將所有child元件狀態註冊在parent元件 + props 傳遞：在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以props+callback來傳遞至所有child元件
 	
-		- 將元件AB
+		- 利用lifting state up + props 傳遞：假如元件A為parent元件，那所有元件B的狀態、狀態更新用函式往上傳遞至parent元件，元件A和元件B的狀態、狀態更新用函式再從身為parent元件的元件A下利用props往下傳遞至剩餘元件B，讓所有元件都能夠共享狀態和調用更新狀態用的函式
 	- Redux/Context/集中狀態機制 的概念就是將所有元件上會有的特殊變數、更新用函式集中存放特定元件，並讓其成為所有元件的最頂層，來透過資料傳遞只能從上至下來傳遞進而讓所有元件都能共享著大家都有的狀態、更新用的函式
+
+
+### 若利用lifting state up + props 傳遞來解決元件狀態
+1. 傳遞途中，總會有不需要目前狀態和更新狀態函式的parent元件
+2. 
+
 
 ## 複習
 #🧠 state的命名緣由是什麼 ->->-> `狀態本身是在特定時間點下的特定物件下內容`
@@ -88,16 +94,30 @@
 
 #🧠 若沒採用Redux/Context/集中狀態機制的話，具體會將多個元件(在這裡假設A、B)間分成以下兩種關係來提出解法，具體是哪兩種關係？ ->->-> `元件間(A、B)不存在parent-child關係、元件間(A、B)存在parent-child關係`
 
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？簡答具體概念->->-> `採用原生DOM方法、將特定元件AB狀態轉移至共同parent元件下的狀態 + props傳遞、利用lifting state up + props 傳遞`
 
-#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？->->-> `- 直接使用實際DOM節點來實現(不通過React本身來解決) - 在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式會透過以props+callback來傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。`
+
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？簡答具體概念 ->->-> `採用原生DOM方法、將所有child元件狀態註冊在parent元件 + props 傳遞、利用lifting state up + props 傳遞`
+
+
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？以 採用原生DOM方法來出發->->-> `直接使用實際DOM節點來實現(不通過React本身來解決)`
+
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？以 將特定元件AB狀態轉移至共同parent元件下的狀態 + props傳遞->->-> `在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式則是以props+callback傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。`
+
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？利用lifting state up + props 傳遞->->-> `將元件AB的狀態、更新用狀態函式以child元件的角度往上傳遞至它們所共同的parent元件，途中會經過多個parent元件，這些parent元件會建立callback來幫助child元件以parent元件的角度來接收處理並網上傳遞，接著當元件AB的狀態、更新用狀態函式到達共同的parent元件時，就以共同parent元件來透過props+callback往下轉遞至各自元件A和元件B，讓它們都能彼此共享到狀態、更新用狀態函式`
 
 
 
 #🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？(callback)->->-> ` - 直接使用實際DOM節點來實現(不通過React本身來解決) -在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以callback+props來傳遞至所有child元件`
 
 
-#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？->->-> ` - 直接使用實際DOM節點來實現(不通過React本身來解決) - 在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以callback+props來傳遞至所有child元件`
-<!--SR:!2022-09-25,14,229-->
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？採用原生DOM方法來出發的話->->-> `直接使用實際DOM節點來實現(不通過React本身來解決)`
+
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？利用將所有child元件狀態註冊在parent元件 + props 傳遞->->-> `在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以props+callback來傳遞至所有child元件`
+
+
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？利用lifting state up + props 傳遞->->-> `假如元件A為parent元件，那所有元件B的狀態、狀態更新用函式往上傳遞至parent元件，元件A和元件B的狀態、狀態更新用函式再從身為parent元件的元件A下利用props往下傳遞至剩餘元件B，讓所有元件都能夠共享狀態和調用更新狀態用的函式`
+
 
 #🧠 Redux/Context/集中狀態機制 解決概念為何？ ->->-> `Redux/Context/集中狀態機制 的概念就是將所有元件上會有的特殊變數、更新用函式集中存放特定元件，並讓其成為所有元件的最頂層，來透過資料傳遞只能從上至下來傳遞進而讓所有元件都能共享著大家都有的狀態、更新用的函式`
 
