@@ -224,6 +224,7 @@ useEffect(() => {
 #🧠 若以useReducer回傳的部分狀態的話，對於狀態來說會有什麼好處？ ->->-> `讓useEffect只針對著需要關注的狀態來做處理，繼而減少不必要的狀態處理。`
 
 #💻 請到react-builder/question-review/useReducer-question領取題目，請開發兩個useReducer來負責email和password的狀態管理來替代components/Login.js的useState，開發前請先建立好新分支->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/08-usereducer-and-useeffect/src`
+<!--SR:!2022-09-22,3,250-->
 
 
 #💻 請到react-builder/question-review/useEffect-question領取題目，請用useEffect來開發能夠優化components/Login.js下的setFormIsValid，開發前請先建立好新分支->->-> `https://github.com/academind/react-complete-guide-code/blob/10-side-effects-reducers-context-api/code/05-useeffect-summary/src/components/Login/Login.js`
