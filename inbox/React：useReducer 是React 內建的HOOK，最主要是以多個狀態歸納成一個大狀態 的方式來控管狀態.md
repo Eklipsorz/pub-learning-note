@@ -251,11 +251,14 @@ initFn：主要是定義如何設定初始值
 #🧠 reduce / reduction 命名緣由 ->->-> `reduce 是將複雜的事物轉換成單一簡單的事物`
 
 #🧠 reducer 命名緣由 ->->-> `負責將複雜事物轉換成單一簡單事物的函式、儀器、機器`
+<!--SR:!2022-09-22,3,250-->
 
 
 #🧠 reducer 在React世界中是指什麼？ ->->-> `在這裡會是將多個狀態合併一個狀態來管理。`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 action 命名緣由？（請針對問題和困難來說) ->->-> `當要解決特定問題或者困難時所要做的行為`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
 
@@ -266,10 +269,13 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
 
@@ -293,8 +299,10 @@ initFn：主要是定義如何設定初始值
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`
 
 #🧠 React：reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `回傳新狀態、更新狀態、觸發渲染週期`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，reducerFn(prevState, action)如何被觸發執行？ ->->-> `這n個連續dispatch指令會分別被處理`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `會以auto-batching的方式，將狀態試著合併，最後再以最後合併結果來更新狀態、觸發渲染週期`
 
@@ -304,6 +312,7 @@ initFn：主要是定義如何設定初始值
 #🧠 React：reducerFn主要會是什麼樣子的函式，其函式內容為何？用程式碼表示一下 ->->-> `(prevState, action) => { return new-state }`
 
 #🧠 React：reducerFn(prevState, action)的preState 會是最近最新的狀態？為什麼？ ->->-> `同一個 useReducer 控管的所有state 被保證一定是目前最新的狀態，原因為：1. 目前狀態都會被React 儲存管理。 2. 狀態更新都是在dispatch 所發送的action 或者 由React內部提供。 3. 狀態都歸納成同一個狀態，不會有依賴舊有狀態的問題。`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reduceFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
 
@@ -312,15 +321,18 @@ initFn：主要是定義如何設定初始值
 #🧠 React：reduceFn定義上通常會如何開發？考慮它會在哪以及誰會去用useReducer，用程式碼表示 ->->-> `const reducerFn = (prevState, action) => { //..... return new-state} function Component(props) { const [state, dispatch] = useReducer(reducerFn) //..... } export default Componet`
 
 #🧠 React：假設派遣過來的action會是type為increase或者descrease，並且預期當reducer接收到increase就替狀態上的counter進行遞增以及當reducer接收到descrease就替狀態上的counter進行遞減，其餘則是發出錯誤，請問如何用程式碼表示 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663519501/blog/react/state/useReducer/useReducer-usage1_q8tnw6.png)`
+<!--SR:!2022-09-22,3,250-->
 
 
 
 #🧠 React：請畫圖來表示Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
+<!--SR:!2022-09-22,3,250-->
 
 
 
