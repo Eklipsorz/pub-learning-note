@@ -66,9 +66,9 @@
 
 ## redux
 
-[[React：在還沒有使用Redux之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
+[[React：在還沒有使用Redux或者Context之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
 
-[[為何React要使用Redux]]
+[[React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期]]
 
 
 ## setState
@@ -80,7 +80,7 @@
 [[React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重]]
 
 ## props
-[[React：在還沒有使用Redux之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
+[[React：在還沒有使用Redux或者Context之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
 
 
 

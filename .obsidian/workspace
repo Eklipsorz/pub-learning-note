@@ -6,10 +6,11 @@
       {
         "id": "e6a955b3fd3de37f",
         "type": "leaf",
+        "dimension": 66.05504587155964,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+            "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
             "mode": "source",
             "source": false
           }
@@ -18,6 +19,7 @@
       {
         "id": "d1ba2a81bcd63937",
         "type": "leaf",
+        "dimension": 33.94495412844037,
         "state": {
           "type": "markdown",
           "state": {
@@ -52,16 +54,17 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "action最常用的形式物件",
-                "matchingCase": true,
+                "query": "redux",
+                "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "byModifiedTime"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +112,15 @@
   },
   "active": "e6a955b3fd3de37f",
   "lastOpenFiles": [
+    "develop/React/React：在還沒有使用Redux或者Context之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback.md",
+    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
     "templates/💻.md",
-    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "templates/🧠.md",
     "templates/📝.md",
     "templates/📖 +🤔.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-    "develop/React/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md",
-    "develop/React/React：事件綁定對應特定函式來當作該事件發生時所要執行的函式.md"
+    "develop/React/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md"
   ]
 }
