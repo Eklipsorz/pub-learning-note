@@ -39,7 +39,7 @@
 		
 		- 將自己狀態轉移至共同parent元件下的狀態：在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式則是以props+callback傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。
 		
-		- 將元件AB的狀態、更新用狀態函式以child元件的角度往上傳遞至它們所共同的parent元件，途中會經過多個parent元件，這些parent元件會建立callback來幫助child元件以parent元件的角度來接收處理並網上傳遞，接著當元件AB的狀態、更新用狀態函式到達共同的parent元件時，就以共同parent元件來透過props+callback往下轉遞至各自元件A和元件B，讓它們都能彼此共享到狀態、更新用狀態函式
+		- 利用lifting state up + props 傳遞：將元件AB的狀態、更新用狀態函式以child元件的角度往上傳遞至它們所共同的parent元件，途中會經過多個parent元件，這些parent元件會建立callback來幫助child元件以parent元件的角度來接收處理並網上傳遞，接著當元件AB的狀態、更新用狀態函式到達共同的parent元件時，就以共同parent元件來透過props+callback往下轉遞至各自元件A和元件B，讓它們都能彼此共享到狀態、更新用狀態函式
 	- 元件間(A、B)存在parent-child關係：
 		- 直接使用實際DOM節點來實現(不通過React本身來解決)
 
