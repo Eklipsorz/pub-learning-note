@@ -134,7 +134,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-20,8,250-->
 
 #🧠 若瀏覽器有滾動軸，請問fixed positioning 會以什麼為主來位移 ->->-> `即使頁面有進行滾動，其位移方式仍會以整個window為主，而非以特定頁面內容`
-<!--SR:!2022-09-19,7,250-->
+<!--SR:!2022-10-08,19,250-->
 
 
 #🧠 若瀏覽器有滾動軸，請問fixed positioning 為何還以viewport為主來位移? ->->-> `因為滾動軸滾動本身就只是特定頁面內容，而那不是viewport的一部分。`
@@ -156,7 +156,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-22,10,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-left-case_ec2f10.png) ->->-> `是設定left屬性為value1`
-<!--SR:!2022-09-19,7,250-->
+<!--SR:!2022-10-09,20,250-->
 
 #🧠 當對fixed positioning的元件設定正值的value1給left屬性，會是代表著？ ->->-> `元素的左邊界(border-left)會跟viewport的左邊界在viewport內部保持value1的距離`
 <!--SR:!2022-09-21,9,250-->
@@ -167,7 +167,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 當對fixed positioning的元件設定正值的value1給right屬性，會是代表著？ ->->-> `元素的右邊界(border-right)會跟viewport的右邊界在viewport內部保持value1的距離`
-<!--SR:!2022-09-19,7,250-->
+<!--SR:!2022-10-07,18,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-left-negative-case_ykvmvj.png)  ->->-> `left屬性值為負的value1`
 <!--SR:!2022-09-22,10,250-->
