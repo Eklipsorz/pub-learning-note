@@ -244,11 +244,14 @@ initFn：主要是定義如何設定初始值
 ## 複習
 
 #🧠 useReducer 是什麼？用做什麼 ->->-> `1. React 內建的HOOK 2. 用作於狀態管理(與useState相似，但比較多功能來處理較為複雜狀態)`
+<!--SR:!2022-09-21,2,249-->
 
 
 #🧠 dispatch 命名緣由 ->->-> `將特定物件傳送至特定位置的行為`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 reduce / reduction 命名緣由 ->->-> `reduce 是將複雜的事物轉換成單一簡單的事物`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 reducer 命名緣由 ->->-> `負責將複雜事物轉換成單一簡單事物的函式、儀器、機器`
 <!--SR:!2022-09-22,3,250-->
@@ -261,11 +264,14 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 userReducer 在元件上做了什麼？用途是什麼？ ->->-> `useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。`
+<!--SR:!2022-09-20,1,230-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
+<!--SR:!2022-09-22,3,250-->
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
@@ -278,25 +284,32 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
+<!--SR:!2022-09-22,3,250-->
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
+<!--SR:!2022-09-22,3,250-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的initialState, initFn 是什麼？用途是什麼？ 請先簡答 ->->-> `定義初始狀態、主要是定義如何設定初始值`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的reducerFn 是什麼？用途是什麼？請先簡答 ->->-> `reducerFn 為 一個函式，具體會有兩個引數分別為prevState和action。用途為依據action指示的狀態更新請求內容來回傳新狀態、更新狀態、觸發渲染週期`
+<!--SR:!2022-09-22,3,250-->
 
 
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
+<!--SR:!2022-09-21,2,249-->
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
 <!--SR:!2022-09-22,3,250-->
 
 
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `回傳新狀態、更新狀態、觸發渲染週期`
 <!--SR:!2022-09-22,3,250-->
@@ -305,20 +318,25 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `會以auto-batching的方式，將狀態試著合併，最後再以最後合併結果來更新狀態、觸發渲染週期`
+<!--SR:!2022-09-20,1,230-->
 
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會執行n次的狀態更新＋觸發渲染週期嗎？ ->->-> `並不會，而是會以auto-batching來執行`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reducerFn主要會是什麼樣子的函式，其函式內容為何？用程式碼表示一下 ->->-> `(prevState, action) => { return new-state }`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reducerFn(prevState, action)的preState 會是最近最新的狀態？為什麼？ ->->-> `同一個 useReducer 控管的所有state 被保證一定是目前最新的狀態，原因為：1. 目前狀態都會被React 儲存管理。 2. 狀態更新都是在dispatch 所發送的action 或者 由React內部提供。 3. 狀態都歸納成同一個狀態，不會有依賴舊有狀態的問題。`
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reduceFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
+<!--SR:!2022-09-22,3,250-->
 
 
 
 #🧠 React：reduceFn定義上通常會如何開發？考慮它會在哪以及誰會去用useReducer，用程式碼表示 ->->-> `const reducerFn = (prevState, action) => { //..... return new-state} function Component(props) { const [state, dispatch] = useReducer(reducerFn) //..... } export default Componet`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：假設派遣過來的action會是type為increase或者descrease，並且預期當reducer接收到increase就替狀態上的counter進行遞增以及當reducer接收到descrease就替狀態上的counter進行遞減，其餘則是發出錯誤，請問如何用程式碼表示 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663519501/blog/react/state/useReducer/useReducer-usage1_q8tnw6.png)`
 <!--SR:!2022-09-22,3,250-->
