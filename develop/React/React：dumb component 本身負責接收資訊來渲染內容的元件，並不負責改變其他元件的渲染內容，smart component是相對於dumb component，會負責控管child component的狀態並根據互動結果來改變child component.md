@@ -60,7 +60,7 @@ class App extends Component {
 <!--SR:!2022-10-17,34,248-->
 
 #🧠 smart component是什麼？ ->->-> `smart components 是相對於 dumb components 的稱呼，smart component 本身會有渲染、業務邏輯，只要有人對其component做出互動，他們本身可以透過互動來重新以互動結果來渲染自己、其他child component，也就是由該component來控管每個child component的渲染內容`
-<!--SR:!2022-09-19,16,248-->
+<!--SR:!2022-10-31,42,248-->
 
 #🧠 在React 上， smart component 是什麼元件？ ->->-> `註冊狀態、更新狀態用的函式、負責對它所包含的子元件進行狀態管理/更新、皆由狀態更新來負責渲染子元件`
 <!--SR:!2022-10-10,27,230-->

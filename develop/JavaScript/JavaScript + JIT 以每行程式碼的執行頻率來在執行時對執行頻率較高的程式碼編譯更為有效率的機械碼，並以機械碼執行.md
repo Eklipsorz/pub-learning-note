@@ -212,7 +212,7 @@ function arraySum(arr) {
 <!--SR:!2022-11-25,78,248-->
 
 #🧠 JIT版本的JavaScript：以什麼標籤作為放進optiziming compiler 的處理標準 ->->-> `擁有hot標籤的索引`
-<!--SR:!2022-09-19,34,228-->
+<!--SR:!2022-12-08,80,228-->
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode時，且此時為剛執行的階段，那麼JavaScript會如何執行ByteCode? 紀錄次數？ ->->-> `由於每段程式碼都是剛執行，所以一開始都會按照解釋器邊將BytecCode 轉換成機械碼 邊執行，每段程式碼都會在執行時都根據行數、資料類型來當索引在monitor那邊更新對應的執行次數`
 <!--SR:!2022-11-22,70,228-->
