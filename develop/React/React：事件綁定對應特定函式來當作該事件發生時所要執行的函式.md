@@ -29,9 +29,8 @@ JSX 為React Element提供事件綁定的API：
 
 
 重點：
-- 對於標籤的屬性(attribute)事件綁定來說，React官方語法和HTML DOM官方語法都有各自的語法規則，兩者並不互通：
-	- 當使用React 官方語法來建立事件綁定，並不會轉換成以HTML DOM來綁定，而是以JS來綁定
-	- 當使用HTML DOM官方語法來建立事件綁定，由於React是基於HTML而產生的應用框架，本身底層不會影響到React
+- 對於標籤的屬性(attribute)事件綁定來說，React官方語法和HTML DOM官方語法都有各自的用法規則，兩者並不互通：
+	- React 事件綁定 本身定義著函式本身和定義其內容；HTML DOM則只是定義好函式本身，只是等開發者設定指令來為函式定義內容
 - 標籤的屬性(attribute)事件綁定語法：
 	- React：屬性名稱形式會是onXXXX，XXXX會是指事件名稱，該屬性名稱則以lower camel case為主，如負責點擊事件綁定的onClick
 	```
@@ -107,8 +106,8 @@ const clickHandler = () => {
 
 ## 複習
 
-#🧠 對於標籤上的屬性(attribute)事件綁定來說，React 事件綁定和HTML DOM 上事件綁定之間是否有關係？獨立？相依？->->-> `兩者都有各自的語法規則，兩者並不互通`
-<!--SR:!2022-09-25,6,247-->
+#🧠 對於標籤上的屬性(attribute)事件綁定來說，React 事件綁定和HTML DOM 上事件綁定之間是否有關係？獨立？相依？->->-> `無關，React 事件綁定 本身定義著函式本身和定義其內容；HTML DOM則只是定義好函式本身，只是等開發者設定指令來為函式定義內容`
+
 
 
 #🧠 標籤的屬性(attribute)事件綁定語法，React會是用何種形式來表示 ->->-> `onXXXX，，XXXX會是指事件名稱，該屬性名稱則以lower camel case為主`

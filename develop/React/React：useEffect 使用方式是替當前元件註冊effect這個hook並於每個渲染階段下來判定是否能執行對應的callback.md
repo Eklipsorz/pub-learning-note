@@ -50,7 +50,7 @@ useEffect(() => {
 ```
 
 dependencies：
-- dependencies 會是定義著callback所需要的狀態、props、其他能夠跟著互動而變動的資料
+- dependencies 會是定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料
 - 主要會指定監聽哪些dependency有沒有變動
 - 若任一變動就允許執行useEffect
 - 特例：
@@ -234,7 +234,7 @@ this is use effect
 <!--SR:!2022-09-22,3,250-->
 
 
-#🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他能夠跟著互動而變動的資料`
+#🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
 <!--SR:!2022-09-22,3,250-->
 
 
