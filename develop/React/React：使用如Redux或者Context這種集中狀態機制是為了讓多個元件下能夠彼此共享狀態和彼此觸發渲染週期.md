@@ -36,10 +36,14 @@
 - 若沒採用Redux/Context/集中狀態機制 的話，具體會將多個元件(在這裡假設A、B)間分成以下兩種關係來提出解法：
 	- 元件間(A、B)不存在parent-child關係：
 		- 直接使用實際DOM節點來實現(不通過React本身來解決)
+		
 		- 在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式則是以props+callback傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。
+		
+		- 將元件AB的狀態、更新用狀態函式以child元件的角度往上傳遞至它們所共同的parent元件，途中會經過多個parent元件，這些parent元件會建立callback來幫助child元件以parent元件的角度來接收處理並網上傳遞，接著當元件AB的狀態、更新用狀態函式到達共同的parent元件時，就以共同parent元件來透過props+callback往下轉遞至各自元件A和元件B，讓它們都能彼此共享到狀態、更新用狀態函式
 	- 元件間(A、B)存在parent-child關係：
 		- 直接使用實際DOM節點來實現(不通過React本身來解決)
 		- 在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以props+callback來傳遞至所有child元件
+		- 
 	- Redux/Context/集中狀態機制 的概念就是將所有元件上會有的特殊變數、更新用函式集中存放特定元件，並讓其成為所有元件的最頂層，來透過資料傳遞只能從上至下來傳遞進而讓所有元件都能共享著大家都有的狀態、更新用的函式
 
 ## 複習
@@ -74,7 +78,7 @@
 <!--SR:!2022-10-18,37,248-->
 
 
-#🧠 React：在沒有Redux或者Context這類集中狀態機制之前，若要傳遞state上的狀態值、特殊變數的更新用函式，會使用什麼概念來傳遞？ ->->-> `若要傳輸特殊變數、特殊變數的更新用函式的話，會透過props概念來傳輸`
+#🧠 React：在沒有Redux或者Context這類集中狀態機制之前，若要傳遞state上的狀態值、特殊變數的更新用函式，會使用什麼概念來傳遞？ ->->-> `若要傳輸特殊變數、特殊變數的更新用函式的話，會透過以props+callback來傳輸`
 
 
 #🧠 Redux/Context/集中狀態機制 的出生背景為何？->->-> `parent 元件 和 child 元件之間的資料傳遞只能從parent元件向下傳遞資料至child元件、元件間很難相互使用彼此的狀態來交流`
@@ -83,14 +87,14 @@
 #🧠 若沒採用Redux/Context/集中狀態機制的話，具體會將多個元件(在這裡假設A、B)間分成以下兩種關係來提出解法，具體是哪兩種關係？ ->->-> `元件間(A、B)不存在parent-child關係、元件間(A、B)存在parent-child關係`
 
 
-#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？->->-> `- 直接使用實際DOM節點來實現(不通過React本身來解決) - 在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。`
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)不存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？->->-> `- 直接使用實際DOM節點來實現(不通過React本身來解決) - 在元件間找尋共同的parent元件，並在parent元件註冊著原本子元件(元件A、元件B)所要註冊的特殊變數、特殊變數的更新用函式，並從parent元件將對應的狀態值和更新用函式會透過以props+callback來傳遞至原本子元件(元件A、元件B)就能讓元件間共享著狀態。`
 
 
 
-#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？(callback)->->-> ` - 直接使用實際DOM節點來實現(不通過React本身來解決) -在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以callback、props來傳遞至所有child元件`
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？(callback)->->-> ` - 直接使用實際DOM節點來實現(不通過React本身來解決) -在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以callback+props來傳遞至所有child元件`
 
 
-#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？->->-> ` - 直接使用實際DOM節點來實現(不通過React本身來解決) - 在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以callback、props來傳遞至所有child元件`
+#🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？->->-> ` - 直接使用實際DOM節點來實現(不通過React本身來解決) - 在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以callback+props來傳遞至所有child元件`
 <!--SR:!2022-09-25,14,229-->
 
 #🧠 Redux/Context/集中狀態機制 解決概念為何？ ->->-> `Redux/Context/集中狀態機制 的概念就是將所有元件上會有的特殊變數、更新用函式集中存放特定元件，並讓其成為所有元件的最頂層，來透過資料傳遞只能從上至下來傳遞進而讓所有元件都能共享著大家都有的狀態、更新用的函式`
@@ -107,5 +111,6 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染]]
 References:
 [[@wangnamelosFengSiXin67TiaoXiaoXi]]
