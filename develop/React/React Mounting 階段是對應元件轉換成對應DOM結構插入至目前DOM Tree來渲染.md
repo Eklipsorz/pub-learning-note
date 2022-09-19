@@ -102,7 +102,7 @@ React updates DOM and refs 主要用途為：
 
 
 #🧠 在class component 開發方式中，this.state 和 this.setState 是什麼？ ->->-> `前者是儲存目前狀態值的變數、this.setState會是更新this.state、更新元件儲存狀態的狀態變數、觸發渲染的函式`
-<!--SR:!2022-09-19,7,229-->
+<!--SR:!2022-10-07,18,229-->
 
 #🧠 在class component 開發方式中，this.state 和 this.setState 被建議放在哪？ ->->-> `this.state 建議載constructor定義，剩餘要更改狀態並重新渲染就透過this.setState`
 <!--SR:!2022-10-23,39,249-->

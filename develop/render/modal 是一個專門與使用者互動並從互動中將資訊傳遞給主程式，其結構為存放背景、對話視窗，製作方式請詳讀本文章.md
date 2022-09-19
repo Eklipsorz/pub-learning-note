@@ -274,7 +274,7 @@ modal ：對話窗內容
 
 
 #🧠 在modal主體架構中，modal-body 的html結構是什麼?  ->->-> `        <div className={styles['modal-body']}> <p>{text}</p> </div>`
-<!--SR:!2022-09-19,6,250-->
+<!--SR:!2022-10-06,17,250-->
 
 #🧠 在modal主體架構中，modal-footer的開發目標是什麼？ ->->-> `將按鈕往右邊移動、調整footer大小、調整顏色、定義要存放的內容`
 <!--SR:!2022-10-06,17,250-->

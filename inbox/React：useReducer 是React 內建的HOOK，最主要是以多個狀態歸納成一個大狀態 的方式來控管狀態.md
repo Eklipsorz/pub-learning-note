@@ -287,6 +287,7 @@ initFn：主要是定義如何設定初始值
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
+<!--SR:!2022-09-22,3,250-->
 
 
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`
@@ -317,6 +318,7 @@ initFn：主要是定義如何設定初始值
 #🧠 React：請畫圖來表示Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
 
 #🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
+<!--SR:!2022-09-22,3,250-->
 
 #🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
 
