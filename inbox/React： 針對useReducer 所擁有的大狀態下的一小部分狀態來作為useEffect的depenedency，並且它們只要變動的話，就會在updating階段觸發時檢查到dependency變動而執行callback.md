@@ -202,7 +202,15 @@ useEffect(() => {
 
 
 ## 複習
+#🧠 React 的 useReducer 所歸納的狀態通常會是什麼結果形式？歸納前又是什麼形式 ->->-> `歸納後 { state1: value1, state2: value2, state3: value3,... } 歸納前： state1 = value1 state2 = value2 state3 = value3 ....`
 
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#💻 Question :: ->->-> ``
 
 ---
 Status: #🌱 #📓 

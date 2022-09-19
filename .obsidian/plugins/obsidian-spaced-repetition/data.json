@@ -1,7 +1,8 @@
 {
   "settings": {
     "flashcardTags": [
-      "#🧠"
+      "#🧠",
+      "#💻"
     ],
     "convertFoldersToDecks": false,
     "cardCommentOnSameLine": false,
@@ -34,6 +35,6 @@
     "maxLinkFactor": 1,
     "showDebugMessages": false
   },
-  "buryDate": "2022-05-19",
+  "buryDate": "2022-09-19",
   "buryList": []
 }
