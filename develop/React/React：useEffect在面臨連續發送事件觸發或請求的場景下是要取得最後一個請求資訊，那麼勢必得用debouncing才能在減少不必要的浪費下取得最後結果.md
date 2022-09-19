@@ -122,7 +122,7 @@ clearTimeout(timeoutID)
 <!--SR:!2022-09-20,3,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
