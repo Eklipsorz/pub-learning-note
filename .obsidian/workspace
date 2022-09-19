@@ -107,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d1ba2a81bcd63937",
+  "active": "e6a955b3fd3de37f",
   "lastOpenFiles": [
     "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
     "templates/💻.md",
