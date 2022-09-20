@@ -205,11 +205,13 @@ useEffect(() => {
 #🧠 React 的 useReducer 所歸納的狀態通常會是什麼結果形式？歸納前又是什麼形式 ->->-> `歸納後 { state1: value1, state2: value2, state3: value3,... } 歸納前： state1 = value1 state2 = value2 state3 = value3 ....`
 
 #🧠  React 的 useReducer 是如何歸納多個狀態為一個結果狀態的？ ->->-> `通常使用useReducer將原本從useState所註冊的多個獨立狀態組合成一個物件，其物件屬性名稱和屬性值會是這些獨立狀態名稱和獨立狀態值。`
+<!--SR:!2022-09-23,3,250-->
 
 #🧠 useReducer 所回傳的狀態是由誰負責的？ ->->-> `useReducer(reducer, init, initFn)中的reducer、init、initFn`
 <!--SR:!2022-09-23,3,250-->
 
 #🧠 useReducer 所回傳的狀態在渲染週期是如何回傳新狀態作為snapshot，假設只有useReducer這個狀態管理工具 ->->-> `mounting 階段下的componentDidMount來以init或者initFn來給定，而updating階段則是以componentDidUpdate來以reducer回傳的新狀態為主。`
+<!--SR:!2022-09-23,3,250-->
 
 #🧠 通常使用useReducer將原本從useState所註冊的多個獨立狀態組合成一個物件，其物件屬性名稱和屬性值會是這些獨立狀態名稱和獨立狀態值，那麼reducer會如何以程式碼實現狀態更新 ->->-> `reducer會根據dispatch給定action資訊來決定狀態如何更新，而程式碼會是![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663592245/blog/react/state/useReducer/useReducer-simple-usage_z2yho4.png)`
 
@@ -218,6 +220,7 @@ useEffect(() => {
 
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，會有什麼潛在問題？ ->->-> `當針對需要關注的狀態來觸發的話：整個狀態下的所有子狀態只要透過dispatch來改變狀態，那麼每個子狀態都能夠觸發side effect，而不是針對需要關注的狀態來觸發，這會造成不必要的效能浪費`
+<!--SR:!2022-09-23,3,250-->
 
 #🧠 假設emailState、passwordState是分別從兩個useReducer所註冊的狀態，emailState狀態包含了email和validity，而passwordState狀態包含了password和validity，請問若下列useEffect原本只針對validity，會有什麼潛在問題？解法是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663592888/blog/react/state/useReducer/useReducer-question-example_tcgacn.png) ->->-> `- 每一次email輸入欄位或者password輸入欄位有變動就會觸發執行effect -  實際上來說只想關注在輸入欄位上的validity是否有變動`
 
@@ -225,6 +228,7 @@ useEffect(() => {
 <!--SR:!2022-09-23,3,250-->
 
 #🧠 若以useReducer回傳的部分狀態的話，對於狀態來說會有什麼好處？ ->->-> `讓useEffect只針對著需要關注的狀態來做處理，繼而減少不必要的狀態處理。`
+<!--SR:!2022-09-23,3,250-->
 
 #💻 請到react-builder/question-review/useReducer-question領取題目，請開發兩個useReducer來負責email和password的狀態管理來替代components/Login.js的useState，開發前請先建立好新分支->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/08-usereducer-and-useeffect/src`
 <!--SR:!2022-09-22,3,250-->
