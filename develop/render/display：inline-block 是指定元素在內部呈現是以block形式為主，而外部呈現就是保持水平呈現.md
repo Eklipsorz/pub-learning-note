@@ -58,7 +58,7 @@
 
 
 #🧠 display 屬性定義元件呈現的方式，outer display type是什麼？ ->->-> `定義元件本身如何與其他元件進行排版呈現。`
-<!--SR:!2022-09-20,10,250-->
+<!--SR:!2022-10-18,28,250-->
 
 #🧠 display: inline-block 是指定元件會是什麼？->->-> `是指定其元件的inner display type和outer display type分別： inner display type 是以block形式來呈現內容和包含的子元件和outer display type 是以inline特有的方式-水平排列來與其他元件排列`
 <!--SR:!2022-09-20,10,250-->
@@ -73,7 +73,7 @@
 <!--SR:!2022-09-20,10,250-->
 
 #🧠 display: inline-block 的元件可以存放什麼元件？ ->->-> `裡面可放inline元素或者block元素`
-<!--SR:!2022-09-20,10,250-->
+<!--SR:!2022-10-18,28,250-->
 
 #🧠 display: inline-block 的元件 所擁有的特點是什麼(有四點，高寬、沒設定高寬、排列、存放) ->->-> `	- 元件本身可以透過width和height這兩種屬性來調整寬高 - 元件本身和其他元件之間的排版呈現是以水平排列 - 若沒設定width、height，寬高由內容決定 - 裡面可放inline元素或者block元素`
 <!--SR:!2022-09-20,10,250-->
