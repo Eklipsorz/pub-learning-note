@@ -23,6 +23,34 @@ React Context
 
 
 
+Context is itself is not a component
+
+  
+
+const MyContext = React.createContext(defaultValue);
+
+> Creates a Context object. When React renders a component that subscribes to this Context object it will read the current context value from the closest matching `Provider` above it in the tree.
+
+> The `defaultValue` argument is **only** used when a component does not have a matching Provider above it in the tree. This default value can be helpful for testing components in isolation without wrapping them.
+  
+
+重點：
+- createContext 建立一個context 物件，會回傳對應context 物件。
+- defaultValue 是定義初始狀態為何
+- 當React 開始渲染一個元件時，而該元件訂閱該context物件，則會讓其讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容。
+
+
+
+
+
+### context 命名緣由
+context：
+> **the situation within which something exists or happens, and that can help explain it**
+
+
+重點：
+- context 是指場景，一個透過某個事物A所存在或者所發生的場景來解釋某個事物
+- 在電腦科學裡，可衍生成定義某個事物A的環境
 ### xxxx-wide 命名緣由
 
 > -wide combines with nouns to form adjectives which indicate that something exists or happens throughout the place or area that the noun refers to. 
