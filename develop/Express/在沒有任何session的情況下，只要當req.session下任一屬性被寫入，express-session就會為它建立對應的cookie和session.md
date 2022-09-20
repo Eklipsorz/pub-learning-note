@@ -15,7 +15,7 @@ session方面，會是建立session物件存放在指定的session store中，�
 ## 複習
 
 #🧠 express-session在沒有任何session的情況下，若伺服器上的req.session下任一屬性被寫入的話，session和cookie會發生什麼事情？ ->->-> `express-session就會為它建立對應的cookie和session，cookie方面，會要求客戶端寫入對應的session id至cookie，以到當下次發送同樣伺服器時，也能夾帶對應session-id的cookie來繼續以上次的session來做後續處理，session方面，會是建立session物件存放在指定的session store中，等到下次客戶端持著session id來發送請求，伺服器就會從store找到對應的session來輸出至req.session`
-<!--SR:!2022-09-20,65,230-->
+<!--SR:!2023-02-20,153,230-->
 
 
 ---

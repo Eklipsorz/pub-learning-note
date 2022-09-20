@@ -113,7 +113,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 port 命名緣由? ->->-> `在電腦科學中，port相當於一個存取介面，可允許裝置/資訊安裝至介面，以此讓使用介面的使用者能夠透過介面來存取裝置/資訊`
-<!--SR:!2022-09-20,8,250-->
+<!--SR:!2022-10-12,22,250-->
 
 #🧠 viewport 命名緣由？ ->->-> `view為特定位置所能看到的畫面，port是存取介面，合併起來專門接收並存取畫面渲染資訊的存取介面`
 <!--SR:!2022-09-22,10,250-->
@@ -163,7 +163,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-right-case_xa3f8t.png) ->->-> `設定right屬性為value1`
-<!--SR:!2022-09-20,8,250-->
+<!--SR:!2022-10-13,23,250-->
 
 
 #🧠 當對fixed positioning的元件設定正值的value1給right屬性，會是代表著？ ->->-> `元素的右邊界(border-right)會跟viewport的右邊界在viewport內部保持value1的距離`
