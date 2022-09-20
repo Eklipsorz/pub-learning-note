@@ -271,7 +271,7 @@ const DUMMY_EXPENSES = [
 <!--SR:!2022-09-23,17,248-->
 
 #🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1  使用map所產生的index來搭配 會有什麼問題？ ->->-> `會因為index並不會根據資料而跟著變動，只是按照順序分配，所以仍會有效能、狀態註冊問題`
-<!--SR:!2022-09-20,14,248-->
+<!--SR:!2022-10-27,37,248-->
 
 
 ---

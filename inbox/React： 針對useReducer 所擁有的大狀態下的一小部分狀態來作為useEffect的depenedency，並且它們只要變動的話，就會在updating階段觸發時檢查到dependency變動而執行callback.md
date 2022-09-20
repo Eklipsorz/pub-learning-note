@@ -220,6 +220,7 @@ useEffect(() => {
 #🧠 假設emailState、passwordState是分別從兩個useReducer所註冊的狀態，emailState狀態包含了email和validity，而passwordState狀態包含了password和validity，請問若下列useEffect原本只針對validity，會有什麼潛在問題？解法是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663592888/blog/react/state/useReducer/useReducer-question-example_tcgacn.png) ->->-> `- 每一次email輸入欄位或者password輸入欄位有變動就會觸發執行effect -  實際上來說只想關注在輸入欄位上的validity是否有變動`
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，潛在問題為無法針對需要關注的狀態來觸發，只會每個子狀態觸發就執行，請問如何解決？具體程式碼會是如何？->->-> `若以useReducer回傳的部分狀態的話，useEffect(() => { // do something setState(...) or dispatch(....) }, [state.property1])、const [state, dispatch] = useReducer(reducer, init) const {property1: stateProperty1} = state useEffect(() => { // do something setState(...) or dispatch(....) }, [stateProperty1])`
+<!--SR:!2022-09-23,3,250-->
 
 #🧠 若以useReducer回傳的部分狀態的話，對於狀態來說會有什麼好處？ ->->-> `讓useEffect只針對著需要關注的狀態來做處理，繼而減少不必要的狀態處理。`
 
