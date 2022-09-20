@@ -22,6 +22,20 @@ React Context
 
 
 
+### 建立Context
+1. 從react函式庫調用createCreate()
+2. 輸出其Context
+
+```
+import React from 'react';
+const AuthContext = React.createContext({
+	isLoggedin: false,
+});
+
+export default AuthContext;
+```
+
+
 ### context 命名緣由
 context：
 > **the situation within which something exists or happens, and that can help explain it**

@@ -42,9 +42,43 @@
 	- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component
 	- 被它包覆著的子節點都允許存取其Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的
 	- 沒被它包覆著子節點不被允許存取其Context Object
-2. 細節：
+2. 使用方式
+	- 載入想存取狀態的Context 
+	```
+	import XXXContext from '....'
+	```
+	- 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹子節點，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context
+	```
+	<XXXContext.Provider value={{ state1: value1 }}>
+		.....
+	</XXXContext.Provider>
+	```
+	- 通常value屬性(attribute)會設定的內容會由useState或者useReducer所回傳的狀態值snapshot，依此來保證每次渲染都依照變動而得到不同的渲染畫面
+3. 細節：
 	- 每個 context object 都可以擁有多個Provider component
 	- 每個 擁有provider component的元件都會
+
+#### 案例：Provider Component
+
+
+provider component
+```
+  return (
+    <AuthContext.Provider
+      value={{
+        isLoggedin: isLoggedIn,
+      }}
+    >
+      <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
+      <main>
+        {!isLoggedIn && <Login onLogin={loginHandler} />}
+        {isLoggedIn && <Home onLogout={logoutHandler} />}
+      </main>
+    </AuthContext.Provider>
+  );
+```
+
+
 
 
 ### Consumer component
@@ -57,6 +91,9 @@
 ```
 > A React component that subscribes to context changes. Using this component lets you subscribe to a context within a function component.
 
+
+> Requires a [function as a child](https://zh-hant.reactjs.org/docs/render-props.html#using-props-other-than-render). The function receives the current context value and returns a React node.
+
 重點：
 1. 每個 context object 都會有consumer component：
 	- 是一個wrapper component
@@ -68,9 +105,65 @@
 		{(context) => .....}
 	</Context.Consumer>
 	```
-2. 細節：
+2. 使用方式為：
+	- 載入想存取狀態的Context 
+   ```
+	import XXXContext from '....'
+   ```
+	- 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback}
+	```
+	return (
+		<AuthContext.Consumer>
+			{callback}
+		</AuthContext.Consumer>
+	);
+	```
+	- {callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM
+	```
+	return (
+		<AuthContext.Consumer>
+			{(ctx) => { /*...*/ return react-element; }}
+		</AuthContext.Consumer>
+	);
+	```
+3. 細節：
 	- 每個 context object 都可以擁有多個Consumer component
 	- 每個 擁有consumer component 的元件都被稱之為consuming component，換言之，該元件直接存取context object的狀態值
+
+
+#### 案例：Consumer component
+```
+const Navigation = (props) => {
+  return (
+    <AuthContext.Consumer>
+      {(ctx) => {
+        return (
+          <nav className={classes.nav}>
+            <ul>
+              {ctx.isLoggedIn && (
+                <li>
+                  <a href='/'>Users</a>
+                </li>
+              )}
+              {ctx.isLoggedIn && (
+                <li>
+                  <a href='/'>Admin</a>
+                </li>
+              )}
+              {ctx.isLoggedIn && (
+                <li>
+                  <button onClick={props.onLogout}>Logout</button>
+                </li>
+              )}
+            </ul>
+          </nav>
+        );
+      }}
+    </AuthContext.Consumer>
+  );
+};
+
+```
 
 ### Context object
 
