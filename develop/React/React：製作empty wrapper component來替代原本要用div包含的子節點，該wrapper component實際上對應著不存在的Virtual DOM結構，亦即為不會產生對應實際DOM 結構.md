@@ -115,7 +115,7 @@ return (
 
 
 #🧠 React：如何製作empty wrapper component，使該component本身會對應不存在的Virtaul DOM結構以及對應不到實際DOM結構，但可以夾帶著其他內容 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png)`
-<!--SR:!2022-09-20,7,250-->
+<!--SR:!2022-10-09,19,250-->
 
 #🧠 React：下面是定義如何製作empty wrapper component，請問為何行得通？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png) ->->-> `因為return 那邊的Wrapper 元件和它包含的子元件可以看作為return (React.createElement(Wrapper,{}, React.createElemennt('div',{}....)))`
 <!--SR:!2022-10-08,18,250-->

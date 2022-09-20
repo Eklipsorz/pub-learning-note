@@ -83,7 +83,7 @@ color: red;
 <!--SR:!2022-10-07,25,250-->
 
 #🧠  每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration block 是什麼？->->-> `由同一個selector下的所有declaration所組成`
-<!--SR:!2022-09-20,12,230-->
+<!--SR:!2022-10-21,31,230-->
 
 #🧠 每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration  是什麼？ ->->-> `主要是以樣式屬性(property)、屬性值、分號(;)來組成`
 <!--SR:!2022-10-22,33,248-->

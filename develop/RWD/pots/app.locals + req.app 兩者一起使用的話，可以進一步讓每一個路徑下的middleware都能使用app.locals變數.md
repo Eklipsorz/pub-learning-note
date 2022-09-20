@@ -45,7 +45,7 @@ exports.route = function(req, res){
 <!--SR:!2023-02-27,166,250-->
 
 #🧠  Express 框架下的 req.app 是什麼->->-> `req 物件是只有middleware會使用的，req.app 會指向正在使用該middleware的 express app，也就是相當於以下的app所指向的實例`
-<!--SR:!2022-09-20,64,230-->
+<!--SR:!2023-02-21,154,230-->
 
 #🧠 express 如何透過app.locals和req.app來讓每個路徑下的middleware都能使用app.locals變數 ->->-> `只要讓在路徑下對app.locals做屬性上的新增/變更，就能在後面路徑下的middleware透過req.app來調用app本身，接著透過它來存取app.locals，換言之，就是req.app.locals`
 <!--SR:!2022-10-17,84,248-->
