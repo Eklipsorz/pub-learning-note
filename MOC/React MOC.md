@@ -153,3 +153,10 @@
 [[React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼]]
 
 [[(待研究)React：若component上的console在useReducer之後和之前，其印出的資訊順序皆為不同]]
+
+
+## useContext
+
+[[React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方]]
+
+[[React：Context API]]
