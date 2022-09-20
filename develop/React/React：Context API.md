@@ -22,11 +22,26 @@ React Context
 
 
 
+Provider
+[[@reactContextReact]]
 
-Context is itself is not a component
+> ### `Context.Provider`
 
+```
+<MyContext.Provider value={/* some value */}>
+```
+
+> Every Context object comes with a Provider React component that allows consuming components to subscribe to context changes.
+
+> The Provider component accepts a `value` prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers. Providers can be nested to override values deeper within the tree.
+
+
+### Context object
+
+
+> Context is itself is not a component
   
-
+[[@reactContextReact]]
 const MyContext = React.createContext(defaultValue);
 
 > Creates a Context object. When React renders a component that subscribes to this Context object it will read the current context value from the closest matching `Provider` above it in the tree.
@@ -36,8 +51,8 @@ const MyContext = React.createContext(defaultValue);
 
 重點：
 - createContext 建立一個context 物件，會回傳對應context 物件。
-- defaultValue 是定義初始狀態為何
-- 當React 開始渲染一個元件時，而該元件訂閱該context物件，則會讓其讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容。
+- defaultValue 是定義初始狀態為何，形式可以是數字、字串、物件，通常為物件
+- ~~當React 開始渲染一個元件時，而該元件訂閱該context物件，則會讓其讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容。~~
 
 
 
@@ -75,3 +90,4 @@ Links:
 [[React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期]]
 [[React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染]]
 References:
+[[@reactContextReact]]
