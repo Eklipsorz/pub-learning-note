@@ -31,6 +31,9 @@ React Context
 - component-wide：元件範圍內
 
 
+
+context => 定義如何執行的資訊
+
 ## 複習
 
 ---

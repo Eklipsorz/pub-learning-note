@@ -7,93 +7,73 @@
         "id": "a1dca65757e5552e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/React/React：Context API.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "aae06c38208a1036",
-    "type": "split",
+    "id": "be60b8d193d492ac",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "85a59d2c54c575cc",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d9546d4d0b544fb7",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "423a385f7547e8c2",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "lift state up",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "byModifiedTime"
-              }
-            }
+        "id": "5cb9705b6bb8e3b4",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "a318af7e482d40e1",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 443
+    "currentTab": 0
   },
   "right": {
-    "id": "acffa8a6b0911db3",
-    "type": "split",
+    "id": "8afeaf46bbf997b6",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "b058356d42c47057",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a6555039f4ed3291",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "develop/React/React：Context API.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "3cf7a667459c6b46",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "f9a9529a95714827",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ]
+        }
+      },
+      {
+        "id": "f442ce4dd5c34ffb",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
   "active": "a1dca65757e5552e",
   "lastOpenFiles": [
