@@ -20,6 +20,9 @@ React Context
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663607881/blog/react/context/component-wide-state-storage_caeat2.png)
 
+
+
+
 ### xxxx-wide 命名緣由
 
 > -wide combines with nouns to form adjectives which indicate that something exists or happens throughout the place or area that the noun refers to. 
