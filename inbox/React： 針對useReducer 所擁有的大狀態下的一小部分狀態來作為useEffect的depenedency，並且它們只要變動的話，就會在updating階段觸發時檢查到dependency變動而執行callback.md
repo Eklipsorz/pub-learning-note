@@ -207,12 +207,14 @@ useEffect(() => {
 #🧠  React 的 useReducer 是如何歸納多個狀態為一個結果狀態的？ ->->-> `通常使用useReducer將原本從useState所註冊的多個獨立狀態組合成一個物件，其物件屬性名稱和屬性值會是這些獨立狀態名稱和獨立狀態值。`
 
 #🧠 useReducer 所回傳的狀態是由誰負責的？ ->->-> `useReducer(reducer, init, initFn)中的reducer、init、initFn`
+<!--SR:!2022-09-23,3,250-->
 
 #🧠 useReducer 所回傳的狀態在渲染週期是如何回傳新狀態作為snapshot，假設只有useReducer這個狀態管理工具 ->->-> `mounting 階段下的componentDidMount來以init或者initFn來給定，而updating階段則是以componentDidUpdate來以reducer回傳的新狀態為主。`
 
 #🧠 通常使用useReducer將原本從useState所註冊的多個獨立狀態組合成一個物件，其物件屬性名稱和屬性值會是這些獨立狀態名稱和獨立狀態值，那麼reducer會如何以程式碼實現狀態更新 ->->-> `reducer會根據dispatch給定action資訊來決定狀態如何更新，而程式碼會是![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663592245/blog/react/state/useReducer/useReducer-simple-usage_z2yho4.png)`
 
 #🧠 若以useReducer 所回傳的狀態為dependency，請問可以如何運用useReducer的歸納關係來使用->->-> `1. 使用useReducer的整個狀態來做為useEffect 的執行依據、2. 使用useReducer能回傳完整狀態的一部分`
+<!--SR:!2022-09-23,3,250-->
 
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，會有什麼潛在問題？ ->->-> `當針對需要關注的狀態來觸發的話：整個狀態下的所有子狀態只要透過dispatch來改變狀態，那麼每個子狀態都能夠觸發side effect，而不是針對需要關注的狀態來觸發，這會造成不必要的效能浪費`
