@@ -267,7 +267,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 userReducer 在元件上做了什麼？用途是什麼？ ->->-> `useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。`
-<!--SR:!2022-09-20,1,230-->
+<!--SR:!2022-09-22,2,230-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
