@@ -21,8 +21,27 @@ React Context
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663607881/blog/react/context/component-wide-state-storage_caeat2.png)
 
 
+### provider vs. consumer vs. context 角色
+[[@ithomeWantKnowReacta]]
+> ### Context 角色
 
-Provider
+> React context 的使用會環繞三個角色在運作：
+>
+> -   Context Object
+> -   Provider
+> -   Consumer
+
+> 一個 React app 中可以有多個 React context。每個 React context 的本體都是一個物件（在這邊把它稱為 context object）。其中 context object 中又會有兩個很重要的屬性：Provider（提供者）與 Consumer（消費者）。
+>
+> -   Provider（提供者）的功用就是用來**提供** context 值。
+> -   Consumer（消費者）的功用則是用來**使用** context 值。
+
+重點：
+- Context Object：目前是定義狀態的環境
+- Provider：提供特定值至Context Object
+- Consumer：
+
+### Provider component
 [[@reactContextReact]]
 
 > ### `Context.Provider`
@@ -35,6 +54,11 @@ Provider
 
 > The Provider component accepts a `value` prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers. Providers can be nested to override values deeper within the tree.
 
+重點
+context provider component ：
+- 是一個wrapper component
+- 能允許其他被它包住的component能夠存取對應context object. 
+- 剩餘沒被它包住的component將無法存取對應context object
 
 ### Context object
 
@@ -91,3 +115,4 @@ Links:
 [[React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染]]
 References:
 [[@reactContextReact]]
+[[@ithomeWantKnowReacta]]
