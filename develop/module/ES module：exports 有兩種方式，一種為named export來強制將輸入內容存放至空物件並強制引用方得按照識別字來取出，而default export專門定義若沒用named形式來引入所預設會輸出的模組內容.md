@@ -127,8 +127,11 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 #🧠 ES module：使用named exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `得必須一樣，因為得用物件來存取以識別字名稱製作的屬性`
 <!--SR:!2022-11-15,61,250-->
 
-#🧠 ES module：同一個模組的export來說，named 形式可以輸出幾個？default形式可以輸出幾個 ->->-> `named 可以輸出多個named形式，default形式只能允許一個`
+#🧠 ES module：同一個模組的export來說，named export形式可以輸出幾個？default export形式可以輸出幾個 ->->-> `named 可以輸出多個named形式，default形式只能允許一個`
 
+#🧠 ES module：同一個模組的export來說 ，named export形式可以輸出多個嗎？->->-> `可以`
+
+#🧠 ES module：同一個模組的export來說 ，default export形式可以輸出多個嗎？為什麼？->->-> `不可以，default本就只是預設值，本身並ㄅㄨ`
 
 ---
 Status: #🌱 
