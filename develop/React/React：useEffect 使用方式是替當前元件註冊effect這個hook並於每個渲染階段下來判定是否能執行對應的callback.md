@@ -181,8 +181,8 @@ this is use effect
 <!--SR:!2022-09-30,9,250-->
 
 
-#🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，並觸發effect，隨後若發生updating，預設上會再去觸發effect來檢查dependencies。
-<!--SR:!2022-10-01,10,250-->
+#🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `mounting 直接執行effect、updating檢查dependency看是否變動，有變動就先執行cleanup，後看depenedency是否變動來決定執行effect、unmounting 是直接執行cleanup`
+
 
 
 #🧠 React：若同一個元件因為viewport的畫面切換而發生unmount並重新發生mounting，請問會如何保留新舊的hook? ->->-> `在發生unmount 就會移除舊有effect，並於mounting時期會再次產生額外的effect hook來綁定在該元件，觸發如同上述那樣`
@@ -208,8 +208,8 @@ this is use effect
 #🧠 React：useEffect(callback, dependecies) 在mounting階段時的componentDidMount週期函式會做什麼？ ->->-> `直接執行useEffect的callback`
 <!--SR:!2022-09-25,7,250-->
 
-#🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback`
-<!--SR:!2022-10-01,10,250-->
+#🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查dependency是否變動，若有的話，先執行cleanup，在來執行callback，若沒有的話就什麼也不執行`
+
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
