@@ -217,6 +217,7 @@ consume
 ## 複習
 
 #🧠 provider 命名緣由為何？ ->->-> `是提供某些東西至某處的人事物`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
 <!--SR:!2022-09-25,3,250-->
@@ -231,6 +232,7 @@ consume
 <!--SR:!2022-09-24,3,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `provider component 專門設定對應狀態值給對應context、並讓其他component可看見對應context`
 <!--SR:!2022-09-25,3,250-->
@@ -242,8 +244,10 @@ consume
 <!--SR:!2022-09-23,1,230-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2022-09-25,3,250-->
@@ -269,6 +273,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
 <!--SR:!2022-09-25,3,250-->
@@ -279,6 +284,7 @@ consume
 
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
 <!--SR:!2022-09-25,3,250-->
@@ -290,8 +296,10 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
 <!--SR:!2022-09-25,3,250-->
@@ -303,6 +311,7 @@ consume
 <!--SR:!2022-09-24,3,250-->
 
 #🧠 以下是搭載Context的consumer component的component，請問裡頭ctx是指什麼？會回傳什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663773552/blog/react/context/context-consumer-callback_l1a7xv.png)->->-> `{callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM`
+<!--SR:!2022-09-25,3,250-->
 
 
 #🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
@@ -312,11 +321,13 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
 <!--SR:!2022-09-24,3,250-->
 
 #🧠 React：若有元件使用consumer 來存取對應context的值且有多個同個context的provider，請問具體來說它是如何存取context？ ->->-> `當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容`
+<!--SR:!2022-09-25,3,250-->
 
 #💻 請使用useContext來讓App的登入狀態能夠共享給MainHeader元件下的Navigation元件，而非使用props chain，檔案在/react-builder/question-review/useContext-question ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/11-making-context-dynamic/src`
 
