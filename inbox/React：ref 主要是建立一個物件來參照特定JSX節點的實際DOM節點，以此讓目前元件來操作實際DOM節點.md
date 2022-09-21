@@ -166,7 +166,7 @@ immutable
 <!--SR:!2022-09-26,10,250-->
 
 
-
+#💻 Question :: ->->-> `https://github.com/academind/react-complete-guide-code/blob/09-fragments-portals-refs/code/04-finished/src/components/Users/AddUser.js`
 
 #🧠 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662992883/blog/react/react-element/react-refs/refs-form-component-question_ubbw5f.png) ->->-> `！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part1_ifn9sn.png)！[](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662994390/blog/react/react-element/react-refs/form-case-with-refs-part2_kgcbir.png)`
 <!--SR:!2022-10-07,16,248-->
