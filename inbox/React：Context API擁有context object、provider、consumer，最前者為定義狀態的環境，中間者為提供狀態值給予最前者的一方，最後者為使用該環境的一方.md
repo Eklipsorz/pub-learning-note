@@ -97,12 +97,12 @@ provider component
 重點：
 1. 每個 context object 都會有consumer component：
 	- 是一個wrapper component
-	- 訂閱/監聽對應context
-	- 提供特定方法讓被包含的子節點能夠存取對應的context所擁有的值：
-		- 以callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式
+	- 訂閱/監聽對應context的目前值
+	- 提供特定方法讓被包含的元件能夠存取對應的context所擁有的值：
+		- 以 {}+ callback + 第一個引數為context object的value本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式
 	```
 	<Context.Consumer>
-		{(context) => .....}
+		{(value) => .....}
 	</Context.Consumer>
 	```
 2. 使用方式為：
@@ -113,9 +113,9 @@ provider component
 	- 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback}
 	```
 	return (
-		<AuthContext.Consumer>
+		<XXXContext.Consumer>
 			{callback}
-		</AuthContext.Consumer>
+		</XXXContext.Consumer>
 	);
 	```
 	- {callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM
@@ -178,8 +178,13 @@ const MyContext = React.createContext(defaultValue);
 > The `defaultValue` argument is **only** used when a component does not have a matching Provider above it in the tree. This default value can be helpful for testing components in isolation without wrapping them.
   
 重點：
-- createContext 建立一個context 物件，會回傳對應context 物件。
-- defaultValue 是定義初始狀態為何，形式可以是數字、字串、物件，通常為物件
+- createContext 建立一個context 物件
+- 語法為：
+	- defaultValue 是定義初始狀態為何，形式可以是數字、字串、物件，通常為物件
+	- 回傳對應context 物件。
+```
+const MyContext = React.createContext(defaultValue);
+```
 - 當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容
 - 當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值
 
@@ -203,19 +208,27 @@ consume
 > to use fuel, energy, or time, especially in large amounts
 
 重點：
-- provider 指的是提供某些東西的人事物
+- provider 指的是提供某些東西至某處的人事物
 - consumer 指的是使用特定資源並消耗掉的人事物
 - 在電腦科學裡，provider 和 consumer 源自於 provider-consumer problem / producer-consumer problem 問題：
 	- 背景是：兩個Process共享同一個固定大小緩存區，其中一個專門生成資料並放入緩存區的process被稱之為provider/producer，而專門從緩存中取出資料並從緩存區移除(消耗)的process被稱之為consumer
-	- 這問題主要用作於多個process在同時
+	- 這問題案例主要用作於多個process在面向同一個資源時是如何運作
 
 ## 複習
+
+#🧠 provider 命名緣由為何？ ->->-> `是提供某些東西至某處的人事物`
+
+#🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
+
+#🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
+
+#🧠 React：Context中的Provider component用途是什麼？->->-> `provider component 專門設定對應狀態值給對應context、並讓其他component可看見對應context`
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 
@@ -251,20 +264,36 @@ consume
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
 
-#🧠 React：->->-> ``
+#🧠 React：consumer 具體是什麼component->->-> `wrapper component`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
 
-#🧠 Question :: ->->-> ``
+#🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
 
-#🧠 Question :: ->->-> ``
+#🧠  React：consumer component 如何存取context的目前所擁有的值？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
 
+#🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
+
+#🧠 以下是搭載Context的consumer component的component，請問裡頭ctx是指什麼？會回傳什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663773552/blog/react/context/context-consumer-callback_l1a7xv.png)->->-> `{callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM`
+
+
+#🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
+
+#🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
+
+#🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
+
+#🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
+
+#🧠 React：若有元件使用consumer 來存取對應context的值且有多個同個context的provider，請問具體來說它是如何存取context？ ->->-> `當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容`
+
+#💻 請 ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/11-making-context-dynamic/src`
 
 
 ---
