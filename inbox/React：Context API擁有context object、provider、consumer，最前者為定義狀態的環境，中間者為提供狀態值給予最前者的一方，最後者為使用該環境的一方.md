@@ -219,11 +219,13 @@ consume
 #🧠 provider 命名緣由為何？ ->->-> `是提供某些東西至某處的人事物`
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
 <!--SR:!2022-09-24,3,250-->
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
 <!--SR:!2022-09-24,3,250-->
@@ -231,16 +233,20 @@ consume
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `provider component 專門設定對應狀態值給對應context、並讓其他component可看見對應context`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
+<!--SR:!2022-09-23,1,230-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider 具體是什麼Component？->->-> `wrapper component`
 <!--SR:!2022-09-24,3,250-->
@@ -250,18 +256,22 @@ consume
 <!--SR:!2022-09-24,3,250-->
 
 #🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `沒被它包覆著子節點不被允許存取其Context Object`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
 <!--SR:!2022-09-24,3,250-->
 
 
 #🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
+<!--SR:!2022-09-25,3,250-->
 
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，為什麼是這些？ ->->-> `保證每次渲染都依照互動狀態而得到不同的渲染畫面`
@@ -271,19 +281,23 @@ consume
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
 <!--SR:!2022-09-24,3,250-->
 
 #🧠 React：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
 
 #🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
 <!--SR:!2022-09-24,3,250-->
@@ -292,8 +306,10 @@ consume
 
 
 #🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
 

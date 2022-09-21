@@ -52,17 +52,22 @@ const Home = (props) => {
 #🧠 狀態、更新狀態函式的資料傳遞方式有哪些？ ->->-> `使用props所建立的props chain以及使用能夠集中儲存狀態且分享狀態的元件，如context`
 
 #🧠 使用props chain的場景為何？ ->->-> `元件轉換成可重複使用(reusable)的元件`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 使用props chain的場景是打算將元件轉換成可重複使用(reusable)的元件之場景下，請問具體props如何實現可重複使用 ->->-> `具體根據props傳遞過來的資訊來轉換相同結構且不同內容的元件`
 
 #🧠 使用props chain的場景是打算將元件轉換成可重複使用(reusable)的元件之場景下，請問具體props在這的可重複使用的意思是？ ->->-> `這讓其他元件為以特定元件為原型來打造其他元件`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 使用context的場景為何？ ->->-> `當元件A和元件B間之間在props chain傳遞過程需要經過多個元件時，可採用context`
+<!--SR:!2022-09-25,3,250-->
 
 
 #🧠 React：若按鈕中去除掉props，改用context的話，會產生什麼樣的程式碼才能實現原有登出按鈕？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ->->-> `通常若要讓按鈕還原成原有的功能，就只能從按鈕本身使用context![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)`
+<!--SR:!2022-09-23,1,230-->
 
 #🧠 React：上圖是使用props來實現登出按鈕，下圖是改用context來將登出功能寫在按鈕元件上，請問下圖有什麼潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)->->-> `這使得通用按鈕變成專門登出的按鈕，這讓其他元件很難透過這元件來打造其他元件，也就是可重複性降低。`
+<!--SR:!2022-09-25,3,250-->
 
 ---
 Status: #🌱 
