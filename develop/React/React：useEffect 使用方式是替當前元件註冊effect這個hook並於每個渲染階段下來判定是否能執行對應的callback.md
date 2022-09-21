@@ -172,7 +172,7 @@ this is use effect
 ## 複習
 
 #🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會執行useEffect的side effect ->->-> `mounting階段的componentDidMount、updating階段下的componentDidUpdate`
-<!--SR:!2022-09-21,3,250-->
+<!--SR:!2022-10-01,10,250-->
 
 #🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會觸發useEffect的檢查來執行 ->->-> `updating階段下的componentDidUpdate`
 <!--SR:!2022-09-21,3,250-->
