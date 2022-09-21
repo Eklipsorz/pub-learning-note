@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "refs",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,12 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 297
+    "width": 533
   },
   "right": {
     "id": "1b728af4a278cee2",
