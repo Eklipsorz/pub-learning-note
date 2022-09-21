@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：dynamic context.md",
+            "file": "inbox/Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：dynamic context.md",
+                "file": "inbox/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "947b387d29643564",
   "lastOpenFiles": [
+    "inbox/React：dynamic context.md",
     "inbox/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md",
     "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
     "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
@@ -105,7 +106,6 @@
     "inbox/React：form submission 實現.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "inbox/CSS 開發常用使用法則.md",
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-    "develop/belazy-shop-sideproject/sendGrid - 是一個以傳遞email信息為主的雲計算服務公司，主要會以兩種SMTP帳號來幫忙傳遞訊息，一種是用事先申請的電子郵件帳號，另一種則是用sendGrid內建帳號並且用DNS包裹.md"
+    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md"
   ]
 }
