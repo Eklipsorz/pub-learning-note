@@ -87,20 +87,20 @@ position: sticky;
 <!--SR:!2022-09-21,10,250-->
 
 #🧠 CSS：position 屬性預設為何？ ->->-> `static`
-<!--SR:!2022-09-21,10,250-->
+<!--SR:!2022-10-19,28,250-->
 
 #🧠 position 屬性是指定元件在同一份文件中的定位方式是如何，具體positioned element是什麼元素？ ->->-> `**在特定定位方式中，來定義 top、bottom、left、right、z-index 屬性如何調整元素位置**`
 <!--SR:!2022-09-22,6,249-->
 
 
 #🧠 positioned element 是什麼->->-> `在CSS中，poitioned element  會是指該元素是可受到top、bottom、left、right、z-index這五種屬性值來調整其位置`
-<!--SR:!2022-09-21,10,250-->
+<!--SR:!2022-10-19,28,250-->
 
 #🧠 positioned element 是指該元素是可受到top、bottom、left、right這四種屬性值來調整其位置，具體是什麼？ ->->-> `通常會是指帶有poition：relative | absolute | fixed | sticky 的元素`
 <!--SR:!2022-10-01,13,230-->
 
 #🧠 position 為static的元素是算positioned element？還是non-positioned element?  ->->-> `non-positioned element`
-<!--SR:!2022-09-21,10,250-->
+<!--SR:!2022-10-19,28,250-->
 
 #🧠 position 為static的元素 是什麼？會不會受到top、left、right、bottom、z-index這五個屬性的影響 ->->-> `意旨為遵從文件上的預設排版方式來排版，並且不會被top、left、right、bottom、z-index這五個屬性來調整其位置。`
 <!--SR:!2022-09-21,10,250-->
@@ -116,7 +116,7 @@ position: sticky;
 
 
 #🧠 CSS：z-index屬性是什麼？ ->->-> `z-index 屬性是用來調整元素在另一個維度-深度所在的位置，主要是以數值來設定`
-<!--SR:!2022-09-21,10,250-->
+<!--SR:!2022-10-19,28,250-->
 
 #🧠 CSS：z-index屬性會運用在哪個地方 ->->-> `多個元素呈現上重疊在一起的時候`
 <!--SR:!2022-09-21,10,250-->

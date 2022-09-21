@@ -82,7 +82,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 
 
 #🧠 absolute-positioning 元素本身脫離normal flow/flow layout的控制，換言之，normal flow/flow layout不會考慮absolute-positioning來處理，具體不做哪些？ ->->-> `不會為了呈現它而多留空白`
-<!--SR:!2022-09-21,9,250-->
+<!--SR:!2022-10-17,26,250-->
 
 #🧠 absolute-positioning 元素大小和top、bottom、left、right之間的關係是什麼？->->-> `absolute-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬`
 <!--SR:!2022-09-22,10,250-->

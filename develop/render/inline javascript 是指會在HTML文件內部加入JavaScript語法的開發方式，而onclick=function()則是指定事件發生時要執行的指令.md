@@ -43,7 +43,7 @@ inline ：
 
 
 #🧠 inline javascript 是什麼？ ->->-> `指會在夾雜其他內容的文件加入JavaScript語法的開發方式`
-<!--SR:!2022-09-21,24,250-->
+<!--SR:!2022-11-19,59,250-->
 
 #🧠 inline javascript 是指會在夾雜其他內容的文件加入JavaScript語法的開發方式，那麼文件通常會是指？ 整體組合在一起就是？->->-> `HTML，inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式`
 <!--SR:!2022-10-28,45,250-->

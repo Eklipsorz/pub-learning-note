@@ -159,7 +159,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-10-09,20,250-->
 
 #🧠 當對fixed positioning的元件設定正值的value1給left屬性，會是代表著？ ->->-> `元素的左邊界(border-left)會跟viewport的左邊界在viewport內部保持value1的距離`
-<!--SR:!2022-09-21,9,250-->
+<!--SR:!2022-10-16,25,250-->
 
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-right-case_xa3f8t.png) ->->-> `設定right屬性為value1`
@@ -183,7 +183,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 若對fixed-positioning的元素同時設定top、bottom、left、right的話，元素會發生什麼變化 ->->-> `在沒特別設定width、height，會為了滿足這四種屬性值而調整元素的大小`
-<!--SR:!2022-09-21,9,250-->
+<!--SR:!2022-10-15,24,250-->
 
 
 ---
