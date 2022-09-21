@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "a1dca65757e5552e",
+        "id": "947b387d29643564",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md",
+            "file": "inbox/React：dynamic context.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#💻 ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md",
+                "file": "inbox/React：dynamic context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a1dca65757e5552e",
+  "active": "947b387d29643564",
   "lastOpenFiles": [
-    "inbox/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
+    "inbox/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md",
     "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+    "inbox/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "inbox/React：form submission 實現.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "inbox/CSS 開發常用使用法則.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-    "develop/belazy-shop-sideproject/sendGrid - 是一個以傳遞email信息為主的雲計算服務公司，主要會以兩種SMTP帳號來幫忙傳遞訊息，一種是用事先申請的電子郵件帳號，另一種則是用sendGrid內建帳號並且用DNS包裹.md",
-    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-    "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md"
+    "develop/belazy-shop-sideproject/sendGrid - 是一個以傳遞email信息為主的雲計算服務公司，主要會以兩種SMTP帳號來幫忙傳遞訊息，一種是用事先申請的電子郵件帳號，另一種則是用sendGrid內建帳號並且用DNS包裹.md"
   ]
 }

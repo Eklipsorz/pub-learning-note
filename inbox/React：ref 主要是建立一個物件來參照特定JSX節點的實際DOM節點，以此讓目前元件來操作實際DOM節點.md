@@ -166,7 +166,7 @@ immutable
 <!--SR:!2022-09-26,10,250-->
 
 
-#💻 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位，要修改的專案是/react-builder/useRef-practice，檔案的話則是/components/AddUser.js->->-> `https://github.com/academind/react-complete-guide-code/blob/09-fragments-portals-refs/code/04-finished/src/components/Users/AddUser.js`
+#💻 React： 請用refs 技術去替代名字輸入欄位、歲數輸入欄位一被發生提交事件所要實現增加項目和清除輸入欄位，主要要改的點有提交事件、欄位，要修改的專案是/react-builder/question-review/useRef-practice，檔案的話則是/components/AddUser.js->->-> `https://github.com/academind/react-complete-guide-code/blob/09-fragments-portals-refs/code/04-finished/src/components/Users/AddUser.js`
 <!--SR:!2022-09-23,2,248-->
 
 
