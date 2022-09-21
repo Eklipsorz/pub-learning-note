@@ -10,7 +10,8 @@
 重點：
 - 狀態、更新狀態函式的資料傳遞方式有：
 	- 使用props所建立的props chain
-	- 使用context
+	- 使用能夠集中儲存狀態且分享狀態的元件：
+		- context
 - 使用props的場景為
 	- 作為預設用的資料傳遞方式
 	- 將元件轉換成可重複使用(reusable)的元件，具體根據props傳遞過來的資訊來轉換
@@ -47,10 +48,22 @@ const Home = (props) => {
 
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
+#🧠 狀態、更新狀態函式的資料傳遞方式有哪些？ ->->-> `使用props所建立的props chain以及使用能夠集中儲存狀態且分享狀態的元件，如context`
+
+#🧠 使用props chain的場景為何？ ->->-> `元件轉換成可重複使用(reusable)的元件`
+
+#🧠 使用props chain的場景是打算將元件轉換成可重複使用(reusable)的元件之場景下，請問具體props如何實現可重複使用 ->->-> `具體根據props傳遞過來的資訊來轉換相同結構且不同內容的元件`
+
+#🧠 使用context的場景為何？ ->->-> `當元件A和元件B間之間在props chain傳遞過程需要經過多個元件時，可採用context`
+
+
+#🧠 React：若按鈕中去除掉props，改用context的話，會產生什麼樣的程式碼才能實現原有登出按鈕？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)`
+
+#🧠 React：上圖是使用props來實現登出按鈕，下圖是改用context來將登出功能寫在按鈕元件上![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)->->-> ``
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
