@@ -26,6 +26,7 @@ for better IDE auto-completion.
 
 #### 案例：專門處理狀態的component
 
+
 /src/store/auth-context.js
 ```
 import React from 'react';
@@ -84,6 +85,24 @@ const AuthContextProvider = (props) => {
 export { AuthContextProvider };
 export default AuthContext;
 ```
+
+
+/src/index.js：將Provider Component為主的Component包含App Component，使該Component成為最頂層來將它擁有的狀態值往下傳遞
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { AuthContextProvider } from './store/auth-context';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <AuthContextProvider>
+    <App />
+  </AuthContextProvider>
+);
+```
+
 
 #### 案例：被抽離後的component
 
