@@ -98,7 +98,7 @@ function Child(props) {
 ## 複習
 
 #🧠 React：useEffect cleanup function 執行時機是什麼？ ->->-> `執行下一個useEffect前，會執行cleanup、component被unmount前，會執行effect cleanup`
-<!--SR:!2022-09-21,3,250-->
+<!--SR:!2022-10-01,10,250-->
 
 #🧠 當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？為什麼？ ->->-> `會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
 <!--SR:!2022-10-01,10,250-->
@@ -107,7 +107,7 @@ function Child(props) {
 <!--SR:!2022-10-01,10,250-->
 
 #🧠 若設定dependency為空陣列的話，當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，會執行useEffect的side effect實現代碼嗎？為什麼？ ->->-> `不會，因為只會無條件執行cleanup function`
-<!--SR:!2022-09-21,3,250-->
+<!--SR:!2022-09-30,9,250-->
 
 
 #🧠 若設定dependency為空陣列的話，元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，還是會執行useEffect的cleanup，為什麼？ ->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup`
