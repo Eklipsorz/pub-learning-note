@@ -131,7 +131,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 
 #🧠 ES module：同一個模組的export來說 ，named export形式可以輸出多個嗎？->->-> `可以`
 
-#🧠 ES module：同一個模組的export來說 ，default export形式可以輸出多個嗎？為什麼？->->-> `不可以，default本就只是預設值，本身並ㄅㄨ`
+#🧠 ES module：同一個模組的export來說 ，default export形式可以輸出多個嗎？為什麼？->->-> `不可以，default本就只是預設的輸出方式，本身並不會輸出多個default export的必要`
 
 ---
 Status: #🌱 
