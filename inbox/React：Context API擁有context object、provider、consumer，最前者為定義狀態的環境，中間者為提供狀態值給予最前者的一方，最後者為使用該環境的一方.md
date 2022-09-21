@@ -56,7 +56,7 @@
 	- 通常value屬性(attribute)會設定的內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，依此來保證每次渲染都依照互動狀態而得到不同的渲染畫面
 3. 細節：
 	- 每個 context object 都可以擁有多個Provider component
-	- 每個 擁有provider component的元件都會
+
 
 #### 案例：Provider Component
 
@@ -183,6 +183,31 @@ const MyContext = React.createContext(defaultValue);
 - 當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容
 - 當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值
 
+### 命名緣由
+[[@wikidataProducerConsumerProblem2022]]
+> # Producer–consumer problem
+> Dijkstra wrote about the unbounded buffer case: "We consider two processes, which are called the 'producer' and the 'consumer' respectively. The producer is a cyclic process and each time it goes through its cycle it produces a certain portion of information, that has to be processed by the consumer.
+
+> 該問題描述了共享固定大小緩衝區的兩個進程——即所謂的「生產者」和「消費者」——在實際運行時會發生的問題。生產者的主要作用是生成一定量的數據放到緩衝區中，然後重複此過程。與此同時，消費者也在緩衝區消耗這些數據。該問題的關鍵就是要保證生產者不會在緩衝區滿時加入數據，消費者也不會在緩衝區中空時消耗數據。
+
+
+
+provider：
+> a person or thing that provides
+
+
+consumer：
+> a person or thing that consumes
+
+consume
+> to use fuel, energy, or time, especially in large amounts
+
+重點：
+- provider 指的是提供某些東西的人事物
+- consumer 指的是使用特定資源並消耗掉的人事物
+- 在電腦科學裡，provider 和 consumer 源自於 provider-consumer problem / producer-consumer problem 問題：
+	- 背景是：兩個Process共享同一個固定大小緩存區，其中一個專門生成資料並放入緩存區的process被稱之為provider/producer，而專門從緩存中取出資料並從緩存區移除(消耗)的process被稱之為consumer
+	- 這問題主要用作於多個process在同時
 
 ## 複習
 
@@ -194,7 +219,7 @@ const MyContext = React.createContext(defaultValue);
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 
-#🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component 負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
+#🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
 
@@ -206,6 +231,8 @@ const MyContext = React.createContext(defaultValue);
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有什麼特性？ 還是就只是包覆而已？ ->->-> `被它包覆著的Component都允許存取其Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的`
+
+#🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `沒被它包覆著子節點不被允許存取其Context Object`
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
 
@@ -222,9 +249,9 @@ const MyContext = React.createContext(defaultValue);
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，為什麼是這些？ ->->-> `保證每次渲染都依照互動狀態而得到不同的渲染畫面`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：->->-> ``
 
 #🧠 Question :: ->->-> ``
 
@@ -246,3 +273,4 @@ Tags:
 [[React]]
 Links:
 References:
+[[@wikidataProducerConsumerProblem2022]]
