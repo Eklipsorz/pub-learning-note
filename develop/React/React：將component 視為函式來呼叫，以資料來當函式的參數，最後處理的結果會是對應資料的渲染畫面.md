@@ -93,7 +93,7 @@ function Component(props) {
 <!--SR:!2022-11-27,68,250-->
 
 #🧠 React：請問從component如何接收到attributes來當參數？以代碼來表示 ->->-> `function CourseGoalItem(data) {....}或者function CourseGoalItem(props) {...}，接著在以props的屬性來取用對應的attribute值`
-<!--SR:!2022-09-21,28,250-->
+<!--SR:!2022-12-04,74,250-->
 
 #🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
 <!--SR:!2022-11-08,54,250-->

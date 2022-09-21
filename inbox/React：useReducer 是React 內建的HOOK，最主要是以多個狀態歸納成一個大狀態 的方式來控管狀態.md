@@ -244,7 +244,7 @@ initFn：主要是定義如何設定初始值
 ## 複習
 
 #🧠 useReducer 是什麼？用做什麼 ->->-> `1. React 內建的HOOK 2. 用作於狀態管理(與useState相似，但比較多功能來處理較為複雜狀態)`
-<!--SR:!2022-09-21,2,249-->
+<!--SR:!2022-09-27,6,249-->
 
 
 #🧠 dispatch 命名緣由 ->->-> `將特定物件傳送至特定位置的行為`
@@ -302,7 +302,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
-<!--SR:!2022-09-21,2,249-->
+<!--SR:!2022-09-27,6,249-->
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
 <!--SR:!2022-09-22,3,250-->

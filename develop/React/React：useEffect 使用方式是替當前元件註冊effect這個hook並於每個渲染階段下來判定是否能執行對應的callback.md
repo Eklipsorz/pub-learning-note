@@ -178,7 +178,7 @@ this is use effect
 <!--SR:!2022-09-30,9,250-->
 
 #🧠 React：useEffect註冊在一個元件下，元件的unmount如何執行useEffect ->->-> `會無視dependency，直接執行useEffect下的cleanup`
-<!--SR:!2022-09-21,3,250-->
+<!--SR:!2022-09-30,9,250-->
 
 
 #🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，並觸發effect，隨後若發生updating，預設上會再去觸發effect來檢查dependencies。
@@ -199,7 +199,7 @@ this is use effect
 <!--SR:!2022-09-28,10,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時觸發? ->->-> `會是同個元件的生命週期函式： - mounting階段時的componentDidMount週期函式 - updating階段時的componentDidUpdate 週期函式 `
-<!--SR:!2022-09-21,3,250-->
+<!--SR:!2022-10-01,10,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
@@ -213,7 +213,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
-<!--SR:!2022-09-21,3,250-->
+<!--SR:!2022-09-30,9,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
