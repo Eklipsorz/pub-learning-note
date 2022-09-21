@@ -40,20 +40,20 @@
 1. 每個 context object 都會有 provider component ：
 	- 是一個wrapper component
 	- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component
-	- 被它包覆著的子節點都允許存取其Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的
+	- 被它包覆著的Component都允許存取對Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的
 	- 沒被它包覆著子節點不被允許存取其Context Object
 2. 使用方式
 	- 載入想存取狀態的Context 
 	```
 	import XXXContext from '....'
 	```
-	- 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹子節點，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context
+	- 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context
 	```
 	<XXXContext.Provider value={{ state1: value1 }}>
 		.....
 	</XXXContext.Provider>
 	```
-	- 通常value屬性(attribute)會設定的內容會由useState或者useReducer所回傳的狀態值snapshot，依此來保證每次渲染都依照變動而得到不同的渲染畫面
+	- 通常value屬性(attribute)會設定的內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，依此來保證每次渲染都依照互動狀態而得到不同的渲染畫面
 3. 細節：
 	- 每個 context object 都可以擁有多個Provider component
 	- 每個 擁有provider component的元件都會
@@ -185,6 +185,59 @@ const MyContext = React.createContext(defaultValue);
 
 
 ## 複習
+
+#🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
+
+#🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
+
+#🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
+
+#🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
+
+#🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component 負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
+
+#🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
+
+#🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
+
+#🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
+
+#🧠 React：Context中的Provider 具體是什麼Component？->->-> `wrapper component`
+
+
+#🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有什麼特性？ 還是就只是包覆而已？ ->->-> `被它包覆著的Component都允許存取其Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的`
+
+#🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
+
+
+#🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上`
+
+#🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
+
+#🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
+
+#🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
+
+
+#🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，為什麼是這些？ ->->-> `保證每次渲染都依照互動狀態而得到不同的渲染畫面`
+
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
 
 
 ---
