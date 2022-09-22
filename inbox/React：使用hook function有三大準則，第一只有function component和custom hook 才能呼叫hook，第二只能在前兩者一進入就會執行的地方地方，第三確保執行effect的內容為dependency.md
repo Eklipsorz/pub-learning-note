@@ -13,7 +13,7 @@
   
 重點：
 - react hook functions的官方準則
-	- 哪裏可以允許使用hook：只能react functions(function component/react componet function) 或者 custom hook function 才能調用hook function
+	- 哪裏可以允許使用hook：只能在react functions(function component/react componet function) 或者 custom hook function 才能調用hook function
 	- 在允許函式下的哪個區塊能用：
 		- 只能在componet function或者custom hook function的最一開始執行的地方才能呼叫hook
 		- 不能在巢狀函式結構下呼叫 hook function
@@ -107,10 +107,15 @@
 
 #🧠 react hook functions ：除了官方那兩大準則以外，還有非官方準則適用於useEffect，具體是確保你總是以effect內部使用的東西做為dependency，系統如何判定？->->-> `在這裏系統會預判哪些內部內容是得添加至dependency，通常第三方API、元件外的變數是可允許不被添加`
 
-#🧠 對於使用![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-block-scope-with-hook_fzb7bf.png) ->->-> ``
+#🧠 React：對於使用hook的第一準則而言，只能在react functions(function component/react componet function) 或者 custom hook function 才能調用hook function，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-block-scope-with-hook_fzb7bf.png)`
+
+#🧠 React：對於使用hook的第二準則而言，只能在componet function或者custom hook function的最一開始執行的地方才能呼叫hook，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-nest-function-with-hook_wpuzh0.png)`
+
+#🧠 React：對於使用hook的第三準則而言，確保你總是以effect內部使用的東西做為dependency，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-dependency-effect_wetmfo.png)`
+
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
