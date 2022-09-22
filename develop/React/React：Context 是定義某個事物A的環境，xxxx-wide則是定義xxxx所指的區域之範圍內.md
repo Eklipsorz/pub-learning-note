@@ -41,7 +41,7 @@ context：
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
