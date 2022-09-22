@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MOC/React MOC.md",
+            "file": "develop/React/React：Context 是定義某個事物A的環境，xxxx-wide則是定義xxxx所指的區域之範圍內.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MOC/React MOC.md",
+                "file": "develop/React/React：Context 是定義某個事物A的環境，xxxx-wide則是定義xxxx所指的區域之範圍內.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,12 +97,12 @@
   },
   "active": "95518442a1415411",
   "lastOpenFiles": [
+    "MOC/React MOC.md",
     "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
     "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
     "develop/React/React：狀態、更新狀態函式的資料傳遞方式有使用props所建立的props chain和使用context，前者場景為將元件轉換成可重複使用的元件，後者場景為元件間傳遞過程要經歷過多的元件.md",
-    "MOC/React MOC.md",
     "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
-    "develop/React/React：Context API.md",
+    "develop/React/React：Context 是定義某個事物A的環境，xxxx-wide則是定義xxxx所指的區域之範圍內.md",
     "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
     "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
     "develop/React/React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component.md",

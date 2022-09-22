@@ -159,7 +159,7 @@
 
 [[React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方]]
 
-[[React：Context API]]
+[[React：Context 是定義某個事物A的環境，xxxx-wide則是定義xxxx所指的區域之範圍內]]
 
 [[React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component]]
 
