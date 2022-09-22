@@ -240,6 +240,9 @@ consume
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 <!--SR:!2022-09-25,3,250-->
 
+#🧠 React：Context中的Consumer 是什麼？(提示：聽一下，獲取一下)  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
+<!--SR:!2022-09-23,1,230-->
+
 #🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
 <!--SR:!2022-09-23,1,230-->
 
@@ -301,7 +304,7 @@ consume
 #🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
 <!--SR:!2022-09-25,3,250-->
 
-#🧠  React：consumer component 如何存取context的目前所擁有的值？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
+#🧠  React：consumer component 如何存取context的目前所擁有的值？流程是？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
