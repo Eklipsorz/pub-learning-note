@@ -107,7 +107,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "95518442a1415411",
+  "active": "74d7343e5391a9f8",
   "lastOpenFiles": [
     "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
     "inbox/utility function 是提供通用功能給整個專案的函式，helper function則是提供簡短單一功能給特定對象的函式.md",
