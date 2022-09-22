@@ -119,6 +119,7 @@ function reducer(state, action) {
 
 1. useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外
 2. 目的：為了確保
+	- 不會因為渲染週期的觸發而再次定義一次
 	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動
 	- 會用到全域或者reducer函式內所定義/接收到的資料
 
@@ -330,7 +331,7 @@ initFn：主要是定義如何設定初始值
 #🧠 React：reducerFn(prevState, action)的preState 會是最近最新的狀態？為什麼？ ->->-> `同一個 useReducer 控管的所有state 被保證一定是目前最新的狀態，原因為：1. 目前狀態都會被React 儲存管理。 2. 狀態更新都是在dispatch 所發送的action 或者 由React內部提供。 3. 狀態都歸納成同一個狀態，不會有依賴舊有狀態的問題。`
 <!--SR:!2022-10-02,10,250-->
 
-#🧠 React：reducerFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
+#🧠 React：reducerFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：- 增加為了確保不被重複定義	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
 <!--SR:!2022-10-01,9,250-->
 
 
