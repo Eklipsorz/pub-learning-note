@@ -13,12 +13,23 @@
 
 
 
-### 從Components抽離出專門處理狀態的Component和渲染對應畫面的Component
+### 從Components抽離出專門處理Context狀態的Component和渲染對應畫面的Component
+從Components抽離出專門處理狀態的Component，可獲得：
+1. 專門處理狀態的Component
+2. 渲染對應元件的Component
+
+#### 專門處理狀態的Component 結構
+如何做：
+1. 重新建立一個Component代表著專門處理狀態
+2. 該Component以對應Context的Provider Component為主來構築
+3. 其內容在搭載著與Context相關的狀態、更新狀態用的函式、Effect
 
 
-專門處理狀態的Component 會以對應Context的Provider Component為主來構築，其Component會夾雜著與Context相關的狀態、更新用函式、Effect
+#### 渲染對應元件的Component 結構
+如何做：
+1. 移除被抽離的狀態、更新狀態用的函式、Effect
 
-被抽離之後，Component就保有渲染對應元件畫面的職責，Provider Component就維持著負責狀態管理的職責
+被抽離之後，剩下的Component就保有渲染對應元件畫面的職責，Provider Component就維持著負責狀態管理的職責
 
 
 
@@ -108,6 +119,16 @@ root.render(
 #### 案例：被抽離後的component
 
 App.js
+
+1. 在main下，元件原本是如下，但由於onLogin和onLogout等更新isLoggedIn狀態的函式已經由AuthContext所擁有，後續想要使用其功能的元件只需要從context取得，不用從app component取得
+```
+{!ctx.isLoggedIn && <Login onLogin={...} />}
+{ctx.isLoggedIn && <Home onLogout={...} />}
+```
+
+
+  
+
 ```
 import React, { useContext } from 'react';
 
@@ -257,13 +278,40 @@ export default Home;
 
 重點：
 - 每一個類別、模組、函式都只會有一個職責或者單一目的來開發
+- 原則是為了提升易讀性和降低維護/開發難度
+
+### auto-completion
+Autocomplete
+> Autocomplete, or word completion, is a feature in which an application predicts the rest of a word a user is typing.
+
+重點：
+- Autocomplete 或者 auto-completion 是由特定應用程式提供使用者藉由目前輸入內容來預判接下來的完整內容是什麼的功能
 
 
 ## 複習
 
+#🧠 auto-completion 命名緣由是什麼？ ->->-> `Autocomplete 或者 auto-completion 是由特定應用程式提供使用者藉由目前輸入內容來預判接下來的完整內容是什麼的功能`
+
+#🧠 single responsibility principle 是什麼原則->->-> `每一個類別、模組、函式都只會有一個職責或者單一目的來開發`
+
+#🧠 提出single responsibility principle 是為了什麼？(開發、維護) ->->-> `提升易讀性和降低維護/開發難度`
+
+#🧠 提出single responsibility principle 是為了什麼？ ->->-> `提升易讀性和降低維護/開發難度`
+
+#🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，那麼還能有什麼樣重構方法？->->-> `從Components抽離出專門處理狀態的Component，分別為1. 專門處理狀態的Component 2. 渲染對應元件的Component`
+
+#🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，會獲得什麼哪兩種Component->->-> `1. 專門處理狀態的Component 2. 渲染對應元件的Component`
+
+#🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，會如何做？ ->->-> `1. 重新建立一個Component代表著專門處理狀態 2. 該Component以對應Context的Provider Component為主來構築 3. 其內容在搭載著與Context相關的狀態、更新狀態用的函式、Effect`
+
+#🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，那渲染對應元件的Component會如何得到？->->-> `移除被抽離的狀態、更新狀態用的函式、Effect`
+
+#🧠 為何要從Components抽離出專門處理狀態的Component和渲染對應元件的Component？ ->->-> `實現單一職責原則，管理狀態就由負責管理狀態的component來負責，負責對應元件渲染就由該component負責`
+
+#💻 請至/react-builder/question-review/useContext-Refactor-question下，請試著以抽離出專門處理Context狀態的Component和渲染對應畫面的Component ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/12-building-and-using-a-custom-context-provider-cmp/src`
 
 ---
-Status: #🌱 #📓 
+Status: #🌱
 Tags:
 [[React]]
 Links:
