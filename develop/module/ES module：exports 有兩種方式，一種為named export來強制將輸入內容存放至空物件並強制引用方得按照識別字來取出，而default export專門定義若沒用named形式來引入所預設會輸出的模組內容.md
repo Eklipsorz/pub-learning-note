@@ -105,15 +105,19 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-10-10,38,250-->
 
 #🧠 ES module： named exports 是什麼？ ->->-> `	- 以物件形式來輸出模組內容，其屬性為主要內容，這使得每個主要內容都會被特定屬性名稱給綁定或者替該內容命名為該屬性名稱，而命名為named import - 引入方必須以物件形式的特定屬性名稱才能取得內容`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 ES module： named exports 是強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字，具體如何實現？ ->->->`強制輸出的內容放置空物件中來當屬性，其中屬性名稱會是輸出的識別字，屬性值是對應識別字的內容，取出的時候就用物件存取屬性方式來取`
 <!--SR:!2022-11-20,64,250-->
 
 #🧠 ES module： default exports 是什麼？ ->->-> `- 專門定義若沒用named形式來引入所預設會輸出的模組內容，即不以物件形式來引入其模組，而是改以單一值來引入。 - 形式上不會以物件來輸出，而是輸出會以單一值來輸出`
+<!--SR:!2022-09-23,1,230-->
 
 #🧠 ES module：default exports 和 named exports  若擺放在同一個模組檔案，請問引入方還能正常引入嗎？ 那麼具體可引入哪種？->->-> `可以，兩邊都可以`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 ES module：default exports 和 named exports  若擺放在同一個模組檔案，引入方兩邊都能引入，那麼如何引入？？->->-> `若要引入named exports，就以物件的解構來引入，若要引入default exports，就以單一值的形式來存放，如同變數儲存特定內容`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 請試著寫出exporting module來以named exports輸出特定property1和property2，並以importing module來引用這些property1、property2->->-> `exporting module: export { property1, property2,.... }, importing module: import { property1, property2, .... } from 'xxx'`
 <!--SR:!2022-11-06,56,250-->
@@ -128,10 +132,13 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-11-15,61,250-->
 
 #🧠 ES module：同一個模組的export來說，named export形式可以輸出幾個？default export形式可以輸出幾個 ->->-> `named 可以輸出多個named形式，default形式只能允許一個`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 ES module：同一個模組的export來說 ，named export形式可以輸出多個嗎？->->-> `可以`
+<!--SR:!2022-09-25,3,250-->
 
 #🧠 ES module：同一個模組的export來說 ，default export形式可以輸出多個嗎？為什麼？->->-> `不可以，default本就只是預設的輸出方式，本身並不會輸出多個default export的必要`
+<!--SR:!2022-09-25,3,250-->
 
 ---
 Status: #🌱 

@@ -98,17 +98,17 @@ return (
 <!--SR:!2022-09-30,8,250-->
 
 #🧠 React：請詳細說明 **useState在多個獨立狀態，狀態彼此間會改變自己的狀態或者這些狀態皆有關係的情況下** 會有潛在問題 - 狀態A依賴另一個狀態B來使用setState(狀態B)更新，但會面臨無法確保狀態B是最新的問題 ->->-> `每個狀態的setState一執行到更新狀態之間是有時間差。、狀態A使用的狀態更新函式setState只能以callback來取得最新的狀態A來更新，無法取得最新狀態B來更新。`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-09-29,7,250-->
 
 #🧠 React：使用useState 來管理多個狀態的潛在問題是什麼？（請用一句話來說明) ->->-> `繼續使用useState 來實現會衍生出 難以控管、維護狀態且bug眾多的代碼`
 <!--SR:!2022-10-02,10,250-->
 
 
 #🧠 React：使用useState 來管理多個狀態的潛在問題之解法思路是什麼？->->-> `將多個狀態合併成一個大狀態來管理`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React：假如有enteredEmail、emailIsValid這兩個負責儲存兩個不同狀態值的變數，而emailIsValid儲存的狀態值是依據著enteredEmail儲存的狀態值是否包含@來決定的，在這裡頭會有什麼潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663511454/blog/react/state/useReducer/useReducer-background-example_xva8gs.png) ->->-> `- emailIsValid的狀態值會是依賴著另一個狀態值enteredEmail來做決定，而狀態值enteredEmail很有可能因為setState變更狀態的時間差而不會是最新的。 - emailIsValid變更狀態用的函式所支援的callback只會以emailIsValid目前要求的最新狀態來更新，並不能夠以callback形式來取得enteredEmail目前要求的最新狀態值來更新`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-01,9,250-->
 
 
 ---
