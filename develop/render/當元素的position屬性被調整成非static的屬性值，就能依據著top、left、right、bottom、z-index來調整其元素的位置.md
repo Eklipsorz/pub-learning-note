@@ -75,10 +75,10 @@ position: sticky;
 ## 複習
 
 #🧠 CSS：positioned element的位移會考量到元素的border？margin? ->->-> `margin`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-18,26,250-->
 
 #🧠 CSS：若位移的話，positioned element 和margin之間的關係是什麼？比如拿什麼位移->->-> `若要位移的話，會以元素的margin為單位來位移。`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 CSS：position 屬性是什麼？ ->->-> `指定元件在同一份文件中的定位方式是如何`
 <!--SR:!2022-10-19,28,250-->
@@ -90,7 +90,7 @@ position: sticky;
 <!--SR:!2022-10-19,28,250-->
 
 #🧠 position 屬性是指定元件在同一份文件中的定位方式是如何，具體positioned element是什麼元素？ ->->-> `**在特定定位方式中，來定義 top、bottom、left、right、z-index 屬性如何調整元素位置**`
-<!--SR:!2022-09-22,6,249-->
+<!--SR:!2022-10-09,17,249-->
 
 
 #🧠 positioned element 是什麼->->-> `在CSS中，poitioned element  會是指該元素是可受到top、bottom、left、right、z-index這五種屬性值來調整其位置`

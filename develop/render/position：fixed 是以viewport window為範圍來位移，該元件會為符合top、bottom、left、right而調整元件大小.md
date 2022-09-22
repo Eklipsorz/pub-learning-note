@@ -116,7 +116,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-10-12,22,250-->
 
 #🧠 viewport 命名緣由？ ->->-> `view為特定位置所能看到的畫面，port是存取介面，合併起來專門接收並存取畫面渲染資訊的存取介面`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 viewport 在電腦科學會是指什麼？->->-> `就是指window，會是以一個固定大小的可視區塊來呈現特定渲染內容，其中該區塊會以邊線來表示區塊的範疇`
 <!--SR:!2022-09-27,11,230-->
@@ -138,7 +138,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 若瀏覽器有滾動軸，請問fixed positioning 為何還以viewport為主來位移? ->->-> `因為滾動軸滾動本身就只是特定頁面內容，而那不是viewport的一部分。`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
 <!--SR:!2022-10-20,28,250-->
@@ -147,7 +147,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-10-08,19,250-->
 
 #🧠 當對fixed positioning的元件設定正值的value1給top屬性，會是代表著？ ->->-> `元素的上邊界(border-top)會跟viewport的上邊界在viewport內部保持value1的距離`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-bottom-case_coyyts.png)->->-> `設定bottom屬性值為value1`
 <!--SR:!2022-10-20,28,250-->
@@ -170,10 +170,10 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-10-07,18,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-left-negative-case_ykvmvj.png)  ->->-> `left屬性值為負的value1`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-17,25,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-right-negative-case_kd9g5w.png) ->->-> `right屬性值為負的value1`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-top-negative-case_a3xrje.png) ->->-> `top屬性值為負的value1`
 <!--SR:!2022-10-16,25,250-->

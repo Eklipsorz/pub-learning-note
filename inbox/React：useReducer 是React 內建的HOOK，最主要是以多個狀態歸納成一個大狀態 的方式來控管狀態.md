@@ -248,13 +248,13 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 dispatch 命名緣由 ->->-> `將特定物件傳送至特定位置的行為`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 reduce / reduction 命名緣由 ->->-> `reduce 是將複雜的事物轉換成單一簡單的事物`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 reducer 命名緣由 ->->-> `負責將複雜事物轉換成單一簡單事物的函式、儀器、機器`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-09-29,7,250-->
 
 
 #🧠 reducer 在React世界中是指什麼？ ->->-> `在這裡會是將多個狀態合併一個狀態來管理。`
@@ -271,7 +271,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-01,9,250-->
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
@@ -287,11 +287,11 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-02,10,250-->
 
 #🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-09-30,8,250-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的initialState, initFn 是什麼？用途是什麼？ 請先簡答 ->->-> `定義初始狀態、主要是定義如何設定初始值`
@@ -305,7 +305,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-27,6,249-->
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`
@@ -315,14 +315,14 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-02,10,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，reducerFn(prevState, action)如何被觸發執行？ ->->-> `這n個連續dispatch指令會分別被處理`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-01,9,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `會以auto-batching的方式，將狀態試著合併，最後再以最後合併結果來更新狀態、觸發渲染週期`
-<!--SR:!2022-09-22,2,230-->
+<!--SR:!2022-09-26,4,230-->
 
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會執行n次的狀態更新＋觸發渲染週期嗎？ ->->-> `並不會，而是會以auto-batching來執行`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-09-30,8,250-->
 
 #🧠 React：reducerFn主要會是什麼樣子的函式，其函式內容為何？用程式碼表示一下 ->->-> `(prevState, action) => { return new-state }`
 <!--SR:!2022-09-22,3,250-->
@@ -331,7 +331,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reducerFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-01,9,250-->
 
 
 
@@ -344,13 +344,13 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：請畫圖來表示Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-01,9,250-->
 
 #🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-09-29,7,250-->
 
 
 

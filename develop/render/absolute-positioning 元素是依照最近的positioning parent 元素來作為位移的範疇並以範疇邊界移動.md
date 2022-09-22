@@ -71,24 +71,24 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2022-10-11,21,250-->
 
 #🧠 absolute-positioning 元素的位移方式為何？ ->->-> ``
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-19,27,250-->
 
 #🧠  absolute-positioning 元素若找不到最近的positioned parent 元素，會找誰替代？ ->->-> `就以viewport的邊界來位移`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-16,24,250-->
 
 
 #🧠 absolute-positioning 元素和normal flow/flow layout之間的關係為何？ ->->-> `absolute-positioning 元素本身脫離normal flow/flow layout的控制，換言之，normal flow/flow layout不會考慮absolute-positioning來處理`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 
 #🧠 absolute-positioning 元素本身脫離normal flow/flow layout的控制，換言之，normal flow/flow layout不會考慮absolute-positioning來處理，具體不做哪些？ ->->-> `不會為了呈現它而多留空白`
 <!--SR:!2022-10-17,26,250-->
 
 #🧠 absolute-positioning 元素大小和top、bottom、left、right之間的關係是什麼？->->-> `absolute-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對absolute-positioning 元素的top為value1，會是代表著什麼？->->-> `其元素的上邊界和parent元素A的上邊界之間會保持著value1的距離`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對absolute-positioning 元素的right為value1，會是代表著什麼？->->-> `其元素的右邊界和parent元素A的右邊界之間會保持著value1的距離`
 <!--SR:!2022-09-22,10,250-->
@@ -97,10 +97,10 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2022-10-06,17,250-->
 
 #🧠 當對absolute-positioning 元素的bottom為value1，會是代表著什麼？->->-> `其元素的下邊界和parent元素A的下邊界之間會保持著value1的距離`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-top-case_y0kwrz.png): ->->-> `設定top為value1`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-bottom-case_evsu4h.png) ->->-> `設定bottom為value1`
 <!--SR:!2022-10-13,22,250-->
