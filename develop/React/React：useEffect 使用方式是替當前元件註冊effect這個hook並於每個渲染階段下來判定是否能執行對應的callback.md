@@ -233,7 +233,7 @@ this is use effect
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下的componentDidUpdate`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
@@ -248,7 +248,7 @@ this is use effect
 <!--SR:!2022-09-27,9,250-->
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時後，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 
 

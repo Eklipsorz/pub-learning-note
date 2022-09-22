@@ -264,7 +264,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 userReducer 在元件上做了什麼？用途是什麼？ ->->-> `useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。`
 <!--SR:!2022-09-22,2,230-->
@@ -281,7 +281,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式是物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
 <!--SR:!2022-09-22,3,250-->
@@ -312,7 +312,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `回傳新狀態、更新狀態、觸發渲染週期`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，reducerFn(prevState, action)如何被觸發執行？ ->->-> `這n個連續dispatch指令會分別被處理`
 <!--SR:!2022-09-22,3,250-->
