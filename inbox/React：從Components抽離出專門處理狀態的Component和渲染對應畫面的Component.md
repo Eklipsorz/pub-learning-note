@@ -1,8 +1,9 @@
 ## 描述
 
-for better IDE auto-completion.
 
-1. 會事先在createContext中的defaultValue設定未來會用到的資料型別是什麼，好讓IDE能夠更好地補全程式碼，比如當寫下ctx.時，IDE會判斷ctx會有什麼屬性
+### IDE auto-completion.
+若要讓IDE對Context的使用語法提供自動完成(auto-completion)功能，可以試著
+1. 事先在createContext中的defaultValue設定未來會用到的資料型別是什麼，好讓IDE能夠更好地決定要添入什麼字元來完成程式碼，比如當寫下ctx.時，IDE會判斷ctx會有什麼屬性
 
 2. 型別若是函式且沒引數，就設定dummy function，形式會是：
 `onLogout: () => {}`
