@@ -258,16 +258,16 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 reducer 在React世界中是指什麼？ ->->-> `在這裡會是將多個狀態合併一個狀態來管理。`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 action 命名緣由？（請針對問題和困難來說) ->->-> `當要解決特定問題或者困難時所要做的行為`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
 <!--SR:!2022-10-02,10,250-->
 
 #🧠 userReducer 在元件上做了什麼？用途是什麼？ ->->-> `useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。`
-<!--SR:!2022-09-22,2,230-->
+<!--SR:!2022-09-27,5,230-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
@@ -275,7 +275,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
 <!--SR:!2022-09-22,3,250-->
@@ -284,7 +284,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-02,10,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式是物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
 <!--SR:!2022-09-22,3,250-->
@@ -298,7 +298,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-09-22,3,250-->
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的reducerFn 是什麼？用途是什麼？請先簡答 ->->-> `reducerFn 為 一個函式，具體會有兩個引數分別為prevState和action。用途為依據action指示的狀態更新請求內容來回傳新狀態、更新狀態、觸發渲染週期`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
@@ -309,7 +309,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`
-<!--SR:!2022-09-22,3,250-->
+<!--SR:!2022-10-02,10,250-->
 
 #🧠 React：reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `回傳新狀態、更新狀態、觸發渲染週期`
 <!--SR:!2022-10-02,10,250-->

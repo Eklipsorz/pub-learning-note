@@ -125,7 +125,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-10-13,23,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 fixed positioning 的元件會從normal flow/flow layout移除，換言之，normal flow/flow layout會不考量fixed positionging來處理，比如不會做哪些事？ ->->-> `不會為了呈現它而特意留些空間`
 <!--SR:!2022-09-22,10,250-->
@@ -141,7 +141,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-22,10,250-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-top-case_vzczxd.png) ->->-> `是設定top:value1`
 <!--SR:!2022-10-08,19,250-->
@@ -150,7 +150,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-09-22,10,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-bottom-case_coyyts.png)->->-> `設定bottom屬性值為value1`
-<!--SR:!2022-09-22,10,250-->
+<!--SR:!2022-10-20,28,250-->
 
 #🧠 當對fixed positioning的元件設定正值的value1給bottom屬性，會是代表著？->->-> `元素的下邊界(border-bottom)會跟viewport的下邊界在viewport內部保持value1的距離`
 <!--SR:!2022-10-20,28,250-->
