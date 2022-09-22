@@ -7,6 +7,7 @@
 > 1. only if you have something which you would forward through a lot of components and you're forwarding it to a component that does something very specific
 
 
+
 重點：
 - 狀態、更新狀態函式的資料傳遞方式有：
 	- 使用props所建立的props chain
@@ -14,9 +15,10 @@
 		- context
 - 使用props的場景為
 	- 作為預設用的資料傳遞方式
-	- 將元件轉換成可重複使用(reusable)的元件，具體根據props傳遞過來的資訊來轉換
+	- 製作可重複使用(reusable)的元件，具體根據props傳遞過來的資訊來轉換
 - 使用context的場景為
 	- 當元件A和元件B間之間在props chain傳遞過程需要經過多個元件時，可採用context
+
 
 
 
@@ -52,8 +54,10 @@ const Home = (props) => {
 #🧠 狀態、更新狀態函式的資料傳遞方式有哪些？ ->->-> `使用props所建立的props chain以及使用能夠集中儲存狀態且分享狀態的元件，如context`
 <!--SR:!2022-09-25,3,250-->
 
-#🧠 使用props chain的場景為何？ ->->-> `元件轉換成可重複使用(reusable)的元件`
-<!--SR:!2022-09-25,3,250-->
+#🧠 使用props chain的場景為何？(製作) ->->-> `製作可重複使用(reusable)的元件`
+
+#🧠 使用props chain的場景為何？->->-> `製作可重複使用(reusable)的元件`
+
 
 #🧠 使用props chain的場景是打算將元件轉換成可重複使用(reusable)的元件之場景下，請問具體props如何實現可重複使用 ->->-> `具體根據props傳遞過來的資訊來轉換相同結構且不同內容的元件`
 <!--SR:!2022-09-25,3,250-->

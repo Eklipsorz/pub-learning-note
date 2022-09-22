@@ -160,3 +160,15 @@
 [[React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方]]
 
 [[React：Context API]]
+
+[[React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component]]
+
+
+
+[[React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component]]
+
+[[React：狀態、更新狀態函式的資料傳遞方式有使用props所建立的props chain和使用context，前者場景為將元件轉換成可重複使用的元件，後者場景為元件間傳遞過程要經歷過多的元件]]
+
+[[React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期]]
+
+[[React：在還沒有使用Redux或者Context之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
