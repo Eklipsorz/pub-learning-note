@@ -58,6 +58,7 @@ const Home = (props) => {
 #🧠 使用props chain的場景為何？(製作、短) ->->-> `製作可重複使用(reusable)的元件、元件間是較短的props chains`
 
 #🧠 使用props chain的場景為何？->->-> `製作可重複使用(reusable)的元件、元件間是較短的props chains`
+<!--SR:!2022-09-25,2,248-->
 
 
 #🧠 使用props chain的場景是打算將元件轉換成可重複使用(reusable)的元件之場景下，請問具體props如何實現可重複使用 ->->-> `具體根據props傳遞過來的資訊來轉換相同結構且不同內容的元件`

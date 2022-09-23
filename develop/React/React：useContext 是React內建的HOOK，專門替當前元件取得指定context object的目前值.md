@@ -43,20 +43,26 @@ const value = useContext(context)
 ## 複習
 
 #🧠 useContext 是什麼？  ->->-> `是包裝著 對應Context的Consumer Component獲取對應Context值方法的語法糖`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 useContext 在元件上呼叫代表著？ ->->-> ` useContext 是React內建的HOOK，會註冊每個元件下`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 useContext  用途是什麼？ ->->-> `替代context object的consumer component來使用狀態值、獲取指定context object的目前狀態值`
 
 #🧠 useContext 語法為何？->->-> `const value = useContext(context)`
 
 #🧠 useContext 語法是const value = useContext(context)，其中context和value會是指什麼？->->-> `context是指定要存取的context object是哪個，value會是對應context object的目前狀態值，其值會以離目前元件較近的Provider Component所提供或者由createContext的預設值所提供`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 useContext(context.Provider) 這樣對於React的useContext的用法是對的嗎->->-> `不對，只能填入Context object`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 useContext(context.Consumer) 這樣對於React的useContext的用法是對的嗎->->-> `不對，只能填入Context object`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 useContext(contex) 這樣對於React的useContext的用法是對的嗎->->-> `對，只能填入Context object`
+<!--SR:!2022-09-26,3,250-->
 
 
 ---
