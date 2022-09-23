@@ -270,7 +270,7 @@ modal ：對話窗內容
 
 
 #🧠 在modal主體架構中，modal-body的開發目標是什麼？->->-> `調整body大小、背景顏色按照指定顏色、定義body要存的內容，如標題`
-<!--SR:!2022-09-23,10,250-->
+<!--SR:!2022-10-21,28,250-->
 
 
 #🧠 在modal主體架構中，modal-body 的html結構是什麼?  ->->-> `        <div className={styles['modal-body']}> <p>{text}</p> </div>`
