@@ -195,7 +195,7 @@ module map 主要的用途為：
 <!--SR:!2022-12-09,79,247-->
 
 #🧠 ES module：module specifier 在每個平台上的specifier 解析都為一樣嗎？為什麼->->-> `並不一樣，具體來說ES module 標準並未說明如何獲取檔案，所以每個平台會以自己平台上所提倡的實解析方式來解析specifier，並了解對應模組哪裡`
-<!--SR:!2022-09-23,30,230-->
+<!--SR:!2022-10-10,17,210-->
 
 #🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> ` module resolution algorithm 是每個平台主要用來解析module specifier所在的算法`
 <!--SR:!2022-10-27,36,241-->

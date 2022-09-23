@@ -268,7 +268,7 @@ const DUMMY_EXPENSES = [
 <!--SR:!2022-10-23,35,248-->
 
 #🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1 主要是什麼？ 可填入什麼 ->->-> `主要是每個資料的識別字，可以填入字串、數字`
-<!--SR:!2022-09-23,17,248-->
+<!--SR:!2022-11-04,42,248-->
 
 #🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1  使用map所產生的index來搭配 會有什麼問題？ ->->-> `會因為index並不會根據資料而跟著變動，只是按照順序分配，所以仍會有效能、狀態註冊問題`
 <!--SR:!2022-10-27,37,248-->

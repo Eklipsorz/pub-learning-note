@@ -213,7 +213,7 @@ wrapper
 <!--SR:!2022-09-24,28,250-->
 
 #🧠 在React 的 composition ： Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A，具體會是？結構？ ->->-> `- **建立一個component A，其component A會透過載入來擁有一個獨立的component 實例B並以此作為基礎來開發** - 開發過程不會破壞component 實例B結構，但會將component 實例B當作函式呼叫，並夾雜對應資料來當參數來得到 **內容不一樣的的component 實例B**`
-<!--SR:!2022-09-23,27,250-->
+<!--SR:!2022-11-30,68,250-->
 
 
 #🧠 React Specialization：當要載入來擁有component B 來當作基礎開發另一個component A，會修改到component B的結構嗎？->->-> `並不會`
