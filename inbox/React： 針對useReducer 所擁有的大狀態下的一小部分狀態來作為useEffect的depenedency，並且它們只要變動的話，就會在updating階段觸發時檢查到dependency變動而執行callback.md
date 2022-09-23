@@ -206,7 +206,7 @@ useEffect(() => {
 <!--SR:!2022-10-03,10,250-->
 
 #🧠  React 的 useReducer 是如何歸納多個狀態為一個結果狀態的？ ->->-> `通常使用useReducer將原本從useState所註冊的多個獨立狀態組合成一個物件，其物件屬性名稱和屬性值會是這些獨立狀態名稱和獨立狀態值。`
-<!--SR:!2022-09-23,3,250-->
+<!--SR:!2022-10-03,10,250-->
 
 #🧠 useReducer 所回傳的狀態是由誰負責的？ ->->-> `useReducer(reducer, init, initFn)中的reducer、init、initFn`
 <!--SR:!2022-10-03,10,250-->
@@ -218,17 +218,17 @@ useEffect(() => {
 <!--SR:!2022-09-23,3,250-->
 
 #🧠 若以useReducer 所回傳的狀態為dependency，請問可以如何運用useReducer的歸納關係來使用->->-> `1. 使用useReducer的整個狀態來做為useEffect 的執行依據、2. 使用useReducer能回傳完整狀態的一部分`
-<!--SR:!2022-09-23,3,250-->
+<!--SR:!2022-09-25,2,230-->
 
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，會有什麼潛在問題？ ->->-> `當針對需要關注的狀態來觸發的話：整個狀態下的所有子狀態只要透過dispatch來改變狀態，那麼每個子狀態都能夠觸發side effect，而不是針對需要關注的狀態來觸發，這會造成不必要的效能浪費`
-<!--SR:!2022-09-23,3,250-->
+<!--SR:!2022-10-03,10,250-->
 
 #🧠 假設emailState、passwordState是分別從兩個useReducer所註冊的狀態，emailState狀態包含了email和validity，而passwordState狀態包含了password和validity，請問若下列useEffect原本只針對validity，會有什麼潛在問題？解法是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663592888/blog/react/state/useReducer/useReducer-question-example_tcgacn.png) ->->-> `- 每一次email輸入欄位或者password輸入欄位有變動就會觸發執行effect -  實際上來說只想關注在輸入欄位上的validity是否有變動`
 <!--SR:!2022-09-23,3,250-->
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，潛在問題為無法針對需要關注的狀態來觸發，只會每個子狀態觸發就執行，請問如何解決？具體程式碼會是如何？->->-> `若以useReducer回傳的部分狀態的話，useEffect(() => { // do something setState(...) or dispatch(....) }, [state.property1])、const [state, dispatch] = useReducer(reducer, init) const {property1: stateProperty1} = state useEffect(() => { // do something setState(...) or dispatch(....) }, [stateProperty1])`
-<!--SR:!2022-09-23,3,250-->
+<!--SR:!2022-10-03,10,250-->
 
 #🧠 若以useReducer回傳的部分狀態的話，對於狀態來說會有什麼好處？ ->->-> `讓useEffect只針對著需要關注的狀態來做處理，繼而減少不必要的狀態處理。`
 <!--SR:!2022-09-23,3,250-->

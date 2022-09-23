@@ -176,7 +176,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 JSX 語法侷限有什麼？  ->->-> `一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個`
-<!--SR:!2022-09-23,10,250-->
+<!--SR:!2022-10-21,28,250-->
 
 
 
@@ -203,7 +203,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 <!--SR:!2022-10-21,28,250-->
 
 #🧠 以下程式碼能夠正常執行嗎？不能的話，會是什麼問題？解決思維為何？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png) ->->-> `不能夠執行、最主要是沒有額外的parent element來包覆著ErrorModal和Card這兩個元件，解決思維則是建立一個新的parent element來包覆著、使用陣列來將他們包含`
-<!--SR:!2022-09-23,10,250-->
+<!--SR:!2022-10-21,28,250-->
 
 
 
@@ -214,7 +214,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 以下程式碼犯下了JSX 侷限問題，請用程式碼來表示如何用陣列來包含以其解決，為何陣列中的第一個項目可以被放進去？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-solution2_jzylbh.png) ->->-> `boolean expression && JSX Element 可以被當作一種JSX元素，只有前者為true，才以後者的JSX Element為主，若前者為false，就會被React給忽略。`
-<!--SR:!2022-09-23,10,250-->
+<!--SR:!2022-10-21,28,250-->
 
 
 ---
