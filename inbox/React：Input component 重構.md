@@ -69,7 +69,17 @@ return (
 
 ```
 	<Input 
+	  type="email" 
+	  label="E-ma"
+	  id="email" 
+	  isValid={state.isValid} 
+	  value={state.value}
+	  onChange={stateChangeHandler}
+	  onBlur={validateStateHandler}
+	/>
 ```
+
+
 ## 複習
 
 
