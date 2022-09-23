@@ -70,7 +70,7 @@ return (
 ```
 	<Input 
 	  type="email" 
-	  label="E-ma"
+	  label="E-mail"
 	  id="email" 
 	  isValid={state.isValid} 
 	  value={state.value}
@@ -78,7 +78,69 @@ return (
 	  onBlur={validateStateHandler}
 	/>
 ```
+### 重構後
 
+1. 製作Input Component 並使用props接收parent 元件給定的訊息。
+```
+import classes from './Input.module.css';
+
+const Input = (props) => {
+  return (
+    <div
+      className={`${classes.control} ${
+        props.isValid === false ? classes.invalid : ''
+      }`}
+    >
+      <label htmlFor={props.id}>{props.label}</label>
+      <input
+        type={props.type}
+        id={props.id}
+        value={props.value}
+        onChange={props.onChange}
+        onBlur={props.onBlur}
+      />
+    </div>
+  );
+};
+
+export default Input;
+
+```
+
+
+
+2. 將Input component 插入至登入頁面，其最後合併結果：
+```
+return (
+    <Card className={classes.login}>
+      <form onSubmit={submitHandler}>
+        <Input
+          type='email'
+          id='email'
+          label='E-mail'
+          isValid={emailIsValid}
+          value={emailState.value}
+          onChange={emailChangeHandler}
+          onBlur={validateEmailHandler}
+        ></Input>
+        <Input
+          type='password'
+          id='password'
+          label='Password'
+          isValid={passwordIsValid}
+          value={passwordState.value}
+          onChange={passwordChangeHandler}
+          onBlur={validatePasswordHandler}
+        ></Input>
+        <div className={classes.actions}>
+          <Button type='submit' className={classes.btn} disabled={!formIsValid}>
+            Login
+          </Button>
+        </div>
+      </form>
+    </Card>
+  );
+```
 
 ## 複習
 
