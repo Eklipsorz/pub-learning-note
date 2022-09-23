@@ -292,16 +292,19 @@ Autocomplete
 ## 複習
 
 #🧠 auto-completion 命名緣由是什麼？ ->->-> `Autocomplete 或者 auto-completion 是由特定應用程式提供使用者藉由目前輸入內容來預判接下來的完整內容是什麼的功能`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 single responsibility principle 是什麼原則->->-> `每一個類別、模組、函式都只會有一個職責或者單一目的來開發`
 <!--SR:!2022-09-26,3,250-->
 
 #🧠 提出single responsibility principle 是為了什麼？(開發、維護) ->->-> `提升易讀性和降低維護/開發難度`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 提出single responsibility principle 是為了什麼？ ->->-> `提升易讀性和降低維護/開發難度`
 <!--SR:!2022-09-26,3,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，那麼還能有什麼樣重構方法？->->-> `從Components抽離出專門處理狀態的Component，分別為1. 專門處理狀態的Component 2. 渲染對應元件的Component`
+<!--SR:!2022-09-26,3,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，會獲得什麼哪兩種Component->->-> `1. 專門處理狀態的Component 2. 渲染對應元件的Component`
 <!--SR:!2022-09-26,3,250-->
