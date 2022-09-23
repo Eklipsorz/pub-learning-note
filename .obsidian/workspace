@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：Input component 重構.md",
+            "file": "inbox/Untitled 2.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：Input component 重構.md",
+                "file": "inbox/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,7 @@
   },
   "active": "95518442a1415411",
   "lastOpenFiles": [
+    "inbox/React：Input component 重構.md",
     "inbox/在定義react element的for屬性時，由於for本身是JS的保留字且react element是JS延伸語法，貿然使用會有衝突的可能，所以會用htmlFor來替代for屬.md",
     "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
     "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
@@ -105,7 +106,6 @@
     "inbox/React：具體如何利用lifting state up 概念 + pass state data via pros概念來實現從child元件傳遞資訊至parent元件，並讓parent元件處理和渲染.md",
     "inbox/CSS 開發常用使用法則.md",
     "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
-    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
-    "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md"
+    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md"
   ]
 }
