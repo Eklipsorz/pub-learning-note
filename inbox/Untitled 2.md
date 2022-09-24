@@ -87,11 +87,7 @@ callback：
 
 > you will be able to use from outside
 
-### forwarding 命名緣由
-> to send a letter, etc., especially from someone's old address to their new address, or to send a letter, email, etc. that you have received to someone else
 
-重點：
-- forward：將從特定事物A獲取的事物發送給其他事物B
 
 
 ## 複習
