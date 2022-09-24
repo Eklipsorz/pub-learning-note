@@ -89,7 +89,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 Links:
 References:
