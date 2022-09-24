@@ -33,6 +33,8 @@ const ref = React.createRef();
 > 5.  當 ref 被附上之後，`ref.current` 會指向 `<button>` DOM 節點。
 
 
+  
+forwardRef 回傳React Component，但這個Component 可被Ref技術擷取到對應的實際DOM節點
 
 
 
