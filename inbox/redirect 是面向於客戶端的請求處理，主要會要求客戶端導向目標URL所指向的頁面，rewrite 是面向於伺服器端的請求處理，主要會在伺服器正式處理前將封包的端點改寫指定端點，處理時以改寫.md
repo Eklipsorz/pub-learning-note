@@ -57,16 +57,19 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 #🧠 redirect 是面向於什麼的處理？ ->->-> `面向於客戶端的請求處理`
 
 #🧠 redirect 用途是做了什麼？ ->->-> `主要會是要求客戶端直接導向目標URL 所指向的頁面來發送請求`
+<!--SR:!2022-09-27,3,250-->
 
 
 #🧠 redirect 用途是直接導向目標URL 所指向的頁面來發送請求，那具體還會修改什麼跟URL相關的？ ->->-> `會將瀏覽器上所顯示的URL更改成目標URL`
+<!--SR:!2022-09-27,3,250-->
 
 #🧠 rewrite 是面向於什麼的處理->->-> `面向於伺服器的請求處理`
+<!--SR:!2022-09-27,3,250-->
 
 
 #🧠 rewrite 用途是做了什麼？ ->->-> `主要會在伺服器接收到封包時，在正式處理前會將封包指示的端點改寫成指定端點，然後在正式處理就以改寫後的端點來處理`
 
-#🧠 redirect 用途是直接導向目標URL 所指向的頁面來發送請求，會直接修改瀏覽器的顯示URL嗎？為什麼？ ->->-> `不會，具體因爲這是發生在伺服器內部上的轉換`
+#🧠 rewrite 用途是主要會在伺服器接收到封包時，在正式處理前會將封包指示的端點改寫成指定端點，然後在正式處理就以改寫後的端點來處理，會直接修改瀏覽器的顯示URL嗎？為什麼？ ->->-> `不會，具體因爲這是發生在伺服器內部上的轉換`
 
 #🧠 簡單比較：redirect vs. rewrite? ->->-> `1. 前者是client side的請求處理，後者是server side的請求處理 2. 前者是直接將瀏覽器導向目標URL，後者則是將瀏覽器指定的URL在伺服器內做URL轉換 3. 前者是會更改瀏覽器顯示的URL，後者則不會`
 
@@ -76,6 +79,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 #🧠  請用以下例子來說明rewrite：localtest.me/articles/how-to-win-at-chess to localtest.me/articles.aspx?name=now-to-win-at-chess ->->-> `當瀏覽器對localtest.me對應伺服器以articles/how-to-win-at-chess端點發送請求，伺服器接收到並於正式處理前就直接更改成articles.aspx?name=now-to-win-at-chess，然後伺服器就以改寫後結果來處理。`
 
 #🧠 rewrite vs. redirect 誰會更改瀏覽器所顯示URL->->-> `redirect`
+<!--SR:!2022-09-27,3,250-->
 
 
 ---
