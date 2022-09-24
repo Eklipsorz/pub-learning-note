@@ -193,7 +193,7 @@ return React.createElement(Expenses, { items: expenses });
 ## 複習
 
 #🧠 React：在沒有使用JSX的時期，都是用什麼來建立/對應DOM？->->-> `載入React函式庫並從中調用建立Virtual DOM和對應DOM的語法`
-<!--SR:!2022-09-24,27,250-->
+<!--SR:!2022-12-01,68,250-->
 
 #🧠 React：使用著React 函式庫來調用建立Virtual DOM和對應DOM的語法，會有什麼樣的問題？ ->->-> `載入方式很多餘：每個代表元件的檔案都必須要載入、開發/維護難度提升，開發Virtual DOM會相當繁瑣、冗長`
 <!--SR:!2022-09-25,28,250-->

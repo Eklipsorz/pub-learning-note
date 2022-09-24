@@ -74,7 +74,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 ## 複習
 #🧠  import 'xxxx' 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
-<!--SR:!2022-09-24,26,230-->
+<!--SR:!2022-11-23,60,230-->
 
 #🧠 import 'xxxx' 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
 <!--SR:!2022-10-06,36,248-->

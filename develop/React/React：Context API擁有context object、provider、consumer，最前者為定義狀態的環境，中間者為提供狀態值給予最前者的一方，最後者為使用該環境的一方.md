@@ -229,7 +229,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
-<!--SR:!2022-09-24,3,250-->
+<!--SR:!2022-10-04,10,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
 <!--SR:!2022-09-25,3,250-->
@@ -266,7 +266,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
-<!--SR:!2022-09-24,3,250-->
+<!--SR:!2022-10-04,10,250-->
 
 
 #🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上`
@@ -293,7 +293,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
-<!--SR:!2022-09-24,3,250-->
+<!--SR:!2022-10-04,10,250-->
 
 #🧠 React：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
 <!--SR:!2022-09-25,3,250-->
@@ -311,7 +311,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
-<!--SR:!2022-09-24,3,250-->
+<!--SR:!2022-10-04,10,250-->
 
 #🧠 以下是搭載Context的consumer component的component，請問裡頭ctx是指什麼？會回傳什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663773552/blog/react/context/context-consumer-callback_l1a7xv.png)->->-> `{callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM`
 <!--SR:!2022-09-25,3,250-->
