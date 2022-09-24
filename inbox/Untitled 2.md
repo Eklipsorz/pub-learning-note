@@ -87,6 +87,189 @@ callback：
 
 > you will be able to use from outside
 
+```
+import React, {
+  useState,
+  useEffect,
+  useReducer,
+  useContext,
+  useRef,
+} from 'react';
+
+import Card from '../UI/Card/Card';
+import classes from './Login.module.css';
+import Button from '../UI/Button/Button';
+import AuthContext from '../../store/auth-context';
+import Input from '../UI/Input/Input';
+
+const emailReducer = (prevState, action) => {
+  switch (action.type) {
+    case 'INPUT_CHANGE':
+      return { value: action.value, isValid: action.value.includes('@') };
+    case 'INPUT_BLUR':
+      return { value: prevState.value, isValid: prevState.isValid };
+    default:
+      return { value: '', isValid: null };
+  }
+};
+
+const passwordReducer = (prevState, action) => {
+  switch (action.type) {
+    case 'INPUT_CHANGE':
+      return { value: action.value, isValid: action.value.trim().length > 6 };
+    case 'INPUT_BLUR':
+      return { value: prevState.value, isValid: prevState.isValid };
+    default:
+      return { value: '', isValid: null };
+  }
+};
+
+const Login = (props) => {
+  const authCtx = useContext(AuthContext);
+  const emailInputRef = useRef();
+  const passwordInputRef = useRef();
+  const [emailState, emailDispatch] = useReducer(emailReducer, {
+    value: '',
+    isValid: null,
+  });
+
+  const [passwordState, passwordDispatch] = useReducer(passwordReducer, {
+    value: '',
+    isValid: null,
+  });
+
+  const [formIsValid, setFormIsValid] = useState(false);
+
+  useEffect(() => {
+    console.log('EFFECT RUNNING');
+
+    return () => {
+      console.log('EFFECT CLEANUP');
+    };
+  }, []);
+
+  const { isValid: emailIsValid } = emailState;
+  const { isValid: passwordIsValid } = passwordState;
+
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      console.log('Checking form validity!');
+      setFormIsValid(emailIsValid && passwordIsValid);
+    }, 500);
+
+    return () => {
+      console.log('CLEANUP');
+      clearTimeout(identifier);
+    };
+  }, [emailIsValid, passwordIsValid]);
+
+  const emailChangeHandler = (event) => {
+    emailDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+  };
+
+  const passwordChangeHandler = (event) => {
+    passwordDispatch({ type: 'INPUT_CHANGE', value: event.target.value });
+  };
+
+  const validateEmailHandler = () => {
+    emailDispatch({ type: 'INPUT_BLUR' });
+  };
+
+  const validatePasswordHandler = () => {
+    passwordDispatch({ type: 'INPUT_BLUR' });
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    if (emailIsValid && passwordIsValid) {
+      authCtx.onLogin(emailState.value, passwordState.value);
+    } else if (!emailIsValid) {
+      emailInputRef.current.focus();
+    } else {
+      passwordInputRef.current.focus();
+    }
+  };
+
+  return (
+    <Card className={classes.login}>
+      <form onSubmit={submitHandler}>
+        <Input
+          type='email'
+          id='email'
+          label='E-mail'
+          ref={emailInputRef}
+          isValid={emailIsValid}
+          value={emailState.value}
+          onChange={emailChangeHandler}
+          onBlur={validateEmailHandler}
+        ></Input>
+        <Input
+          type='password'
+          id='password'
+          label='Password'
+          ref={passwordInputRef}
+          isValid={passwordIsValid}
+          value={passwordState.value}
+          onChange={passwordChangeHandler}
+          onBlur={validatePasswordHandler}
+        ></Input>
+        <div className={classes.actions}>
+          <Button type='submit' className={classes.btn}>
+            Login
+          </Button>
+        </div>
+      </form>
+    </Card>
+  );
+};
+
+export default Login;
+
+```
+
+
+
+
+```
+import { useRef, useEffect, forwardRef, useImperativeHandle } from 'react';
+import classes from './Input.module.css';
+
+const Input = forwardRef((props, ref) => {
+  const inputRef = useRef();
+
+  const activate = () => {
+    inputRef.current.focus();
+  };
+
+  useImperativeHandle(ref, () => {
+    return {
+      focus: activate,
+    };
+  });
+
+  return (
+    <div
+      className={`${classes.control} ${
+        props.isValid === false ? classes.invalid : ''
+      }`}
+    >
+      <label htmlFor={props.id}>{props.label}</label>
+      <input
+        type={props.type}
+        id={props.id}
+        ref={inputRef}
+        value={props.value}
+        onChange={props.onChange}
+        onBlur={props.onBlur}
+      />
+    </div>
+  );
+});
+
+export default Input;
+
+```
+
 
 
 
