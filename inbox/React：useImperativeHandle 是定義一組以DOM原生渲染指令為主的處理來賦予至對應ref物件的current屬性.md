@@ -20,11 +20,12 @@
 
 
 重點：
+- useImperativeHandle 本身是一個HOOK，會註冊在元件上
 - useImperativeHandle 具體是要以指定一組以DOM原生渲染指令為主的處理來賦予至對應ref物件上的current屬性
 - 語法會是：
 	- ref 是被指定賦予一組以DOM原生渲染指令為主的處理之物件，具體會賦予在ref.current
 	- createHandle 用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理
-	- deps 則是指依賴dependency，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行
+	- deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行
 	```
 	useImperativeHandle(ref, createHandle, [deps])
 	```
@@ -107,6 +108,29 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 - useImperativeHandle 觸發執行的時機點和useLayoutEffect是一樣
 
 ## 複習
+
+#🧠 React：useImperativeHandle 在元件上是什麼？ ->->-> `useImperativeHandle 本身是一個HOOK，會註冊在元件上`
+
+#🧠 React：useImperativeHandle 用途是什麼？ ->->-> `具體是要以指定一組以DOM原生渲染指令為主的處理來賦予至對應ref物件上的current屬性`
+
+#🧠 React：useImperativeHandle命名緣由源自於？ ->->-> `一組以DOM原生渲染指令為主的處理`
+
+#🧠 React：useImperativeHandle 語法會是什麼？ ->->-> `useImperativeHandle(ref, createHandle, [deps])`
+
+#🧠 React：useImperativeHandle 語法的ref是什麼？ ->->-> ` ref 是被指定賦予一組以DOM原生渲染指令為主的處理之物件`
+
+#🧠 React：useImperativeHandle  語法的ref是被指定賦予一組以DOM原生渲染指令為主的處理之物件，那麼具體會如何被賦予？->->-> `createHandle 生成的處理來賦予在ref物件的current屬性`
+
+#🧠 React：useImperativeHandle 語法的createHandle是什麼？ ->->-> `用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理`
+
+#🧠 React：useImperativeHandle 語法的deps是什麼？ ->->-> `deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行`
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
 
 
 ---
