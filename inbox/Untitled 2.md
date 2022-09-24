@@ -43,6 +43,50 @@ export default Input;
 > allows us to use this Component or functionalities from  inside this Component imperatively, which simple means not through the regular state props management not by controlling the component through state in the parent Component, but instead by directly calling or manipulating something in the Component programmatically
 
 
+that is something you rarely wanna use and therefore, you shouldn't use it very often
+
+  
+
+function component
+
+1. 大部分情況下，引數會是只有一個props
+
+2. 少部分會有第二個引數 - ref (從外部引入進來的)
+
+1.  function parent (props) {
+2.    const ref = useRef
+3.     return (
+4.        <Component ref={...} />
+5.      )
+6.  }
+
+8.  function Component(props, ref) {
+
+10.   .....
+11.  }
+
+1. Component 是自製的
+
+2. ref 是源自於parent 元件所建立的useRef回傳而來的ref
+
+3. 當對Component標籤添加ref 這屬性(attribute)，就會在Component 對應的function component的ref引數接收到
+
+  
+
+  
+
+  
+
+useImperativeHandle(ref, callback)
+
+  
+
+callback：
+
+1. 回傳一個物件，物件上會夾雜著資料
+
+> you will be able to use from outside
+
 ### forwarding 命名緣由
 > to send a letter, etc., especially from someone's old address to their new address, or to send a letter, email, etc. that you have received to someone else
 
