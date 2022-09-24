@@ -1,6 +1,6 @@
 ## 描述
 
-### 
+### useImperativeHandle 語法
 
 > useImperativeHandle
 
@@ -20,10 +20,10 @@
 
 
 重點：
-- ImperativeHandle 具體是要以指定一組以DOM原生渲染指令來賦予至對應ref物件
+- useImperativeHandle 具體是要以指定一組以DOM原生渲染指令為主的處理來賦予至對應ref物件上的current屬性
 - 語法會是：
-	- ref 是被指定賦予一組DOM原生渲染指令的物件，具體會賦予在ref.current
-	- createHandle 用來決定渲染指令的函式，會用物件來回傳一組DOM原生渲染指令
+	- ref 是被指定賦予一組以DOM原生渲染指令為主的處理之物件，具體會賦予在ref.current
+	- createHandle 用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理
 	- deps 則是指依賴dependency，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行
 	```
 	useImperativeHandle(ref, createHandle, [deps])
@@ -103,15 +103,17 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 
 > **注意：**执行`createHandle`函数的还有个前提条件，即`useImperativeHandle`的第一个实参`ref`必须有值（否则执行`createHandle`函数也没意义啊）。
 
-
+重點：
+- useImperativeHandle 觸發執行的時機點和useLayoutEffect是一樣
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 #📓 
 Tags:
 [[React]]
 Links:
+[[useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發]]
 References:
 [[@pulasiqiangZuiMoShengDehooksUseImperativeHandle]]
