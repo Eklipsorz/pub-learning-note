@@ -12,7 +12,7 @@
 
 ## 複習
 #🧠 empty wrapper component 在React 中是什麼？ ->->-> `指實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件。`
-<!--SR:!2022-09-24,10,250-->
+<!--SR:!2022-10-22,28,250-->
 
 #🧠 empty wrapper component 在React 中會有對應的Virtual DOM嗎？ ->->-> `沒有`
 <!--SR:!2022-10-22,28,250-->
