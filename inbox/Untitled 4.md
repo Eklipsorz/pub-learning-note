@@ -1,25 +1,117 @@
 ## 描述
 
+### 
+
+> useImperativeHandle
+
+> allows us to use this Component or functionalities from  inside this Component imperatively, which simple means not through the regular state props management not by controlling the component through state in the parent Component, but instead by directly calling or manipulating something in the Component programmatically
+
+
+> ### 2.1 语法
+
+> useImperativeHandle(ref, createHandle, [deps])
+
+> 1.  `ref`  
+>    需要被赋值的`ref`对象。
+>2.  `createHandle`：  
+>    `createHandle`函数的返回值作为`ref.current`的值。
+>3.  `[deps]`  
+>    依赖数组，依赖发生变化会重新执行`createHandle`函数。
+
+
+重點：
+- ImperativeHandle 具體是要以指定一組以DOM原生渲染指令來賦予至對應ref物件
+- 語法會是：
+	- ref 是被指定賦予一組DOM原生渲染指令的物件，具體會賦予在ref.current
+	- createHandle 用來決定渲染指令的函式，會用物件來回傳一組DOM原生渲染指令
+	- deps 則是指依賴dependency，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行
+	```
+	useImperativeHandle(ref, createHandle, [deps])
+	```
+
+#### 案例：
 
 ```
-### 2.1 语法
+import React, { useImperativeHandle, useRef } from 'react';
 
-useImperativeHandle(ref, createHandle, [deps])
+import classes from './Button.module.css';
 
-1.  `ref`  
-    需要被赋值的`ref`对象。
-2.  `createHandle`：  
-    `createHandle`函数的返回值作为`ref.current`的值。
-3.  `[deps]`  
-    依赖数组，依赖发生变化会重新执行`createHandle`函数。
+const Button = (props) => {
+  const ref = useRef();
+
+  useImperativeHandle(ref, () => {
+    return {
+      teststing: 'hi',
+    };
+  });
+  console.log(ref)
+  return (
+    <button
+      type={props.type || 'button'}
+      className={`${classes.button} ${props.className}`}
+      onClick={props.onClick}
+      disabled={props.disabled}
+    >
+      {props.children}
+    </button>
+  );
+};
+
+export default Button;
 ```
+
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664024431/blog/react/ImperativeHandle/simple-imperativeHandle-example_lwx992.png)
+
+### 什麼時候執行
+> ### 2.2 进阶：什么时候执行`createHandle`函数？
+
+> 测试发现和`useLayoutEffect`执行时机一致。  
+> 修改下组件`FancyInput`内容：
+
+```
+const FancyInput = React.forwardRef(function FancyInput(props, ref) {
+    const inputRef = useRef();
+    console.log('render 1')
+
+    useLayoutEffect(() => {        
+        console.log('useEffect1', ref)
+    })
+
+    useImperativeHandle(ref, function() {        
+        debugger
+        console.log('useImperativeHandle')
+        return {
+            focus: () => {
+                inputRef.current.focus();
+            }
+        }
+    })    
+
+    useLayoutEffect(() => {        
+        console.log('useEffect2', ref);
+    })
+
+    console.log('render 2')
+    return <input ref={inputRef}  placeholder="FancyInput"/>;
+})
+```
+
+
+![image.png](https://segmentfault.com/img/bVcVbi1 "image.png")  
+> 看看控制台输出发现`createHandle`函数的执行时机和`useLayoutEffect`一致，这样就**保证了在任意位置的`useEffect`里都能拿到最新的`ref.current`的值**。
+
+> **注意：**执行`createHandle`函数的还有个前提条件，即`useImperativeHandle`的第一个实参`ref`必须有值（否则执行`createHandle`函数也没意义啊）。
+
 
 
 ## 複習
-
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 #📓 
 Tags:
+[[React]]
 Links:
 References:
+[[@pulasiqiangZuiMoShengDehooksUseImperativeHandle]]
