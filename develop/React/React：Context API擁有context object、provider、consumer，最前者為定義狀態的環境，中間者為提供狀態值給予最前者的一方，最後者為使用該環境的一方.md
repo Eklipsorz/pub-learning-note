@@ -250,7 +250,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2022-09-25,3,250-->
@@ -308,7 +308,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
 <!--SR:!2022-10-04,10,250-->

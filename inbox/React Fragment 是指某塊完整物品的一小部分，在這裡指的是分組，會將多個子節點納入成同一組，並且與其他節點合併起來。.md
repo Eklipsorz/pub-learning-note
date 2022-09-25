@@ -90,7 +90,7 @@ fragment
 <!--SR:!2022-10-16,22,250-->
 
 #🧠 fragment 在React上是什麼Component？(請用簡短的話來說) ->->-> `empty wrapper component`
-<!--SR:!2022-09-25,10,250-->
+<!--SR:!2022-10-23,28,250-->
 
 
 #🧠 React fragment 主要用途為 ->->-> `既可以滿足JSX語法侷限又可以不用增加額外DOM節點的情況下，來回傳一組多個子節點`
@@ -105,7 +105,7 @@ fragment
 
 
 #🧠 React fragment 語法會有哪些形式(提示兩個) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>) 和 return ( <> <children> </> )`
-<!--SR:!2022-09-25,10,250-->
+<!--SR:!2022-10-23,28,250-->
 
 #🧠 這是React fragment 語法嗎？ 還是什麼(嚴格來說)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894948/blog/react/fragment/react-fragment-sugar_xcazre.png) ->->-> `算是，但嚴格來說是fragment 的語法糖`
 <!--SR:!2022-09-25,10,250-->
