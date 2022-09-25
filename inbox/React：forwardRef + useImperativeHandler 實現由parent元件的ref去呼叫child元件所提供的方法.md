@@ -166,10 +166,15 @@ export default Input;
 ```
 
 ### 獲取流程
-- 當Login.js進行渲染時，會
-
+- 當Login.js進行渲染時，會將那兩個ref物件直接放入至Input component function所對應的forwardRefs來呼叫，並由它轉發ref物件至對應component function
+```
+forwardRefs((props, refs) => {})
+```
+- 做完component function後，且處理完forwardRefs會回傳能進行ref處理的component和對應畫面，此時ref已經對應好一組指令
 
 ## 複習
+
+#💻 Question :: ->->-> ``
 
 
 ---
