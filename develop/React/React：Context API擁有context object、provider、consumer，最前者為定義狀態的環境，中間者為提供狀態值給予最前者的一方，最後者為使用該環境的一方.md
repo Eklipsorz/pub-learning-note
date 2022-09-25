@@ -247,7 +247,7 @@ consume
 <!--SR:!2022-09-26,2,210-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2022-10-05,10,250-->
