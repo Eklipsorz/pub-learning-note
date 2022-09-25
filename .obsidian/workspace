@@ -69,8 +69,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -149,7 +148,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1b2fe279d6bcd7a5",
+  "active": "b4db86c1bb9cb649",
   "lastOpenFiles": [
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
