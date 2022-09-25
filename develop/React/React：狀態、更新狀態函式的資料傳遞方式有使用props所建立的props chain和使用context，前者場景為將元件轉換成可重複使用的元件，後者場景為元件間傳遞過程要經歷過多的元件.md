@@ -53,10 +53,10 @@ const Home = (props) => {
 ## 複習
 
 #🧠 狀態、更新狀態函式的資料傳遞方式有哪些？ ->->-> `使用props所建立的props chain以及使用能夠集中儲存狀態且分享狀態的元件，如context`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 使用props chain的場景為何？(製作、短) ->->-> `製作可重複使用(reusable)的元件、元件間是較短的props chains`
-<!--SR:!2022-09-25,2,248-->
+<!--SR:!2022-10-01,6,248-->
 
 #🧠 使用props chain的場景為何？->->-> `製作可重複使用(reusable)的元件、元件間是較短的props chains`
 <!--SR:!2022-10-01,6,248-->
@@ -66,7 +66,7 @@ const Home = (props) => {
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 使用props chain的場景是打算將元件轉換成可重複使用(reusable)的元件之場景下，請問具體props在這的可重複使用的意思是？ ->->-> `這讓其他元件更容易以其為原型來打造其他元件`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 使用context的場景為何？ ->->-> `當元件A和元件B間之間在props chain傳遞過程需要經過多個元件時，可採用context`
 <!--SR:!2022-09-25,3,250-->
@@ -76,7 +76,7 @@ const Home = (props) => {
 <!--SR:!2022-10-01,6,230-->
 
 #🧠 React：上圖是使用props來實現登出按鈕，下圖是改用context來將登出功能寫在按鈕元件上，請問下圖有什麼潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)->->-> `這使得通用按鈕變成專門登出的按鈕，這讓其他元件很難透過這元件來打造其他元件，也就是可重複性降低。`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 ---
 Status: #🌱 

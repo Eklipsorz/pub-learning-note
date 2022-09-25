@@ -188,7 +188,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往上，為負就往下 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-bottom-offset_x0jc6r.png)->->-> `如果是調整bottom屬性的話，其屬性值value1若是正的話，就會將元素往上偏移；其屬性值若是負的話，就會將元素往下偏移。`
-<!--SR:!2022-09-25,11,248-->
+<!--SR:!2022-10-25,30,248-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往左，為負就往右![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-right-offset_au8dxj.png)->->-> `如果是調整right屬性的話，其屬性值value1若是正的話，就會將元素往左偏移；其屬性值若是負的話，就會將元素往右偏移。`

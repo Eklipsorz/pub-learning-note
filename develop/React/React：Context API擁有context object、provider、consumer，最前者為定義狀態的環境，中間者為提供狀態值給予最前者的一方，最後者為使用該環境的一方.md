@@ -220,7 +220,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
 <!--SR:!2022-10-04,10,250-->
@@ -276,7 +276,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
 <!--SR:!2022-09-25,3,250-->
@@ -287,7 +287,7 @@ consume
 
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
 <!--SR:!2022-09-25,3,250-->
@@ -305,7 +305,7 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？流程是？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
 <!--SR:!2022-10-05,10,250-->
@@ -321,10 +321,10 @@ consume
 <!--SR:!2022-09-25,3,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
 <!--SR:!2022-10-04,10,250-->
