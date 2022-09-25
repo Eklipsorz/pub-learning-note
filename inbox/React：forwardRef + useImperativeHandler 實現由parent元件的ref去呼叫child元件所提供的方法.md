@@ -1,92 +1,11 @@
 ## 描述
 
 
-在這裡會有兩個輸入欄位會使用以下元件的渲染內容，並於mount階段透過useRef來對著對應輸入欄位執行focus()來決定active element是什麼，結果會因為限制，最終會是由最後渲染的輸入欄來成為active element
+### forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法
 
-```
-import { useRef, useEffect } from 'react';
-import classes from './Input.module.css';
-
-const Input = (props) => {
-
-  const inputRef = useRef()
-
-  useEffect(() => {
-    inputRef.current.focus()
-  },[])
-
-  return (
-    <div
-      className={`${classes.control} ${
-        props.isValid === false ? classes.invalid : ''
-      }`}
-    >
-      <label htmlFor={props.id}>{props.label}</label>
-      <input
-        type={props.type}
-        id={props.id}
-        ref={inputRef}
-        value={props.value}
-        onChange={props.onChange}
-        onBlur={props.onBlur}
-      />
-    </div>
-  );
-};
-
-export default Input;
-```
-
-
-> useImperativeHandle
-
-> allows us to use this Component or functionalities from  inside this Component imperatively, which simple means not through the regular state props management not by controlling the component through state in the parent Component, but instead by directly calling or manipulating something in the Component programmatically
-
-
-that is something you rarely wanna use and therefore, you shouldn't use it very often
-
-  
-
-function component
-
-1. 大部分情況下，引數會是只有一個props
-
-2. 少部分會有第二個引數 - ref (從外部引入進來的)
-
-1.  function parent (props) {
-2.    const ref = useRef
-3.     return (
-4.        <Component ref={...} />
-5.      )
-6.  }
-
-8.  function Component(props, ref) {
-
-10.   .....
-11.  }
-
-1. Component 是自製的
-
-2. ref 是源自於parent 元件所建立的useRef回傳而來的ref
-
-3. 當對Component標籤添加ref 這屬性(attribute)，就會在Component 對應的function component的ref引數接收到
-
-  
-
-  
-
-  
-
-useImperativeHandle(ref, callback)
-
-  
-
-callback：
-
-1. 回傳一個物件，物件上會夾雜著資料
-
-> you will be able to use from outside
-
+/components/Login/Login.js：在這裡建立二兩個ref 物件：emailInputRef和passwordInputRef並傳遞Input元件，從那獲取對應child元件所提供的方法：讓指定輸入欄位變成active element，以利實現：
+	- 當email欄位沒輸入就設定email欄位為active element
+	- 當password欄位沒輸入就設定password欄位為active element
 ```
 import React, {
   useState,
@@ -95,35 +14,11 @@ import React, {
   useContext,
   useRef,
 } from 'react';
-
-import Card from '../UI/Card/Card';
-import classes from './Login.module.css';
-import Button from '../UI/Button/Button';
-import AuthContext from '../../store/auth-context';
-import Input from '../UI/Input/Input';
-
-const emailReducer = (prevState, action) => {
-  switch (action.type) {
-    case 'INPUT_CHANGE':
-      return { value: action.value, isValid: action.value.includes('@') };
-    case 'INPUT_BLUR':
-      return { value: prevState.value, isValid: prevState.isValid };
-    default:
-      return { value: '', isValid: null };
-  }
-};
-
-const passwordReducer = (prevState, action) => {
-  switch (action.type) {
-    case 'INPUT_CHANGE':
-      return { value: action.value, isValid: action.value.trim().length > 6 };
-    case 'INPUT_BLUR':
-      return { value: prevState.value, isValid: prevState.isValid };
-    default:
-      return { value: '', isValid: null };
-  }
-};
-
+.
+.
+.
+.
+.
 const Login = (props) => {
   const authCtx = useContext(AuthContext);
   const emailInputRef = useRef();
@@ -229,7 +124,7 @@ export default Login;
 
 
 
-
+/components/UI/Input/Input.js：當接收到由Login傳送過來的emailInputRef、passwordInputRef物件，透過forwardRef傳遞至對應輸入欄位的component function，由他們useImperativeHandler，來設定這兩個ref物件獲取activate方法，好讓parent元件能獲取
 ```
 import { useRef, useEffect, forwardRef, useImperativeHandle } from 'react';
 import classes from './Input.module.css';
@@ -270,7 +165,8 @@ export default Input;
 
 ```
 
-
+### 獲取流程
+- 當Login.js進行渲染時，會
 
 
 ## 複習
