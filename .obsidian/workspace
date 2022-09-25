@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
+            "file": "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "JavaScript 編譯時期是只在Global Scope編譯並生成EC，然後function scope等遇到在編譯以及生成EC嗎？",
+                "query": "Virtual DOM和對應",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
+                "file": "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
+                "file": "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md"
+                "file": "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md"
               }
             }
           }
@@ -151,6 +151,8 @@
   },
   "active": "1b2fe279d6bcd7a5",
   "lastOpenFiles": [
+    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
+    "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
     "inbox/Untitled 2.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
@@ -158,8 +160,6 @@
     "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
     "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
     "inbox/React：Input component 重構.md",
-    "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
-    "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫為主.md",
-    "inbox/在定義react element的for屬性時，由於for本身是JS的保留字且react element是JS延伸語法，貿然使用會有衝突的可能，所以會用htmlFor來替代for屬.md"
+    "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md"
   ]
 }
