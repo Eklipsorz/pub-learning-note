@@ -232,10 +232,10 @@ consume
 <!--SR:!2022-10-04,10,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `provider component 專門設定對應狀態值給對應context、並讓其他component可看見對應context`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 <!--SR:!2022-09-25,3,250-->
@@ -278,8 +278,11 @@ consume
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
 <!--SR:!2022-10-05,10,250-->
 
+#🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容(不是指物件、值、字串) ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
+<!--SR:!2022-10-04,9,250-->
+
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
-<!--SR:!2022-09-25,3,250-->
+
 
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，為什麼是這些？ ->->-> `保證每次渲染都依照互動狀態而得到不同的渲染畫面`
@@ -290,7 +293,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
 <!--SR:!2022-10-04,10,250-->
@@ -299,7 +302,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-05,10,250-->
 
 #🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
 <!--SR:!2022-09-25,3,250-->
@@ -318,7 +321,7 @@ consume
 
 
 #🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
-<!--SR:!2022-09-25,3,250-->
+<!--SR:!2022-10-04,9,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
 <!--SR:!2022-10-05,10,250-->
