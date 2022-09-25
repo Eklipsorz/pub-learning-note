@@ -48,28 +48,39 @@ React.forwardRef(render)
 ## 複習
 
 #🧠 forwardRef 是React 函式庫的什麼？->->-> `是由React函式庫提供的方法之一`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React：forwardRef 最主要是做什麼？ ->->-> `最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React：forwardRef 最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理，通常會有的處理會是什麼？ ->->-> `	forwardRef + useImperativeHandle ：讓指定元件a的Ref 物件設定為指定元件B內的部分對應DOM指令處理 - 將目前元件的Ref 轉發至指定元件所對應的function來對應其child component的特定DOM節點。 - 無關parent-child關係的元件間來進行轉發和ref對應`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React：forwardRef 最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理，若搭配useImperativeHandle會是什麼？  ->->-> `forwardRef + useImperativeHandle ：讓指定元件a的Ref 物件設定為指定元件B內的部分對應DOM指令處理`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠  React：forwardRef 語法形式->->-> `React.forwardRef(render)`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React：forwardRef 語法形式的render是什麼？ ->->-> `render 是指對應元件的render或者component function，其function會是(props, refs)，props會是該元件的屬性，refs則是接收到的ref物件`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠  React：forwardRef 語法形式回傳什麼 ->->-> `forwardRef 回傳React Component，但這個Component 可被Ref技術擷取到對應的實際DOM節點`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React： ref 技術支援所有元件嗎？->->-> `只有支援原生HTML元件`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React： ref 技術支援自製元件嗎？如\<Componet \/\>->->-> `不支援`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 React： ref 技術不支援自製元件嗎？如\<Componet \/\>-> 若要支援的話，得用什麼技術？->-> `forwardRefs`
 
 #🧠  forwarding 命名緣由 ->->-> `將從特定事物A獲取的事物發送給其他事物B`
+<!--SR:!2022-09-28,3,250-->
 
 #🧠 forwardRefs 對於 元件間和forward有什麼樣關聯會取名成forwardRefs->->-> ``
+<!--SR:!2022-09-28,3,250-->
 
 
 ---
