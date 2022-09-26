@@ -86,6 +86,7 @@ _Fig. 2: Colored Scope Bubbles_
 <!--SR:!2022-10-11,52,250-->
 
 #🧠 JavaScript 編譯時期是只在Global Scope編譯並生成EC，然後function scope等遇到在編譯以及生成EC嗎？ ->->-> `編譯是會建立對應EC的bytecode，然後再執行階段中，快要執行GEC對應的scope才會執行對應的bytecode來生成對應EC，而FEC則是快要執行FEC對應的scope才會執行對行對應的bytecode來生成對應的FEC`
+<!--SR:!2022-09-28,2,247-->
 
 
 #🧠 lexically scoped language 在編譯時期會做些什麼？ (scope、生成)->->-> `確定所有種類的lexical scope 和 生成對應的ByteCode`
