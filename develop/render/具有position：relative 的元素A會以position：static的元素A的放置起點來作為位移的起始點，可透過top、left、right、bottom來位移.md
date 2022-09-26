@@ -195,7 +195,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-09-29,14,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往右，為負就往左![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-left-offset_k59p4g.png) ->->-> `如果是調整left屬性的話，其屬性值value1若是正的話，就會將元素往右偏移；其屬性值若是負的話，就會將元素往左偏移。`
-<!--SR:!2022-09-26,12,248-->
+<!--SR:!2022-10-30,34,248-->
 
 
 #🧠 在position：relative的元素下都設置著left、right這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄right這屬性，改選left為主`
