@@ -26,7 +26,7 @@
 > Someone's descendants are the people in later generations who are related to them.
 
 重點：
-- 某事物A的後裔會是從某事物A衍生的下一代事物
+- 某事物A的後裔會是從某事物A衍生的事物
 ## 複習
 
 #🧠 descendent 命名緣由為何？ ->->-> `某事物A的後裔會是從某事物A衍生的下一代事物`
