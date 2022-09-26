@@ -298,16 +298,16 @@ Autocomplete
 <!--SR:!2022-10-06,10,250-->
 
 #🧠 提出single responsibility principle 是為了什麼？(開發、維護) ->->-> `提升易讀性和降低維護/開發難度`
-<!--SR:!2022-09-26,3,250-->
+<!--SR:!2022-10-05,9,250-->
 
 #🧠 提出single responsibility principle 是為了什麼？ ->->-> `提升易讀性和降低維護/開發難度`
 <!--SR:!2022-10-06,10,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，那麼還能有什麼樣重構方法？->->-> `從Components抽離出專門處理狀態的Component，分別為1. 專門處理狀態的Component 2. 渲染對應元件的Component`
-<!--SR:!2022-09-26,3,250-->
+<!--SR:!2022-10-04,8,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，會獲得什麼哪兩種Component->->-> `1. 專門處理狀態的Component 2. 渲染對應元件的Component`
-<!--SR:!2022-09-26,3,250-->
+<!--SR:!2022-10-03,7,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，會如何做？ ->->-> `1. 重新建立一個Component代表著專門處理狀態 2. 該Component以對應Context的Provider Component為主來構築 3. 其內容在搭載著與Context相關的狀態、更新狀態用的函式、Effect`
 <!--SR:!2022-10-06,10,250-->

@@ -234,7 +234,7 @@ useEffect(() => {
 <!--SR:!2022-10-03,10,250-->
 
 #🧠 若以useReducer回傳的部分狀態的話，對於狀態處理效能會有什麼好處？ ->->-> `讓useEffect只針對著需要關注的狀態來做處理，繼而減少不必要的狀態處理。`
-<!--SR:!2022-09-26,3,250-->
+<!--SR:!2022-10-06,10,250-->
 
 
 #💻 請到react-builder/question-review/useReducer-question領取題目，請開發兩個useReducer來負責email和password的狀態管理來替代components/Login.js的useState，開發前請先建立好新分支->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/08-usereducer-and-useeffect/src`

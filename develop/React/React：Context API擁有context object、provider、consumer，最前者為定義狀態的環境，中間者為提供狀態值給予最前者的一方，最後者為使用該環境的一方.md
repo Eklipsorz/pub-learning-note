@@ -287,7 +287,7 @@ consume
 
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式，為什麼是這些？ ->->-> `保證每次渲染都依照互動狀態而得到不同的渲染畫面`
-<!--SR:!2022-09-26,2,230-->
+<!--SR:!2022-10-02,6,230-->
 
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
