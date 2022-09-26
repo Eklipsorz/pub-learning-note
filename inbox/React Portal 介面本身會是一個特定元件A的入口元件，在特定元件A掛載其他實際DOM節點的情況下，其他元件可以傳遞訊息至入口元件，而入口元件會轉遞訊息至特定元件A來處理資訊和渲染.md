@@ -177,7 +177,7 @@ portal：
 <!--SR:!2022-09-26,10,250-->
 
 #🧠 在React，Portal本身是什麼？能詳細解釋嗎？->->-> `在React中，Portal 介面本身會是一個特定元件A的傳送門介面(Portal)，當資訊、狀態傳遞至這傳送門介面，該介面會直接將資訊、狀態傳送至特定元件A來處理資訊和渲染特定元件A`
-<!--SR:!2022-09-26,10,250-->
+<!--SR:!2022-10-24,28,250-->
 
 #🧠 在React，Portal本身功能是什麼？ ->->-> `讓特定元件A掛載至其他實際DOM節點下，並於其他元件下建立傳送門介面，使其他元件透過傳送門介面來和特定元件A進行資訊傳遞和渲染`
 <!--SR:!2022-09-26,10,250-->
@@ -186,7 +186,7 @@ portal：
 <!--SR:!2022-10-18,23,250-->
 
 #🧠 React Portal 會破壞元件的渲染內容本身嗎？ 實質上是？ ->->-> `Portal 不會破壞元件的渲染內容本身，但會轉移其實際DOM節點至指定地點`
-<!--SR:!2022-09-26,10,250-->
+<!--SR:!2022-10-24,28,250-->
 
 #🧠 React：建立Portal 介面的語法是什麼 ->->-> `使用React-DOM librar下的createPortal 來實現`
 <!--SR:!2022-10-13,19,250-->
@@ -203,7 +203,7 @@ portal：
 <!--SR:!2022-10-20,25,250-->
 
 #🧠 React Portal：請在webpack會用到的參考網頁來規劃modal要安置在哪 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990506/blog/react/react-element/portal/modal-component-root_xotlt4.png)`
-<!--SR:!2022-09-26,10,250-->
+<!--SR:!2022-10-24,28,250-->
 
 
 #🧠 React：上面是webpack會用到的參考網頁，其中backdrop-root負責存在著所有backdrop，而modal-root則是負責存放modal，下面是modal的實現代碼，請在裡頭使用portal來連接到參考網頁的backdrop-root和modal-root![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990506/blog/react/react-element/portal/modal-component-root_xotlt4.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990507/blog/react/react-element/portal/modal-portal-question_whaxq1.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990507/blog/react/react-element/portal/modal-portal_dsfg59.png)`
