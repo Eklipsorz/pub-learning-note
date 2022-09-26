@@ -33,6 +33,7 @@
 
 #🧠 descendant combinator 的主要形式是什麼？ ->->-> `主要由多個基本selector和空格所構成，每個selector之間會用空格相連接`
 
+#🧠 舉例來說明何謂後裔節點？->->-> `節點A擁有節點B，而節點B擁有節點C，那麼節點B和節點C就是源自於節點A的後裔節點`
 
 #🧠 selector1 selector2 { }這類的selector會選擇什麼？ ->->-> `挑選滿足selector2的DOM節點，且會是DOM節點A的後裔節點，該節點A會滿足selector1`
 
