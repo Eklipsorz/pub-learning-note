@@ -126,7 +126,7 @@ function ExampleApplication() {
 <!--SR:!2022-10-05,28,230-->
 
 
-#🧠 React.StrictMode 檢測每個元件的生命週期是否正確執行：舉一個週期會重複執行的例子 ->->-> `render()`
+#🧠 React.StrictMode 檢測每個元件是否能適應mount=>unount的n次循環還能正常執行：舉一個週期會重複執行的例子 ->->-> `render()`
 <!--SR:!2022-11-30,65,250-->
 
 #🧠 React.StrictMode 會不會發生在部署階段？為什麼？->->-> `這只會發生在開發階段，部署階段並不會將React.StrictMode加入至部署時的內容，所以可以在部署階段避免這樣子的試錯`

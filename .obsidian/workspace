@@ -7,8 +7,12 @@
         "id": "dcd190074034273e",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Virtual DOM和對應",
+                "query": "JavaScript 編譯時期是只在",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md"
+              }
             }
           }
         ]
@@ -130,15 +139,15 @@
   },
   "active": "dcd190074034273e",
   "lastOpenFiles": [
+    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
+    "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
+    "develop/React/life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
+    "develop/React/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md",
+    "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
+    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
-    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
-    "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
-    "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
-    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
-    "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
-    "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
-    "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md"
+    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md"
   ]
 }
