@@ -116,7 +116,7 @@
 <!--SR:!2022-10-06,10,250-->
 
 #🧠 React：對於使用hook的第二準則而言，只能在componet function或者custom hook function的最一開始執行的地方才能呼叫hook，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-nest-function-with-hook_wpuzh0.png)`
-<!--SR:!2022-09-26,3,250-->
+<!--SR:!2022-10-06,10,250-->
 
 #🧠 React：對於使用hook的第三準則而言，確保你總是以effect內部使用的東西做為dependency，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-dependency-effect_wetmfo.png)`
 <!--SR:!2022-10-06,10,250-->
