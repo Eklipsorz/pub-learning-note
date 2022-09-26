@@ -100,7 +100,7 @@ specific
 <!--SR:!2022-09-27,17,250-->
 
 #🧠 CSS specificity 是什麼？->->-> `Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A`
-<!--SR:!2022-09-26,17,250-->
+<!--SR:!2022-11-12,47,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，請問declaration包含了哪些？(名稱重複？！) ->->-> `這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突`
 <!--SR:!2022-11-11,46,250-->
