@@ -1,7 +1,7 @@
 ## 描述
 
 
-### MainBanner
+### MainBanner 結構以及所在
 
 ```
 import React from 'react';
