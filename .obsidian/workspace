@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "2a4e92fee32daf56",
+        "id": "cb62a1b80ca50623",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/food-order-project：Cart Context 構建.md",
+            "file": "inbox/React：Context 命名法則.md",
             "mode": "source",
             "source": false
           }
@@ -40,10 +40,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？",
+                "query": "store",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/food-order-project：Cart Context 構建.md",
+                "file": "inbox/React：Context 命名法則.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/food-order-project：Cart Context 構建.md",
+                "file": "inbox/React：Context 命名法則.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/food-order-project：Cart Context 構建.md"
+                "file": "inbox/React：Context 命名法則.md"
               }
             }
           }
@@ -136,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2a4e92fee32daf56",
+  "active": "cb62a1b80ca50623",
   "lastOpenFiles": [
+    "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
+    "inbox/React：Context 命名法則.md",
+    "develop/React/React：stateful component 是指本身註冊狀態以及對應狀態更新用函式，stateless component則是指本身沒有註冊狀態和沒註冊更新狀態用的函式.md",
+    "inbox/food-order-project：Cart Context 構建.md",
     "inbox/food-order-project：Cart 構建實現概念和程式碼 版本二.md",
+    "MOC/React MOC.md",
     "inbox/food-order-project：Cart 構建實現概念和程式碼 版本一.md",
     "inbox/Untitled 2.md",
     "inbox/food-order-project：Input 構建實現概念和程式碼.md",
-    "inbox/express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md",
-    "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
-    "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
-    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
-    "MOC/React MOC.md",
-    "inbox/React：Input component 重構.md"
+    "inbox/express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md"
   ]
 }
