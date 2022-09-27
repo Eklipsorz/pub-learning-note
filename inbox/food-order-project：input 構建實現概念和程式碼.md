@@ -1,6 +1,10 @@
 ## 描述
 
 
+### Input 接收attributes
+1. 定義Input 會有label、attr這兩大屬性(attributes)：
+	- label 屬性：其屬性值用字串表示 用以呈現Input是代表什麼輸入欄的顯示元件
+	- attr 屬性：定義其他元件對於Input的要求
 
 ```
 import Input from '../UI/Input/Input';
@@ -27,6 +31,10 @@ const MainItemForm = (props) => {
 
 export default MainItemForm;
 ```
+
+
+###  利用props所構建的特定Input
+利用switch 來根據type為何來從中取特定屬性值來建立不同的Input，避免Input寫死成以number形式的Input
 
 ```
 import styles from './Input.module.css';
