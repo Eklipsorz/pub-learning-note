@@ -145,7 +145,7 @@ specific
 <!--SR:!2022-10-11,28,250-->
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是最高的？形式會是如何？->->-> `用!important來綁定的declaration，形式會是 background-color: red !important;`
-<!--SR:!2022-09-27,17,250-->
+<!--SR:!2022-11-13,47,250-->
 
 #🧠 在CSS specificity中，declaration在哪種情況下獲得權重是次高的？形式會是如何？ ->->-> `用inline style是來綁定declaration block，<div style="font-size:24px;color:red;"> </div>`
 <!--SR:!2022-10-28,35,250-->
