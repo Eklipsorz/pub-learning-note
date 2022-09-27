@@ -75,7 +75,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2022-09-27,3,250-->
 
 #🧠 簡單比較：redirect vs. rewrite? ->->-> `1. 前者是client side的請求處理，後者是server side的請求處理 2. 前者是直接將瀏覽器導向目標URL，後者則是將瀏覽器指定的URL在伺服器內做URL轉換 3. 前者是會更改瀏覽器顯示的URL，後者則不會`
-<!--SR:!2022-09-27,3,250-->
+<!--SR:!2022-10-07,10,250-->
 
 
 #🧠 請用以下例子來說明redirect： yourdomain.com to www.yourdomain.com ->->-> `當瀏覽器對yourdomain.com對應伺服器以/發送請求，瀏覽器就直接被導向至www.yourdomain.com`
