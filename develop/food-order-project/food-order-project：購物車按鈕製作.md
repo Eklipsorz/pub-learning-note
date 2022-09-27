@@ -133,6 +133,6 @@ export default CartButton;
 ---
 Status: #🌱 #📓 
 Tags:
-[[todo-study]]
+[[todo-study]] - [[food-order-project]]
 Links:
 References:

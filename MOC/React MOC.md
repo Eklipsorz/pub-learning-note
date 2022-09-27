@@ -172,3 +172,12 @@
 [[React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期]]
 
 [[React：在還沒有使用Redux或者Context之前，parent 元件傳遞資訊至child元件處理是使用props概念來實現，而child元件傳遞資訊給parent元件處理是使用props概念和callback]]
+
+
+
+## ref
+
+[[React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性]]
+
+[[React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法]]
+
