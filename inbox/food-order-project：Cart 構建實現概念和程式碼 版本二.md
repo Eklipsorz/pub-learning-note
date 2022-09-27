@@ -8,7 +8,6 @@
 ### 直接透過Modal延伸成存放多個item的Cart
 
 
-
 ```
 import React from 'react';
 import styles from './Cart.module.css';
@@ -64,6 +63,8 @@ export default Cart;
 
 
 ### 通用UI - Modal
+與版本一相較，從Modal確定backdrop和overlay的傳送門介面，而不是另外延伸成特定元件所屬的modal來確定
+
 ```
 import styles from './Modal.module.css';
 import React from 'react';
@@ -101,4 +102,5 @@ export default Modal;
 Status: #🌱 #📓 
 Tags:
 Links:
+[[food-order-project：Cart 構建實現概念和程式碼 版本一]]
 References:
