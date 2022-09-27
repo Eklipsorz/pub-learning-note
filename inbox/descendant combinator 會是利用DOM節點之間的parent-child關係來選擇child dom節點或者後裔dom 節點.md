@@ -30,21 +30,29 @@
 ## 複習
 
 #🧠 descendent 命名緣由為何？ ->->-> `某事物A的後裔會是從某事物A這代衍生出來的任一後代事物`
+<!--SR:!2022-09-30,3,250-->
 
 #🧠 descendant combinator 是什麼？ ->->-> `descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者子孫dom 節點`
+<!--SR:!2022-09-30,3,250-->
 
 #🧠 descendant combinator 所選擇的後裔節點會是指什麼？ ->->-> `特定節點的子節點，特定節點的孫子節點`
+<!--SR:!2022-09-30,3,250-->
 
 #🧠 descendant combinator 所選擇的後裔節點就一定是特定節點的子節點嗎 ->->-> `不一定，還有可能會是特定節點的子孫節點`
+<!--SR:!2022-09-30,3,250-->
 
 #🧠 descendant combinator 的主要形式是什麼？ ->->-> `主要由多個基本selector和空格所構成，每個selector之間會用空格相連接`
+<!--SR:!2022-09-30,3,250-->
 
 #🧠 舉例來說明何謂後裔節點？->->-> `節點A擁有節點B，而節點B擁有節點C，那麼節點B和節點C就是源自於節點A的後裔節點`
+<!--SR:!2022-09-30,3,250-->
 
 #🧠 selector1 selector2 { }這類的selector會選擇什麼？ ->->-> `挑選滿足selector2的DOM節點，且會是DOM節點A的後裔節點，該節點A會滿足selector1`
+<!--SR:!2022-09-30,3,250-->
 
 
 #🧠 selector1 selector2 selector3 { } 這類的selector會選擇什麼？ ->->-> `挑選滿足selector2的DOM節點，且會是DOM節點A的後裔節點，該節點A會滿足selector1和selector2`
+<!--SR:!2022-09-30,3,250-->
 
 
 ---
