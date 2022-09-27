@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dcd190074034273e",
+        "id": "19bd2178941e4bd7",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
+            "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
+                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
+                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md"
+                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md"
               }
             }
           }
@@ -137,8 +136,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dcd190074034273e",
+  "active": "19bd2178941e4bd7",
   "lastOpenFiles": [
+    "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
+    "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
     "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
     "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md",
     "annotation/@mdnCombinatorsLearnWeb.md",
@@ -146,8 +147,6 @@
     "inbox/food-order-project：MainBanner 文字區塊顯示不出來的問題.md",
     "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
     "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
-    "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
-    "develop/React/life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
-    "develop/React/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md"
+    "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md"
   ]
 }
