@@ -272,9 +272,13 @@ export default Home;
 
 #### 當context.provider component管理的狀態發生更新時
 
-provider component 狀態發生更新，就會如同一般元件被觸發更新&渲染週期，過ㄔㄥ在這裡會以provider component 所在的位置往下傳遞props，同時會讓使用context的元件跟著使用
+provider component 狀態發生更新，就會如同一般元件被觸發更新&渲染週期，過程中會是更新context上的狀態，接著以provider component 所在的位置透過props往下傳遞資訊給子元件來重新觸發該子元件的渲染週期，同時會讓使用context的元件跟著存取新狀態的context來更新
 
-/src/index.js：將Provider Component為主的Component包含App Component，使該Component成為最頂層來將它擁有的狀態值往下傳遞
+
+##### 案例：
+
+在這裡會將AuthContextProvider包住App 元件，這相當於包含App下的所有元件，接著當AuthContextProvider註冊/管理的狀態發生更動，會間接觸發AuthContextProvider的狀態更新和渲染週期，並且由他將資訊透過props往下傳遞至子元件，被它包含的子元件會因而重新執行渲染週期，且過程中會存取context的新狀態而更新。
+
 ```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -288,6 +292,33 @@ root.render(
     <App />
   </AuthContextProvider>
 );
+```
+
+
+```
+import React, { useContext } from 'react';
+
+import Login from './components/Login/Login';
+import Home from './components/Home/Home';
+import MainHeader from './components/MainHeader/MainHeader';
+import AuthContext from './store/auth-context';
+
+function App() {
+  const authCtx = useContext(AuthContext);
+
+  return (
+    <React.Fragment>
+      <MainHeader />
+      <main>
+        {!authCtx.isLoggedIn && <Login />}
+        {authCtx.isLoggedIn && <Home />}
+      </main>
+    </React.Fragment>
+  );
+}
+
+export default App;
+
 ```
 
 
@@ -342,6 +373,9 @@ Autocomplete
 #💻 請至/react-builder/question-review/useContext-Refactor-question下，請試著以抽離出專門處理Context狀態的Component和渲染對應畫面的Component ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/12-building-and-using-a-custom-context-provider-cmp/src`
 <!--SR:!2022-10-05,10,250-->
 
+#🧠 當context.provider component管理的狀態發生更新時，那麼會有什麼樣效果？ ->->-> `provider component 狀態發生更新，就會如同一般元件被觸發更新&渲染週期，過程中會是更新context上的狀態，接著以provider component 所在的位置透過props往下傳遞資訊給子元件來重新觸發該子元件的渲染週期，同時會讓使用context的元件跟著存取新狀態的context來更新`
+
+#🧠 在這裡會將AuthContextProvider包住App 元件，這相當於包含App下的所有元件，接著當AuthContextProvider註冊/管理的狀態發生更動時，App下的所有元件會如何渲染？ ->->-> `AuthContextProvider在觸發過程中，更新context上的狀態和觸發渲染週期，接著由他將資訊透過props往下傳遞至App下的所有子元件，被它包含的子元件會因而重新執行渲染週期，且過程中會存取context的新狀態而更新。`
 
 
 ---
@@ -349,5 +383,6 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方]]
 References:
 [[@freecodecampSOLIDDefinitionSOLID2022]]

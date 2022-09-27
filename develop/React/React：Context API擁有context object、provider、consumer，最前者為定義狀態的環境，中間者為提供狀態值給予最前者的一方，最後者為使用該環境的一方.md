@@ -214,6 +214,8 @@ consume
 	- 背景是：兩個Process共享同一個固定大小緩存區，其中一個專門生成資料並放入緩存區的process被稱之為provider/producer，而專門從緩存中取出資料並從緩存區移除(消耗)的process被稱之為consumer
 	- 這問題案例主要用作於多個process在面向同一個資源時是如何運作
 
+
+
 ## 複習
 
 #🧠 provider 命名緣由為何？ ->->-> `是提供某些東西至某處的人事物`
