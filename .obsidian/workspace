@@ -9,19 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
+            "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "56fbcc0d85a8657c",
+        "id": "32f2e06b1abae244",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+            "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "desce",
+                "query": "存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -89,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md"
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md"
               }
             }
           }
@@ -148,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "19bd2178941e4bd7",
+  "active": "32f2e06b1abae244",
   "lastOpenFiles": [
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "inbox/在定義react element的for屬性時，由於for本身是JS的保留字且react element是JS延伸語法，貿然使用會有衝突的可能，所以會用htmlFor來替代for屬.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+    "develop/render/inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式，而onclick=function()則是指定事件發生時要執行的指令.md",
+    "develop/render/id 是同一份DOM文件用來識別特定節點的識別字串，class是同一份DOM文件下用來將多個特定節點分成好幾類.md",
+    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
-    "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
-    "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
-    "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
-    "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md",
-    "annotation/@mdnCombinatorsLearnWeb.md",
-    "inbox/foot-order-project：購物車按鈕製作.md",
-    "inbox/food-order-project：MainBanner 文字區塊顯示不出來的問題.md"
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md"
   ]
 }

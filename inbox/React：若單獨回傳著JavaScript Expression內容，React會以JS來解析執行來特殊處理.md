@@ -53,14 +53,14 @@ function App() {
 #🧠 return ( enable ? \<h2\>enable\<\/h2\> : \<h2\>disable\<\/h2\>) 為React元件的渲染內容的話，會如何執行？ ->->-> `會直接以JS來解析執行，根據enable是否為true來決定最後渲染內容`
 <!--SR:!2022-09-30,3,250-->
 
-#🧠 React：若單讀回傳JS Expression為渲染內容且沒添加\{\}且還夾雜著其他元件的話，React會如何處理？ ->->-> `並不會特殊處理`
+#🧠 React：若單獨回傳JS Expression為渲染內容且沒添加\{\}且還夾雜著其他元件的話，React還會進行特殊處理嗎？ ->->-> `並不會特殊處理`
 <!--SR:!2022-09-30,3,250-->
 
 
-#🧠 React：若單讀回傳JS Expression為渲染內容且沒添加\{\}且還夾雜著其他元件的話，React並不會特殊處理 ->->-> `- JS Expression 一部分會變成一般字串 - JS Expression 一部分會變成JSX Element`
+#🧠 React：若單獨回傳JS Expression為渲染內容且沒添加\{\}且還夾雜著其他元件的話，React並不會特殊處理，那會怎麼處理？->->-> `- JS Expression 一部分會變成一般字串 - JS Expression 一部分會變成JSX Element`
 <!--SR:!2022-09-30,3,250-->
 
-#🧠 React：若單讀將JS Expression為渲染內容納入陣列的其中一個元素且沒添加\{\}的話，React會如何處理？ ->->-> `React會直接以JS來解析執行來特殊處理，不用添加\{\}：在這裡會根據enable是否為true來決定最後渲染內容`
+#🧠 React：若單獨將JS Expression為渲染內容納入陣列的其中一個元素且沒添加\{\}的話，React會如何處理？ ->->-> `React會直接以JS來解析執行來特殊處理，不用添加\{\}：在這裡會根據enable是否為true來決定最後渲染內容`
 <!--SR:!2022-09-30,3,250-->
 
 #🧠 React：會讓React在渲染部分以JS Expression處理的途徑有哪些？ ->->-> `單獨回傳JS Expression、在渲染內容使用{}和JS Expression、陣列的其中一個元素擺放JS Expression`

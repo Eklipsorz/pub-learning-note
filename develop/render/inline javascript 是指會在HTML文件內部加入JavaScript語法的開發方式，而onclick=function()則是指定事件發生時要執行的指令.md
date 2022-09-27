@@ -48,8 +48,8 @@ inline ：
 #🧠 inline javascript 是指會在夾雜其他內容的文件加入JavaScript語法的開發方式，那麼文件通常會是指？ 整體組合在一起就是？->->-> `HTML，inline javascript 是指會在HTML文件內部加入JavaScript語法的開發方式`
 <!--SR:!2022-10-28,45,250-->
 
-#🧠 在HTML DOM上直接以JS來設定事件綁定的開發方式叫做什麼 ->->-> `inline javascript`
-<!--SR:!2022-12-10,74,250-->
+#🧠 在HTML 文件上直接以JS來設定事件綁定的開發方式叫做什麼 ->->-> `inline javascript`
+
 
 #🧠 inline javascript 和檔案分離之間的差別->->-> `前者指會在夾雜其他內容的文件加入JavaScript語法的開發方式；後者則是按照內容種類來分檔案來開發，其中一個為專門存放JavaScript的檔案`
 <!--SR:!2022-12-04,69,250-->
