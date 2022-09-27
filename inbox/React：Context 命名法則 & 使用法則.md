@@ -15,6 +15,17 @@
 2. 單純建立context並匯出
 
 
+
+### /src/store 目錄可存放
+存放在/src/store的context 檔案分別為：
+1. 定義context 是什麼的檔案
+2. 定義一個元件來管理對應context的相關狀態
+
+注意事項：
+- 管理對應context狀態的元件建議包含在真正需要該狀態的元件，而非都包含整個App
+
+
+
 ## 複習
 
 #🧠 React：每個context會存放在哪？以常見的用法來說 ->->-> `/src/store`
@@ -27,8 +38,12 @@
 #🧠 React：若以儲存認證功能的狀態為例，那麼其context檔案名稱為 ->->-> `就是auth-context.js`
 
 
-#🧠 React：每個專門儲存狀態的context 會存哪種內容？ ->->-> `1. 定義Context.Provider來構建專門管理特定功能下狀態的元件並匯出元件 2. 單純建立context並匯出`
+#🧠 React：每個專門儲存狀態的context檔案 可以存放哪種內容？(若考量嚴格) ->->-> `1. 定義Context.Provider來構建專門管理特定功能下狀態的元件並匯出元件 2. 單純建立context並匯出`
 
+#🧠 React：管理狀態的/src/store可以存放哪些檔案？ ->->-> `1. 定義context 是什麼的檔案 2. 定義一個元件來管理對應context的相關狀態`
+
+
+#🧠 React：對於管理對應context狀態的元件，要如何適當使用？->->-> `管理對應context狀態的元件建議包含在真正需要該狀態的元件，而非都包含整個App`
 
 ---
 Status: #🌱 #📓 
