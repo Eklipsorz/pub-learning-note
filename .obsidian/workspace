@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md"
+                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md"
               }
             }
           }
@@ -148,10 +148,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "56fbcc0d85a8657c",
+  "active": "19bd2178941e4bd7",
   "lastOpenFiles": [
-    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
     "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
     "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",

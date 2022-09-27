@@ -58,7 +58,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2022-10-07,10,250-->
 
 #🧠 redirect 用途是做了什麼？ ->->-> `主要會是要求客戶端直接導向目標URL 所指向的頁面來發送請求`
-<!--SR:!2022-09-27,3,250-->
+<!--SR:!2022-10-07,10,250-->
 
 
 #🧠 redirect 用途是直接導向目標URL 所指向的頁面來發送請求，那具體還會修改什麼跟URL相關的？ ->->-> `會將瀏覽器上所顯示的URL更改成目標URL`
