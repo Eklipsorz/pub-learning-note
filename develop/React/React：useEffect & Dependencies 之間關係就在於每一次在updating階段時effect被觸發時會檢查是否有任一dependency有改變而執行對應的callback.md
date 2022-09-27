@@ -110,8 +110,6 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 #🧠 React：useEffect(callback, dependencies) 的dependency設定目的 ->->-> `決定能否在每次觸發effect並執行side effect的因素、給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環`
 <!--SR:!2022-10-14,18,250-->
 
-#🧠 React：Side effect 通常大致分為哪兩種？ ->->-> `side effect能夠運用互動狀態的資訊來渲染特定內容、不會依據互動狀態的資訊來渲染的side effect`
-<!--SR:!2022-09-27,8,250-->
 
 #🧠 React：side effect 通常會應用在運用互動狀態的資訊來渲染特定內容，會需要什麼才能實現？->->-> `這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段`
 <!--SR:!2022-09-29,10,250-->

@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "56fbcc0d85a8657c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md"
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md"
               }
             }
           }
@@ -136,17 +148,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "19bd2178941e4bd7",
+  "active": "56fbcc0d85a8657c",
   "lastOpenFiles": [
+    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "inbox/React：若單獨回傳著JavaScript Expression內容，React會以JS來解析執行來特殊處理.md",
     "develop/React/在渲染層面下，render 函式回傳的內容若單純添加boolean expression && JSX element 的話，會使其語法正常執行，反之在其基礎下添加其他元素的話，其語法會被視為字串和一般的React Element來看待.md",
     "inbox/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
     "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
     "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md",
     "annotation/@mdnCombinatorsLearnWeb.md",
     "inbox/foot-order-project：購物車按鈕製作.md",
-    "inbox/food-order-project：MainBanner 文字區塊顯示不出來的問題.md",
-    "develop/JavaScript/JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context.md",
-    "develop/belazy-shop-sideproject/驗證字串內容原本是否為日期字串的方法就是先將比對值以Number轉換，接著再以其結果轉換String比對原本轉換前的內容是否一致，一致則為Number String.md",
-    "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md"
+    "inbox/food-order-project：MainBanner 文字區塊顯示不出來的問題.md"
   ]
 }
