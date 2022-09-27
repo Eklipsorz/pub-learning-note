@@ -270,6 +270,27 @@ export default Home;
 
 ```
 
+#### 當context.provider component管理的狀態發生更新時
+
+provider component 狀態發生更新，就會如同一般元件被觸發更新&渲染週期，過ㄔㄥ在這裡會以provider component 所在的位置往下傳遞props，同時會讓使用context的元件跟著使用
+
+/src/index.js：將Provider Component為主的Component包含App Component，使該Component成為最頂層來將它擁有的狀態值往下傳遞
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { AuthContextProvider } from './store/auth-context';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <AuthContextProvider>
+    <App />
+  </AuthContextProvider>
+);
+```
+
+
 ### Single responsibility principle 
 
 [[@freecodecampSOLIDDefinitionSOLID2022]]
@@ -320,6 +341,8 @@ Autocomplete
 
 #💻 請至/react-builder/question-review/useContext-Refactor-question下，請試著以抽離出專門處理Context狀態的Component和渲染對應畫面的Component ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/12-building-and-using-a-custom-context-provider-cmp/src`
 <!--SR:!2022-10-05,10,250-->
+
+
 
 ---
 Status: #🌱

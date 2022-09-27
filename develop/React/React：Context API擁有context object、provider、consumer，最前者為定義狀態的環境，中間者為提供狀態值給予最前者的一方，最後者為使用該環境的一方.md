@@ -38,7 +38,7 @@
 
 重點：
 1. 每個 context object 都會有 provider component ：
-	- 是一個wrapper component
+	- 是一個wrapper component，如同正常的component擁有狀態、props、hook、生命週期函式
 	- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component
 	- 被它包覆著的Component都允許存取對Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的
 	- 沒被它包覆著子節點不被允許存取其Context Object
@@ -96,7 +96,7 @@ provider component
 
 重點：
 1. 每個 context object 都會有consumer component：
-	- 是一個wrapper component
+	- 是一個wrapper component，如同正常的component擁有狀態、props、hook、生命週期函式
 	- 訂閱/監聽對應context的目前值
 	- 提供特定方法讓被包含的元件能夠存取對應的context所擁有的值：
 		- 以 {}+ callback + 第一個引數為context object的value本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式
@@ -221,6 +221,10 @@ consume
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
 <!--SR:!2022-10-04,9,250-->
+
+#🧠  React：context 的 provider component 會如同正常component擁有什麼(提示：四項) ->->-> `狀態、hook、props、生命週期函式`
+
+#🧠 React：context 的 consumer component 會如同正常component擁有什麼(提示：四項) ->->->  `狀態、hook、props、生命週期函式`
 
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
 <!--SR:!2022-10-04,10,250-->
