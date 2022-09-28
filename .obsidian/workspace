@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md",
+            "file": "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "./ExpenseItem.css",
+                "query": "資料庫系統若採用 eager loading 的話",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md",
+                "file": "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md",
+                "file": "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md"
+                "file": "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md"
               }
             }
           }
@@ -139,6 +139,8 @@
   },
   "active": "cb62a1b80ca50623",
   "lastOpenFiles": [
+    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md",
     "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
@@ -146,8 +148,6 @@
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/React/React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component.md",
     "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
-    "inbox/food-order-project：Cart 構建實現概念和程式碼 版本二.md",
-    "inbox/React：Context 命名法則 & 使用法則.md",
-    "inbox/food-order-project：Cart Context 構建.md"
+    "inbox/food-order-project：Cart 構建實現概念和程式碼 版本二.md"
   ]
 }
