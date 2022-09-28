@@ -137,7 +137,7 @@
 <!--SR:!2022-10-08,26,250-->
 
 #🧠 瀏覽器會不會給予每個HTML DOM節點預設樣式，具體是以什麼形式 ->->-> `會是以type selector來設定`
-<!--SR:!2022-09-28,18,250-->
+<!--SR:!2022-11-15,48,250-->
 
 #🧠   請問這會引發什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) ->->-> `若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面，接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果`
 <!--SR:!2022-10-04,23,250-->
