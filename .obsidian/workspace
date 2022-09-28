@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
+            "file": "inbox/React：事件處理函式和屬性命名法則.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
+                "file": "inbox/React：事件處理函式和屬性命名法則.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
+                "file": "inbox/React：事件處理函式和屬性命名法則.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md"
+                "file": "inbox/React：事件處理函式和屬性命名法則.md"
               }
             }
           }
@@ -138,12 +138,12 @@
   },
   "active": "5724a4b068651b60",
   "lastOpenFiles": [
+    "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
     "inbox/food-order-project：Input 構建實現概念和程式碼.md",
     "develop/food-order-project/food-order-project：Cart 構建實現概念和程式碼 版本一.md",
     "inbox/food-order-project：Cart Context 構建.md",
     "develop/food-order-project/food-order-project：Cart 構建實現概念和程式碼 版本二.md",
     "inbox/novalidate 是指定表單關閉其提交時的預設自動驗證功能以及關閉根據驗證結果來呈現樣式內容.md",
-    "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
     "inbox/React：Context 命名法則 & 使用法則.md",
     "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
     "develop/Database/Database - Eager loading 是指主動索求未來會用到的資料集合並將結果放入特定空間，然後透過儲存結果來處理，以減緩不必要的處理.md",
