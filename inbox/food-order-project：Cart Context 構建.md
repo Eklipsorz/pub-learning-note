@@ -81,8 +81,8 @@ const CartProvider = (props) => {
   };
 
   const cartContext = {
-    items: [],
-    totalAmount: 0,
+    items: cartState.items,
+    totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
   };
@@ -109,6 +109,9 @@ export default CartProvider;
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664371396/blog/react/food-order/second-manage-cart_qwwbch.png)
 
 ## 複習
+#🧠 React：以下是用CartContext而製作成的Provider，請問這有什麼潛在問題嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384045/blog/react/food-order/anti-pattern/cart-context-provider-question_bu7sfz.png) ->->-> `value給定的狀態值一直維持在items為空陣列以及totalAmount為0`
+
+#🧠 React：以下是用CartContext而製作成的Provider，裡面有著狀態值一直被固定的問題，請問如何解決？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384052/blog/react/food-order/anti-pattern/cart-context-provider-question-solution_imc2ok.png)`
 
 
 ---
