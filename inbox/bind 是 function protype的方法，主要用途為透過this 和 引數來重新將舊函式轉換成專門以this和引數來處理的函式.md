@@ -68,7 +68,7 @@ const item2Remove = remove.bind(null, id3)
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 中的thisArg是什麼？ ->->-> `指定物件來綁定在轉換後函式，會是設定新函式的this變數`
 
-#🧠 JS：function.bind(thisArg, arg1, arg2) 中的 arg1 - argN 是什麼？ ->->-> `指定引數來綁定在轉換後的函式`
+#🧠 JS：function.bind(thisArg, arg1, arg2) 中的 arg1 - arg2 是什麼？ ->->-> `指定引數來綁定在轉換後的函式`
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 回傳什麼？ ->->-> `一個與thisArg 和 arg1-arg2相結合的新函式`
 
