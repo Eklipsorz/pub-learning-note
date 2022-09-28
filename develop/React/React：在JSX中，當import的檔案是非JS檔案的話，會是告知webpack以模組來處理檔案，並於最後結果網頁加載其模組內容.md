@@ -3,10 +3,8 @@
 import './ExpenseItem.css'
 ```
 
-
 重點：
-- 在JSX中，將css當作js看待並執行，把css納入至importing module會用到的資源區塊中
-- 預設情況下，webpack會將import css file視為該component 所要載入的css檔案，使用時就按照給定的樣式名稱來從importing module會用到的資源區塊中找到對應樣式名稱，最後webpack針對這component所生成的網頁會自動載入對應css檔案
+- 在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容，好讓元件能夠使用其樣式
 - 具體要讓JSX渲染畫面使用對應CSS檔案
 
 ### import 'xxxx' 使用
@@ -19,13 +17,12 @@ import '/modules/my-module.js';
 ```
 
 
-
-
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 
 重點：
--  這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源
-- 利用執行該模組的top-level code來修改主要importing module會用到的資源
+- 若xxxx是JS檔案，這類型import用途會是：
+	- import 到的模組會作為產生副作用或者修改主要importing module會用到的資源
+- 若xxxx是非JS檔案且在React中，只是通知webpack哪些是要處理的模組
 ### 參考案例
 
 [[@AddingStylesheetCreate]] 所描述
@@ -53,12 +50,6 @@ import '/modules/my-module.js';
 
 https://create-react-app.dev/docs/adding-a-stylesheet/
 
-  
-
-  
-
-僅作為副作用（side effect）引入整個模塊，而不直接引入任何東西。這樣會在不引入實際數值的情況下，執行整個模塊的程式。
-
 
 ### 讓JSX中的XML表達元件增加樣式
 1. 理論上是得替每個元件以class來指定樣式：
@@ -73,20 +64,22 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 
 ## 複習
-#🧠  import 'xxxx' 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
-<!--SR:!2022-11-23,60,230-->
+#🧠  import 'xxxx'且xxxx為JS檔案 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
 
-#🧠 import 'xxxx' 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
-<!--SR:!2022-10-06,36,248-->
 
-#🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `把css納入至importing module會用到的資源區塊中`
-<!--SR:!2022-12-14,77,248-->
+#🧠  在React中， import 'xxxx' 使用且xxxx為非JS檔案 是做什麼用的？ ->->-> `告知webpack哪些模組要被處理`
 
-#🧠 在JSX中，執行import './ExpenseItem.css'會是把css納入至importing module會用到的資源，那麼能夠讓XML使用樣式名稱嗎？為何 ->->-> `能，預設情況下，webpack會將import css file視為該component 所要載入的css檔案，使用時就按照給定的樣式名稱來從importing module會用到的資源區塊中找到對應樣式名稱`
-<!--SR:!2022-10-03,34,248-->
+#🧠 import 'xxxx'且xxxx為JS檔案， 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
+
+
+#🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `告知webpack將對應CSS檔案以模組來處理`
+
+
+#🧠 在JSX中，執行import './ExpenseItem.css'會是把css納入至importing module會用到的資源，那麼能夠讓XML使用樣式名稱嗎？為何 ->->-> `能，告知webpack將對應CSS檔案以模組來處理，並於最後結果網頁加載對應CSS內容`
+
 
 #🧠 在JSX中，執行import './ExpenseItem.css'後，對應component的網頁會有這css嗎？ ->->-> `最後webpack針對這component所生成的網頁會自動載入對應css檔案`
-<!--SR:!2022-10-16,42,248-->
+
 
 #🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個HTML元件來表達->->-> `添加className，<div className='.....'></div>`
 <!--SR:!2022-10-03,30,248-->

@@ -110,7 +110,7 @@ appIndexJs: resolveModule(resolveApp, 'src/index')
 ### import
 另外import 細節 
 1. 若想引入的import是js檔案，可以忽略副檔名，系統會自己檢查
-2. 若JS支援CSS-in-JS的話，就可允許載入css檔案
+2. 若import 的是其他非JS檔案，如CSS，告知webpack哪些檔案需要被當作模組來處理
 
 
 CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透過JavaScript的執行形式來根據執行狀態來更新對應CSS的內容
@@ -151,8 +151,8 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 #🧠 import 細節：import可以載入CSS嗎？->->-> `可以`
 <!--SR:!2022-11-07,56,250-->
 
-#🧠 import 細節：若import可以載入CSS的話，那麼具體可能會是？ ->->-> `負責實現模組化的實現會將CSS納入至importing module會用到的記憶體區塊，讓它未來會使用`
-<!--SR:!2022-11-30,63,250-->
+#🧠 import 細節：若import載入CSS的話，那麼具體會是？ ->->-> `告知webpack哪些檔案需要被當作模組來處理，而CSS則是會以CSS形式來處理`
+
 
 #🧠 import 細節：若載入的是js檔案，可忽略副檔名嗎 ->->-> `可以`
 <!--SR:!2022-12-03,74,250-->
