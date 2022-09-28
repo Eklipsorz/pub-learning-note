@@ -47,9 +47,45 @@ function App2() {
   return <Greeting {...props} />;}
 ```
 
+重點：
+- React spread attributes 
+	- 具體是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張
+	- 用法：
+		- property 會是物件
+		- ...property 會是JS原生的spread operator正對著物件的屬性進行擴張
+
+	```
+	const property = { propert1: value1, property2: value2 }
+	<Component {...property} />
+	// 等同於
+	// <Component property1=value1 property2=value2 />
+	```
+	- ...property 會是JS原生的spread operator正對著物件的屬性進行擴張
+	```
+	property1:value1, property2:value2, ....
+	```
+
 
 ## 複習
 
+#🧠 React spread attributes  是什麼技術？ ->->-> `具體是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張`
+
+#🧠 原生JS：...object 執行起來會有什麼效果 ->->-> `property1:value1, property2:value2, ....`
+
+
+#🧠 React spread attributes  用法為何？ ->->-> `const property = { propert1: value1, property2: value2 } <Component {...property} />`
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 #📓 
