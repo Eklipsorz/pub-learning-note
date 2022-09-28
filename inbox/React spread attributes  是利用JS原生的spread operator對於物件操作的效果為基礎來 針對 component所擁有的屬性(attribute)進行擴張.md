@@ -75,17 +75,12 @@ function App2() {
 
 #🧠 React spread attributes  用法為何？ ->->-> `const property = { propert1: value1, property2: value2 } <Component {...property} />`
 
-#🧠 Question :: ->->-> ``
+#🧠 React spread attributes ： const property = \{ propert1: value1, property2: value2 \} \<Component {...property} \/\> 相對於什麼樣的component ->->-> `<Component property1=value1 property2=value2 />`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 React spread attributes  用法概念為何？ ->->-> `以一個物件的屬性來對元件的屬性(attribute)進行spread 操作`
 
 
-
-#🧠 Question :: ->->-> ``
-
-
-#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 #📓 
