@@ -32,7 +32,7 @@ connector 具體有幾項設定：
 <!--SR:!2023-02-15,163,250-->
 
 #🧠 說明一下當設定完時connector 的情況以及所處哪個網路？ ![](https://cloud.google.com/vpc/images/serverless-vpc-access.svg) ->->-> `當設定完connector，指定VPC網路會有一個connector，而他在VPC的網路IP會是10.8.0.0/28`
-<!--SR:!2022-09-28,80,250-->
+<!--SR:!2023-04-16,200,250-->
 
 #🧠 說明一下connector 的情況，當外部網路想透過它轉發，會是？![](https://cloud.google.com/vpc/images/serverless-vpc-access.svg) ->->-> `當VPC外部的服務想要透過connector來轉發封包至內部的服務時，其實能透過serviceless VPC Access來找到對應的connector來進行轉發，這時connector就會透上述IP來轉發封包`
 <!--SR:!2023-02-08,157,250-->

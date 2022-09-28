@@ -106,7 +106,7 @@ specific
 <!--SR:!2022-11-11,46,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，那麼主要會如何選擇？(面對於重複和沒重複的情況下) ->->-> `主要會用權重來衡量每個declaration、 多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，就選擇權重最高的declaration，並納入至它所對應元件會有的樣式屬性、屬性名稱沒起衝突的declaration ，就直接納入至它所對應元件會有的樣式屬性`
-<!--SR:!2022-09-28,18,250-->
+<!--SR:!2022-11-15,48,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是何種形式 ->->-> `基本上會使用三種欄位值，分別為id、class、type，形式為id-class-type`
 <!--SR:!2022-10-02,21,250-->
@@ -126,7 +126,7 @@ specific
 <!--SR:!2022-10-05,23,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼type代表著什麼？->->-> `type 表示目前declaration 所在的 selector 有使用 type 來描述對應元件的具體程度，會用數字表示`
-<!--SR:!2022-09-28,18,250-->
+<!--SR:!2022-11-16,49,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼type表示目前declaration 所在的 selector 有使用 type 來描述對應元件的具體程度，會用數字表示，具體如何用數字表示？ ->->-> `對應元件在同一個由多個selector構成的selector上相符N個type selector的描述，就0-0-+N、數字越高就表示在以用特定type形式描述該元件的具體程度就越高`
 <!--SR:!2022-10-11,28,250-->

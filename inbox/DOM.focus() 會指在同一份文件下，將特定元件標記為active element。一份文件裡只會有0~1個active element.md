@@ -30,7 +30,7 @@ HTMLElement.focus()
 <!--SR:!2022-10-07,9,250-->
 
 #🧠 HTML元件被focus標記上active element的話，會有什麼限制？ ->->-> `在同一份文件，只會允許0~1個元件為active element`
-<!--SR:!2022-09-28,3,250-->
+<!--SR:!2022-10-08,10,250-->
 
 #🧠 HTML元件中，能被focus標記為active element的元件會是什麼？ ->->-> `按鈕、文字輸入欄`
 <!--SR:!2022-10-08,10,250-->
@@ -38,7 +38,7 @@ HTMLElement.focus()
 
 
 #🧠 HTMLElement.focus() 是什麼樣語法？ ->->-> `主要會將HTMLElement對應的元件設定為active element。`
-<!--SR:!2022-09-28,3,250-->
+<!--SR:!2022-10-07,9,250-->
 
 #🧠 在DOM API中，哪個語法能將對應元件設定為active element? ->->-> `HTMLElement.focus()`
 <!--SR:!2022-10-07,9,250-->

@@ -116,13 +116,13 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2022-10-08,10,250-->
 
 #🧠 React：useImperativeHandle命名緣由源自於？ ->->-> `一組以DOM原生渲染指令為主的處理`
-<!--SR:!2022-09-28,3,250-->
+<!--SR:!2022-10-08,10,250-->
 
 #🧠 React：useImperativeHandle 語法會是什麼？ ->->-> `useImperativeHandle(ref, createHandle, [deps])`
 <!--SR:!2022-09-30,2,230-->
 
 #🧠 React：useImperativeHandle 語法的ref是什麼？ ->->-> ` ref 是被指定賦予一組以DOM原生渲染指令為主的處理之物件`
-<!--SR:!2022-09-28,3,250-->
+<!--SR:!2022-10-07,9,250-->
 
 #🧠 React：useImperativeHandle  語法的ref是被指定賦予一組以DOM原生渲染指令為主的處理之物件，那麼具體會如何被賦予？->->-> `createHandle 生成的處理來賦予在ref物件的current屬性`
 <!--SR:!2022-10-08,10,250-->
@@ -131,7 +131,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2022-10-08,10,250-->
 
 #🧠 React：useImperativeHandle 語法的deps是什麼？ ->->-> `deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行`
-<!--SR:!2022-09-28,3,250-->
+<!--SR:!2022-10-07,9,250-->
 
 #🧠 React：useImperativeHandle 語法的觸發處理時機點？ ->->-> `與useLayoutEffect一樣`
 <!--SR:!2022-10-08,10,250-->
