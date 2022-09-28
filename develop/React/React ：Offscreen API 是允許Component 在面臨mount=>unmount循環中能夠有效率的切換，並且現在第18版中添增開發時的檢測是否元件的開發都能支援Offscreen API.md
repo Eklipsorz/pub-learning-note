@@ -114,7 +114,7 @@ off-screen
 
 
 #🧠 React：為了確保預計要支援Offscreen API的Component是能夠正常運行effects實現，會做React.StrictMode元件進行相關檢測，其檢測內容為？ ->->-> `當在React.StrictMode元件下加入新元件 A 並做完mounting時，React.StrictMode會替該mounting的元件 A暫存其狀態和實際DOM結構，然後再自行unmounting 新元件 A，然後再以暫存內容來再次進行其元件A的mounting。、過程中會檢測其元件上的effect是否正常運作`
-<!--SR:!2022-09-28,26,250-->
+<!--SR:!2022-12-04,67,250-->
 
 
 ---

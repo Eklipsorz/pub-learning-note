@@ -82,7 +82,7 @@
 
 
 #🧠 Master-Slave Replication 技術下，Master 和Slave是指什麼？ ->->-> `在這裡負責提供資料副本的資料庫伺服器是master主機，接收到副本的資料庫伺服器是slave主機`
-<!--SR:!2022-09-28,23,250-->
+<!--SR:!2022-11-26,59,250-->
 
 #🧠 Master-Slave Replication 技術下的Master和Slave都是什麼(共同)？ ->->-> `管理資料庫的系統`
 <!--SR:!2022-10-02,26,250-->
