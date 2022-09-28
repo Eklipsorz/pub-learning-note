@@ -51,7 +51,7 @@ React.forwardRef(render)
 <!--SR:!2022-10-08,10,250-->
 
 #🧠 React：forwardRef 最主要是做什麼？ ->->-> `最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理`
-<!--SR:!2022-09-28,3,250-->
+<!--SR:!2022-10-07,9,250-->
 
 #🧠 React：forwardRef 最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理，通常會有的處理會是什麼？ ->->-> `	forwardRef + useImperativeHandle ：讓指定元件a的Ref 物件設定為指定元件B內的部分對應DOM指令處理 - 將目前元件的Ref 轉發至指定元件所對應的function來對應其child component的特定DOM節點。 - 無關parent-child關係的元件間來進行轉發和ref對應`
 <!--SR:!2022-09-28,3,250-->
