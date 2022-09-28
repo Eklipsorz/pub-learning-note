@@ -29,6 +29,75 @@ removeItem：專門指定哪個項目要從購物車移除
 #### 會使用哪個狀態管理？useReducer ? useState
 會使用useReducer ，原因在於多個狀態之間會相互影響或者相互改變，比如說判斷要加入的項目是否在購物車作為狀態
 
+
+### CartProvider
+1. 使用useReducer 來管理購物車狀態，其中：
+	- 使用initCart 定義狀態結構以及初始值
+	- 使用cartReducer 定義從dispatch接收到的action來生成對應最新的狀態
+
+2. dispatch 發送的action 結構上會是：
+	- 物件形式
+	- type屬性定義狀態變更種類
+	- payload屬性則是用來輔助reducer來變更狀態
+
+
+```
+import { useReducer } from 'react';
+import CartContext from './cart-context';
+
+const initCart = {
+  items: [],
+  totalAmount: 0,
+};
+
+const cartReducer = (prevState, action) => {
+  let { type, payload } = action;
+
+  switch (type) {
+    case 'ADD_ITEM': {
+      const updatedItems = prevState.concat(payload.item);
+      const updatedTotalAmount =
+        prevState.totalAmount + payload.item.price * payload.item.amount;
+      return {
+        items: updatedItems,
+        totalAmount: updatedTotalAmount,
+      };
+    }
+    case 'REMOVE_ITEM':
+      break;
+    default:
+      return new Error();
+  }
+};
+
+const CartProvider = (props) => {
+  const [cartState, cartDispatch] = useReducer(cartReducer, initCart);
+
+  const addItemToCartHandler = (item) => {
+    cartDispatch({ type: 'ADD_ITEM', payload: { item } });
+  };
+  const removeItemFromCartHandler = (id) => {
+    cartDispatch({ type: 'REMOVE_ITEM', payload: { id } });
+  };
+
+  const cartContext = {
+    items: [],
+    totalAmount: 0,
+    addItem: addItemToCartHandler,
+    removeItem: removeItemFromCartHandler,
+  };
+
+  return (
+    <CartContext.Provider value={cartContext}>
+      {props.children}
+    </CartContext.Provider>
+  );
+};
+
+export default CartProvider;
+```
+
+
 ## 複習
 
 
