@@ -15,7 +15,7 @@
 > -   Provider（提供者）的功用就是用來**提供** context 值。
 > -   Consumer（消費者）的功用則是用來**使用** context 值。
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664347683/blog/react/context/context-provider-consumer_hl7mi8.png)
 
 重點：
 - Context Object：目前是定義狀態的環境，內容主要會由Provider或者預設狀態來提供
