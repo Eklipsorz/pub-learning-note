@@ -225,7 +225,7 @@ module map 主要的用途為：
 
 
 #🧠 ES module：dynamic import 概念是什麼？ ->->-> `允許根據在執行時根據執行狀態來加載ES模組，並根據加載內容來進行引用處理`
-<!--SR:!2022-09-29,36,246-->
+<!--SR:!2022-12-27,89,246-->
 
 #🧠 ES module：具體的dynamic import是什麼？ (promise) ->->-> `import 為promise，建立一個工作來向對系統發出module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject`
 <!--SR:!2022-10-04,36,227-->

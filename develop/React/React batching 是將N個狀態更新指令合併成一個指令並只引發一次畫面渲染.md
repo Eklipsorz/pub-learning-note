@@ -281,7 +281,7 @@ batch：
 
 
 #🧠 React18: 在同一個生命週期函式下，那麼如果發生多個事件處理來處理，會如何處理batching？ 全部事件處理都算在一塊做batching? ->->-> `多個事件處理中的每個事件處理都自行做自己內部的batching`
-<!--SR:!2022-09-29,25,250-->
+<!--SR:!2022-11-28,60,250-->
 
 #🧠  React18: 在同一個生命週期函式下，那麼如果發生多個夾雜狀態更新指令的Promise，會如何處理batching？  ->->-> `多個夾雜狀態更新指令的Promise都算在一起做batching`
 <!--SR:!2022-11-29,62,250-->
@@ -301,7 +301,7 @@ batch：
 <!--SR:!2022-10-02,28,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-promise-example_oc4lrv.png)->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2022-09-29,25,250-->
+<!--SR:!2022-11-30,62,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-handler-example_pjtidy.png) ->->-> `會合併成一個狀態更新指令，來觸發`
 <!--SR:!2022-09-30,26,250-->

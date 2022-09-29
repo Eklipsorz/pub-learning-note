@@ -99,7 +99,7 @@ function name(param0, param1, /* … ,*/ paramN) {
 <!--SR:!2022-10-31,66,250-->
 
 #🧠 具體如何實現function declaration->->-> `具體會使用function關鍵字、function名稱、function引數、function裡的語法來宣告函式的存在，並分配記憶體來存放對應函式內容，並讓function名稱去對應`
-<!--SR:!2022-09-29,46,250-->
+<!--SR:!2023-01-20,113,250-->
 
 #🧠 function expression 是什麼？ ->->-> `function expression 在程式語言中是以 由 function 關鍵字和語法 來代表其對應function之回傳值  或者 以整個函式來表達整個函式`
 <!--SR:!2022-11-02,68,250-->
