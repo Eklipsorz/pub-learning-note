@@ -24,8 +24,7 @@
 - useEffect 的callback具體定義著：
 	- deps設定為items，原因為決定目前互動是否增加的因素為items數量增加以及數量不為0
 	- callback：setBtnIsHighlighted(true);來啟用動畫的類別 以及設定300ms timeout任務，其中300ms剛好是動畫持續時間，動畫表演完畢後就透過timeout任務來設定setBtnIsHighlighted(false)將class切換成關閉動畫的類別，另外一點就是錯開batching好方便切換動畫，
-	- 
-
+	- 定義cleanup 確保不會有多餘的非同步任務要執行以及避免面對大量請求下會呈現出大量動畫的情況
 
 在這裡CSS animation只會執行一次，若要重複執行的話，必須對著指定元件的class持續輪流切換成對應動畫的selector和沒有對應動畫的selector才能不斷呈現出對應動畫
 
