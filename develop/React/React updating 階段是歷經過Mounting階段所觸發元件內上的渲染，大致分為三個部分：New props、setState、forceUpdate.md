@@ -241,7 +241,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-11-24,60,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳true就表示？ ->->-> `做渲染`
-<!--SR:!2022-09-29,27,250-->
+<!--SR:!2022-12-10,72,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
 <!--SR:!2022-11-15,54,250-->
@@ -266,7 +266,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-12-03,67,250-->
 
 #🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate 函式 採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
-<!--SR:!2022-09-29,27,250-->
+<!--SR:!2022-12-10,72,250-->
 
 #🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
 <!--SR:!2022-11-14,54,250-->

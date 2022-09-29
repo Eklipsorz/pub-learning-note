@@ -145,7 +145,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 ## 複習
 
 #🧠 relative positioning 的元素和flow layout之間的關係？ ->->-> `relative positioning 的元素仍會受到normal flow/flow layout而控制，並在那情況下調整位置`
-<!--SR:!2022-09-29,13,246-->
+<!--SR:!2022-11-04,36,246-->
 
 #🧠 具有position：relative的元素A會不會因為滿足top、right、bottom、left而改變元素A的高寬？ ->->-> `不會`
 <!--SR:!2022-10-26,29,248-->
