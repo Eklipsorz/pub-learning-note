@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1688d34427d1c710",
+        "id": "e9850db403ed9ff3",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "5fa3e02d61b6538c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "93414be015494961",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -101,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -160,12 +128,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5fa3e02d61b6538c",
+  "active": "e9850db403ed9ff3",
   "lastOpenFiles": [
+    "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
-    "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
     "inbox/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
     "inbox/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格、商品、購買量、價格.md",
     "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",

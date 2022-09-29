@@ -63,19 +63,26 @@ const item2Remove = remove.bind(null, id3)
 ## 複習
 
 #🧠 JS：function.protype.bind 用途為何？ ->->-> `透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式`
+<!--SR:!2022-10-02,3,250-->
 
 #🧠 JS：function.protype.bind 用法為何？ ->->-> `function.bind(thisArg, arg1, arg2)`
+<!--SR:!2022-10-02,3,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 中的thisArg是什麼？ ->->-> `指定物件來綁定在轉換後函式，會是設定新函式的this變數`
+<!--SR:!2022-10-02,3,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 中的 arg1 - arg2 是什麼？ ->->-> `指定引數來綁定在轉換後的函式`
+<!--SR:!2022-10-02,3,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 回傳什麼？ ->->-> `一個與thisArg 和 arg1-arg2相結合的新函式`
+<!--SR:!2022-10-02,3,250-->
 
 
 #🧠 JS：function.bind使用場景為何？ ->->-> `替每個元件打造各自的方法`
+<!--SR:!2022-10-02,3,250-->
 
 #🧠 JS：function.bind使用場景為替每個元件打造各自的方法，憑藉什麼？ ->->-> `運用會與其參數結合成新的函式的特性`
+<!--SR:!2022-10-02,3,250-->
 
 
 ---
