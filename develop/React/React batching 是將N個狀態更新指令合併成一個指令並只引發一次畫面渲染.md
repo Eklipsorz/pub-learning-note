@@ -291,7 +291,7 @@ batch：
 <!--SR:!2022-10-02,28,250-->
 
 #🧠 React18: 考慮以下事件處理，請問react batching 會如何處理這內含的case1-case6，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `- case 1 會和 case 3 合併 - case 2 會和 case 5 合併 - case 4 會和 case 6 合併`
-<!--SR:!2022-09-29,26,250-->
+<!--SR:!2022-12-06,68,250-->
 
 
 #🧠  react batching ：考慮以下事件處理，請問多個事件所衍生出來的handler 所衍生batching狀況是如何，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `由於多個事件處理中的每個事件處理都自行做自己內部的batching，所以每個handler都各自合併`

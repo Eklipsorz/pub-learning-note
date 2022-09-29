@@ -86,7 +86,7 @@ _Fig. 2: Colored Scope Bubbles_
 <!--SR:!2022-10-11,52,250-->
 
 #🧠 JavaScript 編譯時期對於EC會有什麼樣操作，而什麼時候生成對應的GEC和FEC？（具體說明) ->->-> `編譯是會建立對應EC的bytecode，然後再執行階段中，快要執行GEC對應的scope才會執行對應的bytecode來生成對應EC，而FEC則是快要執行FEC對應的scope才會執行對行對應的bytecode來生成對應的FEC`
-<!--SR:!2022-09-29,2,247-->
+<!--SR:!2022-10-05,6,247-->
 
 
 
