@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "58465ce3e6ed649f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+            "file": "inbox/Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+                "file": "inbox/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+                "file": "inbox/Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md"
+                "file": "inbox/Untitled 3.md"
               }
             }
           }
@@ -150,6 +138,8 @@
   },
   "active": "a56dade74c3d7704",
   "lastOpenFiles": [
+    "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+    "inbox/Untitled 3.md",
     "inbox/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
     "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
     "inbox/food-order-project：增加項目至購物車的業務邏輯.md",
@@ -157,8 +147,6 @@
     "inbox/food-order-project：Cart Context 構建.md",
     "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
-    "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
-    "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
-    "inbox/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格、商品、購買量、價格.md"
+    "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md"
   ]
 }
