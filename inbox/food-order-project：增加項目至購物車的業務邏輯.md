@@ -80,6 +80,74 @@ export default CartProvider;
 
 
 #### 針對潛在問題來改良：
+解法思路為：
+- 檢測要新增加的項目是否在購物車內部
+- 若有的話，不直接將新增加的項目加入購物車，取而代之，以購物車的項目為主並增加對應數量
+- 若沒有的話，就直接將新增加的項目加入購物車
+
+```
+import { useReducer } from 'react';
+import CartContext from './cart-context';
+
+const initCart = {
+  items: [],
+  totalAmount: 0,
+};
+
+const AddItemToCart = (prevState, payload) => {
+  const { items: currentItems } = prevState;
+
+  const updatedTotalAmount =
+    prevState.totalAmount + payload.item.price * payload.item.amount;
+
+  const existingItemIndex = currentItems.findIndex(
+    (item) => item.id === payload.item.id,
+  );
+
+  const existingItem = currentItems[existingItemIndex];
+  let updatedItems;
+  
+  // 若新增項目就已存在在購物車的話
+  if (existingItem) {
+  
+    // 建立一個新的item，除了amount屬性要更新以外，其餘屬性以現有為主
+    const updatedItem = {
+      ...existingItem,
+      amount: existingItem.amount + payload.item.amount,
+    };
+    
+    // 重建一個items
+    updatedItems = [...currentItems];
+    
+    // 在新的items中將已存在購物車的項目以新的item來替代
+    updatedItems[existingItemIndex] = updatedItem;
+  } else {
+	// 若新增項目就不存在購物車的話
+    updatedItems = currentItems.concat(payload.item);
+  }
+
+  return {
+    items: updatedItems,
+    totalAmount: updatedTotalAmount,
+  };
+};
+
+const cartReducer = (prevState, action) => {
+  let { type, payload } = action;
+
+  switch (type) {
+    case 'ADD_ITEM': {
+      const newState = AddItemToCart(prevState, payload);
+      return newState;
+    }
+    case 'REMOVE_ITEM':
+      break;
+    default:
+      return new Error();
+  }
+};
+```
+
 
 
 
