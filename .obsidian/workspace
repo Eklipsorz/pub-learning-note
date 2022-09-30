@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "f3ddef5e0c15c1dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
+                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
+                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md"
+                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md"
               }
             }
           }
@@ -136,10 +148,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b4db86c1bb9cb649",
+  "active": "f3ddef5e0c15c1dd",
   "lastOpenFiles": [
-    "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
+    "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
     "develop/food-order-project/food-order-project：增加項目至購物車的業務邏輯.md",
     "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
