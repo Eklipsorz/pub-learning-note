@@ -228,7 +228,7 @@ consume
 <!--SR:!2022-09-30,2,248-->
 
 #🧠 React：context 的 consumer component 會如同正常component擁有什麼(提示：四項) ->->->  `狀態、hook、props、生命週期函式`
-<!--SR:!2022-09-30,2,248-->
+<!--SR:!2022-10-06,6,248-->
 
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
 <!--SR:!2022-10-04,10,250-->
