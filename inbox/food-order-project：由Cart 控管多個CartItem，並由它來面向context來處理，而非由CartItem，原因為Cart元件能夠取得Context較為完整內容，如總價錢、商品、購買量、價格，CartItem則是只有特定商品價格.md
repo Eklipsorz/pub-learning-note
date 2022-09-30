@@ -102,11 +102,11 @@ export default CartItem;
 
 
 
-#💻 請至/question-review/food-order-project-question領取題目並到install-funtion-to-cart分支，請試著在Cart.js和CartItem.js中實作安裝Provider Component的功能。 ->->-> `https://github.com/Eklipsorz/food-order-project/tree/main/src/components/Cart`
+#💻 請至/question-review/food-order-project-question領取題目並到install-function-to-cart分支，請試著在Cart.js和CartItem.js中實作安裝Provider Component的功能。 ->->-> `https://github.com/Eklipsorz/food-order-project/tree/main/src/components/Cart`
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[food-order-project]] - [[React]]
 Links:
