@@ -18,7 +18,7 @@
 > **每一個 Virtual DOM element 的資料都是普通的 JavaScript 物件變數，內容則嘗試在描述一個真實的 DOM element 預計要長的樣子**（像是元素類型、屬性、子元素有哪些…等等資訊）。接著透過負責渲染畫面的程式處理後，就能將 Virtual DOM element 轉換並產生成實際的 DOM element，以更新瀏覽器的實際畫面。
 
 
-> 雖然每次重新產生畫面的 Virtual DOM 資料，並且與舊有的 Virtual DOM 進行詳細的樹狀結構比較都會有效能上的花費，但是畢竟操作的是普通的 JavaScript 物件資料，並且與真實的 DOM 不同的是，**Virtual DOM 並沒有與瀏覽器的渲染引擎做直接的綁定**，因此整體來說還是比頻繁且大量的操作真實 DOM 的效能花費要低了許多。
+
 
 重點：
 - Virtual DOM 節點/結構 本身是指電腦程式針對對應Real DOM 節點/結構 來生成相同特性和行為的DOM 物件結構，只是該DOM物件結構只能夠存在於特定系統上，在這裡會存在於React層級上
@@ -27,6 +27,16 @@
 	- 主要會以JS物件來對應Real DOM節點
 	- 其屬性(property)會有對應Real DOM節點會有的資訊，如元素種類、屬性值(attribute)、包含的子節點會有什麼
 - Virtual DOM 節點/結構 在React層級上會有程式模組專門轉換成 對應的Real DOM元素
+
+### Real DOM vs. Virtual DOM
+
+> 雖然每次重新產生畫面的 Virtual DOM 資料，並且與舊有的 Virtual DOM 進行詳細的樹狀結構比較都會有效能上的花費，但是畢竟操作的是普通的 JavaScript 物件資料，並且與真實的 DOM 不同的是，**Virtual DOM 並沒有與瀏覽器的渲染引擎做直接的綁定**，因此整體來說還是比頻繁且大量的操作真實 DOM 的效能花費要低了許多。
+
+
+重點：
+- 用途：Real DOM是直接指示瀏覽器該如何渲染；Virtual DOM是從Real DOM抽離出來的版本，該版本僅描述對應畫面的 DOM結構，並沒辦法指示瀏覽器該如何渲染，用途為描述用的藍圖
+- 誰能直接告知瀏覽器如何渲染：Real DOM 能直接指示 ； Virtual DOM沒辦法
+- 如何指示瀏覽器來渲染畫面，不分直接或者間接：Real DOM 能直接指示 ； Virtual DOM 先轉換成對應Real DOM，然後以Real DOM來指示渲染畫面
 
 
 ### Virtual DOM為何出現？
@@ -45,8 +55,8 @@
 - Virtual DOM 概念的提出原因：
 	- 為了實現 **以最少的Real DOM操作來達到所想要的畫面結果**。
 -  **以最少的Real DOM操作來達到所想要的畫面結果** ：會將真正要修改的DOM 結構和操作僅限於真正需要的地方，而非整體。
-	- 具體概念為：以JS層級來將Real DOM結構抽離出可描述相對應結構的DOM結構，並以此結構作為藍圖來指示要如何修改對應的Real 
-	- 打造出相對應的Virtaul DOM結構，並以Virtual DOM結構為藍圖
+
+- 首先先以JS層級來將Real DOM結構抽離出 **僅描述相對應畫面的DOM結構**，並以此結構作為藍圖來指示要如何修改對應的Real DOM結構。 該藍圖就是Virtual DOM：
 		- 以將要渲染在Real DOM Tree的畫面轉換成對應的Virtual DOM結構
 		- 第一項所獲得的結構與目前畫面對應的Virtual DOM結構比較差異
 		- 獲取差異後，就交給React層級的轉換程式來轉換成對應Real DOM節點/結構來更新目前DOM Tree更新，其對應Real DOM節點/結構會是以差異為主，而非以整體。
@@ -60,7 +70,7 @@
 
 重點：
 - Virtual DOM 是從真實 DOM 複製一份出來的 copy 這項論點是錯的。
-- 
+- Virtual DOM 本身是從Real DOM抽離出來的版本，該版本僅描述著對應畫面的DOM結構。
 
 
 ### Virtual 命名緣由
