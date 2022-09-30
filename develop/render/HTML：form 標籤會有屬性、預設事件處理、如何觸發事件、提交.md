@@ -123,6 +123,11 @@ element.addListenerEvent(event, function(event) {
 >
 >Event 介面的 stopPropagation() 方法可阻止當前事件繼續進行捕捉（capturing）及冒泡（bubbling）階段的傳遞。
 
+由於執行前會編譯，會預先知道有沒有event.preventDefault()，不論其程式碼位置是否放到最後面，若有就先停止目前元件的預設事件處理來執行：
+[[@mdnEventPreventDefaultWeb]]
+> Calling `preventDefault()` during any stage of event flow cancels the event, meaning that any default action normally taken by the implementation as a result of the event will not occur.
+
+
 重點：
 - 由於執行前會編譯，會預先知道有沒有event.preventDefault()，不論其程式碼位置是否放到最後面，若有就先停止目前元件的預設事件處理來執行
 - preventDefault 本身不會停止事件傳遞，若要停止capturing和bubble這兩種事件傳遞：
@@ -204,3 +209,4 @@ References:
 [[@dillionmegidaHowManageBrowser2022]]
 [[@w3schoolHTMLFormTarget]]
 [[@mdnEventStopPropagationWeb]]
+[[@mdnEventPreventDefaultWeb]]
