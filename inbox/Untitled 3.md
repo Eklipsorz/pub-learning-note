@@ -8,7 +8,7 @@
 - 傳統上為了讓瀏覽器呈現想要的畫面，會以能用DOM 節點表示畫面上的元件並且使用其 API方式來決定畫面，而對應DOM API會被轉換出一系列指示瀏覽如何更新畫面的指令或者渲染指令。
 - 潛在問題：
 	- 若在短時間內發生大量DOM API來決定畫面是什麼，那麼就產生出大量的渲染指令來告知瀏覽器要如何渲染
-- 對於前端開發來說，效能可以從 **以最少的DOM操作來達到所想要的畫面結果** 來進行改善。
+- 對於前端開發來說，效能可以從 **以最少的Real DOM操作來達到所想要的畫面結果** 來進行改善。
 
 ### Virtual DOM 是什麼
 
@@ -17,16 +17,20 @@
 
 > **每一個 Virtual DOM element 的資料都是普通的 JavaScript 物件變數，內容則嘗試在描述一個真實的 DOM element 預計要長的樣子**（像是元素類型、屬性、子元素有哪些…等等資訊）。接著透過負責渲染畫面的程式處理後，就能將 Virtual DOM element 轉換並產生成實際的 DOM element，以更新瀏覽器的實際畫面。
 
+
+> 雖然每次重新產生畫面的 Virtual DOM 資料，並且與舊有的 Virtual DOM 進行詳細的樹狀結構比較都會有效能上的花費，但是畢竟操作的是普通的 JavaScript 物件資料，並且與真實的 DOM 不同的是，**Virtual DOM 並沒有與瀏覽器的渲染引擎做直接的綁定**，因此整體來說還是比頻繁且大量的操作真實 DOM 的效能花費要低了許多。
+
 重點：
 - Virtual DOM 節點/結構 本身是指電腦程式針對對應Real DOM 節點/結構 來生成相同特性和行為的DOM 物件結構，只是該DOM物件結構只能夠存在於特定系統上，在這裡會存在於React層級上
+- React 主要會以Virtual DOM為單位來處理元件的構建
 - Virtual DOM 節點/結構 在React上的結構：
 	- 主要會以JS物件來對應Real DOM節點
 	- 其屬性(property)會有對應Real DOM節點會有的資訊，如元素種類、屬性值(attribute)、包含的子節點會有什麼
-- Virtual DOM
+- Virtual DOM 節點/結構 在React層級上會有程式模組專門轉換成 對應的Real DOM元素
 
 
 ### Virtual DOM為何出現？
-
+[[@ithomeDay04DOM]]
 > 你可以想像 Virtual DOM 就像是畫面產生的模擬彩排場，每次有新 UI 畫面產生的需求時，我們可以用以下流程來完成畫面更新：
 
 > 1.  **透過事先定義好的模板程式來產生新的 Virtual DOM Tree ，作為新的彩排結果**
@@ -37,11 +41,26 @@
 
 ![](https://miro.medium.com/max/1400/1*ZXE-64hJcWYfNjmWAjiRmw.png)
 
+重點：
+- Virtual DOM 概念的提出原因：
+	- 為了實現 **以最少的Real DOM操作來達到所想要的畫面結果**。
+-  **以最少的Real DOM操作來達到所想要的畫面結果** ：會將真正要修改的DOM 結構和操作僅限於真正需要的地方，而非整體。
+	- 具體概念為：以JS層級來將Real DOM結構抽離出可描述相對應結構的DOM結構，並以此結構作為藍圖來指示要如何修改對應的Real 
+	- 打造出相對應的Virtaul DOM結構，並以Virtual DOM結構為藍圖
+		- 以將要渲染在Real DOM Tree的畫面轉換成對應的Virtual DOM結構
+		- 第一項所獲得的結構與目前畫面對應的Virtual DOM結構比較差異
+		- 獲取差異後，就交給React層級的轉換程式來轉換成對應Real DOM節點/結構來更新目前DOM Tree更新，其對應Real DOM節點/結構會是以差異為主，而非以整體。
 
 
 
+### 誤解：Virtual DOM 是從真實 DOM 複製一份出來的 copy
 
+[[@ithomeDay04DOM]]
+> Virtual DOM 是從真實 DOM 複製一份出來的 copy
 
+重點：
+- Virtual DOM 是從真實 DOM 複製一份出來的 copy 這項論點是錯的。
+- 
 
 
 ### Virtual 命名緣由
