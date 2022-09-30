@@ -48,7 +48,7 @@ function App() {
 ## 複習
 
 #🧠 React：若單讀回傳JS Expression為渲染內容且沒添加\{\}的話，React會如何處理？->->-> `React會直接以JS來解析執行來特殊處理，不用添加\{\}：在這裡會根據enable是否為true來決定最後渲染內容`
-<!--SR:!2022-09-30,3,250-->
+<!--SR:!2022-10-10,10,250-->
 
 #🧠 return ( enable ? \<h2\>enable\<\/h2\> : \<h2\>disable\<\/h2\>) 為React元件的渲染內容的話，會如何執行？ ->->-> `會直接以JS來解析執行，根據enable是否為true來決定最後渲染內容`
 <!--SR:!2022-09-30,3,250-->
@@ -64,7 +64,7 @@ function App() {
 <!--SR:!2022-09-30,3,250-->
 
 #🧠 React：會讓React在渲染部分以JS Expression處理的途徑有哪些？ ->->-> `單獨回傳JS Expression、在渲染內容使用{}和JS Expression、陣列的其中一個元素擺放JS Expression`
-<!--SR:!2022-09-30,3,250-->
+<!--SR:!2022-10-10,10,250-->
 
 
 ---
