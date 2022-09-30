@@ -37,7 +37,7 @@ JavaScript 是一種具有編譯、直譯特性的直譯程式語言，在執行
 	- 會替var變數宣告、函式宣告分配記憶體以及給予初始值
 	- 定義每個識別字所對應的變數、函式
 	- 定義Execution Context
-	[[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
+	[[JavaScript 會在編譯時期產出對應的bytecode，而對應bytecode功能會是分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
 轉換成最大效能的程式碼
 [[@mdnTiShengHoistingShuYuBiao]]
 > 變數和函數的宣告會在編譯階段就被放入記憶體，但實際位置和程式碼中完全一樣。
@@ -77,7 +77,7 @@ p.s. 實際上會比這些流程還要複雜，但會產生比先前更為有效
 
 ### 編譯和執行的時機
 - 當開始執行特定JS檔案時，就會進入針對各種Scope下的內容進行編譯
-[[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
+[[JavaScript 會在編譯時期產出對應的bytecode，而對應bytecode功能會是分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
 
 ### compiler 命名緣由
 [[@Compiler2022]] 所描述的：

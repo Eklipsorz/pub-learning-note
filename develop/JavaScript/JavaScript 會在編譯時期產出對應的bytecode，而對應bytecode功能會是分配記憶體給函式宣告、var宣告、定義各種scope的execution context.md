@@ -70,22 +70,28 @@ _Fig. 2: Colored Scope Bubbles_
 > 5.  run time 會使用我們決定好的 lexically scoped 並產生 bytecode，也就是大家熟悉的 interpreter JavaScript 。
 
 重點：
-- JavaScript 在編譯時期就做了以下事情：
+- JavaScript 在編譯時期主要會產出對應的bytecode，其bytecode功能會是：
 	- 分配記憶體給所有函式宣告、var變數宣告並賦予初始值：函式宣告會拿到存有函式內容的記憶體區塊，var變數宣告會拿到存有undefined的記憶體區塊
 	- 不分配記憶體給const/let變數宣告
-	- 確定每一個scope：對Global Scope、Function Scope設定對應Execution Context
+	- 設定this binding
+	- 設定outer reference
+	- 設定在scope下為每個識別字而對應的實體物件
 - 所有lexically scoped language 會在編譯時期決定lexical scopes和對應的lexical identifiers
 
 
 ## 複習
-#🧠 JavaScript 編譯時期除了生成對應ByteCode以外，還會做什麼？（包含執行前)->->-> `分配記憶體給所有函式宣告、var變數宣告並賦予初始值：函式宣告會拿到存有函式內容的記憶體區塊，var變數宣告會拿到存有undefined的記憶體區塊、確定每一個scope：對Global Scope、Function Scope設定對應Execution Context`
-<!--SR:!2022-09-30,17,246-->
+#🧠 JavaScript 編譯時期會生成對應ByteCode以外，其bytecode的功能會是>->-> `	- 分配記憶體給所有函式宣告、var變數宣告並賦予初始值：函式宣告會拿到存有函式內容的記憶體區塊，var變數宣告會拿到存有undefined的記憶體區塊- 不分配記憶體給const/let變數宣告 - 設定this binding  - 設定outer reference - 設定在scope下為每個識別字而對應的實體物件`
 
 
-#🧠 JavaScript 編譯時期會分配記憶體const/let變數宣告嗎？->->-> `不分配記憶體給const/let變數宣告`
-<!--SR:!2022-10-11,52,250-->
 
-#🧠 JavaScript 編譯時期對於EC會有什麼樣操作，而什麼時候生成對應的GEC和FEC？（具體說明) ->->-> `編譯是會建立對應EC的bytecode，然後再執行階段中，快要執行GEC對應的scope才會執行對應的bytecode來生成對應EC，而FEC則是快要執行FEC對應的scope才會執行對行對應的bytecode來生成對應的FEC`
+
+#🧠 JavaScript 編譯的bytecode會分配記憶體const/let變數宣告嗎？->->-> `不分配記憶體給const/let變數宣告`
+
+
+ #🧠 JavaScript 編譯的bytecode會分配記憶體var變數/函式宣告嗎？->->-> `分配記憶體給var變數和函式宣告`
+
+
+#🧠 JavaScript 什麼時候生成對應的GEC和FEC？（具體說明) ->->-> `執行階段中，快要執行GEC對應的scope才會執行對應的bytecode來生成對應EC，而FEC則是快要執行FEC對應的scope才會執行對行對應的bytecode來生成對應的FEC`
 <!--SR:!2022-10-05,6,247-->
 
 

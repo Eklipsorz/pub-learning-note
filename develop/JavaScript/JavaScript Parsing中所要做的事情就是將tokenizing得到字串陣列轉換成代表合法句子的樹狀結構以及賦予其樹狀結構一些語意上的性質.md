@@ -79,6 +79,6 @@ Tags:
 [[JavaScript]]
 Links:
 [[JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行]]
-[[JavaScript 會在編譯時期分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
+[[JavaScript 會在編譯時期產出對應的bytecode，而對應bytecode功能會是分配記憶體給函式宣告、var宣告、定義各種scope的execution context]]
 References:
 [[@hebhJavaScriptBianYiYuanLiYuYuYanJingCuiZhiHu]]
