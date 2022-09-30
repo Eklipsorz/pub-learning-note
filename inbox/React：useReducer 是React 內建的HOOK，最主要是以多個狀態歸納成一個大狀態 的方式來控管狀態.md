@@ -279,7 +279,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-02,10,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
-<!--SR:!2022-09-30,8,250-->
+<!--SR:!2022-10-22,22,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
 <!--SR:!2022-10-02,10,250-->
@@ -292,7 +292,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
-<!--SR:!2022-09-30,8,250-->
+<!--SR:!2022-10-23,23,250-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的initialState, initFn 是什麼？用途是什麼？ 請先簡答 ->->-> `定義初始狀態、主要是定義如何設定初始值`
