@@ -215,7 +215,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-10-01,12,230-->
 
 #🧠 react updating 子階段中的render包含哪些步驟？ ->->-> `getDerivedStateFromProps、shouldComponentUpdate、更新狀態、render`
-<!--SR:!2022-09-30,28,250-->
+<!--SR:!2022-12-12,73,250-->
 
 
 #🧠 react updating 子階段中的pre-commit包含哪些步驟？ ->->-> `getSnapshotBeforeUpdate`
