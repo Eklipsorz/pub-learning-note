@@ -101,6 +101,10 @@ export default CartItem;
 #🧠 假使實現購物車的介面和功能是由Cart.js和CartItem.js，Cart.js是呈現每個CartItem的部分以及儲存每個項目的名稱、價格、id，而CartItem則是負責每個項目的渲染和儲存對應項目的id和數量，在這裡為什麼狀態會以Cart.js來去觸發context的更新狀態用函式？而非由CartItem.js->->-> `最主要CartItem.js只有id和數量，並沒辦法直接從它獲取對應項目的其他資訊，因而透過lifting state up 傳遞給Cart.js來處理`
 
 
+
+#💻 請至/question-review/food-order-project-question領取題目並到install-funtion-to-cart分支，請試著在Cart.js和CartItem.js中實作安裝Provider Component的功能。 ->->-> `https://github.com/Eklipsorz/food-order-project/tree/main/src/components/Cart`
+
+
 ---
 Status: #🌱 #📓 
 Tags:
