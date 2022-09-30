@@ -109,7 +109,7 @@ clearTimeout(timeoutID)
 <!--SR:!2022-10-28,28,250-->
 
 #🧠 React：在useEffect的debouncing 實現中，是如何實現每一次effect觸發就清除上一個effect觸發處理生成的非同步計時任務(timer task) ->->-> `以effect 的cleanup來實現，其identifier會是記錄上一個處理而生成的計時任務ID。定義effect的cleanup任務，內容為return () => { clearTimeout(identifier); }`
-<!--SR:!2022-09-30,10,250-->
+<!--SR:!2022-10-28,28,250-->
 
 #🧠 React：在useEffect的debouncing 實現中， 是如何實現為當前effect觸發處理而生成一個非同步計時任務->->-> `以setTimeout(callback,500)來生成非同步任務，並回傳其任務ID作為cleanup的依據 const identifier = setTimeout(() => { // do something setState(....); }, 500);`
 <!--SR:!2022-10-28,28,250-->
@@ -119,7 +119,7 @@ clearTimeout(timeoutID)
 
 
 #🧠 React：請用setTimeout + cleanup 程式碼來實現effect的debouncing概念 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png)`
-<!--SR:!2022-09-30,10,250-->
+<!--SR:!2022-10-28,28,250-->
 
 ---
 Status: #🌱 
