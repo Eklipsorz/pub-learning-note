@@ -80,9 +80,17 @@ export default CartButton;
 
 ## 複習
 
+#🧠 若元件套用對應selector中的CSS 動畫，那麼動畫會呈現幾次？->->-> `只會呈現一次`
+
+
+#🧠 若元件套用對應selector中的CSS 動畫，那麼動畫會呈現一次，如何重複呈現？->->-> `切換對應元件的class`
+
+#💻 請至/question-review/food-order-project-question領取題目並到add-item-animation分支，請試著在CartButton.js中實作出當增加項目至購物車的動畫，請務必注意每次增加就每次呈現 ->->-> `https://github.com/Eklipsorz/food-order-project/blob/main/src/components/Cart/CartButton.js`
+
+
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
