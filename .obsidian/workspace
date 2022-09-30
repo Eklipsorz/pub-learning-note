@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/food-order-project：實現按鈕能夠呈現animation效果-bump.md"
+                "file": "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md"
               }
             }
           }
@@ -148,10 +148,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e58f423a3d3b0151",
+  "active": "7865bf5617e335b1",
   "lastOpenFiles": [
-    "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
     "inbox/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+    "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
     "inbox/food-order-project：從購物車移除項目的業務邏輯.md",
     "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
     "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
