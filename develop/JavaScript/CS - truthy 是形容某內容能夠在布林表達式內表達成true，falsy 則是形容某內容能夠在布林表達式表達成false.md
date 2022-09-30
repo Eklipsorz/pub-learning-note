@@ -87,9 +87,11 @@ if (NaN)
 
 
 #🧠 JS：請問0是算falsy value？還是truthy value？ ->->-> `算falsy value`
+<!--SR:!2022-10-02,2,246-->
 
 
 #🧠 JS：請問undefined、NaN是算falsy value？還是truthy value？->->-> `是算falsy value`
+<!--SR:!2022-10-02,2,246-->
 
 
 #🧠 字串要怎麼才能夠在JS被當作是falsy value? ->->-> `""、``、''`
