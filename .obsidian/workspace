@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "1bbfd5a48fd02f09",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
+                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
+                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md"
+                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md"
               }
             }
           }
@@ -136,10 +148,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4e55694fe787fd1b",
+  "active": "1bbfd5a48fd02f09",
   "lastOpenFiles": [
-    "inbox/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
+    "inbox/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
     "inbox/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",

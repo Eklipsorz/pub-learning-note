@@ -109,7 +109,7 @@ React updates DOM and refs 主要用途為：
 
 
 #🧠 React Mounting 階段下的render函式是做什麼？ ->->-> `根據實例內容和render上對應元件的內容來解析成Virtual DOM結果`
-<!--SR:!2022-09-30,27,250-->
+<!--SR:!2022-12-11,72,250-->
 
 #🧠 React Mounting 階段下的React updates DOM and refs函式是做什麼？ ->->-> `- 拿render獲取到的Virtual DOM結果和目前的Virtual DOM結果比對，看差異是如何 - 根據差異來轉換成實際DOM節點來渲染`
 <!--SR:!2022-09-30,27,250-->
