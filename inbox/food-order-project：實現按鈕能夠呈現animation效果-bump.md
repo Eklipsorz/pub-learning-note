@@ -76,7 +76,6 @@ const CartButton = (props) => {
 };
 
 export default CartButton;
-
 ```
 
 ## 複習
