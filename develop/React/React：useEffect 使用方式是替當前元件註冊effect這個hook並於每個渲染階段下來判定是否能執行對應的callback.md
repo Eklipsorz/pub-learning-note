@@ -219,7 +219,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
-<!--SR:!2022-09-30,9,250-->
+<!--SR:!2022-10-26,26,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `除了只會在元件的mounting階段下直接執行以外，updating階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`

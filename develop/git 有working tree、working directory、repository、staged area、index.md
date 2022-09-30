@@ -44,7 +44,7 @@ git 系統當中，有五個主要的空間名詞，
 <!--SR:!2022-10-16,85,230-->
 
 #🧠  若於一開始下達git init來建立git系統的話，請問working directory 會是什麼 ->->-> `預設上會是無內容的目錄來代表目前所處於的版本`
-<!--SR:!2022-09-30,80,248-->
+<!--SR:!2023-04-15,197,248-->
 
 #🧠 請描述Working Directory、Staging Area、.git directory(Repository)會是指什麼 ![](https://git-scm.com/book/en/v2/images/areas.png) ->->-> `在這裡會是以某個版本的內容來作為working directory，staging area則是準備提交至repo資料庫的站存區，.git directory則是代表著repository`
 <!--SR:!2022-11-19,108,250-->
