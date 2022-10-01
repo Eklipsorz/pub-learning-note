@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+            "file": "inbox/consumer component 並不會主動監測，而是等到對應context object內容發生變動且觸發渲染週期才監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
             "mode": "source",
             "source": false
           }
@@ -40,10 +40,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "componentDidUpdate",
+                "query": "consumer",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+                "file": "inbox/consumer component 並不會主動監測，而是等到對應context object內容發生變動且觸發渲染週期才監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+                "file": "inbox/consumer component 並不會主動監測，而是等到對應context object內容發生變動且觸發渲染週期才監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md"
+                "file": "inbox/consumer component 並不會主動監測，而是等到對應context object內容發生變動且觸發渲染週期才監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md"
               }
             }
           }
@@ -139,15 +138,15 @@
   },
   "active": "7653b09f49990ff3",
   "lastOpenFiles": [
-    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
+    "develop/React/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md",
+    "develop/React/React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component.md",
+    "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
+    "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "MOC/React MOC.md",
     "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
-    "develop/render/原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md",
-    "inbox/Untitled 3.md",
-    "inbox/Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree.md",
-    "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
-    "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md"
+    "develop/render/原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md"
   ]
 }

@@ -28,7 +28,7 @@ componentDidUpdate()
 
 重點：
 - updating 階段是每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
-	- 使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux)：主要會由一個監聽元件來負責監聽元件A的內容，有更動就會觸發
+	- 使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux)：使用其資訊的元件B會由一個監聽元件來負責監聽元件A的內容，有更動就會觸發元件B的渲染週期來重新取得元件A內容來渲染，沒更動就不會觸發
 	- New props：由新的props來觸發渲染，由props所夾雜的新資訊來渲染。
 	- setState()：根據state是否改變來觸發渲染，由新state的來渲染。
 	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染
@@ -199,10 +199,8 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> `updating`
 <!--SR:!2022-12-01,64,250-->
 
-#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪三個途徑？請詳細說明 ->->-> `New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪四個途徑？請詳細說明 ->->-> `- 使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux)：使用其資訊的元件B會由一個監聽元件來負責監聽元件A的內容，有更動就會觸發元件B的渲染週期來重新取得元件A內容來渲染，沒更動就不會觸發、New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
 
-
-#🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三個途徑中的forceUpdate？ ->->-> ``
 
 #🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
 <!--SR:!2022-11-27,62,250-->
@@ -288,6 +286,7 @@ Links:
 [[life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段]]
 [[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
 [[React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染]]
+[[React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方]]
 References:
 [[@w3schoolReactLifecycle]]
 [[@ithomeReactJsRuMen19]]
