@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "11b2cfa28dde0dfa",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Untitled 3.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -136,7 +148,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7653b09f49990ff3",
+  "active": "11b2cfa28dde0dfa",
   "lastOpenFiles": [
     "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
     "inbox/Untitled 3.md",
