@@ -189,8 +189,8 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 ## 複習
 
-#🧠 React：在歷經mounting階段後，元件要如何觸發updating 階段?  (有三種方式)->->-> `setState、new props、forceupdate`
-<!--SR:!2022-10-31,31,249-->
+#🧠 React：在歷經mounting階段後，元件要如何觸發updating 階段?  (有三種方式)->->-> `使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux、setState、new props、forceupdate`
+
 
 #🧠 getDerviedStateFromPorps、shouldComponentUpdate、更新狀態、render、getSnapshotBeforeUpdate、React updates DOM & refs、componentDidUpdate 會是以什麼形式來表示？ ->->-> `以函式來表示`
 <!--SR:!2022-10-09,31,249-->
@@ -287,6 +287,7 @@ Links:
 [[React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段]]
 [[React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染]]
 [[React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方]]
+[[consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動]]
 References:
 [[@w3schoolReactLifecycle]]
 [[@ithomeReactJsRuMen19]]
