@@ -40,7 +40,10 @@ noun
 > a computer program that can show the differences between computer files
 
 
-
+重點：
+- diff 本身意思為多個事物間的不同處
+- 在電腦科學是指一個程式，專比對多個檔案的內容或者比對同一個檔案在不同版本的內容來得到差異
+- 
 
 
 
