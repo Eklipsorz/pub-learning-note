@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 3.md",
+            "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
             "mode": "source",
             "source": false
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 3.md",
+            "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 3.md",
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 3.md",
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 3.md"
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md"
               }
             }
           }
@@ -148,7 +148,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7e28347bc628b442",
+  "active": "7653b09f49990ff3",
   "lastOpenFiles": [
     "inbox/Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree.md",
     "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
