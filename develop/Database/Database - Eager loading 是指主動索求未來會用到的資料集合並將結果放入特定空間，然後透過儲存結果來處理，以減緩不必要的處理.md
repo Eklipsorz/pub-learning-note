@@ -106,10 +106,10 @@ console.log('Amount of Sails:', awesomeCaptain.ship.amountOfSails);
 
 
 #🧠  伺服器的 eager loading 功能 會由誰來指定 ->->-> `1. 客戶端指定 - 向資料庫系統發送eager loading請求，資料庫系統就以eager loading來處理 2. 資料庫系統指定 - 資料庫系統本身設定eager loading來面對任何一個客戶端所發送的請求`
-<!--SR:!2022-10-01,3,250-->
+<!--SR:!2022-10-11,10,250-->
 
 #🧠 伺服器的 eager loading 功能 會由誰來指定，若是客戶端指定的話，會是什麼？ ->->-> `向資料庫系統發送eager loading請求，資料庫系統就以eager loading來處理`
-<!--SR:!2022-10-01,3,250-->
+<!--SR:!2022-10-11,10,250-->
 
 #🧠 伺服器的 eager loading 功能 會由誰來指定，若是資料庫系統指定的話，會是什麼？ ->->-> `資料庫系統指定 - 資料庫系統本身設定eager loading來面對任何一個客戶端所發送的請求`
 <!--SR:!2022-10-01,3,250-->

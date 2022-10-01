@@ -104,7 +104,7 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄、如何實�
 ## 複習
 
 #🧠 ES module 的載入會需要哪三個步驟來完成？->->-> `建構階段、模組實例化、執行模組內容並確定模組實例的輸出內容`
-<!--SR:!2022-10-01,39,248-->
+<!--SR:!2023-01-06,97,248-->
 
 #🧠 以這個圖示來說明如何執行ES module載入中的哪三個步驟 ![A module with two dependencies. The top module is the entry. The other two are related using import statements](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph-500x291.png)  ->->-> ``
 <!--SR:!2022-10-31,56,250-->
