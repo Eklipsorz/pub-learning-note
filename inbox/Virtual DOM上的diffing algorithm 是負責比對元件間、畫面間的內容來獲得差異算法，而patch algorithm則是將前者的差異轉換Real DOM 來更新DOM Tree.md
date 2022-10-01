@@ -17,12 +17,12 @@
 ![](https://ask.qcloudimg.com/http-save/yehe-3615838/w5t0r1qd60.jpeg?imageView2/2/w/1620)
 
 重點：
-- Virtual DOM 中的 diffing/ diff algorithm是定義如何比對Virtual DOM之間差異的算法，在這裡會是得到差異
+- Virtual DOM 中的 diffing/ diff algorithm是比對Virtual DOM之間差異的算法，在這裡會是得到差異
 	- 用途：
 		- 獲得畫面間的差異
 		- 獲得不同版本下同個元件的差異
 		- 獲得元件間的差異
-- Virtual DOM 中的 patch algorithm 則是定義如何將差異轉換成對應Real DOM來更新DOM Tree的算法
+- Virtual DOM 中的 patch algorithm 則是將差異轉換成對應Real DOM來更新DOM Tree的算法
 	- 用途：將diff algorithm得到的差異搭配特定模組對應Real DOM來更新Tree
 
 
@@ -88,30 +88,40 @@ verb
 ## 複習
 
 #🧠 diff 命名緣由為何？ ->->-> `本身意思為多個事物間的不同處`
+<!--SR:!2022-10-04,3,250-->
 
 #🧠 diff 在電腦科學裡的命名緣由為何？  ->->-> `一個程式，專門比對多個檔案的內容或者比對同一個檔案在不同版本的內容來得到差異`
 
-#🧠 diff 在電腦科學裡作為動詞和名詞是什麼？ ->->-> `diff 若作為動詞則是以工具來比對獲得差異，diffing 使用工具來比對獲得差異的過程或者行為`
+#🧠 diff 在電腦科學裡作為動詞和diffing 名詞是什麼？ ->->-> `diff 若作為動詞則是以工具來比對獲得差異，diffing 使用工具來比對獲得差異的過程或者行為`
 
 #🧠 patch 命名緣由是什麼？ ->->-> `名詞是指一塊材料，會被縫補在特定事物上的洞上/patch 動詞是指以一塊材料來縫補特定事物的洞上之動作`
+<!--SR:!2022-10-04,3,250-->
 
 
 #🧠 patch 在電腦科學裡的命名緣由是什麼？ ->->-> `動詞，以特定程式碼來修正特定程式所擁有的問題、名詞，負責修正特定程式所擁有的問題之特定程式碼`
+<!--SR:!2022-10-04,3,250-->
 
 #🧠 patch 在電腦科學裡的命名緣由是動詞，以特定程式碼來修正特定程式所擁有的問題、名詞，負責修正特定程式所擁有的問題之特定程式碼，能否說明特定程式碼如何修正？程式碼又是什麼？->->-> `特定程式碼實際上會是程式A修正前版本和程式A修正後版本的程式碼之差異，接著會搭配特定程式模組來以特定程式碼指示如何改變程式程式A的程式碼來修正問題`
+<!--SR:!2022-10-02,1,230-->
 
 #🧠 patch 在電腦科學裡的命名緣由和 名詞是指一塊材料，會被縫補在特定事物上的洞上/patch 動詞是指以一塊材料來縫補特定事物的洞上之動作之間有什麼樣的比喻？->->-> `在這裡，會將特定程式比喻特定事物，而bug/有問題的地方則是比喻特定事物上的洞，patch則是以修正問題來比喻填補洞。`
+<!--SR:!2022-10-04,3,250-->
 
-#🧠  Virtual DOM 中的 diffing/ diff algorithm是什麼？ ->->-> `定義如何比對Virtual DOM之間差異的算法，在這裡會是得到差異`
+#🧠  Virtual DOM 中的 diffing/ diff algorithm是什麼？ ->->-> `比對Virtual DOM之間差異的算法，在這裡會是得到差異`
+
 
 #🧠 Virtual DOM 中的 diffing/ diff algorithm 被處理後會得到什麼？ ->->-> `Virtual DOM之間差異`
+<!--SR:!2022-10-04,3,250-->
 
-#🧠 Virtual DOM 中的 patch algorithm是什麼？ ->->-> `則是定義如何將差異轉換成對應Real DOM來更新DOM Tree的算法`
+#🧠 Virtual DOM 中的 patch algorithm是什麼？ ->->-> `將差異轉換成對應Real DOM來更新DOM Tree的算法`
+
 
 #🧠 Virtual DOM 中的 patch algorithm用途是什麼？->->-> `將diff algorithm得到的差異搭配特定模組對應Real DOM來更新Tree`
+<!--SR:!2022-10-04,3,250-->
 
 
 #🧠 Virtual DOM 中的 diffing/ diff algorithm 用途是什麼？->->-> `		- 獲得畫面間的差異 - 獲得不同版本下同個元件的差異 - 獲得元件間的差異`
+<!--SR:!2022-10-04,3,250-->
 
 ---
 Status: #🌱 #📓 
