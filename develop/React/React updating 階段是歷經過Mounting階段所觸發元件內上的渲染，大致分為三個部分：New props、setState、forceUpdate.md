@@ -28,9 +28,10 @@ componentDidUpdate()
 
 重點：
 - updating 階段是每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
+	- 使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux)：主要會由一個監聽元件來負責監聽元件A的內容，有更動就會觸發
 	- New props：由新的props來觸發渲染，由props所夾雜的新資訊來渲染。
 	- setState()：根據state是否改變來觸發渲染，由新state的來渲染。
-	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染，通常會是直接存取集中管理狀態的元件來獲取資訊來渲染，如context或者redux。
+	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染
 - New props：Updating 完整流程 (以下皆以函式來代表)：
 	- getDerviedStateFromPorps
 	- shouldComponentUpdate
@@ -198,8 +199,10 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 #🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問目前是處於什麼life cycle？ ->->-> `updating`
 <!--SR:!2022-12-01,64,250-->
 
-#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪三個途徑？ ->->-> `New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
-<!--SR:!2022-11-17,56,250-->
+#🧠 歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪三個途徑？請詳細說明 ->->-> `New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
+
+
+#🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三個途徑中的forceUpdate？ ->->-> ``
 
 #🧠  歷經Mounting階段後，會有三個途徑來變更元件A在實際DOM樹上的DOM節點，請問三途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
 <!--SR:!2022-11-27,62,250-->
