@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "4a030c8721edb38e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "7653b09f49990ff3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
+            "file": "inbox/Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
+                "file": "inbox/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
+                "file": "inbox/Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md"
+                "file": "inbox/Untitled 3.md"
               }
             }
           }
@@ -150,15 +138,15 @@
   },
   "active": "7653b09f49990ff3",
   "lastOpenFiles": [
+    "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
+    "inbox/Untitled 3.md",
     "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
     "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
     "develop/React/setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
-    "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
     "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
     "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
-    "develop/food-order-project/food-order-project：增加項目至購物車的業務邏輯.md",
-    "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md"
+    "develop/food-order-project/food-order-project：增加項目至購物車的業務邏輯.md"
   ]
 }

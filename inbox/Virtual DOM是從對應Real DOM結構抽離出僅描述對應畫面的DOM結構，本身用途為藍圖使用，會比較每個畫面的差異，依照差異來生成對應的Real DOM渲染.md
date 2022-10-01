@@ -33,7 +33,7 @@
 
 
 重點：
-- 用途：Real DOM是直接指示瀏覽器該如何渲染；Virtual DOM是從Real DOM抽離出來的版本，該版本僅描述對應畫面的 DOM結構，並沒辦法指示瀏覽器該如何渲染，用途為描述用的藍圖
+- 用途：Real DOM是直接表達對應畫面且指示瀏覽器該如何渲染；Virtual DOM是從Real DOM抽離出來的版本，該版本僅描述對應畫面的 DOM結構，並沒辦法指示瀏覽器該如何渲染，用途為描述用的藍圖
 - 誰能直接告知瀏覽器如何渲染：Real DOM 能直接指示 ； Virtual DOM沒辦法
 - 如何指示瀏覽器來渲染畫面，不分直接或者間接：Real DOM 能直接指示 ； Virtual DOM 先轉換成對應Real DOM，然後以Real DOM來指示渲染畫面
 
@@ -135,7 +135,18 @@ virtual adj
 
 #🧠 ReactJS以Virtual DOM來定義畫面，可Virtual DOM不能夠直接讓瀏覽器轉換成渲染指令來渲染畫面，那要如何做 ->->-> `在ReactJS層級上定義一個程式模組來幫助轉換成對應的Real DOM結構`
 
-#🧠 Question :: ->->-> ``
+#🧠 Real DOM vs. Virtual DOM 本質上的差別？ ->->-> `Real DOM是代表著對應畫面並能夠讓瀏覽器解析成一系列渲染指令，Virtual DOM則是從Real DOM抽離出來的版本，其版本只能夠代表對應畫面，並不能夠直接被瀏覽器解析成一系列渲染指令`
+
+#🧠 Real DOM vs. Virtual DOM，各自的用途為何 ->->-> `Real DOM是直接表達對應畫面且指示瀏覽器該如何渲染；Virtual DOM是從Real DOM抽離出來的版本，該版本僅描述對應畫面的 DOM結構，並沒辦法指示瀏覽器該如何渲染，用途為描述用的藍圖`
+
+#🧠 Real DOM vs. Virtual DOM，誰能直接告知瀏覽器如何渲染->->-> `Real DOM 能直接指示 ； Virtual DOM沒辦法`
+
+#🧠 Real DOM vs. Virtual DOM，如何指示瀏覽器來渲染畫面，不分直接或者間接 ->->-> `Real DOM 能直接指示 ； Virtual DOM 先轉換成對應Real DOM，然後以Real DOM來指示渲染畫面`
+
+#🧠 Real DOM vs. Virtual DOM 差別(請簡答，共三個)->->-> `用途、誰能直接告知瀏覽器如何渲染、如何指示瀏覽器來渲染畫面，不分直接或者間接`
+
+
+
 
 ---
 Status: #🌱 #📓 
