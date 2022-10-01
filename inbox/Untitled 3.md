@@ -19,10 +19,16 @@
 
 ### Diff 命名緣由
 
-diff 單純意思：
+- diff 單純意思
+
 > short for difference 
 
-diff 在電腦科學的意思：
+noun
+> The difference between two things is the way in which they are unlike each other.
+
+
+- 電腦科學的意思
+
 [[@wikidataDiff2022]]
 > In computing, the utility diff is a data comparison tool that computes and displays the differences between the contents of files
 
@@ -30,12 +36,30 @@ diff 在電腦科學的意思：
 
 > The utility displays the changes in one of several standard formats, such that both humans or computers can parse the changes, and use them for patching. 
 
-
+劍橋字典：
 > a computer program that can show the differences between computer files
+
+
+
+
 
 
 ### Patch 命名緣由
 
+- Patch 單純意思
+noun
+> A patch is a piece of material which you use to cover a hole in something.
+
+verb
+> If you patch something that has a hole in it, you mend it by fastening a patch over the hole. 
+
+
+- 電腦科學的意思
+劍橋字典：
+> a small computer program that can be added to an existing program in order to make the existing program work as it should
+
+[[@wikidataPatchComputing2022]]
+> A patch is a set of changes to a computer program or its supporting data designed to update, fix, or improve it.
 
 
 ## 複習
@@ -47,6 +71,7 @@ Tags:
 [[React]]
 Links:
 References:
+[[@wikidataPatchComputing2022]]
 [[@wikidataDiff2022]]
 [[@ithomeDay04DOM]]
 [[@qianduanmiVirtualDomHeDiffSuanFaTengXunYunKaiFaZheSheQuTengXunYun]]
