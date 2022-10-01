@@ -272,7 +272,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
-<!--SR:!2022-10-01,9,250-->
+<!--SR:!2022-10-25,24,250-->
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
@@ -316,7 +316,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-02,10,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，reducerFn(prevState, action)如何被觸發執行？ ->->-> `這n個連續dispatch指令會分別被處理`
-<!--SR:!2022-10-01,9,250-->
+<!--SR:!2022-10-24,23,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `會以auto-batching的方式，將狀態試著合併，最後再以最後合併結果來更新狀態、觸發渲染週期`
 <!--SR:!2022-10-07,11,230-->

@@ -172,7 +172,7 @@ this is use effect
 ## 複習
 
 #🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會執行useEffect的side effect ->->-> `mounting階段的componentDidMount、updating階段下的componentDidUpdate`
-<!--SR:!2022-10-01,10,250-->
+<!--SR:!2022-10-29,28,250-->
 
 #🧠 React：useEffect註冊在一個元件下，請問元件下的哪些階段會觸發useEffect的檢查來執行 ->->-> `updating階段下的componentDidUpdate`
 <!--SR:!2022-10-25,25,250-->
@@ -226,7 +226,7 @@ this is use effect
 <!--SR:!2022-10-25,27,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時的componentWillUnmount週期函式會做什麼？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
-<!--SR:!2022-10-01,10,250-->
+<!--SR:!2022-10-28,27,250-->
 
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係在每個元件的生命週期階段(mounting、unmounting、updating)是如何 ->->-> `在mounting和unmount並不會將dependencies納入使用，只會在updating才納入使用，每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`

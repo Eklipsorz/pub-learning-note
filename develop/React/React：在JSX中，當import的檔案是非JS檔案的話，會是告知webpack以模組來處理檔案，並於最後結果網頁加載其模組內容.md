@@ -65,18 +65,18 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 ## 複習
 #🧠  import 'xxxx'且xxxx為JS檔案 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
-<!--SR:!2022-10-01,3,250-->
+<!--SR:!2022-10-03,2,230-->
 
 
 #🧠  在React中， import 'xxxx' 使用且xxxx為非JS檔案 是做什麼用的？ ->->-> `告知webpack哪些模組要被處理`
-<!--SR:!2022-10-01,3,250-->
+<!--SR:!2022-10-11,10,250-->
 
 #🧠 import 'xxxx'且xxxx為JS檔案， 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
 <!--SR:!2022-10-11,10,250-->
 
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `告知webpack將對應CSS檔案以模組來處理`
-<!--SR:!2022-10-01,3,250-->
+<!--SR:!2022-10-09,8,250-->
 
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是把css納入至importing module會用到的資源，那麼能夠讓XML使用樣式名稱嗎？為何 ->->-> `能，告知webpack將對應CSS檔案以模組來處理，並於最後結果網頁加載對應CSS內容`
