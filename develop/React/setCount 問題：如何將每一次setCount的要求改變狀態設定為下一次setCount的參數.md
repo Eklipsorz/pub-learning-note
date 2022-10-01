@@ -148,8 +148,8 @@ function DoubleIncreaser() {
 <!--SR:!2022-10-03,28,250-->
 
 
-#🧠 若要以下面形式![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-result_jq3ykp.png)來改造下面的話，解法有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `以callback作為setCount的引數、先處理兩次count疊加的邏輯計算並且以其結果來渲染和更新`
-<!--SR:!2022-10-01,26,250-->
+#🧠 執行第一個狀態更新就使0->1，執行第二個狀態更新就使1->2的話來改造下面的話，解法有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `以callback作為setCount的引數、先處理兩次count疊加的邏輯計算並且以其結果來渲染和更新`
+<!--SR:!2022-12-06,66,250-->
 
 #🧠 setState 參數為callback，會是如何進行的？->->-> `預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值`
 <!--SR:!2022-10-03,28,250-->

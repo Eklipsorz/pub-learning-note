@@ -102,6 +102,7 @@ export default CartItem;
 
 
 #🧠 請問為什麼要特意讓每個項目的onAdd和onRemove要以function.protype.bind來重新對應呢？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664553736/blog/react/food-order/function.bind-example_dkgr2n.png) ->->-> `為的就是讓每個項目的onAdd和onRemove都對應著各自項目專屬的增加功能和移除功能，而不透過修改item來實現`
+<!--SR:!2022-10-04,3,250-->
 
 
 #💻 請至/question-review/food-order-project-question領取題目並到install-function-to-cart分支，請試著在Cart.js和CartItem.js中實作安裝Provider Component的功能。 ->->-> `https://github.com/Eklipsorz/food-order-project/tree/main/src/components/Cart`

@@ -295,7 +295,7 @@ batch：
 
 
 #🧠  react batching ：考慮以下事件處理，請問多個事件所衍生出來的handler 所衍生batching狀況是如何，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `由於多個事件處理中的每個事件處理都自行做自己內部的batching，所以每個handler都各自合併`
-<!--SR:!2022-10-01,27,250-->
+<!--SR:!2022-12-11,71,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-setTimeOut-example_q337id.png) ->->-> `會合併成一個狀態更新指令，來觸發`
 <!--SR:!2022-10-02,28,250-->

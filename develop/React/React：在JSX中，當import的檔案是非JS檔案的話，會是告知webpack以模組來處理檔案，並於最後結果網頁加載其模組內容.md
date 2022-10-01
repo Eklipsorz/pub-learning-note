@@ -84,7 +84,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 
 #🧠 在JSX中，執行import './ExpenseItem.css'後，對應component的網頁會有這css嗎？ ->->-> `最後webpack針對這component所生成的網頁會自動載入對應css檔案`
-<!--SR:!2022-10-01,3,250-->
+<!--SR:!2022-10-10,9,250-->
 
 
 #🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個HTML元件來表達->->-> `添加className，<div className='.....'></div>`

@@ -204,7 +204,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
-<!--SR:!2022-10-01,10,250-->
+<!--SR:!2022-10-29,28,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在mounting階段時的componentDidMount週期函式會做什麼？ ->->-> `直接執行useEffect的callback`
 <!--SR:!2022-10-13,18,250-->
