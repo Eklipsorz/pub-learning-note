@@ -30,7 +30,7 @@ componentDidUpdate()
 - updating 階段是每一個元件A在對應DOM節點載入(mount)至實際DOM樹之後(換言之，歷經Mounting階段後)，會有三個途徑來變更元件A在實際DOM樹上的DOM節點：
 	- New props：由新的props來觸發渲染，由props所夾雜的新資訊來渲染。
 	- setState()：根據state是否改變來觸發渲染，由新state的來渲染。
-	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。
+	- forceUpdate()：直接強制渲染，由props和state以外的資料來渲染，通常會是直接存取集中管理狀態的元件來獲取資訊來渲染，如context或者redux。
 - New props：Updating 完整流程 (以下皆以函式來代表)：
 	- getDerviedStateFromPorps
 	- shouldComponentUpdate
