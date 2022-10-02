@@ -247,7 +247,7 @@ batch：
 <!--SR:!2022-12-12,72,250-->
 
 #🧠 React Batching 在 React 18起的版本會是？ ->->-> `Batching 開放在事件處理、Promise、setTimeOut。 Batching 在盡量將N個狀態更新指令合併的情況下，就自動按照算法判定如何合併`
-<!--SR:!2022-10-02,28,250-->
+<!--SR:!2022-12-15,74,250-->
 
 #🧠 React automatic batching 是什麼？ ->->-> `不管是不是在事件處理執行N個狀態更新指令，只要在root節點下的子節點都直接自動以Batching來執行`
 <!--SR:!2022-10-03,28,250-->
@@ -258,7 +258,7 @@ batch：
 
 
 #🧠 React automatic batching 啟用條件為何？ ->->-> `automatic batching 只要使用createRoot來建立Virtual DOM的root節點，並於其節點建立子節點就會夠擁有automatic batching 特性`
-<!--SR:!2022-10-02,28,250-->
+<!--SR:!2022-12-15,74,250-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
 <!--SR:!2022-11-11,50,250-->
@@ -272,7 +272,7 @@ batch：
 
 
 #🧠 React18: 若N個狀態更新指令遍佈在多個生命週期函式下的setTimeOut，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含setTimeOut的多個狀態更新指令來合併`
-<!--SR:!2022-10-02,28,250-->
+<!--SR:!2022-12-15,74,250-->
 
 
 
