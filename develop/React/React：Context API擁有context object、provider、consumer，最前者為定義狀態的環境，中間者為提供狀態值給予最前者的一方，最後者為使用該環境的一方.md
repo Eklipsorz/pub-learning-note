@@ -39,9 +39,10 @@
 重點：
 1. 每個 context object 都會有 provider component ：
 	- 是一個wrapper component，如同正常的component擁有狀態、props、hook、生命週期函式
-	- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component
-	- 被它包覆著的Component都允許存取對Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的
-	- 沒被它包覆著子節點不被允許存取其Context Object
+	- 用途：
+		- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component
+		- 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)
+	- 沒被它包覆著子節點不被允許存取它對於其Context Object的設定內容，以其他Provider component設定的內容或者預設值為主
 2. 使用方式
 	- 載入想存取狀態的Context 
 	```
@@ -231,6 +232,8 @@ consume
 #🧠 React：context 的 consumer component 會如同正常component擁有什麼(提示：四項) ->->->  `狀態、hook、props、生命週期函式`
 <!--SR:!2022-10-06,6,248-->
 
+
+
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
 <!--SR:!2022-10-04,10,250-->
 
@@ -243,8 +246,12 @@ consume
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
 <!--SR:!2022-10-04,9,250-->
 
-#🧠 React：Context中的Provider component用途是什麼？->->-> `provider component 專門設定對應狀態值給對應context、並讓其他component可看見對應context`
-<!--SR:!2022-10-04,9,250-->
+
+#🧠 React：Context中的Provider component用途是什麼？->->-> `- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component - 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
+
+#🧠 React：若沒被任意Provider component包覆著的元件想使用context object會獲取什麼內容->->-> `會存取到context object的預設值`
+
+#🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 <!--SR:!2022-10-04,9,250-->
@@ -271,18 +278,19 @@ consume
 <!--SR:!2022-10-04,10,250-->
 
 
-#🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有什麼特性？ 還是就只是包覆而已？ ->->-> `被它包覆著的Component都允許存取其Context Object(PS. 只是允許，而非真的存取)或者Context Object對於這些子節點是可見的`
-<!--SR:!2022-10-04,10,250-->
 
-#🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `沒被它包覆著子節點不被允許存取其Context Object`
-<!--SR:!2022-10-05,10,250-->
+#🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有什麼特性？ 還是就只是包覆而已？ ->->-> `		- 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
+
+
+#🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `	- 沒被它包覆著子節點不被允許存取它對於其Context Object的設定內容，以其他Provider component設定的內容或者預設值為主`
+
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
 <!--SR:!2022-10-04,10,250-->
 
 
-#🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上`
-<!--SR:!2022-10-05,10,250-->
+#🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上、讓被包覆的元件能夠看得見該provider component對於context object的內容`
+
 
 #🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
 <!--SR:!2022-10-05,10,250-->
