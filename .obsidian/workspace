@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
+            "file": "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "provider component",
+                "query": "normal flow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
+                "file": "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
+                "file": "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md"
+                "file": "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md"
               }
             }
           }
@@ -151,13 +151,13 @@
   },
   "active": "4fbbf6c2d06f898f",
   "lastOpenFiles": [
+    "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
     "inbox/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
     "develop/React/React：狀態、更新狀態函式的資料傳遞方式有使用props所建立的props chain和使用context，前者場景為將元件轉換成可重複使用的元件，後者場景為元件間傳遞過程要經歷過多的元件.md",
     "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
     "develop/React/React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component.md",
-    "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
     "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
     "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",
     "inbox/Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree.md"
