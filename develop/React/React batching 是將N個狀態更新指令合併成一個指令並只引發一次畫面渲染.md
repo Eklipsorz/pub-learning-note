@@ -238,7 +238,7 @@ batch：
 <!--SR:!2022-12-14,73,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ ->->-> `主要依據著isBatchUpdate是否為true來決定是否執行Batching，若false，就不以Batching來執行；若true，就以Batching`
-<!--SR:!2022-10-02,28,250-->
+<!--SR:!2022-12-13,72,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ 會開放在事件處理上嗎？為什麼？ ->->-> `Batching 只開放在事件處理，理由為React可以直接從瀏覽器的事件擷取`
 <!--SR:!2022-10-02,28,250-->
@@ -288,7 +288,7 @@ batch：
 
 
 #🧠 React18: 在同一個生命週期函式下，那麼如果發生多個夾雜狀態更新指令的setTimeOut，會如何處理batching？->->-> `多個夾雜狀態更新指令的setTimeOut都算在一起做batching`
-<!--SR:!2022-10-02,28,250-->
+<!--SR:!2022-12-15,74,250-->
 
 #🧠 React18: 考慮以下事件處理，請問react batching 會如何處理這內含的case1-case6，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `- case 1 會和 case 3 合併 - case 2 會和 case 5 合併 - case 4 會和 case 6 合併`
 <!--SR:!2022-12-06,68,250-->
