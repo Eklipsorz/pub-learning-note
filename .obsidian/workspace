@@ -4,36 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "7653b09f49990ff3",
+        "id": "ad7e1bdd369d9255",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "7e28347bc628b442",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "814b2a8803b554b7",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",
+            "file": "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
             "mode": "source",
             "source": false
           }
@@ -101,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",
+                "file": "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",
+                "file": "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md"
+                "file": "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md"
               }
             }
           }
@@ -160,7 +136,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "814b2a8803b554b7",
+  "active": "ad7e1bdd369d9255",
   "lastOpenFiles": [
     "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
     "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",

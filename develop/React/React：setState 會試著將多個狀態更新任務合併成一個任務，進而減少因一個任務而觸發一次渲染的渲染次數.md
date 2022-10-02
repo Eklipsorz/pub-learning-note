@@ -152,7 +152,7 @@ undefined
 <!--SR:!2022-10-03,28,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以單一值來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為 2、執行第二個this.setState指令任務，會先將結果物件設定為 ˇ、執行第三個this.setState指令任務，會先將結果物件設定為 4、做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-10-02,27,250-->
+<!--SR:!2022-12-12,71,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
 <!--SR:!2022-10-03,28,250-->

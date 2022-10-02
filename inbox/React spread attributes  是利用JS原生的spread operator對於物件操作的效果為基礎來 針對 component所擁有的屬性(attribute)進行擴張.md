@@ -83,7 +83,7 @@ function App2() {
 
 
 #🧠 React spread attributes  用法概念為何？ ->->-> `以一個物件的屬性來對元件的屬性(attribute)進行spread 操作`
-<!--SR:!2022-10-02,3,250-->
+<!--SR:!2022-10-12,10,250-->
 
 
 

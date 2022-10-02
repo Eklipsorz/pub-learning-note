@@ -249,7 +249,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 dispatch 命名緣由 ->->-> `將特定物件傳送至特定位置的行為`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-30,28,250-->
 
 #🧠 reduce / reduction 命名緣由 ->->-> `reduce 是將複雜的事物轉換成單一簡單的事物`
 <!--SR:!2022-10-30,28,250-->
@@ -259,13 +259,13 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 reducer 在React世界中是指什麼？ ->->-> `在這裡會是將多個狀態合併一個狀態來管理。`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-29,27,250-->
 
 #🧠 action 命名緣由？（請針對問題和困難來說) ->->-> `當要解決特定問題或者困難時所要做的行為`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-30,28,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-30,28,250-->
 
 #🧠 userReducer 在元件上做了什麼？用途是什麼？ ->->-> `useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。`
 <!--SR:!2022-10-11,14,230-->
@@ -282,13 +282,13 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-22,22,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-30,28,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式是物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-28,26,250-->
 
 #🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-30,28,250-->
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
@@ -299,14 +299,14 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-26,25,250-->
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的reducerFn 是什麼？用途是什麼？請先簡答 ->->-> `reducerFn 為 一個函式，具體會有兩個引數分別為prevState和action。用途為依據action指示的狀態更新請求內容來回傳新狀態、更新狀態、觸發渲染週期`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-29,27,250-->
 
 
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
 <!--SR:!2022-10-12,15,249-->
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
-<!--SR:!2022-10-02,10,250-->
+<!--SR:!2022-10-28,26,250-->
 
 
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`

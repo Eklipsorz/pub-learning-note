@@ -109,7 +109,7 @@ specific
 <!--SR:!2022-11-15,48,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是何種形式 ->->-> `基本上會使用三種欄位值，分別為id、class、type，形式為id-class-type`
-<!--SR:!2022-10-02,21,250-->
+<!--SR:!2022-11-26,55,250-->
 
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼id代表著什麼？ ->->-> `表示目前declaration 所在的 selector 有使用 id 來描述對應元件的具體程度，會用數字表示`
