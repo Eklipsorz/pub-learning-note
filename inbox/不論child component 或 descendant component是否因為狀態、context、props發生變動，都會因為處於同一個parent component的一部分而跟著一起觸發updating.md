@@ -117,6 +117,12 @@ export default Wrapper;
 
 由於以上執行狀況而發生一個效能浪費的現象：過多實際沒有最新渲染內容的元件(function component)而被呼叫，且這些元件還會讓React去做多餘的diff 算法
 
+
+#### 潛在問題下所造成的浪費成本
+
+1. 執行對應元件的成本＋執行diff算法的成本 
+
+
 ## 複習
 #🧠 若parent component是由多個child component 或者由多個descendant component 所組成，當parent component發生updating時，會發生什麼？->->-> `不論child component/ descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating`
 <!--SR:!2022-10-05,3,250-->
@@ -132,6 +138,8 @@ export default Wrapper;
 
 #🧠 若parent component是由多個child component 或者由多個descendant component 所組成，當component發生updating時，不論child component/ descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating，其潛在問題是什麼？->->-> `過多實際沒有最新渲染內容的元件(function component)而被呼叫，且這些元件還會讓React去做多餘的diff 算法`
 <!--SR:!2022-10-04,2,248-->
+
+#🧠 parent component帶動其內部的child component來執行，這會有潛在問題-過多實際沒有最新渲染內容的元件(function component)而被呼叫，浪費成本會是什麼？ ->->-> `執行對應元件的成本＋執行diff算法的成本 `
 
 
 #🧠 請說明App元件和它的descendant component在App 元件發生state改變的話，會有什麼狀況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651202/blog/react/life-cycle/together-update/question1-app-and-descendanent-component_ixumqg.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651202/blog/react/life-cycle/together-update/question1-descendanent-component_cnecsm.png)->->-> `在這裡App.js這個parent component包含了DemoOutput和Button這兩個descendant component，只要當parent component發生updating，parent component內含的descendant component就會跟著觸發渲染來得到對應的Virtual DOM。 其中DemoOutput和Button這兩個descendant component並沒有任何props、context、state的改變而觸發渲染，因而使得這兩個component所對應的real dom 並沒有任何變化`
@@ -150,5 +158,7 @@ export default Wrapper;
 ---
 Status: #🌱 #📓 
 Tags:
+[[Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染]]
+[[Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree]]
 Links:
 References:
