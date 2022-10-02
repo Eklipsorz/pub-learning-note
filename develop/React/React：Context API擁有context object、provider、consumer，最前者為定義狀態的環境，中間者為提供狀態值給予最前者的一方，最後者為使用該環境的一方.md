@@ -250,6 +250,7 @@ consume
 #🧠 React：Context中的Provider component用途是什麼？->->-> `- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component - 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
 
 #🧠 React：若沒被任意Provider component包覆著的元件想使用context object會獲取什麼內容->->-> `會存取到context object的預設值`
+<!--SR:!2022-10-04,2,248-->
 
 #🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
 
@@ -260,6 +261,7 @@ consume
 <!--SR:!2022-10-14,14,230-->
 
 #🧠 React：Context中的Consumer 是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值，具體會如何監聽？會不會主動監聽？  ->->-> `不會，只會等到搭載consumer component 的元件被觸發渲染才開始讓consumer去監聽context object 內容是否有變動`
+<!--SR:!2022-10-04,2,248-->
 
 
 #🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
@@ -280,9 +282,11 @@ consume
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有什麼特性？ 還是就只是包覆而已？ ->->-> `		- 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
+<!--SR:!2022-10-04,2,248-->
 
 
 #🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `	- 沒被它包覆著子節點不被允許存取它對於其Context Object的設定內容，以其他Provider component設定的內容或者預設值為主`
+<!--SR:!2022-10-04,2,248-->
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
@@ -290,6 +294,7 @@ consume
 
 
 #🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上、讓被包覆的元件能夠看得見該provider component對於context object的內容`
+<!--SR:!2022-10-04,2,248-->
 
 
 #🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
