@@ -248,11 +248,13 @@ consume
 
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component - 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
+<!--SR:!2022-10-04,2,248-->
 
 #🧠 React：若沒被任意Provider component包覆著的元件想使用context object會獲取什麼內容->->-> `會存取到context object的預設值`
 <!--SR:!2022-10-04,2,248-->
 
 #🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
+<!--SR:!2022-10-04,2,248-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 <!--SR:!2022-10-04,9,250-->
