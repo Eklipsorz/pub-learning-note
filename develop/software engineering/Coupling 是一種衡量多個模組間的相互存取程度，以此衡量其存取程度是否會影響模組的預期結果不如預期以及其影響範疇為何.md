@@ -88,7 +88,7 @@ coupling
 
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-NoCoupling_wrtd6f.png)->->-> `並沒有coupling， 由於模組A 和 模組B 任一個模組都沒存取另一個，`
-<!--SR:!2022-10-02,48,250-->
+<!--SR:!2023-01-30,120,250-->
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/A-to-B-Coupling_uvdngb.png) ->->-> `有coupling 程度， 模組A 單方面存取 模組B 意旨為 模組A 單方面依賴 模組B`
 <!--SR:!2022-11-03,69,250-->
