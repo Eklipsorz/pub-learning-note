@@ -29,7 +29,7 @@ export default React.memo(MyComponent, areEqual);
 	- 當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準
 		- 預設特定規則會是 **目前傳遞至元件A的props 資訊是否與緩存儲存的props資訊一樣的**
 		- 若達到的話，就直接回傳緩存或者記憶體中的元件A之對應Virtual DOM
-		- 若沒達到的話，就直接執行指定元件A的渲染函式以此來得到對應元件的Virtual DOM，並且
+		- 若沒達到的話，就直接執行指定元件A的渲染函式以此來得到對應元件的Virtual DOM，並且將對應元件的Virtual DOM和當時的props資料儲存起來好用來比對下一次。
 - 語法會是
 	- component 會是指的是要暫存的指定元件A，具體會以component function來表示
 	- callback 則是定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false：
@@ -156,9 +156,14 @@ Wrapper.js:4 Wrapper RUNNING
 Button.js:6 Button RUNNING
 ```
 
-- mounting階段由於記憶體沒對應元件的Virtual DOM，所以會觸發的component function 而產生對應的Virtual DOM和對應props存放在記憶體中
-- 
+- mounting階段由於記憶體沒對應元件的Virtual DOM，所以會觸發的component function 而產生對應的Virtual DOM和對應props存放在記憶體中，props.show = false
+- 當按鈕發生點擊事件時，也就是觸發第一次的updating，那時會取得到的props會是false，所以就以記憶體為主
+- 接著在點擊第二次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所以會被判定不一樣而儲存那時的Virtual DOM和props值，props.show = true
+- 接著在點擊第三次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所底被判定與前一次相同而以記憶體為主
+- 隨後依照這個規則來進行
 
+總結：
+- 第一次執行時 以及 與前次props值不一樣時 會執行對應component function來得到Virtual DOM並與props儲存在記憶體，好比對其標準是否滿足。
 
 ### 過去文獻參考
 
@@ -172,7 +177,7 @@ It tells React that for this component which it get as a argument,
 
 React.memo(component)
 - 當它正要被觸發渲染函式時，會檢查其props是否有變動，有變動才會執行對應渲染函式，否則就不執行
-- 在觸發updating前會先值ㄐㄧ
+
 
 
 React.memo
