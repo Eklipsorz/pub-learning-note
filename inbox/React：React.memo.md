@@ -9,6 +9,32 @@
 
 > 這預設只會對 prop 進行 shallow compare 。如果你需要控制比較的方法，你可以提供一個自訂的比較 function 作為第二個參數。
 
+```
+function MyComponent(props) {
+  /* render using props */
+}
+function areEqual(prevProps, nextProps) {
+  /*
+  return true if passing nextProps to render would return
+  the same result as passing prevProps to render,
+  otherwise return false
+  */
+}
+export default React.memo(MyComponent, areEqual);
+```
+
+
+重點：
+- React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中
+	- 當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準
+		- 預設特定規則會是 **目前傳遞至元件A的props 資訊是否與緩存儲存的props資訊一樣的**
+		- 若達到的話，就直接回傳緩存或者記憶體中的元件A之對應Virtual DOM
+		- 若沒達到的話，就直接執行指定元件A的渲染函式以此來得到對應元件的Virtual DOM，並且
+- 語法會是
+```
+React.memo(component)
+```
+
 
 
 It tells React that for this component which it get as a argument,
