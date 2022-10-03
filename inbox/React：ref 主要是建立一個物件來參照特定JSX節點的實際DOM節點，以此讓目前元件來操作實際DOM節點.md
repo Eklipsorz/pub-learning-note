@@ -160,7 +160,7 @@ immutable
 <!--SR:!2022-10-17,22,250-->
 
 #🧠 React： 如何利用useRef來讀取名字的輸入欄位  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要讀取該JSX元素的對應DOM節點的話，可以使用ref1.current，ref1為useRef所回傳的變數`
-<!--SR:!2022-10-03,13,248-->
+<!--SR:!2022-11-06,34,248-->
 
 #🧠 React： 如何利用useRef來寫入名字的輸入欄位所顯示的內容  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要修改該JSX元素的對應DOM節點所擁有的屬性的話，可以使用 // 對著實際DOM節點的屬性增加內容 ref1.current.xxxx = xxxx1`
 <!--SR:!2022-10-23,27,250-->

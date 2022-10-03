@@ -139,10 +139,10 @@ undefined
 
 
 #🧠 React： setState **每一次呼叫時，會生成非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染** ，若狀態皆為物件的話，其實際實現為何？ ->->-> `一開始會定義結果物件為空物件、拿目前任務的狀態-物件屬性去追加/覆蓋至結果物件上目前的屬性區分`
-<!--SR:!2022-10-03,28,250-->
+<!--SR:!2022-12-16,74,250-->
 
 #🧠 React：請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令以batching形式執行完畢後並且觸發updating生命週期函式才會執行更新`
-<!--SR:!2022-10-03,28,250-->
+<!--SR:!2022-12-16,74,250-->
 
 #🧠 React： **當非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期** ，其實際實現為何？ ->->-> `實際實現為：當目前可以合併的指令都完成合併時，就執行以目前結果狀態來觸發實際狀態更新 & 渲染。`
 <!--SR:!2022-10-03,28,250-->
@@ -158,7 +158,7 @@ undefined
 <!--SR:!2022-10-03,28,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以單一值來表示，那麼會以何種狀態來渲染和更新狀態？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `4`
-<!--SR:!2022-10-03,28,250-->
+<!--SR:!2022-12-16,74,250-->
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
 <!--SR:!2022-12-13,72,250-->

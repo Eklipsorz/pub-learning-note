@@ -65,7 +65,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 ## 複習
 #🧠  import 'xxxx'且xxxx為JS檔案 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
-<!--SR:!2022-10-03,2,230-->
+<!--SR:!2022-10-09,6,230-->
 
 
 #🧠  在React中， import 'xxxx' 使用且xxxx為非JS檔案 是做什麼用的？ ->->-> `告知webpack哪些模組要被處理`
@@ -88,7 +88,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 
 #🧠 如何讓JSX中的XML表達元件增加樣式？ 以一個HTML元件來表達->->-> `添加className，<div className='.....'></div>`
-<!--SR:!2022-10-03,30,248-->
+<!--SR:!2022-12-19,77,248-->
 
 
 #🧠 React：為何不讓JSX中的XML表達元件使用class？ ->->-> `由於XML是JSX語言的一部分，且class會跟JavaScript原生語法中的class起衝突，所以React會以className來替代指定每個元件的樣式`
