@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/high-order-component.md",
+            "file": "inbox/React：React.memo.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/high-order-component.md",
+                "file": "inbox/React：React.memo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/high-order-component.md",
+                "file": "inbox/React：React.memo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/high-order-component.md"
+                "file": "inbox/React：React.memo.md"
               }
             }
           }
@@ -138,6 +138,7 @@
   },
   "active": "d70c2b72aeaa2b78",
   "lastOpenFiles": [
+    "inbox/React：higher-order-component 是指專門以component function C 為參數作為處理並產出component function B為結果的 component function A.md",
     "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
     "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
@@ -146,7 +147,6 @@
     "inbox/redis.conf 是設定Redis 伺服器預設要執行的參數.md",
     "inbox/sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
-    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-    "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md"
+    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md"
   ]
 }
