@@ -333,7 +333,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
-<!--SR:!2022-10-03,8,250-->
+<!--SR:!2022-10-24,21,250-->
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？流程是？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
 <!--SR:!2022-10-04,9,250-->

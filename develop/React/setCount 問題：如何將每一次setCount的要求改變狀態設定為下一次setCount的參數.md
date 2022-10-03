@@ -152,10 +152,10 @@ function DoubleIncreaser() {
 <!--SR:!2022-12-06,66,250-->
 
 #🧠 setState 參數為callback，會是如何進行的？->->-> `預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值`
-<!--SR:!2022-10-03,28,250-->
+<!--SR:!2022-12-16,74,250-->
 
 #🧠 setState 參數為callback，預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值，那麼setState、callback、狀態的執行順序->->-> `setState -> newState = callback(currentState) -> handling with newState`
-<!--SR:!2022-10-03,28,250-->
+<!--SR:!2022-12-15,73,250-->
 
 #🧠 若要以下面形式callback作為setCount的參數，來修改以下count狀態更新都必須以1、2來分別修改，那麼要如何修改 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png)->->-> `將setCount的參數都設定為(count) => count + 1`
 <!--SR:!2022-12-01,62,250-->
