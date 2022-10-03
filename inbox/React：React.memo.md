@@ -31,37 +31,85 @@ export default React.memo(MyComponent, areEqual);
 		- 若達到的話，就直接回傳緩存或者記憶體中的元件A之對應Virtual DOM
 		- 若沒達到的話，就直接執行指定元件A的渲染函式以此來得到對應元件的Virtual DOM，並且
 - 語法會是
+	- component 會是指的是要暫存的指定元件A，具體會以component function來表示
+	- callback 則是定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false：
+		- true，就通知React使用緩存的Virtual DOM來回傳，不執行對應元件的component function
+		- false，就通知React直接執行對應元件的component function，不用緩存的Virtual DOM
+	- 回傳值會是 其Virtual DOM會被記憶體儲存的component
 ```
-React.memo(component)
+React.memo(component, callback)
 ```
 
+### 實驗：定義是否使用緩存中Virtual DOM的callback
+
+
+```
+import React from 'react';
+import Wrapper from './Wrapper';
+const DemoOutput = (props) => {
+  console.log('DemoOutput RUNNING');
+  return <Wrapper>{props.show ? 'This is new!' : ''}</Wrapper>;
+};
+
+function trulyValue() {
+  return true;
+}
+
+function falsyValue() {
+  return false;
+}
+
+export default React.memo(DemoOutput);
+```
+
+
+
+```
+export default React.memo(DemoOutput, trulyValue);
+```
+執行以上會得到
+```
+APP RUNNING
+Button RUNNING
+```
+
+
+```
+export default React.memo(DemoOutput, falsyValue);
+```
+執行以上會得到
+```
+APP RUNNING
+DemoOutput RUNNING
+Wrapper RUNNING
+Button RUNNING
+```
+
+重點：
+- 當callback回傳ture，那麼當React想要觸發DemoOutput的渲染函式，就不直接執行該渲染函式，改用位於緩存的Virtual DOM
+- 當callback回傳false，那麼當React想要觸發DemoOutput的渲染函式，就直接執行該渲染函式，不用位於緩存的Virtual DOM
+
+### 過去文獻參考
 
 
 It tells React that for this component which it get as a argument,
-
 - React should look at the props this component gets and check the new value for all those props and compare it to the previous value those props got
-
 - And only if the value of a prop changed, the component should be re-executed and re-evaluated.
-
 - And if the parent component changed but the props values for that component here did not change, component execution will be skipped
 
   
 
 React.memo(component)
-
 - 當它正要被觸發渲染函式時，會檢查其props是否有變動，有變動才會執行對應渲染函式，否則就不執行
 
 
 
 React.memo
-
 - This is for functional components, allow us to optimize functional components
-
 - For class-based components, this does not work.
 
 
 tell React that is should only re-execute this DemoOutput component under certain circumstances：
-
 - circumstances would be that props, which this component received, changed
 
 ### memorize 命名緣由
