@@ -19,7 +19,26 @@ const memoizedCallback = useCallback(
 	    -   `useCallback(callback, [...someValues])`: 有加上一些元素值的話，當元素值改變時會重新更新回傳的函式
 
 重點：
-- 
+- useCallback 最主要是透過將指定函式儲存在記憶體並於每一次元件的渲染函式被觸發執行時，就將記憶體的指定函式回傳給元件使用，這解決了：
+	- 由props對應著物件的元件A會因為JS原生比對問題以及每一次渲染函式被呼叫就重建物件而導致元件A的props比對結果都不一樣，進而無法正常使用memo
+- useCallback 如同名稱那樣，會專門儲存一個特定function作為以後方便執行用
+- 語法：
+	- 第一個參數會是以特定function為結構來產生對function的callback，callback內會儲存一個基本函式-doSomething 並搭配著 第二個參數-依賴項目
+	- 第二個參數會是依賴項目所構成的陣列，決定是否執行callback 和依賴項 來更新baseFunction並衍生出以baseFunction為主的新函式
+	- 回傳值會是baseFunction為主的新函式
+		- 若deps 為空陣列，就會被系統認定不會被改變的依賴項目，回傳的函式物件就會以目前的baseFunction來回傳，而不執行裡頭的callback來衍生出以baseFunction為主的新函式
+		- 若沒添加\[deps\]，就會被系統認定為一直被改變的依賴項目，回傳的函式物件就會直接執行裡頭的callback來衍生出以baseFunction為主的新函式
+		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才執行對應callback來衍生
+```
+const callbackResult = useCallback(() => {
+	baseFunction(a, b);
+}, [a, b])
+```
+
+
+```
+const callbackResult = useCallback(callback, [deps])
+```
 
 ## 複習
 
