@@ -60,7 +60,7 @@ const cartReducer = (prevState, action) => {
 <!--SR:!2022-10-04,3,250-->
 
 #💻 請至/question-review/food-order-project-question領取題目並到remove-item-from-cart分支，請試著在CartProvider.js中實作出從購物車移出指定項目的功能，請務必注意數量為1的項目被移除會發生什麼事情。 ->->-> `https://github.com/Eklipsorz/food-order-project/blob/main/src/store/CartProvider.js`
-<!--SR:!2022-10-03,3,250-->
+<!--SR:!2022-10-13,10,250-->
 
 
 
