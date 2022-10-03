@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/React.memo 比對方式會因為 currProp === prevProp 而有所不同，若比較對象是primitive 就比對其內容；若比較對象是object就比對記憶體位址.md",
+            "file": "inbox/Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React.memo 比對方式會因為 currProp === prevProp 而有所不同，若比較對象是primitive 就比對其內容；若比較對象是object就比對記憶體位址.md",
+                "file": "inbox/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React.memo 比對方式會因為 currProp === prevProp 而有所不同，若比較對象是primitive 就比對其內容；若比較對象是object就比對記憶體位址.md",
+                "file": "inbox/Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React.memo 比對方式會因為 currProp === prevProp 而有所不同，若比較對象是primitive 就比對其內容；若比較對象是object就比對記憶體位址.md"
+                "file": "inbox/Untitled 3.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "13e1168a5531b92e",
   "lastOpenFiles": [
+    "inbox/React.memo 比對方式會採用於JS的currProp === prevProp 而衍生出props對應著物件的元件a會因為渲染函式一直邊呼叫邊重建物件而無法讓元件a能夠正常使用memo.md",
     "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md",
-    "inbox/React.memo 比對方式會因為 currProp === prevProp 而有所不同，若比較對象是primitive 就比對其內容；若比較對象是object就比對記憶體位址.md",
     "inbox/primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件.md",
+    "inbox/Untitled 3.md",
     "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
     "inbox/React.memo 效能取決於儲存空間成本和計算成本，前者會是props數量、對應元件的Virtual DOM結構、其descendant component的Virtual DOM結構，後者會是props比對成本.md",
     "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
     "inbox/React：higher-order-component 是指專門以component function C 為參數作為處理並產出component function B為結果的 component function A.md",
     "React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行component function.md",
-    "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行component function.md",
-    "annotation/@PrimitiveDataType2022.md"
+    "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行component function.md"
   ]
 }
