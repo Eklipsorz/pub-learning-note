@@ -4,39 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dcfc2ba841fb26ef",
+        "id": "d70c2b72aeaa2b78",
         "type": "leaf",
-        "dimension": 25,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "262b77c9d0a69789",
-        "type": "leaf",
-        "dimension": 25,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "9114e156344e9d17",
-        "type": "leaf",
-        "dimension": 50,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
+            "file": "inbox/high-order-component.md",
             "mode": "source",
             "source": false
           }
@@ -104,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "inbox/high-order-component.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "inbox/high-order-component.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md"
+                "file": "inbox/high-order-component.md"
               }
             }
           }
@@ -163,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "262b77c9d0a69789",
+  "active": "d70c2b72aeaa2b78",
   "lastOpenFiles": [
-    "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
     "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
+    "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+    "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
     "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
     "inbox/switch 不能夠放let 或者 const 宣告？.md",
     "inbox/redis.conf 是設定Redis 伺服器預設要執行的參數.md",
     "inbox/sequelize findByPk 是依照id來找 以及每種query 也是先從id來找.md",
     "inbox/sequelize.literal 會建立不會被資料庫系統轉譯的文字內容.md",
     "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-    "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
-    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md"
+    "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md"
   ]
 }
