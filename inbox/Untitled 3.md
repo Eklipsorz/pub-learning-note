@@ -26,9 +26,9 @@ const memoizedCallback = useCallback(
 	- 第一個參數會是以特定function為結構來產生對function的callback，callback內會儲存一個基本函式-doSomething 並搭配著 第二個參數-依賴項目
 	- 第二個參數會是依賴項目所構成的陣列，決定是否執行callback 和依賴項 來更新baseFunction並衍生出以baseFunction為主的新函式
 	- 回傳值會是baseFunction為主的新函式
-		- 若deps 為空陣列，就會被系統認定不會被改變的依賴項目，回傳的函式物件就會以目前的baseFunction來回傳，而不執行裡頭的callback來衍生出以baseFunction為主的新函式
+		- 若deps 為空陣列，就會被系統認定不會被改變的依賴項目，回傳的函式物件就會以目前最新的baseFunction來回傳，而不執行裡頭的callback來衍生出以baseFunction為主的新函式
 		- 若沒添加\[deps\]，就會被系統認定為一直被改變的依賴項目，回傳的函式物件就會直接執行裡頭的callback來衍生出以baseFunction為主的新函式
-		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才執行對應callback來衍生
+		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才執行對應callback來衍生baseFunction為主的新函式來回傳；沒變動就不執行，直接回傳目前最新的baseFunction
 ```
 const callbackResult = useCallback(() => {
 	baseFunction(a, b);
