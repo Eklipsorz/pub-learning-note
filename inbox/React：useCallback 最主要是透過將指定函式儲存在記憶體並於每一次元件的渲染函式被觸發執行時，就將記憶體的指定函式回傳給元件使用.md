@@ -40,6 +40,17 @@ const callbackResult = useCallback(() => {
 const callbackResult = useCallback(callback, [deps])
 ```
 
+
+### 觸發執行的時機
+
+[[@vencovskyAnswerWhenUse2019]]
+
+> useCallback
+> On every render, everything that's inside a functional component will run again.
+
+重點：
+- 每一次執行元件的render函式就會執行useCallback，並檢查useCallback所依賴的內容是否有變動。
+
 ## 複習
 
 
