@@ -42,7 +42,6 @@ React.memo(component, callback)
 
 ### 實驗：定義是否使用緩存中Virtual DOM的callback
 
-
 ```
 import React from 'react';
 import Wrapper from './Wrapper';
@@ -61,7 +60,6 @@ function falsyValue() {
 
 export default React.memo(DemoOutput);
 ```
-
 
 
 ```
@@ -88,6 +86,9 @@ Button RUNNING
 重點：
 - 當callback回傳ture，那麼當React想要觸發DemoOutput的渲染函式，就不直接執行該渲染函式，改用位於緩存的Virtual DOM
 - 當callback回傳false，那麼當React想要觸發DemoOutput的渲染函式，就直接執行該渲染函式，不用位於緩存的Virtual DOM
+
+
+
 
 ### 過去文獻參考
 
