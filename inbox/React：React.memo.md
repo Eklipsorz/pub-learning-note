@@ -87,7 +87,77 @@ Button RUNNING
 - 當callback回傳ture，那麼當React想要觸發DemoOutput的渲染函式，就不直接執行該渲染函式，改用位於緩存的Virtual DOM
 - 當callback回傳false，那麼當React想要觸發DemoOutput的渲染函式，就直接執行該渲染函式，不用位於緩存的Virtual DOM
 
+### 儲存在記憶體的Virtual DOM會是一開始的版本？
 
+```
+import React, { useState } from 'react';
+
+import Button from './components/UI/Button/Button';
+import DemoOutput from './components/Demo/DemoOutput';
+import './App.css';
+
+function App() {
+  const [showParagraph, setShowParagraph] = useState(false);
+  const [count, setCount] = useState(0);
+  console.log('APP RUNNING');
+
+  const toggleParagraphHandler = () => {
+    console.log('count: origin: %', count, count % 5);
+    setCount((count) => count + 1);
+    setShowParagraph(Boolean(count % 5));
+  };
+
+  return (
+    <div className='app'>
+      <h1>Hi there!</h1>
+      <DemoOutput show={showParagraph} />
+      <Button onClick={toggleParagraphHandler}>Toggle Paragraph!</Button>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+
+```
+APP RUNNING
+DemoOutput.js:4 DemoOutput RUNNING
+Wrapper.js:4 Wrapper RUNNING
+Button.js:6 Button RUNNING
+
+App.js:13 count: origin: % 0 0
+App.js:10 APP RUNNING
+Button.js:6 Button RUNNING
+
+App.js:13 count: origin: % 1 1
+App.js:10 APP RUNNING
+DemoOutput.js:4 DemoOutput RUNNING
+Wrapper.js:4 Wrapper RUNNING
+Button.js:6 Button RUNNING
+
+App.js:13 count: origin: % 2 2
+App.js:10 APP RUNNING
+Button.js:6 Button RUNNING
+
+App.js:13 count: origin: % 3 3
+App.js:10 APP RUNNING
+Button.js:6 Button RUNNING
+
+App.js:13 count: origin: % 4 4
+App.js:10 APP RUNNING
+Button.js:6 Button RUNNING
+
+App.js:13 count: origin: % 5 0
+App.js:10 APP RUNNING
+DemoOutput.js:4 DemoOutput RUNNING
+Wrapper.js:4 Wrapper RUNNING
+Button.js:6 Button RUNNING
+```
+
+- mounting階段由於記憶體沒對應元件的Virtual DOM，所以會觸發的component function 而產生對應的Virtual DOM和對應props存放在記憶體中
+- 
 
 
 ### 過去文獻參考
@@ -102,7 +172,7 @@ It tells React that for this component which it get as a argument,
 
 React.memo(component)
 - 當它正要被觸發渲染函式時，會檢查其props是否有變動，有變動才會執行對應渲染函式，否則就不執行
-
+- 在觸發updating前會先值ㄐㄧ
 
 
 React.memo
