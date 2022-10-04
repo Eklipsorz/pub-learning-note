@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md",
+            "file": "inbox/Untitled 3.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md",
+                "file": "inbox/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md",
+                "file": "inbox/Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md"
+                "file": "inbox/Untitled 3.md"
               }
             }
           }
@@ -141,13 +140,13 @@
   "lastOpenFiles": [
     "inbox/primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件.md",
     "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md",
-    "inbox/React：higher-order-component 是指專門以component function C 為參數作為處理並產出component function B為結果的 component function A.md",
     "inbox/React：useCallback 最主要是透過將指定函式儲存在記憶體並於每一次元件的渲染函式被觸發執行時，就將記憶體的指定函式回傳給元件使用.md",
+    "inbox/Untitled 3.md",
+    "inbox/React：higher-order-component 是指專門以component function C 為參數作為處理並產出component function B為結果的 component function A.md",
     "inbox/(草稿)views 那邊目錄是指的是瀏覽器代替我們發送請求至伺服器，伺服器會負責產出頁面，這時它會參考views和資料來做，做完就回傳給瀏覽器瀏覽器屆時收到就將請求回應和端點打造成檔案.md",
     "inbox/(草稿)views 那邊目錄是指的是瀏覽器代替我們發送請求至伺服器，伺服器會負責產出頁面，這時它會參考views和資料來做，做完就回傳給瀏覽器瀏覽器屆時收到就將請求回應和端點打造成檔案和目錄的結構.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
-    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
-    "inbox/Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree.md"
+    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md"
   ]
 }
