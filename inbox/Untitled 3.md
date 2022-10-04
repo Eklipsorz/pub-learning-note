@@ -1,6 +1,17 @@
 ## 描述
 
+### reference value & heap memory
+
 > Unlike the stack, JavaScript stores objects (and functions) on the heap. The JavaScript engine doesn’t allocate a fixed amount of memory for these objects. Instead, it’ll allocate more space as needed.
+
+
+重點：
+- 由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址
+
+
+
+
+#### 案例
 
 > The following example defines the `name`, `age`, and `person` variables:
 
@@ -26,6 +37,21 @@ let person = {
 
 > Because of this, we say that the `person` variable is a reference that refers to an object.
 
+
+重點：
+- name 和 age 本身是沒有執行時會變更記憶體區塊大小需求的primitive data value，所以會直接被存在stack記憶體區塊，他們記憶體區塊的名稱會分別為person、age。
+```javascript
+let name = 'John';
+let age = 25;
+```
+- 在這裡由於是擁有執行時會變更記憶體區塊大小需求的物件，所以會於heap 記憶體區塊儲存以下內容，並於stack記憶體建立一個區塊來儲存該物件在heap的記憶體位址，stack記憶體區塊會被命名為person。
+	- \{name: "John", age: 25\}
+```javascript
+let person = {
+  name: 'John',
+  age: 25,
+};
+```
 
 ### Dynamic properties
 
@@ -70,6 +96,9 @@ console.log(name.alias); // undefined
 
 > In this example, we add the `alias` property to the `name` primitive value. But when we access the `alias` property via the `name` primitive value, it returns `undefined`.
 
+
+重點：
+- 
 
 ### Copying values
 

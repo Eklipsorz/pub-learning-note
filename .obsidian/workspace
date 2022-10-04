@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "f0c96d9b994736ce",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/Untitled 3.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -136,11 +148,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "90d3662da3087e7c",
+  "active": "f0c96d9b994736ce",
   "lastOpenFiles": [
-    "inbox/(草稿)views 那邊目錄是指的是瀏覽器代替我們發送請求至伺服器，伺服器會負責產出頁面，這時它會參考views和資料來做，做完就回傳給瀏覽器瀏覽器屆時收到就將請求回應和端點打造成檔案.md",
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
     "inbox/Untitled 3.md",
+    "inbox/(草稿)views 那邊目錄是指的是瀏覽器代替我們發送請求至伺服器，伺服器會負責產出頁面，這時它會參考views和資料來做，做完就回傳給瀏覽器瀏覽器屆時收到就將請求回應和端點打造成檔案.md",
     "inbox/primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件.md",
     "inbox/JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址.md",
     "inbox/React：useCallback 最主要是透過將指定函式儲存在記憶體並於每一次元件的渲染函式被觸發執行時，就將記憶體的指定函式回傳給元件使用.md",
