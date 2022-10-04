@@ -60,6 +60,21 @@ let age = 25;
 let newAge = age;
 ```
 
+重點：
+- 當從另一個專門儲存primitive data value的變數A複製其值至另一個變數B時，JS引擎會
+	- 依據primitive data value的大小來製作一個固定大小的新記憶體區塊
+	- 接著把變數A的對應primitive data value複製至新記憶體區塊，並為記憶體區塊設定對應名稱為變數B
+- 從另一個專門儲存primitive data value的變數A複製其值至另一個變數B 語法會是
+	- variableA 會是指專門儲存primitive data value的stack記憶體區塊，該區塊的名稱為variableA
+	- variableB 會是指專門接收並儲存variableB的stack記憶體區塊，記憶體區塊，該區塊的名稱為variableB
+```
+variableA = variableB
+```
+
+
+
+#### 案例：
+
 > Code language: JavaScript (javascript)
 
 > In this example:
@@ -85,10 +100,12 @@ newAge = newAge + 1;
 console.log(age, newAge);
 ```
 
-
 [![](https://www.javascripttutorial.net/wp-content/uploads/2022/01/JavaScript-change-a-primitive-value.svg)](https://www.javascripttutorial.net/wp-content/uploads/2022/01/JavaScript-change-a-primitive-value.svg)
 
 
+重點：
+- 在這裡先分配一個固定大小的stack記憶體區塊來存放25這值，其區塊的對應名稱為age
+- 接著由於
 
 
 
