@@ -35,7 +35,7 @@ export default React.memo(MyComponent, areEqual);
 	- callback 則是定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false：
 		- true，就通知React使用緩存的Virtual DOM來回傳，不執行對應元件的component function
 		- false，就通知React直接執行對應元件的component function，不用緩存的Virtual DOM
-	- 回傳值會是 其Virtual DOM會被記憶體儲存的component
+	- 回傳值會是 會被記憶體儲存的component 結果 或者 執行對應元件的渲染後所獲得的component 結果，其結果為Virtual DOM
 ```
 React.memo(component, callback)
 ```
@@ -117,7 +117,6 @@ function App() {
 }
 
 export default App;
-
 ```
 
 
@@ -166,7 +165,16 @@ Button.js:6 Button RUNNING
 - 第一次執行時 以及 與前次props值不一樣時 會執行對應component function來得到Virtual DOM並與props儲存在記憶體，好比對其標準是否滿足。
 
 ### 過去文獻參考
+```
+import React from 'react';
+import Wrapper from './Wrapper';
+const DemoOutput = (props) => {
+  console.log('DemoOutput RUNNING');
+  return <Wrapper>{props.show ? 'This is new!' : ''}</Wrapper>;
+};
 
+export default React.memo(DemoOutput);
+```
 
 It tells React that for this component which it get as a argument,
 - React should look at the props this component gets and check the new value for all those props and compare it to the previous value those props got
@@ -215,10 +223,15 @@ tell React that is should only re-execute this DemoOutput component under certai
 
 #🧠 React.memo(A, B) 中的 A 和 B分別為何？ ->->-> `A會是指的是要暫存的指定元件A，具體會以component function來表示，B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false`
 
-#🧠 React.memo(A, B) 中的 A 和 B分別為何？B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false ->->-> `那麼`
+#🧠 React.memo(A, B) 中的 A 和 B分別為何？B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false，那麼true和false會做什麼？ ->->-> `	- true，就通知React使用緩存的Virtual DOM來回傳，不執行對應元件的component function - false，就通知React直接執行對應元件的component function，不用緩存的Virtual DOM`
+
+#🧠 React.memo(A, B) 回傳內容為何？ ->->-> `會被記憶體儲存的component 結果 或者 執行對應元件的渲染後所獲得的component 結果`
 
 
+#🧠 React.memo(A, B) 回傳內容為會被記憶體儲存的component 結果 或者 執行對應元件的渲染後所獲得的component 結果，其結果會是 ->->-> `Virtual DOM`
 
+
+#🧠 解釋一下React.memo 在這裡效果會是如何？從count=0至count=5會是如何印DemoOutput RUNNING和Button RUNNING？其中Button.js會固定印Button RUNNING ，而Wrapper.js 會固定印Wrapper RUNNING![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664910620/blog/react/memo/react-memo-app_b6ioum.png)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664910790/blog/react/memo/react-memo-DemoOuput_ws01ho.png)->->-> `- mounting階段由於記憶體沒對應元件的Virtual DOM，所以會觸發的component function 而產生對應的Virtual DOM和對應props存放在記憶體中，props.show = false - 當按鈕發生點擊事件時，也就是觸發第一次的updating，那時會取得到的props會是false，所以就以記憶體為主 - 接著在點擊第二次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所以會被判定不一樣而儲存那時的Virtual DOM和props值，props.show = true - 接著在點擊第三次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所底被判定與前一次相同而以記憶體為主 - 隨後依照這個規則來進行`
 
 ---
 Status: #🌱  #📝
