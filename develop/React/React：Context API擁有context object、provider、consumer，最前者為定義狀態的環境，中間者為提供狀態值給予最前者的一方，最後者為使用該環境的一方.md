@@ -248,7 +248,7 @@ consume
 
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component - 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-10,6,248-->
 
 #🧠 React：若沒被任意Provider component包覆著的元件想使用context object會獲取什麼內容->->-> `會存取到context object的預設值`
 <!--SR:!2022-10-04,2,248-->
@@ -324,7 +324,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
-<!--SR:!2022-10-04,10,250-->
+<!--SR:!2022-11-01,28,250-->
 
 #🧠 React：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
 <!--SR:!2022-10-05,10,250-->
@@ -358,7 +358,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
-<!--SR:!2022-10-04,10,250-->
+<!--SR:!2022-11-01,28,250-->
 
 #🧠 React：若有元件使用consumer 來存取對應context的值且有多個同個context的provider，請問具體來說它是如何存取context？ ->->-> `當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容`
 <!--SR:!2022-10-05,10,250-->
