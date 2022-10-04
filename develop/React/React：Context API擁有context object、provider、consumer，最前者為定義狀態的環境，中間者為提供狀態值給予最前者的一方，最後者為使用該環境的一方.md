@@ -251,7 +251,7 @@ consume
 <!--SR:!2022-10-10,6,248-->
 
 #🧠 React：若沒被任意Provider component包覆著的元件想使用context object會獲取什麼內容->->-> `會存取到context object的預設值`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-08,4,248-->
 
 #🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
 <!--SR:!2022-10-10,6,248-->
@@ -336,7 +336,7 @@ consume
 <!--SR:!2022-10-24,21,250-->
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？流程是？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
-<!--SR:!2022-10-04,9,250-->
+<!--SR:!2022-10-30,26,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
 <!--SR:!2022-10-05,10,250-->
