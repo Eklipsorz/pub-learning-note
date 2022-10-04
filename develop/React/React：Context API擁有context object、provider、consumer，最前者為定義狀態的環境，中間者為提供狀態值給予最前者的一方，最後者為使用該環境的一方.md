@@ -224,7 +224,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
-<!--SR:!2022-10-04,9,250-->
+<!--SR:!2022-10-26,22,250-->
 
 #🧠  React：context 的 provider component 會如同正常component擁有什麼(提示：四項) ->->-> `狀態、hook、props、生命週期函式`
 <!--SR:!2022-10-06,6,248-->
@@ -244,7 +244,7 @@ consume
 <!--SR:!2022-11-01,28,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
-<!--SR:!2022-10-04,9,250-->
+<!--SR:!2022-10-28,24,250-->
 
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component - 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
@@ -254,16 +254,16 @@ consume
 <!--SR:!2022-10-04,2,248-->
 
 #🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-10,6,248-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
-<!--SR:!2022-10-04,9,250-->
+<!--SR:!2022-10-27,23,250-->
 
 #🧠 React：Context中的Consumer 是什麼？(提示：聽一下，獲取一下)  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
 <!--SR:!2022-10-14,14,230-->
 
 #🧠 React：Context中的Consumer 是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值，具體會如何監聽？會不會主動監聽？  ->->-> `不會，只會等到搭載consumer component 的元件被觸發渲染才開始讓consumer去監聽context object 內容是否有變動`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-10,6,248-->
 
 
 #🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
@@ -279,7 +279,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context中的Provider 具體是什麼Component？->->-> `wrapper component`
-<!--SR:!2022-10-04,10,250-->
+<!--SR:!2022-11-01,28,250-->
 
 
 

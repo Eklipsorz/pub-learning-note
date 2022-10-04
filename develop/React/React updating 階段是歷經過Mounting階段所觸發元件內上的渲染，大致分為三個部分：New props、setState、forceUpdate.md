@@ -190,7 +190,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 ## 複習
 
 #🧠 React：在歷經mounting階段後，元件要如何觸發updating 階段?  (有四種方式)->->-> `使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux、setState、new props、forceupdate`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-10,6,248-->
 
 
 #🧠 getDerviedStateFromPorps、shouldComponentUpdate、更新狀態、render、getSnapshotBeforeUpdate、React updates DOM & refs、componentDidUpdate 會是以什麼形式來表示？ ->->-> `以函式來表示`

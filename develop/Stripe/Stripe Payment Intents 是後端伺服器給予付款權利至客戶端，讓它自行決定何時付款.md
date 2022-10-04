@@ -66,7 +66,7 @@ stripe.confirmPayment(client_secret,paymentMethod)
 
 ## 複習
 #🧠 Stripe Payment Intents 是什麼樣服務->->-> `後端伺服器給予付款權利至客戶端，讓它自行決定何時付款 `
-<!--SR:!2022-10-04,59,250-->
+<!--SR:!2023-02-24,143,250-->
 
 #🧠  Stripe Payment Intents 以下為付款資料的填寫和建立的流程，請說明流程 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656946266/blog/paymentFlow/stripe/pre-build-billing-data_wxzoqm.png)->->-> `1. 客戶端會透過Payment Element 來擷取使用者所輸入的付款資料，接著再從客戶端呼叫，其Data為付款資料，透過此呼叫，來讓客戶端向stripe發送建立付款方式物件的請求2. stripe伺服器收到請求就驗證付款資料和key - 若不正確，Stripe伺服器就會透過Payment Element來告知使用者和客戶端資料是不正確的 3. 若正確的話，stripe伺服器會建立對應PaymentMethod物件並紀錄，同時回傳對應物件至客戶端，由客戶端自行透過這物件來表示自己要用哪個資訊來當付款的基礎`
 <!--SR:!2022-10-25,72,250-->
