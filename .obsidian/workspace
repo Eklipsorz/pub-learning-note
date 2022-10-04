@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -137,7 +136,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "90d3662da3087e7c",
+  "active": "b4db86c1bb9cb649",
   "lastOpenFiles": [
     "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
     "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
