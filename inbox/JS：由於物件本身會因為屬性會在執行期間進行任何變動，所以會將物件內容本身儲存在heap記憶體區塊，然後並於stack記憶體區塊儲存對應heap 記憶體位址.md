@@ -145,7 +145,7 @@ console.log(member);
 	- 以reference value大小來製作一個固定大小的新stack記憶體區塊
 	- 接著把變數A的對應reference value複製至新stack記憶體區塊，並為記憶體區塊設定對應名稱為變數B
 	- 在這裡變數A和變數B都會因為相同的reference value而指向相同的物件
-		- 這使得可透過變數A和變數B來調整相同的物件內容
+		- 這使得可透過變數A和變數B來調整相同的heap 記憶體區塊
 
 
 ## 複習
@@ -162,17 +162,18 @@ console.log(member);
 
 #🧠 當從另一個專門儲存object內容的變數A複製其值至另一個變數B時，JS引擎由於會以stack 記憶體區塊名稱來表示物件，過程會是？ ->->-> `	- 以reference value大小來製作一個固定大小的新stack記憶體區塊 - 接著把變數A的對應reference value複製至新stack記憶體區塊，並為記憶體區塊設定對應名稱為變數B`
 
-#🧠 當從另一個專門儲存object內容的變數A複製其值至另一個變數B時，JS引擎由於會以stack 記憶體區塊名稱來表示物件，做完處理後，變數A和變數B的記憶體狀況是什麼？ ->->-> `- 在這裡變數A和變數B都會因為相同的reference value而指向相同的物件`
+#🧠 當從另一個專門儲存object內容的變數A複製其值至另一個變數B時，JS引擎由於會以stack 記憶體區塊名稱來表示物件，做完處理後，變數A和變數B的記憶體狀況是什麼？又可以做什麼？ ->->-> `- 在這裡變數A和變數B都會因為相同的reference value而指向相同的物件。這使得可透過變數A和變數B來調整相同的heap 記憶體區塊`
+
+#🧠  JS的物件為何可以在執行時變更屬性名稱和屬性值 ->->-> `JS的物件本身定調為會在執行過程中變更其物件內容所佔取的記憶體區塊大小，也就是儲存在heap記憶體區塊`
+
+#🧠 JS的primitive data value 可不可以在執行時變更其記憶體區塊 ->->-> `並不能，因為他們存放在不可改變大小的stack記憶體區塊`
+
+#🧠 JS的primitive data value 可不可以在執行時像物件那樣隨意增加/移除/修改屬性  ->->-> `並不能，因為他們存放在不可改變大小的stack記憶體區塊`
 
 
-	
+#🧠 let name = 'John'; name.alias = 'Knight'; console.log(name.alias); JS執行起來會得到什麼？->->-> `由於name本身是stack記憶體區塊，本身無法在執行時增加屬性，所以會得到的值會是underfined`
 
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
+#🧠 let person = \{ name: 'John', age: 25 \}; let member = person; 請問person 和 member兩者的記憶體狀況和使用是如何？ ->->-> `兩者會是儲存同個物件的heap記憶體位址，所以在使用上，兩個識別字會對應相同的heap記憶體`
 
 
 ---

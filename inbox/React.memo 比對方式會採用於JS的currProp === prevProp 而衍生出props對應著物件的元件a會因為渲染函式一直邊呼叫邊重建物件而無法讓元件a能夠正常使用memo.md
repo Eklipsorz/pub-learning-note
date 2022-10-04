@@ -10,7 +10,7 @@ currProp === prevProp
 
 - 若比較對象(識別字)是primitive data type(如字串、數字)，識別字就會被JS解析成對應內容
 - 若比較對象(識別字)是物件，識別字就會被JS解析成物件的記憶體位置
-[[JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址]]
+[[JS：在發生比較時，若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址]]
 
 
 ### 案例：
@@ -92,5 +92,5 @@ Links:
 [[React.memo 效能取決於儲存空間成本和計算成本，前者會是props數量、對應元件的Virtual DOM結構、其descendant component的Virtual DOM結構，後者會是props比對成本]]
 [[React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function]]
 [[primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件]]
-[[JS：若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址]]
+[[JS：在發生比較時，若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址]]
 References:
