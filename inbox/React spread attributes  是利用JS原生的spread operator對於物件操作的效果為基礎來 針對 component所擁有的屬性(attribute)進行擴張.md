@@ -88,7 +88,7 @@ function App2() {
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:

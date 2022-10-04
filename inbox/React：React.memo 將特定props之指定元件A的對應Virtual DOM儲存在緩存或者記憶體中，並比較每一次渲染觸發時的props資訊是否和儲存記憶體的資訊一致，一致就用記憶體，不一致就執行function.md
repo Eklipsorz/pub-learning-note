@@ -201,7 +201,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱  #📝
 Tags:
 [[React]]
 Links:

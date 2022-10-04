@@ -84,7 +84,7 @@ Button RUNNING
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱  #📝
 Tags:
 [[React]]
 Links:

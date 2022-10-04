@@ -22,7 +22,7 @@ React.memo(component)
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱  #📝
 Tags:
 [[React]]
 Links:

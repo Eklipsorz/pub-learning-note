@@ -55,7 +55,7 @@ const callbackResult = useCallback(callback, [deps])
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 #📝
 Tags:
 [[React]]
 Links:

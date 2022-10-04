@@ -73,7 +73,7 @@ return (
 <!--SR:!2022-10-12,10,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]] - [[HTML]]
 Links:

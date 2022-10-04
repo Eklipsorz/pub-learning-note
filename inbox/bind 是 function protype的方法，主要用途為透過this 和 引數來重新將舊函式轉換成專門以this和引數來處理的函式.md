@@ -86,7 +86,7 @@ const item2Remove = remove.bind(null, id3)
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[JavaScript]]
 Links:

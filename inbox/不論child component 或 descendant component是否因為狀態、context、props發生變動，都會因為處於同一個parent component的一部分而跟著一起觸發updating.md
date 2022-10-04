@@ -157,7 +157,7 @@ export default Wrapper;
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染]]
 [[Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree]]

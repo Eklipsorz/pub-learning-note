@@ -128,7 +128,7 @@ verb
 <!--SR:!2022-10-04,3,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:

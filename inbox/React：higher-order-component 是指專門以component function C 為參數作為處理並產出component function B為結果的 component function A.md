@@ -41,7 +41,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱  #📝
 Tags:
 [[React]]
 Links:

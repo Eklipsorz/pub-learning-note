@@ -75,7 +75,7 @@ span
 <!--SR:!2022-10-13,10,250-->
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[HTML]]
 Links:

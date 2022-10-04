@@ -15,7 +15,7 @@ let example = {}
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱  #📝
 Tags:
 [[JS]]
 Links:

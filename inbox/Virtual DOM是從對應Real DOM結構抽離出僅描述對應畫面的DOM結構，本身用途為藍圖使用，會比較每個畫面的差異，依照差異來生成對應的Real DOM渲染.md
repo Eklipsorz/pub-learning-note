@@ -175,7 +175,7 @@ virtual adj
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[React]]
 Links:

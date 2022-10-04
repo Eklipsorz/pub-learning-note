@@ -48,9 +48,8 @@ removeItem：專門指定哪個項目要從購物車移除
 #🧠 React：以下是用CartContext而製作成的Provider，裡面有著狀態值一直被固定的問題，請問如何解決？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384045/blog/react/food-order/anti-pattern/cart-context-provider-question_bu7sfz.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384052/blog/react/food-order/anti-pattern/cart-context-provider-question-solution_imc2ok.png)`
 <!--SR:!2022-10-12,10,250-->
 
-
 ---
-Status: #🌱 #📓 
+Status: #🌱 
 Tags:
 [[food-order-project]]
 Links:

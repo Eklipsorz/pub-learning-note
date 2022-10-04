@@ -33,7 +33,7 @@
 
 
 ---
-Status: #🌱 #📓 
+Status: #🌱  #📝
 Tags:
 Links:
 References:
