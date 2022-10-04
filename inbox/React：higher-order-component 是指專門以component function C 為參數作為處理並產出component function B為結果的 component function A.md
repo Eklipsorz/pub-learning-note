@@ -54,8 +54,6 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 #🧠 higher-order component 使用什麼作為輸入處理？ ->->-> `使用一個基本的component`
 
 
-
-
 ---
 Status: #🌱  
 Tags:
