@@ -16,7 +16,10 @@
 > In computer science, primitive data types are a set of basic data types from which all other data types are constructed.[1] Specifically it often refers to the limited set of data representations in use by a particular processor, which all compiled programs must use
 
 重點：
-- primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件
+- primitive data type 是指 最主要是電腦環境本身帶有的資料型別或者由程式語言來指定特定型別為開發環境下的基本支援資料型別
+- primitive data type 在程式語言中會是：
+	- 可指定任意型別為開發環境下的基本支援資料型別
+	- 該型別可以在程式語言下，組合成新的資料型別，如物件
 -  primitive data type 基本會有：
 	- character
 	- number

@@ -1,6 +1,8 @@
 ## 描述
 
 [[@javascripttutorialJavaScriptPrimitiveVs]]
+> When you declare variables, the JavaScript engine allocates the memory for them on two memory locations: stack and heap.
+
 > Static data is the data whose size is fixed at compile time. Static data includes:
 > - Primitive values (null, undefined, boolean, number, string, symbol, and BigInt)
 > - Reference values that refer to objects.
