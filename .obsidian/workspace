@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "90d3662da3087e7c",
+        "id": "f0c96d9b994736ce",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -16,7 +16,7 @@
         }
       },
       {
-        "id": "f0c96d9b994736ce",
+        "id": "3860a8c4c56f7aa2",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -148,7 +148,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f0c96d9b994736ce",
+  "active": "3860a8c4c56f7aa2",
   "lastOpenFiles": [
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
     "inbox/Untitled 3.md",
