@@ -228,7 +228,7 @@ module map 主要的用途為：
 <!--SR:!2022-12-27,89,246-->
 
 #🧠 ES module：具體的dynamic import是什麼？ (promise) ->->-> `import 為promise，建立一個工作來向對系統發出module1的載入請求，處理期間會另外建立以module1為主的模組依賴關係圖(graph)，並建立實例、執行對應的top-level code來更新實例下的內容，接著當處理成功時並能回傳實例或者處理失敗時，就會分別回傳resolve或者reject`
-<!--SR:!2022-10-04,36,227-->
+<!--SR:!2022-12-26,83,227-->
 
 #🧠  ES module：具體的dynamic import形式會是什麼？ ->->-> `import(module_path/module1)`
 <!--SR:!2022-10-11,10,209-->
