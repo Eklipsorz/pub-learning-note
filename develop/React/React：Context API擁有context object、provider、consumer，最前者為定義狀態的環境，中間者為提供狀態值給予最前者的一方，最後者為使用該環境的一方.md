@@ -235,7 +235,7 @@ consume
 
 
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
-<!--SR:!2022-10-04,10,250-->
+<!--SR:!2022-11-01,28,250-->
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
 <!--SR:!2022-10-05,10,250-->
@@ -306,7 +306,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容(不是指物件、值、字串) ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
-<!--SR:!2022-10-04,9,250-->
+<!--SR:!2022-10-27,23,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
 <!--SR:!2022-10-14,12,248-->
@@ -349,7 +349,7 @@ consume
 
 
 #🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
-<!--SR:!2022-10-04,9,250-->
+<!--SR:!2022-10-28,24,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
 <!--SR:!2022-10-05,10,250-->
