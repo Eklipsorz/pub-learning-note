@@ -241,7 +241,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
-<!--SR:!2022-10-04,10,250-->
+<!--SR:!2022-11-01,28,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
 <!--SR:!2022-10-04,9,250-->
@@ -284,11 +284,11 @@ consume
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有什麼特性？ 還是就只是包覆而已？ ->->-> `		- 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-10,6,248-->
 
 
 #🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `	- 沒被它包覆著子節點不被允許存取它對於其Context Object的設定內容，以其他Provider component設定的內容或者預設值為主`
-<!--SR:!2022-10-04,2,248-->
+<!--SR:!2022-10-10,6,248-->
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
