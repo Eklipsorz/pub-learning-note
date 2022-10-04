@@ -1,12 +1,14 @@
 ## 描述
 
+
+### primitive data type
+
 [[@javascripttutorialJavaScriptPrimitiveVs]]
 > When you declare variables, the JavaScript engine allocates the memory for them on two memory locations: stack and heap.
 
 > Static data is the data whose size is fixed at compile time. Static data includes:
 > - Primitive values (null, undefined, boolean, number, string, symbol, and BigInt)
 > - Reference values that refer to objects.
-
 
 
 > Because static data has a size that does not change, the JavaScript engine allocates a fixed amount of memory space to the static data and store it on the stack.
@@ -23,9 +25,14 @@ let age = 25;
 
 > Note that strings are objects in many programming languages, including Java and C#. However, strings are primitive values in JavaScript.
 
+重點：
+- 當在JS程式碼宣告變數時，主要會分配兩種記憶體種類：
+	- stack 記憶體區塊：儲存著，這類資料並不會在執行中任意改變其記憶體區塊大小
+	- heap 記憶體區塊：儲存著動態資料，這類資料會於執行中任意改變其記憶體區塊大小
 
 
-## Copying values
+
+### Copying values
 [[@javascripttutorialJavaScriptPrimitiveVs]]
 > When you assign a primitive value from one variable to another, the JavaScript engine creates a copy of that value and assigns it to the variable. For example:
 
@@ -71,6 +78,8 @@ console.log(age, newAge);
 ---
 Status: #🌱 
 Tags:
+[[JavaScript]]
 Links:
+[[primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件]]
 References:
 [[@javascripttutorialJavaScriptPrimitiveVs]]
