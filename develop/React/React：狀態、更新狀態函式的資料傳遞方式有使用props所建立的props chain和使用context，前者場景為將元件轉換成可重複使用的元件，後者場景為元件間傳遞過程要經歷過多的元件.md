@@ -69,7 +69,7 @@ const Home = (props) => {
 <!--SR:!2022-10-29,25,250-->
 
 #🧠 使用context的場景為何？ ->->-> `當元件A和元件B間之間在props chain傳遞過程需要經過多個元件時，可採用context`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 
 #🧠 React：若按鈕中去除掉props，改用context的話，會產生什麼樣的程式碼才能實現原有登出按鈕？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ->->-> `通常若要讓按鈕還原成原有的功能，就只能從按鈕本身使用context![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)`

@@ -139,7 +139,7 @@ value1
 <!--SR:!2023-03-15,168,250-->
 
 #🧠 這是JavaScript程式碼，請問非同步任務和同步任務會如何執行？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655196893/blog/promise/synctask-promise_woeyvm.png) ->->-> `迭代(同步任務)會比這些產生出來的非同步任務還快結束，可能會讓整體模組已經結束執行，而強制結束非同步任務執行，或者同步任務執行完畢，就等非同步任務執行完畢才終止整體模組的執行，而這會使得同步任務執行到disconnect，而讓處於資料庫查詢的非同步任務被迫結束而報錯`
-<!--SR:!2022-10-05,72,250-->
+<!--SR:!2023-04-01,178,250-->
 
 
 #🧠  這是JavaScript程式碼，請問非同步任務和同步任務會如何執行？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655196893/blog/promise/asynctask-promise_sm80it.png) ->->-> `由於添加了async和await，這使得內部的同步任務會等待著產生出來的非同步任務執行完畢才執行下一行。因此每一次迭代會生出非同步任務以及非同步任務執行完畢才會輪到下一個迭代，直到所有迭代完畢，就執行disconnect，此時沒非同步任務，所以可以安全地中斷連線`
