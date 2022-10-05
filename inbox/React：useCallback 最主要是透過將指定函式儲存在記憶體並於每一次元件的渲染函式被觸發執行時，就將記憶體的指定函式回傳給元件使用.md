@@ -25,7 +25,7 @@ const memoizedCallback = useCallback(
 - 語法：
 	- 第一個參數會是以特定function為結構來產生對應function的callback，callback內會儲存一個基本函式-baseFunction 並搭配著 第二個參數-依賴項目
 	- 第二個參數會是依賴項目所構成的陣列，決定是否執行callback 來以baseFunction為主衍生出新函式
-	- 回傳值會是baseFunction為主的新函式
+	- 回傳值會是baseFunction為主的新函式物件
 		- 若deps 為空陣列，就會被系統認定不會被改變的依賴項目，回傳的函式物件就會以目前最新的baseFunction來回傳，而不執行裡頭的callback來衍生出以baseFunction為主的新函式
 		- 若沒添加\[deps\]，就會被系統認定為一直被改變的依賴項目，回傳的函式物件就會直接執行裡頭的callback來衍生出以baseFunction為主的新函式
 		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才執行對應callback來衍生baseFunction為主的新函式來回傳；沒變動就不執行，直接回傳目前最新的baseFunction
@@ -40,7 +40,9 @@ const callbackResult = useCallback(() => {
 const callbackResult = useCallback(callback, [deps])
 ```
 
-### 每一次經由useCallback 所得到的函式物件所擁有的closure有可能會對應著當時
+
+
+
 
 
 ### useCallback 何時檢查並觸發？
@@ -66,6 +68,7 @@ Tags:
 [[React]]
 Links:
 [[React.memo 比對方式會採用於JS的currProp === prevProp 而衍生出props對應著物件的元件a會因為渲染函式一直邊呼叫邊重建物件而無法讓元件a能夠正常使用memo]]
+
 References:
 [[@reactHooksAPICanKao]]
 [[@ithomeDay9ReactHookPianRenShi]]
