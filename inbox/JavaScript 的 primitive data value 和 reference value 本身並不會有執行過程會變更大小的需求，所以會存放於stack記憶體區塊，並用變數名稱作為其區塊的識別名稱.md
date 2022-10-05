@@ -119,16 +119,20 @@ console.log(age, newAge);
 ## 複習
 
 #🧠 當在JS程式碼宣告變數時，主要會分配兩種記憶體區塊種類？ ->->-> `stack 記憶體區塊、heap 記憶體區塊種類`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 當在JS程式碼宣告變數時，主要會分配兩種記憶體區塊種類？stack 記憶體區塊是專門儲存什麼？->->-> `專門儲存著固定大小的資料`
+<!--SR:!2022-10-08,3,250-->
 
 
 #🧠 當在JS程式碼宣告變數時，主要會分配兩種記憶體區塊種類？heap 記憶體區塊是專門儲存什麼？ ->->-> `專門儲存著會於執行時調整大小的資料`
+<!--SR:!2022-10-08,3,250-->
 
 
 #🧠 JS變數儲存的Primitive data type 或者 Reference value  (對應其物件的記憶體位址)，會擁有什麼特性？ ->->-> `- 在編譯時就確定其資料大小  - 執行過程中並不會調整其資料所存放的記憶體區塊大小，即確定後大小就固定大小不動`
 
 #🧠 JS的primitive data type 會是什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
+<!--SR:!2022-10-06,1,230-->
 
 #🧠 primitive data value 以及 reference value 會存放在哪種記憶體區塊？stack ? heap? 為什麼？->->-> `因為本身並不會在執行過程改變記憶體區塊大小而直接存放在專門儲存固定大小的stack記憶體區塊`
 
@@ -139,16 +143,21 @@ console.log(age, newAge);
 #🧠 let age = 25; 在JS中會是代表什麼？（請說明名稱和內容)  ->->-> `會分配一個固定大小的區塊來存放25，並為記憶體區塊設定對應名稱為age`
 
 #🧠 當從另一個專門儲存primitive data value的變數A複製其值至另一個變數B時，JS引擎會做什麼？ ->->-> `	- 依據primitive data value的大小來製作一個固定大小的新記憶體區塊 - 接著把變數A的對應primitive data value複製至新記憶體區塊，並為記憶體區塊設定對應名稱為變數B`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 當從另一個專門儲存primitive data value的變數A複製其值至另一個變數B時，JS引擎做完特定處理後，記憶體會發生什麼？ ->->-> `會有兩個獨立的記憶體區塊，第一個區塊名稱是變數A，第二個區塊名稱是變數B，儲存著從變數A對應的記憶體內容。`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠  JS ：多個儲存primitive data value 或者 reference value的記憶體區塊傳遞方式->->-> `建立另一個記憶體區塊並儲存複製過來的值`
 
 #🧠 JS ：儲存primitive data value 和 reference value的記憶體區塊傳遞方式，其語法會是什麼？ ->->-> `variableA = variableB`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 JS ：儲存primitive data value 和 reference value的記憶體區塊傳遞方式，其語法會是variableA = variableB，那麼這在系統解析上會是什麼？ ->->-> `	- variableA 會是指專門儲存primitive data value的stack記憶體區塊，該區塊的名稱為variableA - variableB 會是指專門接收並儲存variableB的stack記憶體區塊，記憶體區塊，該區塊的名稱為variableB`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 let age = 25; let newAge = age; newAge = newAge + 1; 在JS中的記憶體處理會是如何？請說明 ->->-> `- 在這裡先分配一個固定大小的stack記憶體區塊來存放25這值，其區塊的對應名稱為age - 接著由於下面語法，是要複製age對應的記憶體內容至另一個stack記憶體區塊，所以會特意建立一個記憶體區塊且名為newAge，其內容會是25。 - 接著由於age和newAge本身是兩個獨立記憶體區塊，所以僅會針對newAge所儲存的內容進行+1，age內容並不會有任何變化。`
+<!--SR:!2022-10-08,3,250-->
 
 
 

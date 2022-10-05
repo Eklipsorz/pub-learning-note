@@ -207,29 +207,35 @@ tell React that is should only re-execute this DemoOutput component under certai
 ## 複習
 
 #🧠 memorize 命名緣由 ->->-> `Memorize 則是提交特定事物並永久儲存在至記憶體`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 React.memo 是什麼？ ->->-> `如字面上的意思，React.memo 將特定props之指定元件A的對應Virtual DOM和對應props資訊儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function`
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準達成會做什麼？->->-> ` 若達到的話，就直接回傳緩存或者記憶體中的元件A之對應Virtual DOM`
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準沒達成會做什麼？ ->->-> `若沒達到的話，就直接執行指定元件A的渲染函式以此來得到對應元件的Virtual DOM，並且將對應元件的Virtual DOM和當時的props資料儲存起來好用來比對下一次。`
+<!--SR:!2022-10-08,3,250-->
 
 
 #🧠 React.memo 語法形式為何？ ->->-> `React.memo(component, callback)`
 <!--SR:!2022-10-08,3,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準可以自訂嗎？ ->->-> `可以`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準可允許自訂，但沒設定會是？ ->->-> `採取預設標準，標準為目前傳遞至元件A的props 資訊是否與緩存儲存的props資訊一樣的`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 React.memo(A, B) 中的 A 和 B分別為何？ ->->-> `A會是指的是要暫存的指定元件A，具體會以component function來表示，B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false`
 
 #🧠 React.memo(A, B) 中的 A 和 B分別為何？B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false，那麼true和false會做什麼？ ->->-> `	- true，就通知React使用緩存的Virtual DOM來回傳，不執行對應元件的component function - false，就通知React直接執行對應元件的component function，不用緩存的Virtual DOM`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 React.memo(A, B) 回傳內容為何？ ->->-> `會被記憶體儲存的component 結果 或者 執行對應元件的渲染後所獲得的component 結果`
 
 
 #🧠 React.memo(A, B) 回傳內容為會被記憶體儲存的component 結果 或者 執行對應元件的渲染後所獲得的component 結果，其結果會是 ->->-> `Virtual DOM`
+<!--SR:!2022-10-08,3,250-->
 
 
 #🧠 解釋一下React.memo 在這裡效果會是如何？從count=0至count=5會是如何印DemoOutput RUNNING和Button RUNNING？其中Button.js會固定印Button RUNNING ，而Wrapper.js 會固定印Wrapper RUNNING![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664910620/blog/react/memo/react-memo-app_b6ioum.png)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664910790/blog/react/memo/react-memo-DemoOuput_ws01ho.png)->->-> `- mounting階段由於記憶體沒對應元件的Virtual DOM，所以會觸發的component function 而產生對應的Virtual DOM和對應props存放在記憶體中，props.show = false - 當按鈕發生點擊事件時，也就是觸發第一次的updating，那時會取得到的props會是false，所以就以記憶體為主 - 接著在點擊第二次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所以會被判定不一樣而儲存那時的Virtual DOM和props值，props.show = true - 接著在點擊第三次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所底被判定與前一次相同而以記憶體為主 - 隨後依照這個規則來進行`

@@ -38,6 +38,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ## 複習
 
 #🧠 higher-order-component 中的higher-order 命名緣由為何？ ->->-> `源自於higher-order function，該函式一個以函式C作為輸入參數的函式A，其函式A輸出的結果會是另一個函式B，在這裡的函式A、B、C都為函式`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 higher-order function是一個以函式C作為輸入參數的函式A，其函式A輸出的結果會是另一個函式B，請問輸入函式、專門接收函式並處理的函式，輸出的函式結果在結構會是什麼？(函式嗎？)->->-> `都為函式`
 
@@ -46,8 +47,10 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 #🧠 為什麼component 會引入higher-order function呢？->->-> `在JS，component  本質上會是以名為component function來構成，所以才拿用higher-order function來改名成higher-order component`
 
 #🧠 higher-order component 會是什麼？ ->->-> `higher-order component 指的是一個專門以component C為參數作為處理並產出 component B為結果 的component A`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 higher-order component 指的是一個專門以component C為參數作為處理並產出 component B為結果 的component A，在這裡的component 在JS程式實現上會是什麼？ ->->-> `函式`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 higher-order component 所產生出的結果是什麼？ ->->-> `另一個被增強過後的component`
 
