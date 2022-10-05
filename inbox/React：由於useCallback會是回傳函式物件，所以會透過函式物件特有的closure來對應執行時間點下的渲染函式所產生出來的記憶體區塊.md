@@ -6,9 +6,9 @@
 由於useCallback 回傳的函式是函式物件，所以會擁有closure概念，每個函式物件會透過closure來對應特定執行時間點下的渲染函式所產生出來的記憶體區塊
 
 
-### useCallback(callback, [deps]) 的 deps 用途為何
+### useCallback(baseFunction, [deps]) 的 deps 用途為何
 deps 主要解決：
-	- useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以callback為主的新函式物件
+	- useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以baseFunction為主的新函式物件
 
 ### 案例：
 

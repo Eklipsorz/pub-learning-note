@@ -22,22 +22,16 @@ const memoizedCallback = useCallback(
 - useCallback 最主要是透過將指定函式儲存在記憶體並於每一次元件的渲染函式被觸發執行時，會檢測依賴是否變動來將儲存記憶體內的指定函式回傳給元件使用，這解決了：
 	- 由props對應著物件的元件A會因為JS原生比對問題以及每一次渲染函式被呼叫就重建物件而導致元件A的props比對結果都不一樣，進而無法正常使用memo
 - useCallback 如同名稱那樣，會專門儲存一個特定function作為以後方便執行用
-- 語法：
-	- 第一個參數會是以特定function為結構來產生對應function的callback，callback內會儲存一個基本函式-baseFunction 並搭配著 第二個參數-依賴項目
-	- 第二個參數會是依賴項目所構成的陣列，決定是否執行callback 來以baseFunction為主衍生出新函式
+- 語法： 
+	- 第一個參數是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction
+	- 第二個參數會是依賴項目所構成的陣列，決定是否要在基本函式架構baseFunction搭配目前的依賴項目來建立新的函式物件，其函式物件會擁有新的closure
 	- 回傳值會是baseFunction為主的新函式物件
-		- 若deps 為空陣列，就會被系統認定不會被改變的依賴項目，回傳的函式物件就會以目前最新的baseFunction來回傳，而不執行裡頭的callback來衍生出以baseFunction為主的新函式
-		- 若沒添加\[deps\]，就會被系統認定為一直被改變的依賴項目，回傳的函式物件就會直接執行裡頭的callback來衍生出以baseFunction為主的新函式
-		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才執行對應callback來衍生baseFunction為主的新函式來回傳；沒變動就不執行，直接回傳目前最新的baseFunction
+		- 若deps 為空陣列，就會被系統認定不會被改變的依賴項目，回傳的函式物件就會以記憶體內的目前最新函式物件回傳，而不重新以baseFunction為主來從而建立新函式物件
+		- 若沒添加\[deps\]，就會被系統認定為一直被改變的依賴項目，進而每一次執行都會重新以baseFunction為主來建立新的函式物件回傳
+		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件
 ```
 const callbackResult = useCallback(baseFunction, [a, b])
 ```
-記得更改baseFunction
-
-```
-const callbackResult = useCallback(callback, [deps])
-```
-
 
 ### useCallback 何時檢查並觸發？
 [[@vencovskyAnswerWhenUse2019]]
