@@ -107,7 +107,7 @@ cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用�
 
 
 #🧠 以Cache miss為主的同步方式：Read Through 和 Read Aside兩者間的共同點為？->->-> `Read Through 和 Read Aside 共同點是在於兩者都是在cache miss情況下而跑去讀取資料庫`
-<!--SR:!2022-10-05,17,242-->
+<!--SR:!2022-11-15,41,242-->
 
 
 #🧠 以Cache miss為主的同步方式：Read Through 和 Read Aside兩者間的差異點為？ ->->-> `Read Through 和 Read Aside 差別是在於後者是客戶端通過存取資料庫的資料，來同步緩存資料，前者則是因爲客戶端向緩存索要，但它沒有，所以只好由緩存自己向資料庫索要資料來同步緩存，接著回傳給客戶端`

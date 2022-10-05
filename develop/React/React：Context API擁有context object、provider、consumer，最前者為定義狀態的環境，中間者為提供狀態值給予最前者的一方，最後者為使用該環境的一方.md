@@ -273,7 +273,7 @@ consume
 <!--SR:!2022-11-02,28,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-01,27,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2022-11-02,28,250-->
@@ -330,7 +330,7 @@ consume
 <!--SR:!2022-11-02,28,250-->
 
 #🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-10-31,26,250-->
 
 #🧠  React：	\<Context.Consumer\>\{(value) => .....\}\<\/Context.Consumer\> 中的value 是從哪獲取的？->->-> `基本上會是對應context的provider 所擁有value props，若沒有的話，就是createCreate的預設值`
 <!--SR:!2022-10-24,21,250-->
@@ -355,7 +355,7 @@ consume
 <!--SR:!2022-11-01,27,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-10-29,24,250-->
 
 #🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
 <!--SR:!2022-11-01,28,250-->

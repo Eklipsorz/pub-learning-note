@@ -62,7 +62,7 @@ const Navigation = (props) => {
 <!--SR:!2022-10-15,15,230-->
 
 #🧠 React：以下為dynamic context 的實現，上圖為App元件，下圖為Navigation元件，請說明如何利用context實現登出功能？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663768466/blog/react/context/dynamic-context/providing-component_bniuln.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663768466/blog/react/context/dynamic-context/comsuming-component_qfkokd.png)->->-> ``
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-01,27,250-->
 
 ---
 Status: #🌱 
