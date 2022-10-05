@@ -6,6 +6,10 @@
 由於useCallback 回傳的函式是函式物件，所以會擁有closure概念，每個函式物件會透過closure來對應特定執行時間點下的渲染函式所產生出來的記憶體區塊
 
 
+### useCallback(callback, [deps]) 的 deps 用途為何
+deps 主要解決：
+	- useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以callback為主的新函式物件
+
 ### 案例：
 
 首先一開始在這裡會有名為Allow Toggling和Toggle Pargraph這兩個按鈕，一開始toggleParagraphHandler會從useCallback這個Hook獲取到一個函式物件並儲存在記憶體內，其函式內容為如下，在這裡allowToggle、setShowParagraph、prevShowParagraph會因為closure而對應此時：
@@ -58,6 +62,9 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 ```
 
 這導致無法透過點擊一個按鈕才能啟用另外一個按鈕的正常作用。
+
+
+
 
 ## 複習
 

@@ -30,19 +30,13 @@ const memoizedCallback = useCallback(
 		- 若沒添加\[deps\]，就會被系統認定為一直被改變的依賴項目，回傳的函式物件就會直接執行裡頭的callback來衍生出以baseFunction為主的新函式
 		- 若添加\[a, b\]，會先判斷a或者b是否有任一變動，有變動才執行對應callback來衍生baseFunction為主的新函式來回傳；沒變動就不執行，直接回傳目前最新的baseFunction
 ```
-const callbackResult = useCallback(() => {
-	baseFunction(a, b);
-}, [a, b])
+const callbackResult = useCallback(baseFunction, [a, b])
 ```
-
+記得更改baseFunction
 
 ```
 const callbackResult = useCallback(callback, [deps])
 ```
-
-
-
-
 
 
 ### useCallback 何時檢查並觸發？
