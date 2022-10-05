@@ -6,7 +6,7 @@
       {
         "id": "0b09fde91f65e903",
         "type": "leaf",
-        "dimension": 33.30950679056469,
+        "dimension": 41.45818441744103,
         "state": {
           "type": "markdown",
           "state": {
@@ -17,9 +17,9 @@
         }
       },
       {
-        "id": "a08736ae05cfb7a5",
+        "id": "6031adf3c7952a29",
         "type": "leaf",
-        "dimension": 39.385275196568976,
+        "dimension": 39.6711937097927,
         "state": {
           "type": "markdown",
           "state": {
@@ -32,7 +32,7 @@
       {
         "id": "83ddbb943000f0ce",
         "type": "leaf",
-        "dimension": 27.305218012866334,
+        "dimension": 18.87062187276626,
         "state": {
           "type": "markdown",
           "state": {
@@ -163,7 +163,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a08736ae05cfb7a5",
+  "active": "6031adf3c7952a29",
   "lastOpenFiles": [
     "develop/React/React： composition 是利用has a關係來打造元件間的關係，而inheritance則是利用is a 關係來打造元件間的關係.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
