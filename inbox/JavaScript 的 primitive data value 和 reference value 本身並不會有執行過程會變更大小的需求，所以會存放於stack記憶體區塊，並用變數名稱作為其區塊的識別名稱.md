@@ -137,6 +137,7 @@ console.log(age, newAge);
 #🧠 primitive data value 以及 reference value 會存放在哪種記憶體區塊？stack ? heap? 為什麼？->->-> `因為本身並不會在執行過程改變記憶體區塊大小而直接存放在專門儲存固定大小的stack記憶體區塊`
 
 #🧠 程式語言要如何獲取 儲存對應primitive data value 或者對應 reference value的記憶體區塊  ->->-> `具體會為記憶體區塊取特定識別名稱或者變數名稱，來指定特定區塊`
+<!--SR:!2022-10-08,3,250-->
 
 #🧠 let name = 'John'; 在JS中會是代表什麼？（請說明名稱和內容) ->->-> ` 會分配一個固定大小的區塊來存放John，並為記憶體區塊設定對應名稱為name`
 
