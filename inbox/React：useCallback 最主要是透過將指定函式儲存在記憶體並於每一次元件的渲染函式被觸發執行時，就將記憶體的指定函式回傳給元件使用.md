@@ -51,6 +51,9 @@ const callbackResult = useCallback(callback, [deps])
 重點：
 - 每一次執行元件的render函式就會執行useCallback，並檢查useCallback所依賴的內容是否有變動。
 
+### function 的儲存在
+
+
 ## 複習
 
 
