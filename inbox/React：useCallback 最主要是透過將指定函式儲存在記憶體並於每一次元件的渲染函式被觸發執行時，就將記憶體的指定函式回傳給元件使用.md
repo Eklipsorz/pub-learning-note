@@ -40,6 +40,8 @@ const callbackResult = useCallback(() => {
 const callbackResult = useCallback(callback, [deps])
 ```
 
+### 每一次經由useCallback 所得到的函式物件所擁有的closure有可能會對應著當時
+
 
 ### useCallback 何時檢查並觸發？
 [[@vencovskyAnswerWhenUse2019]]
