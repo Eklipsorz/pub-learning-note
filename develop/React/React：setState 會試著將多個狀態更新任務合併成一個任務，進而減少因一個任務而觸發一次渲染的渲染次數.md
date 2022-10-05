@@ -128,6 +128,18 @@ undefined
 
 做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染
 
+### useState 何時觸發執行？
+[[@vencovskyAnswerWhenUse2019]]
+
+> useCallback
+> On every render, everything that's inside a functional component will run again.
+
+重點：
+- 每一次執行元件的render函式就會執行useState，首次mount階段會以初始值來表示，update階段則是會以新狀態來回傳
+
+
+
+
 
 ## 複習
 
@@ -163,6 +175,10 @@ undefined
 #🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
 <!--SR:!2022-12-13,72,250-->
 
+
+#🧠 React useState 何時觸發執行？ ->->-> `每一次執行元件的render函式就會執行useState`
+
+#🧠 React useState 每次觸發執行所回傳的狀態會是？ ->->-> `首次mount階段會以初始值來表示，update階段則是會以新狀態來回傳`
 
 ---
 Status: #🌱 
