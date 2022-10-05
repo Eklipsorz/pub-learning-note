@@ -82,11 +82,13 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 
 
 
+
+
 ---
 Status: #🌱 
 Tags:
 [[React]]
 Links:
 [[Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣]]
-[[React：useCallback 最主要是透過將指定函式儲存在記憶體並於每一次元件的渲染函式被觸發執行時，就將記憶體的指定函式回傳給元件使用]]
+[[React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳]]
 References:
