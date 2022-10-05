@@ -117,7 +117,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 ES module：default exports 和 named exports  若擺放在同一個模組檔案，引入方兩邊都能引入，那麼如何引入？？->->-> `若要引入named exports，就以物件的解構來引入，若要引入default exports，就以單一值的形式來存放，如同變數儲存特定內容`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 請試著寫出exporting module來以named exports輸出特定property1和property2，並以importing module來引用這些property1、property2->->-> `exporting module: export { property1, property2,.... }, importing module: import { property1, property2, .... } from 'xxx'`
 <!--SR:!2022-11-06,56,250-->
@@ -132,7 +132,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-11-15,61,250-->
 
 #🧠 ES module：同一個模組的export來說，named export形式可以輸出幾個？default export形式可以輸出幾個 ->->-> `named 可以輸出多個named形式，default形式只能允許一個`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 ES module：同一個模組的export來說 ，named export形式可以輸出多個嗎？->->-> `可以`
 <!--SR:!2022-10-29,25,250-->

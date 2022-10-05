@@ -221,7 +221,7 @@ consume
 ## 複習
 
 #🧠 provider 命名緣由為何？ ->->-> `是提供某些東西至某處的人事物`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
 <!--SR:!2022-10-26,22,250-->
@@ -238,7 +238,7 @@ consume
 <!--SR:!2022-11-01,28,250-->
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
 <!--SR:!2022-11-01,28,250-->
@@ -276,7 +276,7 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 React：Context中的Provider 具體是什麼Component？->->-> `wrapper component`
 <!--SR:!2022-11-01,28,250-->
@@ -321,13 +321,13 @@ consume
 <!--SR:!2022-10-05,10,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
 <!--SR:!2022-11-01,28,250-->
 
 #🧠 React：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
 <!--SR:!2022-10-05,10,250-->
@@ -345,7 +345,7 @@ consume
 <!--SR:!2022-11-01,28,250-->
 
 #🧠 以下是搭載Context的consumer component的component，請問裡頭ctx是指什麼？會回傳什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663773552/blog/react/context/context-consumer-callback_l1a7xv.png)->->-> `{callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 
 #🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
