@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "074ea823334ca0d8",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -137,7 +149,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f2ac12fb516238b1",
+  "active": "074ea823334ca0d8",
   "lastOpenFiles": [
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "MOC/React MOC.md",
