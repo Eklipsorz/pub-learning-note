@@ -35,7 +35,7 @@
                 "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -136,7 +136,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "83ddbb943000f0ce",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
     "develop/React/React： composition 是利用has a關係來打造元件間的關係，而inheritance則是利用is a 關係來打造元件間的關係.md",
