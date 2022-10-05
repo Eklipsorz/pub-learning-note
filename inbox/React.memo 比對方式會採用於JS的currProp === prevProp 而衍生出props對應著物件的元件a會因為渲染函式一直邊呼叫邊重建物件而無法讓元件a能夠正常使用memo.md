@@ -88,15 +88,18 @@ Button RUNNING
 #🧠 React.memo 比對props的方式會是什麼？ 若比較對象是primitive data value的話 ->->-> `就會以識別字來找到對應的stack記憶體區塊，並取出它的內容-primitive data value 來比較是否一樣`
 
 
-#🧠 !![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664982245/blog/react/memo/react-memo-prop-function-button_ufrc9q.png) ->->-> ``
+#🧠 React：上圖為App，下圖為Button.js，請問button的memo有發揮正常作用嗎？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664983692/blog/react/memo/react-memo-prop-function-app_q4tddw.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664982245/blog/react/memo/react-memo-prop-function-button_ufrc9q.png) ->->-> `並沒有，由於每一次渲染函式的執行都會生成新的函式物件來傳遞至Button的prop，比較起來的話，會一直比較著該物件的新heap 記憶體位址，這造成memo一直判定prop跟先前的prop不同而一直執行button的渲染函式`
+
+
+#🧠 React：上圖為App，下圖為Button.js，請問button的memo無法使用，那麼會有什麼樣效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664983692/blog/react/memo/react-memo-prop-function-app_q4tddw.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664982245/blog/react/memo/react-memo-prop-function-button_ufrc9q.png)  ->->-> `最主要是白白耗掉React.memo本身的空間成本、計算成本`
 
 ---
-Status: #🌱  #📝
+Status: #🌱 
 Tags:
 [[React]]
 Links:
 [[React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案]]
-[[React.memo 效能取決於儲存空間成本和計算成本，前者會是props數量、對應元件的Virtual DOM結構、其descendant component的Virtual DOM結構，後者會是props比對成本]]
+[[React.memo 效能成本取決於儲存空間成本和計算成本，前者會是props數量、對應元件的Virtual DOM結構、其descendant component的Virtual DOM結構，後者會是props比對成本]]
 [[React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function]]
 [[primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件]]
 [[JS：在發生比較時，若識別字是對應著primitive data type的內容，會直接將識別字解析成其內容；若識別字是對應著物件，會直接將識別字解析成其物件所在的記憶體位址]]
