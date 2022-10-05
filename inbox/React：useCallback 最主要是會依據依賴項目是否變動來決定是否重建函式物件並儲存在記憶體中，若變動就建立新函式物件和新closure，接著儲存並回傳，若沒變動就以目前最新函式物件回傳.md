@@ -21,8 +21,8 @@ const memoizedCallback = useCallback(
 重點：
 - useCallback本身是一個內建Hook，註冊在元件上
 - useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳，這解決了：
-	- 由props對應著物件的元件A會因為JS原生比對問題以及每一次渲染函式被呼叫就重建物件而導致元件A的props比對結果都不一樣，進而無法正常使用memo
-- useCallback 如同名稱那樣，會專門儲存一個特定function作為以後方便執行用
+	- 解決memo本身的重建問題：每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo
+- useCallback 如同名稱那樣，會專門建立並儲存一個特定function來作為特定情況下要使用的函式
 - 語法： 
 	- 第一個參數是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction
 	- 第二個參數會是依賴項目所構成的陣列，決定是否要在基本函式架構baseFunction搭配目前的依賴項目來建立新的函式物件，其函式物件會擁有新的closure
@@ -45,7 +45,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 ### function 被儲存在哪？
 
-基本上會儲存在React 體系下內部的儲存區塊
+基本上會儲存在React 體系下內部定義的儲存區塊
 
 
 ## 複習
@@ -53,15 +53,20 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 #🧠 React useCallback 在元件上來說是什麼？(別說用途)  ->->-> `useCallback本身是一個內建Hook，註冊在元件上`
 
-#🧠 React useCallback 的用途為何 ->->-> ``
+#🧠 React useCallback 的用途為何 ->->-> `最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳`
 
-#🧠 Question :: ->->-> ``
+#🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
 
-#🧠 Question :: ->->-> ``
+#🧠 React useCallback 主要解決了解決memo本身的重建問題，具體是什麼？ ->->-> `每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo`
 
-#🧠 Question :: ->->-> ``
+#🧠 useCallback在React的命名緣由為何？ ->->-> `useCallback 如同名稱那樣，會專門建立並儲存一個特定function來作為特定情況下要使用的函式`
 
-#🧠 Question :: ->->-> ``
+#🧠 React useCallback 何時檢查並觸發？->->-> `每一次執行元件的render函式就會執行useCallback，並檢查useCallback所依賴的內容是否有變動。`
+
+
+#🧠 React useCallback 所建立的函式都會儲存在記憶體的哪邊？ ->->-> `基本上會儲存在React 體系下內部定義的儲存區塊`
+
+
 
 
 ---
