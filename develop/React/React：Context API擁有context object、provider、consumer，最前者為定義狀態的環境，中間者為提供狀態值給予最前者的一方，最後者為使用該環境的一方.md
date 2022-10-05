@@ -270,7 +270,7 @@ consume
 <!--SR:!2022-10-09,9,210-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2022-10-05,10,250-->
@@ -318,7 +318,7 @@ consume
 
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-01,27,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
 <!--SR:!2022-11-02,28,250-->
@@ -339,7 +339,7 @@ consume
 <!--SR:!2022-10-30,26,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-02,28,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
 <!--SR:!2022-11-01,28,250-->
@@ -352,7 +352,7 @@ consume
 <!--SR:!2022-10-28,24,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
-<!--SR:!2022-10-05,10,250-->
+<!--SR:!2022-11-01,27,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
 <!--SR:!2022-10-05,10,250-->

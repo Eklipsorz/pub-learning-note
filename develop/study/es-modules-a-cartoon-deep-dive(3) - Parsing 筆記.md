@@ -51,7 +51,7 @@
 ## 複習
 
 #🧠 ES module：當平台獲取到檔案時，會如何解析檔案？ (提示：系統有內建、目標和平台)->->-> `首先系統本身內建設定不同的parse goal所要處理的解析方式，並且根據檔案本身的特性來判定其parse goal是什麼，然後挑選對應的解析方式來實現解析`
-<!--SR:!2022-10-05,6,246-->
+<!--SR:!2022-10-21,16,246-->
 
  #🧠 ES module：當平台獲取到檔案時，會如何解析檔案？ ->->-> `首先系統本身內建設定不同的parse goal所要處理的解析方式，並且根據檔案本身的特性來判定其parse goal是什麼，然後挑選對應的解析方式來實現解析`
 <!--SR:!2022-10-18,14,246-->
@@ -59,7 +59,7 @@
 
 
 #🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
-<!--SR:!2022-10-05,41,248-->
+<!--SR:!2023-01-14,101,248-->
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
 <!--SR:!2022-11-28,73,248-->
