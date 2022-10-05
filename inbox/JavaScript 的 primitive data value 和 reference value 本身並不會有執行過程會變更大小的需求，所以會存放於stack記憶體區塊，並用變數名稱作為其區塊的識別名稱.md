@@ -130,18 +130,22 @@ console.log(age, newAge);
 
 
 #🧠 JS變數儲存的Primitive data type 或者 Reference value  (對應其物件的記憶體位址)，會擁有什麼特性？ ->->-> `- 在編譯時就確定其資料大小  - 執行過程中並不會調整其資料所存放的記憶體區塊大小，即確定後大小就固定大小不動`
+<!--SR:!2022-10-07,2,249-->
 
 #🧠 JS的primitive data type 會是什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
 <!--SR:!2022-10-06,1,230-->
 
 #🧠 primitive data value 以及 reference value 會存放在哪種記憶體區塊？stack ? heap? 為什麼？->->-> `因為本身並不會在執行過程改變記憶體區塊大小而直接存放在專門儲存固定大小的stack記憶體區塊`
+<!--SR:!2022-10-07,2,249-->
 
 #🧠 程式語言要如何獲取 儲存對應primitive data value 或者對應 reference value的記憶體區塊  ->->-> `具體會為記憶體區塊取特定識別名稱或者變數名稱，來指定特定區塊`
 <!--SR:!2022-10-08,3,250-->
 
 #🧠 let name = 'John'; 在JS中會是代表什麼？（請說明名稱和內容) ->->-> ` 會分配一個固定大小的區塊來存放John，並為記憶體區塊設定對應名稱為name`
+<!--SR:!2022-10-07,2,249-->
 
 #🧠 let age = 25; 在JS中會是代表什麼？（請說明名稱和內容)  ->->-> `會分配一個固定大小的區塊來存放25，並為記憶體區塊設定對應名稱為age`
+<!--SR:!2022-10-07,2,249-->
 
 #🧠 當從另一個專門儲存primitive data value的變數A複製其值至另一個變數B時，JS引擎會做什麼？ ->->-> `	- 依據primitive data value的大小來製作一個固定大小的新記憶體區塊 - 接著把變數A的對應primitive data value複製至新記憶體區塊，並為記憶體區塊設定對應名稱為變數B`
 <!--SR:!2022-10-08,3,250-->
@@ -150,6 +154,7 @@ console.log(age, newAge);
 <!--SR:!2022-10-08,3,250-->
 
 #🧠  JS ：多個儲存primitive data value 或者 reference value的記憶體區塊傳遞方式->->-> `建立另一個記憶體區塊並儲存複製過來的值`
+<!--SR:!2022-10-07,2,249-->
 
 #🧠 JS ：儲存primitive data value 和 reference value的記憶體區塊傳遞方式，其語法會是什麼？ ->->-> `variableA = variableB`
 <!--SR:!2022-10-08,3,250-->
