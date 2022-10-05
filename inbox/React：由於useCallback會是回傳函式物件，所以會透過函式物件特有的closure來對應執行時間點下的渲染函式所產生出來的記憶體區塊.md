@@ -10,7 +10,7 @@
 deps 主要解決：
 	- useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以baseFunction為主的新函式物件
 
-### 案例：
+#### 問題案例
 
 首先一開始在這裡會有名為Allow Toggling和Toggle Pargraph這兩個按鈕，一開始toggleParagraphHandler會從useCallback這個Hook獲取到一個函式物件並儲存在記憶體內，其函式內容為如下，在這裡allowToggle、setShowParagraph、prevShowParagraph會因為closure而對應此時：
 	- allowToggle 對應到目前用allowToggle來作為識別字的記憶體區塊
@@ -64,9 +64,23 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 這導致無法透過點擊一個按鈕才能啟用另外一個按鈕的正常作用。
 
 
+#### 解法：問題案例
+直接設定allowToggle為useCallback的deps陣列的元素一部分，就能在每次渲染函式執行時，就呼叫執行useCallback來獲得全新的函式物件，這時函式物件會以目前的記憶體區塊來參考並納入closure，
 
+```
+  const toggleParagraphHandler = useCallback(() => {
+    if (allowToggle) {
+      setShowParagraph((prevShowParagraph) => !prevShowParagraph);
+    }
+  }, [allowToggle]);
+```
+所以當allowToggle從false轉換至true，useCallback就發覺到allowToggle有改變，所以就直接以重建函式物件的方式來執行useCallback，此時的新函式物件的新closure會對應：
+	- allowToggle - 目前內容為true的記憶體區塊
+這使得每次執行函式物件時，都會以true的形式來執行該函式物件，這樣子的切換功能就實現了點擊特定按鈕才能啟用另外一個按鈕的正常作用。
 
 ## 複習
+
+
 
 ---
 Status: #🌱 
