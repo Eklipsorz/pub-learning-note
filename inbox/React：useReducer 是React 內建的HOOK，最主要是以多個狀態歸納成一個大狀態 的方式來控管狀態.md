@@ -214,6 +214,18 @@ initialState ：定義初始狀態
 initFn：主要是定義如何設定初始值
 > a function to set the initial state programmatically
 
+### useReducer 何時觸發執行？
+[[@vencovskyAnswerWhenUse2019]]
+
+> useCallback
+> On every render, everything that's inside a functional component will run again.
+
+重點：
+- 每一次執行元件的render函式就會執行useReducer，首次mount階段會以初始值來表示，update階段則是會以reducer歸納後的新狀態來回傳
+
+
+
+
 
 ### 用語緣由
 
@@ -353,6 +365,9 @@ initFn：主要是定義如何設定初始值
 #🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
 <!--SR:!2022-10-16,17,250-->
 
+#🧠 React useReducer 何時觸發執行？->->-> `每一次執行元件的render函式就會執行useReducer`
+
+#🧠 React useReducer 觸發執行會回傳什麼？ ->->-> `首次mount階段會以初始值來表示，update階段則是會以reducer歸納後的新狀態來回傳`
 
 
 ---
