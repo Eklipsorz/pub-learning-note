@@ -84,6 +84,7 @@ Button RUNNING
 #🧠 React.memo 比對props的方式會是什麼？->->-> `基於JS的currProp === prevProp，其中currProp是目前的props，preProp則是記憶體儲存的最新prop資訊`
 
 #🧠 React.memo 比對props的方式會是什麼？ 若比較對象是物件的話 ->->-> `就會以識別字來找到對應的stack記憶體區塊，並取出它的內容-reference value 來比較是否一樣`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React.memo 比對props的方式會是什麼？ 若比較對象是primitive data value的話 ->->-> `就會以識別字來找到對應的stack記憶體區塊，並取出它的內容-primitive data value 來比較是否一樣`
 

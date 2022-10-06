@@ -353,7 +353,7 @@ Autocomplete
 <!--SR:!2022-10-31,26,250-->
 
 #🧠 提出single responsibility principle 是為了什麼？ ->->-> `提升易讀性和降低維護/開發難度`
-<!--SR:!2022-10-06,10,250-->
+<!--SR:!2022-11-02,27,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，那麼還能有什麼樣重構方法？->->-> `從Components抽離出專門處理狀態的Component，分別為1. 專門處理狀態的Component 2. 渲染對應元件的Component`
 <!--SR:!2022-10-26,22,250-->
@@ -368,7 +368,7 @@ Autocomplete
 <!--SR:!2022-11-03,28,250-->
 
 #🧠 為何要從Components抽離出專門處理狀態的Component和渲染對應元件的Component？ ->->-> `實現單一職責原則，管理狀態就由負責管理狀態的component來負責，負責對應元件渲染就由該component負責`
-<!--SR:!2022-10-06,10,250-->
+<!--SR:!2022-11-02,27,250-->
 
 #💻 請至/react-builder/question-review/useContext-Refactor-question下，請試著以抽離出專門處理Context狀態的Component和渲染對應畫面的Component ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/12-building-and-using-a-custom-context-provider-cmp/src`
 <!--SR:!2022-11-02,28,250-->
