@@ -54,21 +54,27 @@ const callbackResult = useCallback(baseFunction, [a, b])
 #🧠 React useCallback 在元件上來說是什麼？(別說用途)  ->->-> `useCallback本身是一個內建Hook，註冊在元件上`
 
 #🧠 React useCallback 的用途為何 ->->-> `最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React useCallback 主要解決了解決memo本身的重建問題，具體是什麼？ ->->-> `每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo`
 
 #🧠 useCallback在React的命名緣由為何？ ->->-> `useCallback 如同名稱那樣，會專門建立並儲存一個特定function來作為特定情況下要使用的函式`
 
 #🧠 React useCallback 何時檢查並觸發？->->-> `每一次執行元件的render函式就會執行useCallback，並檢查useCallback所依賴的內容是否有變動。`
+<!--SR:!2022-10-09,3,250-->
 
 
 #🧠 React useCallback 所建立的函式都會儲存在記憶體的哪邊？ ->->-> `基本上會儲存在React 體系下內部定義的儲存區塊`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React useCallback 語法會是什麼？ ->->-> `useCallback(baseFunction, [deps])`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的baseFunction 是什麼？用途是什麼？ ->->-> `是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的\[deps\] 是什麼？用途是什麼？->->-> `依賴項目所構成的陣列，決定是否要在基本函式架構baseFunction搭配目前的依賴項目來建立新的函式物件，其函式物件會擁有新的closure`
 
@@ -77,15 +83,19 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`
+<!--SR:!2022-10-09,3,250-->
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback回傳什麼？ ->->-> `回傳的函式物件就會以記憶體內的目前最新函式物件回傳，而不重新以baseFunction為主來從而建立新函式物件`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback會重新建立函式物件嗎 ->->-> `並不會`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，就表示什麼？ ->->-> `就會被系統認定為一直被改變的依賴項目`
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，其useCallback回傳什麼？->->-> `進而每一次執行都會重新以baseFunction為主來建立新的函式物件回傳`
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是填入\[a, b\]，就表示什麼？ ->->-> `會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件`
+<!--SR:!2022-10-09,3,250-->
 
 
 

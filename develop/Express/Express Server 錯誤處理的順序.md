@@ -63,6 +63,7 @@
 
 
 #🧠 Express上若App 層級上的middleware出現錯誤時，其middleware會如何處理，假如其middleware架構會是如下圖(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png)->->-> `首先若App層級的middleware出現錯誤時，會先查看App層級是否有自製的錯誤處理middleware，若有的話就執行那個；若沒有自製的錯誤處理middleware，會先執行Express 預設的錯誤處理middleware`
+<!--SR:!2022-10-09,3,250-->
 
 
 #🧠 Express上若App 層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，在這裡若所有相關的錯誤處理middleware都有next，那麼會是什麼順序？(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `若有自製的app層級錯誤處理middleware，那麼當他執行next，只會告訴系統後續執行系統預設的錯誤處理middleware；若沒有自製的app層級錯誤處理middleware，那麼直接執行系統預設的錯誤處理middleware`
@@ -72,6 +73,7 @@
 
 
 #🧠 Express上若Router層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，那麼其middleware會如何處理？(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `會先查看Router層級有沒有自製的錯誤處理middleware；若都沒有，就去查看App層級的自製錯誤處理middleware；再沒有的話，就直接執行系統預設的錯誤處理middleware`
+<!--SR:!2022-10-09,3,250-->
 
 
 #🧠 Express上router層級有許多自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `每個自製錯誤處理的middleware會先依出現順序來執行，最後自製的都處理完畢後，就接著執行系統預設的錯誤處理`
@@ -79,6 +81,7 @@
 
 
 #🧠 Express上router層級沒有自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `會先執行App層級的自製錯誤處理middleware，接著再執行系統預設的錯誤處理middleware`
+<!--SR:!2022-10-09,3,250-->
 
 
 ---

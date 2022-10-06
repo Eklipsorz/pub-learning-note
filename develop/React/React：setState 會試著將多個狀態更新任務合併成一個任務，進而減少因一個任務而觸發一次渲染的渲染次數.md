@@ -179,6 +179,7 @@ undefined
 #🧠 React useState 何時觸發執行？ ->->-> `每一次執行元件的render函式就會執行useState`
 
 #🧠 React useState 每次觸發執行所回傳的狀態會是？ ->->-> `首次mount階段會以初始值來表示，update階段則是會以新狀態來回傳`
+<!--SR:!2022-10-09,3,250-->
 
 ---
 Status: #🌱 
