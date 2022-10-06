@@ -365,7 +365,7 @@ Autocomplete
 <!--SR:!2022-10-06,10,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，那渲染對應元件的Component會如何做？->->-> `移除被抽離的狀態、更新狀態用的函式、Effect、將原本使用被抽離的狀態、函式的用法改從Context的Consumer物件來取出`
-<!--SR:!2022-10-06,10,250-->
+<!--SR:!2022-11-03,28,250-->
 
 #🧠 為何要從Components抽離出專門處理狀態的Component和渲染對應元件的Component？ ->->-> `實現單一職責原則，管理狀態就由負責管理狀態的component來負責，負責對應元件渲染就由該component負責`
 <!--SR:!2022-10-06,10,250-->

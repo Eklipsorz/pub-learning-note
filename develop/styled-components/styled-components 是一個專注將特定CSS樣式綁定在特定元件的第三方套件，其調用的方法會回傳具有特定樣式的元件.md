@@ -102,7 +102,7 @@ const Element = styled.<element>`<template-literal>`
 
 
 #🧠 styled-components 的出現背景是專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component，這會衍生出什麼樣問題？ ->->-> `難以維護、開發的問題`
-<!--SR:!2022-10-06,15,210-->
+<!--SR:!2022-11-07,32,210-->
 
 #🧠 styled-components 透過概念而實現的用途會是什麼？ ->->-> `主要是藉由實現CSS-in-JS的概念來讓特定樣式屬性綁定在特定元件下，不會產生CSS 相關的全域污染問題`
 <!--SR:!2022-10-11,25,250-->
