@@ -10,6 +10,9 @@
 deps 主要解決：
 	- useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以baseFunction為主的新函式物件
 
+
+
+
 #### 問題案例
 
 首先一開始在這裡會有名為Allow Toggling和Toggle Pargraph這兩個按鈕，想透過點擊一個按鈕Allow Toggling才能啟用另外一個按鈕Toggle Pargraph的正常作用。
