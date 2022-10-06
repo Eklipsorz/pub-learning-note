@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "9898004761574c87",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -137,7 +149,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0f23a0ca477f53de",
+  "active": "9898004761574c87",
   "lastOpenFiles": [
     "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
     "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
