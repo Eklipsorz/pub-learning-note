@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f2ac12fb516238b1",
+        "id": "8009dc77b9b161b4",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "51d833c662af2e4a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/Express/Express Server 錯誤處理的順序.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "aa2af76dc3d34f1a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -103,7 +75,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Express/Express Server 錯誤處理的順序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Express/Express Server 錯誤處理的順序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/Express/Express Server 錯誤處理的順序.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -162,12 +130,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "51d833c662af2e4a",
+  "active": "8009dc77b9b161b4",
   "lastOpenFiles": [
-    "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
-    "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
     "develop/Express/Express Server 錯誤處理的順序.md",
+    "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
+    "develop/render/當在DOM Document上的script寫上語法時，實際上是以DOM Document下的BOM Tree之window物件所構築的全域環境執行.md",
     "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "MOC/React MOC.md",
