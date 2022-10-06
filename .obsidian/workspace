@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
+            "file": "inbox/React：useMemo.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
+                "file": "inbox/React：useMemo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
+                "file": "inbox/React：useMemo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md"
+                "file": "inbox/React：useMemo.md"
               }
             }
           }
@@ -139,10 +139,10 @@
   },
   "active": "0f23a0ca477f53de",
   "lastOpenFiles": [
+    "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
     "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
     "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
     "inbox/React：useMemo.md",
-    "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
     "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
     "develop/Express/Express Server 錯誤處理的順序.md",
