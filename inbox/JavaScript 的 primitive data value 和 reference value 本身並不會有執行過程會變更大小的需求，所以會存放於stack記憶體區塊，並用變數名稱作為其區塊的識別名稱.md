@@ -132,7 +132,7 @@ console.log(age, newAge);
 #🧠 JS變數儲存的Primitive data type 或者 Reference value  (對應其物件的記憶體位址)，會擁有什麼特性？ ->->-> `- 在編譯時就確定其資料大小  - 執行過程中並不會調整其資料所存放的記憶體區塊大小，即確定後大小就固定大小不動`
 <!--SR:!2022-10-07,2,249-->
 
-#🧠 JS的primitive data type 會是什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
+#🧠 JS的primitive data type 會有什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
 <!--SR:!2022-10-06,1,230-->
 
 #🧠 primitive data value 以及 reference value 會存放在哪種記憶體區塊？stack ? heap? 為什麼？->->-> `因為本身並不會在執行過程改變記憶體區塊大小而直接存放在專門儲存固定大小的stack記憶體區塊`
