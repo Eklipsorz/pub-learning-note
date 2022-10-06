@@ -85,6 +85,7 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 的 deps 用途為何->->-> `useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以baseFunction為主的新函式物件`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 由於useCallback 回傳的函式是函式物件，所以會擁有closure概念，那麼就代表著每個函式搭配closure會是？ ->->-> `每個函式物件會透過closure來對應特定執行時間點下的渲染函式所產生出來的記憶體區塊`
 <!--SR:!2022-10-09,3,250-->
@@ -97,6 +98,7 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 
 
 #🧠  上面程式碼解決了點擊一個按鈕Allow Toggling才能啟用另外一個按鈕Toggle Pargraph的正常作用，請說明為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664995272/blog/react/hook/useCallback/useCallback-solution-example_rpapwq.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664995272/blog/react/hook/useCallback/useCallback-question-example_sebqb3.png)->->-> `直接設定allowToggle為useCallback的deps陣列的元素一部分，就能在每次渲染函式執行時，就呼叫執行useCallback來獲得全新的函式物件，這時函式物件會以目前的記憶體區塊來參考並納入closure，所以當allowToggle從false轉換至true，useCallback就發覺到allowToggle有改變，所以就直接以重建函式物件的方式來執行useCallback，此時的新函式物件的新closure會對應： - allowToggle - 目前內容為true的記憶體區塊。這使得每次執行函式物件時，都會以true的形式來執行該函式物件，這樣子的切換功能就實現了點擊特定按鈕才能啟用另外一個按鈕的正常作用。`
+<!--SR:!2022-10-09,3,250-->
 
 
 

@@ -30,6 +30,7 @@
 <!--SR:!2022-10-09,3,250-->
 
 #🧠 React.memo的效能成本是空間成本、計算成本，其中空間成本是什麼？ ->->-> `	- props 數量 (含props.chilrden本身) - 對應元件的Virtual DOM結構 (複雜度) - descendant component的Virtual DOM結構 (複雜度)`
+<!--SR:!2022-10-09,3,250-->
 
 
 #🧠 React.memo的效能成本是空間成本、計算成本，其中計算成本是什麼？  ->->-> `props 比對，最主要會是比對 目前props資訊和記憶體儲存的props資訊是否一樣`

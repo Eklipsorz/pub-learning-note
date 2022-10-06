@@ -21,6 +21,7 @@ React.memo(component A)
 ## 複習
 
 #🧠 React.memo 適用場景為何？ ->->-> `不常變更的元件內容、規模較大的專案`
+<!--SR:!2022-10-09,3,250-->
 
 #🧠 React.memo 為何適用於規模較大的專案？ ->->-> `因為若可以因為props比對相同緣故而跳過特定branch的virtual dom 結構的話，就可以大大減少不必要的處理`
 <!--SR:!2022-10-09,3,250-->
@@ -29,6 +30,7 @@ React.memo(component A)
 <!--SR:!2022-10-09,3,250-->
 
 #🧠 component A和其component A的descendant component會因為同為component A而被記憶體儲存其Virtual DOM並且納入比較來處理，那麼會以什麼component的props來比較？ ->->-> `會以component A的props資訊來比較`
+<!--SR:!2022-10-09,3,250-->
 
 
 #🧠 React.memo 不適用場景是什麼？ ->->-> `時常變更的元件內容、以props為基礎來重複使用的元件、規模較小的專案`
