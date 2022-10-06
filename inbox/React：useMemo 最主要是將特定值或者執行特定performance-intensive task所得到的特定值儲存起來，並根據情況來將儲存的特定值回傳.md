@@ -10,8 +10,6 @@
 >    -   `useMemo(computation, [...someValues])`: 有加上一些元素值的話，當元素值改變時會重新更新函式回傳值
 
 
-
-
 [[@reactHooksAPICanKao]]
 ```
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
@@ -108,10 +106,6 @@ export default React.memo(DemoList);
 
 #### 案例2
 
-
-
-you will use useMemo far less often than you use useCallback
-
 ### useMemo 所儲存的記憶體區塊內容為何
 最主要會是以原本識別字所對應的stack記憶體區塊內容為主：
 - 若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較
@@ -130,6 +124,13 @@ you will use useMemo far less often than you use useCallback
 - useMemo 在對應元件的render function執行時，才會被執行
 
 ## 複習
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
 
 
 ---
