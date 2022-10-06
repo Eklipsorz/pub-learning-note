@@ -85,10 +85,12 @@ function setState(callback) {
 
 
 #🧠 React：若面對大量更改狀態要求的情況下，對於每次執行State所得到的時間差會被加重，假如setState本身是以物件來表示，那麼對於this.setState({...state1, a})且state1是源自於useState所回傳的值來說會有什麼潛在問題? 為什麼(以依賴、渲染來說明)->->-> `主要是不一致的問題，由於狀態都是依賴著state1來更改，state1是必須透過渲染才能拿到最新狀態，然而在時間加重到無法透過渲染更新狀態，目前state1很有可能會是較舊，若中間有部分資料要更新的話`
+<!--SR:!2022-10-09,3,250-->
 
 
 
 #🧠 React：若面對大量更改狀態要求的情況下，對於每次執行State所得到的時間差會被加重，假如setState本身是以物件來表示，那麼對於this.setState({...state1, a})且state1是源自於useState所回傳的值來說會有不一致的問題，那麼解法會是什麼？ ->->-> `使用callback當作setState參數，並用callback來取得較新的狀態state1`
+<!--SR:!2022-10-09,3,250-->
 
 
 
