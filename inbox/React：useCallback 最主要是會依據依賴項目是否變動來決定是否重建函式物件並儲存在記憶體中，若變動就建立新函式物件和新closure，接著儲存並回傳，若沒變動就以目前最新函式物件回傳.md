@@ -60,7 +60,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 #🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
 <!--SR:!2022-10-09,3,250-->
 
-#🧠 React useCallback 主要解決了解決memo本身的重建問題，具體是什麼？ ->->-> `每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo`
+#🧠 React useCallback 主要解決了memo本身的重建問題，具體是什麼？ ->->-> `每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo`
 <!--SR:!2022-10-09,3,250-->
 
 #🧠 useCallback在React的命名緣由為何？ ->->-> `useCallback 如同名稱那樣，會專門建立並儲存一個特定function來作為特定情況下要使用的函式`
