@@ -49,13 +49,13 @@ const value = useContext(context)
 <!--SR:!2022-10-31,26,250-->
 
 #🧠 useContext  用途是什麼？ ->->-> `替代context object的consumer component來使用狀態值、獲取指定context object的目前狀態值`
-<!--SR:!2022-10-06,10,250-->
+<!--SR:!2022-11-03,28,250-->
 
 #🧠 useContext 語法為何？->->-> `const value = useContext(context)`
 <!--SR:!2022-11-03,28,250-->
 
 #🧠 useContext 語法是const value = useContext(context)，其中context和value會是指什麼？->->-> `context是指定要存取的context object是哪個，value會是對應context object的目前狀態值，其值會以離目前元件較近的Provider Component所提供或者由createContext的預設值所提供`
-<!--SR:!2022-10-06,10,250-->
+<!--SR:!2022-11-03,28,250-->
 
 #🧠 useContext(context.Provider) 這樣對於React的useContext的用法是對的嗎->->-> `不對，只能填入Context object`
 <!--SR:!2022-10-25,21,250-->

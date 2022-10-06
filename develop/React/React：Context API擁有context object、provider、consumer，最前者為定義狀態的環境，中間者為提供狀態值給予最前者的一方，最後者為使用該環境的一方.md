@@ -230,7 +230,7 @@ consume
 <!--SR:!2022-10-23,17,248-->
 
 #🧠 React：context 的 consumer component 會如同正常component擁有什麼(提示：四項) ->->->  `狀態、hook、props、生命週期函式`
-<!--SR:!2022-10-06,6,248-->
+<!--SR:!2022-10-23,17,248-->
 
 
 
