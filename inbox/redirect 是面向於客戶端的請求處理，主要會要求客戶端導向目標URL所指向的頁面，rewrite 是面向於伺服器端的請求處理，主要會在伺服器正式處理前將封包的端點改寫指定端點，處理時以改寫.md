@@ -85,7 +85,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2022-11-04,28,250-->
 
 #🧠 rewrite vs. redirect 誰會更改瀏覽器所顯示URL->->-> `redirect`
-<!--SR:!2022-10-07,10,250-->
+<!--SR:!2022-11-04,28,250-->
 
 
 ---
