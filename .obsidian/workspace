@@ -19,7 +19,7 @@
       {
         "id": "087b414c91bf5733",
         "type": "leaf",
-        "dimension": 14.5032632342277,
+        "dimension": 14.503263234227699,
         "state": {
           "type": "markdown",
           "state": {
@@ -32,7 +32,7 @@
       {
         "id": "4363ac41d51af2de",
         "type": "leaf",
-        "dimension": 14.5032632342277,
+        "dimension": 14.503263234227699,
         "state": {
           "type": "markdown",
           "state": {
@@ -45,11 +45,24 @@
       {
         "id": "80e408a5e8e29a95",
         "type": "leaf",
-        "dimension": 45.975344452501815,
+        "dimension": 22.987672226250908,
         "state": {
           "type": "markdown",
           "state": {
             "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "f3d76edab9aab470",
+        "type": "leaf",
+        "dimension": 22.987672226250908,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
             "mode": "source",
             "source": false
           }
@@ -118,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+                "file": "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+                "file": "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md"
+                "file": "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md"
               }
             }
           }
@@ -177,10 +190,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "80e408a5e8e29a95",
+  "active": "f3d76edab9aab470",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/CommonJS 模組如何載入模組.md",
     "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",

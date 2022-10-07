@@ -134,7 +134,7 @@ break：
 <!--SR:!2022-10-09,22,250-->
 
 #🧠 假設目前暫停在 A 行的 `double`，點擊step-into-next-function call 按鈕後會往哪裡走？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662387052/blog/debugger/browser_debugger_breakpoint_upj2ov.png) ->->-> `點擊圖示後會跳至 B 行，也就是 `double` 的第一行。`
-<!--SR:!2022-10-07,20,250-->
+<!--SR:!2022-11-27,51,250-->
 
 #🧠 假設目前暫停在 A 行的 `double`，點擊step-over-next-function call 按鈕後會往哪裡走？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662387052/blog/debugger/browser_debugger_breakpoint_upj2ov.png) ->->-> ` 點擊圖示後會執行 `double` 內的所有程式碼並停在 D 行的 `console.log`。`
 <!--SR:!2022-11-11,42,250-->
