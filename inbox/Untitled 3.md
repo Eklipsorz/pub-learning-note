@@ -1,5 +1,24 @@
 ## 描述
 
+
+
+### 建立React Element 方法：
+1. class-based component 
+2. functional component
+
+
+#### class-based component 
+
+> class-based component：
+> components can also be defined as JS classes where a render() method defines the to-be-rendered output
+
+
+重點：
+- class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性
+- 其render 方法會
+
+
+
 建立元件的方式，主要有兩種，兩種擇其一
 class-based component (old approach)
 functional component (default & most modern approach)
@@ -10,8 +29,7 @@ functional component (default & most modern approach)
 
   
 
-> class-based component：
-> components can also be defined as JS classes where a render() method defines the to-be-rendered output
+
 
 
 > Error Boundaries require class-based component to be built
