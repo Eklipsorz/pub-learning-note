@@ -35,9 +35,6 @@ const callbackResult = useCallback(baseFunction, [a, b])
 ```
 
 
-### useCallback 所儲存的內容為何
-最主要會是以原本識別字所對應的stack記憶體區塊內容為主：
-- 若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較
 
 
 
@@ -110,10 +107,6 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是填入\[a, b\]，就表示什麼？ ->->-> `會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件`
 <!--SR:!2022-10-09,3,250-->
-
-#🧠 useCallback 所儲存的內容最主要會是以什麼內容為主？(記憶體區塊) ->->-> `以原本識別字所對應的stack記憶體區塊內容為主`
-
-#🧠 useCallback 所儲存的內容形式是什麼？不是指函式 ->->-> `若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較`
 
 
 

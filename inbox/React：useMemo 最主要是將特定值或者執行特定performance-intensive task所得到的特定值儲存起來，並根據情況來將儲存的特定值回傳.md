@@ -126,36 +126,47 @@ export default React.memo(DemoList);
 ## 複習
 
 #🧠 React useMemo 什麼時候執行觸發 ->->-> `useMemo 在對應元件的render function執行時，才會被執行`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 所儲存的內容為何 ->->-> `- 若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較 - 若為primitivie data value，就以識別字來找到stack記憶體區塊，並以區塊內容的primitive data value 來比較`
 
 #🧠 React useMemo 所儲存最主要的儲存內容為何(以記憶體區塊來說) ->->-> `以原本識別字所對應的stack記憶體區塊內容為主`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 是什麼？做什麼？->->-> `最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳或者重新執行performance-intensive task來獲得特定值`
 
 #🧠 React useMemo 語法是什麼？ ->->-> `const memoizedValue = useMemo(createResultFn, [deps]);`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 注意事項是什麼 ->->-> `函式物件得要有return 特定值的手段`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
+<!--SR:!2022-10-10,3,250-->
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是什麼？->->-> `第二個參數為依賴項目所構成的陣列，主要依據他們來決定是否回傳記憶體儲存的內容，`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，代表著什麼？ ->->-> `系統就認為不會有任何變動的deps`
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，useMemo會如何做？ ->->-> `只回傳記憶體的目前內容，不執行createResultFn來產生結果值`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，代表著什麼？ ->->-> `系統就認為會是一直變動的deps`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，useMemo會如何做？ ->->-> `系統就認為會是一直變動的deps，並且會執行createResultFn來得到其回傳值，接著用回傳值來儲存在記憶體中。`
+<!--SR:!2022-10-10,3,250-->
 
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是設定\[a, b\]，useMemo會如何做？  ->->-> `系統就以a、b來決定是否回傳記憶體的內容，若任一變動，就執行createResultFn來得到其回傳值，接著用回傳值來儲存在記憶體中；若沒變動，就回傳記憶體的內容`
+<!--SR:!2022-10-10,3,250-->
 
 
 
@@ -166,8 +177,10 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 適用場景為->->-> `經由複雜計算才能夠獲取到的內容，或者執行performance-intensive才能獲得的內容、props以非函式的物件為內容的元件並納入使用memo`
+<!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 適用場景為 props以非函式的物件為內容的元件並納入使用memo，為什麼？ ->->-> `由於物件會因為渲染函式而重造並得到不同的記憶體位址，而無法正常使用memo的功能`
+<!--SR:!2022-10-10,3,250-->
 
 #💻 請至/react-builder/question-review/useMemo-question領取題目，並到fix-items-problem分支，現在想要在App元件減少DemoList重複性渲染，但現實上的實現代碼並沒辦法做到，請試著解決 ->->-> `https://github.com/academind/react-complete-guide-code/blob/12-a-look-behind-the-scenes/code/07-finished/src/App.js`
 <!--SR:!2022-10-10,3,250-->
