@@ -6,7 +6,11 @@
 1. class-based component 
 2. functional component
 
+#### functional component 
+> components are regular javascript functions which return renderable result (typically JSX)
 
+重點：
+- functional component 會是常見函式宣告，其回傳內容為JSX Element
 
 #### class-based component 
 
@@ -16,29 +20,22 @@
 
 重點：
 - class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性
-- 其render 方法會
+- 其類別下的constructor 本身藉由default constructor可以不必設定
+- 其render 方法 具體定義該元件的渲染內容或者對應Virtual DOM結構，語法為：
+```
+class Component1 extends React.Component {
+	render() {
+		....
+	}
+}
+```
+- 當這類型元件以標籤來使用，會以就以Component1 這類別來建構對應實例，並呼叫該實例的render方法
+```
+<Component1 />
+```
 
 
-
-建立元件的方式，主要有兩種，兩種擇其一
-class-based component (old approach)
-functional component (default & most modern approach)
-
-
-> functional component：
-> components are regular javascript functions which return renderable result (typically JSX)
-
-  
-
-
-
-
-> Error Boundaries require class-based component to be built
-
-
-
-
-
+#### 歷史
 
 > class-based component
 > traditionally (React  < 16.8), you had to use class-based components to manage "state"
@@ -52,21 +49,24 @@ React 16.8 之後就改採用hooks 和 functional components 概念
 
 > - these are functions for functional components, which bring features to functional components, which previously were reserved for class-based components
 
+
+
+
+#### hooks 對於 class-based component來說
 hooks 是：
-- 使用在functional component
+- 使用在functional component開發方式
+- class-based component 無法使用react hooks
 - 封裝著過去實現在class-based component的功能程式模組的語法糖，形式會是以hook function來包裝
-
-  
-
-> - class-based components can't use react hooks
-
-class-based component 無法使用react hooks
-  
-
-
 
 
 ## 複習
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
 
 
 ---
