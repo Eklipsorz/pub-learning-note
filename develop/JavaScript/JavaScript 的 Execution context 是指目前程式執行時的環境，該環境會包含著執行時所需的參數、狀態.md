@@ -19,7 +19,7 @@ context：是指場景，一個透過某個事物A所存在或者所發生的場
 	- thisbinding 所需要的資料
 	- outer reference 所需要的資料
 	- 定義每個識別字和實體物件間的關係
-4. JavaScript引擎會於將要執行時做(此時算編譯時期)：
+4. JavaScript引擎會於將要執行時做：
 	- 拿建立EC所需的資料和對應ByteCode去建立EC
 5. JavaScript引擎在執行時做：
 	- 以目前EC來執行，並根據目前EC狀況來更新EC
@@ -81,7 +81,7 @@ test(a)
 #🧠 JavaScript 會於何時建立EC ->->-> `編譯時期後，快要執行對應的Scope前就會建立並執行`
 <!--SR:!2022-10-29,42,248-->
 
-#🧠 JavaScript 引擎於完整的編譯時期(算執行之前的時期)會替EC做什麼？ ->->-> `1. 編譯時期：編譯ByteCode + 順便定義每個scope的EC所需要的資料 2. 快要執行時期：以編譯時期所獲取到的資料和對應ByteCode來建立EC`
+#🧠 JavaScript 引擎於完整的編譯時期和執行對應scope之前的時期會替EC做什麼？ ->->-> `1. 編譯時期：編譯ByteCode + 順便定義每個scope的EC所需要的資料 2. 快要執行時期：以編譯時期所獲取到的資料和對應ByteCode來建立EC`
 <!--SR:!2022-10-07,28,248-->
 
 #🧠 請完整說明負責定義每個Scope下的Execution Context所需要建立的資料之ByteCode是什麼？ 具體說明會建立哪些資料 ->->-> `		- 負責定義每個Scope下的Execution Context所需要建立的資料- 負責定義如何執行其他語法。其中定義EC所需要建立的資料有：	- 每一個宣告的記憶體分配該如何進行：將記憶體分配至var變數宣告、函式宣告，其初始值分別為undefined、函式內容 - thisbinding 所需要的資料 - outer reference 所需要的資料 - 如何定義每個識別字和實體物件間的關係`

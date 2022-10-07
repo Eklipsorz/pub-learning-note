@@ -6,6 +6,7 @@
       {
         "id": "0f23a0ca477f53de",
         "type": "leaf",
+        "dimension": 25.018129079042783,
         "state": {
           "type": "markdown",
           "state": {
@@ -18,6 +19,7 @@
       {
         "id": "087b414c91bf5733",
         "type": "leaf",
+        "dimension": 14.5032632342277,
         "state": {
           "type": "markdown",
           "state": {
@@ -28,24 +30,26 @@
         }
       },
       {
-        "id": "8a2d1c519bdfbbd3",
+        "id": "4363ac41d51af2de",
         "type": "leaf",
+        "dimension": 14.5032632342277,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/CommonJS 模組如何載入模組.md",
+            "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "448f70800b85ec59",
+        "id": "80e408a5e8e29a95",
         "type": "leaf",
+        "dimension": 45.975344452501815,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+            "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
             "mode": "source",
             "source": false
           }
@@ -114,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md"
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md"
               }
             }
           }
@@ -173,8 +177,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "448f70800b85ec59",
+  "active": "80e408a5e8e29a95",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+    "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "inbox/CommonJS 模組如何載入模組.md",
     "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
@@ -182,8 +188,6 @@
     "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
     "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
     "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
-    "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
-    "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
-    "develop/Express/Express Server 錯誤處理的順序.md"
+    "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md"
   ]
 }
