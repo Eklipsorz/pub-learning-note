@@ -15,7 +15,7 @@
 > -   Provider（提供者）的功用就是用來**提供** context 值。
 > -   Consumer（消費者）的功用則是用來**使用** context 值。
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664347683/blog/react/context/context-provider-consumer_hl7mi8.png)
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665139517/blog/react/context/context-provider-consumer_o2zh2p.png)
 
 重點：
 - Context Object：目前是定義狀態的環境，內容主要會由Provider或者預設狀態來提供
@@ -234,7 +234,7 @@ consume
 
 
 
-#🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663695226/blog/react/context/context-provider-consumer_samqom.png)`
+#🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665139517/blog/react/context/context-provider-consumer_o2zh2p.png)`
 <!--SR:!2022-11-01,28,250-->
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
