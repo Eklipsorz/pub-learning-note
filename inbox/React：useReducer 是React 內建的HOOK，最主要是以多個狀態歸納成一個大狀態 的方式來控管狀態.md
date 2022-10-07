@@ -331,7 +331,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-24,23,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `會以auto-batching的方式，將狀態試著合併，最後再以最後合併結果來更新狀態、觸發渲染週期`
-<!--SR:!2022-10-07,11,230-->
+<!--SR:!2022-11-04,28,230-->
 
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會執行n次的狀態更新＋觸發渲染週期嗎？ ->->-> `並不會，而是會以auto-batching來執行`
