@@ -7,6 +7,7 @@
 2. functional component
 
 
+
 #### class-based component 
 
 > class-based component：
