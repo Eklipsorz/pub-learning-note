@@ -125,7 +125,7 @@ hooks 是：
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
 <!--SR:!2022-10-11,3,250-->
 
-#💻 請至/react-builder/question-review/class-based-component-question 領取題目，並到user-to-class分支，請將User轉換成class-based component，記住功能和渲染內容必須是一樣的 ->->-> ``
+#💻 請至/react-builder/question-review/class-based-component-question 領取題目，並到user-to-class分支，請將User轉換成class-based component，記住功能和渲染內容必須是一樣的 ->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/02-adding-a-first-class-based-cmp/src/components/User.js`
 
 
 
