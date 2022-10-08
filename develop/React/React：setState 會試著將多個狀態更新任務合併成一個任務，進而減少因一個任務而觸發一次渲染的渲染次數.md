@@ -48,14 +48,14 @@ function updateName() {
 ### 實際實現 1 - 將狀態更新任務放置佇列
 
 - setState **每一次呼叫時，會生成非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染** 
-- 在class-based component中的實際實現為：由於因為語法限制而只能時常以物件來包含元件下的所有屬性，也有可能只有一個狀態且狀態值是單一值
+- 在class-based component中的bastching實際實現：由於因為語法限制而只能時常以物件來包含元件下的所有屬性，也有可能只有一個狀態且狀態值是單一值
 	- 若狀態是以單一值來儲存的話，就直接拿目前任務的請求狀態去覆蓋先前任務所記錄的狀態
 	- 若狀態是以多屬性的物件來儲存的話
 		- 一開始會定義結果狀態為空物件
 		- 將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性
 			- 若要求更改狀態的屬性並沒有存在結果狀態物件的屬性中，直接增加該屬性至結果狀態物件
 			- 若要求更改狀態的屬性存在結果狀態物件的屬性中，就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性
-- 在functional component中的實際實現為：每種狀態都有各自狀態更新用的函式，所以會以每個由useState所註冊的狀態視為結果狀態物件中的一種屬性
+- 在functional component中的bastching實際實現為：每種狀態都有各自狀態更新用的函式，所以會以每個由useState所註冊的狀態視為結果狀態物件中的一種屬性
 	- 一開始會定義結果狀態為空物件：
 		- 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，直接增加該屬性至結果狀態物件
 		- 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性
@@ -98,7 +98,7 @@ function updateName() {
 
 做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染
 
-#### class-based component案例 2
+#### class-based component 案例 2
 
 假如系統執行以下setState，而狀態會是以單一值來表示
 ```
@@ -136,6 +136,43 @@ undefined
 
 做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染
 
+
+#### functional component 案例1
+以class-based component為參考案例，所對應的語法會是如下
+```
+const [firstName, setFirstName] = useState('');
+const [lastName, setLastName] = useState('');
+```
+
+使用兩次useState來註冊兩種狀態分別為firstName、lastName，當執行以下setState時
+```
+setFirstName('Morgan');
+setLastName('Cheng');
+```
+
+執行前會先設定空物件為結果狀態物件
+```
+{}
+```
+
+接著執行第一個setState-setFirstName時，其狀態物件會是
+```
+// 追加後
+{ FirstName: 'Morgan' }
+```
+
+然後再執行第二個setState-setLastName時，其狀態物件會是
+```
+// 追加前 
+{ FirstName: 'Morgan' }
+// 追加後
+{ FirstName: 'Morgan', LastName: 'Cheng' }
+```
+
+
+做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染
+
+
 ### useState 何時觸發執行？
 [[@vencovskyAnswerWhenUse2019]]
 
@@ -151,31 +188,38 @@ undefined
 
 ## 複習
 
-#🧠 React：setState 每一次呼叫時，概念會如何執行 ->->-> `會生成以下指定任務內容的非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染，指定任務內容為更新指定狀態值，當沒有再度接收setState時，非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期`
-<!--SR:!2022-12-12,70,250-->
+#🧠 React：無論是否為class-based componet 或者 functional component，setState 每一次執行時，概念會如何執行 ->->-> `會生成以下指定任務內容的非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染，指定任務內容為更新指定狀態值，當沒有再度接收setState時，非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期`
 
-#🧠 React： setState **每一次呼叫時，會生成非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染** ，若狀態皆為單一值的話，其實際實現為何？->->-> `若狀態是以單一值來儲存的話，就直接拿目前任務的狀態去覆蓋先前任務所記錄的狀態`
-<!--SR:!2022-12-16,74,250-->
+#🧠 React：在class-based component中的bastching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？->->-> `若狀態是以單一值來儲存的話，就直接拿目前任務的請求狀態去覆蓋先前任務所記錄的狀態`
 
 
-#🧠 React： setState **每一次呼叫時，會生成非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染** ，若狀態皆為物件的話，其實際實現為何？ ->->-> `一開始會定義結果物件為空物件、拿目前任務的狀態-物件屬性去追加/覆蓋至結果物件上目前的屬性區分`
-<!--SR:!2022-12-16,74,250-->
+#🧠 React： 在class-based component中的bastching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
 
-#🧠 React：請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令以batching形式執行完畢後並且觸發updating生命週期函式才會執行更新`
-<!--SR:!2022-12-16,74,250-->
+#🧠 React：無論狀態更新是否為class-based componet 或者 functional component，有誰能夠執行完setState便立刻更新state嗎 ->->-> `都沒有`
+
+
+#🧠 React：無論是否為class-based componet 或者 functional component，請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令執行完畢，並且以batching形式來合併狀態，最後以最後合併狀態為結果狀態來進行一次狀態更新和出發渲染週期`
+
 
 #🧠 React： **當非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期** ，其實際實現為何？ ->->-> `實際實現為：當目前可以合併的指令都完成合併時，就執行以目前結果狀態來觸發實際狀態更新 & 渲染。`
 <!--SR:!2022-12-15,73,250-->
 
 
-#🧠 React：負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
-<!--SR:!2022-12-16,74,250-->
+#🧠 React：在class-based componet中，負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
 
-#🧠 React18：假如系統執行以下setState，而狀態會是以單一值來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為 2、執行第二個this.setState指令任務，會先將結果物件設定為 ˇ、執行第三個this.setState指令任務，會先將結果物件設定為 4、做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-12-12,71,250-->
+#🧠 React：在functional component中，負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
 
-#🧠 React18：假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-12-13,71,250-->
+
+
+#🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以單一值來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為 2、執行第二個this.setState指令任務，會先將結果物件設定為 3、執行第三個this.setState指令任務，會先將結果物件設定為 4、做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
+
+
+#🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
+
+#🧠 若透過以下語法而獲得\{ FirstName: \'Morgan\', LastName: \'Cheng\' \}，請問是屬於哪種元件開發方法？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `class-based component`
+
+
+
 
 #🧠 React18：假如系統執行以下setState，而狀態會是以單一值來表示，那麼會以何種狀態來渲染和更新狀態？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `4`
 <!--SR:!2022-12-16,74,250-->
