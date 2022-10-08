@@ -77,7 +77,7 @@ React.forwardRef(render)
 #🧠 React： ref 技術不支援自製元件嗎？如\<Componet \/\>-> 若要支援的話，得用什麼技術？->-> `forwardRefs`
 
 #🧠  forwarding 命名緣由 ->->-> `將從特定事物A獲取的事物發送給其他事物B`
-<!--SR:!2022-10-08,10,250-->
+<!--SR:!2022-11-05,28,250-->
 
 #🧠 forwardRefs 對於 元件間和forward有什麼樣關聯會取名成forwardRefs->->-> ``
 <!--SR:!2022-10-08,10,250-->
