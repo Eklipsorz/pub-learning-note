@@ -126,7 +126,7 @@ FunctionExectionContext = {
 <!--SR:!2023-01-30,139,250-->
 
 #🧠 Function Execution Context的creation phase：建立this物件並決定this會是參照於誰->->-> ` 在這裡建立完會依據哪個物件呼叫該函式，而決定FEC的this為那個物件、若沒有物件呼叫就依照**outer reference**所指向的EC所擁有的this來決定this為誰：this = otherEC.this`
-<!--SR:!2022-10-08,73,250-->
+<!--SR:!2023-04-13,187,250-->
 
 #🧠 Function Execution Context的creation phase：如何處理建立Arguments物件來儲存賦予對應函數的參數並放置FEC中的LexicalEnvironment區塊 以圖片為例子 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655278116/blog/javascript/lexical%20scope/function-execution-context-example_lnumes.png)(提示參數、參數長度) ->->-> `主要會包含參數、參數長度，以下面函式呼叫為例，當呼叫並執行test函式的第一段前會先建立對應的FEC，其中會先建立Arguments物件儲存1、3、4以及參數長度，其中0-2為代表著test呼叫中的argument1至argument3，而length則是代表著參數長度(如result那樣呈現)，而Arguments所儲存的變數皆為let類型的變數宣告，所以會將Arguments放在FEC中的LexicalEnvironment區塊`
 <!--SR:!2023-01-27,137,250-->
