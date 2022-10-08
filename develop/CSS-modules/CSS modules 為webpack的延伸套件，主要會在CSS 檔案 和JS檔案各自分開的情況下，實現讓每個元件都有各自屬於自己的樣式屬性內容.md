@@ -169,7 +169,7 @@ import styles from <css-file>
 <!--SR:!2022-10-16,28,250-->
 
 #🧠 CSS modules 由於會將載入的CSS檔案做轉換來給予JS來存取，所以要如何確保webpack不會把一般毫無關係的CSS檔案參與處理？ ->->-> `改成以下形式：origin-file-name為原本檔案名，後面的module.css則是後綴字，並且讓webpack以此作為特別的CSS來處理，就能避免`
-<!--SR:!2022-10-08,22,250-->
+<!--SR:!2022-12-03,56,250-->
 
 #🧠 CSS modules 使用方式是如何？ 以一個裝載button樣式的test.module.css和class選擇器為button為例(載入、參考)->->-> `載入特定 module.css 並以其CSS內容作為物件來存取，並且讓styles參照該物件：import styles from <css-file>。依據著對應內容上的class-selector來選擇想要使用的樣式名稱，每個class-selector會是styles物件下的屬性。：<button className={styles.button} />`
 <!--SR:!2022-10-16,28,250-->
