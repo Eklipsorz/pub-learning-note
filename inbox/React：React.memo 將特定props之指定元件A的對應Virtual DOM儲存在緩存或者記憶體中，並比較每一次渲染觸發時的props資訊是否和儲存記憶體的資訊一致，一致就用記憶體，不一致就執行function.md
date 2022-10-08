@@ -220,10 +220,10 @@ tell React that is should only re-execute this DemoOutput component under certai
 
 
 #🧠 React.memo 語法形式為何？ ->->-> `React.memo(component, callback)`
-<!--SR:!2022-10-08,3,250-->
+<!--SR:!2022-10-17,9,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準可以自訂嗎？ ->->-> `可以`
-<!--SR:!2022-10-08,3,250-->
+<!--SR:!2022-10-18,10,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準可允許自訂，但沒設定會是？ ->->-> `採取預設標準，標準為目前傳遞至元件A的props 資訊是否與緩存儲存的props資訊一樣的`
 <!--SR:!2022-10-08,3,250-->

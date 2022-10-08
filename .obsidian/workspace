@@ -26,6 +26,30 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "bd5fb84ca259b028",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "5653c2e116886bc7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -74,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 481
+    "width": 481,
+    "collapsed": true
   },
   "right": {
     "id": "1b728af4a278cee2",
@@ -90,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
+                "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
+                "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component.md"
+                "file": "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md"
               }
             }
           }
@@ -149,17 +174,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "06d82ec8e43a1f6d",
+  "active": "5653c2e116886bc7",
   "lastOpenFiles": [
+    "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
+    "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
     "inbox/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
     "inbox/import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性.md",
-    "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
-    "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
-    "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md"
+    "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md"
   ]
 }
