@@ -290,7 +290,7 @@ setLastName('Cheng');
 #🧠 class-based component vs. functional component ： state  & setState 對於setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 
 ---
-Status: #🌱 
+Status: #☀️ 
 Tags:
 [[React]] - [[JavaScript]]
 Links:

@@ -69,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -148,7 +149,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7816d21e83da0fd4",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
     "inbox/import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性.md",
