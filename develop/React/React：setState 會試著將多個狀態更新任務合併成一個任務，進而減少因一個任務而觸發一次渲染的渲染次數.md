@@ -272,6 +272,7 @@ Status: #🌱
 Tags:
 [[React]] - [[JavaScript]]
 Links:
+[[class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上]]
 [[React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染]]
 References:
 [[@gaearonAutomaticBatchingFewer]]
