@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+            "file": "inbox/Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -89,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+                "file": "inbox/Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
+                "file": "inbox/Untitled 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md"
+                "file": "inbox/Untitled 4.md"
               }
             }
           }
@@ -150,15 +151,15 @@
   },
   "active": "7816d21e83da0fd4",
   "lastOpenFiles": [
+    "inbox/Untitled 3.md",
+    "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
     "develop/React/React 專案：普遍的命名法則.md",
-    "inbox/Untitled 3.md",
     "inbox/import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性.md",
     "inbox/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
     "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
     "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
-    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
-    "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md"
+    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md"
   ]
 }
