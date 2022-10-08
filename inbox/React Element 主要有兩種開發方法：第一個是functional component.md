@@ -77,33 +77,45 @@ hooks 是：
 ## 複習
 
 #🧠 建立React Element 有哪兩種開發方法？ ->->-> `class-based component、functional component`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 React：functional component  是什麼？ ->->-> `會是一般函式宣告，其回傳內容為JSX Element`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 React：functional component  的語法是什麼？ ->->-> `function Component1() { ... return (JSX Element ) }`
+<!--SR:!2022-10-09,1,230-->
 
 #🧠 React：class-based component 搭配render 的基本語法是什麼？ ->->-> `class Component1 extends React.Component { render() { ... } }`
+<!--SR:!2022-10-11,3,250-->
 
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \}  中沒有Constructor，請問能夠正常執行嗎？為什麼->->-> `能夠正常執行，系統會根據目前類別是否繼承其他類別而給予預設的constructor來方便建立對應類別的實例`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 當元件類別Component1以標籤來使用，如\<Component1 \/\> React會如何處理該元件 ->->-> `會以Component1 這類別來建構對應實例，並呼叫該實例的render方法`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 實際上React Element會在什麼時候被建立成實例並被呼叫render ->->-> `當這類型元件以標籤來使用`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `具體會是給functional component，由於元件最早是以class-based component來開發，為了讓開發難度降低才將對應語法做成語法糖並以一般函式來使用`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
 <!--SR:!2022-10-11,3,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
+<!--SR:!2022-10-11,3,250-->
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`
+<!--SR:!2022-10-11,3,250-->
 
 
 #🧠  React：hook 是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
@@ -111,6 +123,7 @@ hooks 是：
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
+<!--SR:!2022-10-11,3,250-->
 
 
 
