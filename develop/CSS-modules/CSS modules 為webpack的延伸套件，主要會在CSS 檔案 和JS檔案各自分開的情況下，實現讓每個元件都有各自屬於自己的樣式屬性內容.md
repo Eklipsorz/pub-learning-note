@@ -193,7 +193,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會替CSS內部和引用方做哪些事情 ->->-> `針對class selector和替換class selector`
-<!--SR:!2022-10-08,14,247-->
+<!--SR:!2022-11-12,35,247-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理且以Button這元件來載入CSS module時，假如內容有.class1 {...}，請問轉換結果為？ ->->-> `.class1 => .Button_class1_waer324 結果為.class1 {...} => .Button_class1_waer324 {...}`

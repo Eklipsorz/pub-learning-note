@@ -116,7 +116,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2022-10-08,10,250-->
 
 #🧠 React：useImperativeHandle命名緣由源自於？ ->->-> `一組以DOM原生渲染指令為主的處理`
-<!--SR:!2022-10-08,10,250-->
+<!--SR:!2022-11-05,28,250-->
 
 #🧠 React：useImperativeHandle 語法會是什麼？ ->->-> `useImperativeHandle(ref, createHandle, [deps])`
 <!--SR:!2022-10-09,3,210-->

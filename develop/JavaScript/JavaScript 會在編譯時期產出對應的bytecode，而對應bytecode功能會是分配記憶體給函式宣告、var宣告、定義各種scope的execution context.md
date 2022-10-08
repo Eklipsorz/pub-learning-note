@@ -90,7 +90,7 @@ _Fig. 2: Colored Scope Bubbles_
 
 
  #🧠 JavaScript 編譯的bytecode會分配記憶體var變數/函式宣告嗎？->->-> `分配記憶體給var變數和函式宣告`
-<!--SR:!2022-10-08,6,247-->
+<!--SR:!2022-10-25,17,247-->
 
 
 #🧠 JavaScript 什麼時候生成對應的GEC和FEC？（具體說明) ->->-> `執行階段中，快要執行GEC對應的scope才會執行對應的bytecode來生成對應EC，而FEC則是快要執行FEC對應的scope才會執行對行對應的bytecode來生成對應的FEC`
