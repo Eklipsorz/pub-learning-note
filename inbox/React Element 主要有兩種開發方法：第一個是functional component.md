@@ -98,6 +98,7 @@ hooks 是：
 #🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `具體會是給functional component，由於元件最早是以class-based component來開發，為了讓開發難度降低才將對應語法做成語法糖並以一般函式來使用`
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
+<!--SR:!2022-10-11,3,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
 
@@ -106,6 +107,7 @@ hooks 是：
 
 
 #🧠  React：hook 是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
+<!--SR:!2022-10-11,3,250-->
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
