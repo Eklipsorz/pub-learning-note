@@ -59,7 +59,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-10-19,10,250-->
 
 #🧠 React useCallback 的用途為何 ->->-> `最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-19,10,250-->
 
 #🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
 <!--SR:!2022-10-09,3,250-->
@@ -68,10 +68,10 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-10-09,3,250-->
 
 #🧠 useCallback在React的命名緣由為何？ ->->-> `useCallback 如同名稱那樣，會專門建立並儲存一個特定function來作為特定情況下要使用的函式`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-15,6,250-->
 
 #🧠 React useCallback 何時檢查並觸發？->->-> `每一次執行元件的render函式就會執行useCallback，並檢查useCallback所依賴的內容是否有變動。`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-18,9,250-->
 
 
 #🧠 React useCallback 所建立的函式都會儲存在記憶體的哪邊？ ->->-> `基本上會儲存在React 體系下內部定義的儲存區塊`
@@ -81,7 +81,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-10-19,10,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的baseFunction 是什麼？用途是什麼？ ->->-> `是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-19,10,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的\[deps\] 是什麼？用途是什麼？->->-> `依賴項目所構成的陣列，決定是否要在基本函式架構baseFunction搭配目前的依賴項目來建立新的函式物件，其函式物件會擁有新的closure`
 <!--SR:!2022-10-09,3,250-->

@@ -135,7 +135,7 @@ FunctionExectionContext = {
 <!--SR:!2022-10-13,69,230-->
 
 #🧠 function Execution Context的creation phase ：outer 會指向什麼？->->-> `outer會是指向呼叫該EC的EC，也就是代表從全域呼叫的GlobalExectionContext或者代表從其他函式呼叫的EC`
-<!--SR:!2022-10-09,74,250-->
+<!--SR:!2023-04-20,193,250-->
 
 
 #🧠 function Execution Context的execution phase ：會如何對context更新->->-> `建立完FEC後，JavaScript 引擎隨後就會在FEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`

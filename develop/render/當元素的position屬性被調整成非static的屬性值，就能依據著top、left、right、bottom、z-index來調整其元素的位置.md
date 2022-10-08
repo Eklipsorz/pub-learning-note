@@ -93,7 +93,7 @@ position: sticky;
 <!--SR:!2022-10-19,28,250-->
 
 #🧠 position 屬性是指定元件在同一份文件中的定位方式是如何，概念上positioned element 是什麼元素？ ->->-> `**在特定定位方式中，來定義 top、bottom、left、right、z-index 屬性如何調整元素位置**`
-<!--SR:!2022-10-09,17,249-->
+<!--SR:!2022-11-20,42,249-->
 
 
 #🧠 positioned element 是什麼->->-> `在CSS中，poitioned element  會是指該元素是可受到top、bottom、left、right、z-index這五種屬性值來調整其位置`
