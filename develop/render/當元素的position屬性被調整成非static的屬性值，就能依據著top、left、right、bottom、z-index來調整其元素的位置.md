@@ -92,7 +92,7 @@ position: sticky;
 #🧠 CSS：position 屬性預設為何？ ->->-> `static`
 <!--SR:!2022-10-19,28,250-->
 
-#🧠 position 屬性是指定元件在同一份文件中的定位方式是如何，具體positioned element是什麼元素？ ->->-> `**在特定定位方式中，來定義 top、bottom、left、right、z-index 屬性如何調整元素位置**`
+#🧠 position 屬性是指定元件在同一份文件中的定位方式是如何，概念上positioned element 是什麼元素？ ->->-> `**在特定定位方式中，來定義 top、bottom、left、right、z-index 屬性如何調整元素位置**`
 <!--SR:!2022-10-09,17,249-->
 
 

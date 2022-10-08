@@ -91,7 +91,7 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 <!--SR:!2022-10-09,3,250-->
 
 #🧠 由於useCallback 回傳的函式是函式物件，所以會擁有closure概念，那麼就代表著每個函式搭配closure會是？ ->->-> `每個函式物件會透過closure來對應特定執行時間點下的渲染函式所產生出來的記憶體區塊`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-19,10,250-->
 
 #🧠 首先一開始在這裡會有名為Allow Toggling和Toggle Pargraph這兩個按鈕，想透過點擊一個按鈕Allow Toggling才能啟用另外一個按鈕Toggle Pargraph的正常作用，請問以下程式碼能夠實現目標嗎？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664995272/blog/react/hook/useCallback/useCallback-question-example_sebqb3.png) ->->-> `一開始toggleParagraphHandler會從useCallback這個Hook獲取到一個函式物件並儲存在記憶體內，其函式內容為如下，在這裡allowToggle、setShowParagraph、prevShowParagraph會因為closure而對應此時： - allowToggle 對應到目前用allowToggle來作為識別字的記憶體區塊 - setShowPargraph 對應到目前用setShowPargraph來作為識別字的記憶體區塊 - prevShowParagraph 對應到目前用 prevShowParagraph來作為識別字的記憶體區塊。接著將toggleParagraphHandler會是該函式物件，並且將它設定在Toggle Paragraph! 這按鈕的點擊事件中。接著渲染後，點擊Allow Toggling後來使allowToggle更新為true來觸發渲染，可在下一次渲染時，toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼續使用目前記憶體儲存的函式物件來回傳，所以toggleParagraphHandler還是以下內容來執行： - allowToggle - 當時為false的記憶體區塊`
 <!--SR:!2022-10-09,3,250-->
