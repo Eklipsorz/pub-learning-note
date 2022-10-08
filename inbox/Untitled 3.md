@@ -13,6 +13,38 @@
 	- 設定事件處理
 
 
+###
+
+class-based component 定義事件處理函式方式：
+
+1. 在render 函式定義：可行，但會重複定義函式而浪費多餘的成本
+
+2. 在class中以作為其類別方法來新增事件處理函式：可行，通常開發會採用
+
+### 
+在class-based component 管理狀態-useState
+
+1. 初始化並定義元件專屬的狀態
+
+2. updated when needed
+
+
+###
+初始化並定義元件專屬的狀態：
+
+1. 在class 中的constructor下，以this.state來定義，且只能使用state這個名稱，不能依據喜歡來取名為任何名稱來代表狀態，這是因為state本身是React.Component類別下的屬性
+
+2. state 在class-based component是React.Component的唯一能夠定義狀態的屬性，本身沒辦法像functional component那樣，每個狀態都擁有各自的定義方式和各自的更新用函式，必須得以物件形式來包含元件下的所有狀態，而每個屬性會是每個狀態：
+
+  - 無論這些屬性是否相關與否，都會以物件來包含
+
+  
+
+  
+
+在functional component，state 可以是 任意值
+
+
 ## 複習
 
 
