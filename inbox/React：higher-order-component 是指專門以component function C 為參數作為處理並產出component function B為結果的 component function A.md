@@ -44,7 +44,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 <!--SR:!2022-10-08,3,250-->
 
 #🧠 higher-order function是一個以函式C作為輸入參數的函式A，其函式A輸出的結果會是另一個函式B，請問輸入函式、專門接收函式並處理的函式，輸出的函式結果在結構會是什麼？->->-> `都為函式`
-<!--SR:!2022-10-08,3,250-->
+<!--SR:!2022-10-16,8,250-->
 
 #🧠 為什麼component 會引入higher-order function呢？->->-> `在JS，component  本質上會是以名為component function來構成，所以才拿用higher-order function來改名成higher-order component`
 <!--SR:!2022-10-17,9,250-->
