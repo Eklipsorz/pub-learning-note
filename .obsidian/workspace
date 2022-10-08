@@ -139,15 +139,15 @@
   },
   "active": "7816d21e83da0fd4",
   "lastOpenFiles": [
-    "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
     "inbox/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
+    "inbox/import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性.md",
+    "inbox/React Element 主要有兩種開發方法：第一個是functional component.md",
     "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "inbox/使用useState 或者useReducer來建立狀態變數，其記憶體狀況會是mount階段時建立一個記憶體區塊來儲存初始狀態，然後update階段則是以該記憶體區塊所儲存的狀態來回傳.md",
     "develop/Database/協議上(transaction)的隔離性會使用上鎖和多版本並行控制來實現多個協議在同時執行上減緩存取同份資料而導致彼此協議的結果不如預期.md",
     "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
     "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
-    "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
-    "develop/JavaScript/CS - truthy 是形容某內容能夠在布林表達式內表達成true，falsy 則是形容某內容能夠在布林表達式表達成false.md"
+    "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md"
   ]
 }
