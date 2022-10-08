@@ -44,6 +44,14 @@ function updateName() {
 	- 更新指定狀態值
 - 當沒有再度接收setState時，非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期
 
+### class-based component vs. functional component ： state  & setState
+
+在同個元件下，每個setState會是：
+1. state 註冊範疇：class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態
+2. setState 註冊範疇：class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新
+3. setState 更新狀態方式：class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態
+
+
 
 ### 實際實現 1 - 將狀態更新任務放置佇列
 
@@ -266,6 +274,20 @@ setLastName('Cheng');
 
 #🧠 React：setFirstName('Morgan'); setLastName('Cheng'); 請問如何做狀態的batching？ ->->-> `當執行以下setState時，執行前會先設定空物件為結果狀態物件 {}，接著執行第一個setState-setFirstName時，其狀態物件會是{ FirstName: 'Morgan' }，然後再執行第二個setState-setLastName時，其狀態物件會是{ FirstName: 'Morgan', LastName: 'Cheng' }，做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
 
+
+#🧠 class-based component vs. functional component ： state  & setState 有哪些主要差別(簡要就好) ->->-> `state 註冊範疇、setState 註冊範疇、setState 更新狀態方式`
+
+#🧠 class-based component vs. functional component ： state  & setState 在 state 註冊範疇是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
+
+
+#🧠 class-based component vs. functional component ： state  & setState 對於在 state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
+
+
+#🧠 class-based component vs. functional component ： state  & setState 對於在setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
+
+#🧠 class-based component vs. functional component ： state  & setState 對於setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
+
+#🧠 class-based component vs. functional component ： state  & setState 對於setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 
 ---
 Status: #🌱 
