@@ -53,10 +53,10 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 <!--SR:!2022-10-08,3,250-->
 
 #🧠 higher-order component 指的是一個專門以component C為參數作為處理並產出 component B為結果 的component A，在這裡的component 在JS程式實現上會是什麼？ ->->-> `函式`
-<!--SR:!2022-10-08,3,250-->
+<!--SR:!2022-10-18,10,250-->
 
 #🧠 higher-order component 所產生出的結果是什麼？ ->->-> `另一個被增強過後的component`
-<!--SR:!2022-10-08,3,250-->
+<!--SR:!2022-10-17,9,250-->
 
 #🧠 higher-order component 使用什麼作為輸入處理？ ->->-> `使用一個基本的component`
 <!--SR:!2022-10-08,3,250-->
