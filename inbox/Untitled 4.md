@@ -54,6 +54,35 @@ obj1.o.func() //？？
 重點：
 - implicit binding：以暗示的方式來表達this 設定成什麼
 - 該方式是：當函式A呼叫時，若函式A呼叫前面添加一個物件B參考，系統就會認為物件B擁有函式A並呼叫函式A，此時函式A的this就會是物件B
+- 細節1：
+	- 若函式A呼叫前有多個物件參考的話，會挑選離函式A呼叫較近的物件來設定this
+
+
+#### 案例2 
+
+```
+function fn() {
+    console.log(this.name);
+};
+let obj = {
+    name: '行星飛行',
+    func: fn,
+};
+let obj1 = {
+    name: '聽風是風',
+    o: obj
+};
+obj1.o.func() //行星飛行
+```
+
+在這裡obj1呼叫屬性o並呼叫o物件下的func，而func的this會依序來決定
+	- explicit binding
+	- implicit binding
+	- default binding
+
+在這裡沒有explicit binding，反倒可以利用implicit binding 來決定fn的this為obj而印出行星飛行
+
+
 
 
 ### implicit binding is lost
