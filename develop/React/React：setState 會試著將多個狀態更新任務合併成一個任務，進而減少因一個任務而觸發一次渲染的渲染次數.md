@@ -197,21 +197,27 @@ setLastName('Cheng');
 ## 複習
 
 #🧠 React：無論是否為class-based componet 或者 functional component，setState 每一次執行時，概念會如何執行 ->->-> `會生成以下指定任務內容的非同步任務並放進佇列，其佇列會給系統中的非同步任務X來負責處理渲染，指定任務內容為更新指定狀態值，當沒有再度接收setState時，非同步任務X開始處理佇列裡的非同步任務，會先將佇列裡的任務們所要求的狀態修改合併，這會使得多個任務合併成一個任務，其任務要求指定的狀態值會是多個任務所指定的狀態所合併的樣子，最後就以那個任務來觸發updating的生命週期`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：在class-based component中的batching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？->->-> `若狀態是以單一值來儲存的話，就直接拿目前任務的請求狀態去覆蓋先前任務所記錄的狀態`
 
 
 #🧠 React： 在class-based component中的batching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：無論狀態更新是否為class-based componet 或者 functional component，有誰能夠執行完setState便立刻更新state嗎 ->->-> `都沒有`
+<!--SR:!2022-10-12,3,250-->
 
 
 #🧠 React：無論是否為class-based componet 或者 functional component，請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令執行完畢，並且以batching形式來合併狀態，最後以最後合併狀態為結果狀態來進行一次狀態更新和出發渲染週期`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：setState1(A) setState2(B) setState3(C)，請問最後的batching結果會是什麼 ->->-> `會是個{state1: A, state2: B, state3: C}的結果，並以這個狀態來更新狀態和觸發渲染`
+<!--SR:!2022-10-12,3,250-->
 
 
 #🧠 React：setState1(A) setState2(B) setState1(A1) ，請問最後的batching結果會是什麼->->-> `會是個{state1: A1, state2: B}的結果，並以這個狀態來更新狀態和觸發渲染`
+<!--SR:!2022-10-12,3,250-->
 
 
 
@@ -222,18 +228,22 @@ setLastName('Cheng');
 
 
 #🧠 React：在class-based componet中，負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：在functional component中，負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
+<!--SR:!2022-10-12,3,250-->
 
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以單一值來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為 2、執行第二個this.setState指令任務，會先將結果物件設定為 3、執行第三個this.setState指令任務，會先將結果物件設定為 4、做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
+<!--SR:!2022-10-12,3,250-->
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
 <!--SR:!2022-10-12,3,250-->
 
 #🧠 若透過以下語法而獲得\{ FirstName: \'Morgan\', LastName: \'Cheng\' \}，請問是屬於哪種元件開發方法？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `class-based component`
+<!--SR:!2022-10-12,3,250-->
 
 
 #🧠 React：setState1(\{firstName: \'Morgan\' \}); setState1(\{lastName:\'Cheng\'\}) 請問最後結果會是什麼？為什麼->->-> `最後結果為{lastName: 'Cheng'}，因為這是functional component，而setState1則是對於同一個狀態的狀態更新函式，換言之，就是同一個狀態，所以這對於batching的結果狀態物件來說，只是對同一種屬性的覆寫`
@@ -258,38 +268,50 @@ setLastName('Cheng');
 <!--SR:!2022-10-17,8,250-->
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching?->->-> `每種狀態都有各自狀態更新用的函式，所以會以每個由useState所註冊的狀態視為結果狀態物件中的一種屬性，接著執行setState之前，一開始會定義結果狀態為空物件，- 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，直接增加該屬性至結果狀態物件 - 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：在functional component中的batching實際實現下，一開始剛開始執行batching會做什麼？ ->->-> `一開始會定義結果狀態為空物件`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：在functional component中的batching實際實現下，一開始剛開始執行batching會定義結果狀態為空物件並根據狀態的屬性是否存在來處理，請問這是什麼意思？->->-> `就是按照每個被註冊的狀態來當作屬性來納入結果狀態物件上`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，那麼如何做？>->-> `若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，直接增加該屬性至結果狀態物件、 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，那接下來如何做？ ->->-> `直接增加該屬性至結果狀態物件`
+<!--SR:!2022-10-12,3,250-->
 
-#🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，那接下來如何做？->->-> `就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
+#🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並存在結果狀態物件的屬性中，那接下來如何做？->->-> `就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
+<!--SR:!2022-10-12,3,250-->
 
 
 #🧠 請試著以functional component的方式來打造以下的狀態batching![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `const [firstName, setFirstName] = useState('');、const [lastName, setLastName] = useState('');、setFirstName('Morgan');setLastName('Cheng');`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：setFirstName('Morgan'); setLastName('Cheng'); 是屬於哪一種元件開發方法？ ->->-> `functional component`
+<!--SR:!2022-10-12,3,250-->
 
 #🧠 React：setFirstName('Morgan'); setLastName('Cheng'); 請問如何做狀態的batching？ ->->-> `當執行以下setState時，執行前會先設定空物件為結果狀態物件 {}，接著執行第一個setState-setFirstName時，其狀態物件會是{ FirstName: 'Morgan' }，然後再執行第二個setState-setLastName時，其狀態物件會是{ FirstName: 'Morgan', LastName: 'Cheng' }，做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
+<!--SR:!2022-10-12,3,250-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 有哪些主要差別(簡要就好) ->->-> `state 註冊範疇、setState 註冊範疇、setState 更新狀態方式`
+<!--SR:!2022-10-12,3,250-->
 
-#🧠 class-based component vs. functional component ： state  & setState 在 state 註冊範疇是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
-
-
-#🧠 class-based component vs. functional component ： state  & setState 對於在 state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
+#🧠 class-based component vs. functional component ： state  & setState 在 單個state 註冊範疇是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
 
 
-#🧠 class-based component vs. functional component ： state  & setState 對於在setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
+#🧠 class-based component vs. functional component ： state  & setState 對於在 單個state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
+<!--SR:!2022-10-12,3,250-->
 
-#🧠 class-based component vs. functional component ： state  & setState 對於setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
+
+#🧠 class-based component vs. functional component ： state  & setState 對於在單個setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
+<!--SR:!2022-10-12,3,250-->
+
+#🧠 class-based component vs. functional component ： state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 
 #🧠 class-based component vs. functional component ： state  & setState 對於setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
+<!--SR:!2022-10-12,3,250-->
 
 ---
 Status: #☀️ 
