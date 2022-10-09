@@ -137,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "673bafcf0104f9cf",
+  "active": "ea2974ab0c7b526e",
   "lastOpenFiles": [
     "inbox/由於this binding 會藉由scope chain 來找到，為此必須要先知道call stack 和 call site，才能理解this是隸屬於哪個Execution Context 的this，call site 會是指特定函式被呼叫的位置.md",
+    "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
+    "inbox/Untitled 4.md",
     "inbox/tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "develop/React/React：當元件因為conditional rendering集中於同一個元件而變得臃腫，可以試著將負責處理condition rendering的部分抽離出成一個獨立元件，並讓原本元件去載入獨立元件.md",
     "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
     "inbox/import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性.md",
-    "inbox/Untitled 3.md",
-    "develop/React/React batching 是將N個狀態更新指令合併成一個指令並只引發一次畫面渲染.md",
-    "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md"
+    "inbox/Untitled 3.md"
   ]
 }
