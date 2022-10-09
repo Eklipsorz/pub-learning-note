@@ -1,0 +1,5 @@
+某些受歡迎的JavaScript 函式庫的事件處理器(event handler) 相當喜愛迫使你的callback把this指向於觸發了該事件的DOM元件
+
+遺憾的是，這些工具很少會讓你自行選擇
+
+得用bind
