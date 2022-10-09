@@ -58,6 +58,30 @@ let obj = {
 重點：
 - explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼
 - 在這裡的implicit 會使用 call 、apply、bind 來直接設定this為何
+- 部分JS API會內建explicit binding 來設定this
+
+#### 案例1：
+```
+let obj1 = {
+    name: '聽風是風'
+};
+let obj2 = {
+    name: '時間跳躍'
+};
+let obj3 = {
+    name: 'echo'
+}
+var name = '行星飛行';
+function fn() {
+    console.log(this.name);
+};
+fn(); //行星飛行
+fn.call(obj1); //聽風是風
+fn.apply(obj2); //時間跳躍
+fn.bind(obj3)(); //echo
+```
+
+
 
 #### call
 
