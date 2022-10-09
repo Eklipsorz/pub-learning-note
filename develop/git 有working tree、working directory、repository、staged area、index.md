@@ -50,7 +50,7 @@ git 系統當中，有五個主要的空間名詞，
 <!--SR:!2022-11-19,108,250-->
 
 #🧠 請描述這些流程如何運作？ ![](https://git-scm.com/book/en/v2/images/areas.png) ->->-> `1. 當特定版本的內容有出現變動時，也就是Working Directory包含的內容有變動的話。2. 下達git add 指定哪些內容成為下一個版本的內容，這時會是從working directory至staging area，3. 接著再下達git commit來提交目前暫存的內容至下一個版本，具體會存進repository，也就是從staging area傳至repository` 
-<!--SR:!2022-10-09,83,248-->
+<!--SR:!2023-05-02,205,248-->
 
 ---
 Status: #🌱 
