@@ -62,7 +62,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-10-19,10,250-->
 
 #🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-17,8,250-->
 
 #🧠 React useCallback 主要解決了memo本身的重建問題，具體是什麼？ ->->-> `每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo`
 <!--SR:!2022-10-09,3,250-->
@@ -92,7 +92,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-19,10,250-->
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback回傳什麼？ ->->-> `回傳的函式物件就會以記憶體內的目前最新函式物件回傳，而不重新以baseFunction為主來從而建立新函式物件`
 <!--SR:!2022-10-19,10,250-->
 
@@ -106,7 +106,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-10-19,10,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是填入\[a, b\]，就表示什麼？ ->->-> `會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-18,9,250-->
 
 
 
