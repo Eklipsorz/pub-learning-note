@@ -73,16 +73,38 @@ call(thisArg, arg1, /* …, */ argN)
 
 重點：
 - function.protype.call 設定一個明確的物件來設定該函式的this，設定完就直接呼叫
-
+- 語法為：
+	- thisArg為要設定this的物件
+	- arg1至argN是原函式需要的參數
+```
+function.call()
+function.call(thisArg)
+function.call(thisArg, arg1, /* …, */ argN)
+```
 #### apply
+[[@mdnFunctionPrototypeApply]]
+
+> The **`apply()`** method calls the specified function with a given `this` value, and `arguments` provided as an array
+
+```
+apply(thisArg)
+apply(thisArg, argsArray)
+```
 
 
+重點：
+- function.protype.apply 設定一個明確的物件來設定該函式的this，設定完就直接呼叫
+- 語法為：
+	- thisArg為要設定this的物件
+	- arg1至argN是原函式需要的參數，會以陣列來包裹著
+```
+function.call()
+function.call(thisArg)
+function.call(thisArg, [arg1, /* …, */ argN])
+```
 
 
 ### call vs. apply vs. bind
-
-
-
 
 > **call、apply 與 bind 有什麼區別？**
 
@@ -94,12 +116,14 @@ call(thisArg, arg1, /* …, */ argN)
 
 
 重點：
-- 共同點：call、apply、bind 主要用於設定this是什麼？
+- 共同點：call、apply、bind 主要用於設定this是什麼
 - 不同點：
 	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式
 	- 設定this之後是否重新設定this：bind 屬於hardcoded，其回傳的函式不夠再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定
-	- call 和 apply 之間的參數                                                       
-
+	- call 和 apply 之間的參數種類：兩者功能相同
+		- call 是使用(this, arg1, arg2, arg3,.....)
+		- apply 使用陣列(this, \[arg1, arg2, arg3, ....\] )
+		- call 效能會略高於apply，因為apply還得再執行進一步解析陣列
 
 ###  explicit 命名緣由
 > clear and exact
@@ -121,3 +145,4 @@ Links:
 References:
 [[@readfogZhongJavaScriptDeBangDing]]
 [[@mdnFunctionPrototypeCall]]
+[[@mdnFunctionPrototypeApply]]
