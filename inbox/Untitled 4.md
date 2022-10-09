@@ -52,8 +52,8 @@ obj1.o.func() //？？
 
 
 重點：
-- implicti
-- 當函式A呼叫時，若函式A呼叫前面添加一個物件B參考，系統就會認為物件B擁有函式A並呼叫函式A
+- implicit binding：以暗示的方式來表達this 設定成什麼
+- 該方式是：當函式A呼叫時，若函式A呼叫前面添加一個物件B參考，系統就會認為物件B擁有函式A並呼叫函式A，此時函式A的this就會是物件B
 
 
 ### implicit binding is lost
@@ -108,6 +108,13 @@ obj1.fn(); //時間跳躍
 
 >雖然丟失了 obj 的隱式綁定，但是在賦值的過程中，又建立了新的隱式綁定，這裏 this 就指向了對象 obj1。
 
+
+### implicit 命名緣由為何
+
+> Something that is implicit is expressed in an indirect way.
+
+重點：
+- implicit 表示某項事物是以間接且不明確的形式來表達，通常會以暗示來表達特定事物
 ## 複習
 
 
