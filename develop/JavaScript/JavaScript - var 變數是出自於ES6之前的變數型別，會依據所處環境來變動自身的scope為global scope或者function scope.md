@@ -103,7 +103,7 @@ function xxx() {
 
 ## 複習
 #🧠 在ES6之前的scope是有哪些種類(提示：全x、函x)->->-> `只有global scope、function scope`
-<!--SR:!2022-10-09,73,250-->
+<!--SR:!2023-04-14,187,250-->
 
 #🧠  var 變數有沒有scope 概念？ 具體來說是什麼？ 它出自於ES6? ES6以前？->->-> `var變數是有的，具體來說它出自於只有global scope、function scope的ES6以前版本，而var變數的scope本身會依賴著自己所處的環境是不是函式而決定是否為function scope？還是global scope`
 <!--SR:!2023-02-19,152,250-->

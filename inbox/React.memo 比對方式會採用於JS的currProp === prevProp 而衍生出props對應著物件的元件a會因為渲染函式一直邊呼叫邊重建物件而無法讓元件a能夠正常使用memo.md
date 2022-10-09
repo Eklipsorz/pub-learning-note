@@ -92,7 +92,7 @@ Button RUNNING
 
 
 #🧠 React：上圖為App，下圖為Button.js，請問button的memo有發揮正常作用嗎？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664983692/blog/react/memo/react-memo-prop-function-app_q4tddw.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664982245/blog/react/memo/react-memo-prop-function-button_ufrc9q.png) ->->-> `並沒有，由於每一次渲染函式的執行都會生成新的函式物件來傳遞至Button的prop，比較起來的話，會一直比較著該物件的新heap 記憶體位址，這造成memo一直判定prop跟先前的prop不同而一直執行button的渲染函式`
-<!--SR:!2022-10-09,3,250-->
+<!--SR:!2022-10-15,6,250-->
 
 
 #🧠 React：上圖為App，下圖為Button.js，請問button的memo無法使用，那麼會有什麼樣效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664983692/blog/react/memo/react-memo-prop-function-app_q4tddw.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664982245/blog/react/memo/react-memo-prop-function-button_ufrc9q.png)  ->->-> `最主要是白白耗掉React.memo本身的空間成本、計算成本`
