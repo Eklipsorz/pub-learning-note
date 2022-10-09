@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 4.md",
+            "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "a5efb9a66b0914de",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 4.md",
+                "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 4.md",
+                "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 4.md"
+                "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md"
               }
             }
           }
@@ -141,7 +153,7 @@
   "lastOpenFiles": [
     "inbox/由於this binding 會藉由scope chain 來找到，為此必須要先知道call stack 和 call site，才能理解this是隸屬於哪個Execution Context 的this，call site 會是指特定函式被呼叫的位置.md",
     "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
-    "inbox/Untitled 4.md",
+    "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
     "inbox/tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "develop/React/React：當元件因為conditional rendering集中於同一個元件而變得臃腫，可以試著將負責處理condition rendering的部分抽離出成一個獨立元件，並讓原本元件去載入獨立元件.md",

@@ -57,6 +57,20 @@ obj1.o.func() //？？
 - 細節1：
 	- 若函式A呼叫前有多個物件參考的話，會挑選離函式A呼叫較近的物件來設定this
 
+#### 案例1
+
+```
+function fn() {
+    console.log(this.name);
+};
+let obj = {
+    name: '聽風是風',
+    func: fn
+};
+obj.func() //聽風是風
+```
+
+
 
 #### 案例2 
 
@@ -80,12 +94,12 @@ obj1.o.func() //行星飛行
 	- implicit binding
 	- default binding
 
-在這裡沒有explicit binding，反倒可以利用implicit binding 來決定fn的this為obj而印出行星飛行
+在這裡沒有explicit binding，反倒可以利用implicit binding下- **若函式A呼叫前有多個物件參考的話，會挑選離函式A呼叫較近的物件來設定this** 來決定fn的this為obj而印出行星飛行
 
 
 
 
-### implicit binding is lost
+### losing implicit binding
 
 > #### **2）、隱式丟失**
 
@@ -136,6 +150,68 @@ obj1.fn(); //時間跳躍
 ```
 
 >雖然丟失了 obj 的隱式綁定，但是在賦值的過程中，又建立了新的隱式綁定，這裏 this 就指向了對象 obj1。
+
+重點：
+- losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding
+- 特定因素：
+	- 參數傳遞：implicit binding的函式以參數傳遞至一個特定函式並在那呼叫參數，該函式的執行環境的this為其他物件。
+	- 變數賦值：implicit binding的函式以變數賦值至一個本身就沒搭配任何物件的變數或者搭配任意物件的變數
+	
+
+
+#### 因素1 ：參數傳遞
+
+```
+var name = '行星飛行';
+let obj = {
+    name: '聽風是風',
+    fn: function () {
+        console.log(this.name);
+    }
+};
+function fn1(param) {
+    param();
+};
+fn1(obj.fn);//行星飛行
+```
+
+在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，該fn1的this本身就因為default binding 而綁定成global object，所以就會以global object來呼叫param()
+
+
+#### 因素2：變數賦值
+```
+var name = '行星飛行';
+let obj = {
+    name: '聽風是風',
+    fn: function () {
+        console.log(this.name);
+    }
+};
+let fn1 = obj.fn;
+fn1(); //行星飛行
+```
+
+在這裡會是將obj.fn的參照位址儲存在fn1上，並讓沒有用任何物件搭配的fn1來呼叫，這使得系統會直接採用default binding所設定的global object來呼叫fn1
+
+```
+var name = '行星飛行';
+let obj = {
+    name: '聽風是風',
+    fn: function () {
+        console.log(this.name);
+    }
+};
+let obj1 = {
+    name: '時間跳躍'
+}
+obj1.fn = obj.fn;
+obj1.fn(); //時間跳躍
+```
+
+在這裡將obj.fn的參照位址儲存在obj1的fn變數上，並讓有用obj1的fn來呼叫，這會使得fn的this變成以obj1為this來呼叫。
+
+
+
 
 
 ### implicit 命名緣由為何
