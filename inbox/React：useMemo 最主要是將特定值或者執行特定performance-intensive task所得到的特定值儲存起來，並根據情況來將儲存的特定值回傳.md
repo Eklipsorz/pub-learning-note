@@ -126,10 +126,10 @@ export default React.memo(DemoList);
 ## 複習
 
 #🧠 React useMemo 什麼時候執行觸發 ->->-> `useMemo 在對應元件的render function執行時，才會被執行`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 所儲存的內容為何 ->->-> `- 若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較 - 若為primitivie data value，就以識別字來找到stack記憶體區塊，並以區塊內容的primitive data value 來比較`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 所儲存最主要的儲存內容為何(以記憶體區塊來說) ->->-> `以原本識別字所對應的stack記憶體區塊內容為主`
 <!--SR:!2022-10-10,3,250-->
@@ -138,7 +138,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法是什麼？ ->->-> `const memoizedValue = useMemo(createResultFn, [deps]);`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
 <!--SR:!2022-10-20,10,250-->
@@ -154,7 +154,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，代表著什麼？ ->->-> `系統就認為不會有任何變動的deps`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，useMemo會如何做？ ->->-> `只回傳記憶體的目前內容，不執行createResultFn來產生結果值`
@@ -164,7 +164,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，useMemo會如何做？ ->->-> `系統就認為會是一直變動的deps，並且會執行createResultFn來得到其回傳值，接著用回傳值來儲存在記憶體中。`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 
 
