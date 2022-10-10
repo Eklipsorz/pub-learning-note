@@ -144,7 +144,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-20,10,250-->
 
 #🧠 React React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 注意事項是什麼 ->->-> `函式物件得要有return 特定值的手段`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
 <!--SR:!2022-10-20,10,250-->
