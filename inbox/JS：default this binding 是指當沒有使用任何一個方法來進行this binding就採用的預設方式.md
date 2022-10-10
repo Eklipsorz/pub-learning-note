@@ -144,7 +144,7 @@ function fn() {
 
 
 ---
-Status: #🌱 #📝 
+Status: #🌱 
 Tags:
 [[JavaScript]]
 Links:
