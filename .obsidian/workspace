@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+            "file": "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "c2e467a6b70f92aa",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
             "mode": "source",
             "source": false
           }
@@ -57,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+                "file": "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+                "file": "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md"
+                "file": "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md"
               }
             }
           }
@@ -136,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ee4e568356a0faf9",
+  "active": "c2e467a6b70f92aa",
   "lastOpenFiles": [
-    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
-    "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
-    "inbox/Untitled 4.md",
-    "inbox/React：Context 命名法則 & 使用法則.md",
-    "develop/Database/Master-Master Replication 架構是每個資料庫系統皆為主要資料庫系統，都會將特定資料複製成副本給所有資料庫系統的資料庫，以此讓多個資料庫系統共享資料.md",
-    "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
-    "inbox/explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
-    "inbox/Untitled 6.md",
+    "inbox/由於this binding 會藉由scope chain 來找到，為此必須要先知道call stack 和 call site，才能理解this是隸屬於哪個Execution Context 的this，call site 會是指特定函式被呼叫的位置.md",
+    "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
+    "inbox/import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性.md",
+    "inbox/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
+    "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
     "inbox/Untitled 3.md",
-    "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md"
+    "inbox/explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
+    "inbox/Untitled 4.md",
+    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md"
   ]
 }

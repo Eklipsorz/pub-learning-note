@@ -48,7 +48,7 @@ foo()
 	- implicit binding
 	- default binding 
 
-結果最後是以default binding 來確定this會指向為global object5
+結果最後是以default binding 來確定this會指向為global object
 
 
 
@@ -96,7 +96,7 @@ function fn() {
 
 重點：
 - 若目前執行環境或者全域環境下設定成嚴格模式，就會讓default binding 改指向為undefined
-- 若目前執行環境下沒設定嚴格模式，就會讓default binding 改指向為global object
+- 若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式，就會讓default binding 改指向為global object
 
 #### 例子1：
 
@@ -116,6 +116,26 @@ function fn() {
 ```
 
 ## 複習
+
+#🧠 JS：default this binding  會是什麼？->->-> `指當沒有使用任何一個方法來進行this binding就採用的預設方式`
+
+#🧠 JS：default this binding  方式為何 ？ ->->-> `會根據執行環境是否處於嚴格模式來將this設定成global 或者 undefined`
+
+
+#🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於非嚴格模式 ->->-> `this 會被設定成 global object，瀏覽器中會是指window，nodejs則是指global`
+
+#🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於嚴格模式 ->->-> `this 會被設定成undefined`
+
+#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `首先當foo執行時，會先依序以下面方式來嘗試卻病foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
+
+
+#🧠 若目前執行環境或者全域環境下設定成嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為undefined`
+
+#🧠 default this binding 處於何種情況下才會將this設定成undefined? ->->-> `若目前執行環境或者全域環境下設定成嚴格模式`
+
+#🧠 若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為global object`
+
+#🧠 Question :: ->->-> ``
 
 
 ---
