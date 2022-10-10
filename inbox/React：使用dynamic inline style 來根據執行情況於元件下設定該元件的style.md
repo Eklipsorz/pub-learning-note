@@ -95,10 +95,10 @@ object 會以{}來表示，其屬性名稱和屬性值會搭配css樣式下的�
 ## 複習
 
 #🧠 inline style 會有的問題 ->->-> `由於inline style 本身在CSS Specificity 上就擁有較高的權重，這使得未來開發上得注意是否會因為權重過高而難以調整`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 原生HTML DOM 設定方式 vs.  React 體系下的 dynamic inline style 相同點是什麼？ ->->-> `這兩者都是憑藉著CSS Specificity上的權重值來替代對應的樣式屬性`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 原生HTML DOM 設定dynamic inline style方式 vs.  React 體系下的 dynamic inline style 不同點是什麼？ ->->-> `原生HTML DOM 設定方式 是用字串，React 體系下的 dynamic inline style則是以物件來表示，屬性名稱會是css原生語法的lower-camel case版本，屬性值是字串`
 <!--SR:!2022-10-10,3,250-->

@@ -147,7 +147,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是什麼？->->-> `第二個參數為依賴項目所構成的陣列，主要依據他們來決定是否回傳記憶體儲存的內容，`
@@ -158,7 +158,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，useMemo會如何做？ ->->-> `只回傳記憶體的目前內容，不執行createResultFn來產生結果值`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，代表著什麼？ ->->-> `系統就認為會是一直變動的deps`
 <!--SR:!2022-10-20,10,250-->
@@ -183,7 +183,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 適用場景為 props以非函式的物件為內容的元件並納入使用memo，為什麼？ ->->-> `由於物件會因為渲染函式而重造並得到不同的記憶體位址，而無法正常使用memo的功能`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #💻 請至/react-builder/question-review/useMemo-question領取題目，並到fix-items-problem分支，現在想要在App元件減少DemoList重複性渲染，但現實上的實現代碼並沒辦法做到，請試著解決 ->->-> `https://github.com/academind/react-complete-guide-code/blob/12-a-look-behind-the-scenes/code/07-finished/src/App.js`
 <!--SR:!2022-10-20,10,250-->
