@@ -75,8 +75,8 @@ fn1() //TypeError: Cannot read property 'a' of undefined
 "use strict";
 var name = '聽風是風';
 function fn() {
-    console.log(this); //undefined
-    console.log(this.name);//報錯
+    console.log(this); 
+    console.log(this.name);
 };
 fn();
 ```
@@ -85,8 +85,8 @@ fn();
 ```
 var name = '聽風是風';
 function fn() {
-    console.log(this); //window
-    console.log(this.name); //聽風是風
+    console.log(this); 
+    console.log(this.name); 
 };
 (function () {
     "use strict";
@@ -126,7 +126,7 @@ function fn() {
 
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於嚴格模式 ->->-> `this 會被設定成undefined`
 
-#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `首先當foo執行時，會先依序以下面方式來嘗試卻病foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
+#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `會印出2。 首先當foo執行時，會先依序以下面方式來嘗試卻病foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
 
 
 #🧠 若目前執行環境或者全域環境下設定成嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為undefined`
@@ -135,7 +135,12 @@ function fn() {
 
 #🧠 若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為global object`
 
-#🧠 Question :: ->->-> ``
+#🧠 default this binding 處於何種情況下才會將this設定成global object?  ->->-> `若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式`
+
+#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665410534/blog/javascript/this-binding/strict-default-this-binding-example1_rqracf.png) ->->-> `會印出undefined和報錯，因為處於嚴格模式下的default this binding，會預設將this導向至undefined`
+
+#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665410534/blog/javascript/this-binding/strict-default-this-binding-example2_fa4qff.png) ->->-> `會印出global object的資訊。這是因為目前執行環境或者全域執行環境沒設定嚴格模式，這使得default this binding會直接將this設定為global object`
+
 
 
 ---
