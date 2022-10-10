@@ -141,7 +141,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 注意事項是什麼 ->->-> `函式物件得要有return 特定值的手段`
 <!--SR:!2022-10-10,3,250-->
@@ -161,7 +161,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-10,3,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，代表著什麼？ ->->-> `系統就認為會是一直變動的deps`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，useMemo會如何做？ ->->-> `系統就認為會是一直變動的deps，並且會執行createResultFn來得到其回傳值，接著用回傳值來儲存在記憶體中。`
 <!--SR:!2022-10-10,3,250-->
