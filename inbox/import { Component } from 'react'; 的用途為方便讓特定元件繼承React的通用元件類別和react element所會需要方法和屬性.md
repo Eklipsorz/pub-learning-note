@@ -11,7 +11,7 @@
 ## 複習
 
 #🧠 import \{ Component \} from\'react\'; 的用途為何 ->->-> `方便讓特定元件繼承React的通用元件類別、Component 通用元件類別本身提供react element所會需要方法和屬性，如props屬性`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 
 

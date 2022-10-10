@@ -109,7 +109,7 @@
 ## 複習
 
 #🧠 HTML 、 Javascript 以及 CSS 在同一個HTML DOM文件的載入關係為何->->-> `> 1.  Javascript 會阻擋 DOM 的建構 2.  CSS 會阻擋 Javascript 的執行 3.  CSS 會影響頁面的 Rendering`
-<!--SR:!2022-10-11,28,250-->
+<!--SR:!2022-12-24,74,250-->
 
 #🧠 同一份DOM文件的載入，為何CSSOM會阻塞渲染？->->-> `由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保Rendering能夠使用到CSSOM，會讓CSSOM建構任務阻塞JS。`
 <!--SR:!2022-12-01,58,250-->
@@ -144,7 +144,7 @@
 
 
 #🧠  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) 這會引發閃爍問題，請問如何解決？ ->->-> `將link標籤或者style標籤都放在所有DOM之前，比如head標籤`
-<!--SR:!2022-10-11,28,250-->
+<!--SR:!2022-12-24,74,250-->
 
 #🧠  若遇到link標籤或者style標籤之前就有DOM，瀏覽器會如何處理？->->-> ` 若遇到link標籤或者style標籤之前就有DOM，因爲它會認為沒有樣式要載入，所以就以預設的設定就先渲染`
 <!--SR:!2022-12-10,64,250-->
