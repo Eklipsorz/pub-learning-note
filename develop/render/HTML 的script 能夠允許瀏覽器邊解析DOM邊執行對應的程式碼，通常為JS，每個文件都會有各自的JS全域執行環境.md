@@ -89,7 +89,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 
 #🧠 同一個HTML檔案中，JavaScript有哪些寫法？ ->->-> `<script src="javascript.js"></script> 和 <script>指令</script>`
-<!--SR:!2022-10-10,52,250-->
+<!--SR:!2023-02-17,130,250-->
 
 
 #🧠  HTML 檔案下會有script標籤是做什麼？ ->->-> `來定義邊解析HTML時可以邊額外執行的程式碼或者可存取的資料，其程式碼會是以瀏覽器能夠解析並執行的為主，比如JavaScript`

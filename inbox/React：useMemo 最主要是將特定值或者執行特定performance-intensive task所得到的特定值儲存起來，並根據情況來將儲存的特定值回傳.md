@@ -132,10 +132,10 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 所儲存最主要的儲存內容為何(以記憶體區塊來說) ->->-> `以原本識別字所對應的stack記憶體區塊內容為主`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-18,8,250-->
 
 #🧠 React useMemo 是什麼？做什麼？->->-> `最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳或者重新執行performance-intensive task來獲得特定值`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 語法是什麼？ ->->-> `const memoizedValue = useMemo(createResultFn, [deps]);`
 <!--SR:!2022-10-20,10,250-->
@@ -174,13 +174,13 @@ export default React.memo(DemoList);
 
 
 #🧠 假設有個App.js，預期它會渲染出特定幾個數字排列後的清單，該元件夾雜著DemoList 和 Button 這兩個元件，在這裡App元件會賦予一系列沒排列好的數字給DemoList元件來排序並要求它呈現最後排序後的樣子，原本想利用useMemo來解決React.memo無法正常作用的問題，但現在出了問題，請問是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665078609/blog/react/useMemo/useMemo-app-example_e9bxym.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665078608/blog/react/useMemo/useMemo-DemoList-example_av5abf.png)->->-> `實際上若直接在DemoList.js使用useMemo並以items作為deps，會因為每次接收到的items記憶體位址而不同，沒辦法以記憶體儲存的結果來回傳，換言之，沒使用到useMemo的正常好處`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-19,9,250-->
 
 
 
 
 #🧠 React useMemo 適用場景為->->-> `經由複雜計算才能夠獲取到的內容，或者執行performance-intensive才能獲得的內容、props以非函式的物件為內容的元件並納入使用memo`
-<!--SR:!2022-10-10,3,250-->
+<!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 適用場景為 props以非函式的物件為內容的元件並納入使用memo，為什麼？ ->->-> `由於物件會因為渲染函式而重造並得到不同的記憶體位址，而無法正常使用memo的功能`
 <!--SR:!2022-10-20,10,250-->
