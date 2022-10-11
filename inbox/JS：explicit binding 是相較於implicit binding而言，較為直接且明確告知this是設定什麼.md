@@ -195,6 +195,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 
 
 #🧠 explicit binding是以較為直接且明確告知this是設定什麼，具體是什麼？ ->->-> `在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何`
+<!--SR:!2022-10-14,3,250-->
 
 #🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
 
@@ -218,6 +219,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 
 
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步解析陣列`
+<!--SR:!2022-10-14,3,250-->
 
 
 ---
