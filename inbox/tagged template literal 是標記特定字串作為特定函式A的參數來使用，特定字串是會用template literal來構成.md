@@ -81,7 +81,7 @@ myTag`that ${ person } is a ${ age }`
 #🧠 tagged template literal中的tag function會是回傳什麼型別的資料？ ->->-> `任意型別的資料`
 <!--SR:!2022-12-12,64,250-->
 #🧠 tagged template literal中的tag function若沒指定回傳，那麼會回傳什麼？ ->->-> `undefined`
-<!--SR:!2022-10-11,26,250-->
+<!--SR:!2022-12-19,69,250-->
 
 ---
 Status: #🌱 

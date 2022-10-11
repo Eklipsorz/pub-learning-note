@@ -83,7 +83,7 @@ hooks 是：
 <!--SR:!2022-10-21,10,250-->
 
 #🧠 React：functional component  是什麼？ ->->-> `會是一般函式宣告，其回傳內容為JSX Element`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠 React：functional component  的語法是什麼？ ->->-> `function Component1() { ... return (JSX Element ) }`
 <!--SR:!2022-10-11,2,230-->
@@ -108,7 +108,7 @@ hooks 是：
 <!--SR:!2022-10-11,3,250-->
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
 <!--SR:!2022-10-11,3,250-->
@@ -119,11 +119,11 @@ hooks 是：
 
 
 #🧠  React：hook 是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #💻 請至/react-builder/question-review/class-based-component-question 領取題目，並到user-to-class分支，請將User轉換成class-based component，記住功能和渲染內容必須是一樣的 ->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/02-adding-a-first-class-based-cmp/src/components/User.js`
 <!--SR:!2022-10-17,6,249-->
