@@ -188,8 +188,10 @@ function.call(thisArg, [arg1, /* …, */ argN])
 ## 複習
 
 #🧠  explicit 命名緣由 ->->-> `為明確且準確的`
+<!--SR:!2022-10-14,3,250-->
 
 #🧠 explicit binding 是什麼？ ->->-> `是以較為直接且明確告知this是設定什麼`
+<!--SR:!2022-10-14,3,250-->
 
 
 #🧠 explicit binding是以較為直接且明確告知this是設定什麼，具體是什麼？ ->->-> `在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何`
@@ -199,12 +201,15 @@ function.call(thisArg, [arg1, /* …, */ argN])
 #🧠 function.protype.call() 是什麼？用途是什麼 ->->-> `設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
 
 #🧠 function.protype.call() 語法是什麼？ ->->-> `function.call(thisArg, arg1, /* …, */ argN)`
+<!--SR:!2022-10-14,3,250-->
 
 #🧠 function.protype.call() 語法是function.call(thisArg, arg1, \/\* …, \*\/ argN)，請問function、thisArg和arg1至argN會是什麼？>->-> `- function 為要呼叫的函式	- thisArg為要設定this的物件 - arg1至argN是原函式需要的參數`
 
 #🧠 function.protype.apply() 是什麼？->->-> `function.protype.apply 設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
+<!--SR:!2022-10-14,3,250-->
 
 #🧠 function.protype.apply() 的語法是什麼？ ->->-> `function.call(thisArg, [arg1, /* …, */ argN])`
+<!--SR:!2022-10-14,3,250-->
 
 #🧠 function.protype.apply() 的語法是function.call(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
 
