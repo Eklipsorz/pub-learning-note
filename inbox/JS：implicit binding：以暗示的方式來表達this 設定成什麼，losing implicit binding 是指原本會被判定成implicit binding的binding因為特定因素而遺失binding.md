@@ -202,13 +202,41 @@ let obj = {
 function fn1(param) {
     param();
 };
+fn1(obj.fn);
+```
+
+
+```
+var name = '行星飛行';
+let obj = {
+    name: '聽風是風',
+    fn: function () {
+        console.log(this.name);
+    }
+};
+function fn1(param) {
+    param();
+};
 fn1(obj.fn);//行星飛行
 ```
 
-在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，該fn1的this本身就因為default binding 而綁定成global object，所以就會以global object來呼叫param()
+在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，而在這裡並沒有足夠的特徵能讓它以explicit binding、new binding、implicit binding來決定，所以最後只能選擇使用default binding來以global object來呼叫param()
 
 
 #### 因素2：變數賦值
+
+```
+var name = '行星飛行';
+let obj = {
+    name: '聽風是風',
+    fn: function () {
+        console.log(this.name);
+    }
+};
+let fn1 = obj.fn;
+fn1(); 
+```
+
 ```
 var name = '行星飛行';
 let obj = {
@@ -221,7 +249,7 @@ let fn1 = obj.fn;
 fn1(); //行星飛行
 ```
 
-在這裡會是將obj.fn的參照位址儲存在fn1上，並讓沒有用任何物件搭配的fn1來呼叫，這使得系統會直接採用default binding所設定的global object來呼叫fn1
+在這裡會是將obj.fn的參照位址儲存在fn1變數上，並，這使得系統會直接採用default binding所設定的global object來呼叫fn1
 
 ```
 var name = '行星飛行';
@@ -239,9 +267,6 @@ obj1.fn(); //時間跳躍
 ```
 
 在這裡將obj.fn的參照位址儲存在obj1的fn變數上，並讓有用obj1的fn來呼叫，這會使得fn的this變成以obj1為this來呼叫。
-
-
-
 
 
 ### implicit 命名緣由為何
@@ -271,13 +296,22 @@ obj1.fn(); //時間跳躍
 #🧠 請問這是obj.o.func呼叫後的執行環境會被系統使用哪個this binding方法？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是以implicit binding。由於沒有出現new binding、explicit binding的跡象，所以改試著以implicit binding來判定，結果因為函式呼叫前面有物件，而這正是implicit binding的識別特徵`
 
 
-#🧠 losing implicit binding  是什麼？ ->->-> `是指原本會被判定成implicit binding的binding因為特定因素而遺失binding`
+#🧠 losing implicit binding  是什麼？ ->->-> ` losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding `
 
-#🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding，其因素通常是什麼？(簡要說明)->->-> `參數傳遞、變數賦值`
+#🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其因素通常是什麼？(簡要說明)->->-> `參數傳遞、變數賦值`
 
-#🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding，其特定因素之一-參數傳遞會是指什麼？ ->->-> ``
+#🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-參數傳遞會是指什麼？ ->->-> `implicit binding的函式B以參數傳遞至一個特定函式A並在那呼叫參數，該函式A呼叫函式B的形式會致使函式B的this改變`
 
-#🧠 Question :: ->->-> ``
+#🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-變數賦值會是指什麼？ ->->-> `implicit binding的函式B以參照位置賦值至一個變數，而這個變數呼叫函式B的形式會致使函式B的this改變`
+
+#🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding ，原本的binding會是指的是？ ->->-> `implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B；implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window`
+
+#🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png) ->->-> `window，且印出行星飛行。在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，而在這裡並沒有足夠的特徵能讓它以explicit binding、new binding、implicit binding來決定，所以最後只能選擇使用default binding來以global object來呼叫param()`
+
+
+#🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-variable-implicit-binding-example_scvv3n.png) ->->-> `window，會印出行星飛行。`
+
+
 
 
 ---
