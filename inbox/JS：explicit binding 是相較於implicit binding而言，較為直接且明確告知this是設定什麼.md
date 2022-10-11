@@ -56,8 +56,8 @@ let obj = {
 ```
 
 重點：
-- explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼
-- 在這裡的implicit 會使用 call 、apply、bind 來直接設定this為何
+- explicit binding 是相較於implicit binding而言，是以較為直接且明確告知this是設定什麼
+- 在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何
 - call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容，bind因回傳函式是直接與參數、this寫死，而很難重複選擇其他物件做為this來決定要執行什麼
 - 部分JS API會內建explicit binding 方法，如forEach
 ```
@@ -126,6 +126,7 @@ call(thisArg, arg1, /* …, */ argN)
 重點：
 - function.protype.call 設定一個明確的物件來設定該函式的this，設定完就直接呼叫
 - 語法為：
+	- function 為要呼叫的函式
 	- thisArg為要設定this的物件
 	- arg1至argN是原函式需要的參數
 ```
@@ -147,6 +148,7 @@ apply(thisArg, argsArray)
 重點：
 - function.protype.apply 設定一個明確的物件來設定該函式的this，設定完就直接呼叫
 - 語法為：
+	- function 為要呼叫的函式
 	- thisArg為要設定this的物件
 	- arg1至argN是原函式需要的參數，會以陣列來包裹著
 ```
@@ -175,7 +177,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 	- call 和 apply 之間的參數種類：兩者功能相同
 		- call 是使用(this, arg1, arg2, arg3,.....)
 		- apply 使用陣列(this, \[arg1, arg2, arg3, ....\] )
-		- call 效能會略高於apply，因為apply還得再執行進一步解析陣列
+		- call 效能會略高於apply，因為apply還得再執行進一步解析陣列才能獲取參數
 
 ###  explicit 命名緣由
 > clear and exact
@@ -184,6 +186,33 @@ function.call(thisArg, [arg1, /* …, */ argN])
 - explicit 為明確且準確的
 
 ## 複習
+
+#🧠  explicit 命名緣由 ->->-> `為明確且準確的`
+
+#🧠 explicit binding 是什麼？ ->->-> `是以較為直接且明確告知this是設定什麼`
+
+
+#🧠 explicit binding是以較為直接且明確告知this是設定什麼，具體是什麼？ ->->-> `在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何`
+
+#🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
+
+#🧠 function.protype.call() 是什麼？用途是什麼 ->->-> `設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
+
+#🧠 function.protype.call() 語法是什麼？ ->->-> `function.call(thisArg, arg1, /* …, */ argN)`
+
+#🧠 function.protype.call() 語法是function.call(thisArg, arg1, \/\* …, \*\/ argN)，請問function、thisArg和arg1至argN會是什麼？>->-> `- function 為要呼叫的函式	- thisArg為要設定this的物件 - arg1至argN是原函式需要的參數`
+
+#🧠 function.protype.apply() 是什麼？->->-> `function.protype.apply 設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
+
+#🧠 function.protype.apply() 的語法是什麼？ ->->-> `function.call(thisArg, [arg1, /* …, */ argN])`
+
+#🧠 function.protype.apply() 的語法是function.call(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
+
+
+#🧠 function.apply vs. function.call共同點是什麼->->-> `指定this為特定物件並且呼叫對應函式、呼叫完畢之後，下一次還想使用相同的物件作為this，必需重新執行apply、call並指定`
+
+
+#🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步解析陣列`
 
 
 ---
