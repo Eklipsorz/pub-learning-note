@@ -89,14 +89,14 @@ hooks 是：
 <!--SR:!2022-10-16,5,230-->
 
 #🧠 React：class-based component 搭配render 的基本語法是什麼？ ->->-> `class Component1 extends React.Component { render() { ... } }`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \}  中沒有Constructor，請問能夠正常執行嗎？為什麼->->-> `能夠正常執行，系統會根據目前類別是否繼承其他類別而給予預設的constructor來方便建立對應類別的實例`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠 當元件類別Component1以標籤來使用，如\<Component1 \/\> React會如何處理該元件 ->->-> `會以Component1 這類別來建構對應實例，並呼叫該實例的render方法`
 <!--SR:!2022-10-21,10,250-->

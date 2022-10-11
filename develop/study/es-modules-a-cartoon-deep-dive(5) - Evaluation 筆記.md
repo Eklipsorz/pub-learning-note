@@ -147,7 +147,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 <!--SR:!2022-11-25,55,190-->
 
 #🧠 ES Module：主要在什麼時候會載入其模組內容？ ->->-> `編譯時期會將模組的import/export位置指向對應模組識別字在記憶體上的位置、執行時期會在透過執行exporting module的top-level code，並讓importing module在module map上來找到對應模組的緩存來將識別字指向至對應記憶體位置`
-<!--SR:!2022-10-11,44,245-->
+<!--SR:!2023-01-24,105,245-->
 
 ---
 Status: #🌱 
