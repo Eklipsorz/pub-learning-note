@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "ee00b40bf7172a18",
+        "id": "462c6470f347352c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md",
+            "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "462c6470f347352c",
+        "id": "680ca17bb4bc3853",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md",
+                "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md",
+                "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md"
+                "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md"
               }
             }
           }
@@ -149,10 +149,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ee00b40bf7172a18",
+  "active": "680ca17bb4bc3853",
   "lastOpenFiles": [
-    "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
     "inbox/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md",
+    "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
     "inbox/Untitled 4.md",
     "inbox/Untitled 6.md",
     "inbox/Untitled 3.md",
