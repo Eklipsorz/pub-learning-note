@@ -179,10 +179,13 @@ obj1.fn(); //時間跳躍
 >雖然丟失了 obj 的隱式綁定，但是在賦值的過程中，又建立了新的隱式綁定，這裏 this 就指向了對象 obj1。
 
 重點：
-- losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 implicit binding 
+- losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding 
+	- 原本的binding會是指的是：
+		-  implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B
+		-  implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window
 - 特定因素：
-	- 參數傳遞：implicit binding的函式以參數傳遞至一個特定函式並在那呼叫參數，該函式的執行環境的this為其他物件。
-	- 變數賦值：implicit binding的函式以變數賦值至一個本身就沒搭配任何物件的變數或者搭配任意物件的變數
+	- 參數傳遞：implicit binding的函式B以參數傳遞至一個特定函式A並在那呼叫參數，該函式A呼叫函式B的形式會致使函式B的this改變
+	- 變數賦值：implicit binding的函式B以參照位置賦值至一個變數，而這個變數呼叫函式B的形式會致使函式B的this改變
 	
 
 
