@@ -177,7 +177,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 	- call 和 apply 之間的參數種類：兩者功能相同
 		- call 是使用(this, arg1, arg2, arg3,.....)
 		- apply 使用陣列(this, \[arg1, arg2, arg3, ....\] )
-		- call 效能會略高於apply，因為apply還得再執行進一步解析陣列才能獲取參數
+		- 在單純改變特定函式呼叫的this之場景，call 效能會略高於apply，因為apply還得再執行進一步解析陣列才能獲取參數
 
 ###  explicit 命名緣由
 > clear and exact
