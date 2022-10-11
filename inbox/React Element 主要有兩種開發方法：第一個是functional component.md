@@ -77,7 +77,7 @@ hooks 是：
 ## 複習
 
 #🧠 建立React Element 有哪兩種開發方法？ ->->-> `class-based component、functional component`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
 <!--SR:!2022-10-21,10,250-->
@@ -86,7 +86,7 @@ hooks 是：
 <!--SR:!2022-10-21,10,250-->
 
 #🧠 React：functional component  的語法是什麼？ ->->-> `function Component1() { ... return (JSX Element ) }`
-<!--SR:!2022-10-11,2,230-->
+<!--SR:!2022-10-16,5,230-->
 
 #🧠 React：class-based component 搭配render 的基本語法是什麼？ ->->-> `class Component1 extends React.Component { render() { ... } }`
 <!--SR:!2022-10-11,3,250-->
@@ -102,16 +102,16 @@ hooks 是：
 <!--SR:!2022-10-21,10,250-->
 
 #🧠 實際上React Element會在什麼時候被建立成實例並被呼叫render ->->-> `當這類型元件以標籤來使用`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `具體會是給functional component，由於元件最早是以class-based component來開發，為了讓開發難度降低才將對應語法做成語法糖並以一般函式來使用`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
 <!--SR:!2022-10-21,10,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
-<!--SR:!2022-10-11,3,250-->
+<!--SR:!2022-10-21,10,250-->
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`
