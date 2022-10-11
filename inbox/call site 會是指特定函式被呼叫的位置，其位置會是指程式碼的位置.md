@@ -6,8 +6,9 @@
 > In programming, a spot of a function or subroutine is the location (line of code) where the function is called (or may be called, through dynamic dispatch). A call site is where zero or more arguments are passed to the function, and zero or more return values are received.
 
 重點：
-- ~~this binding 會藉由scope chain 來找到，為此必須要先知道call stack 和 call site，才能理解this是隸屬於哪個Execution Context 的this~~
-- call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置或者處於哪個作用域來呼叫特定函式
+- call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置
+- call site 用途：
+	- 用來判斷目前執行環境的this 會是什麼之依據
 
 ### call site 案例
 ```
@@ -57,6 +58,10 @@ baz(); // baz 的呼叫地點
 
 
 ## 複習
+
+#🧠 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485554/blog/javascript/this-binding/call-site/call-site-example_nbpxxl.png) ->->-> ``
+
+#🧠 Question :: ->->-> ``
 
 
 ---

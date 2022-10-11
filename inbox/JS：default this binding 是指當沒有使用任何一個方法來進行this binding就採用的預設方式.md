@@ -43,7 +43,7 @@ var a = 2;
 foo()
 ```
 
-首先當foo執行時，會先依序以下面方式來嘗試卻病foo裡頭的this是什麼
+首先當foo執行時，會先依序以下面方式來嘗試確定foo裡頭的this是什麼
 	- explicit binding 
 	- implicit binding
 	- default binding 
@@ -130,7 +130,7 @@ function fn() {
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於嚴格模式 ->->-> `this 會被設定成undefined`
 <!--SR:!2022-10-14,3,250-->
 
-#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `會印出2。 首先當foo執行時，會先依序以下面方式來嘗試卻病foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
+#🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `會印出2。 首先當foo執行時，會先依序以下面方式來嘗試確定foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
 <!--SR:!2022-10-13,2,248-->
 
 
@@ -159,6 +159,6 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
-[[由於this binding 會藉由scope chain 來找到，為此必須要先知道call stack 和 call site，才能理解this是隸屬於哪個Execution Context 的this，call site 會是指特定函式被呼叫的位置]]
+[[call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置]]
 References:
 [[@readfogZhongJavaScriptDeBangDing]]

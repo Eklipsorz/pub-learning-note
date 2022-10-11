@@ -193,7 +193,7 @@ Tags:
 Links:
 [[JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding]]
 [[JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式]]
-[[由於this binding 會藉由scope chain 來找到，為此必須要先知道call stack 和 call site，才能理解this是隸屬於哪個Execution Context 的this，call site 會是指特定函式被呼叫的位置]]
+[[call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置]]
 References:
 [[@readfogZhongJavaScriptDeBangDing]]
 [[@mdnFunctionPrototypeCall]]
