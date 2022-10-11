@@ -108,7 +108,7 @@
 
 ## 複習
 
-#🧠 HTML 、 Javascript 以及 CSS 在同一個HTML DOM文件的載入關係為何->->-> `> 1.  Javascript 會阻擋 DOM 的建構 2.  CSS 會阻擋 Javascript 的執行 3.  CSS 會影響頁面的 Rendering`
+#🧠 HTML、Javascript以及 CSS 在同一個HTML DOM文件的阻塞關係為何？>->-> `> 1.  Javascript 會阻擋 DOM 的建構 2.  CSS 會阻擋 Javascript 的執行 3.  CSS 會影響頁面的 Rendering`
 <!--SR:!2022-12-24,74,250-->
 
 #🧠 同一份DOM文件的載入，為何CSSOM會阻塞渲染？->->-> `由於CSS本身在還沒處理完之前是不會有CSSOM，為了確保Rendering能夠使用到CSSOM，會讓CSSOM建構任務阻塞JS。`

@@ -30,8 +30,9 @@ var css = { color: red }
 #🧠 當JSX parser從JSX語法解析到\{\}，會如何執行？->->-> `過程中解析器從JSX解析{}時，就會從JSX解析器更換成JavaScript引擎來負責解析內括號內容並以expression來執行`
 <!--SR:!2022-12-22,74,250-->
 
-#🧠 JSX 語法糖中哪個地方能夠執行JS？->->-> `JSX 語法中唯一能夠執行JavaScript的地方是{expression}`
-<!--SR:!2022-12-22,72,250-->
+#🧠 JSX 語法糖中哪個地方能夠執行JS？->->-> `JSX 語法中唯一能夠執行JavaScript的地方是{expression}、當陣列的其中一個項目、單獨回傳JS Expression`
+`
+
 
 ---
 Status: #🌱 
