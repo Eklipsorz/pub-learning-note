@@ -4,18 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "462c6470f347352c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "680ca17bb4bc3853",
         "type": "leaf",
         "state": {
