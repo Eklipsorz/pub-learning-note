@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+                "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
+                "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md"
+                "file": "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md"
               }
             }
           }
@@ -185,8 +185,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ee00b40bf7172a18",
+  "active": "1f5c7c563e8851ad",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
     "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
     "inbox/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
@@ -195,7 +196,6 @@
     "inbox/Untitled 4.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "inbox/Untitled 6.md",
-    "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
-    "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md"
+    "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md"
   ]
 }
