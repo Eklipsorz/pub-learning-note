@@ -157,6 +157,9 @@ function.call(thisArg)
 function.call(thisArg, [arg1, /* …, */ argN])
 ```
 
+#### bind
+[[bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式]]
+
 
 ### call vs. apply vs. bind
 
@@ -221,6 +224,22 @@ function.call(thisArg, [arg1, /* …, */ argN])
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步解析陣列`
 <!--SR:!2022-10-14,3,250-->
 
+#🧠 JS：call、apply、bind 共同點是什麼？ ->->-> `call、apply、bind 主要用於設定this是什麼`
+
+#🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `設定this之後會做的事情、`
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+
 
 ---
 Status: #🌱 #📝 
@@ -234,3 +253,4 @@ References:
 [[@readfogZhongJavaScriptDeBangDing]]
 [[@mdnFunctionPrototypeCall]]
 [[@mdnFunctionPrototypeApply]]
+[[@mdnFunctionPrototypeBind]]
