@@ -119,7 +119,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-10-14,27,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
-<!--SR:!2022-10-12,26,250-->
+<!--SR:!2022-12-19,68,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
 <!--SR:!2022-10-14,27,250-->

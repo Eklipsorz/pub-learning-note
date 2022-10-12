@@ -69,17 +69,17 @@ function App2() {
 ## 複習
 
 #🧠 React spread attributes  是什麼技術？ ->->-> `具體是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張`
-<!--SR:!2022-10-12,10,250-->
+<!--SR:!2022-11-07,26,250-->
 
 #🧠 原生JS：...object 執行起來會有什麼效果 ->->-> `property1:value1, property2:value2, ....`
 <!--SR:!2022-10-12,10,250-->
 
 
 #🧠 React spread attributes  用法為何？ ->->-> `const property = { propert1: value1, property2: value2 } <Component {...property} />`
-<!--SR:!2022-10-12,10,250-->
+<!--SR:!2022-11-08,27,250-->
 
 #🧠 React spread attributes ： const property = \{ propert1: value1, property2: value2 \} \<Component {...property} \/\> 相對於什麼樣的component ->->-> `<Component property1=value1 property2=value2 />`
-<!--SR:!2022-10-12,10,250-->
+<!--SR:!2022-11-08,27,250-->
 
 
 #🧠 React spread attributes  用法概念為何？ ->->-> `以一個物件的屬性來對元件的屬性(attribute)進行spread 操作`
