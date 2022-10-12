@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "0a1cfd13f15fdcfe",
+        "id": "86e4508870fe78db",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
+            "file": "inbox/Untitled 4.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "70c70d1d975da172",
+        "id": "a8d15a4d6bab90f5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
+            "file": "inbox/Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
+                "file": "inbox/Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
+                "file": "inbox/Untitled 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md"
+                "file": "inbox/Untitled 4.md"
               }
             }
           }
@@ -149,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0a1cfd13f15fdcfe",
+  "active": "a8d15a4d6bab90f5",
   "lastOpenFiles": [
-    "inbox/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
     "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
-    "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
-    "inbox/Untitled 3.md",
+    "inbox/Untitled 4.md",
     "inbox/Untitled 6.md",
+    "inbox/Untitled 3.md",
+    "inbox/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
+    "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
     "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
     "inbox/novalidate 是指定表單關閉其提交時的預設自動驗證功能以及關閉根據驗證結果來呈現樣式內容.md",
     "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
-    "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
-    "inbox/CSS Combinator 使用特殊符號或者特定形式來將多種selector結合成另一種selector.md"
+    "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md"
   ]
 }
