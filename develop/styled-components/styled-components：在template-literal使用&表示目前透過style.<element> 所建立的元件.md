@@ -134,7 +134,7 @@ const FormControl = styled.div`
 
 ## 複習
 #🧠 在styled-components 的 template-literal部分使用&來設定樣式屬性的話，其&代表著什麼？->->-> `目前用style.<element>所建立的元件，以此作為css 選擇器的一部分來定義選擇器`
-<!--SR:!2022-10-12,26,250-->
+<!--SR:!2022-12-20,69,250-->
 
 
 #🧠 在styled-components 的 template-literal部分使用&的話，其&代表著目前用style.\<element\>所建立的元件，以此作為css 選擇器的一部分來定義選擇器，那麼其&可運用的selector場景會有哪些？ ->->-> `CSS Combinator、element.class selector、pseudoelements、pseudoselectors`
