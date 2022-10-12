@@ -113,9 +113,8 @@ fn.bind(obj3)(); //echo
 在這裡有四種呼叫，分別this不綁定任何this、this綁定obj1、this綁定obj2、this綁定obj3
 
 
-####  案例 call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容
-
-
+####  案例 2
+> 注意，如果在使用 call 之類的方法改變 this 指向時，指向參數提供的是 null 或者 undefined，那麼 this 將指向全局對象。
 ```
 let obj1 = {
     name: '聽風是風'
@@ -230,8 +229,8 @@ function.call(thisArg, [arg1, /* …, */ argN])
 #🧠  explicit 命名緣由 ->->-> `為明確且準確的`
 <!--SR:!2022-10-14,3,250-->
 
-#🧠 explicit binding 是什麼？ ->->-> `是以較為直接且明確告知this是設定什麼`
-<!--SR:!2022-10-14,3,250-->
+#🧠 explicit binding 是什麼？ ->->-> ` explicit binding 是相較於implicit binding而言，是以較為直接且明確告知this是設定什麼`
+
 
 
 #🧠 explicit binding是以較為直接且明確告知this是設定什麼，具體是什麼？ ->->-> `在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何`
@@ -272,7 +271,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 
 #🧠 為什麼fn.bind需要多一個括號？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png) ->->-> `因為bind會是回傳一個新的函式物件，要執行裡頭的內容，必需要多一個括號`
 
-
+#🧠 請問下面三個函式呼叫會是得到什麼this以及印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541020/blog/javascript/this-binding/explicit-binding/this-is-window-explicit-binding-example_ozqxrj.png)->->-> `this都為global object，而印出則是印出行星飛行，這是因為如果this設定為null或者undefined，那麼this就指向global object`
 
 
 
