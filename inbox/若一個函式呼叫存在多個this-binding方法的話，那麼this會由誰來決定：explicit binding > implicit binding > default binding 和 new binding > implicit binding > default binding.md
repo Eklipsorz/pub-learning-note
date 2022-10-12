@@ -110,12 +110,16 @@ echo.name;//聽風是風
 <!--SR:!2022-10-15,3,250-->
 
 #🧠 若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定，在這裡會分成兩個場景，在new binding + implicit binding + default binding 優先權會是？ ->->-> `new binding > implicit binding > default binding`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png) ->->-> `obj1，會印出時間跳躍，在這裡出現了explicit binding和implicit binding，優先權會先以explicit binding為主，因此才選上obj1`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼!![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png) ->->-> `在這裡會是new 所建立的物件，印出聽風是風。原因在於在這裡混雜new binding 和implicit binding，根據優先權會先選擇new binding來決定。`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼! ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563938/blog/javascript/this-binding/new-binding/new-and-explicit-binding-example_tmm8oa.png) ->->-> `會報錯，最主要這裡有new binding和explicit binding，然而程式本身不允許這兩者同時出現，所以會報錯`
+<!--SR:!2022-10-15,3,250-->
 
 
 
