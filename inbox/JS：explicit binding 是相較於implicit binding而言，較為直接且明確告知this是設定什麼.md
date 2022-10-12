@@ -84,6 +84,26 @@ var name = '行星飛行';
 function fn() {
     console.log(this.name);
 };
+fn(); 
+fn.call(obj1); 
+fn.apply(obj2); 
+fn.bind(obj3)(); 
+```
+
+```
+let obj1 = {
+    name: '聽風是風'
+};
+let obj2 = {
+    name: '時間跳躍'
+};
+let obj3 = {
+    name: 'echo'
+}
+var name = '行星飛行';
+function fn() {
+    console.log(this.name);
+};
 fn(); //行星飛行
 fn.call(obj1); //聽風是風
 fn.apply(obj2); //時間跳躍
@@ -94,6 +114,23 @@ fn.bind(obj3)(); //echo
 
 
 ####  案例 call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容
+
+
+```
+let obj1 = {
+    name: '聽風是風'
+};
+let obj2 = {
+    name: '時間跳躍'
+};
+var name = '行星飛行';
+function fn() {
+    console.log(this.name);
+};
+fn.call(undefined);
+fn.apply(null); 
+fn.bind(undefined)(); 
+```
 
 ```
 let obj1 = {
@@ -176,7 +213,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 - 共同點：call、apply、bind 主要用於設定this是什麼
 - 不同點：
 	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式
-	- 設定this之後是否重新設定this：bind 屬於hardcoded，其回傳的函式不夠再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定
+	- 設定this之後是否重新設定this：bind 屬於hardcoded，其回傳的函式不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定
 	- call 和 apply 之間的參數種類：兩者功能相同
 		- call 是使用(this, arg1, arg2, arg3,.....)
 		- apply 使用陣列(this, \[arg1, arg2, arg3, ....\] )
@@ -218,7 +255,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 #🧠 function.protype.apply() 的語法是function.call(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
 
 
-#🧠 function.apply vs. function.call共同點是什麼->->-> `指定this為特定物件並且呼叫對應函式、呼叫完畢之後，下一次還想使用相同的物件作為this，必需重新執行apply、call並指定`
+#🧠 function.apply vs. function.call共同點是什麼->->-> `指定this為特定物件並且呼叫對應函式、呼叫完畢之後，下一次還想使用相同的物件作為this，必需重新執行apply、call並指定this`
 
 
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步解析陣列`
@@ -226,17 +263,15 @@ function.call(thisArg, [arg1, /* …, */ argN])
 
 #🧠 JS：call、apply、bind 共同點是什麼？ ->->-> `call、apply、bind 主要用於設定this是什麼`
 
-#🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `設定this之後會做的事情、`
+#🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式 - 設定this之後是否重新設定this：bind 屬於hardcoded，其回傳的函式不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定`
 
-#🧠 Question :: ->->-> ``
+#🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png)->->-> `第一個為global object，會印出行星飛行、第二個為obj1，會印出聽風是風、第三個為obj2，會印出時間跳躍、第四個為obj3，會印出echo`
 
-#🧠 Question :: ->->-> ``
-
-
-#🧠 Question :: ->->-> ``
+#🧠  JS：call 、 apply這兩者和this之間可以做什麼應用？  ->->-> `call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 為什麼fn.bind需要多一個括號？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png) ->->-> `因為bind會是回傳一個新的函式物件，要執行裡頭的內容，必需要多一個括號`
+
 
 
 
