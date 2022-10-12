@@ -113,7 +113,7 @@ fn.bind(obj3)(); //echo
 在這裡有四種呼叫，分別this不綁定任何this、this綁定obj1、this綁定obj2、this綁定obj3
 
 
-####  案例 2
+####  案例 2：指向參數提供的是 null 或者 undefined，那麼 this 將指向全局對象
 > 注意，如果在使用 call 之類的方法改變 this 指向時，指向參數提供的是 null 或者 undefined，那麼 this 將指向全局對象。
 ```
 let obj1 = {
@@ -147,6 +147,8 @@ fn.apply(null); //行星飛行
 fn.bind(undefined)(); //行星飛行
 ```
 
+
+#### 
 #### call
 
 call 
@@ -212,11 +214,62 @@ function.call(thisArg, [arg1, /* …, */ argN])
 - 共同點：call、apply、bind 主要用於設定this是什麼
 - 不同點：
 	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式
-	- 設定this之後是否重新設定this：bind 屬於hardcoded，其回傳的函式不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定
+	- 設定this之後是否還能重新設定this：bind 屬於hard-binding，其回傳函式的this不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定
 	- call 和 apply 之間的參數種類：兩者功能相同
 		- call 是使用(this, arg1, arg2, arg3,.....)
 		- apply 使用陣列(this, \[arg1, arg2, arg3, ....\] )
 		- 在單純改變特定函式呼叫的this之場景，call 效能會略高於apply，因為apply還得再執行進一步解析陣列才能獲取參數
+
+
+#### 案例3：設定this之後是否還能重新設定this 
+
+
+```
+let obj1 = {
+    name: '聽風是風'
+};
+let obj2 = {
+    name: '時間跳躍'
+};
+var name = '行星飛行';
+function fn() {
+    console.log(this.name);
+};
+fn.call(obj1); 
+fn();
+fn.apply(obj2);
+fn(); 
+let boundFn = fn.bind(obj1);
+boundFn.call(obj2);
+boundFn.apply(obj2);
+boundFn.bind(obj2)();
+```
+
+
+```
+let obj1 = {
+    name: '聽風是風'
+};
+let obj2 = {
+    name: '時間跳躍'
+};
+var name = '行星飛行';
+function fn() {
+    console.log(this.name);
+};
+fn.call(obj1); //聽風是風
+fn(); //行星飛行
+fn.apply(obj2); //時間跳躍
+fn(); //行星飛行
+let boundFn = fn.bind(obj1);//聽風是風
+boundFn.call(obj2);//聽風是風
+boundFn.apply(obj2);//聽風是風
+boundFn.bind(obj2)();//聽風是風
+```
+
+
+
+
 
 ###  explicit 命名緣由
 > clear and exact
@@ -262,7 +315,7 @@ function.call(thisArg, [arg1, /* …, */ argN])
 
 #🧠 JS：call、apply、bind 共同點是什麼？ ->->-> `call、apply、bind 主要用於設定this是什麼`
 
-#🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式 - 設定this之後是否重新設定this：bind 屬於hardcoded，其回傳的函式不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定`
+#🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式 - 設定this之後是否重新設定this：bind 屬於hard-binding，其回傳函式的this不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定`
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png)->->-> `第一個為global object，會印出行星飛行、第二個為obj1，會印出聽風是風、第三個為obj2，會印出時間跳躍、第四個為obj3，會印出echo`
 
@@ -274,6 +327,14 @@ function.call(thisArg, [arg1, /* …, */ argN])
 #🧠 請問下面三個函式呼叫會是得到什麼this以及印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541020/blog/javascript/this-binding/explicit-binding/this-is-window-explicit-binding-example_ozqxrj.png)->->-> `this都為global object，而印出則是印出行星飛行，這是因為如果this設定為null或者undefined，那麼this就指向global object`
 
 
+#🧠 JS：bind所產生出來的新函式所擁有this為A，若經過call或者apply而將this更改成B，請問bind產生出來的新函式所擁有的this會是什麼？為什麼？->->-> `會是A，由於bind新函式的this會直接與當初設定的this綁死，無論事後以call或者apply來更改其this，都無法更改`
+
+
+#🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
+
+
+
+#🧠 為什麼第六至第八的呼叫會是obj1當this，並且印出聽風是風？而不是obj2當this，並且印出時間跳躍![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541827/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call-result_chx2cg.png) ->->-> `最主要是這些都源自於第五個函式所產生出來的新函式，這個新函式已經被綁死在obj1，所以即使事後對新函式做call、apply、bind都無法更改其this。`
 
 ---
 Status: #🌱 #📝 
