@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 3.md",
+            "file": "inbox/Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 3.md",
+                "file": "inbox/Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 3.md",
+                "file": "inbox/Untitled 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 3.md"
+                "file": "inbox/Untitled 4.md"
               }
             }
           }
@@ -139,8 +139,8 @@
   },
   "active": "86e4508870fe78db",
   "lastOpenFiles": [
-    "inbox/Untitled 4.md",
     "inbox/Untitled 3.md",
+    "inbox/Untitled 4.md",
     "inbox/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
