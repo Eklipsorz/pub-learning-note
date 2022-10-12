@@ -103,9 +103,11 @@ echo.name;//聽風是風
 ## 複習
 
 #🧠 若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定，在這裡會分成兩個場景，哪兩個？->->-> `	- explicit binding + implicit binding + default binding - new binding + implicit binding + default binding`
+<!--SR:!2022-10-15,3,250-->
 
 
 #🧠 若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定，在這裡會分成兩個場景，在explicit binding + implicit binding + default binding場景下的優先權會是？ ->->-> `explicit binding > implicit binding > default binding`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定，在這裡會分成兩個場景，在new binding + implicit binding + default binding 優先權會是？ ->->-> `new binding > implicit binding > default binding`
 
