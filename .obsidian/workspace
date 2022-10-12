@@ -69,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -148,7 +149,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3f4962bb04fad2f4",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
     "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
