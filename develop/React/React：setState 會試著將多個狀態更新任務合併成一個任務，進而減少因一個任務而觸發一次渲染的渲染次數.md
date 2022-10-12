@@ -290,25 +290,25 @@ setLastName('Cheng');
 <!--SR:!2022-10-12,3,250-->
 
 #🧠 React：setFirstName('Morgan'); setLastName('Cheng'); 是屬於哪一種元件開發方法？ ->->-> `functional component`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 #🧠 React：setFirstName('Morgan'); setLastName('Cheng'); 請問如何做狀態的batching？ ->->-> `當執行以下setState時，執行前會先設定空物件為結果狀態物件 {}，接著執行第一個setState-setFirstName時，其狀態物件會是{ FirstName: 'Morgan' }，然後再執行第二個setState-setLastName時，其狀態物件會是{ FirstName: 'Morgan', LastName: 'Cheng' }，做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 有哪些主要差別(簡要就好) ->->-> `state 註冊範疇、setState 註冊範疇、setState 更新狀態方式`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 #🧠 class-based component vs. functional component ： state  & setState 在 單個state 註冊範疇是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
 <!--SR:!2022-10-12,3,250-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在 單個state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在單個setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 #🧠 class-based component vs. functional component ： state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 <!--SR:!2022-10-12,3,250-->
