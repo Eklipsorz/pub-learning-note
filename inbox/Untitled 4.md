@@ -208,6 +208,21 @@ foo.call(obj) // 2
 
 ## 複習
 
+#🧠 箭頭函式的this binding 依據著new binding、implicit binding、explicit binding來決定this binding，這句話是對的嗎->->-> `不是`
+
+#🧠 箭頭函式的this binding 和 其他一般函式呼叫的this binding有何不一樣？ ->->-> `箭頭函式是採用語彙綁定。一般函式呼叫的this binding會是依據著`
+
+
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
