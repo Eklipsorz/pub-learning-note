@@ -124,5 +124,8 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
+[[new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this]]
+[[JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼]]
+[[JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding]]
 References:
 [[@readfogZhongJavaScriptDeBangDing]]
