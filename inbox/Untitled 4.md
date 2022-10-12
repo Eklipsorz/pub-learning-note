@@ -27,14 +27,27 @@ bar.call(obj2); //聽風是風
 
 ```
 function foo() {
-	// 回傳  
+	// 回傳一個箭頭函式
 	retrun (a) => {
+		// 在此，this是從語彙上繼承自foo
 		console.log(this.a)
 	}
 }
 
+var obj1 = {
+	a: 2
+}
+
+var obj1 = {
+	a: 3
+}
+
+var bar = foo.call(obj1)
+bar.call(obj2) // 2
 
 ```
+
+在foo()中建立的箭頭函式被呼叫時會從語彙上(lexically) 捕捉 fo
 
 重點：
 
