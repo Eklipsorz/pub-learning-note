@@ -44,12 +44,11 @@ var obj1 = {
 
 var bar = foo.call(obj1)
 bar.call(obj2) // 2
-
 ```
 
 > 在foo()中建立的箭頭函式被呼叫時會從語彙上(lexically) 捕捉 foo() 的this (不管那是什麼)，既然foo()的this 綁定到obj1，bar(對所回傳的箭頭函式的一個參考)的this也會綁定到obj1。箭頭函式的這種語彙綁定(lexical binding)無法被覆寫(即便使用new也一樣)。
 
-> 最常見的使用情況下很可能是用於callback，比如事件處理處理器(event handlers) 或者 計時器(timers)：
+> 最常見的使用情況下很可能是用於callback，比如事件處理器(event handlers) 或者 計時器(timers)：
 
 ```
 function foo() {
@@ -94,42 +93,60 @@ foo.call(obj) // 2
 
 
 重點：
-- 箭頭函式的this binding是透過outer reference
+- 箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫
+- 箭頭函式本身並不會依據new binding、implicit binding、explicit binding來決定this binding
+- 箭頭函式通常使用場景為：
+	- 事件處理器
+	- 計時器
 
 
 #### 案例1
 
 ```
-function fn() {
-    return () => {
-        console.log(this.name);
-    };
+function foo() {
+  const fn = () => {
+    return console.log(this.a);
+  };
+
+  return fn;
 }
-let obj1 = {
-    name: '聽風是風'
+
+var obj1 = {
+  a: 2,
 };
-let obj2 = {
-    name: '時間跳躍'
+
+var obj2 = {
+  a: 3,
 };
-let bar = fn.call(obj1); 
-bar.call(obj2); 
+
+var bar = foo.call(obj1)
+bar.call(obj2) 
 ```
 
 ```
-function fn() {
-    return () => {
-        console.log(this.name);
-    };
+function foo() {
+  // 回傳一個箭頭函式
+  const fn = () => {
+	// 在此，this是從語彙上繼承自foo
+    return console.log(this.a);
+  };
+
+  return fn;
 }
-let obj1 = {
-    name: '聽風是風'
+
+var obj1 = {
+  a: 2,
 };
-let obj2 = {
-    name: '時間跳躍'
+
+var obj2 = {
+  a: 3,
 };
-let bar = fn.call(obj1); // fn this指向obj1
-bar.call(obj2); //聽風是風
+
+var bar = foo.call(obj1)
+bar.call(obj2) // 2
 ```
+
+> 在foo()中建立的箭頭函式被呼叫時會從語彙上(lexically) 捕捉 foo() 的this (不管那是什麼)，既然foo()的this 綁定到obj1，bar(對所回傳的箭頭函式的一個參考)的this也會綁定到obj1。箭頭函式的這種語彙綁定(lexical binding)無法被覆寫(即便使用new也一樣)。
 
 #### 案例2
 > 爲啥我們第一次綁定 this 並返回箭頭函數後，再次改變 this 指向沒生效呢？
@@ -153,6 +170,40 @@ let obj2 = {
 };
 fn.call(obj1)(); // fn this指向obj1,箭頭函數this也指向obj1
 fn.call(obj2)(); //fn this 指向obj2,箭頭函數this也指向obj2
+```
+
+#### 案例3 
+
+```
+function foo() {
+	setTimeout(()=>{
+		// 這裡this在語彙上繼承自foo
+		console.log(this.a)
+	}, 100)
+}
+
+
+var obj = {
+	a: 2
+}
+
+foo.call(obj) 
+```
+
+```
+function foo() {
+	setTimeout(()=>{
+		// 這裡this在語彙上繼承自foo
+		console.log(this.a)
+	}, 100)
+}
+
+
+var obj = {
+	a: 2
+}
+
+foo.call(obj) // 2
 ```
 
 ## 複習
