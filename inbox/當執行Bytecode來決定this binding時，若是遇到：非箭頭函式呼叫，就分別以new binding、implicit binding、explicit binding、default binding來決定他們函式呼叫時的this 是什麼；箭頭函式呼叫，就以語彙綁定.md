@@ -22,9 +22,14 @@ this binding 對於函式是決定了 **每個函式在呼叫時所用的this會
 [[箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫]]
 
 ## 複習
-#🧠 this binding 對於函式來說 ->->-> ``
+#🧠 this binding 對於函式來說是什麼？ ->->-> `決定了 **每個函式在呼叫時所用的this會是什麼**`
 
 
+#🧠 當執行Bytecode來決定this binding時，會如何決定 ->->-> `會根據是否為箭頭函式來以不同方式來決定。	- 非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼 - 箭頭函式呼叫，就以語彙綁定來決定this是什麼`
+
+#🧠 當執行Bytecode來決定this binding時，會如何決定非箭頭函式呼叫 ->->-> `就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼`
+
+#🧠 當執行Bytecode來決定this binding時，會如何決定箭頭函式呼叫 ->->-> `箭頭函式呼叫，就以語彙綁定來決定this是什麼`
 
 
 ---
