@@ -74,6 +74,23 @@ echo.name//聽風是風
 
 ## 複習
 
+#🧠 new binding 是什麼樣的binding ->->-> `由`
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
 
 
 ---
