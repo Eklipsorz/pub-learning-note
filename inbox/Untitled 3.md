@@ -8,21 +8,18 @@
 
 
 重點：
-- 在React中的class-based component中，constructor具有兩項主要用途：
-	- 建立一個屬於元件的狀態並設定初始值
-	- 設定事件處理
+- constructor 主要建構對元件的物件，通常會透過default constructor
+- 若要自行建立constructor，只會在兩種情況下進行
+	- 註冊一個屬於元件的所有狀態並設定初始值
 
 
-###
 
-class-based component 定義事件處理函式方式：
+### class-based component 定義事件處理函式方式：
 
 1. 在render 函式定義：可行，但會重複定義函式而浪費多餘的成本
-
 2. 在class中以作為其類別方法來新增事件處理函式：可行，通常開發會採用
 
-### 
-在class-based component 管理狀態-useState
+### 在class-based component 管理狀態-useState
 
 1. 初始化並定義元件專屬的狀態
 
