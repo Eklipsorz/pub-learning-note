@@ -32,7 +32,19 @@ let echo = new Fn().call(obj);//報錯 call is not a function
 ```
 
 #### 案例2
-
+> 那麼我們結合幾個例子來驗證下上面的規律，首先是顯式大於隱式：
+```
+let obj = {
+    name:'行星飛行',
+    fn:function () {
+        console.log(this.name);
+    }
+};
+obj1 = {
+    name:'時間跳躍'
+};
+obj.fn.call(obj1);
+```
 
 ```
 //顯式>隱式
@@ -50,6 +62,19 @@ obj.fn.call(obj1);// 時間跳躍
 
 
 #### 案例3 
+> 其次是 new 綁定大於隱式：
+```
+obj = {
+    name: '時間跳躍',
+    fn: function () {
+        this.name = '聽風是風';
+    }
+};
+let echo = new obj.fn();
+echo.name;
+```
+
+
 
 ```
 //new>隱式
@@ -65,6 +90,16 @@ echo.name;//聽風是風
 
 
 ## 複習
+
+
+
+
+#🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png) ->->-> `obj1，會印出時間跳躍，在這裡出現了explicit binding和implicit binding，優先權會先以explicit binding為主，因此才選上obj1`
+
+#🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼!![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png) ->->-> `在這裡會是new 所建立的物件，印出聽風是風。原因在於在這裡混雜new binding 和implicit binding，根據優先權會先選擇new binding來決定。`
+
+
+
 
 
 ---

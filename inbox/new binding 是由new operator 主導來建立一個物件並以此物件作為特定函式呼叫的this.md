@@ -50,10 +50,11 @@ echo.name//聽風是風
 	- 若constructor 沒有手動回傳物件，則自動回傳目前設定好的物件
 - 細節：
 	- 實際上是不存在constructor function，只有從函式呼叫轉換而來的建構式呼叫
-- new binding 是由
+- new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this
 
 
-#### 案例
+
+#### 案例 1
 
 ```
 function Fn(){
@@ -71,6 +72,16 @@ let echo = new Fn();
 echo.name//聽風是風
 ```
 
+#### 案例 2
+
+```
+function foo(a) {
+	this.a = a;
+}
+
+var bar = new foo(2)
+console.log(bar.a)
+```
 
 ## 複習
 
@@ -92,7 +103,7 @@ echo.name//聽風是風
 
 #🧠 請問echo.name會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example_xcsbfn.png) ->->-> `聽風是風`
 
-#🧠 請用下面程式碼來說明new binding![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example-result_yk8bq8.png) ->->-> ``
+#🧠 請用下面程式碼來說明new binding![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example-result_yk8bq8.png) ->->-> `首先 new operator會先建立一個物件，並且為Fn這呼叫設定this為那新物件，接著執行Fn來設定name`
 
 
 

@@ -4,24 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "855f8de89f9ca716",
+        "id": "0a1cfd13f15fdcfe",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/new binding 是由new operator 來主導建立一個物件並以此物件設定函式呼叫的this.md",
+            "file": "inbox/Untitled 4.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "0a1cfd13f15fdcfe",
+        "id": "70c70d1d975da172",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/new binding 是由new operator 來主導建立一個物件並以此物件設定函式呼叫的this.md",
+            "file": "inbox/Untitled 4.md",
             "mode": "source",
             "source": false
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/new binding 是由new operator 來主導建立一個物件並以此物件設定函式呼叫的this.md",
+                "file": "inbox/Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/new binding 是由new operator 來主導建立一個物件並以此物件設定函式呼叫的this.md",
+                "file": "inbox/Untitled 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/new binding 是由new operator 來主導建立一個物件並以此物件設定函式呼叫的this.md"
+                "file": "inbox/Untitled 4.md"
               }
             }
           }
@@ -149,10 +149,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "855f8de89f9ca716",
+  "active": "70c70d1d975da172",
   "lastOpenFiles": [
+    "inbox/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
     "inbox/Untitled 4.md",
-    "inbox/new binding 是由new operator 來主導建立一個物件並以此物件設定函式呼叫的this.md",
     "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
     "inbox/Untitled 3.md",
     "inbox/Untitled 6.md",
