@@ -140,8 +140,8 @@
   "active": "855f8de89f9ca716",
   "lastOpenFiles": [
     "inbox/Untitled 6.md",
-    "inbox/Untitled 4.md",
     "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
+    "inbox/Untitled 4.md",
     "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
     "inbox/novalidate 是指定表單關閉其提交時的預設自動驗證功能以及關閉根據驗證結果來呈現樣式內容.md",
     "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",

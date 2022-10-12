@@ -26,9 +26,9 @@ echo.name//聽風是風
 > 若對於 new 具體過程有疑惑，或者不知道怎麼手動實現一個 new 方法，可以閱讀博主這篇文章 js new 一個對象的過程，實現一個簡單的 new 方法
 
 
-什麼是建構器(constructor) 。在JS中，建構器只是前面接著new operator被呼叫的函式，他們並沒被接附到類別上，也不會實體化一個類別。他們甚至不是一種特殊的函式。他們只是正規的函式，但調用時，其行為實質上是被前面的new所掌管
+> 什麼是建構器(constructor) 。在JS中，建構器只是前面接著new operator被呼叫的函式，他們並沒被接附到類別上，也不會實體化一個類別。他們甚至不是一種特殊的函式。他們只是正規的函式，但調用時，其行為實質上是被前面的new所掌管
 
-在函式前面添加new關鍵來呼叫函式，會從函式呼叫轉換成建構式呼叫(constructor call)：
+> 在函式前面添加new關鍵來呼叫函式，會從函式呼叫轉換成建構式呼叫(constructor call)：
 	- 實際上並沒有constructor function，只有函式的建構呼叫(constructor call)
 
 具體的建構呼叫會是以下流程
@@ -40,19 +40,46 @@ echo.name//聽風是風
 
 
 重點：
-- function 會是指特定函式，function()為特定函式的呼叫，若前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)，主要會建構一個擁有特定方法和屬性的物件並回傳，而function則是具體定義物件會有什麼樣屬性和方法
+- function 會是指特定函式，function()為特定函式的呼叫，若前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call) 或者 constructor 就是 new operator + function call 
+- constructor call 主要會建構一個擁有特定方法和屬性的物件並回傳，而function則是具體定義物件會有什麼樣屬性和方法
 - 具體建構呼叫會是以下流程：
 	- 建立一個新空白物件
 	- 設定該物件的protype屬性
 	- 將新空白物件設定成function呼叫的this
-	- 執行function好讓this和參數ㄐ
+	- 執行function好讓this和參數設定對應物件
+	- 若constructor 沒有手動回傳物件，則自動回傳目前設定好的物件
 - 細節：
 	- 實際上是不存在constructor function，只有從函式呼叫轉換而來的建構式呼叫
+- 在這裡this binding 由於會由new operator來主導，所以被稱之為new binding
+
+
+#### 案例
+
+```
+function Fn(){
+    this.name = '聽風是風';
+};
+let echo = new Fn();
+echo.name
+```
+
+```
+function Fn(){
+    this.name = '聽風是風';
+};
+let echo = new Fn();
+echo.name//聽風是風
+```
+
+
 ## 複習
 
 
+
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[JavaScript]]
 Links:
 References:
+[[@readfogZhongJavaScriptDeBangDing]]
