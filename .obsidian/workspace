@@ -149,7 +149,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a8d15a4d6bab90f5",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
     "inbox/Untitled 4.md",
