@@ -324,6 +324,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-10-14,3,250-->
 
 #🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 function.protype.call() 是什麼？用途是什麼 ->->-> `設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
 
@@ -338,10 +339,11 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 #🧠 function.protype.apply() 的語法是什麼？ ->->-> `function.call(thisArg, [arg1, /* …, */ argN])`
 <!--SR:!2022-10-14,3,250-->
 
-#🧠 function.protype.apply() 的語法是function.call(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
+#🧠 function.protype.apply() 的語法是function.apply(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
 
 
 #🧠 function.apply vs. function.call共同點是什麼->->-> `指定this為特定物件並且呼叫對應函式、呼叫完畢之後，下一次還想使用相同的物件作為this，必需重新執行apply、call並指定this`
+<!--SR:!2022-10-15,3,250-->
 
 
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步將陣列轉換成參數`
@@ -350,10 +352,13 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 #🧠 function.apply 為啥會比function.call還耗一點成本？ ->->-> `最主要要將陣列轉換成參數來呼叫，如function1.apply([arg1, arg2, ..., argN])->function1(arg1, arg2, ... , argN)`
 
 #🧠 JS：call、apply、bind 共同點是什麼？ ->->-> `call、apply、bind 主要用於設定this是什麼`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式 - 設定this之後是否重新設定this：bind 屬於hard-binding，其回傳函式的this不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png)->->-> `第一個為global object，會印出行星飛行、第二個為obj1，會印出聽風是風、第三個為obj2，會印出時間跳躍、第四個為obj3，會印出echo`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠  JS：call 、 apply這兩者和this之間可以做什麼應用？  ->->-> `call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容`
 <!--SR:!2022-10-15,3,250-->
@@ -365,8 +370,10 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 JS：bind所產生出來的新函式所擁有this為A，若經過call或者apply而將this更改成B，請問bind產生出來的新函式所擁有的this會是什麼？為什麼？->->-> `會是A，由於bind新函式的this會直接與當初設定的this綁死，無論事後以call或者apply來更改其this，都無法更改`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 function1.apply(this, \[arg1, ..., argN\]) 在JS的函式呼叫上會被看作是什麼？ ->->-> `function1(arg1, ... argN)`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
 
@@ -376,6 +383,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-example_deppqe.png)->->-> `this皆為this，會印出我是聽風是風,我的年齡是26，我非常帥`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 為什麼fn.apply的陣列可以像fn.call正常印出 **我是聽風是風,我的年齡是26，我非常帥** ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-result_q2jsdb.png)->->-> `因為apply會將陣列自動轉換成('26','帥')來呼叫fn`
 
