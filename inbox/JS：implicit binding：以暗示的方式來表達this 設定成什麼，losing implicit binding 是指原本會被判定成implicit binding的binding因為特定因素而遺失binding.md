@@ -296,6 +296,7 @@ obj1.fn(); //時間跳躍
 ## 複習
 
 #🧠 implicit 命名緣由為何 ->->-> `表示某項事物是以間接且不明確的形式來表達，通常會以暗示來表達特定事物`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 implicit binding 是什麼？->->-> `以暗示的方式來表達this 設定成什麼`
 <!--SR:!2022-10-14,3,250-->
@@ -304,8 +305,10 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-14,3,250-->
 
 #🧠 implicit binding：若函式A呼叫前有多個物件參考的話，會如何決定函式A的this 是什麼？->->-> `會挑選離函式A呼叫較近的物件來設定this`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 請問這是obj.func呼叫後的執行環境所設定的this會是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/implicit-binding-example_ts85d3.png) ->->-> `會是設定obj並印出obj的name-聽風是風。主要是在函式呼叫前添加物件參考A，其函式呼叫就會被系統認為物件參考A所擁有的函式並且呼叫函式。`
+<!--SR:!2022-10-15,3,250-->
 
 #🧠 請問這是obj.func呼叫後的執行環境會被系統使用哪個this binding方法？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/implicit-binding-example_ts85d3.png)->->-> `會是以implicit binding。由於沒有出現new binding、explicit binding的跡象，所以改試著以implicit binding來判定，結果因為函式呼叫前面有物件，而這正是implicit binding的識別特徵`
 <!--SR:!2022-10-14,3,250-->
