@@ -47,10 +47,54 @@ bar.call(obj2) // 2
 
 ```
 
-在foo()中建立的箭頭函式被呼叫時會從語彙上(lexically) 捕捉 fo
+> 在foo()中建立的箭頭函式被呼叫時會從語彙上(lexically) 捕捉 foo() 的this (不管那是什麼)，既然foo()的this 綁定到obj1，bar(對所回傳的箭頭函式的一個參考)的this也會綁定到obj1。箭頭函式的這種語彙綁定(lexical binding)無法被覆寫(即便使用new也一樣)。
+
+> 最常見的使用情況下很可能是用於callback，比如事件處理處理器(event handlers) 或者 計時器(timers)：
+
+```
+function foo() {
+	setTimeout(()=>{
+		// 這裡this在語彙上繼承自foo
+		console.log(this.a)
+	}, 100)
+}
+
+
+var obj = {
+	a: 2
+}
+
+foo.call(obj) // 2
+```
+
+> 雖然箭頭函式提供一種替代方式，讓我們不必在一個函式上使用bind(...)來確保this值，這看起來很吸引人，但要注意的重點是，他們基本上使得傳統的this機制失效了，而改用較廣泛被理解的語彙範疇(lexical scoping)。在ES6 之前，我們已經有一種相當常見的模式來達成這樣的效果，它基本上與ES6箭頭函式的精神無異：
+
+```
+function foo() {
+	var self = this // 語彙上捕捉了 this
+	setTimeout(function () {
+		console.log(self.a)
+	}, 100)
+}
+
+var obj = {
+	a: 2
+}
+
+foo.call(obj) // 2
+```
+
+> 雖然self = this 與箭頭函式兩者看起來都像是不想要使用bind(...)時的好解法，但基本上他們是逃離了this而非理解並擁抱它。
+
+
+>如果你發現自己寫的是this風格的程式碼，但大多時候或總是如此，你都以語彙的self = this 或者箭頭函式這些花招妨礙this機制，那麼你應該考慮以下任一作法：
+> 1. 只使用語彙範疇，忘掉那this風格程式碼的假象
+>2. 完全擁抱this風格的機制，包括了在必要時使用bind(...)，並試著避免self=this與箭頭函式這種lexical this的花招
+
+
 
 重點：
-
+- 箭頭函式的this binding是透過outer reference
 
 
 #### 案例1
