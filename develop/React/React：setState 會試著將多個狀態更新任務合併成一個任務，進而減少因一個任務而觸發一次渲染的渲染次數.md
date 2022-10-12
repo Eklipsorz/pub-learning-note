@@ -200,11 +200,11 @@ setLastName('Cheng');
 <!--SR:!2022-10-21,9,250-->
 
 #🧠 React：在class-based component中的batching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？->->-> `若狀態是以單一值來儲存的話，就直接拿目前任務的請求狀態去覆蓋先前任務所記錄的狀態`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 
 #🧠 React： 在class-based component中的batching實際實現中， setState 的狀態是以物件，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 #🧠 React：無論狀態更新是否為class-based componet 或者 functional component，有誰能夠執行完setState便立刻更新state嗎 ->->-> `都沒有`
 <!--SR:!2022-10-22,10,250-->
@@ -241,10 +241,10 @@ setLastName('Cheng');
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-21,9,250-->
 
 #🧠 若透過以下語法而獲得\{ FirstName: \'Morgan\', LastName: \'Cheng\' \}，請問是屬於哪種元件開發方法？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `class-based component`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-21,9,250-->
 
 
 #🧠 React：setState1(\{firstName: \'Morgan\' \}); setState1(\{lastName:\'Cheng\'\}) 請問最後結果會是什麼？為什麼->->-> `最後結果為{lastName: 'Cheng'}，因為這是functional component，而setState1則是對於同一個狀態的狀態更新函式，換言之，就是同一個狀態，所以這對於batching的結果狀態物件來說，只是對同一種屬性的覆寫`
@@ -275,7 +275,7 @@ setLastName('Cheng');
 <!--SR:!2022-10-22,10,250-->
 
 #🧠 React：在functional component中的batching實際實現下，一開始剛開始執行batching會定義結果狀態為空物件並根據狀態的屬性是否存在來處理，請問這是什麼意思？->->-> `就是按照每個被註冊的狀態來當作屬性來納入結果狀態物件上`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-21,9,250-->
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，那麼如何做？>->-> `若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，直接增加該屬性至結果狀態物件、 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
 
@@ -311,10 +311,10 @@ setLastName('Cheng');
 <!--SR:!2022-10-22,10,250-->
 
 #🧠 class-based component vs. functional component ： state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-22,10,250-->
 
 #🧠 class-based component vs. functional component ： state  & setState 對於setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
-<!--SR:!2022-10-12,3,250-->
+<!--SR:!2022-10-20,8,250-->
 
 ---
 Status: #☀️ 
