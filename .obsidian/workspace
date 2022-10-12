@@ -16,12 +16,12 @@
         }
       },
       {
-        "id": "3f4962bb04fad2f4",
+        "id": "9f46ca594f0d278f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
+            "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
             "mode": "source",
             "source": false
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
+                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
+                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md"
+                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md"
               }
             }
           }
@@ -149,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "673bafcf0104f9cf",
+  "active": "9f46ca594f0d278f",
   "lastOpenFiles": [
-    "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
     "inbox/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
+    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
+    "inbox/bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式.md",
     "inbox/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
     "inbox/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md",
     "inbox/Untitled 4.md",
     "inbox/Untitled 6.md",
     "inbox/Untitled 3.md",
     "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
-    "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
-    "inbox/explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md"
+    "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md"
   ]
 }

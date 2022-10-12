@@ -203,7 +203,7 @@ setLastName('Cheng');
 <!--SR:!2022-10-12,3,250-->
 
 
-#🧠 React： 在class-based component中的batching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
+#🧠 React： 在class-based component中的batching實際實現中， setState 的狀態是以物件，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
 <!--SR:!2022-10-12,3,250-->
 
 #🧠 React：無論狀態更新是否為class-based componet 或者 functional component，有誰能夠執行完setState便立刻更新state嗎 ->->-> `都沒有`
