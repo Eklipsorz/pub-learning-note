@@ -194,7 +194,13 @@ function.call()
 function.call(thisArg)
 function.call(thisArg, [arg1, /* …, */ argN])
 ```
+- 細節：
+	- arg1 至 argN 所構成的參數陣列會在函式呼叫時，轉換成
+	```
+	function1.apply(this, [arg1, ..., argN])
 
+	function1(arg1, ... argN)
+	```
 #### bind
 [[bind 是 function protype的方法，主要用途為透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式]]
 
@@ -218,8 +224,13 @@ function.call(thisArg, [arg1, /* …, */ argN])
 	- call 和 apply 之間的參數種類：兩者功能相同
 		- call 是使用(this, arg1, arg2, arg3,.....)
 		- apply 使用陣列(this, \[arg1, arg2, arg3, ....\] )
-		- 在單純改變特定函式呼叫的this之場景，call 效能會略高於apply，因為apply還得再執行進一步解析陣列才能獲取參數
-
+		- 在單純改變特定函式呼叫的this之場景，call 效能會略高於apply，因為apply還得再執行進一步將陣列轉換成參數，如
+		```
+		// 轉換前
+		function1.apply([arg1, arg2, ..., argN])
+		// 轉換後
+		function1(arg1, arg2, ... , argN)
+		```
 
 #### 案例3：設定this之後是否還能重新設定this 
 
@@ -267,7 +278,30 @@ boundFn.apply(obj2);//聽風是風
 boundFn.bind(obj2)();//聽風是風
 ```
 
+#### 案例4 call 與 apply 功能完全相同 呼叫方式
 
+```
+let obj = {
+    name: '聽風是風'
+};
+function fn(age,describe) {
+    console.log(`我是${this.name},我的年齡是${age}，我非常${describe}!`);
+};
+fn.call(obj,'26','帥');
+fn.apply(obj,['26','帥']);
+```
+
+
+```
+let obj = {
+    name: '聽風是風'
+};
+function fn(age,describe) {
+    console.log(`我是${this.name},我的年齡是${age}，我非常${describe}!`);
+};
+fn.call(obj,'26','帥');//我是聽風是風,我的年齡是26，我非常帥
+fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
+```
 
 
 
@@ -329,12 +363,21 @@ boundFn.bind(obj2)();//聽風是風
 
 #🧠 JS：bind所產生出來的新函式所擁有this為A，若經過call或者apply而將this更改成B，請問bind產生出來的新函式所擁有的this會是什麼？為什麼？->->-> `會是A，由於bind新函式的this會直接與當初設定的this綁死，無論事後以call或者apply來更改其this，都無法更改`
 
+#🧠 function1.apply(this, \[arg1, ..., argN\]) 在JS的函式呼叫上會被看作是什麼？ ->->-> `function1(arg1, ... argN)`
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
 
 
 
 #🧠 為什麼第六至第八的呼叫會是obj1當this，並且印出聽風是風？而不是obj2當this，並且印出時間跳躍![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541827/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call-result_chx2cg.png) ->->-> `最主要是這些都源自於第五個函式所產生出來的新函式，這個新函式已經被綁死在obj1，所以即使事後對新函式做call、apply、bind都無法更改其this。`
+
+
+#🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-example_deppqe.png)->->-> `this皆為this，會印出我是聽風是風,我的年齡是26，我非常帥`
+
+#🧠 為什麼fn.apply的陣列可以像fn.call正常印出 **我是聽風是風,我的年齡是26，我非常帥** ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-result_q2jsdb.png)->->-> `因為apply會將陣列自動轉換成('26','帥')來呼叫fn`
+
+
+
 
 ---
 Status: #🌱 #📝 
