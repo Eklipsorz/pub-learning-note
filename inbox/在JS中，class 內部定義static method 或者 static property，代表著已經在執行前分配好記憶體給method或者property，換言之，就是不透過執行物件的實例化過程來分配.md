@@ -21,8 +21,9 @@
 - static method 用途：
 	- 作為utility function來使用，而class名稱就表明該function的隸屬
 - static property 用途：
-	- 作為特定設定資料的緩存，而class名稱就表明這份資料的
-
+	- 作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬
+- 細節：
+	- 
 
 
 ### static variable 命名緣由
