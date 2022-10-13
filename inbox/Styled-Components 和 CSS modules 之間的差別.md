@@ -45,7 +45,7 @@ Styled-Components 是 CSS-in-JS 概念的實現；CSS modules 則不是CSS-in-JS
 <!--SR:!2022-11-28,52,250-->
 
 #🧠 Styled-Components 和 CSS modules 之間的不同點為何？拿元件樣式層面的渲染是否重複渲染來簡答吧 ->->-> `Styled-Components在執行下依據觸發渲染時所被給予的資訊來決定樣式內容，所以每次渲染觸發都會有成本，CSS modules在一開始webpack的解析就決定好樣式內容，每一次渲染觸發都不能決定樣式內容，所以每次渲染觸發都不會有成本 `
-<!--SR:!2022-10-13,26,250-->
+<!--SR:!2022-12-20,68,250-->
 
 #🧠 Styled-Components 和 CSS modules 之間的不同點為何？拿JS和樣式體系來說吧 ->->-> `Styled-Components 是將CSS原生語法納入至JS上，並不會區分JS語法體系和CSS語法體系、 CSS modules 是允許區分JS語法體系和CSS語法體系`
 <!--SR:!2022-10-15,27,250-->
