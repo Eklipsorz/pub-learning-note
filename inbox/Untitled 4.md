@@ -4,6 +4,9 @@ componentDidMount 只會執行一次
 componentDidUpdate 會執行多次
 componentWillUnmount 只會執行一次
 
+
+
+### 當前端索要後端資源並渲染
 當要指定索取渲染用的資料時，會在componentDidMount階段進行
 ```
 1.  componentDidMount() {
@@ -13,9 +16,7 @@ componentWillUnmount 只會執行一次
 ```
 
 
-
-
-
+### useEffect 在
 
 ```
 1.  componentDidUpdate() {
