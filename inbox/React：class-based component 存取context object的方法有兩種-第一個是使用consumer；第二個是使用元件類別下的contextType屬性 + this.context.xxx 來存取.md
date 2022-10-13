@@ -43,8 +43,8 @@ MyClass.contextType = MyContext;
 ```
 
 重點：
-- 官方提供的專用方法：
-	- 允許在元件class或者元件對應函式添加contextType屬性來指定該元件class能夠存取的context object是什麼
+- 官方提供的專用方法：設定元件class能夠存取的context object
+	- 允許在元件class或者元件對應函式添加contextType屬性來指定
 	```
 	// syntax sugar
 	class Component1 {}
@@ -53,35 +53,23 @@ MyClass.contextType = MyContext;
 	const Component1 = (function () { })
 	Component1.contextType = Context1
 	```
-	- 允許在class添加一個名為contextType 的 static member variable來指定該元件class能夠存取到
+	- 允許在class添加一個名為contextType 的 static member variable來指定
+	```
+	class Component1 {
+		static contextType = Context1
+	}
+	```
 - contextType 僅能填入context object
 
-
-React class component 可以接受名為 `contextType` 的屬性。此屬性的用處與 `Context.Consumer` 相同，都是用來接收上層 `Provider` 傳下來的值。
-
   
-
-  
-
-
-
-  
-
-  
-
-contextType 指定元件要存取的context object會是什麼
-
-  
-
-在這裡使用static property只是分配記憶體給特定property，且只能指定一個context object
-
 
 ### 實際存取context object內容的方法
 
-so if there are two contexts which should be connected to one at the same component, this would simply not be an option, you would have to find some other work around like wrapping it in a number component
+[[@reactContextReact]]
+> The `contextType` property on a class can be assigned a Context object created by `React.createContext()`. Using this property lets you consume the nearest current value of that Context type using `this.context`.
 
-若要存取contextType設定的context object，則是利用
-this.context.xxxx即可存取
+
+若要存取contextType設定的context object，則是利用this.context.xxxx即可存取，而xxxx就是context object裡頭的屬性和方法
 
 
 
@@ -89,7 +77,7 @@ this.context.xxxx即可存取
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📝 
 Tags:
 [[React]]
 Links:

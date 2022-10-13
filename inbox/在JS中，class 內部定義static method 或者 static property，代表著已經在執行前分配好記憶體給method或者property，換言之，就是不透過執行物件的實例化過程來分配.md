@@ -64,7 +64,7 @@
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📝 
 Tags:
 [[React]]
 Links:
