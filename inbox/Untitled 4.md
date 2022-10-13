@@ -7,6 +7,8 @@ componentWillUnmount 只會執行一次
 
 
 ### 當前端索要後端資源並渲染
+
+#### 在class-based component
 當要指定索取渲染用的資料時，會在componentDidMount階段進行
 ```
 1.  componentDidMount() {
@@ -15,16 +17,25 @@ componentWillUnmount 只會執行一次
 4.  }
 ```
 
+#### 在functional component
+
+```
+useEffect(() => {
+	// send http request 
+	setState1(....)
+})
+```
+
 
 ### useEffect 在class-based component 的實現
 
-
-
 由於useEffect 本身就是componentDidUpdate、componentDidMount、componentWillUnmount 階段被執行，所以若要在class-based component實現useEffect，就要在每個元件的各個內建函式下定義對應的effect：
-	- componentDidMount
-	- componentDidUpdate
-	- componentWillUnmount
+	- componentDidMount：無視dependency並執行effect 
+	- componentDidUpdate：根據dependency是否變動來執行cleanup -> effect
+	- componentWillUnmount：無視dependency並執行cleanup
 
+#### componentDidMount
+由於該函式因為Mount通常
 
 #### componentDidUpdate
 若effect 本身會是觸發渲染函式，那麼勢必會遇到無限迴圈的問題：
@@ -50,24 +61,8 @@ componentWillUnmount 只會執行一次
 - 引發無限迴圈問題，理由為該effect為觸發渲染函式的effect
 
 
-  
-
-主要是根據更新前的資訊來執行更新後所要做的事情
-
-1.  componentDidUpdate(prevProps, prevState, snapshot)
-
-- prevProps ：更新前的props資訊
-
-- preState：更新前的state 資訊
-
-  
-
-  
-
 解法為
-
 - 設定一個條件來觸發：當關注的狀態有變動時就觸發
-
 ```
 1.  componentDidUpdate(prevProps, prevState) {
 2.      if (prevState.searchTerm !== this.state.searchTerm) {
@@ -79,10 +74,18 @@ componentWillUnmount 只會執行一次
 8.     }
 9.  }
 ```
-
-
+  
 
 ## 複習
+
+
+#🧠 當前端索要後端資源並渲染，那麼在class-based component的實現方式是？ ->->-> `在對應元件下的componentDidMount內建的函式中添加 發送請求和根據請求結果來執行setState`
+
+#🧠 當前端索要後端資源並渲染，那麼在functional component的實現方式是？ ->->-> `在對應元件的component function下添加useEffect，並於useEffect的callback中添加發送請求和根據請求結果來執行setState1`
+
+
+#🧠 functional component 所能使用的useEffect 在class-based component 的實現會是什麼？ ->->-> `設定能夠阻止無限循環的`
+
 
 
 ---
