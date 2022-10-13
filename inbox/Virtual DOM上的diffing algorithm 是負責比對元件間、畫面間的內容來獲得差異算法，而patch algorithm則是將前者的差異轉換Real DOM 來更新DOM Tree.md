@@ -121,7 +121,7 @@ verb
 
 
 #🧠 Virtual DOM 中的 patch algorithm用途是什麼？->->-> `將diff algorithm得到的差異搭配特定模組對應Real DOM來更新Tree`
-<!--SR:!2022-10-13,9,250-->
+<!--SR:!2022-11-07,25,250-->
 
 
 #🧠 Virtual DOM 中的 diffing/ diff algorithm 用途是什麼？->->-> `		- 獲得畫面間的差異 - 獲得不同版本下同個元件的差異 - 獲得元件間的差異`

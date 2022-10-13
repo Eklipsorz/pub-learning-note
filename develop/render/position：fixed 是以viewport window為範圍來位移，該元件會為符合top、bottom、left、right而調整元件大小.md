@@ -122,7 +122,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-10-25,28,230-->
 
 #🧠 電腦科學 的 viewport套用在瀏覽器，則會是指什麼？ ->->-> `若進一步套用在瀏覽器的話，瀏覽器中用呈現畫面的部分就是viewport`
-<!--SR:!2022-10-13,23,250-->
+<!--SR:!2022-12-13,61,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
 <!--SR:!2022-10-20,28,250-->
@@ -163,7 +163,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-right-case_xa3f8t.png) ->->-> `設定right屬性為value1`
-<!--SR:!2022-10-13,23,250-->
+<!--SR:!2022-12-14,62,250-->
 
 
 #🧠 當對fixed positioning的元件設定正值的value1給right屬性，會是代表著？ ->->-> `元素的右邊界(border-right)會跟viewport的右邊界在viewport內部保持value1的距離`

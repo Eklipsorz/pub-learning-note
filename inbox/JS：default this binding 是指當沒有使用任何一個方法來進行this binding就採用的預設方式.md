@@ -121,7 +121,7 @@ function fn() {
 <!--SR:!2022-10-13,2,248-->
 
 #🧠 JS：default this binding  方式為何 ？ ->->-> `會根據執行環境是否處於嚴格模式來將this設定成global 或者 undefined`
-<!--SR:!2022-10-13,2,248-->
+<!--SR:!2022-10-17,4,248-->
 
 
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於非嚴格模式 ->->-> `this 會被設定成 global object，瀏覽器中會是指window，nodejs則是指global`
@@ -138,10 +138,10 @@ function fn() {
 <!--SR:!2022-10-13,2,248-->
 
 #🧠 default this binding 處於何種情況下才會將this設定成undefined? ->->-> `若目前執行環境或者全域環境下設定成嚴格模式`
-<!--SR:!2022-10-13,2,248-->
+<!--SR:!2022-10-19,6,248-->
 
 #🧠 若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為global object`
-<!--SR:!2022-10-13,2,248-->
+<!--SR:!2022-10-18,5,248-->
 
 #🧠 default this binding 處於何種情況下才會將this設定成global object?  ->->-> `若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式`
 <!--SR:!2022-10-14,3,250-->
