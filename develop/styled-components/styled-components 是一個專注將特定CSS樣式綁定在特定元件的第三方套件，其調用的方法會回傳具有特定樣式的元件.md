@@ -115,6 +115,8 @@ const Element = styled.<element>`<template-literal>`
 #🧠 styled-components 在實際DOM節點上，自動替已經註冊在特定元件下的樣式內容生成一個獨特隨機名稱的className 讓該元件的class屬性綁定於獨特隨機的className，請問目的為何？->->-> `在每個元件都能共享的CSSOM下，保證每個元件所使用的className 都對應著獨特且不重複的class selector `
 <!--SR:!2022-11-04,37,230-->
 
+#🧠 React：元件標籤上的style屬性和className屬性之間差別 ->->-> `前者是指定inline style，後者為設定對應元件所屬的類別。`
+
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是什麼？->->-> `React Element 或者對應元件的建構式`
 <!--SR:!2022-10-14,27,250-->
 
