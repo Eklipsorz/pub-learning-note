@@ -209,7 +209,7 @@ import styles from <css-file>
 <!--SR:!2022-11-09,41,247-->
 
 #🧠 CSS modules 如何防止CSS全域污染問題 ->->-> `主要會讓元件A使用的CSS檔案所擁有的class selector name更名成獨特不重複的，最後再讓元件A使用該CSS檔案下的selector name轉換成更名後的樣子`
-<!--SR:!2022-10-13,2,247-->
+<!--SR:!2022-10-19,6,247-->
 
 
 #🧠 styled-components 和 CSS modules 對於防止CSS全域污染問題的解決概念是什麼？(CSSOM)->->-> `替每個元件正在使用的selector name在同一個CSSOM上是獨特不重複`

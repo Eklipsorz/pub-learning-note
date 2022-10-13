@@ -118,7 +118,7 @@ function fn() {
 ## 複習
 
 #🧠 JS：default this binding  會是什麼？->->-> `指當沒有使用任何一個方法來進行this binding就採用的預設方式`
-<!--SR:!2022-10-13,2,248-->
+<!--SR:!2022-10-18,5,248-->
 
 #🧠 JS：default this binding  方式為何 ？ ->->-> `會根據執行環境是否處於嚴格模式來將this設定成global 或者 undefined`
 <!--SR:!2022-10-17,4,248-->

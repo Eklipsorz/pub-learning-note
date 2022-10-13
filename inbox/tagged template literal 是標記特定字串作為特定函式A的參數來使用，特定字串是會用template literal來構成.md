@@ -66,10 +66,10 @@ myTag`that ${ person } is a ${ age }`
 <!--SR:!2022-10-13,28,250-->
 
 #🧠 tagged template literal 的形式是什麼->->-> `functionName(反引號)<template literal>(反引號)`
-<!--SR:!2022-10-13,28,250-->
+<!--SR:!2022-12-23,71,250-->
 
 #🧠 tagged template literal 是由什麼構成 ->->-> `tag function和特定字串`
-<!--SR:!2022-10-13,28,250-->
+<!--SR:!2022-12-26,74,250-->
 
 #🧠 tag function 要如何把template literal 中的內容當作參數來使用？ ->->-> `沒用\$\{\}特別包住的字串結合成一個字串當作特定函式A的第一個參數，that is a ，該字串會用字串陣列來儲存、剩下後續參數都擷取\$\{\}`
 <!--SR:!2022-12-26,74,250-->
