@@ -70,7 +70,7 @@ test(a)
 <!--SR:!2022-11-26,79,230-->
 
 #🧠 在JS引擎一執行檔案時，會做些什麼來執行？->->-> `1. 編譯時期：編譯ByteCode + 順便定義每個scope的EC所需要的資料2. 快要執行時期：以編譯時期所獲取到的資料和對應ByteCode來建立EC 3. 執行階段：以目前EC來執行程式碼，並根據結果來更新EC`
-<!--SR:!2022-10-13,32,248-->
+<!--SR:!2023-01-04,83,248-->
 
 #🧠 JavaScript 會於編譯時期確定每個Scope和對應的EC嗎？具體如何確定 ->->-> `會，具體的話，會於編譯時期透過生成對應ByteCode來準備建立EC所需要的資料`
 <!--SR:!2022-10-18,35,248-->
@@ -116,7 +116,7 @@ test(a)
 
 
 #🧠 JS：每個Execution Context 所面臨的階段是什麼？ ->->-> `- creation phase：execution context建立的階段，會拿編譯時期的資訊來建立EC所會有 identifier : instance、this、outer reference。 - exection phase：程式依據著初期設定的execution context執行的時候，在這時候會邊依據邊把需要更動的資訊紀錄至context`
-<!--SR:!2022-10-13,6,248-->
+<!--SR:!2022-10-27,14,248-->
 
 
 #🧠 JS：Execution Context 種類 (共三種：Block、Global、Function) ->->-> `Global Execution Context(GEC): 以程式碼全域所在的程式碼為主來構成，不包含function的內部執行、block的內部執行。 - Function Execution Context(FEC):  通常會是function關鍵字以及{}來構築，在這裡當GEC呼叫function並執行function時或者執行對應block的內部執行時就會以當時所要執行的內部程式碼為範疇來建構，比如説：當GEC呼叫了test(a)時，系統就便會執行test內部的第一行，此時就會進入該函式的FEC並開始進入creation phase和execution phase - 以{}所建立的Execution Context：通常會是由一對{}所建立，如同function execution context，只要一進入就會進入該context的creation  phase，然後建立完之後就進入execution phase`
