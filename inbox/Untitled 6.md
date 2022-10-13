@@ -16,17 +16,24 @@
 > A "static" function is a function that is defined on an object, but it doesn't change properties of the object. So why even define it on the object? Typically, it has something to do with the object, so it is logical to attach it to it. It treats the object more like a namespace.
 
 
+重點：
+- 在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配
+- static method 用途：
+	- 作為utility function來使用，而class名稱就表明該function的隸屬
+- static property 用途：
+	- 作為特定設定資料的緩存，而class名稱就表明這份資料的
 
 
 
 ### static variable 命名緣由
 [[@wikidataStaticVariable2022]]
-> In computer programming, a static variable is a variable that has been allocated "statically", meaning that its lifetime (or "extent") is the entire run of the program
+> In computer programming, a static variable is a variable that has been allocated "statically"
 
 
 重點：
 - static variable 中 的static 起源於static memory allocation作法
-- static variable 意旨為在執行前就已經分配好記憶體
+- static variable 意旨為在執行前就已經分配好記憶體給變數
+- static function / static method 意旨為在執行前就已經分配好記憶體給函式
 
 
 
