@@ -44,7 +44,7 @@ MyClass.contextType = MyContext;
 
 重點：
 - 官方提供的專用方法：
-	- 允許在元件class或者元件對應函式添加contextType屬性來指定該物件能夠存取的context object是什麼
+	- 允許在元件class或者元件對應函式添加contextType屬性來指定該元件class能夠存取的context object是什麼
 	```
 	// syntax sugar
 	class Component1 {}
@@ -53,7 +53,7 @@ MyClass.contextType = MyContext;
 	const Component1 = (function () { })
 	Component1.contextType = Context1
 	```
-	- 允許在class添加一個名為contextType 的 static member
+	- 允許在class添加一個名為contextType 的 static member variable來指定該元件class能夠存取到
 - contextType 僅能填入context object
 
 
