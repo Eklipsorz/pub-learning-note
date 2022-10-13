@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e195b3848f88b394",
+        "id": "ff325bc57530b127",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "6dd61dd55e15e319",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -90,7 +74,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,9 +129,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6dd61dd55e15e319",
+  "active": "ff325bc57530b127",
   "lastOpenFiles": [
     "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
+    "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "inbox/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/Untitled 3.md",
     "inbox/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
@@ -159,7 +140,6 @@
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "inbox/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md",
-    "inbox/當執行Bytecode來決定this binding時，若是遇到；非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定來決定this是什麼.md",
-    "inbox/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md"
+    "inbox/當執行Bytecode來決定this binding時，若是遇到；非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定來決定this是什麼.md"
   ]
 }
