@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "inbox/Untitled 4.md",
+            "file": "inbox/React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 4.md",
+                "file": "inbox/React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 4.md",
+                "file": "inbox/React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 4.md"
+                "file": "inbox/React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼.md"
               }
             }
           }
@@ -139,15 +139,15 @@
   },
   "active": "ff325bc57530b127",
   "lastOpenFiles": [
+    "inbox/Untitled 4.md",
+    "inbox/class-based-component：Uses轉換成class-based-component的過程.md",
+    "inbox/React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼.md",
     "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
     "inbox/(待研究)border-radius 失效，可能原因為overflow沒藏好.md",
     "inbox/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
     "develop/food-order-project/food-order-project：從購物車移除項目的業務邏輯.md",
     "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
-    "inbox/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/Untitled 3.md",
-    "inbox/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
-    "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
-    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md"
+    "inbox/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md"
   ]
 }
