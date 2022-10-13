@@ -23,7 +23,7 @@
 - static property 用途：
 	- 作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬
 - 細節：
-	- 
+	- 由於static method 和 static property 本身就不透過執行實例化來分配記憶體，所以即使重複執行多次 new function() 也不會增加重複的method和property
 
 
 ### static variable 命名緣由
