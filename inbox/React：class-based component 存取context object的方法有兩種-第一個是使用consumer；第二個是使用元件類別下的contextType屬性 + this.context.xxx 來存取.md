@@ -53,7 +53,7 @@ MyClass.contextType = MyContext;
 	const Component1 = (function () { })
 	Component1.contextType = Context1
 	```
-	- 允許在class添加一個名為contextType 的 static member variable來指定
+	- 允許在class添加一個名為contextType 的 static member variable來指定context object
 	```
 	class Component1 {
 		static contextType = Context1
@@ -62,7 +62,52 @@ MyClass.contextType = MyContext;
 - contextType 僅能填入context object
 - 細節：
 	- 針對class本身增加它所擁有的method、variable 或者 在對應class內添加static variable/method，都是相當於對著class本身增加它所擁有的method、variable
-  
+
+#### 對著class本身增加屬性 vs. 在class使用static 變數
+
+對著class本身增加屬性 vs. 在class使用static 變數：
+- 兩者皆為是對class本身增加屬性
+- class的對應物件並不會獲取到這些屬性或者變數
+
+對於第一個描述的案例：
+```
+class Class1 {
+	static variable = 1;
+};
+
+class Class2 {}
+Class2.variable = 1;
+
+console.log(Class1, Class2);
+```
+
+```
+[class Class1] { variable: 1 } [class Class2] { variable: 1 }
+```
+
+對於第二個描述的案例
+```
+class Class1 {
+	static variable = 1;
+	constructor() {
+		this.name = 'hi'
+	}
+}
+
+class Class2 {}
+Class2.variable = 1;
+
+const obj1 = new Class1();
+const obj2 = new Class2();
+
+console.log(Class1, Class2);
+console.log(obj1, obj2);
+```
+
+```
+[class Class1] { variable: 1 } [class Class2] { variable: 1 }
+Class1 { name: 'hi' } Class2 {}
+```
 
 ### 實際存取context object內容的方法
 
@@ -85,15 +130,16 @@ MyClass.contextType = MyContext;
 
 #🧠 React 官方提供的語法-contextType是做什麼？ (請說到類別和物件) ->->-> `設定元件class能夠存取的context object，讓對應元件類別下的物件只能夠存取對應的context object`
 
-#🧠 React 官方提供的語法-contextType 語法是什麼？->->-> `元件class或者元件對應函式添加contextType屬性來指定對應context object`
+#🧠 React 官方提供的語法-contextType 語法是什麼？->->-> `元件class或者元件對應函式添加contextType屬性來指定對應context object；在class添加一個名為contextType 的 static member variable來指定context object`
 
-#🧠 Question :: ->->-> ``
+#🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**在元件class或者元件對應函式添加contextType屬性來指定context object**這方法->->-> `class Component1 {} Component1.contextType = Context1`
 
-#🧠 Question :: ->->-> ``
+#🧠 JS ：class Component1 \{\} Component1.contextType = Context1等同於是什麼？程式碼會是什麼？ ->->-> `對著名為Component1的函式物件添加contextType屬性，程式碼會是const Component1 = (function () { } Component1.contextType = Context1`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
 
+#🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> ``
 
 ---
 Status: #🌱 #📝 
