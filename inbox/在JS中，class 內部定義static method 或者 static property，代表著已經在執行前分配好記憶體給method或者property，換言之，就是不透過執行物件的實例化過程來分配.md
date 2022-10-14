@@ -57,15 +57,26 @@
 
 > staying in one place without moving, or not changing for a long time
 
+> Something that is static does not move or change.
 
+重點：
+- 若某事物是static 的話，那麼就是指某事物並不會移動或者並不會改變
 
 ## 複習
 
 
 #🧠 Question :: ->->-> ``
 
-#🧠 Question :: ->->-> ``
+#🧠 static memory allocation 是什麼？(簡述) ->->-> `相對於dynamic memory allocation來說，會以不透過執行程式來進行記憶體分配，換言之，就是在執行階段前做記憶體分配`
 
+#🧠 dynamic memory allocation 是什麼？(簡述) ->->-> `相對於static memory allocation來說，會以透過執行程式來根據執行狀態作為記憶體分配的依據，換言之，就是在執行階段做記憶體分配`
+
+
+#🧠 在JS中，JS 內部定義static method或者static property，其記憶體狀況為何？ ->->-> `代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配`
+
+#🧠 在JS中的static method的用途為何？class對於method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
+
+#🧠 在JS中的static property的用途為何？class對於method的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
 
 
 ---
