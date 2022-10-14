@@ -155,7 +155,7 @@ Class1 { name: 'hi' } Class2 {}
 
 
 ---
-Status: #🌱 #📝 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
