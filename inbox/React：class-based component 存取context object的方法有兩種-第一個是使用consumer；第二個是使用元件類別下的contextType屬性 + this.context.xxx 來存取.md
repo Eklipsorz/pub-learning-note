@@ -120,6 +120,7 @@ Class1 { name: 'hi' } Class2 {}
 ## 複習
 
 #🧠  class-based component 存取context object的方法有哪兩種？ ->->-> `1.  使用consumer component來獲取對應context object的內容2. 使用元件類別下的contextType屬性 + this.context.xxx 來存取`
+<!--SR:!2022-10-18,3,250-->
 
 #🧠 React：使用consumer component來獲取對應context object的內容適用於哪些寫法 ->->-> `第一個方法能夠用在functional component 和 class-based component`
 <!--SR:!2022-10-17,3,250-->
@@ -154,6 +155,7 @@ Class1 { name: 'hi' } Class2 {}
 
 
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？class的對應物件會有該屬性或者static變數嗎？->->-> `class的對應物件並不會獲取到這些屬性或者變數`
+<!--SR:!2022-10-17,3,250-->
 
 #🧠 React 官方提供的語法要如何實際存取context object內容，假使已經設定contextType屬性->->-> `直接在class內使用this.context.xxxx，其中xxxx就是context object所能提供的屬性和方法。`
 <!--SR:!2022-10-17,3,250-->
