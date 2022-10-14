@@ -114,7 +114,7 @@ verb
 
 
 #🧠 Virtual DOM 中的 diffing/ diff algorithm 被處理後會得到什麼？ ->->-> `Virtual DOM之間差異`
-<!--SR:!2022-10-14,10,250-->
+<!--SR:!2022-11-11,28,250-->
 
 #🧠 Virtual DOM 中的 patch algorithm是什麼？ ->->-> `將差異轉換成對應Real DOM來更新DOM Tree的算法`
 <!--SR:!2022-10-24,15,249-->
