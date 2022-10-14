@@ -122,6 +122,7 @@ Class1 { name: 'hi' } Class2 {}
 #🧠  class-based component 存取context object的方法有哪兩種？ ->->-> `1.  使用consumer component來獲取對應context object的內容2. 使用元件類別下的contextType屬性 + this.context.xxx 來存取`
 
 #🧠 React：使用consumer component來獲取對應context object的內容適用於哪些寫法 ->->-> `第一個方法能夠用在functional component 和 class-based component`
+<!--SR:!2022-10-17,3,250-->
 
 #🧠  React：使用元件類別下的contextType屬性 + this.context.xxx 來存取適用於哪些寫法->->-> `第二個方法只能夠用在class-based component`
 
@@ -129,17 +130,21 @@ Class1 { name: 'hi' } Class2 {}
 #🧠 React：使用元件類別下的contextType屬性 + this.context.xxx 來存取，最多能存取多少個context object，為什麼？->->-> `只能存取一個context object，因為contextType只能填寫一種，所以就只能存取一個context object`
 
 #🧠 React 官方提供的語法-contextType是做什麼？ (請說到類別和物件) ->->-> `設定元件class能夠存取的context object，讓對應元件類別下的物件只能夠存取對應的context object`
+<!--SR:!2022-10-17,3,250-->
 
 #🧠 React 官方提供的語法-contextType 語法是什麼？->->-> `元件class或者元件對應函式添加contextType屬性來指定對應context object；在class添加一個名為contextType 的 static member variable來指定context object`
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**在元件class或者元件對應函式添加contextType屬性來指定context object**這方法->->-> `class Component1 {} Component1.contextType = Context1`
+<!--SR:!2022-10-17,3,250-->
 
 #🧠 JS ：class Component1 \{\} Component1.contextType = Context1等同於是什麼？程式碼會是什麼？ ->->-> `對著名為Component1的函式物件添加contextType屬性，程式碼會是const Component1 = (function () { } Component1.contextType = Context1`
+<!--SR:!2022-10-17,3,250-->
 
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
 
 #🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> `class Component1 {} Component1.contextType = Context1`
+<!--SR:!2022-10-17,3,250-->
 
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？共同點是什麼 ->->-> `首先他們兩者皆是對class本身增加屬性，所以是一樣的，只是表現方式不同、class的對應物件並不會獲取到這些屬性或者變數`
 
@@ -147,8 +152,10 @@ Class1 { name: 'hi' } Class2 {}
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？class的對應物件會有該屬性或者static變數嗎？->->-> `class的對應物件並不會獲取到這些屬性或者變數`
 
 #🧠 React 官方提供的語法要如何實際存取context object內容，假使已經設定contextType屬性->->-> `直接在class內使用this.context.xxxx，其中xxxx就是context object所能提供的屬性和方法。`
+<!--SR:!2022-10-17,3,250-->
 
 #🧠 functional component 下的useContext 可以使用多少個context object ->->-> `N個`
+<!--SR:!2022-10-17,3,250-->
 
 
 

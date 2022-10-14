@@ -22,16 +22,16 @@
         ]
       },
       {
-        "id": "aa706d92890b85aa",
+        "id": "2c46139aaa874dd1",
         "type": "tabs",
         "children": [
           {
-            "id": "b3b870519631441a",
+            "id": "c963b7dc823393a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+                "file": "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+                "file": "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+                "file": "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md"
+                "file": "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md"
               }
             }
           }
@@ -166,14 +166,14 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "ca4c63b40639f0e8",
+  "active": "c963b7dc823393a5",
   "lastOpenFiles": [
+    "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
     "inbox/React：context object 在 class-based component 的使用案例.md",
     "inbox/useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
     "inbox/Virtual DOM上的diffing algorithm 是負責比對元件間、畫面間的內容來獲得差異算法，而patch algorithm則是將前者的差異轉換Real DOM 來更新DOM Tree.md",
-    "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "develop/food-order-project/food-order-project：增加項目至購物車的業務邏輯.md",
     "inbox/React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼.md",
     "inbox/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",

@@ -99,7 +99,7 @@ export default CartItem;
 ## 複習
 
 #🧠 假使實現購物車的介面和功能是由Cart.js和CartItem.js，Cart.js是呈現每個CartItem的部分以及儲存每個項目的名稱、價格、id，而CartItem則是負責每個項目的渲染和儲存對應項目的id、價格、名稱數量，在這裡為什麼狀態會以Cart.js來去觸發context的更新狀態用函式？而非由CartItem.js->->-> `最主要是要讓CartItem.js是專注呈現每個項目`
-<!--SR:!2022-10-14,10,250-->
+<!--SR:!2022-11-10,27,250-->
 
 
 #🧠 請問為什麼要特意讓每個項目的onAdd和onRemove要以function.protype.bind來重新對應呢？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664553736/blog/react/food-order/function.bind-example_dkgr2n.png) ->->-> `為的就是讓每個項目的onAdd和onRemove都對應著各自項目專屬的增加功能和移除功能，而不透過修改item來實現`
