@@ -1,12 +1,18 @@
 ## 描述
 
-there are errors which you can't prevent or which are simply being used transport information that something went wrong from on part of the application to another part
 
-consider an http request which is being sent.
+### 發送錯誤資訊物件的主要來源
 
-if the server is temporarily not responding, the request can't complete and you will likely end up with an error being generated
+主要來源為：
+- 元件上的事件處理 
+- 元件本身的生命週期方法
 
 
+
+### 錯誤資訊物件的傳遞
+
+
+假如說在上述來源上出現錯誤的話，那麼勢必會以拋出錯誤的形式來讓系統內部的錯誤處理程式模組能夠攔截
 ```
 1.  if (this.props.users.length === 0) {
 2.     throw new Error('No users provided!');
@@ -14,36 +20,23 @@ if the server is temporarily not responding, the request can't complete and you 
 ```
 
 
-
-當特定元件發出錯誤時，會試著從目前函式下尋找可攔截錯誤資訊物件並處理的程式模組，若沒有就會往當初該執行環境下被呼叫的地方所在的函式A尋找可攔截錯誤資訊物件並處理的程式模組，在沒有就從函式A被呼叫的所在尋找可攔截錯誤資訊物件並處理的程式模組，直到找得到可攔截並處理為止，若沒有的話，React 會報錯
-
-  
-
-and i let his error bubble up the call stack. So I pass it through all these components, and if it's not handled anywhere, this will crash my application
-
-  
-
-可能的替代方案：
-
-- 不拋出錯誤，但取而代之是以其他方式來處理
-
-```
-1.  try {
-2.       someCodeWhichMightFail()
-3.  } catch(err) {
-4.    // handle error
-5. }
-```
+當目前函式發出錯誤時：
+- 會試著從目前函式下尋找可攔截錯誤資訊物件並處理的程式模組
+- 若沒有就會往當初該執行環境下被呼叫的地方所在的函式A尋找可攔截錯誤資訊物件並處理的程式模組
+- 在沒有就從函式A被呼叫的所在尋找可攔截錯誤資訊物件並處理的程式模組，直到找得到可攔截並處理為止
+- 若沒有的話，React 會報錯，最後並阻止其渲染
 
 
+#### 錯誤資訊物件的處理
 
-nonetheless, if an error is generated inside of a component and we can't handle it in that component though
+若是處於
+- 
 
-  
 
 如果元件對應的JSX code本身出現錯誤的話，就不能夠直接以try...catch
 
-  
+
+
 
 error boundary：
 
