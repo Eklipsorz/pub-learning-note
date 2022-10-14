@@ -41,17 +41,6 @@
 > D. 错误边界组件自身的错误。
 
 
-
-> A. 绑定DOM的事件处理方法中的错误无法被捕获到。（因为在触发交互前，组件的生命周期和渲染都已经被执行。如果需要捕获事件的方法中的错误，需要使用 JS 的 `try / catch` 方法。）
->
-> B. 异步代码中的错误无法被捕获到。（包括 setTimeout、Promise 等，原因与A同理。）
->
-> D. 错误边界组件自身错误无法被捕获，而是会被上层的错误边界组件给获取。
-
-  
-
-
-
 若是處於以下狀況的錯誤
 -  元件上的事件處理
 -  元件上發送出的非同步任務 (setTimeout、Promise)
@@ -62,9 +51,21 @@
 ### error boundary
 
 error boundary：
-- 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個元件，這些元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到
+- 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到
 - 本質上是一個標準的class-based component，但會夾雜著componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError
 - 目前functional component並沒辦法支援componentDidCatch，故此要實現error boundary只能在class-based component
+
+#### error boundary 侷限性
+> A. 绑定DOM的事件处理方法中的错误无法被捕获到。（因为在触发交互前，组件的生命周期和渲染都已经被执行。如果需要捕获事件的方法中的错误，需要使用 JS 的 `try / catch` 方法。）
+>
+> B. 异步代码中的错误无法被捕获到。（包括 setTimeout、Promise 等，原因与A同理。）
+>
+> D. 错误边界组件自身错误无法被捕获，而是会被上层的错误边界组件给获取。
+
+它無法處理：
+- 元件上的事件處理所產生的錯誤
+- 元件上的非同步任務所產生的錯誤
+- error-boundary 元件本身並不能夠被自己攔截到，只能被上層的error-boundary元件攔截到
 
 #### error boundary 定義
 [[@nachao2022NianQianDuanReactDe100DaoMianShiTiDeDi15TiCuoWuBianJieJueJin]]
@@ -76,16 +77,19 @@ error boundary：
 - 定義componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError
 
 
-#### componentDidCatch
+#### componentDidCatch 語法
 
 > well, this lifecycle method will be triggered whenever one of the child components throws an error or generates an error
 
 componentDidCatch 生命週期函式
-
 - 語法：
-  error 會是被攔截到的錯誤資訊物件，會由react負責轉遞過來
-  設定hasError為true來表達有錯誤
-
+	- - error 會是被攔截到的錯誤資訊物件，會由react負責轉遞過來
+```
+componentDidCatch(error) {
+	....
+}
+```
+- 通常處理方式會是：搭配狀態註冊，來在componentDidCatch切換狀態以及觸發渲染
 ```
 1.  componentDidCatch(error) {
 2.    // 根據error種類來訂製各個錯誤處理
@@ -102,6 +106,8 @@ componentDidCatch 生命週期函式
 
 
 ### error-boundary 常見實作方式
+
+1. 製作一個
 
 error boundary
 1. 設定成wrapper component 來包含多個component，以此讓這些component發生錯誤時，可以先被error boundary攔截到
