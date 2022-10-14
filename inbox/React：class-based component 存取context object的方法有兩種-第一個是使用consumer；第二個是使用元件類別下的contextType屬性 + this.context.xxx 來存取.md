@@ -60,7 +60,8 @@ MyClass.contextType = MyContext;
 	}
 	```
 - contextType 僅能填入context object
-
+- 細節：
+	- 針對class本身增加它所擁有的method、variable 或者 在對應class內添加static variable/method，都是相當於對著class本身增加它所擁有的method、variable
   
 
 ### 實際存取context object內容的方法

@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "10819a9bd478faaa",
+        "id": "171e00aae1729def",
         "type": "tabs",
         "children": [
           {
-            "id": "ff325bc57530b127",
+            "id": "7c650868a0f95227",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
+                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "34cc7748fc90020b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.0"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
+                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
+                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md"
+                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md"
               }
             }
           }
@@ -159,12 +148,12 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "34cc7748fc90020b",
+  "active": "7c650868a0f95227",
   "lastOpenFiles": [
-    "inbox/useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
-    "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
-    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "inbox/React：context object 在 class-based component 的使用案例.md",
+    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+    "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
+    "inbox/useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
     "inbox/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
     "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
