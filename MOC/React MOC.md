@@ -194,3 +194,16 @@
 
 [[React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法]]
 
+
+
+## class-based component
+
+[[class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上]]
+[[class-based-component：Uses轉換成class-based-component的過程]]
+[[functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary]]
+[[React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼]]
+[[React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component]]
+[[React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取]]
+[[React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現]]
+[[useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現]]
+[[import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性]]
