@@ -90,12 +90,14 @@ useEffect(() => {
 
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會是什麼？ ->->-> ` componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect；若effect 本身會是觸發渲染函式，那麼勢必會遇到無限迴圈的問題，所以通常會添加條件式、執行cleanup、執行effect`
+<!--SR:!2022-10-18,3,250-->
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會是什麼？ 以componentDidMount函式來說 ->->-> `componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect`
 <!--SR:!2022-10-17,3,250-->
 
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會不會在componentDidMount遇上無限循環問題？為什麼->->-> `不會，具體是由於Mount只會因為元件對應DOM被安裝至DOM Tree才執行，若因為componentDidMount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行omponentDidMount`
+<!--SR:!2022-10-18,3,250-->
 
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會不會在componentWillUnmount遇上無限循環問題？為什麼->->-> `不會，具體是由於Mount只會因為從DOM Tree移除對應DOM才執行，若因為componentWillUnmount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行componentWillUnmount`
@@ -113,6 +115,7 @@ useEffect(() => {
 
 
 #🧠 以下為React的class-base component，請問以下程式碼有何潛在問題？如何解決![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665664892/blog/react/life-cycle/componentDidUpdate/componentDidUpdate-loop-problem_tnvw8x.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665664892/blog/react/life-cycle/componentDidUpdate/componentDidUpdate-loop-problem_tnvw8x.png) ->->-> `具有無限迴圈的潛在問題。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665664892/blog/react/life-cycle/componentDidUpdate/componentDidUpdate-loop-solution_fivxhx.png)`
+<!--SR:!2022-10-18,3,250-->
 
 
 ---

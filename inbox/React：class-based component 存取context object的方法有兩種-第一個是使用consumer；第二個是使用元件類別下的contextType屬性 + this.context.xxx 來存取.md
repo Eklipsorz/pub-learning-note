@@ -126,6 +126,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2022-10-17,3,250-->
 
 #🧠  React：使用元件類別下的contextType屬性 + this.context.xxx 來存取適用於哪些寫法->->-> `第二個方法只能夠用在class-based component`
+<!--SR:!2022-10-18,3,250-->
 
 
 #🧠 React：使用元件類別下的contextType屬性 + this.context.xxx 來存取，最多能存取多少個context object，為什麼？->->-> `只能存取一個context object，因為contextType只能填寫一種，所以就只能存取一個context object`
