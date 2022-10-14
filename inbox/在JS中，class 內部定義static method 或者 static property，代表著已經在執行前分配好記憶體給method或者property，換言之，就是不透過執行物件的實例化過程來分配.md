@@ -17,13 +17,13 @@
 
 
 重點：
-- 在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配
+- 在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶題的變數或者函式
 - static method 用途：
 	- 作為utility function來使用，而class名稱就表明該function的隸屬
 - static property 用途：
 	- 作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬
 - 細節：
-	- 由於static method 和 static property 本身就不透過執行實例化來分配記憶體，所以即使重複執行多次 new function() 也不會增加重複的method和property
+	- 由於static method 和 static property 本身就不透過執行實例化來分配記憶體，所以即使重複執行多次 new function() 也不會替static method / property製作成副本
 
 
 ### static variable 命名緣由
@@ -65,11 +65,11 @@
 ## 複習
 
 
-#🧠 Question :: ->->-> ``
+#🧠  static 命名緣由->->-> `若某事物是static 的話，那麼就是指某事物並不會移動或者並不會改變`
 
-#🧠 static memory allocation 是什麼？(簡述) ->->-> `相對於dynamic memory allocation來說，會以不透過執行程式來進行記憶體分配，換言之，就是在執行階段前做記憶體分配`
+#🧠 static memory allocation 是什麼？(簡述) ->->-> `相對於dynamic memory allocation來說，會以不透過執行程式來進行記憶體分配，換言之，就是在執行階段前做記憶體分配，而是單方面在執行之前分配好記憶題的變數或者函式`
 
-#🧠 dynamic memory allocation 是什麼？(簡述) ->->-> `相對於static memory allocation來說，會以透過執行程式來根據執行狀態作為記憶體分配的依據，換言之，就是在執行階段做記憶體分配`
+#🧠 dynamic memory allocation 是什麼？(簡述) ->->-> `相對於static memory allocation來說，會以透過執行程式來根據執行狀態作為記憶體分配的依據，換言之，就是在執行階段做記憶體分配，而是單方面在執行之前分配好記憶題的變數或者函式`
 
 
 #🧠 在JS中，JS 內部定義static method或者static property，其記憶體狀況為何？ ->->-> `代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配`
@@ -77,6 +77,21 @@
 #🧠 在JS中的static method的用途為何？class對於method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
 
 #🧠 在JS中的static property的用途為何？class對於method的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
+
+#🧠  static variable 中 的static 起源於什麼？ ->->-> `static variable 中 的static 起源於static memory allocation作法`
+
+#🧠 static variable 是什麼？->->-> `static variable 意旨為在執行前就已經分配好記憶體給變數`
+
+#🧠 static function / static method是什麼？ ->->-> `static function / static method 意旨為在執行前就已經分配好記憶體給函式`
+
+#🧠 static variable 對於JS的class來說是什麼？->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶題的變數或者函式`
+
+#🧠 static function / static method 對於JS的class來說是什麼？ ->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶題的變數或者函式`
+
+
+#🧠 請問若JS class的實例化執行好N次，請問class 下的每個static method會有幾份副本？為什麼？->->-> `都各1份，因為就以單方面在執行之前分配好記憶題的變數或者函式，所以即使重複執行多次 new function() 也不會替static method / property製作成副本`
+
+#🧠 請問若JS class的實例化執行好N次，請問class 下的static property會有幾份副本？為什麼？->->-> `都各1份，因為就以單方面在執行之前分配好記憶題的變數或者函式，所以即使重複執行多次 new function() 也不會替static method / property製作成副本`
 
 
 ---
