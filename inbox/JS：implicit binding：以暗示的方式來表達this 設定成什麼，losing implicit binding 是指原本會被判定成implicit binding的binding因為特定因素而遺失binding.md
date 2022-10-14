@@ -314,7 +314,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-23,9,250-->
 
 #🧠 請問這是obj.o.func呼叫後的執行環境所設定的this會是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是設定obj並印出obj的name-行星飛行。在這裡是採用implicit binding，並且由於前面有多個物件參考，所以系統會挑選離呼叫最近的o對應之參照，也就是obj。`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-24,10,250-->
 
 #🧠 請問這是obj.o.func呼叫後的執行環境會被系統使用哪個this binding方法？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是以implicit binding。由於沒有出現new binding、explicit binding的跡象，所以改試著以implicit binding來判定，結果因為函式呼叫前面有物件，而這正是implicit binding的識別特徵`
 <!--SR:!2022-10-23,9,250-->
@@ -333,7 +333,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-24,10,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding ，原本的binding會是指的是？ ->->-> `implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B；implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-24,10,250-->
 
 #🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png) ->->-> `window，且印出行星飛行。在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，而在這裡並沒有足夠的特徵能讓它以explicit binding、new binding、implicit binding來決定，所以最後只能選擇使用default binding來以global object來呼叫param()`
 <!--SR:!2022-10-15,3,250-->

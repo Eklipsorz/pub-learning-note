@@ -118,7 +118,7 @@ const Element = styled.<element>`<template-literal>`
 #🧠 React：元件標籤上的style屬性和className屬性之間差別 ->->-> `前者是指定inline style，後者為設定對應元件所屬的類別。`
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是什麼？->->-> `React Element 或者對應元件的建構式`
-<!--SR:!2022-10-14,27,250-->
+<!--SR:!2022-12-25,72,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
 <!--SR:!2022-12-19,68,250-->
