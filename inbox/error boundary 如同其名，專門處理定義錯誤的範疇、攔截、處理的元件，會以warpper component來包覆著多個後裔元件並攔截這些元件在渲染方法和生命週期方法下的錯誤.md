@@ -51,7 +51,7 @@
 ### error boundary
 
 error boundary：
-- 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到
+- 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到
 - 本質上是一個標準的class-based component，但會夾雜著componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError
 - 目前functional component並沒辦法支援componentDidCatch，故此要實現error boundary只能在class-based component
 
@@ -107,15 +107,54 @@ componentDidCatch(error) {
 
 ### error-boundary 常見實作方式
 
-1. 製作一個
+1. 先在建構式上定義hasError狀態，並設定初始值為false，表示一開始沒錯誤
+2. 接著設定componentDidCatch 內增加setState，來讓hasError有機會轉換成true
+3. 最後在render上設定能夠根據this.state.hasError是否為true來顯示錯誤訊息
+4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元ㄐㄧㄢ
 
-error boundary
-1. 設定成wrapper component 來包含多個component，以此讓這些component發生錯誤時，可以先被error boundary攔截到
-2. 註冊hasError這狀態來好讓後頭渲染內容根據狀態來變動，比如發生錯誤就印出代表錯誤訊息的頁面；沒發生錯誤就正常渲染
-3. 在開發模式，會因為錯誤資訊來特意顯示，實際上，對應的error-boundary有呈現對應畫面；在production階段並不會呈現錯誤資訊
+ErrorBoundary.js
+```
+import { Component } from 'react';
 
-### boundary
+class ErrorBoundary extends Component {
+  constructor() {
+    super();
+    this.state = { hasError: false };
+  }
 
+  componentDidCatch(error) {
+    this.setState({ hasError: true });
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <p>Error</p>
+    }
+    return this.props.children;
+  }
+}
+
+export default ErrorBoundary;
+
+```
+
+UsersFinder.js 
+```
+ render() {
+    return (
+      <Fragment>
+        <div className={classes.finder}>
+          <input type='search' onChange={this.searchChangeHandler.bind(this)} />
+        </div>
+        <ErrorBoundary>
+          <Users users={this.state.filteredUsers} />
+        </ErrorBoundary>
+      </Fragment>
+    );
+  }
+```
+
+### boundary 命名緣由
 
 > a real or imagined line that marks the edge or limit of something
 
