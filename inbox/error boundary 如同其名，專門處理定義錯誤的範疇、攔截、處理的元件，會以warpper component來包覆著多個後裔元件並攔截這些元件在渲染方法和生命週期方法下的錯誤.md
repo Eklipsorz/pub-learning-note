@@ -54,7 +54,7 @@
 error boundary：
 - 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到
 - 本質上是一個標準的class-based component，但會夾雜著componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError
-- 目前functional component並沒辦法支援componentDidCatch，故此要實現error boundary只能在class-based component
+- 目前functional component並沒有componentDidCatch的替代方案，故此要實現error boundary只能在class-based component
 
 #### error boundary 侷限性
 > A. 绑定DOM的事件处理方法中的错误无法被捕获到。（因为在触发交互前，组件的生命周期和渲染都已经被执行。如果需要捕获事件的方法中的错误，需要使用 JS 的 `try / catch` 方法。）
