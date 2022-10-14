@@ -107,7 +107,7 @@ export default CartItem;
 
 
 #💻 請至/question-review/food-order-project-question領取題目並到install-function-to-cart分支，請試著在Cart.js和CartItem.js中實作替每個item安裝對應+ - 按鈕所要做的事情，請用context來做。 ->->-> `https://github.com/Eklipsorz/food-order-project/tree/main/src/components/Cart`
-<!--SR:!2022-10-14,10,250-->
+<!--SR:!2022-11-11,28,250-->
 
 
 ---
