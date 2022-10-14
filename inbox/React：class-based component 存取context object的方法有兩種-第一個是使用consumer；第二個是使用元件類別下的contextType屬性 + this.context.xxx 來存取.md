@@ -43,8 +43,8 @@ MyClass.contextType = MyContext;
 ```
 
 重點：
-- 官方提供的專用方法：設定元件class能夠存取的context object
-	- 允許在元件class或者元件對應函式添加contextType屬性來指定
+- 官方提供的專用方法：設定元件class能夠存取的context object，讓對應元件類別下的物件只能夠存取對應的context object
+	- 允許在元件class或者元件對應函式添加contextType屬性來指定context object
 	```
 	// syntax sugar
 	class Component1 {}
@@ -72,9 +72,27 @@ MyClass.contextType = MyContext;
 
 若要存取contextType設定的context object，則是利用this.context.xxxx即可存取，而xxxx就是context object裡頭的屬性和方法
 
-
-
 ## 複習
+
+#🧠  class-based component 存取context object的方法有哪兩種？ ->->-> `1.  使用consumer component來獲取對應context object的內容2. 使用元件類別下的contextType屬性 + this.context.xxx 來存取`
+
+#🧠 React：使用consumer component來獲取對應context object的內容適用於哪些寫法 ->->-> `第一個方法能夠用在functional component 和 class-based component`
+
+#🧠  React：使用元件類別下的contextType屬性 + this.context.xxx 來存取適用於哪些寫法->->-> `第二個方法只能夠用在class-based component`
+
+
+#🧠 React：使用元件類別下的contextType屬性 + this.context.xxx 來存取，最多能存取多少個context object，為什麼？->->-> `只能存取一個context object，因為contextType只能填寫一種，所以就只能存取一個context object`
+
+#🧠 React 官方提供的語法-contextType是做什麼？ (請說到類別和物件) ->->-> `設定元件class能夠存取的context object，讓對應元件類別下的物件只能夠存取對應的context object`
+
+#🧠 React 官方提供的語法-contextType 語法是什麼？->->-> `元件class或者元件對應函式添加contextType屬性來指定對應context object`
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
 
 
 ---

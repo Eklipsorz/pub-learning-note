@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "aa706d92890b85aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3b870519631441a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
