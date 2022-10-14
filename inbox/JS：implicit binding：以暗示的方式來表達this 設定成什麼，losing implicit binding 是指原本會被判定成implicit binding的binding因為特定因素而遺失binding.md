@@ -299,7 +299,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-15,3,250-->
 
 #🧠 implicit binding 是什麼？->->-> `以暗示的方式來表達this 設定成什麼`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-24,10,250-->
 
 #🧠 implicit binding 決定this的方式是什麼？ ->->-> `當函式A呼叫時，若函式A呼叫前面添加一個物件B參考，系統就會認為物件B擁有函式A並呼叫函式A，此時函式A的this就會是物件B`
 <!--SR:!2022-10-14,3,250-->
@@ -311,7 +311,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-15,3,250-->
 
 #🧠 請問這是obj.func呼叫後的執行環境會被系統使用哪個this binding方法？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/implicit-binding-example_ts85d3.png)->->-> `會是以implicit binding。由於沒有出現new binding、explicit binding的跡象，所以改試著以implicit binding來判定，結果因為函式呼叫前面有物件，而這正是implicit binding的識別特徵`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-23,9,250-->
 
 #🧠 請問這是obj.o.func呼叫後的執行環境所設定的this會是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是設定obj並印出obj的name-行星飛行。在這裡是採用implicit binding，並且由於前面有多個物件參考，所以系統會挑選離呼叫最近的o對應之參照，也就是obj。`
 <!--SR:!2022-10-14,3,250-->

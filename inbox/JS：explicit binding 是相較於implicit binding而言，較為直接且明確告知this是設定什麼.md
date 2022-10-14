@@ -322,7 +322,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 explicit binding是以較為直接且明確告知this是設定什麼，具體是什麼？ ->->-> `在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-24,10,250-->
 
 #🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
 <!--SR:!2022-10-15,3,250-->
@@ -331,7 +331,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-10-15,3,250-->
 
 #🧠 function.protype.call() 語法是什麼？ ->->-> `function.call(thisArg, arg1, /* …, */ argN)`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-23,9,250-->
 
 #🧠 function.protype.call() 語法是function.call(thisArg, arg1, \/\* …, \*\/ argN)，請問function、thisArg和arg1至argN會是什麼？>->-> `- function 為要呼叫的函式	- thisArg為要設定this的物件 - arg1至argN是原函式需要的參數`
 
