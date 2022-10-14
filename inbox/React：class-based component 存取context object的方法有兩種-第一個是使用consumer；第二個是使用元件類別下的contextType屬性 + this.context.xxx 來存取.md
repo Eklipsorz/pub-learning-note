@@ -139,7 +139,20 @@ Class1 { name: 'hi' } Class2 {}
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
 
-#🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> ``
+#🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> `class Component1 {} Component1.contextType = Context1`
+
+#🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？共同點是什麼 ->->-> `首先他們兩者皆是對class本身增加屬性，所以是一樣的，只是表現方式不同、class的對應物件並不會獲取到這些屬性或者變數`
+
+
+#🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？class的對應物件會有該屬性或者static變數嗎？->->-> `class的對應物件並不會獲取到這些屬性或者變數`
+
+#🧠 React 官方提供的語法要如何實際存取context object內容，假使已經設定contextType屬性->->-> `直接在class內使用this.context.xxxx，其中xxxx就是context object所能提供的屬性和方法。`
+
+#🧠 functional component 下的useContext 可以使用多少個context object ->->-> `N個`
+
+
+
+
 
 ---
 Status: #🌱 #📝 
