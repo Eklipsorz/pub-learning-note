@@ -130,7 +130,7 @@ coupling
 
 
 #🧠 上圖：假設B的B1想要使用A的A1的話，那麼coupling 會如何影響模組？ (請用較好、平均狀況、較糟的情況下來說明)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658068933/blog/SoftwareEngineering/tight-coupling-example_iumhzq.png) ->->-> `假設對B的B1想要使用A的A1的話，那麼較好的情況就是只會影響模組A，最糟糕的話，是A也使用B的B1，那麼就會可能以不如預期的方式來使用B1並可能改變B`
-<!--SR:!2022-10-14,56,250-->
+<!--SR:!2023-03-03,140,250-->
 
 
 #🧠 下圖：假設B的B1想要使用A的A1的話，那麼coupling 會如何影響模組？(請用較好、平均狀況、較糟的情況下來說明) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658068933/blog/SoftwareEngineering/tight-coupling-example_iumhzq.png) ->->-> `假設對B的B1想要使用A的A1的話，很有可能因為使用方向的關係而把影響範疇延伸至都會影響兩個模組，至少可能影響的機率會比上圖來得高，如B1改變A1，而A1改變A2，接著A2改變B5，B5改變著B4，後面以此類推。`

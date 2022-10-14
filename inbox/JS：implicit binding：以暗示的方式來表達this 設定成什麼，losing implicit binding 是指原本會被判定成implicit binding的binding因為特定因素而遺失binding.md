@@ -343,7 +343,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-15,3,250-->
 
 #🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491631/blog/javascript/this-binding/implicit-this-binding/pass-variable-implicit-binding-example2_kwr0ty.png) ->->-> `在這裡將obj.fn的參照位址儲存在obj1的fn變數上，並讓有用obj1的fn來呼叫，這會使得fn的this變成以obj1為this來呼叫。`
-<!--SR:!2022-10-14,3,250-->
+<!--SR:!2022-10-23,9,250-->
 
 
 ---
