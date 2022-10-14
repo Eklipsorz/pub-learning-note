@@ -110,7 +110,7 @@ componentDidCatch(error) {
 1. 先在建構式上定義hasError狀態，並設定初始值為false，表示一開始沒錯誤
 2. 接著設定componentDidCatch 內增加setState，來讓hasError有機會轉換成true
 3. 最後在render上設定能夠根據this.state.hasError是否為true來顯示錯誤訊息
-4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元ㄐㄧㄢ
+4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元件
 
 ErrorBoundary.js
 ```
