@@ -95,7 +95,7 @@
 
 
 ---
-Status: #🌱 #📝 
+Status: #🌱 
 Tags:
 [[JavaScript]]
 Links:
