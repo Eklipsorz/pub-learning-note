@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "682e3d95ea3c7f22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cfc46a9d3eeef96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -65,7 +90,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
+                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md"
+                "file": "inbox/Untitled 6.md"
               }
             }
           }
@@ -147,8 +173,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "0c2fbdc9300c5301",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
+    "inbox/Untitled 4.md",
+    "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
     "develop/JavaScript/this-binding/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
     "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
@@ -156,8 +184,6 @@
     "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
     "develop/render/html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
     "develop/Database/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
-    "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
-    "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
-    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md"
+    "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md"
   ]
 }
