@@ -359,7 +359,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-10-15,3,250-->
 
 #🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式 - 設定this之後是否重新設定this：bind 屬於hard-binding，其回傳函式的this不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定`
-<!--SR:!2022-10-15,3,250-->
+<!--SR:!2022-10-23,8,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png)->->-> `第一個為global object，會印出行星飛行、第二個為obj1，會印出聽風是風、第三個為obj2，會印出時間跳躍、第四個為obj3，會印出echo`
 <!--SR:!2022-10-15,3,250-->
@@ -376,7 +376,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 JS：bind所產生出來的新函式所擁有this為A，若經過call或者apply而將this更改成B，請問bind產生出來的新函式所擁有的this會是什麼？為什麼？->->-> `會是A，由於bind新函式的this會直接與當初設定的this綁死，無論事後以call或者apply來更改其this，都無法更改`
-<!--SR:!2022-10-15,3,250-->
+<!--SR:!2022-10-24,9,250-->
 
 #🧠 function1.apply(this, \[arg1, ..., argN\]) 在JS的函式呼叫上會被看作是什麼？ ->->-> `function1(arg1, ... argN)`
 <!--SR:!2022-10-15,3,250-->
