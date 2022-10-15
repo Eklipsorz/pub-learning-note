@@ -128,7 +128,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-12-23,70,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中是如何定義該元件所包含的子節點？->->-> `預設下會有依照要產生的元件種類來產生對應子節點來被包含，如<element> </element> 所包裹的props.children`
-<!--SR:!2022-10-15,28,250-->
+<!--SR:!2022-12-27,73,250-->
 
 #🧠 使用styled-components 套件所建立的元件，預設下會有什麼？ ->->-> `- 每個元件的對應渲染內容會包含props.children或者子節點 - 每個元件的對應渲染內容的元件屬性名稱(attribute)和屬性值(attribute)會依據元件標籤所用的屬性名稱(attribute)和屬性值(attribute)`
 <!--SR:!2022-12-05,58,250-->
