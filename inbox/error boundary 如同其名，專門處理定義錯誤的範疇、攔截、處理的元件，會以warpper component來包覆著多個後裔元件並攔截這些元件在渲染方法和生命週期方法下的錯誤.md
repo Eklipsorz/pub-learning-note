@@ -185,31 +185,38 @@ UsersFinder.js
 #🧠 React：在一個元件中，若發生預期外的錯誤，即使沒有錯誤處理來攔截，React為何還要堅持攔截而採取預設錯誤處理？->->-> `會無法保證網頁是否會按照預期執行以及安全性`
 
 #🧠 React：在一個元件中，若發生預期外的錯誤，即使沒有錯誤處理來攔截，React 為了保證網頁會按照預期執行以及安全性而堅持攔截而採取預設錯誤處理，但這樣的預設錯誤處理會給使用者帶來什麼潛在問題？ ->->-> `會因為無法正常呈現網頁畫面，並使使用者的使用體驗降低`
+<!--SR:!2022-10-18,3,250-->
 
 
 #🧠 React：在一個元件中，若錯誤資訊物件的來源是元件上的事件處理 和 元件上發送出的非同步任務，請問要用何種方式來攔截比較好？->->-> `使用JS語言體系的try...catch來解決`
 
 #🧠 React：在一個元件中，若錯誤資訊物件的來源是元件上的事件處理 和 元件上發送出的非同步任務，為何不能採用error-boundary技術？->->-> `因為error-boundary技術只能攔截元件的渲染函式和生命週期方法所拋出的錯誤，這些來源都會在渲染之後就衍生，所以就無法正常攔截到`
+<!--SR:!2022-10-18,3,250-->
 
 
 #🧠 React：error boundary是什麼？ （請說到為何包覆)->->-> `如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到`
 
 #🧠 React：error boundary是如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，請問被包覆的後裔元件會有什麼好處？->->-> `這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到`
+<!--SR:!2022-10-18,3,250-->
 
 #🧠 React：error boundary 功能是什麼？ ->->-> `攔截後裔元件所發送的錯誤資訊並進行處理，以避免後頭沒人處理錯誤資訊而讓React核心程式碼接收到並停止渲染。`
+<!--SR:!2022-10-18,3,250-->
 
 #🧠 React：error boundary 功能是攔截後裔元件所發送的錯誤資訊並進行處理，為何需要攔截處理？ ->->-> `以避免後頭沒人處理錯誤資訊而讓React核心程式碼接收到並停止渲染。`
 
 #🧠 React：通常error boundary會是用什麼寫法來開發 ？為什麼？->->-> `class-based component，目前functional component並沒有componentDidCatch的替代方案，故此要實現error boundary只能在class-based component`
+<!--SR:!2022-10-18,3,250-->
 
 #🧠 React：error boundary 元件的定義是什麼？ ->->-> `- 必須是class-based component - 定義componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError`
 
 
 #🧠 React：error boundary 元件的局限性是什麼？->->-> `它無法處理：- 元件上的事件處理所產生的錯誤- 元件上的非同步任務所產生的錯誤 - error-boundary 元件本身並不能夠被自己攔截到，只能被上層的error-boundary元件攔截到`
+<!--SR:!2022-10-16,1,230-->
 
 #🧠  React：componentDidCatch 生命週期函式的用途是什麼？ ->->-> `最主要負責攔截後裔節點在執行渲染函式或者生命週期函式時所拋出的錯誤進行處理`
 
 #🧠 React：componentDidCatch 生命週期函式的語法 ->->-> `componentDidCatch(error) {}`
+<!--SR:!2022-10-18,3,250-->
 
 
 #🧠 React：componentDidCatch 生命週期函式的語法為componentDidCatch(error) \{\}，其中的error是從何而來的？ ->->-> `後裔節點在執行渲染函式或者生命週期函式時所拋出的錯誤`
