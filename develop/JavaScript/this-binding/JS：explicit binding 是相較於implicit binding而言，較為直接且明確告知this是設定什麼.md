@@ -394,7 +394,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-10-25,10,250-->
 
 #🧠 為什麼fn.apply的陣列可以像fn.call正常印出 **我是聽風是風,我的年齡是26，我非常帥** ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-result_q2jsdb.png)->->-> `因為apply會將陣列自動轉換成('26','帥')來呼叫fn`
-<!--SR:!2022-10-15,3,250-->
+<!--SR:!2022-10-25,10,250-->
 
 
 
