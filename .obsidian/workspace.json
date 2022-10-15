@@ -4,68 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3dab3a924d57f0ee",
+        "id": "b9d4ba0794d672ce",
         "type": "tabs",
-        "dimension": 27.168732125834126,
         "children": [
           {
-            "id": "54c6ff6f4f168da2",
+            "id": "0c2fbdc9300c5301",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "caaff32b667c9315",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "582352b907279cd0",
-        "type": "tabs",
-        "dimension": 27.168732125834126,
-        "children": [
-          {
-            "id": "b1c2befa9c0a5487",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e1cc61e8f45e5617",
-        "type": "tabs",
-        "dimension": 45.66253574833175,
-        "children": [
-          {
-            "id": "32f11c4e717c26ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Database/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
+                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "當替函式物件B執行到建立對應closure",
+                "query": "this binding",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -137,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md"
+                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md"
               }
             }
           }
@@ -199,17 +147,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b1c2befa9c0a5487",
+  "active": "0c2fbdc9300c5301",
   "lastOpenFiles": [
+    "develop/JavaScript/this-binding/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
+    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/JavaScript/this-binding/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
     "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/render/html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md",
     "develop/Database/Database - Lazy Loading 是當索求需求來臨時才會索求特定資料，且不會把結果儲存，其餘時間點都維持不執行索求.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
-    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md",
-    "inbox/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
-    "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md"
+    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md"
   ]
 }

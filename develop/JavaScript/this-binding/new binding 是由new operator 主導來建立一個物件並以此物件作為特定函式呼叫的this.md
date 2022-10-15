@@ -95,7 +95,7 @@ console.log(bar.a)
 #🧠 JS：constructor call 回傳什麼？ ->->-> `物件`
 <!--SR:!2022-10-23,8,250-->
 
-#🧠 JS：constructor 的構成？->->-> `new operator + function call `
+#🧠 JS：實務上的constructor call 構成？->->-> `new operator + function call `
 <!--SR:!2022-10-17,2,230-->
 
 #🧠 JS：constructor call 主要是做什麼？ ->->-> `會建構一個擁有特定方法和屬性的物件並回傳`
