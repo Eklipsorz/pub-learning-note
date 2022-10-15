@@ -55,19 +55,7 @@
   
   
 
-### 參考資料
 
-
-
-3. [什麼是REST跟RESTful?](https://ihower.tw/blog/archives/1542)
-[[@ihowerShiMoShiRESTGenRESTful2006]]
-4. [Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
-[[@FieldingDissertationCHAPTER]]
-5. [理解RESTful架构(原作者阮一峰）](https://www.ruanyifeng.com/blog/2011/09/restful.html)
-
-  
-  
-  
   
   
 
@@ -216,3 +204,6 @@ Links:
 References:
 [[@262588213843476HowExplainedREST]]
 [[@FengSiXin80TiaoXiaoXia]]
+[[@ihowerShiMoShiRESTGenRESTful2006]]
+[[@FieldingDissertationCHAPTER]]
+[[@ruanyifengLiJieRESTfulJiaGouRuanYiFengDeWangLuoRiZhi]]
