@@ -23,7 +23,7 @@ this binding 對於函式是決定了 **每個函式在呼叫時所用的this會
 
 ## 複習
 #🧠 this binding 對於函式來說是什麼？ ->->-> `決定了 **每個函式在呼叫時所用的this會是什麼**`
-<!--SR:!2022-10-15,3,250-->
+<!--SR:!2022-10-25,10,250-->
 
 
 #🧠 當執行Bytecode來決定this binding時，會如何決定 ->->-> `會根據是否為箭頭函式來以不同方式來決定。	- 非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼 - 箭頭函式呼叫，就以語彙綁定來決定this是什麼`
