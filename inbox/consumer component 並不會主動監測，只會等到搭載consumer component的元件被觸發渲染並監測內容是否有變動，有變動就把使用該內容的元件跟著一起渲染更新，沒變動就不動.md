@@ -23,7 +23,7 @@
 <!--SR:!2022-11-12,28,250-->
 
 #🧠 React：consumer component 的元件 監測功能是主動監測？還是挑情況 ->->-> `並不會主動監測，而是看條件觸發`
-<!--SR:!2022-10-15,10,250-->
+<!--SR:!2022-11-12,28,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，會做什麼 ->->-> `檢測對應context object 內容是否有變動，有變動才真正讓搭載consumer component的元件去使用新內容來更新渲染；沒變動不會更新搭載consumer component的元件`
 <!--SR:!2022-11-12,28,250-->
