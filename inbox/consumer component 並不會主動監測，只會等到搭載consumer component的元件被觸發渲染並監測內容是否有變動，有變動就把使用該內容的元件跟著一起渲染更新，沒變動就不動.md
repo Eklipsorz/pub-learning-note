@@ -26,7 +26,7 @@
 <!--SR:!2022-10-15,10,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，會做什麼 ->->-> `檢測對應context object 內容是否有變動，有變動才真正讓搭載consumer component的元件去使用新內容來更新渲染；沒變動不會更新搭載consumer component的元件`
-<!--SR:!2022-10-15,10,250-->
+<!--SR:!2022-11-12,28,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，且檢測到context object沒變動的話，會做什麼？ ->->-> `搭載其consumer component的元件並不會觸發渲染`
 <!--SR:!2022-10-15,10,250-->
