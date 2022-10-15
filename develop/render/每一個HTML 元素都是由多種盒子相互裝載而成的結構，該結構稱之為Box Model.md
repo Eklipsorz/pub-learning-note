@@ -101,7 +101,7 @@
 
 
 #🧠 在CSS Box Model， Margin Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由Margin-top、Margin-bottom、Margin-left、Margin-right來決定`
-<!--SR:!2022-10-15,26,250-->
+<!--SR:!2022-12-22,68,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``
 <!--SR:!2022-10-17,28,250-->

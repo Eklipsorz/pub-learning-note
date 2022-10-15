@@ -59,7 +59,7 @@ export default Button;
 <!--SR:!2022-10-15,28,250-->
 
 #🧠 在使用styled-components的套件中，若添加一個media query 至對應元件(styled-components)下的template-literal，會產生什麼功能？->->-> `使當該元件滿足特定media query的時候，讓元件採用對應滿足的樣式屬性`
-<!--SR:!2022-10-15,28,250-->
+<!--SR:!2022-12-28,74,250-->
 
 
 ---

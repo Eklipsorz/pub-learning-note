@@ -89,7 +89,7 @@ console.log(bar.a)
 <!--SR:!2022-10-25,10,250-->
 
 #🧠 JS：constructor call 是什麼？  ->->-> `在特定函式呼叫前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)`
-<!--SR:!2022-10-15,3,250-->
+<!--SR:!2022-10-23,8,250-->
 
 
 #🧠 JS：constructor call 回傳什麼？ ->->-> `物件`
