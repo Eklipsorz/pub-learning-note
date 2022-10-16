@@ -21,13 +21,15 @@
 
 1. HATEOAS如同其名，**以超媒體(Hypermedia)來表示整個網頁應用程式的目前所存取的狀態以及可用的狀態是什麼**：
 	- 狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容
-	- 目前的狀態會是指目前存取到的特定具體資源(所在)會有的內容
-	- 可用的狀態會是根據目前狀態、使用者權限來決定哪些特定具體資源(所在)的內容可以被存取
+	- 目前的狀態會是指目前存取到的特定具體資源(所在)會有的內容，形式會是 **識別字：端點位置**
+	- 可用的狀態會是根據目前狀態、使用者權限來決定哪些特定具體資源(所在)的內容可以被存取，形式會是 **識別字：端點位置**
 	
 2. 只要客戶端向應用伺服器中的某個資源X發出變更請求時，伺服器就會回傳一組超媒體以及對應資料，其超媒體(一組連結)會是根據使用者對於其資源相關聯的資源是否有權限而生成對應資源的API連結(超連結)或者對應資源的連結以及目前所在的狀態-目前所存取的具體資源(所在)
-4. 超媒體是指可以在電子裝置/電腦呈現的圖片、文字等任何可以呈現資訊的形式
+3. 超媒體是指可以在電子裝置/電腦呈現的圖片、文字等任何可以呈現資訊的形式
 
 > With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia. A REST client needs little to no prior knowledge about how to interact with an application or server beyond a generic understanding of hypermedia.
+
+
 
 
 
@@ -120,6 +122,13 @@ HTTP/1.1 200 OK
 
 
 #🧠 伺服器和客戶端都支援著HATEOAS，那麼只要客戶端向伺服器發出查詢12345這銀行帳戶的資料，且客戶端的銀行帳戶是沒錢的，上圖為客戶端向伺服器發送的請求端點和方法，下圖為結果，請試著說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1_ad6vh3.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1-without-money_sfjdmc.png)->->-> `假使12345帳戶沒錢的話的話，伺服器給定的連結會只剩下存款和關閉請求`
+<!--SR:!2022-10-19,3,250-->
+
+#🧠 伺服器和客戶端都支援著HATEOAS，那麼伺服器回應的目前狀態形式會是如何？ ->->-> `識別字：端點位置`
+<!--SR:!2022-10-19,3,250-->
+
+
+#🧠 伺服器和客戶端都支援著HATEOAS，那麼伺服器回應的可用狀態形式會是如何？ ->->-> `識別字：端點位置`
 <!--SR:!2022-10-19,3,250-->
 
 
