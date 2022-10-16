@@ -6,6 +6,7 @@
       {
         "id": "dab2ca2f80d9b2d0",
         "type": "tabs",
+        "dimension": 86.91099476439791,
         "children": [
           {
             "id": "477480f5c37d6303",
@@ -25,18 +26,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/Untitled 7.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f702242f121a923b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 8.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "81956d2133587d2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 9.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "6a30956ade5e58f2",
         "type": "tabs",
+        "dimension": 13.089005235602095,
         "children": [
           {
             "id": "fe954995a5b3226e",
@@ -117,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/Untitled 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/Untitled 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
+                "file": "inbox/Untitled 9.md"
               }
             }
           }
@@ -179,17 +205,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "7eaf94f51078bc77",
+  "active": "81956d2133587d2d",
   "lastOpenFiles": [
-    "inbox/Untitled 6.md",
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+    "inbox/Untitled 8.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "inbox/Untitled 7.md",
-    "inbox/Untitled 8.md",
+    "inbox/Untitled 4.md",
+    "inbox/Untitled 6.md",
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md",
     "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
     "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
-    "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md",
-    "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md"
+    "develop/React/React：在不使用任何能夠將樣式侷限於元件的技術下，可以使用inline style 和切換class來實現根據使用者輸入是否為空而渲染.md"
   ]
 }
