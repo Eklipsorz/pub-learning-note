@@ -74,6 +74,26 @@ Resource Representation State：
 
 ## 複習
 
+#🧠 RESTful API中的REST 是什麼？ ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
 
 ---
 Status: #🌱 
