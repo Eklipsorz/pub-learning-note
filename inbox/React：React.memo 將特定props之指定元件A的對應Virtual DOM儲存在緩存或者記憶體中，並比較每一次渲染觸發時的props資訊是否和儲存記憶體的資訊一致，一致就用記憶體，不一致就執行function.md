@@ -226,7 +226,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 <!--SR:!2022-10-18,10,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準可允許自訂，但沒設定會是？ ->->-> `採取預設標準，標準為目前傳遞至元件A的props 資訊是否與緩存儲存的props資訊一樣的`
-<!--SR:!2022-10-16,8,250-->
+<!--SR:!2022-11-08,23,250-->
 
 #🧠 React.memo(A, B) 中的 A 和 B分別為何？ ->->-> `A會是指的是要暫存的指定元件A，具體會以component function來表示，B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false`
 <!--SR:!2022-10-17,9,250-->

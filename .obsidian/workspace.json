@@ -4,20 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "222efd0957dde5d2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "48748ed8e2b10b43",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "b6ed70d37034362c",
         "type": "tabs",
         "children": [
@@ -28,6 +14,24 @@
               "type": "markdown",
               "state": {
                 "file": "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c6e522d5063dc7d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "822d7830cb37637c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
                 "mode": "source",
                 "source": false
               }
@@ -100,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,6 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +151,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/React/JSX 只是藏著React Object的建立&對應DOM方法的語法糖，當被解析時會被轉換成對應語法來執行渲染.md"
+              }
             }
           }
         ]
@@ -158,17 +166,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "48748ed8e2b10b43",
+  "active": "822d7830cb37637c",
   "lastOpenFiles": [
+    "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
+    "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
     "inbox/Untitled 8.md",
     "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
     "inbox/Untitled 4.md",
     "inbox/Untitled 7.md",
     "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
-    "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/Untitled 6.md",
-    "develop/JavaScript/this-binding/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
-    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md"
+    "develop/JavaScript/this-binding/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md"
   ]
 }
