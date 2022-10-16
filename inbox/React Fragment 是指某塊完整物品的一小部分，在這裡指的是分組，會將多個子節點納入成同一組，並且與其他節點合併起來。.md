@@ -2,7 +2,7 @@
 [[@reactFragmentsReact]]
 > React 其中一種常見的使用情況是在一個 component 中回傳多個 element，fragment 讓你能夠在不用增加額外 DOM 節點的情況下，重新組合 child component
 
-- fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。
+- fragment 是指某塊完整物品的一小部分，在這裡會是包含多個元件的邏輯區塊或者邏輯元件。
 - fragment 本身是empty wrapper component
 - fragment 主要用途為
 	- 利用empty wrapper component 對於React建立DOM語法的合法性來實現目標-既可以滿足JSX語法侷限又可以不用增加額外DOM節點的情況下，來回傳一組多個子節點
@@ -86,7 +86,7 @@ fragment
 <!--SR:!2022-12-03,50,250-->
 
 
-#🧠 fragment 在React上是指什麼意思？ ->->-> `fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。`
+#🧠 fragment 在React上是指什麼意思？ ->->-> `fragment 是指某塊完整物品的一小部分，在這裡會是包含多個元件的邏輯區塊或者邏輯元件。`
 <!--SR:!2022-12-14,59,250-->
 
 #🧠 fragment 在React上是什麼Component？(請用簡短的話來說) ->->-> `empty wrapper component`
