@@ -75,6 +75,7 @@ Resource Representation State：
 ## 複習
 
 #🧠 REST 全名為何？ ->->-> `REpresentational State Transfer`
+<!--SR:!2022-10-19,3,250-->
 
 #🧠 RESTful API中的REST 是什麼？ ->->-> `REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格`
 <!--SR:!2022-10-19,3,250-->
@@ -89,29 +90,39 @@ Resource Representation State：
 <!--SR:!2022-10-19,3,250-->
 
 #🧠 REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格，請問何謂最終目標？說明清楚那HATEOAS之產品 ->->-> `當存取到特定資源X時，回應就會包含動態產生出來的一組與特定資源X相關連的API連結，而非以寫死的方式來表達能對特定資源做哪些進一步的操作`
+<!--SR:!2022-10-18,2,249-->
 
 
 #🧠 REST 網路軟體開發風格 完整的全名會是什麼 ->->-> `Resource Representation State Transfer`
+<!--SR:!2022-10-19,3,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的Resource是什麼？ ->->-> `簡短來說，Resource會是指任意形式的實體；在網路上會以Resource所在的URI來表達Resource`
+<!--SR:!2022-10-18,2,249-->
 
 #🧠  Resource Representation State Transfer / REST 中的Representation是什麼？->->-> `Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等`
+<!--SR:!2022-10-19,3,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的State是什麼？ ->->-> `簡短來說，State 是特定時間點下之特定事物所擁有的內容，Resource Representation State 則是指狀態會以特定時間點下的具體資源(所在)所擁有的內容`
+<!--SR:!2022-10-19,3,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的Transfer是什麼？->->-> `- Transfer 是指事物在某方面從A轉換至B，Resource Representation State Transfer 則是指以特定時間點下之Resource Representation 對應的內容為單位來從A轉移至B - 轉移方法會是HTTP方法`
+<!--SR:!2022-10-18,2,249-->
 
 #🧠 REST整體概念是什麼？簡答一下 ->->-> `描述著如何對在網路上的任意具體化資源進行轉移或者獲取`
+<!--SR:!2022-10-17,1,230-->
 
 #🧠 REST整體概念是描述著如何對在網路上的任意具體化資源進行轉移或者獲取，其中在網路上有哪兩大課題？ ->->-> `- 定義每個具體化資源在網路上的位置 - 定義如何對網路上的具體化資源進行轉換`
+<!--SR:!2022-10-19,3,250-->
 
 
 #🧠 REST：如何定義每個具體化資源在網路上的位置 ->->-> `透過URI來標明具體化資源在網路上所在的位置`
+<!--SR:!2022-10-19,3,250-->
 
 #🧠 REST：如何定義如何對網路上的具體化資源進行轉換 ->->-> `定義明確的HTTP/HTTPS協定標準方法來做狀態切換(如何獲取該狀態或者該具體化資源)，而標準方法會是GET、POST、PATCH、DELETE等方法。`
+<!--SR:!2022-10-18,2,249-->
 
 
 

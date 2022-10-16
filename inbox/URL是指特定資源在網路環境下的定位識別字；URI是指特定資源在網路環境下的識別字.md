@@ -37,19 +37,26 @@
 
 
 #🧠 URL 完整名稱為->->-> `Uniform Resource Locator`
+<!--SR:!2022-10-19,3,250-->
 
 #🧠 URI 完整名稱為 ->->-> `Uniform Resource Identifier`
+<!--SR:!2022-10-17,1,230-->
 
 #🧠 URL (Uniform Resource Locator) 是什麼？由什麼構成？->->-> `特定資源在網路環境下的定位識別字，其識別字會是由schema、host、port、path 所構成`
+<!--SR:!2022-10-19,3,250-->
 
 #🧠 URI (Uniform Resource Identifier) 是什麼？由什麼構成 ->->-> `特定資源在網路環境下的識別字，其識別字會是由schema、host、port、path、query string、#fragment`
+<!--SR:!2022-10-18,2,248-->
 
 #🧠 URL & URI 的 path 是什麼？ ->->-> `本身是指資源所在的絕對路徑，該路徑會以伺服器本身網路位置來定位`
+<!--SR:!2022-10-18,2,248-->
 
-#🧠 URL & URI ：path 本身是指資源所在的絕對路徑，該路徑會以伺服器本身網路位置來定位 ->->-> `由目錄和檔案所構成`
+#🧠 URL & URI ：path 本身是指資源所在的絕對路徑，該路徑會以伺服器本身網路位置來定位，以檔案系統來說，由什麼構成->->-> `由目錄和檔案所構成`
+<!--SR:!2022-10-18,2,248-->
 
 
 #🧠 https:\/\/zh.wikipedia.org:443\/w\/index.php?title=隨機頁面 為例，哪一段是URL？哪一段才是URI ->->-> `https://zh.wikipedia.org:443/w/index.php為URL，而https://zh.wikipedia.org:443/w/index.php?title=隨機頁面為URI`
+<!--SR:!2022-10-18,2,248-->
 
 
 
