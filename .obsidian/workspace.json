@@ -6,7 +6,7 @@
       {
         "id": "dab2ca2f80d9b2d0",
         "type": "tabs",
-        "dimension": 86.88925081433226,
+        "dimension": 55.30104712041884,
         "children": [
           {
             "id": "81956d2133587d2d",
@@ -36,17 +36,17 @@
         "currentTab": 1
       },
       {
-        "id": "6a30956ade5e58f2",
+        "id": "6bdea1a7251351d4",
         "type": "tabs",
-        "dimension": 13.110749185667753,
+        "dimension": 44.69895287958115,
         "children": [
           {
-            "id": "fe954995a5b3226e",
+            "id": "e953ac1103efc658",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/Untitled 9.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,11 +98,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 275.5
   },
   "right": {
     "id": "1b728af4a278cee2",
@@ -174,7 +175,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
