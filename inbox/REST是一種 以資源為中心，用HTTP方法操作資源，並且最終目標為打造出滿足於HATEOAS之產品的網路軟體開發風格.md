@@ -26,7 +26,7 @@
 ##### Representation
 1. 是指以某種形式來呈現某人事物，**在這裏會以某種形式來呈現Resource這概念**，換言之就是以某種形式來具體化資源，比如用HTML格式、JSON格式等等
 
-簡短來說，Representation 本身以某種形式來呈現，而Resource Representation 是指Resource本身會以某種形式來呈現，形式會有HTML格式、JSON格式等等
+簡短來說，Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等
 
 ##### State
 1. 由於客戶端和伺服器之間的互動勢必會涉及到不同時間點的資源內容，或許是在某段時間的同份資源A內容會變更，或許是某段時間點的同份資源A內容會移除，這些將會是資源A在不同時間點的內容或者說狀態，最後在這裡會以狀態來描述同份資源在不同時間點下的資源內容。
@@ -36,7 +36,7 @@
 且由於**該概念是建立在無狀態的HTTP協議上，所以所有的資源都會永久性保留在伺服器，客戶端只會拿到某一個時間點的資源然後就被移除。**
 
 
-簡短來說，State 是特定時間點下之特定事物所擁有的內容，Resource Representation State 則是指狀態會以特定時間點下之Resource Representation 對應的內容
+簡短來說，State 是特定時間點下之特定事物所擁有的內容，Resource Representation State 則是指狀態會以特定時間點下的具體資源(所在)所擁有的內容
 
 ##### Transfer
 1. Transfer 是指某事物在某方面從A轉換至B，而經由前面三個字的形容會是指這些具體化資源之間的狀態切換，每當客戶端向伺服器端發出資源相關請求時，勢必會轉換伺服器的資源目前狀態(如URI->明確清單JSON)，來讓伺服器傳遞資訊給客戶端：從狀態A轉換至轉換B
