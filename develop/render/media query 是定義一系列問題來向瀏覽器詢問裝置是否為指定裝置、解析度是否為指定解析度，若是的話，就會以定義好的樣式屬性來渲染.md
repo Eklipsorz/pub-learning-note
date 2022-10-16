@@ -24,6 +24,7 @@
 
 重點：
 - media 對於網頁而言，會是指能夠讓使用者接收網頁畫面並呈現的裝置
+- media query 中的 media會源自於傳播媒體的media。
 - media query 則是開發者定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染
 - media query 是由 @media作為開頭 、向瀏覽器發問的問題、對於符合問題情景的樣式屬性
 ```
@@ -43,14 +44,16 @@
 > the main ways that large numbers of people receive information and entertainment, that is television, radio, newspapers and the internet
 
 重點：
-- media 為讓人們接收資訊的裝置或者介質
+- 在傳播媒體上，media 是接收資訊並呈現其資訊的裝置
 
+
+[[medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數]]
 ## 複習
 
-#🧠 media 命名緣由為何？ ->->-> `為讓人們接收資訊的裝置或者介質`
-<!--SR:!2022-12-27,73,250-->
+#🧠 media query的media 命名緣由為何？ ->->-> `在傳播媒體上，media 是接收資訊並呈現其資訊的裝置`
 
-#🧠 media 原意為讓人們接收資訊的裝置或者介質，若以網頁來說的話，會是什麼？->->-> `對於網頁而言，會是指能夠讓使用者接收網頁畫面並呈現的裝置`
+
+#🧠 在傳播媒體上，media 原意為讓人們接收資訊的裝置或者介質，若以網頁來說的話，會是什麼？->->-> `對於網頁而言，會是指能夠讓使用者接收網頁畫面並呈現的裝置`
 <!--SR:!2022-12-12,63,250-->
 
 #🧠 media query 是什麼？ ->->-> `開發者定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染`
@@ -75,6 +78,7 @@ Status: #🌱
 Tags:
 [[CSS]]
 Links:
+[[medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數]]
 References:
 [[@mdnUsingMediaQueries]]
 [[@wikidataMediaQueries2021]]

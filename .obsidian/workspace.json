@@ -31,6 +31,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cbeab80b561ba490",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -71,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Fragment 在React上是指什麼意思",
+                "query": "media",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -183,15 +195,15 @@
   },
   "active": "36fdc80f6b53e382",
   "lastOpenFiles": [
-    "inbox/Untitled 8.md",
+    "inbox/medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數.md",
+    "develop/render/media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md",
     "inbox/Untitled 9.md",
+    "inbox/Untitled 8.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "inbox/Untitled 7.md",
     "inbox/Untitled 6.md",
     "inbox/Untitled 4.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-    "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md",
-    "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
-    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md"
+    "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md"
   ]
 }
