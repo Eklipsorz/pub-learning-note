@@ -19,12 +19,11 @@
 
 
 ### Hypertext 命名緣由
-
+[[@HyperlinkVsHypertext2020]]
+> Hypertext is a text which contains the visible text to redirect the targeted page(page URL contained by Hyperlink)
 
 1. 一個能夠在電腦/電子裝置上顯示的可見文字，並綁定特定的hyperlink
-
 2. 當hypertext上發生事件時，就會按照綁定hyperlink對應的頁面來將使用者導向其頁面
-
 3. 例子：假設以text作為hypertext來與http://example.com進行hyperlink的綁定，而其hyperlink會是http://example.com，當使用者點擊text，就會將使用者導向至該頁面。
 
 ```
@@ -44,10 +43,23 @@
 ### hyperlink
 
 [[@HyperlinkVsHypertext2020]]
-
+> The hyperlink contains the URL of the webpages.
 
 1. 一個指向於特定網頁頁面X的連結，該連結通常會包含該頁面X的所在位置(如URI)
 2. 通常會綁定一組超文字(Hypertext)，當超文字被某事件觸發(點擊)時就會按照綁定的連結來將使用者導向指定頁面X
+
+重點：
+- hyperlink 意指為超出連結意義範疇的連結，原本連結意義範疇是單純指特定事物A與特定事物B之間的連結，在這是指連結是直接允許對特定事物A進行互動，來轉移至特定特定事物B
+- 具體實現：
+	- 在文字/圖片/影片上綁定上一個網址，當文字/圖片/影片上發生事件就會轉移至網址。
+
+### hyper 命名緣由
+
+> Hyper- is used to form adjectives that describe someone as having a lot or too much of a particular quality.
+
+重點：
+- Hyper 是形容某事物A超出特定程度的範疇
+
 
 ## 複習
 
