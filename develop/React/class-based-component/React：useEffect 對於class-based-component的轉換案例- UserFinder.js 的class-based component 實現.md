@@ -104,7 +104,7 @@ export default UserFinder;
 
 ## 複習
 #💻 請至react-builder/question-review/class-based-component-question 領取題目，並切換至userfinder-to-class分支，將UserFinder.js轉換成對應class-based component來實現 ->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/05-lifecycle-methods-in-action/src/components/UserFinder.js`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-27,10,250-->
 
 ---
 Status: #🌱 
