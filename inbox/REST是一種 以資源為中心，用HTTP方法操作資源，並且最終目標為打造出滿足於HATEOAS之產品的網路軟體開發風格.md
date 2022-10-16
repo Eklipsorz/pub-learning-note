@@ -5,7 +5,7 @@
 
 全名為REpresentational State Transfer，較完整的說法是Resource Representation State Transfer
 
-是一種 **以資源為中心，用HTTP方法操作資源，並且符合HATEOAS(Hypermedia as the engine of application state)的網頁軟體開發風格之ㄧ**
+是一種 **以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格**
 
 - 背景：當時背景下的軟體開發和網路發展皆分別以單機環境下進行以及制定/實現某些系統之間的通信協定，兩者很少有交集
 - 目的：如何讓不同軟體方便網路互相傳遞資訊來達到其功能性
