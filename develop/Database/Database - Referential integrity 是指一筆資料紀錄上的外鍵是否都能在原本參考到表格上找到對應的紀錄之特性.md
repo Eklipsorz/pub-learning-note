@@ -59,7 +59,7 @@
 
 
 #🧠 若資料庫系統沒確保Referential integrity，在這裡是假設兩個表格-作曲家表格、專輯表格，專輯表格的每筆紀錄都有artist_id外鍵去參照於作曲家表格上的紀錄，那麼當刪除/變更作曲家表格上的4號作曲家，會發生什麼事情，解釋一下 ![](https://upload.wikimedia.org/wikipedia/commons/1/13/Referential_integrity_broken.png) ->->-> `- 若作曲家表格上的artist_id為4之紀錄被刪去，那麼專輯表格上擁有artist_id為4的紀錄將無法透過4從作曲家表格找到對應紀錄。`
-<!--SR:!2022-10-16,74,250-->
+<!--SR:!2023-04-28,194,250-->
 
 ---
 Status: #🌱 

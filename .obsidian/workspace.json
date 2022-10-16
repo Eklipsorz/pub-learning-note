@@ -4,71 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b9d4ba0794d672ce",
+        "id": "222efd0957dde5d2",
         "type": "tabs",
         "children": [
           {
-            "id": "0c2fbdc9300c5301",
+            "id": "48748ed8e2b10b43",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "682e3d95ea3c7f22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cfc46a9d3eeef96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40179749f557af80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 7.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6ba86e92afbb7e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "b6ed70d37034362c",
@@ -153,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +124,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,9 +145,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -215,17 +158,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b493c50bf725e5a0",
+  "active": "48748ed8e2b10b43",
   "lastOpenFiles": [
-    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
-    "inbox/Untitled 6.md",
-    "inbox/Untitled 7.md",
-    "inbox/Untitled 4.md",
+    "inbox/Untitled 8.md",
     "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
+    "inbox/Untitled 4.md",
+    "inbox/Untitled 7.md",
+    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+    "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
+    "inbox/Untitled 6.md",
     "develop/JavaScript/this-binding/new binding 是由new operator 主導來建立一個物件並以此物件作為特定函式呼叫的this.md",
-    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-    "develop/JavaScript/this-binding/JS：explicit binding 是相較於implicit binding而言，較為直接且明確告知this是設定什麼.md",
-    "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md"
+    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md"
   ]
 }

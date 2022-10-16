@@ -64,7 +64,7 @@ export default Users;
 ## 複習
 
 #💻 請至/react-builder/question-review/class-based-component-question 領取題目，並到Users-to-class分支將Users.js轉換成class-based component，功能務必是一模一樣->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/03-working-with-state/src/components/Users.js`
-<!--SR:!2022-10-16,3,250-->
+<!--SR:!2022-10-26,10,250-->
 
 ---
 Status: #🌱 
