@@ -8,6 +8,14 @@
 
 > Hypermedia as the Engine of Application State (HATEOAS) is a constraint of the REST application architecture that distinguishes it from other network application architectures.
 
+
+[[@linxinliangNiDeRESTBuShiREST]]
+>  現今應用程式開發者認知中的REST，其實多是屬於Richardson成熟模型中的Level 2，使用多個URI、多個HTTP方法，並善用HTTP回應狀態碼來代表操作結果。而其中的URI用來代表資源，像是/messages、/messages/1等就是資源代表；HTTP方法則是動詞，也就是打算進行的動作，例如GET /messages取得全部訊息，GET /messages/1取得指定訊息，POST /messages新增訊息、DELETE /messages/1刪除指定訊息等。
+
+
+> **HATEOAS與HAL**
+> 按照Roy Fielding的觀點，沒有HATEOAS約束，就不是REST，然而，Leonard Richardson也說過，一開始就要討論HATEOAS的概念是困難的，因此他才從HTML與URI開始，開展了他對成熟模型的區分。
+
   
 ### HATEOAS 是什麼
 
@@ -115,4 +123,5 @@ Links:
 [[REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格]]
 References:
 [[@QianTanRESTAPI]]
+[[@linxinliangNiDeRESTBuShiREST]]
 [[@flydeanJiaGouZhiRESTHeHATEOASZhiHu]]
