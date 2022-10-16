@@ -14,11 +14,26 @@
 3. 例子：在這裡假設一張圖片會跟http://example.com做綁定，當使用者點擊該圖片時，就會將使用者導向至http://example.com的頁面。
 
 
+### hyperlink
+
+[[@HyperlinkVsHypertext2020]]
+> The hyperlink contains the URL of the webpages.
+
+[[@wikidataHyperlinkWikipedia]]
+>  a hyperlink, or simply a link, is a digital reference to data that the user can follow or be guided by clicking or tapping
+
+1. 一個指向於特定網頁頁面X的連結，該連結通常會包含該頁面X的所在位置(如URI)
+2. 通常會綁定一組超文字(Hypertext)，當超文字被某事件觸發(點擊)時就會按照綁定的連結來將使用者導向指定頁面X
+
+重點：
+- hyperlink 意指為超出連結意義範疇的連結，原本連結意義範疇是單純指特定事物A與特定事物B之間的連結，在這是指連結是直接允許對特定事物A進行互動，來轉移至特定特定事物B
+- 在網頁上的具體連結實現：
+	- 連結本身會是特定頁面下的網址
+	- 若搭配hypertext的應用會是：在文字/圖片/影片上綁定上一個網址，當文字/圖片/影片上發生事件就會轉移至網址。
 
 
 
-
-### Hypertext 命名緣由
+### Hypertext
 [[@HyperlinkVsHypertext2020]]
 > Hypertext is a text which contains the visible text to redirect the targeted page(page URL contained by Hyperlink)
 
@@ -30,8 +45,10 @@
 <a src="http://example.com">text</a>
 ```
 
-4. 參考資料：
-[Difference between Hypertext and Hypermedia](https://www.geeksforgeeks.org/difference-between-hypertext-and-hypermedia/)
+
+重點：
+- hypertext 意指為超出文字意義範疇的文字，原本文字意義範疇是指只能在紙才能寫上文字或者呈現文字，在這是指文字是呈現在無形介質下或者呈現在電腦/電子裝置上
+- 通常hypertext 會搭配 hyperlink
 
 #### hyperlink vs. hypertext
 
@@ -40,18 +57,7 @@
  ![](https://media.geeksforgeeks.org/wp-content/uploads/20200121135129/13010.png)
 
 
-### hyperlink
 
-[[@HyperlinkVsHypertext2020]]
-> The hyperlink contains the URL of the webpages.
-
-1. 一個指向於特定網頁頁面X的連結，該連結通常會包含該頁面X的所在位置(如URI)
-2. 通常會綁定一組超文字(Hypertext)，當超文字被某事件觸發(點擊)時就會按照綁定的連結來將使用者導向指定頁面X
-
-重點：
-- hyperlink 意指為超出連結意義範疇的連結，原本連結意義範疇是單純指特定事物A與特定事物B之間的連結，在這是指連結是直接允許對特定事物A進行互動，來轉移至特定特定事物B
-- 具體實現：
-	- 在文字/圖片/影片上綁定上一個網址，當文字/圖片/影片上發生事件就會轉移至網址。
 
 ### hyper 命名緣由
 
