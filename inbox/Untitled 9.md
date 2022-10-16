@@ -8,6 +8,9 @@
 
 > Hypermedia enables us to link text to text, text to image, and image to image, on both a macro and micro level.
 
+[[@wikidataHypermedia2022]]
+> Hypermedia, an extension of the term hypertext, is a nonlinear medium of information that includes graphics, audio, video, plain text and hyperlinks.
+
 重點：
 1. hypertext的延伸版本，能夠以多媒體來綁定特定的hyperlink，多媒體包含的形式可以是文字、圖片、聲音、影片等等
 2. 當多媒體發生事件觸發時，就會按照綁定的hyperlink對應的頁面來將使用者導向其頁面
@@ -28,14 +31,19 @@
 重點：
 - hyperlink 意指為超出連結意義範疇的連結，原本連結意義範疇是單純指特定事物A與特定事物B之間的連結，在這是指連結是直接允許對特定事物A進行互動，來轉移至特定特定事物B
 - 在網頁上的具體連結實現：
-	- 連結本身會是特定頁面下的網址
-	- 若搭配hypertext的應用會是：在文字/圖片/影片上綁定上一個網址，當文字/圖片/影片上發生事件就會轉移至網址。
+	- 連結會是綁定著特定頁面網址的文字/圖片/影片，當文字/圖片/影片上發生事件就會轉移至網址。
 
 
 
 ### Hypertext
 [[@HyperlinkVsHypertext2020]]
 > Hypertext is a text which contains the visible text to redirect the targeted page(page URL contained by Hyperlink)
+
+[[@wikidataHypertext2022]]
+> Hypertext is text displayed on a computer display or other electronic devices with references (hyperlinks) to other text that the reader can immediately access.
+
+
+
 
 1. 一個能夠在電腦/電子裝置上顯示的可見文字，並綁定特定的hyperlink
 2. 當hypertext上發生事件時，就會按照綁定hyperlink對應的頁面來將使用者導向其頁面
@@ -48,15 +56,11 @@
 
 重點：
 - hypertext 意指為超出文字意義範疇的文字，原本文字意義範疇是指只能在紙才能寫上文字或者呈現文字，在這是指文字是呈現在無形介質下或者呈現在電腦/電子裝置上
-- 通常hypertext 會搭配 hyperlink
+
 
 #### hyperlink vs. hypertext
 
-參考於GeeksforGeeks
-
- ![](https://media.geeksforgeeks.org/wp-content/uploads/20200121135129/13010.png)
-
-
+hyperlink
 
 
 ### hyper 命名緣由
@@ -76,3 +80,5 @@ Tags:
 Links:
 References:
 [[@HyperlinkVsHypertext2020]]
+[[@wikidataHypertext2022]]
+[[@wikidataHyperlinkWikipedia]]
