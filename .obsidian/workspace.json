@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
+                "file": "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
+                "file": "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md"
+                "file": "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md"
               }
             }
           }
@@ -173,8 +173,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "7fed6be068a5df00",
+  "active": "47363f3875b8d33f",
   "lastOpenFiles": [
+    "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
     "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
     "inbox/Untitled 6.md",
     "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
@@ -183,7 +184,6 @@
     "inbox/hypertext 是電腦或電子裝置能夠呈現的文字，hypermedia 是電子或電子裝置能夠呈現的任一可以表達資訊的事物，hyperlink 是以將特定頁面的網址綁定在hypertext或者hypermedia作為轉移時的連結.md",
     "inbox/medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數.md",
     "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
-    "develop/render/media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md",
-    "MOC/React MOC.md"
+    "develop/render/media query 是定義一系列問題來向瀏覽器詢問裝置是否為指定裝置、解析度是否為指定解析度，若是的話，就會以定義好的樣式屬性來渲染.md"
   ]
 }
