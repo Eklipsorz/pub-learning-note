@@ -96,7 +96,7 @@ console.log(bar.a)
 <!--SR:!2022-10-23,8,250-->
 
 #🧠 JS：實務上的constructor call 構成？->->-> `new operator + function call `
-<!--SR:!2022-10-17,2,230-->
+<!--SR:!2022-10-23,6,230-->
 
 #🧠 JS：constructor call 主要是做什麼？ ->->-> `會建構一個擁有特定方法和屬性的物件並回傳`
 <!--SR:!2022-10-23,8,250-->
