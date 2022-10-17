@@ -146,7 +146,7 @@ Class1 { name: 'hi' } Class2 {}
 
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-27,10,250-->
 
 #🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> `class Component1 {} Component1.contextType = Context1`
 <!--SR:!2022-10-17,3,250-->
