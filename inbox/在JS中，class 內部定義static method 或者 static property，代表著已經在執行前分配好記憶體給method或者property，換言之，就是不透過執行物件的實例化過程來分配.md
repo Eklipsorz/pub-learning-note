@@ -76,7 +76,7 @@
 
 
 #🧠 在JS中的class內部定義static method或者static property，其記憶體狀況為何？ ->->-> `代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-26,9,250-->
 
 #🧠 在JS中的static method的用途為何？class對於method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
 <!--SR:!2022-10-27,10,250-->
@@ -97,7 +97,7 @@
 <!--SR:!2022-10-18,3,250-->
 
 #🧠 static function / static method 對於JS的class來說是什麼？ ->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶題的變數或者函式`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-19,2,230-->
 
 
 #🧠 請問若JS class的實例化執行好N次，請問class 下的每個static method會有幾份副本？為什麼？->->-> `都各1份，因為就以單方面在執行之前分配好記憶題的變數或者函式，所以即使重複執行多次 new function() 也不會替static method / property製作成副本`

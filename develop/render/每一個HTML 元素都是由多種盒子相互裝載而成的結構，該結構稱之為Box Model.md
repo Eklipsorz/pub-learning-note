@@ -82,7 +82,7 @@
 
 
 #🧠 在CSS Box Model，Padding Box 是什麼？ ->->-> `如其名，本身裝載Content Box內容`
-<!--SR:!2022-10-17,28,250-->
+<!--SR:!2022-12-29,73,250-->
 
 
 #🧠 在CSS Box Model，Padding Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由padding-top、padding-bottom、padding-left、padding-right來決定`
@@ -90,7 +90,7 @@
 
 
 #🧠 在CSS Box Model，Border Box 是什麼？ ->->-> `本身負責裝載著Padding Box內容`
-<!--SR:!2022-10-17,28,250-->
+<!--SR:!2022-12-30,74,250-->
 
 
 #🧠 在CSS Box Model，Border Box  本身的大小屬性由什麼決定？ ->->-> `Box 本身(不算裝載)高寬分別由border-top、border-bottom、border-left、border-right來決定`
