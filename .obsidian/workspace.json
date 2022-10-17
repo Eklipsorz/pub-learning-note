@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md"
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
               }
             }
           }
@@ -183,8 +183,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "c304dfbeba65f2c3",
+  "active": "13df27d648fc656b",
   "lastOpenFiles": [
+    "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
     "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "develop/Database/data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
@@ -193,7 +194,6 @@
     "inbox/React：使用Fetch API.md",
     "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "annotation/@FetchAPIWeb.md",
-    "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
-    "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md"
+    "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md"
   ]
 }

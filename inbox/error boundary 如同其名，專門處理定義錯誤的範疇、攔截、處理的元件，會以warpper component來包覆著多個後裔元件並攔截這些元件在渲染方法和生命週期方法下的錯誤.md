@@ -244,7 +244,7 @@ UsersFinder.js
 <!--SR:!2022-10-23,6,249-->
 
 #🧠 React：error-boundary 常見實作方式，請以Users元件作為錯誤物件的來源來說明 ->->-> `1. 先在建構式上定義hasError狀態，並設定初始值為false，表示一開始沒錯誤 2. 接著設定componentDidCatch 內增加setState，來讓hasError有機會轉換成true 3. 最後在render上設定能夠根據this.state.hasError是否為true來顯示錯誤訊息 4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元件`
-<!--SR:!2022-10-17,2,249-->
+<!--SR:!2022-10-22,5,249-->
 
 #💻 請至/react-builder/question-review/class-based-component-question領取題目，並切換至error-boundary-to-class分支，實現ErrorBoundary元件來防止Users.js的錯誤拋錯衍生出的網頁崩潰問題->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/08-finished/src/components/ErrorBoundary.js`
 <!--SR:!2022-10-18,3,250-->
