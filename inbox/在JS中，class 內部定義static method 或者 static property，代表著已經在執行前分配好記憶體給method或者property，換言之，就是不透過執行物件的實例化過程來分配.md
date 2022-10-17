@@ -93,11 +93,10 @@
 #🧠 static function / static method是什麼？ ->->-> `static function / static method 意旨為在執行前就已經分配好記憶體給函式`
 <!--SR:!2022-10-27,10,250-->
 
-#🧠 static variable 對於JS的class來說是什麼？->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶題的變數或者函式`
+#🧠 static variable 對於JS的class來說是什麼？->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶體的變數或者函式`
 <!--SR:!2022-10-18,3,250-->
 
-#🧠 static function / static method 對於JS的class來說是什麼？ ->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶題的變數或者函式`
-<!--SR:!2022-10-19,2,230-->
+
 
 
 #🧠 請問若JS class的實例化執行好N次，請問class 下的每個static method會有幾份副本？為什麼？->->-> `都各1份，因為就以單方面在執行之前分配好記憶題的變數或者函式，所以即使重複執行多次 new function() 也不會替static method / property製作成副本`
