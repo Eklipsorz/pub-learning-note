@@ -2,6 +2,11 @@
 ## 描述
 
 
+### 前端發送請求的位置可以是
+- 事件處理
+- useEffect
+
+
 ### 瀏覽器向伺服器發送請求方式的工具
 
 1. axios：瀏覽器本身不會內建，需載入額外模組才能使用
@@ -16,16 +21,17 @@
 > The Fetch API provides an interface for fetching resources (including across the network).
 
 
-- 瀏覽器內建API
+重點：
+- 瀏覽器內建的API，會提供一個介面來方便獲取資料
+- 該API用來向特定伺服器發送獲取資料和傳送資料請求 
+	- 實際上是可以傳送資料，只是常用於獲取資料
+- 其API 會是以Promise為基本來生成非同步任務去向指定伺服器索要：
+	- resolve：會以response 物件回傳
+	- reject：會回傳錯誤資訊
 
-- 該API用來向後端發送獲取資料和傳送資料請求 (it allows us to fetch data and actually also to send data)
 
 
-前端發送請求的位置可以是：
 
-- 事件處理
-
-- useEffect
 
 
 
@@ -109,9 +115,10 @@ function App() {
 重點：
 - get 單純意思為 **獲取** 或者 **接收**
 - bring 單純意思為 **使某人事物過來**
-- fetch 單純意思為 **去某個地方並從那帶回某個人事物** ，與get不同的是fetch包含 go 和 
+- fetch 單純意思為 **去某個地方並從那帶回某個人事物** ，與get不同的是fetch包含 go 和 get 這意思。
 
 ## 複習
+
 
 
 ---
