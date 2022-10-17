@@ -10,12 +10,12 @@
 ### 瀏覽器向伺服器發送請求方式的工具
 
 1. axios：瀏覽器本身不會內建，需載入額外模組才能使用
-2. fetch：瀏覽器內建工具
+2. Fetch API ：瀏覽器內建工具
 
 
 
 
-### fetch API 是什麼
+### Fetch API 是什麼
 
 [[@FetchAPIWeb]]
 > The Fetch API provides an interface for fetching resources (including across the network).
@@ -23,6 +23,7 @@
 
 重點：
 - 瀏覽器內建的API，會提供一個介面來方便獲取資料
+	- 包含獲取方法、請求物件、回應物件等代表請求/回應資訊的物件
 - 該API用來向特定伺服器發送獲取資料和傳送資料請求 
 	- 實際上是可以傳送資料，只是常用於獲取資料
 - 其API 會是以Promise為基本來生成非同步任務去向指定伺服器索要：
@@ -30,41 +31,58 @@
 	- reject：會回傳錯誤資訊
 
 
+### Fetch API  語法
+
+[[@mdnFetchWebAPIs]]
+>  The global fetch() method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.
+
+> The promise resolves to the Response object representing the response to your request. 
+```
+fetch(resource)
+fetch(resource, options)
+```
+
+> `resource`
+> This defines the resource that you wish to fetch. 
+
+> `options` Optional
+>An object containing any custom settings that you want to apply to the request
+
+重點：
+- fetch(a, b) 為向指定伺服器獲取資料的方法，主要產生promise為主的非同步任務來做連接獲取
+- 語法為：
+	- 參數a：字串，定義要發送的伺服器是哪
+	- 參數b：物件，設定請求封包的資訊，如HTTP請求方法(預設是GET)、狀態碼、多增加header
+	- 回傳會是promise：
+		- resolve：會以response 物件回傳
+		- reject：會回傳錯誤資訊
+```
+fetch(a, b)
+```
+
+#### Fetch API vs. fetch()
+1. Fetch API 是一個專門獲取資料的API，裡頭包含實際能獲取資料的方法、代表請求資訊的request object、代表回應資料的response object
+2. fetch() 只是Fetch API內的其中一個方法
+
+### response object
 
 
+response 物件本身代表著回應封包
+
+#### response.json()
 
 
-
-### fetch API 語法
-
-fetch(a, b) 參數說明：
-
-- 參數a：字串，定義要發送的端點是哪？
-
-- 參數b ：物件，專門設定該API，比如指定HTTP 請求方法、更改請求封包
-
-指定HTTP 請求方法，預設是GET
-
-  
-
-fetch 是一個主要產生非同步任務的API，主要非同步任務會由promise來實現
+[[@mdnResponseJsonWeb]]
+>  The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.
 
 
-
-
-#### response.json 
-
-fetch 的promise ：
-
-- resolve則是會回傳代表回應封包的物件
-
--  若要fetch將回應封包裡的body內的json格式轉換成JS的物件，語法會是
-
-`response.json()`
-
-response.json() 本身也會產生非同步任務來自動轉換，非同步任務是promise
-
-
+重點：
+- json 方法 ：
+	- 本身會是promise，主要會產生promise非同步任務來將body內容進行轉換
+		- resolve：解析後的內容
+		- reject：失敗
+	- 讀取回應封包的body，並且將json格式轉換成javascript 的object 
+	
 ### 案例
 
 ```
@@ -119,6 +137,7 @@ function App() {
 
 ## 複習
 
+#💻 Question :: ->->-> ``
 
 
 ---
@@ -127,5 +146,7 @@ Tags:
 [[React]]
 Links:
 References:
+[[@mdnFetchWebAPIs]]
 [[@FetchAPIWeb]]
+[[@mdnResponseJsonWeb]]
 [[@christineliddleWhatAreUsage]]
