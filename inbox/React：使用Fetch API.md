@@ -120,6 +120,9 @@ function App() {
 }
 ```
 
+使用fetch 回應的電影資料來做渲染，具體需要：
+- setState：當獲取到資料就以那份資料直接渲染
+- 事件綁定/useEffect 來設定哪邊開始執行索要資料和setState
 
 ### fetch 命名緣由
 
