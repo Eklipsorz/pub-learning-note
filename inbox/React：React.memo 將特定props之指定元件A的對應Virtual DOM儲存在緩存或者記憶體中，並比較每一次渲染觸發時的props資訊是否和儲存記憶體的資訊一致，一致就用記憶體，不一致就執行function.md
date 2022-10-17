@@ -207,7 +207,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 ## 複習
 
 #🧠 memorize 命名緣由 ->->-> `Memorize 則是提交特定事物並永久儲存在至記憶體`
-<!--SR:!2022-10-17,9,250-->
+<!--SR:!2022-11-12,26,250-->
 
 #🧠 React.memo 是什麼？ ->->-> `如字面上的意思，React.memo 將特定props之指定元件A的對應Virtual DOM和對應props資訊儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function`
 <!--SR:!2022-10-18,10,250-->
@@ -220,7 +220,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 
 
 #🧠 React.memo 語法形式為何？ ->->-> `React.memo(component, callback)`
-<!--SR:!2022-10-17,9,250-->
+<!--SR:!2022-11-11,25,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準可以自訂嗎？ ->->-> `可以`
 <!--SR:!2022-10-18,10,250-->

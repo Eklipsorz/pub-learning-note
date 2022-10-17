@@ -62,7 +62,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-10-19,10,250-->
 
 #🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
-<!--SR:!2022-10-17,8,250-->
+<!--SR:!2022-11-09,23,250-->
 
 #🧠 React useCallback 主要解決了memo本身的重建問題，具體是什麼？ ->->-> `每一次渲染函式被呼叫就重建物件(函式物件)，將這些物件搭載至特定元件A的props，會因為物件在reference value上會是不一樣而導致元件A的props比對結果都不一樣，進而無法正常使用memo`
 <!--SR:!2022-11-09,23,250-->

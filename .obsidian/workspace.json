@@ -22,16 +22,16 @@
         ]
       },
       {
-        "id": "1037c5443d663d95",
+        "id": "f48d6543a199fc8b",
         "type": "tabs",
         "children": [
           {
-            "id": "58d86c7de982c3b3",
+            "id": "13df27d648fc656b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md"
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
               }
             }
           }
@@ -165,8 +165,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "58d86c7de982c3b3",
+  "active": "13df27d648fc656b",
   "lastOpenFiles": [
+    "develop/Database/data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
+    "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "inbox/React：使用Fetch API.md",
@@ -174,8 +176,6 @@
     "annotation/@FetchAPIWeb.md",
     "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
     "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
-    "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
-    "inbox/Untitled 6.md",
-    "inbox/Untitled 7.md"
+    "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md"
   ]
 }

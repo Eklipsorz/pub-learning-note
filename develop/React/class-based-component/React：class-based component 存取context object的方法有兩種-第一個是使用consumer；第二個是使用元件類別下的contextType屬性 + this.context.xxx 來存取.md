@@ -142,7 +142,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2022-10-27,10,250-->
 
 #🧠 JS ：class Component1 \{\} Component1.contextType = Context1等同於是什麼？程式碼會是什麼？ ->->-> `對著名為Component1的函式物件添加contextType屬性，程式碼會是const Component1 = (function () { } Component1.contextType = Context1`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-27,10,250-->
 
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
@@ -152,7 +152,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2022-10-26,9,250-->
 
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？共同點是什麼 ->->-> `首先他們兩者皆是對class本身增加屬性，所以是一樣的，只是表現方式不同、class的對應物件並不會獲取到這些屬性或者變數`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-26,9,250-->
 
 
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？class的對應物件會有該屬性或者static變數嗎？->->-> `class的對應物件並不會獲取到這些屬性或者變數`

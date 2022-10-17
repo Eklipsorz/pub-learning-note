@@ -157,7 +157,7 @@ immutable
 <!--SR:!2022-11-03,33,248-->
 
 #🧠 React： const ref1 = useRef(initialValue) 是指什麼？ ->->-> `會在目前元件註冊hook，而useRef會產生一個夾雜current屬性的物件，其current屬性值初始值為initialValue`
-<!--SR:!2022-10-17,22,250-->
+<!--SR:!2022-12-15,59,250-->
 
 #🧠 React： 如何利用useRef來讀取名字的輸入欄位  ->->-> `1. 首先要先從react函式庫載入useRefs函式 2. 接著在對應的function component，使用useRefs來註冊hook至目前的元件 3. 在要參照的JSX元素綁定ref屬性，以此獲取JSX的對應實際DOM節點 4. 若要讀取該JSX元素的對應DOM節點的話，可以使用ref1.current，ref1為useRef所回傳的變數`
 <!--SR:!2022-11-06,34,248-->

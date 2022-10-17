@@ -202,7 +202,7 @@ UsersFinder.js
 
 
 #🧠 React：error boundary是什麼？ （請說到為何包覆)->->-> `如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到`
-<!--SR:!2022-10-17,2,249-->
+<!--SR:!2022-10-23,6,249-->
 
 #🧠 React：error boundary是如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，請問被包覆的後裔元件會有什麼好處？->->-> `這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到`
 <!--SR:!2022-10-18,3,250-->
@@ -217,7 +217,7 @@ UsersFinder.js
 <!--SR:!2022-10-18,3,250-->
 
 #🧠 React：error boundary 元件的定義是什麼？ ->->-> `- 必須是class-based component - 定義componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError`
-<!--SR:!2022-10-17,2,249-->
+<!--SR:!2022-10-22,5,249-->
 
 
 #🧠 React：error boundary 元件的局限性是什麼？->->-> `它無法處理：- 元件上的事件處理所產生的錯誤- 元件上的非同步任務所產生的錯誤 - error-boundary 元件本身並不能夠被自己攔截到，只能被上層的error-boundary元件攔截到`
