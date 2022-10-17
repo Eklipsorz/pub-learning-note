@@ -83,7 +83,7 @@ response 物件本身代表著回應封包
 		- reject：失敗
 	- 讀取回應封包的body，並且將json格式轉換成javascript 的object 
 	
-### 案例
+### 案例1：promise
 
 ```
 function App() {
@@ -124,6 +124,39 @@ function App() {
 - setState：當獲取到資料就以那份資料直接渲染
 - 事件綁定/useEffect 來設定哪邊開始執行索要資料和setState
 
+#### 案例1：改用async/await來寫
+
+
+```
+function App() {
+  const [movies, setMovies] = useState([]);
+  const fetchDataHandler = async () => {
+    const response = await fetch('https://swapi.dev/api/films');
+    const data = await response.json();
+
+    const transformedMovies = data.results.map((movie) => ({
+      id: movie.episode_id,
+      title: movie.title,
+      releaseDate: movie.release_date,
+      openingText: movie.opening_crawl,
+    }));
+
+    setMovies(transformedMovies);
+  };
+
+  return (
+    <React.Fragment>
+      <section>
+        <button onClick={fetchDataHandler}>Fetch Movies</button>
+      </section>
+      <section>
+        <MoviesList movies={movies} />
+      </section>
+    </React.Fragment>
+  );
+}
+```
+
 ### fetch 命名緣由
 
 [[@christineliddleWhatAreUsage]]
@@ -155,6 +188,8 @@ function App() {
 #💻 請至/react-builder/question-review/http-req-practice領取題目，並切換成fetch-api-practice 這分支，請修改以Fetch API來獲取電影資料，API 文件為https://swapi.dev/documentation#films ->->-> `https://github.com/academind/react-complete-guide-code/blob/14-sending-http-requests/code/02-sending-a-get-request/src/App.js`
 <!--SR:!2022-10-20,3,250-->
 
+
+#💻 請至/react-builder/question-review/http-req-practice領取題目，並切換成async\/await-fetch-api-practice 這分支，請修改以async/await和Fetch API來獲取電影資料，API 文件為https://swapi.dev/documentation#films ->->-> `https://github.com/academind/react-complete-guide-code/blob/14-sending-http-requests/code/02-sending-a-get-request/src/App.js`->->-> ``
 
 
 ---
