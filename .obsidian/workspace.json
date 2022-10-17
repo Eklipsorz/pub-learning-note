@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "4b3db2f64efb602e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffcb5c0ec4232060",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用Fetch API.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -148,7 +166,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "77a1f39d5417d005",
+  "active": "ffcb5c0ec4232060",
   "lastOpenFiles": [
     "annotation/@FetchAPIWeb.md",
     "inbox/React：使用Fetch API.md",
