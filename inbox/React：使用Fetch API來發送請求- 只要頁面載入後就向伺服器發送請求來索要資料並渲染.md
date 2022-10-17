@@ -46,7 +46,39 @@
 但由於fetchDataHandler 本身是物件，會因為component function的執行而一直產生出新的fetchDataHandler物件，致使useEffect會因為deps設定為fetchDataHandler而陷入無限循環的問題，為此會使用useCallback來儲存剛載入所有元件後的fetchDataHandler物件作為主要內容
 
 
-之後每一次的component function 執行，只會
+之後每一次的component function 執行，只會回傳那個時期的fetchDataHandler物件，這也使得useEffect只會執行一次，也就是剛載入所有元件後就執行的那一次
+
+```
+  const fetchDataHandler = useCallback(async () => {
+    setError(null);
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('https://swapi.dev/api/films');
+      if (!response.ok) {
+        throw new Error('Something went wrong!');
+      }
+
+      const data = await response.json();
+
+      const transformedMovies = data.results.map((movie) => ({
+        id: movie.episode_id,
+        title: movie.title,
+        releaseDate: movie.release_date,
+        openingText: movie.opening_crawl,
+      }));
+
+      setMovies(transformedMovies);
+    } catch (error) {
+      setError(error.message);
+    }
+    setIsLoading(false);
+  }, []);
+
+  useEffect(() => {
+    fetchDataHandler();
+  }, [fetchDataHandler]);
+```
 
 #### 實現
 
