@@ -34,7 +34,7 @@
 ## 複習
 
 #🧠 由於JSX 侷限而採用wrapper element 和 array 來解決，這兩者會有什麼樣問題？->->-> `前者會促使產生不必要的div元件或者wrapper element來包含，甚至產生深度高到一定程度的div巢狀結構，array得要一直填寫key值才會減少不必要的誤判，這樣會使得開發上變得較為不方便`
-<!--SR:!2022-10-17,24,250-->
+<!--SR:!2022-12-20,64,250-->
 
 #🧠 由於JSX 侷限而採用wrapper component，具體的wrapper component 通常會是拿什麼包含子節點(不考慮假的wrapper component) ->->-> `div元件`
 <!--SR:!2022-10-28,28,230-->

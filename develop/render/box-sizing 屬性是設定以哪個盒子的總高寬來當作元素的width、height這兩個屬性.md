@@ -99,7 +99,7 @@
 <!--SR:!2022-10-17,28,250-->
 
 #🧠 box-sizing 屬性是border-box，其高寬會包含著什麼？ ->->-> `content-box 高寬、padding box本身高寬、border box本身高寬`
-<!--SR:!2022-10-17,27,250-->
+<!--SR:!2022-12-25,69,250-->
 
 
 #🧠 假如box-sizing是context box，請問元素實際所佔的大小為何？以及content box大小為何![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662479135/blog/css/box-model/box-sizing-question_riexdo.png) ->->-> `- 元素實際所佔的大小為(content box + padding box本身大小 + border box本身大小)： - 寬：(350px + 25\*2 + 5\*2) = 410 px - 高：(150px + 25\*2 + 5\*2) = 210 px - content box所佔的大小為： - 寬：350px - 高：150px`

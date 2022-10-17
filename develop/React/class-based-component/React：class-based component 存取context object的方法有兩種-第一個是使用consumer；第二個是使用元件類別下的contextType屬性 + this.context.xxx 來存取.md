@@ -130,7 +130,7 @@ Class1 { name: 'hi' } Class2 {}
 
 
 #🧠 React：使用元件類別下的contextType屬性 + this.context.xxx 來存取，最多能存取多少個context object，為什麼？->->-> `只能存取一個context object，因為contextType只能填寫一種，所以就只能存取一個context object`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-27,10,250-->
 
 #🧠 React 官方提供的語法-contextType是做什麼？ (請說到類別和物件) ->->-> `設定元件class能夠存取的context object，讓對應元件類別下的物件只能夠存取對應的context object`
 <!--SR:!2022-10-17,3,250-->
@@ -159,7 +159,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2022-10-17,3,250-->
 
 #🧠 React 官方提供的語法要如何實際存取context object內容，假使已經設定contextType屬性->->-> `直接在class內使用this.context.xxxx，其中xxxx就是context object所能提供的屬性和方法。`
-<!--SR:!2022-10-17,3,250-->
+<!--SR:!2022-10-26,9,250-->
 
 #🧠 functional component 下的useContext 可以使用多少個context object ->->-> `N個`
 <!--SR:!2022-10-27,10,250-->
