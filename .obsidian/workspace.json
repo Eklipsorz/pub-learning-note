@@ -22,42 +22,6 @@
         ]
       },
       {
-        "id": "d2ea0315d8600b5b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0e62f0e427d6011b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "c2a30b4980eb0d04",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4177b10c2588b179",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "1037c5443d663d95",
         "type": "tabs",
         "children": [
@@ -67,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "media",
+                "query": "heap",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -140,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
+                "file": "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md"
               }
             }
           }
@@ -204,6 +167,7 @@
   },
   "active": "58d86c7de982c3b3",
   "lastOpenFiles": [
+    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "inbox/React：使用Fetch API.md",
     "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
@@ -212,7 +176,6 @@
     "inbox/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
     "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
     "inbox/Untitled 6.md",
-    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "inbox/Untitled 7.md"
   ]
 }
