@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：使用Fetch API.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3964a88c882d6546",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "commit 命名",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,7 +78,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用Fetch API.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用Fetch API.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用Fetch API.md"
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md"
               }
             }
           }
@@ -147,8 +161,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "77a1f39d5417d005",
+  "active": "3964a88c882d6546",
   "lastOpenFiles": [
+    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
     "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
     "develop/Database/CS - Commit 是指將資料上的暫行性修改轉換成資料上的永久性修改之行為.md",
     "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
@@ -156,8 +172,6 @@
     "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "develop/render/每一個HTML 元素都是由多種盒子相互裝載而成的結構，該結構稱之為Box Model.md",
-    "develop/Database/data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md",
-    "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
-    "inbox/React：使用Fetch API.md"
+    "develop/Database/data cleaning 是一種偵測資料集合中是否有髒資料並進行清洗的程序，髒資料會是指違反資料完整性、資料一致性特性的資料.md"
   ]
 }
