@@ -47,6 +47,24 @@
         "currentTab": 2
       },
       {
+        "id": "c4204119b046a96d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9b7026c20b6a767",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "6f30e826b97396dd",
         "type": "tabs",
         "children": [
@@ -129,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求來增加資料.md",
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求來增加資料.md",
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求來增加資料.md"
+                "file": "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md"
               }
             }
           }
@@ -191,10 +209,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "81a3eb6575291aed",
+  "active": "e9b7026c20b6a767",
   "lastOpenFiles": [
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
