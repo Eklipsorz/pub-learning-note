@@ -107,7 +107,7 @@ useEffect(() => {
 <!--SR:!2022-10-18,3,250-->
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現在componentDidUpdate遇上無限循環問題，解法會是->->-> `在裡頭添加類似dependency的條件式就能解決`
-<!--SR:!2022-10-18,3,250-->
+<!--SR:!2022-10-28,10,250-->
 
 
 #🧠 componentDidMount、componentDidUpdate、componentWillUnmount 在正常情況下(mount->update->update->unmount)的執行次數會是如何 ->->-> `1、2、1`

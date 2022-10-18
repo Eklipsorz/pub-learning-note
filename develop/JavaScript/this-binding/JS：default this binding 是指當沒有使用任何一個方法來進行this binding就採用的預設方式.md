@@ -118,7 +118,7 @@ function fn() {
 ## 複習
 
 #🧠 JS：default this binding  會是什麼？->->-> `指當沒有使用任何一個方法來進行this binding就採用的預設方式`
-<!--SR:!2022-10-18,5,248-->
+<!--SR:!2022-10-30,12,248-->
 
 #🧠 JS：efault this binding 指當沒有使用任何一個方法來進行this binding就採用的預設方式， 請問default this binding  具體方式為何 ？ ->->-> `會根據執行環境是否處於嚴格模式來將this設定成global 或者 undefined`
 <!--SR:!2022-10-19,2,228-->
@@ -141,7 +141,7 @@ function fn() {
 <!--SR:!2022-10-19,6,248-->
 
 #🧠 若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為global object`
-<!--SR:!2022-10-18,5,248-->
+<!--SR:!2022-10-31,13,248-->
 
 #🧠 default this binding 處於何種情況下才會將this設定成global object?  ->->-> `若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式`
 <!--SR:!2022-10-24,10,250-->
