@@ -82,7 +82,7 @@
 <!--SR:!2022-10-27,10,250-->
 
 #🧠 在JS中的static property的用途為何？class對於 property的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
-<!--SR:!2022-10-18,3,250-->
+<!--SR:!2022-10-27,9,250-->
 
 #🧠  static variable 中 的static 起源於什麼？ ->->-> `static variable 中 的static 起源於static memory allocation作法`
 <!--SR:!2022-10-27,10,250-->
