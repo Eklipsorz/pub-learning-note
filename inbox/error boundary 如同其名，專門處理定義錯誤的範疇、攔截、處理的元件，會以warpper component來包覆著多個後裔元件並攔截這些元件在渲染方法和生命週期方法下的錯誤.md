@@ -255,6 +255,8 @@ UsersFinder.js
 #🧠 React：Error-boundary 元件 不可以處理自己元件下的生命週期函式和渲染函式所拋出來的錯誤，那怎麼樣才能處理Error-boundary 元件下的生命週期函式和渲染函式所拋出來的錯誤？->->-> `讓包含Error-boundary元件的Error-boundary元件來處理`
 <!--SR:!2022-10-23,5,249-->
 
+#🧠 React：error boundary 元件功能避免了什麼？ ->->-> `避免後頭沒人處理錯誤資訊而讓React核心程式碼接收到並停止渲染。`
+
 ---
 Status: #🌱 
 Tags:
