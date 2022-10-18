@@ -46,7 +46,7 @@
 <!--SR:!2022-12-20,64,250-->
 
 #🧠 JSX 侷限而採用wrapper element 所產生出的巢狀結構會是什麼？用程式碼表示 ->->-> `![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815053/blog/react/react-element/div-hell_khxdhw.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815053/blog/react/react-element/div-hell_khxdhw.png)`
-<!--SR:!2022-10-18,25,250-->
+<!--SR:!2022-12-21,64,250-->
 
 
 

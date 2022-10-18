@@ -15,7 +15,7 @@
 <!--SR:!2022-10-27,10,250-->
 
 #🧠 React：functional component寫法能否取代class-based component寫法？為什麼 ->->-> `並不能，主要是- 個人喜好 - 工作團隊共同使用- 建立 error boundary`
-<!--SR:!2022-10-18,3,250-->
+<!--SR:!2022-10-28,10,250-->
 
 
 
