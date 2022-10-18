@@ -19,7 +19,9 @@ for (var prop in obj) { }
 // 以該陣列來觸發更新和渲染
 
 
-
+### firebase realtime DB
+- firebase realtime 資料庫系統會是以json檔案來當作資料庫來儲存，資料庫為NoSQL類別
+- firebase 
 
 firebase realtime DB 回應內容會是以JSON格式來回傳
 Here for Firebase, sending a POST request. we'll create a resource
@@ -40,10 +42,19 @@ fetch(URL, option) 實現POST會需要更改的option屬性：
 Technically this header is not required by Firebase, it would be able to handle request even if that header is not set, but a lot of rest APIs to which you might be sending requests later, might require this extra header, which describes to content that will be sent
 
   
+### content-type
+[[@mdnContentTypeHTTPMDN]]
+> The `**Content-Type**` representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).
 
-The `**Content-Type**` representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).
+> In responses, a `Content-Type` header provides the client with the actual content type of the returned content
 
--> Content-Type 告知對方傳送的resource會是什麼格式的
+> In requests, (such as POST or PUT), the client tells the server what type of data is actually sent.
+
+重點：
+- 告知目前封包裡的內容會是什麼格式
+- 用途：
+	- 可以讓客戶端得知回應封包的內容格式，好讓客戶端方便解析
+	- 可以讓伺服器得知請求封包的內容格式，好讓伺服器方便姐
 
 
 GET 
@@ -117,3 +128,4 @@ Links:
 [[React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果]]
 [[React：使用Fetch API 來發送請求來獲取資料並渲染]]
 References:
+[[@mdnContentTypeHTTPMDN]]
