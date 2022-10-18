@@ -109,7 +109,7 @@ function name(param0, param1, /* … ,*/ paramN) {
 
 
 #🧠 在JavaScript 中，function declaration vs. function expression 差別？(語法&功能上) ->->-> `function declaration 主要是向系統宣告函式存在，function expression則是以表達特定函式/特定物件/特定值的表達式，只是是使用function形式來表達、 function declaration 一定得要有 function 關鍵字、function 名稱、function 引數、function 語句、function expression 一定得要有 function 關鍵字、函式引數、函式內部執行語句，函式名稱是不一定有`
-<!--SR:!2022-10-18,31,249-->
+<!--SR:!2023-01-04,78,249-->
 
 
 

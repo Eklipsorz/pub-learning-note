@@ -132,7 +132,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-10-20,10,250-->
 
 #🧠 React useMemo 所儲存最主要的儲存內容為何(以記憶體區塊來說) ->->-> `以原本識別字所對應的stack記憶體區塊內容為主`
-<!--SR:!2022-10-18,8,250-->
+<!--SR:!2022-11-10,23,250-->
 
 #🧠 React useMemo 是什麼？做什麼？->->-> `最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳或者重新執行performance-intensive task來獲得特定值`
 <!--SR:!2022-10-20,10,250-->
