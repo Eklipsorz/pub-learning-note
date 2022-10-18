@@ -162,7 +162,7 @@ export default App;
 ## 複習
 
 
-#💻 請至/react-builder/question-review/http-req-practice 領取題目，切換至fetch-data-full分支，在那請用Fetch API完成對於所有電影的資料載入和渲染，其中要有辦法能夠在元件掛載後以及按下按鈕就能載入資料和渲染，另外當出現錯誤或者沒資料渲染也要呈現其錯誤訊息->->-> `https://github.com/academind/react-complete-guide-code/blob/14-sending-http-requests/code/05-using-useeffect/src/App.js`
+#💻 請至/react-builder/question-review/http-req-practice 領取題目，切換至fetch-data-full分支，在那請用Fetch API在app.js完成對於所有電影的資料載入和渲染，其中要有辦法能夠在元件掛載後以及按下按鈕就能載入資料和渲染，另外當出現錯誤或者沒資料渲染也要呈現其錯誤訊息->->-> `https://github.com/academind/react-complete-guide-code/blob/14-sending-http-requests/code/05-using-useeffect/src/App.js`
 
 
 #🧠 React：若在useEffect安插資料載入和渲染的業務邏輯程式碼，請問還能如何重構，有何方向->->-> `將業務邏輯分離出並定義一個函式物件，在useEffect呼叫`，
