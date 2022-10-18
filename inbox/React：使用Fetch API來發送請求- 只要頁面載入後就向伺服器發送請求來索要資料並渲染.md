@@ -167,8 +167,10 @@ export default App;
 
 
 #🧠 React：若在useEffect安插資料載入和渲染的業務邏輯程式碼，請問還能如何重構，有何方向->->-> `將業務邏輯分離出並定義一個函式物件，在useEffect呼叫`，
+<!--SR:!2022-10-21,3,250-->
 
 #🧠 React：若在useEffect安插資料載入和渲染的業務邏輯程式碼，重構若以將業務邏輯分離出並定義一個函式物件，在useEffect呼叫作為方向，那麼deps還設定什麼？ 為什麼->->->`實現可以因變動而跟著修改業務邏輯`
+<!--SR:!2022-10-21,3,250-->
 
 #🧠 React：若在useEffect安插資料載入和渲染的業務邏輯程式碼，重構若以將業務邏輯分離出並定義一個函式物件，在useEffect呼叫作為方向，那麼deps還設定該函式物件的話，會遇到什麼問題，如何解決 ->->-> `但由於fetchDataHandler 本身是物件，會因為component function的執行而一直產生出新的fetchDataHandler物件，致使useEffect會因為deps設定為fetchDataHandler而陷入無限循環的問題，為此會使用useCallback來儲存剛載入所有元件後的fetchDataHandler物件作為主要內容，之後每一次的component function 執行，只會回傳那個時期的fetchDataHandler物件，這也使得useEffect只會執行一次，也就是剛載入所有元件後就執行的那一次`
 <!--SR:!2022-10-21,3,250-->
