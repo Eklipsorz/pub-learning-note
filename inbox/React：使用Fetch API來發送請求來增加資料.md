@@ -1,47 +1,13 @@
 
 ## 描述
 
-and i mentioned, even though it's called fetch, it's not just the air to fetch data, you can also use that same function to send data
-
-
-
-由於firebase realtime db 回傳會是以一個物件來包含所有項目資料，其中每個屬性名稱會是資料項目的ID，而每個屬性值會是該資料項目的資料，所以得有個手段來枚舉
-
-  
-
-  
-
-// 枚舉obj物件的每個屬性 並轉換成一個陣列  
-for (var prop in obj) { }
-
-  
-
-// 以該陣列來觸發更新和渲染
-
-
 ### firebase realtime DB
-- firebase realtime 資料庫系統會是以json檔案來當作資料庫來儲存，資料庫為NoSQL類別
-- firebase 
-
-firebase realtime DB 回應內容會是以JSON格式來回傳
-Here for Firebase, sending a POST request. we'll create a resource
-firebase 由於提供的資料庫是由MongoDB 系統所提供，該系統會以json檔案來當作一個資料庫來記錄資料
+- 會是以json檔案來當作資料庫來儲存，資料庫為NoSQL類別
+- 提供一個簡易REST API介面來幫助開發者對特定資料庫進行CRUD
+- 由於資料庫是json檔案為主，若轉換成JS的物件，就是一個物件來儲存內容，其屬性名稱為每一個項目的ID、屬性值則是該項目的實際內容
 
 
 
-fetch(URL, option) 實現POST會需要更改的option屬性：
-
-- method：指定為 'POST'
-
-- body： 指定要增加的資料，在這裡會是一個JSON 字串格式的資料
-
-- headers：請求封包的header部分，在這裡會設定Content-Type為application/json
-
-  
-
-Technically this header is not required by Firebase, it would be able to handle request even if that header is not set, but a lot of rest APIs to which you might be sending requests later, might require this extra header, which describes to content that will be sent
-
-  
 ### content-type
 [[@mdnContentTypeHTTPMDN]]
 > The `**Content-Type**` representation header is used to indicate the original media type of the resource (prior to any content encoding applied for sending).
@@ -56,6 +22,15 @@ Technically this header is not required by Firebase, it would be able to handle 
 	- 可以讓客戶端得知回應封包的內容格式，好讓客戶端方便解析
 	- 可以讓伺服器得知請求封包的內容格式，好讓伺服器方便姐
 
+
+### Fetch API 實現POST
+
+fetch(URL, option) 實現POST會需要更改的option屬性：
+- method：指定為 'POST'
+- body： 指定要增加的資料，在這裡會是一個JSON 字串格式的資料
+- headers：請求封包的header部分，在這裡會設定Content-Type為application/json
+
+#### 實現
 
 GET 
 ```
