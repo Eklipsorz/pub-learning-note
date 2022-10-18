@@ -23,7 +23,7 @@
 
 重點：
 - 瀏覽器內建的API，會提供一個介面來方便獲取資料
-	- 包含獲取方法、請求物件、回應物件等代表請求/回應資訊的物件
+	- 包含發送請求方法、請求物件、回應物件等代表請求/回應資訊的物件
 - 該API用來向特定伺服器發送獲取資料和傳送資料請求 
 	- 實際上是可以傳送資料，只是常用於獲取資料
 - 其API 會是以Promise為基本來生成非同步任務去向指定伺服器索要：
@@ -49,10 +49,10 @@ fetch(resource, options)
 >An object containing any custom settings that you want to apply to the request
 
 重點：
-- fetch(a, b) 為向指定伺服器獲取資料的方法，主要產生promise為主的非同步任務來做連接獲取
+- fetch(a, b) 為向指定伺服器獲取資料的方法，主要產生promise為主的非同步任務來做發送請求&接收回應
 - 語法為：
 	- 參數a：字串，定義要發送的伺服器是哪
-	- 參數b：物件，設定請求封包的資訊，如HTTP請求方法(預設是GET)、狀態碼、多增加header
+	- 參數b：物件，設定請求封包，如HTTP請求方法(預設是GET)、狀態碼、多增加header
 	- 回傳會是promise：
 		- resolve：會以response 物件回傳
 		- reject：會回傳錯誤資訊
@@ -194,15 +194,37 @@ function App() {
 
 #🧠 瀏覽器向伺服器發送請求方式的工具有哪些？ ->->-> `axios、Fetch API`
 
-#🧠 axios 和 Fetch API 哪個是內建？ ->->-> ``
+#🧠 如何在瀏覽器使用axios 工具 ->->-> `瀏覽器本身並沒有，需要載入額外模組才能使用`
 
-#🧠 Question :: ->->-> ``
+#🧠 如何在瀏覽器使用Fetch API工具 ->->-> `瀏覽器內建API，可以直接調用`
 
-#🧠 Question :: ->->-> ``
+#🧠 Fetch API是什麼？ ->->-> `瀏覽器內建的API，會提供一個介面來方便獲取資料`
 
-#🧠 Question :: ->->-> ``
+#🧠  Fetch API 是瀏覽器內建的API，會提供一個介面來方便獲取資料，介面包含了什麼？->->-> `包含發送請求方法、請求物件、回應物件等代表請求/回應資訊的物件`
+
+#🧠 Fetch API 是瀏覽器內建的API，會提供一個介面來方便獲取資料，用途是什麼？->->-> `向伺服器發送任意請求`
+
+#🧠 Fetch API 是瀏覽器內建的API，會提供一個介面來方便獲取資料，那麼就只能發送獲取資料的請求？ ->->-> `並不是，還可以發送其他種類的請求，如POST`
+
+#🧠 Fetch API 是瀏覽器內建的API，專門用來向伺服器發送請求，請問如何發送？(任務) ->->-> `以Promise為基本來生成非同步任務去向指定伺服器索要	- resolve：會以response 物件回傳 - reject：會回傳錯誤資訊`
+
+#🧠 Fetch API 是瀏覽器內建的API，專門用來向伺服器發送請求，請問方法語法為？->->-> `fetch(a, b)`
+
+#🧠 Fetch API 是瀏覽器內建的API，其中發送請求的方法為fetch(a, b)，請問a 和 b各為什麼？->->-> `- 參數a：字串，定義要發送的伺服器是哪 - 參數b：物件，設定請求封包，如HTTP請求方法(預設是GET)、狀態碼、多增加header`
+
+#🧠 Fetch API 是瀏覽器內建的API，其中發送請求的方法為fetch(a, b)，該方法主要會如何做發送請求&接收回應 ->->-> `主要產生promise為主的非同步任務來做發送請求&接收回應`
+
+#🧠 Fetch API中的response object 是什麼？ ->->-> `response 物件本身代表著回應封包`
 
 
+#🧠 Fetch API中的request object 是什麼？->->-> `表示請求封包`
+
+#🧠 Fetch API中的fetch方法要如何處理JSON格式的回應封包 ->->-> `針對回應的response object來使用底下的json方法來解析和轉換`
+
+#🧠 Fetch API 是瀏覽器內建的API，其中發送請求的方法為fetch(a, b)，b設定為請求封包 ，具體會是？->->-> `HTTP請求方法(預設是GET)、狀態碼、多增加header`
+
+
+#🧠 Fetch API 和 fetch() 差別為何？->->-> `1. Fetch API 是一個專門獲取資料的API，裡頭包含實際能獲取資料的方法、代表請求資訊的request object、代表回應資料的response object 2. fetch() 只是Fetch API內的其中一個方法`
 
 
 ---
