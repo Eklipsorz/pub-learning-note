@@ -200,8 +200,9 @@ console.log(testvar1)
 
 #🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性嗎？ ->->-> `可以像存取到物件那樣去修改物件本身的屬性`
 
-#🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性，為什麼？ ->->-> `若內容會是物件的話，則可以透過參照關係來修改物件本身的內容，由於真正禁止不能修改的記憶體區塊是在stack記憶體區塊
-`
+#🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性，為什麼？ ->->-> `若內容會是物件的話，則可以透過參照關係來修改物件本身的內容，由於真正禁止不能修改的記憶體區塊是在stack記憶體區塊`
+
+#🧠 ES module：以下是建立live bindings，請問module2.mjs最後會印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666158493/blog/es-module/live-bindings-example_dxe2qu.png) ->->-> `{ test1: 'test1', test2: 'test1' } { test2: 'test1' }`
 
 #🧠 ES Module：  N個不同模組會是替相同模組做N個重複性實例化？請說明可能性 ->->-> `通常會以模組依賴關係圖來找模組，依賴關係圖中會有被依賴的模組A和依賴模組A的模組B，當出現時，系統會為了方便實例化兩個模組，會先從被依賴的模組A開始實例化，換言之就是會產生任務去對模組A做實例化，若有N個模組要同樣的模組A，即為發送N個任務來對模組A做實例化，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`
 <!--SR:!2022-11-21,71,250-->
