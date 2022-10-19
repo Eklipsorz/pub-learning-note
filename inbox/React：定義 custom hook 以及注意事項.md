@@ -43,6 +43,7 @@ setInterval(func, delay)
 ---
 Status: #🌱 
 Tags:
+[[React]]
 Links:
 References:
 [[@reactBuildingYourOwn]]
