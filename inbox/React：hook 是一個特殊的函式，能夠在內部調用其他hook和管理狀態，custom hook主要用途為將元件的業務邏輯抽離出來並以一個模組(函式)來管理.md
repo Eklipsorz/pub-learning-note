@@ -8,7 +8,9 @@
 1. hook 本身是函式，其名稱會是以use開頭
 2. 該函式可以調用其他hook(含custom hook)以及管理狀態
 
-
+定義是：
+- 一般函式
+- 呼叫hook和管理狀態？
 
 ### custom hook 用途為
 
@@ -22,11 +24,6 @@
 - 將元件的業務邏輯抽離出來並以一個模組(函式)來管理：主要將元件上的狀態上業務邏輯外包(outsource)給hook來做，並且將hook打造成可重復性呼叫的function，以便讓其他元件也能使用該hook
 
 
-
-
-
-
-
 ### outsource 命名緣由
 
 outsource：
@@ -37,9 +34,27 @@ outsource：
 
 ## 複習
 
+#🧠 React：hook 本質上是什麼？ ->->-> ` hook 本身是函式`
+
+#🧠 React：hook 名稱會有什麼特徵 ->->-> `開頭都會有use開頭`
+
+#🧠 React：hook 跟一般函式差別是什麼？ ->->-> `hook 可以調用其他hook(含custom hook)以及管理狀態`
+
+#🧠  React： hook 可以調用其他hook以及管理狀態，其中調用其他hook包含了哪些？->->-> `內建hook和自製hook`
+
+#🧠 outsource 命名緣由為何？ ->->-> `本身是指將原本自己負責的任務內容分給其他人來做`
+
+#🧠 React：custom hook 的用途是什麼？->->-> `將元件的業務邏輯抽離出來並以一個模組(函式)來管理`
+
+#🧠 React：custom hook 的用途是將元件的業務邏輯抽離出來並以一個模組(函式)來管理，那麼custom hook可以供給其他component使用嗎 ->->-> `可以`
+
+
+#🧠 React：custom hook 的用途是將元件的業務邏輯抽離出來並以一個模組(函式)來管理，具體是什麼？ ->->-> `主要將元件上的狀態上業務邏輯外包(outsource)給hook來做，並且將hook打造成可重復性呼叫的function，以便讓其他元件也能使用該hook`
+
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[React]]
 Links:
 References:
