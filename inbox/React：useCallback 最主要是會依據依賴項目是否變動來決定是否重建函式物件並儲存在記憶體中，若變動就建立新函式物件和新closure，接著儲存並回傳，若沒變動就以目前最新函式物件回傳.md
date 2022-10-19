@@ -97,13 +97,13 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-11-16,28,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback會重新建立函式物件嗎 ->->-> `並不會`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-16,28,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，就表示什麼？ ->->-> `就會被系統認定為一直被改變的依賴項目`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-15,27,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，其useCallback回傳什麼？->->-> `進而每一次執行都會重新以baseFunction為主來建立新的函式物件回傳`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-16,28,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是填入\[a, b\]，就表示什麼？ ->->-> `會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件`
 <!--SR:!2022-11-13,26,250-->

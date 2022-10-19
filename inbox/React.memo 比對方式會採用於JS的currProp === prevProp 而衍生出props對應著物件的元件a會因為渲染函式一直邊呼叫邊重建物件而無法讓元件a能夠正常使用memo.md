@@ -85,7 +85,7 @@ Button RUNNING
 <!--SR:!2022-11-13,26,250-->
 
 #🧠 React.memo 比對props的方式會是什麼？ 若比較對象是物件的話 ->->-> `就會以識別字來找到對應的stack記憶體區塊，並取出它的內容-reference value 來比較是否一樣`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-16,28,250-->
 
 #🧠 React.memo 比對props的方式會是什麼？ 若比較對象是primitive data value的話 ->->-> `就會以識別字來找到對應的stack記憶體區塊，並取出它的內容-primitive data value 來比較是否一樣`
 <!--SR:!2022-10-19,10,250-->
