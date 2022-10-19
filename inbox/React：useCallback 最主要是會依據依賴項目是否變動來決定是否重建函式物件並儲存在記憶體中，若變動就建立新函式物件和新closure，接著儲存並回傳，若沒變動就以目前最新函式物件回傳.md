@@ -59,7 +59,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-11-14,26,250-->
 
 #🧠 React useCallback 的用途為何 ->->-> `最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-14,26,250-->
 
 #🧠 React useCallback 主要解決了什麼問題？ ->->-> `解決memo本身的重建問題`
 <!--SR:!2022-11-09,23,250-->
@@ -88,7 +88,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 會回傳什麼？(請盡量說到closure) ->->-> `根據[deps]來決定回傳新函式物件或者記憶體儲存的函式物件，其函式物件會夾帶closure，該closure的識別字會是特定執行時機下的記憶體區塊`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-13,25,250-->
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`

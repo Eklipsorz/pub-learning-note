@@ -84,7 +84,7 @@ Resource Representation State：
 <!--SR:!2022-10-29,10,250-->
 
 #🧠 REST 網路軟體開發風格是基於哪個協定來發展？ ->->-> `網路協定之一 - HTTP/HTTPS協議`
-<!--SR:!2022-10-19,3,250-->
+<!--SR:!2022-10-28,9,250-->
 
 #🧠 REST 網路軟體開發風格的目的是什麼？ ->->-> `方便讓不同軟體或者程式模組在網路上能夠互相傳遞資訊`
 <!--SR:!2022-10-28,9,250-->
@@ -101,7 +101,7 @@ Resource Representation State：
 <!--SR:!2022-10-23,5,249-->
 
 #🧠  Resource Representation State Transfer / REST 中的Representation是什麼？->->-> `Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等`
-<!--SR:!2022-10-19,3,250-->
+<!--SR:!2022-10-29,10,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的State是什麼？ ->->-> `簡短來說，State 是特定時間點下之特定事物所擁有的內容，Resource Representation State 則是指狀態會以特定時間點下的具體資源(所在)所擁有的內容`
