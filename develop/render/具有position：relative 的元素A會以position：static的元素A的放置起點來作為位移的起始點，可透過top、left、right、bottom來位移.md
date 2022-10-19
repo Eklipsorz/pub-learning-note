@@ -177,7 +177,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-11-14,42,248-->
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定right為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往右位移-value1`
-<!--SR:!2022-10-19,28,250-->
+<!--SR:!2023-01-01,74,250-->
 
 
 #🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定left為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往左位移-value1`
@@ -205,7 +205,7 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 <!--SR:!2022-12-11,60,250-->
 
 #🧠  在position：relative的元素下，top 和 bottom 中會挑選top的原因->->-> `採取normal flow所預設的排版方向，由上而下來排`
-<!--SR:!2022-10-19,28,250-->
+<!--SR:!2023-01-01,74,250-->
 
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排`
 <!--SR:!2022-10-28,32,248-->
