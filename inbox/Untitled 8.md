@@ -43,6 +43,96 @@ options 由於為一般物件，不作為deps的做法：由於options最終會�
 2. 試著將options和apply 不設定為custom hook 中的useCallback deps => 藉由減少deps而減少複雜度
 
 
+
+### 試著將options和apply 不設定為custom hook 中的useCallback deps
+
+use-http.js
+```
+import { useState, useCallback } from 'react';
+
+const useHttp = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const sendRequest = useCallback(async (options, handler) => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const response = await fetch(options.url, {
+        method: options.method ? options.method : 'GET',
+        headers: options.headers ? options.headers : {},
+        body: options.body ? JSON.stringify(options.body) : null,
+      });
+
+      if (!response.ok) {
+        throw new Error('Request failed!');
+      }
+
+      const data = await response.json();
+
+      handler(data);
+    } catch (err) {
+      setError(err.message || 'Something went wrong!');
+    }
+    setIsLoading(false);
+  }, []);
+
+  return { isLoading, error, sendRequest };
+};
+
+export default useHttp;
+```
+
+
+app.js
+```
+import React, { useEffect, useState } from 'react';
+
+import Tasks from './components/Tasks/Tasks';
+import NewTask from './components/NewTask/NewTask';
+import useHttp from './hooks/use-http';
+
+const options = {
+  url: 'https://react-test-http-d24a5-default-rtdb.asia-southeast1.firebasedatabase.app/tasks.json',
+};
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+  const { isLoading, error, sendRequest: fetchTasks } = useHttp();
+
+  useEffect(() => {
+    function fetchDataHandler(data) {
+      const loadedTasks = [];
+
+      for (const taskKey in data) {
+        loadedTasks.push({ id: taskKey, text: data[taskKey].text });
+      }
+
+      setTasks(loadedTasks);
+    }
+    fetchTasks(options, fetchDataHandler);
+  }, []);
+
+  const taskAddHandler = (task) => {
+    setTasks((prevTasks) => prevTasks.concat(task));
+  };
+
+  return (
+    <React.Fragment>
+      <NewTask onAddTask={taskAddHandler} />
+      <Tasks
+        items={tasks}
+        loading={isLoading}
+        error={error}
+        onFetch={fetchTasks}
+      />
+    </React.Fragment>
+  );
+}
+
+export default App;
+
+```
 ## 複習
 
 ---
