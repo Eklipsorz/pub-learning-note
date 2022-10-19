@@ -13,6 +13,10 @@ custom hook ：
 
 ### 定義custom hook的條件
 
+
+[[@reactBuildingYourOwn]]
+> **A custom Hook is a JavaScript function whose name starts with ”`use`” and that may call other Hooks**
+
 1. 必須是function
 2. function 名稱必須要是use 開頭：當被設定時，react會開始檢查其他條件是否滿足成為hook的條件
 
@@ -41,6 +45,7 @@ Status: #🌱
 Tags:
 Links:
 References:
+[[@reactBuildingYourOwn]]
 [[@mdnSetIntervalWebAPIs]]
 
 
