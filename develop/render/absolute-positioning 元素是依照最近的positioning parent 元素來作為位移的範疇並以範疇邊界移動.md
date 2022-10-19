@@ -71,7 +71,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2022-12-06,56,250-->
 
 #🧠 absolute-positioning 元素的位移方式為何？ ->->-> ``
-<!--SR:!2022-10-19,27,250-->
+<!--SR:!2022-12-30,72,250-->
 
 #🧠  absolute-positioning 元素若找不到最近的positioned parent 元素，會找誰替代？ ->->-> `就以viewport的邊界來位移`
 <!--SR:!2022-12-19,64,250-->
