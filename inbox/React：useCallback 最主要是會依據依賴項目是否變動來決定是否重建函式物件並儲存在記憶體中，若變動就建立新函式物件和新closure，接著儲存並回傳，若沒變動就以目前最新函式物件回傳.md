@@ -56,7 +56,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 React useCallback 在元件上來說是什麼？(別說用途)  ->->-> `useCallback本身是一個內建Hook，註冊在元件上`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-14,26,250-->
 
 #🧠 React useCallback 的用途為何 ->->-> `最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳`
 <!--SR:!2022-10-19,10,250-->
@@ -78,7 +78,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-11-13,26,250-->
 
 #🧠 React useCallback 語法會是什麼？ ->->-> `useCallback(baseFunction, [deps])`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-16,28,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的baseFunction 是什麼？用途是什麼？ ->->-> `是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction`
 <!--SR:!2022-10-19,10,250-->
@@ -92,7 +92,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`
-<!--SR:!2022-10-19,10,250-->
+<!--SR:!2022-11-15,27,250-->
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback回傳什麼？ ->->-> `回傳的函式物件就會以記憶體內的目前最新函式物件回傳，而不重新以baseFunction為主來從而建立新函式物件`
 <!--SR:!2022-11-16,28,250-->
 
