@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,8 +114,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md"
+                "file": "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md"
               }
             }
           }
@@ -199,10 +198,10 @@
   },
   "active": "4066920aa0a7581b",
   "lastOpenFiles": [
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
-    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
     "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
