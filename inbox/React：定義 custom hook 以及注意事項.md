@@ -105,6 +105,7 @@ setInterval(callback, delay)
 <!--SR:!2022-10-21,1,230-->
 
 #🧠 React：定義custom hook的條件為什麼？ ->->-> `1. 必須是function 2. function 名稱必須要是use 開頭`
+<!--SR:!2022-10-23,3,250-->
 
 #🧠 React：定義custom hook的條件為1. 必須是function 2. function 名稱必須要是use 開頭，若第二個不滿足的話，會是如何？->->-> `會被看待成一般函式`
 <!--SR:!2022-10-23,3,250-->
@@ -114,12 +115,14 @@ setInterval(callback, delay)
 
 
 #🧠 React：開發custom hook會是如何開發？(比如放哪？以何種形式) ->->-> `每一個custom hook會以一個檔案來儲存，其檔案會儲存在/src/hooks`
+<!--SR:!2022-10-23,3,250-->
 
 #🧠 React：custom hook 若以檔案來儲存，會和其他元件同在一檔案進行開發嗎？->->-> `並不會`
 <!--SR:!2022-10-23,3,250-->
 
 
 #🧠 React：custom hook 若以檔案來儲存，且檔案內容只有hook，那麼檔名會是如何？通常來說 ->->-> `use-xxxx.js，xxxx 為功能名稱`
+<!--SR:!2022-10-23,3,250-->
 
 
 

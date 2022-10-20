@@ -115,8 +115,10 @@ export default useCounter;
 <!--SR:!2022-10-23,3,250-->
 
 #🧠 React：custom hook 使用上就跟函式一樣，請說明hook的使用方式？ ->->-> `如同函式呼叫那樣來調用hook，比如function Component() { useXXX(); }`
+<!--SR:!2022-10-22,2,248-->
 
 #🧠 React：custom hook 在component呼叫的話，會等同於什麼？ ->->-> `在component註冊custom hook`
+<!--SR:!2022-10-22,2,248-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，若custom hookA 搭載其他hookB，請問對於在元件呼叫來說是什麼意思？->->-> `hookB和hookA會一同註冊在同個component`
 <!--SR:!2022-10-23,3,250-->
@@ -126,6 +128,7 @@ export default useCounter;
 <!--SR:!2022-10-23,3,250-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼不共享state或者effect會是因爲著？  ->->-> `首先每個component呼叫hook，就等同於將相關資訊註冊在對應component，換言之，就是每個component的hook都是獨立的`
+<!--SR:!2022-10-22,2,248-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼會是指多個component 共享同個state或者effect嗎？->->-> `並不是`
 <!--SR:!2022-10-22,2,248-->
@@ -135,8 +138,10 @@ export default useCounter;
 
 
 #🧠  React：custom hook 使用上就跟函式一樣，那麼會像函式那樣回傳東西嗎？形式會是如何？分別講出hook定義和實際使用的形式->->-> `會，hook定義會是是const useXXX = (x1, x2, ....) => { return xxxx }。函式呼叫的話會是const res = useXXX(x1, x2, ...) `
+<!--SR:!2022-10-22,2,248-->
 
 #🧠 React：若custom hook 的引數放在custom hook中的useEffect來使用，需要添加其為deps嗎？ 為什麼->->-> `視情況需要，本質上custom hook若被componentA使用，肯定會夥同內部的useEffect一同註冊componentA，換言之，皆為在元件內部，若引數本質上是代表著元件互動，那麼勢必很有可能得放在deps來滿足其目標。`
+<!--SR:!2022-10-22,2,248-->
 
 
 
