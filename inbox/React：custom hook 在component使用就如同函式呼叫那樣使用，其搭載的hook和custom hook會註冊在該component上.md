@@ -112,6 +112,7 @@ export default useCounter;
 ## 複習
 
 #💻 請到/react-builder/question-review/custom-hook-project領取題目，切換至master分支，請建立一個hook來替代ForwardCounter.js和BackwardCounter.js這兩者的狀態業務邏輯 ->->-> `https://github.com/academind/react-complete-guide-code/tree/15-building-custom-react-hooks/code/03-configuring-custom-hooks/src`
+<!--SR:!2022-10-23,3,250-->
 
 ---
 Status: #🌱 

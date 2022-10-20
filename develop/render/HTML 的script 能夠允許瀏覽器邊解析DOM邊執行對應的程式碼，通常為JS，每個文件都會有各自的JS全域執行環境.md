@@ -71,7 +71,7 @@ Common uses for JavaScript are image manipulation, form validation, and dynamic 
 
 ## 複習
 #🧠 當瀏覽器讀取到JS時，瀏覽器會如何做？ ->->-> `當瀏覽器讀取到JS時，就會開始解析並執行對應的JS語言`
-<!--SR:!2022-10-20,59,250-->
+<!--SR:!2023-03-16,147,250-->
 
 
 #🧠 JS語言上在瀏覽器上的全域環境是什麼？(GEC) ->->-> `每一個DOM document都有各自不同的GEC，所以每個DOM document所對應的全域環境都會是不同，同份document 執行的JS程式碼會以相同的全域環境執行`
