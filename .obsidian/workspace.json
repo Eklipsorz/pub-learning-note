@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b13a5d75099013b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -161,17 +173,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "24614e012f4ed9d4",
+  "active": "b13a5d75099013b4",
   "lastOpenFiles": [
-    "inbox/React：使用useHttp hook至增加任務的元件之案例.md",
+    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
+    "inbox/React：使用useHttp hook至增加任務的元件之案例.md",
     "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
     "develop/JavaScript/Scope 是指某識別字對應特定實體的合法使用範圍，具體實現Scope的方式有Lexical Scope 和Dynam Scope.md",
     "develop/JavaScript/JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "develop/render/position：fixed 是以viewport window為範圍來位移，該元件會為符合top、bottom、left、right而調整元件大小.md",
-    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "inbox/React：定義 custom hook 以及注意事項.md"
   ]
 }
