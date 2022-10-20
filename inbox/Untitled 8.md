@@ -5,6 +5,12 @@
 表格需要關注的點：
 - 驗證輸入並給予回饋
 
+
+### when to validate
+主要有：
+- 當表格提交時就驗證輸入欄位
+- 當
+
 ### 
 when form is submitted：
 
@@ -43,32 +49,32 @@ because to question then is when to validate, when should you check the user inp
 - 當使用者每一次輸入時(on every keystroke)
 
 
-### 
+###  通常輸入欄位值不合法的話
 
-one or more inputs are invalid：
-
-- output input-specific error messages & highlight problematic inputs
-
-- ensure form can't be submitted/saved
-
-  
-
-all inputs are valid：
-
--
-
-- all form to be submitted/saved
+> one or more inputs are invalid：
+> - output input-specific error messages & highlight problematic inputs
+> - ensure form can't be submitted/saved
 
 
-###
+重點：
+- 呈現錯誤時會有的樣式和畫面，比如會有錯誤訊息和用顏色標註錯誤的輸入欄
+- 存在錯誤輸入欄位值的表格內容是不被允許提交
 
 
+### 通常輸入欄位合法的話
+ 
+> all inputs are valid：
+> - all form to be submitted/saved
 
-1. form 和input 這兩者本身擁有多種狀態
+重點：
+- 若都合法的話，表格內容是被允許提交
 
-> one or more inputs are invalid
+###  form 和input 這兩者本身擁有多種狀態
 
-- input is invalid or valid ： 輸入欄位目前值是否正確，
+- 輸入欄的狀態主要分為validity 和 value 這兩種，有N個輸入欄就有2N個狀態
+- 表格整體的狀態分為validity ，會依據所有輸入欄位是否都正確來判定：
+	- 任一輸入欄不合法就即為表格不合法
+	- 所有的輸入欄都合法就即為表格合法
 
 - form is invalid or valid：根據所有輸入欄位是否都正確來判定，有任一不合法就即為表格不合法，全合法就表格合法
 
