@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "3aced69e14845f53",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f8bf963c46974ee5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "748aee1809e0e7c0",
         "type": "tabs",
         "children": [
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
+                "file": "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
+                "file": "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
+                "file": "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md"
+                "file": "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md"
               }
             }
           }
@@ -166,8 +148,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f8bf963c46974ee5",
+  "active": "43c4f5eda65bbfab",
   "lastOpenFiles": [
+    "inbox/React：定義 custom hook 以及注意事項.md",
     "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "inbox/Untitled 8.md",
     "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
@@ -176,7 +159,6 @@
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
     "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
-    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
-    "inbox/React：定義 custom hook 以及注意事項.md"
+    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md"
   ]
 }
