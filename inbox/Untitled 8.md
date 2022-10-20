@@ -7,30 +7,117 @@ hook function內部
 	- 可以定義設定物件，專門根據需求方的不同需求來衍生不同業務邏輯使用
 	- 可以定義函式物件，專門根據需求方的不同需求之處理放置hook內部執行
 - 命名方式保持著通用
-- 開發策略可以分為：
-	- 僅保持通用
-	- 邊保持通用邊盡可能減少hook內部的deps需求方向：藉由減少deps而減少複雜度
+- 開發策略可以根據hook function是否加入引數而分為兩個開發策略：
+	- 僅保持通用：在這裡會選擇加入引數，但有可能會增加內部的hook對於deps的需求數
+	- 邊保持通用邊盡可能減少hook內部的deps需求方向：在這裡會選擇不加入引數，想藉由減少deps而減少複雜度
 
 ### 案例：僅保持通用
 
+由於是選擇加入引數來進行開發，在這裡的useHttp會以下方作為引數：
+- options：設定連線和請求
+- handler：負責處理資料和渲染
 
-回傳：
-- isLoading
-- error
-- sendRequest -> 回傳給其他元件來發送請求
+來回傳isLoading、error、fetchDataHandler 這三個內容至App元件來使用。
 
-
-若在custom hook 中的useCallback deps 會是useHttp(options, applyData)中的options 和applyData。
-  
-且options和applyData會是物件，在這裡為了避免無限迴圈，得使用以下方法：
-- options 由於為一般物件，所以使用useMemo或者不以options作為deps
-- applyData 由於為函式物件，所以使用useCallback來解決
+接著App.js
 
 
-options 由於為一般物件，不作為deps的做法：由於options最終會用在sendRequest當參數來使用，不如成為該函式的參數，然後回傳至元件中
+在這裡App
 
-  
+App.js
+```
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
 
+import Tasks from './components/Tasks/Tasks';
+import NewTask from './components/NewTask/NewTask';
+import useHttp from './hooks/use-http';
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+
+  const options = useMemo(
+    () => ({
+      url: 'https://react-test-http-d24a5-default-rtdb.asia-southeast1.firebasedatabase.app/tasks.json',
+    }),
+    [],
+  );
+
+  const fetchDataHandler = useCallback((data) => {
+    const loadedTasks = [];
+
+    for (const taskKey in data) {
+      loadedTasks.push({ id: taskKey, text: data[taskKey].text });
+    }
+
+    setTasks(loadedTasks);
+  }, []);
+
+  const {
+    isLoading,
+    error,
+    sendRequest: fetchTasks,
+  } = useHttp(options, fetchDataHandler);
+
+  useEffect(() => {
+    fetchTasks();
+  }, [fetchTasks]);
+
+  const taskAddHandler = (task) => {
+    setTasks((prevTasks) => prevTasks.concat(task));
+  };
+
+  return (
+    <React.Fragment>
+      <NewTask onAddTask={taskAddHandler} />
+      <Tasks
+        items={tasks}
+        loading={isLoading}
+        error={error}
+        onFetch={fetchTasks}
+      />
+    </React.Fragment>
+  );
+}
+
+export default App;
+```
+
+use-http.js
+```
+import { useState, useCallback } from 'react';
+
+const useHttp = (options, handler) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const sendRequest = useCallback(async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const response = await fetch(options.url, {
+        method: options.method ? options.method : 'GET',
+        headers: options.headers ? options.headers : {},
+        body: options.body ? JSON.stringify(options.body) : null,
+      });
+
+      if (!response.ok) {
+        throw new Error('Request failed!');
+      }
+
+      const data = await response.json();
+
+      handler(data);
+    } catch (err) {
+      setError(err.message || 'Something went wrong!');
+    }
+    setIsLoading(false);
+  }, [options, handler]);
+
+  return { isLoading, error, sendRequest };
+};
+
+export default useHttp;
+```
 
 
 
