@@ -17,8 +17,19 @@ when form is submitted：
 
 when a input is losing focus：
 
-- very useful for untouched forms (好處是非常適用於從沒動過(輸入過)的表格，壞處是驗證使用者輸入內容必須要等到使用者輸入完成並且切換成另一個元件為active element才會去驗證)
+- very useful for untouched forms (好處是非常適用於從沒動過(輸入過)的表格，因為不會直接提示這些沒動過的輸入欄位為錯誤的； 壞處是驗證使用者輸入內容必須要等到使用者輸入完成並且切換成另一個元件為active element才會去驗證)
 
+
+###
+on every keystroke：
+
+- warns use before he/she had a chance of entering valid values (每一次輸入時就會開始驗證並提示，這容易造成不必要大量的錯誤提示，且一開始的輸入肯定會被判斷成錯誤的)
+
+- if on the other hand we combine this  with other methods and we only validate on keystroke if the input was invalid before
+
+  
+
+if applied only on invalid inputs, has the potential of providing more direct feedback
 
 ###
 because to question then is when to validate, when should you check the user input?
