@@ -19,11 +19,18 @@ hook function內部
 
 來回傳isLoading、error、fetchDataHandler 這三個內容至App元件來使用。
 
-接著App.js
+接著App.js的useEffect 使用著fetchDataHandler來呼叫並設定其為deps，為了確保不會因為fetchTasks是物件而產生出無限循環問題，而特定在use-http.js 內部設定useCallback設定在要回傳的fetchTasks
 
 
-在這裡App
+此時useCallback的deps設定為\[\]就解決，但實際上還可以添加以下，因為這兩者本身就是元件內的變數和物件，會是能夠代表潛在互動的資訊
+```
+- options：設定連線和請求
+- handler：負責處理資料和渲染
+```
 
+若添加至deps的話，就代表把無限循環的問題丟給App.js中的options和handler，為了能夠避免，得在App.js分別作以下措施才能夠避免：
+	- options ：設定useMemo 來儲存，其中deps為\[\]
+	- handler：設定useCallback 來儲存，其中deps為\[\]
 App.js
 ```
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
@@ -37,7 +44,7 @@ function App() {
 
   const options = useMemo(
     () => ({
-      url: 'https://react-test-http-d24a5-default-rtdb.asia-southeast1.firebasedatabase.app/tasks.json',
+      url: 'xxxx/tasks.json',
     }),
     [],
   );
@@ -124,7 +131,31 @@ export default useHttp;
 ### 案例：邊保持通用邊盡可能減少hook內部的deps需求方向
 
 
-試著將options和apply 不設定為custom hook 中的useCallback deps
+在這裡採取的策略會是不添加參數至useHttp，試著減少hook內部對於deps的需求，首先先將use-http.js中的options、handler放到 sendRequest 指定的函式物件上作為其引數，好讓設定options、handler的權利丟還給App.js來做，這樣就免去在useHttp設定deps。
+
+
+最後在App.js 那邊透過useHttp所獲得的fetchTasks來在useEffect那呼叫，同時以fetchTask作為其deps，而它的呼叫引數則是在useEffect內部定義並使用，而這樣會因為useEffect 內部定義的變數/物件無法代表著元件上互動而不用添加至deps，因為能決定執行effect終究還是useEffect以外的內容且是代表元件互動的資訊
+
+```
+  useEffect(() => {
+    function fetchDataHandler(data) {
+      const loadedTasks = [];
+
+      for (const taskKey in data) {
+        loadedTasks.push({ id: taskKey, text: data[taskKey].text });
+      }
+
+      setTasks(loadedTasks);
+    }
+
+    const options = {
+      url: 'xxxx/tasks.json',
+    };
+
+    fetchTasks(options, fetchDataHandler);
+  }, [fetchTasks]);
+```
+
 
 use-http.js
 ```
@@ -172,10 +203,6 @@ import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
 import useHttp from './hooks/use-http';
 
-const options = {
-  url: 'https://react-test-http-d24a5-default-rtdb.asia-southeast1.firebasedatabase.app/tasks.json',
-};
-
 function App() {
   const [tasks, setTasks] = useState([]);
   const { isLoading, error, sendRequest: fetchTasks } = useHttp();
@@ -190,8 +217,13 @@ function App() {
 
       setTasks(loadedTasks);
     }
+
+    const options = {
+      url: 'xxxx/tasks.json',
+    };
+
     fetchTasks(options, fetchDataHandler);
-  }, []);
+  }, [fetchTasks]);
 
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
@@ -211,7 +243,6 @@ function App() {
 }
 
 export default App;
-
 ```
 
 
