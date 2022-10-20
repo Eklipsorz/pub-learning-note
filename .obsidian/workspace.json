@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "209fa47d7b6ec371",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3e600b6a9882b63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
