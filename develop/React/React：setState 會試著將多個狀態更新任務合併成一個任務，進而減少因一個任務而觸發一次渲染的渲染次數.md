@@ -310,10 +310,10 @@ setLastName('Cheng');
 #🧠 class-based component vs. functional component ： state  & setState 對於在單個setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
 <!--SR:!2022-10-22,10,250-->
 
-#🧠 class-based component vs. functional component ： state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
+#🧠 class-based component vs. functional component ： 單個 state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 <!--SR:!2022-10-22,10,250-->
 
-#🧠 class-based component vs. functional component ： state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
+#🧠 class-based component vs. functional component ： 單個 state  &  setState 對於單個setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 <!--SR:!2022-11-12,23,250-->
 
 ---
