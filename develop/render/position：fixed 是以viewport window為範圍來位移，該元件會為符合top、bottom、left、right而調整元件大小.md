@@ -125,10 +125,10 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2022-12-13,61,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
-<!--SR:!2022-10-20,28,250-->
+<!--SR:!2023-01-02,74,250-->
 
 #🧠 fixed positioning 的元件會從normal flow/flow layout移除，換言之，normal flow/flow layout會不考量fixed positionging來處理，比如不會做哪些事？ ->->-> `不會為了呈現它而特意留些空間`
-<!--SR:!2022-10-20,28,250-->
+<!--SR:!2023-01-02,74,250-->
 
 #🧠 fixed positioning 會以什麼為主來位移？->->-> `fixed positioning 是以viewport window 邊界為範圍來位移`
 <!--SR:!2022-12-05,55,250-->
