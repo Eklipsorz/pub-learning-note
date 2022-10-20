@@ -70,7 +70,7 @@ products = results.sort(compare)
 #🧠 JavaScript Array.sort的比較標準compareFunction(a,b)若回傳值大於0，a和b如何擺放 ->->-> `a會放置於b之後`
 <!--SR:!2022-11-01,72,250-->
 #🧠 JavaScript Array.sort的比較標準compareFunction(a,b)若回傳值小於0，a和b如何擺放 ->->-> `a會放置於b之前`
-<!--SR:!2022-10-20,35,228-->
+<!--SR:!2023-01-08,80,228-->
 
 #🧠 JavaScript Array.sort的比較標準compareFunction(a,b)若回傳值等於0，a和b如何擺放 ->->-> `維持不變`
 <!--SR:!2022-11-04,70,248-->

@@ -201,7 +201,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-12-01,64,250-->
 
 #🧠 歷經Mounting階段後，會有四個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪四個途徑？請詳細說明 ->->-> `- 使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux)：使用其資訊的元件B會由一個監聽元件來負責監聽元件A的內容，有更動就會觸發元件B的渲染週期來重新取得元件A內容來渲染，沒更動就不會觸發、New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
-<!--SR:!2022-10-20,12,248-->
+<!--SR:!2022-11-19,30,248-->
 
 
 #🧠  歷經Mounting階段後，會有四個途徑來變更元件A在實際DOM樹上的DOM節點，請問四途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
