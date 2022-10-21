@@ -102,7 +102,7 @@ hooks 是：
 <!--SR:!2022-10-21,10,250-->
 
 #🧠 實際上React Element會在什麼時候被建立成實例並被呼叫render ->->-> `當這類型元件以標籤來使用`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 #🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `具體會是給functional component，由於元件最早是以class-based component來開發，為了讓開發難度降低才將對應語法做成語法糖並以一般函式來使用`
 <!--SR:!2022-10-21,10,250-->
@@ -115,7 +115,7 @@ hooks 是：
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 
 #🧠  React：hook 是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`

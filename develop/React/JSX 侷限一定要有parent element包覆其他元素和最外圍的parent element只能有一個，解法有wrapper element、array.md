@@ -214,7 +214,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 以下程式碼犯下了JSX 侷限問題，請用程式碼來表示如何用陣列來包含以其解決，為何陣列中的第一個項目可以被放進去？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-solution2_jzylbh.png) ->->-> `boolean expression && JSX Element 可以被當作一種JSX元素，只有前者為true，才以後者的JSX Element為主，若前者為false，就會被React給忽略。`
-<!--SR:!2022-10-21,28,250-->
+<!--SR:!2023-01-03,74,250-->
 
 
 ---

@@ -241,7 +241,7 @@ setLastName('Cheng');
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2022-10-21,9,250-->
+<!--SR:!2022-11-13,23,250-->
 
 #🧠 若透過以下語法而獲得\{ FirstName: \'Morgan\', LastName: \'Cheng\' \}，請問是屬於哪種元件開發方法？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `class-based component`
 <!--SR:!2022-10-21,9,250-->
