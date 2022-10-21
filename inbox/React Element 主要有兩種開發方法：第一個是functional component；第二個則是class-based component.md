@@ -77,13 +77,13 @@ hooks 是：
 ## 複習
 
 #🧠 建立React Element 有哪兩種開發方法？ ->->-> `class-based component、functional component`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
 <!--SR:!2022-10-21,10,250-->
 
 #🧠 React：functional component  是什麼？ ->->-> `會是一般函式宣告，其回傳內容為JSX Element`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-17,27,250-->
 
 #🧠 React：functional component  的語法是什麼？ ->->-> `function Component1() { ... return (JSX Element ) }`
 <!--SR:!2022-10-27,11,230-->

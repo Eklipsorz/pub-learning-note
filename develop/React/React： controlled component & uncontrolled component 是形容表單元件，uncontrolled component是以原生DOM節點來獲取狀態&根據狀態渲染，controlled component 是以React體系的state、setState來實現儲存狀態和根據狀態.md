@@ -277,7 +277,7 @@ setState
 <!--SR:!2022-10-22,26,250-->
 
 #🧠 React：uncontrolled component 如何產生->->-> `基於ref技術來實現component的狀態管理。`
-<!--SR:!2022-10-21,26,250-->
+<!--SR:!2022-12-25,65,250-->
 
 
 #🧠 React ：對於controlled component，會有一些方法來獲取資訊和渲染，具體能夠對該component本身做什麼來實現狀態資料的獲取和渲染？->->-> `替元件註冊狀態、更新狀態用函式來實現`
