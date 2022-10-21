@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ac0caffba963a4ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 8.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -148,11 +161,11 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "00802dfd9a8d788d",
+  "active": "ac0caffba963a4ef",
   "lastOpenFiles": [
+    "inbox/React：在表格輸入欄位失焦事件中.md",
     "inbox/React：表格製作的難點為格本身具有較多狀態要管理，主要有validity和value以及validity得要考量什麼時候驗證以及如何驗證.md",
     "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
-    "inbox/React：在表格輸入欄位失焦事件中.md",
     "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
     "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
