@@ -1,48 +1,20 @@
 ## 描述
 
 
-瀏覽器對於資料上的內容需要一些驗證手段，然而由於每個使用者可透過瀏覽器來修改驗證手段使錯誤內容合法化，因此伺服器端也需要驗證手段來確保
-
-### 提交非法輸入欄內容時會有的處理
-
-1. 不允許提交
-2. 使用特定樣式提示使用者目前輸入為非法
-
-#### 案例：提交非法輸入欄內容時會有的處理
-
-1. 不允許提交
-
-```
-  const submitHandler = (event) => {
-    event.preventDefault();
-    if (enteredName.trim() === '') {
-      return;
-    }
-  };
-```
-
-2. 使用特定樣式提示使用者目前輸入為非法
-- 註冊針對合法性的狀態，在這裡會設定為true，以利確保渲染部分不會直接印出非合法的樣式
+[[React：表格提交非法輸入欄內容時會有的處理]]
 ```
 const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
 ```
-- 針對合法性的狀態之狀態更新邏輯
-```
- const submitHandler = (event) => {
-    event.preventDefault();
+根據以上案例，若在一開始將輸入欄的validity設為true的話，會有以下潛在問題：
+	- 在mount階段時期，系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。
 
-    if (enteredName.trim() === '') {
-      setEnteredNameIsValid(false);
-      return;
-    }
 
-    setEnteredNameIsValid(true);
-    console.log(enteredName);
-};
+### 一開始將輸入欄的validity設為true的原因
+
+主要是為了使渲染部分能夠正確按照情況下來印出對應畫面，而非是印出非法內容，換言之，若一開始將validity設定為false，就會讓畫面印出非法的樣式。
+
 ```
-- 針對狀態來給予合適樣式
-```
-  const formControlCSS = enteredNameIsValid
+const formControlCSS = enteredNameIsValid
     ? 'form-control'
     : 'form-control invalid';
 
@@ -65,55 +37,46 @@ const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
   );
 ```
 
-#### 案例：完整版
+
+
+
+  
+### 案例：在mount階段時期會誤判的代碼
+
 ```
-import { useState, useRef } from 'react';
-
-const SimpleInput = (props) => {
-  const [enteredName, setEnteredName] = useState('');
-  const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
-
-  const changeHandler = (event) => {
-    setEnteredName(event.target.value);
-  };
-
-  const submitHandler = (event) => {
-    event.preventDefault();
-
-    if (enteredName.trim() === '') {
-      setEnteredNameIsValid(false);
-      return;
-    }
-
-    setEnteredNameIsValid(true);
-    console.log(enteredName);
-  };
-
-  const formControlCSS = enteredNameIsValid
-    ? 'form-control'
-    : 'form-control invalid';
-
-  return (
-    <form onSubmit={submitHandler}>
-      <div className={formControlCSS}>
-        <label htmlFor='name'>Your Name</label>
-        <input
-          type='text'
-          id='name'
-          onChange={changeHandler}
-          value={enteredName}
-        />
-      </div>
-      {!enteredNameIsValid && <p className='error-text'>Name is invalid!!</p>}
-      <div className='form-actions'>
-        <button>Submit</button>
-      </div>
-    </form>
-  );
-};
-
-export default SimpleInput;
+1.  useEffect(() => {
+2.     if (enteredNameIsValid) {
+3.         console.log('Name is valid');
+4.     } 
+5.  }, [enteredNameIsValid]);
 ```
+
+
+### 兩難問題解法：validity設定false ? true？
+
+提出額外的狀態來解決 無法透過validity 和 value來全然表示元件的所有狀態
+
+```
+const [enterNameIsValid, setEnteredNameIsValid] = useState(false);
+const [enteredNameTouched, setEnteredNameTouched] = useState(false);
+```
+
+  [[@codecraftModelDrivenFormValidation]]
+> A controls is said to be _touched_ if the the user focused on the control and then focused on something else.
+
+
+
+> one change definitely is the form submission. If the form is submitted, all inputs are treated as touched. Even if the user didn't type into them, the user submitted to the overall form.
+
+> which basically means the user confirms the overall form. So we could treat all inputs as touched in this case
+  
+
+重點：
+- touched/untouched 狀態 標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element：
+	- touched 狀態為該元件曾經被切換成active element
+	- untouched 狀態為該元件
+
+
 
 ## 複習
 
@@ -123,5 +86,8 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[React：表格提交非法輸入欄內容時會有的處理]]
 [[React：表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref]]
+[[React：表格製作的難點為格本身具有較多狀態要管理，主要有validity和value以及validity得要考量什麼時候驗證以及如何驗證]]
 References:
+[[@codecraftModelDrivenFormValidation]]
