@@ -7,6 +7,9 @@ onblur 事件處理主要負責：
 - 設定touched
 
 - 驗證
+
+
+
 ### onblur
 
 > The onblur event occurs when an object loses focus.
