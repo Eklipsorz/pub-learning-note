@@ -13,7 +13,8 @@
 > JavaScript focus method is used to give focus to a html element. It sets the element as the active element in the current document. It can be applied to one html element at a single time in a current document. The element can either be a button or a text field or a window etc. It is supported by all the browsers.
 
 重點：
-- focus 是指在同一份文件下，將特定元件標記為active element，而被標記的元件會以特定樣式、事件處理來呈現
+- focus 是指在同一份文件下，將特定元件標記為active element，而被標記的元件會以特定樣式、事件處理來呈現。
+	- 以特定樣式、事件處理來表現之原因：使該元件與周遭元件之間在呈現上出現差異，好提示使用者所專注的元件是什麼？
 - active element 在同一份文件下，只會允許0~1個元件為active element，元件可以是按鈕、文字輸入欄
 - focus用法為如下，主要會將HTMLElement對應的元件設定為active element。
 ```
@@ -35,7 +36,7 @@ HTMLElement.focus()
 #🧠 HTML元件中，能被focus標記為active element的元件會是什麼？ ->->-> `按鈕、文字輸入欄`
 <!--SR:!2022-10-26,12,230-->
 
-
+#🧠 在HTML元件中，為何要讓元件被focus後要以特定樣式、特定事件處理來展現其元件？->->-> ` 以特定樣式、事件處理來表現之原因：使該元件與周遭元件之間在呈現上出現差異，好提示使用者所專注的元件是什麼？`
 
 #🧠 HTMLElement.focus() 是什麼樣語法？ ->->-> `主要會將HTMLElement對應的元件設定為active element。`
 <!--SR:!2022-10-30,23,250-->
