@@ -181,7 +181,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return (React.createElement(Element1, {}, ...) React.createElement(Element2, {}, ...))`
-<!--SR:!2022-10-21,28,250-->
+<!--SR:!2022-12-31,71,250-->
 
 
 #🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
@@ -203,7 +203,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 <!--SR:!2023-01-03,74,250-->
 
 #🧠 以下程式碼能夠正常執行嗎？不能的話，會是什麼問題？解決思維為何？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png) ->->-> `不能夠執行、最主要是沒有額外的parent element來包覆著ErrorModal和Card這兩個元件，解決思維則是建立一個新的parent element來包覆著、使用陣列來將他們包含`
-<!--SR:!2022-10-21,28,250-->
+<!--SR:!2022-12-29,69,250-->
 
 
 

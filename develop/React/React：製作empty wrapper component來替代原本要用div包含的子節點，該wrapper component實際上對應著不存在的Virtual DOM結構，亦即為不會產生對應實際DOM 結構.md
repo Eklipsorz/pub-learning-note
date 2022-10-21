@@ -111,7 +111,7 @@ return (
 ## 複習
 
 #🧠 React：為了解決過度使用wrapper element來解決JSX 侷限問題，在這裡的解法思路是什麼？ ->->-> `1. 建立一個empty wrapper component，該component會對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構 2. 由empty wrapper component來包含原有要用真的wrapper包起來的子節點`
-<!--SR:!2022-10-21,28,250-->
+<!--SR:!2023-01-03,74,250-->
 
 
 #🧠 React：如何製作empty wrapper component，使該component本身會對應不存在的Virtaul DOM結構以及對應不到實際DOM結構，但可以夾帶著其他內容 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png)`
@@ -126,7 +126,7 @@ return (
 
 
 #🧠 以下是使用empty wrapper component來解決JSX侷限問題，wrapper component本身並沒有實際的元件，只包含子節點，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816315/blog/react/react-element/wrapper-for-div-hell/div-hell-solution-with-fake-component_ghxk5y.png) ->->-> `使用empty parent element來充當wrapper component，並不會讓section和card元件多一個div元件![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
-<!--SR:!2022-10-21,28,250-->
+<!--SR:!2022-12-26,66,250-->
 
 
 #🧠 以下是繼續使用真的wrapper component來解決JSX侷限問題，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816316/blog/react/react-element/wrapper-for-div-hell/div-hell-origin_mcd2hk.png) ->->-> `使用div元件繼續當wrapper component，會在section和card元件之間多一個div![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`

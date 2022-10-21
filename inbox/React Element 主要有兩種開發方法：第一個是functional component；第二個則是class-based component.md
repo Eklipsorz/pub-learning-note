@@ -80,7 +80,7 @@ hooks 是：
 <!--SR:!2022-11-18,28,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-15,25,250-->
 
 #🧠 React：functional component  是什麼？ ->->-> `會是一般函式宣告，其回傳內容為JSX Element`
 <!--SR:!2022-11-17,27,250-->
@@ -96,7 +96,7 @@ hooks 是：
 <!--SR:!2022-11-18,28,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-16,26,250-->
 
 #🧠 當元件類別Component1以標籤來使用，如\<Component1 \/\> React會如何處理該元件 ->->-> `會以Component1 這類別來建構對應實例，並呼叫該實例的render方法`
 <!--SR:!2022-11-18,28,250-->
@@ -119,7 +119,7 @@ hooks 是：
 
 
 #🧠  React：hook 是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-16,26,250-->
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
