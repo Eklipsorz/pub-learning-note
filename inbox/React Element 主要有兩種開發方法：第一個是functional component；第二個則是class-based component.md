@@ -119,6 +119,7 @@ hooks 是：
 
 
 #🧠  React：hook對於functional component和class-based-component的語法之間的關係來說是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
+<!--SR:!2022-10-23,2,249-->
 
 
 
