@@ -130,7 +130,7 @@ return (
 
 
 #🧠 以下是繼續使用真的wrapper component來解決JSX侷限問題，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816316/blog/react/react-element/wrapper-for-div-hell/div-hell-origin_mcd2hk.png) ->->-> `使用div元件繼續當wrapper component，會在section和card元件之間多一個div![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
-<!--SR:!2022-10-21,28,250-->
+<!--SR:!2023-01-03,74,250-->
 
 
 

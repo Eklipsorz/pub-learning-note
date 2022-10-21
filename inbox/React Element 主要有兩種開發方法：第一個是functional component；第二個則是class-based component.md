@@ -89,11 +89,11 @@ hooks 是：
 <!--SR:!2022-10-27,11,230-->
 
 #🧠 React：class-based component 搭配render 的基本語法是什麼？ ->->-> `class Component1 extends React.Component { render() { ... } }`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \}  中沒有Constructor，請問能夠正常執行嗎？為什麼->->-> `能夠正常執行，系統會根據目前類別是否繼承其他類別而給予預設的constructor來方便建立對應類別的實例`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
 <!--SR:!2022-10-21,10,250-->
@@ -105,13 +105,13 @@ hooks 是：
 <!--SR:!2022-11-18,28,250-->
 
 #🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `具體會是給functional component，由於元件最早是以class-based component來開發，為了讓開發難度降低才將對應語法做成語法糖並以一般函式來使用`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`
@@ -123,7 +123,7 @@ hooks 是：
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
-<!--SR:!2022-10-21,10,250-->
+<!--SR:!2022-11-18,28,250-->
 
 #💻 請至/react-builder/question-review/class-based-component-question 領取題目，並到user-to-class分支，請將User轉換成class-based component，記住功能和渲染內容必須是一樣的 ->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/02-adding-a-first-class-based-cmp/src/components/User.js`
 <!--SR:!2022-11-01,15,249-->
