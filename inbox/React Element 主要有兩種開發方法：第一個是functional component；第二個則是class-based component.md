@@ -118,8 +118,8 @@ hooks 是：
 <!--SR:!2022-11-18,28,250-->
 
 
-#🧠  React：hook 是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
-<!--SR:!2022-11-16,26,250-->
+#🧠  React：hook對於functional component和class-based-component的語法之間的關係來說是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
+
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
