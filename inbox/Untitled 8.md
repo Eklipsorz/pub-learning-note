@@ -64,17 +64,97 @@ const [enteredNameTouched, setEnteredNameTouched] = useState(false);
   [[@codecraftModelDrivenFormValidation]]
 > A controls is said to be _touched_ if the the user focused on the control and then focused on something else.
 
-
-
 > one change definitely is the form submission. If the form is submitted, all inputs are treated as touched. Even if the user didn't type into them, the user submitted to the overall form.
 
 > which basically means the user confirms the overall form. So we could treat all inputs as touched in this case
-  
 
 重點：
 - touched/untouched 狀態 標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element：
 	- touched 狀態為該元件曾經被切換成active element
-	- untouched 狀態為該元件
+	- untouched 狀態為該元件從未被切換成active element
+- touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，比如說當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element
+
+
+#### 具體實現
+
+
+- 註冊touched 狀態
+```
+const [enteredNameTouched, setEnterNameTouched] = useState(false);
+```
+- 設定可使touched為true的情況，在這裏是以表格提交事件來預設所有輸入欄皆為touched
+```
+ const submitHandler = (event) => {
+    event.preventDefault();
+    setEnterNameTouched(true);
+	.
+	.
+}
+```
+
+- 設定條件來決定渲染部分：
+```
+const enteredNameIsInvalid = !enteredNameIsValid && enteredNameTouched;
+const formControlCSS = enteredNameIsInvalid
+    ? 'form-control invalid'
+    : 'form-control';
+
+return (
+	{enteredNameIsInvalid && <p className='error-text'>Name is invalid!!</p>}
+)
+```
+
+
+```
+const SimpleInput = (props) => {
+  const [enteredName, setEnteredName] = useState('');
+  const [enteredNameIsValid, setEnteredNameIsValid] = useState(false);
+  const [enteredNameTouched, setEnterNameTouched] = useState(false);
+
+  const changeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    setEnterNameTouched(true);
+
+    if (enteredName.trim() === '') {
+      setEnteredNameIsValid(false);
+      return;
+    }
+
+    setEnteredNameIsValid(true);
+    console.log(enteredName);
+  };
+  const enteredNameIsInvalid = !enteredNameIsValid && enteredNameTouched;
+  const formControlCSS = enteredNameIsInvalid
+    ? 'form-control invalid'
+    : 'form-control';
+
+  return (
+    <form onSubmit={submitHandler}>
+      <div className={formControlCSS}>
+        <label htmlFor='name'>Your Name</label>
+        <input
+          type='text'
+          id='name'
+          onChange={changeHandler}
+          value={enteredName}
+        />
+      </div>
+      {enteredNameIsInvalid && <p className='error-text'>Name is invalid!!</p>}
+      <div className='form-actions'>
+        <button>Submit</button>
+      </div>
+    </form>
+  );
+};
+```
+
+> one change definitely is the form submission. If the form is submitted, all inputs are treated as touched. Even if the user didn't type into them, the user submitted to the overall form.
+
+> which basically means the user confirms the overall form. So we could treat all inputs as touched in this case
 
 
 
