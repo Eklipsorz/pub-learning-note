@@ -22,7 +22,7 @@
 ```
 
 2. 使用特定樣式提示使用者目前輸入為非法
-- 註冊針對合法性的狀態
+- 註冊針對合法性的狀態，在這裡會設定為true，以利確保渲染部分不會直接印出非合法的樣式
 ```
 const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
 ```
