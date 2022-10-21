@@ -2,8 +2,8 @@
 
 
 ### 表格製作的難點
-- 表格本身具有較多狀態要管理，主要有validity和value
-- validity得要考量什麼時候驗證以及如何驗證
+- 表格本身具有較多狀態要管理和控制，主要有validity和value
+- validity得要考量什麼時候驗證以及如何驗證 (沒那麼嚴重)
 
 
 
@@ -80,9 +80,10 @@
 
 ###  form 和input 這兩者本身擁有多種狀態
 
-- 輸入欄的狀態主要分為validity 和 value 這兩種，有N個輸入欄就有2N個狀態：
+- 輸入欄的狀態主要分為validity 、 value、 touched/untouched 這兩種，有N個輸入欄就有3N個狀態：
 	- validity：輸入欄位值是否合法
 	- value：輸入欄位值本身
+	- touched/untouched：輸入欄位是否曾經為active element，若是就是touched；若不是就是untouched
 - 表格整體的狀態分為validity ，概念上會是表格整體的合法性，具體會依據所有輸入欄位是否都合法來判定：
 	- 任一輸入欄不合法就即為表格不合法
 	- 所有的輸入欄都合法就即為表格合法
@@ -99,11 +100,13 @@
 #🧠 React：製作表格的難點是什麼？->->-> `表格本身具有較多狀態要管理、validity得要考量什麼時候驗證以及如何驗證`
 <!--SR:!2022-10-24,3,250-->
 
-#🧠 React：表格和表格下輸入欄位各有什麼狀態？ ->->-> `輸入欄的狀態主要分為validity 和 value 這兩種；表格則是只有validity這狀態`
+#🧠 React：表格和表格下輸入欄位各有什麼狀態？ ->->-> `輸入欄的狀態主要分為validity 、value、touched/untouched這三種；表格則是只有validity這狀態`
 <!--SR:!2022-10-24,3,250-->
 
-#🧠 React：表格下輸入欄的狀態主要分為validity 和 value 這兩種，請問validity和value各為什麼？ ->->-> `	- validity：輸入欄位值是否合法 - value：輸入欄位值本身`
-<!--SR:!2022-10-24,3,250-->
+#🧠  React：表格下輸入欄位各有什麼狀態？ 是只有value和validity嗎？ 還有的話就提出來->->-> `沒，還有touched/untouched`
+
+#🧠 React：表格下輸入欄的狀態主要分為validity 、 value、touched/untouched 這三種，請問validity和value各為什麼？ ->->-> `	- validity：輸入欄位值是否合法 - value：輸入欄位值本身 - 輸入欄位是否曾經為active element，若是就是touched；若不是就是untouched`
+
 
 #🧠 React：表格只有validity這狀態，請問這裡的validity會是什麼？->->-> `表格整體的合法性`
 <!--SR:!2022-10-24,3,250-->

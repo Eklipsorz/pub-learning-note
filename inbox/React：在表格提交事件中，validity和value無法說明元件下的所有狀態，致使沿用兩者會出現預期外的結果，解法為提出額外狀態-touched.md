@@ -168,6 +168,6 @@ Tags:
 Links:
 [[React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理]]
 [[React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref]]
-[[React：表格製作的難點為格本身具有較多狀態要管理，主要有validity和value以及validity得要考量什麼時候驗證以及如何驗證]]
+[[React：表格製作的難點為表格本身具有較多狀態要管理和控制]]
 References:
 [[@codecraftModelDrivenFormValidation]]

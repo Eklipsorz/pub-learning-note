@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
                 "mode": "source",
                 "source": false
               }
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md"
+                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
               }
             }
           }
@@ -175,13 +175,13 @@
   },
   "active": "e196f67dbc3b5791",
   "lastOpenFiles": [
-    "inbox/React：在表格輸入欄位失焦事件中.md",
-    "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
-    "inbox/Untitled 9.md",
-    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
-    "inbox/React：表格製作的難點為格本身具有較多狀態要管理，主要有validity和value以及validity得要考量什麼時候驗證以及如何驗證.md",
     "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
     "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
+    "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
+    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+    "inbox/React：在表格輸入欄位失焦事件中.md",
+    "inbox/Untitled 9.md",
+    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "inbox/在定義react element的for屬性時，由於for本身是JS的保留字且react element是JS延伸語法，貿然使用會有衝突的可能，所以會用htmlFor來替代for屬.md"
