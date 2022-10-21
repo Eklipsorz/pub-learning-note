@@ -1,7 +1,7 @@
 ## 描述
 
 
-[[React：表格提交非法輸入欄內容時會有的處理]]
+[[React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理]]
 ```
 const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
 ```
@@ -54,7 +54,7 @@ const formControlCSS = enteredNameIsValid
 
 ### 兩難問題解法：validity設定false ? true？
 
-提出額外的狀態來解決 無法透過validity 和 value來全然表示元件的所有狀態
+validity 和 value 是無法應付表格所會有的互動表現，換言之，表格實際需要的狀態至少會是兩種以上狀態。面對上述難題，解法會是提出額外的狀態來解決 無法透過validity 和 value來代表表格所會有的互動表現
 
 ```
 const [enterNameIsValid, setEnteredNameIsValid] = useState(false);
@@ -73,7 +73,7 @@ const [enteredNameTouched, setEnteredNameTouched] = useState(false);
 	- touched 狀態為該元件曾經被切換成active element
 	- untouched 狀態為該元件從未被切換成active element
 - touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，比如說當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element
-
+- 從validity 和value 的案例來看，validity 和 value 是無法應付表格所會有的互動表現，換言之，表格實際需要的狀態至少會是兩種以上狀態
 
 #### 具體實現
 
@@ -166,8 +166,8 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
-[[React：表格提交非法輸入欄內容時會有的處理]]
-[[React：表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref]]
+[[React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理]]
+[[React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref]]
 [[React：表格製作的難點為格本身具有較多狀態要管理，主要有validity和value以及validity得要考量什麼時候驗證以及如何驗證]]
 References:
 [[@codecraftModelDrivenFormValidation]]

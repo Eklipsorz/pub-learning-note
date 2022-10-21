@@ -207,3 +207,17 @@
 [[React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現]]
 [[useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現]]
 [[import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性]]
+
+
+
+### Form
+
+
+#### validation：when form is submitted
+
+[[React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched]]
+
+[[React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理]]
+
+[[React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref]]
+
