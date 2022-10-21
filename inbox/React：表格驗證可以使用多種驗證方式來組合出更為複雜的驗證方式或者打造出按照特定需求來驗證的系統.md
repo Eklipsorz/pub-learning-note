@@ -126,8 +126,43 @@ export default SimpleInput;
   const enteredNameIsValid = enteredName.trim() !== '';
   const nameInputIsInvalid = !enteredNameIsValid && enteredNameTouched;
 ```
-而enteredNameIsValid源自於名字輸入欄位的change事件來的以及名字輸入欄位的blur事件，
+而enteredNameIsValid源自於名字輸入欄位的change事件來的以及名字輸入欄位的blur事件，由於
+change事件的合法性判斷源自於nameInputChangeHandler，在這裏可以直接取得從那更新的enteredName來判斷，接著一開始比對是否為非法，還可以透過blur事件所觸發的狀態更新來重執行一次函式來讓enteredName變成空值進而判斷成非法
 
+- 第二點：去除掉handler內的enteredNameIsValid狀態更新
+```
+  const nameInputChangeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const nameInputBlurHandler = (event) => {
+    setEnteredNameTouched(true);
+  };
+
+  const formSubmissionHandler = (event) => {
+    event.preventDefault();
+
+    setEnteredNameTouched(true);
+
+    if (enteredName.trim() === '') {
+      return;
+    }
+
+    console.log(enteredName);
+
+    // nameInputRef.current.value = ''; => NOT IDEAL, DON'T MANIPULATE THE DOM
+    setEnteredName('');
+  };
+```
+
+- 第三點：解決名字重置後所需要重置的狀態-enteredNameTouched
+```
+    setEnteredName('');
+    setEnteredNameTouched(false);
+```
+
+
+#### 完整版
 ```
 import { useState } from 'react';
 
