@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
+                "file": "develop/React/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
+                "file": "develop/React/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md"
+                "file": "develop/React/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md"
               }
             }
           }
@@ -202,8 +202,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "9f14de888e0d06fe",
+  "active": "07f2c87cd8430b2e",
   "lastOpenFiles": [
+    "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "develop/React/React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染.md",
     "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
@@ -212,7 +213,6 @@
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
     "inbox/React：表格製作的難點為格本身具有較多狀態要管理，主要有validity和value以及validity得要考量什麼時候驗證以及如何驗證.md",
     "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
-    "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md",
-    "inbox/React：使用useHttp hook至增加任務的元件之案例.md"
+    "inbox/React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項.md"
   ]
 }
