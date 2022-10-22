@@ -194,7 +194,7 @@ const SimpleInput = (props) => {
 
 #🧠 React：touched/untouched 狀態各代表著什麼？ ->->-> `標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element；touched 狀態為該元件曾經被切換成active element； untouched 狀態為該元件從未被切換成active element`
 
-#🧠 React：無法在mount階段時期反映真實狀態，系統會認為enteredName為合法來執行對應的處理，請問 https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> ``
+#🧠 React：無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，舉例說明預期外結果會是什麼？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `比如會useEffect會因為enteredName為合法而執行，然而實際上enteredName為非法![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666412149/blog/react/form/unexpected-result_sixu1j.png)`
 
 
 
