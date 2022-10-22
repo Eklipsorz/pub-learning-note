@@ -187,14 +187,14 @@ this is use effect
 
 
 #🧠 React：若同一個元件因為viewport的畫面切換而發生unmount並重新發生mounting，請問會如何保留新舊的hook? ->->-> `在發生unmount 就會移除舊有effect，並於mounting時期會再次產生額外的effect hook來綁定在該元件，觸發如同上述那樣`
-<!--SR:!2022-10-22,25,250-->
+<!--SR:!2022-12-25,64,250-->
 `
 
 #🧠 React：當畫面A被切換成畫面B時，unmounting 和 mounting會是如何？ ->->-> `當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B`
 <!--SR:!2022-12-24,63,250-->
 
 #🧠 React：當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B，請問畫面A會和畫面B一樣嗎？->->-> `- 畫面A 和 畫面B 都是畫面A - 畫面A 和 畫面B 都不一樣`
-<!--SR:!2022-10-22,25,250-->
+<!--SR:!2022-12-24,63,250-->
 
 #🧠 React：useEffect(a, b) 語法中的a 和 b是什麼？useEffect又是做什麼？ ->->-> `useEffect 語法：會替當前元件註冊effect。第一個引數為callback，第二個引數為設定哪些dependencies 改變才會觸發前面的callback，用陣列表示`
 <!--SR:!2022-10-26,28,250-->
