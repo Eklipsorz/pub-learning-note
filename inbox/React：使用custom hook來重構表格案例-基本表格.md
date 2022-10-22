@@ -48,7 +48,7 @@ const BasicForm = (props) => {
 ### 根據custom hook所提供狀態來決定渲染
 
 ```
- const formIsValid = false;
+ let formIsValid = false;
 
   if (
     enteredFirstNameIsValid &&
