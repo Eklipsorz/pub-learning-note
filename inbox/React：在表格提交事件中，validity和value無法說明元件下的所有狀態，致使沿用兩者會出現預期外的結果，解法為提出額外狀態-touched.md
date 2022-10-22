@@ -6,7 +6,7 @@
 const [enteredNameIsValid, setEnteredNameIsValid] = useState(true);
 ```
 根據以上案例，若在一開始將輸入欄的validity設為true的話，會有以下潛在問題：
-	- 在mount階段時期，系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。
+	- 無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。
 
 
 ### validity和value來呈現是足夠呈現實際表格能夠呈現的狀態嗎
@@ -103,7 +103,7 @@ const [enteredNameTouched, setEnterNameTouched] = useState(false);
 }
 ```
 
-- 設定條件來決定渲染部分：
+- 渲染部分：設定條件來決定渲染部分：
 ```
 const enteredNameIsInvalid = !enteredNameIsValid && enteredNameTouched;
 const formControlCSS = enteredNameIsInvalid
@@ -182,13 +182,30 @@ const SimpleInput = (props) => {
 
 #🧠 React：若於對應元件的函式內添加這 const \[enteredNameIsValid, setEnteredNameIsValid\] = useState(true);  會有什麼潛在問題？->->-> `在mount階段時期，系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
 
-#🧠 React：以下為一個表格的實現代碼，請問這會有什麼潛在問題？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png ->->-> `在mount階段時期，系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
+#🧠 React：以下為一個表格的實現代碼，請問這會有什麼潛在問題？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png ->->-> `無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
 
 #🧠 React：以下為一個表格的實現代碼，請問為什麼enteredNameIsValid一開始會是true，而不是反映目前狀態為false？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `主要是為了使渲染部分能夠正確按照情況下來印出對應畫面，而非是印出非法內容，換言之，若一開始將validity設定為false，就會讓畫面印出非法的樣式`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表著？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `value 和 validity 已經無法呈現表格目前的狀態`
+
+#🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念會是以什麼作為核心？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> `提出另一個名為touched狀態來表示`
+
+#🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念具體會是什麼？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> ` 註冊touched 狀態；設定可使touched為true的情況，在這裏是以表格提交事件來預設所有輸入欄皆為touched；渲染部分：設定條件來決定渲染部分`
+
+#🧠 React：touched/untouched 狀態各代表著什麼？ ->->-> `標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element；touched 狀態為該元件曾經被切換成active element； untouched 狀態為該元件從未被切換成active element`
+
+#🧠 React：無法在mount階段時期反映真實狀態，系統會認為enteredName為合法來執行對應的處理，請問 https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> ``
 
 
+
+#🧠 React：若目前元件是active element，嚴格來說算是touched嗎？為什麼 ->->-> `不能算是，基本上會因為並未從active這狀態轉移，因此不算是`
+
+
+#🧠 React：touched/untouched 狀態 具體會由誰來決定？ ->->-> ``依據著開發者來指定或者程式來指定
+
+#🧠 React：touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，請以開發者來決定為例子來說明 ->->-> `當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element`
+
+#🧠 React touched/untouched  ：當表格發生提交時，表格下的所有元件都會被設定為touched，即使有部分輸入欄並沒變成active element，為什麼都設定為touched？ ->->-> `預設上就是輸入完這些輸入欄才會按下提交按鈕`
 
 ---
 Status: #🌱 
