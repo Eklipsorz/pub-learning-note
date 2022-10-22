@@ -13,7 +13,7 @@
 
 ## 複習
 #🧠 JavaScript： scope chain 是用來做什麼的？ ->->-> `是用來幫助JavaScript 引擎在每個Execution context 找到每個識別字對應到哪`
-<!--SR:!2022-10-22,73,250-->
+<!--SR:!2023-04-23,183,250-->
 
 #🧠 JavaScript 引擎如何運用scope chain 來找到每個識別字？ ->->-> `首先引擎會在當前所處的Execution context 來找尋識別字對應到哪，找到就以所處的Execution context為主，找不到就以呼叫該Execution context的Execution contextA 是否擁有該識別字，在找不到就以呼叫Execution context A的Execution context B來找`
 <!--SR:!2023-03-05,153,250-->
