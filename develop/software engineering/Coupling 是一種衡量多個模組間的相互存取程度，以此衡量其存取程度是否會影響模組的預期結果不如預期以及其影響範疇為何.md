@@ -115,7 +115,7 @@ coupling
 <!--SR:!2022-11-02,69,250-->
 
 #🧠 試著說明第三個下的ABCD模組的coupling情況，說明連接/使用關係就好![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658067459/blog/SoftwareEngineering/coupling-degree_kktjsk.png) ->->-> `Coupling 存在且Coupling 程度較高：若模組間的彼此使用頻繁，就增加改變模組預期結果的可能性，如同模組A和模組C原本就只有A使用C、C和A，但隨著後續開發而使得C多使用A的程式區塊，而這使得A和C之間的Coupling 程度增加`
-<!--SR:!2022-10-22,62,250-->
+<!--SR:!2023-03-26,155,250-->
 
 
 #🧠 coupling 程度高的話，可以稱作為什麼？ ->->-> `tight coupling (緊密耦合)`
