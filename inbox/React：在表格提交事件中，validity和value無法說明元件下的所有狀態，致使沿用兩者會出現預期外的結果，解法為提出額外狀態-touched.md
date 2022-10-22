@@ -173,17 +173,22 @@ const SimpleInput = (props) => {
 
 
 #🧠 React：表格下只擁有兩種狀態：validity和value來呈現是足夠呈現實際表格能夠呈現的狀態嗎？ 原因為何？->->-> `並不能，最主要實際狀態種類數會是無限，所以光是兩種就是不夠`
+<!--SR:!2022-10-25,3,250-->
 
 #🧠 React：實際表格能夠呈現的狀態數為何是無限？ ->->-> `實際表格會有的狀態取決於互動種類，而互動種類數本身在通常情況下(沒限制)而會是無限`
+<!--SR:!2022-10-25,3,250-->
 
 #🧠 React： 在表格開發中，若目前開發者預期的表格狀態數不夠，其解法會是什麼？->->-> `新增狀態種類來處理`
+<!--SR:!2022-10-25,3,250-->
 
 #🧠  React： 在表格開發中，若目前開發者預期的表格狀態數不夠，但不管問題的話，其後果會是什麼？ ->->-> `會在有限狀態下因為狀態種類不夠表示而產出預期外結果`
 <!--SR:!2022-10-25,3,250-->
 
 #🧠 React：若於對應元件的函式內添加這 const \[enteredNameIsValid, setEnteredNameIsValid\] = useState(true);  會有什麼潛在問題？->->-> `在mount階段時期，系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
+<!--SR:!2022-10-25,3,250-->
 
 #🧠 React：以下為一個表格的實現代碼，請問這會有什麼潛在問題？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png ->->-> `無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
+<!--SR:!2022-10-25,3,250-->
 
 #🧠 React：以下為一個表格的實現代碼，請問為什麼enteredNameIsValid一開始會是true，而不是反映目前狀態為false？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `主要是為了使渲染部分能夠正確按照情況下來印出對應畫面，而非是印出非法內容，換言之，若一開始將validity設定為false，就會讓畫面印出非法的樣式`
 <!--SR:!2022-10-25,3,250-->
@@ -192,6 +197,7 @@ const SimpleInput = (props) => {
 <!--SR:!2022-10-25,3,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念會是以什麼作為核心？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> `提出另一個名為touched狀態來表示`
+<!--SR:!2022-10-25,3,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念具體會是什麼？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> ` 註冊touched 狀態；設定可使touched為true的情況，在這裏是以表格提交事件來預設所有輸入欄皆為touched；渲染部分：設定條件來決定渲染部分`
 <!--SR:!2022-10-25,3,250-->
@@ -205,14 +211,17 @@ const SimpleInput = (props) => {
 
 
 #🧠 React：若目前元件是active element，嚴格來說算是touched嗎？為什麼 ->->-> `不能算是，基本上會因為並未從active這狀態轉移，因此不算是`
+<!--SR:!2022-10-25,3,250-->
 
 
 #🧠 React：touched/untouched 狀態 具體會由誰來決定？ ->->-> ``依據著開發者來指定或者程式來指定
+<!--SR:!2022-10-25,3,250-->
 
 #🧠 React：touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，請以開發者來決定為例子來說明 ->->-> `當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element`
 <!--SR:!2022-10-25,3,250-->
 
 #🧠 React touched/untouched  ：當表格發生提交時，表格下的所有元件都會被設定為touched，即使有部分輸入欄並沒變成active element，為什麼都設定為touched？ ->->-> `預設上就是輸入完這些輸入欄才會按下提交按鈕`
+<!--SR:!2022-10-25,3,250-->
 
 ---
 Status: #🌱 
