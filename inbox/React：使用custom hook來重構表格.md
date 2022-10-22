@@ -1,43 +1,19 @@
 ## 描述
 
-###
+### 表格若出現大量重複狀態設定和判斷
 
-表格若出現大量重複狀態設定和判斷，重構手段：
+重構手段：
 
 - 建立一個獨立的輸入欄元件並夾雜這些狀態設定和判斷
-
-- 建立一個custom hook
-
+- 建立一個custom hook來包含業務邏輯
 
 
-### 
+
+### custom hook 注意事項
 keep in mind that the hook (and custom hooks in general) should be generic - it's not limited to one specific input
 
-###
-
-表格custom hook function會回傳：
-
-- value：輸入欄內容
-
-- isValid：輸入欄合法性
-
-- hasError：是否有錯
-
-- valueChangeHandler：change 事件處理器
-
-- inputBlurHandler：blur 事件處理器
-
-- reset：重置輸入欄內容、touched
-
-### 
-表格提交處理器的第一個
-
-setEnteredNameTouched(true)原本是為了確定非法情況而添加，現在因為表格在非法情況下是不允許按下提交，所以也就可以去除掉該行
-
-> because the form can't be submitted if the inputs are invalid anyways
-
-
-
+重點：
+- 盡量讓custom hook保持通用，不可將業務邏輯限制在特定元件
 
 ### custom-hook：use-input.js
 
@@ -77,8 +53,30 @@ const useInput = (validation) => {
 };
 
 export default useInput;
+```
+
+#### 重構後的custom hook function 會回傳
+
 
 ```
+- value：輸入欄內容
+- isValid：輸入欄合法性
+- hasError：是否有錯
+- valueChangeHandler：change 事件處理器
+- inputBlurHandler：blur 事件處理器
+- reset：重置輸入欄內容、touched
+```
+
+#### 刪除表格提交處理器的第一個setEnteredNameTouched(true)
+
+setEnteredNameTouched(true)原本是為了確定非法情況而添加，現在因為表格在非法情況下是不允許按下提交，所以也就可以去除掉該行
+
+> because the form can't be submitted if the inputs are invalid anyways
+
+
+
+
+
 
 ### 完整代碼
 ```
@@ -181,6 +179,11 @@ export default SimpleInput;
 
 
 ## 複習
+
+#💻 請至/react-builder/question-review/form-adv-practice領取題目並切換至refactor-with-custom-hook分支，利用custom hook將輸入欄的value、touch、valid獲取邏輯包含並 ->->-> ``
+
+
+
 ---
 Status: #🌱 
 Tags:
