@@ -1,0 +1,158 @@
+## 描述
+
+
+### useInput 所需要的validation
+將不需要重建的函式、物件、變數放在component之外
+```
+const isNotEmpty = (name) => name !== '';
+const isValidEmail = (email) => email.includes('@');
+
+function BasicForm = (props) => { ... }
+```
+
+### 針對每個輸入欄而註冊的hook
+```
+const BasicForm = (props) => {
+  const {
+    value: enteredFirstName,
+    hasError: enteredFirstNameHasError,
+    valueIsValid: enteredFirstNameIsValid,
+    valueChangeHandler: firstNameChangeHandler,
+    inputBlurHandler: firstNameInputBlurHandler,
+    reset: firstNameReset,
+  } = useInput(isNotEmpty);
+
+  const {
+    value: enteredLastName,
+    hasError: enteredLastNameHasError,
+    valueIsValid: enteredLastNameIsValid,
+    valueChangeHandler: lastNameChangeHandler,
+    inputBlurHandler: lastNameInputBlurHandler,
+    reset: lastNameReset,
+  } = useInput(isNotEmpty);
+
+  const {
+    value: enteredEmail,
+    hasError: enteredEmailHasError,
+    valueIsValid: enteredEmailIsValid,
+    valueChangeHandler: emailChangeHandler,
+    inputBlurHandler: emailInputBlurHandler,
+    reset: emailReset,
+  } = useInput(isValidEmail);
+	.
+	.
+	.
+}
+```
+
+### 根據custom hook所提供狀態來決定渲染
+
+```
+ const formIsValid = false;
+
+  if (
+    enteredFirstNameIsValid &&
+    enteredLastNameIsValid &&
+    enteredEmailIsValid
+  ) {
+    formIsValid = true;
+  }
+
+  const firstNameInputClasses = enteredFirstNameHasError
+    ? 'form-control invalid'
+    : 'form-control';
+
+  const lastNameInputClasses = enteredLastNameHasError
+    ? 'form-control invalid'
+    : 'form-control';
+
+  const emailInputClasses = enteredEmailHasError
+    ? 'form-control invalid'
+    : 'form-control';
+```
+
+
+### 提交事件處理
+
+```
+  const submitHandler = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (!formIsValid) return;
+
+    console.log('submitted', enteredFirstName, enteredLastName, enteredEmail);
+
+    firstNameReset();
+    lastNameReset();
+    emailReset();
+  };
+```
+
+### 渲染部分
+```
+return (
+    <form onSubmit={submitHandler}>
+      <div className='control-group'>
+        <div className={firstNameInputClasses}>
+          <label htmlFor='name'>First Name</label>
+          <input
+            type='text'
+            id='name'
+            value={enteredFirstName}
+            onChange={firstNameChangeHandler}
+            onBlur={firstNameInputBlurHandler}
+          />
+          {enteredFirstNameHasError && (
+            <p className='error-text'>Please input a first name</p>
+          )}
+        </div>
+        <div className={lastNameInputClasses}>
+          <label htmlFor='name'>Last Name</label>
+          <input
+            type='text'
+            id='name'
+            value={enteredLastName}
+            onChange={lastNameChangeHandler}
+            onBlur={lastNameInputBlurHandler}
+          />
+          {enteredLastNameHasError && (
+            <p className='error-text'>Please input a dlast name</p>
+          )}
+        </div>
+      </div>
+      <div className={emailInputClasses}>
+        <label htmlFor='name'>E-Mail Address</label>
+        <input
+          type='text'
+          id='name'
+          value={enteredEmail}
+          onChange={emailChangeHandler}
+          onBlur={emailInputBlurHandler}
+        />
+        {enteredEmailHasError && (
+          <p className='error-text'>Please input a valid email</p>
+        )}
+      </div>
+      <div className='form-actions'>
+        <button disabled={!formIsValid}>Submit</button>
+      </div>
+    </form>
+  );
+```
+
+## 複習
+
+
+#💻 Question :: ->->-> ``
+
+
+
+
+---
+Status: #🌱 
+Tags:
+[[React]]
+Links:
+[[React：使用custom hook來重構表格]]
+References:
