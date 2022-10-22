@@ -21,6 +21,8 @@ onblur 事件處理主要負責：
 	- blur則是從active element轉移至inactive element
 
 
+#### React 體系是使用onBlur，屬性值是函式物件
+
 ### blur 命名緣由
 
 
