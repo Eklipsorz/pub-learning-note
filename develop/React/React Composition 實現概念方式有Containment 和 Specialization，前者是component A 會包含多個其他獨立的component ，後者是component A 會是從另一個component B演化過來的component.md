@@ -197,7 +197,7 @@ wrapper
 <!--SR:!2022-11-22,63,250-->
 
 #🧠 在React 的 composition 具體實現方法 有哪兩種？->->-> `Containment、Specialization`
-<!--SR:!2022-10-22,28,230-->
+<!--SR:!2022-12-22,61,230-->
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Containment 實現概念是什麼？ ->->-> `component A 會包含多個其他獨立的component`
 <!--SR:!2022-10-28,46,250-->

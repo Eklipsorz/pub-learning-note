@@ -191,7 +191,7 @@ this is use effect
 `
 
 #🧠 React：當畫面A被切換成畫面B時，unmounting 和 mounting會是如何？ ->->-> `當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B`
-<!--SR:!2022-10-22,25,250-->
+<!--SR:!2022-12-24,63,250-->
 
 #🧠 React：當畫面A被切換成畫面B時，即為畫面A發生unmounting，並且mounting 畫面B，請問畫面A會和畫面B一樣嗎？->->-> `- 畫面A 和 畫面B 都是畫面A - 畫面A 和 畫面B 都不一樣`
 <!--SR:!2022-10-22,25,250-->
