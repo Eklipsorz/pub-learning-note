@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
+                "file": "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,16 +35,16 @@
         "currentTab": 1
       },
       {
-        "id": "4d5f14a9a57ba67e",
+        "id": "cd8a3f3c0be261cf",
         "type": "tabs",
         "children": [
           {
-            "id": "7f07103289982d23",
+            "id": "25c679020104c814",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
+                "file": "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
+                "file": "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
+                "file": "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md"
+                "file": "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md"
               }
             }
           }
@@ -181,6 +181,7 @@
   },
   "active": "ac0caffba963a4ef",
   "lastOpenFiles": [
+    "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/React：使用useHttp hook至增加任務的元件之案例.md",
     "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
@@ -189,7 +190,6 @@
     "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
     "develop/Redis/Redis Hash是儲存多個key-value的字典.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-    "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
     "inbox/Untitled 4.md"
   ]
 }
