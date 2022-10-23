@@ -111,7 +111,7 @@ setInterval(callback, delay)
 <!--SR:!2022-11-02,10,250-->
 
 #🧠 React：當function 名稱是use 開頭，React會如何看待和處理 ->->-> `React會直接視為hook，並且以hook function來檢查`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 
 #🧠 React：開發custom hook會是如何開發？(比如放哪？以何種形式) ->->-> `每一個custom hook會以一個檔案來儲存，其檔案會儲存在/src/hooks`

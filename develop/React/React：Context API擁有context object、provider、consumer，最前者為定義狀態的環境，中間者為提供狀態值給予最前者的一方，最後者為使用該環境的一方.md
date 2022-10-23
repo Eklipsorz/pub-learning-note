@@ -227,10 +227,10 @@ consume
 <!--SR:!2022-10-26,22,250-->
 
 #🧠  React：context 的 provider component 會如同正常component擁有什麼(提示：四項) ->->-> `狀態、hook、props、生命週期函式`
-<!--SR:!2022-10-23,17,248-->
+<!--SR:!2022-12-07,45,248-->
 
 #🧠 React：context 的 consumer component 會如同正常component擁有什麼(提示：四項) ->->->  `狀態、hook、props、生命週期函式`
-<!--SR:!2022-10-23,17,248-->
+<!--SR:!2022-12-08,46,248-->
 
 
 
@@ -296,7 +296,7 @@ consume
 
 
 #🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上、讓被包覆的元件能夠看得見該provider component對於context object的內容`
-<!--SR:!2022-10-23,14,248-->
+<!--SR:!2022-11-26,34,248-->
 
 
 #🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
