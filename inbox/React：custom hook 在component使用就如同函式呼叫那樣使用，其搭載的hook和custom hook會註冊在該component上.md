@@ -112,7 +112,7 @@ export default useCounter;
 ## 複習
 
 #💻 請到/react-builder/question-review/custom-hook-project領取題目，切換至master分支，請建立一個hook來替代ForwardCounter.js和BackwardCounter.js這兩者的狀態業務邏輯 ->->-> `https://github.com/academind/react-complete-guide-code/tree/15-building-custom-react-hooks/code/03-configuring-custom-hooks/src`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 #🧠 React：custom hook 使用上就跟函式一樣，請說明hook的使用方式？ ->->-> `如同函式呼叫那樣來調用hook，比如function Component() { useXXX(); }`
 <!--SR:!2022-10-28,6,248-->
