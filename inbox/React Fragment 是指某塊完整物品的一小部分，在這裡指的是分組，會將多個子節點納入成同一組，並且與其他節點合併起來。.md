@@ -97,7 +97,7 @@ fragment
 <!--SR:!2022-12-02,49,250-->
 
 #🧠 React fragment 主要用途為既可以滿足JSX語法侷限又可以不用增加額外DOM節點的情況下，來回傳一組多個子節點，憑什麼可以滿足那些的？ ->->-> `利用empty wrapper component 對於React建立DOM語法的合法性`
-<!--SR:!2022-10-23,28,250-->
+<!--SR:!2023-01-05,74,250-->
 
 
 #🧠 React Fragment 如何用程式碼表示它本身？ ->->-> `const Fragment = (props) => { return props.children;  }; export default Fragment;`
@@ -105,7 +105,7 @@ fragment
 
 
 #🧠 React fragment 語法會有哪些形式(提示兩個) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>) 和 return ( <> <children> </> )`
-<!--SR:!2022-10-23,28,250-->
+<!--SR:!2023-01-05,74,250-->
 
 #🧠 這是React fragment 語法嗎？ 還是什麼(嚴格來說)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894948/blog/react/fragment/react-fragment-sugar_xcazre.png) ->->-> `算是，但嚴格來說是fragment 的語法糖`
 <!--SR:!2023-01-05,74,250-->

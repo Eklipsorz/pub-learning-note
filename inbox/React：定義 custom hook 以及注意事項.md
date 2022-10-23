@@ -90,19 +90,19 @@ setInterval(callback, delay)
 <!--SR:!2022-11-01,9,250-->
 
 #🧠 JS：setInterval 是什麼 ->->-> `排定一個重複執行的計時任務，等到指定毫秒才執行一次callback，接著再重新等待指定毫秒就會執行一次callback，直到手動中斷`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-01,9,250-->
 
 #🧠 JS：setInterval 語法為 ->->-> `setInterval(callback, delay)`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 #🧠 JS：setInterval 語法為setInterval(callback, delay)，其中的callback和delay會是？->->-> `	- delay：設定幾毫秒(ms)才執行callback - callback：定義非同步任務的內容`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 #🧠 JS：setInterval 和 setTimeout 之間差別？->->-> `setTimeout：排定一個一次性計時任務，等到指定毫秒才執行一次callback；setInterval：排定一個重複執行的計時任務，等到指定毫秒才執行一次`
 <!--SR:!2022-11-02,10,250-->
 
 #🧠 JS：setInterval 和 setTimeout 能在哪個執行環境下執行 ->->-> `瀏覽器和node.js`
-<!--SR:!2022-10-23,2,230-->
+<!--SR:!2022-10-28,5,230-->
 
 #🧠 React：定義custom hook的條件為什麼？ ->->-> `1. 必須是function 2. function 名稱必須要是use 開頭`
 <!--SR:!2022-11-02,10,250-->
@@ -115,14 +115,14 @@ setInterval(callback, delay)
 
 
 #🧠 React：開發custom hook會是如何開發？(比如放哪？以何種形式) ->->-> `每一個custom hook會以一個檔案來儲存，其檔案會儲存在/src/hooks`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 #🧠 React：custom hook 若以檔案來儲存，會和其他元件同在一檔案進行開發嗎？->->-> `並不會`
 <!--SR:!2022-10-23,3,250-->
 
 
 #🧠 React：custom hook 若以檔案來儲存，且檔案內容只有hook，那麼檔名會是如何？通常來說 ->->-> `use-xxxx.js，xxxx 為功能名稱`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 
 

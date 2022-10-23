@@ -238,10 +238,10 @@ UsersFinder.js
 <!--SR:!2022-10-28,10,250-->
 
 #🧠 React： componentDidCatch  觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
-<!--SR:!2022-10-23,6,249-->
+<!--SR:!2022-11-08,16,249-->
 
 #🧠 React： getDerivedStateFromError 觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
-<!--SR:!2022-10-23,6,249-->
+<!--SR:!2022-11-09,17,249-->
 
 #🧠 React：error-boundary 常見實作方式，請以Users元件作為錯誤物件的來源來說明 ->->-> `1. 先在建構式上定義hasError狀態，並設定初始值為false，表示一開始沒錯誤 2. 接著設定componentDidCatch 內增加setState，來讓hasError有機會轉換成true 3. 最後在render上設定能夠根據this.state.hasError是否為true來顯示錯誤訊息 4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元件`
 <!--SR:!2022-11-05,14,249-->
@@ -253,7 +253,7 @@ UsersFinder.js
 <!--SR:!2022-11-03,12,249-->
 
 #🧠 React：Error-boundary 元件 不可以處理自己元件下的生命週期函式和渲染函式所拋出來的錯誤，那怎麼樣才能處理Error-boundary 元件下的生命週期函式和渲染函式所拋出來的錯誤？->->-> `讓包含Error-boundary元件的Error-boundary元件來處理`
-<!--SR:!2022-10-23,5,249-->
+<!--SR:!2022-11-06,14,249-->
 
 #🧠 React：error boundary 元件功能避免了什麼？ ->->-> `避免後頭沒人處理錯誤資訊而讓React核心程式碼接收到並停止渲染。`
 <!--SR:!2022-10-27,6,248-->

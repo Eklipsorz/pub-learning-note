@@ -43,18 +43,18 @@ app.use((req, res, next) => {
 
 ## 複習
 #🧠 當我們有兩行程式碼，第一行是res.end()，第二行是return next()，請問會如何執行 ->->-> `執行完res.end後，就會執行next()`
-<!--SR:!2022-10-23,74,250-->
+
 
 
 #🧠 當我們有兩行程式碼，第一行是res.redirect()，第二行是return next()，請問會如何執行 ->->-> `執行完res.redirect後，就會執行next()`
-<!--SR:!2023-03-25,165,250-->
+
 
 #🧠  請問當目前使用者是以http來瀏覽，伺服器會如何執行，會繼續以http?還是以https?其程式碼為如下： ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656511754/blog/middleware/no-return-middleware_ewcc3f.png)->->-> `會先改寫其Header來讓使用者導向至https，然後執行到return next()，接著繼續以http名義後續的請求，並不會中途中斷`
-<!--SR:!2022-10-23,74,250-->
+
 
 
 #🧠  請問當目前使用者是以http導向至https，如何修改其程式碼使使用者正確以https來發送請求，而不是以http名義來執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656511754/blog/middleware/no-return-middleware_ewcc3f.png)->->-> `添加return 至res.end() ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656511754/blog/middleware/with-return-middleware_jnbho6.png)`
-<!--SR:!2023-04-03,172,250-->
+
 
 ---
 Status: #🌱 

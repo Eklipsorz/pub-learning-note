@@ -104,7 +104,7 @@
 <!--SR:!2022-11-03,28,250-->
 
 #🧠 react hook functions的官方準則主要定義了在允許函式下的哪個區塊能用，請問在允許函式下哪些地方是不能呼叫hook->->-> `	- 不能在巢狀函式結構下呼叫 hook function - 不能在block scope下呼叫 hook function`
-<!--SR:!2022-10-23,20,250-->
+<!--SR:!2022-12-13,51,250-->
 
 #🧠 react hook functions ：除了官方那兩大準則以外，還有非官方準則適用於useEffect，具體是什麼？ ->->-> `確保你總是以effect內部使用的東西做為dependency`
 <!--SR:!2022-10-24,20,250-->

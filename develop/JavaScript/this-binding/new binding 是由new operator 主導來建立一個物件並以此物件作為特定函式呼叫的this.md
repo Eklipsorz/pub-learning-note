@@ -89,17 +89,17 @@ console.log(bar.a)
 <!--SR:!2022-10-25,10,250-->
 
 #🧠 JS：constructor call 是什麼？  ->->-> `在特定函式呼叫前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)`
-<!--SR:!2022-10-23,8,250-->
+<!--SR:!2022-11-10,18,250-->
 
 
 #🧠 JS：constructor call 回傳什麼？ ->->-> `物件`
 <!--SR:!2022-11-11,19,250-->
 
 #🧠 JS：實務上的constructor call 構成？->->-> `new operator + function call `
-<!--SR:!2022-10-23,6,230-->
+<!--SR:!2022-11-07,15,230-->
 
 #🧠 JS：constructor call 主要是做什麼？ ->->-> `會建構一個擁有特定方法和屬性的物件並回傳`
-<!--SR:!2022-10-23,8,250-->
+<!--SR:!2022-11-11,19,250-->
 
 #🧠 function 會是指特定函式，function()為特定函式的呼叫，若前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)，那麼function會是做什麼用的？ ->->-> `具體定義物件會有什麼樣屬性和方法`
 <!--SR:!2022-10-25,10,250-->
