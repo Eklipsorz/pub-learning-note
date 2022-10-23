@@ -11,7 +11,7 @@
 
 ### hook 執行方式看起來是？
 1. Custom hook 在functional component角度來看 會如同函式那樣呼叫
-2. 以dom來看，則是hook註冊在特定dom節點
+2. 以dom來看，則是hook註冊在特定dom節點，如綁定特定資訊至對應dom節點
 
 
 
@@ -29,7 +29,9 @@
 #🧠 React： hook 執行方式在functional component看起來是什麼？ ->->-> ` Custom hook 在functional component角度來看 會如同函式那樣呼叫`
 
 
-#🧠 React： useXXXX(); console.log('') ->->-> ``
+#🧠 React： 假如useXXXX()會是印出XXXX，請問在functional component下若是以下面形式來執行useXXXX(); console.log('hi')  其執行順序和結果是？->->-> `會先執行useXXXX 在來執行console`
+
+#🧠 React：以dom來看，則是hook註冊在特定dom節點，比如說 ->->-> `綁定特定資訊至對應dom節點`
 
 ---
 Status: #🌱 
