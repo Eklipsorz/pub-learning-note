@@ -69,6 +69,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "9d18c60330fee908",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a6e64188918b87f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用useReducer來開發form 上的useInput.md",
+                "file": "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用useReducer來開發form 上的useInput.md",
+                "file": "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用useReducer來開發form 上的useInput.md"
+                "file": "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md"
               }
             }
           }
@@ -197,12 +215,12 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "cad91ffa4a752636",
+  "active": "6a6e64188918b87f",
   "lastOpenFiles": [
+    "inbox/React：使用useReducer來開發form 上的useInput.md",
     "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "inbox/React：使用custom hook來重構表格.md",
     "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
-    "inbox/React：使用useReducer來開發form 上的useInput.md",
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/React：決定整體表單的validity.md",
     "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
