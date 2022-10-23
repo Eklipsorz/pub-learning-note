@@ -125,7 +125,7 @@ export default useCounter;
 
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼會有什麼共享情況？ ->->-> `這些component共享著同個custom hook的業務邏輯，但不共享state或者effect。`
-<!--SR:!2022-10-23,3,250-->
+<!--SR:!2022-11-02,10,250-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼不共享state或者effect會是因爲著？  ->->-> `首先每個component呼叫hook，就等同於將相關資訊註冊在對應component，換言之，就是每個component的hook都是獨立的`
 <!--SR:!2022-10-26,4,248-->
