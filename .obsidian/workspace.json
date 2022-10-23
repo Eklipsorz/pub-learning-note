@@ -53,16 +53,16 @@
         ]
       },
       {
-        "id": "63a7ef7cc9310b96",
+        "id": "aaf8976cdf4f0af7",
         "type": "tabs",
         "children": [
           {
-            "id": "baef204fdf78b4fc",
+            "id": "cad91ffa4a752636",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "inbox/React：使用useReducer來開發form 上的useInput.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+                "file": "inbox/React：使用useReducer來開發form 上的useInput.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+                "file": "inbox/React：使用useReducer來開發form 上的useInput.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md"
+                "file": "inbox/React：使用useReducer來開發form 上的useInput.md"
               }
             }
           }
@@ -197,8 +197,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "41909d130c2caaed",
+  "active": "cad91ffa4a752636",
   "lastOpenFiles": [
+    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "inbox/React：使用custom hook來重構表格.md",
     "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "inbox/React：使用useReducer來開發form 上的useInput.md",
@@ -207,7 +208,6 @@
     "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
     "MOC/food-order-project MOC.md",
     "inbox/React：在表格輸入欄位失焦事件中.md",
-    "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
-    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md"
+    "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md"
   ]
 }
