@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "inbox/React：使用custom hook來重構表格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "inbox/React：使用custom hook來重構表格.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md"
+                "file": "inbox/React：使用custom hook來重構表格.md"
               }
             }
           }
@@ -179,8 +179,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "baef204fdf78b4fc",
+  "active": "d0d8ee5dc82030b0",
   "lastOpenFiles": [
+    "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "inbox/React：使用custom hook來重構表格.md",
     "inbox/React：使用useReducer來開發form 上的useInput.md",
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
@@ -189,7 +190,6 @@
     "MOC/food-order-project MOC.md",
     "inbox/React：在表格輸入欄位失焦事件中.md",
     "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
-    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
-    "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md"
+    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md"
   ]
 }
