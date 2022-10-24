@@ -186,6 +186,7 @@ portal：
 <!--SR:!2022-12-19,62,250-->
 
 #🧠 React Portal 會破壞元件的渲染內容本身嗎？ 實質上是？ ->->-> `Portal 不會破壞元件的渲染內容本身，但會轉移其實際DOM節點至指定地點`
+<!--SR:!2022-10-27,3,250-->
 
 
 #🧠 React：建立Portal 介面的語法是什麼 ->->-> `使用React-DOM librar下的createPortal 來實現`
@@ -207,7 +208,7 @@ portal：
 
 
 #🧠 React：上面是webpack會用到的參考網頁，其中backdrop-root負責存在著所有backdrop，而modal-root則是負責存放modal，下面是modal的實現代碼，請在裡頭使用portal來連接到參考網頁的backdrop-root和modal-root![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990506/blog/react/react-element/portal/modal-component-root_xotlt4.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990507/blog/react/react-element/portal/modal-portal-question_whaxq1.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990507/blog/react/react-element/portal/modal-portal_dsfg59.png)`
-<!--SR:!2022-10-24,28,250-->
+<!--SR:!2023-01-05,73,250-->
 
 
 ---

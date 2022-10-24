@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "98afba919579a26b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcdcb9d6d85f5d20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "0d9e86f7f08db764",
         "type": "tabs",
         "children": [
@@ -165,7 +183,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "6941822edf359a99",
+  "active": "bcdcb9d6d85f5d20",
   "lastOpenFiles": [
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
