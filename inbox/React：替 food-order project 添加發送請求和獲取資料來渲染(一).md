@@ -1,30 +1,48 @@
 ## 描述
 
 
+### 定義發送請求兼處理回應的hook
+該hook存放至/hooks/use-http.js
 ```
- const fetchData = useCallback(async () => {
-    const response = await fetch(
-      'https://react-test-http-d24a5-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json',
-    );
+import { useState, useCallback } from 'react';
 
-    const data = await response.json();
-    const transformedMeals = [];
+const useHttp = () => {
+  // define error state
+  const [error, setError] = useState(null);
+  // define isLoading state
+  const [isLoading, setIsLoading] = useState(false);
 
-    for (let key in data) {
-      transformedMeals.push({
-        id: key,
-        name: data[key].name,
-        intro: data[key].intro,
-        price: data[key].price,
+  const sendRequest = useCallback(async (options, handler) => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const response = await fetch(options.url, {
+        method: options.method || 'GET',
+        headers: options.headers || {},
+        body: options.body ? JSON.stringify(options.body) : null,
       });
+
+      if (!response.ok) {
+        throw new Error('Something went wrong!!');
+      }
+
+      const data = await response.json();
+      handler(data);
+    } catch (error) {
+      setError(error.message);
     }
-    setMeals(transformedMeals);
+    setIsLoading(false);
   }, []);
 
-  useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+  return { error, isLoading, sendRequest };
+};
+
+export default useHttp;
+
 ```
+
+#### 安裝點
+1. 放置/components/meals上來獲取meals資料來處理
 
 ## 複習
 
