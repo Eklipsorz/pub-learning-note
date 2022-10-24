@@ -120,7 +120,7 @@ function ExpenseItem(props) {
 <!--SR:!2022-11-25,63,250-->
 
 #🧠 React：以這個作為例子來說明，畫面生成的整體流程會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `確定畫面->轉換成以畫面為主來生成實際DOM節點的指令->執行指令來渲染`
-<!--SR:!2022-10-24,44,248-->
+<!--SR:!2023-02-10,109,248-->
 
 #🧠 React：是如何從return () 確定畫面的，以自製元件和原生元件來說明？ ->->-> `確定畫面則是則會有自製元件和原生元件，自製元件就直接執行對應的函式來獲取對應原生元件來合併，原生元件就直接合併`
 <!--SR:!2022-12-29,78,230-->
