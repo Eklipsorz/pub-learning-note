@@ -322,7 +322,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 explicit binding是以較為直接且明確告知this是設定什麼，具體是什麼？ ->->-> `在這裡的explicit  binding會使用 call 、apply、bind 來直接設定this為何`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-20,27,250-->
 
 #🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
 <!--SR:!2022-10-25,10,250-->
@@ -339,7 +339,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-11-15,23,250-->
 
 #🧠 function.protype.apply() 的語法是什麼？ ->->-> `function.call(thisArg, [arg1, /* …, */ argN])`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-21,28,250-->
 
 #🧠 function.protype.apply() 的語法是function.apply(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
 <!--SR:!2022-10-25,10,250-->
@@ -356,7 +356,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-10-25,10,250-->
 
 #🧠 JS：call、apply、bind 共同點是什麼？ ->->-> `call、apply、bind 主要用於設定this是什麼`
-<!--SR:!2022-10-24,9,250-->
+<!--SR:!2022-11-14,21,250-->
 
 #🧠 JS：call、apply、bind 不同點是什麼？  ->->-> `	- 設定this之後會做的事情：call、apply 在設定this的同時，並以設定好的this來執行函式、bind則是設定完this就回傳新的函式 - 設定this之後是否重新設定this：bind 屬於hard-binding，其回傳函式的this不能再通過call、apply、bind來修改；call、apply的this 設定只適用於當前呼叫，下次呼叫想使用同個物件當this，就得重新綁定`
 <!--SR:!2022-11-12,20,250-->
@@ -369,7 +369,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 為什麼fn.bind需要多一個括號？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png) ->->-> `因為bind會是回傳一個新的函式物件，要執行裡頭的內容，必需要多一個括號`
-<!--SR:!2022-10-24,9,250-->
+<!--SR:!2022-11-18,25,250-->
 
 #🧠 請問下面三個函式呼叫會是得到什麼this以及印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541020/blog/javascript/this-binding/explicit-binding/this-is-window-explicit-binding-example_ozqxrj.png)->->-> `this都為global object，而印出則是印出行星飛行，這是因為如果this設定為null或者undefined，那麼this就指向global object`
 <!--SR:!2022-11-13,21,250-->

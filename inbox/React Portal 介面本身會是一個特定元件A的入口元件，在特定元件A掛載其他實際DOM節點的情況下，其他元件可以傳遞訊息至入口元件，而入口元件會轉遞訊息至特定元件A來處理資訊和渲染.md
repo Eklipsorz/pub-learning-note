@@ -196,7 +196,7 @@ portal：
 
 
 #🧠 ReactDOM.createPortal(children, container) 回傳什麼？ ->->-> `react portal 介面`
-<!--SR:!2022-10-24,28,250-->
+<!--SR:!2023-01-06,74,250-->
 
 
 #🧠 React：建立Portal 介面的事前準備是什麼？ ->->-> `請確保入口元件的對應元件要掛載的實際DOM節點是否存在webpack對應的網頁或者渲染網頁`

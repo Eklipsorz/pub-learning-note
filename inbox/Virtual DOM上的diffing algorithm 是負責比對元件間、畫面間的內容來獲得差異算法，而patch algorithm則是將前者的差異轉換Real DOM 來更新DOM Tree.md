@@ -110,7 +110,7 @@ verb
 <!--SR:!2022-11-11,28,250-->
 
 #🧠  Virtual DOM 中的 diffing/ diff algorithm是什麼？ ->->-> `比對Virtual DOM之間差異的算法，在這裡會是得到差異`
-<!--SR:!2022-10-24,15,249-->
+<!--SR:!2022-11-30,37,249-->
 
 
 #🧠 Virtual DOM 中的 diffing/ diff algorithm 被處理後會得到什麼？ ->->-> `Virtual DOM之間差異`

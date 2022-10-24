@@ -314,17 +314,17 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-11-16,24,250-->
 
 #🧠 請問這是obj.o.func呼叫後的執行環境所設定的this會是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是設定obj並印出obj的name-行星飛行。在這裡是採用implicit binding，並且由於前面有多個物件參考，所以系統會挑選離呼叫最近的o對應之參照，也就是obj。`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-20,27,250-->
 
 #🧠 請問這是obj.o.func呼叫後的執行環境會被系統使用哪個this binding方法？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是以implicit binding。由於沒有出現new binding、explicit binding的跡象，所以改試著以implicit binding來判定，結果因為函式呼叫前面有物件，而這正是implicit binding的識別特徵`
 <!--SR:!2022-11-14,22,250-->
 
 
 #🧠 losing implicit binding  是什麼？ ->->-> ` losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding `
-<!--SR:!2022-10-24,9,250-->
+<!--SR:!2022-11-17,24,250-->
 
 #🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其因素通常是什麼？(簡要說明)->->-> `參數傳遞、變數賦值`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-21,28,250-->
 
 #🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-參數傳遞會是指什麼？ ->->-> `implicit binding的函式B以參數傳遞至一個特定函式A並在那呼叫參數，該函式A呼叫函式B的形式會致使函式B的this改變`
 <!--SR:!2022-11-14,22,250-->
@@ -333,7 +333,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-24,10,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding ，原本的binding會是指的是？ ->->-> `implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B；implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-21,28,250-->
 
 #🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png) ->->-> `window，且印出行星飛行。在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，而在這裡並沒有足夠的特徵能讓它以explicit binding、new binding、implicit binding來決定，所以最後只能選擇使用default binding來以global object來呼叫param()`
 <!--SR:!2022-11-19,26,250-->
