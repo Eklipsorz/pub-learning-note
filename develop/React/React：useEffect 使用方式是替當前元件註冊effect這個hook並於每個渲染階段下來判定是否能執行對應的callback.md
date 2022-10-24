@@ -22,6 +22,8 @@
 
 useEffect 語法：會替當前元件註冊effect。
 - 第一個引數為callback，這些callback只會在dependencies 改變的時候才執行，而不是在component重新渲染的時候呼叫
+- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行 **清除上一次side effect所產生的非同步任務**
+	- 該cleanup function 盡量別以asynchronous function來處理，避免沒清除到指定任務或者對錯誤的任務進行處理
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
 -  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
 > dependencies of this effect - the function only runs if the dependencies changed
@@ -254,6 +256,19 @@ this is use effect
 
 #🧠 React：請解釋以下的useEffect案例![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663250177/blog/react/effect/react-useeffect-example_knoaw1.png)->->-> `當App這個元件進行mounting來呈現實際DOM時，會註冊著useEffect這個hook，並於mounting階段下的componentDidMount生命週期函式觸發callback，由於是第一次執行，所以會直接先執行callback，而callback會檢查localStorage的isLoggedIn是否為1，若1就認為是合法使用者在登入，若不是就認為必須要進行登入來寫入isLoggedIn='1'至localStorage 在這裡會沒這筆資料，所以就透過登入的成功來將isLoggedIn='1'寫入至localStorage，之後每一次只要重新進行App的mounting階段： - 畫面A 切換成 畫面B (畫面AB都可以一樣和不一樣)，就會直接被系統認定為合法使用者，而引領使用者登入成功的畫面`
 <!--SR:!2022-10-25,27,250-->
+
+第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行 **清除上一次side effect所產生的非同步任務**
+	- 該cleanup function 盡量別以asynchronous function來處理，避免沒清除到指定任務或者對錯誤的任務進行處理
+
+#🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，React獲取到之後就會拿它來清除上一次處理所產生的非同步任務`
+
+#🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `主要會有race condition這問題，可能沒清除到指定任務，任務就執行完或者對錯誤的任務進行處理`
+
+#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免因為非同步任務而對錯誤的任務進行處理`
+
+
+#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  若是async的話，潛在問題會是非同步任務而對錯誤的任務進行處理，那麼具體會是什麼？->->-> `清除到已經執行完畢的非同步任務、清除到不是預期`
+``
 
 ---
 Status: #🌱 
