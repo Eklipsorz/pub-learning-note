@@ -350,7 +350,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步將陣列轉換成參數`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-20,27,250-->
 
 #🧠 function.apply 為啥會比function.call還耗一點成本？ ->->-> `最主要要將陣列轉換成參數來呼叫，如function1.apply([arg1, arg2, ..., argN])->function1(arg1, arg2, ... , argN)`
 <!--SR:!2022-10-25,10,250-->
@@ -379,7 +379,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-10-24,9,250-->
 
 #🧠 function1.apply(this, \[arg1, ..., argN\]) 在JS的函式呼叫上會被看作是什麼？ ->->-> `function1(arg1, ... argN)`
-<!--SR:!2022-10-24,9,250-->
+<!--SR:!2022-11-17,24,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
 <!--SR:!2022-10-25,10,250-->

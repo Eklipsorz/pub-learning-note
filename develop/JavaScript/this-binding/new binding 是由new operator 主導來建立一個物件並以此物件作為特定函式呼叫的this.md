@@ -105,7 +105,7 @@ console.log(bar.a)
 <!--SR:!2022-10-25,10,250-->
 
 #🧠 JS：constructor call 具體流程為何？->->-> `	- 建立一個新空白物件 - 設定該物件的protype屬性 - 將新空白物件設定成function呼叫的this - 執行function好讓this和參數設定對應物件 - 若constructor 沒有手動回傳物件，則自動回傳目前設定好的物件`
-<!--SR:!2022-10-24,9,250-->
+<!--SR:!2022-11-19,26,250-->
 
 
 #🧠 請問echo.name會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example_xcsbfn.png) ->->-> `聽風是風`
