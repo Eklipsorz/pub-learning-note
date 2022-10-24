@@ -46,13 +46,13 @@
 <!--SR:!2022-10-27,8,250-->
 
 #🧠 URI (Uniform Resource Identifier) 是什麼？由什麼構成 ->->-> `特定資源在網路環境下的識別字，其識別字會是由schema、host、port、path、query string、#fragment`
-<!--SR:!2022-10-24,6,248-->
+<!--SR:!2022-11-10,17,248-->
 
 #🧠 URL & URI 的 path 是什麼？ ->->-> `本身是指資源所在的絕對路徑，該路徑會以伺服器本身網路位置來定位`
 <!--SR:!2022-11-09,16,248-->
 
 #🧠 URL & URI ：path 本身是指資源所在的絕對路徑，該路徑會以伺服器本身網路位置來定位，以檔案系統來說，由什麼構成->->-> `由目錄和檔案所構成`
-<!--SR:!2022-10-24,6,248-->
+<!--SR:!2022-11-09,16,248-->
 
 
 #🧠 https:\/\/zh.wikipedia.org:443\/w\/index.php?title=隨機頁面 為例，哪一段是URL？哪一段才是URI ->->-> `https://zh.wikipedia.org:443/w/index.php為URL，而https://zh.wikipedia.org:443/w/index.php?title=隨機頁面為URI`

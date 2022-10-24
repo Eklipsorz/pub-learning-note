@@ -299,7 +299,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-10-25,10,250-->
 
 #🧠 implicit binding 是什麼？->->-> `以暗示的方式來表達this 設定成什麼`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-21,28,250-->
 
 #🧠 implicit binding 決定this的方式是什麼？ ->->-> `當函式A呼叫時，若函式A呼叫前面添加一個物件B參考，系統就會認為物件B擁有函式A並呼叫函式A，此時函式A的this就會是物件B`
 <!--SR:!2022-11-16,24,250-->
@@ -330,7 +330,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-11-14,22,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-變數賦值會是指什麼？ ->->-> `implicit binding的函式B以參照位置賦值至一個變數，而這個變數呼叫函式B的形式會致使函式B的this改變`
-<!--SR:!2022-10-24,10,250-->
+<!--SR:!2022-11-20,27,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding ，原本的binding會是指的是？ ->->-> `implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B；implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window`
 <!--SR:!2022-11-21,28,250-->

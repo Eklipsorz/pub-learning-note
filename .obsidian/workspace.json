@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "0d9e86f7f08db764",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05caf0585011fbd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -150,6 +168,8 @@
   },
   "active": "e988fc62b61f431c",
   "lastOpenFiles": [
+    "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
+    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/React：使用custom hook來重構表格.md",
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/React：使用useReducer來開發form 上的useInput.md",
@@ -157,8 +177,6 @@
     "develop/software engineering/cohesion 是一種軟體開發衡量的標準，指個多個程式區塊能夠凝聚成模組的程度，主要衡量能否以模組來管理程式區塊.md",
     "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
     "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
-    "develop/JavaScript/this-binding/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md",
-    "develop/Express/express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
-    "inbox/React：決定整體表單的validity.md"
+    "develop/JavaScript/this-binding/call site 會是指特定函式被呼叫的位置，其位置會是指程式碼的位置.md"
   ]
 }
