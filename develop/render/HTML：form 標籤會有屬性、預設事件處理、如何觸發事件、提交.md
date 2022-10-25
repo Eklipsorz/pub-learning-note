@@ -194,8 +194,8 @@ event.stopPropagation()
 #🧠 event.preventDefault() 會停止事件訊號傳遞嗎？若沒，該如何改善 ->->-> `並不會停止，若要停止caturing 和 bubble這兩種事件訊號傳遞，可以額外添加event.stopPropagation()`
 <!--SR:!2022-11-05,46,250-->
 
-#🧠  event.preventDefault() 放在程式碼後頭能夠先撤銷掉目前預設事件處理嗎 ？->->-> `並不會，會於執行前會編譯，會預先知道有沒有event.preventDefault()，不論其程式碼位置是否放到最後面，若有就先停止目前元件的預設事件處理來執行`
-<!--SR:!2022-10-25,17,249-->
+#🧠  event.preventDefault() 放在程式碼後頭能夠先撤銷掉目前預設事件處理嗎 ？->->-> `能，會於執行前會編譯，會預先知道有沒有event.preventDefault()，不論其程式碼位置是否放到最後面，若有就先停止目前元件的預設事件處理來執行`
+<!--SR:!2022-12-10,46,249-->
 
 
 ---

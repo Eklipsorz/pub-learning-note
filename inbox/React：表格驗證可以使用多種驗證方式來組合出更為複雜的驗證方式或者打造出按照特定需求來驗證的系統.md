@@ -248,7 +248,7 @@ export default SimpleInput;
 <!--SR:!2022-10-25,3,250-->
 
 #💻 請至/react-builder/question-review/form-adv-practice 領取題目並切換至refactor-form-validity分支，於/src/components/SimpleInput.js實現enteredNameIsValid狀態管理的優化->->-> `https://github.com/academind/react-complete-guide-code/blob/16-working-with-forms/code/06-refactoring-and-deriving-states/src/components/SimpleInput.js`
-<!--SR:!2022-10-25,3,250-->
+<!--SR:!2022-11-04,10,250-->
 
 
 

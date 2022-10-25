@@ -56,7 +56,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cleanup",
+                "query": "preventDefault",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -108,8 +108,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md"
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md"
               }
             }
           }
@@ -193,6 +192,8 @@
   },
   "active": "07a51bdf88fdb47f",
   "lastOpenFiles": [
+    "inbox/preventDefault 得放在開頭.md",
+    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
     "inbox/React：替 food-order project 添加checkout form.md",
     "inbox/React：替 food-order project 添加發送請求和獲取資料來渲染(一).md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
@@ -200,8 +201,6 @@
     "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
     "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
     "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
-    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
-    "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
-    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md"
   ]
 }
