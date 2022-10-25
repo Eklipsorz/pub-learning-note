@@ -247,8 +247,11 @@ export default SimpleInput;
 #🧠 若表格都用多種驗證來實現驗證的話，實現方式會是如何？ ->->-> `將比對是否合法和是否非法按照需求分發給不同種類的驗證方式來處理`
 <!--SR:!2022-10-25,3,250-->
 
-#💻 請至/react-builder/question-review/form-adv-practice 領取題目並切換至master分支，於/src/components/SimpleInput.js實現enteredNameIsValid狀態管理的優化->->-> `https://github.com/academind/react-complete-guide-code/blob/16-working-with-forms/code/06-refactoring-and-deriving-states/src/components/SimpleInput.js`
+#💻 請至/react-builder/question-review/form-adv-practice 領取題目並切換至refactor-form-validity分支，於/src/components/SimpleInput.js實現enteredNameIsValid狀態管理的優化->->-> `https://github.com/academind/react-complete-guide-code/blob/16-working-with-forms/code/06-refactoring-and-deriving-states/src/components/SimpleInput.js`
 <!--SR:!2022-10-25,3,250-->
+
+
+
 
 ---
 Status: #🌱 
