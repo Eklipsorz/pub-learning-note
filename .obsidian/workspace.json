@@ -18,67 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2a199a65cf416e80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：替 food-order project 添加發送請求和獲取資料來渲染(一).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "450498e6dd358204",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：替 food-order project 添加checkout form.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "7117126b36033608",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7fe0d464aeae2976",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "5f73c658b597d18d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "534aa85a93ba74ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -146,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md"
               }
             }
           }
@@ -208,17 +147,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "7fe0d464aeae2976",
+  "active": "e988fc62b61f431c",
   "lastOpenFiles": [
-    "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
     "inbox/React：在表格輸入欄位失焦事件中.md",
+    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+    "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
     "inbox/preventDefault 得放在開頭.md",
     "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
     "inbox/React：替 food-order project 添加checkout form.md",
     "inbox/React：替 food-order project 添加發送請求和獲取資料來渲染(一).md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
-    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
-    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md"
+    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md"
   ]
 }
