@@ -16,6 +16,66 @@
 
 ### 實現
 
+未提交會有的內容：
+```
+  const cartContent = (
+    <React.Fragment>
+      <div className={styles['cart-items']}>
+        {cartCtx.items.map((item) => (
+          <CartItem
+            id={item.id}
+            key={item.id}
+            name={item.name}
+            price={item.price}
+            amount={item.amount}
+            onAdd={addToItemHandler.bind(null, item)}
+            onRemove={removeItemHandler.bind(null, item.id)}
+          />
+        ))}
+      </div>
+
+      <div className={styles['total']}>
+        <h3>Total Amount</h3>
+        <h3>${totalAmount}</h3>
+      </div>
+      {checkoutIsShown && (
+        <Checkout onClose={props.onHideCart} onConfirom={confirmHandler} />
+      )}
+      {!checkoutIsShown && cartAction}
+    </React.Fragment>
+  );
+```
+
+提交中會有的內容
+```
+const submittingContent = <p>Submitting data to server...</p>;
+```
+
+提交完成時會有的內容：
+```
+const didSubmitContent = (
+    <React.Fragment>
+      <p>Successfully Submit Data to Server</p>
+      <div className={styles['actions']}>
+        <button className={styles['button--alt']} onClick={props.onHideCart}>
+          Close
+        </button>
+      </div>
+    </React.Fragment>
+  );
+```
+
+Cart元件整體渲染部分：
+```
+  return (
+    <Modal onClick={props.onHideCart}>
+      {isSubmitting && submittingContent}
+      {isSubmitted && didSubmitContent}
+      {!isSubmitted && !isSubmitting && cartContent}
+    </Modal>
+  );
+```
+
 ### 根據表單未提交、提交中、已提交來實現對應渲染效果和處理方式
 
 - 註冊提交中、已提交這兩種狀態
@@ -105,9 +165,10 @@ const cartReducer = (prevState, action) => {
   }
 ```
 
-
-
 ## 複習
+
+
+
 
 ---
 Status: #🌱 
