@@ -16,6 +16,36 @@
 
 ### 實現
 
+### 根據表單未提交、提交中、已提交來實現對應渲染效果和處理方式
+
+- 註冊提交中、已提交這兩種狀態
+```
+const [isSubmitting, setIsSubmitting] = useState(false);
+const [isSubmitted, setIsSubmitted] = useState(false);
+```
+- 更新提交狀態、呼叫清除掉購物車資料之方法
+```
+  const confirmHandler = async (userData) => {
+    const options = {
+      url: 'https://react-test-http-d24a5-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json',
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        user: userData,
+        orderedItems: cartCtx.items,
+      }),
+    };
+
+    setIsSubmitting(true);
+    setIsSubmitted(false);
+    const response = await createCartData(options);
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+
+    cartCtx.clearItems();
+  };
+```
+
 
 #### 替cart-context object 增加重置購物車資料功能
 
@@ -60,6 +90,20 @@ const cartReducer = (prevState, action) => {
 };
 ```
 
+替cart-provider 註冊clearItems 這方法
+```
+ const clearItemsFromCartHandler = () => {
+    cartDispatch({ type: 'CLEAR_ITEMS' });
+  };
+
+  const cartContext = {
+    items: cartState.items,
+    totalAmount: cartState.totalAmount,
+    addItem: addItemToCartHandler,
+    removeItem: removeItemFromCartHandler,
+    clearItems: clearItemsFromCartHandler
+  }
+```
 
 
 
