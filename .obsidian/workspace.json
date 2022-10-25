@@ -22,16 +22,16 @@
         ]
       },
       {
-        "id": "ffbcf9b24cf72c74",
+        "id": "b394fd57cbe874b2",
         "type": "tabs",
         "children": [
           {
-            "id": "b8227c17c97326c4",
+            "id": "dcfdc8e51817641f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md"
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md"
               }
             }
           }
@@ -165,16 +165,16 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b8227c17c97326c4",
+  "active": "dcfdc8e51817641f",
   "lastOpenFiles": [
+    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "inbox/React：在表格輸入欄位失焦事件中.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
     "inbox/preventDefault 得放在開頭.md",
-    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
     "inbox/React：替 food-order project 添加checkout form.md",
     "inbox/React：替 food-order project 添加發送請求和獲取資料來渲染(一).md",
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md"
   ]
