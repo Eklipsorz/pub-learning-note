@@ -42,39 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "80362c3e0ddcd0ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
-      },
-      {
-        "id": "cdbccb0eb0293e88",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2b6d95bb6d5b9740",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -141,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
+                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
+                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md"
+                "file": "inbox/React：food-order project  建立order所需要做的處理.md"
               }
             }
           }
@@ -203,8 +173,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "80362c3e0ddcd0ef",
+  "active": "df898f6c1aac0c6b",
   "lastOpenFiles": [
+    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/React：food-order project  建立order所需要做的處理.md",
     "inbox/React：food-order project 發送請求來獲取meals和建立order.md",
     "inbox/React：替 food-order project 添加custom-hook來發送請求.md",
@@ -213,7 +184,6 @@
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "inbox/React：雜記.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
-    "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md"
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md"
   ]
 }
