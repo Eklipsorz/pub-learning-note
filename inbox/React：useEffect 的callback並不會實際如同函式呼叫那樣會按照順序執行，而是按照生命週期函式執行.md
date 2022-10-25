@@ -112,9 +112,13 @@ render
 
 #🧠 React：useEffect 本身在functional component是按照生命週期函式執行？還是如何？ ->->-> `本身會按照函式呼叫那樣按照順序，執行到呼叫就執行呼叫`
 
-#🧠 Question :: ->->-> ``
+#🧠 React：useEffect 本身和useEffect(callback, \[deps\])中的callback、deps之間差異為何？ ->->-> `useEffect本身在functional component會是個函式呼叫，執行到就呼叫，而callback、deps則是按照元件的生命週期函式來執行。`
 
+#🧠 React：在這裏分別在functional component 中的useEffect 、top level code、渲染部分做出console.log，其結果會是如下，請問useEffect有被執行到嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666681597/blog/react/effect/useEffect/useEffect-result_b7qfub.png)->->-> `其本身有呼叫到`
 
+#🧠 React：在這裏分別在functional component 中的useEffect 、top level code、渲染部分做出console.log，其結果會是如下，請問為何useEffect中的callback的執行順序為何是在render之後？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666681597/blog/react/effect/useEffect/useEffect-result_b7qfub.png)->->-> `由於callback本身是按照生命週期函式來執行，也就是componentDidMount、componentDidUpdate、componentWillUnmount時執行，在那時會是在render之後才執行，故此在render之後執行`
+
+#🧠 React：在這裏分別在functional component 中的useEffect 、top level code、渲染部分做出console.log，其結果會是如下，請說明執行狀況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666681597/blog/react/effect/useEffect/useEffect-result_b7qfub.png) ->->-> `從結果得知，一開始會執行top level而先印出top level，接著useEffect的確呼叫到了，但裡頭callback、deps是直接按照生命週期函式而執行，在這時還未執行render，所以等到render結束後才執行callback。前面三段可以證實`
 
 
 ---
