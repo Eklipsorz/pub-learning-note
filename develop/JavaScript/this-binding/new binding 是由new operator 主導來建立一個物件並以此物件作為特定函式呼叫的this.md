@@ -112,7 +112,7 @@ console.log(bar.a)
 <!--SR:!2022-11-21,27,250-->
 
 #🧠 請用下面程式碼來說明new binding![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example-result_yk8bq8.png) ->->-> `首先 new operator會先建立一個物件，並且為Fn這呼叫設定this為那新物件，接著執行Fn來設定name`
-<!--SR:!2022-10-25,10,250-->
+<!--SR:!2022-11-20,26,250-->
 
 
 
