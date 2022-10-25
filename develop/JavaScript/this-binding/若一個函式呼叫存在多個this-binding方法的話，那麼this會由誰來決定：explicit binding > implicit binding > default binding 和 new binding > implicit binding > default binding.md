@@ -113,7 +113,7 @@ echo.name;//聽風是風
 <!--SR:!2022-11-16,23,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png) ->->-> `obj1，會印出時間跳躍，在這裡出現了explicit binding和implicit binding，優先權會先以explicit binding為主，因此才選上obj1`
-<!--SR:!2022-10-25,10,250-->
+<!--SR:!2022-11-20,26,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼!![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png) ->->-> `在這裡會是new 所建立的物件，印出聽風是風。原因在於在這裡混雜new binding 和implicit binding，根據優先權會先選擇new binding來決定。`
 <!--SR:!2022-11-22,28,250-->
