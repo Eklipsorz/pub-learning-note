@@ -76,6 +76,30 @@ test()
 console.log('end');
 ```
 
+### 案例3
+
+直接印出before -> end -> setTimeout -> 報錯
+
+```
+async function test() {
+  console.log('before');
+  await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('setTimeout');
+      return reject();
+    }, 1000);
+  });
+  console.log('after-1');
+  console.log('after-2');
+  console.log('after-3');
+  console.log('after-4');
+  console.log('after-5');
+}
+
+test();
+console.log('end');
+```
+
 
 #### control flow命名緣由
 [[@ControlFlow2022]]
@@ -116,14 +140,18 @@ flow
 
 #🧠 JS：await 語法背後潛藏什麼樣語法？，以await dosomething();為例 ->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback。dosomething().then((...) => { // rest code })`
 
+#🧠 JS：當在async function中出現這個 await dosomething(); // rest code，請問JS解析器會當成什麼來執行？->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback，`
 
 #🧠 以下面為例，請問印出順序會是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `before -> end -> setTimeout -> after`
 
-#🧠 以下面為例，請問印出順序會是before -> setTimeout -> after -> end嗎？為什麼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `並不是，實際正確順序為before -> end -> setTimeout -> after，這是因為await實際上會把後頭的程式碼全都會被該promise的then語法包裹住，以至於會先印出before之後，執行new promise來產生非同步任務，然後執行完畢之後，接著就印出end，最後promise中的時間到了就印setTimeout，最後有了resolve，`
+#🧠 以下面為例，請問印出順序會是before -> setTimeout -> after -> end嗎？為什麼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `並不是，實際正確順序為before -> end -> setTimeout -> after，這是因為await實際上會把後頭的程式碼全都會被該promise的then語法包裹住，以至於會先印出before之後，執行new promise來產生非同步任務，然後執行完畢之後，接著就印出end，最後promise中的時間到了就印setTimeout，最後有了resolve，then就跟著被觸發而執行after`
 
 
 
 #🧠 以下面為例，請問印出順序會是什麼？  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example2_xuyml4.png) ->->-> `before -> end -> setTimeout -> after-1 -> after-2 -> .... -> after-5`
+
+
+#🧠 以下面為例，請問印出順序會是什麼？   ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666701344/blog/javascript/promise/await/await-then-example3_l1luwz.png) ->->-> `before -> end -> setTimeout -> 報錯`
 
 
 ---
