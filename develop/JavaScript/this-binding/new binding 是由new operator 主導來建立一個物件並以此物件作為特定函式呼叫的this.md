@@ -86,7 +86,7 @@ console.log(bar.a)
 ## 複習
 
 #🧠 new binding 是什麼樣的binding ->->-> `由new operator 來主導建立一個物件並以此物件設定函式呼叫的this`
-<!--SR:!2022-10-25,10,250-->
+<!--SR:!2022-11-20,26,250-->
 
 #🧠 JS：constructor call 是什麼？  ->->-> `在特定函式呼叫前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)`
 <!--SR:!2022-11-10,18,250-->
@@ -102,14 +102,14 @@ console.log(bar.a)
 <!--SR:!2022-11-11,19,250-->
 
 #🧠 function 會是指特定函式，function()為特定函式的呼叫，若前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)，那麼function會是做什麼用的？ ->->-> `具體定義物件會有什麼樣屬性和方法`
-<!--SR:!2022-10-25,10,250-->
+<!--SR:!2022-11-22,28,250-->
 
 #🧠 JS：constructor call 具體流程為何？->->-> `	- 建立一個新空白物件 - 設定該物件的protype屬性 - 將新空白物件設定成function呼叫的this - 執行function好讓this和參數設定對應物件 - 若constructor 沒有手動回傳物件，則自動回傳目前設定好的物件`
 <!--SR:!2022-11-19,26,250-->
 
 
 #🧠 請問echo.name會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example_xcsbfn.png) ->->-> `聽風是風`
-<!--SR:!2022-10-25,10,250-->
+<!--SR:!2022-11-21,27,250-->
 
 #🧠 請用下面程式碼來說明new binding![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665562058/blog/javascript/this-binding/new-binding/new-binding-example-result_yk8bq8.png) ->->-> `首先 new operator會先建立一個物件，並且為Fn這呼叫設定this為那新物件，接著執行Fn來設定name`
 <!--SR:!2022-10-25,10,250-->

@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md",
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md",
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：在表格輸入欄位失焦事件中.md"
+                "file": "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md"
               }
             }
           }
@@ -208,8 +208,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "534aa85a93ba74ac",
+  "active": "07a51bdf88fdb47f",
   "lastOpenFiles": [
+    "inbox/React：在表格輸入欄位失焦事件中.md",
     "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md",
     "inbox/preventDefault 得放在開頭.md",
     "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
@@ -218,7 +219,6 @@
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
-    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
-    "inbox/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md"
+    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md"
   ]
 }

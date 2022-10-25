@@ -121,7 +121,7 @@ function fn() {
 <!--SR:!2022-10-30,12,248-->
 
 #🧠 JS：efault this binding 指當沒有使用任何一個方法來進行this binding就採用的預設方式， 請問default this binding  具體方式為何 ？ ->->-> `會根據執行環境是否處於嚴格模式來將this設定成global 或者 undefined`
-<!--SR:!2022-10-25,6,228-->
+<!--SR:!2022-11-10,16,228-->
 
 
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於非嚴格模式 ->->-> `this 會被設定成 global object，瀏覽器中會是指window，nodejs則是指global`

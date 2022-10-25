@@ -176,7 +176,7 @@ const SimpleInput = (props) => {
 <!--SR:!2022-11-04,10,250-->
 
 #🧠 React：實際表格能夠呈現的狀態數為何是無限？ ->->-> `實際表格會有的狀態取決於互動種類，而互動種類數本身在通常情況下(沒限制)而會是無限`
-<!--SR:!2022-10-25,3,250-->
+<!--SR:!2022-11-04,10,250-->
 
 #🧠 React： 在表格開發中，若目前開發者預期的表格狀態數不夠，其解法會是什麼？->->-> `新增狀態種類來處理`
 <!--SR:!2022-11-04,10,250-->
@@ -203,7 +203,7 @@ const SimpleInput = (props) => {
 <!--SR:!2022-10-25,3,250-->
 
 #🧠 React：touched/untouched 狀態各代表著什麼？ ->->-> `標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element；touched 狀態為該元件曾經被切換成active element； untouched 狀態為該元件從未被切換成active element`
-<!--SR:!2022-10-25,3,250-->
+<!--SR:!2022-11-04,10,250-->
 
 #🧠 React：無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，舉例說明預期外結果會是什麼？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `比如會useEffect會因為enteredName為合法而執行，然而實際上enteredName為非法![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666412149/blog/react/form/unexpected-result_sixu1j.png)`
 <!--SR:!2022-10-25,3,250-->
@@ -211,11 +211,11 @@ const SimpleInput = (props) => {
 
 
 #🧠 React：若目前元件是active element，嚴格來說算是touched嗎？為什麼 ->->-> `不能算是，基本上會因為並未從active這狀態轉移，因此不算是`
-<!--SR:!2022-10-25,3,250-->
+<!--SR:!2022-11-04,10,250-->
 
 
 #🧠 React：touched/untouched 狀態 具體會由誰來決定？ ->->-> ``依據著開發者來指定或者程式來指定
-<!--SR:!2022-10-25,3,250-->
+<!--SR:!2022-11-04,10,250-->
 
 #🧠 React：touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，請以開發者來決定為例子來說明 ->->-> `當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element`
 <!--SR:!2022-10-25,3,250-->

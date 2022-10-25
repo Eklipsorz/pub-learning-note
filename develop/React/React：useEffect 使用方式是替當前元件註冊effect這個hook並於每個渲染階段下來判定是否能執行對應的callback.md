@@ -180,7 +180,7 @@ this is use effect
 <!--SR:!2022-10-25,25,250-->
 
 #🧠 React：useEffect註冊在一個元件下，元件的unmount如何執行useEffect ->->-> `會無視dependency，直接執行useEffect下的cleanup`
-<!--SR:!2022-10-25,25,250-->
+<!--SR:!2022-12-25,61,250-->
 
 
 #🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `mounting 直接執行effect、updating檢查dependency看是否變動，有變動就先執行cleanup，後看depenedency是否變動來決定執行effect、unmounting 是直接執行cleanup`
