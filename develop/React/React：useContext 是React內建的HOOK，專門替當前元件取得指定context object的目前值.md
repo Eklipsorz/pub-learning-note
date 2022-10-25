@@ -58,7 +58,7 @@ const value = useContext(context)
 <!--SR:!2022-11-03,28,250-->
 
 #🧠 useContext(context.Provider) 這樣對於React的useContext的用法是對的嗎->->-> `不對，只能填入Context object`
-<!--SR:!2022-10-25,21,250-->
+<!--SR:!2022-12-16,52,250-->
 
 #🧠 useContext(context.Consumer) 這樣對於React的useContext的用法是對的嗎->->-> `不對，只能填入Context object`
 <!--SR:!2022-11-01,26,250-->
