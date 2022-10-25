@@ -20,7 +20,7 @@
 #### effect 使用語法
 `useEffect(callback, [dependencies])`
 
-useEffect 語法：會替當前元件註冊effect。
+useEffect 語法：functional component 是像是function呼叫執行useEffect呼叫，其中會替當前元件註冊effect，接著裡頭callback和deps則是按照生命週期函式來執行
 - 第一個引數為callback，這些callback只會在dependencies 改變的時候才執行，而不是在component重新渲染的時候呼叫
 - 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行 **清除上一次side effect所產生的非同步任務**
 	- 該cleanup function 盡量別以asynchronous function來處理，避免沒清除到指定任務或者對錯誤的任務進行處理，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
@@ -187,6 +187,9 @@ this is use effect
 <!--SR:!2022-11-01,28,250-->
 
 
+#🧠 React：useEffect 本身在functional component會像是什麼？主要會做什麼 ->->-> `useEffect 語法：functional component 是像是function呼叫執行useEffect呼叫，其中會替當前元件註冊effect`
+
+#🧠 React：useEffect 本身和useEffect(callback,\[deps\])中的callback、deps之間差別是什麼 ->->-> `useEffect就是hook function，呼叫到就執行，callback、deps則是按照生命週期函式來執行`
 
 #🧠 React：若同一個元件因為viewport的畫面切換而發生unmount並重新發生mounting，請問會如何保留新舊的hook? ->->-> `在發生unmount 就會移除舊有effect，並於mounting時期會再次產生額外的effect hook來綁定在該元件，觸發如同上述那樣`
 <!--SR:!2022-12-25,64,250-->
