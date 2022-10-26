@@ -123,7 +123,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2022-11-06,56,250-->
 
 #🧠 請試著寫出exporting module來以default exports輸出特定variable，並以importing module來引用這些variable ->->-> `exporting module: export default expression, importing module: import variable from 'xxx'`
-<!--SR:!2022-10-26,48,250-->
+<!--SR:!2023-02-23,120,250-->
 
 #🧠 ES module：使用default exports來輸出識別字，引用時得按照輸出時的識別字來對應嗎 ->->-> `不一定一樣，可以不一樣`
 <!--SR:!2023-01-21,100,250-->

@@ -76,7 +76,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `告知webpack將對應CSS檔案以模組來處理`
-<!--SR:!2022-10-26,17,250-->
+<!--SR:!2022-12-11,46,250-->
 
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是把css納入至importing module會用到的資源，那麼能夠讓XML使用樣式名稱嗎？為何 ->->-> `能，告知webpack將對應CSS檔案以模組來處理，並於最後結果網頁加載對應CSS內容`

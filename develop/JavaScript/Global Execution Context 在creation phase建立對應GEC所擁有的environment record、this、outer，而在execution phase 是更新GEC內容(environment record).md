@@ -143,7 +143,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的發生時機點->->-> `在編譯時期先對所有EC準備建立EC所需的資料和對應ByteCode後，並於執行之前先執行對應ByteCode建立GEC`
-<!--SR:!2022-10-26,40,247-->
+<!--SR:!2023-02-01,98,247-->
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `檔案裡的最外圍scope`
@@ -169,7 +169,7 @@ GlobalExectionContext = {
 <!--SR:!2022-12-01,102,248-->
 
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？(提示：請以資料結構來看待Lexical Environment)->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
-<!--SR:!2022-10-26,75,228-->
+<!--SR:!2023-04-15,171,228-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間`
 <!--SR:!2023-05-09,200,248-->

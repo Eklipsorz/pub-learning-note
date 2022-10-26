@@ -51,6 +51,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "30b0c80f68ae555e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0227893c0a6664e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
+                "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md"
               }
             }
           }
@@ -179,8 +197,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4cde3f423b4d118f",
+  "active": "e0227893c0a6664e",
   "lastOpenFiles": [
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md",
     "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/React：使用useReducer來開發form 上的useInput.md",
@@ -189,7 +208,6 @@
     "inbox/React：food-order project 發送請求來獲取meals和建立order.md",
     "inbox/React：替 food-order project 添加custom-hook來發送請求.md",
     "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
-    "inbox/React：useEffect 的callback並不會實際如同函式呼叫那樣會按照順序執行，而是按照生命週期函式執行.md",
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md"
+    "inbox/React：useEffect 的callback並不會實際如同函式呼叫那樣會按照順序執行，而是按照生命週期函式執行.md"
   ]
 }
