@@ -87,6 +87,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "02b0d72516ee944b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "550cd081de45012a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
+                "file": "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
+                "file": "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md"
+                "file": "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md"
               }
             }
           }
@@ -215,8 +233,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4a2adf7133957bd0",
+  "active": "550cd081de45012a",
   "lastOpenFiles": [
+    "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md",
@@ -225,7 +244,6 @@
     "inbox/React：food-order project  建立order所需要做的處理.md",
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/React：food-order project 發送請求來獲取meals和建立order.md",
-    "inbox/React：替 food-order project 添加custom-hook來發送請求.md",
-    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md"
+    "inbox/React：替 food-order project 添加custom-hook來發送請求.md"
   ]
 }

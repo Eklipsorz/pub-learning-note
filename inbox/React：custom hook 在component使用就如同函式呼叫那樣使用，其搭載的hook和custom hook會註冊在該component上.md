@@ -128,7 +128,7 @@ export default useCounter;
 <!--SR:!2022-11-02,10,250-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼不共享state或者effect會是因爲著？  ->->-> `首先每個component呼叫hook，就等同於將相關資訊註冊在對應component，換言之，就是每個component的hook都是獨立的`
-<!--SR:!2022-10-26,4,248-->
+<!--SR:!2022-11-06,11,248-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼會是指多個component 共享同個state或者effect嗎？->->-> `並不是`
 <!--SR:!2022-10-27,5,248-->
@@ -141,7 +141,7 @@ export default useCounter;
 <!--SR:!2022-10-27,5,248-->
 
 #🧠 React：若custom hook 的引數放在custom hook中的useEffect來使用，需要添加其為deps嗎？ 為什麼->->-> `視情況需要，本質上custom hook若被componentA使用，肯定會夥同內部的useEffect一同註冊componentA，換言之，皆為在元件內部，若引數本質上是代表著元件互動，那麼勢必很有可能得放在deps來滿足其目標。`
-<!--SR:!2022-10-26,4,248-->
+<!--SR:!2022-11-07,12,248-->
 
 
 
