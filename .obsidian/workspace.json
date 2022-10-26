@@ -35,42 +35,6 @@
         "currentTab": 1
       },
       {
-        "id": "70b8365a76bdce85",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4cde3f423b4d118f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "30b0c80f68ae555e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e0227893c0a6664e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "68cf463a88261d6f",
         "type": "tabs",
         "children": [

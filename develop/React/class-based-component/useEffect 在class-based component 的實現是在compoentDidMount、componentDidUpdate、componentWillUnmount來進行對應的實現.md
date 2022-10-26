@@ -86,7 +86,7 @@ useEffect(() => {
 <!--SR:!2022-11-20,25,250-->
 
 #🧠 當前端索要後端資源並渲染，那麼在functional component的實現方式是？ ->->-> `在對應元件的component function下添加useEffect，並於useEffect的callback中添加發送請求和根據請求結果來執行setState1`
-<!--SR:!2022-10-26,9,250-->
+<!--SR:!2022-11-20,25,250-->
 
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會是什麼？ ->->-> ` componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect；若effect 本身會是觸發渲染函式，那麼勢必會遇到無限迴圈的問題，所以通常會添加條件式、執行cleanup、執行effect`
