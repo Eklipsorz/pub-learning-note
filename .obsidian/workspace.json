@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
+                "file": "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
+                "file": "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md"
+                "file": "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md"
               }
             }
           }
@@ -197,8 +197,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "fc37ce446174a963",
+  "active": "2035a869f70a474b",
   "lastOpenFiles": [
+    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "develop/Redis/Redis 需要Lua指令是由於想透過從伺服器內部直接執行腳本來提昇指令被執行的效率以及替多個指令轉換成原子化操作.md",
     "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
@@ -207,7 +208,6 @@
     "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/React：使用useReducer來開發form 上的useInput.md",
     "inbox/React：food-order project  建立order所需要做的處理.md",
-    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/React：food-order project 發送請求來獲取meals和建立order.md"
   ]
 }
