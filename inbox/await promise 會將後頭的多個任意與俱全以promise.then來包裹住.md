@@ -125,7 +125,7 @@ flow
 #🧠 在電腦科學裡，control flow是執行控制權的交接流向，白話點就是什麼？(指令、表達式的順序？)->->-> `在imperative program中的特定語句/表達式/指令/函式呼叫的執行順序會是如何`
 
 
-
+#🧠 JS：async/await之前的promise會有什麼樣的問題？->->-> `then chain 製造的巢狀問題`
 
 
 #🧠 JS：await 是什麼？ ->->-> `是一個operator，專門在async function裡等待promise為主的非同步任務完成`
@@ -135,6 +135,7 @@ flow
 #🧠 JS：async/await 對於 promise來說是語法糖，為何需要這語法糖 ->->-> `專門解決then chain 製造的巢狀問題，以試著讓開發難度/維護難度降低`
 
 #🧠 JS：async/await 對於 promise來說是語法糖，具體使開發難度降低，手段為何 ->->-> `實現手段為讓control flow更改成從上至下，而非從外至內來執行`
+<!--SR:!2022-10-29,3,250-->
 
 #🧠 JS：await 語法為何->->-> `await dosomething(); 
 

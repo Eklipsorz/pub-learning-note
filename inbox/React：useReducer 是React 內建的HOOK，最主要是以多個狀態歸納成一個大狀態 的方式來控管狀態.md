@@ -352,7 +352,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-12-08,51,250-->
 
 #🧠 React：假設派遣過來的action會是type為increase或者descrease，並且預期當reducer接收到increase就替狀態上的counter進行遞增以及當reducer接收到descrease就替狀態上的counter進行遞減，其餘則是發出錯誤，請問如何用程式碼表示 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663519501/blog/react/state/useReducer/useReducer-usage1_q8tnw6.png)`
-<!--SR:!2022-10-26,25,250-->
+<!--SR:!2022-12-28,63,250-->
 
 
 
