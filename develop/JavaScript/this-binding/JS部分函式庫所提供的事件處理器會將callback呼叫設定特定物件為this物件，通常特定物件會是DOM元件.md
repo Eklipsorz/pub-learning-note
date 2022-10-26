@@ -64,7 +64,24 @@ test <button id="test">
 #🧠 JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件，請舉例 ->->-> `	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點 - HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點`
 <!--SR:!2022-11-23,28,250-->
 
+#🧠 HTML DOM 標籤上所提供onxxx標籤和事件處理的callback有何關係？->->-> `首先在這裡已定義好事件處理的函式本身，標籤是指定其函式內容`
 
+#🧠 addEventListener(a, callback) 中的callback若是匿名函式，其callback呼叫時的this會是什麼->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
+
+#🧠 addEventListener(a, callback) 中的callback若是命名函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
+
+
+#🧠 addEventListener(a, callback) 中的callback若是箭頭函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
+
+#🧠 addEventListener(a, callback) 中的callback若是函式物件，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
+
+#🧠 HTML上有這段\<button onclick="console.log('this', this);"\>hi\<\/button\> ，請問this會是什麼？為什麼？->->-> `button。由於onclick本身就是在定義好的callback function設定其內容，所以當callback被呼叫時，就會以發生事件的dom節點為this`
+
+#🧠 HTML上有這段\<button onclick="(function test() \{console.log('test', this)\})()"\>hi\<\/button\> ，請問this會是什麼？為什麼？->->-> `結果為：test Window。由於onclick本身就是在定義好的callback function設定其內容，但在這裡又是在callback function進行另一個函式的呼叫，其呼叫形式會被JS解析器判定成default binding而以window來執行`
+
+#🧠 \<button id="test"\>hi\<\/button\> dom.addEventListener('click', function test() \{   console.log('test', this) \}) 請問this會是什麼？->->-> `test <button id="test">`
+
+#🧠 addEventListener(a, callback)中的callback得是什麼形式才會是設定發生事件時的DOM節點 ->->-> `匿名函式、命名函式、箭頭函式、函式物件`
 
 
 ---
