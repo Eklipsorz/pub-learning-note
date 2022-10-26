@@ -7,18 +7,50 @@
 - JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件
 - 舉例：
 	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點
+		- 無論callback是否為匿名函式、命名函式、箭頭函式、函式物件，皆會被系統以explicit binding設定成發生事件時的DOM節點
 	- HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點
 
 
-### 案例1
+### 案例1：使用HTML DOM 標籤上所提供onxxx標籤
+
+```
+<button onclick="console.log('this', this);">hi</button>
+```
+
+結果：
+- 由於onclick本身就是在定義好的callback function設定其內容，所以當callback被呼叫時，就會以發生事件的dom節點為this
+```
+this <button onclick="console.log('this', this);">
+```
+
+
+### 案例2：HTML DOM 標籤上所提供onxxx標籤
 ```
 <button onclick="(function test() {console.log('test', this)})()">hi</button>
 ```
+結果：
+- 由於onclick本身就是在定義好的callback function設定其內容，但在這裡又是在callback function進行另一個函式的呼叫，其呼叫形式會被JS解析器判定成default binding而以window來執行
+```
+test Window
+```
 
-### 案例2
+### 案例3：addEventListener
 
 ```
 <button id="test">hi</button>
+```
+
+```
+const dom = document.getElementById('test');
+
+dom.addEventListener('click', function test() {
+  console.log('test', this)
+})
+```
+
+結果：
+```
+test <button id="test">
 ```
 
 
@@ -31,6 +63,7 @@
 
 #🧠 JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件，請舉例 ->->-> `	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點 - HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點`
 <!--SR:!2022-11-23,28,250-->
+
 
 
 
