@@ -121,6 +121,7 @@ flow
 #🧠 control 在電腦科學裡是指什麼？ ->->-> `擁有執行特定事物的權力`
 
 #🧠 在電腦科學裡，control flow是什麼？ ->->-> `執行控制權的交接流向，從一個特定指令A擁有執行權力並執行，接著切換成下一個指令擁有執行權力並執行`
+<!--SR:!2022-10-29,3,250-->
 
 #🧠 在電腦科學裡，control flow是執行控制權的交接流向，白話點就是什麼？(指令、表達式的順序？)->->-> `在imperative program中的特定語句/表達式/指令/函式呼叫的執行順序會是如何`
 
@@ -133,11 +134,13 @@ flow
 #🧠 JS：async/await 對於 promise來說，是什麼 ->->-> `async/await 本身是promise的語法糖`
 
 #🧠 JS：async/await 對於 promise來說是語法糖，為何需要這語法糖 ->->-> `專門解決then chain 製造的巢狀問題，以試著讓開發難度/維護難度降低`
+<!--SR:!2022-10-29,3,250-->
 
 #🧠 JS：async/await 對於 promise來說是語法糖，具體使開發難度降低，手段為何 ->->-> `實現手段為讓control flow更改成從上至下，而非從外至內來執行`
 <!--SR:!2022-10-29,3,250-->
 
 #🧠 JS：await 語法為何->->-> `await dosomething(); 
+<!--SR:!2022-10-29,3,250-->
 
 #🧠 JS：await 語法背後潛藏什麼樣語法？，以await dosomething();為例 ->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback。dosomething().then((...) => { // rest code })`
 
