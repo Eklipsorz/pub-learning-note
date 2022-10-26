@@ -149,7 +149,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2022-10-27,10,250-->
 
 #🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> `class Component1 {} Component1.contextType = Context1`
-<!--SR:!2022-10-26,9,250-->
+<!--SR:!2022-11-21,26,250-->
 
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？共同點是什麼 ->->-> `首先他們兩者皆是對class本身增加屬性，所以是一樣的，只是表現方式不同、class的對應物件並不會獲取到這些屬性或者變數`
 <!--SR:!2022-10-26,9,250-->
