@@ -7,17 +7,11 @@
 > rendering a client-side or universal app to HTML on the server.
 
 簡述流程：
-
 1. 瀏覽器針對特定網址送出請求
-
 2. 路由器解析請求後，轉接給對應的 controller
-
 3. controller 按照要求，透過 model 拿資料
-
 4. controller 拿到資料後，呼叫 view template，並嵌入資料
-
 5. 把「有資料的 template」轉換成瀏覽器可直接呈現的形式並回傳給瀏覽器
-
 6. 瀏覽器接收檔案並以視覺形式來呈現其畫面。
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1633596645/blog/network/ClientAndServer/MVCModel_dgvnhm.png)
@@ -45,4 +39,6 @@ Status: #🌱
 Tags:
 [[Rendering]]
 Links:
+[[Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端]]
+[[Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式]]
 References:
