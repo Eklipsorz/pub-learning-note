@@ -257,7 +257,7 @@ consume
 <!--SR:!2022-11-30,36,248-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
-<!--SR:!2022-10-27,23,250-->
+<!--SR:!2022-12-25,59,250-->
 
 #🧠 React：Context中的Consumer 是什麼？(提示：聽一下，獲取一下)  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
 <!--SR:!2022-11-15,32,230-->
@@ -288,7 +288,7 @@ consume
 
 
 #🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `	- 沒被它包覆著子節點不被允許存取它對於其Context Object的設定內容，以其他Provider component設定的內容或者預設值為主`
-<!--SR:!2022-10-27,17,248-->
+<!--SR:!2022-12-10,44,248-->
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`

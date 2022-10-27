@@ -35,7 +35,7 @@
 <!--SR:!2023-04-18,198,248-->
 
 #🧠 Data Structure ADT：dictionary 會有哪些操作 ->->-> `讀取：使用特定key來找到對應value、新增：使用一個key-value pair來新增至字典、移除：使用特定key來移除對應key-value pair、 更新：使用特定key來更新對應value`
-<!--SR:!2022-10-27,93,250-->
+<!--SR:!2023-06-17,233,250-->
 
 
 ---

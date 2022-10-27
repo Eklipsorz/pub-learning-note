@@ -74,7 +74,7 @@ useEffect：cleanup function執行時機：
 <!--SR:!2022-10-29,28,250-->
 
 #🧠 React ：useEffect + cleanup function 要實現什麼？ ->->-> `主要實現debouncing效果來在由互動而產生出的大量連續請求之下取出最後最新的請求來處理。`
-<!--SR:!2022-10-27,28,250-->
+<!--SR:!2023-01-08,73,250-->
 
 #🧠 React：useEffect cleanup 技術主要是什麼？ ->->-> `清除源自side effect所產生的多餘非同步任務`
 <!--SR:!2022-12-06,50,250-->
