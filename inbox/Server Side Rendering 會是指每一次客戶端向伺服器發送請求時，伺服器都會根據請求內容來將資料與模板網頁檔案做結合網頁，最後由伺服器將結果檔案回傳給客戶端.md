@@ -22,7 +22,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 ![](https://s3.ap-south-1.amazonaws.com/storage.alfabolt.com/b1e61443-a5b0-4e35-86e2-4f1ad13f657d-min.png)
 
-### 所能提供的網頁應用程式會是
+### 所能實現的網頁應用程式會是
 
 由於每個URL都對應著實體Hypertext 文件，所以具體會是MPA
 
@@ -45,7 +45,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 這技術的優點：
 - 對客戶端(瀏覽器)要求較低：由於客戶端一拿到手就可以直接呈現，不需要花太多效能成本來將檔案轉換成畫面
-- 與Client-Side Rendering 相比，webpage所需要的額外資料可以按需來索要：SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主體來建構出虛擬webpage，為了
+- 與Client-Side Rendering 相比，webpage所需要載入的額外資料會比較少：SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源
 - SEO 會比Client-Side Rendering 來得好：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO
 - 對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext。
 
@@ -83,7 +83,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？請用畫面來表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1633596645/blog/network/ClientAndServer/MVCModel_dgvnhm.png)`
 
-#🧠 Server Side Rendering 在client-server情景下所擁有的優點是什麼？->->-> `對客戶端(瀏覽器)要求較低、SEO 會比Client-Side Rendering 來得好、對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext`
+#🧠 Server Side Rendering 在client-server情景下所擁有的優點是什麼？->->-> `對客戶端(瀏覽器)要求較低、SEO 會比Client-Side Rendering 來得好、對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext、 與Client-Side Rendering 相比，webpage所需要載入的額外資料會比較少`
 
 
 #🧠  Server Side Rendering 在client-server情景下為何會比Client Side Rendering 擁有較好的SEO???? ->->-> `SEO 會比Client-Side Rendering 來得好：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO`
@@ -96,6 +96,8 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 #🧠 Server-Side Rendering的缺點是什麼？ ->->-> `使用者體驗較差、伺服器的效能消耗較大、前後端程式碼較難維護`
 
+#🧠 Server Side Rendering 在client-server情景下為何與Client-Side Rendering 相比，webpage所需要載入的額外資料會比較少？？ ->->-> `SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些文件更快地延伸額外內容而預先加載網頁大部分所需要的資源`
+
 
 #🧠 Server-Side Rendering的缺點是使用者體驗較差，具體說明 ->->-> `由於只要客戶端一發送請求，無論請求內容大小以要啥，伺服器都直接拿完整網頁傳遞至客戶端，而不是只拿到請求的變更內容。`
 
@@ -104,7 +106,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 #🧠 Server-Side Rendering的缺點是前後端程式碼較難維護，具體說明 ->->-> `由於程式碼會由於前後端皆於後端實現，所以容易混雜在一起而導致難以維護`
 
-#🧠  Server-Side Rendering 所能提供的網頁應用程式會是？為什麼？ ->->-> `MPA，由於每個URL都對應著實體Hypertext 文件`
+#🧠  Server-Side Rendering 所能實現的網頁應用程式會是？為什麼？ ->->-> `MPA，由於每個URL都對應著實體Hypertext 文件`
 
 #🧠 Server-Side Rendering 適用場景為何 ->->-> `低頻率使用且需要SEO 優化的網站`
 
