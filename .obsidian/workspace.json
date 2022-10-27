@@ -54,19 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e39f2d300185566a",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.3"
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "bfb7e521bae8c79c",
@@ -210,7 +200,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e39f2d300185566a",
+  "active": "0dc4ef73d1302095",
   "lastOpenFiles": [
     "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
     "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
