@@ -81,11 +81,13 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering  具體流程是什麼？用畫圖表示 ->->-> `![](https://s3.ap-south-1.amazonaws.com/storage.alfabolt.com/b1e61443-a5b0-4e35-86e2-4f1ad13f657d-min.png)`
+<!--SR:!2022-10-30,3,250-->
 
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是什麼？->->-> `- 伺服器1是主要提供特定網頁A給客戶端的伺服器 - 伺服器2是主要提供特定網頁A所需要的JS bundle的伺服器 - 伺服器3是主要提供資料來方便讓client憑藉著特定網頁A和JS bundle 來渲染出不同URL所應該要有的page畫面，page會是虛擬的`
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是一樣的嗎？->->-> `伺服器1、伺服器2、伺服器3可以是不一樣的主機或者是全由同一台主機負責。
+<!--SR:!2022-10-30,3,250-->
 `
 
 #🧠 Client-Side Rendering 的Page組成是什麼？ ->->-> `少量的實體Webpage 和 大量建構出來的虛擬Webpage：  實體部分會是指一份實體webpage - 虛擬部分則會是N份虛擬webpage`
@@ -97,12 +99,16 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 #🧠 Client-Side Rendering 的優點是減少server處理渲染部分的壓力，具體說明 ->->-> `因為client 憑藉著一開始就已經獲取到包含著JS和CSS的實體webpage文件，所以可由它主要渲染自身的畫面就好`
 
 #🧠 Client-Side Rendering 的優點是頁面切換較快，具體說明 ->->-> `由於網頁畫面是由client端自行負責，並不需要再次向伺服器索要新的實體webpage，且能根據不同時機點下的dom內容差異來以dom為單位來轉換畫面`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering 的缺點是什麼？(共兩個) ->->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering 的缺點是與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多，具體說明 ->->-> `SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering 的缺點是SEO 會比Server-Side Rendering 來得差，具體說明 ->->-> `由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO`
+<!--SR:!2022-10-30,3,250-->
 
 
 #🧠 Client-Side Rendering所能實現的網頁應用程式會是？為什麼？ ->->-> `由於本質上只需要少量的實體webpage文件來建構出其他虛擬page，通常少量會是指單個實體webpage文件，因此被稱之為Single-Page Application，所能實現的應用程式就是SPA`
