@@ -85,6 +85,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是什麼？->->-> `- 伺服器1是主要提供特定網頁A給客戶端的伺服器 - 伺服器2是主要提供特定網頁A所需要的JS bundle的伺服器 - 伺服器3是主要提供資料來方便讓client憑藉著特定網頁A和JS bundle 來渲染出不同URL所應該要有的page畫面，page會是虛擬的`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是一樣的嗎？->->-> `伺服器1、伺服器2、伺服器3可以是不一樣的主機或者是全由同一台主機負責。
 <!--SR:!2022-10-30,3,250-->
@@ -97,6 +98,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 <!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering 的優點是減少server處理渲染部分的壓力，具體說明 ->->-> `因為client 憑藉著一開始就已經獲取到包含著JS和CSS的實體webpage文件，所以可由它主要渲染自身的畫面就好`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering 的優點是頁面切換較快，具體說明 ->->-> `由於網頁畫面是由client端自行負責，並不需要再次向伺服器索要新的實體webpage，且能根據不同時機點下的dom內容差異來以dom為單位來轉換畫面`
 <!--SR:!2022-10-30,3,250-->
@@ -112,6 +114,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering所能實現的網頁應用程式會是？為什麼？ ->->-> `由於本質上只需要少量的實體webpage文件來建構出其他虛擬page，通常少量會是指單個實體webpage文件，因此被稱之為Single-Page Application，所能實現的應用程式就是SPA`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering適用場景為何 ->->-> `適用於高頻切換不同頁面且不需要SEO的網頁`
 <!--SR:!2022-10-30,3,250-->
