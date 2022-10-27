@@ -14,7 +14,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面
 
 隨後client就憑藉JS bundle和網頁A來向指定伺服器索要資料來在客戶端渲染出不同URL所對應的page畫面
-
+[[@lindingyuanSSRCSRMingCiLiJieYingYongChangJing]]
 ![](https://s3.ap-south-1.amazonaws.com/storage.alfabolt.com/b1e61443-a5b0-4e35-86e2-4f1ad13f657d-min.png)
 
 
@@ -30,6 +30,11 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 伺服器1、伺服器2、伺服器3可以是不一樣的主機或者是全由同一台主機負責。
 
 
+### Page 組成：
+少量的實體Webpage 和 大量建構出來的虛擬Webpage：
+- 實體部分會是指一份實體webpage
+- 虛擬部分則會是N份虛擬webpage
+
 
 ### 優點
 
@@ -39,6 +44,10 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 > -   **頁面切換速度快**：因為 HTML 頁面都是 client 端自己編譯的，所以頁面切換時不需要像 SSR 等待 server 回傳 HTML；而且網頁內容的改變通常都是局部的，這樣就避免了不必要的跳轉及重複渲染。
 
 
+重點：
+- 減少server處理渲染部分的壓力：因為client 憑藉著一開始就已經獲取到包含著JS和CSS的實體webpage文件，來負責向伺服器索要資料以及渲染自身的畫面就好
+- 頁面切換較快：由於網頁畫面是由client端自行負責，並不需要再次向伺服器索要新的實體webpage，且能根據不同時機點下的dom內容差異來以dom為單位來轉換畫面
+
 ### 缺點
 
 > ## ➤ 缺點：
@@ -46,14 +55,21 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 > -   **首屏顯示慢**：明明首頁只有一點內容卻把下載了所有頁面的資源
 > -   _SEO 較差_：因一開始的 HTML 是空白的，雖然現在 Google 的爬蟲也會等 javascript 編譯好再爬，但這塊對 SEO 的實際幫助還需要時間驗證
 
-- 前端開發成本變高：由於該架構本身Client Side Rendering，所以會根據使用者行為來向後端要資料並處理相關渲染所需的邏輯計算和控制流程來產生對應的畫面至瀏覽器呈現
-
-- 責任分明，容易有推卸的責任
-
-- SEO 會較為糟糕：因為該架構的內容主要會是依據使用者動態調整，而SEO的爬蟲主要是擷取網站的靜態內容來計算和排序，這導致爬蟲能抓的內容是有限的，分數會較低以及排序排得較後面
+重點：
+- 與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多：SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源
+- SEO 會比Server-Side Rendering 來得差：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO
 
 
+### 所能實現的網頁應用程式會是
 
+由於本質上只需要少量的實體webpage文件來建構出其他虛擬page，通常少量會是指單個實體webpage文件，因此被稱之為Single-Page Application，所能實現的應用程式就是SPA
+
+### 適用場景
+[[@lindingyuanSSRCSRMingCiLiJieYingYongChangJing]]
+> **會高頻操作且不需 SEO 的網站**：像是內部管理系統，如果這類型的系統採取 SSR 會造成 server 端很大的負荷。
+
+重點：
+- 適用於高頻切換不同頁面且不需要SEO的網頁
 
 ## 複習
 
