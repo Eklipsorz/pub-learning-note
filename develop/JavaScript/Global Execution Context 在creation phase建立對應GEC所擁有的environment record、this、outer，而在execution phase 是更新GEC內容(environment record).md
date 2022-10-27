@@ -179,7 +179,7 @@ GlobalExectionContext = {
 <!--SR:!2023-04-25,193,248-->
 
 #🧠 Global Execution Context ：LexicalEnvironment 主要記錄著什麼？ ->->-> ` LexicalEnvironment 從GEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
-<!--SR:!2022-10-27,81,248-->
+<!--SR:!2023-05-16,201,248-->
 
 #🧠 Global Execution Context ：VariablEenvironment 主要記錄著什麼？ ->->-> `從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中`
 <!--SR:!2022-10-29,83,248-->

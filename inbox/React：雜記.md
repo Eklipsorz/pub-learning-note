@@ -28,7 +28,7 @@
 <!--SR:!2022-11-06,10,250-->
 
 #🧠 React： hook 執行方式在看起來是什麼？(functional component 角度和dom角度)->->-> `1. Custom hook 在functional component層級來看 會如同函式那樣呼叫 2. 以dom來看，則是hook註冊在特定dom節點`
-<!--SR:!2022-10-27,3,250-->
+<!--SR:!2022-11-06,10,250-->
 
 #🧠 React： hook 執行方式在functional component看起來是什麼？ ->->-> ` Custom hook 在functional component角度來看 會如同函式那樣呼叫`
 <!--SR:!2022-11-06,10,250-->

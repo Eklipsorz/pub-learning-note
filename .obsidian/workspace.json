@@ -22,29 +22,11 @@
         ]
       },
       {
-        "id": "2382c92e4f383613",
+        "id": "26c0e185ec7e6ce4",
         "type": "tabs",
         "children": [
           {
-            "id": "ee7b2c8571fbd139",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "2341029ecd5f1bd8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "90fbeb20668d3b0c",
+            "id": "6cae108043c46c30",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -181,7 +163,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "90fbeb20668d3b0c",
+  "active": "6cae108043c46c30",
   "lastOpenFiles": [
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",

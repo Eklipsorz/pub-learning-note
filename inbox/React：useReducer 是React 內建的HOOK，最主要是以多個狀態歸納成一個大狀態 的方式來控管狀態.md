@@ -325,7 +325,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-30,28,250-->
 
 #🧠 React：reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `回傳新狀態、更新狀態、觸發渲染週期`
-<!--SR:!2022-10-27,25,250-->
+<!--SR:!2023-01-02,67,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，reducerFn(prevState, action)如何被觸發執行？ ->->-> `這n個連續dispatch指令會分別被處理`
 <!--SR:!2022-12-21,58,250-->
@@ -344,7 +344,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-30,28,250-->
 
 #🧠 React：reducerFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：- 增加為了確保不被重複定義	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
-<!--SR:!2022-10-27,26,250-->
+<!--SR:!2022-11-09,13,230-->
 
 
 
@@ -360,7 +360,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-10-30,28,250-->
 
 #🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
-<!--SR:!2022-10-27,26,250-->
+<!--SR:!2023-01-04,69,250-->
 
 #🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
 <!--SR:!2022-12-01,46,250-->

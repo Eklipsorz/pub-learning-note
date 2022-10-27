@@ -166,7 +166,7 @@ flow
 
 
 #🧠 以下面為例，請問印出順序會是什麼？   ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666701344/blog/javascript/promise/await/await-then-example3_l1luwz.png) ->->-> `before -> end -> setTimeout -> 報錯`
-<!--SR:!2022-10-27,1,230-->
+<!--SR:!2022-10-28,1,210-->
 
 
 ---
