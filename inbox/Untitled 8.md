@@ -1,7 +1,28 @@
 ## 描述
 
-Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以virtual DOM 或者 DOM
+Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示。
 
+
+
+### 具體實現概念
+
+為了讓client端能夠靠自身建立視覺呈現的事物
+
+具體流程會是：
+- client 端先向伺服器1索要特定網頁A
+- client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle
+- client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面
+
+隨後client就憑藉JS bundle和網頁A來向指定伺服器索要資料來渲染
+
+![](https://s3.ap-south-1.amazonaws.com/storage.alfabolt.com/b1e61443-a5b0-4e35-86e2-4f1ad13f657d-min.png)
+
+
+#### 伺服器1 vs. 伺服器2 vs 伺服器3
+
+- 職責
+	 - 伺服器1是主要提供特定網頁A給客戶端的伺服器
+	
 
 ### Client Side Rendering
 1. 由客戶端一端負責將使用者的請求來轉換成對應的View，而View的形式會是**DOM結構和內容上的變更結果**，主要實作方式如下：
@@ -21,6 +42,30 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1644767265/twitter/course/FrontendFramework_pkoc0h.png)
 
 3. 相對於AJAX + API溝通資料來說，每個從客戶端發送的API請求變得相當明確，並且發送API請求次數變得更多
+
+## 補充：前後端優缺點以及選擇原因
+
+1. 優點為：
+
+- 能使開發者更專注一塊以及更容易維護程式
+
+2. 缺點為：
+
+- 前端開發成本變高：由於該架構本身Client Side Rendering，所以會根據使用者行為來向後端要資料並處理相關渲染所需的邏輯計算和控制流程來產生對應的畫面至瀏覽器呈現
+
+- 責任分明，容易有推卸的責任
+
+- SEO 會較為糟糕：因為該架構的內容主要會是依據使用者動態調整，而SEO的爬蟲主要是擷取網站的靜態內容來計算和排序，這導致爬蟲能抓的內容是有限的，分數會較低以及排序排得較後面
+
+3. 選擇原因：
+
+- 趨勢
+
+- 多一種解決問題方法
+
+- 優點大於缺點
+
+
 
 ## 複習
 

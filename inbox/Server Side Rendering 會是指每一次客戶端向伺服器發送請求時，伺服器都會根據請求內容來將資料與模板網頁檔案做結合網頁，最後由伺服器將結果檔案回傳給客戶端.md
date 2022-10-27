@@ -22,6 +22,10 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 ![](https://s3.ap-south-1.amazonaws.com/storage.alfabolt.com/b1e61443-a5b0-4e35-86e2-4f1ad13f657d-min.png)
 
+### 所能提供的網頁應用程式會是
+
+由於每個URL都對應著實體Hypertext 文件，所以具體會是MPA
+
 
 #### 優點
 
@@ -92,7 +96,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 #🧠 Server-Side Rendering的缺點是前後端程式碼較難維護，具體說明 ->->-> `由於程式碼會由於前後端皆於後端實現，所以容易混雜在一起而導致難以維護`
 
-
+#🧠  Server-Side Rendering 所能提供的網頁應用程式會是？為什麼？ ->->-> `MPA，由於每個URL都對應著實體Hypertext 文件`
 
 
 ---
