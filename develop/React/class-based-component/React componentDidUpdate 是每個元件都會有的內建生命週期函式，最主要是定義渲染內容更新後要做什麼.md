@@ -19,7 +19,7 @@ componentDidUpdate(prevProps, prevState, snapshot)
 ## 複習
 
 #🧠 React：componentDidUpdate 是源自於哪個元件開發的函式 ->->-> `class-based component`
-<!--SR:!2022-10-27,10,250-->
+<!--SR:!2022-11-23,27,250-->
 
 #🧠 React：componentDidUpdate 語法為何？ ->->-> `componentDidUpdate(prevProps, prevState) {.....}`
 <!--SR:!2022-11-22,26,250-->
