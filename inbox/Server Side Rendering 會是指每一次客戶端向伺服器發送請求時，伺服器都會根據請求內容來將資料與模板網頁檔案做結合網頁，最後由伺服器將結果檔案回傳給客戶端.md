@@ -40,7 +40,15 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 這技術的優點：
 - 對客戶端(瀏覽器)要求較低：由於客戶端一拿到手就可以直接呈現，不需要花太多效能成本來將檔案轉換成畫面
 - SEO 會比Client-Side Rendering 來得好：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO
-- 對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的
+- 對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext。
+
+
+##### SEO 會比Client-Side Rendering 來得好 這句話恐怕未來不為真
+
+部分搜尋引擎的爬蟲有開始針對CSR而採取額外的措施來獲取內容：
+	- 爬蟲執行JS來獲取主要內容，並針對內容進行分析
+
+#### 缺點
 
 
 這技術的缺點：
@@ -59,10 +67,28 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？請用畫面來表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1633596645/blog/network/ClientAndServer/MVCModel_dgvnhm.png)`
 
-#🧠 Server Side Rendering 在client-server情景下所擁有的優點是什麼？->->-> ``
+#🧠 Server Side Rendering 在client-server情景下所擁有的優點是什麼？->->-> `對客戶端(瀏覽器)要求較低、SEO 會比Client-Side Rendering 來得好、對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext`
 
 
-#🧠 Question :: ->->-> ``
+#🧠  Server Side Rendering 在client-server情景下為何會比Client Side Rendering 擁有較好的SEO???? ->->-> `SEO 會比Client-Side Rendering 來得好：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO`
+
+#🧠 Server-Side Rendering 在每個URL下都對應著什麼？需不需要由客戶端負責什麼？ ->->-> `對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext。`
+
+#🧠 Server-Side Rendering 為何對客戶端(瀏覽器)要求較低？ ->->-> `由於客戶端一拿到手就可以直接呈現，不需要花太多效能成本來將檔案轉換成畫面`
+
+#🧠 Server-Side Rendering 的SEO 會一直比Client-Side Rendering 來得好嗎？為什麼 ->->-> `不一定，由於部分搜尋引擎的爬蟲有開始針對CSR而採取額外的措施來獲取內容，爬蟲執行JS來獲取主要內容，並針對內容進行分析`
+
+#🧠 Server-Side Rendering的缺點是什麼？ ->->-> `使用者體驗較差、伺服器的效能消耗較大、前後端程式碼較難維護`
+
+
+#🧠 Server-Side Rendering的缺點是使用者體驗較差，具體說明 ->->-> `由於只要客戶端一發送請求，無論請求內容大小以要啥，伺服器都直接拿完整網頁傳遞至客戶端，而不是只拿到請求的變更內容。`
+
+#🧠 Server-Side Rendering的缺點是伺服器的效能消耗較大，具體說明 ->->-> `由於網頁的大部分所需要的計算都會在伺服器上`
+
+
+#🧠 Server-Side Rendering的缺點是前後端程式碼較難維護，具體說明 ->->-> `由於程式碼會由於前後端皆於後端實現，所以容易混雜在一起而導致難以維護`
+
+
 
 
 ---
