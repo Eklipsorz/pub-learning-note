@@ -22,6 +22,42 @@
         ]
       },
       {
+        "id": "ad3f55ae808ffdef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f64a3f41899b1c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d6c1c78d5ecab14a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8395ac09c02cf512",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "26c0e185ec7e6ce4",
         "type": "tabs",
         "children": [
@@ -104,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
+                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
+                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md"
+                "file": "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md"
               }
             }
           }
@@ -163,17 +199,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "30382c29f0a25968",
+  "active": "5f64a3f41899b1c7",
   "lastOpenFiles": [
+    "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
+    "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
+    "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
     "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-    "inbox/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
     "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "inbox/Untitled 8.md",
     "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
-    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
-    "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
-    "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合並轉換成**客戶端可直接以視覺呈現的檔案**，最後由伺服器將結果檔案回傳給客戶端.md"
+    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md"
   ]
 }
