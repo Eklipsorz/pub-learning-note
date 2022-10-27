@@ -123,6 +123,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2022-11-04,27,250-->
 
 #🧠 React：useImperativeHandle 用途是什麼？ ->->-> `具體是要以指定一組以DOM原生渲染指令為主的處理來賦予至對應ref物件上的current屬性`
+<!--SR:!2022-10-30,3,250-->
 
 
 #🧠 React：useImperativeHandle命名緣由源自於？ ->->-> `一組以DOM原生渲染指令為主的處理`
@@ -141,6 +142,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 
 
 #🧠 React：useImperativeHandle 語法的deps是什麼？ ->->-> `deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行`
+<!--SR:!2022-10-30,3,250-->
 
 
 #🧠 React：useImperativeHandle 語法的觸發處理時機點？ ->->-> `與useLayoutEffect一樣`

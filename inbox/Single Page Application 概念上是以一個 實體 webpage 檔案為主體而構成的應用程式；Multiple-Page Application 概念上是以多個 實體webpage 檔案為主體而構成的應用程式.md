@@ -51,8 +51,10 @@
 #🧠 webpage 概念上是什麼？ ->->-> `本身會是指存在網際網路上的hypertext 文件`
 
 #🧠 webpage 和 page有啥差別 ->->-> `並無差別`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 webpage  本身會是指存在網際網路上的hypertext 文件，具體來說->->-> `每一份webpage文件的主體會是包含JS、CSS的HTML檔案`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 每一個webpage對於瀏覽器來說是什麼？->->-> `其webpage文件會被解析並轉換成對應畫面`
 
@@ -63,6 +65,7 @@
 #🧠 Single-Page Application 的大部分Page具體是什麼？ 除了單一實體webpage檔案以外->->-> `該應用程式的 每個"Page" 都會是透過對著實體webpage進行互動而產生出來`
 
 #🧠 Single-Page Application 的Page與實體webpage檔案比較的話，會是什麼？ ->->-> `這些Page 相對於實體webpage檔案來說，是一個虛擬的webpage`
+<!--SR:!2022-10-30,3,250-->
 
 
 #🧠 Single-Page Application：網頁上請求處理都是以誰為主體來執行 ->->-> `單一實體webpage檔案的life cycle進行處理`
@@ -75,6 +78,7 @@
 #🧠 Multiple-Page Application 的Page具體是什麼？  ->->-> `該應用程式的 每個 "Page" 都是對應著不同的實體webpage檔案`
 
 #🧠 Multiple-Page Application 的狀態誰負責管理？ ->->-> `網頁上的狀態都依據page的不同來交由各自的實體webpage檔案來管理`
+<!--SR:!2022-10-30,3,250-->
 
 
 #🧠 Multiple-Page Application：網頁上的狀態都依據page的不同來交由各自的實體webpage檔案來管理 ，通常手段會是？(務必說誰的)->->-> `通常手段為儲存session並標示哪個page和哪個domain`
@@ -82,8 +86,10 @@
 #🧠 Multiple-Page Application：網頁上的狀態都依據page的不同來交由各自的實體webpage檔案來管理 ，通常手段會是？->->-> `通常手段為儲存session並標示哪個page和哪個domain`
 
 #🧠 Multiple-Page Application：網頁上請求處理都是以誰為主體來執行->->-> `所有對於網頁的請求回應都會在這些實體webpage檔案間進行`
+<!--SR:!2022-10-30,3,250-->
 
 #🧠 Multiple-Page Application：當切換成新的page時，會做些什麼？ ->->-> `載入對應HTML、CSS、JS，並且重新執行JS`
+<!--SR:!2022-10-30,3,250-->
 
 
 

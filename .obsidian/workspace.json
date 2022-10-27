@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "f7adde1e26d48a03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6219da0f81a5fc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -147,6 +165,8 @@
   },
   "active": "5375f5a362a4b63b",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
+    "inbox/React：在表格輸入欄位失焦事件中.md",
     "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
     "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
     "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
@@ -154,8 +174,6 @@
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
-    "inbox/Untitled 8.md",
-    "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
-    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md"
+    "inbox/Untitled 8.md"
   ]
 }

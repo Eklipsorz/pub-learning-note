@@ -38,13 +38,13 @@
 
 > One thing to note about module specifiers: they sometimes need to be handled differently between browsers and Node. Each host has its own way of interpreting the module specifier strings. To do this, it uses something called a module resolution algorithm, which differs between platforms. Currently, some module specifiers that work in Node won’t work in the browser, but there is [ongoing work to fix this](https://github.com/domenic/package-name-maps).
 
-關於module specifier的細節：
+關於ES module specifier的細節：
 
-1.  module specifier 可以是使用URL、本地端的相對路徑和絕對路徑
-2.  有時ES module會用在瀏覽器和伺服器端
-3.  每個平台各有自己的方法來解析module specifier
+1.  ES module specifier可以是使用URL、本地端的相對路徑和絕對路徑
+2.  ES module specifier 不一定能夠在瀏覽器和伺服器端都能支援，主要是每個平台各有自己的方法來解析module specifier
 
- module resolution algorithm 是每個平台主要用來解析module specifier所在的算法
+解法：
+ module resolution algorithm 是每個平台主要用來解析ES module specifier所在的算法
 
 
 > Until that’s fixed, browsers only accept URLs as module specifiers. They will load the module file from that URL. But that doesn’t happen for the whole graph at the same time. You don’t know what dependencies the module needs you to fetch until you’ve parsed the file… and you can’t parse the file until you fetched it.
@@ -191,14 +191,18 @@ module map 主要的用途為：
 <!--SR:!2022-12-14,82,247-->
 
 
-#🧠 ES module：module specifier 具體是什麼？ ->->-> `是指定module是源自於哪裡的module，具體可以搭配URL、本地端的相對路徑和絕對路徑`
-<!--SR:!2022-12-09,79,247-->
+#🧠 ES module：module specifier 具體是什麼形式？ ->->-> `是指定module是源自於哪裡的module，具體可以搭配URL、本地端的相對路徑和絕對路徑`
+<!--SR:!2022-10-29,2,238-->
+
+
 
 #🧠 ES module：module specifier 在每個平台上的specifier 解析都為一樣嗎？為什麼->->-> `並不一樣，具體來說ES module 標準並未說明如何獲取檔案，所以每個平台會以自己平台上所提倡的實解析方式來解析specifier，並了解對應模組哪裡`
-<!--SR:!2022-11-15,36,210-->
+
 
 #🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> ` module resolution algorithm 是每個平台主要用來解析module specifier所在的算法`
-<!--SR:!2022-10-27,36,241-->
+
+#🧠 ES module：module resolution algorithm主要解決什麼？->->-> `統一平台對於es module specifier 的解析`
+
 
 
 
