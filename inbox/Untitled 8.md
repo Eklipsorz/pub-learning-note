@@ -1,5 +1,8 @@
 ## 描述
 
+Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以virtual DOM 或者 DOM
+
+
 ### Client Side Rendering
 1. 由客戶端一端負責將使用者的請求來轉換成對應的View，而View的形式會是**DOM結構和內容上的變更結果**，主要實作方式如下：
 
