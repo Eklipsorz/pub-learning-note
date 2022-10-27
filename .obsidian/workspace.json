@@ -4,11 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "8094df3a11147636",
+        "id": "13eb2d12e39f785c",
         "type": "tabs",
+        "dimension": 40.823970037453186,
         "children": [
           {
-            "id": "dfea024ba55d7ab1",
+            "id": "054df6760df2a65a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,16 +23,17 @@
         ]
       },
       {
-        "id": "dd31c93d8095d320",
+        "id": "8fe9cfc9da83b8fe",
         "type": "tabs",
+        "dimension": 59.176029962546814,
         "children": [
           {
-            "id": "6e32496609cbb24b",
+            "id": "97cbd3b9331ab71d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
+                "file": "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
                 "mode": "source",
                 "source": false
               }
@@ -163,7 +165,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "dfea024ba55d7ab1",
+  "active": "97cbd3b9331ab71d",
   "lastOpenFiles": [
     "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
     "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
