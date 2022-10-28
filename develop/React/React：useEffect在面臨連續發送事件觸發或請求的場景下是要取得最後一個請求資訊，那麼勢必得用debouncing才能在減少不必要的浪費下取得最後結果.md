@@ -119,7 +119,7 @@ clearTimeout(timeoutID)
 
 
 #🧠 React：請用setTimeout + cleanup 程式碼來實現effect的debouncing概念 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png)`
-<!--SR:!2022-10-28,28,250-->
+<!--SR:!2023-01-10,74,250-->
 
 ---
 Status: #🌱 

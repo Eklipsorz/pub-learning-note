@@ -123,6 +123,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 <!--SR:!2022-10-30,3,250-->
 
 #🧠 為何與Server-Side Rendering 相比，CSR的webpage所需要載入的額外資料會比較多 ->->-> `CSR本身是憑藉著webpage所包含的JS bundle 來建立大部分虛擬page/webpage，JS bundle 在這會為了能建立所有webpage，會包含建立這些webpage的邏輯，致使JS bundle 與SSR 每一次載入網頁所需要載入的JS 來得大、剩下CSS和圖片的載入，通常會為了快速建立webpage而預先加載未來會用到的所有CSS和圖片`
+<!--SR:!2022-10-31,3,250-->
 
 
 ---
@@ -130,7 +131,7 @@ Status: #🌱
 Tags:
 [[Rendering]]
 Links:
-[[webpage本身的確能包含JS、圖片、CSS，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力]]
+[[webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力]]
 [[Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端]]
 References:
 [[@lindingyuanSSRCSRMingCiLiJieYingYongChangJing]]
