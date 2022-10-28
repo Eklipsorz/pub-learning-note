@@ -24,7 +24,7 @@ return (
 		- 若不滿足的話，就會查找下一個Route，一直到找到或者找不到而顯示空白
 	
 3. 使用方式為
-	- path 要註冊的path 端點，格式會是/xxxx，其中xxxx為端點，其端點以react app所在的實際URL位置為主，比如說react app URL為至
+	- path 要註冊的path 端點，格式會是/xxxx，其中xxxx為端點，其端點以react app所在的實際URL位置為主，比如說react app URL位置為xxxx1.com，那麼端點會以xxxx1.com/xxxx 來看待。
 	- Component1： 當客戶端的URL端點為path 時，就只渲染Component1對應的DOM
 ```
 import { Route } from 'react-router-dom'
