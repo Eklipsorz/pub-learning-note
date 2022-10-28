@@ -1,43 +1,99 @@
 ## 描述
 
 
-### a 標籤問題
+### anchor 標籤 對於React的問題
 
-\<a\> 標籤將使用者導向至特定頁面：重新對特定頁面端點發送請求來索要全新的webpage，這樣子的處理方式正是瀏覽器對於URL變動的預設處理
+瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage
 
-  
-
-這會導致什麼問題？
-
+這對於追求以最少DOM API操作成本來渲染出預期畫面的React 來說，會具有以下問題：
 - 效能浪費
-
-- 失去原有的VDOM和狀態：由於經歷unmount而釋放掉對應component所擁有的對應VDOM和狀態
-
+- 失去原有的Virtual DOM和狀態：由於經歷unmount而釋放掉對應component所擁有的對應Virtual DOM、狀態等資訊
 
 比如說若是放在購物車場景的話，並以購物項目為狀態，那麼這問題套用在這，會使得先前的購物項目全部遺失。
 
+#### 錯誤案例
 
-### 解法
+```
+const MainHeader = () => {
+  return (
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href='/welcome'>Welcome</a>
+          </li>
+          <li>
+            <a href='/Products'>Products</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default MainHeader;
+```
+
+
+只要點選夾帶著welcome位置和products位置的anchor 標籤就向對應端點發送新請求來索要新的網頁
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666960857/blog/react/react-router/anchor-tag-welcome_scwbdu.png)
+
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666960857/blog/react/react-router/anchor-tag-products_suhcrh.png)
+
+
+### 解法概念
 解決方式：
-
 - 設定點擊事件，並取消掉對應的預設處理，接著再以自己預期的結果來實現
-
 - 使用react-router-dom的Link component
 
 
 ### 使用react-router-dom的Link component
 react-router-dom Link ：
-
 - 是一個component，提供hyperlink功能的component
-
-- 本質上仍是\<a\>標籤所構成，並綁定點擊事件處理來取消瀏覽器對於URL變動的預設處理，再以DOM節點之間差異來從頁面1切換成頁面2
-
+- 本質上仍是\<a\>標籤所構成，其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有：
+	- 取消瀏覽器對於點擊事件的預設處理 
+	- 再以DOM節點之間差異來從頁面1切換成頁面2
+- 
 - fake navigation
-
 
 Link component
 
 - to：指定要導向的端點是什麼？
+
+> Link ： 
+> Provides declarative, accessible navigation around your application.
+
+> to: string
+
+A string representation of the Link location, created by concatenating the location’s pathname, search, and hash properties.
+
+[[@react-routerReactRouterDeclarative]]
+
+#### 案例
+
+```
+import { Link } from 'react-router-dom';
+
+const MainHeader = () => {
+  return (
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/welcome'>Welcome</Link>
+          </li>
+          <li>
+            <Link to='/Products'>Products</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default MainHeader;
+```
 
 ### anchor tag 
 [[@AnchorElementHTML]]
@@ -51,7 +107,7 @@ Link component
 >The URL that the hyperlink points to.
 
 
-
+[[@danielwalkerWhyAreThey]]
 > Originally anchor tags were used to link content within a specific large document (especially PDFs, not HTML pages), so a table of contents might contain internal anchor tags to the relative sections of the document, indexed by that table of content, for instance, and those relevant sections might contain links back to the table of contents - all within the same document. Thus the tag, acted like an anchor, dragging the view port across the document to it's point of anchor, like an anchor cable on a ship, dragging the ship across the surface of the sea to the point where the anchor was hitched. In fact, the animation that accompanied this action, often simulated this happening, to inform the user that this is what was taking place.
 
 
@@ -62,7 +118,7 @@ Link component
 - 具體是一種將特定頁面的網址/位置綁定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面，以此實現hyperlink概念
 - 用法：
 	- href ：指定要導向哪個頁面的網址/位置
-	- xxxx2 
+	- xxxx2 ：是要被綁定網址的hypertext
 ```
 <a href='xxxx'>xxxx2</a> 
 ```
@@ -87,3 +143,4 @@ Links:
 [[React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component]]
 References:
 [[@AnchorElementHTML]]
+[[@danielwalkerWhyAreThey]]
