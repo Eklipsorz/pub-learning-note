@@ -1,21 +1,39 @@
 ## 描述
 
-###
-
-至/src/index.js 來載入模組來讓App 元件擁有client-side routing服務
-
-import { BrowserRouter } from 'react-router-dom'; ：
-
-- BrowserRouter 是一個component，主要提供client-side routing服務的component
-
-- 以wrapper component形式來包含後裔元件或者子元件，使他們都會使用client-side routing服務
+### react-router-dom v5
 
 
+#### BrowserRouter 
+1. BrowserRouter 是一個component，主要提供client-side routing服務的component
+2. 以wrapper component形式來包含後裔元件或者子元件，使他們都會使用client-side routing服務
+3. 使用方式會是：
+```
+import { BrowserRouter } from 'react-router-dom'; 
+
+return (
+	<BrowserRouter> 
+		<Component />
+	<BrowserRouter />
+)
+```
+
+#### Route 
+1. Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component
+2. 以wrapper component形式來註冊對應path和對應path所能渲染的元件，具體會是：
+		- 當URL 變動時，router 會掃描Route 所定義的path是否滿足，若滿足
+3. 使用方式為
+```
+import { Route } from 'react-router-dom'
+
+return (
+	<Route path="xxx1">
+		
+	</Route>
+
+)
+```
 
 
-### 
-
-import { Route } from 'react-router-dom'：
 
 1. Route 是一個component，主要是定義特定path以及對應path會渲染出來的component
 
