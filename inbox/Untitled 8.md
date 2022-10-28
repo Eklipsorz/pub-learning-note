@@ -50,11 +50,19 @@ Link component
 > href
 >The URL that the hyperlink points to.
 
+
+
+> Originally anchor tags were used to link content within a specific large document (especially PDFs, not HTML pages), so a table of contents might contain internal anchor tags to the relative sections of the document, indexed by that table of content, for instance, and those relevant sections might contain links back to the table of contents - all within the same document. Thus the tag, acted like an anchor, dragging the view port across the document to it's point of anchor, like an anchor cable on a ship, dragging the ship across the surface of the sea to the point where the anchor was hitched. In fact, the animation that accompanied this action, often simulated this happening, to inform the user that this is what was taking place.
+
+
+
 重點
-- anchor element 是一種將特定頁面的網址/位置固定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面，以此實現hyperlink概念
+- anchor element 的 anchor 用語是較為早期用法而命名的
+	- 標籤就如同船上的錨那樣，可以會將整個viewport固定至對應網址的對應頁面上
+- 具體是一種將特定頁面的網址/位置綁定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面，以此實現hyperlink概念
 - 用法：
 	- href ：指定要導向哪個頁面的網址/位置
-	- 
+	- xxxx2 
 ```
 <a href='xxxx'>xxxx2</a> 
 ```
@@ -66,7 +74,7 @@ Link component
 
 
 重點：
-- anchor：一種將船固定在海上特定位置上的物件
+- anchor：一種彎鉤狀的金屬物件，會搭配一條強壯繩索來讓金屬物件和船身相連，用途是透過金屬物件的彎鉤和繩子來將船身固定在某一點，不能移動 
 
 ## 複習
 
