@@ -59,6 +59,8 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 - 與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多：SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源
 - SEO 會比Server-Side Rendering 來得差：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO
 
+#### 與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多
+
 
 ### 所能實現的網頁應用程式會是
 
