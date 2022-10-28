@@ -12,12 +12,12 @@
 SPA + routing 本身來說會監聽URL變動，若變動就從客戶端的JS bundle 和 實體webpage檔案來產生對應的虛擬webpage頁面，並於瀏覽器直接呈現，在這裡，客戶端並不會為了URL而索要對應的
 實體webpage頁面
 
-#### 若要實現的話
+#### 若要親自實現的話
 1. 必須關閉瀏覽器對於URL變動的預設處理
-2. 要有程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage。
+3. 要有程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage。
 
 
-#### 提供routing功能至 React 的套件
+#### 若要以能提供routing功能的套件
 
 具體套件為react-router：
 - 實現client-side routing 的第三方套件
