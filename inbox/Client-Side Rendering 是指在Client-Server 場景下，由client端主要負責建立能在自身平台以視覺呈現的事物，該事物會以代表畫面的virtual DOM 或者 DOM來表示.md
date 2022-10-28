@@ -61,7 +61,8 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 #### 與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多
 
-1. CSR本身是憑藉著webpage所包含的JS
+1. CSR本身是憑藉著webpage所包含的JS bundle 來建立大部分虛擬page/webpage，JS bundle 在這會為了能建立所有webpage，會包含建立這些webpage的邏輯，致使JS bundle 與SSR 每一次載入網頁所需要載入的JS 來得大
+2. 剩下CSS和圖片的載入，通常會為了快速建立webpage而預先加載未來會用到的所有CSS和圖片
 
 
 ### 所能實現的網頁應用程式會是
@@ -110,8 +111,6 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 #🧠 Client-Side Rendering 的缺點是什麼？(共兩個) ->->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`
 <!--SR:!2022-10-30,3,250-->
 
-#🧠 Client-Side Rendering 的缺點是與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多，具體說明 ->->-> `SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源`
-<!--SR:!2022-10-30,3,250-->
 
 #🧠 Client-Side Rendering 的缺點是SEO 會比Server-Side Rendering 來得差，具體說明 ->->-> `由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO`
 <!--SR:!2022-10-30,3,250-->
@@ -122,6 +121,8 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 #🧠 Client-Side Rendering適用場景為何 ->->-> `適用於高頻切換不同頁面且不需要SEO的網頁`
 <!--SR:!2022-10-30,3,250-->
+
+#🧠 為何與Server-Side Rendering 相比，CSR的webpage所需要載入的額外資料會比較多 ->->-> `CSR本身是憑藉著webpage所包含的JS bundle 來建立大部分虛擬page/webpage，JS bundle 在這會為了能建立所有webpage，會包含建立這些webpage的邏輯，致使JS bundle 與SSR 每一次載入網頁所需要載入的JS 來得大、剩下CSS和圖片的載入，通常會為了快速建立webpage而預先加載未來會用到的所有CSS和圖片`
 
 
 ---
