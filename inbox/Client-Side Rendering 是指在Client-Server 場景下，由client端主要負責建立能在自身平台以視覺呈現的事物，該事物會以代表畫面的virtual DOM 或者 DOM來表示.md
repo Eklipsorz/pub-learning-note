@@ -56,10 +56,12 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 > -   _SEO 較差_：因一開始的 HTML 是空白的，雖然現在 Google 的爬蟲也會等 javascript 編譯好再爬，但這塊對 SEO 的實際幫助還需要時間驗證
 
 重點：
-- 與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多：SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源
+- 與Server-Side Rendering 相比，webpage所需要載入的額外資源會比較多：SSR的每個頁面畫面都對應著實體Hypertext 文件，只需要按照該文件的指示來索要資料，由於CSR本質上會以少量的實體webpage文件為主，並且為了從這些這文件更快地延伸額外內容而預先加載網頁大部分所需要的資源
 - SEO 會比Server-Side Rendering 來得差：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO
 
 #### 與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多
+
+1. CSR本身是憑藉著webpage所包含的JS
 
 
 ### 所能實現的網頁應用程式會是
@@ -127,5 +129,7 @@ Status: #🌱
 Tags:
 [[Rendering]]
 Links:
+[[webpage本身的確能包含JS、圖片、CSS，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力]]
+[[Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端]]
 References:
 [[@lindingyuanSSRCSRMingCiLiJieYingYongChangJing]]
