@@ -25,6 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "inbox/SPA 實現client-side routing的概念，具體是要必須關閉瀏覽器對於URL變動的預設處理和程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d38cdbff04a10ded",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
@@ -32,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -158,10 +170,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "b497f571e26ba5c6",
+  "active": "d38cdbff04a10ded",
   "lastOpenFiles": [
+    "inbox/SPA 實現client-side routing的概念，具體是要必須關閉瀏覽器對於URL變動的預設處理和程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage.md",
     "inbox/client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務.md",
-    "inbox/Untitled 8.md",
     "inbox/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "inbox/webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力.md",
     "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
