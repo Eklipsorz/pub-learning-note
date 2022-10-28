@@ -49,26 +49,32 @@ export default MainHeader;
 
 
 ### 使用react-router-dom的Link component
-react-router-dom Link ：
-- 是一個component，提供hyperlink功能的component
-- 本質上仍是\<a\>標籤所構成，其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有：
-	- 取消瀏覽器對於點擊事件的預設處理 
-	- 再以DOM節點之間差異來從頁面1切換成頁面2
-- 
-- fake navigation
 
-Link component
-
-- to：指定要導向的端點是什麼？
+[[@react-routerReactRouterDeclarative]]
 
 > Link ： 
 > Provides declarative, accessible navigation around your application.
 
 > to: string
 
-A string representation of the Link location, created by concatenating the location’s pathname, search, and hash properties.
+> A string representation of the Link location, created by concatenating the location’s pathname, search, and hash properties.
 
-[[@react-routerReactRouterDeclarative]]
+
+react-router-dom Link ：
+- 是一個component，提供hyperlink功能的component
+- 本質上仍是\<a\>標籤所構成，其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有：
+	- 取消瀏覽器對於點擊事件的預設處理 
+	- 再以DOM節點之間差異來從頁面1切換成頁面2
+- 語法為：
+	- to ： 要導向的頁面位置/網址
+	- xxxx1：為被綁定網址/位置的hypertext
+```
+import { Link } from 'react-router-dom';
+
+return (
+	<Link to="xxxx">xxxx1</Link>
+)
+```
 
 #### 案例
 
