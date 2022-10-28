@@ -16,12 +16,18 @@ SPA + routing 本身來說會監聽URL變動，若變動就從客戶端的JS bun
 1. 必須關閉瀏覽器對於URL變動的預設處理
 2. 要有程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage。
 
-react router provide：client-side routing
-### client-side routing
 
-> Client side routing allows your app to update the URL from a link click without making another request for another document from the server. Instead, your app can immediately render some new UI and make data requests with `fetch` to update the page with new information.
+#### 提供routing功能至 React 的套件
 
-：由客戶端根據URL變動來產生對應的webpage提供畫面和服務
+具體套件為react-router：
+- 實現client-side routing 的第三方套件
+- 安裝方式：
+	- 其中react-router本身分為react-router和react-router-dom，後者是專門提供routing功能給支援DOM介面的react app 
+```
+npm install react-router-dom
+```
+
+
 
 
 ## 複習
@@ -32,4 +38,6 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務]]
 References:
+[[@reactrouterFeatureOverviewV6]]

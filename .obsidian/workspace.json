@@ -160,6 +160,8 @@
   },
   "active": "b497f571e26ba5c6",
   "lastOpenFiles": [
+    "inbox/client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務.md",
+    "inbox/Untitled 8.md",
     "inbox/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "inbox/webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力.md",
     "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
@@ -167,8 +169,6 @@
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
-    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
-    "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
-    "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md"
+    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md"
   ]
 }
