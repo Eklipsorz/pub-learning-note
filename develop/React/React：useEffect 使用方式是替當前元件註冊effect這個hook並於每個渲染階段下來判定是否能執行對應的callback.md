@@ -255,7 +255,7 @@ this is use effect
 <!--SR:!2022-12-21,60,250-->
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時後，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
-<!--SR:!2022-10-28,26,250-->
+<!--SR:!2023-01-05,69,250-->
 
 
 
@@ -263,7 +263,7 @@ this is use effect
 <!--SR:!2023-01-05,72,250-->
 
 #🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，React獲取到之後就會拿它來清除上一次處理所產生的非同步任務`
-<!--SR:!2022-10-28,3,250-->
+<!--SR:!2022-11-07,10,250-->
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `主要會有race condition這問題，可能沒清除到指定任務，任務就執行完或者對錯誤的任務進行處理`
 <!--SR:!2022-10-28,3,250-->

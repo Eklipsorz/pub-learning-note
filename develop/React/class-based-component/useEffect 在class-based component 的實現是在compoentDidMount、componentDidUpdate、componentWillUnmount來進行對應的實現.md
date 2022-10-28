@@ -90,7 +90,7 @@ useEffect(() => {
 
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會是什麼？ ->->-> ` componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect；若effect 本身會是觸發渲染函式，那麼勢必會遇到無限迴圈的問題，所以通常會添加條件式、執行cleanup、執行effect`
-<!--SR:!2022-10-28,10,250-->
+<!--SR:!2022-11-25,28,250-->
 
 #🧠 functional component 所能使用的useEffect 在class-based component 的實現會是什麼？ 以componentDidMount函式來說 ->->-> `componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect`
 <!--SR:!2022-11-24,28,250-->
