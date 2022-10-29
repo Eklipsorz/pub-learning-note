@@ -20,9 +20,8 @@ SPA + routing 本身來說會監聽URL變動，若變動就從客戶端的JS bun
 
 具體套件為react-router：
 - 實現client-side routing 的第三方套件
-- 根據react 能夠渲染的介面而區分成各個介面的版本，如react-router-dom
 - 安裝方式：
-	- 其中react-router本身分為react-router和react-router-dom，後者是專門提供routing功能給支援DOM介面的react app 
+	- 其中react-router本身分為react-router和react-router-dom，前者是負責提供router的核心功能，後者是基於前者的基礎來向DOM渲染介面提供對應router的功能
 ```
 npm install react-router-dom
 ```
@@ -42,16 +41,19 @@ npm install react-router-dom
 #🧠 React的react-router 是官方套件嗎？ ->->-> `不是，第三方套件`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 react-router 和 react-router-dom 之間關係是什麼？ ->->-> `前者是原包含react-router-dom的程式模組，專注提供router功能給調用者，而react-router-dom是從前者抽離出來的dom版本實現代碼，專門呼叫前者來獲取對應功能給DOM介面。`
 
+
+#🧠  react-router 和react-router-dom 提供的功能是什麼？  ->->-> ` 其中react-router本身分為react-router和react-router-dom，前者是負責提供router的核心功能，後者是基於前者的基礎來向DOM渲染介面提供對應router的功能`
 
 
 
 ---
-Status: #🌱 #📝 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
 [[client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務]]
+[[SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。]]
 References:
 [[@reactrouterFeatureOverviewV6]]
