@@ -98,7 +98,7 @@ function Child(props) {
 ## 複習
 
 #🧠 React：useEffect cleanup function 執行時機是什麼？ ->->-> `執行下一個useEffect前，會執行cleanup、component被unmount前，會執行effect cleanup`
-<!--SR:!2022-10-29,28,250-->
+<!--SR:!2023-01-11,74,250-->
 
 #🧠 當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？為什麼？ ->->-> `會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
 <!--SR:!2023-01-07,71,250-->

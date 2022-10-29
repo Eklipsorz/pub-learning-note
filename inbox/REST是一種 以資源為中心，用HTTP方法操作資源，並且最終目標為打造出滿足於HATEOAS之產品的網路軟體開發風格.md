@@ -101,7 +101,7 @@ Resource Representation State：
 <!--SR:!2022-11-06,14,249-->
 
 #🧠  Resource Representation State Transfer / REST 中的Representation是什麼？->->-> `Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等`
-<!--SR:!2022-10-29,10,250-->
+<!--SR:!2022-11-26,28,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的State是什麼？ ->->-> `簡短來說，State 是特定時間點下之特定事物所擁有的內容，Resource Representation State 則是指狀態會以特定時間點下的具體資源(所在)所擁有的內容`
@@ -115,7 +115,7 @@ Resource Representation State：
 <!--SR:!2022-11-03,10,210-->
 
 #🧠 REST整體概念是描述著如何對在網路上的任意具體化資源進行轉移或者獲取，其中在網路上有哪兩大課題？ ->->-> `- 定義每個具體化資源在網路上的位置 - 定義如何對網路上的具體化資源進行轉換`
-<!--SR:!2022-10-29,10,250-->
+<!--SR:!2022-11-26,28,250-->
 
 
 #🧠 REST：如何定義每個具體化資源在網路上的位置 ->->-> `透過URI來標明具體化資源在網路上所在的位置`

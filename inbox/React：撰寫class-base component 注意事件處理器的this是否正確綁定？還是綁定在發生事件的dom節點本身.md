@@ -119,7 +119,7 @@ export default Users;
 ## 複習
 
 #🧠 在React中的class-based component中，渲染部分設定成這樣\<button onClick=\{this.toggleUsersHandler\}\>，且toggleUsersHandler內部含有this.setState，請問若直接讓按鈕發生點擊事件，會是如何？ ->->-> `其中this會是以發生事件的dom節點來執行，但該節點別沒有setState而報錯`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-08,10,250-->
 
 #🧠 在React中的class-based component中，渲染部分設定成這樣\<button onClick=\{this.toggleUsersHandler\}\>，且toggleUsersHandler內部含有this.setState，請問若直接讓按鈕發生點擊事件，會是this會是以發生事件的dom節點來執行，如何解決？->->-> `對該函式進行bind來綁定this為對應元件類別的物件，this.toggleUsersHandler.bind(this)`
 <!--SR:!2022-11-05,7,250-->

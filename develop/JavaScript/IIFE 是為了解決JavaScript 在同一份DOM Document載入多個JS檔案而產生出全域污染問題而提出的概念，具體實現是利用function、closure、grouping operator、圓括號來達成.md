@@ -270,7 +270,7 @@ a * c + b * c // 9
 
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，若要實現1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成 這兩個目標，預期會是什麼？請用程式碼來描述 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)->->-> `定義完即為呼叫：實現模組的載入執行方式只需要一個指令就應該完成、函式名稱是匿名或者隱藏：實現預期是只需要執行一次就能使用它所擁有的功能代碼`
-<!--SR:!2022-10-29,64,250-->
+<!--SR:!2023-04-12,165,250-->
 
 
 #🧠 以下為IIFE的雛型，請問現在會出現什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658248963/blog/javascript/lexical%20scope/iife-draft_pllabp.png) ->->-> `解析器會因為一開始沒在function 之前遇到可將function 視為 function expression 的話，解析器會直接把function declaration來解析function，而它沒有函式名稱而報錯`
