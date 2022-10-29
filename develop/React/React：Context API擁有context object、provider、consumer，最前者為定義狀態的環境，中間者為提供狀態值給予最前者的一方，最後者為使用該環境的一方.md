@@ -355,7 +355,7 @@ consume
 <!--SR:!2022-11-01,27,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
-<!--SR:!2022-10-29,24,250-->
+<!--SR:!2023-01-01,64,250-->
 
 #🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
 <!--SR:!2022-11-01,28,250-->
