@@ -166,14 +166,31 @@ export default MainHeader;
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？舉例說明？->->-> `比如說若是放在購物車場景的話，並以購物項目為狀態，那麼這問題套用在這，會使得先前的購物項目全部遺失。`
 
-#🧠 ！[https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
 
-#🧠 Question :: ->->-> ``
+#🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面的anchor標籤有帶來什麼樣的效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
+
+
+#🧠 瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage，這會引發React不必要的unmount和mount，請問解決方法有什麼？ ->->-> `- 設定點擊事件，並取消掉對應的預設處理，接著再以自己預期的結果來實現 - 使用react-router-dom的Link component`
+
+#🧠 react-router-dom Link 是什麼？ ->->-> ` 是一個component，提供hyperlink功能的component`
+
+#🧠 react-router-dom Link 本質是什麼DOM節點而構成？？ ->->-> `本質上仍是\<a\>標籤所構成`
+
+#🧠 react-router-dom Link 本質上仍是\<a\>標籤所構成，那麼它要如何解決React不必要的unmount和mount？->->-> `其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有： - 取消瀏覽器對於點擊事件的預設處理  - 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2`
+
+#🧠 react-router-dom Link 語法是什麼？ ->->-> `<Link to="xxxx">xxxx1</Link>`
+
+#🧠 react-router-dom Link 要如何載入？ ->->-> `import { Link } from 'react-router-dom';`
+
+#🧠 react-router-dom Link ：\<Link to="xxxx"\>xxxx1\<\/Link\> 中的 to 和 xxxx1是什麼->->-> `	- to ： 要導向的頁面位置/網址 - xxxx1：為被綁定網址/位置的hypertext`
+
+#🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面上的anchor標籤有帶來什麼樣的效能問題？解決方式是什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667049517/blog/react/react-router/react-router-wrong-example-solution_aevrsx.png)`
+
 
 
 
 ---
-Status: #🌱 #📝 
+Status: #🌱 
 Tags:
 [[React]]
 Links:
