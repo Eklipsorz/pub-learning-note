@@ -207,11 +207,11 @@ this is use effect
 <!--SR:!2023-01-08,74,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時觸發? ->->-> `會是同個元件的生命週期函式： - mounting階段時的componentDidMount週期函式 - updating階段時的componentDidUpdate 週期函式 `
-<!--SR:!2022-10-29,28,250-->
+<!--SR:!2023-01-09,72,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
-<!--SR:!2022-10-29,28,250-->
+<!--SR:!2023-01-10,73,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在mounting階段時的componentDidMount週期函式會做什麼？ ->->-> `直接執行useEffect的callback`
 <!--SR:!2022-11-29,47,250-->

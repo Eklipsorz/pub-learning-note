@@ -125,7 +125,7 @@ flow
 <!--SR:!2022-11-08,10,250-->
 
 #🧠 在電腦科學裡，control flow是執行控制權的交接流向，白話點就是什麼？(指令、表達式的順序？)->->-> `在imperative program中的特定語句/表達式/指令/函式呼叫的執行順序會是如何`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-08,10,250-->
 
 
 #🧠 JS：async/await之前的promise會有什麼樣的問題？->->-> `then chain 製造的巢狀問題`
@@ -142,7 +142,7 @@ flow
 <!--SR:!2022-11-08,10,250-->
 
 #🧠 JS：async/await 對於 promise來說是語法糖，具體使開發難度降低，手段為何 ->->-> `實現手段為讓control flow更改成從上至下，而非從外至內來執行`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-07,9,250-->
 
 #🧠 JS：await 語法為何->->-> `await dosomething(); 
 <!--SR:!2022-11-07,9,250-->
@@ -154,7 +154,7 @@ flow
 <!--SR:!2022-11-06,8,250-->
 
 #🧠 以下面為例，請問印出順序會是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `before -> end -> setTimeout -> after`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-05,7,250-->
 
 #🧠 以下面為例，請問印出順序會是before -> setTimeout -> after -> end嗎？為什麼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `並不是，實際正確順序為before -> end -> setTimeout -> after，這是因為await實際上會把後頭的程式碼全都會被該promise的then語法包裹住，以至於會先印出before之後，執行new promise來產生非同步任務，然後執行完畢之後，接著就印出end，最後promise中的時間到了就印setTimeout，最後有了resolve，then就跟著被觸發而執行after`
 <!--SR:!2022-11-06,8,250-->
