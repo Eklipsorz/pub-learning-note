@@ -119,7 +119,7 @@ flow
 ## 複習
 
 #🧠 control 在電腦科學裡是指什麼？ ->->-> `擁有執行特定事物的權力`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-07,9,250-->
 
 #🧠 在電腦科學裡，control flow是什麼？ ->->-> `執行控制權的交接流向，從一個特定指令A擁有執行權力並執行，接著切換成下一個指令擁有執行權力並執行`
 <!--SR:!2022-11-08,10,250-->
@@ -148,10 +148,10 @@ flow
 <!--SR:!2022-10-29,3,250-->
 
 #🧠 JS：await 語法背後潛藏什麼樣語法？，以await dosomething();為例 ->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback。dosomething().then((...) => { // rest code })`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-08,10,250-->
 
 #🧠 JS：當在async function中出現這個 await dosomething(); // rest code，請問JS解析器會當成什麼來執行？->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback，`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-06,8,250-->
 
 #🧠 以下面為例，請問印出順序會是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `before -> end -> setTimeout -> after`
 <!--SR:!2022-10-29,3,250-->
@@ -162,7 +162,7 @@ flow
 
 
 #🧠 以下面為例，請問印出順序會是什麼？  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example2_xuyml4.png) ->->-> `before -> end -> setTimeout -> after-1 -> after-2 -> .... -> after-5`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-05,7,250-->
 
 
 #🧠 以下面為例，請問印出順序會是什麼？   ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666701344/blog/javascript/promise/await/await-then-example3_l1luwz.png) ->->-> `before -> end -> setTimeout -> 報錯`
