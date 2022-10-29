@@ -142,7 +142,7 @@ export default MainHeader;
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📝 
 Tags:
 [[React]]
 Links:

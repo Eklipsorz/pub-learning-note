@@ -17,7 +17,7 @@ The class to give the element when it is active. The default given class is `act
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📝 
 Tags:
 [[React]]
 Links:

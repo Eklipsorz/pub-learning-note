@@ -34,7 +34,7 @@ npm install react-router-dom
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📝 
 Tags:
 [[React]]
 Links:
