@@ -39,6 +39,7 @@ npm install react-router-dom
 #🧠 React的react-router 是什麼？ ->->-> `實現client-side routing 的第三方套件`
 
 #🧠 React的react-router 是官方套件嗎？ ->->-> `不是，第三方套件`
+<!--SR:!2022-11-01,3,250-->
 
 
 #🧠 react-router 和 react-router-dom 之間關係是什麼？ ->->-> `前者是原包含react-router-dom的程式模組，專注提供router功能給調用者，而react-router-dom是從前者抽離出來的dom版本實現代碼，專門呼叫前者來獲取對應功能給DOM介面。`
