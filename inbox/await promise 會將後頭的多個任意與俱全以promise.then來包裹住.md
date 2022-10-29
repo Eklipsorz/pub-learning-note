@@ -129,14 +129,14 @@ flow
 
 
 #🧠 JS：async/await之前的promise會有什麼樣的問題？->->-> `then chain 製造的巢狀問題`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-07,9,250-->
 
 
 #🧠 JS：await 是什麼？ ->->-> `是一個operator，專門在async function裡等待promise為主的非同步任務完成`
 <!--SR:!2022-10-29,3,250-->
 
 #🧠 JS：async/await 對於 promise來說，是什麼 ->->-> `async/await 本身是promise的語法糖`
-<!--SR:!2022-10-29,3,250-->
+<!--SR:!2022-11-08,10,250-->
 
 #🧠 JS：async/await 對於 promise來說是語法糖，為何需要這語法糖 ->->-> `專門解決then chain 製造的巢狀問題，以試著讓開發難度/維護難度降低`
 <!--SR:!2022-11-08,10,250-->

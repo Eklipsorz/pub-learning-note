@@ -111,7 +111,7 @@ function Child(props) {
 
 
 #🧠 若設定dependency為空陣列的話，元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，還是會執行useEffect的cleanup，為什麼？ ->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup`
-<!--SR:!2022-10-29,28,250-->
+<!--SR:!2023-01-11,74,250-->
 
 #🧠 若設定dependency為沒東西的話，當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？ 為什麼？ ->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
 <!--SR:!2022-10-29,28,250-->
