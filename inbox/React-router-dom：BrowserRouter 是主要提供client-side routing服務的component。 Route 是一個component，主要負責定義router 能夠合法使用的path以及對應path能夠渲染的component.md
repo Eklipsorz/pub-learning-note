@@ -37,6 +37,31 @@ return (
 )
 ```
 
+##### 案例
+```
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+);
+```
+
+```
+function App() {
+  return (
+    <div>
+      <MainHeader />
+      <Route path='/welcome'>
+        <Welcome />
+      </Route>
+      <Route path='/products'>
+        <Products />
+      </Route>
+    </div>
+  );
+}
+```
+
 ### component 若要以虛擬webpage來呈現的話
 
 若component是以虛擬webpage來呈現的話
@@ -69,8 +94,19 @@ return (
 
 #🧠 react-router-dom v5中：Route 元件的 path設定為/apple，那react app URL位置為xxxx1.com ->->-> `xxxx1.com/apple 來看待。`
 
+
+#🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
+
+
+#🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``
+
+
+#🧠 React：component 若要以虛擬webpage來呈現的話，開發者要如何區分？->->-> `將該component放置在/src/pages 或者 /src/screens`
+
+#🧠 React：\/src\/pages 存放什麼？  ->->-> `存放專門擔任對應頁面所對應的虛擬webpage之component`
+
 ---
-Status: #🌱 #📝 
+Status: #🌱
 Tags:
 [[React]]
 Links:
