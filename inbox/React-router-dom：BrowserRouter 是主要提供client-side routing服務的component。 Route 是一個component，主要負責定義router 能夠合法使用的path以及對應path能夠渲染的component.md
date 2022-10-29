@@ -17,32 +17,6 @@ return (
 )
 ```
 
-### 由Router 元件負責定義basepath
-主要有兩種Router：
-- BrowserRouter
-- HashRouter
-##### 由BrowserRouter 負責定義basepath
-
-[[@react-routerReactRouterDeclarative]]
-> A \<Router\> that uses the HTML5 history API (pushState, replaceState and the popstate event) to keep your UI in sync with the URL.
-
-
-> basename: string
-> The base URL for all locations. If your app is served from a sub-directory on your server, you’ll want to set this to the sub-directory. A properly formatted basename should have a leading slash, but no trailing slash.
-
-example
-```jsx
-<BrowserRouter basename="/calendar">
-    <Link to="/today"/> // renders <a href="/calendar/today">
-    <Link to="/tomorrow"/> // renders <a href="/calendar/tomorrow">
-    ...
-</BrowserRouter>
-```
-
-重點：
-- 若採用BrowserRouter 架構的路由結構，會由BrowserRouter來定義basepath
-- basepath主要是設定
-	- 其架構的路由結構會以什麼實際路徑作為base path或root 
 
 #### Route 
 1. Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component
@@ -90,6 +64,10 @@ return (
 
 
 #🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `格式為/xxxx，xxxx為端點`
+
+#🧠 react-router-dom v5中：Route 元件的 path 是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
+
+#🧠 react-router-dom v5中：Route 元件的 path設定為/apple，那react app URL位置為xxxx1.com ->->-> `xxxx1.com/apple 來看待。`
 
 ---
 Status: #🌱 #📝 
