@@ -47,16 +47,16 @@
         "currentTab": 1
       },
       {
-        "id": "405edbde39784aa3",
+        "id": "97080a75890a9d90",
         "type": "tabs",
         "children": [
           {
-            "id": "dcfdeb2ea132e874",
+            "id": "7c64fa6a70aaab8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component.md",
+                "file": "inbox/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
                 "mode": "source",
                 "source": false
               }
