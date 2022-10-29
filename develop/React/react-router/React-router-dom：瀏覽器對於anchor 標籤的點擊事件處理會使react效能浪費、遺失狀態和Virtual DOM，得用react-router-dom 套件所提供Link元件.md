@@ -172,6 +172,7 @@ export default MainHeader;
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？其中失去原有的Virtual DOM和狀態是其中一個問題，具體說明 ->->-> `由於經歷unmount而釋放掉對應component所擁有的對應Virtual DOM、狀態等資訊`
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？舉例說明？->->-> `比如說若是放在購物車場景的話，並以購物項目為狀態，那麼這問題套用在這，會使得先前的購物項目全部遺失。`
+<!--SR:!2022-11-01,3,250-->
 
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面的anchor標籤有帶來什麼樣的效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
@@ -183,6 +184,7 @@ export default MainHeader;
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom Link 本質是什麼DOM節點而構成？？ ->->-> `本質上仍是\<a\>標籤所構成`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom Link 本質上仍是\<a\>標籤所構成，那麼它要如何解決React不必要的unmount和mount？->->-> `其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有： - 取消瀏覽器對於點擊事件的預設處理  - 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2`
 

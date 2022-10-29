@@ -44,6 +44,7 @@ npm install react-router-dom
 
 
 #🧠 react-router 和 react-router-dom 之間關係是什麼？ ->->-> `前者是原包含react-router-dom的程式模組，專注提供router功能給調用者，而react-router-dom是從前者抽離出來的dom版本實現代碼，專門呼叫前者來獲取對應功能給DOM介面。`
+<!--SR:!2022-11-01,3,250-->
 
 
 #🧠  react-router 和react-router-dom 提供的功能是什麼？  ->->-> ` 其中react-router本身分為react-router和react-router-dom，前者是負責提供router的核心功能，後者是基於前者的基礎來向DOM渲染介面提供對應router的功能`
