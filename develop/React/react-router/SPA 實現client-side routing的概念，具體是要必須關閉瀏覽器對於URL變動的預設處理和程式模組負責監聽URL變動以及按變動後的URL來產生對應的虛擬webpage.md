@@ -37,6 +37,7 @@ npm install react-router-dom
 #🧠 React 上的SPA通常會使用什麼來實現Client-Side Routing ？ ->->-> `react-router`
 
 #🧠 React的react-router 是什麼？ ->->-> `實現client-side routing 的第三方套件`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 React的react-router 是官方套件嗎？ ->->-> `不是，第三方套件`
 <!--SR:!2022-11-01,3,250-->
@@ -46,6 +47,7 @@ npm install react-router-dom
 
 
 #🧠  react-router 和react-router-dom 提供的功能是什麼？  ->->-> ` 其中react-router本身分為react-router和react-router-dom，前者是負責提供router的核心功能，後者是基於前者的基礎來向DOM渲染介面提供對應router的功能`
+<!--SR:!2022-11-01,3,250-->
 
 
 

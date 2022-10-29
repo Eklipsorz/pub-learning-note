@@ -141,18 +141,24 @@ export default MainHeader;
 ## 複習
 
 #🧠 anchor 命名緣由是什麼？ ->->-> `anchor：一種彎鉤狀的金屬物件，會搭配一條強壯繩索來讓金屬物件和船身相連，用途是透過金屬物件的彎鉤和繩子來將船身固定在某一點，不能移動`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 的 anchor 會使element 變成何種意思？ ->->-> `標籤就如同船上的錨那樣，可以會將整個viewport固定至對應網址的對應頁面上`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 的 anchor 就如同船上的錨那樣，可以會將整個viewport固定至對應網址的對應頁面上，具體會是->->-> `具體是一種將特定頁面的網址/位置綁定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 標籤用法是什麼？->->-> `<a href='xxxx'>xxxx2</a> `
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 和 xxxx2為何？->->-> ` href ：指定要導向哪個頁面的網址/位置； xxxx2 ：是要被綁定網址的hypertext`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 語法的預設事件處理中，常見的預設事件處理會是什麼事件？->->-> `點擊anchor element的事件`
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 瀏覽器對於anchor element所實現的URL變動事件處理具體會是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 
@@ -161,6 +167,7 @@ export default MainHeader;
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？ ->->-> `效能浪費、失去原有的Virtual DOM和狀態`
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？其中效能浪費是其中一個問題，具體說明 ->->-> `由於會直接地unmount目前所對應的元件，而不是針對元件之間的DOM差異來做渲染，所以會造成效能上的不必要浪費`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？其中失去原有的Virtual DOM和狀態是其中一個問題，具體說明 ->->-> `由於經歷unmount而釋放掉對應component所擁有的對應Virtual DOM、狀態等資訊`
 
@@ -180,12 +187,15 @@ export default MainHeader;
 #🧠 react-router-dom Link 本質上仍是\<a\>標籤所構成，那麼它要如何解決React不必要的unmount和mount？->->-> `其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有： - 取消瀏覽器對於點擊事件的預設處理  - 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2`
 
 #🧠 react-router-dom Link 語法是什麼？ ->->-> `<Link to="xxxx">xxxx1</Link>`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom Link 要如何載入？ ->->-> `import { Link } from 'react-router-dom';`
 
 #🧠 react-router-dom Link ：\<Link to="xxxx"\>xxxx1\<\/Link\> 中的 to 和 xxxx1是什麼->->-> `	- to ： 要導向的頁面位置/網址 - xxxx1：為被綁定網址/位置的hypertext`
+<!--SR:!2022-11-01,3,250-->
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面上的anchor標籤有帶來什麼樣的效能問題？解決方式是什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667049517/blog/react/react-router/react-router-wrong-example-solution_aevrsx.png)`
+<!--SR:!2022-11-01,3,250-->
 
 
 
