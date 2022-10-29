@@ -52,9 +52,19 @@ npm install react-router-dom
 
 #🧠 瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage，這會引發React不必要的unmount和mount，請問解決方法有什麼？ ->->-> `- 設定點擊事件，並取消掉對應的預設處理，接著再以自己預期的結果來實現 - 使用react-router-dom的Link component`
 
-#🧠 Question :: ->->-> ``
+#🧠 react-router-dom Link 是什麼？ ->->-> ` 是一個component，提供hyperlink功能的component`
 
-#🧠 Question :: ->->-> ``
+#🧠 react-router-dom Link 本質是什麼DOM節點而構成？？ ->->-> `本質上仍是\<a\>標籤所構成`
+
+#🧠 react-router-dom Link 本質上仍是\<a\>標籤所構成，那麼它要如何解決React不必要的unmount和mount？->->-> `其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有： - 取消瀏覽器對於點擊事件的預設處理  - 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2`
+
+#🧠 react-router-dom Link 語法是什麼？ ->->-> `<Link to="xxxx">xxxx1</Link>`
+
+#🧠 react-router-dom Link 要如何載入？ ->->-> `import { Link } from 'react-router-dom';`
+
+#🧠 react-router-dom Link ：\<Link to="xxxx"\>xxxx1\<\/Link\> 中的 to 和 xxxx1是什麼->->-> `	- to ： 要導向的頁面位置/網址 - xxxx1：為被綁定網址/位置的hypertext`
+
+#🧠 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
 
 
 

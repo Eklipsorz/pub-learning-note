@@ -64,7 +64,7 @@ react-router-dom Link ：
 - 是一個component，提供hyperlink功能的component
 - 本質上仍是\<a\>標籤所構成，其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有：
 	- 取消瀏覽器對於點擊事件的預設處理 
-	- 再以DOM節點之間差異來從頁面1切換成頁面2
+	- 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2
 - 語法為：
 	- to ： 要導向的頁面位置/網址
 	- xxxx1：為被綁定網址/位置的hypertext
