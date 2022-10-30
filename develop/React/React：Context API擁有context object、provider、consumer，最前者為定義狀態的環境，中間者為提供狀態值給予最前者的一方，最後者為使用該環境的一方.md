@@ -336,7 +336,7 @@ consume
 <!--SR:!2022-12-18,55,250-->
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？流程是？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
-<!--SR:!2022-10-30,26,250-->
+<!--SR:!2023-01-07,69,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
 <!--SR:!2022-11-02,28,250-->
