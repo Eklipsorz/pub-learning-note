@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
+                "file": "inbox/webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "69aea0750d8c5dde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 9.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "5080fae8d1b390a4",
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Server-side rendering",
+                "query": "hook",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -104,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
+                "file": "inbox/Untitled 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
+                "file": "inbox/Untitled 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md"
+                "file": "inbox/Untitled 9.md"
               }
             }
           }
@@ -163,17 +176,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "83be92d7712298d7",
+  "active": "69aea0750d8c5dde",
   "lastOpenFiles": [
+    "inbox/webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力.md",
+    "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
+    "inbox/Untitled 8.md",
+    "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "develop/React/react-router/SPA 實現client-side routing的概念，具體是要必須關閉瀏覽器對於URL變動的預設處理和程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage.md",
     "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
     "develop/React/react-router/React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component.md",
-    "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
-    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
-    "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
-    "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
-    "develop/React/react-router/client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務.md"
+    "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md"
   ]
 }
