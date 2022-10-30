@@ -288,7 +288,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
-<!--SR:!2022-10-30,28,250-->
+<!--SR:!2023-01-12,74,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
 <!--SR:!2022-12-18,57,250-->
