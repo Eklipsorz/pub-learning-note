@@ -156,15 +156,19 @@ export default MainHeader;
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 語法的預設事件處理中，常見的預設事件處理會是什麼事件？->->-> `點擊anchor element的事件`
+<!--SR:!2022-11-01,2,249-->
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 瀏覽器對於anchor element所實現的URL變動事件處理具體會是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
+<!--SR:!2022-11-01,2,249-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage，這對於React的component來說什麼，是什麼？請以unmount和mount來說明？ ->->-> `對特定頁面端點發送請求來索要全新的webpage，相當於是要求React unmount目前畫面上的所有元件，並向指定path的對應component進行mount`
+<!--SR:!2022-11-01,2,249-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？ ->->-> `效能浪費、失去原有的Virtual DOM和狀態`
+<!--SR:!2022-11-02,3,250-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？其中效能浪費是其中一個問題，具體說明 ->->-> `由於會直接地unmount目前所對應的元件，而不是針對元件之間的DOM差異來做渲染，所以會造成效能上的不必要浪費`
 <!--SR:!2022-11-01,3,250-->
@@ -177,9 +181,11 @@ export default MainHeader;
 
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面的anchor標籤有帶來什麼樣的效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
+<!--SR:!2022-11-02,3,250-->
 
 
 #🧠 瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage，這會引發React不必要的unmount和mount，請問解決方法有什麼？ ->->-> `- 設定點擊事件，並取消掉對應的預設處理，接著再以自己預期的結果來實現 - 使用react-router-dom的Link component`
+<!--SR:!2022-10-31,1,230-->
 
 #🧠 react-router-dom Link 是什麼？ ->->-> ` 是一個component，提供hyperlink功能的component`
 <!--SR:!2022-11-01,3,250-->
@@ -188,11 +194,13 @@ export default MainHeader;
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom Link 本質上仍是\<a\>標籤所構成，那麼它要如何解決React不必要的unmount和mount？->->-> `其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有： - 取消瀏覽器對於點擊事件的預設處理  - 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2`
+<!--SR:!2022-11-01,2,249-->
 
 #🧠 react-router-dom Link 語法是什麼？ ->->-> `<Link to="xxxx">xxxx1</Link>`
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom Link 要如何載入？ ->->-> `import { Link } from 'react-router-dom';`
+<!--SR:!2022-11-01,2,249-->
 
 #🧠 react-router-dom Link ：\<Link to="xxxx"\>xxxx1\<\/Link\> 中的 to 和 xxxx1是什麼->->-> `	- to ： 要導向的頁面位置/網址 - xxxx1：為被綁定網址/位置的hypertext`
 <!--SR:!2022-11-01,3,250-->

@@ -81,26 +81,33 @@ function App() {
 
 
 #🧠 react-router-dom v5中：BrowserRouter 要如何載入？ ->->-> `import { BrowserRouter } from 'react-router-dom'; `
+<!--SR:!2022-11-02,3,250-->
 
 #🧠 react-router-dom v5中：如何定義router 的 route?  ->->-> `使用Route component 來定義哪個path所對應的component是什麼？`
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom v5中：Route 是什麼？功能是？->->-> `Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component`
+<!--SR:!2022-11-02,3,250-->
 
 #🧠 react-router-dom v5中：Route 元件如何定義path和對應的component？(包含載入) ->->-> `import { Route } from 'react-router-dom'; return ( <Route path="/xxx1"> <Component1 /> </Route>）`
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 react-router-dom v5中：Route 元件的path 和 Component1是什麼？ ->->-> ` path 要註冊的path 端點和Component1： 指定當客戶端的URL端點為path 時，要渲染的Component是什麼`
+<!--SR:!2022-11-02,3,250-->
 
 
 #🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `格式為/xxxx，xxxx為端點`
+<!--SR:!2022-11-02,3,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path 是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
+<!--SR:!2022-11-02,3,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path設定為/apple，那react app URL位置為xxxx1.com，那麼URL是什麼才能到/apple所設定的路徑->->-> `xxxx1.com/apple 來看待。`
+<!--SR:!2022-11-02,3,250-->
 
 
 #🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
+<!--SR:!2022-11-02,3,250-->
 
 
 #🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``
