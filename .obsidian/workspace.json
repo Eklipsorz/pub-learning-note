@@ -22,42 +22,6 @@
         ]
       },
       {
-        "id": "579dc8249bff542c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "fe30b85e9256d68c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "9dc473061d0dd154",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8dd8768172edaee1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "ff33d4e66e48fee8",
         "type": "tabs",
         "children": [
@@ -68,6 +32,42 @@
               "type": "markdown",
               "state": {
                 "file": "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "57f970725c4cf43a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "351cffa10e15d505",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "71acb9373f5145c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d27031e629a9fd76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
+                "file": "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
+                "file": "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md"
+                "file": "inbox/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md"
               }
             }
           }
@@ -199,8 +199,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "4389420b345fc07b",
+  "active": "d27031e629a9fd76",
   "lastOpenFiles": [
+    "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
     "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
@@ -209,7 +210,6 @@
     "develop/React/react-router/SPA 實現client-side routing的概念，具體是要必須關閉瀏覽器對於URL變動的預設處理和程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage.md",
     "develop/React/react-router/client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務.md",
     "inbox/Untitled 8.md",
-    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md",
-    "inbox/(待查)Router 元件負責定義basepath.md"
+    "develop/緩存用來決定哪些資料區塊先被釋放的演算法：LRU、LFU、FIFO.md"
   ]
 }

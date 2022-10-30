@@ -95,7 +95,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-11-14,19,210-->
 
 #🧠 constructor、getDerivedStateFromProps、render、React updates DOM & refs、componentDidMount 是函式嗎？ ->->-> `對`
-<!--SR:!2022-10-30,44,250-->
+<!--SR:!2023-02-16,109,250-->
 
 #🧠 React Mounting 階段下的constructor函式是做什麼？ (實例、狀態、綁定)->->-> `- 建立根據元件的prototype來建立元件實例 - 初始化元件實例設定各自的狀態、事件綁定處理`
 <!--SR:!2022-11-29,62,250-->

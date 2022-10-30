@@ -145,7 +145,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 
 
 #🧠 React：useImperativeHandle 語法的deps是什麼？ ->->-> `deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-08,9,250-->
 
 
 #🧠 React：useImperativeHandle 語法的觸發處理時機點？ ->->-> `與useLayoutEffect一樣`
@@ -156,7 +156,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2022-11-09,10,250-->
 
 #🧠  React：useImperativeHandle(ref, createHandle) 中的createHandler 回傳的內容會是設定什麼？- ->->-> ` createHandle 函式所回傳正是指定ref.current所擁有的值`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 
 ---
