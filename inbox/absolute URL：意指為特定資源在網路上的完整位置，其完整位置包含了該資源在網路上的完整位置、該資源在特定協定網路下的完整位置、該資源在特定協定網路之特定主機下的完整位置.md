@@ -102,6 +102,9 @@ https://developer.mozilla.org/en-US/docs/Learn
 ---
 Status: #🌱 
 Tags:
+[[Rendering]]
 Links:
+[[relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定]]
+[[URL 種類具體有absolute URL 和 relative URL]]
 References:
 [[@mdnWhatURLLearn]]
