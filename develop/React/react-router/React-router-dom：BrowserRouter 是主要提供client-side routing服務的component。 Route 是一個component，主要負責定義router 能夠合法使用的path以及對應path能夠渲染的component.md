@@ -90,7 +90,7 @@ function App() {
 #🧠 react-router-dom v5中：Route 元件如何定義path和對應的component？(包含載入) ->->-> `import { Route } from 'react-router-dom'; return ( <Route path="/xxx1"> <Component1 /> </Route>）`
 <!--SR:!2022-11-01,3,250-->
 
-#🧠 react-router-dom v5中：path 和 Component1是什麼？ ->->-> ` path 要註冊的path 端點和Component1： 指定當客戶端的URL端點為path 時，要渲染的Component是什麼`
+#🧠 react-router-dom v5中：Route 元件的path 和 Component1是什麼？ ->->-> ` path 要註冊的path 端點和Component1： 指定當客戶端的URL端點為path 時，要渲染的Component是什麼`
 
 
 #🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `格式為/xxxx，xxxx為端點`
@@ -111,6 +111,7 @@ function App() {
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 React：\/src\/pages 存放什麼？  ->->-> `存放專門擔任對應頁面所對應的虛擬webpage之component`
+<!--SR:!2022-11-02,3,250-->
 
 ---
 Status: #🌱
