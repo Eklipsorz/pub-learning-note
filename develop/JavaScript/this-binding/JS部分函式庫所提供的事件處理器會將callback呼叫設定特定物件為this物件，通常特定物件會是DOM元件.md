@@ -65,7 +65,7 @@ test <button id="test">
 <!--SR:!2022-11-23,28,250-->
 
 #🧠 HTML DOM 標籤上所提供onxxx標籤和事件處理的callback有何關係？->->-> `首先在這裡已定義好事件處理的函式本身，標籤是指定其函式內容`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-05,6,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是匿名函式，其callback呼叫時的this會是什麼->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
 <!--SR:!2022-11-09,10,250-->
@@ -84,7 +84,7 @@ test <button id="test">
 <!--SR:!2022-11-06,7,250-->
 
 #🧠 HTML上有這段\<button onclick="(function test() \{console.log('test', this)\})()"\>hi\<\/button\> ，請問this會是什麼？為什麼？->->-> `結果為：test Window。由於onclick本身就是在定義好的callback function設定其內容，但在這裡又是在callback function進行另一個函式的呼叫，其呼叫形式會被JS解析器判定成default binding而以window來執行`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 #🧠 \<button id="test"\>hi\<\/button\> dom.addEventListener('click', function test() \{   console.log('test', this) \}) 請問this會是什麼？->->-> `test <button id="test">`
 <!--SR:!2022-11-09,10,250-->
