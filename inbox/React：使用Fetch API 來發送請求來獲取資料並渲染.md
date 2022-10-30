@@ -180,10 +180,10 @@ function App() {
 <!--SR:!2022-10-30,10,250-->
 
 #🧠 fetch 單純意思為？ ->->-> `**去某個地方並從那帶回某個人事物**`
-<!--SR:!2022-10-30,10,250-->
+<!--SR:!2022-11-27,28,250-->
 
 #🧠 fetch vs. get 有差別嗎？有的話就說明->->-> `有，與get不同的是fetch包含 go 和 get 這意思`
-<!--SR:!2022-10-30,10,250-->
+<!--SR:!2022-11-27,28,250-->
 
 #💻 請至/react-builder/question-review/http-req-practice領取題目，並切換成fetch-api-practice 這分支，請修改以Fetch API來獲取電影資料，API 文件為https://swapi.dev/documentation#films ->->-> `https://github.com/academind/react-complete-guide-code/blob/14-sending-http-requests/code/02-sending-a-get-request/src/App.js`
 <!--SR:!2022-10-30,10,250-->

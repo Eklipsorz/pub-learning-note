@@ -90,14 +90,14 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是什麼？->->-> `- 伺服器1是主要提供特定網頁A給客戶端的伺服器 - 伺服器2是主要提供特定網頁A所需要的JS bundle的伺服器 - 伺服器3是主要提供資料來方便讓client憑藉著特定網頁A和JS bundle 來渲染出不同URL所應該要有的page畫面，page會是虛擬的`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-07,8,250-->
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是一樣的嗎？->->-> `伺服器1、伺服器2、伺服器3可以是不一樣的主機或者是全由同一台主機負責。
 <!--SR:!2022-10-30,3,250-->
 `
 
 #🧠 Client-Side Rendering 的Page組成是什麼？ ->->-> `少量的實體Webpage 和 大量建構出來的虛擬Webpage：  實體部分會是指一份實體webpage - 虛擬部分則會是N份虛擬webpage`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 #🧠 Client-Side Rendering 的優點是什麼？(共兩個) ->->-> `減少server處理渲染部分的壓力、頁面切換較快`
 <!--SR:!2022-10-30,3,250-->

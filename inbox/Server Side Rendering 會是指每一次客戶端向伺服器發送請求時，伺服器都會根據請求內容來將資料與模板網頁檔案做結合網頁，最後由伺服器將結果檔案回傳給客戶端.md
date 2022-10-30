@@ -82,10 +82,10 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 <!--SR:!2022-10-30,3,250-->
 
 #🧠 Server-Side Rendering 獲取到初始網頁之後會做些什麼？ ->->-> `便會從該網頁發送其他種類的請求，而伺服器接收到請求就會按照上述流程來產生對應的網頁給客戶端`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？ ->->-> `1. 瀏覽器針對特定網址送出請求 2. 路由器解析請求後，轉接給對應的 controller 3. controller 按照要求，透過 model 拿資料 4. controller 拿到資料後，呼叫 view template，並嵌入資料 5. 把「有資料的 template」轉換成瀏覽器可直接呈現的形式並回傳給瀏覽器 6. 瀏覽器接收檔案並以視覺形式來呈現其畫面。`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-05,6,250-->
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？請用畫面來表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1633596645/blog/network/ClientAndServer/MVCModel_dgvnhm.png)`
 <!--SR:!2022-10-30,3,250-->
@@ -101,7 +101,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 <!--SR:!2022-10-30,3,250-->
 
 #🧠 Server-Side Rendering 在每個URL下都對應著什麼？需不需要由客戶端負責什麼？ ->->-> `對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext。`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 
 #🧠 Server-Side Rendering 的SEO 會一直比Client-Side Rendering 來得好嗎？為什麼 ->->-> `不一定，由於部分搜尋引擎的爬蟲有開始針對CSR而採取額外的措施來獲取內容，爬蟲執行JS來獲取主要內容，並針對內容進行分析`
