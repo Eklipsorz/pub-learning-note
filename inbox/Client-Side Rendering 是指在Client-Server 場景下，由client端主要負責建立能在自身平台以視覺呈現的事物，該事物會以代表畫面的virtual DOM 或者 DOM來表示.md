@@ -82,11 +82,11 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 <!--SR:!2022-11-07,8,250-->
 
 #🧠 Client-Side Rendering  具體流程是什麼？->->-> `- client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 隨後client就憑藉JS bundle和網頁A來向指定伺服器索要資料來在客戶端渲染出不同URL所對應的page畫面`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 
 #🧠 Client-Side Rendering  具體流程是什麼？用畫圖表示 ->->-> `![](https://s3.ap-south-1.amazonaws.com/storage.alfabolt.com/b1e61443-a5b0-4e35-86e2-4f1ad13f657d-min.png)`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-09,10,250-->
 
 
 #🧠 Client-Side Rendering  具體流程是：-client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 其中伺服器1、伺服器2、伺服器3會是什麼？->->-> `- 伺服器1是主要提供特定網頁A給客戶端的伺服器 - 伺服器2是主要提供特定網頁A所需要的JS bundle的伺服器 - 伺服器3是主要提供資料來方便讓client憑藉著特定網頁A和JS bundle 來渲染出不同URL所應該要有的page畫面，page會是虛擬的`
@@ -120,7 +120,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 <!--SR:!2022-11-06,7,250-->
 
 #🧠 Client-Side Rendering適用場景為何 ->->-> `適用於高頻切換不同頁面且不需要SEO的網頁`
-<!--SR:!2022-10-30,3,250-->
+<!--SR:!2022-11-05,6,250-->
 
 #🧠 為何與Server-Side Rendering 相比，CSR的webpage所需要載入的額外資料會比較多 ->->-> `CSR本身是憑藉著webpage所包含的JS bundle 來建立大部分虛擬page/webpage，JS bundle 在這會為了能建立所有webpage，會包含建立這些webpage的邏輯，致使JS bundle 與SSR 每一次載入網頁所需要載入的JS 來得大、剩下CSS和圖片的載入，通常會為了快速建立webpage而預先加載未來會用到的所有CSS和圖片`
 <!--SR:!2022-10-31,3,250-->

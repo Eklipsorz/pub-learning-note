@@ -294,13 +294,13 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2022-12-18,57,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
-<!--SR:!2022-10-30,28,250-->
+<!--SR:!2023-01-11,73,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式是物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
 <!--SR:!2023-01-04,68,250-->
 
 #🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
-<!--SR:!2022-10-30,28,250-->
+<!--SR:!2023-01-12,74,250-->
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
@@ -357,7 +357,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：請畫圖來表示Component中的EventHandler、Dispatch、Reducer、State、render來表示useReduer 使用起來的關係圖 ->->-> `![](https://dmitripavlutin.com/5c33affee33e7c40e73028fb48a8367b/diagram.svg)`
-<!--SR:!2022-10-30,28,250-->
+<!--SR:!2023-01-10,72,250-->
 
 #🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
 <!--SR:!2023-01-04,69,250-->
