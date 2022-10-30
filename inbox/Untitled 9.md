@@ -18,10 +18,10 @@ https://developer.mozilla.org/en-US/docs/Learn
 ```
 
 重點：
-- absolute URL：意指為特定資源完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定主機下的完整位置，這使得它有三種形式來表示ㄑㄧ
+- absolute URL：意指為特定資源完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定主機下的完整位置，這使得它有三種形式來表示其位置
 - 主要有三種形式：
-	- Full URL：包含了protocol、host、port、path等資訊
-	- Implicit protocol：只包含
+	- Full URL：該資源在網路上的完整位置，主要由protocol、host、port、path所構成
+	- Implicit protocol：該資源在特定協定網路下的完整位置，主要由host、port、path所構成，其中protocol會採用目前所在的資源之完整位置所擁有的protocol
 
 
 ### relative URL
