@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "d9198877bf868fc3",
@@ -128,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/URL 種類具體有absolute URL 和 relative URL.md",
+                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/URL 種類具體有absolute URL 和 relative URL.md",
+                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/URL 種類具體有absolute URL 和 relative URL.md"
+                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md"
               }
             }
           }
@@ -187,12 +188,12 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "83be92d7712298d7",
+  "active": "2648fea1c0f2929c",
   "lastOpenFiles": [
-    "inbox/webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力.md",
-    "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
     "inbox/URL 種類具體有absolute URL 和 relative URL.md",
+    "inbox/webpage本身的確能包含JS、圖片、CSS並一同在同一個伺服器回傳，但會使載入資源的壓力容易集中在同一個伺服器上，所以為此會將JS、圖片、CSS存放在其他伺服器來分攤壓力.md",
+    "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "inbox/absolute URL：意指為特定資源完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置，這使得它有三種形式來表示其位置.md",
     "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
     "inbox/Untitled 8.md",
