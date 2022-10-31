@@ -24,6 +24,13 @@
 - 以固定路徑來擷取參數處理
 
 
+```
+import { useParams } from 'react-router-dom';
+
+const Component1 = (props) => {
+	const obj = useParams();
+}
+```
 
 ### useParams
 [[@react-routerReactRouterDeclarativea]]
@@ -33,7 +40,7 @@
 
 重點：
 - useParams 是react-router-dom提供的自製hook，主要會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊
-- URL parameters 資訊會以key-value pairs 或者 物件 來存放，key/屬性名稱會是當初Route 元件使用:xxxx的xxxx為主，value/屬性值則是使用:xxxx 擷取到的內容
+- URL parameters 資訊會以key-value pairs 或者 物件 來存放，key/屬性名稱會是Route 元件使用:xxxx的xxxx為主，value/屬性值則是使用:xxxx 擷取到的內容
 - 用法為
 	- useParams 會回傳URL parameters 資訊物件
 ```
@@ -42,8 +49,29 @@ const params = useParams();
 ```
 
 
+
+
+
+#### 案例
+
+當使用者輸入以下內容時，
 ```
-<Route path="/xxx1/:something">
+/xxx1/abc/efg
+```
+
+會因為Route關係而將abc擷取出來存放在something1這屬性，efg也同樣被擷取，只是按照位置和指定名稱而存放在something2這屬性，最後構成以下代表目前取出來URL parameters 資訊的物件
+
+```
+{
+	something1: abc,
+	something2: efg
+}
+```
+
+
+接著被Route component 包裹的Component1使用useParams時，就擷取URL parameters 資訊的物件。
+```
+<Route path="/xxx1/:something1/:something2">
 	<Component1 />
 </Route>
 
@@ -52,7 +80,7 @@ const params = useParams();
 import { useParams } from 'react-router-dom';
 
 const Component1 = (props) => {
-	const { something } = useParams();
+	const obj = useParams();
 }
 
 ```
@@ -63,7 +91,7 @@ const Component1 = (props) => {
 
 
 ---
-Status: #🌱 
+Status: #🌱 #📝 
 Tags:
 [[React]]
 Links:

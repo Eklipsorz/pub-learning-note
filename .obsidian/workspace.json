@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md"
               }
             }
           }
@@ -161,7 +161,7 @@
   "active": "458d732279ae0a5e",
   "lastOpenFiles": [
     "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
-    "inbox/Untitled 8.md",
+    "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
     "develop/React/react-router/react-router-dom：NavLink 在react-router中是一個component，主要是以Link元件為基礎來提示目前頁面是屬於哪個Link component.md",
     "inbox/URL 種類具體有absolute URL 和 relative URL.md",
     "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
