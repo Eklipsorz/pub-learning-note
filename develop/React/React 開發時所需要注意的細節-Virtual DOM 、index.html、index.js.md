@@ -133,7 +133,7 @@ CSS-in-JS：一種允許JavaScript能夠解析CSS內容的技術，並讓它透�
 <!--SR:!2022-11-29,70,250-->
 
 #🧠  react-dom 的 createRoot 是什麼樣功能函式？ ->->-> `用以建立React層級的Root節點 或者說Virtual DOM節點`
-<!--SR:!2022-10-31,52,250-->
+<!--SR:!2023-03-06,126,250-->
 
 #🧠   react-dom 的 createRoot 會回傳什麼樣的內容 ->->-> `Virtual DOM的Root 節點`
 <!--SR:!2022-11-11,58,250-->

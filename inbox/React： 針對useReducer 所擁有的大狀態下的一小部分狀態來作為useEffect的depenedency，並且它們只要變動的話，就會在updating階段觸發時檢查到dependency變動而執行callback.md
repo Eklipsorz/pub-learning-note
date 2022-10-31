@@ -225,7 +225,7 @@ useEffect(() => {
 <!--SR:!2022-12-29,60,250-->
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，會有什麼潛在問題？ ->->-> `當針對需要關注的狀態來觸發的話：整個狀態下的所有子狀態只要透過dispatch來改變狀態，那麼每個子狀態都能夠觸發side effect，而不是針對需要關注的狀態來觸發，這會造成不必要的效能浪費`
-<!--SR:!2022-10-31,28,250-->
+<!--SR:!2023-01-13,74,250-->
 
 #🧠 假設emailState、passwordState是分別從兩個useReducer所註冊的狀態，emailState狀態包含了email和validity，而passwordState狀態包含了password和validity，請問若下列useEffect原本只針對validity，會有什麼潛在問題？解法是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663592888/blog/react/state/useReducer/useReducer-question-example_tcgacn.png) ->->-> `- 每一次email輸入欄位或者password輸入欄位有變動就會觸發執行effect -  實際上來說只想關注在輸入欄位上的validity是否有變動`
 <!--SR:!2023-01-06,69,250-->
