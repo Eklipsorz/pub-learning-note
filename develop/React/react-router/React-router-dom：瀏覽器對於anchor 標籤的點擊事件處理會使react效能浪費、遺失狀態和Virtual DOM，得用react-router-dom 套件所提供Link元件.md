@@ -66,7 +66,7 @@ react-router-dom Link ：
 	- 取消瀏覽器對於點擊事件的預設處理 
 	- 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2
 - 語法為：
-	- to ： 要導向的頁面位置/網址
+	- to ： 要導向的頁面位置/網址，位置格式可以是relative url或者absolute url，對應的完整會依據瀏覽器來解析
 	- xxxx1：為被綁定網址/位置的hypertext
 ```
 import { Link } from 'react-router-dom';
@@ -123,7 +123,7 @@ export default MainHeader;
 	- 標籤就如同船上的錨那樣，可以會將整個viewport固定至對應網址的對應頁面上
 - 具體是一種將特定頁面的網址/位置綁定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面，以此實現hyperlink概念
 - 用法：
-	- href ：指定要導向哪個頁面的網址/位置
+	- href ：指定要導向哪個頁面的網址/位置，位置格式可以是relative url或者absolute url，對應的完整會依據瀏覽器來解析
 	- xxxx2 ：是要被綁定網址的hypertext
 ```
 <a href='xxxx'>xxxx2</a> 
@@ -157,6 +157,8 @@ export default MainHeader;
 
 #🧠 anchor element 語法的預設事件處理中，常見的預設事件處理會是什麼事件？->->-> `點擊anchor element的事件`
 <!--SR:!2022-11-01,2,249-->
+
+#🧠 Question :: ->->-> ``
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 <!--SR:!2022-11-01,3,250-->
