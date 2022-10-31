@@ -25,7 +25,7 @@ return (
 		- 若不滿足的話，就會查找下一個Route，一直到找到或者找不到而顯示空白
 	
 3. 使用方式為
-	- path 要註冊的path 端點，格式會是/xxxx，其中xxxx為端點，其端點以react app所在的實際URL位置為主，比如說react app URL位置為xxxx1.com，那麼端點會以xxxx1.com/xxxx 來看待。
+	- path 要註冊的path 端點，格式會是absolute url 或者 relative url，詳細位置會是以瀏覽器的規則來解析決定
 	- Component1： 指定當客戶端的URL端點為path 時，要渲染的Component是什麼
 ```
 import { Route } from 'react-router-dom'; 
@@ -96,14 +96,15 @@ function App() {
 <!--SR:!2022-11-02,3,250-->
 
 
-#🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `格式為/xxxx，xxxx為端點`
+#🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `path 要註冊的path 端點，格式會是absolute url 或者 relative url，詳細位置會是以瀏覽器的規則來解析決定`
 <!--SR:!2022-11-02,3,250-->
 
-#🧠 react-router-dom v5中：Route 元件的 path 是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
+#🧠 react-router-dom v5中：Route 元件的 path 通常是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
 <!--SR:!2022-11-02,3,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path設定為/apple，那react app URL位置為xxxx1.com，那麼URL是什麼才能到/apple所設定的路徑->->-> `xxxx1.com/apple 來看待。`
 <!--SR:!2022-11-02,3,250-->
+
 
 
 #🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
@@ -128,5 +129,7 @@ Links:
 [[SPA 實現client-side routing的概念，具體是要必須關閉瀏覽器對於URL變動的預設處理和程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage]]
 [[client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務]]
 [[SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。]]
+[[relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定]]
+[[absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置]]
 References:
 [[@react-routerReactRouterDeclarativea]]

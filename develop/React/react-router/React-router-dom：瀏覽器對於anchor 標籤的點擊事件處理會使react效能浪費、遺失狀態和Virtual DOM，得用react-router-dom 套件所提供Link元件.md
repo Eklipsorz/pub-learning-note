@@ -158,7 +158,9 @@ export default MainHeader;
 #🧠 anchor element 語法的預設事件處理中，常見的預設事件處理會是什麼事件？->->-> `點擊anchor element的事件`
 <!--SR:!2022-11-01,2,249-->
 
-#🧠 Question :: ->->-> ``
+#🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 格式可以是什麼？ ->->-> `absolute URL和relative URL`
+
+#🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 格式可以是absolute URL和relative URL，若位置不完整，誰來負責決定更明確更完整的位置->->-> `由瀏覽器來決定`
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 <!--SR:!2022-11-01,3,250-->
@@ -219,6 +221,8 @@ Tags:
 [[React]]
 Links:
 [[React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component]]
+[[relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定]]
+[[absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置]]
 References:
 [[@AnchorElementHTML]]
 [[@danielwalkerWhyAreThey]]
