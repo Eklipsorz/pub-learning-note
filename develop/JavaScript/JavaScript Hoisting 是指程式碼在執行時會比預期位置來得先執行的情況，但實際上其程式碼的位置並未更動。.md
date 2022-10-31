@@ -86,7 +86,7 @@ var test = 123
 <!--SR:!2022-11-14,73,250-->
 
 #🧠 請問會印出什麼東西？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658494293/blog/javascript/hoisting/function-hoisting-example_hfomaw.png) ->->-> `My cat's name is Tigger，這是因為在編譯期間就已經function宣告分配記憶體，接著在賦予一塊記憶體空間以及放置對應函式內容至其記憶體，接著再接catName這識別字對應這函式，所以在執行前就已經定義好了，只是現在拿現有的識別字對應內容來呼叫，也就是拿目前函式內容呼叫。`
-<!--SR:!2022-10-31,64,250-->
+<!--SR:!2023-04-09,160,250-->
 
 ---
 Status:  #🌱 
