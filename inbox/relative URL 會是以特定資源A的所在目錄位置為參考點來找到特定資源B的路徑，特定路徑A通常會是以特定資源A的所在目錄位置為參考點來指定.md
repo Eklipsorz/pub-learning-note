@@ -66,7 +66,8 @@ Skills/Infrastructure/Understanding_URLs
 
 ## 複習
 
-#🧠 relative URL會試試說嗎？->->-> `relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定`
+#🧠 relative URL是什麼？->->-> `relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定`
+<!--SR:!2022-11-01,1,230-->
 
 
 #🧠 假如目前存取頁面是/path1/path2/file，那麼relative URL會以什麼做為參考點？ ->->-> `/path1/path2為參考點`
@@ -91,6 +92,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 relative URL： 以當前頁面所在目錄來位移，relative URL指定路徑格式回是什麼？->->-> `路徑格式通常會是./或者../為開頭`
+<!--SR:!2022-11-03,3,250-->
 
 #🧠  relative URL：以當前頁面所在目錄來位移，舉一個路徑案例 ->->-> `../file2 或 ./file2`
 <!--SR:!2022-11-03,3,250-->
