@@ -6,12 +6,12 @@
 
 ### 基於dynamic URL 的分配
 
-- 以固定路徑來擷取參數處理，在這裡的固定路徑會是xxx1，專擷取著/xxx1/
+- 以固定路徑來擷取參數處理：在這裡的固定路徑會是xxx1，專擷取著/xxx1/為開頭的任意語句，並把xxx1/後頭的內容擷取出來，並存放至名為something的空間或者變數
 ```
 /xxx1/:something 
 ```
 
-
+以react-router-dom為例子：
 ```
 <Route path="/xxx1/:something">
 	<Component1 />
@@ -21,15 +21,41 @@
 
 #### 如何讓Component1 取得something
 
+- 以固定路徑來擷取參數處理
+
 
 
 ### useParams
+[[@react-routerReactRouterDeclarativea]]
 > useParams
 
 > useParams returns an object of key/value pairs of URL parameters. Use it to access match.params of the current \<Route\>.
 
 重點：
-- useParams 是react-router-dom提供的自製hook，主要會擷取包裹著目前component的Route component 所獲得的資訊之一 - URL parameters
+- useParams 是react-router-dom提供的自製hook，主要會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊
+- URL parameters 資訊會以key-value pairs 或者 物件 來存放，key/屬性名稱會是當初Route 元件使用:xxxx的xxxx為主，value/屬性值則是使用:xxxx 擷取到的內容
+- 用法為
+	- useParams 會回傳URL parameters 資訊物件
+```
+import { useParams } from 'react-router-dom';
+const params = useParams();
+```
+
+
+```
+<Route path="/xxx1/:something">
+	<Component1 />
+</Route>
+
+--------------
+
+import { useParams } from 'react-router-dom';
+
+const Component1 = (props) => {
+	const { something } = useParams();
+}
+
+```
 
 
 
@@ -43,3 +69,4 @@ Tags:
 Links:
 [[URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL]]
 References:
+[[@react-routerReactRouterDeclarativea]]
