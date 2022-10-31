@@ -96,7 +96,7 @@ function name(param0, param1, /* … ,*/ paramN) {
 <!--SR:!2023-01-06,84,230-->
 
 #🧠 function declaration 是什麼？  ->->-> `function declaration 是向系統告知 特定函式的存在 以及 特定識別字對應著存放函式內容的記憶體區塊`
-<!--SR:!2022-10-31,66,250-->
+<!--SR:!2023-04-14,165,250-->
 
 #🧠 具體如何實現function declaration->->-> `具體會使用function關鍵字、function名稱、function引數、function裡的語法來宣告函式的存在，並分配記憶體來存放對應函式內容，並讓function名稱去對應`
 <!--SR:!2023-01-20,113,250-->

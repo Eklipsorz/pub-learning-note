@@ -46,7 +46,7 @@ const value = useContext(context)
 <!--SR:!2022-12-27,59,250-->
 
 #🧠 useContext 在元件上代表著？ ->->-> ` useContext 是React內建的HOOK，會註冊每個元件下`
-<!--SR:!2022-10-31,26,250-->
+<!--SR:!2022-11-13,13,230-->
 
 #🧠 useContext  用途是什麼？ ->->-> `替代context object的consumer component來使用狀態值、獲取指定context object的目前狀態值`
 <!--SR:!2022-11-03,28,250-->
@@ -64,7 +64,7 @@ const value = useContext(context)
 <!--SR:!2022-11-01,26,250-->
 
 #🧠 useContext(contex) 這樣對於React的useContext的用法是對的嗎->->-> `對，只能填入Context object`
-<!--SR:!2022-10-31,26,250-->
+<!--SR:!2023-01-08,69,250-->
 
 
 ---
