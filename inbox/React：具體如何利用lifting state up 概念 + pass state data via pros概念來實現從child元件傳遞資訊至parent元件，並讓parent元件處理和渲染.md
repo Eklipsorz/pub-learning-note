@@ -71,13 +71,13 @@ So in that parent component which has access to both involved components by lift
 
 
 #🧠 React：特定元件A的狀態註冊在其parent元件上，特定元件A和parent元件的狀態所有權分別如何？ ->->-> `特定元件A由於轉移狀態，所以沒有被轉移過的狀態，而parent元件擁有特定元件A的狀態`
-<!--SR:!2022-10-31,28,250-->
+<!--SR:!2023-01-13,74,250-->
 
 #🧠 React：特定元件A利用lifting state up方式傳遞自己狀態至其parent元件上，特定元件A和parent元件的狀態所有權分別如何？ ->->-> `特定元件A和parent元件的狀態還保有原有樣子`
 <!--SR:!2023-01-13,74,250-->
 
 #🧠 React：lifting state up vs.  特定元件A的狀態改註冊至其parent元件 差異是什麼？(簡答)->->-> `差異：狀態所有權、傳遞狀態方向`
-<!--SR:!2022-10-31,28,250-->
+<!--SR:!2023-01-13,74,250-->
 
 #🧠 React：特定元件A利用lifting state up方式傳遞自己狀態至其parent元件上，特定元件A和parent元件的傳遞狀態方向是？ ->->-> `lifting state up純粹將目前元件上的狀態往上傳遞至其parent元件，讓parent元件接收到並處理`
 <!--SR:!2022-12-29,63,250-->
