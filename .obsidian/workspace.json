@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
+                "file": "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useCallback",
+                "query": "請問會印出什麼東西",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
+                "file": "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
+                "file": "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md"
+                "file": "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md"
               }
             }
           }
@@ -146,6 +146,7 @@
   },
   "active": "79ae69ab92402ee5",
   "lastOpenFiles": [
+    "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
     "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
     "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
@@ -154,7 +155,6 @@
     "inbox/URL 種類具體有absolute URL 和 relative URL.md",
     "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
-    "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "develop/React/React：useContext 是React內建的HOOK，專門替當前元件取得指定context object的目前值.md"
   ]
 }
