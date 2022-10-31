@@ -111,7 +111,7 @@ render
 ## 複習
 
 #🧠 React：useEffect 本身在functional component是按照生命週期函式執行？還是如何？ ->->-> `本身會按照函式呼叫那樣按照順序，執行到呼叫就執行呼叫`
-<!--SR:!2022-10-31,2,230-->
+<!--SR:!2022-11-04,4,230-->
 
 #🧠 React：useEffect 本身和useEffect(callback, \[deps\])中的callback、deps之間差異為何？ ->->-> `useEffect本身在functional component會是個函式呼叫，執行到就呼叫，而callback、deps則是按照元件的生命週期函式來執行。`
 <!--SR:!2022-11-08,10,250-->
