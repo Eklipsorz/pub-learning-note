@@ -4,42 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "865f50a0b83b2987",
+        "id": "2f8926992e0cb073",
         "type": "tabs",
         "children": [
           {
-            "id": "79ae69ab92402ee5",
+            "id": "8e986c9d054feb99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/react-router-dom：NavLink 在react-router中是一個component，主要是以Link元件為基礎來提示目前頁面是屬於哪個Link component.md",
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dded677c46ac854c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "2f8926992e0cb073",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8e986c9d054feb99",
+            "id": "458d732279ae0a5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -117,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -176,8 +157,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "dded677c46ac854c",
+  "active": "8e986c9d054feb99",
   "lastOpenFiles": [
+    "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+    "inbox/Untitled 8.md",
     "develop/React/react-router/react-router-dom：NavLink 在react-router中是一個component，主要是以Link元件為基礎來提示目前頁面是屬於哪個Link component.md",
     "inbox/URL 種類具體有absolute URL 和 relative URL.md",
     "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
@@ -185,8 +168,6 @@
     "develop/JavaScript/JavaScript Hoisting 是指程式碼在執行時會比預期位置來得先執行的情況，但實際上其程式碼的位置並未更動。.md",
     "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
-    "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
-    "inbox/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
-    "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md"
+    "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md"
   ]
 }
