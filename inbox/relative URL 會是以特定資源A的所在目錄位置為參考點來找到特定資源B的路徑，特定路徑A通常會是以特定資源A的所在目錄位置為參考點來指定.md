@@ -73,9 +73,11 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2022-11-03,3,250-->
 
 #🧠 relative URL 對於URL構造來說，其path、protocol、host、port會如何被決定 ->->-> `在這裡除了path以外，其餘的protocol、host、port會和目前存取頁面的路徑擁有的protocol、host、port一樣。`
+<!--SR:!2022-11-03,3,250-->
 
 
 #🧠 relative URL實現方式哪兩種？ ->->-> `直接從當前頁面所在目錄找、以當前頁面所在目錄來位移`
+<!--SR:!2022-11-03,3,250-->
 
 #🧠 relative URL： 直接從當前頁面所在目錄找， relative URL指定路徑格式會是什麼->->-> `路徑格式會是開頭不夾帶/`
 <!--SR:!2022-11-03,3,250-->
@@ -85,25 +87,32 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 relative URL： 假如指定路徑為dir/file，且目前頁面路徑為path1/file，那麼瀏覽器如何找->->-> `假如目前頁面路徑為path1/file，那麼瀏覽器就會試著在path1下面找到dir這個目錄，然後再從那找到file。`
+<!--SR:!2022-11-03,3,250-->
 
 
 #🧠 relative URL： 以當前頁面所在目錄來位移，relative URL指定路徑格式回是什麼？->->-> `路徑格式通常會是./或者../為開頭`
 
 #🧠  relative URL：以當前頁面所在目錄來位移，舉一個路徑案例 ->->-> `../file2 或 ./file2`
+<!--SR:!2022-11-03,3,250-->
 
 
 
 #🧠 假如目前頁面路徑為path1/path2/file，那麼瀏覽器面對\.\.\/file2和\.\/file2這些路徑會如何找？ ->->-> `假如目前頁面路徑為path1/path2/file，那麼就會以path1/path2為參考點來位移，第一個則是朝著path1這目錄來找到file2，第二個則是以當前目錄所在來找到file2，也就是path2/file2`
+<!--SR:!2022-11-03,3,250-->
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為exampledir/example1，那麼瀏覽器會解析成path1/path2/file/exampledir/example1嗎？ 為什麼？->->-> `並不對，它會看頁面所在的目錄所在，也就是path1/path2，所以當指定路徑為exampledir/example1，那麼就是在path1/path2找到exampledir目錄，然後再從那找到example1，也就是path1/path2/exampledir/example1`
+<!--SR:!2022-11-03,3,250-->
 
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為../dir1/example1，那麼瀏覽器會解析成path1/path2/dir1/example1嗎？ 為什麼？->->-> `並不對，它看頁面所在的目錄所在，也就是path1/path2，在這裡指定../，那麼就會在path1目錄找到dir1這目錄，然後從那找到example1，整體就是path1/dir1/example1`
+<!--SR:!2022-11-03,3,250-->
 
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為Skills/Infrastructure/Understanding_URLs，會找到哪個位置？為什麼？->->-> `直接從當前頁面所在目錄找：它會直接從hi.html所在的目錄找到以下內容，也就是https://developer.mozilla.org/en-US/docs/Learn/Skills/Infrastructure/Understanding_URLs`
+<!--SR:!2022-11-03,3,250-->
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為../CSS/display，會找到哪個位置？為什麼？->->-> `以當前頁面所在目錄來位移：它會直接以hi.html所在的目錄路徑為參考點，也就是https://developer.mozilla.org/en-US/docs/Learn為參考點，然後往前位移一個目錄，也就是https://developer.mozilla.org/en-US/docs/，最後會是https://developer.mozilla.org/en-US/docs/CSS/display`
+<!--SR:!2022-11-03,3,250-->
 
 
 
