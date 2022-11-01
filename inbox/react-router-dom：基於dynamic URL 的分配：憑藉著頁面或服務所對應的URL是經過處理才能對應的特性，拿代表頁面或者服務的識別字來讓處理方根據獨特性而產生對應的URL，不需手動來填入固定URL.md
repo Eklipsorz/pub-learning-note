@@ -132,5 +132,6 @@ Tags:
 [[React]]
 Links:
 [[URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL]]
+[[named parameters 或 named argument 是指作為參數來進行特定處理的內容，其內容會以特定名稱來命名標記，以便能在處理時方便辨認]]
 References:
 [[@react-routerReactRouterDeclarativea]]
