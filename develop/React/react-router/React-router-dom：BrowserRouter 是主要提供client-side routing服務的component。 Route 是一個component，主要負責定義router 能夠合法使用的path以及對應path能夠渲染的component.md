@@ -20,9 +20,7 @@ return (
 
 #### Route 
 1. Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component
-2. 以wrapper component形式來註冊對應path和對應path所能渲染的元件，具體會是當URL 變動時：
-		- router 會掃描每個Route 所定義的path是否滿足，若滿足的話，就以對應的元件來渲染，並停止掃描；
-		- 若不滿足的話，就會查找下一個Route，一直到找到或者找不到而顯示空白
+2. 以wrapper component形式來註冊對應path和對應path所能渲染的元件
 	
 3. 使用方式為
 	- path 要註冊的path 端點，格式會是absolute url 或者 relative url，詳細位置會是以瀏覽器的規則來解析決定
@@ -36,6 +34,37 @@ return (
 	</Route>
 )
 ```
+
+##### Router 的 Route 預設遍歷方式
+
+假若沒使用switch 元件的話，而採取預設遍歷方式：
+- 其遍歷的觸發時間是：當目前綁定Router的頁面發生URL變動時
+- 遍歷：
+	- 會按照現有的Route由上往下找，其matching的實現會是由Route元件來決定，可以是fuzzy matching 或者 exact matching 來比對變動後的URL和path是否一樣。
+	- 當變動後的URL滿足當前Route，就以Route包含的後裔節點來印出
+```
+<Route path="path1">
+	<Component1 />
+</Route>
+
+<Route path="path2">
+	<Component2 />
+</Route>
+
+
+<Route path="path3">
+	<Component3 />
+</Route>
+
+<Route path="path4">
+	<Component4 />
+</Route>
+
+
+```
+
+
+
 
 ##### 案例
 ```
