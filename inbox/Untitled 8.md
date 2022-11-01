@@ -3,11 +3,17 @@
 ### Router 的 Route 預設遍歷方式
 
 假若沒使用switch 元件的話，而採取預設遍歷方式：
-- 其遍歷的觸發時間是：當目前綁定Router的頁面發生URL變動時
+- 其遍歷的觸發時間是：當目前綁定Router的webpage發生URL變動時
 - 遍歷：
-	- 會按照現有的Route由上往下找，其path matching的實現會是由Route元件來決定，可以是fuzzy matching 或者 exact matching 來比對變動後的URL和path是否一樣。
+	- 會按照Router所定義的Route由上往下找，其path matching的實現會是由Route元件來決定，可以是fuzzy matching 或者 exact matching 來比對變動後的URL和path是否一樣。
 	- 當變動後的URL滿足當前Route所指定的path，就以Route包含的後裔節點來渲染，接著再往下找下一個Route來比對，直到沒Route可遍歷
 	- 當變動後的URL不滿足當前Route所指定的path，就再往下找下一個Route來比對，直到沒Route可遍歷
+
+###
+
+```
+
+```
 
 #### 若多個Route被滿足的話
 
@@ -55,6 +61,25 @@
 ## 複習
 
 
+#🧠 react-router ：當目前綁定Router的webpage發生URL變動時，Router會做什麼？ ->->-> `會按照Router所定義的Route由上往下找、當變動後的URL滿足當前Route所指定的path，就以Route包含的後裔節點來渲染，接著再往下找下一個Route來比對，直到沒Route可遍歷、當變動後的URL不滿足當前Route所指定的path，就再往下找下一個Route來比對，直到沒Route可遍歷`
+
+#🧠 react-router：Router 的 Route預設遍歷方式是何時被觸發？->->-> `當目前綁定Router的webpage發生URL變動時`
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+
+#🧠 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667308798/blog/react/react-router/Route-component/two-paths-react-router-route_dxxb2b.png)->->-> ``
+
+#🧠 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667308798/blog/react/react-router/Route-component/four-paths-react-router-route_enznvc.png)->->-> ``
 
 
 
