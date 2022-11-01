@@ -73,21 +73,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "49e98457c1b313e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -154,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -213,8 +200,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "49e98457c1b313e6",
+  "active": "8f021f34c8b5d0ea",
   "lastOpenFiles": [
+    "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md",
     "inbox/Untitled 8.md",
     "inbox/Untitled 9.md",
     "develop/React/react-router/React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component.md",
@@ -223,7 +211,6 @@
     "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
     "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "develop/React/react-router/client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務.md",
-    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md",
-    "develop/render/HTML：form 標籤會有屬性、預設事件處理、如何觸發事件、提交.md"
+    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md"
   ]
 }

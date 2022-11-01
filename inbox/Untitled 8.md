@@ -17,11 +17,11 @@
 
 
 重點：
-- 若在Route元件添加exact
+- 若在Route元件添加exact，當被Router挑選到Route時，會以exact matching來比對目前URL和path所指定的路徑是否完全一致
 ```
 <Route path="..." exact />
 ```
-
+- 若沒在Route元件上添加exact，當被Router挑選到Route時，會以path版本的正規表達式來比對
 #### 若多個Route被滿足的話
 
 若多個Route被滿足的話，就會共同在同一個虛擬webpage上渲染多個Component1，比如說以下兩個被滿足的Route
@@ -96,4 +96,5 @@ Tags:
 [[React]]
 Links:
 [[React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component]]
+[[React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值]]
 References:
