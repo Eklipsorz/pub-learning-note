@@ -159,8 +159,10 @@ export default MainHeader;
 <!--SR:!2022-11-05,4,249-->
 
 #🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 格式可以是什麼？ ->->-> `absolute URL和relative URL`
+<!--SR:!2022-11-03,2,249-->
 
 #🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 格式可以是absolute URL和relative URL，若位置不完整，誰來負責決定更明確更完整的位置->->-> `由瀏覽器來決定`
+<!--SR:!2022-11-03,2,249-->
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 <!--SR:!2022-11-10,9,250-->
