@@ -241,7 +241,7 @@ consume
 <!--SR:!2022-11-02,28,250-->
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
-<!--SR:!2022-11-01,28,250-->
+<!--SR:!2023-01-14,74,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
 <!--SR:!2022-12-31,64,250-->
@@ -318,7 +318,7 @@ consume
 
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
-<!--SR:!2022-11-01,27,250-->
+<!--SR:!2023-01-09,69,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
 <!--SR:!2022-11-02,28,250-->
@@ -358,7 +358,7 @@ consume
 <!--SR:!2023-01-01,64,250-->
 
 #🧠 React：context 如何建立？->->-> `使用createContext 建立一個context 物件，並引入至其他檔案來使用`
-<!--SR:!2022-11-01,28,250-->
+<!--SR:!2023-01-14,74,250-->
 
 #🧠 React：若有元件使用consumer 來存取對應context的值且有多個同個context的provider，請問具體來說它是如何存取context？ ->->-> `當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容`
 <!--SR:!2022-11-02,28,250-->
