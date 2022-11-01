@@ -100,7 +100,7 @@ position: sticky;
 <!--SR:!2023-01-01,74,250-->
 
 #🧠 positioned element 是指該元素是可受到top、bottom、left、right這四種屬性值來調整其位置，具體是什麼？ ->->-> `通常會是指帶有poition：relative | absolute | fixed | sticky 的元素`
-<!--SR:!2022-11-01,31,230-->
+<!--SR:!2023-01-15,75,230-->
 
 #🧠 position 為static的元素是算positioned element？還是non-positioned element?  ->->-> `non-positioned element`
 <!--SR:!2022-12-28,70,250-->

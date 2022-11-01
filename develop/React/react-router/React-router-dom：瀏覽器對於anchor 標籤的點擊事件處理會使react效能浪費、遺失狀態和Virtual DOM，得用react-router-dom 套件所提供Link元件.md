@@ -150,7 +150,7 @@ export default MainHeader;
 <!--SR:!2022-11-01,3,250-->
 
 #🧠 anchor element 標籤用法是什麼？->->-> `<a href='xxxx'>xxxx2</a> `
-<!--SR:!2022-11-01,3,250-->
+<!--SR:!2022-11-11,10,250-->
 
 #🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 和 xxxx2為何？->->-> ` href ：指定要導向哪個頁面的網址/位置； xxxx2 ：是要被綁定網址的hypertext`
 <!--SR:!2022-11-11,10,250-->
@@ -163,7 +163,7 @@ export default MainHeader;
 #🧠 anchor element 語法：\<a href='xxxx'\>xxxx2\<\/a\> 中的href 格式可以是absolute URL和relative URL，若位置不完整，誰來負責決定更明確更完整的位置->->-> `由瀏覽器來決定`
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
-<!--SR:!2022-11-01,3,250-->
+<!--SR:!2022-11-10,9,250-->
 
 #🧠 瀏覽器對於anchor element所實現的URL變動事件處理具體會是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 <!--SR:!2022-11-06,5,249-->

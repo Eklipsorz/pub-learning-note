@@ -184,7 +184,7 @@ this is use effect
 
 
 #🧠 在React中，當元件本身寫上effect hook，請問週期上(mounting、updating、unmounting)會讓effect 有什麼表現 ->->-> `mounting 直接執行effect、updating檢查dependency看是否變動，有變動就先執行cleanup，後看depenedency是否變動來決定執行effect、unmounting 是直接執行cleanup`
-<!--SR:!2022-11-01,28,250-->
+<!--SR:!2023-01-14,74,250-->
 
 
 #🧠 React：useEffect 本身在functional component會像是什麼？主要會做什麼 ->->-> `useEffect 語法：functional component 是像是function呼叫執行useEffect呼叫，其中會替當前元件註冊effect`
