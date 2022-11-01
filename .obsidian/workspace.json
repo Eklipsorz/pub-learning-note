@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ee1230616b0ffb2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "b2c2128bf344c408",
@@ -176,7 +163,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "ee1230616b0ffb2a",
+  "active": "9185666da29efe42",
   "lastOpenFiles": [
     "inbox/named parameters 或 named argument 是指作為參數來進行特定處理的內容，其內容會以特定名稱來命名標記，以便能在處理時方便辨認.md",
     "inbox/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
