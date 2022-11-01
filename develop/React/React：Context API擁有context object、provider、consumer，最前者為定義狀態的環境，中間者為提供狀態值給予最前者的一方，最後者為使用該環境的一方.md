@@ -235,7 +235,7 @@ consume
 
 
 #🧠 provider-consumer problem / producer-consumer problem 套用在Context 、Provider、Consumer就會是什麼？畫張圖表示一下->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665139517/blog/react/context/context-provider-consumer_o2zh2p.png)`
-<!--SR:!2022-11-01,28,250-->
+<!--SR:!2023-01-14,74,250-->
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
 <!--SR:!2022-11-02,28,250-->
@@ -292,7 +292,7 @@ consume
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
-<!--SR:!2022-11-01,28,250-->
+<!--SR:!2023-01-14,74,250-->
 
 
 #🧠 React：Context中的Provider Component 用途是什麼？ ->->-> `將自己所提供的狀態值設定在對應的Context上、讓被包覆的元件能夠看得見該provider component對於context object的內容`
