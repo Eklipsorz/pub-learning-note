@@ -9,10 +9,17 @@
 	- 當變動後的URL滿足當前Route所指定的path，就以Route包含的後裔節點來渲染，接著再往下找下一個Route來比對，直到沒Route可遍歷
 	- 當變動後的URL不滿足當前Route所指定的path，就再往下找下一個Route來比對，直到沒Route可遍歷
 
-###
+### Route 的 path matching
 
+
+> exact: bool
+> When true, will only match if the path matches the location.pathname exactly.
+
+
+重點：
+- 若在Route元件添加exact
 ```
-
+<Route path="..." exact />
 ```
 
 #### 若多個Route被滿足的話
