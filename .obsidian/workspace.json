@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md"
               }
             }
           }
