@@ -9,13 +9,13 @@
 > How is this different than just using a bunch of \<Route\>s?
 
 重點：
-- switch 是一個元件，最主要是根據目前切換後的URL和後裔Route元件所擁有path是否滿足或者一樣來決定其渲染的control flow
+- switch 是一個元件，最主要是根據目前切換後的URL和後裔Route元件所擁有path是否滿足或者一樣來決定其渲染的control flow，具體則是當Switch中的任一Route上的path滿足於目前切換的path，就跳出Switch以外來停止後續的Route挑選。
 - 載入方式：
 ```
 import { Switch } from 'react-router-dom';
 ```
 - 使用方式：
-	- 當Switch中的任一Route上的path滿足於目前切換的path，
+	- 當Switch中的任一Route上的path滿足於目前切換的path，就跳出Switch以外來停止後續的Route挑選
 ```
 <Switch>
 	<Route path=path1 />
@@ -25,7 +25,7 @@ import { Switch } from 'react-router-dom';
 </Switch>
 ```
 
-### 在沒採用switch 下的Route 遍歷所造成的問題 - 
+### 在沒採用switch 下的Route 遍歷所造成的問題 
 
 切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，若使用者對著以下端點進行切換的話，會因為會同時滿足第二個Route和第三個Route所設定的path而將Products元件和ProductDetails元件同時在目前webpage顯示
 
@@ -52,9 +52,42 @@ import { Switch } from 'react-router-dom';
 ```
 
 #### 解法概念
-1. 使用Switch 元件 + 改變Route順序
-2. 使用Switch 元件 ＋ 添加exact matching
+1. 使用Switch 元件 + 改變Route順序：改變的順序是\/products\/\:productId 和 \.products
+```
+  return (
+    <Switch>
+      <MainHeader />
+      <Route path='/welcome'>
+        <Welcome />
+      </Route>
+      <Route path='/products/:productId'>
+        <ProductDetails />
+      </Route>
+      <Route path='/products'>
+        <Products />
+      </Route>
+    </Switch>
+  );
+```
 
+
+2. 使用Switch 元件 ＋ 添加exact matching：添加exact至\/products的Route上，當挑選到它時，就以exact matching來比對目前URL和path是否完全一致，只要有點不一樣，都會被認為不一樣
+```
+  return (
+    <Switch>
+      <MainHeader />
+      <Route path='/welcome'>
+        <Welcome />
+      </Route>
+      <Route path='/products' exact>
+        <Products />
+      </Route>
+      <Route path='/products/:productId'>
+        <ProductDetails />
+      </Route>
+    </Switch>
+  );
+```
 ## 複習
 
 
@@ -65,4 +98,4 @@ Tags:
 Links:
 [[react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route]]
 References:
-[[@react-routerReactRouterDeclarativea]]
+[[@react-routerReactRouterDeclarativea]] 
