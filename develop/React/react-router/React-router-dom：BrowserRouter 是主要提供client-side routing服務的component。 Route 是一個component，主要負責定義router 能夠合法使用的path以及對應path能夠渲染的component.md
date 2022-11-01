@@ -35,37 +35,6 @@ return (
 )
 ```
 
-##### Router 的 Route 預設遍歷方式
-
-假若沒使用switch 元件的話，而採取預設遍歷方式：
-- 其遍歷的觸發時間是：當目前綁定Router的頁面發生URL變動時
-- 遍歷：
-	- 會按照現有的Route由上往下找，其matching的實現會是由Route元件來決定，可以是fuzzy matching 或者 exact matching 來比對變動後的URL和path是否一樣。
-	- 當變動後的URL滿足當前Route，就以Route包含的後裔節點來印出
-```
-<Route path="path1">
-	<Component1 />
-</Route>
-
-<Route path="path2">
-	<Component2 />
-</Route>
-
-
-<Route path="path3">
-	<Component3 />
-</Route>
-
-<Route path="path4">
-	<Component4 />
-</Route>
-
-
-```
-
-
-
-
 ##### 案例
 ```
 root.render(
