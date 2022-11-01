@@ -61,7 +61,7 @@ const value = useContext(context)
 <!--SR:!2022-12-16,52,250-->
 
 #🧠 useContext(context.Consumer) 這樣對於React的useContext的用法是對的嗎->->-> `不對，只能填入Context object`
-<!--SR:!2022-11-01,26,250-->
+<!--SR:!2023-01-08,68,250-->
 
 #🧠 useContext(contex) 這樣對於React的useContext的用法是對的嗎->->-> `對，只能填入Context object`
 <!--SR:!2023-01-08,69,250-->

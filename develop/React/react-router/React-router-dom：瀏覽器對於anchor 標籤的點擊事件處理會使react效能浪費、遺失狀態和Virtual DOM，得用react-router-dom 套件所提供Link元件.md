@@ -147,7 +147,7 @@ export default MainHeader;
 <!--SR:!2022-11-10,9,250-->
 
 #🧠 anchor element 的 anchor 就如同船上的錨那樣，可以會將整個viewport固定至對應網址的對應頁面上，具體會是->->-> `具體是一種將特定頁面的網址/位置綁定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面`
-<!--SR:!2022-11-01,3,250-->
+<!--SR:!2022-11-11,10,250-->
 
 #🧠 anchor element 標籤用法是什麼？->->-> `<a href='xxxx'>xxxx2</a> `
 <!--SR:!2022-11-11,10,250-->
@@ -181,7 +181,7 @@ export default MainHeader;
 <!--SR:!2022-11-02,3,250-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？舉例說明？->->-> `比如說若是放在購物車場景的話，並以購物項目為狀態，那麼這問題套用在這，會使得先前的購物項目全部遺失。`
-<!--SR:!2022-11-01,3,250-->
+<!--SR:!2022-11-10,9,250-->
 
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面的anchor標籤有帶來什麼樣的效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
