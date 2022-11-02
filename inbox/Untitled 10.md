@@ -27,8 +27,10 @@ return (
 
 
 ##### 舉例
+
+假設在path1呈現的頁面會是設定以下Route，但實際上必須要讓URL切換成/path2才能滿足，然而當切換至那URL，就以/path
 ```
-<Route path=
+<Route path=/path2 />
 ```
 
 ###
