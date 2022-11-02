@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,16 +35,16 @@
         "currentTab": 1
       },
       {
-        "id": "0f529229ae5c282d",
+        "id": "07d44268fe502808",
         "type": "tabs",
         "children": [
           {
-            "id": "493e4e7fcfb42c79",
+            "id": "74e1e976ba8f6dda",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md"
+                "file": "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md"
               }
             }
           }
@@ -176,11 +176,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "673bafcf0104f9cf",
+  "active": "54f1408607a7d4ca",
   "lastOpenFiles": [
-    "inbox/Untitled 8.md",
-    "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
     "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md",
+    "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
+    "inbox/Untitled 8.md",
     "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
     "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
     "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
