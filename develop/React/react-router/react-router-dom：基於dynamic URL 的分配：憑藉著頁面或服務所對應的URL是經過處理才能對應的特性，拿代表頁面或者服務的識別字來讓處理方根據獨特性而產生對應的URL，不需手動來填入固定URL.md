@@ -96,36 +96,48 @@ const Component1 = (props) => {
 ## 複習
 
 #🧠 對於分配URL 至多個頁面/服務的方式，具體有哪些？->->-> `基於 static URL 的分配、基於 dynamic URL 的分配`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 static URL 的分配是什麼樣？ ->->-> `通常會是手動配置URL和頁面/服務之間的關係`
 <!--SR:!2022-11-05,3,250-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 static URL 的分配是分配固定URL給每個頁面或者服務，通常會如何做？？ ->->-> `通常會是手動配置固定URL至每個頁面/服務`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠  對於分配URL至多個頁面/服務的方式， 基於 dynamic URL 的分配是->->-> `憑藉著頁面/服務所對應的URL是經過處理才能對應的特性，就拿能夠代表每個頁面和服務的識別字或者特徵來作為參數，並讓處理方根據特徵的對應處理結果來回傳其頁面和服務`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 dynamic URL 的手段會是什麼？ ->->-> `以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 對於分配URL至多個頁面/服務的方式，基於 static URL 的分配 vs. 基於 dynamic URL 的分配 最大差別是什麼？ ->->-> `1. 前者的URL對應關係必須手動分配 2. 其URL對應關係不受到請求處理方而改變； 1. 後者的URL對應關係會按照請求處理方來決定對應 2. 其URL對應關係會受到請求處理方而改變`
+<!--SR:!2022-11-03,1,230-->
 
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 dynamic URL 的手段會是以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理，舉例 ->->-> `/xxx1/:something，在這裡的固定路徑會是xxx1，專擷取著/xxx1/為開頭的任意語句，並把xxx1/後頭的內容擷取出來，並存放至名為something的空間或者變數 `
+<!--SR:!2022-11-05,3,250-->
 
 
 #🧠 useParams  是React 內建hook嗎？還是什麼？ ->->-> `不是內建，而是react-router-dom所提供的自製hook`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 react-router-dom：useParams是基於什麼樣的基礎(什麼樣分配下的方式)來擷取URL parameters ->->-> `基於 dynamic URL 的分配中，以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
 <!--SR:!2022-11-05,3,250-->
 
 #🧠 react-router-dom：useParams是會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊，這裡的資訊是如何表示？ ->->-> `物件，屬屬性名稱會是Route 元件使用正規表達式擷取內容用的變數名稱，屬性值則是使用變數名稱對應的內容`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 react-router-dom：useParams 語法為？ ->->-> `import { useParams } from 'react-router-dom'; const params = useParams();`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 react-router-dom：useParams 回傳什麼？ ->->-> `useParams 會回傳URL parameters 資訊物件`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 當使用者輸入以下內容時：\/xxx1\/abc\/efg，如何在Component1擷取到\<Route path="\/xxx1\/\:something1\/\:something2\"\> \<Component1 \/\> \<\/Route\> 和abc和efg？->->-> `import { useParams } from 'react-router-dom'; const Component1 = (props) => {  const obj = useParams(); }`
+<!--SR:!2022-11-05,3,250-->
 
 
 
