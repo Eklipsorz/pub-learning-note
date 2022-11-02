@@ -38,7 +38,7 @@ npm install react-router-dom
 <!--SR:!2022-11-12,10,250-->
 
 #🧠 React 上的SPA通常會使用什麼來實現Client-Side Routing ？ ->->-> `react-router`
-<!--SR:!2022-11-02,3,250-->
+<!--SR:!2022-11-12,10,250-->
 
 #🧠 React的react-router 是什麼？ ->->-> `實現client-side routing 的第三方套件`
 <!--SR:!2022-11-11,10,250-->
