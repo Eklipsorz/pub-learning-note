@@ -7,24 +7,34 @@
 
 ### Router 下的後裔Route 元件可以在任何頁面出現
 
-由於Router 下的後裔Route 元件可以在任何頁面出現，
+由於Router 下的後裔Route 元件可以在任何頁面出現
 
 ```
-function Component 
-return (
-	<Route path=path1 />
-)
+function Component () {
+	return (
+		<Route path=target />
+	)
+}
 ```
 
+### React-router-dom：nested route
 
+若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎，Component的Route也就會以\/path2為根節點，換言之，由Component來控管\/path2下的所有路徑
+
+```
+<Route path=/path2 >
+	<Component />
+</Route>
+```
 
 #### 目標頁面所在
 
-目標頁面所在只能夠是當前頁面所在或者以當前頁面所在為基礎的位置
-- /target/path
-- /target
+在這裡擔任nested route的Route path設定只能是以\/path2為基礎來設定，但Route path本身可以將path設定跳脫\/path2以外的路徑
+```
+<Route path=/outer-path />
+```
 
-目標頁面所在不能跳脫當前頁面所在，因為若設定在當前頁面以外的頁面位置，那就
+但Component只能控管\/path2下的所有路徑，而若設定\/outer\-path會因為不在管轄範圍而失效
 
 
 ##### 舉例
@@ -34,10 +44,47 @@ return (
 <Route path=/path2 />
 ```
 
-###
+### 以下面為例
 
-> and if they are on a component which is currently active,  they will evaluated by React Router DOM. if the welcome page is active, this route will be evaluated. if not active, this route will note be evaluated
+當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的WelcomeM
 
+```
+function App() {
+  return (
+    <div>
+      <MainHeader />
+      <Switch>
+        <Route path='/welcome'>
+          <Welcome />
+        </Route>
+        <Route exact path='/products'>
+          <Products />
+        </Route>
+        <Route path='/products/:productId/'>
+          <ProductDetails />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+```
+
+
+```
+import { Route } from 'react-router-dom';
+const Welcome = (props) => {
+  return (
+    <div>
+      <h2>Welcome page!!!</h2>
+      <Route path='/hi'>
+        <p>hi</p>
+      </Route>
+    </div>
+  );
+};
+
+export default Welcome;
+```
 
 
 ### nest 命名緣由
