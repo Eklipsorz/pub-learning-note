@@ -191,13 +191,13 @@ const SimpleInput = (props) => {
 <!--SR:!2022-11-02,8,250-->
 
 #🧠 React：以下為一個表格的實現代碼，請問為什麼enteredNameIsValid一開始會是true，而不是反映目前狀態為false？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `主要是為了使渲染部分能夠正確按照情況下來印出對應畫面，而非是印出非法內容，換言之，若一開始將validity設定為false，就會讓畫面印出非法的樣式`
-<!--SR:!2022-11-02,8,250-->
+<!--SR:!2022-11-24,22,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表著？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `value 和 validity 已經無法呈現表格目前的狀態`
 <!--SR:!2022-11-03,9,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念會是以什麼作為核心？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> `提出另一個名為touched狀態來表示`
-<!--SR:!2022-11-02,8,250-->
+<!--SR:!2022-11-25,23,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念具體會是什麼？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> ` 註冊touched 狀態；設定可使touched為true的情況，在這裏是以表格提交事件來預設所有輸入欄皆為touched；渲染部分：設定條件來決定渲染部分`
 <!--SR:!2022-11-04,10,250-->

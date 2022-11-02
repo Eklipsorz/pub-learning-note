@@ -361,7 +361,7 @@ consume
 <!--SR:!2023-01-14,74,250-->
 
 #🧠 React：若有元件使用consumer 來存取對應context的值且有多個同個context的provider，請問具體來說它是如何存取context？ ->->-> `當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #💻 請使用useContext來讓App的登入狀態能夠共享給MainHeader元件下的Navigation元件，而非使用props chain，檔案在/react-builder/question-review/useContext-question ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/11-making-context-dynamic/src`
 <!--SR:!2022-11-17,35,249-->
