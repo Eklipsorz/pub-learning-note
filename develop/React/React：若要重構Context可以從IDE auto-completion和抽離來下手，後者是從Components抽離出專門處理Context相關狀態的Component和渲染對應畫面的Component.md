@@ -371,7 +371,7 @@ Autocomplete
 <!--SR:!2022-11-02,27,250-->
 
 #💻 請至/react-builder/question-review/useContext-Refactor-question下，請試著以抽離出專門處理Context狀態的Component和渲染對應畫面的Component ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/12-building-and-using-a-custom-context-provider-cmp/src`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 當context.provider component管理的狀態發生更新時，那麼會有什麼樣效果？ ->->-> `provider component 狀態發生更新，就會如同一般元件被觸發更新&渲染週期，過程中會是更新context上的狀態，接著以provider component 所在的位置透過props往下傳遞資訊給子元件來重新觸發該子元件的渲染週期，同時會讓使用context的元件跟著存取新狀態的context來更新`
 <!--SR:!2022-11-08,28,250-->
