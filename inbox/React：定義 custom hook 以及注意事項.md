@@ -122,7 +122,7 @@ setInterval(callback, delay)
 
 
 #🧠 React：custom hook 若以檔案來儲存，且檔案內容只有hook，那麼檔名會是如何？通常來說 ->->-> `use-xxxx.js，xxxx 為功能名稱`
-<!--SR:!2022-11-02,10,250-->
+<!--SR:!2022-11-30,28,250-->
 
 
 

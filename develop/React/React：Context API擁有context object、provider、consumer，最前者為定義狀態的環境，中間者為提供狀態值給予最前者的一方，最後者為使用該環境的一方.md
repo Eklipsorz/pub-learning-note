@@ -221,7 +221,7 @@ consume
 ## 複習
 
 #🧠 provider 命名緣由為何？ ->->-> `是提供某些東西至某處的人事物`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
 <!--SR:!2022-12-21,56,250-->
@@ -327,7 +327,7 @@ consume
 <!--SR:!2022-11-17,16,230-->
 
 #🧠 React：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 React：consumer component 具體以 {}+ callback + 第一個引數為context object的value本身來提供特定方法讓被包含的元件能夠存取對應的context所擁有的值，那麼具體形式會是如何？ ->->-> `	<Context.Consumer>{(value) => .....}</Context.Consumer>`
 <!--SR:!2023-01-07,68,250-->
@@ -339,7 +339,7 @@ consume
 <!--SR:!2023-01-07,69,250-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
 <!--SR:!2023-01-14,74,250-->
