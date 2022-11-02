@@ -46,7 +46,7 @@ function Component () {
 
 ### 以下面為例
 
-當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的WelcomeM
+當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定來找到\/hi路徑，並渲染\<p\>hi\<\/p\>
 
 ```
 function App() {
