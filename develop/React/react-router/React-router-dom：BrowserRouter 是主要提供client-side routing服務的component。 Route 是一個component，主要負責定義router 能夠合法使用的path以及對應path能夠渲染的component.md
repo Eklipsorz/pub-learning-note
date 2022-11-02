@@ -79,7 +79,7 @@ function App() {
 
 
 #🧠 react-router-dom v5中：BrowserRouter 要如何載入？ ->->-> `import { BrowserRouter } from 'react-router-dom'; `
-<!--SR:!2022-11-02,3,250-->
+<!--SR:!2022-11-12,10,250-->
 
 #🧠 react-router-dom v5中：如何定義router 的 route?  ->->-> `使用Route component 來定義哪個path所對應的component是什麼？`
 <!--SR:!2022-11-10,9,250-->
@@ -106,7 +106,7 @@ function App() {
 
 
 #🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
-<!--SR:!2022-11-02,3,250-->
+<!--SR:!2022-11-12,10,250-->
 
 
 #🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``
@@ -117,7 +117,7 @@ function App() {
 <!--SR:!2022-11-11,10,250-->
 
 #🧠 React：\/src\/pages 存放什麼？  ->->-> `存放專門擔任對應頁面所對應的虛擬webpage之component`
-<!--SR:!2022-11-02,3,250-->
+<!--SR:!2022-11-12,10,250-->
 
 ---
 Status: #🌱

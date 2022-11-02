@@ -238,7 +238,7 @@ consume
 <!--SR:!2023-01-14,74,250-->
 
 #🧠 React：Context 本身是什麼？ ->->-> `目前是定義狀態的環境，具體會是以物件來表示`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 React：Context 內容是由誰提供？ ->->-> `具體會是以物件來表示，其內容主要會由Provider或者預設狀態來提供`
 <!--SR:!2023-01-14,74,250-->
@@ -276,7 +276,7 @@ consume
 <!--SR:!2023-01-10,70,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-14,73,250-->
 
 #🧠 React：Context中的Provider 具體是什麼Component？->->-> `wrapper component`
 <!--SR:!2023-01-14,74,250-->
@@ -321,7 +321,7 @@ consume
 <!--SR:!2023-01-09,69,250-->
 
 #🧠 React：consumer 具體是什麼component->->-> `wrapper component`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-11,70,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
 <!--SR:!2022-11-17,16,230-->

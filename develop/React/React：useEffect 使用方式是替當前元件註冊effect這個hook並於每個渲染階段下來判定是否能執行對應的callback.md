@@ -217,7 +217,7 @@ this is use effect
 <!--SR:!2022-11-29,47,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查dependency是否變動，若有的話，先執行cleanup，在來執行callback，若沒有的話就什麼也不執行`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-14,73,250-->
 
 
 

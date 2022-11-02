@@ -188,7 +188,7 @@ const SimpleInput = (props) => {
 <!--SR:!2022-11-21,20,250-->
 
 #🧠 React：以下為一個表格的實現代碼，請問這會有什麼潛在問題？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png ->->-> `無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
-<!--SR:!2022-11-02,8,250-->
+<!--SR:!2022-11-22,20,250-->
 
 #🧠 React：以下為一個表格的實現代碼，請問為什麼enteredNameIsValid一開始會是true，而不是反映目前狀態為false？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `主要是為了使渲染部分能夠正確按照情況下來印出對應畫面，而非是印出非法內容，換言之，若一開始將validity設定為false，就會讓畫面印出非法的樣式`
 <!--SR:!2022-11-24,22,250-->

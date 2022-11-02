@@ -174,7 +174,7 @@ export default MainHeader;
 <!--SR:!2022-11-06,5,249-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？ ->->-> `效能浪費、失去原有的Virtual DOM和狀態`
-<!--SR:!2022-11-02,3,250-->
+<!--SR:!2022-11-12,10,250-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？其中效能浪費是其中一個問題，具體說明 ->->-> `由於會直接地unmount目前所對應的元件，而不是針對元件之間的DOM差異來做渲染，所以會造成效能上的不必要浪費`
 <!--SR:!2022-11-10,9,250-->
@@ -187,11 +187,11 @@ export default MainHeader;
 
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面的anchor標籤有帶來什麼樣的效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
-<!--SR:!2022-11-02,3,250-->
+<!--SR:!2022-11-12,10,250-->
 
 
 #🧠 瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage，這會引發React不必要的unmount和mount，請問解決方法有什麼？ ->->-> `- 設定點擊事件，並取消掉對應的預設處理，接著再以自己預期的結果來實現 - 使用react-router-dom的Link component`
-<!--SR:!2022-11-02,2,230-->
+<!--SR:!2022-11-08,6,230-->
 
 #🧠 react-router-dom Link 是什麼？ ->->-> ` 是一個component，提供hyperlink功能的component`
 <!--SR:!2022-11-11,10,250-->
