@@ -98,6 +98,7 @@ const Component1 = (props) => {
 #🧠 對於分配URL 至多個頁面/服務的方式，具體有哪些？->->-> `基於 static URL 的分配、基於 dynamic URL 的分配`
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 static URL 的分配是什麼樣？ ->->-> `通常會是手動配置URL和頁面/服務之間的關係`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 static URL 的分配是分配固定URL給每個頁面或者服務，通常會如何做？？ ->->-> `通常會是手動配置固定URL至每個頁面/服務`
 
@@ -116,6 +117,7 @@ const Component1 = (props) => {
 #🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊`
 
 #🧠 react-router-dom：useParams是基於什麼樣的基礎(什麼樣分配下的方式)來擷取URL parameters ->->-> `基於 dynamic URL 的分配中，以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
+<!--SR:!2022-11-05,3,250-->
 
 #🧠 react-router-dom：useParams是會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊，這裡的資訊是如何表示？ ->->-> `物件，屬屬性名稱會是Route 元件使用正規表達式擷取內容用的變數名稱，屬性值則是使用變數名稱對應的內容`
 
