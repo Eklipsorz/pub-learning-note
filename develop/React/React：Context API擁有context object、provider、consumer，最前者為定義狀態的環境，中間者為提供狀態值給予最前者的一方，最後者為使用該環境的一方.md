@@ -270,7 +270,7 @@ consume
 <!--SR:!2022-11-08,11,190-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2023-01-10,70,250-->
@@ -300,7 +300,7 @@ consume
 
 
 #🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
 <!--SR:!2023-01-12,72,250-->
@@ -345,7 +345,7 @@ consume
 <!--SR:!2023-01-14,74,250-->
 
 #🧠 以下是搭載Context的consumer component的component，請問裡頭ctx是指什麼？會回傳什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663773552/blog/react/context/context-consumer-callback_l1a7xv.png)->->-> `{callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM`
-<!--SR:!2022-11-02,28,250-->
+<!--SR:!2023-01-15,74,250-->
 
 
 #🧠 React：context 是什麼？ ->->-> `專門定義狀態的環境`
