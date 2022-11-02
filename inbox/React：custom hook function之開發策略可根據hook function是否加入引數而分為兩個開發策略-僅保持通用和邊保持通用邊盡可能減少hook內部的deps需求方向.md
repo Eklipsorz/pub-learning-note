@@ -252,7 +252,7 @@ export default App;
 <!--SR:!2022-11-02,10,250-->
 
 #💻 請至/react-builder/question-review/custom-hook-project-adv領取題目，並切換至hook-wihtout-parameter分支，請製作一個hook能夠頂替App.js和/src/components/NewTask/NewTask.js發送請求的功能，請不要讓hook能夠插入任何引數 ->->-> `https://github.com/academind/react-complete-guide-code/blob/15-building-custom-react-hooks/code/06-adjusting-the-custom-hook/src/hooks/use-http.js`
-<!--SR:!2022-11-02,10,250-->
+<!--SR:!2022-11-30,28,250-->
 
 
 
