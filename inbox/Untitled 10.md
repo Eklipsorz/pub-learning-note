@@ -5,6 +5,35 @@
 概念為：以Route結構所包裝的另外一個Route結構
 具體為：一個Route 元件所包含的另外一個Route 元件
 
+### Router 下的後裔Route 元件可以在任何頁面出現
+
+由於Router 下的後裔Route 元件可以在任何頁面出現，所以當使用者切換至特定URL時，若對應頁面本身會有多個Route元件的話，就會啟用該頁面的多個Route元件作為當使用者從目前頁面切換至目標頁面之所在
+
+```
+return (
+	<Route path=path1 />
+)
+```
+
+
+
+#### 目標頁面所在
+
+目標頁面所在只能夠是當前頁面所在或者以當前頁面所在為基礎的位置
+- /target/path
+- /target
+
+目標頁面所在不能跳脫當前頁面所在，因為若設定在當前頁面以外的頁面位置，那就只有該頁面位置才能觸發Route所設定的path，然後那頁面本身就不是當前頁面，所以無法觸發，因此視為無效的設定
+
+
+##### 舉例
+```
+<Route path=
+```
+
+###
+
+> and if they are on a component which is currently active,  they will evaluated by React Router DOM. if the welcome page is active, this route will be evaluated. if not active, this route will note be evaluated
 
 
 
