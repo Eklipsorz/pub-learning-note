@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Single-Page Application 為啥會有由於服務和頁面都共享著同一個URL",
+                "query": "tag:#🧠",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -176,7 +176,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "54f1408607a7d4ca",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "inbox/Untitled 8.md",
     "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
