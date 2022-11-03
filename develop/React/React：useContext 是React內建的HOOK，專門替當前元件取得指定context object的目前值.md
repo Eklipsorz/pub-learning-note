@@ -49,7 +49,7 @@ const value = useContext(context)
 <!--SR:!2022-11-13,13,230-->
 
 #🧠 useContext  用途是什麼？ ->->-> `替代context object的consumer component來使用狀態值、獲取指定context object的目前狀態值`
-<!--SR:!2022-11-03,28,250-->
+<!--SR:!2023-01-16,74,250-->
 
 #🧠 useContext 語法為何？->->-> `const value = useContext(context)`
 <!--SR:!2023-01-16,74,250-->

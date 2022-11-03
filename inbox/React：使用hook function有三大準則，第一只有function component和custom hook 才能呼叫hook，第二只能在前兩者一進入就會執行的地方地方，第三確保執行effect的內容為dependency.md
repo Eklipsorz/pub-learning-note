@@ -113,7 +113,7 @@
 <!--SR:!2022-12-22,55,250-->
 
 #🧠 React：對於使用hook的第一準則而言，只能在react functions(function component/react componet function) 或者 custom hook function 才能調用hook function，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-block-scope-with-hook_fzb7bf.png)`
-<!--SR:!2022-11-03,28,250-->
+<!--SR:!2023-01-16,74,250-->
 
 #🧠 React：對於使用hook的第二準則而言，只能在componet function或者custom hook function的最一開始執行的地方才能呼叫hook，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-nest-function-with-hook_wpuzh0.png)`
 <!--SR:!2023-01-16,74,250-->

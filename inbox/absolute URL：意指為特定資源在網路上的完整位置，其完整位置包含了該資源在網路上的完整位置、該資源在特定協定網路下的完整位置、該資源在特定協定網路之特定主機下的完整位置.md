@@ -66,7 +66,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 ## 複習
 #🧠  absolute URL 是什麼？ ->->-> `意指為特定資源在網路上的完整位置`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-13,10,250-->
 
 #🧠  absolute URL 是為特定資源在網路上的完整位置，它包含了什麼？->->-> `該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置`
 <!--SR:!2022-11-03,3,250-->
@@ -76,7 +76,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2022-11-03,3,250-->
 
 #🧠  absolute URL： Full URL 對於absolute URL是什麼？ ->->-> `該資源在網路上的完整位置、`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-12,9,250-->
 
 #🧠 absolute URL：Full URL是什麼？由何種構成？ 格式？ ->->-> `	- 該資源在網路上的完整位置 - 主要由protocol、host、port、path所構成 - 格式：protocol://host:port/path`
 <!--SR:!2022-11-13,10,250-->
@@ -88,7 +88,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2022-11-03,3,250-->
 
 #🧠 absolute URL： Implicit protocol 構成是如何？格式為？ ->->-> `主要由host、port、path所構成，格式為：//host:port/path`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-10,7,250-->
 
 
 #🧠 absolute URL： implicit domain name 對於absolute URL是什麼？->->-> ` 以暗示方式說明特定協定網路之特定主機是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路之特定主機下的完整位置`
@@ -99,11 +99,11 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2022-11-13,10,250-->
 
 #🧠 absolute URL：  implicit domain name的構成會是什麼？格式是什麼？ ->->-> `主要由path所構成，格式為/path`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-12,9,250-->
 
 
 #🧠 假設目前存取的資源所擁有的protocol和domain會是https和developer.mozilla.org，\/en-US\/docs\/Learn 會對應到什麼位置？->->-> `https://developer.mozilla.org/en-US/docs/Learn`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-13,10,250-->
 
 
 #🧠 假設目前存取的資源所擁有的protocol會是https，因此會是對應到第一個URL，\/\/developer.mozilla.org\/en-US\/docs\/Learn 會對應到什麼位置？ ->->-> `https://developer.mozilla.org/en-US/docs/Learn`
