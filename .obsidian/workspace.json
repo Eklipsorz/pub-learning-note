@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "73f25528970af7ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/this-binding/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "54f1408607a7d4ca",
             "type": "leaf",
             "state": {
@@ -38,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "73f25528970af7ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/JavaScript/this-binding/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
                 "mode": "source",
                 "source": false
               }
