@@ -5,17 +5,10 @@
 概念為：以Route結構所包裝的另外一個Route結構
 具體為：一個Route 元件所包含的另外一個Route 元件
 
-### Router 下的後裔Route 元件可以在任何頁面出現
+### Route 會以最近的parent Router 元件為主
 
-由於Router 下的後裔Route 元件可以在任何頁面出現
+基於這樣，若只有使用一種Router A，那麼當在Router A包覆的後裔元件下定義Route時，其Route就會因**Route 會以最近的parent Router 元件為主** 而納入在Router A的路由規則。
 
-```
-function Component () {
-	return (
-		<Route path=target />
-	)
-}
-```
 
 ### React-router-dom：nested route
 
@@ -86,8 +79,10 @@ const Welcome = (props) => {
 export default Welcome;
 ```
 
-### 
+###  包覆形式
 
+
+1. nested route直接被一個Route元件包覆
 ```
 <Route path='/welcome'>
     <Route path='/welcome/hi'>
@@ -96,7 +91,7 @@ export default Welcome;
 </Route>
 ```
 
-
+2. nested route先合併在特定元件上，然後其元件再由Route元件包覆
 ```
 <Route path='/welcome'>
   <Weclome />
@@ -106,9 +101,9 @@ export default Welcome;
 ```
 function Welcome(props) {
 	return (
-		  <Route path='/welcome/hi'>
-        <p>hi</p>
-    </Route>
+		<Route path='/welcome/hi'>
+	        <p>hi</p>
+	    </Route>
 	)
 }
 ```
@@ -160,6 +155,26 @@ function outerFunction() {
 #🧠 nested route 概念是什麼？->->-> `以Route結構所包裝的另外一個Route結構`
 
 #🧠 nested route 概念為：以Route結構所包裝的另外一個Route結構，具體在React會是什麼 ->->-> `一個Route 元件所包含的另外一個Route 元件`
+
+
+#🧠 react-router-dom：每個Route元件對於Router元件是什麼關係？如何定義哪個Route是屬於哪個Router ->->-> `Router 下的Route 元件可以在Router後裔元件上出現`
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
+
 
 ---
 Status: #🌱 
