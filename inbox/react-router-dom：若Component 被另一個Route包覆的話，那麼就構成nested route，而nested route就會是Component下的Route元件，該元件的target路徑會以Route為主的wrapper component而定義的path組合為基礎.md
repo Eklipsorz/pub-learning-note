@@ -86,6 +86,32 @@ const Welcome = (props) => {
 export default Welcome;
 ```
 
+### 
+
+```
+<Route path='/welcome'>
+    <Route path='/welcome/hi'>
+        <p>hi</p>
+    </Route>
+</Route>
+```
+
+
+```
+<Route path='/welcome'>
+  <Weclome />
+</Route>
+```
+
+```
+function Welcome(props) {
+	return (
+		  <Route path='/welcome/hi'>
+        <p>hi</p>
+    </Route>
+	)
+}
+```
 
 ### nest 命名緣由
 
@@ -124,6 +150,16 @@ function outerFunction() {
 
 ## 複習
 
+
+#🧠 nest 命名緣由在動詞上是什麼意思？ ->->-> `建立一個特定結構體來包含特定事物`
+
+#🧠 nested function 是什麼？ ->->-> `是指被另一個函式所包含著的函式`
+
+#🧠  nested function：會是指被另一個函式所包含著的函式function outerFunction() \{  function innerFunction() \{  \} } 哪個才是nested function？為什麼？->->-> `innerFunction正是nested function。`
+
+#🧠 nested route 概念是什麼？->->-> `以Route結構所包裝的另外一個Route結構`
+
+#🧠 nested route 概念為：以Route結構所包裝的另外一個Route結構，具體在React會是什麼 ->->-> `一個Route 元件所包含的另外一個Route 元件`
 
 ---
 Status: #🌱 
