@@ -61,7 +61,7 @@ function App() {
 <!--SR:!2022-11-07,28,250-->
 
 #🧠 React：若單獨將JS Expression為渲染內容納入陣列的其中一個元素且沒添加\{\}的話，React會如何處理？ ->->-> `React會直接以JS來解析執行來特殊處理，不用添加\{\}：在這裡會根據enable是否為true來決定最後渲染內容`
-<!--SR:!2022-11-03,25,250-->
+<!--SR:!2023-01-07,65,250-->
 
 #🧠 React：會讓React在渲染部分以JS Expression處理的途徑有哪些？ ->->-> `單獨回傳JS Expression、在渲染內容使用{}和JS Expression、陣列的其中一個元素擺放JS Expression`
 <!--SR:!2022-11-07,28,250-->

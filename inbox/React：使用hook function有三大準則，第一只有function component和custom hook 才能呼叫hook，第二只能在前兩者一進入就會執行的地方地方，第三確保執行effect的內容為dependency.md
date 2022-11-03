@@ -101,7 +101,7 @@
 <!--SR:!2022-12-30,61,250-->
 
 #🧠 react hook functions的官方準則大致上分為哪兩種 ->->-> `哪裏可以允許使用hook、 在允許函式下的哪個區塊能用`
-<!--SR:!2022-11-03,28,250-->
+<!--SR:!2023-01-16,74,250-->
 
 #🧠 react hook functions的官方準則主要定義了在允許函式下的哪個區塊能用，請問在允許函式下哪些地方是不能呼叫hook->->-> `	- 不能在巢狀函式結構下呼叫 hook function - 不能在block scope下呼叫 hook function`
 <!--SR:!2022-12-13,51,250-->
@@ -116,7 +116,7 @@
 <!--SR:!2022-11-03,28,250-->
 
 #🧠 React：對於使用hook的第二準則而言，只能在componet function或者custom hook function的最一開始執行的地方才能呼叫hook，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-nest-function-with-hook_wpuzh0.png)`
-<!--SR:!2022-11-03,28,250-->
+<!--SR:!2023-01-16,74,250-->
 
 #🧠 React：對於使用hook的第三準則而言，確保你總是以effect內部使用的東西做為dependency，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-dependency-effect_wetmfo.png)`
 <!--SR:!2022-11-03,28,250-->

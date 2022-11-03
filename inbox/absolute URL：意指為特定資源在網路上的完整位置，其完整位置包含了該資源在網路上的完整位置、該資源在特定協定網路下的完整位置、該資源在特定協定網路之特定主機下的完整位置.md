@@ -82,7 +82,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2022-11-03,3,250-->
 
 #🧠 absolute URL： Implicit protocol對於absolute URL 是什麼？ ->->-> `以暗示方式說明protocol是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路下的完整位置`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-13,10,250-->
 
 #🧠 absolute URL： Implicit protocol 以暗示方式說明protocol是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路下的完整位置，其中指定資源的protocol 是如何決定？->->-> `其中指定資源的protocol會採用目前所在的資源之完整位置所擁有的protocol`
 <!--SR:!2022-11-03,3,250-->
@@ -110,7 +110,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2022-11-03,3,250-->
 
 #🧠 https\:\/\/developer\.mozilla\.org\/en-US\/docs\/Learn 會是什麼種類URL決定方式？ ->->-> `absolute url`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-13,10,250-->
 
 
 ---
