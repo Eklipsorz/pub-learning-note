@@ -88,7 +88,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 relative URL： 假如指定路徑為dir/file，且目前頁面路徑為path1/file，那麼瀏覽器如何找->->-> `假如目前頁面路徑為path1/file，那麼瀏覽器就會試著在path1下面找到dir這個目錄，然後再從那找到file。`
-<!--SR:!2022-11-03,3,250-->
+<!--SR:!2022-11-11,8,250-->
 
 
 #🧠 relative URL： 以當前頁面所在目錄來位移，relative URL指定路徑格式回是什麼？->->-> `路徑格式通常會是./或者../為開頭`
