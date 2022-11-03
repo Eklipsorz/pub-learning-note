@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+                "file": "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+                "file": "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md"
+                "file": "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md"
               }
             }
           }
@@ -217,12 +217,12 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "0f35a7ab562d566d",
+  "active": "d4bcd1b85de9450f",
   "lastOpenFiles": [
+    "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
     "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
     "inbox/URL 種類具體有absolute URL 和 relative URL.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
-    "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
