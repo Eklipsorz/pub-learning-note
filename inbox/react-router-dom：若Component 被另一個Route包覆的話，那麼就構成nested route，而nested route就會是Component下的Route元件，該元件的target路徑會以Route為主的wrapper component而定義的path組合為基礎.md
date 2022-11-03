@@ -48,9 +48,15 @@ function Welcome(props) {
 ```
 
 
+##### 若nested route所設定的path設定成以外的path呢？
+
+會因為沒在包含其route所擁有的path而失效
+
+
+
 ### nested route先合併在特定元件上，然後其元件再由Route元件包覆
 
-若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎，Component的Route也就會以\/path2為根節點，換言之，由Component來控管\/path2下的所有路徑
+若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，會先從path2對應的Component 進行渲染，然後再從那找到夾雜的Route且Route滿足於/path2/path3，找到後就便渲染對應的component，也就是Component2
 
 ```
 <Route path=/path2 >
@@ -58,24 +64,17 @@ function Welcome(props) {
 </Route>
 ```
 
-#### 目標頁面所在
-
-在這裡擔任nested route的Route path設定只能是以\/path2為基礎來設定，但Route path本身可以將path設定跳脫\/path2以外的路徑
 ```
-<Route path=/outer-path />
-```
-
-但Component只能控管\/path2下的所有路徑，而若設定\/outer\-path會因為不在管轄範圍而失效
-
-
-##### 舉例
-
-假設在path1呈現的頁面會是設定以下Route，但實際上必須要讓URL切換成/path2才能滿足，然而當切換至那URL，就以/path
-```
-<Route path=/path2 />
+function Component() {
+	return (
+		<Route path=/path2/path3>
+			<Component2 />
+		</Route>
+	)
+}
 ```
 
-### 以下面為例
+#### 以下面為例
 
 當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定來找到\/hi路徑，並渲染\<p\>hi\<\/p\>
 
@@ -99,7 +98,6 @@ function App() {
   );
 }
 ```
-
 
 ```
 import { Route } from 'react-router-dom';
@@ -178,9 +176,18 @@ function outerFunction() {
 #🧠 react-router-dom：nested route 會有的形式會是？若是nested route先合併在特定元件上，然後其元件再由Route元件包覆，那麼會是什麼形式？用程式碼表示- ->->-> `觀看**nested route 會有的形式會是**章節`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 react-router-dom：nested route 會有的形式會是？若是nested route先合併在特定元件上，然後其元件再由Route元件包覆， 其nested route所設定的path只能是->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
 
-#🧠 Question :: ->->-> ``
+#🧠 react-router-dom：nested route 會有的形式會是？nested route直接被一個Route元件包覆， 其nested route所設定的path只能是 ->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
+
+#🧠 react-router-dom：在這擁有path2的Route會是nested route，那麼該Route會是以什麼為主？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487317/blog/react/react-router/Nested-route/nested-route-example_jcwisx.png)->->-> `但它的path只能夠以包含它的route所設定的path為主，也就是以\/path1為主，為此nested route的path必須設定為\/path1\/path2才能生效`
+
+#🧠 react-router-dom：不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path，若nested route所設定的path設定成以外的path呢？ ->->-> `會因為沒在包含其route所擁有的path而失效`
+
+#🧠 react-router-dom：若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，
+會是什麼情形![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487832/blog/react/react-router/Nested-route/nested-route-inside-component-example1_esnksv.png) ->->-> `若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，會先從path2對應的Component 進行渲染，然後再從那找到夾雜的Route且Route滿足於/path2/path3，找到後就便渲染對應的component，也就是Component2`
+
+
 
 
 
