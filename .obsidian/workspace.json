@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9e2b6d4cb547f8e8",
+        "id": "56e43b9e3e014488",
         "type": "tabs",
         "children": [
           {
-            "id": "bddae6923d98b8e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "59f7485858087b1e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "768819eee27c1e05",
+            "id": "a4c5d34e62d0beae",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -40,34 +22,16 @@
         ]
       },
       {
-        "id": "a7758314fae39e05",
+        "id": "112bd1608e822ea9",
         "type": "tabs",
         "children": [
           {
-            "id": "a03090acb0986a4a",
+            "id": "6be4b995dfe46af6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "6640784884443013",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d652520be9152272",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
+                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
                 "mode": "source",
                 "source": false
               }
@@ -139,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
+                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
+                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md"
+                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md"
               }
             }
           }
@@ -198,17 +162,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "a03090acb0986a4a",
+  "active": "6be4b995dfe46af6",
   "lastOpenFiles": [
+    "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
+    "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
-    "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
     "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
-    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
-    "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md"
+    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md"
   ]
 }
