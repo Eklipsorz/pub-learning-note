@@ -192,6 +192,7 @@ Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgty
 
 
 #🧠  react-router-dom：當客戶端要求轉換URL為/welcome/hi時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487833/blog/react/react-router/Nested-route/nested-route-inside-component-example2_tgbsal.png) ->->-> `當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定來找到\/hi路徑，並渲染\<p\>hi\<\/p\>`
+<!--SR:!2022-11-06,2,248-->
 
 ---
 Status: #🌱 
