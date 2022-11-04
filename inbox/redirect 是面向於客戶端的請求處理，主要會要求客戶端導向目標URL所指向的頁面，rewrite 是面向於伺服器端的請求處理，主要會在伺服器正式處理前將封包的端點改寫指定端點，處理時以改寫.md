@@ -65,7 +65,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2022-11-04,28,250-->
 
 #🧠 rewrite 是面向於什麼的處理->->-> `面向於伺服器的請求處理`
-<!--SR:!2022-11-04,28,250-->
+<!--SR:!2023-01-17,74,250-->
 
 
 #🧠 rewrite 用途是做了什麼？ ->->-> `主要會在伺服器接收到封包時，在正式處理前會將封包指示的端點改寫成指定端點，然後在正式處理就以改寫後的端點來處理`
@@ -75,11 +75,11 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2022-11-04,28,250-->
 
 #🧠 簡單比較：redirect vs. rewrite? ->->-> `1. 前者是client side的請求處理，後者是server side的請求處理 2. 前者是直接將瀏覽器導向目標URL，後者則是將瀏覽器指定的URL在伺服器內做URL轉換 3. 前者是會更改瀏覽器顯示的URL，後者則不會`
-<!--SR:!2022-11-04,28,250-->
+<!--SR:!2023-01-17,74,250-->
 
 
 #🧠 請用以下例子來說明redirect： yourdomain.com to www.yourdomain.com ->->-> `當瀏覽器對yourdomain.com對應伺服器以/發送請求，瀏覽器就直接被導向至www.yourdomain.com`
-<!--SR:!2022-11-04,28,250-->
+<!--SR:!2023-01-17,74,250-->
 
 #🧠  請用以下例子來說明rewrite：localtest.me/articles/how-to-win-at-chess to localtest.me/articles.aspx?name=now-to-win-at-chess ->->-> `當瀏覽器對localtest.me對應伺服器以articles/how-to-win-at-chess端點發送請求，伺服器接收到並於正式處理前就直接更改成articles.aspx?name=now-to-win-at-chess，然後伺服器就以改寫後結果來處理。`
 <!--SR:!2022-11-04,28,250-->
