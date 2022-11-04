@@ -155,12 +155,15 @@ function outerFunction() {
 
 
 #🧠 nest 命名緣由在動詞上是什麼意思？ ->->-> `建立一個特定結構體來包含特定事物`
+<!--SR:!2022-11-06,2,248-->
 
 #🧠 nested function 是什麼？ ->->-> `是指被另一個函式所包含著的函式`
+<!--SR:!2022-11-06,2,248-->
 
 #🧠  nested function：會是指被另一個函式所包含著的函式function outerFunction() \{  function innerFunction() \{  \} } 哪個才是nested function？為什麼？->->-> `innerFunction正是nested function。`
 
 #🧠 nested route 概念是什麼？->->-> `以Route結構所包裝的另外一個Route結構`
+<!--SR:!2022-11-06,2,248-->
 
 #🧠 nested route 概念為：以Route結構所包裝的另外一個Route結構，具體在React會是什麼元件，請完整說出來 ->->-> `一個Route 元件所包含的另外一個Route 元件`
 <!--SR:!2022-11-06,2,248-->
@@ -182,6 +185,7 @@ function outerFunction() {
 #🧠 react-router-dom：nested route 會有的形式會是？若是nested route先合併在特定元件上，然後其元件再由Route元件包覆， 其nested route所設定的path只能是->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
 
 #🧠 react-router-dom：nested route 會有的形式會是？nested route直接被一個Route元件包覆， 其nested route所設定的path只能是 ->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
+<!--SR:!2022-11-06,2,248-->
 
 #🧠 react-router-dom：在這擁有path2的Route會是nested route，那麼該Route會是以什麼為主？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487317/blog/react/react-router/Nested-route/nested-route-example_jcwisx.png)->->-> `但它的path只能夠以包含它的route所設定的path為主，也就是以\/path1為主，為此nested route的path必須設定為\/path1\/path2才能生效`
 
