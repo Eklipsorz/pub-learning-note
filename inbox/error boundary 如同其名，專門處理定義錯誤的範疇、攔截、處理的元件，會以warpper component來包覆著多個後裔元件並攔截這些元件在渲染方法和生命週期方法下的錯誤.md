@@ -231,7 +231,7 @@ UsersFinder.js
 
 
 #🧠 React：componentDidCatch 生命週期函式的語法為componentDidCatch(error) \{\}，其中的error是從何而來的？ ->->-> `後裔節點在執行渲染函式或者生命週期函式時所拋出的錯誤`
-<!--SR:!2022-11-04,13,249-->
+<!--SR:!2022-12-07,33,249-->
 
 
 #🧠 React：componentDidCatch 生命週期函式的通常開發方式是？->->-> `依據錯誤種類來產生不同的狀態和觸發渲染`
@@ -264,7 +264,7 @@ UsersFinder.js
 
 
 #🧠 componentDidUpdate 參數 vs componentDidCatch參數之間差別是什麼？ ->->-> `前者是(prevProps, prevState)；後者是(error)`
-<!--SR:!2022-11-04,6,248-->
+<!--SR:!2022-11-21,17,248-->
 
 ---
 Status: #🌱 
