@@ -55,7 +55,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 ## 複習
 
 #🧠 redirect 是面向於什麼的處理？ ->->-> `面向於客戶端的請求處理`
-<!--SR:!2022-11-04,28,250-->
+<!--SR:!2023-01-17,74,250-->
 
 #🧠 redirect 用途是做了什麼？ ->->-> `主要會是要求客戶端直接導向目標URL 所指向的頁面來發送請求`
 <!--SR:!2022-11-04,28,250-->
