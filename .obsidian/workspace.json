@@ -6,6 +6,7 @@
       {
         "id": "c16703677bf13c9c",
         "type": "tabs",
+        "dimension": 25,
         "children": [
           {
             "id": "d4bcd1b85de9450f",
@@ -24,6 +25,7 @@
       {
         "id": "73823cc0e30774ab",
         "type": "tabs",
+        "dimension": 25,
         "children": [
           {
             "id": "5456c8a079b4b90a",
@@ -40,8 +42,28 @@
         ]
       },
       {
+        "id": "88d94b990b04b551",
+        "type": "tabs",
+        "dimension": 37.34177215189873,
+        "children": [
+          {
+            "id": "a5a1d82c5cdfdda6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "be2db70e9557ff7a",
         "type": "tabs",
+        "dimension": 12.658227848101266,
         "children": [
           {
             "id": "ac34f9b43ae3a411",
@@ -122,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
+                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md"
+                "file": "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md"
               }
             }
           }
@@ -181,8 +203,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "5456c8a079b4b90a",
+  "active": "a5a1d82c5cdfdda6",
   "lastOpenFiles": [
+    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
     "inbox/Untitled 8.md",
@@ -191,7 +214,6 @@
     "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
     "inbox/React：在表格提交事件中，validity和value無法說明元件下的所有狀態，致使沿用兩者會出現預期外的結果，解法為提出額外狀態-touched.md",
     "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
-    "inbox/URL 種類具體有absolute URL 和 relative URL.md",
-    "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md"
+    "inbox/URL 種類具體有absolute URL 和 relative URL.md"
   ]
 }
