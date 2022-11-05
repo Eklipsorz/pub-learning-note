@@ -45,7 +45,8 @@ const Component1 = (props) => {
 > useParams returns an object of key/value pairs of URL parameters. Use it to access match.params of the current \<Route\>.
 
 重點：
-- useParams 是react-router-dom提供的自製hook，主要會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊
+- useParams 是react-router-dom提供的自製hook，主要會回傳離它較近的Parent Route元件所獲取到的URL 參數資訊
+- useParams 會挑選離它較近的Parent Route元件來擷取
 - 基於dynamic URL 的分配下的方式來獲取URL 參數--以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理
 - URL parameters 資訊會以 物件 來存放，屬性名稱會是Route 元件使用正規表達式擷取內容用的變數名稱，屬性值則是使用變數名稱對應的內容
 - 用法為
@@ -121,8 +122,10 @@ const Component1 = (props) => {
 #🧠 useParams  是React 內建hook嗎？還是什麼？ ->->-> `不是內建，而是react-router-dom所提供的自製hook`
 <!--SR:!2022-11-15,10,250-->
 
-#🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊`
-<!--SR:!2022-11-14,9,250-->
+#🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會回傳離它較近的Parent Route所獲取到的URL 參數資訊`
+
+#🧠 react-router-dom：useParams會獲取哪一種Route元件所截取的URL parameters？ ->->-> `useParams 會挑選離它較近的Parent Route元件來擷取`
+
 
 #🧠 react-router-dom：useParams是基於什麼樣的基礎(什麼樣分配下的方式)來擷取URL parameters ->->-> `基於 dynamic URL 的分配中，以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
 <!--SR:!2022-11-15,10,250-->

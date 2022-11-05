@@ -4,78 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "56e43b9e3e014488",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a4c5d34e62d0beae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "112bd1608e822ea9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6be4b995dfe46af6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "10641e0270843fc3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8085afc5478bc27b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "41f48c11ce36bdbe",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d3c7c46a743d4c68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "cfdeff671c62f032",
         "type": "tabs",
         "children": [
@@ -85,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
+                "file": "inbox/React：雜記.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "IIFE",
+                "query": "判斷錯誤非法內容條件會是什麼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -155,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
+                "file": "inbox/React：雜記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
+                "file": "inbox/React：雜記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md"
+                "file": "inbox/React：雜記.md"
               }
             }
           }
@@ -235,17 +162,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "d3c7c46a743d4c68",
+  "active": "2cca6c60fb8e6751",
   "lastOpenFiles": [
-    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-    "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
+    "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
     "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
+    "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
+    "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
+    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/Untitled 10.md",
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
     "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
-    "inbox/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md"
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
   ]
 }
