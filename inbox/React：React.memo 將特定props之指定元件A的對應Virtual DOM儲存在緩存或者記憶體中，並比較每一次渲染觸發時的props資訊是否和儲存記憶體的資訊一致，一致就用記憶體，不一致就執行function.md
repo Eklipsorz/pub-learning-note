@@ -240,7 +240,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 
 
 #🧠 解釋一下React.memo 在這裡效果會是如何？從count=0至count=5會是如何印DemoOutput RUNNING和Button RUNNING？其中Button.js會固定印Button RUNNING ，而Wrapper.js 會固定印Wrapper RUNNING![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664910620/blog/react/memo/react-memo-app_b6ioum.png)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664910790/blog/react/memo/react-memo-DemoOuput_ws01ho.png)->->-> `- mounting階段由於記憶體沒對應元件的Virtual DOM，所以會觸發的component function 而產生對應的Virtual DOM和對應props存放在記憶體中，props.show = false - 當按鈕發生點擊事件時，也就是觸發第一次的updating，那時會取得到的props會是false，所以就以記憶體為主 - 接著在點擊第二次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所以會被判定不一樣而儲存那時的Virtual DOM和props值，props.show = true - 接著在點擊第三次點擊事件時，也就是觸發第二次的updating，那時會取得到的props會是true，所底被判定與前一次相同而以記憶體為主 - 隨後依照這個規則來進行`
-<!--SR:!2022-11-05,20,250-->
+<!--SR:!2022-12-24,48,250-->
 
 
 #🧠 React.memo 和 useMemo 之間差異是如何？ ->->-> `前者是針對component的virtual dom 進行記憶體儲存來並根據情況來回傳記憶體內容或者執行對應渲染函式；後者則是針對特定結果值進行記憶體儲存並根據情況來回傳記憶體內容或者執行對應值的複雜操作`
