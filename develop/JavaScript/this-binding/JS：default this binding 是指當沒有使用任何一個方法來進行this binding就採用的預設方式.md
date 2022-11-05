@@ -150,7 +150,7 @@ function fn() {
 <!--SR:!2022-11-11,9,210-->
 
 #🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665410534/blog/javascript/this-binding/strict-default-this-binding-example2_fa4qff.png) ->->-> `會印出global object的資訊。這是因為目前執行環境或者全域執行環境沒設定嚴格模式，這使得default this binding會直接將this設定為global object`
-<!--SR:!2022-11-05,17,248-->
+<!--SR:!2022-12-19,44,248-->
 
 
 

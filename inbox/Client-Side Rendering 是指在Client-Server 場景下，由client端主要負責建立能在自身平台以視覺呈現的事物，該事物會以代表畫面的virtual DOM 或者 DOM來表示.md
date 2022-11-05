@@ -103,7 +103,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 <!--SR:!2022-11-08,9,250-->
 
 #🧠 Client-Side Rendering 的優點是減少server處理渲染部分的壓力，具體說明 ->->-> `因為client 憑藉著一開始就已經獲取到包含著JS和CSS的實體webpage文件，所以可由它主要渲染自身的畫面就好`
-<!--SR:!2022-11-05,6,250-->
+<!--SR:!2022-11-19,14,250-->
 
 #🧠 Client-Side Rendering 的優點是頁面切換較快，具體說明 ->->-> `由於網頁畫面是由client端自行負責，並不需要再次向伺服器索要新的實體webpage，且能根據不同時機點下的dom內容差異來以dom為單位來轉換畫面`
 <!--SR:!2022-11-05,6,250-->

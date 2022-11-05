@@ -76,7 +76,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 ## 複習
 
 #🧠 Server-Side Rendering 是什麼？(務必講到事物)->->-> `指的是 在Client-Server情景下，由伺服器主要負責建立可於瀏覽器視覺呈現的事物，事物會是指代表畫面的實體webpage文件`
-<!--SR:!2022-11-05,6,250-->
+<!--SR:!2022-11-20,15,250-->
 
 #🧠 Server-Side Rendering 是什麼？->->-> `指的是 在Client-Server情景下，由伺服器主要負責建立可於瀏覽器視覺呈現的事物，事物會是指代表畫面的實體webpage文件`
 <!--SR:!2022-11-08,9,250-->
@@ -85,13 +85,13 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 <!--SR:!2022-11-09,10,250-->
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？ ->->-> `1. 瀏覽器針對特定網址送出請求 2. 路由器解析請求後，轉接給對應的 controller 3. controller 按照要求，透過 model 拿資料 4. controller 拿到資料後，呼叫 view template，並嵌入資料 5. 把「有資料的 template」轉換成瀏覽器可直接呈現的形式並回傳給瀏覽器 6. 瀏覽器接收檔案並以視覺形式來呈現其畫面。`
-<!--SR:!2022-11-05,6,250-->
+<!--SR:!2022-11-21,16,250-->
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？請用畫面來表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1633596645/blog/network/ClientAndServer/MVCModel_dgvnhm.png)`
 <!--SR:!2022-11-07,8,250-->
 
 #🧠 Server Side Rendering 在client-server情景下所擁有的優點是什麼？(共三個)->->-> `SEO 會比Client-Side Rendering 來得好、對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext、 與Client-Side Rendering 相比，webpage所需要載入的JS、CSS、圖片(等另外發送請求載入的資源)的成本會比較少`
-<!--SR:!2022-11-05,6,250-->
+<!--SR:!2022-11-22,17,250-->
 
 
 

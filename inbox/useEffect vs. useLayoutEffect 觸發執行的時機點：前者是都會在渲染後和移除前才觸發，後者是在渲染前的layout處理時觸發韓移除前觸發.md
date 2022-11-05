@@ -52,10 +52,10 @@
 ## 複習
 
 #🧠 useEffect 觸發執行的時機點為 ->->-> `	- mounting 階段下的componentDidMount - updating 階段下的componentDidUpdate - unmounting 階段下的componentWillUnmount`
-<!--SR:!2022-11-05,28,250-->
+<!--SR:!2023-01-18,74,250-->
 
 #🧠 useLayoutEffect 觸發執行的時機點為？ ->->-> `在實際DOM節點進行渲染過程中的Layout階段`
-<!--SR:!2022-11-05,28,250-->
+<!--SR:!2023-01-18,74,250-->
 
 #🧠 useLayoutEffect 觸發執行的時機點是在實際DOM節點進行渲染過程中的Layout階段，具體是什麼？ ->->-> `	- mounting 階段下的React Update DOM & refs(在實際DOM節點進行渲染過程中的Layout階段) - updating 階段下的React Update DOM & refs(在實際DOM節點進行渲染過程中的Layout階段) - unmount 階段下的componentWillUnmount`
 <!--SR:!2023-01-10,67,250-->
