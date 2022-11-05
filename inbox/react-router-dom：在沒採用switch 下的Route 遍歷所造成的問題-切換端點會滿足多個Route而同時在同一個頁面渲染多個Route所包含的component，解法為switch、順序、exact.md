@@ -96,7 +96,7 @@ import { Switch } from 'react-router-dom';
 <!--SR:!2022-11-14,9,250-->
 
 #🧠 react-router-dom：switch  如何載入？ ->->-> `import { Switch } from 'react-router-dom';`
-<!--SR:!2022-11-05,3,250-->
+<!--SR:!2022-11-12,7,250-->
 
 #🧠 react-router-dom：switch  使用方式如何？ ->->-> `<Switch> <Route path=path1 /> <Route path=path2 /> . . </Switch>`
 <!--SR:!2022-11-15,10,250-->
@@ -105,7 +105,7 @@ import { Switch } from 'react-router-dom';
 <!--SR:!2022-11-15,10,250-->
 
 #🧠 react-router-dom：上圖是客戶端要切換的端點，下面是目前客戶端所待著的webpage，其中有綁定router元件在那webpage，請問它會遇到什麼樣的問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch_kxguyp.png)->->-> `若使用者對著以下端點進行切換的話，會因為會同時滿足第二個Route和第三個Route所設定的path而將Products元件和ProductDetails元件同時在目前webpage顯示`
-<!--SR:!2022-11-05,3,250-->
+<!--SR:!2022-11-15,10,250-->
 
 #🧠 react-router-dom：上圖是客戶端要切換的端點，下面是目前客戶端所待著的webpage，其中有綁定router元件在那webpage，請問它會遇到什麼樣的問題？會因為會同時滿足第二個Route和第三個Route所設定的path而將Products元件和ProductDetails元件同時在目前webpage顯示，解法有什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch_kxguyp.png) ->->-> `使用Switch 元件 + 改變Route順序、使用Switch 元件 ＋ 添加exact matching`
 <!--SR:!2022-11-15,10,250-->
