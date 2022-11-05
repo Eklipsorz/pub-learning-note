@@ -100,7 +100,7 @@
 
 
 #🧠 react-router：若要讓Route 元件比對path是以path版本的正規表達式來進行，請問語法會是什麼？->->-> `<Route path="..." />`
-<!--SR:!2022-11-05,3,250-->
+<!--SR:!2022-11-14,9,250-->
 
 
 #🧠 react-router：在同一個虛擬webpage上，若多個Route的path被滿足的話，那麼會有什麼樣的效果 ->->-> `就會共同在同一個虛擬webpage上按照滿足的Route所包含的Component來渲染`
