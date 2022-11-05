@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
+                "file": "inbox/Untitled 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
+                "file": "inbox/Untitled 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md"
+                "file": "inbox/Untitled 10.md"
               }
             }
           }
@@ -194,8 +194,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e7b4a7a1e3c48289",
+  "active": "c061d8f2e83980a9",
   "lastOpenFiles": [
+    "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/Untitled 10.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
@@ -204,7 +205,6 @@
     "inbox/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/React ：在表格提交事件中，表格下的輸入欄內容存取方式有兩種：第一種使用React體系的事件＋state；第二種為使用ref.md",
-    "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
-    "inbox/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md"
+    "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md"
   ]
 }

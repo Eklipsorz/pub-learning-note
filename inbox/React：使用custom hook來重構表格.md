@@ -181,7 +181,7 @@ export default SimpleInput;
 ## 複習
 
 #💻 請至/react-builder/question-review/form-adv-practice領取題目並切換至refactor-with-custom-hook分支，利用custom hook將輸入欄的value、touch、valid獲取邏輯包含並直接取代SimpleInput.js裡頭的輸入欄所擁有的業務邏輯 ->->-> `https://github.com/academind/react-complete-guide-code/tree/16-working-with-forms/code/10-re-using-the-custom-hook/src`
-<!--SR:!2022-11-05,10,250-->
+<!--SR:!2022-12-03,28,250-->
 
 
 #🧠 React：表格若出現大量重複狀態設定和判斷，重構手段會是什麼？ ->->-> `- 建立一個獨立的輸入欄元件並夾雜這些狀態設定和判斷- 建立一個custom hook來包含業務邏輯 `
