@@ -155,16 +155,16 @@ function outerFunction() {
 
 
 #🧠 nest 命名緣由在動詞上是什麼意思？ ->->-> `建立一個特定結構體來包含特定事物`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-11,5,248-->
 
 #🧠 nested function 是什麼？ ->->-> `是指被另一個函式所包含著的函式`
 <!--SR:!2022-11-06,2,248-->
 
 #🧠  nested function：會是指被另一個函式所包含著的函式function outerFunction() \{  function innerFunction() \{  \} } 哪個才是nested function？為什麼？->->-> `innerFunction正是nested function。`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-11,5,248-->
 
 #🧠 nested route 概念是什麼？->->-> `以Route結構所包裝的另外一個Route結構`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-12,6,248-->
 
 #🧠 nested route 概念為：以Route結構所包裝的另外一個Route結構，具體在React會是什麼元件，請完整說出來 ->->-> `一個Route 元件所包含的另外一個Route 元件`
 <!--SR:!2022-11-06,2,248-->
@@ -195,14 +195,14 @@ function outerFunction() {
 <!--SR:!2022-11-06,2,248-->
 
 #🧠 react-router-dom：不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path，若nested route所設定的path設定成以外的path呢？ ->->-> `會因為沒在包含其route所擁有的path而失效`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-10,4,248-->
 
 #🧠 react-router-dom：若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487832/blog/react/react-router/Nested-route/nested-route-inside-component-example1_esnksv.png) ->->-> `若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，會先從path2對應的Component 進行渲染，然後再從那找到夾雜的Route且Route滿足於/path2/path3，找到後就便渲染對應的component，也就是Component2`
 <!--SR:!2022-11-06,2,248-->
 
 
 #🧠  react-router-dom：當客戶端要求轉換URL為/welcome/hi時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487833/blog/react/react-router/Nested-route/nested-route-inside-component-example2_tgbsal.png) ->->-> `當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定來找到\/hi路徑，並渲染\<p\>hi\<\/p\>`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-12,6,248-->
 
 ---
 Status: #🌱 

@@ -90,7 +90,7 @@ Resource Representation State：
 <!--SR:!2022-11-23,26,250-->
 
 #🧠 REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格，請問何謂最終目標？說明清楚那HATEOAS之產品 ->->-> `當存取到特定資源X時，回應就會包含動態產生出來的一組與特定資源X相關連的API連結，而非以寫死的方式來表達能對特定資源做哪些進一步的操作`
-<!--SR:!2022-11-06,14,249-->
+<!--SR:!2022-12-11,35,249-->
 
 
 #🧠 REST 網路軟體開發風格 完整的全名會是什麼 ->->-> `Resource Representation State Transfer`
@@ -98,7 +98,7 @@ Resource Representation State：
 
 
 #🧠 Resource Representation State Transfer / REST 中的Resource是什麼？ ->->-> `簡短來說，Resource會是指任意形式的實體；在網路上會以Resource所在的URI來表達Resource`
-<!--SR:!2022-11-06,14,249-->
+<!--SR:!2022-12-14,38,249-->
 
 #🧠  Resource Representation State Transfer / REST 中的Representation是什麼？->->-> `Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等`
 <!--SR:!2022-11-26,28,250-->
