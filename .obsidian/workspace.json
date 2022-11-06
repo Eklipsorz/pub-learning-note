@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing目標.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing目標.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing目標.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 11.md"
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing目標.md"
               }
             }
           }
@@ -184,7 +184,7 @@
   "active": "2cca6c60fb8e6751",
   "lastOpenFiles": [
     "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",
-    "inbox/Untitled 11.md",
+    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing目標.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
     "inbox/Untitled 10.md",
     "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",

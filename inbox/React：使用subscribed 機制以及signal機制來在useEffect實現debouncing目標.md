@@ -60,12 +60,18 @@ update 階段會是：
 
 ### 使用signal 
 
-
+1. 使用AbortController API來建立controller 和 signal接收處理物件
+2. 將signal 接收處理物件安裝至對應的非同步任務
+3. 設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行
+4. 設定catch或者try...catch等錯誤攔截
 
 ```
 useEffect(() => {
       // create a instance which sends a signal
-      something(…)
+      const controller = new AbortController();
+	  const signal = controller.signal
+	  
+      something(…, signal)
       .catch(error => {
           /*  cancellation * /
           // do something if it receives
@@ -79,31 +85,11 @@ useEffect(() => {
        })
        
       return () => {
-          // send error signal with the instance
+          controller.abort()
       } 
 }, [deps]) 
 ```
 
-
-1.  利用subscribed 是否為true 來決定side effect 是否繼續執行
-
-  
-
-
-
-Fetch => signal 
-
-Axios => cancelToken (built in axios)
-
-  
-
-  
-
-物件之間的一對多依賴關係，當一個物件狀態發生改變時，所有依賴於它的物件都得到通知。 
-
-  
-
-  
 
 
 
@@ -118,30 +104,31 @@ Axios => cancelToken (built in axios)
 > 建構子
 
 > AbortController.AbortController()
-> 建立一個新的 AbortController 物件實體。
+> Creates a new `AbortController` object instance.
 
 
 > 屬性
 
 > AbortController.signal 
-    回傳一個 AbortSignal (en-US) 物件實體，可以用來中斷一個 DOM 請求、或是與其溝通。
+> Returns an AbortSignal object instance, which can be used to communicate with, or to abort, a DOM request.
+>
+
 
 > 方法
 
 > AbortController.abort() 
-> 在一個 DOM 請求完成前中斷他。這可以用來中斷 fetch 請求 (en-US)、對任何 Response Body 的讀取、或是資料流。
+> Aborts a DOM request before it has completed. This is able to abort fetch requests, consumption of any response bodies, and streams.
 
 重點：
-- AbortController interfact 是定義一個控制器物件來讓支援AbortController
-
-
-  
-
-支援 
-
-Fetch
-
-  
+- AbortController interface 是定義一個控制器物件來搭載在支援AbortController介面的非同步任務上，使他們能夠接收外部傳送過來的Abort Signal，收到後就變中斷目前任務
+- 屬性、建構式、方法
+	- 建構式：回傳AbortController物件
+	- AbortController 屬性 - signal ：主要是對應AbortController 接收訊號並執行中斷的物件-被稱之為AbortSignal，專門搭載至支援AbortController介面的非同步任務
+	- AbortController 方法 - abort：主要是發送abort signal至已搭載AbortSignal物件的非同步任務，任務接收到就停止任務，但會是以錯誤形式來回報
+```
+AbortController.abort()
+```
+- 目前支援AbortController介面的非同步任務種類有：axios、fetch
 
   
 ### 發佈/訂閱模式
