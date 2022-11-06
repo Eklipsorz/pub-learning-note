@@ -131,7 +131,7 @@
 
 
 #🧠 請求太多為IIFE模組化的缺點之一，請說明為什麼？(請說明真正造成浪費的點) ->->-> `即使只有部分模組要載入依賴模組，但由於沒載入模組的管理(來按需載入)，還是得載入全部的依賴模組，這使得每次DOM Document的渲染 很有可能會讓所有對應依賴模組重新載入一次，進而使效能發生不必要的耗損`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-12,6,248-->
 
 
 
@@ -147,7 +147,7 @@
 
 
 #🧠 請舉例說明為什麼模組載入順序會是IIFE模組化的缺點？ ->->-> `假設moduleA被moduleB所依賴，而moduleB 被module C依賴 <script type="text/javascript" type="./moduleA.js"></script><script type="text/javascript" type="./moduleB.js"></script> <script type="text/javascript" type="./main.js"></script>，若考慮更多模組，那麼其順序會更為複雜，使開發者更難維護`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-11,5,248-->
 
 
 

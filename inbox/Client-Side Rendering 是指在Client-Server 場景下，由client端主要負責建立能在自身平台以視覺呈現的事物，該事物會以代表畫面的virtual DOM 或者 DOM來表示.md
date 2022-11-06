@@ -108,8 +108,16 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 #🧠 Client-Side Rendering 的優點是頁面切換較快，具體說明 ->->-> `由於網頁畫面是由client端自行負責，並不需要再次向伺服器索要新的實體webpage，且能根據不同時機點下的dom內容差異來以dom為單位來轉換畫面`
 <!--SR:!2022-11-21,16,250-->
 
+#🧠 Client-Side Rendering 的缺點是什麼？(共兩個，載入、SEO) ->->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`
+<!--SR:!2022-11-09,3,250-->
+
+
 #🧠 Client-Side Rendering 的缺點是什麼？(共兩個) ->->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`
-<!--SR:!2022-11-06,7,250-->
+<!--SR:!2022-11-09,3,250-->
+
+
+#🧠 Client-Side Rendering 的缺點是什麼？>->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`
+
 
 
 #🧠 Client-Side Rendering 的缺點是SEO 會比Server-Side Rendering 來得差，具體說明 ->->-> `由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO`
@@ -117,7 +125,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering所能實現的網頁應用程式會是？為什麼？ ->->-> `由於本質上只需要少量的實體webpage文件來建構出其他虛擬page，通常少量會是指單個實體webpage文件，因此被稱之為Single-Page Application，所能實現的應用程式就是SPA`
-<!--SR:!2022-11-06,7,250-->
+<!--SR:!2022-11-24,18,250-->
 
 #🧠 Client-Side Rendering適用場景為何 ->->-> `適用於高頻切換不同頁面且不需要SEO的網頁`
 <!--SR:!2022-11-20,15,250-->

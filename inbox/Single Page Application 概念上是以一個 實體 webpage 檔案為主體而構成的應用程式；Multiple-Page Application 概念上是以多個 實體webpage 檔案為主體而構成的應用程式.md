@@ -64,13 +64,13 @@
 <!--SR:!2022-11-09,10,250-->
 
 #🧠 Single-Page Application 概念上會是什麼？->->-> `是以一個 實體 webpage 檔案為主體而構成的應用程式`
-<!--SR:!2022-11-06,7,250-->
+<!--SR:!2022-11-25,19,250-->
 
 #🧠 Single-Page Application 的大部分Page具體是什麼？ 除了單一實體webpage檔案以外->->-> `該應用程式的 每個"Page" 都會是透過對著實體webpage進行互動而產生出來`
 <!--SR:!2022-11-23,17,250-->
 
 #🧠 Single-Page Application 的Page與實體webpage檔案比較的話，會是什麼？ ->->-> `這些Page 相對於實體webpage檔案來說，是一個虛擬的webpage`
-<!--SR:!2022-11-06,7,250-->
+<!--SR:!2022-11-26,20,250-->
 
 
 #🧠 Single-Page Application：網頁上請求處理都是以誰為主體來執行 ->->-> `單一實體webpage檔案的life cycle進行處理`
