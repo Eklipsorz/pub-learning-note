@@ -3,6 +3,7 @@
 
 
 ### expr1 && expr2 
+[[@mdnLogicalJavaScriptMDN]]
 > expr1 && expr2
 > Returns `expr1` if it can be converted to `false`; otherwise, returns `expr2`. Thus, when used with Boolean values, `&&` returns `true` if both operands are true; otherwise, returns `false`.
 
@@ -18,7 +19,7 @@
 		- 除此之外皆為回傳expr2
 
 ### expr1 || expr2
-
+[[@mdnLogicalJavaScriptMDNa]]
 > expr1 || expr2
 > Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, `||` returns `true` if either operand is true; if both are false, returns `false`.
 
@@ -34,8 +35,18 @@
 
 ### !expr1
 
+[[@mdnLogicalNOTJavaScript]]
 > The logical NOT (`!`) operator (logical complement, negation) takes truth to falsity and vice versa. It is typically used with boolean (logical) values. When used with non-Boolean values, it returns `false`if its single operand can be converted to `true`; otherwise, returns `true`.
 
+
+重點：
+- !expr1：
+	- 若expr1本身為boolean value的話
+		- expr1若為false，!expr1為true
+		- expr1若為true，!expr1為false
+	- 若expr1本身不為boolean value的話
+		- expr1 會先以boolean value的形式來強制轉換，若為true，就回傳false
+		- 若結果為false，就回傳true
 
 ## 複習
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value->->-> `		- expr1 和 expr2 同為true，就expr1 && expr2 結果為true - 其餘狀況皆回傳false`
@@ -67,6 +78,15 @@
 #🧠 JS： res || console.log('hi');  !res || console.log('hi !') 會如何處理和回傳？假若res為1的話 ->->-> ``
 
 
+#🧠 JS：!expr1 的 !稱之為什麼operator？ ->->-> `logical not operator !`
+
+
+#🧠 JS：logical not operator會用什麼當作運算符號 ->->-> `!`
+
+#🧠 JS： expr1 && expr2的&& 稱之為什麼operator ->->-> `logical and operator`
+
+#🧠 JS： expr1 || expr2的|| 稱之為什麼operator ->->-> `logical or operator`
+
 
 
 ---
@@ -74,4 +94,8 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
+
 References:
+[[@mdnLogicalNOTJavaScript]]
+[[@mdnLogicalJavaScriptMDNa]]
+[[@mdnLogicalJavaScriptMDN]]
