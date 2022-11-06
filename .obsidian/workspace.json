@@ -53,6 +53,60 @@
         ]
       },
       {
+        "id": "108f1dc532af8c9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "415213bf717dc4d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a9b6ff0d4fcbbd6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0ce99790948bd04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/novalidate 是指定表單關閉其提交時的預設自動驗證功能以及關閉根據驗證結果來呈現樣式內容.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "e1fac7f5332d5e39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec5ef6e495aa4772",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "932c6715f732da39",
         "type": "tabs",
         "children": [
@@ -135,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+                "file": "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +214,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+                "file": "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +237,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md"
+                "file": "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md"
               }
             }
           }
@@ -194,17 +248,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "bf3615a575e17c27",
+  "active": "ec5ef6e495aa4772",
   "lastOpenFiles": [
+    "inbox/novalidate 是指定表單關閉其提交時的預設自動驗證功能以及關閉根據驗證結果來呈現樣式內容.md",
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "inbox/Untitled 9.md",
     "inbox/Untitled 8.md",
     "inbox/Untitled 11.md",
     "inbox/Untitled 10.md",
     "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
-    "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
-    "inbox/React：雜記.md",
-    "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
-    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md"
+    "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md"
   ]
 }

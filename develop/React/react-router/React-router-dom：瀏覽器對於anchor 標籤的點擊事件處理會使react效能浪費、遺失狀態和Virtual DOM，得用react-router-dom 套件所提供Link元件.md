@@ -206,7 +206,7 @@ export default MainHeader;
 <!--SR:!2022-11-10,9,250-->
 
 #🧠 react-router-dom Link 要如何載入？ ->->-> `import { Link } from 'react-router-dom';`
-<!--SR:!2022-11-06,5,249-->
+<!--SR:!2022-11-18,12,249-->
 
 #🧠 react-router-dom Link ：\<Link to="xxxx"\>xxxx1\<\/Link\> 中的 to 和 xxxx1是什麼->->-> `	- to ： 要導向的頁面位置/網址 - xxxx1：為被綁定網址/位置的hypertext`
 <!--SR:!2022-11-10,9,250-->

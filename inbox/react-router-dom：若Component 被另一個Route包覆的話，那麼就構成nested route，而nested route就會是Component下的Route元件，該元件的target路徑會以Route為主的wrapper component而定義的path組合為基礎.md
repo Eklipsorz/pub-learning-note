@@ -182,14 +182,14 @@ function outerFunction() {
 
 
 #🧠 react-router-dom：nested route 會有的形式會是？若是nested route先合併在特定元件上，然後其元件再由Route元件包覆，那麼會是什麼形式？用程式碼表示- ->->-> `觀看**nested route 會有的形式會是**章節`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-11,5,248-->
 
 
 #🧠 react-router-dom：nested route 會有的形式會是？若是nested route先合併在特定元件上，然後其元件再由Route元件包覆， 其nested route所設定的path只能是->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
 <!--SR:!2022-11-06,2,248-->
 
 #🧠 react-router-dom：nested route 會有的形式會是？nested route直接被一個Route元件包覆， 其nested route所設定的path只能是 ->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
-<!--SR:!2022-11-06,2,248-->
+<!--SR:!2022-11-11,5,248-->
 
 #🧠 react-router-dom：在這擁有path2的Route會是nested route，那麼該Route會是以什麼為主？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487317/blog/react/react-router/Nested-route/nested-route-example_jcwisx.png)->->-> `但它的path只能夠以包含它的route所設定的path為主，也就是以\/path1為主，為此nested route的path必須設定為\/path1\/path2才能生效`
 <!--SR:!2022-11-06,2,248-->
