@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/Untitled 9.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/Untitled 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/Untitled 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 11.md"
+                "file": "inbox/Untitled 9.md"
               }
             }
           }
@@ -178,15 +178,15 @@
   },
   "active": "ccbf236b7091554d",
   "lastOpenFiles": [
+    "inbox/Untitled 8.md",
+    "inbox/Untitled 11.md",
+    "inbox/Untitled 10.md",
+    "inbox/Untitled 9.md",
+    "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
+    "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
     "inbox/React：雜記.md",
     "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
-    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md",
-    "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
-    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-    "inbox/Untitled 10.md",
-    "inbox/React：使用custom hook來重構表格案例-基本表格.md",
-    "develop/Database/Database - rollback 是指反轉特定操作執行的結果，即為將結果還原成未執行特定操作的狀態.md",
-    "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md"
+    "develop/React/React：Keys概念是用特定資料的識別字去對應著特定Virtual DOM節點，以此在變更內容的情況下，好讓React能夠分辨哪個實際DOM節點是隸屬於哪個資料.md"
   ]
 }
