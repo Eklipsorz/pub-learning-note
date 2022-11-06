@@ -69,7 +69,7 @@ const item2Remove = remove.bind(null, id3)
 <!--SR:!2022-11-09,28,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 中的thisArg是什麼？ ->->-> `指定物件來綁定在轉換後函式，會是設定新函式的this變數`
-<!--SR:!2022-11-06,26,250-->
+<!--SR:!2023-01-10,65,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 中的 arg1 - arg2 是什麼？ ->->-> `指定引數來綁定在轉換後的函式`
 <!--SR:!2022-11-09,28,250-->
