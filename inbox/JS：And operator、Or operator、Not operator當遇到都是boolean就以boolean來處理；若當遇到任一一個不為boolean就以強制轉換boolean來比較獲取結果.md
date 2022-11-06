@@ -50,60 +50,84 @@
 
 ## 複習
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value->->-> `		- expr1 和 expr2 同為true，就expr1 && expr2 結果為true - 其餘狀況皆回傳false`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 這兩者有任一個不為boolean value的話 ->->-> `		- expr1 可經由Boolean強制轉換而判定成false，就會回傳(沒經由&&轉換的版本)expr1 - 除此之外皆為回傳expr2`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： 2 && console.log('hi') 會如何處理和回傳？為什麼？ ->->-> `會得到undefined，原因在於2會被判定成true，所以回傳值肯定會是以console.log('hi')為主，其回傳會是undefined`
+<!--SR:!2022-11-09,3,250-->
 
 
 #🧠 JS： 0 && console.log('hi') 會如何處理和回傳？為什麼？->->-> `會得到0，原因在於2會被判定成false，所以回傳值肯定會是0`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： res && console.log('hi');  !res && console.log('hi !') 會如何處理和回傳？假若res為0的話->->-> `第一個回傳0，第二個會回傳undefined`
+<!--SR:!2022-11-09,3,250-->
 
 
 #🧠 JS： res && console.log('hi');  !res && console.log('hi !') 會如何處理和回傳？假若res為1的話 ->->-> `第一個會回傳undefined，第二個會回傳false`
+<!--SR:!2022-11-09,3,250-->
 
 
 
 #🧠  JS： expr1 || expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value ->->-> `expr1  或者 expr2 有任一者為true的話，就expr1 || expr2 結果為true；其餘狀況皆回傳false`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： expr1 || expr2 會如何處理和回傳？若expr1 和 expr2 這兩者有任一個不為boolean value的話->->-> `- expr1 可經由轉換而判定成true，就會回傳(沒經由&&轉換的版本)expr1 - 否則皆回傳expr2`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： 2 || console.log('hi') 會如何處理和回傳？為什麼？ ->->-> `會回傳2，由於第一個會被判定成true，因而回傳2`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： 0 || console.log('hi') 會如何處理和回傳？為什麼？ ->->-> `會回傳undefined，由於第一個會被判定成false，因而回傳console.log帶有的undefined`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： res || console.log('hi');  !res || console.log('hi !') 會如何處理和回傳？假若res為0的話 ->->-> `第一個會是undefined，第二個會是true`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： res || console.log('hi');  !res || console.log('hi !') 會如何處理和回傳？假若res為1的話 ->->-> `第一個會是1，第二個會是undefined`
+<!--SR:!2022-11-09,3,250-->
 
 
 #🧠 JS：!expr1 的 !稱之為什麼operator？ ->->-> `logical not operator !`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： !expr1  的expr1 是非boolean，如何處理->->-> `強制轉換`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： expr1 && expr2  的expr1和expr2 中有一個不為boolean，如何處理->->-> `強制轉換`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： expr1 || expr2  的expr1和expr2 中有一個不為boolean，如何處理->->-> `強制轉換`
+<!--SR:!2022-11-09,3,250-->
 
 
 #🧠 JS：logical not operator會用什麼當作運算符號 ->->-> `!`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： expr1 && expr2的&& 稱之為什麼operator ->->-> `logical and operator`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： expr1 || expr2的|| 稱之為什麼operator ->->-> `logical or operator`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS：logical "OR" operator 會用什麼當作運算符號？ ->->-> `||`
+<!--SR:!2022-11-09,3,250-->
 
 
 #🧠 JS：logical "And" operator 會用什麼當作運算符號？ ->->-> `&&`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： !expr1 會如何處理和回傳？若expr1 本身是boolean value ->->-> `	- 若expr1本身為boolean value的話 - expr1若為false，!expr1為true - expr1若為true，!expr1為false`
+<!--SR:!2022-11-09,3,250-->
 
 
 #🧠 JS： !expr1 會如何處理和回傳？若expr1 本身不是boolean value->->-> `	- 若expr1本身不為boolean value的話 - expr1 會先以boolean value的形式來強制轉換，若為true，就回傳false - 若結果為false，就回傳true`
+<!--SR:!2022-11-09,3,250-->
 
 #🧠 JS： !expr1 都一律回傳什麼？或者按照情況回傳不同的東西 ->->-> `都一率回傳true或者false`
+<!--SR:!2022-11-09,3,250-->
 
 ---
 Status: #🌱 
