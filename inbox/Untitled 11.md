@@ -40,8 +40,6 @@ useEffect(() => {
 ```
 
 
-
-
 #### 執行方式
 
 mount階段時會是先執行：
@@ -49,9 +47,20 @@ mount階段時會是先執行：
 - 生成非同步任務，任務執行以subscribed是否為true來執行
 - 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊
 
+P.S. 第二步驟和第三步驟所存取的記憶體區塊subscribed會是同一個，而cleanup憑藉著closure來對應到的
 
 
-Second. Determine how to do side effect Based on signal mechanism 
+update 階段會是：
+- 執行目前所擁有的cleanup，這時的closure和函式內容會是以上一個非同步任務產生時的記憶體區塊情況為主
+- 分配新記憶體來存放true，名為subscribed，但會與上一次建立的區塊不同，是一塊全新的內容
+- 生成非同步任務，任務執行以subscribed是否為true來執行
+- 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊
+
+
+
+### 使用signal 
+
+
 
 ```
 useEffect(() => {
@@ -80,9 +89,7 @@ useEffect(() => {
 
   
 
-[https://ithelp.ithome.com.tw/m/articles/10203484](https://ithelp.ithome.com.tw/m/articles/10203484)
 
-  
 
 Fetch => signal 
 
@@ -98,41 +105,35 @@ Axios => cancelToken (built in axios)
 
   
 
-  
+
+
+### AbortController 
 
   
+[[@mdnAbortControllerWebAPIs]]
 
-signal
-
-An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) object instance; allows you to communicate with a fetch request and abort it if desired via an [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
-
+> The **`AbortController`** interface represents a controller object that allows you to abort one or more Web requests as and when desired.
   
 
-  
+> 建構子
 
-各家瀏覽器已經開始加入 [AbortController](https://developer.mozilla.org/zh-TW/docs/Web/API/AbortController) 與 [AbortSignal (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) 介面（也就是 Abort API）的實驗性支援，讓 Fetch 和 XHR 這類的操作在完成前可以被中斷。詳情請參閱相關介面的文件
+> AbortController.AbortController()
+> 建立一個新的 AbortController 物件實體。
 
-  
 
-  
+> 屬性
 
-建構子
+> AbortController.signal 
+    回傳一個 AbortSignal (en-US) 物件實體，可以用來中斷一個 DOM 請求、或是與其溝通。
 
-[AbortController.AbortController() (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/AbortController)
+> 方法
 
-建立一個新的 AbortController 物件實體。
+> AbortController.abort() 
+> 在一個 DOM 請求完成前中斷他。這可以用來中斷 fetch 請求 (en-US)、對任何 Response Body 的讀取、或是資料流。
 
-屬性
+重點：
+- AbortController interfact 是定義一個控制器物件來讓支援AbortController
 
-[AbortController.signal (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/signal) Read only
-
-回傳一個 [AbortSignal (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) 物件實體，可以用來中斷一個 DOM 請求、或是與其溝通。
-
-方法
-
-[AbortController.abort() (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort)
-
-在一個 DOM 請求完成前中斷他。這可以用來中斷 [fetch 請求 (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/fetch)、對任何 Response Body 的讀取、或是資料流。
 
   
 
@@ -166,8 +167,11 @@ Fetch
 
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[React]]
 Links:
+[[React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊]]
 References:
 [[@jlin178JSDesignPattern]]
+[[@mdnAbortControllerWebAPIs]]

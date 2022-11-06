@@ -34,11 +34,9 @@ useEffect(() => {
 }, [deps])
 ```
 
-
-
-
 ## 複習
-#🧠 Question :: ->->-> ``
+
+#🧠 react：useEffect 的cleanup要如何影響每一次非同步任務的執行？ ->->-> `生成一個擁有可儲存當時能夠對應到記憶體區塊的closure之函式物件`
 
 ---
 Status: #🌱 
