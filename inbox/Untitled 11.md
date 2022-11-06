@@ -1,12 +1,18 @@
 ## 描述
 
+
+
+### 使用subscribed(true/false)
+
+
+
+
 First. Determine how to do side effect Based on Subscribed (: true / false)
 
 ```
 
 useEffect(() => {
       let subscribed = true
-      
       something(…)
       .then((….) => {
            if (subscribed) 
