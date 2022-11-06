@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md"
               }
             }
           }
@@ -178,7 +178,7 @@
   "active": "2cca6c60fb8e6751",
   "lastOpenFiles": [
     "annotation/@mdnLogicalJavaScriptMDNa.md",
-    "inbox/Untitled 8.md",
+    "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
     "inbox/Untitled 9.md",
     "inbox/React若在自製Component標籤上添加無屬性(attribute value)值的屬性名稱(attribute)的話，其標籤上的屬性名稱會被賦予true值.md",
     "inbox/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
