@@ -34,16 +34,16 @@
         ]
       },
       {
-        "id": "b826fb051b16933f",
+        "id": "6231e598b8b05f04",
         "type": "tabs",
         "children": [
           {
-            "id": "cf6bdcab733bc420",
+            "id": "19aa867b2875787b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
+                "file": "inbox/Untitled 9.md",
                 "mode": "source",
                 "source": false
               }
