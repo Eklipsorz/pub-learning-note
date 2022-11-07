@@ -266,7 +266,7 @@ this is use effect
 <!--SR:!2022-11-07,10,250-->
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `主要會有race condition這問題，可能沒清除到指定任務，任務就執行完或者對錯誤的任務進行處理`
-<!--SR:!2022-11-07,10,250-->
+<!--SR:!2022-12-05,28,250-->
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免因為非同步任務而對錯誤的任務進行處理`
 <!--SR:!2022-11-07,10,250-->
