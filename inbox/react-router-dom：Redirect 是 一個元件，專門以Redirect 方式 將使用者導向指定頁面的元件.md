@@ -12,17 +12,20 @@
 重點：
 - Redirect 是 一個元件，專門以Redirect 方式 將使用者導向指定頁面的元件
 - 元件的使用語法
+	- to 是指定要導向頁面的所在位置，可填入relative URL 或者 absoute URL
 ```
 import { Redirect } from 'react-router-dom';
 
 return (
 
 	<Router>
-	<Route path="/path1">
-		
-	</Route>
-	<Rout
-	</Route
+		<Route path="/path1">
+			<Redirect to="/path2" />
+		</Route>
+		<Route path="/path2">
+			<Component2 />
+		</Route>
+	</Router> 
 )
 ```
 - 載入方式為：
@@ -30,6 +33,33 @@ return (
 import { Redirect } from 'react-router-dom';
 ```
 
+
+
+#### 範例
+
+
+```
+function App() {
+  return (
+    <div>
+      <MainHeader />
+      <Switch>
+        <Route path='/' exact>
+          <Redirect to='/welcome' />
+        </Route>
+        <Route path='/welcome'>
+          <Welcome />
+        </Route>
+        <Route exact path='/products'>
+          <Products />
+        </Route>
+        <Route path='/products/:productId/'>
+          <ProductDetails />
+        </Route>
+      </Switch>
+    </div>
+  );
+```
 
 ## 複習
 
