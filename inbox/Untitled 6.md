@@ -15,7 +15,6 @@ root.render(
     <App />
   </BrowserRouter>,
 );
-
 ```
 
 ### 在App.js元件上定義BrowserRouter的Routing
