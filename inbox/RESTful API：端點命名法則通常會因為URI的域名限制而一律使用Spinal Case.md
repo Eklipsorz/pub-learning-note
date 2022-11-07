@@ -41,7 +41,7 @@ profile_image => profile/image
 
 #🧠 頁面端點和API端點命名法通常會是什麼？ ->->-> `Spinal Case`
 
-#🧠 頁面端點和API端點命名法通常是Spinal Case，請問所有場景都是用嗎 ->->-> ``
+#🧠 頁面端點和API端點命名法通常是Spinal Case，請問所有場景都適用嗎 ->->-> `不能，主要看場景什麼`
 
 #🧠 頁面端點和API端點命名法為啥是Spinal Case？->->-> `不允許使用下底線、瀏覽器本身在解析URL並不會區分大小寫、不允許使用點字號`
 
