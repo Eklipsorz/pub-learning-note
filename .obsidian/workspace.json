@@ -18,62 +18,20 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ccbf236b7091554d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react：面對渲染內容為boolean會儘可能渲染忽略不渲染，其餘內容則是按照出現字元來呈現.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5306fdc0650b50ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       },
       {
-        "id": "fe5348ece363e098",
+        "id": "96db9ea6c4388afe",
         "type": "tabs",
         "children": [
           {
-            "id": "4cb27f1652f1572c",
+            "id": "5f8d888843745c65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "513b13bf63f07442",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4d51e384caa3a46a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md"
+                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md"
               }
             }
           }
@@ -204,17 +162,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "4cb27f1652f1572c",
+  "active": "2cca6c60fb8e6751",
   "lastOpenFiles": [
+    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
+    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
+    "inbox/react：面對渲染內容為boolean會儘可能渲染忽略不渲染，其餘內容則是按照出現字元來呈現.md",
+    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
+    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
-    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
-    "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
-    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
-    "inbox/Untitled 10.md",
-    "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",
-    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md"
+    "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md"
   ]
 }

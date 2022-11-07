@@ -1,6 +1,8 @@
 ## 描述
 
 
+### 
+
 
 ### 使用subscribed(true/false)
 
@@ -152,6 +154,29 @@ AbortController.abort()
 
 ## 複習
 
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
