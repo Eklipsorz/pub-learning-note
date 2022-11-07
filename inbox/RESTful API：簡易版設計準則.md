@@ -305,3 +305,17 @@ GET /friends/10375923/profile
 
 
 
+
+
+## 描述
+
+## 複習
+#🧠 Question :: ->->-> ``
+
+---
+Status: #🌱 
+Tags:
+[[REST]]
+Links:
+[[RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case]]
+References:
