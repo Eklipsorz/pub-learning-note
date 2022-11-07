@@ -76,6 +76,24 @@
         ]
       },
       {
+        "id": "fe5348ece363e098",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4cb27f1652f1572c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "414ac299eef17c31",
         "type": "tabs",
         "children": [
@@ -176,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+                "file": "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md"
               }
             }
           }
@@ -235,11 +253,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "bcdbdd7afbbaa739",
+  "active": "4cb27f1652f1572c",
   "lastOpenFiles": [
+    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
     "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
-    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
     "inbox/Untitled 10.md",
     "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",

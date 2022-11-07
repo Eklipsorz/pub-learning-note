@@ -79,7 +79,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 ## 複習
 
 #🧠 Client-Side Rendering  概念是什麼？ ->->-> `Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示。`
-<!--SR:!2022-11-07,8,250-->
+<!--SR:!2022-11-28,21,250-->
 
 #🧠 Client-Side Rendering  具體流程是什麼？->->-> `- client 端先向伺服器1索要特定網頁A - client一接收到特定網頁A，就要求伺服器2獲取對應JS bundle - client一接收到JS bundle 就依照目前的互動種類向伺服器3索要資料並渲染初始畫面。 隨後client就憑藉JS bundle和網頁A來向指定伺服器索要資料來在客戶端渲染出不同URL所對應的page畫面`
 <!--SR:!2022-11-09,10,250-->
