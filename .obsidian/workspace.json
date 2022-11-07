@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
+                "file": "inbox/Untitled 10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b66d32a4b0e46ba9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "96db9ea6c4388afe",
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "會由誰處理？",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,7 +96,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -103,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -162,17 +176,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "2cca6c60fb8e6751",
+  "active": "b66d32a4b0e46ba9",
   "lastOpenFiles": [
-    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
+    "inbox/Untitled 10.md",
     "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
+    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
     "inbox/react：面對渲染內容為boolean會儘可能渲染忽略不渲染，其餘內容則是按照出現字元來呈現.md",
     "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
-    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
-    "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md"
+    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
   ]
 }
