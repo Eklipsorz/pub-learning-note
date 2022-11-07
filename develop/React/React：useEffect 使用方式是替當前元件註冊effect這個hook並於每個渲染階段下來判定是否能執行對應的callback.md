@@ -269,7 +269,7 @@ this is use effect
 <!--SR:!2022-12-05,28,250-->
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免因為非同步任務而對錯誤的任務進行處理`
-<!--SR:!2022-11-07,10,250-->
+<!--SR:!2022-12-05,28,250-->
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  若是async的話，潛在問題會是非同步任務而對錯誤的任務進行處理，那麼具體會是什麼？->->-> `清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務`
