@@ -6,6 +6,7 @@
       {
         "id": "cfdeff671c62f032",
         "type": "tabs",
+        "dimension": 77.45208568207441,
         "children": [
           {
             "id": "2cca6c60fb8e6751",
@@ -20,12 +21,12 @@
             }
           },
           {
-            "id": "b66d32a4b0e46ba9",
+            "id": "30d23162fb9f8cff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-dom：Redirect 是 一個元件，專門以Redirect 方式 將使用者導向指定頁面的元件.md",
+                "file": "inbox/Untitled 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,6 +38,7 @@
       {
         "id": "96db9ea6c4388afe",
         "type": "tabs",
+        "dimension": 22.547914317925592,
         "children": [
           {
             "id": "5f8d888843745c65",
@@ -69,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "RESTful",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 660.5
   },
   "right": {
     "id": "1b728af4a278cee2",
@@ -117,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-dom：Redirect 是 一個元件，專門以Redirect 方式 將使用者導向指定頁面的元件.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-dom：Redirect 是 一個元件，專門以Redirect 方式 將使用者導向指定頁面的元件.md",
+                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-dom：Redirect 是 一個元件，專門以Redirect 方式 將使用者導向指定頁面的元件.md"
+                "file": "inbox/Untitled 6.md"
               }
             }
           }
@@ -173,20 +175,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
-  "active": "b66d32a4b0e46ba9",
+  "active": "30d23162fb9f8cff",
   "lastOpenFiles": [
     "inbox/Untitled 10.md",
+    "inbox/RESTful API：簡易版設計準則.md",
+    "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
+    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+    "inbox/react-router-dom：Redirect 是 一個元件，專門以Redirect 方式 將使用者導向指定頁面的元件.md",
     "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md",
     "inbox/react：面對渲染內容為boolean會儘可能渲染忽略不渲染，其餘內容則是按照出現字元來呈現.md",
     "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
-    "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
-    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-    "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
-    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md"
   ]
 }
