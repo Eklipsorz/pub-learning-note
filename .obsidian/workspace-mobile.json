@@ -69,6 +69,16 @@
           "type": "starred",
           "state": {}
         }
+      },
+      {
+        "id": "da370a0c26e73f6b",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byCreatedTime"
+          }
+        }
       }
     ],
     "currentTab": 0
