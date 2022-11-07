@@ -85,7 +85,7 @@ export default CartButton;
 
 
 #🧠 若元件套用對應selector中的CSS 動畫，那麼動畫會呈現一次，如何重複呈現？->->-> `切換對應元件的class`
-<!--SR:!2022-11-07,25,250-->
+<!--SR:!2023-01-09,63,250-->
 
 #💻 請至/question-review/food-order-project-question領取題目並到add-item-animation分支，請試著在CartButton.js中實作出當購物車的項目數量至購物車的動畫，請務必注意每次數量有變動就每次呈現 ->->-> `https://github.com/Eklipsorz/food-order-project/blob/main/src/components/Cart/CartButton.js`
 <!--SR:!2022-11-10,28,250-->
