@@ -60,7 +60,7 @@ update 階段會是：
 - 生成非同步任務，任務執行以subscribed是否為true來執行
 - 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊
 
-#### 缺點
+#### 潛在問題
 1. 該方法只能阻止還沒正式執行的非同步任務，其餘較快執行的非同步任務無法被阻止。
 
 ### 使用signal 
@@ -128,8 +128,11 @@ useEffect(() => {
 - AbortController interface 是定義一個控制器物件來搭載在支援AbortController介面的非同步任務上，使他們能夠接收外部傳送過來的Abort Signal，收到後就變中斷目前任務
 - 屬性、建構式、方法
 	- 建構式：回傳AbortController物件
+	```
+	new AbortController()
+	```
 	- AbortController 屬性 - signal ：主要是對應AbortController 接收訊號並執行中斷的物件-被稱之為AbortSignal，專門搭載至支援AbortController介面的非同步任務
-	- AbortController 方法 - abort：主要是發送abort signal至已搭載AbortSignal物件的非同步任務，任務接收到就停止任務，但會是以錯誤形式來回報
+	- AbortController 方法 - abort：主要是發送abort signal至已搭載同一個Controller 之AbortSignal物件的非同步任務，任務接收到就停止任務，但會是以錯誤形式來回報
 ```
 AbortController.abort()
 ```
@@ -152,7 +155,7 @@ AbortController.abort()
 > 訊息的傳送者（稱為發布者）不會將訊息直接傳送給特定的接收者（稱為訂閱者）。而是將發布的訊息分為不同的類別，無需了解哪些訂閱者（如果有的話）可能存在。
 
 重點：
--  發佈/訂閱模式：物件之間的一對多依賴關係，當一個物件狀態發生狀態，所有依賴於它的物件都會得到對應通知，並且存取最新內容
+-  發佈/訂閱模式：設定關係使物件之間產生一對多依賴關係，當一個物件狀態發生狀態，所有依賴於它的物件都會得到對應通知，並且存取最新內容
 
 
 ## 複習
@@ -174,13 +177,45 @@ AbortController.abort()
 
 #🧠 React： 以下為useEffect的實現代碼，請說明cleanup 函式如何正確執行？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `憑藉著函式物件擁有的closure，該closure會對應著當時非同步任務所採用的記憶體區塊，該記憶體區塊正是決定了非同步任務繼續執行的關鍵，所以只要改變該區塊內容就能讓非同步任務停止繼續執行`
 
-#🧠 Question :: ->->-> ``
+#🧠 React useEffect：紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容的潛在問題是什麼？->->-> `該方法只能阻止還沒正式執行的非同步任務，其餘較快執行的非同步任務無法被阻止。`
 
-#🧠 Question :: ->->-> ``
+#🧠  React useEffect：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal ，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `可以，因可以直接強制中斷`
 
-#🧠 Question :: ->->-> ``
+#🧠 React useEffect：紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容 ，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `並不能，該方法只能阻止還沒正式執行的非同步任務，其餘較快執行的非同步任務無法被阻止。`
 
-#🧠 Question :: ->->-> ``
+#🧠 React useEffect：紀錄非同步任務ID並於cleanup移除指定任務的ID，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `可以，因可以直接強制中斷`
+
+
+#🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體方式是什麼？ ->->-> `使用AbortController API來建立controller 和 signal接收處理物件；將signal 接收處理物件安裝至對應的非同步任務；設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行；設定catch或者try...catch等錯誤攔截`
+
+
+#🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼如何安置signal和發送signal ->->-> `  const controller = new AbortController(); const signal = controller.signal something(…, signal)  return () => { controller.abort() } `
+
+
+
+
+#🧠 React：以下為useEffect的實現，請問cleanup中發送的abort如何確保是發送signal至正確的非同步任務上來阻止執行？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png) ->->-> `最主要是透過cleanup的closure來記錄到非同步任務會用到的controller所在的記憶體區塊，這樣子可以致使cleanup能夠正確對當前所產生的非同步任務發送signal來阻止執行`
+
+#🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼是什麼？(包含catch/try...catch) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png)`
+
+#🧠  目前支援AbortController介面的非同步任務種類有哪些？ ->->-> `axios、fetch`
+
+#🧠 AbortController 方法 - abort 語法是？->->-> `AbortController.abort()`
+
+#🧠 JS：AbortController interface 如何建構對應類別的物件？ ->->-> `new AbortController()`
+
+#🧠 JS：AbortController interface 的 abort 發送的signal 只有誰才能收到？ ->->-> `已搭載同一個Controller 之AbortSignal物件的非同步任務`
+
+#🧠 JS：AbortController interface 的 abort 是什麼？ 得先有什麼才能有abort方法 ->->-> `得先建立AbortController 物件才能有。主要是發送abort signal至已搭載同一個Controller 之AbortSignal物件的非同步任務，任務接收到就停止任務，但會是以錯誤形式來回報`
+
+#🧠 JS：AbortController interface 的 signal 是什麼？ 得先有什麼才能有signal ->->-> `得先建立AbortController 物件才能有。這是主要是對應AbortController 接收訊號並執行中斷的物件-被稱之為AbortSignal，專門搭載至支援AbortController介面的非同步任務`
+
+#🧠 JS： AbortController interface 是什麼？用途是什麼？ ->->-> `是定義一個控制器物件來搭載在支援AbortController介面的非同步任務上，使他們能夠接收外部傳送過來的Abort Signal，收到後就變中斷目前任務`
+
+
+
+#🧠 軟體開發方式中，發佈/訂閱模式會是指什麼？ ->->-> `設定關係使物件之間產生一對多依賴關係，當一個物件狀態發生狀態，所有依賴於它的物件都會得到對應通知，並且存取最新內容`
+
 
 ---
 Status: #🌱 
