@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "effect",
+                "query": "useImperativeHandle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -187,7 +187,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "8a8838b33e798179",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "inbox/Untitled 8.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
