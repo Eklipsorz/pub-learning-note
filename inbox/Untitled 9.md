@@ -12,8 +12,20 @@
 > While you can `useEffect(fn, [])`, it’s not an exact equivalent. Unlike `componentDidMount`, it will _capture_ props and state. So even inside the callbacks, you’ll see the initial props and state. If you want to see “latest” something, you can write it to a ref. But there’s usually a simpler way to structure the code so that you don’t have to. Keep in mind that the mental model for effects is different from `componentDidMount` and other lifecycles, and trying to find their exact equivalents may confuse you more than help. To get productive, you need to “think in effects”, and their mental model is closer to implementing synchronization than to responding to lifecycle events.
 
 
+> **React synchronizes the DOM according to our current props and state.** There is no distinction between a “mount” or an “update” when rendering.
+
+
 重點：
-- useH
+- useEffect 的 運作原理 和 生命週期函式(componentDidMount、componentDidUpdate、componentWillUnmount)的運作原理是不一樣的
+- useEffect 的運作原理更像是同步化
+
+
+###  Data synchronization
+
+> Data synchronization is the process of establishing consistency between source and target data stores, and the continuous harmonization of the data over time. It is fundamental to a wide variety of applications, including file synchronization and mobile device synchronization.
+
+重點：
+- 資料同步：是指多個儲存資料的儲存空間是否
 
 ## 複習
 
