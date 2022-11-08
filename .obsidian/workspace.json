@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
                 "mode": "source",
                 "source": false
               }
@@ -59,16 +59,16 @@
         "currentTab": 2
       },
       {
-        "id": "d8d1bb1dcc897716",
+        "id": "e280ea8a0ad0d299",
         "type": "tabs",
         "children": [
           {
-            "id": "889652cf20f300a6",
+            "id": "36b3defc1b33352a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
+                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +120,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -140,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 9.md"
+                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md"
               }
             }
           }
@@ -201,8 +202,8 @@
   },
   "active": "d71939476d550bda",
   "lastOpenFiles": [
+    "inbox/useEffect 和 生命週期兩者是不一樣的，只是useEffect 部分特性與生命週期重，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
-    "inbox/Untitled 9.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
