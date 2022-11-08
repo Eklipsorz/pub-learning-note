@@ -68,7 +68,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
+                "file": "inbox/Untitled 9.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
+                "file": "inbox/Untitled 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
+                "file": "inbox/Untitled 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md"
+                "file": "inbox/Untitled 9.md"
               }
             }
           }
@@ -200,17 +200,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "d71939476d550bda",
+  "active": "36b3defc1b33352a",
   "lastOpenFiles": [
-    "inbox/useEffect 和 生命週期兩者是不一樣的，只是useEffect 部分特性與生命週期重，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
-    "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
+    "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
+    "develop/OS/synchronous 和 asynchronous 在電腦科學是分別指每個任務會等待前面任務完成才執行與每個任務都為獨立，不會等前面任務完成才執行.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
+    "inbox/Untitled 8.md",
+    "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
+    "inbox/Untitled 9.md",
+    "inbox/useEffect 和 生命週期兩者是不一樣的，只是useEffect 部分特性與生命週期重，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
-    "inbox/Untitled 8.md",
-    "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md",
-    "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
-    "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
-    "develop/React/React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect.md"
+    "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md"
   ]
 }
