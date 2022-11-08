@@ -72,7 +72,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 <!--SR:!2023-01-21,74,250-->
 
 #🧠 import 'xxxx'且xxxx為JS檔案， 用途是修改主要importing module會用到的資源，具體如何做？ ->->-> `利用執行該模組的top-level code來修改主要importing module會用到的資源`
-<!--SR:!2022-11-08,28,250-->
+<!--SR:!2023-01-20,73,250-->
 
 
 #🧠 在JSX中，執行import './ExpenseItem.css'會是？->->-> `告知webpack將對應CSS檔案以模組來處理`

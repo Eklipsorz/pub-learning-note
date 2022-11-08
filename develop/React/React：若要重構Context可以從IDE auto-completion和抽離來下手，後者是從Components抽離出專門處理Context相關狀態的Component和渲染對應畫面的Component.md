@@ -374,7 +374,7 @@ Autocomplete
 <!--SR:!2023-01-15,74,250-->
 
 #🧠 當context.provider component管理的狀態發生更新時，那麼會有什麼樣效果？ ->->-> `provider component 狀態發生更新，就會如同一般元件被觸發更新&渲染週期，過程中會是更新context上的狀態，接著以provider component 所在的位置透過props往下傳遞資訊給子元件來重新觸發該子元件的渲染週期，同時會讓使用context的元件跟著存取新狀態的context來更新`
-<!--SR:!2022-11-08,28,250-->
+<!--SR:!2023-01-21,74,250-->
 
 #🧠 在這裡會將AuthContextProvider包住App 元件，這相當於包含App下的所有元件，接著當AuthContextProvider註冊/管理的狀態發生更動時，App下的所有元件會如何渲染？ ->->-> `AuthContextProvider在觸發過程中，更新context上的狀態和觸發渲染週期，接著由他將資訊透過props往下傳遞至App下的所有子元件，被它包含的子元件會因而重新執行渲染週期，且過程中會存取context的新狀態而更新。`
 <!--SR:!2023-01-17,71,250-->

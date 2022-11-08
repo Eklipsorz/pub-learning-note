@@ -79,7 +79,7 @@ function App2() {
 <!--SR:!2023-01-19,72,250-->
 
 #🧠 React spread attributes ： const property = \{ propert1: value1, property2: value2 \} \<Component {...property} \/\> 相對於什麼樣的component ->->-> `<Component property1=value1 property2=value2 />`
-<!--SR:!2022-11-08,27,250-->
+<!--SR:!2023-01-19,72,250-->
 
 
 #🧠 React spread attributes  用法概念為何？ ->->-> `以一個物件的屬性來對元件的屬性(attribute)進行spread 操作`
