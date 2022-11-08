@@ -21,16 +21,17 @@
 [[@wikidataTongBu2021]]
 > 同步，可以理解為在通信時、函數調用時、協議棧的相鄰層協議交互時等場景下，發信方與收信方、主調與被調等雙方的狀態是否能及時保持狀態一致。如果一方完成一個動作後，另一方立即就修改了自己的狀態。而異步，是指調用方發出請求就立即返回，請求甚至可能還沒到達接收方，比如說放到了某個緩衝區中，等待對方取走或者第三方轉交；而調用結果是通過接收方主動推送，或調用方輪詢來得到。
 
+> 指在一個系統中所發生的事件（event）之間進行協調，在時間上出現一致性與統一化的現象。在系統中進行同步，也被稱為及時（in time）或同步化的（synchronous, in sync）。
 
 重點：
-- synchronous 是源自於電信工程的用語，延伸至電腦科學中是形容著任務：
-	- 被形容的任務是指每個任務會連接/使用/依賴前面任務，這代表著每個任務A在前面任務完成之前保持等待，直到前面任務完成時才允許任務A執行。
-- asynchronous 是源自於電信工程的用語且是synchronous的相反詞，延伸至電腦科學中：
-	- 被形容的任務是指每個任務會是獨立且不依賴於任何任務，這代表著每個任務A在前面任務完成之前不會保持等待，並且可以執行自己的任務內容
+- 從任務等待前面任務、主調用者等待處理方才執行等執行模式，皆為特定執行規則
+- 若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步
+- 通常來說會設定任務等待著前面任務完成再執行作為特定執行規則：
+	- 在這個框架中，只要任務能夠等待前面任務完成再執行，該任務就為同步
+	- 在這個框架中，只要任務並不會等待前面任務完成就直接執行，該任務就為非同步
 
-指在一個系統中所發生的事件（event）之間進行協調，在時間上出現一致性與統一化的現象。在系統中進行同步，也被稱為及時（in time）或同步化的（synchronous, in sync）。
 
-ㄖ
+
 ### synchronous task 發生場景
 
 
@@ -103,34 +104,25 @@ thread C ---------------------------------->   ->|<------C----->|
 
 
 
-### Synchronisation 命名緣由
-
-
-[[@mchlAnswerAsynchronousSynchronous2011]] 所描述：
-> Indeed, it's one of these cases, where original meaning of the word was subverted and means something different than in popular usage.
-> 
-> 'Synchronisation' in telecommunication means that receiver signals whenever it is ready to receive messages, and only after this signal the transmitter will start transmitting. When the transmitter is done with the message, it will signal it has finished, so that receiver can now process the received message and do whatever it is supposed to be doing next.
-
-重點：
-- synchronisation 是源自於傳送電子訊息/接收電子訊息的通信工程學科
-- 在那個學科裡，synhronisation 負責接收電子訊息的主機A會一直為了接收電子訊息而保持等待，直到收到源自於傳送主機B所發過來的電子訊號，主機A才會有所處理。
-
-
-### Asynchronisation 命名緣由
-
-1. Asynchronisation 是相對於 synchronisation 的相反概念
-2. 負責接收電子訊息的主機A不會為了接收訊息而保持等待，會做自己所要做的任務
 
 
 
 
 
 ## 複習
-#🧠 synchronous 或者 Synchronisation 命名緣由為何？ ->->-> `synchronisation 是源自於傳送電子訊息/接收電子訊息的通信工程學科，在那個學科裡，synhronisation 負責接收電子訊息的主機A會一直為了接收電子訊息而保持等待，直到收到源自於傳送主機B所發過來的電子訊號，主機A才會有所處理。`
-<!--SR:!2022-11-18,74,250-->
 
-#🧠 asynchronous 或者 Asynchronisation 命名緣由為何？ ->->-> `Asynchronisation 是相對於 synchronisation 的相反概念、負責接收電子訊息的主機A不會為了接收訊息而保持等待，會做自己所要做的任務`
-<!--SR:!2023-02-09,120,250-->
+重點：
+- 從任務等待前面任務、主調用者等待處理方才執行等執行模式，皆為特定執行規則
+- 若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步
+- 通常來說會設定任務等待著前面任務完成再執行作為特定執行規則：
+	- 在這個框架中，只要任務能夠等待前面任務完成再執行，該任務就為同步
+	- 在這個框架中，只要任務並不會等待前面任務完成就直接執行，該任務就為非同步
+
+#🧠 process/thread 的 synchronous 或者 Synchronisation 是什麼意思？  ->->-> `若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步`
+
+#🧠 process/thread 的 asynchronous 或者 Asynchronisation 是什麼意思？  ->->-> `若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步`
+
+
 
 #🧠 synchronous運用至電腦科學裡，會形容什麼？那又會是什麼意思？ ->->-> `延伸至電腦科學中是形容著任務，被形容的任務是指每個任務會連接/使用/依賴前面任務，這代表著每個任務A在前面任務完成之前保持等待，直到前面任務完成時才允許任務A執行。`
 <!--SR:!2023-01-25,110,250-->
