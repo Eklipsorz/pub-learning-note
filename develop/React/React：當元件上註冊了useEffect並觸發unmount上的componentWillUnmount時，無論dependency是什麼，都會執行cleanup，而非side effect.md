@@ -125,7 +125,7 @@ Tags:
 [[React]]
 Links:
 [[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
-[[React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback]]
+[[React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect]]
 [[React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
 References:
 [[@reactUsingEffectHook]]

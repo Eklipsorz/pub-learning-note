@@ -63,13 +63,19 @@ dependencies：
 > 在預設的情況下，**effects 其實會在每次 render 後都被執行**。
 
 
-1. 在mounting 階段進行useEffect的hook綁定，並因為render執行而連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較
+1. 在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較
 	- 此時沒有dependency事先儲存，所以也就不需要檢查dependency
 	- 這是第一次執行side effect，所以也就不需要執行cleanup
-2. 在updating 階段，那就
-3. 若觸發updating階段，那麼就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
-4. ~~若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback~~
-5. 在unmounting 階段下，會無視dependency是什麼，直接執行side effect中的cleanup function
+2. 在updating 階段，執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣：
+		- 若不一樣，
+			- 就在render執行完畢後就開始執行side effect
+			- 執行side effect對應的cleanup 
+		- 執行side effect的主體-callback
+		- 設定對應cleanup任務來好方便下次清除/還原這次side effect造成的影響
+		- 
+1. 若觸發updating階段，那麼就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
+2. ~~若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback~~
+3. 在unmounting 階段下，會無視dependency是什麼，直接執行side effect中的cleanup function
 
 [[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 
