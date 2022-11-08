@@ -35,10 +35,15 @@
 	   ```
 
 
-	- deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行
+	- deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行createHandle
 	```
 	useImperativeHandle(ref, createHandle, [deps])
 	```
+
+
+### 執行模式
+
+首次在mounting階段時，會因為沒有事先deps資訊
 
 #### 案例：
 
@@ -73,6 +78,113 @@ export default Button;
 
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664024431/blog/react/ImperativeHandle/simple-imperativeHandle-example_lwx992.png)
+
+#### 案例：
+
+在Login元件上安置一個狀態count，並放到Input元件當作其useImperativeHandle的deps，其deps會是如下，並且分配activate函式給對應Login元件上的ref物件之current屬性
+```
+[Boolean(props.testVal)]
+```
+
+而testVal會隨著提交按鈕次數而增加，經過三次提交按鈕的結果會是
+
+```
+---------- mounting
+allocation 0
+---------- 第一次提交按鈕
+activate 0
+allocation 1
+---------- 第二次提交按鈕
+activate 1
+---------- 第三次提交按鈕
+activate 1
+```
+
+
+在這裡由於mounting並沒有任何事先儲存的內容，所以useImperativeHandle並不會比對，接著執行createHandleFn來分配並得到以下結果，除此之外，還得到對應handle和deps，這些內容會由React來儲存
+```
+allocation 0
+```
+
+接著第一次提交按鈕點擊時，由於會因此會呼叫activation，接著因為setCount而觸發Login渲染以及將count設定為1，接著再次執行Input，因而使得useImperativeHandle執行，在這裡由於是updating，所以會比對目前deps內容和上一個render儲存到的deps內容進行比對，發現為不一樣，執行useImperativeHandle，得到對應handle和deps，接著React來儲存， 其執行結果會如同下面allocation的部分
+```
+activate 0
+allocation 1
+```
+
+隨後第二次和第三次的提交按鈕點擊時，都因為會使得useImperativeHandle比對內容時都皆為一樣，而不執行createImperativeHandle，但會回傳曾經產生的handle給對應ref物件之current屬性
+
+
+Login.js 
+```
+  const [count, setCount] = useState(0);
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    console.log('submit', emailState, passwordState);
+
+    if (emailIsValid && passwordIsValid) {
+      authCtx.onLogin(emailState.value, passwordState.value);
+    } else if (!emailIsValid) {
+      emailInputRef.current.focus();
+    } else {
+      passwordInputRef.current.focus();
+    }
+    setCount((count) => count + 1);
+  };
+
+   return (
+    <Card className={classes.login}>
+      <form onSubmit={submitHandler}>
+        {/* <div
+          className={`${classes.control} ${
+            emailState.isValid === false ? classes.invalid : ''
+          }`}
+        >
+          <label htmlFor='email'>E-Mail</label>
+          <input
+            type='email'
+            id='email'
+            value={emailState.value}
+            onChange={emailChangeHandler}
+            onBlur={validateEmailHandler}
+          />
+        </div> */}
+        <Input
+          type='email'
+          id='email'
+          label='E-Mail'
+          isValid={emailIsValid}
+          value={emailState.value}
+          ref={emailInputRef}
+          testVal={count}
+          onChange={emailChangeHandler}
+          onBlur={validateEmailHandler}
+        />
+        .
+        .
+  )
+```
+
+Input.js
+```
+  const activate = () => {
+	console.log('activate', props.testVal);
+  };
+
+  useImperativeHandle(
+    ref,
+    () => {
+	  console.log('allocation', props.testVal);
+      return {
+        focus: activate,
+      };
+    },
+    [Boolean(props.testVal)],
+  );
+```
+
+
 
 ### 什麼時候執行
 > ### 2.2 进阶：什么时候执行`createHandle`函数？
