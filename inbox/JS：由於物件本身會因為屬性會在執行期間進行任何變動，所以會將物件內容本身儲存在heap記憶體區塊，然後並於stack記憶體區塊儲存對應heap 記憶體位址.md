@@ -178,7 +178,7 @@ console.log(member);
 <!--SR:!2022-11-12,26,250-->
 
 #🧠 JS的primitive data value 可不可以在執行時像物件那樣隨意增加/移除/修改屬性  ->->-> `並不能，因為他們存放在不可改變大小的stack記憶體區塊`
-<!--SR:!2022-11-08,23,250-->
+<!--SR:!2023-01-07,60,250-->
 
 
 #🧠 let name = 'John'; name.alias = 'Knight'; console.log(name.alias); JS執行起來會得到什麼？->->-> `由於name本身是stack記憶體區塊，本身無法在執行時增加屬性，所以會得到的值會是underfined`
