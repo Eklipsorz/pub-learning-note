@@ -27,8 +27,7 @@
 重點：
 - useEffect 本身並不是class based componen上的生命週期上之API，更別說是不是語法糖
 - useEffect 和 生命週期兩者是不一樣的，只是useEffect 部分特性與生命週期重疊
-- 開發策略也不同，useEffect 是以目標為導向，只是單純把資料同步給render會有的side effect來進行處理(將render會用到的資料也丟給side effect來處理)；後者則是以過程為導向來指定每個階段要做什麼
-	I
+- 開發策略也不同，useEffect 是以目標為導向，定義一個callback、deps、會用到的資料來告知React的render後要做些什麼，；後者則是以過程為導向來指定每個階段要做什麼。
 
 
 ### React 官方文獻：useEffect 和生命週期之間
