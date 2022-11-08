@@ -1,6 +1,9 @@
 ## 描述
 
 
+
+
+
 ### 每個effect hook皆為獨立的
 
 當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，並觸發effect，隨後若發生updating或者unmounting的話，預設上會再去觸發effect。
@@ -15,17 +18,24 @@
 
 
 ### effect 使用方法
+[[React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理]]
+
+side effect / effect 本身指由主要任務所帶來的任意額外任務，也就是系統執行完Render之後所要接著執行的任意額外任務，而useEffect 正是定義該任意額外任務
+
+
+
 
 
 #### effect 使用語法
 `useEffect(callback, [dependencies])`
 
-useEffect 語法：functional component 是像是function呼叫執行useEffect呼叫，其中會替當前元件註冊effect，接著裡頭callback和deps則是按照生命週期函式來執行
+useEffect 語法：
 - 第一個引數為callback，這些callback只會在dependencies 改變的時候才執行，而不是在component重新渲染的時候呼叫
-- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行 **清除上一次side effect所產生的非同步任務**
+- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除任務 **好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作**，通常手段會是**清除上一次side effect所產生的非同步任務** 
 	- 該cleanup function 盡量別以asynchronous function來處理，避免沒清除到指定任務或者對錯誤的任務進行處理，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
--  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
+-  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies，用途主要是效能優化
+[[React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項]]
 > dependencies of this effect - the function only runs if the dependencies changed
 
 
@@ -61,20 +71,17 @@ dependencies：
 
 
 #### 何時執行side effect
-
-[[@ithomeReactJsRuMen20]]
-> 是`componentDidMount`、`componentWillUnmount`和`componentDidUpdate`這三個函數，而React hook把這三者整合起來，變成了`useEffect`。
-
-每一次useEffect的side effect 觸發時間點會是同個元件的生命週期函式：
-- mounting階段時的componentDidMount週期函式
-- updating階段時的componentDidUpdate 週期函式
-- ~~unmount階段時的componentWillUnmoun週期函式~~
+[[@ithomeDay21UseEffect]]
+> 在預設的情況下，**effects 其實會在每次 render 後都被執行**。
 
 
-1. 在mounting階段進行useEffect的hook綁定，並於mounting階段的componentDidMount週期來直接執行useEffect的callback
-2. 若觸發updating階段，那麼就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
-3. ~~若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback~~
-3. 在unmounting 階段下，會無視dependency是什麼，直接執行side effect中的cleanup function
+1. 在mounting 階段進行useEffect的hook綁定，並因為render執行而連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較
+	- 此時沒有dependency事先儲存，所以也就不需要檢查dependency
+	- 這是第一次執行side effect，所以也就不需要執行cleanup
+2. 在updating 階段，那就
+3. 若觸發updating階段，那麼就會在componentDidUpdate週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback
+4. ~~若觸發unmount的階段，那麼就會在componentWillUnmount週期檢查useEffect的dependency是否有變動，若有的話，就執行callback；若沒有的話，就不執行callback~~
+5. 在unmounting 階段下，會無視dependency是什麼，直接執行side effect中的cleanup function
 
 [[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 
@@ -286,4 +293,4 @@ Links:
 [[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 References:
 [[@ReactUseEffect]]
-[[@ithomeReactJsRuMen20]]
+[[@ithomeDay21UseEffect]]

@@ -1,6 +1,8 @@
 
 ## 描述
 
+擁有deps 
+
 
 ### 擁有deps 機制的hook 設定deps之注意事項
 
