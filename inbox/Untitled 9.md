@@ -16,7 +16,7 @@
 > Data synchronization is the process of establishing consistency between source and target data stores, and the continuous harmonization of the data over time. It is fundamental to a wide variety of applications, including file synchronization and mobile device synchronization.
 
 重點：
-- 資料同步：是指資料來源處和資料目標存放處之間的轉移和處理中 **資料會是一樣內容這目標** 以及 **資料都會是滿足儲存空間對於資料的規則** 這過程
+- 資料同步：是指在資料來源處和資料目標存放處之間的轉移或處理中 **雙方的同份資料會是一樣內容這目標** 以及 **雙方的同份資料都會是滿足儲存空間對於資料的規則** 這過程
 
 
 ### Process Synchronziation
