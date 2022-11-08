@@ -19,8 +19,8 @@ side effect / effect 本身指由主要任務所帶來的任意額外任務，�
 
 useEffect 語法：
 - 第一個引數為callback，主要定義side effect的任務內容
-- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除/還原上一次side effect所產生的影響 ，**好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現**，通常手段會是**清除上一次side effect所產生的非同步任務** 
-	- 該cleanup function 盡量別以asynchronous function來處理，避免沒清除到指定任務或者對錯誤的任務進行處理，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
+- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除上一次side effect所產生的影響 ，**好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現**，通常手段會是**清除上一次side effect所產生的非同步任務** 
+	- 該cleanup function 盡量別以asynchronous function來處理，避免沒辦法及時清除上一次清除到指定任務或者對錯誤的任務進行處理，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
 -  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
 [[React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項]]
@@ -62,19 +62,19 @@ dependencies：
 [[@ithomeDay21UseEffect]]
 > 在預設的情況下，**effects 其實會在每次 render 後都被執行**。
 
-
+0. effects 會是在每次render之後被執行
 1. 在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較
 	- 此時沒有dependency事先儲存，所以也就不需要檢查dependency
-	- 這是第一次執行side effect，所以也就不需要執行cleanup
+	- 這是第一次執行side effect，本身就沒有上一個side effect，所以就不需要執行cleanup
 2. 在updating 階段，執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣：
 		- 若不一樣，就儲存這次deps資訊好下次比對
 			- render執行完畢後就開始執行side effect
 			- 執行side effect對應的cleanup 
 			- 執行side effect的主體-callback
-			- 設定對應cleanup任務來好方便下次清除/還原這次side effect造成的影響
+			- 設定對應cleanup任務來好方便下次清除這次side effect造成的影響
 		- 若一樣：
 			- 當前render之後不執行任何side effect
-3. 在unmounting 階段，就會直接執行side effect的cleanup 來清除/還原這次side effect造成的影響
+3. 在unmounting 階段，就會無視dependency，直接執行useEffect的cleanup function 來清除最後一次side effect造成的影響
 
 [[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 
@@ -182,69 +182,71 @@ this is use effect
 
 #🧠 React：useEffect 語法是什麼？->->-> `useEffect(callback, [dependencies]`
 
-
+#🧠 React：useEffect 的cleanup function 通常手段會是什麼？->->-> `通常手段會是**清除上一次side effect所產生的非同步任務** `
 
 #🧠 React：useEffect(a, b) 語法中的a 是什麼 ->->-> `第一個引數為callback，主要定義side effect的任務內容`
 
-#🧠  React：useEffect(a, b) 語法中的a 會回傳什麼？做什麼？ ->->-> `第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除/還原上一次side effect所產生的影響`
+#🧠  React：useEffect(a, b) 語法中的a 會回傳什麼？做什麼？ ->->-> `第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除上一次side effect所產生的影響`
 
-#🧠  React：useEffect 的cleanup 是用來做什麼？ ->->-> `cleanup function並在那執行指定清除/還原上一次side effect所產生的影響`
+#🧠  React：useEffect 的cleanup 是用來做什麼？ ->->-> `cleanup function並在那執行指定清除上一次side effect所產生的影響`
 
 
-#🧠 React：useEffect 的cleanup 是清除/還原上一次side effect所產生的影響，為何要清除/還原？->->-> `好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現`
+#🧠 React：useEffect 的cleanup 是清除上一次side effect所產生的影響，為何要清除？->->-> `好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現`
 
 
 #🧠 React：useEffect(a, b) 語法中的b 是什麼 ->->-> `第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies`
 
 
 
-
-
-
 #🧠 React：useEffect 本身在functional component會像是什麼？主要會做什麼 ->->-> `useEffect 語法：functional component 是像是function呼叫執行useEffect呼叫，其中會替當前元件註冊effect`
-<!--SR:!2022-11-08,10,250-->
-
-#🧠 React：useEffect 本身和useEffect(callback,\[deps\])中的callback、deps之間差別是什麼 ->->-> `useEffect就是hook function，呼叫到就執行，callback、deps則是按照生命週期函式來執行`
-<!--SR:!2022-11-19,14,230-->
 
 
 
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時執行? ->->-> `effects 會是在每次render之後被執行`
 
-#🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時觸發? ->->-> `會是同個元件的生命週期函式： - mounting階段時的componentDidMount週期函式 - updating階段時的componentDidUpdate 週期函式 `
-<!--SR:!2023-01-09,72,250-->
+
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
+
+
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒比較deps，為什麼？ ->->-> `此時沒有dependency事先儲存，所以也就不需要檢查dependency`
+
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒執行cleanup，為什麼？ ->->-> `這是第一次執行side effect，本身就沒有上一個side effect，所以就不需要執行cleanup`
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
 
 
-#🧠 React：useEffect(callback, dependecies) 在mounting階段時會做什麼？ ->->-> `直接執行useEffect的callback`
-<!--SR:!2022-11-29,47,250-->
 
-#🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查dependency是否變動，若有的話，先執行cleanup，在來執行callback，若沒有的話就什麼也不執行`
-<!--SR:!2023-01-14,73,250-->
 
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是做什麼？->->-> `在updating 階段，執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣： - 若不一樣，就儲存這次deps資訊好下次比對 - render執行完畢後就開始執行side effect - 執行side effect對應的cleanup  - 執行side effect的主體-callback - 設定對應cleanup任務來好方便下次清除這次side effect造成的影響 - 若一樣：- 當前render之後不執行任何side effect`
+
+
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣，若不一樣的話，會是做什麼？ ->->-> ` 若不一樣，就儲存這次deps資訊好下次比對 - render執行完畢後就開始執行side effect - 執行side effect對應的cleanup  - 執行side effect的主體-callback - 設定對應cleanup任務來好方便下次清除這次side effect造成的影響 `
+
+
+#🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣，若一樣的話，會是做什麼？ ->->-> ` 若一樣：- 當前render之後不執行任何side effect`
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
-<!--SR:!2022-12-22,59,250-->
+
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
-<!--SR:!2023-01-03,69,250-->
+
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `除了只會在元件的mounting階段下直接執行以外，updating階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`
-<!--SR:!2023-01-04,71,250-->
 
-#🧠 React：useEffect(callback, dependecies) 在unmount階段時的componentWillUnmount週期函式會做什麼？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
-<!--SR:!2023-01-08,72,250-->
+#🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
+
+#🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `清除最後一次side effect造成的影響`
 
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係在每個元件的生命週期階段(mounting、unmounting、updating)是如何 ->->-> `在mounting和unmount並不會將dependencies納入使用，只會在updating才納入使用，每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
 <!--SR:!2022-12-21,59,250-->
 
-#🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下的componentDidUpdate`
-<!--SR:!2023-01-12,74,250-->
+#🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
+
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
@@ -252,22 +254,22 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空陣列的話，會是指什麼？ ->->-> `若是空陣列[] 的話，就等同設定永不改變的dependency`
-<!--SR:!2022-12-28,66,250-->
+
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
-<!--SR:!2022-12-21,60,250-->
 
-#🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時後，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
-<!--SR:!2023-01-05,69,250-->
+
+#🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
+
 
 
 
 #🧠 React：請解釋以下的useEffect案例![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663250177/blog/react/effect/react-useeffect-example_knoaw1.png)->->-> `當App這個元件進行mounting來呈現實際DOM時，會註冊著useEffect這個hook，並於mounting階段下的componentDidMount生命週期函式觸發callback，由於是第一次執行，所以會直接先執行callback，而callback會檢查localStorage的isLoggedIn是否為1，若1就認為是合法使用者在登入，若不是就認為必須要進行登入來寫入isLoggedIn='1'至localStorage 在這裡會沒這筆資料，所以就透過登入的成功來將isLoggedIn='1'寫入至localStorage，之後每一次只要重新進行App的mounting階段： - 畫面A 切換成 畫面B (畫面AB都可以一樣和不一樣)，就會直接被系統認定為合法使用者，而引領使用者登入成功的畫面`
 <!--SR:!2023-01-05,72,250-->
 
-#🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，React 元件下的生命週期函式所處理`
-<!--SR:!2022-12-05,28,250-->
+#🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，由React來執行`
+
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `主要會有race condition這問題，可能沒清除到指定任務，任務就執行完或者對錯誤的任務進行處理`
 <!--SR:!2022-12-05,28,250-->
