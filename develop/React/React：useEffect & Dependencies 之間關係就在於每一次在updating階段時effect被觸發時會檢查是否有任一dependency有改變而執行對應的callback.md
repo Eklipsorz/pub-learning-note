@@ -14,10 +14,20 @@ useEffect(callback, dependency)
 ```
 > 由於要在觸發渲染週期的期間內，執行到componentDidMount、componentDidUpdate、componentWillUnmount時所依賴的dependency是有變動，才會觸發side effect
 
-1. 決定能否在每次觸發effect並執行side effect的因素
-2. 給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環
+[[@ithomeDay21UseEffect]]
+> # **dependencies 是一種效能最佳化，而非邏輯控制**
+
+> 理解「dependencies 是一種效能最佳化手段，而非邏輯控制」是掌握 `useEffect` 相當重要的一環。**它用來告訴 React 何時可以因為依賴的原始資料沒有變化而安全地略過本次 effect 的同步，而並不是用來「指定」effect 在什麼特定的「生命週期」或「商業邏輯條件」下才要執行。**你應該要永遠**誠實地根據真實的資料依賴情況來填寫 dependencies 陣列**，
 
 
+重點：
+- Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到effect來執行的手段
+- 具體效能最佳化手段：減少不必要的effect執行
+	- 若為mounting階段會是
+		- 儲存每一次dependency指定的記憶體內容
+	- 若為updating階段會是
+		- 比對這次dependency指定的內容和上一次儲存的內容是否一致，若不一致就執行effect，然後儲存這次dependency內容；若一致就不執行
+- dependency 通常會設定成
 通常會為了讓side effect也能夠運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，而將dependency設定為能代表互動並跟著互動而變動的資料：
 - props
 - 狀態
