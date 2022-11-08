@@ -20,7 +20,7 @@ side effect / effect 本身指由主要任務所帶來的任意額外任務，�
 useEffect 語法：
 - 第一個引數為callback，主要定義side effect的任務內容
 - 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除上一次side effect所產生的影響 ，**好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現**，通常手段會是**清除上一次side effect所產生的非同步任務** 
-	- 該cleanup function 盡量別以asynchronous function來處理，避免沒辦法及時清除上一次清除到指定任務或者對錯誤的任務進行處理，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
+	- 該cleanup function 盡量別以asynchronous function來處理，避免沒辦法及時清除上一次effect所產生的影響，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
 -  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
 [[React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項]]
@@ -75,6 +75,7 @@ dependencies：
 		- 若一樣：
 			- 當前render之後不執行任何side effect
 3. 在unmounting 階段，就會無視dependency，直接執行useEffect的cleanup function 來清除最後一次side effect造成的影響
+		- unmount 階段就沒render，所以也就沒有side effect
 
 [[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 
@@ -179,6 +180,7 @@ this is use effect
 #🧠 React：useEffect的side effect 在 render 上來說是什麼？->->-> `render執行完畢所應該要有的處理`
 
 
+#🧠 React：useEffect的side effect 在 render 上來說是render執行完畢所應該要有的處理，那麼render和sider effect之間的存在關係是什麼？->->-> `有render就會有side effect`
 
 #🧠 React：useEffect 語法是什麼？->->-> `useEffect(callback, [dependencies]`
 
@@ -247,6 +249,7 @@ this is use effect
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
 
+#🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
@@ -271,15 +274,15 @@ this is use effect
 #🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，由React來執行`
 
 
-#🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `主要會有race condition這問題，可能沒清除到指定任務，任務就執行完或者對錯誤的任務進行處理`
-<!--SR:!2022-12-05,28,250-->
+#🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會出現沒辦法及時清除上一次effect所產生的影響`
 
-#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免因為非同步任務而對錯誤的任務進行處理`
-<!--SR:!2022-12-05,28,250-->
+
+#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
+
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  若是async的話，潛在問題會是非同步任務而對錯誤的任務進行處理，那麼具體會是什麼？->->-> `清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務`
-<!--SR:!2022-12-05,28,250-->
+
 ``
 
 ---
