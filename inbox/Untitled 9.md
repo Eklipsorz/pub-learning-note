@@ -17,7 +17,9 @@
 
 重點：
 - useEffect 的 運作原理 和 生命週期函式(componentDidMount、componentDidUpdate、componentWillUnmount)的運作原理是不一樣的
-- useEffect 的運作原理更像是同步化
+- useEffect 的運作原理更像是資料上的同步化(Data Synchronization / Data Synchronize)：
+	- Data Synchronization 將源自於props、state等其他地方的資料轉換成對應畫面，使畫面呈現的資料弄成一樣的過程
+	- Synchronize ：將源自於props、state等其他地方的資料轉換成對應畫面，屆使畫面呈現的資料弄成一樣
 
 
 ###  Data synchronization
@@ -25,7 +27,8 @@
 > Data synchronization is the process of establishing consistency between source and target data stores, and the continuous harmonization of the data over time. It is fundamental to a wide variety of applications, including file synchronization and mobile device synchronization.
 
 重點：
-- 資料同步：是指多個儲存資料的儲存空間是否
+- 資料同步：是指多個儲存資料的儲存空間間達成 **資料會是一樣內容這目標** 以及 **資料都會是滿足儲存空間對於資料的規則** 這過程
+	- 多個儲存空間會是以來源處和目標處，來源處會是指資料最一開始存在的地方，而目標處則是經過處理而存放的地方
 
 ## 複習
 
