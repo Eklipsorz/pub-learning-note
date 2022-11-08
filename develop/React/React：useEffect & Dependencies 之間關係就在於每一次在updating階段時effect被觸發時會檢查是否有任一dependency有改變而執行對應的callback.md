@@ -19,20 +19,24 @@ useEffect(callback, dependency)
 
 > 理解「dependencies 是一種效能最佳化手段，而非邏輯控制」是掌握 `useEffect` 相當重要的一環。**它用來告訴 React 何時可以因為依賴的原始資料沒有變化而安全地略過本次 effect 的同步，而並不是用來「指定」effect 在什麼特定的「生命週期」或「商業邏輯條件」下才要執行。**你應該要永遠**誠實地根據真實的資料依賴情況來填寫 dependencies 陣列**，
 
+[[@ithomeDay21UseEffect]]
+> `useEffect` 其實並不是一種 function component 生命週期的 API。雖然說它的執行時機確實與 `componentDidMount` 以及 `componentDidUpdate` 類似（不過其實有些微區別），但它被設計的用途並不是讓你在 React 運作的特定時機來執行一個自定義的 callback ，而是有一種明確的指定用途 — **用來將原始資料同步到 React elements 以外的東西上**。並且在理想上**這個 effect 無論隨著 render 重複執行了多少次，你的程式都應該保持同步且正常運作。**
 
 重點：
-- Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到effect來執行的手段
+- Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段
 - 具體效能最佳化手段：減少不必要的effect執行
 	- 若為mounting階段會是
-		- 儲存每一次dependency指定的記憶體內容
+		- 儲存dependency指定的記憶體內容
 	- 若為updating階段會是
 		- 比對這次dependency指定的內容和上一次儲存的內容是否一致，若不一致就執行effect，然後儲存這次dependency內容；若一致就不執行
-- dependency 通常會設定成
-通常會為了讓side effect也能夠運用互動狀態的資訊來渲染特定內容，這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段，而將dependency設定為能代表互動並跟著互動而變動的資料：
-- props
-- 狀態
-- 其他能代表互動並跟著互動而變動的資料
+- useEffect 通常會為了能將資料同步到render之後的effect來執行，特意將dependency設定成這些資料，這些資料的來源主要都是能代表元件互動並跟著互動而變動的資料：
+	- props
+	- 狀態
+	- 其他能代表互動並跟著互動而變動的資料
 
+
+#### 除了效能最佳化以外的作用
+1. 單純
 
 #### 其他能代表互動並跟著互動而變動的資料？？
 其他能代表互動並跟著變動的資料通常會因為與使用者或者元件進行互動而有所不同，而這剛好可以促使effect 的 callback會因為狀態的改變而跟著渲染出不同的畫面
@@ -119,8 +123,15 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 #🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `callback則是定義side effect的內容。`
 <!--SR:!2023-01-09,74,250-->
 
-#🧠 React：useEffect(callback, dependencies) 的dependency設定目的 ->->-> `決定能否在每次觸發effect並執行side effect的因素、給予一個手段來防止effect的觸發執行於每次元件的渲染週期內不會產生出無限循環`
-<!--SR:!2022-11-29,46,250-->
+#🧠 React：useEffect(callback, dependencies) 的dependency設定主要目的 ->->-> `Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段`
+
+#🧠 React：Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段，具體效能最佳化所要達到的目標會是什麼？  ->->-> `減少不必要的effect執行`
+
+#🧠 React：Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段，減少不必要的effect執行的流程會是什麼？ ->->-> `若為mounting階段會是儲存dependency指定的記憶體內容；若若為updating階段會是- 比對這次dependency指定的內容和上一次儲存的內容是否一致，若不一致就執行effect，然後儲存這次dependency內容；若一致就不執行`
+
+
+#🧠  React：Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段，那麼dependency會設定什麼？為什麼？ ->->-> `  - props - 狀態 - 其他能代表互動並跟著互動而變動的資料，由於這些useEffect本就是將資料同步到render之後的effect執行，在這裡的資料會是render用上的，而那些資料主要會是由能夠代表元件互動並跟互動而變動的資料`
+
 
 
 #🧠 React：side effect 通常會應用在運用互動狀態的資訊來渲染特定內容，會需要什麼才能實現？->->-> `這就需要一個表示互動狀態的資訊和一個觸發渲染並根據資訊的手段`
