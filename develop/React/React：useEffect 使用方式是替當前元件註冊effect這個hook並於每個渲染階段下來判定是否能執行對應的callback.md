@@ -281,7 +281,7 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
-[[React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能]]
+[[React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理(結果) 或者跳脫渲染生命週期的任意執行處理]]
 [[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
 [[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
 References:

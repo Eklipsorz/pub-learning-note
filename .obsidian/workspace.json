@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "75fa8ee9481fcfe9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9e4e9f2d2689e224",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "0830b3dcce25c632",
         "type": "tabs",
         "children": [
@@ -29,12 +11,8 @@
             "id": "bda34eca4e896687",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -103,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -162,17 +136,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "9e4e9f2d2689e224",
+  "active": "bda34eca4e896687",
   "lastOpenFiles": [
+    "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理(結果) 或者跳脫渲染生命週期的任意執行處理.md",
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md",
     "develop/OS/side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果.md",
-    "develop/React/React：effect 是指除了元件本身所要做的主要功能-渲染元件、與使用者互動來管理狀態以外的額外效果，額外效果會是指脫離渲染週期的任意功能.md",
     "inbox/Untitled 6.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行對應的callback.md",
     "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",
     "inbox/React：useEffect 的callback並不會實際如同函式呼叫那樣會按照順序執行，而是按照生命週期函式執行.md",
     "develop/React/class-based-component/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
-    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
-    "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md"
+    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md"
   ]
 }
