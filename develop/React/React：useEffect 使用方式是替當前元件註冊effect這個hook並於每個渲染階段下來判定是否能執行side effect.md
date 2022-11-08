@@ -19,10 +19,10 @@ side effect / effect 本身指由主要任務所帶來的任意額外任務，�
 
 useEffect 語法：
 - 第一個引數為callback，主要定義side effect的任務內容
-- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除/還原上一次side effect所產生的影響 ，**好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作**，通常手段會是**清除上一次side effect所產生的非同步任務** 
+- 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除/還原上一次side effect所產生的影響 ，**好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現**，通常手段會是**清除上一次side effect所產生的非同步任務** 
 	- 該cleanup function 盡量別以asynchronous function來處理，避免沒清除到指定任務或者對錯誤的任務進行處理，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
--  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies，用途主要是效能優化
+-  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
 [[React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項]]
 > dependencies of this effect - the function only runs if the dependencies changed
 
@@ -191,9 +191,10 @@ this is use effect
 #🧠  React：useEffect 的cleanup 是用來做什麼？ ->->-> `cleanup function並在那執行指定清除/還原上一次side effect所產生的影響`
 
 
-#🧠 React：useEffect 的cleanup 是清除/還原上一次side effect所產生的影響，為何要清除/還原？->->-> ``
+#🧠 React：useEffect 的cleanup 是清除/還原上一次side effect所產生的影響，為何要清除/還原？->->-> `好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現`
 
 
+#🧠 React：useEffect(a, b) 語法中的b 是什麼 ->->-> `第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies`
 
 
 
@@ -214,9 +215,9 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
-<!--SR:!2023-01-10,73,250-->
 
-#🧠 React：useEffect(callback, dependecies) 在mounting階段時的componentDidMount週期函式會做什麼？ ->->-> `直接執行useEffect的callback`
+
+#🧠 React：useEffect(callback, dependecies) 在mounting階段時會做什麼？ ->->-> `直接執行useEffect的callback`
 <!--SR:!2022-11-29,47,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在updating階段時的componentDidUpdate 週期函式會做什麼？->->-> `就會在componentDidUpdate週期檢查dependency是否變動，若有的話，先執行cleanup，在來執行callback，若沒有的話就什麼也不執行`
