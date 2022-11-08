@@ -123,10 +123,10 @@ const Component1 = (props) => {
 <!--SR:!2022-11-15,10,250-->
 
 #🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會回傳離它較近的Parent Route所獲取到的URL 參數資訊`
-<!--SR:!2022-11-08,2,249-->
+<!--SR:!2022-11-14,6,249-->
 
 #🧠 react-router-dom：useParams會獲取哪一種Route元件所截取的URL parameters？ ->->-> `useParams 會挑選離它較近的Parent Route元件來擷取`
-<!--SR:!2022-11-08,2,249-->
+<!--SR:!2022-11-14,6,249-->
 
 
 #🧠 react-router-dom：useParams是基於什麼樣的基礎(什麼樣分配下的方式)來擷取URL parameters ->->-> `基於 dynamic URL 的分配中，以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`

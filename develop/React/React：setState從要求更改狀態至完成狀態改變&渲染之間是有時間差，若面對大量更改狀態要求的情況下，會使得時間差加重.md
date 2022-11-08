@@ -95,7 +95,7 @@ function setState(callback) {
 
 
 #🧠 React：setState 的狀態檢查方式，若狀態為primitive data value，會如何比對狀態之間的差異？->->-> `狀態為primitive data value，那麼就以識別字所對應的stack 記憶體區塊的內容來比較，也就是要求更改的狀態和目前狀態之間的比較就以data value本身來比較`
-<!--SR:!2022-11-08,23,250-->
+<!--SR:!2023-01-04,57,250-->
 
 
 #🧠 React：setState 的狀態檢查方式，若狀態為object，會如何比對狀態之間的差異？ ->->-> `狀態為object，那麼就以識別字所對應的stack 記憶體區塊的內容來比較，其內容會是物件所在的Heap記憶體區塊位址，也就是要求更改的狀態和目前狀態之間的比較就以Heap 記憶體區塊位址比較`

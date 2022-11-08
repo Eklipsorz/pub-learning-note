@@ -125,7 +125,7 @@ flow
 <!--SR:!2022-11-08,10,250-->
 
 #🧠 在電腦科學裡，control flow是執行控制權的交接流向，白話點就是什麼？(指令、表達式的順序？)->->-> `在imperative program中的特定語句/表達式/指令/函式呼叫的執行順序會是如何`
-<!--SR:!2022-11-08,10,250-->
+<!--SR:!2022-12-06,28,250-->
 
 
 #🧠 JS：async/await之前的promise會有什麼樣的問題？->->-> `then chain 製造的巢狀問題`
@@ -136,10 +136,10 @@ flow
 <!--SR:!2022-11-09,4,230-->
 
 #🧠 JS：async/await 對於 promise來說，是什麼 ->->-> `async/await 本身是promise的語法糖`
-<!--SR:!2022-11-08,10,250-->
+<!--SR:!2022-12-06,28,250-->
 
 #🧠 JS：async/await 對於 promise來說是語法糖，為何需要這語法糖 ->->-> `專門解決then chain 製造的巢狀問題，以試著讓開發難度/維護難度降低`
-<!--SR:!2022-11-08,10,250-->
+<!--SR:!2022-12-06,28,250-->
 
 #🧠 JS：async/await 對於 promise來說是語法糖，具體使開發難度降低，手段為何 ->->-> `實現手段為讓control flow更改成從上至下，而非從外至內來執行`
 <!--SR:!2022-12-03,26,250-->
@@ -148,7 +148,7 @@ flow
 <!--SR:!2022-12-03,26,250-->
 
 #🧠 JS：await 語法背後潛藏什麼樣語法？，以await dosomething();為例 ->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback。dosomething().then((...) => { // rest code })`
-<!--SR:!2022-11-08,10,250-->
+<!--SR:!2022-12-06,28,250-->
 
 #🧠 JS：當在async function中出現這個 await dosomething(); // rest code，請問JS解析器會當成什麼來執行？->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback，`
 <!--SR:!2022-11-27,21,250-->

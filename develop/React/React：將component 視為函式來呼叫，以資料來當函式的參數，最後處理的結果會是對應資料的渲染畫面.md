@@ -96,7 +96,7 @@ function Component(props) {
 <!--SR:!2022-12-04,74,250-->
 
 #🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
-<!--SR:!2022-11-08,54,250-->
+<!--SR:!2023-03-17,129,250-->
 
 
 ---
