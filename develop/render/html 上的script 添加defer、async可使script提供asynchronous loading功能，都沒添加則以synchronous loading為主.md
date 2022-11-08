@@ -79,7 +79,7 @@ Status: #🌱
 Tags:
 [[JavaScript]] - [[Rendering]]
 Links:
-[[synchronous 和 asynchronous 在電腦科學是分別指每個任務會等待前面任務完成才執行與每個任務都為獨立，不會等前面任務完成才執行]]
+[[若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行]]
 [[parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染]]
 References:
 [[@mdnScriptElementHTML]]
