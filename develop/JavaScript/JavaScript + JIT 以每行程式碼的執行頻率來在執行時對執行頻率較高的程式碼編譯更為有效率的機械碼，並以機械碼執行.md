@@ -250,7 +250,7 @@ function arraySum(arr) {
 <!--SR:!2023-01-05,101,248-->
 
 #🧠 JIT版本的JavaScript： 若optimizing compiler的假設成功率很低的話，會是什麼？ ->->-> `效能會比沒有Optimizing compiler來得慢，因爲得經過優化，然後再轉為反優化的過程`
-<!--SR:!2022-11-08,68,250-->
+<!--SR:!2023-05-05,178,250-->
 
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上有任何紀錄的話 ->->-> `每次執行時就去透過目前執行行數來在optimizing compiler紀錄上試著找到相對應的紀錄 -> 若找不到就看看目前執行行數和資料型別所構成的索引是否被標記warm -> 在沒有就去邊解析邊執行`

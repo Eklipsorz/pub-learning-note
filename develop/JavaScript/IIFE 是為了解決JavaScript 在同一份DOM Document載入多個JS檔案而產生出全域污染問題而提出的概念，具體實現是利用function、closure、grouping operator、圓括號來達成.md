@@ -235,7 +235,7 @@ a * c + b * c // 9
 ## 複習
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第一個圓括號是做什麼 ->->-> `讓系統能將function看待成function expression`
-<!--SR:!2022-11-08,71,250-->
+<!--SR:!2023-05-09,182,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第二個圓括號是做什麼，與前面括號有什麼關係 ->->-> `第一個括號讓系統能將function看待成function expression，而第二個括號則是將expression當作函式來呼叫`
 <!--SR:!2023-04-15,165,250-->
@@ -265,7 +265,7 @@ a * c + b * c // 9
 
 
 #🧠 IIFE (Immediately Invoked Function Expression) 大致上若只使用到藉由scope分開來解決和closure的話，還會遇到什麼樣的問題![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png) ->->-> `模組的載入執行方式只需要一個指令就應該完成：實際上還得宣告和呼叫這兩個指令才能完成、預期是只需要執行一次就能使用它所擁有的功能代碼：可以通過函式名稱來重複呼叫`
-<!--SR:!2022-11-08,71,250-->
+<!--SR:!2023-05-10,183,250-->
 
 
 
