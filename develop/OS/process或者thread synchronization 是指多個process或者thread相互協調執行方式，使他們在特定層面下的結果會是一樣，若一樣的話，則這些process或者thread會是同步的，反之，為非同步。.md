@@ -110,21 +110,18 @@ thread C ---------------------------------->   ->|<------C----->|
 
 ## 複習
 
-
-
-
 #🧠 process/thread 的 synchronous 或者 Synchronisation 是什麼意思？  ->->-> `多個process/thread相互協調執行方式，使他們在特定層面下的結果會是一樣`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-10,3,250-->
 
 #🧠 process/thread 的 asynchronous 或者 Asynchronisation 是什麼意思？  ->->-> `多個process/thread相互協調執行方式，使他們在特定層面下的結果會是不一樣`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-10,3,250-->
 
 
 #🧠  process/thread 的 synchronous 或者 Synchronisation：多個process/thread相互協調執行方式，使他們在特定層面下的結果若會是一樣，就為同步，若為不一樣，就會是非同步， 該電腦科學裡的特定層面則通常是什麼？ ->->-> `是否滿足於每一個process/thread會等待前面的process/thread執行完才執行`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-10,3,250-->
 
 #🧠 process/thread 的 asynchronization：特定層面通常意旨為是否滿足於每一個process/thread會等待前面的process/thread執行完才執行，那麼怎麼樣才能稱呼process/thread為同步的？ ->->-> `若任務在相互協調後的執行方式是會等待前面任務完成才執行的話，那麼就為同步任務`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-10,3,250-->
 
 #🧠   process/thread 的 asynchronization：特定層面通常意旨為是否滿足於每一個process/thread會等待前面的process/thread執行完才執行，那麼怎麼樣才能稱呼process/thread為非同步/異步的？ ->->-> `若任務在相互協調後的執行方式是不會等待前面任務完成才執行的話，那麼就為非同步/異步任務`
 <!--SR:!2022-11-12,3,250-->
