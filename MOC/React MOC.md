@@ -205,7 +205,7 @@
 [[React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component]]
 [[React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取]]
 [[React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現]]
-[[useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現]]
+[[useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現]]
 [[import { Component } from 'react'; 的用途為方便讓特定元件繼承React的通用元件類別和react element所會需要方法和屬性]]
 
 

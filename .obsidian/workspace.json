@@ -13,25 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "1d8d56386289464a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "32be073682dcc6c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+                "file": "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+                "file": "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+                "file": "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md"
+                "file": "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md"
               }
             }
           }
@@ -164,15 +146,15 @@
   },
   "active": "97aa791bb1f6b040",
   "lastOpenFiles": [
+    "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
+    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
+    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect.md",
-    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
     "MOC/React MOC.md",
     "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md",
     "React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理(結果) 或者跳脫渲染生命週期的任意執行處理.md",
-    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing和清除上一次side effect所帶來的影響.md",
-    "inbox/Untitled 6.md",
-    "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md"
+    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing和清除上一次side effect所帶來的影響.md"
   ]
 }

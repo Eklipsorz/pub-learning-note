@@ -49,7 +49,8 @@ useEffect( () => {
 
 ### useEffect + cleanup function 的使用場景為何？
 
-使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務
+1. effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務
+2. effect會產生出影響，而cleanup是清除那影響
 
 ### useEffect + cleanup function 要實現什麼？
 1. 主要實現debouncing效果來在由互動而產生出的大量連續請求之下取出最後最新的請求來處理。
@@ -75,6 +76,7 @@ useEffect：cleanup function執行時機：
 
 #🧠 React ：useEffect + cleanup function 要實現什麼？ ->->-> `1. 主要實現debouncing效果來在由互動而產生出的大量連續請求之下取出最後最新的請求來處理。 2. 確保每一次執行effect都不會受到上一個effect的影響下而正確執行`
 
+#🧠 React：通常cleanup的內容會是以什麼內容來實現清除/還原 ->->-> `主要會移除上一次side effect所產生的非同步任務`
 
 #🧠 React：useEffect cleanup 技術主要是什麼？ ->->-> `清除源自side effect所產生的多餘非同步任務`
 <!--SR:!2022-12-06,50,250-->
@@ -91,12 +93,12 @@ useEffect：cleanup function執行時機：
 #🧠 React：useEffect cleanup 何時執行？mounting 所觸發執行的side effect會不會執行cleanup？ ->->-> `並不會`
 
 
-#🧠 React：useEffect cleanup的使用場景為何？ cleanup又負責做些什麼？->->-> `使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務`
-<!--SR:!2022-12-21,62,250-->
+#🧠 React：useEffect cleanup的使用場景為何？ cleanup又負責做些什麼？->->-> `使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務、 effect會產生出影響，而cleanup是清除那影響`
+
 
 
 #🧠 React：useEffect 如何設定cleanup 函式，其函式內容要寫些什麼？ ->->-> `在useEffect(callback, dependencies)當中的callback 定義著回傳特定callback，該callback正是cleanup函式，然後內容會是如何清除多出來的side effect所產生出來的非同步任務`
-<!--SR:!2023-01-06,72,250-->
+
 
 
 ---
@@ -104,6 +106,8 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
+[[React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理]]
 [[debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。]]
 References:
 [[@megidaWhyYouShould]]
