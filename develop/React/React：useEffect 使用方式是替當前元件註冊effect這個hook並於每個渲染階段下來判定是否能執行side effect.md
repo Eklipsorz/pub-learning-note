@@ -221,8 +221,10 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒比較deps，為什麼？ ->->-> `此時沒有dependency事先儲存，所以也就不需要檢查dependency`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒執行cleanup，為什麼？ ->->-> `這是第一次執行side effect，本身就沒有上一個side effect，所以就不需要執行cleanup`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
@@ -264,6 +266,7 @@ this is use effect
 <!--SR:!2022-12-21,59,250-->
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
 <!--SR:!2022-11-12,3,250-->
@@ -279,9 +282,11 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，不是指空陣列，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
+<!--SR:!2022-11-12,3,250-->
 
 
 
@@ -303,6 +308,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  若是async的話，潛在問題會是非同步任務而對錯誤的任務進行處理，那麼具體會是什麼？->->-> `清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務`
+<!--SR:!2022-11-12,3,250-->
 
 ``
 

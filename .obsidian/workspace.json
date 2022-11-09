@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md"
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md"
               }
             }
           }
@@ -181,15 +181,15 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "130aabc47f19cc63",
+  "active": "97aa791bb1f6b040",
   "lastOpenFiles": [
+    "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
     "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
     "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md",
     "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "inbox/process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣.md",
     "inbox/process synchronization 是指多個process或thread相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在他們在特定層面下的結果會是一樣.md",
-    "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
     "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
     "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
