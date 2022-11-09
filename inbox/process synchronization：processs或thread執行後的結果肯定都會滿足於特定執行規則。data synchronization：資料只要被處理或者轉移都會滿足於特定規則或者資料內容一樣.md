@@ -30,7 +30,7 @@
 
 ### synchronization 本身含義
 
-synchronize：與特定事物進行協調/處理，使在特定目標下的結果是一樣
+synchronize：與特定事物進行協調/處理，使它們在特定層面下的結果是一樣
 
 synchronization ：synchronize 進行過程
 
