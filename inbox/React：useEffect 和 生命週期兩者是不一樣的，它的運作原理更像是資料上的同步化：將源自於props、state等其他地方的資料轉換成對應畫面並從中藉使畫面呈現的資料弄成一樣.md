@@ -42,18 +42,29 @@
 
 重點：
 - useEffect 的 運作原理 和 生命週期函式(componentDidMount、componentDidUpdate、componentWillUnmount)的運作原理是不一樣的
-- useEffect 的運作原理更像是資料上的同步化(Data Synchronization / Data Synchronize)，但不是絕對一樣。
-
+- useEffect 的運作原理更像是資料上的同步化(Data Synchronization / Data Synchronize)，但不是絕對一樣：將render會用到的資料同步到effect來處理
+[[process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣]]
 - Data Synchronization 是將源自於props、state等其他地方的資料和畫面上的資料弄成弄成一樣的過程，換言之
 	- Data Synchronization 將源自於props、state等其他地方的資料轉換成對應畫面，使畫面呈現的資料弄成一樣的過程
 	- Synchronize ：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣
 
 
+### useEffect vs. 生命週期函式 差別
+
+1. 運作原理：前者只是單方面在render完畢之後執行什麼；後者則是按照元件的mounting、updating、unmount階段來執行對應內容
+2. 開發策略：會用到的資料來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
 
 
 ## 複習
 
-#🧠 useEffect 的運作原理和生命週期函式之間的差別是？ ->->-> `兩者間的運作原理是不一樣的；開發策略：前者是以定義一個callback、deps、會用到的資料來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
+#🧠 useEffect 的運作原理和生命週期函式之間的差別是？ ->->-> `1. 運作原理：前者只是單方面在render完畢之後執行什麼；後者則是按照元件的mounting、updating、unmount階段來執行對應內容 2. 開發策略：會用到的資料來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
 
 
 
@@ -64,6 +75,7 @@ Tags:
 Links:
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 [[React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理]]
+[[process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣]]
 References:
 [[@ithomeDay21UseEffect]]
 [[@danabramovCompleteGuideUseEffect]]
