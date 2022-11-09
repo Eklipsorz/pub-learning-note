@@ -1,6 +1,6 @@
 
 ## 描述
-與特定事物進行協調/處理，使在特定目標下的結果是一樣
+
 
 ### Synchronization 
 [[@wikidataSynchronizationComputerScience2022]]
@@ -10,7 +10,7 @@
 - synchronization在電腦科學上可區分成：
 	- process synchronization：多個process/thread 進行協調處理，使他們在特定執行目標的結果會是一樣的
 	- data synchronization：
-	- 多個data 進行協調處理，使他們在進行資料ㄨ
+	- 多個 data 進行協調處理，使他們在進行資料處理時都能
 	- 資料只要被處理或者轉移都會滿足於特定規則或者資料內容一樣
 
 
