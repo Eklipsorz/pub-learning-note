@@ -1,14 +1,18 @@
 ## 描述
 
 
-
-
-
-[[@ithomeDay21UseEffect]]
-> 所以當你在設計 effect 內的邏輯時，不應該考慮「這個 effect 會在哪幾次 render 時被執行」，而是即使每一次 render 時都執行這個 effect，其邏輯依然能正常運作。因為重點不是哪些 render 會執行這個 effect，或是要經過幾次 render 才能完成這個 effect 想做的事情，而是這個 effect 最後的執行結果能夠「完整的同步」資料的變化就好。
+### 所有擁有deps機制的hook擁有特性
+1. 利用deps機制來做效能優化
+2. 優化手段會是以儲存deps資訊來比較當前deps為主，若一樣就忽略不執行hook，若不一樣就執行hook並儲存目前deps資訊來當作下一次比較
+3. 若選擇忽略不執行hook通常會是以過去處理過的結果來回傳，節省執行side effect的成本
 
 ## 複習
 
+#🧠 React：所有擁有deps機制的hook擁有特性會是什麼？ ->->-> `利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、若選擇忽略不執行hook通常會是以過去處理過的結果來回傳`
+
+#🧠  React：所有擁有deps機制的hook擁有特性會是什麼？以優化手段會是以儲存deps資訊來比較當前deps為主來說是什麼？ ->->-> `若一樣就忽略不執行hook，若不一樣就執行hook並儲存目前deps資訊來當作下一次比較`
+
+#🧠 Question :: ->->-> `若選擇忽略不執行hook通常會是以過去處理過的結果來回傳，節省執行side effect的成本`
 
 ---
 Status: #🌱 
