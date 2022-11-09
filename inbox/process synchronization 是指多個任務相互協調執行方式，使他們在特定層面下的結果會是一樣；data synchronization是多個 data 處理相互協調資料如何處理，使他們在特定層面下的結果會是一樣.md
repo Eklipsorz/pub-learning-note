@@ -38,6 +38,7 @@ synchronization ：synchronize 進行過程
 ## 複習
 
 #🧠 synchronization在電腦科學上可區分成哪兩種？->->-> `Data Synchronization、Process/Thread Synchronization`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 Data Synchronization 會是指什麼？ ->->-> `多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣`
 <!--SR:!2022-11-12,3,250-->
@@ -48,6 +49,7 @@ synchronization ：synchronize 進行過程
 <!--SR:!2022-11-12,3,250-->
 
 #🧠 Synchronize 本身含義為何？ ->->-> `與特定事物進行協調/處理，使它們在特定層面下的結果是一樣`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 在Data Synchronization 中，那麼如何稱之為同步？ ->->-> `在特定層面通常會是指處理後的資料是否還是一樣或者是否滿足特定規則：若一樣或者滿足，就會是同步`
 <!--SR:!2022-11-12,3,250-->
