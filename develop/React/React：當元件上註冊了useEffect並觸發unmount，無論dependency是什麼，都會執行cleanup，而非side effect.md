@@ -91,27 +91,28 @@ function Child(props) {
 
 
 ### 總結
-當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect，目的是為了移除不必要的effect
+當元件上註冊了useEffect並觸發unmount時，無論dependency是什麼，都會執行cleanup，而非side effect，目的是為了移除上一次side effect所造成的影響
 
 
 
 ## 複習
 
-#🧠 React：useEffect cleanup function 執行時機是什麼？ ->->-> `執行下一個useEffect前，會執行cleanup、component被unmount前，會執行effect cleanup`
-<!--SR:!2023-01-11,74,250-->
+#🧠 React：useEffect cleanup function 執行時機是什麼？ ->->-> `updating：執行下一個useEffect前，會執行cleanup。unmounting：component被unmount前，會執行effect cleanup`
 
-#🧠 當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？為什麼？ ->->-> `會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
-<!--SR:!2023-01-07,71,250-->
+#🧠 React：useEffect 在unmount 時真是會執行componentWillUnmount?  ->->-> `並沒有，只是單方面會額外執行cleanup`
 
-#🧠 若設定dependency為空陣列的話，當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？ 為什麼？->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
-<!--SR:!2023-01-11,74,250-->
-
-#🧠 若設定dependency為空陣列的話，當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，會執行useEffect的side effect實現代碼嗎？為什麼？ ->->-> `不會，因為只會無條件執行cleanup function`
-<!--SR:!2022-12-23,60,250-->
+#🧠 當元件上註冊了useEffect並觸發unmount時，只會執行useEffect的什麼？為什麼？ ->->-> `會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
 
 
-#🧠 若設定dependency為空陣列的話，元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，還是會執行useEffect的cleanup，為什麼？ ->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup`
-<!--SR:!2023-01-11,74,250-->
+#🧠 若設定dependency為空陣列的話，當元件上註冊了useEffect並觸發unmount上時，只會執行useEffect的什麼？ 為什麼？->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
+
+
+#🧠 若設定dependency為空陣列的話，當元件上註冊了useEffect並觸發unmount上時，會執行useEffect的side effect實現代碼嗎？為什麼？ ->->-> `不會，因為只會無條件執行cleanup function`
+
+
+
+#🧠 若設定dependency為空陣列的話，元件上註冊了useEffect並觸發unmount上時，還是會執行useEffect的cleanup，為什麼？ ->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup`
+
 
 #🧠 若設定dependency為沒東西的話，當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，只會執行useEffect的什麼？ 為什麼？ ->->-> `它不會管dependency是什麼，都會在元件完全被unmount前執行cleanup來清除掉多餘的side effect`
 <!--SR:!2023-01-11,74,250-->

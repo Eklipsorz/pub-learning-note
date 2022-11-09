@@ -77,7 +77,7 @@ dependencies：
 3. 在unmounting 階段，就會無視dependency，直接執行useEffect的cleanup function 來清除最後一次side effect造成的影響
 		- unmount 階段就沒render，所以也就沒有side effect
 
-[[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
+[[React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect]]
 
 #### 總結
 
@@ -326,7 +326,7 @@ Links:
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
 [[React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理]]
 [[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
-[[React：當元件上註冊了useEffect並觸發unmount上的componentWillUnmount時，無論dependency是什麼，都會執行cleanup，而非side effect]]
+[[React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect]]
 References:
 [[@ReactUseEffect]]
 [[@ithomeDay21UseEffect]]
