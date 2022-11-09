@@ -68,14 +68,14 @@ test <button id="test">
 <!--SR:!2022-11-22,17,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是匿名函式，其callback呼叫時的this會是什麼->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
-<!--SR:!2022-11-09,10,250-->
+<!--SR:!2022-12-05,26,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是命名函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
 <!--SR:!2022-11-09,10,250-->
 
 
 #🧠 addEventListener(a, callback) 中的callback若是箭頭函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
-<!--SR:!2022-11-09,10,250-->
+<!--SR:!2022-12-05,26,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是函式物件，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
 <!--SR:!2022-12-05,26,250-->

@@ -135,7 +135,7 @@ false
 <!--SR:!2022-11-09,3,250-->
 
 #🧠 React：若元件的渲染內容如下的話，假設result為1，其渲染結果和JS層級各會是什麼樣的結果？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667735041/blog/react/react-element/complex-boolean-react_usafk7.png) ->->-> `在JS層面會印出<ForwardCounter />、false； React：<ForwardCounter />`
-<!--SR:!2022-11-09,3,250-->
+<!--SR:!2022-11-19,10,250-->
 
 
 #🧠 React：若元件的渲染內容如下的話，假設result為0，其渲染結果和JS層級各會是什麼樣的結果？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667735041/blog/react/react-element/complex-boolean-react_usafk7.png) ->->-> `在JS層面會印出0、<BackwardCounter />； React：<ForwardCounter />；React：0 <BackwardCounter \>`

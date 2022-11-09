@@ -138,7 +138,7 @@ export default useCounter;
 
 
 #🧠  React：custom hook 使用上就跟函式一樣，那麼會像函式那樣回傳東西嗎？形式會是如何？分別講出hook定義和實際使用的形式->->-> `會，hook定義會是是const useXXX = (x1, x2, ....) => { return xxxx }。函式呼叫的話會是const res = useXXX(x1, x2, ...) `
-<!--SR:!2022-11-09,13,248-->
+<!--SR:!2022-12-13,34,248-->
 
 #🧠 React：若custom hook 的引數放在custom hook中的useEffect來使用，需要添加其為deps嗎？ 為什麼->->-> `視情況需要，本質上custom hook若被componentA使用，肯定會夥同內部的useEffect一同註冊componentA，換言之，皆為在元件內部，若引數本質上是代表著元件互動，那麼勢必很有可能得放在deps來滿足其目標。`
 <!--SR:!2022-12-07,30,248-->
