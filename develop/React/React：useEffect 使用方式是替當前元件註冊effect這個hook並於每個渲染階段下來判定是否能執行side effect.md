@@ -181,7 +181,7 @@ this is use effect
 <!--SR:!2022-11-12,3,250-->
 
 
-#🧠 React：useEffect的side effect 在 render 上來說是render執行完畢所應該要有的處理，那麼render和sider effect之間的存在關係是什麼？->->-> `有render就會有side effect`
+#🧠 React：useEffect的side effect 在 render 上來說是render執行完畢所應該要有的處理，那麼render和side effect之間的存在關係是什麼？->->-> `有render就會有side effect`
 
 #🧠 React：useEffect 語法是什麼？->->-> `useEffect(callback, [dependencies]`
 <!--SR:!2022-11-12,3,250-->
@@ -217,6 +217,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒比較deps，為什麼？ ->->-> `此時沒有dependency事先儲存，所以也就不需要檢查dependency`
@@ -239,6 +240,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣，若一樣的話，會是做什麼？ ->->-> ` 若一樣：- 當前render之後不執行任何side effect`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
@@ -272,10 +274,11 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空陣列的話，會是指什麼？ ->->-> `若是空陣列[] 的話，就等同設定永不改變的dependency`
+<!--SR:!2022-11-12,3,250-->
 
 
 
-#🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
+#🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，不是指空陣列，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
@@ -287,6 +290,7 @@ this is use effect
 <!--SR:!2023-01-05,72,250-->
 
 #🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，由React來執行`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會出現沒辦法及時清除上一次effect所產生的影響`
