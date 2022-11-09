@@ -50,7 +50,7 @@
 
 ## 複習
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value->->-> `		- expr1 和 expr2 同為true，就expr1 && expr2 結果為true - 其餘狀況皆回傳false`
-<!--SR:!2022-11-09,3,250-->
+<!--SR:!2022-11-16,7,250-->
 
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 這兩者有任一個不為boolean value的話 ->->-> `		- expr1 可經由Boolean強制轉換而判定成false，就會回傳(沒經由&&轉換的版本)expr1 - 除此之外皆為回傳expr2`
 <!--SR:!2022-11-19,10,250-->
@@ -87,7 +87,7 @@
 <!--SR:!2022-11-17,8,250-->
 
 #🧠 JS： res || console.log('hi');  !res || console.log('hi !') 會如何處理和回傳？假若res為1的話 ->->-> `第一個會是1，第二個會是undefined`
-<!--SR:!2022-11-09,3,250-->
+<!--SR:!2022-11-17,8,250-->
 
 
 #🧠 JS：!expr1 的 !稱之為什麼operator？ ->->-> `logical not operator !`

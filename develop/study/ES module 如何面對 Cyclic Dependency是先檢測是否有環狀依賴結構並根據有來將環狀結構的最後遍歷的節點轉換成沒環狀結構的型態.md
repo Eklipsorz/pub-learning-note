@@ -183,7 +183,7 @@ setTimeout(() => {
 <!--SR:!2022-11-26,73,250-->
 
 #🧠 ES module: 假設有兩個JS模組分別為a.js和b.js，在這裏會先執行a.js，所以a.js會先依賴著b.js，b.js也隨後依賴著a.js，在這裏JS執行之前，會進入編譯分析階段來判斷依賴關係圖是否為環狀模組依賴關係，結果檢測結果是有環狀模組依賴關係 ，那麼若在b.js添加非同步任務來印a，會發生什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659516780/blog/javascript/module/es-module/cyclic-dependency-code-example_dvfifa.png)->->-> `會印出'b'，這是因為在這裏會以類似於call stack結構來執行b.js 和 a.js，並將b.js產生的任務放入至task queue等待event loop能夠挑選到它，最後放至call stack來執行`
-<!--SR:!2022-11-09,26,228-->
+<!--SR:!2023-01-09,61,228-->
 
 
 ---
