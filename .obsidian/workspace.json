@@ -177,9 +177,9 @@
   },
   "active": "053a7c80edf77247",
   "lastOpenFiles": [
-    "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
     "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
     "inbox/process synchronization：processs或thread執行後的結果肯定都會滿足於特定執行規則。data synchronization：資料只要被處理或者轉移都會滿足於特定規則或者資料內容一樣.md",
+    "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
     "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
     "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
