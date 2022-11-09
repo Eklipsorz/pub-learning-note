@@ -52,19 +52,26 @@
 ### useEffect vs. 生命週期函式 差別
 
 1. 運作原理：前者只是單方面在render完畢之後執行什麼；後者則是按照元件的mounting、updating、unmount階段來執行對應內容
-2. 開發策略：會用到的資料來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
+2. 開發策略：將會用到的資料、callback、deps來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
 
 
 ## 複習
 
-#🧠 useEffect 的運作原理和生命週期函式之間的差別是？ ->->-> `1. 運作原理：前者只是單方面在render完畢之後執行什麼；後者則是按照元件的mounting、updating、unmount階段來執行對應內容 2. 開發策略：會用到的資料來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
+#🧠 React useEffect 的運作原理和生命週期函式之間的差別是？ ->->-> `1. 運作原理：前者只是單方面在render完畢之後執行什麼；後者則是按照元件的mounting、updating、unmount階段來執行對應內容 2. 開發策略：將會用到的資料、callback、deps來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
 
 
+#🧠 React useEffect 的運作原理和生命週期函式之間的差別是？以運作原理來說的話 ->->-> `前者只是單方面在render完畢之後執行什麼；後者則是按照元件的mounting、updating、unmount階段來執行對應內容`
 
+#🧠 React useEffect 的運作原理和生命週期函式之間的差別是？以開發策略來說的話 ->->-> `將會用到的資料、callback、deps來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
+
+#🧠 React useEffect 的運作原理比較像什麼？ 拿生命週期和Data Synchronization來比的話，為什麼？(請說明到資料內容是否一樣)->->-> `會更偏向於Data Synchronization，原因在於它會將render會用到的資料納入至render之後的effect來執行，也就是資料從props、state轉移至effect模組，並且兩者內容會是一樣的`
+
+#🧠 useEffect 的運作原理比較像什麼？ 拿生命週期和Data Synchronization來比的話，為什麼？->->-> `會更偏向於Data Synchronization，原因在於它會將render會用到的資料納入至render之後的effect來執行，也就是資料從props、state轉移至effect模組，並且兩者內容會是一樣的`
+
+
+#🧠 在React上的Data Synchronization會是指什麼？ ->->-> ` 將源自於props、state等其他地方的資料轉換成對應畫面，使畫面呈現的資料弄成一樣的過程`
+
+#🧠 在React上的Data Synchronize會是指什麼？ ->->-> `將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣`
 
 
 
