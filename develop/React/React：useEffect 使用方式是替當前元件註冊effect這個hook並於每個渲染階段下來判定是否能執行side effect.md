@@ -178,25 +178,33 @@ this is use effect
 #🧠 React：useEffect 會是什麼？ ？ ->->-> `定義著執行完Render之後所要接著執行的任意額外任務`
 
 #🧠 React：useEffect的side effect 在 render 上來說是什麼？->->-> `render執行完畢所應該要有的處理`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect的side effect 在 render 上來說是render執行完畢所應該要有的處理，那麼render和sider effect之間的存在關係是什麼？->->-> `有render就會有side effect`
 
 #🧠 React：useEffect 語法是什麼？->->-> `useEffect(callback, [dependencies]`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 React：useEffect 的cleanup function 通常手段會是什麼？->->-> `通常手段會是**清除上一次side effect所產生的非同步任務** `
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 React：useEffect(a, b) 語法中的a 是什麼 ->->-> `第一個引數為callback，主要定義side effect的任務內容`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠  React：useEffect(a, b) 語法中的a 會回傳什麼？做什麼？ ->->-> `第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除上一次side effect所產生的影響`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠  React：useEffect 的cleanup 是用來做什麼？ ->->-> `cleanup function並在那執行指定清除上一次side effect所產生的影響`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect 的cleanup 是清除上一次side effect所產生的影響，為何要清除？->->-> `好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(a, b) 語法中的b 是什麼 ->->-> `第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies`
+<!--SR:!2022-11-12,3,250-->
 
 
 
@@ -205,6 +213,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時執行? ->->-> `effects 會是在每次render之後被執行`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
@@ -216,14 +225,17 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
+<!--SR:!2022-11-12,3,250-->
 
 
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是做什麼？->->-> `在updating 階段，執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣： - 若不一樣，就儲存這次deps資訊好下次比對 - render執行完畢後就開始執行side effect - 執行side effect對應的cleanup  - 執行side effect的主體-callback - 設定對應cleanup任務來好方便下次清除這次side effect造成的影響 - 若一樣：- 當前render之後不執行任何side effect`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣，若不一樣的話，會是做什麼？ ->->-> ` 若不一樣，就儲存這次deps資訊好下次比對 - render執行完畢後就開始執行side effect - 執行side effect對應的cleanup  - 執行side effect的主體-callback - 設定對應cleanup任務來好方便下次清除這次side effect造成的影響 `
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣，若一樣的話，會是做什麼？ ->->-> ` 若一樣：- 當前render之後不執行任何side effect`
@@ -234,6 +246,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
+<!--SR:!2022-11-12,3,250-->
 
 
 
@@ -242,6 +255,7 @@ this is use effect
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `清除最後一次side effect造成的影響`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係在每個元件的生命週期階段(mounting、unmounting、updating)是如何 ->->-> `在mounting和unmount並不會將dependencies納入使用，只會在updating才納入使用，每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
@@ -250,6 +264,7 @@ this is use effect
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
@@ -275,9 +290,11 @@ this is use effect
 
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會出現沒辦法及時清除上一次effect所產生的影響`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
+<!--SR:!2022-11-12,3,250-->
 
 
 
