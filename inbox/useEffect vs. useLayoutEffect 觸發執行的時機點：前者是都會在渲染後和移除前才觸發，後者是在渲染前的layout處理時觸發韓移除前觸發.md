@@ -55,7 +55,7 @@
 1. 呼叫function component 
 2. 在virtual DOM比較所有和原始DOM不一樣的地方
 3. 真正更新DOM 
-4. 根據DOM更新內容而渲染畫面 (layout、paint)
+4. 瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)
 
 #### layout 會是什麼
 
@@ -67,26 +67,41 @@
 
 ### 以functional component的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程來說
 
+[[@ithomeDay21UseEffect]]
+> 在預設的情況下，**effects 其實會在每次 render 後都被執行**
 
 > 在一般情況下， `useEffect` 會在每次 component render 且瀏覽器完成 DOM 的更新 & 繪製畫面**之後**才執行，以避免阻塞 component render 的過程 & 瀏覽器繪製畫面的過程
 
+理論上useEffect 產生出的side effect 是在產生出Virtual DOM的render之後才執行，但沒有明確說之後是多久的事情，具體會是在
+- 瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)之後才執行
 
-useEffect的side effect 是會在render之後才執行，
-useLayoutEffect  的 side effect
+而useLayoutEffect 具體則是會在
+- 瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)中的layout階段才執行
 
 #### useEffect vs. useLayoutEffect 時機點的差異
+1. useEffect 在瀏覽器完成畫面渲染才執行
+2. useLayoutEffect 在瀏覽器完成畫面渲染前的layout階段才執行
+
 
 ## 複習
 
 
-#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是什麼？->->-> `執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 (layout、paint)`
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是什麼？->->-> `執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)`
 
 #🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 (layout、paint)，其中layout、paint會是什麼？ ->->-> `利用現在的樹狀結構來計算網頁元件實際會在頁面上擺放的位置、大小以及如何擺放、繪製過程會開始依據渲染樹指定的樣式來對頁面上的pixel來呈現每個元件的真實面貌`
 
 
 #🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 ，其中的根據DOM更新內容而渲染畫面會包含什麼動作 ->->-> `layout、paint`
 
-#🧠 React：useEffect被定調為render之->->-> ``
+#🧠 React：useEffect產生出的side effect被定調為render之後才執行，請問render會是什麼？->->-> `產生出對應元件的virtual dom之render function`
+
+
+#🧠 React：理論上useEffect 產生出的side effect 是在產生出Virtual DOM的render之後才執行，但沒有明確說之後是多久的事情，具體會是在什麼時候執行？ ->->-> `瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)之後才執行`
+
+#🧠 React：useLayoutEffect 具體則是會在->->-> `瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)中的layout階段才執行`
+
+
+#🧠 React：useEffect vs. useLayoutEffect 之間的時機點差異是什麼->->-> `1. useEffect 在瀏覽器完成畫面渲染才執行 2. useLayoutEffect 在瀏覽器完成畫面渲染前的layout階段才執行`
 
 #🧠 useEffect 在class-based component中觸發執行的時機點為 ->->-> `	- mounting 階段下的componentDidMount - updating 階段下的componentDidUpdate - unmounting 階段下的componentWillUnmount`
 
@@ -109,3 +124,4 @@ Links:
 [[React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理]]
 References:
 [[@ithomeDay26ReactJinJie]]
+[[@ithomeDay21UseEffect]]
