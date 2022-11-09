@@ -23,7 +23,7 @@
 
 > 指在一個系統中所發生的事件（event）之間進行協調，在時間上出現一致性與統一化的現象。在系統中進行同步，也被稱為及時（in time）或同步化的（synchronous, in sync）。
 
- process或者thread synchronization 是指多個process/thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些pro
+ process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。特定層面通常會是每一個process或thread會等待前面的process或thread執行完才執行
 
 
 重點：
@@ -32,7 +32,7 @@
 	- 若一樣的話，則這些process/thread會是同步的
 	- 若不一樣的話，則這些process/thread會是非同步的
 
-- 特定層面通常意旨為每一個process/thread會等待前面的process/thread執行完才執行
+- 特定層面通常意旨為是否滿足於每一個process/thread會等待前面的process/thread執行完才執行
 	- 若任務在相互協調後的執行方式是會等待前面任務完成才執行的話，那麼就為同步任務
 	- 若任務在相互協調後的執行方式是不會等待前面任務完成才執行的話，那麼就為非同步/異步任務
 
@@ -111,16 +111,18 @@ thread C ---------------------------------->   ->|<------C----->|
 ## 複習
 
 
-#🧠 process/thread 的 synchronous 或者 Synchronisation 是什麼意思？  ->->-> `若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步`
-
-#🧠 process/thread 的 asynchronous 或者 Asynchronisation 是什麼意思？  ->->-> `若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步`
 
 
-#🧠  process/thread 的 synchronous 或者 Synchronisation：若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步， 該電腦科學裡的特定執行規則通常是什麼？ ->->-> `通常來說會設定任務等待著前面任務完成再執行作為特定執行規則`
+#🧠 process/thread 的 synchronous 或者 Synchronisation 是什麼意思？  ->->-> `多個process/thread相互協調執行方式，使他們在特定層面下的結果會是一樣`
 
-#🧠 若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步，若採用任務等待著前面任務完成再執行作為特定執行規則，那麼同步任務是什麼？ ->->-> `在這個框架中，只要任務能夠等待前面任務完成再執行，該任務就為同步`
+#🧠 process/thread 的 asynchronous 或者 Asynchronisation 是什麼意思？  ->->-> `多個process/thread相互協調執行方式，使他們在特定層面下的結果會是不一樣`
 
-#🧠 若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步/異步，若採用任務等待著前面任務完成再執行作為特定執行規則，那麼非同步任務是什麼？ ->->-> `在這個框架中，只要任務並不會等待前面任務完成就直接執行，該任務就為非同步`
+
+#🧠  process/thread 的 synchronous 或者 Synchronisation：多個process/thread相互協調執行方式，使他們在特定層面下的結果若會是一樣，就為同步，若為不一樣，就會是非同步， 該電腦科學裡的特定層面則通常是什麼？ ->->-> `是否滿足於每一個process/thread會等待前面的process/thread執行完才執行`
+
+#🧠 特定層面通常意旨為是否滿足於每一個process/thread會等待前面的process/thread執行完才執行，那麼怎麼樣才能稱呼process/thread為同步的？ ->->-> `若任務在相互協調後的執行方式是會等待前面任務完成才執行的話，那麼就為同步任務`
+
+#🧠  特定層面通常意旨為是否滿足於每一個process/thread會等待前面的process/thread執行完才執行，那麼怎麼樣才能稱呼process/thread為非同步/異步的？ ->->-> `若任務在相互協調後的執行方式是不會等待前面任務完成才執行的話，那麼就為非同步/異步任務`
 
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/OS/若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行.md",
+                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/OS/若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行.md",
+                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行.md",
+                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/OS/若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行.md",
+                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/OS/若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行.md"
+                "file": "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md"
               }
             }
           }
@@ -190,7 +190,7 @@
   "active": "d71939476d550bda",
   "lastOpenFiles": [
     "inbox/process synchronization：processs或thread執行後的結果肯定都會滿足於特定執行規則。data synchronization：資料只要被處理或者轉移都會滿足於特定規則或者資料內容一樣.md",
-    "develop/OS/若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行.md",
+    "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
     "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
     "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",

@@ -26,7 +26,7 @@
 
 
 ### Process Synchronziation
-[[若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行]]
+[[process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。]]
 
 ### synchronization 本身含義
 
@@ -52,6 +52,6 @@ Status: #🌱
 Tags:
 [[Operating System]]
 Links:
-[[若任務執行後的結果都會滿足於特定執行規則，該任務就稱之為同步；若無法滿足特定執行規則的任務，該任務就稱之為非同步或者異步，通常規則會設定任務等待著前面任務完成再執行]]
+[[process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。]]
 References:
 [[@wikidataSynchronizationComputerScience2022]]
