@@ -171,15 +171,15 @@
   },
   "active": "f4ec0a2f8220140c",
   "lastOpenFiles": [
+    "inbox/React：useEffect 的callback並不會實際如同函式呼叫那樣會按照順序執行，而是按照生命週期函式執行.md",
+    "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
     "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
     "inbox/Untitled 10.md",
     "inbox/Untitled 8.md",
     "inbox/Untitled 6.md",
-    "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "inbox/process synchronization：processs或thread執行後的結果肯定都會滿足於特定執行規則。data synchronization：資料只要被處理或者轉移都會滿足於特定規則或者資料內容一樣.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
-    "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md",
-    "develop/render/html 上的script 添加defer、async可使script提供asynchronous loading功能，都沒添加則以synchronous loading為主.md"
+    "develop/Database/Transaction - Consistency 是指只要執行協議上的指定任務之後都能產生同個結果，其結果為其資料庫都會是維持著完整性、一致性的特性.md"
   ]
 }

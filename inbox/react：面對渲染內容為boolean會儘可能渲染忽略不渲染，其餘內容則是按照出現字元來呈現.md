@@ -120,13 +120,13 @@ false
 
 ## 複習
 #🧠 React：若渲染內容是boolean的話，會渲染成什麼？ ->->-> `React一遇到回傳內容為false/ture就選擇不印`
-<!--SR:!2022-11-09,3,250-->
+<!--SR:!2022-11-19,10,250-->
 
 #🧠  React：若渲染內容為{boolean}的話，會渲染成什麼？ ->->-> `React一遇到回傳內容為false/ture就選擇不印`
 <!--SR:!2022-11-09,3,250-->
 
 #🧠  React：若元件的渲染內容如下的話，其渲染結果會是什麼？ 為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667735041/blog/react/react-element/boolean-react-rendering-result_clnrqi.png)->->-> `<React.Fragment></React.Fragment> React一遇到回傳內容為false/ture就選擇不印`
-<!--SR:!2022-11-09,3,250-->
+<!--SR:!2022-11-18,9,250-->
 
 #🧠 React：若元件的渲染內容如下的話，其渲染結果和JS層級各會是什麼樣的結果？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667735041/blog/react/react-element/complex-boolean-react_usafk7.png)->->-> `React：第一行沒渲染，第二行就印<BackwardCounter />；JS：第一行會是false，第二行會是<BackwardCounter />`
 <!--SR:!2022-11-09,3,250-->

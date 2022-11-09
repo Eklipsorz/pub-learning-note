@@ -241,7 +241,7 @@ UsersFinder.js
 <!--SR:!2022-12-21,43,249-->
 
 #🧠 React： getDerivedStateFromError 觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
-<!--SR:!2022-11-09,17,249-->
+<!--SR:!2022-12-23,44,249-->
 
 #🧠 React：error-boundary 常見實作方式，請以Users元件作為錯誤物件的來源來說明 ->->-> `1. 先在建構式上定義hasError狀態，並設定初始值為false，表示一開始沒錯誤 2. 接著設定componentDidCatch 內增加setState，來讓hasError有機會轉換成true 3. 最後在render上設定能夠根據this.state.hasError是否為true來顯示錯誤訊息 4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元件`
 <!--SR:!2022-12-12,37,249-->
