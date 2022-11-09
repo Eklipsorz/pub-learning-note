@@ -55,7 +55,7 @@
 1. 呼叫function component 
 2. 在virtual DOM比較所有和原始DOM不一樣的地方
 3. 真正更新DOM 
-4. 瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)
+4. 瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)
 
 #### layout 會是什麼
 
@@ -86,24 +86,32 @@
 ## 複習
 
 
-#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是什麼？->->-> `執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)`
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是什麼？->->-> `執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)`
+<!--SR:!2022-11-11,2,248-->
 
-#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 (layout、paint)，其中layout、paint會是什麼？ ->->-> `利用現在的樹狀結構來計算網頁元件實際會在頁面上擺放的位置、大小以及如何擺放、繪製過程會開始依據渲染樹指定的樣式來對頁面上的pixel來呈現每個元件的真實面貌`
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)，其中layout、paint會是什麼？ ->->-> `利用現在的樹狀結構來計算網頁元件實際會在頁面上擺放的位置、大小以及如何擺放、繪製過程會開始依據渲染樹指定的樣式來對頁面上的pixel來呈現每個元件的真實面貌`
+<!--SR:!2022-11-12,3,250-->
 
 
-#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 ，其中的根據DOM更新內容而渲染畫面會包含什麼動作 ->->-> `layout、paint`
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據最新的DOM內容而渲染畫面，其中的根據最新DOM內容而渲染畫面會包含什麼動作 ->->-> `layout、paint`
+<!--SR:!2022-11-11,2,248-->
 
 #🧠 React：useEffect產生出的side effect被定調為render之後才執行，請問render會是什麼？->->-> `產生出對應元件的virtual dom之render function`
+<!--SR:!2022-11-11,2,248-->
 
 
-#🧠 React：理論上useEffect 產生出的side effect 是在產生出Virtual DOM的render之後才執行，但沒有明確說之後是多久的事情，具體會是在什麼時候執行？ ->->-> `瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)之後才執行`
+#🧠 React：理論上useEffect 產生出的side effect 是在產生出Virtual DOM的render之後才執行，但沒有明確說之後是多久的事情，具體會是在什麼時候執行？ ->->-> `瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)之後執行`
+<!--SR:!2022-11-11,2,248-->
 
-#🧠 React：useLayoutEffect 具體則是會在->->-> `瀏覽器根據DOM更新內容而渲染畫面 (layout、paint)中的layout階段才執行`
+#🧠 React：useLayoutEffect 具體則是會在->->-> `瀏覽器根據最新DOM內容而渲染畫面 (layout、paint)中的layout階段才執行`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠 React：useEffect vs. useLayoutEffect 之間的時機點差異是什麼->->-> `1. useEffect 在瀏覽器完成畫面渲染才執行 2. useLayoutEffect 在瀏覽器完成畫面渲染前的layout階段才執行`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 useEffect 在class-based component中觸發執行的時機點為 ->->-> `	- mounting 階段下的componentDidMount - updating 階段下的componentDidUpdate - unmounting 階段下的componentWillUnmount`
+<!--SR:!2022-11-11,2,248-->
 
 
 #🧠 useLayoutEffect 在class-based component中觸發執行的時機點為？ ->->-> `在實際DOM節點進行渲染過程中的Layout階段`
