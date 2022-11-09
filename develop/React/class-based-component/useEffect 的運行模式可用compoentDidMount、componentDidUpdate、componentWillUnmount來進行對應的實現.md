@@ -83,6 +83,7 @@ useEffect(() => {
 ## 複習
 
 #🧠 React：由於可以在class-based component的componentDidMount、componentDidUpdate、componentWillUnmount來實現useEffect的功能，我們可以說useEffect就是他們的語法糖嗎 ->->-> `並不能，兩者為獨立功能`
+<!--SR:!2022-11-12,3,250-->
 
 #🧠 React：若要在class-based component 實現 useEffet會有的功能，會用上什麼函式 ->->-> `componentDidMount、componentDidUpdate、componentWillUnmount`
 
@@ -108,6 +109,7 @@ useEffect(() => {
 
 
 #🧠 React：若要在class-based component 去實現useEffect會是什麼：在class-based component 的實現會不會在componentWillUnmount遇上無限循環問題？為什麼->->-> `不會，具體是由於Mount只會因為從DOM Tree移除對應DOM才執行，若因為componentWillUnmount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行componentWillUnmount`
+<!--SR:!2022-11-12,3,250-->
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼：functional component 所能使用的useEffect 在class-based component 的實現會不會在componentDidUpdate遇上無限循環問題？為什麼->->-> `會，因為若componentDidUpdate裡頭有setState而執行，其階段由於還處於updating階段而繼續執行componentDidUpdate，繼而演變成進入渲染週期->進入componentDidUpdate執行setState的無限循環`
