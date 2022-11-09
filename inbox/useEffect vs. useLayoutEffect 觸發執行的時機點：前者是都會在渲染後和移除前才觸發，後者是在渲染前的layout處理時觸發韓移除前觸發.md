@@ -50,8 +50,13 @@
 	- unmount 階段下的componentWillUnmount
 
 
+### render 流程：virtual DOM ->
+
+
 ### 以functional component來說
 
+useEffect的side effect 是會在render之後才執行，
+useLayoutEffect 
 
 #### useEffect vs. useLayoutEffect 時機點的差異
 
