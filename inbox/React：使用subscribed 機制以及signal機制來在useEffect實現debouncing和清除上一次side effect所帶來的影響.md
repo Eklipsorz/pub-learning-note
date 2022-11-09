@@ -263,7 +263,7 @@ AbortController.abort()
 ---
 Status: #🌱 
 Tags:
-[[React]]
+[[React]] - [[useEffect]]
 Links:
 [[React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊]]
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]

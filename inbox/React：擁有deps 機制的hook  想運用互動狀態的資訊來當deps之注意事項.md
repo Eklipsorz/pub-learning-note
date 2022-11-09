@@ -44,7 +44,7 @@
 ---
 Status: #🌱 
 Tags:
-[[React]]
+[[React]] - [[useEffect]]
 Links:
 [[React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback]]
 References:

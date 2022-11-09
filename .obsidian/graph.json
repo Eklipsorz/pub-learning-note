@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "[[useEffect]]",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -8,15 +8,15 @@
   "collapse-color-groups": false,
   "colorGroups": [],
   "collapse-display": false,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.501286764705882,
-  "repelStrength": 9.24632352941177,
+  "centerStrength": 0.532063802083333,
+  "repelStrength": 19.1959635416667,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.03503352630583347,
-  "close": true
+  "scale": 0.9783966344861899,
+  "close": false
 }

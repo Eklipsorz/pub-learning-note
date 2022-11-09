@@ -78,7 +78,7 @@
 ---
 Status: #🌱 
 Tags
-[[Operating System]]
+[[Operating System]] - [[useEffect]]
 Links:
 References:
 [[@wikidataSideEffectComputer2022]]

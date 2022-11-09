@@ -136,7 +136,7 @@ useEffect(() => {
 ---
 Status: #🌱 
 Tags:
-[[React]]
+[[React]] - [[useEffect]]
 Links:
 [[React componentDidUpdate 是每個元件都會有的內建生命週期函式，最主要是定義渲染內容更新後要做什麼]]
 [[side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果]]
