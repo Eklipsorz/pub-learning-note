@@ -151,7 +151,7 @@ const cartReducer = (prevState, action) => {
 ## 複習
 
 #🧠 增加產品至購物車的邏輯會是什麼？ ->->-> `- 檢測要新增加的項目是否在購物車內部 - 若有的話，不直接將新增加的項目加入購物車，取而代之，以購物車的項目為主並增加對應數量 - 若沒有的話，就直接將新增加的項目加入購物車`
-<!--SR:!2022-11-09,26,250-->
+<!--SR:!2023-01-14,66,250-->
 
 
 #💻 請至/question-review/food-order-project-question領取題目並到add-item-to-cart分支，請試著在CartProvider.js中實作出增加項目至購物車的功能，請務必注意別讓購物車出現重複的項目。 ->->-> `https://github.com/Eklipsorz/food-order-project/blob/main/src/store/CartProvider.js`

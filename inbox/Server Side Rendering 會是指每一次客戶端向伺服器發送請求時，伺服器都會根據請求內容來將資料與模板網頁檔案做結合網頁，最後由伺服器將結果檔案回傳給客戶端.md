@@ -81,7 +81,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 #🧠 Server-Side Rendering 是什麼？->->-> `指的是 在Client-Server情景下，由伺服器主要負責建立可於瀏覽器視覺呈現的事物，事物會是指代表畫面的實體webpage文件`
 <!--SR:!2022-12-04,26,250-->
 
-#🧠 Server-Side Rendering 獲取到初始網頁之後會做些什麼？ ->->-> `便會從該網頁發送其他種類的請求，而伺服器接收到請求就會按照上述流程來產生對應的網頁給客戶端`
+#🧠 Server-Side Rendering ：瀏覽器獲取到由伺服器製作的初始網頁之後會做些什麼？ ->->-> `便會從該網頁發送其他種類的請求，而伺服器接收到請求就會按照上述流程來產生對應的網頁給客戶端`
 <!--SR:!2022-11-09,10,250-->
 
 #🧠 Server Side Rendering 在client-server情景下是什麼流程？ ->->-> `1. 瀏覽器針對特定網址送出請求 2. 路由器解析請求後，轉接給對應的 controller 3. controller 按照要求，透過 model 拿資料 4. controller 拿到資料後，呼叫 view template，並嵌入資料 5. 把「有資料的 template」轉換成瀏覽器可直接呈現的形式並回傳給瀏覽器 6. 瀏覽器接收檔案並以視覺形式來呈現其畫面。`
