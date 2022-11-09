@@ -50,17 +50,43 @@
 	- unmount 階段下的componentWillUnmount
 
 
-### render 流程：virtual DOM ->
+### 產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程：
+
+1. 呼叫function component 
+2. 在virtual DOM比較所有和原始DOM不一樣的地方
+3. 真正更新DOM 
+4. 根據DOM更新內容而渲染畫面 (layout、paint)
+
+#### layout 會是什麼
+
+利用現在的樹狀結構來計算網頁元件實際會在頁面上擺放的位置、大小以及如何擺放
+
+#### paint
+繪製過程會開始依據渲染樹指定的樣式來對頁面上的pixel來呈現每個元件的真實面貌
 
 
-### 以functional component來說
+### 以functional component的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程來說
+
+
+> 在一般情況下， `useEffect` 會在每次 component render 且瀏覽器完成 DOM 的更新 & 繪製畫面**之後**才執行，以避免阻塞 component render 的過程 & 瀏覽器繪製畫面的過程
+
 
 useEffect的side effect 是會在render之後才執行，
-useLayoutEffect 
+useLayoutEffect  的 side effect
 
 #### useEffect vs. useLayoutEffect 時機點的差異
 
 ## 複習
+
+
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是什麼？->->-> `執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 (layout、paint)`
+
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 (layout、paint)，其中layout、paint會是什麼？ ->->-> `利用現在的樹狀結構來計算網頁元件實際會在頁面上擺放的位置、大小以及如何擺放、繪製過程會開始依據渲染樹指定的樣式來對頁面上的pixel來呈現每個元件的真實面貌`
+
+
+#🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、根據DOM更新內容而渲染畫面 ，其中的根據DOM更新內容而渲染畫面會包含什麼動作 ->->-> `layout、paint`
+
+#🧠 React：useEffect被定調為render之->->-> ``
 
 #🧠 useEffect 在class-based component中觸發執行的時機點為 ->->-> `	- mounting 階段下的componentDidMount - updating 階段下的componentDidUpdate - unmounting 階段下的componentWillUnmount`
 
