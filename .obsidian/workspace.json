@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -147,6 +147,7 @@
   },
   "active": "3f58586a039bcbe3",
   "lastOpenFiles": [
+    "develop/food-order-project/food-order-project：實現按鈕能夠呈現animation效果-bump.md",
     "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",
     "develop/OS/side effect 是指調用者執行特定操作或表達式或函式而得到除了回傳值給調用者這個主要效果以外的額外效果，side effect 通常會是影響主調用者所使用的共享資源之效果.md",
     "develop/OS/process或者thread synchronization 是指多個process或者thread相互協調執行方式，使他們在特定層面下的結果會是一樣，若一樣的話，則這些process或者thread會是同步的，反之，為非同步。.md",
@@ -155,7 +156,6 @@
     "develop/JavaScript/this-binding/JS：default this binding 是指當沒有使用任何一個方法來進行this binding就採用的預設方式.md",
     "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
-    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md",
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md"
+    "develop/React/React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務.md"
   ]
 }

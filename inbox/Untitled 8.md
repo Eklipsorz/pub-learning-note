@@ -1,36 +1,45 @@
 ## 描述
 
 
+[[@rcreativeUnderscoreAllowedURL]]
+> Is it allowed, yes it’s allowed.
 
-Is it allowed, yes it’s allowed.
+> Is it recommended? No it’s not recommended to use underscore in an URL.
 
-Is it recommended? No it’s not recommended to use underscore in an URL.
+> Underscore would lead to Complex URLs, it can cause a problems for crawlers by creating unnecessarily high numbers of URLs that point to identical or similar content on your site. As a result, some crawler may consume much more bandwidth than necessary, or may be unable to completely index all the content on your site.
 
-Underscore would lead to Complex URLs, it can cause a problems for crawlers by creating unnecessarily high numbers of URLs that point to identical or similar content on your site. As a result, some crawler may consume much more bandwidth than necessary, or may be unable to completely index all the content on your site.
 
-So basically, if you use underscore:
 
-It would be slower for crawler to go to your site (URLs)
-It consume more bandwidth.
-I’d recommend to use hyphens (-), instead of underscores (_) in your URLs.
+[[@WangZhiUrlsYingGaiYongDuanHengXian]]
+> Matt Cutts 曾經說過，Google 在看待短橫線（-）跟下底線時，採用不同的處理方式，短橫線（-）直接被當成分隔來處理，也就是空格斷點。
 
-Here are a few pros in favor of the hyphens (-):
+> 例如網址中如果有 “black-cat”其實就會被解讀成「black cat」。
 
-Recommended by Google over underscores (source).
-Familiar to end user.
-Easier to write (doesn’t need Shift)
-It felt more native in the context of URLs as they are allowed in domain names.
-Hopefully that answer the question.
+> 但是如果你的網址裡面的英文是「black_cat」，那麼其實 Google 在解析的時候，就會解讀成完整的「black_cat」，也就是 Google 並不會將下底線（_）當成空格處理
 
-https://www.quora.com/Is-an-underscore-allowed-in-a-URL
-https://www.seo-panda.tw/urls-use-dash-or-underscore-202112/
+> 雖然 Matt Cutts 後面有提到，其實這並不是一個影響性很大的要素，但是在 SEO 搜尋引擎優化的實務作法上，還是會建議要使用短橫線（dash）而不是底線（Underscore）。
+
+
+重點：
+- 理論上當端點會是 A-B 和 A_B時，瀏覽器、ㄙ會正常解讀
+- 在Google SEO 爬蟲
+A-B=> 連字號會被都成是separator，會分隔成A和B這兩個字串來進行index，比如
+
+Red-widget 就會是 red 和 widget 
+
+  
+
+A_B => 下底線不會被當成separator，而是當成A_B這整串字串，不會分隔成A和B這兩個字串
+
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2022-11-13,3,250-->
+
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[Rendering]]
 Links:
 References:
+[[@rcreativeUnderscoreAllowedURL]]
+[[@WangZhiUrlsYingGaiYongDuanHengXian]]
