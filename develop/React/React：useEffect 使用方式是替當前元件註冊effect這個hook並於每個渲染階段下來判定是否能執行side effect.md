@@ -249,7 +249,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-20,10,250-->
 
 
 
