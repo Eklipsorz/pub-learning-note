@@ -23,6 +23,8 @@ It felt more native in the context of URLs as they are allowed in domain names.
 Hopefully that answer the question.
 
 https://www.quora.com/Is-an-underscore-allowed-in-a-URL
+https://www.seo-panda.tw/urls-use-dash-or-underscore-202112/
+
 ## 複習
 #🧠 Question :: ->->-> ``
 
