@@ -183,7 +183,7 @@ export default MainHeader;
 <!--SR:!2022-11-12,10,250-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理，它為React帶來什麼樣的潛在問題？舉例說明？->->-> `比如說若是放在購物車場景的話，並以購物項目為狀態，那麼這問題套用在這，會使得先前的購物項目全部遺失。`
-<!--SR:!2022-11-10,9,250-->
+<!--SR:!2022-12-02,22,250-->
 
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面的anchor標籤有帶來什麼樣的效能問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> ``
