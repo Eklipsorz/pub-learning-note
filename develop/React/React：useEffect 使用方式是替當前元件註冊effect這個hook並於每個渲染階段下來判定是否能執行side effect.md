@@ -195,7 +195,7 @@ this is use effect
 <!--SR:!2022-11-20,10,250-->
 
 #🧠  React：useEffect(a, b) 語法中的a 會回傳什麼？做什麼？ ->->-> `第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除上一次side effect所產生的影響`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-20,10,250-->
 
 #🧠  React：useEffect 的cleanup 是用來做什麼？ ->->-> `cleanup function並在那執行指定清除上一次side effect所產生的影響`
 <!--SR:!2022-11-10,3,250-->
@@ -216,7 +216,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時執行? ->->-> `effects 會是在每次render之後被執行`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-18,8,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
@@ -259,7 +259,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `除了只會在元件的mounting階段下直接執行以外，updating階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-19,9,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
 <!--SR:!2022-11-10,3,250-->
