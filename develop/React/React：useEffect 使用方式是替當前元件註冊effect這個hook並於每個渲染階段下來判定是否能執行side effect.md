@@ -262,7 +262,7 @@ this is use effect
 <!--SR:!2022-11-19,9,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-18,8,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `清除最後一次side effect造成的影響`
 <!--SR:!2022-11-11,3,250-->
