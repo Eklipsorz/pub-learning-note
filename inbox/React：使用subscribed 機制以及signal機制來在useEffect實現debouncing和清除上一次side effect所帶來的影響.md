@@ -196,13 +196,13 @@ AbortController.abort()
 `
 
 #🧠 React： 以下為useEffect的實現代碼，請用update階段來說明他們做了什麼？（務必請說明到記憶體和cleanup)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `update 階段會是： - 執行目前所擁有的cleanup，這時的closure和函式內容會是以上一個非同步任務產生時的記憶體區塊情況為主 - 分配新記憶體來存放true，名為subscribed，但會與上一次建立的區塊不同，是一塊全新的內容 - 生成非同步任務，任務執行以subscribed是否為true來執行 - 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-19,9,250-->
 
 #🧠 React： 以下為useEffect的實現代碼，請說明cleanup 函式如何正確執行？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `憑藉著函式物件擁有的closure，該closure會對應著當時非同步任務所採用的記憶體區塊，該記憶體區塊正是決定了非同步任務繼續執行的關鍵，所以只要改變該區塊內容就能讓非同步任務停止繼續執行`
 <!--SR:!2022-11-20,10,250-->
 
 #🧠 React useEffect：紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容的潛在問題是什麼？->->-> `該方法只能阻止還沒正式執行的非同步任務，其餘較快執行的非同步任務無法被阻止。`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-20,10,250-->
 
 #🧠  React useEffect：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal ，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `可以，因可以直接強制中斷`
 <!--SR:!2022-11-20,10,250-->
@@ -254,7 +254,7 @@ AbortController.abort()
 
 
 #🧠 軟體開發方式中，發佈/訂閱模式會是指什麼？ ->->-> `設定關係使物件之間產生一對多依賴關係，當一個物件狀態發生狀態，所有依賴於它的物件都會得到對應通知，並且存取最新內容`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-16,6,250-->
 
 #🧠 以AbortController 來發送abort而阻止非同步任務的執行，請問非同步任務會以什麼形式而停止執行？ ->->-> `以接收到錯誤的形式來停止執行`
 <!--SR:!2022-11-11,2,249-->

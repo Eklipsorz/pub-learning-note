@@ -212,7 +212,7 @@ export default MainHeader;
 <!--SR:!2022-12-06,26,250-->
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面上的anchor標籤有帶來什麼樣的效能問題？解決方式是什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667049517/blog/react/react-router/react-router-wrong-example-solution_aevrsx.png)`
-<!--SR:!2022-11-10,9,250-->
+<!--SR:!2022-12-06,26,250-->
 
 
 
