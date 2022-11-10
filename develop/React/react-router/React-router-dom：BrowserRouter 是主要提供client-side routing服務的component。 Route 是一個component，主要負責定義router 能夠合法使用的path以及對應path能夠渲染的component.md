@@ -69,7 +69,7 @@ function App() {
 ## 複習
 
 #🧠 react-router-dom v5中：BrowserRouter 是什麼？功能是什麼 ->->-> `BrowserRouter 是一個component，主要提供client-side routing服務的component`
-<!--SR:!2022-11-10,9,250-->
+<!--SR:!2022-12-05,25,250-->
 
 #🧠 react-router-dom v5中：BrowserRouter 是一個component，主要提供client-side routing服務的component，那麼如何使元件們能享用這項服務 ->->-> `以wrapper component形式來包含後裔元件或者子元件，使他們都能使用client-side routing服務`
 <!--SR:!2022-11-11,10,250-->

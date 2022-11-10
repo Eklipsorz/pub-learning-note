@@ -211,7 +211,7 @@ AbortController.abort()
 <!--SR:!2022-11-10,3,250-->
 
 #🧠 React useEffect：紀錄非同步任務ID並於cleanup移除指定任務的ID，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `可以，因可以直接強制中斷`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-20,10,250-->
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體方式是什麼？ ->->-> `使用AbortController API來建立controller 和 signal接收處理物件；將signal 接收處理物件安裝至對應的非同步任務；設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行；設定catch或者try...catch等錯誤攔截`
@@ -225,19 +225,19 @@ AbortController.abort()
 
 
 #🧠 React：以下為useEffect的實現，請問cleanup中發送的abort如何確保是發送signal至正確的非同步任務上來阻止執行？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png) ->->-> `最主要是透過cleanup的closure來記錄到非同步任務會用到的controller所在的記憶體區塊，這樣子可以致使cleanup能夠正確對當前所產生的非同步任務發送signal來阻止執行`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-17,7,250-->
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼是什麼？(包含catch/try...catch) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png)`
 <!--SR:!2022-11-20,10,250-->
 
 #🧠  目前支援AbortController介面的非同步任務種類有哪些？ ->->-> `axios、fetch`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-16,6,250-->
 
 #🧠 AbortController 方法 - abort 語法是？->->-> `AbortController.abort()`
 <!--SR:!2022-11-10,3,250-->
 
 #🧠 JS：AbortController interface 如何建構對應類別的物件？ ->->-> `new AbortController()`
-<!--SR:!2022-11-10,3,250-->
+<!--SR:!2022-11-18,8,250-->
 
 #🧠 JS：AbortController interface 的 abort 發送的signal 只有誰才能收到？ ->->-> `已搭載同一個Controller 之AbortSignal物件的非同步任務`
 <!--SR:!2022-11-10,3,250-->
