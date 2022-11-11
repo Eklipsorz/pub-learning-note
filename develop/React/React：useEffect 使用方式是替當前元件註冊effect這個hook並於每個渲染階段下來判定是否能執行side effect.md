@@ -79,13 +79,9 @@ dependencies：
 
 [[React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect]]
 
-#### 總結
+### 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？
 
-React：useEffect註冊在一個元件下，請問元件下的哪些階段會執行useEffect的side effect ？ `mounting階段的componentDidMount、updating階段下的componentDidUpdate`
-
-React：useEffect註冊在一個元件下，請問元件下的哪些階段會觸發useEffect的檢查來執行 ？`updating階段下的componentDidUpdate`
-
-React：useEffect註冊在一個元件下，元件的unmount如何執行useEffect ？ `會無視dependency，直接執行useEffect下的cleanup`
+`避免unmount之後還殘留side effect影響在那，所以要執行cleanup來還原`
 
 
 ##### 案例：
@@ -264,8 +260,8 @@ this is use effect
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
 <!--SR:!2022-11-18,8,250-->
 
-#🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `清除最後一次side effect造成的影響`
-<!--SR:!2022-11-21,10,250-->
+#🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `避免unmount之後還殘留side effect影響在那，所以要執行cleanup來還原`
+
 
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係在每個元件的生命週期階段(mounting、unmounting、updating)是如何 ->->-> `在mounting和unmount並不會將dependencies納入使用，只會在updating才納入使用，每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
