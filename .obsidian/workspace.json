@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "ba03f3c3c798bf06",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3f58586a039bcbe3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "e00898368333dd63",
         "type": "tabs",
         "children": [
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "webpack",
+                "query": "直接執行useEffect 的cleanup function，為何要執行cleanup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -121,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md"
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md"
               }
             }
           }
@@ -182,8 +164,8 @@
   },
   "active": "777c69e25eeba2d7",
   "lastOpenFiles": [
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
     "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
     "inbox/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md",
