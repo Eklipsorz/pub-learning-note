@@ -19,6 +19,7 @@
 ---
 Status: #🌱 
 Tags:
+[[HTML]]
 Links:
 References:
 [[@mdnHTMLHyperTextMarkup]]
