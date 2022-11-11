@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,33 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ead3e1f99aa02ff7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e634e6d940ea0276",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 11.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🌱",
+                "query": "build-simple-routes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -147,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 11.md",
+                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 11.md"
+                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md"
               }
             }
           }
@@ -206,17 +182,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e634e6d940ea0276",
+  "active": "93709ce425013f93",
   "lastOpenFiles": [
-    "inbox/Untitled 8.md",
-    "inbox/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
-    "inbox/main 元素最主要是存放網頁主要內容的區塊.md",
-    "inbox/Untitled 11.md",
+    "inbox/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
     "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
-    "inbox/Untitled 9.md",
+    "inbox/Untitled 11.md",
+    "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
+    "inbox/Untitled 6.md",
+    "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
+    "inbox/main 元素最主要是存放網頁主要內容的區塊.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說建立一個配置來供其他元件填入內容的元件.md",
-    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件.md",
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md"
+    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件.md"
   ]
 }

@@ -1,6 +1,36 @@
 ## 描述
 
+### 插入Layout元件，並用路由器根據URL變動而選出的瀏覽畫面來當作後裔節點來插入
 
+```
+import Layout from './components/layout/Layout';
+
+function App() {
+  return (
+    <Layout>
+      <Switch>
+        <Route path='/' exact>
+          <Redirect to='/quotes' />
+        </Route>
+        <Route path='/quotes' exact>
+          <Quotes />
+        </Route>
+        <Route path='/quotes/:quoteId'>
+          <Quote />
+        </Route>
+        <Route path='/new-quote'>
+          <NewQuote />
+        </Route>
+      </Switch>
+    </Layout>
+  );
+}
+```
+
+
+
+
+### 打造Layout元件並安放MainNavigation以及可用props插入資料的地方
 
 ```
 import React from 'react';
@@ -19,7 +49,9 @@ const Layout = (props) => {
 export default Layout;
 ```
 
-### 建立MainNavigation 固定配置
+
+
+### 建立 MainNavigation 元件
 ```
 import { NavLink } from 'react-router-dom';
 import styles from './MainNavigation.module.css';
