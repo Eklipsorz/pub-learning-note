@@ -12,10 +12,12 @@
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--VRBJFi1q--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/1atexmv0lw87bdvdn8re.png)
 
 重點：
-- layout component 會是指元件本身會
+- layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件
+- 通常會定義在
+	- /src/components/layout
+	- /src/components/Layout
 
-
-#### 使用方式
+#### 案例：使用方式
 
 > In the Layout folder we create **Layout.js** file and store the code of layout component there:
 
@@ -58,6 +60,12 @@ export default App;
 
 > So we have separated layout logic into the component and if we want to change layout later, we can simple do that with changing just one component.
 
+重點：
+- 在這裡定義一個Layout元件，裡頭已經定義好每個元件的擺放方式，並且以props.children來接收從其他元件傳遞過來的資訊來建構
+
+
+
+####
 
 
 
