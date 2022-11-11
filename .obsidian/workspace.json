@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
+                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
+                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
+                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md"
+                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md"
               }
             }
           }
@@ -184,13 +184,13 @@
   },
   "active": "93709ce425013f93",
   "lastOpenFiles": [
+    "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+    "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
+    "inbox/react-router-practice：製作瀏覽單個quote、瀏覽所有quotes、建立新quote這三個頁面以及對應routing.md",
     "inbox/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
     "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
-    "inbox/Untitled 11.md",
-    "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
-    "inbox/Untitled 6.md",
-    "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
+    "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
     "inbox/main 元素最主要是存放網頁主要內容的區塊.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說建立一個配置來供其他元件填入內容的元件.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件.md"

@@ -54,4 +54,6 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[react-router-practice：製作瀏覽單個quote、瀏覽所有quotes、建立新quote這三個頁面以及對應routing]]
+[[react-router-practice：在單個瀏覽quote的頁面增加nested route]]
 References:
