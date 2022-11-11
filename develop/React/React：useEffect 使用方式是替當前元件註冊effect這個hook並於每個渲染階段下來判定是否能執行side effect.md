@@ -272,7 +272,7 @@ this is use effect
 <!--SR:!2022-12-21,59,250-->
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
-<!--SR:!2022-11-11,3,250-->
+<!--SR:!2022-11-21,10,250-->
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
 <!--SR:!2022-11-21,10,250-->
@@ -305,11 +305,11 @@ this is use effect
 
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會出現沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2022-11-11,3,250-->
+<!--SR:!2022-11-21,10,250-->
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2022-11-11,3,250-->
+<!--SR:!2022-11-21,10,250-->
 
 
 

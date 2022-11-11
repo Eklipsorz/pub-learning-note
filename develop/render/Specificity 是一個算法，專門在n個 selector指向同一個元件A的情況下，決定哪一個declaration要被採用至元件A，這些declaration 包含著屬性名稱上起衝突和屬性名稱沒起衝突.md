@@ -103,7 +103,7 @@ specific
 <!--SR:!2022-11-12,47,250-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，請問declaration包含了哪些情況？(名稱重複？！) ->->-> `這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突`
-<!--SR:!2022-11-11,46,250-->
+<!--SR:!2022-12-07,26,230-->
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，那麼主要會如何選擇？(面對於重複和沒重複的情況下) ->->-> `主要會用權重來衡量每個declaration、 多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，就選擇權重最高的declaration，並納入至它所對應元件會有的樣式屬性、屬性名稱沒起衝突的declaration ，就直接納入至它所對應元件會有的樣式屬性`
 <!--SR:!2022-11-15,48,250-->
