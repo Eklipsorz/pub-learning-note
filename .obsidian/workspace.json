@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -144,7 +145,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "b7e2a65c4248b7a6",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
     "develop/React/React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect.md",
