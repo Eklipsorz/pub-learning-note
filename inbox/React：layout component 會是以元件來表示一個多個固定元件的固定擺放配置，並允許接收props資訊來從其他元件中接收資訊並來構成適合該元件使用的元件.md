@@ -16,6 +16,7 @@
 - 通常會定義在
 	- /src/components/layout
 	- /src/components/Layout
+- 開發方式：盡量讓layout component 本身保持可重復性使用的元件
 
 #### 案例：使用方式
 
@@ -109,27 +110,22 @@ export default App;
 ## 複習
 
 
-- layout component 會是以元件來表示多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件
-- 通常會定義在
-	- /src/components/layout
-	- /src/components/Layout
-
 #🧠 layout 意義 會是什麼？ ->->-> ` layout 會是指特定事物被擺放的方式`
 
 
 #🧠 layout 意義 會是什麼？以多個事物來說的話？ ->->-> `通常會當作成多個事物的擺放方式`
 
 
-#🧠 react：layout component 會是什麼？ ->->-> ``
+#🧠 react：layout component 會是什麼？ ->->-> `會是以元件來表示多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 layout component 會是以元件來表示多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，講白話會是什麼意思？ ->->-> ` layout component 建立一個配置來供其他元件填入內容的元件`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 若要將component 以layout用途來區分的話，會放在哪個地方？ ->->-> `/src/components/layout、/src/components/Layout`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 layout component 開發時會要注意什麼？ ->->-> `盡量讓layout component 本身為可重復性使用的元件`
 
 
 ---
