@@ -37,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2cf79ca61eda064",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 11.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ead3e1f99aa02ff7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,12 +71,8 @@
             "id": "e634e6d940ea0276",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 11.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -75,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dependency",
+                "query": "tag:#🧠",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -182,17 +202,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e634e6d940ea0276",
+  "active": "e2cf79ca61eda064",
   "lastOpenFiles": [
+    "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
+    "inbox/Untitled 11.md",
+    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
     "inbox/Untitled 9.md",
+    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說建立一個配置來供其他元件填入內容的元件.md",
+    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件.md",
     "inbox/Untitled 8.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
-    "develop/React/React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect.md",
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
-    "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
-    "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
-    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
-    "inbox/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md"
+    "develop/React/React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect.md"
   ]
 }
