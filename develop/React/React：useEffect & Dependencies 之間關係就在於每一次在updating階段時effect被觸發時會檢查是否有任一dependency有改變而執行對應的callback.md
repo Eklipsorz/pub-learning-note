@@ -5,7 +5,7 @@
 ### callback 設定目的
 
 
-useEffect 的 callback則是定義side effect的內容。
+useEffect 的 callback則是定義side effect的內容、cleanup內容
 
 [[瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染]]
 ### dependency 設定目的
@@ -126,7 +126,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 
 ## 複習
 
-#🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `useEffect 的 callback則是定義side effect的內容。`
+#🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `useEffect 的 callback則是定義side effect的內容、cleanup內容`
 <!--SR:!2022-11-11,2,249-->
 
 
