@@ -260,7 +260,7 @@ UsersFinder.js
 
 
 #🧠 React：預設錯誤處理若沒攔截到錯誤並處理的話，會有什麼事情發生？ ->->-> `錯誤很有可能危害到系統的穩定和安全`
-<!--SR:!2022-11-11,14,248-->
+<!--SR:!2022-12-15,34,248-->
 
 
 #🧠 componentDidUpdate 參數 vs componentDidCatch參數之間差別是什麼？ ->->-> `前者是(prevProps, prevState)；後者是(error)`

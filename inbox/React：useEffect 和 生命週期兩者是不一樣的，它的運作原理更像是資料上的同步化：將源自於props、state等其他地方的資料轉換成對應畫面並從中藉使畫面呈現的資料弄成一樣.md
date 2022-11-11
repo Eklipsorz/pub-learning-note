@@ -65,10 +65,10 @@
 <!--SR:!2022-11-21,10,250-->
 
 #🧠 React useEffect 的運作原理和生命週期函式之間的差別是？以開發策略來說的話 ->->-> `將會用到的資料、callback、deps來告知React的render完畢之後要做些什麼，後者則是以過程為導向來指定每個階段要做什麼`
-<!--SR:!2022-11-11,3,250-->
+<!--SR:!2022-11-13,2,230-->
 
 #🧠 React useEffect 的運作原理比較像什麼？ 拿生命週期和Data Synchronization來比的話，為什麼？(請說明到資料內容是否一樣)->->-> `會更偏向於Data Synchronization，原因在於它會將render會用到的資料納入至render之後的effect來執行，也就是資料從props、state轉移至effect模組，並且兩者內容會是一樣的`
-<!--SR:!2022-11-11,3,250-->
+<!--SR:!2022-11-20,9,250-->
 
 #🧠 useEffect 的運作原理比較像什麼？ 拿生命週期和Data Synchronization來比的話，為什麼？->->-> `會更偏向於Data Synchronization，原因在於它會將render會用到的資料納入至render之後的effect來執行，也就是資料從props、state轉移至effect模組，並且兩者內容會是一樣的`
 <!--SR:!2022-11-21,10,250-->
