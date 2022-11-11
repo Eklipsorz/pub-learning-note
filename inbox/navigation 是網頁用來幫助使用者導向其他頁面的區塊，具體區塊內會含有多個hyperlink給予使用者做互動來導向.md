@@ -53,5 +53,6 @@ Status: #🌱
 Tags:
 [[HTML]]
 Links:
+[[header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊]]
 References:
 [[@mdnNavigationSectionElement]]
