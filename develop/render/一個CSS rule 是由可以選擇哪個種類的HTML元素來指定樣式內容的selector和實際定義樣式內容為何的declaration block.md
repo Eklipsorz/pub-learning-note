@@ -89,7 +89,7 @@ color: red;
 <!--SR:!2023-01-16,86,248-->
 
 #🧠 每個CSS rule 是由一個selector和一個declaration block所構成，那麼一個declaration  用途為？->->-> `定義selector所選擇的DOM節點會有什麼樣樣式屬性`
-<!--SR:!2022-11-12,47,250-->
+<!--SR:!2023-03-10,118,250-->
 
 #🧠 請用程式碼來表示一個表示會有文字顏色為紅色、字體大小為24px的css rule該如何定義？ 並選定哪些是selector、declaration、property、property。->->-> ``
 <!--SR:!2023-01-20,87,248-->

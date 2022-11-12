@@ -86,7 +86,7 @@ useEffect(() => {
 <!--SR:!2022-11-12,3,250-->
 
 #🧠 React：若要在class-based component 實現 useEffet會有的功能，會用上什麼函式 ->->-> `componentDidMount、componentDidUpdate、componentWillUnmount`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-22,10,250-->
 
 #🧠 React：useEffect 本身是class-based component 的 componentDidMount、componentDidUpdate、componentWillUnmount這三者的語法糖？為什麼？->->-> `並不是，嚴格來說只是兩者採用同個react核心代碼來以兩種截然不同的形式來實現兩個獨立功能`
 <!--SR:!2022-11-22,10,250-->

@@ -228,7 +228,7 @@ function arraySum(arr) {
 <!--SR:!2022-12-09,87,248-->
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上沒任何紀錄，但monitor有紀錄且有warm，請問每一次程式碼的執行會如何進行？（考慮為warm和不為warm的情況下) ->->-> `每一次執行就會以目前執行行數和型別來構成索引來從monitor找到對應紀錄，看是否為warm，若warm的話，就取出對應的機械碼執行，若不是的話，就交給interpreter邊轉化機械碼邊執行`
-<!--SR:!2022-11-12,72,250-->
+<!--SR:!2023-05-15,184,250-->
 
 #🧠 JIT版本的JavaScript：試說明被標記為warm的原始碼發生了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/baseline-compiler-example_ofixlw.png)->->-> `在這裡由於arraySum函式的由(行數, 型別)所構成的索引之執行次數達標，所以就將對應的bytecode放到baseline compiler編譯成機械碼，然後根據索引來將機械碼更新至monitor上的紀錄，就如同最右邊的code，下次碰上相同的索引就以monitor上的紀錄來找到對應的機械碼執行`
 <!--SR:!2023-05-03,177,250-->

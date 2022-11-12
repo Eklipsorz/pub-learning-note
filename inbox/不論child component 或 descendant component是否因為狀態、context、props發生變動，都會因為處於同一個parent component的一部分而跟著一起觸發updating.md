@@ -125,7 +125,7 @@ export default Wrapper;
 
 ## 複習
 #🧠 若parent component是由多個child component 或者由多個descendant component 所組成，當parent component發生updating時，會發生什麼？->->-> `不論child component/ descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating`
-<!--SR:!2022-11-12,28,250-->
+<!--SR:!2023-01-25,74,250-->
 
 #🧠 若parent component是由多個child component 或者由多個descendant component 所組成，當parent component發生updating時，本身沒有最新渲染內容的child component/descendant component所對應的real dom會發生變化嗎？詳細說明 ->->-> `real dom並不會有任何變化，原因為沒有最新渲染就表示比較差異的結果會是無，那麼會對應出來的Real DOM也就是沒有，因此不會有變化`
 <!--SR:!2022-11-23,30,230-->
