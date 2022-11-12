@@ -59,7 +59,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 <!--SR:!2023-01-15,65,250-->
 
 #🧠 higher-order component 使用什麼作為輸入處理？ ->->-> `使用一個基本的component`
-<!--SR:!2022-11-12,26,250-->
+<!--SR:!2023-01-18,67,250-->
 
 
 ---

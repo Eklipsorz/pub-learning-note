@@ -186,7 +186,7 @@ function outerFunction() {
 
 
 #🧠 react-router-dom：nested route 會有的形式會是？若是nested route先合併在特定元件上，然後其元件再由Route元件包覆， 其nested route所設定的path只能是->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
-<!--SR:!2022-11-12,6,248-->
+<!--SR:!2022-11-28,16,248-->
 
 #🧠 react-router-dom：nested route 會有的形式會是？nested route直接被一個Route元件包覆， 其nested route所設定的path只能是 ->->-> `不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path`
 <!--SR:!2022-11-24,13,248-->
@@ -202,7 +202,7 @@ function outerFunction() {
 
 
 #🧠  react-router-dom：當客戶端要求轉換URL為/welcome/hi時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487833/blog/react/react-router/Nested-route/nested-route-inside-component-example2_tgbsal.png) ->->-> `當客戶端要求轉換URL為/welcome/hi時，會先從\/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定來找到\/hi路徑，並渲染\<p\>hi\<\/p\>`
-<!--SR:!2022-11-12,6,248-->
+<!--SR:!2022-11-27,15,248-->
 
 ---
 Status: #🌱 

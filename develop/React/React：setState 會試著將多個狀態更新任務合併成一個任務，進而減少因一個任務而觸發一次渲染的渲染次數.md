@@ -229,7 +229,7 @@ setLastName('Cheng');
 
 
 #🧠 React：在class-based componet中，負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
-<!--SR:!2022-11-12,22,250-->
+<!--SR:!2023-01-06,55,250-->
 
 #🧠 React：在functional component中，負責處理儲存多個狀態更新任務佇列的非同步任務X何時會做狀態更新&渲染 ->->-> `等到沒有狀態更新任務可被執行，就開始執行`
 <!--SR:!2022-11-16,25,250-->
@@ -314,7 +314,7 @@ setLastName('Cheng');
 <!--SR:!2022-11-19,28,250-->
 
 #🧠 class-based component vs. functional component ： 單個 state  &  setState 對於單個setState 更新狀態方式之差別 是什麼？ 說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
-<!--SR:!2022-11-12,23,250-->
+<!--SR:!2022-11-26,14,230-->
 
 ---
 Status: #☀️ 

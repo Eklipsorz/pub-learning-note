@@ -108,7 +108,7 @@ useEffect(() => {
 
 
 #🧠 React：若要在class-based component 去實現useEffect會是什麼：在class-based component 的實現會不會在componentDidMount遇上無限循環問題？為什麼->->-> `不會，具體是由於Mount只會因為元件對應DOM被安裝至DOM Tree才執行，若因為componentDidMount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行omponentDidMount`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-22,10,250-->
 
 
 
