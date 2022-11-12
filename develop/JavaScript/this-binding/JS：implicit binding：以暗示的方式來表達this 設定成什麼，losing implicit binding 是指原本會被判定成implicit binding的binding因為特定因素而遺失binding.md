@@ -305,7 +305,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-11-16,24,250-->
 
 #🧠 implicit binding：若函式A呼叫前有多個物件參考的話，會如何決定函式A的this 是什麼？->->-> `會挑選離函式A呼叫較近的物件來設定this`
-<!--SR:!2022-11-12,20,250-->
+<!--SR:!2023-01-03,52,250-->
 
 #🧠 請問這是obj.func呼叫後的執行環境所設定的this會是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/implicit-binding-example_ts85d3.png) ->->-> `會是設定obj並印出obj的name-聽風是風。主要是在函式呼叫前添加物件參考A，其函式呼叫就會被系統認為物件參考A所擁有的函式並且呼叫函式。`
 <!--SR:!2022-11-13,21,250-->
