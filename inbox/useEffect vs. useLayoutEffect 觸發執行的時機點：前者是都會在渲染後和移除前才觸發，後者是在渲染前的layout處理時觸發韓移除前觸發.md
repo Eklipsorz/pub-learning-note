@@ -104,9 +104,11 @@
 <!--SR:!2022-11-16,5,248-->
 
 #🧠 React：useLayoutEffect 具體則是會在什麼時候執行->->-> `瀏覽器根據最新DOM內容而渲染畫面 (layout、paint)中的layout階段才執行`
+<!--SR:!2022-11-14,2,247-->
 <!--SR:!2022-11-22,10,250-->
 
 #🧠 React：useLayoutEffect 具體則是會在什麼時候執行->->-> `瀏覽器根據最新DOM內容而渲染畫面 (layout、paint)中的layout階段才執行`
+<!--SR:!2022-11-14,2,247-->
 
 
 #🧠 React：useEffect vs. useLayoutEffect 之間的時機點差異是什麼->->-> `1. useEffect 在瀏覽器完成畫面渲染才執行 2. useLayoutEffect 在瀏覽器完成畫面渲染前的layout階段才執行`

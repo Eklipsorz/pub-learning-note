@@ -261,6 +261,7 @@ this is use effect
 <!--SR:!2022-11-18,8,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `避免unmount之後還殘留side effect影響在那，所以要執行cleanup來還原`
+<!--SR:!2022-11-15,3,250-->
 
 
 
