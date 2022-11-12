@@ -147,10 +147,10 @@ export default Wrapper;
 <!--SR:!2023-01-19,69,250-->
 
 #🧠 請說明App元件的descendant component會是哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651202/blog/react/life-cycle/together-update/question1-app-and-descendanent-component_ixumqg.png)->->-> `h1、DemoOutput、Button`
-<!--SR:!2022-11-12,28,250-->
+<!--SR:!2023-01-25,74,250-->
 
 #🧠 請說明App元件的descendant component會是哪些？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651422/blog/react/life-cycle/together-update/question2-app-and-descendanent-component_r3xa7h.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651422/blog/react/life-cycle/together-update/question2-descendanent-component_rggds9.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651422/blog/react/life-cycle/together-update/question2-wrapper-component_solup9.png)->->-> `h1、DemeOutput、Button、Wrapper`
-<!--SR:!2022-11-12,28,250-->
+<!--SR:!2023-01-25,74,250-->
 
 
 

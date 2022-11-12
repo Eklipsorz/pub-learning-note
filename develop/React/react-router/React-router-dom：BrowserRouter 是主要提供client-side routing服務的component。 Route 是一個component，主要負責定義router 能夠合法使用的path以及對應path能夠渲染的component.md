@@ -79,7 +79,7 @@ function App() {
 
 
 #🧠 react-router-dom v5中：BrowserRouter 要如何載入？ ->->-> `import { BrowserRouter } from 'react-router-dom'; `
-<!--SR:!2022-11-12,10,250-->
+<!--SR:!2022-12-10,28,250-->
 
 #🧠 react-router-dom v5中：如何定義router 的 route?  ->->-> `使用Route component 來定義哪個path所對應的component是什麼？`
 <!--SR:!2022-12-05,25,250-->
