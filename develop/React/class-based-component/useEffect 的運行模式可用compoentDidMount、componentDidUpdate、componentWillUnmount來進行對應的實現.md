@@ -117,11 +117,11 @@ useEffect(() => {
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼：functional component 所能使用的useEffect 在class-based component 的實現會不會在componentDidUpdate遇上無限循環問題？為什麼->->-> `會，因為若componentDidUpdate裡頭有setState而執行，其階段由於還處於updating階段而繼續執行componentDidUpdate，繼而演變成進入渲染週期->進入componentDidUpdate執行setState的無限循環`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-22,10,250-->
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼： 在class-based component 的實現在componentDidUpdate遇上無限循環問題，解法會是->->-> `在裡頭添加類似dependency的條件式就能解決`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-22,10,250-->
 
 
 

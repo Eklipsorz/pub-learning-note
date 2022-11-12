@@ -252,7 +252,7 @@ a * c + b * c // 9
 
 
 #🧠  IIFE (Immediately Invoked Function Expression) 大致上使用了哪些技術->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope、以function作為基礎於內部進行函式擴充以此實現模組scope和global scope：具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料、grouping operator 強制將function 轉換成 function expression 來看待、() 將轉換後的function expression以function來呼叫`
-<!--SR:!2022-11-12,74,250-->
+<!--SR:!2022-12-19,37,230-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為何採用function ->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope`
 <!--SR:!2023-05-12,184,250-->
