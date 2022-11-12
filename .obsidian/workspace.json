@@ -195,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +220,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,7 +243,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md"
               }
             }
           }
@@ -254,8 +254,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "23fe68b491a0807a",
+  "active": "b60bf70072884cfd",
   "lastOpenFiles": [
+    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
     "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
     "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
@@ -264,7 +265,6 @@
     "develop/React/React - 可使用function 和 class 來建構react component.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
-    "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
-    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md"
+    "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md"
   ]
 }

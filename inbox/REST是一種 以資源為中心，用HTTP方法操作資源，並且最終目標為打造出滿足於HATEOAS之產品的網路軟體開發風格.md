@@ -75,7 +75,7 @@ Resource Representation State：
 ## 複習
 
 #🧠 REST 全名為何？ ->->-> `REpresentational State Transfer`
-<!--SR:!2022-11-12,17,250-->
+<!--SR:!2022-11-23,11,230-->
 
 #🧠 RESTful API中的REST 是什麼？ ->->-> `REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格`
 <!--SR:!2022-11-23,25,250-->
