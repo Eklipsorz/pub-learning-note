@@ -99,8 +99,8 @@ specific
 #🧠 specific 命名緣由為何？ ->->-> `是指清晰和正確`
 <!--SR:!2022-11-13,47,250-->
 
-#🧠 CSS specificity 是什麼？->->-> `Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A`
-<!--SR:!2022-11-12,47,250-->
+#🧠 CSS specificity 是什麼？->->-> `是指在多個相同declaration且這些declaration所處的selector所指向的dom是一樣的情況下，憑著declaration所處的selector  對於dom節點的描述程度高低來決定哪個declaration採用至對應dom節點`
+
 
 #🧠 CSS Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，請問declaration包含了哪些情況？(名稱重複？！) ->->-> `這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突`
 <!--SR:!2022-12-07,26,230-->
