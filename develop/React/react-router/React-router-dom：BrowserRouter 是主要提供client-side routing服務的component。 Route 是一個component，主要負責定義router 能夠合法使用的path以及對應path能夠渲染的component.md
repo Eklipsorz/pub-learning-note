@@ -85,7 +85,7 @@ function App() {
 <!--SR:!2022-12-05,25,250-->
 
 #🧠 react-router-dom v5中：Route 是什麼？功能是？->->-> `Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component`
-<!--SR:!2022-11-12,10,250-->
+<!--SR:!2022-12-09,27,250-->
 
 #🧠 react-router-dom v5中：Route 元件如何定義path和對應的component？(包含載入) ->->-> `import { Route } from 'react-router-dom'; return ( <Route path="/xxx1"> <Component1 /> </Route>）`
 <!--SR:!2022-12-09,28,250-->
@@ -106,7 +106,7 @@ function App() {
 
 
 #🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
-<!--SR:!2022-11-12,10,250-->
+<!--SR:!2022-12-10,28,250-->
 
 
 #🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``

@@ -104,7 +104,7 @@
 <!--SR:!2022-11-16,5,248-->
 
 #🧠 React：useLayoutEffect 具體則是會在什麼時候執行->->-> `瀏覽器根據最新DOM內容而渲染畫面 (layout、paint)中的layout階段才執行`
-<!--SR:!2022-11-12,3,250-->
+<!--SR:!2022-11-22,10,250-->
 
 #🧠 React：useLayoutEffect 具體則是會在什麼時候執行->->-> `瀏覽器根據最新DOM內容而渲染畫面 (layout、paint)中的layout階段才執行`
 

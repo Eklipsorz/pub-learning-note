@@ -77,6 +77,24 @@
         ]
       },
       {
+        "id": "c637452b7a20b254",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65f2923d6472b602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "32701827b72bd784",
         "type": "tabs",
         "children": [
@@ -195,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +238,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,7 +261,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md"
+                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md"
               }
             }
           }
@@ -254,13 +272,13 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "98ee1976a1b55081",
+  "active": "65f2923d6472b602",
   "lastOpenFiles": [
+    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
     "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
     "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
     "develop/React/React - 可使用function 和 class 來建構react component.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
-    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
     "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
     "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
