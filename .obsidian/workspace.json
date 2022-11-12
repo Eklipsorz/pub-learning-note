@@ -57,6 +57,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "53a53179a65b52ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d39690dd37d91d82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
+                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
+                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md"
+                "file": "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md"
               }
             }
           }
@@ -182,15 +200,15 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "93709ce425013f93",
+  "active": "d39690dd37d91d82",
   "lastOpenFiles": [
+    "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
     "inbox/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
     "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
     "inbox/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
     "inbox/main 元素最主要是存放網頁主要內容的區塊.md",
     "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
-    "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
     "inbox/react-router-practice：製作瀏覽單個quote、瀏覽所有quotes、建立新quote這三個頁面以及對應routing.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說建立一個配置來供其他元件填入內容的元件.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件，或者說 layout component 建立一個配置來供其他元件填入內容的元件.md"
