@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "build-simple-routes",
+                "query": "Layout component",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md"
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md"
               }
             }
           }
@@ -147,15 +146,15 @@
   },
   "active": "9e6583665c821c1b",
   "lastOpenFiles": [
+    "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
+    "develop/React/React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段.md",
+    "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
-    "inbox/react-router-practice：將根目錄導向quotes以及在單個瀏覽quote的頁面呈現params.md",
-    "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
-    "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
-    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
-    "inbox/useEffect vs. useLayoutEffect 觸發執行的時機點：前者是都會在渲染後和移除前才觸發，後者是在渲染前的layout處理時觸發韓移除前觸發.md",
-    "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
-    "develop/render/Specificity 是一個算法，專門在n個 selector指向同一個元件A的情況下，決定哪一個declaration要被採用至元件A，這些declaration 包含著屬性名稱上起衝突和屬性名稱沒起衝突.md",
-    "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
-    "develop/React/React - 可使用function 和 class 來建構react component.md"
+    "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md",
+    "develop/render/Specificity 是一個算法，專門在n個相同declaration且這些declaration所處的selector所指向的dom是一樣的情況下，憑著declaration所處的selector  對於dom節點的描述程度高低來決定哪個declaration採用至對應dom.md",
+    "inbox/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
+    "MOC/Rendering MOC.md",
+    "develop/render/Specificity 是一個算法，專門在n個相同declaration且這些declaration所處的selector所指向的dom是一樣的情況下，憑著declaration所處的selector  對於dom節點的描述程度高低來決定哪個declaration採用至對應dom節點.md",
+    "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md"
   ]
 }

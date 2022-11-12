@@ -77,7 +77,7 @@ useEffect(() => {
 ```
   
 #### componentWillUnmount
-由於該函式因為unmount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect下的cleanup
+具體是由於Mount只會因為從DOM Tree移除對應DOM才執行，若因為componentWillUnmount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行componentWillUnmount，但之後肯定會遇到unmount階段來釋放，所以又會執行一次componentWillUnmount
 
 
 ## 複習
@@ -112,8 +112,8 @@ useEffect(() => {
 
 
 
-#🧠 React：若要在class-based component 去實現useEffect會是什麼：在class-based component 的實現會不會在componentWillUnmount遇上無限循環問題？為什麼->->-> `不會，具體是由於Mount只會因為從DOM Tree移除對應DOM才執行，若因為componentWillUnmount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行componentWillUnmount`
-<!--SR:!2022-11-22,10,250-->
+#🧠 React：若要在class-based component 去實現useEffect會是什麼：在class-based component 的實現會不會在componentWillUnmount遇上無限循環問題？為什麼->->-> `會，具體是由於Mount只會因為從DOM Tree移除對應DOM才執行，若因為componentWillUnmount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行componentWillUnmount，但之後肯定會遇到unmount階段來釋放，所以又會執行一次componentWillUnmount`
+
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼：functional component 所能使用的useEffect 在class-based component 的實現會不會在componentDidUpdate遇上無限循環問題？為什麼->->-> `會，因為若componentDidUpdate裡頭有setState而執行，其階段由於還處於updating階段而繼續執行componentDidUpdate，繼而演變成進入渲染週期->進入componentDidUpdate執行setState的無限循環`
