@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "082ee2d5c19e274a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c1869cb83293edd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
