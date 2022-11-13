@@ -1,13 +1,11 @@
 ## 描述
 
 
-### 
-當使用者提交成功時，會作出以下事情來回應
+### 當使用者提交表格並成功時，處理方會有的反應
 
+當使用者提交成功時，會作出以下事情來回應，以下事情可能會重疊。
 1. 呈現成功訊息來告知使用者
-
 2. 導向至特定頁面
-
 3. 以modal來告知使用者
 
 
@@ -27,18 +25,44 @@ but it's some action triggered by our code, when some abreaction sending the ent
 
 **when a user is redirected as a result of an action that occurs on a route**
 
-###
-useHistory：
+### useHistory 
 
+[[@react-routerReactRouterDeclarativea]]
+> The `useHistory` hook gives you access to the `history` instance that you may use to navigate.
+
+  
+
+useHistory：
 1. 由react-router-dom所提供
 
 2.
 
 > but it's named like this because it allows us to change the browser history
 
-The `useHistory` hook gives you access to the `history` instance that you may use to navigate.
 
-  
+
+#### history object
+
+[[@react-routerReactRouterDeclarativea]]
+> The following terms are also used:
+
+
+> The following terms are also used:
+> -   “browser history” - A DOM-specific implementation, useful in web browsers that support the HTML5 history API
+> -   “hash history” - A DOM-specific implementation for legacy web browsers
+> -   “memory history” - An in-memory history implementation, useful in testing and non-DOM environments like React Native
+
+> `history` objects typically have the following properties and methods:
+
+> -   `push(path, [state])` - (function) Pushes a new entry onto the history stack
+> -   `replace(path, [state])` - (function) Replaces the current entry on the history stack
+
+重點：
+- react-router-dom 所提供的 history 物件會取用自以下三者
+	- browser history ：DOM API 提供開發者存取browser history的介面
+	- hash history
+	- memory history
+- 不論哪一種，history皆會以stack來表示
 
 3. 回傳history object
 
