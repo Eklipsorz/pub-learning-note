@@ -29,6 +29,26 @@ useHistory：
 1. 由react-router-dom所提供的hook
 2. 專門回傳一個history 物件，該物件由另一個第三方而製成的history 物件，可藉由它來操縱瀏覽器的瀏覽紀錄。
 
+#### 案例
+
+```
+import { useHistory } from 'react-router-dom';
+import QuoteForm from '../components/quotes/QuoteForm';
+
+const NewQuote = () => {
+
+  const history = useHistory();
+
+  const addQuote = (data) => {
+    console.log('addQuote', data);
+    history.push('/quotes')
+  };
+  // display a form for adding a quote
+  return <QuoteForm onAddQuote={addQuote} />;
+};
+
+export default NewQuote;
+```
 
 
 ### 在react-router-dom上的 history object
@@ -126,7 +146,7 @@ useHistory：
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack的方式： ->->-> `前者是直接增加網址在最上面；後者則是將網址取代最上面`
 
 
-
+#💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-programmatic-navigation分支，在那請以programmatic navigation來實作成功提交新增quote會有的導向 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/16-implementing-programmatic-navigation`
 
 ---
 Status: #🌱 
