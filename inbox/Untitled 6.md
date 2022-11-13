@@ -9,21 +9,14 @@
 3. 以modal來告知使用者
 
 
-### 
+### programmatic navigation
 
-programmatic navigation
 
 > we wanna trigger a navigation action and navigate the user away programmatically in our code
 
-  
-
-it's not a link which the user clicks to navigate away
-
-but it's some action triggered by our code, when some abreaction sending the entered data to a server finished. and in the end we probably wanna trigger this navigation action from inside
-
-  
-
-**when a user is redirected as a result of an action that occurs on a route**
+重點：
+- 以程式的手段來直接將使用者導向至特定頁面
+- 手段通常會是使用history API或者操縱history的API
 
 ### useHistory 
 
@@ -33,21 +26,10 @@ but it's some action triggered by our code, when some abreaction sending the ent
   
 
 useHistory：
-1. 由react-router-dom所提供
-
-2.
-
-> but it's named like this because it allows us to change the browser history
+1. 由react-router-dom所提供的hook
+2. 專門回傳一個history 物件，該物件由另一個第三方而製成的history 物件，可藉由它來操縱瀏覽器的瀏覽紀錄。
 
 
-
-
-### browser history 是什麼？
-[[@WebBrowsingHistory2022]]
-> Web browsing history refers to the list of web pages a user has visited
-
-重點：
-- browser history 或者 history 在網頁上是指使用者曾經瀏覽過到現在的網站清單
 
 ### 在react-router-dom上的 history object
 
@@ -74,44 +56,26 @@ useHistory：
 	- browser history ：DOM API 提供開發者存取browser history的介面
 	- hash history
 	- memory history
-- 不論哪一種，history皆會以stack來表示，
+- history 物件擁有的方法為：
+	- push：將指定頁面路徑(path)推送至page stack最上面來當作目前頁面的路徑
+	```
+	history.push(path)
+	```
+	- replace：將指定頁面取代page stack的最上面來當作目前頁面的路徑
+	```
+	history.replace(path)
+	```
+- push vs. replace 差別：
+	- 使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉
+	- 方式：前者是直接增加網址在最上面；後者則是將網址取代最上面
 
-3. 回傳history object
+### browser history 是什麼？
+[[@WebBrowsingHistory2022]]
+> Web browsing history refers to the list of web pages a user has visited
 
-  
-
-browser history => the history of pages we visited.
-
-  
-
-history object：
-
-- 隸屬於react-router-dom 所提供的物件，操控browser history，其history會是由stack來存放每一次使用者所瀏覽過的網頁，越上面越是最近瀏覽過的頁面，最上面的頁面為目前頁面
-
-- push方法：將指定頁面推送至page stack最上面來當作目前頁面
-
-> which pushes a new page on the stack of pages, so a new page on our history of pages or we can navigate with replace method that replaces the current page
-
-- replace 方法：將指定頁面取代page stack的最上面page
-
-  
-
-  
-
-push vs. replace
-
-1. push can go back with the back button to the page we're coming from
-
-2. replace can't。
-
-  
-
-  
-
-replace => redirect where we changed occurred page
-
-push => add a new page
-
+重點：
+- browser history 或者 history 在網頁上是指使用者曾經瀏覽過到現在的網站清單
+- history上會是以多個頁面網址所構成的stack，越上面就越是最近瀏覽過的頁面網址，最上面為目前正在瀏覽的網址
 
 
 ## 複習
