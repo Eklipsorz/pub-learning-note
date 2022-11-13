@@ -118,7 +118,7 @@ export default useCounter;
 <!--SR:!2022-12-18,36,248-->
 
 #🧠 React：custom hook 在component呼叫的話，在記憶體上等同於什麼？  ->->-> `在component註冊custom hook`
-<!--SR:!2022-11-13,16,248-->
+<!--SR:!2022-12-23,40,248-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，若custom hookA 搭載其他hookB，請問對於在元件呼叫來說是什麼意思？->->-> `hookB和hookA會一同註冊在同個component`
 <!--SR:!2022-11-29,27,250-->

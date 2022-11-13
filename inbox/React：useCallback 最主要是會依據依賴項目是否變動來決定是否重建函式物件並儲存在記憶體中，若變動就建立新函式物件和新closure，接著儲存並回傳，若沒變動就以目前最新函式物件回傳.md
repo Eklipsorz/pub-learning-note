@@ -75,7 +75,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 React useCallback 所建立的函式都會儲存在記憶體的哪邊？ ->->-> `基本上會儲存在React 體系下內部定義的儲存區塊`
-<!--SR:!2022-11-13,26,250-->
+<!--SR:!2023-01-17,65,250-->
 
 #🧠 React useCallback 語法會是什麼？ ->->-> `useCallback(baseFunction, [deps])`
 <!--SR:!2022-11-16,28,250-->
@@ -106,7 +106,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-11-16,28,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是填入\[a, b\]，就表示什麼？ ->->-> `會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件`
-<!--SR:!2022-11-13,26,250-->
+<!--SR:!2023-01-21,69,250-->
 
 
 

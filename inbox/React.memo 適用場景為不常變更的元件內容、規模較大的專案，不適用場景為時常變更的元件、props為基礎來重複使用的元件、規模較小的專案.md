@@ -27,7 +27,7 @@ React.memo(component A)
 <!--SR:!2022-11-15,27,250-->
 
 #🧠 React.memo(component A)的範疇會是什麼？以component A來說->->-> `component A和其component A的descendant component會因為同為component A而被記憶體儲存其Virtual DOM並且納入比較來處理，但比較的props會以componet A的內容為主`
-<!--SR:!2022-11-13,26,250-->
+<!--SR:!2023-01-19,67,250-->
 
 #🧠 component A和其component A的descendant component會因為同為component A而被記憶體儲存其Virtual DOM並且納入比較來處理，那麼會以什麼component的props來比較？ ->->-> `會以component A的props資訊來比較`
 <!--SR:!2022-12-24,49,250-->

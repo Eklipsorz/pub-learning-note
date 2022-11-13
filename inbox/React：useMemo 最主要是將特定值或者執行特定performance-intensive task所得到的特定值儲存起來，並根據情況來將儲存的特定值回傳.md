@@ -161,7 +161,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-11-15,26,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，代表著什麼？ ->->-> `系統就認為會是一直變動的deps`
-<!--SR:!2022-11-13,24,250-->
+<!--SR:!2023-01-16,64,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，useMemo會如何做？ ->->-> `系統就認為會是一直變動的deps，並且會執行createResultFn來得到其回傳值，接著用回傳值來儲存在記憶體中。`
 <!--SR:!2022-11-17,28,250-->

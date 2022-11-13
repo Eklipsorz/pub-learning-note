@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "10176fea8d3761e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "895db3476906754b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/JavaScript/JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "develop/JavaScript/JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "develop/JavaScript/JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md"
+                "file": "develop/JavaScript/JavaScript Parsing中所要做的事情就是將tokenizing得到字串陣列轉換成代表合法句子的樹狀結構以及賦予其樹狀結構一些語意上的性質.md"
               }
             }
           }
@@ -145,8 +163,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "d97014b993a323d2",
+  "active": "895db3476906754b",
   "lastOpenFiles": [
+    "inbox/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
     "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "develop/Express/Express Server 錯誤處理的順序.md",
@@ -155,7 +174,6 @@
     "develop/React/React Unmounting 階段是指特定元件的實際DOM節點從實際DOM Tree被移除的階段.md",
     "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
-    "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md",
-    "develop/render/Specificity 是一個算法，專門在n個相同declaration且這些declaration所處的selector所指向的dom是一樣的情況下，憑著declaration所處的selector  對於dom節點的描述程度高低來決定哪個declaration採用至對應dom.md"
+    "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md"
   ]
 }

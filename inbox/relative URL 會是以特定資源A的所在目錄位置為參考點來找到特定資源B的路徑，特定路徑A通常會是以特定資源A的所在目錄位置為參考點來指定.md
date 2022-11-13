@@ -74,7 +74,7 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2022-12-01,20,250-->
 
 #🧠 relative URL 對於URL構造來說，其path、protocol、host、port會如何被決定 ->->-> `在這裡除了path以外，其餘的protocol、host、port會和目前存取頁面的路徑擁有的protocol、host、port一樣。`
-<!--SR:!2022-11-13,10,250-->
+<!--SR:!2022-12-10,27,250-->
 
 
 #🧠 relative URL實現方式哪兩種？ ->->-> `直接從當前頁面所在目錄找、以當前頁面所在目錄來位移`
@@ -111,7 +111,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為Skills/Infrastructure/Understanding_URLs，會找到哪個位置？為什麼？->->-> `直接從當前頁面所在目錄找：它會直接從hi.html所在的目錄找到以下內容，也就是https://developer.mozilla.org/en-US/docs/Learn/Skills/Infrastructure/Understanding_URLs`
-<!--SR:!2022-11-13,10,250-->
+<!--SR:!2022-12-08,25,250-->
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為../CSS/display，會找到哪個位置？為什麼？->->-> `以當前頁面所在目錄來位移：它會直接以hi.html所在的目錄路徑為參考點，也就是https://developer.mozilla.org/en-US/docs/Learn為參考點，然後往前位移一個目錄，也就是https://developer.mozilla.org/en-US/docs/，最後會是https://developer.mozilla.org/en-US/docs/CSS/display`
 <!--SR:!2022-12-04,23,250-->
