@@ -97,7 +97,7 @@ specific
 <!--SR:!2023-01-22,87,250-->
 
 #🧠 specific 命名緣由為何？ ->->-> `是指清晰和正確`
-<!--SR:!2022-11-13,47,250-->
+<!--SR:!2023-03-11,118,250-->
 
 #🧠 CSS specificity 是什麼？->->-> `Specificity 是一個算法，專門在n個相同declaration且這些declaration所處的selector所指向的dom是一樣的情況下，憑著declaration所處的selector 對於dom節點的描述程度高低來決定哪個declaration採用至對應dom`
 <!--SR:!2022-11-14,2,248-->

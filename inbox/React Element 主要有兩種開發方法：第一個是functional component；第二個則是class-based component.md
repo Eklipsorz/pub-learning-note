@@ -62,9 +62,8 @@ React 16.8 之後就改採用hooks 和 functional components 概念
 
 #### hooks 對於 class-based component來說
 hooks 是：
-- 使用在functional component開發方式
-- class-based component 無法使用react hooks
-- 封裝著過去實現在class-based component的功能程式模組的語法糖，形式會是以hook function來包裝
+- 本身是專屬於functional component開發方式
+- functional component 的hook 和 class-based component 都是獨立功能，只是使用相同React核心程式碼來實現各自目的的功能
 
 
 
@@ -104,8 +103,9 @@ hooks 是：
 #🧠 實際上React Element會在什麼時候被建立成實例並被呼叫render ->->-> `當這類型元件以標籤來使用`
 <!--SR:!2022-11-18,28,250-->
 
-#🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `具體會是給functional component，由於元件最早是以class-based component來開發，為了讓開發難度降低才將對應語法做成語法糖並以一般函式來使用`
-<!--SR:!2022-11-18,28,250-->
+
+#🧠 React：hooks 對於 functional component 和 class-based component 來說，誰能夠使用，具體為什麼 ->->-> `hook 是專屬於functional component的寫法。functional component 的hook 和 class-based component 都是獨立功能，只是使用相同React核心程式碼來實現各自目的的功能`
+
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
 <!--SR:!2022-11-18,28,250-->
@@ -118,8 +118,10 @@ hooks 是：
 <!--SR:!2022-11-18,28,250-->
 
 
-#🧠  React：hook對於functional component和class-based-component的語法之間的關係來說是什麼？ ->->-> `具體會是以hook function來包裝，封裝著過去實現在class-based component的功能程式模組的語法糖`
+#🧠  React：functional component 的hook 和class-based-component的語法之間的關係來說是什麼？為什麼 ->->-> `毫無相關，functional component 的hook 和 class-based component 都是獨立功能，只是使用相同React核心程式碼來實現各自目的的功能`
 <!--SR:!2022-11-13,15,249-->
+
+#🧠  React：functional component 的hook 和class-based-component的語法之間的關係來說是什麼？為什麼 ->->-> `毫無相關，functional component 的hook 和 class-based component 都是獨立功能，只是使用相同React核心程式碼來實現各自目的的功能`
 
 
 

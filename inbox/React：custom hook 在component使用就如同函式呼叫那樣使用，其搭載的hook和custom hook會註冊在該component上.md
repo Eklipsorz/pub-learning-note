@@ -117,7 +117,7 @@ export default useCounter;
 #🧠 React：custom hook 使用上就跟函式一樣，請說明hook的使用方式？ ->->-> `如同函式呼叫那樣來調用hook，比如function Component() { useXXX(); }`
 <!--SR:!2022-12-18,36,248-->
 
-#🧠 React：custom hook 在component呼叫的話，會等同於什麼？ ->->-> `在component註冊custom hook`
+#🧠 React：custom hook 在component呼叫的話，在記憶體上等同於什麼？  ->->-> `在component註冊custom hook`
 <!--SR:!2022-11-13,16,248-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，若custom hookA 搭載其他hookB，請問對於在元件呼叫來說是什麼意思？->->-> `hookB和hookA會一同註冊在同個component`
