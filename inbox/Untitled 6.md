@@ -41,7 +41,18 @@ useHistory：
 
 
 
-#### history object
+
+### browser history 是什麼？
+[[@WebBrowsingHistory2022]]
+> Web browsing history refers to the list of web pages a user has visited
+
+重點：
+- browser history 或者 history 在網頁上是指使用者曾經瀏覽過到現在的網站清單
+
+### 在react-router-dom上的 history object
+
+[[@react-routerReactRouterDeclarativea]]
+>  The term “history” and "history object" in this documentation refers to the history package
 
 [[@react-routerReactRouterDeclarativea]]
 > The following terms are also used:
@@ -58,11 +69,12 @@ useHistory：
 > -   `replace(path, [state])` - (function) Replaces the current entry on the history stack
 
 重點：
+- react-router-dom 上所能用的history 會是由其他第三方所提供的介面，專門存取使用者在瀏覽器的瀏覽紀錄
 - react-router-dom 所提供的 history 物件會取用自以下三者
 	- browser history ：DOM API 提供開發者存取browser history的介面
 	- hash history
 	- memory history
-- 不論哪一種，history皆會以stack來表示
+- 不論哪一種，history皆會以stack來表示，
 
 3. 回傳history object
 
@@ -111,3 +123,5 @@ Tags:
 [[React]]
 Links:
 References:
+[[@WebBrowsingHistory2022]]
+[[@react-routerReactRouterDeclarativea]]
