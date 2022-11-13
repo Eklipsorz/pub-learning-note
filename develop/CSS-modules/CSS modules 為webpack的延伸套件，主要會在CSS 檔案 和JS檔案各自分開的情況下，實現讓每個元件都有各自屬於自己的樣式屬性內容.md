@@ -197,7 +197,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理且以Button這元件來載入CSS module時，假如內容有.class1 {...}，請問轉換結果為？ ->->-> `.class1 => .Button_class1_waer324 結果為.class1 {...} => .Button_class1_waer324 {...}`
-<!--SR:!2022-11-13,43,247-->
+<!--SR:!2023-02-27,106,247-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1.class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1_waer324  .class2 => .Button_class2_warewa32 結果為.class1.class2 {...} => .Button_class1_waer324..Button_class2_warewa32 {...}`

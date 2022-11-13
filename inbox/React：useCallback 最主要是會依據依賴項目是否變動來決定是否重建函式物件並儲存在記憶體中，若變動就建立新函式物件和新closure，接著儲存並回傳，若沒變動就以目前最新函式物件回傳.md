@@ -71,7 +71,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2022-12-07,39,250-->
 
 #🧠 React useCallback 何時檢查並觸發？->->-> `每一次執行元件的render函式就會執行useCallback，並檢查useCallback所依賴的內容是否有變動。`
-<!--SR:!2022-11-13,26,250-->
+<!--SR:!2023-01-19,67,250-->
 
 
 #🧠 React useCallback 所建立的函式都會儲存在記憶體的哪邊？ ->->-> `基本上會儲存在React 體系下內部定義的儲存區塊`
@@ -88,7 +88,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 會回傳什麼？(請盡量說到closure) ->->-> `根據[deps]來決定回傳新函式物件或者記憶體儲存的函式物件，其函式物件會夾帶closure，該closure的識別字會是特定執行時機下的記憶體區塊`
-<!--SR:!2022-11-13,25,250-->
+<!--SR:!2023-01-18,66,250-->
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`

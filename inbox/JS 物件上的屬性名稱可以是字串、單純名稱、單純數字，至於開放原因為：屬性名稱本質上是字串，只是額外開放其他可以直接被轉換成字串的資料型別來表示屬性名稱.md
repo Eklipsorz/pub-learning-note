@@ -68,7 +68,7 @@ var obj = { property_1:   value_1,   // property_# may be an identifier...
 
 
 #🧠 JS：針對物件的特定屬性存取時，JS會做什麼型別轉換？ ->->-> `每一次對於物件的屬性進行存取，都會先將屬性名稱通通轉換成字串來存取正確對應屬性名稱`
-<!--SR:!2022-11-13,8,250-->
+<!--SR:!2022-12-05,22,250-->
 
 #🧠 JS：物件的屬性名稱型別若是字串會是什麼形式以及如何存取？舉例來說 ->->-> `const object = { 'property1': value1 } console.log(object['property1'])`
 <!--SR:!2022-11-14,9,250-->
