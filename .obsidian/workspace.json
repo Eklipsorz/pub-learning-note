@@ -47,16 +47,16 @@
         "currentTab": 2
       },
       {
-        "id": "8ac8702b15fa3990",
+        "id": "abf89acc28f99325",
         "type": "tabs",
         "children": [
           {
-            "id": "9eabc799ba804f3d",
+            "id": "418d8bc89875e469",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }

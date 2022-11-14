@@ -34,7 +34,20 @@
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1636879992/blog/event/currentPropagationPath_rj9x5j.png)
 
+
+### 重點
+
+- event flow被提出的原因是
+	- 巢狀結構中的每個parent節點會由child節點所構成
+	- 基於第一點，當巢狀結構中的任一節點X發生事件時，那麼事件要歸屬於哪個元件的事件？是包含節點X的parent節點？還是節點X?
+- event flow 概念為當元件X發生事件時，瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：
+	- 有節點會是接收並處理就會讓該節點處理事件，處理完就轉遞信號至下一個下點；沒節點會接收來處理，就直接跳過並轉遞至下一個節點
+	- capture phase (第一個階段)：從window節點往下轉遞信號至下面它所包含的child節點，直到
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1636879992/blog/event/currentPropagationPath_rj9x5j.png)
 ## 複習
+
+
+
 
 ---
 Status: #🌱 
