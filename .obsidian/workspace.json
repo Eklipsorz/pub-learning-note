@@ -229,10 +229,10 @@
   "active": "bc2eb98bd41613d5",
   "lastOpenFiles": [
     "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
+    "inbox/Untitled 9.md",
     "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md",
     "inbox/Untitled 6.md",
     "inbox/Untitled 8.md",
-    "inbox/Untitled 9.md",
     "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現404網頁.md",
