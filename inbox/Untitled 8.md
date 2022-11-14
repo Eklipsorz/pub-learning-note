@@ -1,27 +1,12 @@
 ## 描述
 
 
-### JavaScript 的事件
-
-  
-
-在這裏的JavaScript由於本身時常應用於瀏覽器，所以會以瀏覽器的事件來進行說明，首先當瀏覽器將網頁上所有元件轉換成適當的實體模型以及計算每個元件的實體位置、大小等資訊時，便賦予網頁上的所有元件在執行環境(瀏覽器)上是具有事件接收和事件觸發的物件，而所有對事件/信號的發送會由瀏覽器(瀏覽器還調用著作業系統的API來接收信號)負責轉送。
-
-  
-
-也就是說當使用者對著元件X進行點擊且設定名為onElementXClicked函式來當作事件發生所要做的處理時，addEventListener本身會先建立專屬於元件X的EventListener物件，該物件會以清單的形式來紀錄元件X上所有綁定的事件種類和對應事件處理內容，而瀏覽器實際上會在利用先前提到的資訊計算、實體模型去判斷這個點擊信號是屬於哪個DOM物件，然後鎖定該DOM物件就檢測其物件是否有相關事件物件(比如EventListener物件)，若有的話，就根據事件種類來找尋對應的函式來當作事件處理，在這裏函式會是onElementXClicked，所以點擊元件後會顯示hi這字串
-
-```
-elementX.addEventListener('click', function onElementXClicked(event) {
-	console.log('hi)
-})
-```
 
   
 
 ### Event Flow
 
-然而，如果使用者對著巢狀結構下的子元件來進行互動時，比如類似於程式碼中的元素3(element3)，那麼瀏覽器該如何判定這次的互動/事件是屬於哪個元素呢？瀏覽器大可直接根據事件是源自於哪裡來將事件歸類於element3，並且由它的事件處理來處理
+如果使用者對著巢狀結構下的子元件來進行互動時，比如類似於程式碼中的元素3(element3)，那麼瀏覽器該如何判定這次的互動/事件是屬於哪個元素呢？瀏覽器大可直接根據事件是源自於哪裡來將事件歸類於element3，並且由它的事件處理來處理
 
 ```
 <element1>
@@ -56,6 +41,6 @@ elementX.addEventListener('click', function onElementXClicked(event) {
 ---
 Status: #🌱 
 Tags:
-[[React]]
+[[HTML]] - [[JavaScript]]
 Links:
 References:
