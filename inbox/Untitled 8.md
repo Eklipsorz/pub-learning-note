@@ -2,8 +2,6 @@
 
 
 
-  
-
 ### Event Flow
 
 如果使用者對著巢狀結構下的子元件來進行互動時，比如類似於程式碼中的元素3(element3)，那麼瀏覽器該如何判定這次的互動/事件是屬於哪個元素呢？瀏覽器大可直接根據事件是源自於哪裡來將事件歸類於element3，並且由它的事件處理來處理
@@ -43,4 +41,6 @@ Status: #🌱
 Tags:
 [[HTML]] - [[JavaScript]]
 Links:
+[[在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點]]
+[[arrow function 在implicit binding、explicit binding、addEventListener上的案例]]
 References:
