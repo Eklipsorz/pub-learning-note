@@ -115,7 +115,7 @@
 
 
 #🧠 假如path2、path3是滿足現在切換後的URL1，那麼當URL切換成URL1時的渲染畫面會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667308798/blog/react/react-router/Route-component/four-paths-react-router-route_enznvc.png)->->->  `<Component2 /><Component3 />`
-<!--SR:!2022-11-14,9,250-->
+<!--SR:!2022-12-09,25,250-->
 
 
 ---
