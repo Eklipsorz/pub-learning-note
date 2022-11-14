@@ -6,6 +6,7 @@
       {
         "id": "df80131ab3a14d98",
         "type": "tabs",
+        "dimension": 24.982841455044614,
         "children": [
           {
             "id": "1bc52cd7449dbaaa",
@@ -24,6 +25,7 @@
       {
         "id": "d3ec0ecc333d1dcc",
         "type": "tabs",
+        "dimension": 24.982841455044614,
         "children": [
           {
             "id": "e164aaca919e7bac",
@@ -40,8 +42,28 @@
         ]
       },
       {
+        "id": "2e81b53c74e069e6",
+        "type": "tabs",
+        "dimension": 36.307481125600546,
+        "children": [
+          {
+            "id": "89cac1dc3b45fa7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "082ee2d5c19e274a",
         "type": "tabs",
+        "dimension": 13.726835964310228,
         "children": [
           {
             "id": "c1869cb83293edd8",
@@ -122,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
+                "file": "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
+                "file": "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md"
+                "file": "develop/React/React：資料和畫面的切分第一步驟是用{}以及在其內部JavaScript表達式來切分.md"
               }
             }
           }
@@ -181,8 +203,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "e164aaca919e7bac",
+  "active": "89cac1dc3b45fa7c",
   "lastOpenFiles": [
+    "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "inbox/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
@@ -191,7 +214,6 @@
     "annotation/@react-routerReactRouterDeclarativea.md",
     "develop/React/react-router/quote-practice/react-router-practice：製作瀏覽單個quote、瀏覽所有quotes、建立新quote這三個頁面以及對應routing.md",
     "inbox/Untitled 10.md",
-    "develop/React/react-router/quote-practice/react-router-practice：在單個瀏覽quote的頁面增加nested route.md",
-    "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md"
+    "develop/React/react-router/quote-practice/react-router-practice：在單個瀏覽quote的頁面增加nested route.md"
   ]
 }
