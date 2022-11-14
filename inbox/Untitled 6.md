@@ -68,7 +68,7 @@ prompt component
 
 3. Prompt 有兩個主要的attributes：
 
-- when：布林值，true為使用prompt來阻止從目前頁面跳轉；false為不使用
+- when：布林值，true為渲染prompt來阻止從目前頁面跳轉；false為不使用prompt來阻止
 
 > to finding whether this prompt should be shown if the user changes the URL or not
 
@@ -83,6 +83,17 @@ prompt component
   
 
 Used to prompt the user before navigating away from a page. When your application enters a state that should prevent the user from navigating away (like a form is half-filled out), render a `<Prompt>`.
+
+###
+
+
+當使用者按下prompt下的ok時，並不會因此而直接允許跳轉，主要會根據prompt的when是否為true，仍是true就會保持渲染prompt
+
+為了解決這問題，必須要使prompt為false
+
+
+#### prompt 元件本身不提供按下ok就直接跳轉的功能
+
 
 
 ## 複習
