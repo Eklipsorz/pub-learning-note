@@ -107,6 +107,7 @@ export default NewQuote;
 
 
 #🧠 programmatic navigation 是什麼？->->-> `以編碼的手段來直接將使用者導向至特定頁面`
+<!--SR:!2022-11-17,3,250-->
 
 #🧠 programmatic navigation 是以編碼的手段來直接將使用者導向至特定頁面，手段通常是什麼？ ->->-> `使用history API或者操縱history的API`
 <!--SR:!2022-11-17,3,250-->
@@ -147,12 +148,14 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace會是什麼？ ->->-> `將指定頁面取代page stack的最上面來當作目前頁面的路徑`
+<!--SR:!2022-11-17,3,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace用法會是什麼？ ->->-> `history.replace(path)`
 <!--SR:!2022-11-17,3,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別 (有兩個)->->-> `使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉、方式：前者是直接增加網址在最上面；後者則是將網址取代最上面`
+<!--SR:!2022-11-17,3,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack來調整瀏覽器時，是否可以回到原本的畫面來說，會是什麼？ ->->-> `前者可以；後者不行，由於網址會被取代掉`
@@ -160,6 +163,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack的方式： ->->-> `前者是直接增加網址在最上面；後者則是將網址取代最上面`
+<!--SR:!2022-11-17,3,250-->
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-programmatic-navigation分支，在那請以programmatic navigation來實作成功提交新增quote會有的導向 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/16-implementing-programmatic-navigation`

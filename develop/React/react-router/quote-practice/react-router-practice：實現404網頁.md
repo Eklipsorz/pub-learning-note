@@ -81,9 +81,10 @@ export default App;
 ## 複習
 
 #🧠 當使用者存取不存在資料的頁面時，通常處理方會做些什麼來增加使用者體驗->->-> `以404網頁來告知使用者網頁不存在`
+<!--SR:!2022-11-17,3,250-->
 
-#🧠 react-router-dom：\<Route path\=\'\*\'\>	\<Component1 \/\> \<\/Route\>
-中的\*做什麼用？->->-> `表示用來攔截任意長度的任意內容，在這裡會是將所有任意URL指定渲染為Component1`
+#🧠 react-router-dom：\<Route path='*'\>\<Component1 \/\> \<\/Route\>
+中的*做什麼用？->->-> `表示用來攔截任意長度的任意內容，在這裡會是將所有任意URL指定渲染為Component1`
 
 #💻 請到githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-not-found-page分支，請實現404網頁->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/15-adding-a-notfound-page/src`
 
