@@ -116,7 +116,7 @@ import { Switch } from 'react-router-dom';
 
 
 #🧠  react-router-dom：上圖是客戶端要切換的端點，下面是目前客戶端所待著的webpage，其中有綁定router元件在那webpage，請問它會遇到什麼樣的問題？解法若使用Switch 元件 ＋ 添加exact matching，請問具體會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch_kxguyp.png) ->->-> `添加exact至\/products的Route上，當挑選到它時，就以exact matching來比對目前URL和path是否完全一致，只要有點不一樣，都會被認為不一樣 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch-solution2_fadmp4.png)`
-<!--SR:!2022-11-14,9,250-->
+<!--SR:!2022-12-10,26,250-->
 
 
 
