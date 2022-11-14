@@ -63,7 +63,7 @@ const object = {
 testhandler.bind(object)();
 ```
 
-結果會是global和global為主的屬性
+結果會是global object和global object為主的屬性
 
 ```
 const testhandler = () => {
@@ -83,7 +83,28 @@ testhandler2.bind(object)();
 
 結果會是object和object為主的屬性
 
+### 案例：arrow function 採用至addEventListener
 
+```
+const element1 = document.querySelector('.grandpa')
+
+const handler = (event) => {
+  console.log('handler', this);
+};
+
+element1.addEventListener('click', handler);
+```
+結果會是global object，通常來說addEventListener 是用explicit binding來決定callback的this是什麼，但使用的是已經用lexical binding的函式物件作為callback且一旦設定就不允許更改其this，所以就以lexical binding的this為主。
+
+```
+const element1 = document.querySelector('.grandpa')
+
+function handler() {
+	console.log('handler', this);
+}
+element1.addEventListener('click', handler);
+```
+結果會是發生事件的DOM節點
 
 
 ## 複習
@@ -99,7 +120,7 @@ testhandler2.bind(object)();
 
 #🧠  請問最後印出的結果是以global object，而非是object，請問為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668432831/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-implicity-binding_edoiom.png) ->->-> `由於是箭頭函式，其this 綁定會以建立時的環境來設定，在這裡會因為scope chain而找到全域環境的this來設定成global object，建立箭頭函式為主的函式物件之後，其函式的this會一直固定在global object。 之後不論怎麼改this，都因 **一旦設定，就無法被覆寫** 這特性而無法更改`
 
-#🧠 請問最後印出的結果是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668434243/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-explicit-binding_eubb8t.png) ->->-> `global和global為主的屬性`
+#🧠 請問最後印出的結果是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668434243/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-explicit-binding_eubb8t.png) ->->-> `global object和global object為主的屬性`
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668434243/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-explicit-binding_zeya6q.png) ->->-> `object和object為主的屬性`
 
