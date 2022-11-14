@@ -6,7 +6,6 @@
       {
         "id": "53f1b5542376fa01",
         "type": "tabs",
-        "dimension": 52.14564369310793,
         "children": [
           {
             "id": "583104ffc7440502",
@@ -50,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,17 +59,16 @@
         "currentTab": 3
       },
       {
-        "id": "082ee2d5c19e274a",
+        "id": "8ac8702b15fa3990",
         "type": "tabs",
-        "dimension": 47.85435630689207,
         "children": [
           {
-            "id": "c1869cb83293edd8",
+            "id": "9eabc799ba804f3d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
+                "file": "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
                 "mode": "source",
                 "source": false
               }
@@ -143,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 9.md"
+                "file": "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md"
               }
             }
           }
