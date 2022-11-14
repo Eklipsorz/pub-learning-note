@@ -192,7 +192,7 @@ GlobalExectionContext = {
 <!--SR:!2023-04-09,185,250-->
 
 #🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：更新) ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
-<!--SR:!2022-11-14,92,248-->
+<!--SR:!2023-06-28,226,248-->
 
 
 

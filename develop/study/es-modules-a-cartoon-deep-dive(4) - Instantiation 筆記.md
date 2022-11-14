@@ -199,7 +199,7 @@ console.log(testvar1)
 <!--SR:!2022-11-16,28,230-->
 
 #🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性嗎？ ->->-> `可以像存取到物件那樣去修改物件本身的屬性`
-<!--SR:!2022-11-14,17,247-->
+<!--SR:!2022-12-30,46,247-->
 
 #🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性，為什麼？ ->->-> `若內容會是物件的話，則可以透過參照關係來修改物件本身的內容，由於真正禁止不能修改的記憶體區塊是在stack記憶體區塊`
 <!--SR:!2022-12-10,32,247-->

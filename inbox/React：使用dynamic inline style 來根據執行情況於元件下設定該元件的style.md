@@ -106,7 +106,7 @@ object 會以{}來表示，其屬性名稱和屬性值會搭配css樣式下的�
 
 
 #🧠 原生HTML DOM 設定 inline style方式 是什麼？->->-> `在HTML標籤增加style這個屬性(attribute)，其屬性值會是用字串來表示CSS表達樣式屬性`
-<!--SR:!2022-11-14,25,250-->
+<!--SR:!2023-01-16,63,250-->
 
 #🧠 React 體系下的  inline style 設定方式是什麼？ ->->-> `在React Element 標籤增加style屬性(attribute)，屬性值會是物件，由物件表示CSS樣式屬性`
 <!--SR:!2022-11-16,27,250-->
