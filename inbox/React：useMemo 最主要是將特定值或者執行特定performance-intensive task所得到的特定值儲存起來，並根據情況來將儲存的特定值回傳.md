@@ -141,7 +141,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-11-17,28,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
-<!--SR:!2022-11-14,25,250-->
+<!--SR:!2023-01-20,67,250-->
 
 #🧠 React React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 注意事項是什麼 ->->-> `函式物件得要有return 特定值的手段`
 <!--SR:!2022-11-17,28,250-->
@@ -174,7 +174,7 @@ export default React.memo(DemoList);
 
 
 #🧠 假設有個App.js，預期它會渲染出特定幾個數字排列後的清單，該元件夾雜著DemoList 和 Button 這兩個元件，在這裡App元件會賦予一系列沒排列好的數字給DemoList元件來排序並要求它呈現最後排序後的樣子，原本想利用useMemo來解決React.memo無法正常作用的問題，但現在出了問題，請問是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665078609/blog/react/useMemo/useMemo-app-example_e9bxym.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665078608/blog/react/useMemo/useMemo-DemoList-example_av5abf.png)->->-> `實際上若直接在DemoList.js使用useMemo並以items作為deps，會因為每次接收到的items記憶體位址而不同，沒辦法以記憶體儲存的結果來回傳，換言之，沒使用到useMemo的正常好處`
-<!--SR:!2022-11-14,26,250-->
+<!--SR:!2023-01-22,69,250-->
 
 
 

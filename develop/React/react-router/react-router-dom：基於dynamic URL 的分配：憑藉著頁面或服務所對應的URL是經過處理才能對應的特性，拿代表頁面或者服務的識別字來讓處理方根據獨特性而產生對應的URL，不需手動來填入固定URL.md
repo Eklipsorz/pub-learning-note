@@ -126,7 +126,7 @@ const Component1 = (props) => {
 <!--SR:!2022-11-14,6,249-->
 
 #🧠 react-router-dom：useParams會獲取哪一種Route元件所截取的URL parameters？ ->->-> `useParams 會挑選離它較近的Parent Route元件來擷取`
-<!--SR:!2022-11-14,6,249-->
+<!--SR:!2022-11-30,16,249-->
 
 
 #🧠 react-router-dom：useParams是基於什麼樣的基礎(什麼樣分配下的方式)來擷取URL parameters ->->-> `基於 dynamic URL 的分配中，以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
@@ -136,7 +136,7 @@ const Component1 = (props) => {
 <!--SR:!2022-12-06,23,250-->
 
 #🧠 react-router-dom：useParams 語法為？ ->->-> `import { useParams } from 'react-router-dom'; const params = useParams();`
-<!--SR:!2022-11-14,9,250-->
+<!--SR:!2022-12-10,26,250-->
 
 #🧠 react-router-dom：useParams 回傳什麼？ ->->-> `useParams 會回傳URL parameters 資訊物件`
 <!--SR:!2022-11-15,10,250-->

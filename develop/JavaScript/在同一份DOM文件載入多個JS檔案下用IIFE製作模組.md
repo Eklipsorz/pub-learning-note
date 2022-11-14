@@ -119,7 +119,7 @@
 <!--SR:!2023-01-29,113,250-->
 
 #🧠 如何在HTML載入以IIFE為主且以全域變數來輸出功能的模組 ->->-> ` <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-=QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>`
-<!--SR:!2022-11-14,70,250-->
+<!--SR:!2023-05-10,177,250-->
 
 #🧠  IIFE模組化的缺點有哪些？ ->->-> `- 檔案依賴：依賴模組的載入順序、多個模組和主程式碼的依賴關係有可能會無法確定 - 請求太多，使得效能出現耗損 - 以IIFE作為基底的模組裡，模組間太容易能在全域環境下存取其全域變數 `
 <!--SR:!2022-11-22,12,248-->
