@@ -96,11 +96,11 @@
 
 
 #🧠 react-router：若Route 元件沒添加exact，那麼會有什麼樣效果？ ->->-> `當被Router挑選到Route時，會以path版本的正規表達式來比對目前URL和path所指定的路徑是否在表達式上達成一致`
-<!--SR:!2022-11-14,9,250-->
+<!--SR:!2022-12-10,26,250-->
 
 
 #🧠 react-router：若要讓Route 元件比對path是以path版本的正規表達式來進行，請問語法會是什麼？->->-> `<Route path="..." />`
-<!--SR:!2022-11-14,9,250-->
+<!--SR:!2022-12-09,25,250-->
 
 
 #🧠 react-router：在同一個虛擬webpage上，若多個Route的path被滿足的話，那麼會有什麼樣的效果 ->->-> `就會共同在同一個虛擬webpage上按照滿足的Route所包含的Component來渲染`

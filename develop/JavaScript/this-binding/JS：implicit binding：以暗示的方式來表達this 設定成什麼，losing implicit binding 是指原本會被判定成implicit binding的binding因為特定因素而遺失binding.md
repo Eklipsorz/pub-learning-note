@@ -317,7 +317,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-11-20,27,250-->
 
 #🧠 請問這是obj.o.func呼叫後的執行環境會被系統使用哪個this binding方法？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665486965/blog/javascript/this-binding/implicit-this-binding/multiple-object-implicit-binding-example_v4uktk.png)->->-> `會是以implicit binding。由於沒有出現new binding、explicit binding的跡象，所以改試著以implicit binding來判定，結果因為函式呼叫前面有物件，而這正是implicit binding的識別特徵`
-<!--SR:!2022-11-14,22,250-->
+<!--SR:!2023-01-09,56,250-->
 
 
 #🧠 losing implicit binding  是什麼？ ->->-> ` losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding `
@@ -327,7 +327,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2022-11-21,28,250-->
 
 #🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-參數傳遞會是指什麼？ ->->-> `implicit binding的函式B以參數傳遞至一個特定函式A並在那呼叫參數，該函式A呼叫函式B的形式會致使函式B的this改變`
-<!--SR:!2022-11-14,22,250-->
+<!--SR:!2023-01-07,54,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-變數賦值會是指什麼？ ->->-> `implicit binding的函式B以參照位置賦值至一個變數，而這個變數呼叫函式B的形式會致使函式B的this改變`
 <!--SR:!2022-11-20,27,250-->
