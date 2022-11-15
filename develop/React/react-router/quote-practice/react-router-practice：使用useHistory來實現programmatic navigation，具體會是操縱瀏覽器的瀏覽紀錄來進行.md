@@ -176,6 +176,7 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向]]
 References:
 [[@WebBrowsingHistory2022]]
 [[@react-routerReactRouterDeclarativea]]
