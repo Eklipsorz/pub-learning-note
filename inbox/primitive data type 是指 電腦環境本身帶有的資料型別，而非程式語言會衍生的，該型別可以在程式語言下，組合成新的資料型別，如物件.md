@@ -29,7 +29,6 @@
 	- boolean
 
 
-
 ### primitive 命名緣由
 > belonging to an early stage in the development of humans or animals
 
@@ -52,7 +51,7 @@
 
 
 #🧠 primitive data type 由誰來定義的？->->-> `電腦環境本身以及程式語言`
-<!--SR:!2022-11-15,28,250-->
+<!--SR:!2023-01-28,74,250-->
 
 #🧠 primitive data type 在程式語言中會是指的是？ ->->-> `主要由程式語言來決定哪些是primitive data type`
 <!--SR:!2022-12-28,52,250-->

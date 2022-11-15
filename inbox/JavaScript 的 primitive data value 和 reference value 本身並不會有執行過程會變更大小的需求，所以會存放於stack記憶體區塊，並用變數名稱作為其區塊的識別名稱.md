@@ -16,6 +16,16 @@
 
 > Note that strings are objects in many programming languages, including Java and C#. However, strings are primitive values in JavaScript.
 
+
+NaN
+[[@mdnInstanceofJavaScriptMDN]]
+> The global **`NaN`** property is a value representing Not-A-Number.
+> `NaN` is a property of the _global object_. In other words, it is a variable in global scope.
+
+
+[[@javascript.infoDataTypes]]
+> Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: `Infinity`, `-Infinity` and `NaN`.
+
 重點：
 - 當在JS程式碼宣告變數時，主要會分配兩種記憶體區塊種類：
 	- stack 記憶體區塊：專門儲存著固定大小的資料
@@ -24,7 +34,7 @@
 	- 在編譯時就確定其資料大小 
 	- 執行過程中並不會調整其資料所存放的記憶體區塊大小，即確定後大小就固定大小不動
 - JS 的Primitive data type 會是 null、undefined、boolean、number、string、symbol、BigInt，其中string 在其他語言並不會是primitive data type
-
+- NaN(Not-A-Number) 是算primitive data type中的number，只是它被當作評斷特定內容是否為非數字的特殊數字型別
 ### Storing Values
 
 
@@ -133,7 +143,14 @@ console.log(age, newAge);
 <!--SR:!2022-11-25,32,249-->
 
 #🧠 JS的primitive data type 會有什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
-<!--SR:!2022-11-15,23,210-->
+<!--SR:!2023-01-02,48,210-->
+
+
+#🧠 NaN是屬於primitive data type嗎？為什麼？ ->->-> `NaN 是算primitive data type中的number`
+
+#🧠 NaN 是算primitive data type中的number，它的用途是什麼？ ->->-> `當作評斷特定內容是否為非數字的特殊數字型別`
+
+#🧠 NaN 是算primitive data type中的number，請問NaN的全名是什麼？->->-> `Not-A-Number`
 
 #🧠 primitive data value 以及 reference value 會存放在哪種記憶體區塊？stack ? heap? 為什麼？->->-> `因為本身並不會在執行過程改變記憶體區塊大小而直接存放在專門儲存固定大小的stack記憶體區塊`
 <!--SR:!2022-12-04,37,249-->
@@ -175,3 +192,5 @@ Links:
 [[primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件]]
 References:
 [[@javascripttutorialJavaScriptPrimitiveVs]]
+[[@mdnInstanceofJavaScriptMDN]]
+[[@javascript.infoDataTypes]]
