@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
+                "file": "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md"
               }
             }
           }
@@ -216,11 +216,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "cbf23403f3cfa47f",
+  "active": "418d8bc89875e469",
   "lastOpenFiles": [
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "inbox/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
