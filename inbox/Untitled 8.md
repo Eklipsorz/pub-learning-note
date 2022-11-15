@@ -31,7 +31,8 @@
 
 
 重點：
-- prompt componentd 
+- prompt component 是由react-router-dom 所提供的元件
+- 該元件會是當使用者想從目前頁面跳轉至其他URL
 
 1. 由react-router-dom所提供
 
