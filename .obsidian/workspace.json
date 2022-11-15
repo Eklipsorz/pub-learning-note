@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md"
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
               }
             }
           }
@@ -216,8 +216,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "afabec4d3d599e3f",
+  "active": "cbf23403f3cfa47f",
   "lastOpenFiles": [
+    "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "inbox/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
@@ -226,7 +227,6 @@
     "inbox/primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件.md",
     "inbox/瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：capture phase->target phase->bubbling phase.md",
     "develop/webpack/html-webpack-plugin 解決了手動定義哪一份文件是要當前端框架的模板網頁以及得替模板文件手動加載webpack處理後的模組檔案.md",
-    "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
-    "inbox/當使用者在瀏覽器的任意可見範圍內產生事件時，會利用渲染資訊來判定事件是源自於可見範圍內的哪個位置上，接著判斷該位置上會有哪些元件在那或者哪些元件包含哪個位置.md"
+    "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md"
   ]
 }

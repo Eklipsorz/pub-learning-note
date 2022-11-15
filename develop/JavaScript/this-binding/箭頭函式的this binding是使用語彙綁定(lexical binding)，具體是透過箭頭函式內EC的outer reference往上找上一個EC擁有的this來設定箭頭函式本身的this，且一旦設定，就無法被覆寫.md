@@ -247,7 +247,7 @@ foo.call(obj) // 2
 <!--SR:!2022-11-22,28,250-->
 
 #🧠 請問以下函式呼叫的this會是什麼？會印出什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665578883/blog/javascript/this-binding/arrow-function-this-binding/arrow-function-this-binding-example2_it4l4s.png) ->->-> `第一行fn會是以obj1當作this來呼叫，而使回傳的函式會因為語彙綁定而綁定在obj1，呼叫時會是以obj1來呼叫並且印出聽風是風；第二行fn會是以obj2當作this來呼叫，而使回傳的函式會因為語彙綁定而綁定在obj2，呼叫時會是以obj2來呼叫並且印出時間跳躍。`
-<!--SR:!2022-11-15,22,250-->
+<!--SR:!2023-01-08,54,250-->
 
 #🧠 請問以下函式呼叫的this會是什麼？會印出什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665578883/blog/javascript/this-binding/arrow-function-this-binding/arrow-function-this-binding-example3_s3srqa.png) ->->-> `執行foo.call(obj)，會是以obj為this來呼叫並生成非同步計時任務，此計時任務也會因為語彙綁定往上找this而找上foo的this而設定成obj，並印出2`
 <!--SR:!2022-11-18,25,250-->
