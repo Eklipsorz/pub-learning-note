@@ -40,7 +40,7 @@ const Quote = () => {
 
 
 #💻 請至/react-builder/question-review/react-router-question領取題目，切換至build-medium-routes分支，並建立瀏覽所有quotes、瀏覽單個quote、新增單個quote這三個頁面/服務的routing，除此之外還要當使用者瀏覽\/必須導向至瀏覽所有quotes以及讓瀏覽單個quote能夠擷取params資訊 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/11-practicing-nested-routes`
-<!--SR:!2022-11-15,3,250-->
+<!--SR:!2022-11-25,10,250-->
 
 
 
