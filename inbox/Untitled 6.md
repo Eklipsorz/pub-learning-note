@@ -128,4 +128,6 @@ Tags:
 [[React]]
 Links:
 [[focus事件為特定元件轉變成active element的時機點]]
+[[prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換]]
+[[navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向]]
 References:
