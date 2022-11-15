@@ -18,6 +18,7 @@
 1. 確保使用者正對表單頁面下的表單進行輸入並紀錄
 2. 添加Prompt元件來當作警告訊息來阻擋，其元件會具有ok和cancel，ok會帶有允許他人離開的功能；cancel則是取消離開
 3. 其Prompt元件必須要能根據使用者是否正輸入表單來阻擋，有輸入就阻止；沒輸入就不阻止
+4. 輸入完表單後並按下按鈕點擊提交時，可正常導向，不會有任何prompt來阻擋
 
 ### 確保使用者正對表單頁面下的表單進行輸入並紀錄
 
@@ -40,19 +41,22 @@ const [isEntering, setIsEntering] = useState(false);
         />
 ```
 
+[[focus事件為特定元件轉變成active element的時機點]]
 
 ### 添加Prompt元件來當作警告訊息來阻擋
 
-wanna store that info that's this form was focused
+根據Prompt的when是否true來啟用prompt來阻擋，若form發生focus事件就為true；反之就為false。若呈現prompt就以Are you sure這訊息來表示
+```
+<Prompt when={isEntering} message={(location) => 'Are you sure??'} />
+```
 
-1. 為表單focus事件處理添加狀態
+[[navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向]]
 
-2. 當focus時就設定狀態為true
-
+[[prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋]]
   
 
 
-###
+### 輸入完表單後並按下按鈕點擊提交時，可正常導向
 
 
 當使用者按下prompt下的ok時，並不會因此而直接允許跳轉，主要會根據prompt的when是否為true，仍是true就會保持渲染prompt
@@ -128,6 +132,6 @@ Tags:
 [[React]]
 Links:
 [[focus事件為特定元件轉變成active element的時機點]]
-[[prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換]]
+[[prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋]]
 [[navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向]]
 References:

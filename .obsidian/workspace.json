@@ -185,15 +185,15 @@
   },
   "active": "ec19d54e9cf95545",
   "lastOpenFiles": [
-    "inbox/prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換.md",
+    "inbox/當使用者在瀏覽器的任意可見範圍內產生事件時，會利用渲染資訊來判定事件是源自於可見範圍內的哪個位置上，接著判斷該位置上會有哪些元件在那或者哪些元件包含哪個位置.md",
+    "inbox/focus事件為特定元件轉變成active element的時機點.md",
+    "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "inbox/Untitled 6.md",
+    "inbox/prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換.md",
     "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
-    "inbox/focus事件為特定元件轉變成active element的時機點.md",
     "inbox/main 元素最主要是存放網頁主要內容的區塊.md",
-    "inbox/當使用者在瀏覽器的任意可見範圍內產生事件時，會利用渲染資訊來判定事件是源自於可見範圍內的哪個位置上，接著判斷該位置上會有哪些元件在那或者哪些元件包含哪個位置.md",
     "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
-    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
-    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md"
+    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md"
   ]
 }
