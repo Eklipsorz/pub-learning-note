@@ -89,8 +89,9 @@ test <button id="test">
 #🧠 \<button id="test"\>hi\<\/button\> dom.addEventListener('click', function test() \{   console.log('test', this) \}) 請問this會是什麼？->->-> `test <button id="test">`
 <!--SR:!2022-12-05,26,250-->
 
-#🧠 addEventListener(a, callback)中的callback得是什麼形式才會是設定發生事件時的DOM節點 ->->-> `匿名函式、命名函式、箭頭函式、函式物件`
-<!--SR:!2022-12-07,28,250-->
+#🧠 addEventListener(a, callback)中的callback得是什麼形式才會是設定發生事件時的DOM節點 ->->-> `匿名函式、命名函式、函式物件`
+
+#🧠 addEventListener(a, callback)中的callback若是箭頭函式的話，其callback的this會是什麼->->-> `會以箭頭函式的語彙綁定已經決定好的this為主`
 
 
 ---
