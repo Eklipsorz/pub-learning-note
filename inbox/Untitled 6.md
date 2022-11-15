@@ -57,7 +57,7 @@ const [isEntering, setIsEntering] = useState(false);
 
 
 ### 輸入完表單後並按下按鈕點擊提交時，可正常導向
-
+[[預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格]]
 
 當使用者按下prompt下的ok時，並不會因此而直接允許跳轉，主要會根據prompt的when是否為true，仍是true就會保持渲染prompt
 
@@ -134,4 +134,5 @@ Links:
 [[focus事件為特定元件轉變成active element的時機點]]
 [[prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋]]
 [[navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向]]
+[[預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格]]
 References:
