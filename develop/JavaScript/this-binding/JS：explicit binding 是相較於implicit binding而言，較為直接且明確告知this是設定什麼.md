@@ -336,7 +336,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 #🧠 function.protype.call() 語法是function.call(thisArg, arg1, \/\* …, \*\/ argN)，請問function、thisArg和arg1至argN會是什麼？>->-> `- function 為要呼叫的函式	- thisArg為要設定this的物件 - arg1至argN是原函式需要的參數`
 
 #🧠 function.protype.apply() 是什麼？->->-> `function.protype.apply 設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
-<!--SR:!2022-11-15,23,250-->
+<!--SR:!2023-01-15,61,250-->
 
 #🧠 function.protype.apply() 的語法是什麼？ ->->-> `function.call(thisArg, [arg1, /* …, */ argN])`
 <!--SR:!2022-11-21,28,250-->
