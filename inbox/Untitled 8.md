@@ -20,6 +20,7 @@ new SubmitEvent(type, options)
 > `submitter` Optional
 > An [`HTMLElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) object that is the submit button that triggered the form submission.
 
+
 ```
 const form = document.querySelector("form");
 const formTrigger = form.querySelector("button.submit");
@@ -32,6 +33,8 @@ form.dispatchEvent(submitEvent);
 - SubmitEvent 是一個定義如何產生submit事件信號的介面
 - 用途：主要會掛載至特定表單上，藉此定義其表單的submit事件信號如何產生
 - 預設下，瀏覽器會替每個表單設定該介面，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單
+- 語法為：
+- 替提交事件名稱取
 
 
 
