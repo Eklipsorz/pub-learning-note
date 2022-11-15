@@ -47,15 +47,19 @@
         "currentTab": 1
       },
       {
-        "id": "98f5341d4b7d0d84",
+        "id": "27e1947fa9049a9d",
         "type": "tabs",
         "children": [
           {
-            "id": "952865121a4da700",
+            "id": "a84aa945dcc8b5ea",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
