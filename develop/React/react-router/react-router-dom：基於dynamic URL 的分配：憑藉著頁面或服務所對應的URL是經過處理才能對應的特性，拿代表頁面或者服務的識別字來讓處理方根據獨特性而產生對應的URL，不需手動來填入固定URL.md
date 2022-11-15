@@ -100,7 +100,7 @@ const Component1 = (props) => {
 <!--SR:!2022-11-18,4,230-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 static URL 的分配是什麼樣？ ->->-> `通常會是手動配置URL和頁面/服務之間的關係`
-<!--SR:!2022-11-15,10,250-->
+<!--SR:!2022-11-21,6,230-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 static URL 的分配是分配固定URL給每個頁面或者服務，通常會如何做？？ ->->-> `通常會是手動配置固定URL至每個頁面/服務`
 <!--SR:!2022-11-15,10,250-->
@@ -120,7 +120,7 @@ const Component1 = (props) => {
 
 
 #🧠 useParams  是React 內建hook嗎？還是什麼？ ->->-> `不是內建，而是react-router-dom所提供的自製hook`
-<!--SR:!2022-11-15,10,250-->
+<!--SR:!2022-12-12,27,250-->
 
 #🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會回傳離它較近的Parent Route所獲取到的URL 參數資訊`
 <!--SR:!2022-12-01,17,249-->
@@ -130,7 +130,7 @@ const Component1 = (props) => {
 
 
 #🧠 react-router-dom：useParams是基於什麼樣的基礎(什麼樣分配下的方式)來擷取URL parameters ->->-> `基於 dynamic URL 的分配中，以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
-<!--SR:!2022-11-15,10,250-->
+<!--SR:!2022-12-13,28,250-->
 
 #🧠 react-router-dom：useParams是會擷取包裹著目前component的Route component 所獲得的 URL parameters 資訊，這裡的資訊是如何表示？ ->->-> `物件，屬屬性名稱會是Route 元件使用正規表達式擷取內容用的變數名稱，屬性值則是使用變數名稱對應的內容`
 <!--SR:!2022-12-06,23,250-->
@@ -139,7 +139,7 @@ const Component1 = (props) => {
 <!--SR:!2022-12-10,26,250-->
 
 #🧠 react-router-dom：useParams 回傳什麼？ ->->-> `useParams 會回傳URL parameters 資訊物件`
-<!--SR:!2022-11-15,10,250-->
+<!--SR:!2022-12-12,27,250-->
 
 #🧠 當使用者輸入以下內容時：\/xxx1\/abc\/efg，如何在Component1擷取到\<Route path="\/xxx1\/\:something1\/\:something2\"\> \<Component1 \/\> \<\/Route\> 和abc和efg？->->-> `import { useParams } from 'react-router-dom'; const Component1 = (props) => {  const obj = useParams(); }`
 <!--SR:!2022-12-02,20,250-->

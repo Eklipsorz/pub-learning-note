@@ -234,7 +234,7 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `React.createElement(...)`
-<!--SR:!2022-11-15,41,249-->
+<!--SR:!2023-02-21,98,249-->
 
 
 

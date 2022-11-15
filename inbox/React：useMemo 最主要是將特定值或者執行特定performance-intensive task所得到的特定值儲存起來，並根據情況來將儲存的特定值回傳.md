@@ -129,7 +129,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-11-17,28,250-->
 
 #🧠 React useMemo 所儲存的內容為何 ->->-> `- 若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較 - 若為primitivie data value，就以識別字來找到stack記憶體區塊，並以區塊內容的primitive data value 來比較`
-<!--SR:!2022-11-15,26,250-->
+<!--SR:!2023-01-23,69,250-->
 
 #🧠 React useMemo 所儲存最主要的儲存內容為何(以記憶體區塊來說) ->->-> `以原本識別字所對應的stack記憶體區塊內容為主`
 <!--SR:!2023-01-08,59,250-->

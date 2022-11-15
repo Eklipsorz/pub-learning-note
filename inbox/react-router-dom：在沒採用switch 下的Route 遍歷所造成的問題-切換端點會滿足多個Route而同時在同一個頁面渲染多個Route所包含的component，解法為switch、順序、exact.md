@@ -90,7 +90,7 @@ import { Switch } from 'react-router-dom';
 ## 複習
 
 #🧠 react-router-dom：switch 是什麼？做什麼？ ->->-> `switch 是一個元件，最主要是根據目前切換後的URL和後裔Route元件所擁有path是否滿足或者一樣來決定其渲染的control flow`
-<!--SR:!2022-11-15,10,250-->
+<!--SR:!2022-12-12,27,250-->
 
 #🧠 react-router-dom：switch 是一個元件，最主要是根據目前切換後的URL和後裔Route元件所擁有path是否滿足或者一樣來決定其渲染的control flow，具體是什麼？ ->->-> `具體則是當Switch中的任一Route上的path是否滿足於目前切換的path，滿足的話，就跳出Switch以外來停止後續的Route挑選`
 <!--SR:!2022-12-09,25,250-->

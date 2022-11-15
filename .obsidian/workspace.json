@@ -40,16 +40,16 @@
         ]
       },
       {
-        "id": "e9ca180c069489d6",
+        "id": "4d0b744a04fd9085",
         "type": "tabs",
         "children": [
           {
-            "id": "bdbd74470b0c11a4",
+            "id": "cbf23403f3cfa47f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
+                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
               }
             }
           }
@@ -180,8 +180,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "bdbd74470b0c11a4",
+  "active": "cbf23403f3cfa47f",
   "lastOpenFiles": [
+    "inbox/navigation 是網頁用來幫助使用者導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
+    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
     "inbox/primitive data type 是指 電腦環境本身帶有的資料型別，而非程式語言會衍生的，該型別可以在程式語言下，組合成新的資料型別，如物件.md",
     "inbox/瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：capture phase->target phase->bubbling phase.md",
@@ -189,8 +191,6 @@
     "inbox/在event flow中，每個接收到事件訊號的DOM節點會先接收信號並做對應事件處理完畢之後才會發送信號至下一個DOM節點.md",
     "inbox/當使用者在瀏覽器的任意可見範圍內產生事件時，會利用渲染資訊來判定事件是源自於可見範圍內的哪個位置上，接著判斷該位置上會有哪些元件在那或者哪些元件包含哪個位置.md",
     "inbox/Untitled 6.md",
-    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md",
-    "develop/JavaScript/this-binding/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
-    "inbox/arrow function 在implicit binding、explicit binding、addEventListener上的案例.md"
+    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md"
   ]
 }

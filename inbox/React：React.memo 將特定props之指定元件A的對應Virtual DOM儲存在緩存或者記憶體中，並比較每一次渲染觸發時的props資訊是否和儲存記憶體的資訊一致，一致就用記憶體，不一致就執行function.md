@@ -210,7 +210,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 <!--SR:!2023-01-19,68,250-->
 
 #🧠 React.memo 是什麼？ ->->-> `如字面上的意思，React.memo 將特定props之指定元件A的對應Virtual DOM和對應props資訊儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function`
-<!--SR:!2022-11-15,28,250-->
+<!--SR:!2023-01-27,73,250-->
 
 #🧠 React.memo 如字面上的意思，會將擁有特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，當發生渲染並且要準備執行指定元件A的渲染函式時，會透過特定規則來檢查是否達到標準，請問標準達成會做什麼？->->-> ` 若達到的話，就直接回傳緩存或者記憶體中的元件A之對應Virtual DOM`
 <!--SR:!2023-01-26,72,250-->
