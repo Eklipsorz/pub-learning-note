@@ -247,7 +247,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-12-10,72,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳false就表示？  ->->-> `不執行render、react updates dom、componentDidUpdate`
-<!--SR:!2022-11-15,54,250-->
+<!--SR:!2023-03-30,135,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就還做不做狀態更新 ->->-> `做`
 <!--SR:!2022-11-18,4,248-->
