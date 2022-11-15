@@ -7,7 +7,7 @@
 - JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件
 - 舉例：
 	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點
-		- 無論callback是否為匿名函式、命名函式、箭頭函式、函式物件，皆會被系統以explicit binding設定成發生事件時的DOM節點
+		- 只要是匿名函式、命名函式，皆會被系統以explicit binding設定成發生事件時的DOM節點
 	- HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點
 
 
@@ -89,9 +89,15 @@ test <button id="test">
 #🧠 \<button id="test"\>hi\<\/button\> dom.addEventListener('click', function test() \{   console.log('test', this) \}) 請問this會是什麼？->->-> `test <button id="test">`
 <!--SR:!2022-12-05,26,250-->
 
-#🧠 addEventListener(a, callback)中的callback得是什麼形式才會是設定發生事件時的DOM節點 ->->-> `匿名函式、命名函式、函式物件`
+#🧠 addEventListener(a, callback)中的callback得是什麼形式才會是設定發生事件時的DOM節點 ->->-> `匿名函式、命名函式`
 
-#🧠 addEventListener(a, callback)中的callback若是箭頭函式的話，其callback的this會是什麼->->-> `會以箭頭函式的語彙綁定已經決定好的this為主`
+#🧠 addEventListener(a, callback)中的callback若是箭頭函式的話，當事件發生並執行其callback的this會是什麼->->-> `會以箭頭函式的語彙綁定已經決定好的this為主`
+
+#🧠 addEventListener(a, callback)中的callback若是匿名函式的話，當事件發生並執行其callback的this會是什麼->->-> `發生事件時的DOM節點 `
+
+#🧠 addEventListener(a, callback)中的callback若是命名函式的話，當事件發生並執行其callback的this會是什麼->->-> `發生事件時的DOM節點 `
+
+
 
 
 ---
