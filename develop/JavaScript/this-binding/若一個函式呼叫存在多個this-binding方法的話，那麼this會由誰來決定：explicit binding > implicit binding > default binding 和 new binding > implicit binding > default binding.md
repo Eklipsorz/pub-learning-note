@@ -119,7 +119,7 @@ echo.name;//聽風是風
 <!--SR:!2022-11-22,28,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼! ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563938/blog/javascript/this-binding/new-binding/new-and-explicit-binding-example_tmm8oa.png) ->->-> `會報錯，最主要這裡有new binding和explicit binding，然而程式本身不允許這兩者同時出現，所以會報錯`
-<!--SR:!2022-11-15,22,250-->
+<!--SR:!2023-01-09,55,250-->
 
 
 

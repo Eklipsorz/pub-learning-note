@@ -236,7 +236,7 @@ function App() {
 <!--SR:!2022-11-27,27,250-->
 
 #🧠 Fetch API 是瀏覽器內建的API，其中發送請求的方法為fetch(a, b)，b參數是設定請求封包 ，具體會是？->->-> `HTTP請求方法(預設是GET)、狀態碼、多增加header`
-<!--SR:!2022-11-15,18,250-->
+<!--SR:!2022-11-26,11,230-->
 
 
 #🧠 Fetch API 和 fetch() 差別為何？->->-> `1. Fetch API 是一個專門獲取資料的API，裡頭包含實際能獲取資料的方法、代表請求資訊的request object、代表回應資料的response object 2. fetch() 只是Fetch API內的其中一個方法`
