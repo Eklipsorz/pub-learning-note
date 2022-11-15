@@ -22,26 +22,26 @@
 ### 確保使用者正對表單頁面下的表單進行輸入並紀錄
 
 1. 在元件下註冊isEntering這狀態
+```
+const [isEntering, setIsEntering] = useState(false);
+```
+
+2. 在表單下的onFocus事件來設定該狀態為true，以此來表示表單正被輸入
+```
+  const formFocusHandler = () => {
+    setIsEntering(true);
+  };
+```
+
+```
+        <form
+          className={classes.form}
+          onSubmit={submitFormHandler}
+        />
+```
 
 
-
-###
-
-first, we wanna determine when the user starts working with this form e.g., when this form gains focus.
-
-實現會是使用 form focus事件
-
-  
-
-  
-
-focus事件為特定元件轉變成active element的瞬間
-
-  
-
-The `**focus**` event fires when an element has received focus.
-
-###
+### 添加Prompt元件來當作警告訊息來阻擋
 
 wanna store that info that's this form was focused
 
@@ -51,29 +51,6 @@ wanna store that info that's this form was focused
 
   
 
-prompt component
-
-1. 由react-router-dom所提供
-
-2. 自動監測特定規則是否滿足，若滿足就呈現warning，若不滿足就不呈現。
-
-3. Prompt 有兩個主要的attributes：
-
-- when：布林值，true為渲染prompt來阻止從目前頁面跳轉；false為不使用prompt來阻止
-
-> to finding whether this prompt should be shown if the user changes the URL or not
-
-- message：字串或者function，主要是指定prompt的主體訊息是什麼，當使用function可以根據使用者對於瀏覽紀錄的操作和位置來定義後續處理，回傳內容正是指定prompt的主體訊息
-
-=> (location, action) => {} 中的location 是指使用者當前要跳轉的頁面位置，action是指使用者當前對於瀏覽紀錄的操作是什麼
-
-  
-
-> this is a component which we can render. And then this component will automatically watch if we navigate away. And if then a certain condition is met, it will show a warning before it allows use to leave
-
-  
-
-Used to prompt the user before navigating away from a page. When your application enters a state that should prevent the user from navigating away (like a form is half-filled out), render a `<Prompt>`.
 
 ###
 
@@ -150,4 +127,5 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[focus事件為特定元件轉變成active element的時機點]]
 References:
