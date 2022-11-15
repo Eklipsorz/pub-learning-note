@@ -31,8 +31,8 @@
 
 
 重點：
-- prompt component 是由react-router-dom 所提供的元件
-- 該元件會是當使用者想從目前頁面跳轉至其他URL
+- prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，裡面會有訊息、按鈕(ok、cancel)
+- 該元件會監聽使用者是否要從目前頁面切換成另一個頁面，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換
 
 1. 由react-router-dom所提供
 
@@ -52,6 +52,12 @@
 
 > this is a component which we can render. And then this component will automatically watch if we navigate away. And if then a certain condition is met, it will show a warning before it allows use to leave
 
+
+#### Prompt元件的侷限性
+1. Prompt 元件所能攔截到的navigation只能是它所在的元件內所發出來的navigation請求/操作
+2. 單純以瀏覽器的網址欄位來輸入指定網址來進行網頁的移動，只是
+	- 單方面透過window物件來移動指定地點，本身並不是在特定地點A被導向至特定地點B
+	- 
 
 ### Prompt
 
