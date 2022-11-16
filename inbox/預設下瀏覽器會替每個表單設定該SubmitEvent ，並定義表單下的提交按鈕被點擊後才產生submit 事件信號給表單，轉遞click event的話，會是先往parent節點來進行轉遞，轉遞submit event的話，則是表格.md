@@ -42,6 +42,7 @@ form.dispatchEvent(submitEvent);
 ## 複習
 
 #🧠 SubmitEvent 是什麼樣的介面？->->-> `是一個定義如何產生submit事件信號的介面`
+<!--SR:!2022-11-19,3,250-->
 
 #🧠 SubmitEvent 是一個定義如何產生submit事件信號的介面，用途是什麼？->->-> `要會掛載至特定表單上，藉此定義其表單的submit事件信號如何產生`
 <!--SR:!2022-11-19,3,250-->
@@ -52,6 +53,7 @@ form.dispatchEvent(submitEvent);
 
 
 #🧠 當按鈕發生點擊事件時，按鈕會接收點擊事件信號，接著處理點擊事件處理之後，再轉遞click event 和 submit event 信號，其傳送方向為何？->->-> `會是先往以目前節點的parent節點來進行轉遞 - 如果是轉遞submit event的話，會直接轉遞至表格上`
+<!--SR:!2022-11-19,3,250-->
 
 
 
