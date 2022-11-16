@@ -77,31 +77,37 @@
 <!--SR:!2022-11-19,3,250-->
 
 #🧠 prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，裡面會有訊息、按鈕(ok、cancel) ，請問ok和cancel會需要設定事件處理嗎？為什麼？->->-> `不用，因內建按鈕事件處理，當按下ok就允許導向頁面；當按下cancel就取消導向`
+<!--SR:!2022-11-18,2,249-->
 
 #🧠 prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，裡面會有訊息、按鈕(ok、cancel)，那麼它要如何阻止使用者從目前頁面導向另一個頁面內 ->->-> ` 該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換`
 <!--SR:!2022-11-19,3,250-->
 
 #🧠 react-router-dom ：Prompt componet 該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換，具體說明攔截部分->->-> `攔截Prompt所在的元件A內所發出來的navigation請求/操作，或者攔截使用者利用元件A的元件來發出navigation請求/操作`
+<!--SR:!2022-11-17,1,230-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼->->-> `when、message`
+<!--SR:!2022-11-18,2,249-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中when會是什麼型別？做什麼？？ ->->-> `布林值，true為當navigation就呈現prompt來組阻止從目前頁面跳轉；false為不使用prompt來阻止`
 <!--SR:!2022-11-19,3,250-->
 
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會是什麼型別？做什麼？？  ->->-> `字串或者function， 主要是指定prompt的主體訊息是什麼`
+<!--SR:!2022-11-19,3,250-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會採用function會是什麼？回傳什麼？ ->->-> ` location 是指使用者當前要跳轉的頁面位置、 action是指使用者當前對於瀏覽紀錄的操作是什麼。(location, action) => {}，會回傳字串或者true `
 <!--SR:!2022-11-19,3,250-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會採用function的話，其回傳內容代表什麼，具體說明 ->->-> `當使用function可以根據使用者對於瀏覽紀錄的操作和位置來定義後續處理，回傳內容正是指定prompt的主體訊息，若為true就允許導向`
+<!--SR:!2022-11-18,2,249-->
 
 
 
 #🧠 react-router-dom ：Prompt componet 的局限性是什麼？->->-> `Prompt 元件所能攔截到的navigation只能是它所在的元件內所發出來的navigation請求/操作，無法攔截純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁移動`
 <!--SR:!2022-11-19,3,250-->
 
-#🧠 react-router-dom ：Prompt componet為何無法單純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁移動？ ->->-> `因它本身並不是透過使用特定地點A的任意事物給導向至特定地點B`
+#🧠 react-router-dom ：Prompt componet為何無法阻止移動單純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁？ ->->-> `因它本身並不是透過使用特定地點A的任意事物給導向至特定地點B`
+<!--SR:!2022-11-18,2,249-->
 
 ---
 Status: #🌱 
