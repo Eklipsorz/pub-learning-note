@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
+                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
+                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md"
+                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md"
               }
             }
           }
@@ -176,10 +176,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "673bafcf0104f9cf",
+  "active": "1b1a3ddd8baa5446",
   "lastOpenFiles": [
-    "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
+    "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
     "inbox/focus事件為特定元件轉變成active element的時機點.md",
     "inbox/瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：capture phase->target phase->bubbling phase.md",

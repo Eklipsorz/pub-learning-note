@@ -155,7 +155,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 
 
 #🧠 React：Dependencies 設定目的主要為效能最佳化，在updating階段的話，useEffect會做什麼？？ ->->-> `比對這次dependency指定的內容和上一次儲存的內容是否一致，若不一致就執行effect，然後儲存這次dependency內容；若一致就不執行`
-<!--SR:!2022-11-16,5,249-->
+<!--SR:!2022-11-30,14,249-->
 
 
 

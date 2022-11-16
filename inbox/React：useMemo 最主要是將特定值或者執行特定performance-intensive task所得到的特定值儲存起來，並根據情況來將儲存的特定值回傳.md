@@ -147,7 +147,7 @@ export default React.memo(DemoList);
 <!--SR:!2022-11-17,28,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
-<!--SR:!2022-11-16,27,250-->
+<!--SR:!2023-01-27,72,250-->
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是什麼？->->-> `第二個參數為依賴項目所構成的陣列，主要依據他們來決定是否回傳記憶體儲存的內容，`
