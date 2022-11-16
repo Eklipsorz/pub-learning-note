@@ -219,7 +219,7 @@ AbortController.abort()
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼如何安置signal和發送signal ->->-> `  const controller = new AbortController(); const signal = controller.signal something(…, signal)  return () => { controller.abort() } `
-<!--SR:!2022-11-16,6,230-->
+<!--SR:!2022-12-02,16,230-->
 
 
 

@@ -183,7 +183,7 @@ https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 <!--SR:!2022-11-17,74,250-->
 
 #🧠 在沒有gc等記憶體保留政策下，請說明以下closure關係中的a在呼叫foo()時和之後的情況 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658674564/blog/javascript/closure/closure-garbage-collector-example_aszlox.png) ->->-> `當透過baz 來接收foo()所回傳的函式物件時，並且以該函式物件來呼叫時，而函式物件本身使用著foo下的a所對應的實體物件，理論上只要呼叫完foo，foo內的記憶體區塊將會被釋放，換言之，a也會被釋放，所以baz所印出的a會報錯`
-<!--SR:!2022-11-16,73,250-->
+<!--SR:!2023-05-27,192,250-->
 
 
 #🧠 在有gc等記憶體保留政策下，請說明以下closure關係中的a在呼叫foo()時和之後的情況 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658674564/blog/javascript/closure/closure-garbage-collector-example_aszlox.png) ->->-> `因為函式宣告肯定會從編譯時期就分配記憶體以及查看每個識別字對應的實體物件是否後續有被使用，在這裏可以由於可從編譯時期確定後續會呼叫bar()，而bar會使用著foo下的a對應的對應實體物件，所以garbage collector確定後續會使用，所以不會釋放掉foo下的a對應的實體物件，**但就是沒釋放掉a對應的實體物件**，因而讓呼叫baz()時還能印出foo下的a的實體物件`
