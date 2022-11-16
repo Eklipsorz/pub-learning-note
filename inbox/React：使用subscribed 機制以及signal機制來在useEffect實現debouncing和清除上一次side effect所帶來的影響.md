@@ -215,7 +215,7 @@ AbortController.abort()
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體方式是什麼？ ->->-> `使用AbortController API來建立controller 和 signal接收處理物件；將signal 接收處理物件安裝至對應的非同步任務；設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行；設定catch或者try...catch等錯誤攔截`
-<!--SR:!2022-11-16,6,250-->
+<!--SR:!2022-12-03,17,250-->
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼如何安置signal和發送signal ->->-> `  const controller = new AbortController(); const signal = controller.signal something(…, signal)  return () => { controller.abort() } `
