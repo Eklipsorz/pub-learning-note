@@ -44,6 +44,7 @@ form.dispatchEvent(submitEvent);
 #🧠 SubmitEvent 是什麼樣的介面？->->-> `是一個定義如何產生submit事件信號的介面`
 
 #🧠 SubmitEvent 是一個定義如何產生submit事件信號的介面，用途是什麼？->->-> `要會掛載至特定表單上，藉此定義其表單的submit事件信號如何產生`
+<!--SR:!2022-11-19,3,250-->
 
 #🧠 預設下，瀏覽器會替表單和表單元件做什麼才會有submit事件信號->->-> `瀏覽器會替每個表單設定SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單`
 

@@ -82,6 +82,7 @@
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼->->-> `when、message`
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中when會是什麼型別？做什麼？？ ->->-> `布林值，true為當navigation就呈現prompt來組阻止從目前頁面跳轉；false為不使用prompt來阻止`
+<!--SR:!2022-11-19,3,250-->
 
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會是什麼型別？做什麼？？  ->->-> `字串或者function， 主要是指定prompt的主體訊息是什麼`
