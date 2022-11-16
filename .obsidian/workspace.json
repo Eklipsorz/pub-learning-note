@@ -53,16 +53,16 @@
         ]
       },
       {
-        "id": "86874d8fa6bab4c5",
+        "id": "be15a6ba1e0e6175",
         "type": "tabs",
         "children": [
           {
-            "id": "6d09bf94d4a2cbe4",
+            "id": "e78e24b19657d3c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md"
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md"
               }
             }
           }
@@ -212,13 +212,13 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "ac9c4e83f8027227",
+  "active": "e78e24b19657d3c5",
   "lastOpenFiles": [
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
     "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
     "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
