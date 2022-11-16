@@ -94,7 +94,7 @@ Resource Representation State：
 
 
 #🧠 REST 網路軟體開發風格 完整的全名會是什麼 ->->-> `Resource Representation State Transfer`
-<!--SR:!2022-11-16,20,250-->
+<!--SR:!2023-01-06,51,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的Resource是什麼？ ->->-> `簡短來說，Resource會是指任意形式的實體；在網路上會以Resource所在的URI來表達Resource`

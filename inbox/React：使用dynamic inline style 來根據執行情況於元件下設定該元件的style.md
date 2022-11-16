@@ -109,10 +109,10 @@ object 會以{}來表示，其屬性名稱和屬性值會搭配css樣式下的�
 <!--SR:!2023-01-16,63,250-->
 
 #🧠 React 體系下的  inline style 設定方式是什麼？ ->->-> `在React Element 標籤增加style屬性(attribute)，屬性值會是物件，由物件表示CSS樣式屬性`
-<!--SR:!2022-11-16,27,250-->
+<!--SR:!2023-01-27,72,250-->
 
 #🧠 React 體系下的  inline style 設定方式是由物件表示CSS樣式屬性，那麼如何用物件表示？ ->->-> `屬性名稱會是css原生語法的lower-camel case版本，屬性值是字串`
-<!--SR:!2022-11-16,27,250-->
+<!--SR:!2023-01-26,71,250-->
 
 #🧠 原生HTML DOM 設定inline style 和 React體系下的 inline style 中，誰可以在執行中調整？->->-> `React體系下的 inline style `
 <!--SR:!2022-12-23,43,247-->
