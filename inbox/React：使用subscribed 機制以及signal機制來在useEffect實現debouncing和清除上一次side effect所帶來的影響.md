@@ -188,7 +188,7 @@ AbortController.abort()
 
 
 #🧠 React：useEffect 要如何實現debouncing和清除上一次side effect所帶來的影響所需的cleanup？ 其中的 **紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容** 整體程式碼會是如何呈現？ 請添加分配、非同步任務的產生、建立cleanup->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)`
-<!--SR:!2022-11-16,5,249-->
+<!--SR:!2022-11-29,13,249-->
 
 
 #🧠 React： 以下為useEffect的實現代碼，請用mount階段來說明他們做了什麼？（務必請說明到記憶體和cleanup)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `mount階段時會是先執行： - 分配新記憶體來存放true，名為subscribed - 生成非同步任務，任務執行以subscribed是否為true來執行 - 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊
@@ -249,7 +249,7 @@ AbortController.abort()
 <!--SR:!2022-11-20,10,250-->
 
 #🧠 JS： AbortController interface 是什麼？用途是什麼？ ->->-> `是定義一個控制器物件來搭載在支援AbortController介面的非同步任務上，使他們能夠接收外部傳送過來的Abort Signal，收到後就變中斷目前任務`
-<!--SR:!2022-11-16,6,250-->
+<!--SR:!2022-12-01,15,250-->
 
 
 

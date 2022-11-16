@@ -212,7 +212,7 @@ console.log(testvar1)
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，那要如何設定上鎖條件/解鎖條件？ ->->-> `每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足： - module map的對應模組紀錄沒對應到environment record？ - module map的對應模組紀錄是unlinked? 若滿足的話，就將module map的對應模組紀錄狀態更改：unlinked -> linking，接著解鎖；反之若不滿足的話，就解鎖然後就挑下一個要實例化的模組`
-<!--SR:!2022-11-16,68,250-->
+<!--SR:!2023-05-12,177,250-->
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，哪些條件會是什麼？ ->->-> `- module map的對應模組紀錄沒對應到environment record？ - module map的對應模組紀錄是unlinked?`
 <!--SR:!2023-04-18,161,250-->
