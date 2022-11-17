@@ -5,7 +5,7 @@
 ### Query string
 [[query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串]]
 
-由於使用特定符號來區隔：一邊為伺服器端點；另一邊為query string，所以本身可以被任意特定路由處理器給攔截到。
+由於使用特定符號來區隔來幫助瀏覽器分開處理：一邊為伺服器端點；另一邊為query string，所以本身可以被任意特定路由處理器給攔截到。
 
 
 ### Query string 應用
@@ -16,20 +16,12 @@
 
 
 ### Query string 應用：接收參數來對指定項目做排序之概念
+
+
+實現渲染層面上的排序元件功能
 製作排序清單項目的功能：
 - 將排序邏輯部分分到資料業務邏輯那
 - 再將處理後的資料放到渲染層面
-
-
-
-
-
-
-
-1. 將使用者以programatic navigation 方式來從目前頁面轉移至其他頁面所在網址
-
-    - 網址會是/quotes?sort=xxxx：添加query string的形式來重新對該端點發送請求，讓他們接收到參數來排序資料，然後再把資料放到渲染層面
-
 
 
 
@@ -44,6 +36,64 @@
 `'/quotes?sort=' + sorting`
 
 
+```
+  const history = useHistory();
+  const location = useLocation();
+
+  const searchParams = new URLSearchParams(location.search);
+  const isAscendingOrder = searchParams.get('sort') === 'asc';
+  
+  const sortClickHandler = () => {
+    history.push('/quotes?sort=' + (isAscendingOrder ? 'desc' : 'asc'));
+  };
+```
+
+
+```
+ return (
+    <Fragment>
+      <div className={classes.sorting}>
+        <button onClick={sortClickHandler}>{`Sort ${
+          isAscendingOrder ? 'Ascending' : 'Descending'
+        }`}</button>
+      </div>
+	    .
+	    .
+	</Fragment>
+)
+```
+
+### 排序邏輯部分分到資料業務邏輯那
+製作排序清單項目的功能：
+- 將排序邏輯部分分到資料業務邏輯那
+```
+const history = useHistory();
+const location = useLocation();
+
+const searchParams = new URLSearchParams(location.search);
+const isAscendingOrder = searchParams.get('sort') === 'asc';
+  
+const resultQuotes = sortQuotes(props.quotes, isAscendingOrder);
+```
+
+- 再將處理後的資料放到渲染層面
+```
+ return (
+    <Fragment>
+	   <ul className={classes.list}>
+        {resultQuotes.map((quote) => (
+          <QuoteItem
+            key={quote.id}
+            id={quote.id}
+            author={quote.author}
+            text={quote.text}
+          />
+        ))}
+      </ul>
+	</Fragment>
+```
+
+#### 完整版
 
 
 
@@ -101,20 +151,18 @@ export default QuoteList;
 
 
 
-
-
-
-
-
-
-
-
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠 query string 本身能夠在任意特定路由處理器給攔截到嗎？為什麼？ ->->-> `由於使用特定符號來區隔來幫助瀏覽器分開處理：一邊為伺服器端點；另一邊為query string，所以本身可以被任意特定路由處理器給攔截到。`
+
+#💻 請至/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-sort-with-query-string分支，請於/components/quotes/QuoteList.js實現根據query string來對quotes排序，其端點會是/quotes?sort=xxxx，其中->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/18-working-with-query-params/src/components/quotes/QuoteList.js`
+
+
+
 
 ---
 Status: #🌱 
 Tags:
+[[React]] - [[HTML]] - [[JavaScript]]
 Links:
 [[query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串]]
 [[QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白]]
