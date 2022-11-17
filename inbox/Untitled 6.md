@@ -1,20 +1,5 @@
 ## 描述
 
-### Query String
-[[@wikidataQueryString2022]] 所描述
-> A **query string** is a part of a uniform resource locator (URL) that assigns values to specified parameters
-
-> Typical URL containing a query string is as follows:
-
-> `https://example.com/over/there?name=ferret`
-
-> When a server receives a request for such a page, it may run a program, passing the query string, which in this case is `name=ferret`, unchanged to the program. The question mark is used as a separator, and is not part of the query string
-
-重點：
-- query string 是用來向特定伺服器索要特定資源的請求字串，以URL形式來表示，比如：
-`https://example.com/over/there?name=ferret`
-- query string 在客戶端和伺服器之間會以百分比編碼或者URL編碼
-
 
 
 ### 
