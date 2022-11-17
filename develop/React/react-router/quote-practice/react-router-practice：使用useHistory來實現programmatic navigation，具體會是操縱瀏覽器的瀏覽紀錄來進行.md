@@ -103,7 +103,7 @@ export default NewQuote;
 <!--SR:!2022-11-25,8,250-->
 
 #🧠 當使用者提交表格並成功時，處理方會做: 1. 呈現成功訊息來告知使用者 2. 導向至特定頁面 3. 以modal來告知使用者，為何要做？->->-> `增加使用者體驗來提醒使用者`
-<!--SR:!2022-11-17,3,250-->
+<!--SR:!2022-11-26,9,250-->
 
 
 #🧠 programmatic navigation 是什麼？->->-> `以編碼的手段來直接將使用者在一個目前頁面下導向至另一個特定頁面`
@@ -118,7 +118,7 @@ export default NewQuote;
 <!--SR:!2022-11-27,10,250-->
 
 #🧠 useHistory是源自於誰的hook ->->-> `react-router-dom`
-<!--SR:!2022-11-17,3,250-->
+<!--SR:!2022-11-27,10,250-->
 
 #🧠 browser history 或者 history 在網頁上是指什麼？ ->->-> `使用者從過去至現在的瀏覽網站清單`
 <!--SR:!2022-11-24,7,250-->
@@ -136,10 +136,10 @@ export default NewQuote;
 <!--SR:!2022-11-26,9,250-->
 
 #🧠  react-router-dom 所提供的 history 物件實際上主要是使用哪一種API？ ->->-> `DOM API 提供開發者存取browser history的介面`
-<!--SR:!2022-11-17,3,250-->
+
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有哪些->->-> `push、replace`
-<!--SR:!2022-11-17,3,250-->
+<!--SR:!2022-11-26,9,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中push會是什麼？ ->->-> `將指定頁面路徑(path)推送至page stack最上面來當作目前頁面的路徑`
 <!--SR:!2022-11-27,10,250-->
@@ -156,7 +156,7 @@ export default NewQuote;
 <!--SR:!2022-11-26,9,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別 (有兩個)->->-> `使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉、方式：前者是直接增加網址在最上面；後者則是將網址取代最上面`
-<!--SR:!2022-11-17,3,250-->
+<!--SR:!2022-11-24,7,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack來調整瀏覽器時，是否可以回到原本的畫面來說，會是什麼？ ->->-> `前者可以；後者不行，由於網址會被取代掉`

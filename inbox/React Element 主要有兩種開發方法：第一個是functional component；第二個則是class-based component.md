@@ -82,7 +82,7 @@ hooks 是：
 <!--SR:!2022-11-30,15,230-->
 
 #🧠 React：functional component  是什麼？ ->->-> `會是一般函式宣告，其回傳內容為JSX Element`
-<!--SR:!2022-11-17,27,250-->
+<!--SR:!2023-01-26,70,250-->
 
 #🧠 React：functional component  的語法是什麼？ ->->-> `function Component1() { ... return (JSX Element ) }`
 <!--SR:!2022-11-23,27,230-->
