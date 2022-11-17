@@ -314,7 +314,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 ## 複習
 
 #🧠  explicit 命名緣由 ->->-> `為明確且準確的`
-<!--SR:!2022-11-17,25,250-->
+<!--SR:!2023-01-21,65,250-->
 
 #🧠 explicit binding 是什麼？ ->->-> ` explicit binding 是相較於implicit binding而言，是以較為直接且明確告知this是設定什麼`
 <!--SR:!2022-11-21,27,250-->
@@ -379,7 +379,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2022-11-19,26,250-->
 
 #🧠 function1.apply(this, \[arg1, ..., argN\]) 在JS的函式呼叫上會被看作是什麼？ ->->-> `function1(arg1, ... argN)`
-<!--SR:!2022-11-17,24,250-->
+<!--SR:!2023-01-16,60,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
 <!--SR:!2022-11-22,28,250-->

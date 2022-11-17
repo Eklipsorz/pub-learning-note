@@ -35,16 +35,16 @@
         "currentTab": 1
       },
       {
-        "id": "829770ace814c847",
+        "id": "77003a24837e572f",
         "type": "tabs",
         "children": [
           {
-            "id": "ac9c4e83f8027227",
+            "id": "7307a1e85b868129",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
                 "mode": "source",
                 "source": false
               }
@@ -53,16 +53,16 @@
         ]
       },
       {
-        "id": "31a7909e168eeac9",
+        "id": "e5a462f583f337e4",
         "type": "tabs",
         "children": [
           {
-            "id": "0e70fc9a4a512e7c",
+            "id": "0636954110156573",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
+                "file": "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
                 "mode": "source",
                 "source": false
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
+                "file": "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
+                "file": "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md"
+                "file": "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md"
               }
             }
           }
@@ -211,8 +211,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "0e70fc9a4a512e7c",
+  "active": "0636954110156573",
   "lastOpenFiles": [
+    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+    "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "inbox/focus事件為特定元件轉變成active element的時機點.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
@@ -220,8 +222,6 @@
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
-    "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
-    "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
-    "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md"
+    "inbox/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md"
   ]
 }

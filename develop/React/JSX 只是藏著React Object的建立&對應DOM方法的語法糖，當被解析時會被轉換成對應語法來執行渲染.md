@@ -196,7 +196,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2022-12-01,68,250-->
 
 #🧠 React：使用著React 函式庫來調用建立Virtual DOM和對應DOM的語法，會有什麼樣的問題？ ->->-> `載入方式很多餘：每個代表元件的檔案都必須要載入、開發/維護難度提升，開發Virtual DOM會相當繁瑣、冗長`
-<!--SR:!2022-11-17,37,230-->
+<!--SR:!2023-02-10,85,230-->
 
 
 #🧠 React.createElement 語法是做什麼的？ 簡述一下用途？->->-> `該語法會建立Virtual DOM節點並回傳對應DOM節點物件`
@@ -230,7 +230,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2022-11-20,46,249-->
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `( React.createElement('h2', {}, ...) React.createElement(Expenses, { expenses }, ....) )`
-<!--SR:!2022-11-17,43,249-->
+<!--SR:!2023-03-04,107,249-->
 
 
 #🧠 系統會如何看待這段JSX代碼？請用程式碼表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485752/blog/react/react-element/JSX-React-Element-Example_qkhdoe.png)->->-> `React.createElement(...)`
