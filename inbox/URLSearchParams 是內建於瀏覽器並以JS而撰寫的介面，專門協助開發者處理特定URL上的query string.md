@@ -6,6 +6,27 @@
 > new URLSearchParams()
 > The `**URLSearchParams**` interface defines utility methods to work with the query string of a URL.
 
+
+> The URLSearchParams() constructor creates and returns a new URLSearchParams object.
+```
+new URLSearchParams(options)
+```
+
+> `options` Optional
+
+> One of:
+> -   A string, which will be parsed from `application/x-www-form-urlencoded` format. A leading `'?'` character is ignored.
+
+> # URLSearchParams.get()
+> The get() method of the URLSearchParams interface returns the first value associated to the given search parameter.
+
+
+```
+get(name)
+```
+> `name`
+> The name of the parameter to return.
+
 重點：
 - 一個內建於瀏覽器並以JS而撰寫的介面
 - 該介面是專門協助開發者處理特定URL上的query string
@@ -28,7 +49,21 @@
 ## 複習
 
 
+#🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者處理特定URL上的query string`
+
+#🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做什麼？ ->->-> `該介面是專門協助開發者處理特定URL上的query string`
+
+#🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做協助開發者處理特定URL上的query string，具體會如何協助，流程是？->->-> `		1. 先找到其URL的query string部分 2. 擷取query string 3. 將query string按照key-value pair來轉換成對應物件來讓該介面很好操作`
+
+#🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，它含有什麼？(屬..方)->->-> `屬性和數個方法來操作攔截到的query string`
+
+#🧠  URLSearchParams 建構式用法是什麼->->-> ``
+
+
 #🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 
