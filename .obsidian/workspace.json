@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "props 以非函式的物件為內容",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -144,7 +145,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "0636954110156573",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
