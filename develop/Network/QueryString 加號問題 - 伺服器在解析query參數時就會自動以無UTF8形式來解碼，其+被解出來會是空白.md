@@ -28,19 +28,21 @@ https://www.cnblogs.com/CrazyCoder/archive/2007/10/17/928261.html
 - 解法是：替整個Query string以百分比編碼重新編碼
 
 ### Query String
-[[@wikidataQueryString2022]] 所描述
-> A **query string** is a part of a uniform resource locator (URL) that assigns values to specified parameters
+~~[[@wikidataQueryString2022]] 所描述
+> A **query string** is a part of a uniform resource locator (URL) that assigns values to specified parameters~~
 
-> Typical URL containing a query string is as follows:
+> ~~Typical URL containing a query string is as follows:~~
 
-> `https://example.com/over/there?name=ferret`
+> ~~`https://example.com/over/there?name=ferret`~~
 
-> When a server receives a request for such a page, it may run a program, passing the query string, which in this case is `name=ferret`, unchanged to the program. The question mark is used as a separator, and is not part of the query string
+> ~~When a server receives a request for such a page, it may run a program, passing the query string, which in this case is `name=ferret`, unchanged to the program. The question mark is used as a separator, and is not part of the query string~~
 
-重點：
-- query string 是用來向特定伺服器索要特定資源的請求字串，以URL形式來表示，比如：
-`https://example.com/over/there?name=ferret`
-- query string 在客戶端和伺服器之間會以百分比編碼或者URL編碼
+~~重點：~~
+- ~~query string 是用來向特定伺服器索要特定資源的請求字串，以URL形式來表示，比如：
+`https://example.com/over/there?name=ferret`~~
+- ~~query string 在客戶端和伺服器之間會以百分比編碼或者URL編碼~~
+
+[[query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串]]
 
 ### 百分比編碼/URL編碼
 [[@albionresearchltdURLEncodeURLDecodePage]]所描述：
@@ -196,6 +198,7 @@ Status: #🌱
 Tags:
 [[Service]]
 Links:
+[[query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串]]
 References:
 [[@wikidataQueryString2022]]
 [[@heartfootprintXueXiBeiWangLuQueryStringShiJiaHaoBianKongBaiDeWenTi]]

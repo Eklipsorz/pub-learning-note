@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0636954110156573",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8837b229b77654d5",
             "type": "leaf",
             "state": {
@@ -32,7 +20,31 @@
             }
           },
           {
+            "id": "c92c030438f3dc10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "2827eb705573f420",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f7e69224f94fd096",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "f0ec7f9a9ec48a76",
@@ -56,7 +68,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "query string",
+                "query": "tag:#🌱",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -108,8 +120,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -188,17 +199,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "2827eb705573f420",
+  "active": "f7e69224f94fd096",
   "lastOpenFiles": [
     "inbox/Untitled 6.md",
-    "inbox/Untitled 8.md",
-    "inbox/預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格.md",
+    "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
+    "inbox/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
     "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
+    "inbox/預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
     "develop/React/React 開發時所需要注意的細節-Virtual DOM 、index.html、index.js.md",
-    "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
-    "inbox/focus事件為特定元件轉變成active element的時機點.md"
+    "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md"
   ]
 }
