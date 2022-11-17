@@ -67,5 +67,5 @@ Links:
 [[QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白]]
 [[URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string]]
 [[useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分)]]
-[[history.push & replace的隱患是每一次對stack的最上面元素做push或replace，會使react執行一次unmount 和 一次mount，而不是針對差異來切換]]
+[[react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount]]
 References:

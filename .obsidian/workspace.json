@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/history.push & replace的隱患是每一次對stack的最上面元素做push或replace，會使react執行一次unmount 和 一次mount，而不是針對差異來切換.md",
+                "file": "inbox/react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount.md",
                 "mode": "source",
                 "source": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/history.push & replace的隱患是每一次對stack的最上面元素做push或replace，會使react執行一次unmount 和 一次mount，而不是針對差異來切換.md",
+                "file": "inbox/react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/history.push & replace的隱患是每一次對stack的最上面元素做push或replace，會使react執行一次unmount 和 一次mount，而不是針對差異來切換.md",
+                "file": "inbox/react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/history.push & replace的隱患是每一次對stack的最上面元素做push或replace，會使react執行一次unmount 和 一次mount，而不是針對差異來切換.md"
+                "file": "inbox/react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount.md"
               }
             }
           }
@@ -203,7 +203,7 @@
   "active": "ae4fe3ce5a5e2735",
   "lastOpenFiles": [
     "inbox/Untitled 6.md",
-    "inbox/history.push & replace的隱患是每一次對stack的最上面元素做push或replace，會使react執行一次unmount 和 一次mount，而不是針對差異來切換.md",
+    "inbox/react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount.md",
     "inbox/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
     "inbox/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
     "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
