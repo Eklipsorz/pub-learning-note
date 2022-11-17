@@ -127,7 +127,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 ## 複習
 
 #🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `useEffect 的 callback則是定義side effect的內容、cleanup內容`
-<!--SR:!2022-11-17,6,249-->
+<!--SR:!2022-12-04,17,249-->
 
 
 #🧠 React：useEffect(callback, dependencies) 的dependency設定主要目的 ->->-> `Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段`
@@ -164,7 +164,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 
 
 #🧠 React：Dependencies 設定目的主要為效能最佳化，在updating階段的話，useEffect會做比對，按照結果執行對應effect，為啥不能直接做effect ->->-> `因為當時有事先儲存好的deps可以比對`
-<!--SR:!2022-11-17,6,249-->
+<!--SR:!2022-12-04,17,249-->
 
 
 #🧠 React：Dependencies 設定目的主要是邏輯上的控制嗎？ 為什麼？->->-> `並不是，具體目的為效能最佳化，根據資料是否變動從而決定是否執行render之後的effect`

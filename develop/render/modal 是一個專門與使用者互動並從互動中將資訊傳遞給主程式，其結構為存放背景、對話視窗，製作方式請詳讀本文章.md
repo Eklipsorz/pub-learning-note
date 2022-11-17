@@ -223,7 +223,7 @@ modal ：對話窗內容
 
 
 #🧠 modal 主體架構有什麼？請用下圖來畫出架構 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662724421/blog/frontend/dialog/dialog-origin_tf3iqi.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662660001/blog/frontend/dialog/dialog_xeooko.png)`
-<!--SR:!2022-11-17,42,250-->
+<!--SR:!2023-03-02,105,250-->
 
 
 #🧠 modal主體架構中負責存放modal部分的區塊所要實現的目標是什麼？ ->->-> `一個佔滿viewport的空間、背景為白色的透明色、能夠存放對話窗整個內容`

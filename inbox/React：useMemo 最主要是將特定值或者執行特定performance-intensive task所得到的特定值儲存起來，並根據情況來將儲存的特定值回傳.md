@@ -144,7 +144,7 @@ export default React.memo(DemoList);
 <!--SR:!2023-01-20,67,250-->
 
 #🧠 React React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 注意事項是什麼 ->->-> `函式物件得要有return 特定值的手段`
-<!--SR:!2022-11-17,28,250-->
+<!--SR:!2023-01-26,70,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
 <!--SR:!2023-01-27,72,250-->
@@ -180,7 +180,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 適用場景為->->-> `經由複雜計算才能夠獲取到的內容，或者執行performance-intensive才能獲得的內容、props以非函式的物件為內容的元件並納入使用memo`
-<!--SR:!2022-11-17,28,250-->
+<!--SR:!2023-01-27,71,250-->
 
 #🧠 React useMemo 適用場景為 props以非函式的物件為內容的元件並納入使用memo，為什麼？ ->->-> `由於物件會因為渲染函式而重造並得到不同的記憶體位址，而無法正常使用memo的功能`
 <!--SR:!2022-11-17,28,250-->

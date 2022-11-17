@@ -43,7 +43,7 @@
 <!--SR:!2022-12-08,31,230-->
 
 #🧠 URL (Uniform Resource Locator) 是什麼？由什麼構成？->->-> `特定資源在網路環境下的定位識別字，其識別字會是由schema、host、port、path 所構成`
-<!--SR:!2022-11-17,21,250-->
+<!--SR:!2023-01-10,54,250-->
 
 #🧠 URI (Uniform Resource Identifier) 是什麼？由什麼構成 ->->-> `特定資源在網路環境下的識別字，其識別字會是由schema、host、port、path、query string、#fragment`
 <!--SR:!2022-12-21,41,248-->
