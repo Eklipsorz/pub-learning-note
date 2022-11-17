@@ -14,9 +14,20 @@
 		2. 擷取query string
 		3. 將query string按照key-value pair來轉換成對應物件來讓該介面很好操作
 - 具體含有屬性和數個方法來操作攔截到的query string
-
+	- 建構式：
+		- options 會是指要轉換的query string
+		```
+		new URLSearchParams(options)
+	   ```
+	- URLSearchParams.get()：
+		- name：要擷取的參數名稱
+		```
+	  URLSearchParams.get(name)
+	   ```
 
 ## 複習
+
+
 #🧠 Question :: ->->-> ``
 
 ---
