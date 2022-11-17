@@ -170,7 +170,7 @@ export default NewQuote;
 <!--SR:!2022-11-17,3,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-programmatic-navigation分支，在那請以programmatic navigation來實作成功提交新增quote會有的導向 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/16-implementing-programmatic-navigation`
-<!--SR:!2022-11-17,3,250-->
+<!--SR:!2022-11-27,10,250-->
 
 ---
 Status: #🌱 
