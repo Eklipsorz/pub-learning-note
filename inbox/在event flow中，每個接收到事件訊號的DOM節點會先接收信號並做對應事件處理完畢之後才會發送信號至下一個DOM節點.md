@@ -112,7 +112,7 @@ element1 -> element2 -> element3
 <!--SR:!2022-11-18,3,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，其事件處理的順序和接收順序是element1 -> element2 -> element3，具體是什麼，又是什麼phase？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/capture-phase-execution-order_dwacbc.png)->->-> `由於是採用capture phase，所以就是	- element1 一接收信號就執行自己的事件處理，執行完再發送信號至element2 - element2 一接收到信號就執行自己的事件處理，執行完再發送信號至element3 - element3 一接收到信號就執行自己的事件處理，執行完再發送信號`
-<!--SR:!2022-11-18,3,250-->
+<!--SR:!2022-11-30,11,250-->
 
 
 

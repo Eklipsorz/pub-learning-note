@@ -131,7 +131,7 @@ element1.addEventListener('click', handler);
 <!--SR:!2022-11-30,11,250-->
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668434243/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-explicit-binding_zeya6q.png) ->->-> `object和object為主的屬性`
-<!--SR:!2022-11-18,3,250-->
+<!--SR:!2022-11-30,11,250-->
 
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668435349/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-addEventListener_f29p26.png) ->->-> `結果會是發生事件的DOM節點`
