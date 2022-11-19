@@ -65,11 +65,13 @@ get(name)
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，回傳會是什麼？ ->->-> `回傳query string 物件`
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
+<!--SR:!2022-11-22,3,250-->
 
 
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`
 
 #🧠 URLSearchParams的get用法是什麼？ ->->-> `URLSearchParams.get(name)`
+<!--SR:!2022-11-22,3,250-->
 
 
 #🧠 URLSearchParams.get(name)會是以指定的參數名數來回傳它第一個找到的參數值，其中name會是？？ ->->-> `要擷取的參數名稱`

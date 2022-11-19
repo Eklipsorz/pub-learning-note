@@ -4,47 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e5a462f583f337e4",
+        "id": "02b429d87bce776f",
         "type": "tabs",
         "children": [
           {
-            "id": "ae4fe3ce5a5e2735",
+            "id": "efa90333d9b641e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f665b9fa6f850c53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "edfac6acceb04b25",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d3fa9b730809803d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：capture phase->target phase->bubbling phase.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "mode": "source",
                 "source": false
               }
@@ -53,16 +22,52 @@
         ]
       },
       {
-        "id": "a718ebe8e0d6bcd2",
+        "id": "57582097afd4fd5a",
         "type": "tabs",
         "children": [
           {
-            "id": "3fc7505b23efd942",
+            "id": "726a79b9b310e3fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a43b62a2ad853b3d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66c9e21d0b9bf401",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "142e220b7645fbd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cc188775e975c1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
                 "mode": "source",
                 "source": false
               }
@@ -171,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -196,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md"
               }
             }
           }
@@ -230,17 +235,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "3fc7505b23efd942",
+  "active": "efa90333d9b641e7",
   "lastOpenFiles": [
+    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
+    "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
+    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
+    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
+    "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "inbox/瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：capture phase->target phase->bubbling phase.md",
     "develop/React/React ：Offscreen API 是允許Component 在面臨mount=>unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
     "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
-    "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
-    "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
-    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
-    "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
-    "inbox/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
-    "inbox/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md"
+    "inbox/react-router-practice：使用query string來實現quotes排序功能.md"
   ]
 }
