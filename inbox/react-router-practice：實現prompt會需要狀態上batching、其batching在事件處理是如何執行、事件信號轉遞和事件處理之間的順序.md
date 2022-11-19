@@ -148,7 +148,7 @@ submit
 <!--SR:!2022-11-29,10,250-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的添加Prompt元件來當作警告訊息來阻擋和其Prompt元件必須要使用者是正輸入表單的情況下來阻擋URL Navigation，如何做？prompt程式碼會是什麼 ->->-> `使用react-router-dom所提供的prompt元件、根據Prompt的when是否true來啟用prompt來阻擋，若form發生focus事件就為true；反之就為false。若呈現prompt就以Are you sure這訊息來表示。<Prompt when={isEntering} message={(location) => 'Are you sure??'} />`
-<!--SR:!2022-11-19,3,250-->
+<!--SR:!2022-11-28,9,250-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，如何實現？->->-> `在提交按鈕的點擊事件添加狀態更新為false`
 <!--SR:!2022-11-29,10,250-->
@@ -160,7 +160,7 @@ submit
 <!--SR:!2022-11-19,3,250-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，以下為程式碼 https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/17-preventing-unwanted-route-transitions/src/components/quotes/QuoteForm.js 這主要能實現歸功於? ->->-> `- 每個事件處理都各自處理自己的batching - 每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染 - submit信號傳遞要等到按鈕點擊事件完成後才轉遞`
-<!--SR:!2022-11-19,3,250-->
+<!--SR:!2022-11-27,8,250-->
 
 #🧠 React：每個事件處理都有狀態更新指令或者函式，請問如何執行batching？ ->->-> `首先，每個事件處理都各自處理自己的batching、每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染`
 <!--SR:!2022-11-28,9,250-->

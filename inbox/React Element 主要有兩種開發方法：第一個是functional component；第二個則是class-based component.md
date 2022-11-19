@@ -76,7 +76,7 @@ hooks 是：
 ## 複習
 
 #🧠 建立React Element 有哪兩種開發方法？ ->->-> `class-based component、functional component`
-<!--SR:!2022-11-18,28,250-->
+<!--SR:!2023-02-02,75,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
 <!--SR:!2022-11-30,15,230-->
@@ -112,7 +112,7 @@ hooks 是：
 <!--SR:!2023-02-01,74,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
-<!--SR:!2022-11-18,28,250-->
+<!--SR:!2023-02-02,75,250-->
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`

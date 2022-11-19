@@ -83,13 +83,13 @@
 <!--SR:!2022-11-29,10,250-->
 
 #🧠 react-router-dom ：Prompt componet 該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋使用者切換，若沒有的話，就允許使用者切換，具體說明攔截部分->->-> `攔截Prompt所在的元件A內所發出來的navigation請求/操作，或者攔截使用者利用元件A的元件來發出navigation請求/操作`
-<!--SR:!2022-11-19,2,230-->
+<!--SR:!2022-11-23,4,230-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼->->-> `when、message`
 <!--SR:!2022-11-26,7,249-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中when會是什麼型別？做什麼？？ ->->-> `布林值，true為當navigation就呈現prompt來組阻止從目前頁面跳轉；false為不使用prompt來阻止`
-<!--SR:!2022-11-19,3,250-->
+<!--SR:!2022-11-25,6,250-->
 
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會是什麼型別？做什麼？？  ->->-> `字串或者function， 主要是指定prompt的主體訊息是什麼`

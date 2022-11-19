@@ -72,7 +72,7 @@
 
 
 #🧠  JS： expr1 || expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value ->->-> `expr1  或者 expr2 有任一者為true的話，就expr1 || expr2 結果為true；其餘狀況皆回傳false`
-<!--SR:!2022-11-19,10,250-->
+<!--SR:!2022-12-17,28,250-->
 
 #🧠 JS： expr1 || expr2 會如何處理和回傳？若expr1 和 expr2 這兩者有任一個不為boolean value的話->->-> `- expr1 可經由轉換而判定成true，就會回傳(沒經由&&轉換的版本)expr1 - 否則皆回傳expr2`
 <!--SR:!2022-12-16,27,250-->
@@ -120,7 +120,7 @@
 <!--SR:!2022-12-16,27,250-->
 
 #🧠 JS： !expr1 會如何處理和回傳？若expr1 本身是boolean value ->->-> `	- 若expr1本身為boolean value的話 - expr1若為false，!expr1為true - expr1若為true，!expr1為false`
-<!--SR:!2022-11-18,9,250-->
+<!--SR:!2022-12-16,27,250-->
 
 
 #🧠 JS： !expr1 會如何處理和回傳？若expr1 本身不是boolean value->->-> `	- 若expr1本身不為boolean value的話 - expr1 會先以boolean value的形式來強制轉換，若為true，就回傳false - 若結果為false，就回傳true`
