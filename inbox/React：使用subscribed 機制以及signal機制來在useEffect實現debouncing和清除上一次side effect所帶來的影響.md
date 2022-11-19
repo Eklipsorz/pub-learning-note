@@ -237,7 +237,7 @@ AbortController.abort()
 <!--SR:!2022-11-18,8,250-->
 
 #🧠 JS：AbortController interface 如何建構對應類別的物件？ ->->-> `new AbortController()`
-<!--SR:!2022-11-18,8,250-->
+<!--SR:!2022-12-13,24,250-->
 
 #🧠 JS：AbortController interface 的 abort 發送的signal 只有誰才能收到？ ->->-> `已搭載同一個Controller 之AbortSignal物件的非同步任務`
 <!--SR:!2022-11-18,8,250-->
