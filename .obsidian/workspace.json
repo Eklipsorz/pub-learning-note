@@ -35,24 +35,6 @@
         "currentTab": 1
       },
       {
-        "id": "3f860b24974713bf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "cb8181279c3147d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "edfac6acceb04b25",
         "type": "tabs",
         "children": [
@@ -105,24 +87,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "92a7eae52915232e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8b07e5f60e8f9353",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -132,69 +96,44 @@
     "type": "split",
     "children": [
       {
-        "id": "39994d0cc638258e",
-        "type": "split",
+        "id": "4680111e485df9e0",
+        "type": "tabs",
         "children": [
           {
-            "id": "4680111e485df9e0",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6941822edf359a99",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": true,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "b7ac353bc18ac458",
-                "type": "leaf",
-                "state": {
-                  "type": "starred",
-                  "state": {}
-                }
-              },
-              {
-                "id": "673bafcf0104f9cf",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "byCreatedTime"
-                  }
-                }
+            "id": "6941822edf359a99",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
               }
-            ],
-            "currentTab": 2
+            }
           },
           {
-            "id": "6cb9f55c310dba35",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "9046c8f6110438d3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "b7ac353bc18ac458",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "673bafcf0104f9cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
               }
-            ]
+            }
           }
         ],
-        "direction": "vertical"
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -214,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
+                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -239,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
+                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -262,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md"
+                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md"
               }
             }
           }
@@ -273,17 +212,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "9046c8f6110438d3",
+  "active": "5634c346a4170193",
   "lastOpenFiles": [
-    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
+    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
+    "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "develop/Redis/redis master-slave 架構是 master主機負責對資料做寫入，slave主機負責對資料做存取.md",
     "inbox/瀏覽器會分三種階段來傳遞事件信號，讓巢狀結構的每個節點都能按需求來接收事件信號來處理，然後往下轉遞事件信號：capture phase->target phase->bubbling phase.md",
-    "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
     "inbox/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
     "inbox/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
     "inbox/react-router 所提供的 history.push & replace：若每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換，而非單方面使react執行一次unmount 和 一次mount.md",
-    "inbox/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
-    "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md"
+    "inbox/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md"
   ]
 }

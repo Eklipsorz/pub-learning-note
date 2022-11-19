@@ -201,7 +201,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-12-01,64,250-->
 
 #🧠 歷經Mounting階段後，會有四個途徑來變更元件A在實際DOM樹上的DOM節點，請問會有哪四個途徑？請詳細說明 ->->-> `- 使用集中管理狀態 & 資訊 & 更新狀態/資訊函式的元件A來獲取資訊渲染(如context或者redux)：使用其資訊的元件B會由一個監聽元件來負責監聽元件A的內容，有更動就會觸發元件B的渲染週期來重新取得元件A內容來渲染，沒更動就不會觸發、New props：由新的props來觸發渲染、setState()：根據state是否改變來觸發渲染 forceUpdate()：直接強制渲染，由props和state以外的資料來渲染。`
-<!--SR:!2022-11-19,30,248-->
+<!--SR:!2023-02-03,76,248-->
 
 
 #🧠  歷經Mounting階段後，會有四個途徑來變更元件A在實際DOM樹上的DOM節點，請問四途徑之一的New props 拿什麼資料來渲染畫面？->->-> `props夾雜的新資訊`
@@ -260,7 +260,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2022-11-20,5,228-->
 
 #🧠 react 生命週期中會用到的**更新狀態** 函式是會做什麼？ ->->-> `無論shouldComponentUpdate回傳什麼，都會更新狀態，更新完狀態，才會進入下一階段`
-<!--SR:!2022-11-18,4,248-->
+<!--SR:!2022-12-01,12,248-->
 
 #🧠 react 生命週期中會用到的**render函式** 是會做什麼？(資訊和畫面)->->-> `- render 會以每個元件上的對應(render/渲染用的)函式來當作該元件對應的渲染內容，並且負責解析目前資訊並轉換成對應的Virtual DOM - 其render的元件渲染內容可由開發者來指定，至於解析和轉換由系統負責`
 <!--SR:!2023-01-30,90,230-->
