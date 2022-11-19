@@ -223,7 +223,7 @@ this is use effect
 <!--SR:!2022-12-11,22,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒執行cleanup，為什麼？ ->->-> `這是第一次執行side effect，本身就沒有上一個side effect，所以就不需要執行cleanup`
-<!--SR:!2022-11-19,9,250-->
+<!--SR:!2022-12-14,25,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
@@ -258,7 +258,7 @@ this is use effect
 <!--SR:!2022-12-15,26,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
-<!--SR:!2022-11-18,8,250-->
+<!--SR:!2022-12-11,22,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `避免unmount之後還殘留side effect影響在那，所以要執行cleanup來還原`
 <!--SR:!2022-11-23,8,250-->

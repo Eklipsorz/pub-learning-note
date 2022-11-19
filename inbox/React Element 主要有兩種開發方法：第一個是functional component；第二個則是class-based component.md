@@ -92,7 +92,7 @@ hooks 是：
 
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \}  中沒有Constructor，請問能夠正常執行嗎？為什麼->->-> `能夠正常執行，系統會根據目前類別是否繼承其他類別而給予預設的constructor來方便建立對應類別的實例`
-<!--SR:!2022-11-18,28,250-->
+<!--SR:!2023-02-02,75,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
 <!--SR:!2023-01-24,69,250-->
@@ -109,14 +109,14 @@ hooks 是：
 
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
-<!--SR:!2022-11-18,28,250-->
+<!--SR:!2023-02-01,74,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
 <!--SR:!2022-11-18,28,250-->
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`
-<!--SR:!2022-11-18,28,250-->
+<!--SR:!2023-01-31,73,250-->
 
 
 #🧠  React：functional component 的hook 和class-based-component的語法之間的關係來說是什麼？為什麼 ->->-> `毫無相關，functional component 的hook 和 class-based component 都是獨立功能，只是使用相同React核心程式碼來實現各自目的的功能`

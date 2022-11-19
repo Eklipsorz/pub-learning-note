@@ -72,7 +72,7 @@ synchronous loading 是指任務內容為載入資訊至特定地方的任務，
 
 
 #🧠 在HTML檔案中，添加defer的script和添加async的script兩者間差別為何，假設script是執行JS  ->->-> `前者一旦載入JS檔案，就會等渲染任務做完或者Document上的內容都被轉換成Rendering Tree，才會開始執行JS檔案；另一個則是只要載入好JS檔就立刻執行JS檔案`
-<!--SR:!2022-11-18,74,250-->
+<!--SR:!2023-05-31,193,250-->
 
 ---
 Status: #🌱 
