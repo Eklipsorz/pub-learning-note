@@ -28,7 +28,7 @@ class-bassed component 的狀態：
 <!--SR:!2022-11-19,28,250-->
 
 #🧠 React：functional component 的狀態和更新狀態用函式 是用什麼語法來定義 ->->-> `useState`
-<!--SR:!2022-11-19,28,250-->
+<!--SR:!2023-02-01,74,250-->
 
 #🧠 React：functional component 的狀態會是什麼形式？ 為什麼？->->-> `可以任意形式，因為每個元件狀態都可以註冊成各自的獨立狀態和狀態更新用函式，而非像class-based component只能用物件來囊括元件下的所有狀態`
 <!--SR:!2022-11-19,28,250-->
