@@ -211,7 +211,7 @@ AbortController.abort()
 <!--SR:!2022-12-11,22,250-->
 
 #🧠 React useEffect：紀錄非同步任務ID並於cleanup移除指定任務的ID，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `可以，因可以直接強制中斷`
-<!--SR:!2022-11-20,10,250-->
+<!--SR:!2022-12-17,27,250-->
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體方式是什麼？ ->->-> `使用AbortController API來建立controller 和 signal接收處理物件；將signal 接收處理物件安裝至對應的非同步任務；設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行；設定catch或者try...catch等錯誤攔截`
@@ -246,7 +246,7 @@ AbortController.abort()
 <!--SR:!2022-12-05,18,250-->
 
 #🧠 JS：AbortController interface 的 signal 是什麼？ 得先有什麼才能有signal ->->-> `得先建立AbortController 物件才能有。這是主要是對應AbortController 接收訊號並執行中斷的物件-被稱之為AbortSignal，專門搭載至支援AbortController介面的非同步任務`
-<!--SR:!2022-11-20,10,250-->
+<!--SR:!2022-12-16,26,250-->
 
 #🧠 JS： AbortController interface 是什麼？用途是什麼？ ->->-> `是定義一個控制器物件來搭載在支援AbortController介面的非同步任務上，使他們能夠接收外部傳送過來的Abort Signal，收到後就變中斷目前任務`
 <!--SR:!2022-12-01,15,250-->

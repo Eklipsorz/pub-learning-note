@@ -102,7 +102,7 @@ clearTimeout(timeoutID)
 <!--SR:!2023-02-17,90,230-->
 
 #🧠 React：useEffect是否會遇到bounce問題？為什麼 ->->-> `會，具體是因為useEffect 所註冊的effect 面對接收到的請求都是一個請求被接收到就馬上被處理，所以會有N個請求，就會有N個回應。`
-<!--SR:!2022-11-20,40,247-->
+<!--SR:!2023-02-26,98,247-->
 
 
 #🧠 React：如何在useEffect的debouncing 實現是在useEffect 使用setTimemout 來夾雜side effect原本實現代碼，然後紀錄當前的timeout的任務ID，定義著useEffect的cleanup來依照timeoue任務ID來取消任務，那麼實際如何執行？如何確保就是最後一個請求？->->-> `首次元件開始mounting就生成setTimeout任務，並定義cleanup任務是要清除掉當前timeout的任務，接著若下一個effect被觸發就先執行cleanup任務來清除上一個timeout非同步任務，然後重新生成timeout任務，接著定義cleanup來清除這次生成的timeout任務，後面依此類推，直到沒觸發，代表當前timeout任務正執行著最後一個請求。`
