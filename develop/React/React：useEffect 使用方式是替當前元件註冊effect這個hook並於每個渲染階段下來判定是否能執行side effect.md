@@ -241,7 +241,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在updating階段會是執行到useEffect時就拿目前deps內容和上一次effect所儲存的deps進行比對，看是否一樣，若一樣的話，會是做什麼？ ->->-> ` 若一樣：- 當前render之後不執行任何side effect`
-<!--SR:!2022-11-20,10,250-->
+<!--SR:!2022-12-18,28,250-->
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies沒設定的話，會如何執行callback ->->-> `除了只會在元件的mounting階段下直接執行以外，會在元件的updating觸發並檢查，但檢查結果會是dependency一直變動而直接執行`
