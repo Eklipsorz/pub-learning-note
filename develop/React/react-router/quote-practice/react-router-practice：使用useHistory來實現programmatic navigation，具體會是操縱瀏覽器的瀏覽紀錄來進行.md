@@ -136,7 +136,7 @@ export default NewQuote;
 <!--SR:!2022-11-26,9,250-->
 
 #🧠  react-router-dom 所提供的 history 物件實際上主要是使用哪一種API？ ->->-> `DOM API 提供開發者存取browser history的介面`
-<!--SR:!2022-11-20,3,250-->
+<!--SR:!2022-11-30,10,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有哪些->->-> `push、replace`

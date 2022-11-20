@@ -115,7 +115,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-12-11,72,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式是做什麼？ ->->-> `指定對應元件的實際DOM節點加入至DOM tree之後要做的事情`
-<!--SR:!2022-11-20,57,250-->
+<!--SR:!2023-04-12,143,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
 <!--SR:!2022-12-11,72,250-->

@@ -68,7 +68,7 @@
 <!--SR:!2022-12-05,16,230-->
 
 #🧠 React useEffect 的運作原理比較像什麼？ 拿生命週期和Data Synchronization來比的話，為什麼？(請說明到資料內容是否一樣)->->-> `會更偏向於Data Synchronization，原因在於它會將render會用到的資料納入至render之後的effect來執行，也就是資料從props、state轉移至effect模組，並且兩者內容會是一樣的`
-<!--SR:!2022-11-20,9,250-->
+<!--SR:!2022-12-14,24,250-->
 
 #🧠 useEffect 的運作原理比較像什麼？ 拿生命週期和Data Synchronization來比的話，為什麼？->->-> `會更偏向於Data Synchronization，原因在於它會將render會用到的資料納入至render之後的effect來執行，也就是資料從props、state轉移至effect模組，並且兩者內容會是一樣的`
 <!--SR:!2022-11-21,10,250-->

@@ -244,11 +244,11 @@ export default SimpleInput;
 <!--SR:!2022-12-29,40,230-->
 
 #🧠 若表格都用同一種驗證來實現驗證的話，會有由於每一種驗證方式的觸發點皆為不一樣，不一定能夠滿足所有情況下的表格實現需求等潛在問題，具體來說是？ ->->-> `驗證結果主要是依據著狀態來判斷，而狀態又依據著互動而決定，但若只使用單種驗證方式，也就表示著使用單種互動來驗證，但實際上，互動方式數本身是無限多，所能展現的狀態數也是無限，基於這點無法只依賴單種互動為主的驗證方式來囊括無限數量的狀態去實現`
-<!--SR:!2022-11-20,16,228-->
+<!--SR:!2022-12-29,39,228-->
 
 
 #🧠 若表格都用多種驗證來實現驗證的話，實現方式會是如何？ ->->-> `將每一種驗證方式都設定不同的狀態，依據狀態來給予合適的驗證結果`
-<!--SR:!2022-11-20,17,246-->
+<!--SR:!2023-01-01,42,246-->
 
 
 #💻 請至/react-builder/question-review/form-adv-practice 領取題目並切換至refactor-form-validity分支，於/src/components/SimpleInput.js實現enteredNameIsValid狀態管理的優化，目標為不要讓enteredNameIsValid單純依賴事件處理->->-> `https://github.com/academind/react-complete-guide-code/blob/16-working-with-forms/code/06-refactoring-and-deriving-states/src/components/SimpleInput.js`
