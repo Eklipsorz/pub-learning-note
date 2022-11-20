@@ -86,7 +86,7 @@ console.log(bar.a)
 ## 複習
 
 #🧠 new binding 是什麼樣的binding ->->-> `由new operator 來主導建立一個物件並以此物件設定函式呼叫的this`
-<!--SR:!2022-11-20,26,250-->
+<!--SR:!2023-01-27,68,250-->
 
 #🧠 JS：constructor call 是什麼？  ->->-> `在特定函式呼叫前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)`
 <!--SR:!2022-12-27,47,250-->
