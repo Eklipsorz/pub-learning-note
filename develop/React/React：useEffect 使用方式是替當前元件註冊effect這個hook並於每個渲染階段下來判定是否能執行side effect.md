@@ -280,7 +280,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空陣列的話，會是指什麼？ ->->-> `若是空陣列[] 的話，就等同設定永不改變的dependency`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-19,28,250-->
 
 
 
@@ -298,11 +298,11 @@ this is use effect
 <!--SR:!2023-01-05,72,250-->
 
 #🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，由React來執行`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-19,28,250-->
 
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會出現沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-19,28,250-->
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`

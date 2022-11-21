@@ -95,11 +95,11 @@ useEffect：cleanup function執行時機：
 <!--SR:!2023-01-09,74,250-->
 
 #🧠 React：useEffect cleanup 何時執行？mounting 所觸發執行的side effect會不會執行cleanup？ ->->-> `並不會`
-<!--SR:!2022-11-21,9,250-->
+<!--SR:!2022-12-16,25,250-->
 
 
 #🧠 React：useEffect cleanup的使用場景為何？ cleanup又負責做些什麼？->->-> `使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務、 effect會產生出影響，而cleanup是清除那影響`
-<!--SR:!2022-11-21,9,250-->
+<!--SR:!2022-12-17,26,250-->
 
 
 

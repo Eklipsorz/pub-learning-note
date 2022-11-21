@@ -185,7 +185,7 @@ const SimpleInput = (props) => {
 <!--SR:!2022-11-22,14,230-->
 
 #🧠 React：若於對應元件的函式內添加這 const \[enteredNameIsValid, setEnteredNameIsValid\] = useState(true);  會有什麼潛在問題？->->-> `在mount階段時期，系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
-<!--SR:!2022-11-21,20,250-->
+<!--SR:!2023-01-10,50,250-->
 
 #🧠 React：以下為一個表格的實現代碼，請問這會有什麼潛在問題？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png ->->-> `無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，但實際上由於輸入欄一開始不會有任何值，理論上會是要設定false為初始值。`
 <!--SR:!2022-11-22,20,250-->
