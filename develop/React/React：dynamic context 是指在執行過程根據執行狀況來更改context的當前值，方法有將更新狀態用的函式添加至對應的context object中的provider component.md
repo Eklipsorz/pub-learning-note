@@ -59,7 +59,7 @@ const Navigation = (props) => {
 <!--SR:!2023-01-14,74,250-->
 
 #🧠 React Context：dynamic context 如何實現？ ->->-> `1. 將更新狀態用的函式添加至指定context object中的provider component之value 2. 再讓想修改其context上的狀態的元件透過context object的consumer component語法糖採用ctx的目前狀態值-onLogout 好讓當前元件B透過自己的角度來改變context當前的狀態`
-<!--SR:!2022-11-21,37,230-->
+<!--SR:!2023-02-14,85,230-->
 
 #🧠 React：以下為dynamic context 的實現，上圖為App元件，下圖為Navigation元件，請說明如何利用context實現登出功能？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663768466/blog/react/context/dynamic-context/providing-component_bniuln.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663768466/blog/react/context/dynamic-context/comsuming-component_qfkokd.png)->->-> ``
 <!--SR:!2023-01-10,70,250-->

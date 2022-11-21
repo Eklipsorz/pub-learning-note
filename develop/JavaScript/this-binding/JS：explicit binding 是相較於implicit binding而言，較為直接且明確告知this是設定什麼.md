@@ -317,7 +317,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-01-21,65,250-->
 
 #🧠 explicit binding 是什麼？ ->->-> ` explicit binding 是相較於implicit binding而言，是以較為直接且明確告知this是設定什麼`
-<!--SR:!2022-11-21,27,250-->
+<!--SR:!2023-01-30,70,250-->
 
 
 
@@ -339,7 +339,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-01-15,61,250-->
 
 #🧠 function.protype.apply() 的語法是什麼？ ->->-> `function.call(thisArg, [arg1, /* …, */ argN])`
-<!--SR:!2022-11-21,28,250-->
+<!--SR:!2023-02-03,74,250-->
 
 #🧠 function.protype.apply() 的語法是function.apply(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
 <!--SR:!2022-11-22,28,250-->

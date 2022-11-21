@@ -195,7 +195,7 @@ function outerFunction() {
 <!--SR:!2022-11-25,14,248-->
 
 #🧠 react-router-dom：不論是哪一種，其nested route所設定的path只能是基於包含它的route所設定的path，若nested route所設定的path設定成以外的path呢？ ->->-> `會因為沒在包含其route所擁有的path而失效`
-<!--SR:!2022-11-21,11,248-->
+<!--SR:!2022-12-21,30,248-->
 
 #🧠 react-router-dom：若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487832/blog/react/react-router/Nested-route/nested-route-inside-component-example1_esnksv.png) ->->-> `若Component 被另一個Route包覆的話，且Component夾雜著Route，那麼該Route那麼就構成nested route，當客戶端要求轉換URL為/path2/path3時，會先從path2對應的Component 進行渲染，然後再從那找到夾雜的Route且Route滿足於/path2/path3，找到後就便渲染對應的component，也就是Component2`
 <!--SR:!2022-11-29,17,248-->
