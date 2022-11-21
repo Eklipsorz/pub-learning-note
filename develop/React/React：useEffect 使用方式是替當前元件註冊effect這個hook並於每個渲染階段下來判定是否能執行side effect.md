@@ -269,10 +269,10 @@ this is use effect
 <!--SR:!2022-12-21,59,250-->
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-17,26,250-->
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-16,25,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
@@ -285,7 +285,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，不是指空陣列，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-18,27,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
