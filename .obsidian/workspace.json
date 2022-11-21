@@ -183,9 +183,9 @@
   },
   "active": "61a6f90e5a43443c",
   "lastOpenFiles": [
-    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
+    "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
+    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
