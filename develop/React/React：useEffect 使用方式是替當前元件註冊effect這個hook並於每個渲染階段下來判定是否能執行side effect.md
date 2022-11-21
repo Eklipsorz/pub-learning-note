@@ -289,7 +289,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-15,24,250-->
 
 
 
@@ -306,7 +306,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-17,26,250-->
 
 
 
