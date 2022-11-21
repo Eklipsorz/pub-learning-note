@@ -114,7 +114,7 @@ render
 <!--SR:!2022-12-02,13,230-->
 
 #🧠 React：useEffect(callback, \[deps\]) 的callback、deps在functional component是按照生命週期函式執行？還是如何？ ->->-> `而callback、deps則是render之後就會執行`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-19,28,250-->
 
 
 #🧠 React：useEffect 本身和useEffect(callback, \[deps\])中的callback、deps之間的執行順序差異為何？ ->->-> `useEffect本身在functional component會是個函式呼叫，執行到就呼叫，而callback、deps則是render之後就會執行。`
@@ -130,7 +130,7 @@ render
 
 
 #🧠 React：在這裏分別在functional component 中的useEffect 、top level code、渲染部分做出console.log，其結果會是如下，請說明執行狀況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666681597/blog/react/effect/useEffect/useEffect-result_b7qfub.png) ->->-> `從結果得知，一開始會執行top level而先印出top level，接著useEffect的確呼叫到了，但裡頭callback、deps是直接按照render執行完畢後才執行，在這時還未執行render，所以等到render結束後才執行callback。前面三段可以證實`
-<!--SR:!2022-11-21,10,250-->
+<!--SR:!2022-12-19,28,250-->
 
 
 
