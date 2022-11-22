@@ -342,7 +342,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-02-03,74,250-->
 
 #🧠 function.protype.apply() 的語法是function.apply(thisArg, \[arg1, \/\* …, \*\/ argN\])，其中的function、thisArg和arg1至argN會是什麼？  ->->-> `	- function 為要呼叫的函式 - thisArg為要設定this的物件 - arg1至argN是原函式需要的參數，會以陣列來包裹著`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-04,74,250-->
 
 
 #🧠 function.apply vs. function.call共同點是什麼->->-> `指定this為特定物件並且呼叫對應函式、呼叫完畢之後，下一次還想使用相同的物件作為this，必需重新執行apply、call並指定this`
@@ -382,7 +382,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-01-16,60,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-04,74,250-->
 
 
 

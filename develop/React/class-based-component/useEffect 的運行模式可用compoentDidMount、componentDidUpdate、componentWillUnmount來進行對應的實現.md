@@ -86,7 +86,7 @@ useEffect(() => {
 <!--SR:!2022-12-11,21,250-->
 
 #🧠 React：若要在class-based component 實現 useEffet會有的功能，會用上什麼函式 ->->-> `componentDidMount、componentDidUpdate、componentWillUnmount`
-<!--SR:!2022-11-22,10,250-->
+<!--SR:!2022-12-20,28,250-->
 
 #🧠 React：useEffect 本身是class-based component 的 componentDidMount、componentDidUpdate、componentWillUnmount這三者的語法糖？為什麼？->->-> `並不是，嚴格來說只是兩者採用同個react核心代碼來以兩種截然不同的形式來實現兩個獨立功能`
 <!--SR:!2022-11-22,10,250-->
@@ -108,7 +108,7 @@ useEffect(() => {
 
 
 #🧠 React：若要在class-based component 去實現useEffect會是什麼：在class-based component 的實現會不會在componentDidMount遇上無限循環問題？為什麼->->-> `不會，具體是由於Mount只會因為元件對應DOM被安裝至DOM Tree才執行，若因為componentDidMount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行omponentDidMount`
-<!--SR:!2022-11-22,10,250-->
+<!--SR:!2022-12-20,28,250-->
 
 
 
