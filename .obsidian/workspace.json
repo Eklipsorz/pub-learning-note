@@ -51,6 +51,42 @@
             }
           }
         ]
+      },
+      {
+        "id": "cf242bddea837f8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d26751c54b5fae5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "14616422ae32a708",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cadb04600b93af17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md"
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md"
               }
             }
           }
@@ -176,17 +212,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "26dcaea500536408",
+  "active": "d26751c54b5fae5b",
   "lastOpenFiles": [
+    "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
+    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+    "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
     "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md",
     "雖然理論上URI的Path、Fragmenet、Query String是會以區分大小寫來解析，但仍以應用程式伺服器會因爲作業系統和負責執行server程式的關係來決定是否區分大小寫.md",
-    "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
     "inbox/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
     "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
     "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
-    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md"
+    "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md"
   ]
 }

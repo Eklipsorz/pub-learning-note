@@ -122,7 +122,7 @@ useEffect(() => {
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼： 在class-based component 的實現在componentDidUpdate遇上無限循環問題，解法會是->->-> `在裡頭添加類似dependency的條件式就能解決`
-<!--SR:!2022-11-22,10,250-->
+<!--SR:!2022-12-20,28,250-->
 
 
 
