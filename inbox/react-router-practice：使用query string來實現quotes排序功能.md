@@ -154,7 +154,7 @@ export default QuoteList;
 
 ## 複習
 #🧠 query string 本身能夠在任意特定路由處理器給攔截到嗎？為什麼？ ->->-> `由於使用特定符號來區隔來幫助瀏覽器分開處理：一邊為伺服器端點；另一邊為query string，所以本身可以被任意特定路由處理器給攔截到。`
-<!--SR:!2022-11-22,3,250-->
+<!--SR:!2022-12-02,10,250-->
 
 #💻 請至/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-sort-with-query-string分支，請於/components/quotes/QuoteList.js實現根據query string來對quotes排序，其端點會是/quotes?sort=xxxx->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/18-working-with-query-params/src/components/quotes/QuoteList.js`
 <!--SR:!2022-11-24,3,250-->
