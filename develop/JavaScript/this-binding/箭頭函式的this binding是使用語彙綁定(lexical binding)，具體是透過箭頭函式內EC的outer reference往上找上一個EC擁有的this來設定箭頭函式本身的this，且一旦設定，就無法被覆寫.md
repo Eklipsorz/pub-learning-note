@@ -232,7 +232,7 @@ foo.call(obj) // 2
 
 
 #🧠 箭頭函式的this binding 一旦經由語彙綁定來決定this，爾後還能更改其this嗎？->->-> `不能`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-04,74,250-->
 
 
 #🧠 箭頭函式的this binding 方式是什麼？ ->->-> `箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫`
@@ -244,7 +244,7 @@ foo.call(obj) // 2
 
 
 #🧠 請問以下函式呼叫的this會是什麼？會印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665578883/blog/javascript/this-binding/arrow-function-this-binding/arrow-function-this-binding-example1_zumv9b.png) ->->-> `bar那行會以this為obj1來執行foo並獲得一個函式物件，其函式物件會是因為語彙綁定而綁死obj1，接著bar.call(obj2)不會以obj2為this來印出3，而是以綁死的obj1和2`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-04,74,250-->
 
 #🧠 請問以下函式呼叫的this會是什麼？會印出什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665578883/blog/javascript/this-binding/arrow-function-this-binding/arrow-function-this-binding-example2_it4l4s.png) ->->-> `第一行fn會是以obj1當作this來呼叫，而使回傳的函式會因為語彙綁定而綁定在obj1，呼叫時會是以obj1來呼叫並且印出聽風是風；第二行fn會是以obj2當作this來呼叫，而使回傳的函式會因為語彙綁定而綁定在obj2，呼叫時會是以obj2來呼叫並且印出時間跳躍。`
 <!--SR:!2023-01-08,54,250-->

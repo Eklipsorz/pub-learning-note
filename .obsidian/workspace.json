@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "43929304515d889d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "609b97ad2e17b6af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "c44a16a5d79d5a82",
         "type": "tabs",
         "children": [
@@ -122,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
+                "file": "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
+                "file": "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md"
+                "file": "inbox/Server Side Rendering 會是指每一次客戶端向伺服器發送請求時，伺服器都會根據請求內容來將資料與模板網頁檔案做結合網頁，最後由伺服器將結果檔案回傳給客戶端.md"
               }
             }
           }
@@ -181,10 +199,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "5634c346a4170193",
+  "active": "609b97ad2e17b6af",
   "lastOpenFiles": [
-    "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
     "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
+    "develop/software engineering/Coupling 是一種衡量多個模組間的相互存取程度，以此衡量其存取程度是否會影響模組的預期結果不如預期以及其影響範疇為何.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "inbox/await promise 會將後頭的多個任意與俱全以promise.then來包裹住.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",

@@ -325,7 +325,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-01-27,68,250-->
 
 #🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-04,74,250-->
 
 #🧠 function.protype.call() 是什麼？用途是什麼 ->->-> `設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
 <!--SR:!2023-01-08,56,250-->
@@ -346,7 +346,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 function.apply vs. function.call共同點是什麼->->-> `指定this為特定物件並且呼叫對應函式、呼叫完畢之後，下一次還想使用相同的物件作為this，必需重新執行apply、call並指定this`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2022-12-08,16,230-->
 
 
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步將陣列轉換成參數`
@@ -387,14 +387,14 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 為什麼第六至第八的呼叫會是obj1當this，並且印出聽風是風？而不是obj2當this，並且印出時間跳躍![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541827/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call-result_chx2cg.png) ->->-> `最主要是這些都源自於第五個函式所產生出來的新函式，這個新函式已經被綁死在obj1，所以即使事後對新函式做call、apply、bind都無法更改其this。`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-04,74,250-->
 
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-example_deppqe.png)->->-> `this皆為this，會印出我是聽風是風,我的年齡是26，我非常帥`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-03,73,250-->
 
 #🧠 為什麼fn.apply的陣列可以像fn.call正常印出 **我是聽風是風,我的年齡是26，我非常帥** ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-result_q2jsdb.png)->->-> `因為apply會將陣列自動轉換成('26','帥')來呼叫fn`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-03,73,250-->
 
 
 

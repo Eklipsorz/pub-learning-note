@@ -89,7 +89,7 @@ useEffect(() => {
 <!--SR:!2022-12-20,28,250-->
 
 #🧠 React：useEffect 本身是class-based component 的 componentDidMount、componentDidUpdate、componentWillUnmount這三者的語法糖？為什麼？->->-> `並不是，嚴格來說只是兩者採用同個react核心代碼來以兩種截然不同的形式來實現兩個獨立功能`
-<!--SR:!2022-11-22,10,250-->
+<!--SR:!2022-12-20,28,250-->
 
 
 #🧠 React：當前端索要後端資源並渲染，那麼在class-based component的實現方式是？ ->->-> `在對應元件下的componentDidMount內建的函式中添加 發送請求和根據請求結果來執行setState`
@@ -100,7 +100,7 @@ useEffect(() => {
 
 
 #🧠 React：若要在class-based component 去實現useEffect會是什麼？ ->->-> ` componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect；若effect 本身會是觸發渲染函式，那麼勢必會遇到無限迴圈的問題，所以通常會添加條件式、執行cleanup、執行effect`
-<!--SR:!2022-11-22,10,250-->
+<!--SR:!2022-12-18,26,250-->
 
 
 #🧠 React：若要在class-based component 去實現useEffect會是什麼？以componentDidMount函式來說 ->->-> `componentDidMount 函式： 由於該函式因為Mount而執行，所以不會遇到無限迴圈的問題，通常實現方式是直接執行對應effect`
@@ -118,7 +118,7 @@ useEffect(() => {
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼：functional component 所能使用的useEffect 在class-based component 的實現會不會在componentDidUpdate遇上無限循環問題？為什麼->->-> `會，因為若componentDidUpdate裡頭有setState而執行，其階段由於還處於updating階段而繼續執行componentDidUpdate，繼而演變成進入渲染週期->進入componentDidUpdate執行setState的無限循環`
-<!--SR:!2022-11-22,10,250-->
+<!--SR:!2022-12-20,28,250-->
 
 
 #🧠  React：若要在class-based component 去實現useEffect會是什麼： 在class-based component 的實現在componentDidUpdate遇上無限循環問題，解法會是->->-> `在裡頭添加類似dependency的條件式就能解決`

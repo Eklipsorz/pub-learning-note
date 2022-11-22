@@ -65,7 +65,7 @@ test <button id="test">
 <!--SR:!2022-11-23,28,250-->
 
 #🧠 HTML DOM 標籤上所提供onxxx標籤和事件處理的callback有何關係？->->-> `首先在這裡已定義好事件處理的函式本身，標籤是指定其函式內容`
-<!--SR:!2022-11-22,17,250-->
+<!--SR:!2023-01-05,44,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是匿名函式，其callback呼叫時的this會是什麼->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
 <!--SR:!2022-12-05,26,250-->
