@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,6 +33,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "061ef41e443a6dfc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64438ac07f655338",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 6.md"
+                "file": "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md"
               }
             }
           }
