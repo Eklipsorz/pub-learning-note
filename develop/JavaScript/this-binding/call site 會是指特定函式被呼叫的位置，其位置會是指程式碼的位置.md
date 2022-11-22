@@ -74,7 +74,7 @@ baz(); // baz 的呼叫地點
 <!--SR:!2023-01-29,70,250-->
 
 #🧠 請問baz、bar、foo的 call site和call stack是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485554/blog/javascript/this-binding/call-site/call-site-example_nbpxxl.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485840/blog/javascript/this-binding/call-site/call-site-example-answer_bujtbo.png)`
-<!--SR:!2022-11-22,28,250-->
+<!--SR:!2023-02-03,73,250-->
 
 ---
 Status: #🌱 

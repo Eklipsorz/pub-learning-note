@@ -64,7 +64,7 @@ synchronous loading 是指任務內容為載入資訊至特定地方的任務，
 
 
 #🧠 在HTML檔案中，添加async的script，假設script是執行JS ，那麼會是如何處理？ ->->-> `JS檔案或者JS Code的加載任務會與前面解析網頁的任務同時間一起進行，但一旦JS檔案載入完就會立即開始執行JS`
-<!--SR:!2022-11-22,74,250-->
+<!--SR:!2023-06-03,193,250-->
 
 
 #🧠 在HTML檔案中，無添加任何東西的script、添加defer的script、添加async的script， 哪一個是asynchronous loading?  ->->-> `添加defer的script是asynchronous loading、添加async的script是asynchronous loading`
