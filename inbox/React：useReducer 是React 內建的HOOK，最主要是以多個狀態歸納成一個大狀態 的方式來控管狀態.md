@@ -368,7 +368,7 @@ initFn：主要是定義如何設定初始值
 #🧠 React useReducer 何時觸發執行？->->-> `每一次執行元件的render函式就會執行useReducer`
 <!--SR:!2022-12-11,42,249-->
 
-#🧠 React useReducer 觸發執行會回傳什麼狀態？ ->->-> `首次mount階段會以初始值來表示，update階段則是會以reducer歸納後的新狀態來回傳`
+#🧠 React useReducer 觸發執行會回傳什麼狀態？在mount和update來說 ->->-> `首次mount階段會以初始值來表示，update階段則是會以reducer歸納後的新狀態來回傳`
 <!--SR:!2022-11-23,28,229-->
 
 
