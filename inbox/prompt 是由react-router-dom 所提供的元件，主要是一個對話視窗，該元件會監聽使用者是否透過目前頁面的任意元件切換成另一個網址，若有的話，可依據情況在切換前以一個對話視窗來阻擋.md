@@ -50,7 +50,7 @@
 
 
 #### Prompt元件的侷限性
-1. Prompt 元件所能攔截到的navigation只能是它所在的元件內所發出來的navigation請求/操作
+1. Prompt 元件所能攔截到的navigation只能是它所在的頁面元件內所發出來的navigation請求/操作
 2. 無法攔截 **單純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁移動**，原因為：
 	- 因它本身並不是透過使用特定地點A的任意事物給導向至特定地點B
 
@@ -103,7 +103,7 @@
 
 
 
-#🧠 react-router-dom ：Prompt componet 的局限性是什麼？->->-> `Prompt 元件所能攔截到的navigation只能是它所在的元件內所發出來的navigation請求/操作，無法攔截純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁移動`
+#🧠 react-router-dom ：Prompt componet 的局限性是什麼？->->-> `Prompt 元件所能攔截到的navigation只能是它所在的頁面元件內所發出來的navigation請求/操作，無法攔截純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁移動`
 <!--SR:!2022-11-26,5,230-->
 
 #🧠 react-router-dom ：Prompt componet為何無法阻止移動單純以瀏覽器的網址欄位來輸入指定網址所進行單方面的網頁？ ->->-> `因它本身並不是透過使用特定地點A的任意事物給導向至特定地點B`
