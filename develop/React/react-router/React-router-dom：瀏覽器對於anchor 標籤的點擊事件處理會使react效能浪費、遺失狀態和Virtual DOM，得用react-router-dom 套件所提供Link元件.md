@@ -200,7 +200,7 @@ export default MainHeader;
 <!--SR:!2022-12-08,27,250-->
 
 #🧠 react-router-dom Link 本質上仍是\<a\>標籤所構成，那麼它要如何解決React不必要的unmount和mount？->->-> `其點擊事件處理會由react-router-dom來設定的點擊事件處理，處理會有： - 取消瀏覽器對於點擊事件的預設處理  - 再以頁面1和頁面2間DOM節點差異來從頁面1切換成頁面2`
-<!--SR:!2022-11-23,16,249-->
+<!--SR:!2023-01-03,41,249-->
 
 #🧠 react-router-dom Link 語法是什麼？ ->->-> `<Link to="xxxx">xxxx1</Link>`
 <!--SR:!2022-12-02,16,230-->
