@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f3ddfc08bc8e0701",
+        "id": "66cb29d89a9e98e4",
         "type": "tabs",
         "children": [
           {
-            "id": "49d1d3461fa8467f",
+            "id": "e165e48e44386d2e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "inbox/Untitled 6.md"
+              }
             }
           }
         ]
@@ -137,7 +145,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "49d1d3461fa8467f",
+  "active": "e165e48e44386d2e",
   "lastOpenFiles": [
     "annotation/@wangWangZhiURLYingWenDaXiaoXieShiFouYouChaiBie2015.md",
     "inbox/雖然理論上URI的Path、Fragmenet、Query String是會以區分大小寫來解析，但仍以應用程式伺服器會因爲作業系統和負責執行server程式的關係來決定是否區分大小寫.md",
