@@ -133,7 +133,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2022-11-24,28,250-->
 
 #🧠 React 官方提供的語法-contextType是做什麼？ (請說到類別和物件) ->->-> `設定元件class能夠存取的context object，讓對應元件類別下的物件只能夠存取對應的context object`
-<!--SR:!2022-11-23,27,250-->
+<!--SR:!2023-02-02,71,250-->
 
 #🧠 React 官方提供的語法-contextType 語法是什麼？->->-> `元件class或者元件對應函式添加contextType屬性來指定對應context object；在class添加一個名為contextType 的 static member variable來指定context object`
 <!--SR:!2023-01-28,68,250-->
@@ -146,7 +146,7 @@ Class1 { name: 'hi' } Class2 {}
 
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
-<!--SR:!2022-11-23,27,250-->
+<!--SR:!2023-02-03,72,250-->
 
 #🧠 請問class Component1 \{ static contextType = Context1 \} 等同於什麼語法->->-> `class Component1 {} Component1.contextType = Context1`
 <!--SR:!2023-01-29,69,250-->

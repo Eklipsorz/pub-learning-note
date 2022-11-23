@@ -111,7 +111,7 @@
 <!--SR:!2022-12-06,13,230-->
 
 #🧠 hypelink vs. hypertext 差異是什麼？->->-> `hyperlink 會是綁定著特定頁面網址的文字/圖片/影片；hypertext 是指呈現在電腦上或者電子裝置上的文字`
-<!--SR:!2022-11-23,26,250-->
+<!--SR:!2023-01-31,69,250-->
 
 #🧠 hypelink vs. hypertext vs. hypermedia 差異是什麼？ ->->-> `1. hypertext 是電腦/電子裝置能夠呈現的文字 2. hypermedia 是電子/電子裝置能夠呈現的任一可以表達資訊的事物，如文字、圖片 3. hyperlink 是以將特定頁面的網址綁定在hypertext或者hypermedia作為轉移時的連結`
 <!--SR:!2023-01-04,50,250-->
