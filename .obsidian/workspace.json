@@ -4,55 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "63c0be6606519f85",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5634c346a4170193",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "539d22d78bd0acbb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/URI 包含了Scheme、Host、Port、Path、Query、Fragment。其中沒分大小寫的會是Scheme和Host，有分大小寫的會是Path、Query、Fragment.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "7ea12065ac2b53c4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "26dcaea500536408",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "cf242bddea837f8f",
         "type": "tabs",
         "children": [
