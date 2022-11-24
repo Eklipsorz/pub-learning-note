@@ -216,7 +216,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
-<!--SR:!2022-11-24,4,230-->
+<!--SR:!2022-12-05,11,230-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒比較deps，為什麼？ ->->-> `此時沒有dependency事先儲存，所以也就不需要檢查dependency`
