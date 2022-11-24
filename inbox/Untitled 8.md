@@ -83,7 +83,7 @@ Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時
 
 #🧠 使用useRouteMatch 和 使用useLocation 的場景各是什麼？   ->->-> `useRouteMatch 適用於nested route結構、useLocation 適用於沒使用nested route結構`
 
-#🧠 Question :: ->->-> ``
+#🧠 在這裡使用react-router-dom的route來實現，其中以下元件是對應著\/quotes?sort=....來實現服務，現在path主要有\/quotes、\/quotes\/:quoteId、\/new-quote，請問為什麼底下的push為何不是用useRouteMatch![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1669288470/blog/react/react-router/Route-component/why-not-useRouteMatch_dvmwmz.png) ->->-> ``
 
 
 

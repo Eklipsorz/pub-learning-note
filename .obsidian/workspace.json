@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "push",
+                "query": "tag:#🧠",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -163,7 +162,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "c8da4a3020172d12",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
     "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
