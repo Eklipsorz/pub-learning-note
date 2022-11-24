@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md"
               }
             }
           }
@@ -160,11 +160,11 @@
   "active": "e165e48e44386d2e",
   "lastOpenFiles": [
     "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
+    "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
     "inbox/Untitled 8.md",
     "annotation/@wangWangZhiURLYingWenDaXiaoXieShiFouYouChaiBie2015.md",
     "inbox/雖然理論上URI的Path、Fragmenet、Query String是會以區分大小寫來解析，但仍以應用程式伺服器會因爲作業系統和負責執行server程式的關係來決定是否區分大小寫.md",
     "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md",
-    "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
     "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
     "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
