@@ -5,12 +5,15 @@
 useLocation：
 1. react-router-dom的hook
 2. 該hook 會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分)
+3. 其location資訊源自於從瀏覽器獲取
 
 
 ## 複習
 
-#🧠 useLocation 是誰提供的hook? ->->-> ``
+#🧠 useLocation 是誰提供的hook? ->->-> `react-router-dom`
 <!--SR:!2022-12-02,10,250-->
+
+#🧠 Question :: ->->-> ``
 
 #🧠 react-router-dom：useLocation會是做什麼？ ->->-> `該hook 會回傳location object`
 <!--SR:!2022-12-01,9,250-->
