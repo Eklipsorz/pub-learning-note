@@ -13,7 +13,7 @@ useLocation：
 #🧠 useLocation 是誰提供的hook? ->->-> `react-router-dom`
 <!--SR:!2022-12-02,10,250-->
 
-#🧠 Question :: ->->-> ``
+#🧠 useLocation回傳的location物件所擁有的資訊會是源自於？ ->->-> `其location資訊源自於從瀏覽器獲取`
 
 #🧠 react-router-dom：useLocation會是做什麼？ ->->-> `該hook 會回傳location object`
 <!--SR:!2022-12-01,9,250-->
