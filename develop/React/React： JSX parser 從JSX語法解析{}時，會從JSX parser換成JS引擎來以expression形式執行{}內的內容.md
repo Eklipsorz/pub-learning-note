@@ -28,6 +28,7 @@ var css = { color: red }
 <!--SR:!2022-12-24,30,230-->
 
 #🧠 JSX 語法形式為何？ (有兩種)->->-> `JavaScript 和 XML 融合在一起的產物 或者 純粹 XML `
+<!--SR:!2022-11-26,2,248-->
 
 
 #🧠 當JSX parser從JSX語法解析到\{\}，會如何執行？->->-> `過程中解析器從JSX解析{}時，就會從JSX解析器更換成JavaScript引擎來負責解析內括號內容並以expression來執行`

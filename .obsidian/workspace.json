@@ -52,11 +52,29 @@
         ]
       },
       {
-        "id": "a015db0839428ed9",
+        "id": "ec37401503a08817",
         "type": "tabs",
         "children": [
           {
-            "id": "7905da3e62c5ae26",
+            "id": "6d7d5120bcbf6099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "bcfdf44d08d46bff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bab8c986cdafa9c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -70,34 +88,16 @@
         ]
       },
       {
-        "id": "bd41bb0cd19175f3",
+        "id": "83a8f210b49bb4e2",
         "type": "tabs",
         "children": [
           {
-            "id": "5e9cbec4c4f066af",
+            "id": "585c6ec3a9e66e44",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "21ebb6ec01ee5be8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2f274efbb26d6e73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+                "file": "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+                "file": "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -194,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+                "file": "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md"
+                "file": "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md"
               }
             }
           }
@@ -228,17 +228,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "2f274efbb26d6e73",
+  "active": "6d7d5120bcbf6099",
   "lastOpenFiles": [
-    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+    "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+    "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+    "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
+    "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
     "develop/React/class-based-component/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
-    "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
-    "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
-    "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
-    "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
-    "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md"
+    "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md"
   ]
 }
