@@ -1,7 +1,17 @@
 ## 描述
 
 
-nested Route 的path 盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑
+nested Route 的path 盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。
+實現方式為：
+- 使用useRouteMatch 從目前對應的parent route元件中取得路徑和實際路徑
+- 使用useLocation 從目前頁面中取得實際路徑
+
+
+### 場景：使用useRouteMatch 和 使用useLocation
+1. useRouteMatch 適用於nested route結構
+2. useLocation 適用於沒使用nested route結構
+
+
 
 ### 使用useRouteMatch：透過match.url或者match.path
 

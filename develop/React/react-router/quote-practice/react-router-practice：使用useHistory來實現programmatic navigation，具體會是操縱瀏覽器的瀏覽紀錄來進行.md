@@ -85,6 +85,9 @@ export default NewQuote;
 	```
 	history.replace(path)
 	```
+- 其中的path可以是路徑字串或者夾雜路徑資訊的物件
+	- 路徑字串
+	- 夾雜路徑資訊的物件：包含著代表路徑端點的pathname、代表query string的search屬性
 - push vs. replace 差別：
 	- 使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉
 	- 方式：前者是直接增加網址在最上面；後者則是將網址取代最上面
@@ -172,6 +175,15 @@ export default NewQuote;
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-programmatic-navigation分支，在那請以programmatic navigation來實作成功提交新增quote會有的導向 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/16-implementing-programmatic-navigation`
 <!--SR:!2022-11-27,10,250-->
+
+#🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是什麼型別？ ->->-> `字串、物件`
+
+#🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中字串是什麼？具體是 ->->-> `具體會是由URL構成的字串`
+
+#🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中物件是什麼？具體是夾雜什麼屬性的型別 ->->-> `具體會是夾雜路徑資訊的物件，包含著代表路徑端點的pathname、代表query string的search屬性`
+
+#🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中物件夾雜著pathname和search這兩個屬性，他們各是什麼？ ->->-> `代表路徑端點的pathname、代表query string的search屬性`
+
 
 ---
 Status: #🌱 
