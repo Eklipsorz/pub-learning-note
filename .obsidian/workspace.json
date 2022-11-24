@@ -86,6 +86,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "2bd97f6b935af3db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dcebad6f3514d687",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -151,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md"
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md"
               }
             }
           }
@@ -210,8 +228,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "f62587f9f247dc97",
+  "active": "dcebad6f3514d687",
   "lastOpenFiles": [
+    "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
     "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
     "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
@@ -220,7 +239,6 @@
     "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
     "inbox/Untitled 8.md",
     "annotation/@wangWangZhiURLYingWenDaXiaoXieShiFouYouChaiBie2015.md",
-    "inbox/雖然理論上URI的Path、Fragmenet、Query String是會以區分大小寫來解析，但仍以應用程式伺服器會因爲作業系統和負責執行server程式的關係來決定是否區分大小寫.md",
-    "develop/software engineering/Coupling 和 Cohesion 之間的關係：當Cohesion程度高的話，勢必是將多個程式區塊合併成一個程式區塊從而減少Coupling，因此Cohesion越高，Coupling就越低。.md"
+    "inbox/雖然理論上URI的Path、Fragmenet、Query String是會以區分大小寫來解析，但仍以應用程式伺服器會因爲作業系統和負責執行server程式的關係來決定是否區分大小寫.md"
   ]
 }

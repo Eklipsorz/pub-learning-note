@@ -170,7 +170,7 @@ const xxx = require(moduleA)
 
 
 #🧠 以三個環狀依賴結構為例子，來說明CommonJS 模組是如何面對cyclic dependency問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203325/blog/javascript/module/cyclic-dependecy-example_dmfgnv.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203324/blog/javascript/module/cyclic-dependecy-solution-example_y97fcp.png)`
-<!--SR:!2022-11-24,72,250-->
+<!--SR:!2023-06-01,189,250-->
 
 
 #🧠 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js![counter.js returning control to main.js, which finishes evaluating](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/43_cjs_cycle-500x224.png) ->->-> `一開始會先使用檢測環狀依賴結構的算法來判定，在這裡是能夠確定，所以會將counter.js對於main.js的依賴關係給移除。剛開始執行main.js時，會於編譯時期替main.js分配記憶體空間來建立實例，同時預設設定{}至module.exports，接著在建立EC來替每個識別字能夠對應其實體物件，接著就進入執行來調用counter.js模組，然後就跑到counter.js那邊進行編譯時的實例化和設定，在執行時會直接碰到對於main.js的require，在這裏由於是被算法指定要移除，所以會直接獲取main.js那邊還未執行evaluation來確定值的版本，所以message會是undefined，並接著繼續執行counter.js的top-level code並確定要輸出的內容為count = 5，執行完畢之後，就跳回main.js那邊，將5回傳給count，讓main.js去印以及去設定message的最終值為Eval complete。`
