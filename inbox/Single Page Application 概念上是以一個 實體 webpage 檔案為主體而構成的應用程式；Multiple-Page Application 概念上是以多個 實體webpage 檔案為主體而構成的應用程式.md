@@ -87,7 +87,7 @@
 <!--SR:!2022-12-07,28,250-->
 
 #🧠 Multiple-Page Application 的狀態誰負責管理？ ->->-> `網頁上的狀態都依據page的不同來交由各自的實體webpage檔案來管理`
-<!--SR:!2022-11-24,18,250-->
+<!--SR:!2023-01-07,44,250-->
 
 
 #🧠 Multiple-Page Application：網頁上的狀態都依據page的不同來交由各自的實體webpage檔案來管理 ，通常手段會是？(務必說誰的)->->-> `通常手段為儲存session並標示哪個page和哪個domain`

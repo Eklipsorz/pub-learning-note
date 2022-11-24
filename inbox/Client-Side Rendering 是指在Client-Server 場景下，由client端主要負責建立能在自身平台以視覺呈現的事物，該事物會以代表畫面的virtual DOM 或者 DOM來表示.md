@@ -125,7 +125,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering所能實現的網頁應用程式會是？為什麼？ ->->-> `由於本質上只需要少量的實體webpage文件來建構出其他虛擬page，通常少量會是指單個實體webpage文件，因此被稱之為Single-Page Application，所能實現的應用程式就是SPA`
-<!--SR:!2022-11-24,18,250-->
+<!--SR:!2023-01-08,45,250-->
 
 #🧠 Client-Side Rendering適用場景為何 ->->-> `適用於高頻切換不同頁面且不需要SEO的網頁`
 <!--SR:!2022-12-30,40,250-->
