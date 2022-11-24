@@ -121,7 +121,7 @@ export default NewQuote;
 <!--SR:!2022-11-27,10,250-->
 
 #🧠 browser history 或者 history 在網頁上是指什麼？ ->->-> `使用者從過去至現在的瀏覽網站清單`
-<!--SR:!2022-11-24,7,250-->
+<!--SR:!2022-12-11,17,250-->
 
 #🧠 browser history 或者 history 在網頁上是指使用者從過去至現在瀏覽過的網頁清單，那麼在這清單上，網頁會如何表示 ->->-> `會以網址來表示`
 <!--SR:!2022-11-25,8,250-->
@@ -150,14 +150,14 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace會是什麼？ ->->-> `將指定頁面取代page stack的最上面來當作目前頁面的路徑`
-<!--SR:!2022-11-24,7,250-->
+<!--SR:!2022-12-11,17,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace用法會是什麼？ ->->-> `history.replace(path)`
 <!--SR:!2022-11-26,9,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別 (有兩個)->->-> `使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉、方式：前者是直接增加網址在最上面；後者則是將網址取代最上面`
-<!--SR:!2022-11-24,7,250-->
+<!--SR:!2022-12-12,18,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack來調整瀏覽器時，是否可以回到原本的畫面來說，會是什麼？ ->->-> `前者可以；後者不行，由於網址會被取代掉`

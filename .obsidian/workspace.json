@@ -34,11 +34,29 @@
         ]
       },
       {
-        "id": "ae1a72ae781914b7",
+        "id": "b2485743e2a3a86c",
         "type": "tabs",
         "children": [
           {
-            "id": "bcacf1366fa155a7",
+            "id": "8ee31ac762fb3733",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a015db0839428ed9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7905da3e62c5ae26",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -52,16 +70,16 @@
         ]
       },
       {
-        "id": "18cc3e342d6e6403",
+        "id": "bd41bb0cd19175f3",
         "type": "tabs",
         "children": [
           {
-            "id": "eb978275551d35b4",
+            "id": "5e9cbec4c4f066af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
+                "file": "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,34 +88,16 @@
         ]
       },
       {
-        "id": "c126436fde508246",
+        "id": "21ebb6ec01ee5be8",
         "type": "tabs",
         "children": [
           {
-            "id": "f62587f9f247dc97",
+            "id": "2f274efbb26d6e73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "2bd97f6b935af3db",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dcebad6f3514d687",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -194,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md"
+                "file": "inbox/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md"
               }
             }
           }
@@ -228,17 +228,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "dcebad6f3514d687",
+  "active": "2f274efbb26d6e73",
   "lastOpenFiles": [
+    "develop/React/React： JSX parser 從JSX語法解析{}時，會從JSX parser換成JS引擎來以expression形式執行{}內的內容.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+    "develop/React/class-based-component/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
+    "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
     "develop/React/class-based-component/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/React/React：若要重構Context可以從IDE auto-completion和抽離來下手，後者是從Components抽離出專門處理Context相關狀態的Component和渲染對應畫面的Component.md",
     "develop/React/class-based-component/React：context object 在 class-based component 的使用案例.md",
     "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
-    "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
-    "inbox/Untitled 8.md",
-    "annotation/@wangWangZhiURLYingWenDaXiaoXieShiFouYouChaiBie2015.md",
-    "inbox/雖然理論上URI的Path、Fragmenet、Query String是會以區分大小寫來解析，但仍以應用程式伺服器會因爲作業系統和負責執行server程式的關係來決定是否區分大小寫.md"
+    "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md"
   ]
 }
