@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/ES Module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/ES Module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/ES Module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 6.md"
+                "file": "inbox/ES Module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md"
               }
             }
           }
