@@ -46,7 +46,7 @@ return (
 <!--SR:!2022-12-02,10,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question 領取題目並切換至conditional-rendering-with-route分支，以Route來實現當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕 ->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/19-writing-more-flexible-routing-code/src/pages/QuoteDetail.js`
-<!--SR:!2022-11-25,3,250-->
+<!--SR:!2022-12-05,10,250-->
 
 ---
 Status: #🌱 
