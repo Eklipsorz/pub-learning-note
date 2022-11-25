@@ -235,7 +235,7 @@ UsersFinder.js
 
 
 #🧠 React：componentDidCatch 生命週期函式的通常開發方式是？->->-> `依據錯誤種類來產生不同的狀態和觸發渲染`
-<!--SR:!2022-11-25,28,250-->
+<!--SR:!2023-02-07,74,250-->
 
 #🧠 React： componentDidCatch  觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
 <!--SR:!2022-12-21,43,249-->
@@ -247,7 +247,7 @@ UsersFinder.js
 <!--SR:!2022-12-12,37,249-->
 
 #💻 請至/react-builder/question-review/class-based-component-question領取題目，並切換至error-boundary-to-class分支，實現ErrorBoundary元件來防止Users.js的錯誤拋錯衍生出的網頁崩潰問題->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/08-finished/src/components/ErrorBoundary.js`
-<!--SR:!2022-11-25,28,250-->
+<!--SR:!2023-02-07,74,250-->
 
 #🧠 React：Error-boundary 元件 可以處理自己元件下的生命週期函式和渲染函式所拋出來的錯誤嗎？->->-> `並不能`
 <!--SR:!2022-12-05,32,249-->
