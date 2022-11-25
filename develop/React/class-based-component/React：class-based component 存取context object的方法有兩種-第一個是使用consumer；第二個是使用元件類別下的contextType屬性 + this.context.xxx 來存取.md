@@ -120,14 +120,14 @@ Class1 { name: 'hi' } Class2 {}
 ## 複習
 
 #🧠  class-based component 存取context object的方法有哪兩種？ ->->-> `1.  使用consumer component來獲取對應context object的內容2. 使用元件類別下的contextType屬性 + this.context.xxx 來存取`
-<!--SR:!2022-11-25,28,250-->
+<!--SR:!2023-02-07,74,250-->
 
 #🧠 React：使用consumer component來獲取對應context object的內容適用於哪些寫法，functional 和 class-based ? 哪一個 ->->-> `第一個方法能夠用在functional component 和 class-based component`
 <!--SR:!2022-11-26,2,249-->
 
 
 #🧠  React：使用元件類別下的contextType屬性 + this.context.xxx 來存取適用於哪些寫法->->-> `第二個方法只能夠用在class-based component`
-<!--SR:!2022-11-25,28,250-->
+<!--SR:!2023-02-06,73,250-->
 
 
 #🧠 React：使用元件類別下的contextType屬性 + this.context.xxx 來存取，最多能存取多少個context object，為什麼？->->-> `只能存取一個context object，因為contextType只能填寫一種，所以就只能存取一個context object`
