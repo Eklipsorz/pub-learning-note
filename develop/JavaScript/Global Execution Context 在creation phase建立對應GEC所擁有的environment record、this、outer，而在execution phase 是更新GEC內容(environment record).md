@@ -147,7 +147,7 @@ GlobalExectionContext = {
 
 
 #🧠 GEC - creation phase 的範疇是哪些？ ->->-> `檔案裡的最外圍scope`
-<!--SR:!2022-11-25,99,248-->
+<!--SR:!2023-07-29,246,248-->
 
 #🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域物件、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域物件、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域物件、建立Lexical Environment`
 <!--SR:!2022-12-19,113,250-->

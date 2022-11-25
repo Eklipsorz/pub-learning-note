@@ -87,7 +87,7 @@ URI包含了：
 <!--SR:!2022-11-25,2,230-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，請問這分別是什麼意思？ ->->-> `1. Scheme：網路協定 2. Host ：主機名稱 3. Port：主機埠號 4. Path：向主機索要的資源位置，其位置會是該主機下的完整路徑 5. Query：對於索要的資源進行額外的要求字串 6. Fragment：在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部份`
-<!--SR:!2022-11-25,3,250-->
+<!--SR:!2022-12-03,8,250-->
 
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，請問Query String通常會以什麼符號作為開頭和結尾->->-> `開頭會是用問號？結尾是用井字號`
@@ -97,10 +97,10 @@ URI包含了：
 <!--SR:!2022-11-25,3,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Fragment對於URI會是什麼？ ->->-> `在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部分`
-<!--SR:!2022-11-25,3,250-->
+<!--SR:!2022-12-05,10,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否區分大小寫->->-> `1. Path 2. Query 3. Fragment`
-<!--SR:!2022-11-25,3,250-->
+<!--SR:!2022-12-04,9,250-->
 
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否沒區分大小寫 ->->-> `1. Scheme 2. Host`

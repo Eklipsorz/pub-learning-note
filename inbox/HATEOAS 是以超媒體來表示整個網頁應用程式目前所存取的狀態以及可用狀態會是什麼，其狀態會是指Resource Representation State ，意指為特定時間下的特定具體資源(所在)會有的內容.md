@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 
 
 #🧠 伺服器和客戶端都支援著HATEOAS，那麼只要客戶端向伺服器發出查詢12345這銀行帳戶的資料，且客戶端的銀行帳戶是沒錢的，上圖為客戶端向伺服器發送的請求端點和方法，下圖為結果，請試著說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1_ad6vh3.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1-without-money_sfjdmc.png)->->-> `假使12345帳戶沒錢的話的話，伺服器給定的連結會只剩下存款和關閉請求`
-<!--SR:!2022-11-25,27,250-->
+<!--SR:!2023-02-05,72,250-->
 
 #🧠 伺服器和客戶端都支援著HATEOAS，那麼伺服器回應的目前狀態形式會是如何？ ->->-> `識別字：端點位置`
 <!--SR:!2023-02-01,69,250-->

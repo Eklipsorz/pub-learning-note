@@ -102,7 +102,7 @@ object 會以{}來表示，其屬性名稱和屬性值會搭配css樣式下的�
 <!--SR:!2023-01-12,60,250-->
 
 #🧠 原生HTML DOM 設定 inline style方式 vs.  React 體系下的 inline style 不同點是什麼？ ->->-> `原生HTML DOM 設定方式 是用字串，React 體系下的 dynamic inline style則是以物件來表示，屬性名稱會是css原生語法的lower-camel case版本，屬性值是字串、原生HTML DOM的設定方式無法根據執行情況來調整樣式屬性；React則是可以`
-<!--SR:!2022-11-25,23,210-->
+<!--SR:!2023-01-13,49,210-->
 
 
 #🧠 原生HTML DOM 設定 inline style方式 是什麼？->->-> `在HTML標籤增加style這個屬性(attribute)，其屬性值會是用字串來表示CSS表達樣式屬性`
