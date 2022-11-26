@@ -70,7 +70,7 @@
 <!--SR:!2023-01-05,43,250-->
 
 #🧠 Single-Page Application 的Page與實體webpage檔案比較的話，會是什麼？ ->->-> `這些Page 相對於實體webpage檔案來說，是一個虛擬的webpage`
-<!--SR:!2022-11-26,20,250-->
+<!--SR:!2023-01-15,50,250-->
 
 
 #🧠 Single-Page Application：網頁上請求處理都是以誰為主體來執行 ->->-> `單一實體webpage檔案的life cycle進行處理`
@@ -78,7 +78,7 @@
 
 
 #🧠 Single-Page Application 的狀態誰負責管理？ ->->-> `網頁上的狀態皆由單一實體webpage檔案來管理`
-<!--SR:!2022-11-26,20,250-->
+<!--SR:!2023-01-19,54,250-->
 
 #🧠  Multiple-Page Application 概念上是什麼 ->->-> `概念上是以多個 實體webpage 檔案為主體而構成的應用程式`
 <!--SR:!2022-12-04,26,250-->
