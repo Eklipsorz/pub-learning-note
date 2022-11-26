@@ -197,7 +197,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Outer reference 是什麼？ 做什麼用？->->-> `Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找，主要會指向呼叫建立目前EC的EC，比如GEC呼叫一個函式，那麼其函式的FEC之outer就會是指向於呼叫FEC的GEC`
-<!--SR:!2022-11-26,99,248-->
+<!--SR:!2023-07-28,244,248-->
 
 #🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域物件`
 <!--SR:!2023-05-17,201,248-->
