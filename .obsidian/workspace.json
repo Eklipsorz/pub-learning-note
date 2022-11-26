@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2accef4556a6749",
+        "id": "97e614c35d6aaea0",
         "type": "tabs",
         "children": [
           {
-            "id": "154ef31ae531fa1b",
+            "id": "75340fc71f849389",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "ES module",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md"
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md"
               }
             }
           }
@@ -145,17 +144,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "154ef31ae531fa1b",
+  "active": "75340fc71f849389",
   "lastOpenFiles": [
-    "inbox/ES Module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
+    "develop/module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
+    "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
     "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
     "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "inbox/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
     "develop/React/life cycle 在 react component 是指元件從建立成實例並插入至DOM起至該實例的對應DOM被移除期間所會做的變化和處理，大致分為：mounting 階段、updating階段、umounting階段.md",
-    "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md",
-    "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
-    "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
-    "inbox/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md"
+    "inbox/placeholder 是會用特定符號或者名稱來替特定事物B保留空間填寫的特定事物A，在電腦科學上的用途會是元件上的輸入說明、作為正規表達式來使用.md"
   ]
 }

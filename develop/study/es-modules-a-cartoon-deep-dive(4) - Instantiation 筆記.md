@@ -164,7 +164,7 @@ console.log(testvar1)
 
 ## 複習
 #🧠 ES Module：請問instantiation階段需要等待全部模組都完成construction階段？為何 ->->-> `對，這是要為了確保多個非同步任務在同時執行的過程只會侷限於instantiation 階段，避免有不一致的問題`
-<!--SR:!2022-11-26,74,250-->
+<!--SR:!2023-06-08,194,250-->
 
 ``
 

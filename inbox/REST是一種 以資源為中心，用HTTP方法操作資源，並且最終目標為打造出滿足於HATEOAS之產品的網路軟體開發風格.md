@@ -87,7 +87,7 @@ Resource Representation State：
 
 
 #🧠 REST 網路軟體開發風格的背景是什麼？ ->->-> `當時軟體開發和網路發展皆分別以單機環境下進行以及制定/實現某些系統之間的通信協定，兩者很少有交集`
-<!--SR:!2022-11-26,28,250-->
+<!--SR:!2023-02-08,74,250-->
 
 #🧠 REST 網路軟體開發風格是基於哪個協定來發展？ ->->-> `網路協定之一 - HTTP/HTTPS協議`
 <!--SR:!2023-01-31,69,250-->
@@ -107,11 +107,11 @@ Resource Representation State：
 <!--SR:!2022-12-14,38,249-->
 
 #🧠  Resource Representation State Transfer / REST 中的Representation是什麼？->->-> `Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等`
-<!--SR:!2022-11-26,28,250-->
+<!--SR:!2023-02-08,74,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的State是什麼？ ->->-> `簡短來說，State 是特定時間點下之特定事物所擁有的內容，Resource Representation State 則是指狀態會以特定時間點下的具體資源(所在)所擁有的內容`
-<!--SR:!2022-11-26,28,250-->
+<!--SR:!2023-02-08,74,250-->
 
 
 #🧠 Resource Representation State Transfer / REST 中的Transfer是什麼？->->-> `- Transfer 是指事物在某方面從A轉換至B，Resource Representation State Transfer 則是指以特定時間點下之Resource Representation 對應的內容為單位來從A轉移至B - 轉移方法會是HTTP方法`
@@ -121,7 +121,7 @@ Resource Representation State：
 <!--SR:!2022-11-26,23,210-->
 
 #🧠 REST整體概念是描述著如何對在網路上的任意具體化資源進行轉移或者獲取，其中在網路上有哪兩大課題？ ->->-> `- 定義每個具體化資源在網路上的位置 - 定義如何對網路上的具體化資源進行轉換`
-<!--SR:!2022-11-26,28,250-->
+<!--SR:!2023-02-07,73,250-->
 
 
 #🧠 REST：如何定義每個具體化資源在網路上的位置 ->->-> `透過URI來標明具體化資源在網路上所在的位置`

@@ -98,7 +98,7 @@ test <button id="test">
 <!--SR:!2022-11-28,9,250-->
 
 #🧠 addEventListener(a, callback)中的callback若是箭頭函式的話，當事件發生並執行其callback的this會是什麼->->-> `會以箭頭函式的語彙綁定已經決定好的this為主`
-<!--SR:!2022-11-26,7,250-->
+<!--SR:!2022-12-13,17,250-->
 
 #🧠 addEventListener(a, callback)中的callback若是匿名函式的話，當事件發生並執行其callback的this會是什麼->->-> `發生事件時的DOM節點 `
 <!--SR:!2022-11-29,10,250-->
