@@ -19,6 +19,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 重點：
 - absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置，這使得它有三種形式來表示其位置
+- 主要會以主機所在的網路位置為主來定位，即根目錄
 - 主要有三種形式：
 	- Full URL
 	- Implicit Protocol
@@ -77,6 +78,8 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 #🧠  absolute URL： Full URL 對於absolute URL是什麼？ ->->-> `該資源在網路上的完整位置、`
 <!--SR:!2022-12-07,25,250-->
+
+#🧠 absolute url 會以什麼位置來定位？->->-> `主要會以主機所在的網路位置為主來定位，即根目錄`
 
 #🧠 absolute URL：Full URL是什麼？由何種構成？ 格式？ ->->-> `	- 該資源在網路上的完整位置 - 主要由protocol、host、port、path所構成 - 格式：protocol://host:port/path`
 <!--SR:!2022-12-11,28,250-->

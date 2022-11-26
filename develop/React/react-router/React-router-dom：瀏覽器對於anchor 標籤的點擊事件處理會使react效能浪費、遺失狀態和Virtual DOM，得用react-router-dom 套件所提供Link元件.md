@@ -124,8 +124,8 @@ export default MainHeader;
 - 具體是一種將特定頁面的網址/位置綁定在hypertext的標籤，當使用者與hypertext互動就會將使用者導向至特定頁面，以此實現hyperlink概念
 - 用法：
 	- href ：指定要導向哪個頁面的網址/位置，位置格式可以是relative url或者absolute url，對應的完整會依據瀏覽器來解析
-		- 若是relative url的話，則是以目前頁面所在的目錄為主
-		- 若是absolute url的話，則是以host所在的網路位置為主，即根目錄
+		- 若是relative url的話，則是以目前頁面所在的目錄來定位
+		- 若是absolute url的話，則是以host所在的網路位置來定位，即根目錄
 	- xxxx2 ：是要被綁定網址的hypertext
 ```
 <a href='xxxx'>xxxx2</a> 
@@ -216,10 +216,10 @@ export default MainHeader;
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面上的anchor標籤有帶來什麼樣的效能問題？解決方式是什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667049517/blog/react/react-router/react-router-wrong-example-solution_aevrsx.png)`
 <!--SR:!2022-12-06,26,250-->
 
-#🧠 anchor element 的href 若是relative url的話，會是以什麼路徑為主來決定其目標位置 ->->-> `若是relative url的話，則是以目前頁面所在的目錄為主`
+#🧠 anchor element 的href 若是relative url的話，會是以什麼路徑為主來定位其目標位置 ->->-> `若是relative url的話，則是以目前頁面所在的目錄為主`
 
 
-#🧠 anchor element 的href 若是absolute url的話，會是以什麼路徑為主來決定其目標位置 ->->-> `若是absolute url的話，則是以host所在的網路位置為主，即根目錄`
+#🧠 anchor element 的href 若是absolute url的話，會是以什麼路徑為主來定位其目標位置 ->->-> `若是absolute url的話，則是以host所在的網路位置為主，即根目錄`
 
 
 ---
