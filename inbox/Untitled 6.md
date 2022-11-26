@@ -1,6 +1,14 @@
 ## 描述
 
 
+### 瀏覽單個Quote的業務邏輯
+主要實現：
+1. 
+
+
+
+#### 完整代碼
+
 ```
 import React, { useEffect } from 'react';
 import { useParams, Route, Link, useRouteMatch } from 'react-router-dom';
@@ -12,7 +20,6 @@ import Comments from '../components/comments/Comments';
 import HighLightedQuote from '../components/quotes/HighlightedQuote';
 import NoQuotesFound from '../components/quotes/NoQuotesFound';
 import LoadingSpinner from '../components/UI/LoadingSpinner';
-// import DUMMY_QUOTES from '../dummy-data';
 
 const Quote = () => {
   const params = useParams();

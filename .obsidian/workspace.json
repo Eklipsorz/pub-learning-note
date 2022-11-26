@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "37805a1cc37e8a8b",
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 6.md"
+                "file": "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md"
               }
             }
           }
@@ -197,8 +197,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "44ef8704fb2d70ea",
+  "active": "c4639b265998e403",
   "lastOpenFiles": [
+    "inbox/Untitled 6.md",
     "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md",
     "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入到的資料.md",
     "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
@@ -207,7 +208,6 @@
     "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
     "inbox/URL 種類具體有absolute URL 和 relative URL.md",
-    "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
-    "develop/React/react-router/react-router-dom：NavLink 在react-router中是一個component，主要是以Link元件為基礎來提示目前頁面是屬於哪個Link component.md"
+    "inbox/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md"
   ]
 }
