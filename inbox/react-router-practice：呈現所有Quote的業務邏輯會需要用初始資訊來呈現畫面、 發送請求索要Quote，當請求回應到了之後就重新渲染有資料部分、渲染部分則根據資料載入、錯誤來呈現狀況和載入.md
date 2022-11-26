@@ -4,19 +4,31 @@
 
 ### 呈現所有Quote的業務邏輯
 主要實現：
-1. 用初始資訊來呈現畫面
+1. 用初始資訊來呈現畫面，在這裡是使用pending這狀態來表現載入中
 2. 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分
 3. 渲染部分則根據資料載入、錯誤來呈現狀況和載入到的資料。
 
 
 ### 用初始資訊來呈現畫面
+在這裡是使用pending這狀態來表現載入中，最主要會直接以載入中來呈現
 
-最主要會檢查是否有初始資料可渲染，沒的話，就呈現Quote不存在；有的話，就呈現Quote
 ```
-if (!loadedQuotes) {
-	return <NoQuotesFound />;
+const {
+	sendRequest,
+    status,
+    data: loadedQuotes,
+    error,
+} = useHttp(getAllQuotes, true);
+
+
+if (status === 'pending') {
+    return (
+      <div className='centered'>
+        <LoadingSpinner />
+      </div>
+	);
 }
-return <QuoteList quotes={loadedQuotes} />;
+
 ```
 
 ### 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分
@@ -146,4 +158,5 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[前端開發：在必須得擁有請求回應才能渲染真正的畫面 場景下，若採用先渲染後發送請求，會有以下做法。可先呈現初始資料或者載入中，後以請求回應來呈現]]
 References:
