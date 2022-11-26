@@ -45,6 +45,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "37805a1cc37e8a8b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fe2fada31c73b87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
