@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 6.md"
+                "file": "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md"
               }
             }
           }
@@ -191,7 +191,7 @@
   "active": "144cccba9d0cb84b",
   "lastOpenFiles": [
     "inbox/react 前端優化方向可以從元件上的渲染層面和業務邏輯層面抽離出向後端發出的請求業務邏輯，並存放至src目錄下的lib目錄.md",
-    "inbox/Untitled 6.md",
+    "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
     "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "develop/module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
