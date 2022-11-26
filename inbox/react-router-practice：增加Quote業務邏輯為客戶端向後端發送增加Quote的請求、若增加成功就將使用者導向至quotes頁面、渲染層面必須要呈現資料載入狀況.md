@@ -85,6 +85,7 @@ export default NewQuote;
 #🧠 若要實現增加Quote的業務邏輯，主要思路會有什麼？ ->->-> `1. 客戶端向後端發送增加Quote的請求 2. 客戶端獲取回應並於渲染之後，若增加成功就將使用者導向至\/quotes頁面 3. 渲染層面必須要根據請求是否處理中而顯示資料載入狀況`
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-add-quote分支，在那請使用useHttp和lib/api.js來在NewQuote頁面調用相關API來要求後端增加指定資料至後端資料庫，成功完成請求後請從NewQuote頁面導向至Quotes頁面 ->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/20-sending-getting-quote-data/src/pages/NewQuote.js`
+<!--SR:!2022-11-29,3,250-->
 
 
 ---
