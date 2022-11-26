@@ -145,5 +145,6 @@ Status: #🌱
 Tags:
 [[JavaScript]] 
 Links:
+[[ES Module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出]]
 References:
 [[@mdnExportJavaScriptMDN]]
