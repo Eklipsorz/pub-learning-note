@@ -67,10 +67,11 @@ export default Quote;
 ```
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[React]]
 Links:
 References:
