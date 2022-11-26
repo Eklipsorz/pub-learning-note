@@ -136,7 +136,7 @@ export default NewQuote;
 <!--SR:!2022-11-27,10,250-->
 
 #🧠 在react-router-dom上的 history object會是用做什麼 ->->-> `專門操縱使用者在瀏覽器的瀏覽紀錄`
-<!--SR:!2022-11-26,9,250-->
+<!--SR:!2022-12-22,26,250-->
 
 #🧠  react-router-dom 所提供的 history 物件實際上主要是使用哪一種API？ ->->-> `DOM API 提供開發者存取browser history的介面`
 <!--SR:!2022-11-30,10,250-->
@@ -157,7 +157,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace用法會是什麼？ ->->-> `history.replace(path)`
-<!--SR:!2022-11-26,9,250-->
+<!--SR:!2022-12-21,25,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別 (有兩個)->->-> `使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉、方式：前者是直接增加網址在最上面；後者則是將網址取代最上面`
 <!--SR:!2022-12-12,18,250-->
