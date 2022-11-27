@@ -18,17 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "47591af2b9341660",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md"
+              }
             }
           }
         ]
@@ -150,7 +145,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "47591af2b9341660",
+  "active": "0fe2fada31c73b87",
   "lastOpenFiles": [
     "inbox/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
     "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md",
