@@ -84,7 +84,7 @@ match.path 適用於以path為主的正規表達式來對應的場景
 
 
 #🧠 useRouteMatch 回傳的 route match 物件 調用的概念會有使用placeholder來設定、使用具體的URL來對應 這些，這兩者適用場景為何？ ->->-> `match.url 會是適用在hyperlink或者需要具體位置的場景 match.path 適用於以path為主的正規表達式來對應的場景`
-<!--SR:!2022-11-27,3,250-->
+<!--SR:!2022-12-07,9,250-->
 
 #🧠 useRouteMatch被提出的背景是什麼？ ->->-> `path難以維護`
 <!--SR:!2022-11-27,3,250-->

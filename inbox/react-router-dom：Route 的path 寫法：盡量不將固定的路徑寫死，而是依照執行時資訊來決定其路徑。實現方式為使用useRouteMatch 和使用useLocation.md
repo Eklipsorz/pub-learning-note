@@ -77,12 +77,12 @@ const Quote = () => {
 
 
 #🧠 useRouteMatch 和 useLocation 取得對應路徑的方式各是什麼？ ->->-> `useRouteMatch 會從目前對應的parent route元件中取得它擁有的路徑資訊和實際路徑資訊；useLocation 會從瀏覽器取得目前頁面的路徑資訊`
-<!--SR:!2022-11-27,3,250-->
+<!--SR:!2022-12-08,10,250-->
 
 
 
 #🧠 react-router-dom：Route 會設定的path ，其寫法會是盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑，具體有何種實現概念？ ->->-> `useRouteMatch 會從目前對應的parent route元件中取得它擁有的路徑資訊和實際路徑資訊；useLocation 會從瀏覽器取得目前頁面的路徑資訊`
-<!--SR:!2022-11-27,3,250-->
+<!--SR:!2022-12-09,11,250-->
 
 
 #🧠 react-router-dom：Route 會設定的path ，其寫法會是盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑，具體有何種實現概念？ 使用useRouteMatch 會是實現方向，那麼具體是利用他的什麼來取得什麼？  ->->-> `useRouteMatch 會從目前對應的parent route元件中取得它擁有的路徑資訊和實際路徑資訊`
