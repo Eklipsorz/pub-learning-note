@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "4b1b2c23e174cf59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c48a7958ae79b82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
+                "file": "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
+                "file": "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md"
+                "file": "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md"
               }
             }
           }
@@ -145,15 +163,15 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "0fe2fada31c73b87",
+  "active": "1c48a7958ae79b82",
   "lastOpenFiles": [
+    "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
     "inbox/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
     "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md",
     "inbox/前端開發：在必須得擁有請求回應才能渲染真正的畫面 場景下，若採用先渲染後發送請求，會有以下做法。可先呈現初始資料或者載入中，後以請求回應來呈現.md",
     "inbox/前端開發：在必須得擁有請求回應才能渲染真正的畫面 場景下，若採用先渲染後發送請求，會有以下做法。第一：先用初始資料渲染一遍，接著發送請求等待回應，最後重新渲染，第二：先顯示載入，後發送請求再來以回應渲染.md",
     "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入到的資料.md",
     "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
-    "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
     "inbox/(待查)Router 元件負責定義basepath.md",
     "inbox/navigation 是網頁用來幫助使用者在一個頁面下被該頁面下的元件導向其他頁面的區塊，具體區塊內會含有多個hyperlink給予使用者做互動來導向.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md"
