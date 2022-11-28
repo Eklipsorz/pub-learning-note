@@ -166,11 +166,11 @@ flow
 
 
 #🧠 以下面為例，請問印出順序會是什麼？   ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666701344/blog/javascript/promise/await/await-then-example3_l1luwz.png) ->->-> `before -> end -> setTimeout -> 報錯`
-<!--SR:!2022-11-27,17,210-->
+<!--SR:!2023-01-06,39,210-->
 
 
 #🧠 在async/await之前的Promise 中，從外至內的control flow 是誰製造的？ ->->-> `promise.then/catch chain所製造的巢狀結構`
-<!--SR:!2022-11-28,14,247-->
+<!--SR:!2023-01-05,38,247-->
 
 #🧠 await 是什麼樣的關鍵字，在語法上 ->->-> `屬於operator`
 <!--SR:!2022-12-02,17,247-->

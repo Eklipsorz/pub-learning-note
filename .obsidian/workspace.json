@@ -4,60 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "37805a1cc37e8a8b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0fe2fada31c73b87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ffb95083247e7b20",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dae6608ad31ea3e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "d2f95a54b78af975",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ae4aa66f67abfb9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/CommonJS 模組如何載入模組.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "40a2f4c7c39d1837",
         "type": "tabs",
         "children": [
@@ -68,6 +14,60 @@
               "type": "markdown",
               "state": {
                 "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7cd4be478cc23f6d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09e40bc7d24609ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "87d6c9beac3a9f91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "17ca0ce98593d7fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "009810288b59c373",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a76f3ebf27800e9a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md"
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
               }
             }
           }
@@ -217,17 +217,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "6a77ea764410c9ef",
+  "active": "09e40bc7d24609ca",
   "lastOpenFiles": [
+    "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
     "inbox/CommonJS 模組如何載入模組.md",
+    "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
+    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+    "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
     "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
-    "inbox/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
-    "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入.md",
-    "inbox/前端開發：在必須得擁有請求回應才能渲染真正的畫面 場景下，若採用先渲染後發送請求，會有以下做法。可先呈現初始資料或者載入中，後以請求回應來呈現.md",
-    "inbox/前端開發：在必須得擁有請求回應才能渲染真正的畫面 場景下，若採用先渲染後發送請求，會有以下做法。第一：先用初始資料渲染一遍，接著發送請求等待回應，最後重新渲染，第二：先顯示載入，後發送請求再來以回應渲染.md",
-    "inbox/react-router-practice：呈現所有Quote的業務邏輯會需要用初始資訊來呈現畫面、 發送請求索要Quote，當請求回應到了之後就重新渲染有資料部分、渲染部分則根據資料載入、錯誤來呈現狀況和載入到的資料.md"
+    "inbox/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md"
   ]
 }
