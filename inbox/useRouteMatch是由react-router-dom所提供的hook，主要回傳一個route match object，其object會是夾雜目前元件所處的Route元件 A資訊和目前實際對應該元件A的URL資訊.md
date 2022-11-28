@@ -68,7 +68,7 @@ match.path 適用於以path為主的正規表達式來對應的場景
 <!--SR:!2022-12-09,11,250-->
 
 #🧠 react-router-dom：useRouteMatch 會回傳route match 物件，其物件會是夾雜著什麼屬性？  ->->-> `path屬性、url屬性`
-<!--SR:!2022-11-27,3,250-->
+<!--SR:!2022-12-06,8,250-->
 
 #🧠 react-router-dom：useRouteMatch 會回傳route match 物件，其物件會夾雜著path屬性、url屬性，這兩個屬性是什麼？ ->->-> `path 屬性：目前對應到的Route元件所擁有的path屬性值、url 屬性：目前對應到的Route元件所取得的實際路徑值`
 <!--SR:!2022-12-07,9,250-->
@@ -80,7 +80,7 @@ match.path 適用於以path為主的正規表達式來對應的場景
 <!--SR:!2022-12-04,6,230-->
 
 #🧠 useRouteMatch 回傳的 route match 物件 調用的概念會有使用placeholder來設定、使用具體的URL來對應 這些，那麼具體會是分別為何？ ->->-> `使用placeholder來設定：具體是用match.path、使用具體的URL來設定：具體適用match.url`
-<!--SR:!2022-11-27,3,250-->
+<!--SR:!2022-12-08,10,250-->
 
 
 #🧠 useRouteMatch 回傳的 route match 物件 調用的概念會有使用placeholder來設定、使用具體的URL來對應 這些，這兩者適用場景為何？ ->->-> `match.url 會是適用在hyperlink或者需要具體位置的場景 match.path 適用於以path為主的正規表達式來對應的場景`

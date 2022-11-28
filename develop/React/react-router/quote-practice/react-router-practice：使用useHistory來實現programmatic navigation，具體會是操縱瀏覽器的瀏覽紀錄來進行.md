@@ -118,10 +118,10 @@ export default NewQuote;
 
 
 #🧠 react-router-dom ：useHistory是什麼樣的hook ->->-> `專門回傳一個history 物件，該物件由另一個第三方而製成的history 物件，可藉由它來操縱瀏覽器的瀏覽紀錄`
-<!--SR:!2022-11-27,10,250-->
+<!--SR:!2022-12-27,29,250-->
 
 #🧠 useHistory是源自於誰的hook ->->-> `react-router-dom`
-<!--SR:!2022-11-27,10,250-->
+<!--SR:!2022-12-26,28,250-->
 
 #🧠 browser history 或者 history 在網頁上是指什麼？ ->->-> `使用者從過去至現在的瀏覽網站清單`
 <!--SR:!2022-12-11,17,250-->
