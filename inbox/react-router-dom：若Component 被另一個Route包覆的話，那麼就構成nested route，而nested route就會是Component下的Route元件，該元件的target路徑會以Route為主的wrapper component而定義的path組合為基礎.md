@@ -202,7 +202,7 @@ function outerFunction() {
 
 
 #🧠  react-router-dom：當客戶端要求轉換URL為/welcome/hi時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487833/blog/react/react-router/Nested-route/nested-route-inside-component-example2_tgbsal.png) ->->-> `當客戶端要求轉換URL為/welcome/hi時，會先從/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定試著比對，結果目前路徑並非是/hi，所以不會印出hi，最後會以welcome來呈現`
-<!--SR:!2022-11-27,15,248-->
+<!--SR:!2023-01-09,42,248-->
 
 
 #🧠  react-router-dom：當客戶端要求轉換URL為/welcome/hi時，Router會做出什麼反應？說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487833/blog/react/react-router/Nested-route/nested-route-inside-component-example2_tgbsal.png) ->->-> `當客戶端要求轉換URL為/welcome/hi時，會先從/welcome對應的Welcome元件，然後再從Welcome元件設定的Route設定試著比對，結果目前路徑並非是/hi，所以不會印出hi，最後會以welcome來呈現`

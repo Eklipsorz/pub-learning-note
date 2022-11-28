@@ -4,42 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "40a2f4c7c39d1837",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6a77ea764410c9ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "7cd4be478cc23f6d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "09e40bc7d24609ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "87d6c9beac3a9f91",
         "type": "tabs",
         "children": [
