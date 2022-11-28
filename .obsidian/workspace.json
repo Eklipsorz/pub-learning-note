@@ -4,52 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5c5f2e3dc1e1b320",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7d8a9075129cd6fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "32f05cd861b3e95e",
         "type": "tabs",
         "children": [
           {
-            "id": "aa434a2b32da452d",
+            "id": "0d7594dd397e9ccf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "cba5ee865d11a2db",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "383d4d2500b45b24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
+                "file": "inbox/Untitled 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "電影",
+                "query": "/src/api",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -121,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
+                "file": "inbox/Untitled 6.md"
               }
             }
           }
@@ -180,13 +145,13 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "aa434a2b32da452d",
+  "active": "0d7594dd397e9ccf",
   "lastOpenFiles": [
+    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
     "inbox/預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格.md",
     "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
-    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "inbox/CommonJS 模組如何載入模組.md",
     "develop/render/當元素的position屬性被調整成非static的屬性值，就能依據著top、left、right、bottom、z-index來調整其元素的位置.md",
     "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
