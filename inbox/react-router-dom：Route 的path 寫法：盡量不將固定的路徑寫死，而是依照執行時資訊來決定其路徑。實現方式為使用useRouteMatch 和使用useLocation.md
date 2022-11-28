@@ -73,7 +73,7 @@ const Quote = () => {
 <!--SR:!2022-11-27,3,250-->
 
 #🧠 react-router-dom：Route 會設定的path ，其寫法會是什麼？->->-> `盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑`
-<!--SR:!2022-11-27,2,230-->
+<!--SR:!2022-12-05,7,230-->
 
 
 #🧠 useRouteMatch 和 useLocation 取得對應路徑的方式各是什麼？ ->->-> `useRouteMatch 會從目前對應的parent route元件中取得它擁有的路徑資訊和實際路徑資訊；useLocation 會從瀏覽器取得目前頁面的路徑資訊`
