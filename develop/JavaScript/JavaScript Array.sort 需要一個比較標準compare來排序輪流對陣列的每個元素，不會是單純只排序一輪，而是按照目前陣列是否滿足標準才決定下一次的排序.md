@@ -65,7 +65,7 @@ products = results.sort(compare)
 <!--SR:!2022-12-05,89,248-->
 
 #🧠 JavaScript Array.sort 原生排序法會回傳另一個新陣列嗎 ->->-> `並不會，而是以原有陣列經過排序後的結果陣列`
-<!--SR:!2022-11-28,86,248-->
+<!--SR:!2023-06-26,210,248-->
 
 #🧠 JavaScript Array.sort的比較標準compareFunction(a,b)若回傳值大於0，a和b如何擺放 ->->-> `a會放置於b之後`
 <!--SR:!2023-05-02,182,250-->
