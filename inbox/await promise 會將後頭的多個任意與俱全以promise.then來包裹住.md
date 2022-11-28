@@ -151,7 +151,7 @@ flow
 <!--SR:!2022-12-06,28,250-->
 
 #🧠 JS：當在async function中出現這個 await dosomething(); // rest code，請問JS解析器會當成什麼來執行？->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback，`
-<!--SR:!2022-11-27,21,250-->
+<!--SR:!2023-01-21,54,250-->
 
 #🧠 以下面為例，請問印出順序會是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `before -> end -> setTimeout -> after`
 <!--SR:!2023-01-11,48,250-->
