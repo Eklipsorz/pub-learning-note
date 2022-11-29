@@ -121,7 +121,7 @@ export default useCounter;
 <!--SR:!2022-12-23,40,248-->
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，若custom hookA 搭載其他hookB，請問對於在元件呼叫來說是什麼意思？->->-> `hookB和hookA會一同註冊在同個component`
-<!--SR:!2022-11-29,27,250-->
+<!--SR:!2023-02-09,72,250-->
 
 
 #🧠 React：custom hook 在component呼叫的話，就等同在component註冊custom hook，那麼多個component 呼叫著同個custom hook，那麼會有什麼共享情況？ ->->-> `這些component共享著同個custom hook的業務邏輯，但不共享state或者effect。`

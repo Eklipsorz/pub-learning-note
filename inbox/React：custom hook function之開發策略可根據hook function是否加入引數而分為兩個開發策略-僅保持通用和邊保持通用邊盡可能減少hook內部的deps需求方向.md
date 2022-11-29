@@ -249,7 +249,7 @@ export default App;
 ## 複習
 
 #💻 請至/react-builder/question-review/custom-hook-project-adv領取題目，並切換至hook-wiht-parameter分支，請製作一個hook能夠頂替App.js發送請求的功能，請務必讓hook能夠插入引數 ->->-> `/react-builder/custom-hook-project-adv下 切換至without-deps-decrement分支即可看到答案`
-<!--SR:!2022-11-29,27,250-->
+<!--SR:!2023-02-07,70,250-->
 
 #💻 請至/react-builder/question-review/custom-hook-project-adv領取題目，並切換至hook-wihtout-parameter分支，請製作一個hook能夠頂替App.js和/src/components/NewTask/NewTask.js發送請求的功能，請不要讓hook能夠插入任何引數 ->->-> `https://github.com/academind/react-complete-guide-code/blob/15-building-custom-react-hooks/code/06-adjusting-the-custom-hook/src/hooks/use-http.js`
 <!--SR:!2022-11-30,28,250-->
