@@ -92,7 +92,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 relative URL： 以當前頁面所在目錄來位移，relative URL指定路徑格式會是什麼？->->-> `路徑格式通常會是./或者../為開頭`
-<!--SR:!2022-11-29,19,250-->
+<!--SR:!2023-01-16,48,250-->
 
 #🧠  relative URL：以當前頁面所在目錄來位移，舉一個路徑案例 ->->-> `../file2 或 ./file2`
 <!--SR:!2022-12-11,28,250-->
