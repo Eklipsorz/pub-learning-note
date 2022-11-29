@@ -138,4 +138,5 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取]]
 References:
