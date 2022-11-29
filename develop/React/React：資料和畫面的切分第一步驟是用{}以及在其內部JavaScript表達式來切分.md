@@ -70,7 +70,7 @@ XML 在 JSX 語言裡，是算 JavaScript 語法延伸的一部分，所以部�
 
 
 #🧠 如何將日期、標題、價格這三個資料分離出來？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660148304/blog/react/data-view-separation/before-simple-separation-result_mznm1z.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660148304/blog/react/data-view-separation/simple-separation-result_n7nkqb.png)`
-<!--SR:!2022-11-29,69,250-->
+<!--SR:!2023-05-21,173,250-->
 
 
 ---
