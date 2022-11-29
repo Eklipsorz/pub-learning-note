@@ -74,7 +74,7 @@
 <!--SR:!2022-12-24,26,250-->
 
 #🧠 react-router-dom 所提供的prompt component在畫面上會是什麼？  ->->-> `是一個對話視窗，裡面會有訊息、按鈕(ok、cancel)`
-<!--SR:!2022-11-29,10,250-->
+<!--SR:!2022-12-25,26,250-->
 
 #🧠 prompt component 是由react-router-dom 所提供的元件，主要是一個對話視窗，裡面會有訊息、按鈕(ok、cancel) ，請問ok和cancel會需要設定事件處理嗎？為什麼？->->-> `不用，因內建按鈕事件處理，當按下ok就允許導向頁面；當按下cancel就取消導向`
 <!--SR:!2022-12-08,14,249-->
@@ -93,7 +93,7 @@
 
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會是什麼型別？做什麼？？  ->->-> `字串或者function， 主要是指定prompt的主體訊息是什麼`
-<!--SR:!2022-11-29,10,250-->
+<!--SR:!2022-12-26,27,250-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會採用function會是什麼？回傳什麼？ ->->-> ` location 是指使用者當前要跳轉的頁面位置、 action是指使用者當前對於瀏覽紀錄的操作是什麼。(location, action) => {}，會回傳字串或者true `
 <!--SR:!2022-12-23,25,250-->
