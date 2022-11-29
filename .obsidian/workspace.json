@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "d38a00001459d890",
+        "id": "f9718b7b99ee72d4",
         "type": "tabs",
         "children": [
           {
-            "id": "f51fdb363e13aa5f",
+            "id": "d918f4e39ef6a9f5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6be006eb97446dab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20753fb88e83e4a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -170,11 +137,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "20753fb88e83e4a1",
+  "active": "d918f4e39ef6a9f5",
   "lastOpenFiles": [
-    "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
-    "inbox/react-router-practice：對特定Quote增加評論功能.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
+    "inbox/react-router-practice：對特定Quote增加評論功能.md",
+    "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
     "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
     "develop/Language/strong type 和 weak type 的 強弱是相對的，沒有絕對的定義，需要拿其他語言特性來比較目前語言特性才有強弱之分，越強就代表資料型別越明確，越弱就代表資料型別越不明確.md",
     "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
