@@ -108,7 +108,7 @@ setInterval(callback, delay)
 <!--SR:!2022-11-30,28,250-->
 
 #🧠 React：定義custom hook的條件為1. 必須是function 2. function 名稱必須要是use 開頭，若第二個不滿足的話，會是如何？->->-> `會被看待成一般函式`
-<!--SR:!2022-11-29,27,250-->
+<!--SR:!2023-02-07,70,250-->
 
 #🧠 React：當function 名稱是use 開頭，React會如何看待和處理 ->->-> `React會直接視為hook，並且以hook function來檢查`
 <!--SR:!2022-11-30,28,250-->
