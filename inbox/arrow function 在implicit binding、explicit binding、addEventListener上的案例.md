@@ -141,7 +141,7 @@ element1.addEventListener('click', handler);
 <!--SR:!2022-12-27,28,250-->
 
 #🧠 請問最後印出的結果是global object，為何不是發生事件的DOM節點為this? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668435348/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-addEventListener_prudcm.png) ->->-> `通常來說addEventListener 是用explicit binding來決定callback的this是什麼，但使用的是已經用lexical binding的函式物件作為callback且一旦設定就不允許更改其this，所以就以lexical binding的this為主。`
-<!--SR:!2022-11-30,11,250-->
+<!--SR:!2023-01-01,32,250-->
 
 ---
 Status: #🌱 

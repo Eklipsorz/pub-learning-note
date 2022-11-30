@@ -284,7 +284,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2022-12-04,17,249-->
 
 #🧠 React：useImperativeHandle的deps目的是用來做什麼？ ->->-> `用來做優化處理，減少createHandle執行並且直接回傳相同結果。`
-<!--SR:!2022-11-30,14,249-->
+<!--SR:!2023-01-05,36,249-->
 `
 
 #🧠  React：useImperativeHandle的deps目的是用來做優化處理，減少createHandle執行並且直接回傳相同結果，所以會儲存什麼作為比對和回傳結果 ->->-> `deps資訊和handle`

@@ -99,7 +99,7 @@ setInterval(callback, delay)
 <!--SR:!2023-02-08,71,250-->
 
 #🧠 JS：setInterval 和 setTimeout 之間差別？->->-> `setTimeout：排定一個一次性計時任務，等到指定毫秒才執行一次callback；setInterval：排定一個重複執行的計時任務，等到指定毫秒才執行一次`
-<!--SR:!2022-11-30,28,250-->
+<!--SR:!2023-02-12,74,250-->
 
 #🧠 JS：setInterval 和 setTimeout 能在哪個執行環境下執行 ->->-> `瀏覽器和node.js`
 <!--SR:!2022-12-08,29,230-->
