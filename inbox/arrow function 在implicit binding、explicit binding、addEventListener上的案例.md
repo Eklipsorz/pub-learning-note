@@ -113,7 +113,7 @@ element1.addEventListener('click', handler);
 <!--SR:!2022-12-30,30,250-->
 
 #🧠 請問最後印出的結果是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668432831/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-implicity-binding_zg1f7h.png) ->->-> `會印出object和object這字串，因為fn會對應到一般函式，會在執行時決定其this`
-<!--SR:!2022-11-30,11,250-->
+<!--SR:!2023-01-01,32,250-->
 
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668432831/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-implicity-binding_edoiom.png) ->->-> `首先在建立testhandler 所對應函式物件時，由於是箭頭函式，其this 綁定會以建立時的環境來設定，在這裡會因為scope chain而找到全域環境的this來設定成global object，建立箭頭函式為主的函式物件之後，其函式的this會一直固定在global object。 之後不論怎麼改this，都因 **一旦設定，就無法被覆寫** 這特性而無法更改，所以在這裡會印出global object和它的屬性`
@@ -135,7 +135,7 @@ element1.addEventListener('click', handler);
 
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668435349/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-addEventListener_f29p26.png) ->->-> `結果會是發生事件的DOM節點`
-<!--SR:!2022-11-30,11,250-->
+<!--SR:!2022-12-31,31,250-->
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668435348/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-addEventListener_prudcm.png) ->->-> `結果會是global object，通常來說addEventListener 是用explicit binding來決定callback的this是什麼，但使用的是已經用lexical binding的函式物件作為callback且一旦設定就不允許更改其this，所以就以lexical binding的this為主。`
 <!--SR:!2022-12-27,28,250-->

@@ -254,7 +254,7 @@ consume
 <!--SR:!2023-01-31,75,248-->
 
 #🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
-<!--SR:!2022-11-30,36,248-->
+<!--SR:!2023-02-27,89,248-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
 <!--SR:!2022-12-25,59,250-->

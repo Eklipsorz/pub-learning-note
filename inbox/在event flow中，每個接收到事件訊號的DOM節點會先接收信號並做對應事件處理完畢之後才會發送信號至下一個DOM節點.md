@@ -100,7 +100,7 @@ element1 -> element2 -> element3
 <!--SR:!2022-12-23,25,250-->
 
 #🧠 在event flow中，每個接收到事件信號的DOM節點會做什麼->->-> `接收事件信號->執行對應事件處理->處理完並轉遞信號`
-<!--SR:!2022-11-30,11,250-->
+<!--SR:!2022-12-28,28,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，請問其事件處理的順序和接收順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/bubbling-phase-execution-order_zzygfc.png))->->-> `(隔了 1s 之後出現) handler <div id="element3" class="child"> (隔了 1s 之後出現) handler <div id="element2" class="parent"> (隔了 1s 之後出現) handler <div id="element1" class="grandpa">`
 <!--SR:!2022-11-30,11,250-->
