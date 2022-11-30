@@ -45,7 +45,7 @@ return (
 
 ## 複習
 #🧠 boolean expression && jsx element 在渲染層級上，哪些是能夠正常讓語法發揮正常用途的場景->->-> `render 函式只回傳boolean expression && jsx element、JSX 夾雜著{expresssion}，其中expression就填入boolean expression && jsx element`
-<!--SR:!2022-11-30,51,250-->
+<!--SR:!2023-04-07,128,250-->
 
 #🧠 React 解析JSX 元素中的{expressio}的expression，此時的expression是boolean expression && jsx element ，請問 boolean expression && jsx element會如何運作？->->-> `若表達前者是回傳true，就會以後者的 JSX Element來呈現、若表達前者是回傳false，React就會選擇忽略該Virtual DOM`
 <!--SR:!2022-12-27,68,250-->

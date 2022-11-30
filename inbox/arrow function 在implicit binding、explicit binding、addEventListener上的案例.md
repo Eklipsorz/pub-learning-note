@@ -110,7 +110,7 @@ element1.addEventListener('click', handler);
 ## 複習
 
 #🧠 arrow function 的this binding方式是什麼？ ->->-> `箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this`
-<!--SR:!2022-11-30,11,250-->
+<!--SR:!2022-12-30,30,250-->
 
 #🧠 請問最後印出的結果是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668432831/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-implicity-binding_zg1f7h.png) ->->-> `會印出object和object這字串，因為fn會對應到一般函式，會在執行時決定其this`
 <!--SR:!2022-11-30,11,250-->

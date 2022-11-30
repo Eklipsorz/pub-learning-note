@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "b9b799453e22fc02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e163bb3e7651d4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
+                "file": "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
+                "file": "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md"
+                "file": "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md"
               }
             }
           }
@@ -145,8 +163,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "d918f4e39ef6a9f5",
+  "active": "6e163bb3e7651d4d",
   "lastOpenFiles": [
+    "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
     "inbox/react-router-practice：對特定Quote增加評論功能.md",
     "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
@@ -155,7 +174,6 @@
     "inbox/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新載入、錯誤、資料本身狀態。.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件來負責發送請求，過程中會負責更新載入、錯誤、資料本身狀態。.md",
-    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
-    "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md"
+    "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
   ]
 }
