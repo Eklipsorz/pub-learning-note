@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4b08e798af5b4ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "inbox/Untitled 6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -145,8 +158,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "8abc7783e223d350",
+  "active": "d4b08e798af5b4ba",
   "lastOpenFiles": [
+    "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
     "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
@@ -155,7 +169,6 @@
     "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
     "inbox/react-router-practice：對特定Quote增加評論功能.md",
-    "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
-    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md"
+    "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md"
   ]
 }
