@@ -1,5 +1,14 @@
 ## 描述
 
+
+
+### v5 vs. v6： 能將使用者導向至指定頁面的元件
+
+v5：
+- 使用Redirect 元件來實現
+
+v6
+
 redirect 在react-router v6不存在
 
 作為替代的元件為Navigate
@@ -52,6 +61,17 @@ link 和 route 元件的定位方式是以目前所處的Route元件所擁有的
   
 
 v5：link 和 route元件的定位方式一律是以瀏覽器目前頁面所在的位置來定位或者以主機所在的位置來定位，也就是維持著瀏覽器的relative url 和 absolute url規則來定位
+
+###
+建立nested Route 元件有兩個方式：
+
+1.  將nested Route元件安置在component，在讓component被parent route元件所包含
+
+2. parent route元件直接包裹nested route元件
+
+  
+
+透過第二個方式可以將路由設定都集中在同一個檔案
 
 
 ## 複習
