@@ -67,11 +67,7 @@ xxxx 元件下的路由
 ```
 ### Link 和 Route
 
-Link 和 Route 元件的定位方式是以目前所處的Route元件所擁有的path來定位 ，是直接假定parent route所設定的path來定位並當作開頭，所以不需要額外添加。
-
-  
-
-v5：link 和 route元件的定位方式一律是以瀏覽器目前頁面所在的位置來定位或者以主機所在的位置來定位，也就是維持著瀏覽器的relative url 和 absolute url規則來定位
+v5 & v6：Link、NavLink、Route元件的定位方式一律是以瀏覽器目前頁面所在的位置來定位或者以主機所在的位置來定位，也就是維持著瀏覽器的relative url 和 absolute url規則來定位
 
 
 
