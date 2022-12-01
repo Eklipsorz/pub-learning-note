@@ -22,12 +22,46 @@ v6：
 ### 建立nested Route 元件方式
 建立nested Route 元件有兩個方式：
 1.  將nested Route元件安置在component，在讓component被parent route元件所包含
-2. parent route元件直接包裹nested route元件
+2. parent route元件直接包裹nested route元件，並搭配Outlet元件
 
   
 #### 第二種方式的好處
 透過第二個方式可以將路由設定都集中在同一個檔案，增加維護性
 
+
+
+#### Outlet 元件
+
+[[@react-routerReactRouterDeclarativea]]
+
+> An `<Outlet>` should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
+
+
+重點：
+- Outlet 是一個react-router-dom所提供的元件
+- 主要用途為告知目前 route元件要在哪處來渲染它對應的element內容，目前頁面會是以parent route 所對應的頁面元件，並且讓系統去該元件找尋Outlet元件來替代element內容進行渲染
+	- 若存在Outlet元件
+- 舉例
+	比如底下設定new-user的Route擁有welcome string這字串當作JSX元件，但router不知道要如何把這元件渲染在目前頁面的何處，目前頁面元件會是Welcome，就會在裡頭檢查是否存在Outlet這元件，若存在就以出現位置來呈現welcome string這字串；若不存在就不呈現
+```
+<Route path='/welcome' element={<Welcome />}>
+	<Route path='new-user' element={<p>welcome string</p>} />
+</Route>
+```
+
+```
+import { Outlet, Link } from 'react-router-dom';
+
+const Welcome = () => {
+  return (
+    <section>
+      <h1>The Welcome Page</h1>
+      <Link to='new-user'>Goto</Link>
+      <Outlet />
+    </section>
+  );
+};
+```
 
 ### v6 ：一個nested route 打造方式
 
@@ -65,9 +99,13 @@ xxxx 元件下的路由
  <Route path='path2' element={xxxxx1} />
 <Routes />
 ```
-### Link 和 Route
+### Link 和 Route 定位方式
 
-v5 & v6：Link、NavLink、Route元件的定位方式一律是以瀏覽器目前頁面所在的位置來定位或者以主機所在的位置來定位，也就是維持著瀏覽器的relative url 和 absolute url規則來定位
+v6：Link 和 route 元件的定位方式是以目前所處的Parent Route元件所擁有的path來定位 ，是直接假定parent route所設定的path來定位並當作開頭，所以不需要額外添加。
+
+  
+
+v5：link 和 route元件的定位方式一律是以瀏覽器目前頁面所在的位置來定位或者以主機所在的位置來定位，也就是維持著瀏覽器的relative url 和 absolute url規則來定位
 
 
 
