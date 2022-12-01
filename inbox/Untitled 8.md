@@ -7,17 +7,18 @@
 v5：
 - 使用Redirect 元件來實現
 
-v6
+v6：
+- 取消掉Redirect元件
+- 使用Navigate元件：
+	- 以push 方式來導向：將指定頁面的網址xxxxx放到瀏覽紀錄stack的最上面
+	```
+	<Navigate to=xxxxx />
+	```
+	- 以replace 方式來導向：將指定頁面的網址取代瀏覽紀錄stack的最上面之網址
+	```
+	<Navigate replace to=xxxx />
+	```
 
-redirect 在react-router v6不存在
-
-作為替代的元件為Navigate
-
-
-1. Navigate元件實現push stack的用法
-`<Navigate to=xxxxx />`
-2. Navigate元件實現replace stack的用法
-`<Navigate replace to=xxxx />`
 ### 
 
 
