@@ -9,8 +9,11 @@
 
 ### v5 vs. v6 ：從多個路徑挑選一個路徑
 
-v5 是使用Switch元件＋多個Route元件來實現
-v6 是使用Routes元件＋多個Route元件來實現
+v5 ：
+- 是使用Switch元件＋多個Route元件來實現
+v6 ：
+- 丟棄Switch元件
+- 是使用Routes元件＋多個Route元件來實現
 
 
 ####  v5：Switch 挑選路徑方式
@@ -25,30 +28,45 @@ Routes 元件 在挑選路徑時會以具體程度為優先來挑選，流程為
 - 遍歷完就以具體程度最高的Route元件為主
 
 
+##### 案例：Routes 挑選路徑方式
+
+若URL切換至/products/edit的話，預期會有兩個路徑會成立並且渲染，但由於會比較具體程度，而最後一個Route設定的路徑是設定明確的路徑，所以會選擇它作為渲染元件。
+
+```
+function App() {
+  return (
+    <div>
+      <MainHeader />
+      <main>
+        <Routes>
+          <Route path='/welcome' element={<Welcome />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/products/:productId' element={<ProductDetail />} />
+          <Route path='/products/edit' element={xxxxx} />
+        </Routes>
+      </main>
+    </div>
+  );
+}
+```
+
+
 ### v5 vs. v6： Route 語法的改變
 
 
-
-
-
-1. 每個Route元件都會是exact matching來比對path，若要使用fuzzy matching，可以使用*這字原來表示，比如若要表示welcome開頭的頁面都是渲染element1元件，就設定如下
-
+v6：
+1. 每個Route元件都要用Routes元件來包裹
+2. 每個Route元件都會是以exact matching來比對path
+3. 若要使用fuzzy matching，可以使用\*這字元來表示，比如若要表示welcome開頭的頁面都是渲染element1元件，就設定如下
 ```
-1.  <Route path='/welcome/* element={element1} />
+<Route path='/welcome/* element={element1} />
 ```
-
-
-in v6 ,
-
-1. switch 元件由Routes來替代
-
-> switch doesn't exist anymore
-
-2. Route元件用法改變，若要指定對應Route元件要渲染的元件，就要
+4. 語法：
+	 - path 屬性是填入要比對的路徑
+	 - element 屬性是填入要比對滿足後要渲染的元件
 ```
-1.  <Route path='/welcome element={element1} />
+<Route path=path1 element={element1} />
 ```
-
 
 
 ## 複習
