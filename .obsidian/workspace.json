@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+                "file": "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md"
               }
             }
           }
@@ -199,10 +199,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "ca5fbed58e74a163",
+  "active": "459745e07389cab4",
   "lastOpenFiles": [
-    "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+    "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
     "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
     "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
     "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
