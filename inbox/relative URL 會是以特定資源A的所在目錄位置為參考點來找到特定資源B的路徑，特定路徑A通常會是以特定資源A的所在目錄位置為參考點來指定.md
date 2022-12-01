@@ -71,7 +71,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假如目前存取頁面是/path1/path2/file，那麼relative URL會以什麼做為參考點？ ->->-> `/path1/path2為參考點`
-<!--SR:!2022-12-01,20,250-->
+<!--SR:!2023-01-22,52,250-->
 
 #🧠 relative URL 對於URL構造來說，其path、protocol、host、port會如何被決定 ->->-> `在這裡除了path以外，其餘的protocol、host、port會和目前存取頁面的路徑擁有的protocol、host、port一樣。`
 <!--SR:!2022-12-10,27,250-->
@@ -88,7 +88,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 relative URL： 假如指定路徑為dir/file，且目前頁面路徑為path1/file，那麼瀏覽器如何找->->-> `假如目前頁面路徑為path1/file，那麼瀏覽器就會試著在path1下面找到dir這個目錄，然後再從那找到file。`
-<!--SR:!2022-12-01,20,250-->
+<!--SR:!2023-01-21,51,250-->
 
 
 #🧠 relative URL： 以當前頁面所在目錄來位移，relative URL指定路徑格式會是什麼？->->-> `路徑格式通常會是./或者../為開頭`

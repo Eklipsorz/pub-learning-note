@@ -60,7 +60,7 @@ get(name)
 <!--SR:!2022-12-01,9,250-->
 
 #🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，它含有什麼？(屬..方)->->-> `屬性和數個方法來操作攔截到的query string`
-<!--SR:!2022-12-01,9,250-->
+<!--SR:!2022-12-25,24,250-->
 
 #🧠  URLSearchParams 建構式用法是什麼->->-> `new URLSearchParams(options)`
 <!--SR:!2022-12-01,9,250-->
@@ -72,7 +72,7 @@ get(name)
 <!--SR:!2022-12-02,10,250-->
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
-<!--SR:!2022-12-01,9,250-->
+<!--SR:!2022-12-27,26,250-->
 
 
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`
