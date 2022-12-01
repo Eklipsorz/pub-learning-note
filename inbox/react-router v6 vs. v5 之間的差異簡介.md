@@ -18,4 +18,5 @@ Tags:
 Links:
 [[react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。]]
 [[react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變]]
+[[react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念]]
 References:
