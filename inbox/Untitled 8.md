@@ -22,7 +22,25 @@ v6：
 ### 建立nested Route 元件方式
 建立nested Route 元件有兩個方式：
 1.  將nested Route元件安置在component，在讓component被parent route元件所包含
+	- parent route元件的path要添加\/\*
+	-  new-user的Route會是以它的parent route所在的path為主，也就是/welcome/new-user
+```
+<Route path='/welcome/*' element={<Welcome />}>
+
+// Welcome component
+<Routes>
+	<Route path='new-user' element={<p>welcome string</p>} />
+</Routes>
+```
+
 2. parent route元件直接包裹nested route元件，並搭配Outlet元件
+	- parent route元件的path可以省略\/\*
+	- new-user的Route會是以它的parent route所在的path為主，也就是/welcome/new-user
+```
+<Route path='/welcome' element={<Welcome />}>
+	<Route path='new-user' element={<p>welcome string</p>} />
+</Route>
+```
 
   
 #### 第二種方式的好處
@@ -40,7 +58,8 @@ v6：
 重點：
 - Outlet 是一個react-router-dom所提供的元件
 - 主要用途為告知目前 route元件要在哪處來渲染它對應的element內容，目前頁面會是以parent route 所對應的頁面元件，並且讓系統去該元件找尋Outlet元件來替代element內容進行渲染
-	- 若存在Outlet元件
+	- 若存在Outlet元件就以出現位置來呈現
+	- 若不存在就不呈現
 - 舉例
 	比如底下設定new-user的Route擁有welcome string這字串當作JSX元件，但router不知道要如何把這元件渲染在目前頁面的何處，目前頁面元件會是Welcome，就會在裡頭檢查是否存在Outlet這元件，若存在就以出現位置來呈現welcome string這字串；若不存在就不呈現
 ```
