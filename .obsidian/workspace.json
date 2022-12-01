@@ -40,11 +40,11 @@
         ]
       },
       {
-        "id": "7b66d9e8156abcb8",
+        "id": "d9b57c3cb6fd9bfb",
         "type": "tabs",
         "children": [
           {
-            "id": "bcefd00be09da0b8",
+            "id": "ca5fbed58e74a163",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -199,17 +199,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "bcefd00be09da0b8",
+  "active": "ca5fbed58e74a163",
   "lastOpenFiles": [
-    "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
+    "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+    "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
     "develop/React/React.StrictMode 是以元件形式來在開發階段檢測其元件包含的內容是否有潛在問題.md",
     "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
     "inbox/react-router-practice：對特定Quote增加評論功能.md",
     "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
-    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
-    "develop/Language/strong type 和 weak type 的 強弱是相對的，沒有絕對的定義，需要拿其他語言特性來比較目前語言特性才有強弱之分，越強就代表資料型別越明確，越弱就代表資料型別越不明確.md"
+    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md"
   ]
 }

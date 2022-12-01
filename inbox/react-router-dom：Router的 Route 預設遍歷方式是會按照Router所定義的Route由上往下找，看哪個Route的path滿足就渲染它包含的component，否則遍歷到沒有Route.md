@@ -103,8 +103,8 @@
 <!--SR:!2022-12-09,25,250-->
 
 
-#🧠 react-router：在同一個虛擬webpage上，若多個Route的path被滿足的話，那麼會有什麼樣的效果 ->->-> `就會共同在同一個虛擬webpage上按照滿足的Route所包含的Component來渲染`
-<!--SR:!2022-12-01,19,250-->
+#🧠 react-router：在同一個webpage上，若多個Route的path被滿足的話，那麼會有什麼樣的效果 ->->-> `就會共同在同一個虛擬webpage上按照滿足的Route所包含的Component來渲染`
+<!--SR:!2023-01-17,47,250-->
 
 
 #🧠 react-router：在同一個虛擬webpage上，若以下2個Route的path被滿足的話，那麼會有什麼樣的效果![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667308798/blog/react/react-router/Route-component/two-paths-react-router-route_dxxb2b.png)->->-> `<Component1 /><Component2 />`
