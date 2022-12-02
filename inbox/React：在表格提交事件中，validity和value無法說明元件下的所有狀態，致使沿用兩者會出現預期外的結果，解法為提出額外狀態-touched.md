@@ -203,7 +203,7 @@ const SimpleInput = (props) => {
 <!--SR:!2023-02-14,74,250-->
 
 #🧠 React：touched/untouched 狀態各代表著什麼？ ->->-> `標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element；touched 狀態為該元件曾經被切換成active element； untouched 狀態為該元件從未被切換成active element`
-<!--SR:!2022-12-02,28,250-->
+<!--SR:!2023-02-15,74,250-->
 
 #🧠 React：無法在mount階段時期反映真實狀態而使結果變成預期外結果：系統會認為enteredName為合法來執行對應的處理，舉例說明預期外結果會是什麼？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `比如會useEffect會因為enteredName為合法而執行，然而實際上enteredName為非法![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666412149/blog/react/form/unexpected-result_sixu1j.png)`
 <!--SR:!2023-02-14,74,250-->
@@ -215,7 +215,7 @@ const SimpleInput = (props) => {
 
 
 #🧠 React：touched/untouched 狀態 具體會由誰來決定？ ->->-> ``依據著開發者來指定或者程式來指定
-<!--SR:!2022-12-02,28,250-->
+<!--SR:!2023-02-13,72,250-->
 
 #🧠 React：touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，請以開發者來決定為例子來說明 ->->-> `當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element`
 <!--SR:!2023-02-07,69,250-->
