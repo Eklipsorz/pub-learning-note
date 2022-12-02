@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
+                "file": "inbox/react-router v6 vs. v5 之間的差異簡介.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
+                "file": "inbox/react-router v6 vs. v5 之間的差異簡介.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md"
+                "file": "inbox/react-router v6 vs. v5 之間的差異簡介.md"
               }
             }
           }
@@ -218,8 +218,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "90e3c7a3688d0366",
+  "active": "d4b08e798af5b4ba",
   "lastOpenFiles": [
+    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
     "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
     "inbox/react-router v6 vs. v5 之間的差異簡介.md",
     "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
@@ -228,7 +229,6 @@
     "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
-    "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md",
-    "inbox/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md"
+    "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md"
   ]
 }

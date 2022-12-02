@@ -114,7 +114,7 @@ export default SimpleInput;
 ## 複習
 
 #🧠 React：reload react app 的後果為何？->->-> `- 失去整個app的目前所有DOM - 失去整個app的目前所有狀態、Effect、Hook`
-<!--SR:!2022-12-02,28,250-->
+<!--SR:!2023-02-14,74,250-->
 
 #🧠 React：表格輸入欄位值存取方式有哪些？ ->->-> `- 使用事件(如change) ＋ state：使用state來替代輸入欄位的value屬性(attribute)，並於事件處理那邊使用setState來攔截資訊至state - 使用ref ：使用DOM節點所擁有的value來存取`
 <!--SR:!2022-12-02,28,250-->
@@ -124,7 +124,7 @@ export default SimpleInput;
 <!--SR:!2023-02-14,74,250-->
 
 #🧠 React：表格輸入欄位值存取方式-React 體系的state + setState 之適用場景為何？ ->->-> `	- **針對每次使用者所輸入(每次鍵盤敲擊時)的內容來處理** ，如需要即時根據內容來顯示內容驗證結果 - 方便從React體系下的語法來管理元件的狀態，如重設輸入欄的value，就可以透過setState來實現`
-<!--SR:!2022-12-02,13,210-->
+<!--SR:!2023-01-03,31,210-->
 
 
 #🧠  React：表格輸入欄位值存取方式-React 體系的state + setState如何實作？ ->->-> `使用state來替代輸入欄位的value屬性(attribute)，並於事件處理那邊使用setState來攔截資訊至state`
