@@ -113,7 +113,7 @@ XHTML標籤必須使用小寫字母，如<br />不能寫為<BR />；
 
 ## 複習
 #🧠 請問SGML、HTML、XML這三者有何關係？ ->->-> `SGML (Standard Gerneralized Markup Language) 是傳統標籤語言，基於其語言特性而衍生出來的標籤語言HTML，換言之，基於SGML特性建立的應用。XML 則是將SGML格式精簡後制訂出來的標籤語言，其中HTML從SGML轉換成以XML為基礎而建構的應用就是XHTML`
-<!--SR:!2022-12-02,73,250-->
+<!--SR:!2023-06-09,189,250-->
 
 #🧠 請問現今的HTML還是只支援SGML版本嗎？ ->->-> `現今的HTML 標準本身支援著有 **以SGML特性建立的HTML**、**以XML特性建立的XHTML**、**DOM標準**，所以並不是純粹以SGML作為基礎`
 <!--SR:!2022-12-04,29,230-->
