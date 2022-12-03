@@ -215,11 +215,11 @@ AbortController.abort()
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體方式是什麼？ ->->-> `使用AbortController API來建立controller 和 signal接收處理物件；將signal 接收處理物件安裝至對應的非同步任務；設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行；設定catch或者try...catch等錯誤攔截`
-<!--SR:!2022-12-03,17,250-->
+<!--SR:!2023-01-18,46,250-->
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼如何安置signal和發送signal ->->-> `  const controller = new AbortController(); const signal = controller.signal something(…, signal)  return () => { controller.abort() } `
-<!--SR:!2022-12-02,16,230-->
+<!--SR:!2023-01-13,41,230-->
 
 
 
@@ -254,7 +254,7 @@ AbortController.abort()
 
 
 #🧠 軟體開發方式中，發佈/訂閱模式會是指什麼？ ->->-> `設定關係使物件之間產生一對多依賴關係，當一個物件狀態發生狀態，所有依賴於它的物件都會得到對應通知，並且存取最新內容`
-<!--SR:!2022-12-03,17,250-->
+<!--SR:!2023-01-19,47,250-->
 
 #🧠 以AbortController 來發送abort而阻止非同步任務的執行，請問非同步任務會以什麼形式而停止執行？ ->->-> `以接收到錯誤的形式來停止執行`
 <!--SR:!2022-12-04,17,249-->
