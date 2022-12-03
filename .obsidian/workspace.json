@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "6f16566dd1aef31a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c02b351b59439ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "8888f765c0c2d057",
         "type": "tabs",
         "children": [
@@ -104,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md"
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md"
               }
             }
           }
@@ -163,10 +181,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "b1cf8a3b34ffa4b3",
+  "active": "5c02b351b59439ea",
   "lastOpenFiles": [
-    "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
     "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+    "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
     "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
     "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
