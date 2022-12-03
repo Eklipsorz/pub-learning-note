@@ -115,7 +115,7 @@ Resource Representation State：
 
 
 #🧠 Resource Representation State Transfer / REST 中的Transfer是什麼？->->-> `- Transfer 是指事物在某方面從A轉換至B，Resource Representation State Transfer 則是指以特定時間點下之Resource Representation 對應的內容為單位來從A轉移至B - 轉移方法會是HTTP方法`
-<!--SR:!2022-12-03,10,209-->
+<!--SR:!2022-12-27,24,209-->
 
 #🧠 REST整體概念是什麼？簡答一下 ->->-> `描述著如何對在網路上的任意具體化資源進行轉移或者獲取`
 <!--SR:!2023-01-17,52,210-->
