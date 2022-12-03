@@ -57,7 +57,7 @@ app.use((req, res, next) => {
 
 
 #🧠  請問當目前使用者是以http導向至https，如何修改其程式碼使使用者正確以https來發送請求，而不是以http名義來執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656511754/blog/middleware/no-return-middleware_ewcc3f.png)->->-> `添加return 至res.end() ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656511754/blog/middleware/with-return-middleware_jnbho6.png)`
-<!--SR:!2022-12-03,28,250-->
+<!--SR:!2023-02-15,74,250-->
 
 
 ---
