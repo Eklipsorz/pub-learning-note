@@ -4,66 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "76a3b02810aece92",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8abc7783e223d350",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b1d81c2badf2b0b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "42b2d01db2c1be94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "fba982307f2f31cd",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d6b2c775abb2c3ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "7feec60bd7ea981c",
         "type": "tabs",
         "children": [
@@ -89,69 +29,44 @@
     "type": "split",
     "children": [
       {
-        "id": "c0e3050a6b536e81",
-        "type": "split",
+        "id": "4680111e485df9e0",
+        "type": "tabs",
         "children": [
           {
-            "id": "4680111e485df9e0",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6941822edf359a99",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": true,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "b7ac353bc18ac458",
-                "type": "leaf",
-                "state": {
-                  "type": "starred",
-                  "state": {}
-                }
-              },
-              {
-                "id": "673bafcf0104f9cf",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "byCreatedTime"
-                  }
-                }
+            "id": "6941822edf359a99",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
               }
-            ],
-            "currentTab": 2
+            }
           },
           {
-            "id": "400d039f233a0fc8",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b1e85d2ae8ef91ce",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "b7ac353bc18ac458",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "673bafcf0104f9cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
               }
-            ]
+            }
           }
         ],
-        "direction": "vertical"
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -230,17 +145,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "b1e85d2ae8ef91ce",
+  "active": "90e3c7a3688d0366",
   "lastOpenFiles": [
+    "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
+    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
+    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
     "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
     "inbox/react-router v6 vs. v5 之間的差異簡介.md",
-    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
-    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
     "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
     "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
-    "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
-    "inbox/react-router-dom：Router的 Route 預設遍歷方式是會按照Router所定義的Route由上往下找，看哪個Route的path滿足就渲染它包含的component，否則遍歷到沒有Route.md"
+    "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md"
   ]
 }
