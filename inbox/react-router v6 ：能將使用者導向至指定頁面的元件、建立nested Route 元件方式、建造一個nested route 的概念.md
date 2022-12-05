@@ -119,6 +119,7 @@ xxxx 元件下的路由
 `<Route path='/path1/*' element=xxxx />`
 
 ```
+// component
 <Routes>
   // nested route
  <Route path='path2' element={xxxxx1} />
@@ -190,6 +191,8 @@ xxxx 元件下的路由
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的以parent route所設定的path來決定nested Route的path，具體為何？->->-> `根據是否nested route的實現來決定定位，若是parent route包含另一個route，那麼nested route的path就以parent route的path為主來調整；若是nested route綁定在component，而parent route包含著component，那麼就以瀏覽器的absolute url或者relative url為主`
 
+
+#🧠 react-router-dom v6：假若要設定/path1/path2 對應元件為xxxxx1，就直接將nested route的path設定成/path2，那麼那要如何瀏覽到nested route的對應渲染元件xxxxx1![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670250102/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_clqra8.png) ->->-> ``
 
 ---
 Status: #🌱 
