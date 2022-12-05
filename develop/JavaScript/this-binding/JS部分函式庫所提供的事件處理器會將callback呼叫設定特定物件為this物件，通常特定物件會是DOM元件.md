@@ -79,7 +79,7 @@ test <button id="test">
 <!--SR:!2022-12-06,27,250-->
 
 
-#🧠 addEventListener(a, callback) 中的callback若是箭頭函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
+#🧠 addEventListener(a, callback) 中的callback若是箭頭函式，其callback呼叫時的this會是什麼 ->->-> `會以箭頭函式的語彙綁定為主，並不會直接設定成發生事件的DOM節點`
 <!--SR:!2022-12-05,26,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是函式物件，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
@@ -92,7 +92,7 @@ test <button id="test">
 <!--SR:!2022-12-07,28,250-->
 
 #🧠 \<button id="test"\>hi\<\/button\> dom.addEventListener('click', function test() \{   console.log('test', this) \}) 請問this會是什麼？->->-> `test <button id="test">`
-<!--SR:!2022-12-05,26,250-->
+<!--SR:!2023-02-11,68,250-->
 
 #🧠 addEventListener(a, callback)中的callback得是什麼形式才會是設定發生事件時的DOM節點 ->->-> `匿名函式、命名函式`
 <!--SR:!2022-12-24,26,250-->

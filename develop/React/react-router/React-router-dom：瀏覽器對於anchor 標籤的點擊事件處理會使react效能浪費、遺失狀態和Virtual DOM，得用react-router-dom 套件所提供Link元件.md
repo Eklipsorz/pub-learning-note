@@ -221,7 +221,7 @@ export default MainHeader;
 
 
 #🧠 anchor element 的href 若是absolute url的話，會是以什麼路徑為主來定位其目標位置 ->->-> `若是absolute url的話，則是以host所在的網路位置為主，即根目錄`
-<!--SR:!2022-12-05,5,248-->
+<!--SR:!2022-12-17,12,248-->
 
 
 ---
