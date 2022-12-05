@@ -243,7 +243,7 @@ AbortController.abort()
 <!--SR:!2022-12-13,24,250-->
 
 #🧠 JS：AbortController interface 的 abort 是什麼？ 得先有什麼才能有abort方法 ->->-> `得先建立AbortController 物件才能有。主要是發送abort signal至已搭載同一個Controller 之AbortSignal物件的非同步任務，任務接收到就停止任務，但會是以錯誤形式來回報`
-<!--SR:!2022-12-05,18,250-->
+<!--SR:!2023-01-23,49,250-->
 
 #🧠 JS：AbortController interface 的 signal 是什麼？ 得先有什麼才能有signal ->->-> `得先建立AbortController 物件才能有。這是主要是對應AbortController 接收訊號並執行中斷的物件-被稱之為AbortSignal，專門搭載至支援AbortController介面的非同步任務`
 <!--SR:!2022-12-16,26,250-->

@@ -94,7 +94,7 @@ URI包含了：
 <!--SR:!2022-12-05,10,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Query String對於URI會是什麼？ ->->-> `對於索要的資源進行額外的要求字串`
-<!--SR:!2022-12-05,10,250-->
+<!--SR:!2023-01-02,28,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Fragment對於URI會是什麼？ ->->-> `在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部分`
 <!--SR:!2023-01-02,28,250-->
@@ -111,7 +111,7 @@ URI包含了：
 
 
 #🧠 除了scheme 、Host 以外的內容會分大小寫的原因 ->->-> `剩下則是由主要應用伺服器來決定大小寫而區分`
-<!--SR:!2022-12-04,9,250-->
+<!--SR:!2022-12-30,25,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，那麼格式會是什麼？ ->->-> ` scheme:[//host[:port]][/]path[?query][#fragment]`
 <!--SR:!2022-12-04,9,250-->

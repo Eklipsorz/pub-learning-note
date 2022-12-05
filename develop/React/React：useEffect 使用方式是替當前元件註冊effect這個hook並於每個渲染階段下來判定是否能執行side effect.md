@@ -172,7 +172,7 @@ this is use effect
 
 
 #🧠 React：useEffect 會是什麼？ ？ ->->-> `定義著執行完Render之後所要接著執行的任意額外任務`
-<!--SR:!2022-12-05,18,250-->
+<!--SR:!2023-01-19,45,250-->
 
 #🧠 React：useEffect的side effect 在 render 上來說是什麼？->->-> `render執行完畢所應該要有的處理`
 <!--SR:!2022-12-18,28,250-->
