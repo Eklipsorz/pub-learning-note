@@ -40,16 +40,52 @@
         ]
       },
       {
-        "id": "ec2ad659ce2f5213",
+        "id": "ae3a990f324c4497",
         "type": "tabs",
         "children": [
           {
-            "id": "f6e9341f3cba7905",
+            "id": "5e3bdb3e8b31befa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
+                "file": "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "47211692b68b004e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09499e817f785560",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ad2ee7deffbf1775",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b81dcff3c9139a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
+                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
+                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md"
+                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md"
               }
             }
           }
@@ -199,17 +235,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "f6e9341f3cba7905",
+  "active": "0b81dcff3c9139a1",
   "lastOpenFiles": [
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+    "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md",
+    "develop/JavaScript/this-binding/JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件.md",
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
     "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md",
-    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md",
-    "inbox/react-router v6 vs. v5 之間的差異簡介.md",
-    "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
-    "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md"
+    "inbox/React：在表格提交事件中，表格提交非法輸入欄內容時會有的處理.md"
   ]
 }

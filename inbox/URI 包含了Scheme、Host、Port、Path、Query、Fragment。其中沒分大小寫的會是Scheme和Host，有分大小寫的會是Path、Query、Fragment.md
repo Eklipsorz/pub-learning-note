@@ -97,7 +97,7 @@ URI包含了：
 <!--SR:!2022-12-05,10,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Fragment對於URI會是什麼？ ->->-> `在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部分`
-<!--SR:!2022-12-05,10,250-->
+<!--SR:!2023-01-02,28,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否區分大小寫->->-> `1. Path 2. Query 3. Fragment`
 <!--SR:!2022-12-04,9,250-->

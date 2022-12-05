@@ -80,7 +80,7 @@ function Component(props) {
 <!--SR:!2022-12-04,71,250-->
 
 #🧠 React：請問props概念是什麼？ ->->-> `將component當作標籤來使用，並對該標籤添加對應屬性值(attributes)，對應component的函式會以物件形式來存放這些屬性值(attributes)，而這些物件的每一個屬性(property)皆為原本的屬性(attribute)，因此被稱之為properties或者props`
-<!--SR:!2022-12-04,74,250-->
+<!--SR:!2023-06-18,195,250-->
 
 #🧠 React：請問透過props來傳遞資料至component的形式為？ ->->-> `對代表指定元間的標籤設定屬性名稱和屬性值(attribute)，<Component attribute1=value1 ..../> 或者<Component attribute1=value1 .....> <Component />`
 <!--SR:!2023-05-31,181,250-->
@@ -93,7 +93,7 @@ function Component(props) {
 <!--SR:!2023-05-24,177,250-->
 
 #🧠 React：請問從component如何接收到attributes來當參數？以代碼來表示 ->->-> `function CourseGoalItem(data) {....}或者function CourseGoalItem(props) {...}，接著在以props的屬性來取用對應的attribute值`
-<!--SR:!2022-12-04,74,250-->
+<!--SR:!2023-06-16,193,250-->
 
 #🧠 React：function CourseGoalItem(title, amount, date)可以接收到賦予CourseGoalItem標籤的title屬性、amount屬性、date屬性嗎？->->-> `不能`
 <!--SR:!2023-03-17,129,250-->
