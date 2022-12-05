@@ -40,6 +40,24 @@
         ]
       },
       {
+        "id": "33831935a2b11e84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a782afda0053c9d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "8888f765c0c2d057",
         "type": "tabs",
         "children": [
@@ -122,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
+                "file": "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
+                "file": "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md"
+                "file": "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md"
               }
             }
           }
@@ -181,8 +199,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "5c02b351b59439ea",
+  "active": "a782afda0053c9d6",
   "lastOpenFiles": [
+    "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
     "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
     "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
@@ -191,7 +210,6 @@
     "inbox/react-router v6 vs. v5 之間的差異簡介.md",
     "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
-    "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md",
-    "inbox/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+    "inbox/React：所有JSX構成的標籤在React上會自動被解析成存在JS語言體系才能解析的物件，該物件會是Virtaul DOM.md"
   ]
 }

@@ -198,7 +198,7 @@ this is use effect
 
 
 #🧠 React：useEffect 的cleanup 是清除上一次side effect所產生的影響，為何要清除？->->-> `好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現`
-<!--SR:!2022-12-05,18,250-->
+<!--SR:!2023-01-20,46,250-->
 
 
 #🧠 React：useEffect(a, b) 語法中的b 是什麼 ->->-> `第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies`
