@@ -35,7 +35,7 @@ v6：
 ```
 
 2. parent route元件直接包裹nested route元件，並搭配Outlet元件
-	- parent route元件的path可以省略\/\*
+	- parent route元件的path可以省略\/\*，
 	- nested route元件的path設定，具體會以parent route所在的path來定位
 	- new-user的Route會是以它的parent route所在的path為主，也就是/welcome/new-user
 	- 其path定位方式是以目前所處的Parent Route元件所擁有的path來定位 ，是直接假定parent route所設定的path來定位並當作開頭，所以不需要額外添加。
@@ -63,7 +63,7 @@ outlet 命名緣由：
 重點：
 - Outlet 本身命名緣由為提供特定事物出去的通道。
 - Outlet 是一個react-router-dom所提供的元件
-- 主要用途為告知目前 route元件要在哪處來渲染它對應的element內容，目前頁面會是以parent route 所對應的頁面元件，並且讓系統去該元件找尋Outlet元件來替代element內容進行渲染
+	- 主要用途為告知目前 nested route元件要在parent route對應的元件的哪處來渲染nested route所指定的element渲染內容
 	- 若存在Outlet元件就以出現位置來呈現
 	- 若不存在就不呈現
 - 舉例
@@ -108,7 +108,7 @@ xxxx 元件下的路由
 <Routes />
 ```
 
-3. 以parent route所設定的path來決定nested Route的path：由於nested route的path本身會以parent route所設定的path為主，且不需要在nested route 的path再添加parent route所設定的path。
+3. 以parent route所設定的path來決定nested Route的path：根據是否nested route的實現來決定定位，若是parent route包含另一個route，那麼nested route的path就以parent route的path為主來調整；若是nested route綁定在component，而parent route包含著component，那麼就以瀏覽器的absolute url或者relative url為主。
 
 比如parent route是設定path1\/\*，而nested route若設定path2，那麼實際上路徑會是path1/為主，也就是path1/path2
 
@@ -156,6 +156,11 @@ xxxx 元件下的路由
 
 #🧠  react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將parent route元件直接包裹nested route元件，並搭配Outlet元件，具體流程會是什麼？ ->->-> `	- parent route元件的path可以省略/* - nested route元件的path設定，具體會以parent route所在的path來定位`
 
+
+#🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將parent route元件直接包裹nested route元件，並搭配Outlet元件，具體流程中的parent route元件的path為何可以省略\/\*？ ->->-> `因為系統會直接以包裹的後裔route元件以及搭配parent route的path來定位來找`
+
+#🧠 react-router-dom v6 ：將nested Route元件安置在component，再讓component被parent route元件所包含，具體流程中的parent route元件的path可以省略\/\*？為什麼？->->-> `不能，因爲parent route包含的後裔元件並不是route元件，沒辦法直接省略`
+
 #🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將parent route元件直接包裹nested route元件，並搭配Outlet元件，其nested route元件的path定位方式會是以誰為主？->->-> `其path定位方式是以目前所處的Parent Route元件所擁有的path來定位`
 
 #🧠  react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含；第二、parent route元件直接包裹nested route元件，並搭配Outlet元件。這兩種方法通常會使用哪種，為什麼  ->->-> `通常會選擇第二種，由於可以將路由設定集中在同一個檔案，比較容易維護`
@@ -167,11 +172,24 @@ xxxx 元件下的路由
 #🧠 outlet 命名緣由是什麼？->->-> `Outlet 本身命名緣由為提供特定事物出去的通道`
 
 
-#🧠 react-router-dom：Outlet 是什麼樣用途的元件->->-> `主要用途為告知目前 route元件要在哪處來渲染它對應的element內容，目前頁面會是以parent route 所對應的頁面元件，並且讓系統去該元件找尋Outlet元件來替代element內容`
+#🧠 react-router-dom：Outlet 是什麼樣用途的元件->->-> `主要用途為告知目前 nested route元件要在parent route對應的元件的哪處來渲染nested route所指定的element渲染內容`
 
-#🧠  react-router-dom：Outlet 是`主要用途為告知目前 route元件要在哪處來渲染它對應的element內容`，那麼會渲染在哪個元件->->-> ``
+#🧠  react-router-dom：Outlet 在 nested route 上會是以哪個頁面元件的特定位置來渲染？->->-> `直接以parent route對應的渲染元件為主`
 
-#🧠 Question :: ->->-> ``
+#🧠 react-router-dom：Outlet的存不存在 在 nested route 上會是什麼關係？ ->->-> `	- 若存在Outlet元件就以出現位置來呈現 - 若不存在就不呈現`
+
+#🧠 以下為 react-router-dom v6的範例，請說明nested route在parent route的對應元件之間的關係，最好要搭配有沒有outlet來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670249192/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-outlet_cuogqg.png) ->->-> `比如底下設定new-user的Route擁有welcome string這字串當作JSX元件，但router不知道要如何把這元件渲染在目前頁面的何處，目前頁面元件會是Welcome，就會在裡頭檢查是否存在Outlet這元件，若存在就以出現位置來呈現welcome string這字串；若不存在就不呈現`
+
+#🧠 react-router-dom v6：建造一個nested route 的概念為何？ ->->-> `每一個Route都必須由Routes元件包裹、替parent Route元件的path設定fuzzy match、以parent route所設定的path來決定nested Route的path`
+
+#🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的每一個Route都必須由Routes元件包裹，具體為何？ ->->-> `添加Routes元件來包裹nested Route`
+
+#🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的替parent Route元件的path設定fuzzy match，具體為何？ ->->-> `由於每個Route的path為exact match，得設定成fuzzy match才能透過nested Route所設定的path值瀏覽到nested 元件和對應的路由設定`
+
+#🧠  react-router-dom v6：建造一個nested route 的概念為何？其中的替parent Route元件的path設定fuzzy match，具體實現為啥是設定fuzzy match ->->-> `由於每個Route的path為exact match，得設定成fuzzy match才能透過nested Route所設定的path值瀏覽到nested 元件和對應的路由設定`
+
+#🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的以parent route所設定的path來決定nested Route的path，具體為何？->->-> `根據是否nested route的實現來決定定位，若是parent route包含另一個route，那麼nested route的path就以parent route的path為主來調整；若是nested route綁定在component，而parent route包含著component，那麼就以瀏覽器的absolute url或者relative url為主`
+
 
 ---
 Status: #🌱 
