@@ -257,7 +257,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2023-01-18,74,250-->
 
 #🧠 React：useImperativeHandle 語法的createHandle是什麼？ ->->-> `用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理`
-<!--SR:!2022-12-04,26,250-->
+<!--SR:!2023-02-13,70,250-->
 
 
 #🧠 React：useImperativeHandle 語法的deps是什麼？ ->->-> `deps 則是指定義著依賴dependency的陣列，每一次ImperativeHandle觸發時都會檢查dependency是否有任一變動，有變動才執行createHandle；沒變動不會執行createHandle`
@@ -281,7 +281,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2023-01-09,39,249-->
 
 #🧠 React：useImperativeHandle在updating 階段會是什麼？ ->->-> `在updating階段時，每一次執行到都會比對目前deps內容是否與上一次render最近儲存到的deps一樣，若不一樣的話，就執行createHandle，接著將對應的deps資訊和handle儲存起來好比對和回傳；若一樣的話，就回傳最近的handle給ref物件之current屬性`
-<!--SR:!2022-12-04,17,249-->
+<!--SR:!2023-01-18,44,249-->
 
 #🧠 React：useImperativeHandle的deps目的是用來做什麼？ ->->-> `用來做優化處理，減少createHandle執行並且直接回傳相同結果。`
 <!--SR:!2023-01-05,36,249-->

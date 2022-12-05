@@ -40,16 +40,16 @@
         ]
       },
       {
-        "id": "ae3a990f324c4497",
+        "id": "714f121c24a475bd",
         "type": "tabs",
         "children": [
           {
-            "id": "5e3bdb3e8b31befa",
+            "id": "bf97672c7d7aa57c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md",
+                "file": "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,52 +58,16 @@
         ]
       },
       {
-        "id": "47211692b68b004e",
+        "id": "dea897073c9b93f5",
         "type": "tabs",
         "children": [
           {
-            "id": "09499e817f785560",
+            "id": "1a531dab2fb27a30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ad2ee7deffbf1775",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0b81dcff3c9139a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ec45989ca0fd7601",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "79037360c73d3ff8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
+                "file": "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
                 "mode": "source",
                 "source": false
               }
@@ -194,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
+                "file": "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
+                "file": "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -242,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md"
+                "file": "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md"
               }
             }
           }
@@ -253,8 +217,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "79037360c73d3ff8",
+  "active": "1a531dab2fb27a30",
   "lastOpenFiles": [
+    "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md",
+    "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md",
@@ -262,8 +228,6 @@
     "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
-    "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
-    "develop/React/React的create-react-app 預設會隱藏與開發無關的檔案和無用的模組安裝依賴關係，若要停止隱藏就執行npm run eject.md",
-    "develop/render/SGML 是標準標籤語言，以這語言為基底來打造出HTML，隨後以精簡SGML的形式來推出XML，並讓XML去支援HTML所欠缺的不足.md"
+    "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md"
   ]
 }

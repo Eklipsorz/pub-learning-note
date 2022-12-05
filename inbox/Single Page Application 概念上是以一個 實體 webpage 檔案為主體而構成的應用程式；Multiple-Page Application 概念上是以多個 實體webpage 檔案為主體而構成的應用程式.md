@@ -81,7 +81,7 @@
 <!--SR:!2023-01-19,54,250-->
 
 #🧠  Multiple-Page Application 概念上是什麼 ->->-> `概念上是以多個 實體webpage 檔案為主體而構成的應用程式`
-<!--SR:!2022-12-04,26,250-->
+<!--SR:!2023-02-12,69,250-->
 
 #🧠 Multiple-Page Application 的Page具體是什麼？  ->->-> `該應用程式的 每個 "Page" 都是對應著不同的實體webpage檔案`
 <!--SR:!2022-12-07,28,250-->
@@ -99,7 +99,7 @@
 #🧠 Multiple-Page Application：網頁上請求處理都是以誰為主體來執行->->-> `所有對於網頁的請求回應都會在這些實體webpage檔案間進行`
 <!--SR:!2022-12-07,28,250-->
 
-#🧠 Multiple-Page Application：當切換成新的page時，會做些什麼？(執行順序) ->->-> `載入對應HTML、CSS、JS，並且重新執行JS`
+#🧠 Multiple-Page Application：當切換成新的page時，載入網頁下，HTML、CSS、JS被執行的順序是？？(執行順序) ->->-> `載入對應HTML、CSS、JS，並且重新執行JS`
 <!--SR:!2022-12-05,26,250-->
 
 
