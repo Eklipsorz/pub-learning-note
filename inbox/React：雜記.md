@@ -31,14 +31,14 @@
 <!--SR:!2023-02-18,75,250-->
 
 #🧠 React： hook 執行方式在看起來是什麼？(functional component 角度和dom角度)->->-> `1. Custom hook 在functional component層級來看 會如同函式那樣呼叫 2. 以dom來看，則是hook註冊在特定dom節點`
-<!--SR:!2022-12-04,28,250-->
+<!--SR:!2023-02-18,75,250-->
 
 #🧠 React： hook 執行方式在functional component看起來是什麼？ ->->-> ` Custom hook 在functional component角度來看 會如同函式那樣呼叫`
 <!--SR:!2023-02-16,73,250-->
 
 
 #🧠 React： 假如useXXXX()會是印出XXXX，請問在functional component下若是以下面形式來執行useXXXX(); console.log('hi')  其執行順序和結果是？->->-> `會先執行useXXXX 在來執行console`
-<!--SR:!2022-12-04,28,250-->
+<!--SR:!2023-02-16,73,250-->
 
 #🧠 React：以dom來看，則是hook註冊在特定dom節點，比如說 ->->-> `綁定特定資訊至對應dom節點`
 <!--SR:!2023-01-28,60,250-->
