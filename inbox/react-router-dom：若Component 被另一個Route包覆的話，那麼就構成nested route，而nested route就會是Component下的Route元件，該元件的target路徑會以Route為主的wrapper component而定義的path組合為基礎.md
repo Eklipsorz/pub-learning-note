@@ -212,7 +212,7 @@ function outerFunction() {
 
 
 #🧠  react-router-dom：當客戶端要求轉換URL為/welcome/hi時，Router會做出什麼反應？若第二張圖的Route的path設定為/welcome/hi說明一下![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667487833/blog/react/react-router/Nested-route/nested-route-inside-component-example2_tgbsal.png) ->->-> ``
-<!--SR:!2022-12-06,6,246-->
+<!--SR:!2022-12-23,17,246-->
 
 ---
 Status: #🌱 

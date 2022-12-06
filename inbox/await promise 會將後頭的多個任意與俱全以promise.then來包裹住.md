@@ -125,7 +125,7 @@ flow
 <!--SR:!2023-02-17,73,250-->
 
 #🧠 在電腦科學裡，control flow是執行控制權的交接流向，白話點就是什麼？(指令、表達式的順序？)->->-> `在imperative program中的特定語句/表達式/指令/函式呼叫的執行順序會是如何`
-<!--SR:!2022-12-06,28,250-->
+<!--SR:!2023-02-18,74,250-->
 
 
 #🧠 JS：async/await之前的promise會有什麼樣的問題？->->-> `then chain 製造的巢狀問題`
@@ -148,7 +148,7 @@ flow
 <!--SR:!2023-02-09,68,250-->
 
 #🧠 JS：await 語法背後潛藏什麼樣語法？，以await dosomething();為例 ->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback。dosomething().then((...) => { // rest code })`
-<!--SR:!2022-12-06,28,250-->
+<!--SR:!2023-02-17,73,250-->
 
 #🧠 JS：當在async function中出現這個 await dosomething(); // rest code，請問JS解析器會當成什麼來執行？->->-> `await dosomething 語句之後的任意多個語法/表達式，其中實際上會把這些語句全以dosomething這promise 的then 語法中當callback，`
 <!--SR:!2023-01-21,54,250-->
