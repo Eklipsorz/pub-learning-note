@@ -167,7 +167,7 @@ const cartReducer = (prevState, action) => {
 
 ## 複習
 
-#💻 請至/react-builder/question-review/food-order-project-question領取題目並切換至develop-checkout-form 分支，實現一個checkout form 會有的功能-提交所需的渲染和處理、內容驗證功能、context object的處理，其中checkout form會於購物車點擊order按鈕後就出現，並且隱藏order和cancel按鈕，另外checkout form除了postalcode要五碼以外，其餘不要空字串就好，另外->->-> `https://github.com/academind/react-complete-guide-code/tree/17-practice-food-order-http-forms/code/07-finished/src`
+#💻 請至/react-builder/question-review/food-order-project-question領取題目並切換至develop-checkout-form 分支，實現一個checkout form 會有的功能-付款功能、付款資料表單和按鈕之間的切換、付款成功的畫面、付款載入狀況、付款錯誤顯示->->-> `https://github.com/academind/react-complete-guide-code/tree/17-practice-food-order-http-forms/code/07-finished/src`
 <!--SR:!2022-12-06,28,250-->
 
 
