@@ -52,7 +52,7 @@ npm install react-router-dom
 
 
 #🧠  react-router 和react-router-dom 提供的功能是什麼？  ->->-> ` 其中react-router本身分為react-router和react-router-dom，前者是負責提供router的核心功能，後者是基於前者的基礎來向DOM渲染介面提供對應router的功能`
-<!--SR:!2022-12-06,26,250-->
+<!--SR:!2023-02-10,66,250-->
 
 
 

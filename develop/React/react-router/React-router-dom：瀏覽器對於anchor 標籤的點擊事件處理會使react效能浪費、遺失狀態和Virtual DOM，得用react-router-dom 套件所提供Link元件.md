@@ -167,7 +167,7 @@ export default MainHeader;
 <!--SR:!2022-12-19,30,249-->
 
 #🧠 anchor element 語法的預設點擊事件是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
-<!--SR:!2022-12-06,26,250-->
+<!--SR:!2023-02-08,64,250-->
 
 #🧠 瀏覽器對於anchor element所實現的URL變動事件處理具體會是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
 <!--SR:!2022-12-22,33,249-->
@@ -211,7 +211,7 @@ export default MainHeader;
 <!--SR:!2022-12-22,33,249-->
 
 #🧠 react-router-dom Link ：\<Link to="xxxx"\>xxxx1\<\/Link\> 中的 to 和 xxxx1是什麼->->-> `	- to ： 要導向的頁面位置/網址 - xxxx1：為被綁定網址/位置的hypertext`
-<!--SR:!2022-12-06,26,250-->
+<!--SR:!2023-02-09,65,250-->
 
 #🧠 目前已使用react-router來實現welcome和products這兩個虛擬webpage，請問目前畫面上的anchor標籤有帶來什麼樣的效能問題？解決方式是什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667047396/blog/react/react-router/react-router-wrong-example-with-anchor-element_fybsto.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667049517/blog/react/react-router/react-router-wrong-example-solution_aevrsx.png)`
 <!--SR:!2023-02-13,69,250-->
