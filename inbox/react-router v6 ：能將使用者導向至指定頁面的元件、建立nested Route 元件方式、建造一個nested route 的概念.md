@@ -57,7 +57,7 @@ v6：
 
 outlet 命名緣由：
 > a way, especially a pipe or hole, for liquid or gas to go out
-
+		
 重點：
 - Outlet 本身命名緣由為提供特定事物出去的通道。
 - Outlet 是一個react-router-dom所提供的元件
