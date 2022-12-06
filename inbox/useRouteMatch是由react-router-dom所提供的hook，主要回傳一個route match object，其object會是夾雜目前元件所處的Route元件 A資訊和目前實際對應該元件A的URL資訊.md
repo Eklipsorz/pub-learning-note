@@ -68,7 +68,7 @@ match.path 適用於以path為主的正規表達式來對應的場景
 <!--SR:!2022-12-09,11,250-->
 
 #🧠 react-router-dom：useRouteMatch 會回傳route match 物件，其物件會是夾雜著什麼屬性？  ->->-> `path屬性、url屬性`
-<!--SR:!2022-12-06,8,250-->
+<!--SR:!2022-12-28,22,250-->
 
 #🧠 react-router-dom：useRouteMatch 會回傳route match 物件，其物件會夾雜著path屬性、url屬性，這兩個屬性是什麼？ ->->-> `path 屬性：目前對應到的Route元件所擁有的path屬性值、url 屬性：目前對應到的Route元件所取得的實際路徑值`
 <!--SR:!2022-12-07,9,250-->
