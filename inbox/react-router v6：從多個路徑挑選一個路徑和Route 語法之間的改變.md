@@ -120,7 +120,7 @@ v6：
 
 
 #🧠 react-router v6：每個Route有什麼樣的不同？其中每個Route元件都會是以exact matching，若要用fuzzy matching，那麼可以怎麼做？->->-> `使用/*來表示`
-<!--SR:!2022-12-06,3,250-->
+<!--SR:!2022-12-14,8,250-->
 
 
 #🧠 react-router v6：每個Route有什麼樣的不同？語法上的不同是指什麼 ->->-> `要渲染的元件會以Route元件的屬性來表示`
@@ -131,7 +131,7 @@ v6：
 
 
 #🧠 react-router v6：Route語法標籤是`<Route path=path1 element={element1} />`，那麼path和element各為什麼？ ->->-> `	 - path 屬性是填入要比對的路徑  - element 屬性是填入要比對滿足後要渲染的元件`
-<!--SR:!2022-12-06,3,250-->
+<!--SR:!2022-12-16,10,250-->
 
 
 #🧠 假設目前是react-router v6，若URL切換至/products/edit的話，會呈現什麼畫面？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1669900964/blog/react/react-router/v6/react-router-v6-route-example_fhsfsi.png) ->->-> `但由於會比較具體程度，而最後一個Route設定的路徑是設定明確的路徑，所以會選擇它作為渲染元件。`
