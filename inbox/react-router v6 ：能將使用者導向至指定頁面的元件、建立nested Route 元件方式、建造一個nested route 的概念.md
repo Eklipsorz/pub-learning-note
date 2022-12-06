@@ -51,7 +51,7 @@ v6：
 
 
 
-					#### Outlet 元件
+#### Outlet 元件
 
 [[@react-routerReactRouterDeclarativea]]
 
