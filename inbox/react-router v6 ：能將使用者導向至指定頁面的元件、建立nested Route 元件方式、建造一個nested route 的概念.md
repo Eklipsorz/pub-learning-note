@@ -49,8 +49,6 @@ v6：
 #### 第二種方式的好處
 透過第二個方式可以將路由設定都集中在同一個檔案，增加維護性
 
-
-
 #### Outlet 元件
 
 [[@react-routerReactRouterDeclarativea]]
