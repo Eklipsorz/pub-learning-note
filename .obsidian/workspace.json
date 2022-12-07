@@ -22,16 +22,16 @@
         ]
       },
       {
-        "id": "43b2429fb6f69342",
+        "id": "f3084c74cd7fcd9a",
         "type": "tabs",
         "children": [
           {
-            "id": "16e5853bb5dd1a40",
+            "id": "450f9503e50cb8e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：food-order project  建立order所需要做的處理.md"
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md"
               }
             }
           }
@@ -181,8 +181,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "16e5853bb5dd1a40",
+  "active": "450f9503e50cb8e2",
   "lastOpenFiles": [
+    "inbox/React：food-order project  建立order所需要做的處理.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
     "inbox/react-router v6 vs. v5 之間的差異簡介.md",
@@ -191,7 +192,6 @@
     "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
     "develop/React/react-router/SPA 未使用Routing 技術會有的現象：不管我們使用哪些服務或者瀏覽哪些頁面，URL都不會改變，這些服務和頁面都共享著同一個URL。.md",
     "develop/render/HTML、CSS、JS隨著時代更迭而演進成需要事前轉譯來解決各自問題、根據情況來產生對應的CSS、HTML.md",
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-    "develop/React/React：每一個React Elemenet的內容只會允許一個parent 節點.md"
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md"
   ]
 }

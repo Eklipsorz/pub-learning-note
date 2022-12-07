@@ -226,10 +226,10 @@ consume
 #🧠 consumer 命名緣由為何？ ->->-> `是使用特定資源並消耗掉的人事物`
 <!--SR:!2022-12-21,56,250-->
 
-#🧠  React：context 的 provider component 會如同正常component擁有什麼(提示：四項) ->->-> `狀態、hook、props、生命週期函式`
-<!--SR:!2022-12-07,45,248-->
+#🧠  React：context 的 provider component 會如同正常component擁有什麼 ->->-> `狀態、hook、props`
+<!--SR:!2023-03-29,112,248-->
 
-#🧠 React：context 的 consumer component 會如同正常component擁有什麼(提示：四項) ->->->  `狀態、hook、props、生命週期函式`
+#🧠 React：context 的 consumer component 會如同正常component擁有什麼 ->->->  `狀態、hook、props、`
 <!--SR:!2022-12-08,46,248-->
 
 
