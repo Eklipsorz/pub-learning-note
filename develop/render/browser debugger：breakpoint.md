@@ -131,7 +131,7 @@ break：
 <!--SR:!2023-04-03,128,250-->
 
 #🧠 若目前斷點是夾帶著其他函式的程式碼的話，按下 step over next function 會往哪邊走？ ->->-> `會跳過被呼叫函式並執行下一行停止`
-<!--SR:!2022-12-07,59,250-->
+<!--SR:!2023-05-04,148,250-->
 
 #🧠 假設目前暫停在 A 行的 `double`，點擊step-into-next-function call 按鈕後會往哪裡走？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662387052/blog/debugger/browser_debugger_breakpoint_upj2ov.png) ->->-> `點擊圖示後會跳至 B 行，也就是 `double` 的第一行。`
 <!--SR:!2023-04-05,128,250-->

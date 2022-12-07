@@ -269,7 +269,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 
 
 #🧠 React：useImperativeHandle(ref, createHandle) 中的createHandler 用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理，請問它如何實現->->-> `直接在對應函式回傳任意形式的內容`
-<!--SR:!2022-12-07,28,250-->
+<!--SR:!2023-02-19,74,250-->
 
 #🧠  React：useImperativeHandle(ref, createHandle) 中的createHandler 回傳的內容會是設定什麼？- ->->-> ` createHandle 函式所回傳正是指定ref.current所擁有的值`
 <!--SR:!2023-02-19,74,250-->

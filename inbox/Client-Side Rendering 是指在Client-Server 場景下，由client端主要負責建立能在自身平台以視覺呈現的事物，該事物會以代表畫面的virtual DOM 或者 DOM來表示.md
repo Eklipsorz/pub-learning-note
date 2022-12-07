@@ -97,7 +97,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 `
 
 #🧠 Client-Side Rendering 的Page組成是什麼？ ->->-> `少量的實體Webpage 和 大量建構出來的虛擬Webpage：  實體部分會是指一份實體webpage - 虛擬部分則會是N份虛擬webpage`
-<!--SR:!2022-12-07,28,250-->
+<!--SR:!2023-02-18,73,250-->
 
 #🧠 Client-Side Rendering 的優點是什麼？(共兩個) ->->-> `減少server處理渲染部分的壓力、頁面切換較快`
 <!--SR:!2023-02-12,69,250-->
