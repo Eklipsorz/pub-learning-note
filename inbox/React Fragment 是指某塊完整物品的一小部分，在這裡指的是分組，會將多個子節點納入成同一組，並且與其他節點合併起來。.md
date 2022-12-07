@@ -113,7 +113,7 @@ fragment
 
 
 #🧠 請用React Fragment的非語法糖來解決以下程式碼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894853/blog/react/fragment/react-fragment-example_l6fx92.png)->->-> ``
-<!--SR:!2022-12-07,53,250-->
+<!--SR:!2023-04-17,131,250-->
 
 
 #🧠 請用React Fragment的語法糖來解決以下程式碼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894853/blog/react/fragment/react-fragment-example_l6fx92.png)->->-> ``
