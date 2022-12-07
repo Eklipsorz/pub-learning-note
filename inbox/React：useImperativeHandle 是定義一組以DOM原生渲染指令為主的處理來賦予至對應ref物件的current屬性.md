@@ -265,14 +265,14 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 
 
 #🧠 React：useImperativeHandle 語法的觸發處理時機點？ ->->-> `與useLayoutEffect一樣`
-<!--SR:!2022-12-07,28,250-->
+<!--SR:!2023-02-19,74,250-->
 
 
 #🧠 React：useImperativeHandle(ref, createHandle) 中的createHandler 用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理，請問它如何實現->->-> `直接在對應函式回傳任意形式的內容`
 <!--SR:!2022-12-07,28,250-->
 
 #🧠  React：useImperativeHandle(ref, createHandle) 中的createHandler 回傳的內容會是設定什麼？- ->->-> ` createHandle 函式所回傳正是指定ref.current所擁有的值`
-<!--SR:!2022-12-07,28,250-->
+<!--SR:!2023-02-19,74,250-->
 
 #🧠 React：useImperativeHandle在mounting 階段和updating階段會是什麼？ ->->-> `首次在mounting階段時，會因為沒有事先存下的deps資訊而先執行createHandle，接著將對應deps資訊和handle儲存起來好比對和回傳。 在updating階段時，每一次執行到都會比對目前deps內容是否與上一次render最近儲存到的deps一樣，若不一樣的話，就執行createHandle，接著將對應的deps資訊和handle儲存起來好比對和回傳；若一樣的話，就回傳最近的handle給ref物件之current屬性`
 <!--SR:!2023-01-02,35,249-->

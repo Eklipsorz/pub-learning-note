@@ -93,7 +93,7 @@ const Quote = () => {
 
 
 #🧠 使用useRouteMatch 和 使用useLocation 的場景各是什麼？   ->->-> `1. useRouteMatch 只適用於被route 元件所包含的元件 2. useLocation 適用於任意元件，無論是否被route元件給包含`
-<!--SR:!2022-12-07,9,250-->
+<!--SR:!2023-01-01,25,250-->
 
 
 

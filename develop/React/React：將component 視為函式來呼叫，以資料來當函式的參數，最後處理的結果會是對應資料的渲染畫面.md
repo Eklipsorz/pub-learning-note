@@ -73,7 +73,7 @@ function Component(props) {
 
 
 #🧠 props 概念是什麼？ ->->-> `以物件形式來表示component上的屬性，並且接收由component上所構成的標籤上屬性(attributes)`
-<!--SR:!2022-12-07,73,250-->
+<!--SR:!2023-06-17,192,250-->
 
 
 #🧠 在代表特定元件A的特定函式中，其參數props對於其元件A會是代表什麼？ ->->-> `props會是被視作為元件物件A的屬性(properies)`
