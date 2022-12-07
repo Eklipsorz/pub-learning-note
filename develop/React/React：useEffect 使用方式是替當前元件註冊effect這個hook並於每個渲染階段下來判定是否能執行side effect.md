@@ -207,7 +207,7 @@ this is use effect
 
 
 #🧠 React：useEffect 本身在functional component會像是什麼？主要會做什麼 ->->-> `useEffect 語法：functional component 是像是function呼叫執行useEffect呼叫，其中會替當前元件註冊effect`
-<!--SR:!2022-12-07,20,250-->
+<!--SR:!2023-01-30,54,250-->
 
 
 

@@ -114,7 +114,7 @@ rendering content under certain conditions
 
 ## 複習
 #🧠 React：渲染部分{expression}中的expression是指陣列的話，React會如何解析？->->-> `React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容`
-<!--SR:!2022-12-07,63,250-->
+<!--SR:!2023-05-13,157,250-->
 
 #🧠 React：請問React如何解析這表達式，請用程式碼來表示![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/simple-array-result_kdklfb.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/simple-array-example_u9y6l6.png)`
 <!--SR:!2022-12-12,58,250-->
