@@ -22,24 +22,6 @@
         ]
       },
       {
-        "id": "48434f0432485753",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e00d57e8b1eb440d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "ef89cd9fb5648e5a",
         "type": "tabs",
         "children": [
@@ -74,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bar.example.com",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -122,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md"
+                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md"
               }
             }
           }
@@ -181,8 +162,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "673bafcf0104f9cf",
+  "active": "6f0cd7b8d143a5f4",
   "lastOpenFiles": [
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
     "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
@@ -191,7 +173,6 @@
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "inbox/React：food-order project  建立order所需要做的處理.md",
     "inbox/react-router v6：Link 和 NavLink 本身在v6並沒有太大的改變，主要改變的點是activeClassName屬性被移除，改由className來實現。.md",
-    "inbox/react-router v6 vs. v5 之間的差異簡介.md",
-    "inbox/Single Page Application 概念上是以一個 實體 webpage 檔案為主體而構成的應用程式；Multiple-Page Application 概念上是以多個 實體webpage 檔案為主體而構成的應用程式.md"
+    "inbox/react-router v6 vs. v5 之間的差異簡介.md"
   ]
 }
