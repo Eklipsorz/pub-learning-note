@@ -221,7 +221,7 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 為什麼使用JSX語法糖的React Element 只能接受一個parent element，講個大概就好 ->->-> `每一個JSX語法都會是代表著React.createElement(...)回傳的節點，該節點會是一個包含多個子節點的parent節點、然而實際上JSX卻呈現著多個parent節點，而return 只能夠回傳單一物件/值，換言之，只能回傳一個parent節點，在這樣情況下，只能選擇一個或者都不選，哪一個都無法按照JSX代表意思來使原生方法實現。`
-<!--SR:!2022-12-08,74,250-->
+<!--SR:!2023-06-20,194,250-->
 
 #🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
 <!--SR:!2023-03-01,105,249-->

@@ -92,7 +92,7 @@
 <!--SR:!2023-02-04,59,250-->
 
 #🧠 react-router：若要讓Route 元件比對path是以exact matching來進行，請問語法會是什麼？->->-> `<Route path="..." exact />`
-<!--SR:!2022-12-08,24,250-->
+<!--SR:!2023-02-09,63,250-->
 
 
 #🧠 react-router：若Route 元件沒添加exact，那麼會有什麼樣效果？ ->->-> `當被Router挑選到Route時，會以path版本的正規表達式來比對目前URL和path所指定的路徑是否在表達式上達成一致`
