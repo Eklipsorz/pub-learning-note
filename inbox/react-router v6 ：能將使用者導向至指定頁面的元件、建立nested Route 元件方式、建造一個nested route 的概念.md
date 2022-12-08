@@ -132,7 +132,7 @@ xxxx 元件下的路由
 <!--SR:!2022-12-08,3,250-->
 
 #🧠 react-router-dom ：v6 還有Redirect嗎？若沒有得用什麼替代？ ->->-> `取消掉Redirect 元件，得用Navigate元件替代`
-<!--SR:!2022-12-08,3,250-->
+<!--SR:!2022-12-15,7,250-->
 
 #🧠 react-router-dom ：v6是使用Navigate元件來實現能將使用者導向至指定頁面的功能，請問主要導向原理是什麼？ ->->-> `將指定頁面的網址推到瀏覽紀錄stack之最上面`
 <!--SR:!2022-12-08,3,250-->
@@ -146,7 +146,7 @@ xxxx 元件下的路由
 
 
 #🧠  react-router-dom v6：如何透過Navigate語法來以push方式變動瀏覽紀錄，其語法是？ ->->-> `	<Navigate to=xxxxx />`
-<!--SR:!2022-12-08,3,250-->
+<!--SR:!2022-12-16,8,250-->
 
 
 #🧠  react-router-dom v6：建立nested Route 元件方式，其原理有哪些？ ->->-> `1. 將nested Route元件安置在component，再讓component被parent route元件所包含、2.  parent route元件直接包裹nested route元件，並搭配Outlet元件`
@@ -215,7 +215,7 @@ xxxx 元件下的路由
 <!--SR:!2022-12-17,9,250-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的以parent route所設定的path來決定nested Route的path，具體為何？->->-> `根據是否nested route的實現來決定定位，若是parent route包含另一個route，那麼nested route的path就以parent route的path為主來調整；若是nested route綁定在component，而parent route包含著component，那麼就以瀏覽器的absolute url或者relative url為主`
-<!--SR:!2022-12-08,3,250-->
+<!--SR:!2022-12-17,9,250-->
 
 
 #🧠 react-router-dom v6：假若要設定/path1/path2 對應元件為xxxxx1，就直接將nested route的path設定成/path2，那麼那要如何瀏覽到nested route的對應渲染元件xxxxx1![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670250102/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_clqra8.png) ->->-> ``
