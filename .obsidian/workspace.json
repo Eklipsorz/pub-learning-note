@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 6.md",
+                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 6.md"
+                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md"
               }
             }
           }
