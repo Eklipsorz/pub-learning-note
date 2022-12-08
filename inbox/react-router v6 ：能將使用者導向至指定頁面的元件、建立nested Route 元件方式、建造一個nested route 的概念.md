@@ -200,10 +200,10 @@ xxxx 元件下的路由
 <!--SR:!2022-12-16,8,250-->
 
 #🧠 以下為 react-router-dom v6的範例，請說明nested route在parent route的對應元件之間的關係，最好要搭配有沒有outlet來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670249192/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-outlet_cuogqg.png) ->->-> `比如底下設定new-user的Route擁有welcome string這字串當作JSX元件，但router不知道要如何把這元件渲染在目前頁面的何處，目前頁面元件會是Welcome，就會在裡頭檢查是否存在Outlet這元件，若存在就以出現位置來呈現welcome string這字串；若不存在就不呈現`
-<!--SR:!2022-12-08,3,250-->
+<!--SR:!2022-12-15,7,250-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？ ->->-> `每一個Route都必須由Routes元件包裹、替parent Route元件的path設定fuzzy match、以parent route所設定的path來決定nested Route的path`
-<!--SR:!2022-12-08,3,250-->
+<!--SR:!2022-12-16,8,250-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的每一個Route都必須由Routes元件包裹，具體為何？ ->->-> `添加Routes元件來包裹nested Route`
 <!--SR:!2022-12-17,9,250-->
