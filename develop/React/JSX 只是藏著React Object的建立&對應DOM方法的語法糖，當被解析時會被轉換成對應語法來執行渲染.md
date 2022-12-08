@@ -200,7 +200,7 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 React.createElement 語法是做什麼的？ 簡述一下用途？->->-> `該語法會建立Virtual DOM節點並回傳對應DOM節點物件`
-<!--SR:!2022-12-08,74,250-->
+<!--SR:!2023-06-20,194,250-->
 
 #🧠 React.createElement(A,B,C) 語法中的A、B和C各是做什麼的？ 簡述一下用途？ ->->-> `A指定建立後的DOM種類為何、B則是指定DOM節點會有什麼樣的attributes、C是指定DOM節點所包含的子節點`
 <!--SR:!2022-12-08,74,250-->
