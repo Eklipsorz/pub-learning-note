@@ -136,7 +136,7 @@ const Component1 = (props) => {
 <!--SR:!2023-02-04,60,250-->
 
 #🧠 react-router-dom：useParams 語法為？ ->->-> `import { useParams } from 'react-router-dom'; const params = useParams();`
-<!--SR:!2022-12-10,26,250-->
+<!--SR:!2023-02-17,69,250-->
 
 #🧠 react-router-dom：useParams 回傳什麼？ ->->-> `useParams 會回傳URL parameters 資訊物件`
 <!--SR:!2022-12-12,27,250-->
