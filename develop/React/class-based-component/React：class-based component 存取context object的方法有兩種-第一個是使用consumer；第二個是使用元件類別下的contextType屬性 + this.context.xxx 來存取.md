@@ -157,7 +157,7 @@ Class1 { name: 'hi' } Class2 {}
 
 
 #🧠 JS ：對著class本身增加屬性 vs. 在class使用static 變數之間差別是什麼？class的對應物件會有該屬性或者static變數嗎？->->-> `class的對應物件並不會獲取到這些屬性或者變數`
-<!--SR:!2022-12-10,16,230-->
+<!--SR:!2023-01-16,37,230-->
 
 #🧠 React 官方提供的語法要如何實際存取context object內容，假使已經設定contextType屬性->->-> `直接在class內使用this.context.xxxx，其中xxxx就是context object所能提供的屬性和方法。`
 <!--SR:!2023-01-29,69,250-->

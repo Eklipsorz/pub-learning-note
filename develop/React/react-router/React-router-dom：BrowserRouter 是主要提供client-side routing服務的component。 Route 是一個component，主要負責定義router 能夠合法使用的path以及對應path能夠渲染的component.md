@@ -85,7 +85,7 @@ function App() {
 <!--SR:!2023-02-10,67,250-->
 
 #🧠 react-router-dom v5中：Route 是什麼？功能是？->->-> `Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component`
-<!--SR:!2022-12-09,27,250-->
+<!--SR:!2023-02-20,72,250-->
 
 #🧠 react-router-dom v5中：Route 元件如何定義path和對應的component？(包含載入) ->->-> `import { Route } from 'react-router-dom'; return ( <Route path="/xxx1"> <Component1 /> </Route>）`
 <!--SR:!2023-02-23,75,250-->
