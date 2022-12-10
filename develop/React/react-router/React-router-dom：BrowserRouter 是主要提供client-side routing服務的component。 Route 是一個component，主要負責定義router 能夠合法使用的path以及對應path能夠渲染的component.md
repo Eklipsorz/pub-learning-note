@@ -110,7 +110,7 @@ function App() {
 
 
 #🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``
-<!--SR:!2022-12-09,28,250-->
+<!--SR:!2023-02-22,74,250-->
 
 
 #🧠 React：component 若要以虛擬webpage來呈現的話，開發者要如何區分？->->-> `將該component放置在/src/pages 或者 /src/screens`
