@@ -288,7 +288,7 @@ consume
 
 
 #🧠  React：Context中的Provider 具體是wrapper component，那麼沒被它包覆著的Component 與被包覆著的元件之間的差別是？ ->->-> `	- 沒被它包覆著子節點不被允許存取它對於其Context Object的設定內容，以其他Provider component設定的內容或者預設值為主`
-<!--SR:!2022-12-10,44,248-->
+<!--SR:!2023-03-30,110,248-->
 
 
 #🧠 React：Context中的Provider 具體是wrapper component，那麼被它包覆著的Component會擁有允許存取對Context Object？允許可以代表可直接存取嗎 ->->-> `並不能`
