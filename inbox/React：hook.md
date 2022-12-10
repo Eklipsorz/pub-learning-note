@@ -119,7 +119,7 @@ hook 名詞：
 <!--SR:!2023-02-26,120,250-->
 
 #🧠 在電腦科學裡，原本在還沒引入hook時會是如何？請用下圖的before來說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660573336/blog/react/hook/hook-before-after_gnjt9w.png) ->->-> `每個模組會如同下圖的上面一樣，模組A可以直接呼叫模組B來執行；反之，模組B可以直接呼叫模組A。`
-<!--SR:!2022-12-09,74,250-->
+<!--SR:!2023-06-23,195,250-->
 
 #🧠 在電腦科學裡，引入hook時會是如何？請用下圖的after來說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660573336/blog/react/hook/hook-before-after_gnjt9w.png) ->->-> `就如同下圖中的下面一樣，每個模組間的呼叫都有另一個模組C攔截，當模組A想呼叫模組B，必須透過模組C才能呼叫，模組B想呼叫模組A，就必須透過呼叫模組C才能呼叫模組A。`
 <!--SR:!2023-06-21,193,250-->
@@ -127,7 +127,7 @@ hook 名詞：
 
 
 #🧠 在電腦科學裡，after部分的Module C是什麼？做什麼用？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660573336/blog/react/hook/hook-before-after_gnjt9w.png) ->->-> `模組C會被稱之為hook function，負責攔截、收集資料、根據攔截結果來決定繼續讓模組AB能以原有邏輯(沒有hook下)服務著對方或者改變模組呼叫的結果。`
-<!--SR:!2022-12-09,74,250-->
+<!--SR:!2023-06-21,193,250-->
 
 
 ---

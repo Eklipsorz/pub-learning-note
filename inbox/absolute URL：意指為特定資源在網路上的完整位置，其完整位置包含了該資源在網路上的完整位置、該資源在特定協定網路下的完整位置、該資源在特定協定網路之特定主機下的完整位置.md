@@ -114,7 +114,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2022-12-11,28,250-->
 
 #🧠 https\:\/\/developer\.mozilla\.org\/en-US\/docs\/Learn 會是什麼種類URL決定方式？ ->->-> `absolute url`
-<!--SR:!2022-12-09,26,250-->
+<!--SR:!2023-02-18,70,250-->
 
 
 ---
