@@ -141,7 +141,7 @@ const FormControl = styled.div`
 <!--SR:!2022-12-17,67,250-->
 
 #🧠 請試著用styled-components 來綁定一個名為FormControl 的元件？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662216306/blog/react/style/css-in-js/styled-components-form-control-example_niwxzc.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662216412/blog/react/style/css-in-js/styled-components-form-control-result_ivn2gd.png)`
-<!--SR:!2022-12-09,60,250-->
+<!--SR:!2023-05-11,152,250-->
 
 
 

@@ -72,14 +72,14 @@ function App() {
 <!--SR:!2023-02-10,67,250-->
 
 #🧠 react-router-dom v5中：BrowserRouter 是一個component，主要提供client-side routing服務的component，那麼如何使元件們能享用這項服務 ->->-> `以wrapper component形式來包含後裔元件或者子元件，使他們都能使用client-side routing服務`
-<!--SR:!2022-12-09,28,250-->
+<!--SR:!2023-02-22,74,250-->
 
 #🧠 react-router-dom v5中：BrowserRouter 是一個component，主要提供client-side routing服務的component，那麼如何使元件們能享用這項服務，使用方式是？(包含載入)->->-> `import { BrowserRouter } from 'react-router-dom';  <BrowserRouter> <Component /> <BrowserRouter />`
 <!--SR:!2023-02-18,72,250-->
 
 
 #🧠 react-router-dom v5中：BrowserRouter 要如何載入？ ->->-> `import { BrowserRouter } from 'react-router-dom'; `
-<!--SR:!2022-12-10,28,250-->
+<!--SR:!2023-02-22,74,250-->
 
 #🧠 react-router-dom v5中：如何定義router 的 route?  ->->-> `使用Route component 來定義哪個path所對應的component是什麼？`
 <!--SR:!2023-02-10,67,250-->
@@ -88,10 +88,10 @@ function App() {
 <!--SR:!2022-12-09,27,250-->
 
 #🧠 react-router-dom v5中：Route 元件如何定義path和對應的component？(包含載入) ->->-> `import { Route } from 'react-router-dom'; return ( <Route path="/xxx1"> <Component1 /> </Route>）`
-<!--SR:!2022-12-09,28,250-->
+<!--SR:!2023-02-23,75,250-->
 
 #🧠 react-router-dom v5中：Route 元件的path 和 Component1是什麼？ ->->-> ` path 要註冊的path 端點和Component1： 指定當客戶端的URL端點為path 時，要渲染的Component是什麼`
-<!--SR:!2022-12-10,28,250-->
+<!--SR:!2023-02-20,72,250-->
 
 
 #🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `path 要註冊的path 端點，格式會是absolute url 或者 relative url，詳細位置會是以瀏覽器的規則來解析決定`
@@ -101,7 +101,7 @@ function App() {
 <!--SR:!2023-02-21,73,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path設定為/apple，那react app URL位置為xxxx1.com，那麼URL是什麼才能到/apple所設定的路徑->->-> `xxxx1.com/apple 來看待。`
-<!--SR:!2022-12-10,28,250-->
+<!--SR:!2023-02-21,73,250-->
 
 
 
