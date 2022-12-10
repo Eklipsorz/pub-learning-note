@@ -84,7 +84,7 @@ export default Quote;
 <!--SR:!2022-12-11,10,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question 領取題目並切換至build-get-single-quote 分支，在那請使用useHttp和lib/api.js來在Quote.js實現瀏覽單個Quote功能，請務必要有辦法顯示找不到對應Quote、找到Quote、載入中的畫面->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/20-sending-getting-quote-data/src/pages/QuoteDetail.js`
-<!--SR:!2022-12-10,10,250-->
+<!--SR:!2023-01-06,27,250-->
 
 
 ---
