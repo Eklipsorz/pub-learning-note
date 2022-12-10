@@ -199,7 +199,7 @@ export default CourseInput;
 
 ## 複習
 #🧠 在styled-components的template-literal中，要如何實現讓template-literal內的樣式屬性根據執行情況而更改？->->-> `在styled-components的template-literal中，使用${}並加入callback，由於本身是template-literal，所以會先執行callback得到對應的結果並替代callback所在的地方，最後以替代後的結果來當styled-components的方法之參數`
-<!--SR:!2022-12-10,62,250-->
+<!--SR:!2023-01-13,34,230-->
 
 
 #🧠 在styled-components的template-literal中所使用的callback會是取得什麼樣參數來處理？->->-> `callback 的參數是對應元件的props物件`

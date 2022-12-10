@@ -95,7 +95,7 @@ function App() {
 
 
 #🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `path 要註冊的path 端點，格式會是absolute url 或者 relative url，詳細位置會是以瀏覽器的規則來解析決定`
-<!--SR:!2022-12-10,28,250-->
+<!--SR:!2023-02-22,74,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path 通常是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
 <!--SR:!2023-02-21,73,250-->
@@ -106,7 +106,7 @@ function App() {
 
 
 #🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
-<!--SR:!2022-12-10,28,250-->
+<!--SR:!2023-02-21,73,250-->
 
 
 #🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``
