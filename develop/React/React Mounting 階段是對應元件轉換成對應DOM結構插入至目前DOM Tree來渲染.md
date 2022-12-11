@@ -109,7 +109,7 @@ React updates DOM and refs 主要用途為：
 
 
 #🧠 React Mounting 階段下的render函式是做什麼？ ->->-> `根據實例內容和render上對應元件的內容來解析成Virtual DOM結果`
-<!--SR:!2022-12-11,72,250-->
+<!--SR:!2023-06-18,189,250-->
 
 #🧠 React Mounting 階段下的React updates DOM and refs函式是做什麼？ ->->-> `- 拿render獲取到的Virtual DOM結果和目前的Virtual DOM結果比對，看差異是如何 - 根據差異來轉換成實際DOM節點來渲染`
 <!--SR:!2022-12-11,72,250-->
@@ -118,7 +118,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2023-04-12,143,250-->
 
 #🧠 React Mounting 階段下的componentDidMount函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
-<!--SR:!2022-12-11,72,250-->
+<!--SR:!2023-06-09,180,250-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式主要用途是做什麼？ ->->-> `	- 從該元件的props物件獲取狀態 - 並用獲取到的狀態值更新目前元件的狀態`
 <!--SR:!2023-05-01,154,250-->

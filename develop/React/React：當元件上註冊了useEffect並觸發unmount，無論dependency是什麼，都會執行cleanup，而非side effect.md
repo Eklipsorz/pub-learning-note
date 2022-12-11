@@ -98,7 +98,7 @@ function Child(props) {
 ## 複習
 
 #🧠 React：useEffect cleanup function 執行時機是什麼？ ->->-> `updating：執行下一個useEffect前，會執行cleanup。unmounting：component被unmount前，會執行effect cleanup`
-<!--SR:!2022-12-11,22,250-->
+<!--SR:!2023-02-02,53,250-->
 
 #🧠 React：useEffect 在unmount 時真是會執行componentWillUnmount?  ->->-> `並沒有，只是單方面會額外執行cleanup`
 <!--SR:!2022-12-19,28,250-->
