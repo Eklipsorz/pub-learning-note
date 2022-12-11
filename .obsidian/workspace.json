@@ -45,6 +45,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "6e6429e59e215980",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6f80585b41b3b1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
