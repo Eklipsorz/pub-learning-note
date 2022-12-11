@@ -2,16 +2,21 @@
 
 ### 以React-router來用Loader來發送請求的前置處理
 
-首先，預設的Router元件並不支援loader
 
 
-### 
+#### loader 和 useLoaderData 技術不被預設的BrowserRouter所支援
 
 loader 和 useLoaderData 技術不被預設的BrowserRouter所支援，換言之，無法讓Router根據URL切換來發送請求
 
 
 解法是：
-- 自製一個
+- 重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些是要以Loader來執行。
+
+
+
+
+
+
 
   
 
@@ -29,27 +34,8 @@ RouterProvider 元件
 
   
 
-  
 
-createBrowserRouter
 
-- 用途為制定一組Routing來產生BrowserRouter
-
-  
-
-  
-
-createRoutesFromElements ：
-
-- 將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件
-
-- 用途為允許開發者以JSX形式來定義Routing並建立對應的Router
-
-  
-
-> `createRoutesFromElements` is a helper that creates route objects from `<Route>` elements.
-
-> It's useful if you prefer to create your routes as JSX instead of objects.
 
 
 
@@ -84,3 +70,5 @@ Tags:
 Links:
 [[useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料]]
 References:
+[[@CreateBrowserRouterV6]]
+[[@CreateRoutesFromElementsV6]]

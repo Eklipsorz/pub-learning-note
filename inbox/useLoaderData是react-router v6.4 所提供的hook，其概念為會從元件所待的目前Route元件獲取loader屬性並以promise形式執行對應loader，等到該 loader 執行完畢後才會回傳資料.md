@@ -14,6 +14,10 @@ const loadedData = useLoaderData()
 ```
 - 使用useLoaderData的目的為：
 	- 由React-router負責根據URL切換來發送對應請求來讓元件獲取資料或者服務，而非由元件負責發送請求。
+	- 若Route A 設定loader屬性，當目前URL切換至對應Route A所對應的path，那麼就會由Router負責執行loader對應的請求處理，等到獲得回應才會將資料給予元件
+```
+<Route loader=.... />
+```
 
 ## 複習
 
