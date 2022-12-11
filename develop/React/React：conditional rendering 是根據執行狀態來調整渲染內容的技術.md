@@ -230,7 +230,7 @@ export default Expenses;
 
 
 #🧠 React：請用程式碼來展示Conditional Operator 如何實現Conditional Rendering  ->->-> `return ({enable ? <h1>enable</h1> : <h1>disable</h1>});`
-<!--SR:!2022-12-11,67,250-->
+<!--SR:!2023-05-28,168,250-->
 
 #🧠 React：請用程式碼來展示兩個And Operator 如何實現Conditional Rendering ->->-> `return ({enable && <h1>enable</h1>} {!enable && <h1>disable</h1>})`
 <!--SR:!2022-12-13,68,250-->
