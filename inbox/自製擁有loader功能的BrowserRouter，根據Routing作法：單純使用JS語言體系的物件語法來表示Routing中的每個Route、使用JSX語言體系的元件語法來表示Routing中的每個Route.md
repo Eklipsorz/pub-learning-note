@@ -133,7 +133,7 @@ Status:
 Tags:
 Links:
 [[useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料]]
-[[Untitled 8]]
+[[讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染]]
 References:
 [[@CreateBrowserRouterV6]]
 [[@CreateRoutesFromElementsV6]]
