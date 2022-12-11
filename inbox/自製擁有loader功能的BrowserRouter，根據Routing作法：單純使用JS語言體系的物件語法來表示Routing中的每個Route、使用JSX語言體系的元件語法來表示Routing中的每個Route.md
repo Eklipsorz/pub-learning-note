@@ -13,7 +13,8 @@
 #### createBrowserRouter 用途
 
 [[@CreateBrowserRouterV6]]
-> `createRoutesFromElements` is a helper that creates route objects from `<Route>` elements. It's useful if you prefer to create your routes as JSX instead of objects.
+> This is the recommended router for all React Router web projects. It uses the DOM History API to update the URL and manage the history stack.
+> It also enables the v6.4 data APIs like loaders, actions, fetchers and more.
 
 ```
 const router = createBrowserRouter([
