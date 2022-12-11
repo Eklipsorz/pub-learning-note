@@ -21,15 +21,6 @@ loader 和 useLoaderData 技術不被預設的BrowserRouter所支援，換言之
 	- 對應RouterProvider安裝至App.js
 
 
-
-
-
-
-
-
-  
-
-
 ## 複習
 
 
