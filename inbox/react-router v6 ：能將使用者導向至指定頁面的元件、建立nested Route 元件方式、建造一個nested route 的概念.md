@@ -58,7 +58,7 @@ v6：
 outlet 命名緣由：
 > a way, especially a pipe or hole, for liquid or gas to go out
 		
-重點：
+[](https://cdn.discordapp.com/attachments/618094134481256479/1050450649977987082/lwf40W3.png)重點：
 - Outlet 本身命名緣由為提供特定事物出去的通道。
 - Outlet 是一個react-router-dom所提供的元件
 	- 主要用途為告知目前 nested route元件要在parent route對應的元件的哪處來渲染nested route所指定的element渲染內容
