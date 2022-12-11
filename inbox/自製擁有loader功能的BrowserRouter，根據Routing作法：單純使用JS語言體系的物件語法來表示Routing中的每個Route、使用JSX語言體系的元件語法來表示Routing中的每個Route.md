@@ -151,6 +151,7 @@ createRoutesFromElements(JSX Element)
 首先透過createBrowserRouter來建立擁有loader機制的Router，其中Routing會是以對應RootLayout元件的Route元件來擔任所有Route元件的Parent Route元件，後裔元件會以該元件的對應畫面為主，所以得在RootLayout定義Outlet元件才能確定每個後裔元件的渲染所在。
 
 另外當瀏覽到/時，就會以RootLayout元件和WelcomePage元件來渲染，而當瀏覽到/blog時，系統會從中找到blog的Route，並將BlogPostsPage元件渲染在RootLayout元件的指定位置上。
+
 ```
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -170,9 +171,7 @@ function App() {
 }
 
 export default App;
-
 ```
-  
 RootLayout 元件
 ```
 import MainNavigation from '../components/MainNavigation';
