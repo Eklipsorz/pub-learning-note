@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+                "file": "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "mode": "source",
                 "source": false
               }
@@ -45,24 +45,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "d58915eb88b4acc0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5163e9683a2f1128",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+                "file": "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+                "file": "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md"
+                "file": "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
               }
             }
           }
@@ -192,8 +174,8 @@
   "lastOpenFiles": [
     "inbox/useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料.md",
     "inbox/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
-    "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "inbox/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+    "inbox/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "inbox/react-router-dom v6：RouteProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
     "inbox/Untitled 6.md",
     "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",

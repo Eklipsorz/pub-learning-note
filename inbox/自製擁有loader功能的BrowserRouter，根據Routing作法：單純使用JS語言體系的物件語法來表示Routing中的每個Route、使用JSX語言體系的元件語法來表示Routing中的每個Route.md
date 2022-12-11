@@ -10,7 +10,7 @@
 
 
 
-#### createRoutesFromElements 用途
+#### createBrowserRouter 用途
 
 [[@CreateBrowserRouterV6]]
 > `createRoutesFromElements` is a helper that creates route objects from `<Route>` elements. It's useful if you prefer to create your routes as JSX instead of objects.
@@ -201,11 +201,19 @@ export default RootLayout;
 在這裏會以RootLayout的配置來編排所有頁面元件，然而在這裡的頁面元件皆會被RootLayout元件所包含，所以會以RootLayout指定的頁面元件為基底來渲染，但唯一問題就是不知道在那個頁面下的哪個位置進行渲染，所以得用Outlet來指定後裔Route元件可以在哪渲染他們所對應的頁面元件。
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
+
+
+#🧠 react-router-dom v6：自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？ ->->-> `- 單純使用JS語言體系的物件語法來表示Routing中的每個Route - 使用JSX語言體系的元件語法來表示Routing中的每個Route，然後再將JSX語言體系轉換成JS語言體系的物件語法。`
+
+#🧠 react-router-dom v6：自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？其中可以使用JSX語言體系的元件語法來表示Routing中的每個Route，那這樣就能定義了？還是要做什麼？ 沒做會如何？->->-> `還得將JSX語言體系轉換成JS語言體系的物件語法。沒做的話，系統會無法正常執行`
+
+
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[React]]
 Links:
 [[useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料]]
 [[讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染]]
