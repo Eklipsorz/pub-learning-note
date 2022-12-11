@@ -79,10 +79,24 @@ function App() {
 
 #🧠 react-router-dom v6：使用useLoaderData的目的為何？ ->->-> `由React-router負責根據使用者所切換的URL來發送對應請求來讓元件獲取資料或者服務，而非由元件負責發送請求。`
 
-#🧠  react-router-dom v6：useLoaderData 是什麼？用途是什麼？ ->->-> `react-router v6.4 所提供的hook、ㄑ`
+#🧠  react-router-dom v6：useLoaderData 是什麼？用途是什麼？ ->->-> `react-router v6.4 所提供的hook、用途為在元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件`
+
+#🧠 react-router-dom v6：useLoaderData語法是什麼？ ->->-> `const loadedData = useLoaderData()`
+
+#🧠 react-router-dom v6：useLoaderData語法是const loadedData = useLoaderData()，請問它會回傳什麼？？ ->->-> ` useLoaderData 會是回傳loader 以resolve形式所回傳的資料`
 
 
 
+#🧠 useLoaderData 其概念為會從元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件，那麼loader會定義在哪？->->-> `通常會將特定頁面A或者服務A相關的loader定義在特定頁面A或者服務A所對應的元件內，然後以named export來匯出`
+
+
+
+#🧠 useLoaderData 其概念為會從元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件，那麼loader會如何設定在Route元件？？->->-> `<Route loader={loader} />`
+
+#🧠 useLoaderData 其概念為會從元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件，那麼loader的原型會是如何？舉例說明 ->->-> `具體會是promise，export function loader() { return getPosts(); }`
+
+
+#🧠 react-router-dom v6： 請說明以下loader和element之間的關係 `<Route loader={ loader1 } element={<element />} />` ->->-> `目前URL切換至對應Route A所對應的path，那麼就會由Router負責執行loader對應的請求處理，等到獲得回應才會將資料給予元件`
 
 ---
 Status: #🌱 
