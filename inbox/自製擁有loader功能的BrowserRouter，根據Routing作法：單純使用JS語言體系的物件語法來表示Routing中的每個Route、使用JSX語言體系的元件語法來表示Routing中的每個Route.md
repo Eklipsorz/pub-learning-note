@@ -83,13 +83,6 @@ const router = createBrowserRouter([
 > `createRoutesFromElements` is a helper that creates route objects from `<Route>` elements.
 > It's useful if you prefer to create your routes as JSX instead of objects.
 
-createRoutesFromElements ：
-- 屬於react-router-dom函式庫的函式
-- 將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件
-- 用途為允許開發者以JSX形式來定義Routing並建立對應的Router
-
-
-  
 ```
 import {
   createBrowserRouter,
@@ -124,6 +117,45 @@ const router = createBrowserRouter([
   },
 ]);
 ```
+
+createRoutesFromElements ：
+- 屬於react-router-dom函式庫的函式
+- 將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件
+- 用途為允許開發者以JSX形式來定義Routing並建立對應的Router
+- 語法為：
+	- 回傳代表存有Route物件的陣列
+	- 其中JSX Element為JSX語言體系的JSX Element
+```
+createRoutesFromElements(JSX Element)
+```
+
+
+
+
+### 範例
+
+首先透過createBrowserRouter來建立擁有loader機制的Router，其中Routing會是
+
+```
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout />}>
+      <Route index path='/' element={<WelcomePage />} />
+      <Route path='/blog' element={<BlogLayout />}>
+        <Route index element={<BlogPostsPage />} loader={blogPostsLoader} />
+        <Route path=':id' element={<PostDetailPage />} />
+      </Route>
+      <Route path='/blog/new' element={<NewPostPage />} />
+    </Route>,
+  ),
+);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+```
+  
+
 
 ## 複習
 #🧠 Question :: ->->-> ``

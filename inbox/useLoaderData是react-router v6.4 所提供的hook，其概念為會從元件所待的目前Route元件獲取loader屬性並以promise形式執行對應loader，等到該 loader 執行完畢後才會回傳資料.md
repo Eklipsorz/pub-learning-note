@@ -19,6 +19,53 @@ const loadedData = useLoaderData()
 <Route loader=.... />
 ```
 
+#### 通常loader會定義在哪？
+
+通常會將特定頁面A或者服務A相關的loader定義在特定頁面A或者服務A所對應的元件內，然後以named export來匯出
+
+```
+import { useLoaderData } from 'react-router-dom';
+
+import Posts from '../components/Posts';
+
+import { getPosts } from '../util/api';
+
+  
+
+function BlogPostsPage() {
+
+const loadedData = useLoaderData();
+
+  
+
+return (
+
+<>
+
+<h1>Our Blog Posts</h1>
+
+<Posts blogPosts={loadedData} />
+
+</>
+
+);
+
+}
+
+  
+
+export default BlogPostsPage;
+
+export function loader() {
+
+return getPosts();
+
+}
+```
+
+
+
+
 ## 複習
 
 
