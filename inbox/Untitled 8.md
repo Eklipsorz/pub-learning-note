@@ -1,13 +1,15 @@
 ## 描述
 
-### 以React-router來用Loader來發送請求的前置處理
+### 讓React-router根據URL切換來發送對應請求的前置處理
+
+讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、
 
 
 
-#### loader 和 useLoaderData 技術不被預設的BrowserRouter所支援
+
+#### 問題&解法： loader 和 useLoaderData 技術不被預設的BrowserRouter所支援
 
 loader 和 useLoaderData 技術不被預設的BrowserRouter所支援，換言之，無法讓Router根據URL切換來發送請求
-
 
 解法是：
 - 重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些是要以Loader來執行。
@@ -70,5 +72,3 @@ Tags:
 Links:
 [[useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料]]
 References:
-[[@CreateBrowserRouterV6]]
-[[@CreateRoutesFromElementsV6]]
