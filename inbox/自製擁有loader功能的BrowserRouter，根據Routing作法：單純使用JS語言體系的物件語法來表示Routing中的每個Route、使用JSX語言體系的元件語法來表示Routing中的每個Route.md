@@ -132,20 +132,35 @@ createRoutesFromElements(JSX Element)
 
 
 
+  
+
+### Route 元件的index屬性
+
+> index routes are simply the default routes that will be rendered if the parent route path is activated
+
+若在Route元件添加index屬性，就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染
+
+
+
+
+
+
+
 ### 範例
 
-首先透過createBrowserRouter來建立擁有loader機制的Router，其中Routing會是
+首先透過createBrowserRouter來建立擁有loader機制的Router，其中Routing會是以對應RootLayout元件的Route元件來擔任所有Route元件的Parent Route元件，後裔元件會以該元件的對應畫面為主，所以得在RootLayout定義Outlet元件才能確定每個後裔元件的渲染所在。
 
+另外當瀏覽到/時，就會以RootLayout元件和WelcomePage元件來渲染，而當瀏覽到/blog時，系統會從中找到blog的Route，並將BlogPostsPage元件渲染在RootLayout元件的指定位置上。
 ```
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
-      <Route index path='/' element={<WelcomePage />} />
-      <Route path='/blog' element={<BlogLayout />}>
+      <Route index element={<WelcomePage />} />
+      <Route path='blog' element={<BlogLayout />}>
         <Route index element={<BlogPostsPage />} loader={blogPostsLoader} />
         <Route path=':id' element={<PostDetailPage />} />
       </Route>
-      <Route path='/blog/new' element={<NewPostPage />} />
+      <Route path='blog/new' element={<NewPostPage />} />
     </Route>,
   ),
 );
@@ -153,9 +168,37 @@ const router = createBrowserRouter(
 function App() {
   return <RouterProvider router={router} />;
 }
+
+export default App;
+
 ```
   
+RootLayout 元件
+```
+import MainNavigation from '../components/MainNavigation';
+import { Outlet } from 'react-router-dom';
+function RootLayout({ children }) {
+  return (
+    <>
+      <MainNavigation />
+      <main>
+        <Outlet />
+      </main>
+    </>
+  );
+}
 
+export default RootLayout;
+```
+
+
+#### 以RootLayout的配置來編排所有頁面元件
+
+> in order for rootlayout to support child routes,
+
+> marks where all those nested child components
+
+在這裏會以RootLayout的配置來編排所有頁面元件，然而在這裡的頁面元件皆會被RootLayout元件所包含，所以會以RootLayout指定的頁面元件為基底來渲染，但唯一問題就是不知道在那個頁面下的哪個位置進行渲染，所以得用Outlet來指定後裔Route元件可以在哪渲染他們所對應的頁面元件。
 
 ## 複習
 #🧠 Question :: ->->-> ``
@@ -166,6 +209,7 @@ Tags:
 Links:
 [[useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料]]
 [[讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染]]
+[[react-router-dom v6：RouteProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染]]
 References:
 [[@CreateBrowserRouterV6]]
 [[@CreateRoutesFromElementsV6]]
