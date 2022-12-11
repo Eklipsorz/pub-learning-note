@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "28c73245f146e9d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f154fe51535fbf83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 8.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -99,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -158,17 +182,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "bb4d79f1e9995dda",
+  "active": "f154fe51535fbf83",
   "lastOpenFiles": [
+    "inbox/useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料.md",
+    "inbox/Untitled 8.md",
+    "inbox/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
     "inbox/Untitled 6.md",
     "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.<element> 所建立的元件.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-    "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
-    "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
-    "develop/Redis/redis 主要採取單執行緒的原因是因為避免不必要的鎖成本、執行緒切換執行.md",
-    "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md"
+    "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md"
   ]
 }
