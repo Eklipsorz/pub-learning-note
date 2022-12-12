@@ -204,12 +204,16 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？ ->->-> `- 單純使用JS語言體系的物件語法來表示Routing中的每個Route - 使用JSX語言體系的元件語法來表示Routing中的每個Route，然後再將JSX語言體系轉換成JS語言體系的物件語法。`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？其中可以使用JSX語言體系的元件語法來表示Routing中的每個Route，那這樣就能定義了？還是要做什麼？ 沒做會如何？->->-> `還得將JSX語言體系轉換成JS語言體系的物件語法。沒做的話，系統會無法正常執行`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途為何？->->-> `用途制定一組Routing來產生BrowserRouter`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，那麼它屬於？？ ->->-> `屬於react-router-dom函式庫中的函式`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是什麼？ ->->-> `const router = createBrowserRouter(paths)`
 <!--SR:!2022-12-14,2,248-->
@@ -219,8 +223,10 @@ export default RootLayout;
 
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，它會回傳什麼？ ->->-> `回傳router物件`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，那麼paths會是為陣列，陣列中的每個項目皆為一個能代表Route元件的Route物件，每個Route物件會是擁有什麼屬性？->->-> `	- path 為指定哪個path要比對和渲染 - element：當目前URL切換到Route物件所對應的path時，所要渲染的元件內容 - loader：當目前URL切換到Route物件所對應的path時，所要執行的資料載入或者對特定伺服器發送索要資料的請求，並於渲染之前回傳結果給元件 - children：以陣列來表示該對應Route元件所擁有的後裔Route元件。`
+<!--SR:!2022-12-14,2,248-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為何？ ->->-> `允許開發者以JSX形式來定義Routing並建立對應的Router`

@@ -59,6 +59,7 @@ RouterProvider 元件
 #🧠  react-router-dom v6： RouteProvider 語法是什麼->->-> `<RouterProvider router=router1/>`
 
 #🧠 react-router-dom v6： RouteProvider 語法是`<RouterProvider router=router1/>`，其中的router會是什麼？->->-> `router 是填入儲存對應routing的router物件，主要定義對應routing`
+<!--SR:!2022-12-15,3,250-->
 
 
 
