@@ -22,7 +22,7 @@ createBrowserRouter([
 
 > Note that the `:teamId` in the path is parsed as provided as `params.teamId` by the same name.
 
-> ## 
+> ## `request`
 > Without React Router, the browser would have made a _Request_ to your server, but React Router prevented it! Instead of the browser sending the request to your server, React Router sends the request to your loaders.
 
 
