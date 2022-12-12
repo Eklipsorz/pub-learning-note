@@ -138,7 +138,11 @@ createRoutesFromElements(JSX Element)
 
 > index routes are simply the default routes that will be rendered if the parent route path is activated
 
-若在Route元件添加index屬性，就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染
+
+index屬性：
+- index 屬性為Route元件所擁有的
+- 若在Route元件添加index屬性，就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染
+- 每個被綁定index屬性的Route元件並不會有path屬性
 
 
 
@@ -261,6 +265,9 @@ export default RootLayout;
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換至refactor-blogposts-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給blogposts-page對應元件來接收並渲染->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src`
+<!--SR:!2022-12-14,2,248-->
+
+#🧠 請問以下JSX元素經過createRoutesFromElements轉換後，會是什麼樣的語法？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png)->->-> `![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/js-route-with-loader-example-_fpms3k.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/js-route-with-loader-example-_fpms3k.png)`
 
 ---
 Status: #🌱 
