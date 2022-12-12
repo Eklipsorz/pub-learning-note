@@ -116,7 +116,7 @@ const Component1 = (props) => {
 
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 dynamic URL 的手段會是以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理，舉例 ->->-> `/xxx1/:something，在這裡的固定路徑會是xxx1，專擷取著/xxx1/為開頭的任意語句，並把xxx1/後頭的內容擷取出來，並存放至名為something的空間或者變數 `
-<!--SR:!2022-12-12,27,250-->
+<!--SR:!2023-02-19,69,250-->
 
 
 #🧠 useParams  是React 內建hook嗎？還是什麼？ ->->-> `不是內建，而是react-router-dom所提供的自製hook`

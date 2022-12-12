@@ -90,7 +90,7 @@ import { Switch } from 'react-router-dom';
 ## 複習
 
 #🧠 react-router-dom：switch 是什麼？做什麼？ ->->-> `switch 是一個元件，最主要是根據目前切換後的URL和後裔Route元件所擁有path是否滿足或者一樣來決定其渲染的control flow`
-<!--SR:!2022-12-12,27,250-->
+<!--SR:!2023-02-21,71,250-->
 
 #🧠 react-router-dom：switch 是一個元件，最主要是根據目前切換後的URL和後裔Route元件所擁有path是否滿足或者一樣來決定其渲染的control flow，具體是什麼？ ->->-> `具體則是當Switch中的任一Route上的path是否滿足於目前切換的path，滿足的話，就跳出Switch以外來停止後續的Route挑選`
 <!--SR:!2023-02-16,68,250-->
@@ -99,7 +99,7 @@ import { Switch } from 'react-router-dom';
 <!--SR:!2023-01-23,52,250-->
 
 #🧠 react-router-dom：switch  使用方式如何？ ->->-> `<Switch> <Route path=path1 /> <Route path=path2 /> . . </Switch>`
-<!--SR:!2022-12-12,27,250-->
+<!--SR:!2023-02-22,72,250-->
 
 #🧠 react-router-dom： 在沒採用switch 下的Route 遍歷所造成的問題會是什麼？ 與Route本身只會在遍歷完畢才停止有關->->-> `切換端點會滿足多個Route而致使在同一個頁面同時渲染多個Route所包含的component`
 <!--SR:!2022-12-12,27,250-->
