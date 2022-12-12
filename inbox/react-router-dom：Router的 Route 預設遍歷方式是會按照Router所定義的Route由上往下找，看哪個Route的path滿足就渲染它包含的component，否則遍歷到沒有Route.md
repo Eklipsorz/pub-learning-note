@@ -108,7 +108,7 @@
 
 
 #🧠 react-router：在同一個虛擬webpage上，若以下2個Route的path被滿足的話，那麼會有什麼樣的效果![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667308798/blog/react/react-router/Route-component/two-paths-react-router-route_dxxb2b.png)->->-> `<Component1 /><Component2 />`
-<!--SR:!2022-12-12,27,250-->
+<!--SR:!2023-02-19,69,250-->
 
 #🧠 假如path2、path3是滿足現在切換後的URL1，那麼當URL切換成URL1時的情況會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667308798/blog/react/react-router/Route-component/four-paths-react-router-route_enznvc.png)->->-> `那麼當URL切換成URL1時，就會往目前頁面對應綁定的Router Route定義來往下遍歷：首先是綁定path1的Route進行path比對，結果是不滿足，接著往綁定path2的Route進行path比對，結果是滿足的，並且以Component2 來渲染。接著滿足後就往下找綁定path3的Route來比對path，結果是滿足的，並且以Component3 來渲染，最後再遍歷綁定path4的Route來比對path，結果是不滿足的。`
 <!--SR:!2022-12-13,28,250-->

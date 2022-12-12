@@ -234,7 +234,7 @@ AbortController.abort()
 <!--SR:!2023-01-17,45,250-->
 
 #🧠 AbortController 方法 - abort 語法是？->->-> `AbortController.abort()`
-<!--SR:!2022-12-12,23,250-->
+<!--SR:!2023-02-12,62,250-->
 
 #🧠 JS：AbortController interface 如何建構對應類別的物件？ ->->-> `new AbortController()`
 <!--SR:!2022-12-13,24,250-->

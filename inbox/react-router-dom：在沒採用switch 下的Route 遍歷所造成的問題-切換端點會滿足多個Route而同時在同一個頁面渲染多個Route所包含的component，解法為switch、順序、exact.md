@@ -108,7 +108,7 @@ import { Switch } from 'react-router-dom';
 <!--SR:!2022-12-13,28,250-->
 
 #🧠 react-router-dom：上圖是客戶端要切換的端點，下面是目前客戶端所待著的webpage，其中有綁定router元件在那webpage，請問它會遇到什麼樣的問題？會因為會同時滿足第二個Route和第三個Route所設定的path而將Products元件和ProductDetails元件同時在目前webpage顯示，解法有什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch_kxguyp.png) ->->-> `使用Switch 元件 + 改變Route順序、使用Switch 元件 ＋ 添加exact matching`
-<!--SR:!2022-12-12,27,250-->
+<!--SR:!2023-02-22,72,250-->
 
 
 #🧠 react-router-dom：上圖是客戶端要切換的端點，下面是目前客戶端所待著的webpage，其中有綁定router元件在那webpage，請問它會遇到什麼樣的問題？解法若採用使用Switch 元件 + 改變Route順序，請問具體會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch_kxguyp.png) ->->-> `改變的順序是\/products\/\:productId 和 \.products![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch-solution1_wyytjg.png)`
