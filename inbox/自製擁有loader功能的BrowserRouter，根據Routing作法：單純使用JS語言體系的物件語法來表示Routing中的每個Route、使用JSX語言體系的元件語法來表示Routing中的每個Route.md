@@ -237,6 +237,7 @@ export default RootLayout;
 <!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為何？->->-> `createRoutesFromElements(JSX Element)`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為`createRoutesFromElements(JSX Element)`，那麼JSX Element會是什麼？->->-> `其中JSX Element為JSX語言體系的JSX Element`
 <!--SR:!2022-12-15,3,250-->
@@ -252,9 +253,11 @@ export default RootLayout;
 <!--SR:!2022-12-14,2,248-->
 
 #🧠 請試著說明每個路徑能夠對應到什麼以及渲染什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png) ->->-> ``
+<!--SR:!2022-12-14,2,248-->
 
 
 #🧠 裡頭的RootLayout元件對應的Route元件對於其他後裔元件來說，兩者渲染關係是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png)->->-> `在這裡會以RootLayout元件所對應的Route元件來當作是其他後裔Route元件的渲染參考頁面元件，並且會在RootLayout元件設定Outlet元件來告知React後裔Route元件的渲染可以在參考頁面上的哪個位置上做渲染`
+<!--SR:!2022-12-14,2,248-->
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換至refactor-blogposts-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給blogposts-page對應元件來接收並渲染->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src`
