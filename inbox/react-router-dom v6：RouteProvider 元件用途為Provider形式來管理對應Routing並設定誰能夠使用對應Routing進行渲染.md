@@ -48,10 +48,13 @@ RouterProvider 元件
 ## 複習
 
 #🧠 react-router-dom v6： RouteProvider 會是什麼？->->-> `本身由react-router-dom函式庫所提供的元件`
+<!--SR:!2022-12-15,3,250-->
 
 #🧠 react-router-dom v6： RouteProvider 會是由react-router-dom函式庫所提供的元件，其用途會是什麼？->->-> `用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染`
+<!--SR:!2022-12-15,3,250-->
 
 #🧠 react-router-dom v6： RouteProvider 會是由react-router-dom函式庫所提供的元件，用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染，那麼具體如何設定誰能夠使用對應Routing進行渲染 ->->-> `將Provider放至至特定元件就能允許`
+<!--SR:!2022-12-15,3,250-->
 
 #🧠  react-router-dom v6： RouteProvider 語法是什麼->->-> `<RouterProvider router=router1/>`
 

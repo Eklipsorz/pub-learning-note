@@ -212,8 +212,10 @@ export default RootLayout;
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，那麼它屬於？？ ->->-> `屬於react-router-dom函式庫中的函式`
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是什麼？ ->->-> `const router = createBrowserRouter(paths)`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，那麼paths會是什麼？  ->->-> `引數為陣列，陣列中的每個項目皆為一個能代表Route元件的Route物件`
+<!--SR:!2022-12-14,2,248-->
 
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，它會回傳什麼？ ->->-> `回傳router物件`
@@ -222,20 +224,26 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為何？ ->->-> `允許開發者以JSX形式來定義Routing並建立對應的Router`
+<!--SR:!2022-12-14,2,248-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為允許開發者以JSX形式來定義Routing並建立對應的Router，具體是什麼？->->-> `具體是藉由將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為何？->->-> `createRoutesFromElements(JSX Element)`
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為`createRoutesFromElements(JSX Element)`，那麼JSX Element會是什麼？->->-> `其中JSX Element為JSX語言體系的JSX Element`
+<!--SR:!2022-12-15,3,250-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 會回傳什麼？->->-> `回傳代表存有Route物件的陣列`
+<!--SR:!2022-12-13,1,230-->
 
 #🧠 react-router-dom v6：Route 元件添加index屬性會是代表什麼？->->-> `就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染`
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 react-router-dom v6：`<Route path='/' element={<RootLayout />}>  <Route index element={<WelcomePage />} /> </Route>` 試著說明index的作用->->-> ``
+<!--SR:!2022-12-14,2,248-->
 
 #🧠 請試著說明每個路徑能夠對應到什麼以及渲染什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png) ->->-> ``
 
