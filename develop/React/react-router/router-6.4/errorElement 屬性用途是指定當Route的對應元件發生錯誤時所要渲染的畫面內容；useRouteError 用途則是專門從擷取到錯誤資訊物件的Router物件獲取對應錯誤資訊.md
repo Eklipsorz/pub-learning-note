@@ -35,25 +35,31 @@ const error = useRouteError()
 ## 複習
 
 #🧠 react-router-dom v6.4 ：errorElement 在Route元件上是做什麼？ ->->-> `指定當Route的對應元件發生錯誤時所要渲染的畫面內容`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 在Route元件上是指定當Route的對應元件發生錯誤時所要渲染的畫面內容，那麼它能夠攔截到哪種錯誤？？->->-> `Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤`
 <!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 會是哪一種元件的屬性？ ->->-> `Route`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 會是Route元件的屬性，請問其語法會是什麼？ ->->-> `<Route .... errorElement={JSX Element} />`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 在Route元件上是指定當Route的對應元件發生錯誤時所要渲染的畫面內容，其中它能夠攔截渲染對應元件時的錯誤，請問元件的範疇會是什麼？ ->->-> `元件本身、元件所包含的後裔元件`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4 ：useRouteError 用途為何？->->-> ` 專門從Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤來獲取對應的錯誤資訊物件`
 <!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4 ：useRouteError 語法為何？ ->->-> `const error = useRouteError()`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4 ：useRouteError 語法會回傳什麼？ ->->-> `回傳錯誤資訊物件`
 <!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4 ：useRouteError 是專門回傳錯誤資訊物件，請問從哪裡獲取到的錯誤資訊物件？ ->->-> `從Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤資訊來獲取和轉換`
+<!--SR:!2022-12-16,3,250-->
 
 
 ---
