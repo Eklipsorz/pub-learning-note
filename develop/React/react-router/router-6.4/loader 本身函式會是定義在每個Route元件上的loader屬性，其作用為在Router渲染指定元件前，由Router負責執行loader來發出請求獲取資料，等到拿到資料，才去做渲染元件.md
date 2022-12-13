@@ -77,7 +77,6 @@ params 是物件，裡面夾雜了目前所處Route所攔截到的URL參數部�
 
 #🧠 react-router v6.4：loader 本身通常會回傳什麼？->->-> `回傳一個promise為主的資料索求請求`
 
-#🧠 react-router v6.4：Route元件的loader通常要求什麼樣的loader? ->->-> `回傳一個promise為主的資料索求請求的函式物件`
 
 
 ---
