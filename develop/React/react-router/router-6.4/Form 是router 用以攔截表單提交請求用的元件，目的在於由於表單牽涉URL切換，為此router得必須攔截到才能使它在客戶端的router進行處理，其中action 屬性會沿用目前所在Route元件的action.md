@@ -61,20 +61,28 @@ const callback = (params, request) => { ... }
 ## 複習
 
 #🧠 react-router-dom v6.4：Form 元件會是做什麼？->->-> ` router 用以攔截表單提交請求用的元件`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：Form 元件設計給router來提供的目的是什麼？ ->->-> `目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：若表單套用react-router的Form的話，其提交時的請求會是如何？ ->->-> `該提交時的請求會直接轉向router來處理並呈現對應頁面或者服務`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4：若表單沒套用react-router的Form的話，其提交時的請求會是如何？  ->->-> `該提交時的請求會直接轉向伺服器來處理，由伺服器賦予對應頁面或者服務`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是如何？ ->->-> `<Form method=method1 action=action1> </Form>`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的method和action分別是什麼？ ->->-> `method：指定使用哪一種http 動詞來轉遞表格資料、action：可填入該請求要發送至哪個端點 或者 指名哪裡是負責處理傳遞資料的地方`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的action是可填入該請求要發送至哪個端點 ，請問又可以定義成什麼？ ->->-> `指名哪裡是負責處理傳遞資料的地方`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：router的Form 元件與其他Form套件相比，會是什麼？->->-> `主要差別在於router的Form元件專注在URL切換都轉交由router來處理，不專注資料驗證和狀態管理，後者則是專注在資料驗證和狀態管理`
+<!--SR:!2022-12-16,3,250-->
 
 
 

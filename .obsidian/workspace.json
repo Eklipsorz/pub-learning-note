@@ -59,6 +59,24 @@
         "currentTab": 3
       },
       {
+        "id": "e6acc0192d656700",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9807887fd5388a58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "260716e2e4902f47",
         "type": "tabs",
         "children": [
@@ -141,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-dom v6 中的 request 物件 和 response物件皆源自于Fetch API所製作。.md",
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-dom v6 中的 request 物件 和 response物件皆源自于Fetch API所製作。.md",
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-dom v6 中的 request 物件 和 response物件皆源自于Fetch API所製作。.md"
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md"
               }
             }
           }
@@ -200,8 +218,9 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "10326ce36a485db4",
+  "active": "9807887fd5388a58",
   "lastOpenFiles": [
+    "develop/React/react-router/router-6.4/react-router-dom v6 中的 request 物件 和 response物件皆源自于Fetch API所製作。.md",
     "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
     "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
     "develop/React/react-router/router-6.4/Route元件的loader通常要求回傳一個負責資料索求請求的函式物件；Route元件的action通常要求本身能夠回傳回應封包或者回應資料的函式物件.md",
@@ -210,7 +229,6 @@
     "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：RouteProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
     "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
-    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
-    "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md"
+    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
   ]
 }

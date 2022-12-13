@@ -5,6 +5,7 @@ react-router-dom v6 中的 request 物件 和 response物件皆源自于Fetch AP
 ## 複習
 
 #🧠 react-router-dom v6 中的 request 物件 和 response物件皆源自于什麼？ ->->-> `react-router-dom v6 中的 request 物件 和 response物件皆源自于Fetch API所製作。`
+<!--SR:!2022-12-16,3,250-->
 
 
 ---
