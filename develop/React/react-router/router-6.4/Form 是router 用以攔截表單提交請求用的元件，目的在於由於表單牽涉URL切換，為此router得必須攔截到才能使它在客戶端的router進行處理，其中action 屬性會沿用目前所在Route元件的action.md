@@ -84,6 +84,11 @@ const callback = (params, request) => { ... }
 #🧠 react-router-dom v6.4：router的Form 元件與其他Form套件相比，會是什麼？->->-> `主要差別在於router的Form元件專注在URL切換都轉交由router來處理，不專注資料驗證和狀態管理，後者則是專注在資料驗證和狀態管理`
 <!--SR:!2022-12-16,3,250-->
 
+#🧠  react-router-dom v6.4：action 本身是什麼？->->-> `夾帶著一個引數的函式物件`
+
+#🧠  react-router-dom v6.4：action 本身是夾帶著一個引數的函式物件，這ㄧ個引數是什麼？？若是物件的話，請說明其屬性->->-> `主要夾帶params、request屬性的物件`
+
+#🧠 react-router-dom v6.4：action 本身是夾帶著一個引數的函式物件，這ㄧ個引數是什麼？？若是物件的話，請說明params、request屬性是什麼？ ->->-> ``
 
 
 

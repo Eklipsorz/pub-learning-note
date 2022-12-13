@@ -1,27 +1,30 @@
 ## 描述
 
 
-### request 物件的formData
+
+
+### request 物件的formData 方法
 request object 本身是用fetch api 而建立的。
 
-
+[[@RequestFormDataWeb]]
+> The formData() method of the Request interface reads the request body and returns it as a promise that resolves with a FormData object.
 
 其中request object的 formData方法是  
 - 以非同步形式來執行
+- 從裡頭接收請求封包中的body部分來轉換成FormData object，具體則是將body部分以key-value pairs形式來封裝成一個物件。
 
-- 從裡頭接收請求封包中的body部分並轉換成FormData object
-
-
-
-> The formData() method of the Request interface reads the request body and returns it as a promise that resolves with a FormData object.
 
   
-
+### FormData 介面
 FormData Object
+[[@FormDataWebAPIs]]
+> The FormData interface provides a way to easily construct a set of key/value pairs representing form fields and their values, which can then be easily sent using the fetch() or XMLHttpRequest.send() method.
 
-  
 
-The FormData interface provides a way to easily construct a set of key/value pairs representing form fields and their values, which can then be easily sent using the fetch() or XMLHttpRequest.send() method.
+重點：
+- FormData 介面提供可以將資料包裝成多個key-value pairs形式並以其方式來操作
+- 本身提供建構對應物件、屬性、方法：
+	- 建構對應物件：其物件本身會是多個key-value pairs形式的資料
 
 
 ### 處理表格資料(action)的端點
@@ -31,6 +34,11 @@ The FormData interface provides a way to easily construct a set of key/value pai
 2. 與表格所在的端點不一樣的端點
 
 
+### action 處理表格的基本方式
+
+```
+
+```
 
 ## 複習
 
@@ -41,3 +49,4 @@ Tags:
 [[React]]
 Links:
 References:
+[[@FormDataWebAPIs]]
