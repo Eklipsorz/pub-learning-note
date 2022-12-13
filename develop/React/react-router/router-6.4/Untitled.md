@@ -35,9 +35,28 @@ FormData Object
 
 
 ### action 處理表格的基本方式
+1. 先從request擷取title和post-text部分
+2. 將擷取內容轉換成物件，並以物件來呼叫對應API
+3. 根據請求結果來給予錯誤和資訊
 
 ```
+export async function action({ request }) {
+  const formData = await request.formData();
 
+  const post = {
+    title: formData.get('title'),
+    body: formData.get('post-text'),
+  };
+  try {
+    await savePost(post);
+  } catch (error) {
+    if (error.status === 422) {
+      return error;
+    }
+    throw error;
+  }
+  return redirect('/blog');
+}
 ```
 
 ## 複習
