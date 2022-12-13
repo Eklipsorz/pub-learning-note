@@ -212,7 +212,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 要何時執行? ->->-> `effects 會是在每次render之後被執行`
-<!--SR:!2022-12-13,24,250-->
+<!--SR:!2023-02-14,63,250-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
@@ -227,7 +227,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
-<!--SR:!2022-12-13,24,250-->
+<!--SR:!2023-02-15,64,250-->
 
 
 
