@@ -52,16 +52,9 @@ new Response(body, {
 
 #🧠 react-router-dom v6.4： Response 物件和 redirect 本身只是回應封包的物件，那要如何導向？->->-> `只有讓React-router收到專門導向的response，React-router就會自動將使用者導向至對應頁面`
 
-#🧠 react-router-dom v6.4： Response 物件和 redirect 本身只是回應封包的物件，那要如何導向？請用語法來表示 ->->-> `<Route path=path1 element=element1 action=xxxx`
+#🧠 react-router-dom v6.4： Response 物件和 redirect 本身只是回應封包的物件，那要如何導向？請用語法來表示 ->->-> `<Route path=path1 element=element1 action=xxxx /> 其中xxxx為專門處理資料並建立回應封包的函式物件`
 
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-#🧠 Question :: ->->-> ``
-
-
-
+#🧠  react-router-dom v6.4：Route元件的action若是專門處理資料並建立回應導向封包的函式物件，會在處理完請求做些什麼？->->-> `接收回應封包，並根據導向地點來做導向`
 
 
 
