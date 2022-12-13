@@ -1,69 +1,40 @@
 ## 描述
 
 
-###
-
-
-### 安置每個路徑拋出錯誤時會有的畫面
-```
-import { useRouteError } from 'react-router-dom';
-import MainNavigation from '../components/MainNavigation';
-
-function ErrorPage() {
-  const error = useRouteError();
-
-  return (
-    <>
-      <MainNavigation />
-      <main id="error-content">
-        <h1>An error occurred!</h1>
-        <p>{error.message}</p>
-      </main>
-    </>
-  );
-}
-
-export default ErrorPage;
-```
+> ### redirect
+ > Because you can return or throw responses in loaders and actions, you can use redirect to redirect to another route.
 
 
 ```
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />} errorElement={<ErrorPage />}>
-      <Route index element={<WelcomePage />} />
-      <Route path="/blog" element={<BlogLayout />}>
-        <Route index element={<BlogPostsPage />} loader={blogPostsLoader} />
-        <Route
-          path=":id"
-          element={<PostDetailPage />}
-          loader={blogPostLoader}
-        />
-      </Route>
-      <Route
-        path="/blog/new"
-        element={<NewPostPage />}
-        action={newPostAction}
-      />
-    </Route>
-  )
-);
+import { redirect } from "react-router-dom";
 
-function App() {
-  return <RouterProvider router={router} />;
-}
+const loader = async () => {
+  const user = await getUser();
+  if (!user) {
+    return redirect("/login");
+  }
+};
+It's really just a shortcut for this:
 
-export default App;
+new Response("", {
+  status: 302,
+  headers: {
+    Location: someUrl,
+  },
+});
 ```
+
+> It's recommended to use redirect in loaders and actions rather than useNavigate in your components when the redirect is in response to data.
+
+
+
+
 ## 複習
 
-
-#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換成refactor-blogposts-and-post-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給posts-page和post-detail-page對應元件來接收並渲染，記得要添加錯誤時會有的畫面 ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src/pages`
 
 ---
 Status: #🌱 
 Tags:
 [[React]]
 Links:
-[[errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊]]
 References:
