@@ -55,7 +55,7 @@ Form：
 
 const callback = (params, request) => { ... }
 ```
-- action 主要回傳回應封包或者回應結果
+- action 主要回傳回應封包或者回應結果，回傳對象為元件
 
 
 ## 複習
@@ -90,7 +90,7 @@ const callback = (params, request) => { ... }
 
 #🧠 react-router-dom v6.4：action 本身是夾帶著一個引數的函式物件，這ㄧ個引數是什麼？？若是物件的話，請說明params、request屬性是什麼？ ->->-> ``
 
-
+#🧠 react-router-dom v6.4：action回傳結果會是給誰用？ ->->-> ` action 的回傳結果會是給元件`
 
 
 ---
