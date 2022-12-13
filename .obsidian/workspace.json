@@ -31,9 +31,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9fbe8fa09ffca87e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 8.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "8297c514ee6ea9f5",
@@ -119,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -178,17 +190,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "3b7ff3655085f8ee",
+  "active": "9fbe8fa09ffca87e",
   "lastOpenFiles": [
+    "inbox/Untitled 6.md",
+    "inbox/Untitled 8.md",
+    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
     "develop/React/react-router/router-6.4/useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料.md",
     "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：RouteProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
     "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/render/display：inline-block 是指定元素在內部呈現是以block形式為主，而外部呈現就是保持水平呈現.md",
-    "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
-    "inbox/react-router-dom：在沒採用switch 下的Route 遍歷所造成的問題-切換端點會滿足多個Route而同時在同一個頁面渲染多個Route所包含的component，解法為switch、順序、exact.md",
-    "inbox/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
-    "inbox/Untitled 6.md"
+    "inbox/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md"
   ]
 }
