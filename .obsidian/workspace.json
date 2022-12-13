@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Untitled.md",
+                "file": "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,6 +62,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb4d98fc8fcb91ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "develop/React/react-router/router-6.4/Untitled.md",
                 "mode": "source",
                 "source": false
@@ -69,7 +81,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "8297c514ee6ea9f5",
@@ -134,7 +146,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -213,17 +226,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "a952861a6c844226",
+  "active": "cb4d98fc8fcb91ac",
   "lastOpenFiles": [
-    "develop/React/react-router/router-6.4/useLoaderData是react-router v6.4 所提供的hook，其概念為會從元件所待的目前Route元件獲取loader屬性並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料.md",
     "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
-    "develop/React/react-router/router-6.4/react-router-dom v6：RouteProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
-    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
-    "develop/React/react-router/react-router-dom：NavLink 在react-router中是一個component，主要是以Link元件為基礎來提示目前頁面是屬於哪個Link component.md",
-    "develop/React/react-router/react-router-dom：基於dynamic URL 的分配：憑藉著頁面或服務所對應的URL是經過處理才能對應的特性，拿代表頁面或者服務的識別字來讓處理方根據獨特性而產生對應的URL，不需手動來填入固定URL.md",
-    "develop/React/react-router/router-6.4/Untitled 1.md",
+    "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+    "develop/React/react-router/React-router-dom：瀏覽器對於anchor 標籤的點擊事件處理會使react效能浪費、遺失狀態和Virtual DOM，得用react-router-dom 套件所提供Link元件.md",
+    "develop/React/react-router/React-router-dom：BrowserRouter 是主要提供client-side routing服務的component。 Route 是一個component，主要負責定義router 能夠合法使用的path以及對應path能夠渲染的component.md",
+    "develop/React/react-router/client-side routing 主要是由客戶端自己根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務；server-side routing 主要由伺服器根據瀏覽器的URL變動來產生對應的webpage提供畫面和服務.md",
+    "develop/React/react-router/SPA 實現client-side routing的概念，具體是要必須關閉瀏覽器對於URL變動的預設處理和程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage.md",
     "develop/React/react-router/router-6.4/Untitled.md",
-    "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
-    "inbox/Untitled 6.md"
+    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
+    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
+    "develop/React/react-router/router-6.4/Untitled 1.md"
   ]
 }

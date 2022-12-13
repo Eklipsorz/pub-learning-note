@@ -1,42 +1,69 @@
 ## 描述
 
-### errorElement 屬性作用
-[[@ErrorElementV6]]
-> When exceptions are thrown in loaders, actions, or component rendering, instead of the normal render path for your Routes (\<Route element\>), the error path will be rendered (\<Route errorElement\>) and the error made available with useRouteError.
+
+###
 
 
-errorElement 重點：
-- 用途為指定當Route的對應元件發生錯誤時所要渲染的畫面內容
-	- 能夠攔截到的錯誤種類：Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤
-- errorElement會存在每個Route元件上的屬性，其語法為：
-	- errorElement為 JSX Element語法
-`<Route .... errorElement={JSX Element} />`
-- 其errorElement的Route元件若擺在parent route元件的話，其後裔Route 元件發生錯誤時，會以parent route元件的errorElement為主。
-
-
-### useRouteError 用途
-[[@UseRouteErrorV6]]
-> Inside of an errorElement, this hook returns anything thrown during an action, loader, or rendering. 
-
-useRouteError：
-1. 形式：本身為hook
-2. 用途： 專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊
-3. 舉例：
+### 安置每個路徑拋出錯誤時會有的畫面
 ```
-1.  throw new Error('....')
+import { useRouteError } from 'react-router-dom';
+import MainNavigation from '../components/MainNavigation';
+
+function ErrorPage() {
+  const error = useRouteError();
+
+  return (
+    <>
+      <MainNavigation />
+      <main id="error-content">
+        <h1>An error occurred!</h1>
+        <p>{error.message}</p>
+      </main>
+    </>
+  );
+}
+
+export default ErrorPage;
 ```
 
 
+```
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />} errorElement={<ErrorPage />}>
+      <Route index element={<WelcomePage />} />
+      <Route path="/blog" element={<BlogLayout />}>
+        <Route index element={<BlogPostsPage />} loader={blogPostsLoader} />
+        <Route
+          path=":id"
+          element={<PostDetailPage />}
+          loader={blogPostLoader}
+        />
+      </Route>
+      <Route
+        path="/blog/new"
+        element={<NewPostPage />}
+        action={newPostAction}
+      />
+    </Route>
+  )
+);
 
+function App() {
+  return <RouterProvider router={router} />;
+}
 
+export default App;
+```
 ## 複習
 
+
+#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換成refactor-blogposts-and-post-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給posts-page和post-detail-page對應元件來接收並渲染，記得要添加錯誤時會有的畫面 ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src/pages`
 
 ---
 Status: #🌱 
 Tags:
 [[React]]
 Links:
+[[errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊]]
 References:
-[[@ErrorElementV6]]
-[[@UseRouteErrorV6]]
