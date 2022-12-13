@@ -49,22 +49,31 @@ params 是物件，裡面夾雜了目前所處Route所攔截到的URL參數部�
 ## 複習
 
 #🧠 react-router v6.4： loader 在Route元件上會是做什麼？->->-> `主要在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router v6.4：loader 用途為主要在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件，那麼它會設定在哪邊？->->-> `每個Route元件的loader屬性(attribute)`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router v6.4：loader 本身函式的參數會是什麼？ ->->-> `物件`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router v6.4：loader 本身函式的參數會是物件，其物件主要會有哪些屬性？ ->->-> `request 屬性、params 屬性`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router v6.4：loader 本身函式的參數會是物件，其物件主要會有哪些屬性？其中的request屬性會是什麼？ ->->-> `從當使用者在客戶端透過URL切換向伺服器發送請求對應URL的頁面時，react-router會攔截該請求並由它負責產生對應URL的頁面，同時會將request轉換成物件來當作這裡的屬性，通常request物件會包含請求封包本身，比如說當使用者透過URL切換來藉此向伺服器索求對應URL的頁面，Router會攔截該請求，並由它幫忙轉換對應頁面。`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 當使用者在客戶端透過URL切換向伺服器發送請求對應URL的頁面時，若沒有react-router的話，會是如何？ ->->-> `會直接向對應伺服器索要對應URL的頁面`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 當使用者在客戶端透過URL切換向伺服器發送請求對應URL的頁面時，若有react-router的話，會是如何？ ->->-> `react-router會攔截該請求，並由它負責將對應URL的頁面轉交給客戶端`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router v6.4：loader 本身函式的參數會是物件，其物件主要會有哪些屬性？其中的params 屬性會是什麼？  ->->-> `目前react-router在目前所在Route攔截到的URL parameters部分`
+<!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router v6.4：loader 本身函式定義語法會是如何？以params或者request屬性為例 ->->-> `function loader({ params }) {}、function loader({ request })`
+<!--SR:!2022-12-16,3,250-->
 
 
 ---
