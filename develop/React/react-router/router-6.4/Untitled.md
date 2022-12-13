@@ -7,7 +7,7 @@
 
 errorElement 重點：
 - 用途為指定當Route的對應元件發生錯誤時所要渲染的畫面內容
-	- 能夠攔截到的錯誤種類：Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤
+	- 能夠攔截到的錯誤種類：Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤
 - errorElement會存在每個Route元件上的屬性，其語法為：
 	- errorElement為 JSX Element語法
 `<Route .... errorElement={JSX Element} />`
