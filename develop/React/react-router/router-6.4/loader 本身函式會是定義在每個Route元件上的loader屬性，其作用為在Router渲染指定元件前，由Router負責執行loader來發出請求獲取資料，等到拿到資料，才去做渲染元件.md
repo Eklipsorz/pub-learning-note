@@ -25,6 +25,8 @@ createBrowserRouter([
 > ## `request`
 > Without React Router, the browser would have made a _Request_ to your server, but React Router prevented it! Instead of the browser sending the request to your server, React Router sends the request to your loaders.
 
+
+
 loader 本身函式：
 - 定義在每個Route元件上的loader屬性(attribute)
 - 主要在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件。
@@ -63,10 +65,6 @@ params 是物件，裡面夾雜了目前所處Route所攔截到的URL參數部�
 #🧠 react-router v6.4：loader 本身函式的參數會是物件，其物件主要會有哪些屬性？其中的params 屬性會是什麼？  ->->-> `目前react-router在目前所在Route攔截到的URL parameters部分`
 
 #🧠 react-router v6.4：loader 本身函式定義語法會是如何？以params或者request屬性為例 ->->-> `function loader({ params }) {}、function loader({ request })`
-
-
-
-
 
 
 ---
