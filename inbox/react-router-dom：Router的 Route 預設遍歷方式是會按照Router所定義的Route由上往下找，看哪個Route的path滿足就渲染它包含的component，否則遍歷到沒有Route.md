@@ -72,7 +72,7 @@
 
 
 #🧠 react-router ：當目前綁定Router的webpage發生URL變動時，Router會做什麼？ ->->-> `會按照Router所定義的Route由上往下找、當變動後的URL滿足當前Route所指定的path，就以Route包含的後裔節點來渲染，接著再往下找下一個Route來比對，直到沒Route可遍歷、當變動後的URL不滿足當前Route所指定的path，就再往下找下一個Route來比對，直到沒Route可遍歷`
-<!--SR:!2022-12-13,28,250-->
+<!--SR:!2023-02-25,74,250-->
 
 #🧠 react-router：Router 的 Route預設遍歷方式是何時被觸發？->->-> `當目前綁定Router的實體webpage發生URL變動時`
 <!--SR:!2022-12-14,28,250-->

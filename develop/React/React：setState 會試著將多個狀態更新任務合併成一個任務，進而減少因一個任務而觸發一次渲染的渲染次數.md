@@ -259,7 +259,7 @@ setLastName('Cheng');
 <!--SR:!2022-12-16,74,250-->
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
-<!--SR:!2022-12-13,72,250-->
+<!--SR:!2023-06-18,187,250-->
 
 
 #🧠 React useState 何時觸發執行？ ->->-> `每一次執行元件的render函式就會執行useState`
