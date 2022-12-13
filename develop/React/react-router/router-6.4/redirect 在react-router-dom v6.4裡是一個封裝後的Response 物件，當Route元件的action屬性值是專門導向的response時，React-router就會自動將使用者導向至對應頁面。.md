@@ -39,10 +39,12 @@ new Response(body, {
 	}
 })
 ```
-
-
+- Response 物件和 redirect 本身是個物件，並不會直接讓使用者導向其頁面
+- 當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。
 
 ## 複習
+
+
 
 
 ---

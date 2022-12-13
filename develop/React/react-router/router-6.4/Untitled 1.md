@@ -42,6 +42,8 @@ Form：
 > Route actions are the "writes" to route loader "reads".  They provide a way for apps to perform data mutations with simple HTML and HTTP semantics while React Router abstracts away the complexity of asynchronous UI and revalidation. This gives you the simple mental model of HTML + HTTP (where the browser handles the asynchrony and revalidation) with the behavior and UX capabilities of modern SPAs.
 
 
+> While you can return anything you want from an action and get access to it from useActionData, you can also return a web Response.
+
 重點：
 - action 本身是Route元件的屬性
 - 目的為模擬表單提交時所會做的提交傳遞和提交資料處理
@@ -57,6 +59,7 @@ Form：
 
 const callback = (params, request) => { ... }
 ```
+- action 主要回傳回應封包或者回應結果
 
 
 ## 複習
