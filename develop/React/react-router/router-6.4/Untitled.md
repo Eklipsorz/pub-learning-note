@@ -95,6 +95,24 @@ export default NewPostForm;
 
 ```
 
+if i return here instead of throwing error, i stay on this page.
+
+I don't redirect away and i don't load the error page
+
+  
+
+使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router錯誤處理給攔截並顯示錯誤畫面。
+
+  
+
+會使用useActionData來替代，
+
+主要用途為從最近一次執行的action function獲取其回傳結果
+
+> This hook provides the returned value from the previous navigation's `action` result, or `undefined` if there was no submission.
+
+
+
 ## 複習
 
 
