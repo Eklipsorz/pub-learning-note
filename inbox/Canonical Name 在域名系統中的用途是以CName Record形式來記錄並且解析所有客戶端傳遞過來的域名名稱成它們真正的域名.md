@@ -43,7 +43,7 @@ bar.example.com.        CNAME  foo.example.com.
 
 ## 複習
 #🧠 Canonical命名緣由是什麼？ ->->-> `以清楚正確的形式被人接受的，換言之為(被xxx接收為)真實的`
-<!--SR:!2022-12-14,3,250-->
+<!--SR:!2022-12-22,8,250-->
 
 #🧠 Canonical Name 在域名系統中的用途是(紀錄、比對) ->->-> `以DNS Record 來替特定域名取別名、 當別人以別名來給DNS解析時，DNS會檢查自己的CName Record是否有這個，若有就以對應名稱來轉遞；若沒有就告知沒有`
 <!--SR:!2022-12-22,8,250-->
@@ -58,7 +58,7 @@ bar.example.com.        CNAME  foo.example.com.
 <!--SR:!2022-12-19,5,230-->
 
 #🧠 Canonical Name 在域名系統中的用途是以DNS Record 來替特定域名取別名和解析比對，其取別名的形式會是什麼？ ->->-> `host CName Value `
-<!--SR:!2022-12-14,3,250-->
+<!--SR:!2022-12-24,10,250-->
 
 #🧠 Canonical Name 在域名系統中的用途是以DNS Record 來替特定域名取別名和解析比對，其取別名的形式會是host CName Value，請解釋這三個在做什麼？->->-> `host為域名形式的別名、CName為關鍵字、value會是指別名的真實域名形式名稱`
 <!--SR:!2022-12-23,9,250-->

@@ -89,7 +89,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2023-05-29,175,250-->
 
 #🧠 React Mounting 階段是什麼？ ->->-> `是每一個元件轉換成對應DOM結構差入至目前DOM Tree進行渲染的階段`
-<!--SR:!2022-12-14,74,250-->
+<!--SR:!2023-06-26,194,250-->
 
 #🧠 React Mounting 階段在class-based component的流程有什麼 ->->-> `constructor、getDerivedStateFromProps、render、React updates DOM & refs、componentDidMount`
 <!--SR:!2022-12-24,40,210-->
@@ -131,7 +131,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2022-12-19,66,230-->
 
 #🧠 React Mounting 階段下的子階段pre-commit有什麼 ->->-> `沒`
-<!--SR:!2022-12-14,74,250-->
+<!--SR:!2023-06-26,193,250-->
 
 #🧠 React Mounting 階段下的子階段commit有什麼 ->->-> `React Updates DOM & refs、componentDidMount`
 <!--SR:!2023-01-03,80,230-->

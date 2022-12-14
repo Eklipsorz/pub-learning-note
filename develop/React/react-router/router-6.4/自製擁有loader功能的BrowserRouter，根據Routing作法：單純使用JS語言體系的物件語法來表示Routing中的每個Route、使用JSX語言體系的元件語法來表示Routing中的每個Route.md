@@ -210,7 +210,7 @@ export default RootLayout;
 #🧠 react-router-dom v6：使用createBrowserRouter 來自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？ ->->-> `- 單純使用JS語言體系的物件語法來表示Routing中的每個Route - 使用JSX語言體系的元件語法來表示Routing中的每個Route，然後再將JSX語言體系轉換成JS語言體系的物件語法。`
 <!--SR:!2022-12-20,6,248-->
 
-																																		#🧠 react-router-dom v6：使用createBrowserRouter 來自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？其中可以使用JSX語言體系的元件語法來表示Routing中的每個Route，那這樣就能定義了？還是要做什麼？ 沒做會如何？->->-> `還得將JSX語言體系轉換成JS語言體系的物件語法。沒做的話，系統會無法正常執行`
+																																														#🧠 react-router-dom v6：使用createBrowserRouter 來自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？其中可以使用JSX語言體系的元件語法來表示Routing中的每個Route，那這樣就能定義了？還是要做什麼？ 沒做會如何？->->-> `還得將JSX語言體系轉換成JS語言體系的物件語法。沒做的話，系統會無法正常執行`
 <!--SR:!2022-12-20,6,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途為何？->->-> `用途制定一組Routing來產生BrowserRouter`
@@ -227,14 +227,14 @@ export default RootLayout;
 
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，它會回傳什麼？ ->->-> `回傳router物件`
-<!--SR:!2022-12-14,2,248-->
+<!--SR:!2022-12-20,5,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，那麼paths會是為陣列，陣列中的每個項目皆為一個能代表Route元件的Route物件，每個Route物件會是擁有什麼屬性？->->-> `	- path 為指定哪個path要比對和渲染 - element：當目前URL切換到Route物件所對應的path時，所要渲染的元件內容 - loader：當目前URL切換到Route物件所對應的path時，所要執行的資料載入或者對特定伺服器發送索要資料的請求，並於渲染之前回傳結果給元件 - children：以陣列來表示該對應Route元件所擁有的後裔Route元件。`
 <!--SR:!2022-12-20,6,248-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為何？ ->->-> `允許開發者以JSX形式來定義Routing並建立對應的Router`
-<!--SR:!2022-12-14,2,248-->
+<!--SR:!2022-12-20,6,248-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為允許開發者以JSX形式來定義Routing並建立對應的Router，具體是什麼？->->-> `具體是藉由將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件`
@@ -251,17 +251,17 @@ export default RootLayout;
 <!--SR:!2022-12-15,2,230-->
 
 #🧠 react-router-dom v6：Route 元件添加index屬性會是代表什麼？->->-> `就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染`
-<!--SR:!2022-12-14,2,248-->
+<!--SR:!2022-12-19,5,248-->
 
 #🧠 react-router-dom v6：`<Route path='/' element={<RootLayout />}>  <Route index element={<WelcomePage />} /> </Route>` 試著說明index的作用->->-> ``
 <!--SR:!2022-12-19,5,248-->
 
 #🧠 請試著說明每個路徑能夠對應到什麼以及渲染什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png) ->->-> ``
-<!--SR:!2022-12-14,2,248-->
+<!--SR:!2022-12-20,5,248-->
 
 
 #🧠 裡頭的RootLayout元件對應的Route元件對於其他後裔元件來說，兩者渲染關係是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png)->->-> `在這裡會以RootLayout元件所對應的Route元件來當作是其他後裔Route元件的渲染參考頁面元件，並且會在RootLayout元件設定Outlet元件來告知React後裔Route元件的渲染可以在參考頁面上的哪個位置上做渲染`
-<!--SR:!2022-12-14,2,248-->
+<!--SR:!2022-12-21,6,248-->
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換至refactor-blogposts-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給blogposts-page對應元件來接收並渲染->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src`
