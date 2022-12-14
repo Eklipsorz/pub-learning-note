@@ -20,7 +20,7 @@ FormData Object
 [[@FormDataWebAPIs]]
 > The FormData interface provides a way to easily construct a set of key/value pairs representing form fields and their values, which can then be easily sent using the fetch() or XMLHttpRequest.send() method.
 
-
+																										
 重點：
 - FormData 介面提供可以將資料包裝成多個key-value pairs形式並以其方式來操作
 - 本身提供建構對應物件、屬性、方法：

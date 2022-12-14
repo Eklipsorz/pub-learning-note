@@ -55,7 +55,7 @@ bar.example.com.        CNAME  foo.example.com.
 <!--SR:!2022-12-14,3,250-->
 
 #🧠 Canonical Name 在域名系統中的用途是當別人以別名來給DNS解析時，具體會是做什麼？->->-> `DNS會檢查自己的CName Record是否有這個，若有就以對應名稱來轉遞；若沒有就告知沒有`
-<!--SR:!2022-12-14,2,230-->
+<!--SR:!2022-12-19,5,230-->
 
 #🧠 Canonical Name 在域名系統中的用途是以DNS Record 來替特定域名取別名和解析比對，其取別名的形式會是什麼？ ->->-> `host CName Value `
 <!--SR:!2022-12-14,3,250-->
