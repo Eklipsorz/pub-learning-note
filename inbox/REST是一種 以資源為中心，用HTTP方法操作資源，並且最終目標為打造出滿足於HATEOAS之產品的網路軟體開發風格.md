@@ -104,6 +104,7 @@ Resource Representation State：
 
 
 #🧠 Resource Representation State Transfer / REST 中的Resource是什麼？ ->->-> `簡短來說，Resource會是指任意形式的實體；在網路上會以Resource所在的URI來表達Resource`
+<!--SR:!2022-12-17,2,244-->
 
 
 #🧠  Resource Representation State Transfer / REST 中的Representation是什麼？->->-> `Representation 本身以某種形式來呈現，而Resource Representation 是將Resource概念轉換成更為具體的形式呈現，形式會有HTML格式、JSON格式等等`
