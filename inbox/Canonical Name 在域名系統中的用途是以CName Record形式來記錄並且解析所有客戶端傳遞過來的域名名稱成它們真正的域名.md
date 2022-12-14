@@ -61,7 +61,7 @@ bar.example.com.        CNAME  foo.example.com.
 <!--SR:!2022-12-14,3,250-->
 
 #🧠 Canonical Name 在域名系統中的用途是以DNS Record 來替特定域名取別名和解析比對，其取別名的形式會是host CName Value，請解釋這三個在做什麼？->->-> `host為域名形式的別名、CName為關鍵字、value會是指別名的真實域名形式名稱`
-<!--SR:!2022-12-14,3,250-->
+<!--SR:!2022-12-23,9,250-->
 
 #🧠 若設定如下：bar.example.com.   CNAME  foo.example.com.，那麼系統會是如何解析？->->-> `會將bar.example.com 的真實名稱解析成foo.example.com，也就是看到bar.example.com，直接被系統看作是foo.example.com.`
 <!--SR:!2022-12-14,3,250-->
