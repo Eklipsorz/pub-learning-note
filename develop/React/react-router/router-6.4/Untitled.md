@@ -1,6 +1,8 @@
 ## 描述
 
+request object的 formData方法是  從裡頭接收請求封包中的body部分來轉換成FormData object，具體則是將body部分以key-value pairs形式來封裝成一個物件
 
+action 函式本身使用request object來建立FormData物件並根據情況來回傳結果
 
 
 ### request 物件的formData 方法
@@ -26,7 +28,7 @@ FormData Object
 	- 建構對應物件：其物件本身會是多個key-value pairs形式的資料
 
 
-### 處理表格資料(action)的端點
+### 處理提交表格資料(action)的端點
 1. 與表格所在端點一樣的端點，但http動詞會是與獲取表格畫面的http動詞會是不同：
 	 - post 為 轉遞表格資料並處理
 	 - get 為 獲取表格畫面
@@ -91,28 +93,70 @@ function NewPostForm({ onCancel, onSubmit, submitting }) {
 }
 
 export default NewPostForm;
-
 ```
 
-if i return here instead of throwing error, i stay on this page.
-
-I don't redirect away and i don't load the error page
+#### action 本身回傳error 和拋出 error 之間不同
 
   
+```
+export async function action({ request }) {
+  const formData = await request.formData();
 
-使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router錯誤處理給攔截並顯示錯誤畫面。
+  const post = {
+    title: formData.get('title'),
+    body: formData.get('post-text'),
+  };
+  try {
+    await savePost(post);
+  } catch (error) {
+    if (error.status === 422) {
+      return error;
+    }
+    throw error;
+  }
+  return redirect('/blog');
+}
+```
 
-  
+使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router的錯誤處理給攔截並處理。
 
-會使用useActionData來替代，
 
-主要用途為從最近一次執行的action function獲取其回傳結果
+### useActionData
 
+[[@UseActionDataV6]]
 > This hook provides the returned value from the previous navigation's `action` result, or `undefined` if there was no submission.
+
+
+重點：
+- useActionData 是React-router的hook
+- 主要會將React-Router最近一次執行action所獲得的結果回傳至元件使用
 
 
 
 ## 複習
+
+#🧠 request物件的formData方法會是什麼？ ->->-> `將request包裝的body部分擷取並轉換成以多個key-value pairs形式的資料形式，該形式為formData物件`
+
+#🧠 request物件的formData方法會回傳什麼？ ->->-> `回傳FormData物件`
+
+#🧠 request物件的formData方法會回傳的FormData物件會是什麼形式？ ->->-> `多個key-value pairs形式的資料形式`
+
+#🧠 FormData 介面是什麼？ ->->-> `提供可以將資料包裝成多個key-value pairs形式並以其方式來操作`
+
+#🧠 FormData 介面是提供可以將資料包裝成多個key-value pairs形式並以其方式來操作，主要包含了什麼？？ ->->-> `本身提供建構對應物件、屬性、方法`
+
+#🧠 處理提交表格資料(action)的端點可以是什麼？ ->->-> `與表格所在端點一樣的端點，但http動詞會是與獲取表格畫面的http動詞會是不同、 與表格所在的端點不一樣的端點`
+
+#🧠 處理提交表格資料(action)的端點可以是與表格所在端點一樣的端點，為何可以？->->-> `具體可以設定http動詞為不同來分別做呈現表格和提交`
+
+#🧠 處理提交表格資料(action)的端點可以是與表格所在端點一樣的端點，為何可以的原因為設定http動詞為不同來分別做呈現表格和提交，具體會將呈現表格和提交設定什麼？->->-> `端點一樣，	 - post 為 轉遞表格資料並處理 - get 為 獲取表格畫面`
+
+#🧠 useActionData 在react-router 中會是什麼hook?  ->->-> `主要會將React-Router最近一次執行action所獲得的結果回傳至元件使用`
+
+#🧠 react-router-dom v6.4：action 本身回傳error 和拋出 error 之間不同 處在哪？->->-> `使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router的錯誤處理給攔截並處理。`
+
+#🧠 react-router-dom v6.4： 以下為action定義，請問以下的回傳error和拋出error之間的不同處在哪？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671114108/blog/react/react-router/v6/action-function/action-function-return-vs-throw_tlgvpy.png) ->->-> ``
+
 
 
 ---
@@ -121,4 +165,5 @@ Tags:
 [[React]]
 Links:
 References:
+[[@UseActionDataV6]]
 [[@FormDataWebAPIs]]
