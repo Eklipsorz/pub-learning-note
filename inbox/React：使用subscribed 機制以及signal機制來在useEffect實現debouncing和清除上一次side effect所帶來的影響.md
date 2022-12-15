@@ -228,7 +228,7 @@ AbortController.abort()
 <!--SR:!2023-01-23,49,250-->
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼是什麼？(包含catch/try...catch) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png)`
-<!--SR:!2022-12-15,25,250-->
+<!--SR:!2022-12-29,14,230-->
 
 #🧠  目前支援AbortController介面的非同步任務種類有哪些？ ->->-> `axios、fetch`
 <!--SR:!2023-01-17,45,250-->

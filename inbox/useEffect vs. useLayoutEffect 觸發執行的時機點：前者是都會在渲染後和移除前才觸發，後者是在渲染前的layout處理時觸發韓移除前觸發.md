@@ -112,7 +112,7 @@
 
 
 #🧠 React：useEffect vs. useLayoutEffect 之間的時機點差異是什麼->->-> `1. useEffect 在瀏覽器完成畫面渲染才執行 2. useLayoutEffect 在瀏覽器完成畫面渲染前的layout階段才執行`
-<!--SR:!2022-12-15,23,250-->
+<!--SR:!2023-02-15,62,250-->
 
 #🧠 useEffect 在class-based component中觸發執行的時機點為 ->->-> `	- mounting 階段下的componentDidMount - updating 階段下的componentDidUpdate - unmounting 階段下的componentWillUnmount`
 <!--SR:!2022-12-29,31,248-->

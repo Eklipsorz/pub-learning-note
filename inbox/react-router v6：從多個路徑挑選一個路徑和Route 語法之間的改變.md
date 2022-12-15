@@ -116,7 +116,7 @@ v6：
 <!--SR:!2022-12-16,10,250-->
 
 #🧠 react-router v6：每個Route對版本5有什麼樣的不同？ ->->-> `使用時都要用Routes來包裹、每個Route元件都會是以exact matching、語法上的不同`
-<!--SR:!2022-12-15,9,250-->
+<!--SR:!2023-01-07,23,250-->
 
 
 #🧠 react-router v6：每個Route有什麼樣的不同？其中每個Route元件都會是以exact matching，若要用fuzzy matching，那麼可以怎麼做？->->-> `使用/*來表示`
