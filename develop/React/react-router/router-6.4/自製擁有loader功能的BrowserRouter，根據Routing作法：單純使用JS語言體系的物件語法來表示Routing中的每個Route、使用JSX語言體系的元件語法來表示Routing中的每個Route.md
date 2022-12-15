@@ -244,11 +244,11 @@ export default RootLayout;
 <!--SR:!2022-12-19,5,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為`createRoutesFromElements(JSX Element)`，那麼JSX Element會是什麼？->->-> `其中JSX Element為JSX語言體系的JSX Element`
-<!--SR:!2022-12-15,3,250-->
+<!--SR:!2022-12-22,7,250-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 會回傳什麼？->->-> `回傳代表存有Route物件的陣列`
-<!--SR:!2022-12-15,2,230-->
+<!--SR:!2022-12-21,6,230-->
 
 #🧠 react-router-dom v6：Route 元件添加index屬性會是代表什麼？->->-> `就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染`
 <!--SR:!2022-12-19,5,248-->

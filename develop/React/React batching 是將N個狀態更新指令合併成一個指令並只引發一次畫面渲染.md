@@ -232,7 +232,7 @@ batch：
 
 
 #🧠 React Batching 是指將N個狀態更新指令(setState)為一組來合併成一個具有特定狀態的狀態更新指令，其特定狀態會是什麼？ ->->-> `具體是N個狀態更新指令所要求改變的狀態之合併後的狀態，若是單一值的狀態，就以最後一個接收到的狀態值為主；若是物件的話，首先會是以空物件來表示，接著將遍歷這n個指令看看狀態上屬性是什麼，接著將屬性納入物件或者直接以最新的屬性值覆蓋上去。`
-<!--SR:!2022-12-15,74,250-->
+<!--SR:!2023-06-26,193,250-->
 
 #🧠 React Batching 好處是什麼？ ->->-> `透過合併來減少大量重複渲染的操作：每一個狀態更新指令(setState)就會引發一次updating的渲染`
 <!--SR:!2023-06-24,192,250-->
@@ -247,7 +247,7 @@ batch：
 <!--SR:!2023-06-17,187,250-->
 
 #🧠 React Batching 在 React 18起的版本會是？ ->->-> `Batching 開放在事件處理、Promise、setTimeOut。 Batching 在盡量將N個狀態更新指令合併的情況下，就自動按照算法判定如何合併`
-<!--SR:!2022-12-15,74,250-->
+<!--SR:!2023-06-25,192,250-->
 
 #🧠 React automatic batching 是什麼？ ->->-> `不管是不是在事件處理執行N個狀態更新指令，只要在root節點下的子節點都直接自動以Batching來執行`
 <!--SR:!2022-12-16,74,250-->
@@ -258,7 +258,7 @@ batch：
 
 
 #🧠 React automatic batching 啟用條件為何？ ->->-> `automatic batching 只要使用createRoot來建立Virtual DOM的root節點，並於其節點建立子節點就會夠擁有automatic batching 特性`
-<!--SR:!2022-12-15,74,250-->
+<!--SR:!2023-01-24,40,230-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
 <!--SR:!2023-03-16,125,250-->
@@ -272,7 +272,7 @@ batch：
 
 
 #🧠 React18: 若N個狀態更新指令遍佈在多個生命週期函式下的setTimeOut，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含setTimeOut的多個狀態更新指令來合併`
-<!--SR:!2022-12-15,74,250-->
+<!--SR:!2023-06-27,194,250-->
 
 
 

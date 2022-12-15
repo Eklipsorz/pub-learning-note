@@ -250,7 +250,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定空陣列的話，會如何執行callback ->->-> `只會在元件的mounting階段下直接執行，並於元件的updating階段觸發並檢查，但檢查會認為dependency沒在變動而不執行`
-<!--SR:!2022-12-15,26,250-->
+<!--SR:!2023-02-22,69,250-->
 
 
 
