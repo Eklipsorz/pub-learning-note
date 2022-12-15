@@ -62,7 +62,7 @@ export default App;
 ## 複習
 
 #💻 請至/react-builder/question-review/react-router-question領取題目，切換至build-simple-routes分支，並建立瀏覽所有quotes、瀏覽單個quote、新增單個quote這三個頁面/服務的routing ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/10-practice-redirecting-and-extracting-params/src`
-<!--SR:!2022-12-14,23,250-->
+<!--SR:!2023-02-15,62,250-->
 
 
 ---
