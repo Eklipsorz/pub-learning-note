@@ -1,8 +1,5 @@
 ## 描述
 
-request object的 formData方法是  從裡頭接收請求封包中的body部分來轉換成FormData object，具體則是將body部分以key-value pairs形式來封裝成一個物件
-
-action 函式本身使用request object來建立FormData物件並根據情況來回傳結果
 
 
 ### request 物件的formData 方法
