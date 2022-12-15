@@ -132,7 +132,7 @@ const [isAddingComment, setIsAddingComment] = useState(false);
 ## 複習
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-add-quote-comment分支，在那請使用useHttp和src/api.js來在/src/component/comment中實現增加評論和增加評論後會呈現的成功內容、所有評論的功能，主要在NewCommentForm和CommentsList元件實現->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/21-finished/src`
-<!--SR:!2022-12-15,11,250-->
+<!--SR:!2023-01-11,27,250-->
 
 ---
 Status: #🌱 
