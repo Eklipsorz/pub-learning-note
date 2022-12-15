@@ -1,7 +1,9 @@
 ## 描述
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
+#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換至refactor-new-post，請在new-post頁面上以router來實現對應提交資料時的action功能 ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics`
+
 
 ---
 Status: #🌱 
