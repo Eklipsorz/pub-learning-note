@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "d1b9595102dca61e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51571e7f8abab1e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "797d5c63715e18a3",
         "type": "tabs",
         "children": [
@@ -165,6 +183,8 @@
   },
   "active": "02e3f91a0971afca",
   "lastOpenFiles": [
+    "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
+    "inbox/react-router-practice：對特定Quote增加評論功能.md",
     "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
@@ -172,8 +192,6 @@
     "develop/React/react-router/router-6.4/Untitled.md",
     "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
     "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
-    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
-    "develop/React/react-router/router-6.4/react-router-dom v6：RouteProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
-    "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md"
+    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md"
   ]
 }
