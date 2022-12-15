@@ -84,7 +84,7 @@ function App() {
 <!--SR:!2022-12-15,3,250-->
 
 #🧠 react-router-dom v6：useLoaderData語法是什麼？ ->->-> `const loadedData = useLoaderData()`
-<!--SR:!2022-12-15,3,250-->
+<!--SR:!2022-12-25,10,250-->
 
 #🧠 react-router-dom v6：useLoaderData語法是const loadedData = useLoaderData()，請問它會回傳什麼？？ ->->-> ` useLoaderData 會是回傳loader 以resolve形式所回傳的資料`
 <!--SR:!2022-12-15,3,250-->
