@@ -67,7 +67,7 @@ const callback = (params, request) => { ... }
 <!--SR:!2022-12-16,3,250-->
 
 #🧠 react-router-dom v6.4：若表單套用react-router的Form的話，其提交時的請求會是如何？ ->->-> `該提交時的請求會直接轉向router來處理並呈現對應頁面或者服務`
-<!--SR:!2022-12-16,3,250-->
+<!--SR:!2022-12-24,8,250-->
 
 #🧠  react-router-dom v6.4：若表單沒套用react-router的Form的話，其提交時的請求會是如何？  ->->-> `該提交時的請求會直接轉向伺服器來處理，由伺服器賦予對應頁面或者服務`
 <!--SR:!2022-12-16,3,250-->
@@ -76,7 +76,7 @@ const callback = (params, request) => { ... }
 <!--SR:!2022-12-22,6,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的method和action分別是什麼？ ->->-> `method：指定使用哪一種http 動詞來轉遞表格資料、action：可填入該請求要發送至哪個端點 或者 指名哪裡是負責處理傳遞資料的地方`
-<!--SR:!2022-12-16,3,250-->
+<!--SR:!2022-12-22,6,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的action是可填入該請求要發送至哪個端點 ，請問又可以定義成什麼？ ->->-> `指名哪裡是負責處理傳遞資料的地方`
 <!--SR:!2022-12-16,3,250-->

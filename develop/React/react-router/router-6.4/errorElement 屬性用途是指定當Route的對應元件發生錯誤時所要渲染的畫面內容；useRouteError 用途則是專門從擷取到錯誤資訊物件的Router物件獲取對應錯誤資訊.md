@@ -53,7 +53,7 @@ const error = useRouteError()
 <!--SR:!2022-12-16,3,250-->
 
 #🧠  react-router-dom v6.4 ：useRouteError 語法為何？ ->->-> `const error = useRouteError()`
-<!--SR:!2022-12-16,3,250-->
+<!--SR:!2022-12-23,7,250-->
 
 #🧠 react-router-dom v6.4 ：useRouteError 語法會回傳什麼？ ->->-> `回傳錯誤資訊物件`
 <!--SR:!2022-12-16,3,250-->

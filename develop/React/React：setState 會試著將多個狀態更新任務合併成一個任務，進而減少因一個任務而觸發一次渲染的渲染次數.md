@@ -256,7 +256,7 @@ setLastName('Cheng');
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以單一值來表示，那麼會以何種狀態來渲染和更新狀態？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `4`
-<!--SR:!2022-12-16,74,250-->
+<!--SR:!2023-06-28,194,250-->
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼會以何種狀態來渲染和更新狀態![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `{ FirstName: 'Morgan', LastName: 'Cheng' }`
 <!--SR:!2023-06-18,187,250-->
