@@ -237,7 +237,7 @@ function arraySum(arr) {
 <!--SR:!2023-04-27,166,248-->
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上有任何紀錄，請問每一次程式碼的執行會如何進行？ ->->-> `每次執行就去會利用目前執行行數作為索引去在optimizing compiler找到相對應的紀錄，若找到對應行數，就會比對目前執行的程式碼所擁有的型別是否和紀錄上的假設一樣，若一樣就執行對應的機械碼，若不一樣的話，就要看看目前行數和目前型別是否能夠在baseline compiler找到對應紀錄，有的話，就以baseline compiler的機械碼為主，沒的話，就將對應bytecode丟進interpreter來邊轉換成機械碼邊執行`
-<!--SR:!2022-12-16,89,248-->
+<!--SR:!2023-07-25,221,248-->
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設，會如何？->->-> `會計算不符合的次數，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
 <!--SR:!2022-12-22,92,248-->
