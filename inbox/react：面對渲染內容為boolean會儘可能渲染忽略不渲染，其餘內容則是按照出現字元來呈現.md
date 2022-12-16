@@ -139,7 +139,7 @@ false
 
 
 #🧠 React：若元件的渲染內容如下的話，假設result為0，其渲染結果和JS層級各會是什麼樣的結果？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667735041/blog/react/react-element/complex-boolean-react_usafk7.png) ->->-> `在JS層面會印出0、<BackwardCounter />； React：<ForwardCounter />；React：0 <BackwardCounter \>`
-<!--SR:!2022-12-16,27,250-->
+<!--SR:!2023-02-25,71,250-->
 
 
 ---
