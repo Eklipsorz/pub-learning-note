@@ -113,7 +113,7 @@ v6：
 <!--SR:!2022-12-16,10,250-->
 
 #🧠 Switch 元件在react-router上的版本5和版本6是否存在？ ->->-> `僅存在於版本5`
-<!--SR:!2022-12-16,10,250-->
+<!--SR:!2023-01-12,27,250-->
 
 #🧠 react-router v6：每個Route對版本5有什麼樣的不同？ ->->-> `使用時都要用Routes來包裹、每個Route元件都會是以exact matching、語法上的不同`
 <!--SR:!2023-01-07,23,250-->
@@ -131,7 +131,7 @@ v6：
 
 
 #🧠 react-router v6：Route語法標籤是`<Route path=path1 element={element1} />`，那麼path和element各為什麼？ ->->-> `	 - path 屬性是填入要比對的路徑  - element 屬性是填入要比對滿足後要渲染的元件`
-<!--SR:!2022-12-16,10,250-->
+<!--SR:!2023-01-11,26,250-->
 
 
 #🧠 假設目前是react-router v6，若URL切換至/products/edit的話，會呈現什麼畫面？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1669900964/blog/react/react-router/v6/react-router-v6-route-example_fhsfsi.png) ->->-> `但由於會比較具體程度，而最後一個Route設定的路徑是設定明確的路徑，所以會選擇它作為渲染元件。`

@@ -272,7 +272,7 @@ this is use effect
 <!--SR:!2022-12-17,26,250-->
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
-<!--SR:!2022-12-16,25,250-->
+<!--SR:!2023-02-21,67,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`
