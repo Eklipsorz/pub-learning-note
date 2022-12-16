@@ -60,7 +60,7 @@ myTag`that ${ person } is a ${ age }`
 ## 複習
 
 #🧠 tagged template literal  是算 template literal 嗎？ ->->-> `算`
-<!--SR:!2022-12-16,67,250-->
+<!--SR:!2023-06-02,168,250-->
 
 #🧠 tagged template literal是什麼？->->-> `是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成`
 <!--SR:!2022-12-24,72,250-->

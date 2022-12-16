@@ -152,7 +152,7 @@ function DoubleIncreaser() {
 <!--SR:!2023-05-20,165,250-->
 
 #🧠 setState 參數為callback，會是如何進行的？->->-> `預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值`
-<!--SR:!2022-12-16,74,250-->
+<!--SR:!2023-06-28,194,250-->
 
 #🧠 setState 參數為callback，預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值，那麼setState、callback、狀態的執行順序->->-> `setState -> newState = callback(currentState) -> handling with newState`
 <!--SR:!2023-06-25,192,250-->
