@@ -87,7 +87,19 @@ Await 的 errorElement：
 
 to specify which element should be shown if loading that data should fail eventually
 
-  
+
+
+### Suspense 元件
+
+
+> fallback
+
+> that component from code splitting
+
+> react router use this for showing a fallback until that data for which you're waiting is there
+
+> `React.Suspense` lets you specify the loading indicator in case some components in the tree below it are not yet ready to render. In the future we plan to let `Suspense` handle more scenarios such as data fetching.
+
 
 Suspense元件 => 由React提供
 
@@ -105,20 +117,25 @@ Suspense元件 => 由React提供
 	{}
 </Suspense>
 ```
-> fallback
 
-> that component from code splitting
 
-> react router use this for showing a fallback until that data for which you're waiting is there
+### suspense
+suspend
+> to stop something from being active, either temporarily or permanently
 
-> `React.Suspense` lets you specify the loading indicator in case some components in the tree below it are not yet ready to render. In the future we plan to let `Suspense` handle more scenarios such as data fetching.
+suspense
+> the state or condition of being suspended.
 
+重點：
+- suspend 是指暫時或者永久停止
+- suspense 是指呈現被暫時/永久停止的狀態
 
 ### fallback 命名緣由
 
 > A fallback plan or position can be used if other plans do not succeed or other things are not available.
 
-若主要計畫失敗時的備案
+重點：
+- fallback 是指計畫失敗時的備案
 
 ## 複習
 #🧠 Question :: ->->-> ``
