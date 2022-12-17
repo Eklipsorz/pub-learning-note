@@ -26,5 +26,7 @@ Status: #🌱
 Tags:
 [[Network]]
 Links:
+[[網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容]]
+[[anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由]]
 References:
 [[@Geocast2022]]
