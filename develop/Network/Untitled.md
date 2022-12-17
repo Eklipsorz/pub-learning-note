@@ -1,22 +1,40 @@
 ## 描述
 
-[[@Anycast2022]]
-> delivers a message to any one out of a group of nodes, typically the one nearest to the source using a one-to-one-of-many[1] association where datagrams are routed to any single member of a group of potential receivers that are all identified by the same destination address. The routing algorithm selects the single receiver from the group based on which is the nearest according to some distance or cost measure.
+[[@RenBoWeiJiBaiKeZiYouDeBaiKeQuanShu]]
+> 任播是與單播（unicast）、廣播（broadcast）和多播（multicast）不同的方式。
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Anycast.svg/1024px-Anycast.svg.png)
+> 在單播中，在網路位址和網路節點之間存在一一對應的關係。
+> 
+> 在廣播和多播中，在網路位址和網路節點之間存在一對多的關係：每一個傳送位址對應一群接收可以複製資訊的節點。
+>
+>在任播中，在網路位址和網路節點之間存在一對多的關係：每一個位址對應一群接收節點，但在任何給定時間，只有其中之一可以接收到傳送端來的資訊。
+
+
 重點：
-- anycast：意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。
-	- 應用為：
-		- routing algorithm：ㄐㄩ將N個接收方設定為相同的IP，並且根據傳遞方和接收方之間的距離、傳遞狀況來決定傳遞方要跟哪個接收方進行傳遞、接收、處理
+- 網路位址和接收方節點間的對應關係：
+	- unicast：網路位址和每個接收節點之間存在一對一關係
+	- broadcast/multicast：傳送方為獨一獨二的位址，網路位址和接收節點存放一對多的關係，每個傳遞方要傳送的位址會是對應一群可以獲取資料的接收方
+	- anycast：傳送方為獨一獨二的位址，網路位址和接收節點存放一對多的關係，每個傳遞方要傳送的位址會是對應接收方的群組，並由群組決定哪一個接收方來接收。 
+- 網路位址和傳送方結點間的對應關係都為一對一
 
 
 ## 複習
-#🧠 anycast 是什麼樣的概念 ->->-> `為一個傳遞方傳遞資料至可任意選擇一個接收方的群組`
 
-#🧠 anycast 是為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，其中群組內的接收方數量為何 ->->-> `N個`
+#🧠 unicast 的 網路位址和接收方節點間的對應關係為何？->->-> `網路位址和每個接收節點之間存在一對一關係`
+
+#🧠 broadcast 的 網路位址和接收方節點間的對應關係為何？具體是？ ->->-> `broadcast：網路位址和節點存放一對多的關係，每個傳遞方要傳送的位址會是對應一群可以獲取資料的接收方`
 
 
-#🧠 anycast為一個傳遞方傳遞資料至可任意選擇一個接收方的群組之概念，其應用為何 ->->-> ``
+#🧠 multicast 的 網路位址和接收方節點間的對應關係為何？具體是？->->-> `broadcast：網路位址和節點存放一對多的關係，每個傳遞方要傳送的位址會是對應一群可以獲取資料的接收方`
+
+
+#🧠 anycast 的 網路位址和接收方節點間的對應關係為何？具體是？ ->->-> `傳送方為獨一獨二的位址，網路位址和接收節點存放一對多的關係，每個傳遞方要傳送的位址會是對應接收方的群組，並由群組決定哪一個接收方來接收`
+
+#🧠 broadcast 的 網路位址和傳遞方節點間的對應關係為何？->->-> `網路位址和傳送方結點間的對應關係都為一對一`
+
+#🧠 multicast 的 網路位址和傳遞方節點間的對應關係為何？ ->->-> `網路位址和傳送方結點間的對應關係都為一對一`
+
+#🧠 anycast 的 網路位址和傳遞方節點間的對應關係為何？ ->->-> `網路位址和傳送方結點間的對應關係都為一對一`
 
 
 
@@ -25,5 +43,6 @@ Status: #🌱
 Tags:
 [[Network]]
 Links:
+[[anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由]]
 References:
-[[@Anycast2022]]
+[[@RenBoWeiJiBaiKeZiYouDeBaiKeQuanShu]]
