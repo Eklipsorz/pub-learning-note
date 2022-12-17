@@ -87,27 +87,83 @@ function PackageRoute() {
 	2. 你的代碼很難從component角度和route角度進行切換
 
 
+#### Client-side navigation ?  page transition
+[[@LearnNextJs]]
 > Client-side navigation means that the page transition happens _using JavaScript_, which is faster than the default navigation done by the browser.
 
-客戶端頁面導向會是使用javascript而進行的頁面轉場過程
+重點：
+-  page transition 會是指定頁面轉換成另一個頁面的過程
+- Client-side navigation 是使用javascript而進行的頁面轉場過程
+
+##### transition 命名緣由
+> a change from one form or type to another, or the process by which this happens
+
+transition意指從特定形式轉換成另一種形式的過程
 
 
+### 最終解決方案
 
+> React Router takes advantage of React 18's Suspense for data fetching using the defer Response utility and <Await /> component / useAsyncValue hook. By using these APIs, you can solve both of these problems:
 
+> - Your data is no longer on a waterfall: document -> JavaScript -> Lazy Loaded Route & data (in parallel) 
+> - Your can easily switch between rendering the fallback and waiting for the data
 
-### 解決後的情況
+> Let's take a dive into how to accomplish this.
+> ### Using defer
+
+> Start by adding \<Await \/\> for your slow data requests where you'd rather render a fallback UI. Let's do that for our example above:
+
+```
+import {
+  Await,
+  defer,
+  useLoaderData,
+} from "react-router-dom";
+import { getPackageLocation } from "./api/packages";
+
+async function loader({ params }) {
+  const packageLocationPromise = getPackageLocation(
+    params.packageId
+  );
+
+  return defer({
+    packageLocation: packageLocationPromise,
+  });
+}
+
+export default function PackageRoute() {
+  const data = useLoaderData();
+
+  return (
+    <main>
+      <h1>Let's locate your package</h1>
+      <React.Suspense
+        fallback={<p>Loading package location...</p>}
+      >
+        <Await
+          resolve={data.packageLocation}
+          errorElement={
+            <p>Error loading package location!</p>
+          }
+        >
+          {(packageLocation) => (
+            <p>
+              Your package is at {packageLocation.latitude}{" "}
+              lat and {packageLocation.longitude} long.
+            </p>
+          )}
+        </Await>
+      </React.Suspense>
+    </main>
+  );
+}
+```
 
 
 > By using these APIs, you can solve both of these problems:
 > 1.  Your data is no longer on a waterfall: document -> JavaScript -> Lazy Loaded Route & data (in parallel)
 > 2.  Your can easily switch between rendering the fallback and waiting for the data
 
-1. 資料索求請求並不會完全跟著其他任務排著隊輪流執行，流程變成：
-	- 解析結果網頁並渲染
-	- 解析JS模組所在並加載初始畫面
-	- 根據使用者切換的URL來執行對應Route所要做的事情，如loader、render；在執行對應Route所要做的事情render時，就會發送資料索求請求
-	
-2. 你的代碼很容易從component和route進行切換：選擇defer
 
 
 > So rather than waiting for the component before we can trigger the fetch request, we start the request for the slow data as soon as the user starts the transition to the new route. This can significantly speed up the user experience for slower networks.
@@ -125,14 +181,25 @@ return defer({
   packageLocation: packageLocationPromise,
 });
 ```
-此外，API ㄓ
+
+
+重點：
+- 具體方式為
+	- 使用defer 來指定哪些本該要在loader的非同步任務是要推遲在render元件時執行
+	- 使用Await元件來包覆著被推遲的非同步任務
+	- Suspense元件包覆著Await元件，而Await元件則是定義著被推遲的任務內容如何執行、如何把請求回應轉送至目前所在、將回應結果渲染
+- 改善結果：
+	1. 資料索求請求並不會完全跟著其他任務排著隊輪流執行，流程變成：
+		- 解析結果網頁並渲染
+		- 解析JS模組所在並加載初始畫面
+		- 根據使用者切換的URL來執行對應Route所要做的事情，如loader、render；在執行對應Route所要做的事情render時，就會發送資料索求請求
+	2. 你的代碼很容易從component和route進行切換：選擇defer
 
 
 
-### transition 命名緣由
-> a change from one form or type to another, or the process by which this happens
 
-transition意指從特定形式轉換成另一種形式的過程
+
+
 
 
 https://reactrouter.com/en/main/guides/deferred
@@ -147,3 +214,4 @@ Tags:
 Links:
 References:
 [[@DeferredDataV6]]
+[[@LearnNextJs]]
