@@ -193,7 +193,17 @@ return defer({
 		- 解析結果網頁並渲染
 		- 解析JS模組所在並加載初始畫面
 		- 根據使用者切換的URL來執行對應Route所要做的事情，如loader、render；在執行對應Route所要做的事情render時，就會發送資料索求請求
-	2. 你的代碼很容易從component和route進行切換：選擇defer
+	2. 你的代碼很容易從component和route進行切換：透過defer方法和await是否添加來決定是否其promise要在執行route時執行，還是在component執行：
+		- 使用await promiseA會被直接套用在對應loader，並且由於await的關係會把後續的元件渲染被包含在promiseA 的then chain裡頭，必須等到promiseA執行完畢才能執行元件渲染
+		- 沒使用await的promise會直接推遲至component內執行，即使放到loader時，也會因為非同步任務的關係，而先執行元件渲染。
+```
+return defer({
+  // not deferred:
+  packageLocation: await packageLocationPromise,
+  // deferred:
+  packageLocation: packageLocationPromise,
+});
+```
 
 
 
@@ -202,7 +212,6 @@ return defer({
 
 
 
-https://reactrouter.com/en/main/guides/deferred
 
 ## 複習
 #🧠 Question :: ->->-> ``
