@@ -17,8 +17,8 @@
 2.  Your code can't easily switch between component fetching and route fetching (more on this later).
 
 但仍然是次優解，有兩個原因：
-1. client-side 的資料索求過程必須得跟著其他任務排著隊進行
-2. 你的代碼很難從component和route進行切換
+1. client-side 的資料索求過程必須得跟著其他任務排著隊進行，流程會是
+1. 你的代碼很難從component和route進行切換
 
 
 > Client-side navigation means that the page transition happens _using JavaScript_, which is faster than the default navigation done by the browser.
