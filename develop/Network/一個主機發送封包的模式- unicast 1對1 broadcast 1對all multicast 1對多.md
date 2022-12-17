@@ -25,13 +25,23 @@ unicast：
 ### Broadcast
 > Broadcast is a type of communication where data is sent from one computer once and a copy of that data will be forwarded to all the devices.  
 
+[[@DifferenceBroadcastMulticast]]
+> Broadcast transfer (one-to-all) techniques and can be classified into two types : Limited Broadcasting, Direct Broadcasting. In broadcasting mode, transmission happens from one host to all the other hosts connected on the LAN. The devices such as bridge uses this. The protocol like ARP implement this, in order to know MAC address for the corresponding IP address of the host machine. ARP does ip address to mac address translation. RARP does the reverse.
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20201026202439/broadcast.png)
 
 broadcast ：
+- 
 - 指一旦某個主機A發送封包，就會是以該封包內容作為副本來向指定網路下的所有主機發送封包
 - 指定網路可以是主機A所在的網路，或者其他網路
 
 ###  Multicast
 > Multicast is a type of communication where multicast traffic addressed for a group of devices on the network. IP multicast traffic are sent to a group and only members of that group receive and/or process the Multicast traffic.
+
+[[@DifferenceBroadcastMulticast]]
+> Multicasting has one/more senders and one/more recipients participate in data transfer traffic. In multicasting traffic recline between the boundaries of unicast and broadcast. It server’s direct single copies of data streams and that are then simulated and routed to hosts that request it. IP multicast requires support of some other protocols such as IGMP (Internet Group Management Protocol), Multicast routing for its working. And also in Classful IP addressing Class D is reserved for multicast groups.
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20201026205734/Multicast.png)
 
 Multicast ：
 - 是指一個主機向一組由指定網路下的群組發送封包
