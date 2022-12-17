@@ -96,6 +96,15 @@ Suspense元件 => 由React提供
 3. 元件為如下：
 	- fallback 為當以下元件未成功載入就執行渲染其屬性值
 `<Suspense fallback={JSX Element} />`
+
+```
+<Suspense fallback={JSX Element}>
+	<Await>
+		......
+	</Await>
+	{}
+</Suspense>
+```
 > fallback
 
 > that component from code splitting
