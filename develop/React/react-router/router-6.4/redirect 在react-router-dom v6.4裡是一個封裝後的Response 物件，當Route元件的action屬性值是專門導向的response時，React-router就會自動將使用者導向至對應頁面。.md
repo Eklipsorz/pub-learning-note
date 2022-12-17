@@ -29,7 +29,7 @@ new Response("", {
 
 重點：
 - redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，其物件為如下：
-																																																																				- Response 物件是基於Fetch API而產生的
+- Response 物件是基於Fetch API而產生的
 	- 其內部設定基本的狀態碼、導向位置
 ```
 new Response(body, {

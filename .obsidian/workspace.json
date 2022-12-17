@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "28fff0dbac2c5f21",
+        "id": "7c1f86ac29161e33",
         "type": "tabs",
         "children": [
           {
-            "id": "046de364b0a1b9a0",
+            "id": "c36f947e5fb3f475",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md"
+                "file": "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md"
               }
             }
           }
@@ -163,17 +163,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "21b4ab9922e1014f",
+  "active": "c36f947e5fb3f475",
   "lastOpenFiles": [
-    "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
+    "develop/Database/Master-Master Replication 架構是每個資料庫系統皆為主要資料庫系統，都會將特定資料複製成副本給所有資料庫系統的資料庫，以此讓多個資料庫系統共享資料.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+    "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
     "develop/render/一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
     "develop/React/react-router/router-6.4/React-router 6.4 提出loader 和action是為了讓元件本身的業務邏輯更為簡單，而從元件的業務邏輯抽離出請求處理種類的業務邏輯.md",
     "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
     "develop/React/react-router/router-6.4/使用useNavigation來實現確保一旦提交就不會有額外的提交內容，手段可以是一旦提交就關閉提交按鈕，按鈕顯示submitting.md",
     "inbox/hypertext 是電腦或電子裝置能夠呈現的文字，hypermedia 是電子或電子裝置能夠呈現的任一可以表達資訊的事物，hyperlink 是以將特定頁面的網址綁定在hypertext或者hypermedia作為轉移時的連結.md",
     "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing和清除上一次side effect所帶來的影響.md",
-    "inbox/react-router-practice：對特定Quote增加評論功能.md",
-    "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md"
+    "inbox/react-router-practice：對特定Quote增加評論功能.md"
   ]
 }
