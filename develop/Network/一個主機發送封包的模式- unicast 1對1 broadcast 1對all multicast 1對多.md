@@ -56,6 +56,7 @@ Multicast ：
 	- 本身會是指one-to-many以及many-to-one的結合，意指為一個傳送方傳送資料至特定群組的N個接收方 和 多個傳送方傳送資料至同一個接收方 的合併行為
 	- 具體為位處於群組A的N個傳送方傳送資料至另一個群組B的M個接收方，每個接收方都會拿到相同內容的資料
 
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671279637/blog/network/transmission/many-to-many-transmission_bw63pg.png)
 ## 總結
 引用[[@dineshWhatUnicastBroadcast]]: 
 ![[https://techiemaster.files.wordpress.com/2016/08/slide_6.jpg?w=816]]
