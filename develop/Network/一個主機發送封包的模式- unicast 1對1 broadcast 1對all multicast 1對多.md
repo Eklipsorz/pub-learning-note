@@ -50,22 +50,30 @@ Multicast ：
 - multicast 會是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方：
 	- N 和 M 會是至少1個
 	- 特定群組A和特定群組B所在網路可以是不一樣或者一樣
-	- 能夠構築的傳遞形式為：one-to-many、many-to-many
+	- 能夠構築的傳遞形式為：one-to-many、many-to-one、many-to-many
 - one-to-many 形式為：1個傳送方傳送資料至特定群組的N個接收方
+- many-to-one 形式為：位於ㄊㄜN個傳送方傳送資料至特定群組B
 - many-to-many 形式為：
 	- 本身會是指one-to-many以及many-to-one的結合，意指為一個傳送方傳送資料至特定群組的N個接收方 和 多個傳送方傳送資料至同一個接收方 的合併行為
 	- 具體為位處於群組A的N個傳送方傳送資料至另一個群組B的M個接收方，每個接收方都會拿到相同內容的資料
+具體會是：
+	- 藉由媒介來代表Receiver來接收多個Sender傳遞過來的訊息，接著再由媒介代表Sender轉發訊息至多個Receiver
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671281392/blog/network/transmission/many-to-many-transmission-example1_uaynks.png)
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671279637/blog/network/transmission/many-to-many-transmission_bw63pg.png)
+ - 一個傳遞方傳遞相同訊息至多個接收方；一個接收方會收到多個傳遞方所傳遞的訊息
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671281392/blog/network/transmission/many-to-many-transmission-example2_smbbs2.png)
+
+
+
 ## 總結
 引用[[@dineshWhatUnicastBroadcast]]: 
 ![[https://techiemaster.files.wordpress.com/2016/08/slide_6.jpg?w=816]]
 
 重點：
 - unicast、broadcast、multicast 描述著一個綁定IP的主機傳播封包的形式
-- unicast: 一個電腦主機 會向另一個電腦主機發送封包。
+- unicast: 一個主機 會向另一個電腦主機發送封包。
 - broadcast: 一個主機 會向指定網路下的所有主機發送封包。
-- multicast: 一個主機 會向指定群組下的所有主機發送封包，由多個主機構成一個指定群組，其主機數量不一定會是某個特定網路的所有主機。
+- multicast: 指定群組A下的N個主機 會向指定群組B下的M個主機發送封包。
 
 ## Note 
 
@@ -85,19 +93,51 @@ Multicast ：
 
 ## 複習
 
-#🧠 Question unicast、broadcast、multicast中的cast是指 ->->-> `cast 指的是從(一個/多個)客戶端發送資料至(一個/多個)接收方 的行爲`
-<!--SR:!2023-01-14,145,250-->
-
-#🧠 Question Unicast 是什麼樣的傳播方式？->->-> `在網路傳遞中，只會有一個主機A傳遞資訊至另一個主機B，也就是說只會有一個傳送者和一個接收者`
-<!--SR:!2023-10-22,313,250-->
 
 
-#🧠 Broadcast 是什麼樣的傳播方式？ ->->-> `指一旦某個主機A發送封包，就會是以該封包內容作為副本來向指定網路下的所有主機發送封包`
-<!--SR:!2023-04-09,179,230-->
+#🧠  unicast、broadcast、multicast中的cast是指 ->->-> `cast 會是指傳送方傳送資料至接收方的動詞、行為名詞`
+
+#🧠 unicast、broadcast、multicast中的cast是指傳送方傳送資料至接收方的動詞、行為名詞，傳送方和接收方的數量為何？->->-> `傳送方和接收方的數量皆會是由一個或者多個`
 
 
-#🧠 Multicast  是什麼樣的傳播方式？->->-> `是指一個主機向一組由指定網路下的群組發送封包，群組會由多個在指定網路下的主機所構成，由於群組下的主機數量不一定會是指定網路的所有主機，因此和Broadcast 有所區別`
-<!--SR:!2022-12-25,133,250-->
+#🧠 Unicast 是在網路傳遞中，只會有一個主機A傳遞資訊至另一個主機B，請問主機A和主機B的隸屬網路是什麼？->->-> `可以是一樣；可以是不一樣`
+
+#🧠 Unicast 的傳遞方和接收方這兩者數量為何？ ->->-> `都各為1個`
+
+#🧠  Unicast 是什麼樣的傳播方式？->->-> `在網路傳遞中，只會有一個主機A傳遞資訊至另一個主機B`
+
+#🧠 Broadcast 是什麼樣的傳播方式？ ->->-> `一個傳送方A發送資料至特定網路下的所有主機`
+
+#🧠 Broadcast 是一個傳送方A發送資料至特定網路下的所有主機的傳播方式，傳遞方和接收方的隸屬網路為何？ ->->-> `可以是一樣或者不一樣`
+
+#🧠 Broadcast 是一個傳送方A發送資料至特定網路下的所有主機的傳播方式，傳遞方和接收方兩者間的數量為何？ ->->-> `傳送方為一個，接收方為特定網路下的所有主機`
+
+#🧠 Multicast  是什麼樣的傳播方式？->->-> `multicast 會是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方`
+
+
+#🧠  Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，其中的N和M皆為多少個，合併起來會是什麼意思->->-> `至少為1個`
+
+#🧠 Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，隸屬網路為何？ ->->-> `特定群組A和特定群組B所在網路可以是不一樣或者一樣`
+
+#🧠 Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，能夠構築的傳遞形式會是什麼？->->-> `one-to-many、many-to-many`
+
+#🧠 Question :: ->->-> ``
+
+
+
+#🧠 Question :: ->->-> ``
+
+
+
+#🧠 Question :: ->->-> ``
+
+
+
+#🧠 Question :: ->->-> ``
+
+
+
+
 
 ---
 Status: #🌱 
