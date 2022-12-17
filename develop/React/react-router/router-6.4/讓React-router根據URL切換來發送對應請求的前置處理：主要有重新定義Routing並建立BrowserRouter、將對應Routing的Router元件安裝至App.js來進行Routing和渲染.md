@@ -30,7 +30,7 @@ loader 和 useLoaderData 技術不被預設的BrowserRouter所支援，換言之
 <!--SR:!2022-12-23,8,250-->
 
 #🧠 讓React-router根據URL切換來發送對應請求在react-router-dom v6的原生BrowserRoute是不可實現的，那麼解法會是？？ ->->-> `重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些Route是要以Loader來執行。`
-<!--SR:!2022-12-17,2,230-->
+<!--SR:!2022-12-21,4,230-->
 
 
 #🧠 讓React-router根據URL切換來發送對應請求在react-router-dom v6的原生BrowserRoute是不可實現的，那麼解法會是重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些Route是要以Loader來執行。，步驟會是什麼？ ->->-> `- [[自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route]] - 將對應Routing的Router元件安裝至App.js來進行Routing和渲染： - 將Router物件安裝至RouterProvider元件，使Router物件能夠正常在對應元件進行Routing和渲染 - 對應RouterProvider安裝至App.js`

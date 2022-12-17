@@ -206,7 +206,7 @@ xxxx 元件下的路由
 <!--SR:!2022-12-20,4,230-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的每一個Route都必須由Routes元件包裹，具體為何？ ->->-> `添加Routes元件來包裹nested Route`
-<!--SR:!2022-12-17,9,250-->
+<!--SR:!2023-01-11,25,250-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的替parent Route元件的path設定fuzzy match，具體為何？ ->->-> `由於每個Route的path為exact match，得設定成fuzzy match才能透過nested Route所設定的path值瀏覽到nested 元件和對應的路由設定`
 <!--SR:!2023-01-01,17,250-->
@@ -215,7 +215,7 @@ xxxx 元件下的路由
 <!--SR:!2023-01-12,26,250-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的以parent route所設定的path來決定nested Route的path，具體為何？->->-> `根據是否nested route的實現來決定定位，若是parent route包含另一個route，那麼nested route的path就以parent route的path為主來調整；若是nested route綁定在component，而parent route包含著component，那麼就以瀏覽器的absolute url或者relative url為主`
-<!--SR:!2022-12-17,9,250-->
+<!--SR:!2023-01-10,24,250-->
 
 
 #🧠 react-router-dom v6：假若要設定/path1/path2 對應元件為xxxxx1，就直接將nested route的path設定成/path2，那麼那要如何瀏覽到nested route的對應渲染元件xxxxx1![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670250102/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_clqra8.png) ->->-> ``
