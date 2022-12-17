@@ -31,20 +31,24 @@ e.g.,
 And if that's what you wanna do,
 
   
+### React-router：defer 方法
 
-defer =>
 
-this allows you to defer loading data that belong to this page component And you can also defer just parts of the data that's required if you're loading multiple pieces of data.
 
-  
+> this allows you to defer loading data that belong to this page component And you can also defer just parts of the data that's required if you're loading multiple pieces of data.
 
-This utility allows you to defer values returned from loaders by passing promises instead of resolved values.
+> This utility allows you to defer values returned from loaders by passing promises instead of resolved values.
 
-1. defer 回傳deffered object，裡面夾雜了由多個promise構成的屬性值
-
-2. defer 的引數為物件，物件屬性值為對應的promise，舉例
-
-`defer({ posts: funct() })`
+重點：
+- defer 為React-router-dom的函式
+- 主要回傳deferred object，該物件夾雜多個屬性，其屬性值為索求特定資源或者資料處理的promise非同步任務
+- 語法為：主要會以obj所構成的物件來建構deferred object
+	- obj會包含著擁有 **索求特定資源或者資料處理的promise非同步任務** 的屬性值
+`defer(obj)`
+- 舉例：在這getPosts執行起來會回傳promise
+```
+defer({ posts: getPosts() })
+```
 
 ###
 
@@ -81,7 +85,7 @@ resolve：
 > When using a function, the value is provided as the only parameter.
 
 
-###
+
 
 Await 的 errorElement：
 
@@ -92,29 +96,27 @@ to specify which element should be shown if loading that data should fail eventu
 ### Suspense 元件
 
 
-> fallback
 
 > that component from code splitting
-
 > react router use this for showing a fallback until that data for which you're waiting is there
 
+[[@ReactTopLevelAPI]]
 > `React.Suspense` lets you specify the loading indicator in case some components in the tree below it are not yet ready to render. In the future we plan to let `Suspense` handle more scenarios such as data fetching.
 
 
-Suspense元件 => 由React提供
-
-1. 當其元件下面的元件還未完成render時，就會呈現其對應畫面來表示元件載入中
-2. 目的為顯示元件未載入時的畫面
-3. 元件為如下：
+重點：
+- Suspense元件 是由React提供
+- 用途為以元件形式來呈現出目前暫時停止特定元件的渲染之狀態
+- 具體則是當Suspense元件包含的元件還未完成render時，就會呈現其對應畫面來表示元件載入中
+- Suspense 元件語法
 	- fallback 為當以下元件未成功載入就執行渲染其屬性值
 `<Suspense fallback={JSX Element} />`
-
 ```
 <Suspense fallback={JSX Element}>
 	<Await>
 		......
 	</Await>
-	{}
+	{......}
 </Suspense>
 ```
 
@@ -141,7 +143,9 @@ suspense
 #🧠 Question :: ->->-> ``
 
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[React]]
 Links:
 References:
+[[@ReactTopLevelAPI]]
