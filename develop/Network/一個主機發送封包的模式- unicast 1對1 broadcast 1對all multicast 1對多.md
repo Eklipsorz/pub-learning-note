@@ -6,10 +6,12 @@
 
 > The **cast** term here signifies some data(stream of packets) is being transmitted to the recipient(s) from the client(s) side over the communication channel that helps them to communicate.
 
-cast 指的是從(一個/多個)客戶端發送資料至(一個/多個)接收方 的行爲，而至於什麼時候為一個？什麼時候為多個？就得依據著cast種類而決定：
-- unicast
-- broadcast
-- multicast
+重點：
+- cast 會是指傳送方傳送資料至接收方的動詞、行為名詞
+	- 傳送方可以是由一個或多個傳送方所構成
+	- 接收方可以是由一個或多個接收方所構成
+
+
 
 
 ### Unicast 
@@ -19,8 +21,8 @@ cast 指的是從(一個/多個)客戶端發送資料至(一個/多個)接收方
 > Unicast is a type of communication where data is sent from one computer to another computer. In Unicast type of communication, there is only one sender, and one receiver.
 
 unicast：
-- 指從一個主機A傳遞資訊至另一個主機B，換言之，只會有一個接收者和傳送者
-- 主機A和主機B的網路不一定要求一樣，可以是一樣或者不一樣
+- 泛指傳送方和接收方都各為一個，這兩方所處的網路可以是一樣或者不一樣
+- 換言之，一個傳遞方A傳遞資訊至另一個接收方B
 
 ### Broadcast
 > Broadcast is a type of communication where data is sent from one computer once and a copy of that data will be forwarded to all the devices.  
