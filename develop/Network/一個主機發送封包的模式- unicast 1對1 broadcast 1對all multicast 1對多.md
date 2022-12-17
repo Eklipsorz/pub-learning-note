@@ -33,7 +33,8 @@ unicast：
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20201026202439/broadcast.png)
 
 broadcast ：
-- 
+- broadcast 會是指一個傳送方A發送資料至特定網路下的所有主機
+- 在broadcast概念中，
 - 指一旦某個主機A發送封包，就會是以該封包內容作為副本來向指定網路下的所有主機發送封包
 - 指定網路可以是主機A所在的網路，或者其他網路
 
