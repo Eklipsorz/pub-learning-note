@@ -1,4 +1,8 @@
 
+deferred vs. not deferred
+
+
+
 ## 描述
 
 ### deferred vs. not deferred
@@ -204,12 +208,6 @@ return defer({
   packageLocation: packageLocationPromise,
 });
 ```
-
-
-
-
-
-
 
 
 
