@@ -156,7 +156,7 @@ xxxx 元件下的路由
 <!--SR:!2022-12-17,9,250-->
 
 #🧠 react-router-dom v6：建立nested Route 元件方式，其中之一為parent route元件直接包裹nested route元件，該搭配Outlet元件能讓nested route 元件渲染對應的元件，主要為何可以成功渲染？為什麼一定要它->->-> `nested route 元件綁定的元件A沒指定說要在哪個頁面元件下呈現對應元件A，所以得搭配Outlet元件告知React哪個位置才是元件A要呈現的地方`
-<!--SR:!2022-12-17,9,250-->
+<!--SR:!2023-01-09,23,250-->
 
 #🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將nested Route元件安置在component，再讓component被parent route元件所包含，具體流程是什麼？->->-> `- parent route元件的path要添加/* - nested route元件的path設定，具體會以瀏覽器目前頁面所在的位置來定位`
 <!--SR:!2022-12-31,17,250-->
@@ -169,7 +169,7 @@ xxxx 元件下的路由
 
 
 #🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將parent route元件直接包裹nested route元件，並搭配Outlet元件，具體流程中的parent route元件的path為何可以省略\/\*？ ->->-> `因為系統會直接以包裹的後裔route元件以及搭配parent route的path來定位來找`
-<!--SR:!2022-12-17,9,250-->
+<!--SR:!2023-01-10,24,250-->
 
 #🧠 react-router-dom v6 ：將nested Route元件安置在component，再讓component被parent route元件所包含，具體流程中的parent route元件的path可以省略\/\*？為什麼？->->-> `不能，因爲parent route包含的後裔元件並不是route元件，沒辦法直接省略`
 <!--SR:!2022-12-31,16,250-->
