@@ -306,7 +306,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2022-12-17,26,250-->
+<!--SR:!2023-02-24,69,250-->
 
 
 
