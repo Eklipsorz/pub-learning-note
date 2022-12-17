@@ -1,7 +1,4 @@
 
-deferred vs. not deferred
-
-
 
 ## 描述
 

@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應來渲染以及若沒成功成載入時所要渲染的fallback.md",
+                "file": "develop/React/react-router/router-6.4/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應來渲染以及若沒成功成載入時所要渲染的fallback.md",
+                "file": "develop/React/react-router/router-6.4/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應來渲染以及若沒成功成載入時所要渲染的fallback.md",
+                "file": "develop/React/react-router/router-6.4/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應來渲染以及若沒成功成載入時所要渲染的fallback.md"
+                "file": "develop/React/react-router/router-6.4/Untitled.md"
               }
             }
           }
@@ -226,6 +226,8 @@
   },
   "active": "f664ddc6925df114",
   "lastOpenFiles": [
+    "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
+    "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應來渲染以及若沒成功成載入時所要渲染的fallback.md",
     "develop/React/react-router/router-6.4/Untitled.md",
     "develop/React/react-router/router-6.4/使用useNavigation來實現確保一旦提交就不會有額外的提交內容，手段可以是一旦提交就關閉提交按鈕，按鈕顯示submitting.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
@@ -233,8 +235,6 @@
     "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
     "develop/Network/Geocast 是一種multicast的技術，傳遞方所要傳遞的位置會對應到一組隸屬於特定地區或者國家的多個接收方.md",
     "develop/Network/網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容.md",
-    "develop/Network/anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由.md",
-    "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
-    "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md"
+    "develop/Network/anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由.md"
   ]
 }
