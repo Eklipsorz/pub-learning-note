@@ -34,9 +34,9 @@ unicast：
 
 broadcast ：
 - broadcast 會是指一個傳送方A發送資料至特定網路下的所有主機
-- 在broadcast概念中，
-- 指一旦某個主機A發送封包，就會是以該封包內容作為副本來向指定網路下的所有主機發送封包
-- 指定網路可以是主機A所在的網路，或者其他網路
+- 在broadcast概念中：
+	- 傳送方和接收方兩者間的網路會是一樣或不一樣
+	- 傳送方為一個，接收方為特定網路下的所有主機
 
 ###  Multicast
 > Multicast is a type of communication where multicast traffic addressed for a group of devices on the network. IP multicast traffic are sent to a group and only members of that group receive and/or process the Multicast traffic.
@@ -47,6 +47,7 @@ broadcast ：
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20201026205734/Multicast.png)
 
 Multicast ：
+- multicast  會是指一個傳送方A發送資料至特定網路下的所有主機
 - 是指一個主機向一組由指定網路下的群組發送封包
 - 群組會由多個在指定網路下的主機所構成
 - 由於群組下的主機數量不一定會是指定網路的所有主機，因此和Broadcast 有所區別
