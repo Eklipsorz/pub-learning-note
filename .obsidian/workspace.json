@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "51b63d25223fc44a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/Network/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "fc462cda4e9beefc",
@@ -129,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Network/網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容.md",
+                "file": "develop/Network/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Network/網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容.md",
+                "file": "develop/Network/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Network/網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容.md"
+                "file": "develop/Network/Untitled.md"
               }
             }
           }
@@ -188,10 +200,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "37fd638118d849b3",
+  "active": "51b63d25223fc44a",
   "lastOpenFiles": [
-    "develop/Network/anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由.md",
     "develop/Network/網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容.md",
+    "develop/Network/anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由.md",
     "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
     "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
     "inbox/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
