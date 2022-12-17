@@ -47,11 +47,14 @@ broadcast ：
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20201026205734/Multicast.png)
 
 Multicast ：
-- multicast  會是指一個傳送方A發送資料至特定網路下的所有主機
-- 是指一個主機向一組由指定網路下的群組發送封包
-- 群組會由多個在指定網路下的主機所構成
-- 由於群組下的主機數量不一定會是指定網路的所有主機，因此和Broadcast 有所區別
-- 指定網路可以是主機A所在的網路，或者其他網路
+- multicast 會是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方：
+	- N 和 M 會是至少1個
+	- 特定群組A和特定群組B所在網路可以是不一樣或者一樣
+	- 能夠構築的傳遞形式為：one-to-many、many-to-many
+- one-to-many 形式為：1個傳送方傳送資料至特定群組的N個接收方
+- many-to-many 形式為：
+	- 本身會是指one-to-many以及many-to-one的結合，意指為一個傳送方傳送資料至特定群組的N個接收方 和 多個傳送方傳送資料至同一個接收方 的合併行為
+	- 具體為位處於群組A的N個傳送方傳送資料至另一個群組B的M個接收方，每個接收方都會拿到相同內容的資料
 
 ## 總結
 引用[[@dineshWhatUnicastBroadcast]]: 
