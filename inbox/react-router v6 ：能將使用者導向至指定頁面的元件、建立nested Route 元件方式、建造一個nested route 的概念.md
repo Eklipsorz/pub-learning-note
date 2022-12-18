@@ -150,7 +150,7 @@ xxxx 元件下的路由
 
 
 #🧠  react-router-dom v6：建立nested Route 元件方式，其原理有哪些？ ->->-> `1. 將nested Route元件安置在component，再讓component被parent route元件所包含、2.  parent route元件直接包裹nested route元件，並搭配Outlet元件`
-<!--SR:!2022-12-18,10,250-->
+<!--SR:!2023-01-14,27,250-->
 
 #🧠  react-router-dom v6：建立nested Route 元件方式，其中之一為parent route元件直接包裹nested route元件，該方法能順利讓nested route 元件渲染對應的元件嗎 ->->-> `通常沒搭配Outlet元件，沒辦法順利渲染`
 <!--SR:!2023-01-08,22,250-->
@@ -181,7 +181,7 @@ xxxx 元件下的路由
 <!--SR:!2023-01-07,22,250-->
 
 #🧠 react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含，語法會是什麼？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_ryhana.png)`
-<!--SR:!2022-12-18,10,250-->
+<!--SR:!2023-01-15,28,250-->
 
 #🧠 react-router-dom v6 ：第二、parent route元件直接包裹nested route元件，並搭配Outlet元件，語法會是什麼？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-parent-route_nk6b5b.png)`
 <!--SR:!2023-01-14,27,250-->
@@ -219,7 +219,7 @@ xxxx 元件下的路由
 
 
 #🧠 react-router-dom v6：假若要設定/path1/path2 對應元件為xxxxx1，就直接將nested route的path設定成/path2，那麼那要如何瀏覽到nested route的對應渲染元件xxxxx1![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670250102/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_clqra8.png) ->->-> ``
-<!--SR:!2022-12-18,10,250-->
+<!--SR:!2023-01-13,26,250-->
 
 ---
 Status: #🌱 
