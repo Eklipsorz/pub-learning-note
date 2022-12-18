@@ -184,7 +184,7 @@ xxxx 元件下的路由
 <!--SR:!2022-12-18,10,250-->
 
 #🧠 react-router-dom v6 ：第二、parent route元件直接包裹nested route元件，並搭配Outlet元件，語法會是什麼？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-parent-route_nk6b5b.png)`
-<!--SR:!2022-12-18,10,250-->
+<!--SR:!2023-01-14,27,250-->
 
 #🧠 outlet 命名緣由是什麼？->->-> `Outlet 本身命名緣由為提供特定事物出去的通道`
 <!--SR:!2023-01-15,28,250-->

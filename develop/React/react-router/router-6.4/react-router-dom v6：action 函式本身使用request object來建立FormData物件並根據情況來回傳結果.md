@@ -157,7 +157,7 @@ export async function action({ request }) {
 <!--SR:!2022-12-27,9,250-->
 
 #🧠 useActionData 在react-router 中會是什麼hook?  ->->-> `主要會將React-Router最近一次執行action所獲得的結果回傳至元件使用`
-<!--SR:!2022-12-18,3,250-->
+<!--SR:!2022-12-27,9,250-->
 
 #🧠 react-router-dom v6.4：action 本身回傳error 和拋出 error 之間不同 處在哪？->->-> `使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router的錯誤處理給攔截並處理。`
 <!--SR:!2022-12-28,10,250-->
