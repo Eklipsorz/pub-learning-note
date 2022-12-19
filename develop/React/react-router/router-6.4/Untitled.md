@@ -11,8 +11,10 @@ because you don't have to worry about error handling and loading spinners or any
 because react router manages all these things for you
 
 
-###
+### 使用deferred promise + Suspense + Await的應用場景
 
+1. Route執行Loader存在執行較慢的程式碼部分
+2. 適用於不想讓整個頁面的每個頁面都相互等待才渲染，而是
 
 is that you can also defer loading data.
 
