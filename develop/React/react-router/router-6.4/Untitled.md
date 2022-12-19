@@ -41,7 +41,7 @@ And if that's what you wanna do,
 
 重點：
 - defer 為React-router-dom的函式
-- 主要回傳deferred object，該物件夾雜多個屬性，其屬性值為索求特定資源或者資料處理的promise非同步任務
+- 主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，該物件夾雜多個屬性，其屬性值為索求特定資源或者資料處理的promise非同步任務
 - 語法為：主要會以obj所構成的物件來建構deferred object
 	- obj會包含著擁有 **索求特定資源或者資料處理的promise非同步任務** 的屬性值
 `defer(obj)`
@@ -157,15 +157,25 @@ suspense
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為`<Suspense fallback={JSX Element}> JSX Element </Suspense>`，其中fallback和JSX Element是做什麼用->->-> `fallback 是當JSX Element 還未完成render時所會替代渲染的內容，而JSX Element則是指著特定元件`
 
-#🧠 Suspense 元件源自於哪裡？react ->->-> ``
+#🧠 Suspense 元件源自於哪裡？react-router? react? ->->-> `react`
+
+#🧠 React-router：defer 方法是什麼用途？ ->->-> `主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object`
+
+
+#🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，其物件會是麼？ ->->-> `該物件夾雜多個屬性，其屬性值為索求特定資源或者資料處理的promise非同步任務`
+
+
+#🧠  React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？ ->->-> `defer(obj)`
+
+#🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為deferred task，如何透過defer來用 ->->-> `defer({ attribute1: promise })`
+
+#🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為not-deferred task，如何透過defer來用 ->->-> `defer({ attribute1: await promise })`
+
+#🧠 Question :: ->->-> ``
 
 #🧠 Question :: ->->-> ``
 
 
-#🧠 Question :: ->->-> ``
-
-
-#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
