@@ -20,7 +20,7 @@ async function loader({ params }) {
 - deferred 就意味著原本要在render前執行的任務內容推遲至執行render的同時才做，具體是依據event loop的關係，而使promise內的任務執行延後，並將對應Promise物件轉移至後頭負責執行render的程式模組來正式負責該Promise的處理請求、回應處理。
 - not deferred 就意味著繼續在render前執行loader任務，具體會是以await、指派語句、await promise後的剩餘代碼之間的關係，而剩餘代碼會是指Route執行render。藉此將指派語句、後頭語句由promise.then所包含，使得只有執行完Promise本身才有辦法繼續完成指派、Route執行render，而這情況剛好是由Route元件先執行Loader，再後執行render
 
-[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體]]
+[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容]]
 
 ### 問題描述
 
@@ -250,7 +250,7 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
-[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體]]
+[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容]]
 References:
 [[@DeferredDataV6]]
 [[@LearnNextJs]]

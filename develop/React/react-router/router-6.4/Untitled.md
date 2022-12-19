@@ -106,11 +106,11 @@ to specify which element should be shown if loading that data should fail eventu
 
 重點：
 - Suspense元件 是由React提供
-- 用途為以元件形式來呈現出目前暫時停止特定元件的渲染之狀態
+- 用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態
 - 具體則是當Suspense元件包含的元件還未完成render時，就會呈現其對應畫面來表示元件載入中
 - Suspense 元件語法
-	- fallback 為當以下元件未成功載入就執行渲染其屬性值
-`<Suspense fallback={JSX Element} />`
+	- fallback 為當Sup元件未成功載入就執行渲染其屬性值
+`<Suspense fallback={JSX Element}> JSX Element </Suspense>`
 ```
 <Suspense fallback={JSX Element}>
 	<Await>
@@ -140,8 +140,32 @@ suspense
 - fallback 是指計畫失敗時的備案
 
 ## 複習
+
+#🧠 fallback 命名緣由會是什麼？ ->->-> `fallback 是指計畫失敗時的備案`
+
+#🧠  suspend 命名緣由會是什麼？ ->->-> `- suspend 是指暫時或者永久停止`
+
+#🧠  suspense命名緣由會是什麼？ ->->-> `- suspense 是指呈現被暫時/永久停止的狀態`
+
+#🧠 react：Suspense 元件是什麼用途？ ->->-> `用途為以特定內容元件形式來呈現出目前特定元件暫時停止渲染之狀態`
+
+#🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其中為何暫時停止渲染？ ->->-> `由於route還未執行完對應元件的渲染任務，而保持暫時停止渲染`
+
+#🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，具體會是什麼？ ->->-> `則是當Suspense元件包含的元件還未完成render時，就會呈現其對應畫面來表示元件載入中`
+
+#🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為何？->->-> `<Suspense fallback={JSX Element}> JSX Element </Suspense>`
+
+#🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為`<Suspense fallback={JSX Element}> JSX Element </Suspense>`，其中fallback和JSX Element是做什麼用->->-> `fallback 是當JSX Element 還未完成render時所會替代渲染的內容，而JSX Element則是指著特定元件`
+
+#🧠 Suspense 元件源自於哪裡？react ->->-> ``
+
 #🧠 Question :: ->->-> ``
-<!--SR:!2022-12-21,3,250-->
+
+
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
 
 ---
 Status: #🌱 
@@ -149,6 +173,6 @@ Tags:
 [[React]]
 Links:
 [[當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染]]
-[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容]]
+[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容]]
 References:
 [[@ReactTopLevelAPI]]
