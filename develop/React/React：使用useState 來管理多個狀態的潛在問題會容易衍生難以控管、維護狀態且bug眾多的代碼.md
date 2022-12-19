@@ -108,7 +108,7 @@ return (
 <!--SR:!2023-01-08,71,250-->
 
 #🧠 React：假如有enteredEmail、emailIsValid這兩個負責儲存兩個不同狀態值的變數，而emailIsValid儲存的狀態值是依據著enteredEmail儲存的狀態值是否包含@來決定的，在這裡頭會有什麼潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663511454/blog/react/state/useReducer/useReducer-background-example_xva8gs.png) ->->-> `- emailIsValid的狀態值會是依賴著另一個狀態值enteredEmail來做決定，而狀態值enteredEmail很有可能因為setState變更狀態的時間差而不會是最新的。 - emailIsValid變更狀態用的函式所支援的callback只會以emailIsValid目前要求的最新狀態來更新，並不能夠以callback形式來取得enteredEmail目前要求的最新狀態值來更新`
-<!--SR:!2022-12-19,56,250-->
+<!--SR:!2023-01-16,28,230-->
 
 
 ---

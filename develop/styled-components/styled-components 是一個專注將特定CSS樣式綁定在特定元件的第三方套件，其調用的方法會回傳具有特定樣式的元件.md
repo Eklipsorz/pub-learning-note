@@ -69,6 +69,13 @@ const Element = styled.<element>`<template-literal>`
   );
 ```
 
+#### 對styled-component進行處理
+通常styled-component 只能以wrapper component來表示
+
+若要替styled-component增加attribute
+
+
+1. 當要替styled-component來指定對應
 
 #### 總結
 使用styled-components 套件所建立的元件，預設下會有：

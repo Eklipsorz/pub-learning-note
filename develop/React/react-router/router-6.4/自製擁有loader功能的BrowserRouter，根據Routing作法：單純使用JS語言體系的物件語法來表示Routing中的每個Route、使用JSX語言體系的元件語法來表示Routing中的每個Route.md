@@ -251,7 +251,7 @@ export default RootLayout;
 <!--SR:!2022-12-21,6,230-->
 
 #🧠 react-router-dom v6：Route 元件添加index屬性會是代表什麼？->->-> `就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染`
-<!--SR:!2022-12-19,5,248-->
+<!--SR:!2022-12-31,12,248-->
 
 #🧠 react-router-dom v6：`<Route path='/' element={<RootLayout />}>  <Route index element={<WelcomePage />} /> </Route>` 試著說明index的作用->->-> ``
 <!--SR:!2023-01-01,13,248-->
