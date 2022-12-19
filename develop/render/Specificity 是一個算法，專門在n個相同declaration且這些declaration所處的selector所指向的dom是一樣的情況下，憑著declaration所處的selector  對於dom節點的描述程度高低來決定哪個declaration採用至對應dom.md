@@ -117,7 +117,7 @@ specific
 <!--SR:!2023-04-09,134,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼id代表目前declaration 所在的 selector 有使用 id 來描述對應元件的具體程度，會用數字表示，那麼具體如何用數字表示？ ->->-> `對應元件在同一個由多個selector構成的selector上相符N個id selector的描述，就+N-0-0。、 數字越高就表示在用特定id形式描述該元件上的具體程度就越高`
-<!--SR:!2022-12-19,70,250-->
+<!--SR:!2023-06-20,183,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼class代表著什麼？ ->->-> ` class 表示目前declaration 所在的 selector 有使用 class 來描述對應元件的具體程度，會用數字表示`
 <!--SR:!2023-01-24,57,230-->

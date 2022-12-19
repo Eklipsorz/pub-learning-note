@@ -241,7 +241,7 @@ export default RootLayout;
 <!--SR:!2023-01-02,14,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為何？->->-> `createRoutesFromElements(JSX Element)`
-<!--SR:!2022-12-19,5,248-->
+<!--SR:!2023-01-02,14,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為`createRoutesFromElements(JSX Element)`，那麼JSX Element會是什麼？->->-> `其中JSX Element為JSX語言體系的JSX Element`
 <!--SR:!2022-12-22,7,250-->
@@ -254,7 +254,7 @@ export default RootLayout;
 <!--SR:!2022-12-19,5,248-->
 
 #🧠 react-router-dom v6：`<Route path='/' element={<RootLayout />}>  <Route index element={<WelcomePage />} /> </Route>` 試著說明index的作用->->-> ``
-<!--SR:!2022-12-19,5,248-->
+<!--SR:!2023-01-01,13,248-->
 
 #🧠 請試著說明每個路徑能夠對應到什麼以及渲染什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png) ->->-> ``
 <!--SR:!2022-12-20,5,248-->

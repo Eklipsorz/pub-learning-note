@@ -74,7 +74,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2022-12-30,72,250-->
 
 #🧠  absolute-positioning 元素若找不到最近的positioned parent 元素，會找誰替代？ ->->-> `就以viewport的邊界來位移`
-<!--SR:!2022-12-19,64,250-->
+<!--SR:!2023-05-28,160,250-->
 
 
 #🧠 absolute-positioning 元素和normal flow/flow layout之間的關係為何？ ->->-> `absolute-positioning 元素本身脫離normal flow/flow layout的控制，換言之，normal flow/flow layout不會考慮absolute-positioning來處理`

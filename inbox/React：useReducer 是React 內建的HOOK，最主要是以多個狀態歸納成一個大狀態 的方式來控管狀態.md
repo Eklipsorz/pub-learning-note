@@ -304,7 +304,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
-<!--SR:!2022-12-19,57,250-->
+<!--SR:!2023-05-11,143,250-->
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的initialState, initFn 是什麼？用途是什麼？ 請先簡答 ->->-> `定義初始狀態、主要是定義如何設定初始值`

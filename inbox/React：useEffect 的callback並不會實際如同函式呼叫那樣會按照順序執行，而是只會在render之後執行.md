@@ -126,11 +126,11 @@ render
 
 
 #🧠 React：在這裏分別在functional component 中的useEffect 、top level code、渲染部分做出console.log，其結果會是如下，請問為何useEffect中的callback的執行順序為何是在render之後？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666681597/blog/react/effect/useEffect/useEffect-result_b7qfub.png)->->-> `由於callback本身是按照render之後才執行，`
-<!--SR:!2022-12-19,28,250-->
+<!--SR:!2023-03-01,72,250-->
 
 
 #🧠 React：在這裏分別在functional component 中的useEffect 、top level code、渲染部分做出console.log，其結果會是如下，請說明執行狀況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666681597/blog/react/effect/useEffect/useEffect-result_b7qfub.png) ->->-> `從結果得知，一開始會執行top level而先印出top level，接著useEffect的確呼叫到了，但裡頭callback、deps是直接按照render執行完畢後才執行，在這時還未執行render，所以等到render結束後才執行callback。前面三段可以證實`
-<!--SR:!2022-12-19,28,250-->
+<!--SR:!2023-02-27,70,250-->
 
 
 
