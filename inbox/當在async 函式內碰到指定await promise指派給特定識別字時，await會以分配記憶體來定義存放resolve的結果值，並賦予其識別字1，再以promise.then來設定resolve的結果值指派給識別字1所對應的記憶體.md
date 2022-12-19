@@ -1,5 +1,8 @@
 ## 描述
 
+
+
+
 當在async 函式內設定以下指派內容的語法時，
 ```
 let temp = await Promise...
