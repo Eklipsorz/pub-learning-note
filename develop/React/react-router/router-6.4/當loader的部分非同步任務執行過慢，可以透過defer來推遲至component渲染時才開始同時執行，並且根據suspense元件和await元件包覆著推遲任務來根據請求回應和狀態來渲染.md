@@ -60,8 +60,7 @@ function PackageRoute() {
 > -   Add a global transition spinner (helps a bit with UX).
 > -   Add a localized skeleton UI (helps a bit with UX).
 
-問題描述為當要執行render 特定元件PackageRoute前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務。
-致使讓使用者的使用體驗很糟
+問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟
 
 
 
