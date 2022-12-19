@@ -66,9 +66,16 @@
                 "source": false
               }
             }
-          },
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "711007405e52e1ea",
+        "type": "tabs",
+        "children": [
           {
-            "id": "19594c3e094f0d79",
+            "id": "0bdd8661a04adf9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,21 +84,6 @@
                 "mode": "source",
                 "source": false
               }
-            }
-          }
-        ],
-        "currentTab": 5
-      },
-      {
-        "id": "4088519192cf9878",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d745375f9d74f0c6",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -220,11 +212,11 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "19594c3e094f0d79",
+  "active": "8fc402905ba9f917",
   "lastOpenFiles": [
     "develop/React/react-router/router-6.4/Untitled.md",
-    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容.md",
     "develop/styled-components/styled-components 是一個專注將特定CSS樣式綁定在特定元件的第三方套件，其調用的方法會回傳具有特定樣式的元件.md",
     "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
