@@ -18,7 +18,8 @@ async function loader({ params }) {
 
 重點：
 - deferred 就意味著原本要在render前執行的任務內容推遲至執行render的同時才做
-- not deferred 就意味著繼續在render前執行任務
+- not deferred 就意味著繼續在render前執行任務，具體會是以await和指派語句之間的關係，在
+[[當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體]]
 
 ### 問題描述
 
