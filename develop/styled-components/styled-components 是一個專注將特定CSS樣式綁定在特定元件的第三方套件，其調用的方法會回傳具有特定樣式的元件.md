@@ -131,7 +131,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2022-12-25,72,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為何？以程式碼來表示 ->->-> `return ( <element type={props.type} onClick={props.onClick}> {props.children}  </element> );`
-<!--SR:!2022-12-19,68,250-->
+<!--SR:!2023-06-08,171,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
 <!--SR:!2022-12-23,70,250-->
@@ -144,11 +144,13 @@ const Element = styled.<element>`<template-literal>`
 
 
 #🧠 React：通常styled-component會是以什麼形式來表達其元件 ->->-> `以wrapper component`
+<!--SR:!2022-12-21,2,246-->
 
 #🧠 React：若要替styled-component增加attribute，如何增加？ ->->-> `必須使component以wrapper形式來增加`
+<!--SR:!2022-12-21,2,246-->
 
-#🧠  React：若要替styled-component增加attribute，如何增加？請用程式碼來表示必須使component以wrapper形式來增加這概念>->-> `<Wrapper attribute1=.... attribute2=.... >....</Wrapper>`
-
+#🧠 React：若要替styled-component增加attribute，如何增加？請用程式碼來表示必須使component以wrapper形式來增加這概念 ->->-> `<Wrapper attribute1=value1 attribute2=value2 ....> </Wrapper>`
+<!--SR:!2022-12-21,2,246-->
 
 
 ---
