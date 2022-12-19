@@ -50,46 +50,64 @@ And if that's what you wanna do,
 defer({ posts: getPosts() })
 ```
 
-###
+### React-router：Await 元件
 
-Await =>
-
-1. Component
-
-2. 主要用來渲染被延遲的內容並根據載入
 
 > Used to render deferred values with automatic error handling.
+> **Note:** `<Await>` expects to be rendered inside of a `<React.Suspense>` or `<React.SuspenseList>` parent to enable the fallback UI.
 
-3.
-
-<Await resolve={}> </Await>
-
-  
-
-resolve：
-
-主要填入回傳deferred loader value的promise
-
+> resolve
 > Takes a promise returned from a deferred loader value to be resolved and rendered.
 
-  
-
-  
-
-`children`
-
-回傳對應
-
->  Can either be React elements or a function.
-
+> children
+> Can either be React elements or a function.
 > When using a function, the value is provided as the only parameter.
 
+```
+<Await resolve={reviewsPromise}>
+  {(resolvedReviews) => <Reviews items={resolvedReviews} />}
+</Await>
+
+// When using React elements, useAsyncValue will provide the data:
+
+<Await resolve={reviewsPromise}>
+  <Reviews />
+</Await>;
+
+function Reviews() {
+  const resolvedReviews = useAsyncValue();
+  return <div>{/* ... */}</div>;
+}
+```
+
+
+> Await 的 errorElement：
+> to specify which element should be shown if loading that data should fail eventually
+
+
+重點：
+- Await 元件為React-router所提供的元件
+- 其用途為將推遲的Promise非同步任務指定特定地點來正式執行，並從中取得對應資料來渲染內容和狀況
+- Await 語法為：
+	- 使用上會使用React 的Suspense來確保還未完成的元件能先有個預設畫面來渲染
+	- resolve：形式會是promise。指定以哪個deferred 的promise非同步任務來正式執行和渲染
+	- errorElement：形式為JSX Element。當依據deferred 的promise非同步任結果的元件渲染失敗後，就隨之要渲染的錯誤畫面 
+	- Children：形式為JSX Element或者會回傳JSX Element的callback。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染
+		- 若是Children的話，就直接渲染
+		- 若是callback的話，其引數會是該resolved的結果值，回傳對應JSX Element
+```
+<Suspense>
+	<Await resolve=xxxx1 errorElement=xxxx2>
+		<Children>
+	</Await>
+<Suspense>
+```
 
 
 
-Await 的 errorElement：
 
-to specify which element should be shown if loading that data should fail eventually
+
+
 
 
 
