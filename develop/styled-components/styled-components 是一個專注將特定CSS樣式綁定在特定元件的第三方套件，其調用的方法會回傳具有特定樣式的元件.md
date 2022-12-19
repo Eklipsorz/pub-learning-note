@@ -72,10 +72,12 @@ const Element = styled.<element>`<template-literal>`
 #### 對styled-component進行處理
 通常styled-component 只能以wrapper component來表示
 
-若要替styled-component增加attribute
+若要替styled-component增加attribute，必須以wrapper形式來增加
+```
+<Wrapper attribute1=.... attribute2=.... >....</Wrapper>
+```
 
 
-1. 當要替styled-component來指定對應
 
 #### 總結
 使用styled-components 套件所建立的元件，預設下會有：
@@ -139,6 +141,15 @@ const Element = styled.<element>`<template-literal>`
 
 #🧠 使用styled-components 套件所建立的元件，預設下會有什麼？ ->->-> `- 每個元件的對應渲染內容會包含props.children或者子節點 - 每個元件的對應渲染內容的元件屬性名稱(attribute)和屬性值(attribute)會依據元件標籤所用的屬性名稱(attribute)和屬性值(attribute)`
 <!--SR:!2023-04-28,144,250-->
+
+
+#🧠 React：通常styled-component會是以什麼形式來表達其元件 ->->-> `以wrapper component`
+
+#🧠 React：若要替styled-component增加attribute，如何增加？ ->->-> `必須使component以wrapper形式來增加`
+
+#🧠  React：若要替styled-component增加attribute，如何增加？請用程式碼來表示必須使component以wrapper形式來增加這概念>->-> `<Wrapper attribute1=.... attribute2=.... >....</Wrapper>`
+
+
 
 ---
 Status: #🌱 
