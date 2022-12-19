@@ -217,7 +217,7 @@ export default RootLayout;
 <!--SR:!2022-12-20,6,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，那麼它屬於？？ ->->-> `屬於react-router-dom函式庫中的函式`
-<!--SR:!2022-12-19,5,248-->
+<!--SR:!2023-01-01,13,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是什麼？ ->->-> `const router = createBrowserRouter(paths)`
 <!--SR:!2022-12-20,6,248-->
@@ -238,7 +238,7 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為允許開發者以JSX形式來定義Routing並建立對應的Router，具體是什麼？->->-> `具體是藉由將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件`
-<!--SR:!2022-12-19,5,248-->
+<!--SR:!2023-01-02,14,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為何？->->-> `createRoutesFromElements(JSX Element)`
 <!--SR:!2022-12-19,5,248-->

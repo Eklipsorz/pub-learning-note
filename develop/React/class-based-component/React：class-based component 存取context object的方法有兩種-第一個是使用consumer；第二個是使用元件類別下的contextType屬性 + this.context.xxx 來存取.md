@@ -123,7 +123,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2023-02-07,74,250-->
 
 #🧠 React：使用consumer component來獲取對應context object的內容適用於哪些寫法，functional 和 class-based ? 哪一個 ->->-> `第一個方法能夠用在functional component 和 class-based component`
-<!--SR:!2022-12-19,17,249-->
+<!--SR:!2023-01-30,42,249-->
 
 
 #🧠  React：使用元件類別下的contextType屬性 + this.context.xxx 來存取適用於哪些寫法->->-> `第二個方法只能夠用在class-based component`

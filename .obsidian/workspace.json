@@ -83,6 +83,24 @@
         "currentTab": 5
       },
       {
+        "id": "064f505734edee4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01289252f58d9522",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "139330d19bd16417",
         "type": "tabs",
         "children": [
@@ -183,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Untitled.md",
+                "file": "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +226,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Untitled.md",
+                "file": "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,7 +249,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Untitled.md"
+                "file": "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md"
               }
             }
           }
@@ -242,10 +260,10 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "f664ddc6925df114",
+  "active": "01289252f58d9522",
   "lastOpenFiles": [
-    "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "develop/React/react-router/router-6.4/Untitled.md",
+    "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應來渲染以及若沒成功成載入時所要渲染的fallback.md",
     "develop/React/react-router/router-6.4/使用useNavigation來實現確保一旦提交就不會有額外的提交內容，手段可以是一旦提交就關閉提交按鈕，按鈕顯示submitting.md",
