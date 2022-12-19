@@ -1,36 +1,18 @@
 ## 描述
 
 
-###
-20. Building a Multi-Page SPA with React Router
-
-291. Better Data Fetching with React Router 6.4
-
-because you don't have to worry about error handling and loading spinners or anything like that.
-
-because react router manages all these things for you
 
 
 ### 使用deferred promise + Suspense + Await的應用場景
 
-1. Route執行Loader存在執行較慢的程式碼部分
-2. 適用於不想讓整個頁面的每個頁面都相互等待才渲染，而是
+1. Route執行Loader存在執行較慢的程式碼部分，致使元件渲染必須等到其完成才能渲染
+2. 適用於不想讓整個頁面的每個頁面都相互等待才渲染，而是能先渲染的元件就先渲染給使用者看，而非等到所有元件都完成渲染才正式渲染給使用者瀏覽
+3. 透過Route來實現資料載入、元件渲染載入中的畫面
 
-is that you can also defer loading data.
-
-  
-
-react router waits with the page navigation until the data for this page was loaded.
-
-now there are different ways of handling this.
 
   
 
-e.g.,
 
-1. build some loading bar that's shown until the page is loaded but you might also want to visit the page before the data is there to signal to the user that something's happening
-
-And if that's what you wanna do,
 
   
 ### React-router：defer 方法
@@ -89,20 +71,20 @@ function Reviews() {
 
 重點：
 - Await 元件為React-router所提供的元件
-- 其用途為將推遲的Promise非同步任務指定特定地點來正式執行，並從中取得對應資料來渲染內容和狀況
+- 其用途為將推遲的Promise非同步任務指定特定地點來正式執行其任務，接著等待任務回應回傳就從中取得對應資料來渲染內容和狀況
 - Await 語法為：
 	- 使用上會使用React 的Suspense來確保還未完成的元件能先有個預設畫面來渲染
 	- resolve：形式會是promise。指定以哪個deferred 的promise非同步任務來正式執行和渲染
 	- errorElement：形式為JSX Element。當依據deferred 的promise非同步任結果的元件渲染失敗後，就隨之要渲染的錯誤畫面 
-	- Children：形式為JSX Element或者會回傳JSX Element的callback。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染
+	- Children：形式為JSX Element或者會回傳JSX Element 或者 函式物件。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染
 		- 若是Children的話，就直接渲染
-		- 若是callback的話，其引數會是該resolved的結果值，回傳對應JSX Element
+		- 若是函式物件的話，其引數會是該resolved的結果值，回傳對應JSX Element
 ```
 <Suspense>
 	<Await resolve=xxxx1 errorElement=xxxx2>
 		<Children>
 	</Await>
-<Suspense>
+</Suspense>
 ```
 
 
@@ -191,9 +173,31 @@ suspense
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為not-deferred task，如何透過defer來用 ->->-> `defer({ attribute1: await promise })`
 
-#🧠 Question :: ->->-> ``
+#🧠 React-router：Await 元件用途是什麼？ ->->-> `其用途為將推遲的Promise非同步任務指定特定地點來正式執行其任務，接著等待任務回應回傳就從中取得對應資料來渲染內容和狀況`
 
-#🧠 Question :: ->->-> ``
+#🧠 Await 元件會是屬於誰的？->->-> `Await 元件為React-router所提供的元件`
+
+
+#🧠 React-router：Await 語法為何？ ->->-> `<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>`
+
+
+#🧠 React-router：Await 語法上為何需要Suspense元件？->->-> `確保還未完成的元件能先有個預設畫面來渲染`
+
+#🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的resolve會是什麼形式和作用？？ ->->-> ` resolve：形式會是promise。指定以哪個deferred 的promise非同步任務來正式執行和渲染`
+
+#🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的errorElement會是什麼形式和作用？？ ->->-> `errorElement：形式為JSX Element。當依據deferred 的promise非同步任結果的元件渲染失敗後，就隨之要渲染的錯誤畫面 `
+
+
+#🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children會是什麼形式和作用？？->->-> `形式為JSX Element或者會回傳JSX Element 或者 函式物件。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染`
+
+
+#🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是JSX Element，會是什麼？ ->->-> `當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren的JSX Element來渲染`
+
+
+#🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是函式物件，會是什麼？ 會回傳什麼？->->-> `若是函式物件的話，其引數會是該resolved的結果值，回傳對應JSX Element`
+
+
+
 
 
 
