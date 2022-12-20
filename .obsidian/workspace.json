@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ceb6ea8400c05d99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -145,17 +158,17 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "6601c7f6b666b021",
+  "active": "ceb6ea8400c05d99",
   "lastOpenFiles": [
-    "develop/React/react-router/router-6.4/react-router-6.4-practice：使用defer＋Await ＋ Suspense 方式來優化資料載入速度.md",
+    "develop/React/react-router/router-6.4/react-router-dom：除了useFetcher以外，其餘的Link、Form、Loader、action實現都以發送navigation操作並由Router來攔截進行處理.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
+    "develop/React/react-router/router-6.4/react-router-6.4-practice：使用defer＋Await ＋ Suspense 方式來優化資料載入速度.md",
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
     "develop/Network/anycast 意指為一個傳遞方傳遞資料至可任意選擇一個接收方的群組，而群組內會有N個接收方。應用為決定路由.md",
     "develop/Network/網路位址和接收方節點間的對應關係：unicast為一對一、broadcast或multicast為一對多、anycast為一對多但會由群組決定一個接收方來接收傳遞方的傳遞內容.md",
     "develop/React/react-router/router-6.4/使用useNavigation來實現確保一旦提交就不會有額外的提交內容，手段可以是一旦提交就關閉提交按鈕，按鈕顯示submitting.md",
     "develop/React/react-router/router-6.4/使用deferred promise + Suspense + Await 是藉由調整執行較慢的程式模組挪動執行順序來提升Route對於元件渲染的效率，同時再依據元件渲染是否完成來呈現其狀態、錯誤資訊、對應畫面.md",
-    "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
-    "當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容.md"
+    "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md"
   ]
 }
