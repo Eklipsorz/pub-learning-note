@@ -211,22 +211,29 @@ return defer({
 ## 複習
 
 #🧠 react-router-dom：route 所執行的loader分成deferred 和 not deferred ，請問各為什麼意思？->->-> `deferred 就意味著原本要在render前執行的任務內容推遲至執行render的同時才做、not deferred 就意味著繼續在render前執行loader任務`
+<!--SR:!2022-12-22,2,249-->
 
-#🧠 react-router-dom：route 所執行的loader分成deferred 和 not deferred，deferred 就意味著原本要在render前執行的任務內容推遲至執行render的同時才做，具體會是什麼？ ->->-> `是依據event loop的關係，而使promise內的任務執行延後，並將對應Promise物件轉移至後頭負責執行render的程式模組來正式負責該Promise的處理請求、回應處理。`
+#🧠 react-router-dom：route 所執行的loader分成deferred 和 not deferred，deferred 就意味著原本要在render前執行的任務內容推遲至執行render的同時才做，具體會是如何實現？ ->->-> `是依據event loop的關係，而使promise內的任務執行延後，並將對應Promise物件轉移至後頭負責執行render的程式模組來正式負責該Promise的處理請求、回應處理。`
+<!--SR:!2022-12-21,1,229-->
 
 #🧠 react-router-dom：route 所執行的loader分成deferred 和 not deferred，deferred 就意味著原本要在render前執行的任務內容推遲至執行render的同時才做，具體會是將對應Promise物件轉移至後頭負責執行render的程式模組來正式負責該Promise的處理請求、回應處理，為何可以轉移Promise？難道不擔心中途執行嗎？ ->->-> `由於event loop的關係，而使promise內的任務執行延後`
+<!--SR:!2022-12-23,3,250-->
 
 #🧠 react-router-dom：route 所執行的loader分成deferred 和 not deferred，not deferred 就意味著繼續在render前執行loader任務，具體會是什麼？ ->->-> `會是以await、指派語句、await promise後的剩餘代碼之間的關係，而剩餘代碼會是指Route執行render。藉此將指派語句、後頭語句由promise.then所包含，使得只有執行完Promise本身才有辦法繼續完成指派、Route執行render，而這情況剛好是由Route元件先執行Loader，再後執行render`
+<!--SR:!2022-12-22,2,249-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> ` 將執行較慢的Loader部分放入component function做呼叫，並且先渲染component一開始的畫面，渲染完之後再觸發執行Loader的部分，等到請求回應到的時候，在重新渲染
+<!--SR:!2022-12-23,3,250-->
 `
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為先渲染後發送請求，但仍是次優解，具體有哪些原因？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png)->->-> ` client-side 的資料索求過程必須得跟著其他任務排著隊輪流執行、抽離出來的loader代碼很難從component角度和route角度進行切換`
 <!--SR:!2022-12-23,3,250-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為先渲染後發送請求，具體流程會是什麼？ ->->-> `	- 解析結果網頁並渲染 - 解析JS模組所在並加載初始畫面 - 根據使用者切換的URL來執行對應Route所要做的事情，如loader、render； - 執行完以上內容完之後在發送資料索求請求`
+<!--SR:!2022-12-23,3,250-->
 
 #🧠 transition 命名緣由為何？ ->->-> `transition意指從特定形式轉換成另一種形式的過程`
+<!--SR:!2022-12-21,1,230-->
 
 #🧠 page transition 會在網頁會是指什麼？->->-> ` page transition 會是指定頁面轉換成另一個頁面的過程`
 <!--SR:!2022-12-23,3,250-->
@@ -247,6 +254,7 @@ return defer({
 
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，解決方案是採用defer、await、suspense 元件，擁有抽離出來的代碼很容易從component和route進行切換點，其原理會是？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> `透過defer方法和await是否添加來決定是否其promise要在執行route時執行，還是在component執行：`
+<!--SR:!2022-12-23,3,250-->
 
 
 
