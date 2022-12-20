@@ -7,7 +7,13 @@
 
 > Many interactions with the server aren't navigation events. This hook lets you plug your UI into your actions and loaders without navigating.
 
+在HTML/HTTP中，資料處理和載入都會由navigation來進行，比如href或者form的action，這些都會導致瀏覽器發生navigation，而在Router則是使用Link和Form元件來發送navigation操作並由Router來攔截。
 
+但有時候你不太想透過navigation或者不太想透過更改URL來呼叫執行loader或者執行action
+
+
+
+大部分與伺服器互動都不會是navigation事件，這個hook可以安
 
 > This is useful when you need to:
 
@@ -16,6 +22,8 @@
 > -   handle multiple concurrent submissions in a list (typical "todo app" list where you can click multiple buttons and all should be pending at the same time)
 > -   infinite scroll containers
 > -   and more!
+
+
 
 
 useFetcher
