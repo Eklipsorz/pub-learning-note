@@ -86,10 +86,10 @@ useEffect(() => {
 <!--SR:!2023-02-02,53,250-->
 
 #🧠 React：若要在class-based component 實現 useEffet會有的功能，會用上什麼函式 ->->-> `componentDidMount、componentDidUpdate、componentWillUnmount`
-<!--SR:!2022-12-20,28,250-->
+<!--SR:!2023-03-02,72,250-->
 
 #🧠 React：useEffect 本身是class-based component 的 componentDidMount、componentDidUpdate、componentWillUnmount這三者的語法糖？為什麼？->->-> `並不是，嚴格來說只是兩者採用同個react核心代碼來以兩種截然不同的形式來實現兩個獨立功能`
-<!--SR:!2022-12-20,28,250-->
+<!--SR:!2023-03-04,74,250-->
 
 
 #🧠 React：當前端索要後端資源並渲染，那麼在class-based component的實現方式是？ ->->-> `在對應元件下的componentDidMount內建的函式中添加 發送請求和根據請求結果來執行setState`

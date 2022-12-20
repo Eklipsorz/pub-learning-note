@@ -88,10 +88,9 @@ console.log('a', a)
 export { b }
 ```
 
-當執行a.js時，會因為檢測到環狀結構而讓b.js那邊會先執行，但由於a.js在instantiation階段時就會在分配記憶體給函式宣告，其記憶體區塊的初始值是存放對應函式內容，在這裡會先執行對應的a呼叫，接著以它回傳的內容來印出，但由於沒回傳任何東西所以為undefined，接著執行完畢b.js後，就換a.js執行：
+當執行a.js時，會因為檢測到環狀結構而讓b.js那邊會先執行，但由於a.js在instantiation階段時就會在分配記憶體給函式宣告，其記憶體區塊的初始值是存放對應函式內容，在這裡會先執行console，而console會印出的a會是一個函式物件，接著執行完畢b.js後，就換a.js執行：
 ```
-hi
-a undefined
+a [Function: a]
 b b
 ```
 
@@ -174,8 +173,8 @@ setTimeout(() => {
 
 
 
-#🧠 ES module 環狀結構案例2：在ES module處理環狀依賴結構時，有兩個模組A(上圖)、模組B(下圖)，其中模組A依賴著模組B、模組B依賴著模組A，在這裡先執行模組A，會得什麼結果？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660737832/blog/javascript/module/es-module/cyclic-dependency-function-example-b.js_vxtfsj.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660737831/blog/javascript/module/es-module/cyclic-dependency-function-example-a.js_x2vy2c.png)->->-> `第一行結果：hi 第二行結果：a undefined 第三行結果：b b。原因是當執行a.js時，會因為檢測到環狀結構而讓b.js那邊會先執行，但由於a.js在instantiation階段時就會在分配記憶體給函式宣告，其記憶體區塊的初始值是存放對應函式內容，在這裡會先執行對應的a呼叫，接著以它回傳的內容來印出，但由於沒回傳任何東西所以為undefined，接著執行完畢b.js後，就換a.js執行`
-<!--SR:!2022-12-20,76,248-->
+#🧠 ES module 環狀結構案例2：在ES module處理環狀依賴結構時，有兩個模組A(上圖)、模組B(下圖)，其中模組A依賴著模組B、模組B依賴著模組A，在這裡先執行模組A，會得什麼結果？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660737832/blog/javascript/module/es-module/cyclic-dependency-function-example-b.js_vxtfsj.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660737831/blog/javascript/module/es-module/cyclic-dependency-function-example-a.js_x2vy2c.png)->->-> `第一行：a [Function: a] 第二行：b b。當執行a.js時，會因為檢測到環狀結構而讓b.js那邊會先執行，但由於a.js在instantiation階段時就會在分配記憶體給函式宣告，其記憶體區塊的初始值是存放對應函式內容，在這裡會先執行console，而console會印出的a會是一個函式物件，接著執行完畢b.js後，就換a.js執行`
+<!--SR:!2023-07-03,195,248-->
 
 
 
