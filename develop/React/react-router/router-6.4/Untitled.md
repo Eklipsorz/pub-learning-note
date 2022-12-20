@@ -43,8 +43,28 @@ function SomeComponent() {
 - 主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action
 - 主要語法有
 	- 若是由使用者互動本身就引發fetch，就使用fetcher.Form
-	- 若是想由程式碼引發fetch，就使用fetch.submit，具體是手動
+	```
+	
+	```
 
+	- 若是想由程式碼引發fetch，就使用fetch.submit，具體是手動模擬表單提交情況
+		- obj1 至 objN 為要提交的內容，形式會是以物件來表示
+		- obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件
+	```
+	// syntax
+		fetcher.submit(
+			obj1,
+			obj2,
+			.
+			.
+		)
+	// example 
+	    fetcher.submit(
+	      // better: use fetcher.Form instead
+	      { email: enteredEmail },
+	      { method: 'post', action: '/newsletter' }
+	    );
+	```
 
 useFetcher
 
