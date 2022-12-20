@@ -43,7 +43,7 @@
 <!--SR:!2023-01-01,72,250-->
 
 #🧠 因JSX 侷限而採用wrapper element，那麼產生出來的wrapper element都是必要的嗎？為什麼？->->-> `不一定是所有div都是必要的，大部分只是為了解決JSX問題，比如div 目前所在並不會帶來特別語義或者結構`
-<!--SR:!2022-12-20,64,250-->
+<!--SR:!2023-05-29,160,250-->
 
 #🧠 JSX 侷限而採用wrapper element 所產生出的巢狀結構會是什麼？用程式碼表示 ->->-> `![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815053/blog/react/react-element/div-hell_khxdhw.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815053/blog/react/react-element/div-hell_khxdhw.png)`
 <!--SR:!2022-12-21,64,250-->
