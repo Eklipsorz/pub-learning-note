@@ -75,7 +75,7 @@ export { b1, b2, …, bN };
 <!--SR:!2023-01-03,26,250-->
 
 #🧠 ES module：在named export中可允許匯出的形式，若形式為`export { name1, name2, …, nameN };	`，那麼會是什麼形式來export？->->-> `以物件形式來匯出`
-<!--SR:!2022-12-20,15,250-->
+<!--SR:!2023-01-31,42,250-->
 
 #🧠 ES module：在named export中可允許匯出的形式，若形式為`export let variable1 = xxxx; export function fn(...) {...};`，那麼會是什麼形式來export？->->-> `以單一宣告語句來匯出`
 <!--SR:!2022-12-29,14,230-->
