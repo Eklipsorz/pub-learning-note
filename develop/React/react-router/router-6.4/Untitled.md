@@ -9,6 +9,14 @@
 
 
 
+> This is useful when you need to:
+
+> -   fetch data not associated with UI routes (popovers, dynamic forms, etc.)
+> -   submit data to actions without navigating (shared components like a newsletter sign ups)
+> -   handle multiple concurrent submissions in a list (typical "todo app" list where you can click multiple buttons and all should be pending at the same time)
+> -   infinite scroll containers
+> -   and more!
+
 
 useFetcher
 
