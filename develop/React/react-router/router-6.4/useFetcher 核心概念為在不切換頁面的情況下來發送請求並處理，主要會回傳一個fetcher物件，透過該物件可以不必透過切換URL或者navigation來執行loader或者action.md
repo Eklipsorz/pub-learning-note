@@ -38,14 +38,16 @@ function SomeComponent() {
 }
 ```
 
+
+
 重點：
 - useFetcher 是 react-router-dom 的hook
 - useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，使服務更像個SPA
 - 主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action
-- 主要語法有以下，皆不會透過navigation來切換成對應action所在的URL
+- 負責指定action的主要語法有以下，皆不會透過navigation來切換成對應action所在的URL
 	- 若是由使用者互動本身就引發fetch，就使用fetcher.Form
-		- method 為指定轉遞表單資料方法 method
-		- action 為指定處理接收轉遞表單資料
+		- method ：形式為字串，為指定轉遞表單資料方法 method
+		- action ：形式為路徑字串，為指定處理接收轉遞表單資料
 	```
 	// syntax
 	 <fetcher.Form method=method1 action=action1>
@@ -68,7 +70,7 @@ function SomeComponent() {
 	    </section>
 	  );
 	```
-	- 若是想由程式碼引發fetch，就使用fetch.submit，具體是手動模擬表單提交情況
+	- 若是想由程式碼引發fetch，就使用fetch.submit，具體是模擬表單提交情況
 		- obj1 至 objN 為要提交的內容，形式會是以物件來表示
 		- obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件
 	```
@@ -87,7 +89,7 @@ function SomeComponent() {
 	    );
 	```
 -  細節：雖然名義上不以navigation來將頁面導向action、loader所在的path來執行action、loader，但實際上是以path來綁定對應action、loader並用path來呼叫對應action、loader，如同函式呼叫，只是差別在於沒用導向來執行
-### 設置方式為
+### 通常設置action專用的useFetcher 方式為
 1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader
 2. 替action、loader建立一個component來定義
 3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理
@@ -99,7 +101,7 @@ function SomeComponent() {
 1. 設定能與主要服務/頁面隔離的路徑：具體在Router的路徑陣列中增加一個路徑
 2. 替新路徑設定path和action
 
-設定與主要服務/頁面隔離的路徑是
+設定與主要服務/頁面隔離的路徑的原因
 	- 確保action、loader所在的path 不會受到Parent Route 給影響
 
 e.g., 
@@ -185,10 +187,53 @@ export default NewsletterSignup;
 
 ## 複習
 
-#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中submit來實現表單提交 ->->-> ``
+#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中submit來實現表單提交，記得設定action的path和action ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-adv/src`
+
+#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中Form元件來實現表單提交，記得設定action的path和action ->->-> ``
 
 
+#🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
 
+#🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是什麼？ ->->-> `透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
+
+#🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是透過該物件可以不必透過切換URL或者navigation來執行loader或者action，不必透過是什麼意思？或者如何實現 ->->-> `實際上是以path來綁定對應action、loader並用path來呼叫對應action、loader，如同函式呼叫，只是差別在於沒用導向來執行`
+
+#🧠 react-router-dom 6.4：useFetcher 核心概念為何？ ->->-> `在不切換頁面的情況下來發送請求並處理，使服務更像個SPA`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有哪兩個？ ->->-> `fetcher.Form 和 fetcher.submit方法`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，具體適用於什麼場景->->-> `是由使用者互動本身就引發fetch，就使用fetcher.Form、若是想由程式碼引發fetch，就使用fetch.submit`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是什麼？->->-> ` <fetcher.Form method=method1 action=action1> ....</fetcher.Form>`
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是`<fetcher.Form method=method1 action=action1> ....</fetcher.Form>`，其中method和action會是什麼形式和作用？ ->->-> `- method ：形式為字串，為指定轉遞表單資料方法 method - action ：形式為路徑字串，為指定處理接收轉遞表單資料`
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是什麼？->->-> `fetcher.submit(obj1, obj2,.... )`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，其中obj1至objN是什麼形式和用途？ ->->-> `obj1 至 objN 為要提交的內容，形式會是以物件來表示`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，如何指定method和action？ ->->-> `obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，若沒在obj中設定acction和method，會正常執行嗎？為何 ->->-> `並不會，由於系統就是從obj中決定action和method，若不知道的話，就無法正常執行`
+
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，假設要提交email資料以及指定method為post、action為newsletter，請問具體如何設定語法 ->->-> ``
+
+
+#🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader 2. 替action、loader建立一個component來定義 3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理`
+
+#🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader，其流程會是什麼？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑：具體在Router的路徑陣列中增加一個路徑 2. 替新路徑設定path和action`
+
+#🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，隔離原因為何？->->-> `確保action、loader所在的path 不會受到Parent Route 給影響`
+
+
+#🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，請用程式碼來表示 ->->-> ``
 
 
 ---
