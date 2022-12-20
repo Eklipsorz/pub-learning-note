@@ -241,8 +241,6 @@ export default NewsletterSignup;
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，請用程式碼來表示 ->->-> ``
 
-
-
 #🧠 fetch 會是什麼意思？ ->->-> `fetch 本身是移動至特定地方並獲取東西的意思`
 
 #🧠 fetcher 會是什麼意思？ ->->-> ` fetcher 則是負責實現fetch這動作的一方`
