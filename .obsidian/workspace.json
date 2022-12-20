@@ -132,7 +132,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -211,7 +212,7 @@
     "width": 200,
     "collapsed": true
   },
-  "active": "8fc402905ba9f917",
+  "active": "673bafcf0104f9cf",
   "lastOpenFiles": [
     "develop/study/ES module 如何面對 Cyclic Dependency是先檢測是否有環狀依賴結構並根據有來將環狀結構的最後遍歷的節點轉換成沒環狀結構的型態.md",
     "develop/React/react-router/router-6.4/使用deferred promise + Suspense + Await 是藉由調整執行較慢的程式模組挪動執行順序來提升Route對於元件渲染的效率，同時再依據元件渲染是否完成來呈現其狀態、錯誤資訊、對應畫面.md",
