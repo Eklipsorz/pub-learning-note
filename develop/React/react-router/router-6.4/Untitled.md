@@ -40,13 +40,34 @@ function SomeComponent() {
 
 重點：
 - useFetcher 是 react-router-dom 的hook
+- useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，使服務更像個SPA
 - 主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action
-- 主要語法有
+- 主要語法有以下，皆不會透過navigation來切換成對應action所在的URL
 	- 若是由使用者互動本身就引發fetch，就使用fetcher.Form
+		- method 為指定轉遞表單資料方法 method
+		- action 為指定處理接收轉遞表單資料
 	```
-	
+	// syntax
+	 <fetcher.Form method=method1 action=action1>
+	 </fetcher.Form>
+	// example
+	  return (
+	    <section className={classes.newsletter}>
+	      <h2>Sign up for our weekly newsletter</h2>
+	      <fetcher.Form method='post' action='/newsletter'>
+	        <input
+	          ref={emailEl}
+	          name='email'
+	          id='email'
+	          type='email'
+	          placeholder='Your email'
+	          aria-label='Your email address.'
+	        />
+	        <button>Sign Up</button>
+	      </fetcher.Form>
+	    </section>
+	  );
 	```
-
 	- 若是想由程式碼引發fetch，就使用fetch.submit，具體是手動模擬表單提交情況
 		- obj1 至 objN 為要提交的內容，形式會是以物件來表示
 		- obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件
@@ -65,34 +86,101 @@ function SomeComponent() {
 	      { method: 'post', action: '/newsletter' }
 	    );
 	```
-
-useFetcher
-
-1. hook
-
-2. avoiding unwanted page transition
-
-> so the core idea is really just that we don't trigger any page transition and the fetcher functionality is therefore ideal for pages where you wanna send requests without switching the page
-
-useFetcher 核心概念為在切換頁面的情況下來發送請求並處理
-
-  
-
-> this hook can be used to basically manually trigger a form submission or build a form by using fetcher.Form
-
-you can also use it to manually trigger a loader from inside a component
-
-  
-
-the difference: useFetcher + form   vs. fetcher.Form:
-
-1. when using fetcher for submitting the form instead of using that regular form component
-
-2. will now cause no page transition. but instead, the request is basically sent behind the scenes
+-  細節：雖然名義上不以navigation來將頁面導向action、loader所在的path來執行action、loader，但實際上是以path來綁定對應action、loader並用path來呼叫對應action、loader，如同函式呼叫，只是差別在於沒用導向來執行
+### 設置方式為
+1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader
+2. 替action、loader建立一個component來定義
+3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理
 
 
+#### 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader
+
+流程會是：
+1. 設定能與主要服務/頁面隔離的路徑：具體在Router的路徑陣列中增加一個路徑
+2. 替新路徑設定path和action
+
+設定與主要服務/頁面隔離的路徑是
+	- 確保action、loader所在的path 不會受到Parent Route 給影響
+
+e.g., 
+假使action所在的path會是/newsletter，而action會是源自於Newsletter元件所提供的，那麼就引用其內部的action來設定。
+```
+import { action as newsletterAction } from './pages/Newsletter';
+
+const router = createBrowserRouter([
+  // 主要服務/頁面
+  {
+    path: '/',
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      .....
+    ],
+  },
+  // 隔離的頁面位址
+  {
+    path: '/newsletter',
+    action: newsletterAction,
+  },
+]);
+```
+
+#### 替action、loader建立一個component來定義
+
+```
+export async function action({ request }) {
+  const data = await request.formData();
+  console.log(data.get('email'));
+
+  // send to backend server etc.
+}
+```
 
 
+####  讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理
+
+
+```
+import { useRef } from 'react';
+import { useFetcher } from 'react-router-dom';
+
+import classes from './NewsletterSignup.module.css';
+
+function NewsletterSignup() {
+  const emailEl = useRef();
+  const fetcher = useFetcher();
+
+  // function signupForNewsletterHandler(event) {
+  //   event.preventDefault();
+  //   const enteredEmail = emailEl.current.value;
+  //   // could validate input here
+  //   fetcher.submit(
+  //     // better: use fetcher.Form instead
+  //     { email: enteredEmail },
+  //     { method: 'post', action: '/newslestter' },
+  //   );
+  // }
+
+  return (
+    <section className={classes.newsletter}>
+      <h2>Sign up for our weekly newsletter</h2>
+      <fetcher.Form method='post' action='/newsletter'>
+        <input
+          ref={emailEl}
+          name='email'
+          id='email'
+          type='email'
+          placeholder='Your email'
+          aria-label='Your email address.'
+        />
+        <button>Sign Up</button>
+      </fetcher.Form>
+    </section>
+  );
+}
+
+export default NewsletterSignup;
+```
 
 
 ## 複習
@@ -103,6 +191,5 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
-
 References:
 [[@UseFetcherV6]]
