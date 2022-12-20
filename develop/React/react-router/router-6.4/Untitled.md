@@ -185,6 +185,11 @@ export default NewsletterSignup;
 
 ## 複習
 
+#💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中submit來實現表單提交 ->->-> ``
+
+
+
+
 
 ---
 Status: #🌱 
