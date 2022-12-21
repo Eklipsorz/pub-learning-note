@@ -266,7 +266,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係在每個元件的生命週期階段(mounting、unmounting、updating)是如何 ->->-> `在mounting和unmount並不會將dependencies納入使用，只會在updating才納入使用，每當effect觸發時機到了，系統會檢查任一dependency是否變動來決定是否執行callback，若變動就執行；若不變動就不執行`
-<!--SR:!2022-12-21,59,250-->
+<!--SR:!2023-05-18,148,250-->
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
 <!--SR:!2023-02-24,69,250-->
