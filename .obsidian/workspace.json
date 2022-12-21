@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/react 部署步驟：test code -> optimize code -> build app for production -> upload -> configure server.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,26 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 9.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fcce06fac26b5087",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -123,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 9.md",
+                "file": "inbox/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 9.md"
+                "file": "inbox/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md"
               }
             }
           }
@@ -193,11 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fcce06fac26b5087",
+  "active": "3f474e8ac17d097a",
   "lastOpenFiles": [
-    "inbox/Untitled 11.md",
-    "inbox/Untitled 9.md",
-    "inbox/Untitled 8.md",
+    "inbox/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md",
+    "inbox/react 部署步驟：test code -> optimize code -> build app for production -> upload -> configure server.md",
+    "inbox/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
     "develop/React/react-router/router-6.4/react-router-6.4-practice：使用defer＋Await ＋ Suspense 方式來優化資料載入速度.md",
     "develop/React/react-router/router-6.4/react-router-dom：除了useFetcher以外，其餘的Link、Form、Loader、action實現都以發送navigation操作並由Router來攔截進行處理.md",

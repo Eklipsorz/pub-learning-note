@@ -9,9 +9,10 @@
 > `React.lazy` takes a function that must call a dynamic `import()`. This must return a `Promise` which resolves to a module with a `default` export containing a React component.
 
 
+
 React.lazy：
 - 用途是替指定資源設定Lazy loading的功能
-- 具體是將以dynamic import作為 callback 並根據指定資源是否要被渲染才執行對應callback來獲取對應的元件
+- 具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件
     - dynamic import 具體會是以promise為主的import
 - 語法：
     - callback 為函式物件，得是回傳Resolve為包含特定資源的模組的Promise 物件
@@ -39,11 +40,21 @@ React.lazy：
 
 ## 複習
 
+#🧠 Question :: ->->-> ``
+
+
+#🧠 Question :: ->->-> ``
+
+
+
+
 
 ---
 Status: #🌱 
 Tags:
 [[React]]
 Links:
+[[optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入]]
+[[react 部署步驟：test code -> optimize code -> build app for production -> upload -> configure server]]
 References:
 [[@CodeSplittingReact]]
