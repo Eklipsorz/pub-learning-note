@@ -71,16 +71,11 @@ function SomeComponent() {
 	  );
 	```
 	- 若是想由程式碼引發fetch，就使用fetch.submit，具體是模擬表單提交情況
-		- obj1 至 objN 為要提交的內容，形式會是以物件來表示
-		- obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件
+		- body 為物件，主要定義要轉遞的資料
+		- options 為物件，主要以method屬性和action屬性來定義method和action
 	```
 	// syntax
-		fetcher.submit(
-			obj1,
-			obj2,
-			.
-			.
-		)
+		fetcher.submit(body, options)
 	// example 
 	    fetcher.submit(
 	      // better: use fetcher.Form instead
@@ -194,6 +189,7 @@ export default NewsletterSignup;
 ## 複習
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中submit來實現表單提交，記得設定action的path和action ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-adv/src`
+<!--SR:!2022-12-24,3,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中Form元件來實現表單提交，記得設定action的path和action ->->-> ``
 <!--SR:!2022-12-24,3,250-->
@@ -226,12 +222,11 @@ export default NewsletterSignup;
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是`<fetcher.Form method=method1 action=action1> ....</fetcher.Form>`，其中method和action會是什麼形式和作用？ ->->-> `- method ：形式為字串，為指定轉遞表單資料方法 method - action ：形式為路徑字串，為指定處理接收轉遞表單資料`
 <!--SR:!2022-12-24,3,250-->
 
-#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是什麼？->->-> `fetcher.submit(obj1, obj2,.... )`
-<!--SR:!2022-12-24,3,250-->
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是什麼？->->-> `fetcher.submit(body, options)`
 
 
-#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，其中obj1至objN是什麼形式和用途？ ->->-> `obj1 至 objN 為要提交的內容，形式會是以物件來表示`
-<!--SR:!2022-12-24,3,250-->
+
+#🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(body, options)`，其中body和options會是什麼形式和用途？ ->->-> `		- body 為物件，主要定義要轉遞的資料 - options 為物件，主要以method屬性和action屬性來定義method和action`
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，如何指定method和action？ ->->-> `obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件`
