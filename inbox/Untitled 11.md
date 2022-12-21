@@ -24,7 +24,17 @@ React.lazy：
    - 透過webpack編譯時就會進行code spliting來分割好幾份模組
 
 #### 若要載入對應其Component時會遇到的問題
-由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件
+由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件本身不存在而無法渲染，最後報錯
+
+
+##### 解法：
+1. 使用Suspense元件來監測後裔元件是否能正常渲染並提供fallback畫面的元件：其中Component 為被標記使用lazy-loading的React Component
+
+```
+<Suspense fallback={JSX Element}>
+	<Component />
+</Suspense>
+```
 
 
 ## 複習
