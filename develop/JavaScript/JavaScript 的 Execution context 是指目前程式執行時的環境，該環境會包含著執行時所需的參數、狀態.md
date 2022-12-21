@@ -93,7 +93,7 @@ test(a)
 
 
 #🧠 請完整說明JavaScript 引擎在何時建立EC？ ->->-> `快要執行對應Scope的EC前`
-<!--SR:!2022-12-21,73,248-->
+<!--SR:!2023-06-28,189,248-->
 
 #🧠 請完整說明JavaScript 引擎在編譯時期、快要執行時期、執行時期替EC做了什麼？ ->->-> `在JavaScript中，JavaScript引擎會於編譯時期： 產生對應的bytecode，bytecode 主要會： - 負責定義每個Scope下的Execution Context所需要建立的資料 - 負責定義如何執行其他語法。接著將要執行時，拿建立EC所需的資料和對應ByteCode去建立EC、以目前EC來執行，並根據目前EC狀況來更新EC`
 <!--SR:!2022-12-28,77,248-->
