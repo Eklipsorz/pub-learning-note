@@ -143,7 +143,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有哪些->->-> `push、replace`
-<!--SR:!2022-12-21,25,250-->
+<!--SR:!2023-02-25,66,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中push會是什麼？ ->->-> `將指定頁面路徑(path)推送至page stack最上面來當作目前頁面的路徑`
 <!--SR:!2022-12-27,29,250-->
@@ -168,7 +168,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack的方式： ->->-> `前者是直接增加網址在最上面；後者則是將網址取代最上面`
-<!--SR:!2022-12-21,25,250-->
+<!--SR:!2023-02-24,65,250-->
 
 #🧠 react-router-dom 所提供的 history 物件 對於path可以是什麼頁面？ ->->-> `path 可以是網站內部的位置或者網站外部的位置`
 <!--SR:!2023-02-03,51,250-->
