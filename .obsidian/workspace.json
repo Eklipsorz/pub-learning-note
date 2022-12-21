@@ -4,62 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "796dd2ad03070d01",
+        "id": "42e2ed30d9e4bf17",
         "type": "tabs",
         "children": [
           {
-            "id": "47ec7f3a95cf090f",
+            "id": "27c85ee6248b552e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "664daef500fdf30c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/deployment/react 部署步驟：test code -> optimize code -> build app for production -> upload -> configure server.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3f474e8ac17d097a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "ced02f9e13adbaff",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6c244726fcd1a097",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
