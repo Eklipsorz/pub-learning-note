@@ -196,6 +196,7 @@ export default NewsletterSignup;
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中submit來實現表單提交，記得設定action的path和action ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-adv/src`
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中Form元件來實現表單提交，記得設定action的path和action ->->-> ``
+<!--SR:!2022-12-24,3,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
