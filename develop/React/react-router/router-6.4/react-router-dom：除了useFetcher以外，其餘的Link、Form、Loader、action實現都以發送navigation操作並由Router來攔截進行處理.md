@@ -15,6 +15,7 @@
 
 ## 複習
 #🧠 react-router-dom-6.4：除了useFetcher以外，其餘的Link、Form、Loader、action實現都以什麼形式發送？ ->->-> `除了useFetcher以外，其餘的Link、Form、Loader、action實現都以發送navigation操作並由Router來攔截進行處理`
+<!--SR:!2022-12-24,3,250-->
 
 ---
 Status: 
