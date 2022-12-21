@@ -45,6 +45,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "ced02f9e13adbaff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c244726fcd1a097",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,7 +199,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f474e8ac17d097a",
+  "active": "6c244726fcd1a097",
   "lastOpenFiles": [
     "inbox/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md",
     "inbox/react 部署步驟：test code -> optimize code -> build app for production -> upload -> configure server.md",
