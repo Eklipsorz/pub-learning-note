@@ -121,7 +121,7 @@ rendering content under certain conditions
 
 
 #🧠 React：請問React如何解析這表達式，請用程式碼來表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/expense-array-example_ev6kko.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/expense-array-to-template-example_nzrrbf.png)`
-<!--SR:!2022-12-21,65,250-->
+<!--SR:!2023-06-02,163,250-->
 
 
 

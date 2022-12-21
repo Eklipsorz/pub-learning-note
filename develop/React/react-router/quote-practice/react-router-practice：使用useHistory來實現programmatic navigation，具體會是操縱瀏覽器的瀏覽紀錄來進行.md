@@ -110,7 +110,7 @@ export default NewQuote;
 
 
 #🧠 programmatic navigation 是什麼？->->-> `以編碼的手段來直接將使用者在一個目前頁面下導向至另一個特定頁面`
-<!--SR:!2022-12-21,23,250-->
+<!--SR:!2023-02-19,60,250-->
 
 
 #🧠 programmatic navigation 是以編碼的手段來直接將使用者導向至特定頁面，手段通常是什麼？ ->->-> `使用history API或者操縱history的API`
