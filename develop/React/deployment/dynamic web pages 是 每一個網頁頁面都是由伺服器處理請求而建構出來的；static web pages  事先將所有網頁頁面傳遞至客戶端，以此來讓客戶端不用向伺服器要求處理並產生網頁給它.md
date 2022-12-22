@@ -20,8 +20,9 @@ static web pages
 	- html + browser side JS + CSS
 - static web pages 適合的伺服器會是static site host，主要會做
 	- 將所有已經優化過的結果網頁傳遞至客戶端
-	- 若是SPA的話，還必須要能夠伺服器內部改寫面對客戶端的任一端點的請求
-- 當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求
+	- 若是SPA的話，還必須要能夠伺服器內部改寫客戶端發送請求的任一端點和動詞，以避免讓客戶端從伺服器取得錯誤的結果
+	
+ - 當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求
 
 
 
@@ -38,9 +39,20 @@ static web pages
 
 #🧠 static web pages 適合的伺服器會是什麼 ->->-> `static site host`
 
-#🧠 static web pages 適合的伺服器會是static site host，其提供功能為？ ->->-> `主要會將所有已經優化過的結果網頁傳遞至客戶端`
+#🧠 static web pages 適合的伺服器會是static site host，其提供功能必須是？ ->->-> `主要會將所有已經優化過的結果網頁傳遞至客戶端`
 
 #🧠 static web pages 適合的伺服器會是static site host，當客戶端向它發送請求會？ ->->-> `當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求`
+
+
+
+
+
+#🧠 static web pages 適合的伺服器會是static site host且目前想要上傳production code是SPA，其伺服器所要提供功能必須是 ->->-> `	- 將所有已經優化過的結果網頁傳遞至客戶端 - 若是SPA的話，還必須要能夠伺服器內部改寫客戶端發送請求的任一端點和動詞`
+
+
+#🧠 static web pages 適合的伺服器會是static site host且目前想要上傳production code是SPA，其伺服器所要提供功能必須是還必須要能夠伺服器內部改寫客戶端發送請求的任一端點和動詞，為何要？ ->->-> `以避免讓客戶端從伺服器取得錯誤的結果，畢竟頁面都轉交給client來處理。`
+
+
 
 ---
 Status: #🌱 
@@ -48,5 +60,6 @@ Tags:
 [[React]]
 Links:
 [[react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及縮小程式碼量]]
+[[當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁]]
 References:
 [[@StaticWebsiteHosting]]
