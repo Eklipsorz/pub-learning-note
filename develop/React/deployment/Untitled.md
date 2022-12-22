@@ -7,10 +7,17 @@ static web pages
  dynamic web pages
 > A server-side dynamic web page is a web page whose construction is controlled by an application server processing server-side scripts. 
 
+[[@StaticWebsiteHosting]]
+> A static website is made of pre-built static HTML+CSS+JS pages that don’t change between visits and that the server delivers to your browser exactly as stored once requested.
+
 重點：
 - dynamic web pages 每一個網頁頁面都是由伺服器處理請求而建構出來的
 - static web pages 是相對於 dynamic web page概念，每一個網頁頁面並不會受到伺服器的處理而影響。通常手段為：
 	- 事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理病產生網頁給它
+- static web pages 組成會是：
+	- html + browser side JS + CSS
+- static web pages 適合的伺服器會是static site host，主要會將所有已經優化過的結果網頁傳遞至客戶端
+	- 當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求
 
 
 ## 複習
@@ -23,3 +30,4 @@ Tags:
 Links:
 [[react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及縮小程式碼量]]
 References:
+[[@StaticWebsiteHosting]]
