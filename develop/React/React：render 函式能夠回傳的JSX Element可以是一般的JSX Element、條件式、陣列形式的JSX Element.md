@@ -30,11 +30,11 @@ render()
 	- 使用陣列包含多個React Element的形式
 ## 複習
 
-#🧠 在不使用fragment和portal 技術下，render函式還能夠回傳的JSX元素形式會有哪些？(搭配JS) ->->-> `單純JSX語法的元素、搭配JS Expression的JSX Element、使用陣列包含多個React Element的形式`
+#🧠 react：render函式還能夠回傳的JSX元素形式會有哪些？(搭配JS) ->->-> `單純JSX語法的元素、搭配JS Expression的JSX Element、使用陣列包含多個React Element的形式`
 <!--SR:!2023-03-01,75,230-->
 
-#🧠 在不使用fragment和portal 技術下，render函式還能夠回傳的JSX元素形式會有哪些？ ->->-> `單純JSX語法的元素、搭配JS Expression的JSX Element、使用陣列包含多個React Element的形式`
-<!--SR:!2022-12-22,37,230-->
+#🧠  react：render函式還能夠回傳的JSX元素形式會有哪些？ ->->-> `單純JSX語法的元素、搭配JS Expression的JSX Element、使用陣列包含多個React Element的形式`
+<!--SR:!2023-01-12,21,210-->
 
 ---
 Status: #🌱 #📓 

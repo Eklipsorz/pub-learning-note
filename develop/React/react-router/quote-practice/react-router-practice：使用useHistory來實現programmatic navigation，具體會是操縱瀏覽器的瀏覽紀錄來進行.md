@@ -136,7 +136,7 @@ export default NewQuote;
 <!--SR:!2022-12-27,29,250-->
 
 #🧠 在react-router-dom上的 history object會是用做什麼 ->->-> `專門操縱使用者在瀏覽器的瀏覽紀錄`
-<!--SR:!2022-12-22,26,250-->
+<!--SR:!2023-03-01,69,250-->
 
 #🧠  react-router-dom 所提供的 history 物件實際上主要是使用哪一種API？ ->->-> `DOM API 提供開發者存取browser history的介面`
 <!--SR:!2022-12-28,28,250-->
@@ -177,7 +177,7 @@ export default NewQuote;
 <!--SR:!2022-12-25,28,250-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是什麼型別？ ->->-> `字串、物件`
-<!--SR:!2022-12-22,10,230-->
+<!--SR:!2023-01-17,26,230-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中字串是什麼？具體是 ->->-> `具體會是由URL構成的字串`
 <!--SR:!2022-12-28,22,250-->
