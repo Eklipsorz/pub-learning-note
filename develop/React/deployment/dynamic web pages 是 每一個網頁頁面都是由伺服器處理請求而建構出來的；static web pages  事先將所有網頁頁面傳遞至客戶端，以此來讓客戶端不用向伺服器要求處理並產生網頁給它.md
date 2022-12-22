@@ -18,8 +18,12 @@ static web pages
 	- 事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它
 - static web pages 組成會是：
 	- html + browser side JS + CSS
-- static web pages 適合的伺服器會是static site host，主要會將所有已經優化過的結果網頁傳遞至客戶端
-	- 當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求
+- static web pages 適合的伺服器會是static site host，主要會做
+	- 將所有已經優化過的結果網頁傳遞至客戶端
+	- 若是SPA的話，還必須要能夠伺服器內部改寫面對客戶端的任一端點的請求
+- 當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求
+
+
 
 
 ## 複習
