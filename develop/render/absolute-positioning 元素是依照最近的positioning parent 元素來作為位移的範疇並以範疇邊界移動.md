@@ -91,7 +91,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2023-01-02,74,250-->
 
 #🧠 當對absolute-positioning 元素的right為value1，會是代表著什麼？->->-> `其元素的右邊界和parent元素A的右邊界之間會保持著value1的距離`
-<!--SR:!2022-12-22,66,250-->
+<!--SR:!2023-06-05,165,250-->
 
 #🧠 當對absolute-positioning 元素的left為value1，會是代表著什麼？ ->->-> `其元素的左邊界和parent元素A的左邊界之間會保持著value1的距離`
 <!--SR:!2023-02-18,64,230-->

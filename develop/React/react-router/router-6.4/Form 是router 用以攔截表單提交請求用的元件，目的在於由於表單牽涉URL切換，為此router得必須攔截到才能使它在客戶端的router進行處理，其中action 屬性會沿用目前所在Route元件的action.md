@@ -73,10 +73,10 @@ const callback = (params, request) => { ... }
 <!--SR:!2022-12-23,7,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是如何？ ->->-> `<Form method=method1 action=action1> </Form>`
-<!--SR:!2022-12-22,6,250-->
+<!--SR:!2023-01-08,17,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的method和action分別是什麼？ ->->-> `method：指定使用哪一種http 動詞來轉遞表格資料、action：可填入該請求要發送至哪個端點 或者 指名哪裡是負責處理傳遞資料的地方`
-<!--SR:!2022-12-22,6,250-->
+<!--SR:!2023-01-06,15,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的action是可填入該請求要發送至哪個端點 ，請問又可以定義成什麼？ ->->-> `指名哪裡是負責處理傳遞資料的地方`
 <!--SR:!2022-12-26,10,250-->

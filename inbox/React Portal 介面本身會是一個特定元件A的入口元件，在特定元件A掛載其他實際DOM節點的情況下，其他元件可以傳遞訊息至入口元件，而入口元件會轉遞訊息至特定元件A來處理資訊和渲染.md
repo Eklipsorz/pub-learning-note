@@ -201,7 +201,7 @@ portal：
 
 
 #🧠 React：建立Portal 介面的事前準備是什麼？ ->->-> `請確保入口元件的對應元件要掛載的實際DOM節點是否存在webpack對應的網頁或者渲染網頁`
-<!--SR:!2022-12-22,63,250-->
+<!--SR:!2023-05-27,156,250-->
 
 #🧠 React Portal：請在webpack會用到的參考網頁來規劃modal要安置在哪 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662990506/blog/react/react-element/portal/modal-component-root_xotlt4.png)`
 <!--SR:!2023-01-06,74,250-->

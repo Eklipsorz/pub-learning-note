@@ -151,7 +151,7 @@ suspense
 <!--SR:!2022-12-23,2,230-->
 
 #🧠 react：Suspense 元件是什麼用途？ ->->-> `用途為以特定內容元件形式來呈現出目前特定元件暫時停止渲染之狀態`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-27,5,248-->
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其中為何暫時停止渲染？ ->->-> `由於route還未執行完對應元件的渲染任務，而保持暫時停止渲染`
 <!--SR:!2022-12-22,2,248-->
@@ -160,7 +160,7 @@ suspense
 <!--SR:!2022-12-23,3,250-->
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為何？->->-> `<Suspense fallback={JSX Element}> JSX Element </Suspense>`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-28,6,248-->
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為`<Suspense fallback={JSX Element}> JSX Element </Suspense>`，其中fallback和JSX Element是做什麼用->->-> `fallback 是當JSX Element 還未完成render時所會替代渲染的內容，而JSX Element則是指著特定元件`
 <!--SR:!2022-12-23,3,250-->
@@ -177,7 +177,7 @@ suspense
 
 
 #🧠  React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？ ->->-> `defer(obj)`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-28,6,248-->
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為deferred task，如何透過defer來用 ->->-> `defer({ attribute1: promise })`
 <!--SR:!2022-12-23,3,250-->
@@ -215,7 +215,7 @@ suspense
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是函式物件，會是什麼？ 會回傳什麼？->->-> `若是函式物件的話，其引數會是該resolved的結果值，回傳對應JSX Element`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-28,6,248-->
 
 #🧠 react-router-dom：使用deferred promise + Suspense + Await的應用場景 ->->-> `1. Route執行Loader存在執行較慢的程式碼部分，致使元件渲染必須等到其完成才能渲染 2. 適用於不想讓整個頁面的每個頁面都相互等待才渲染，而是能先渲染的元件就先渲染給使用者看，而非等到所有元件都完成渲染才正式渲染給使用者瀏覽 3. 透過Route來實現資料載入、元件渲染載入中的畫面
 <!--SR:!2022-12-23,2,230-->
