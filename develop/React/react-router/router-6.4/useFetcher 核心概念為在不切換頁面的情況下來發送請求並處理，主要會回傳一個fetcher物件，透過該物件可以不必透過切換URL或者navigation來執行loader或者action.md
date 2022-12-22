@@ -223,10 +223,12 @@ export default NewsletterSignup;
 <!--SR:!2022-12-24,3,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是什麼？->->-> `fetcher.submit(body, options)`
+<!--SR:!2022-12-25,3,250-->
 
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(body, options)`，其中body和options會是什麼形式和用途？ ->->-> `		- body 為物件，主要定義要轉遞的資料 - options 為物件，主要以method屬性和action屬性來定義method和action`
+<!--SR:!2022-12-25,3,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，如何指定method和action？ ->->-> `obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件`
