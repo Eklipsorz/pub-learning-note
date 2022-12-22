@@ -173,7 +173,7 @@ suspense
 
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，其物件會是麼？ ->->-> `該物件夾雜多個屬性，其屬性值為索求特定資源或者資料處理的promise非同步任務`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-28,6,248-->
 
 
 #🧠  React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？ ->->-> `defer(obj)`
