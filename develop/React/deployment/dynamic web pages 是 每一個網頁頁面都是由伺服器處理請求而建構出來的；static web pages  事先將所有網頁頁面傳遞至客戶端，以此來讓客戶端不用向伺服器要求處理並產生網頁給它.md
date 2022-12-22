@@ -10,10 +10,12 @@ static web pages
 [[@StaticWebsiteHosting]]
 > A static website is made of pre-built static HTML+CSS+JS pages that don’t change between visits and that the server delivers to your browser exactly as stored once requested.
 
+
+
 重點：
 - dynamic web pages 每一個網頁頁面都是由伺服器處理請求而建構出來的
-- static web pages 是相對於 dynamic web page概念，每一個網頁頁面並不會受到伺服器的處理而影響。通常手段為：
-	- 事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理病產生網頁給它
+- static web pages 是相對於 dynamic web page概念，每一個網頁頁面並不會受到伺服器的處理而影響。通常獲得手段為：
+	- 事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它
 - static web pages 組成會是：
 	- html + browser side JS + CSS
 - static web pages 適合的伺服器會是static site host，主要會將所有已經優化過的結果網頁傳遞至客戶端
@@ -22,6 +24,19 @@ static web pages
 
 ## 複習
 
+#🧠 dynamic web pages 會是指什麼？ ->->-> `每一個網頁頁面都是由伺服器處理請求而建構出來的`
+
+#🧠  static web pages 會是指什麼？ ->->-> `是相對於 dynamic web page概念，每一個網頁頁面並不會受到伺服器的處理而影響`
+
+#🧠 static web pages 是相對於 dynamic web page概念，每一個網頁頁面並不會受到伺服器的處理而影響。通常獲得手段為 ->->-> `事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它`
+
+#🧠  static web pages 組成會是? 偏向客戶端還是伺服器？->->-> `html + browser side JS + CSS`
+
+#🧠 static web pages 適合的伺服器會是什麼 ->->-> `static site host`
+
+#🧠 static web pages 適合的伺服器會是static site host，其提供功能為？ ->->-> `主要會將所有已經優化過的結果網頁傳遞至客戶端`
+
+#🧠 static web pages 適合的伺服器會是static site host，當客戶端向它發送請求會？ ->->-> `當客戶端索求static site host，伺服器就回傳所有已經優化過的結果網頁傳遞至客戶端，之後就不需要再向伺服器發送索求網頁的請求`
 
 ---
 Status: #🌱 
