@@ -189,7 +189,7 @@ suspense
 <!--SR:!2022-12-23,3,250-->
 
 #🧠 Await 元件會是屬於誰的？->->-> `Await 元件為React-router所提供的元件`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-28,6,248-->
 
 
 #🧠 React-router：Await 語法為何？ ->->-> `<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>`
