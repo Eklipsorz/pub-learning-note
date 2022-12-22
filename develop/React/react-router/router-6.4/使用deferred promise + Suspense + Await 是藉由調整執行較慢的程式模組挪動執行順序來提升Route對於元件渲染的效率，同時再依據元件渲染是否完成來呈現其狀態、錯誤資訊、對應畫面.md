@@ -183,7 +183,7 @@ suspense
 <!--SR:!2022-12-23,3,250-->
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為not-deferred task，如何透過defer來用 ->->-> `defer({ attribute1: await promise })`
-<!--SR:!2022-12-22,2,248-->
+<!--SR:!2022-12-27,5,248-->
 
 #🧠 React-router：Await 元件用途是什麼？ ->->-> `其用途為將推遲的Promise非同步任務指定特定地點來正式執行其任務，接著等待任務回應回傳就從中取得對應資料來渲染內容和狀況`
 <!--SR:!2022-12-23,3,250-->
