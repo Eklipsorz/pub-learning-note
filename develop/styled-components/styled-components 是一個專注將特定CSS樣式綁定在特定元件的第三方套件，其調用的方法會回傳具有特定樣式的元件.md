@@ -109,7 +109,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-02-22,63,227-->
 
 #🧠  styled-components 的出現背景是什麼？ ->->-> `預設下，專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component。`
-<!--SR:!2022-12-23,70,250-->
+<!--SR:!2023-06-21,180,250-->
 
 
 #🧠 styled-components 的出現背景是專案下的所有css會是全域，無法讓特定css樣式屬性綁定在特定component，這會衍生出什麼樣問題？ ->->-> `難以維護、開發的問題`
