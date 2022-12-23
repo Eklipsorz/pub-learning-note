@@ -147,7 +147,7 @@
 
 
 #🧠 請舉例說明為什麼模組載入順序會是IIFE模組化的缺點？ ->->-> `假設moduleA被moduleB所依賴，而moduleB 被module C依賴 <script type="text/javascript" type="./moduleA.js"></script><script type="text/javascript" type="./moduleB.js"></script> <script type="text/javascript" type="./main.js"></script>，若考慮更多模組，那麼其順序會更為複雜，使開發者更難維護`
-<!--SR:!2022-12-23,30,248-->
+<!--SR:!2023-03-11,78,248-->
 
 
 

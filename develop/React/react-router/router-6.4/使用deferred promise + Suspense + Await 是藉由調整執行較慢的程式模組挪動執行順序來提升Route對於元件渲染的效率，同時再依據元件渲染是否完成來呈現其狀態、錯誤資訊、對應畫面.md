@@ -142,10 +142,10 @@ suspense
 ## 複習
 
 #🧠 fallback 命名緣由會是什麼？ ->->-> `fallback 是指計畫失敗時的備案`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-02,10,250-->
 
 #🧠  suspend 命名緣由會是什麼？ ->->-> `- suspend 是指暫時或者永久停止`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-02,10,250-->
 
 #🧠  suspense命名緣由會是什麼？ ->->-> `- suspense 是指呈現被暫時/永久停止的狀態`
 <!--SR:!2022-12-23,2,230-->
@@ -157,19 +157,19 @@ suspense
 <!--SR:!2022-12-27,5,248-->
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，具體會是什麼？ ->->-> `則是當Suspense元件包含的元件還未完成render時，就會呈現其對應畫面來表示元件載入中`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-01,9,250-->
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為何？->->-> `<Suspense fallback={JSX Element}> JSX Element </Suspense>`
 <!--SR:!2022-12-28,6,248-->
 
 #🧠 react：Suspense 元件用途為以元件形式來呈現出目前特定元件暫時停止渲染之狀態，其元件語法為`<Suspense fallback={JSX Element}> JSX Element </Suspense>`，其中fallback和JSX Element是做什麼用->->-> `fallback 是當JSX Element 還未完成render時所會替代渲染的內容，而JSX Element則是指著特定元件`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-02,10,250-->
 
 #🧠 Suspense 元件源自於哪裡？react-router? react? ->->-> `react`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2022-12-31,8,250-->
 
 #🧠 React-router：defer 方法是什麼用途？ ->->-> `主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2022-12-31,8,250-->
 
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，其物件會是麼？ ->->-> `該物件夾雜多個屬性，其屬性值為索求特定資源或者資料處理的promise非同步任務`
@@ -203,22 +203,22 @@ suspense
 <!--SR:!2022-12-23,3,250-->
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的errorElement會是什麼形式和作用？？ ->->-> `errorElement：形式為JSX Element。當依據deferred 的promise非同步任結果的元件渲染失敗後，就隨之要渲染的錯誤畫面 `
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-01,9,250-->
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children會是什麼形式和作用？？->->-> `形式為JSX Element或者會回傳JSX Element 或者 函式物件。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-01,9,250-->
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是JSX Element，會是什麼？ ->->-> `當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren的JSX Element來渲染`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-01,9,250-->
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是函式物件，會是什麼？ 會回傳什麼？->->-> `若是函式物件的話，其引數會是該resolved的結果值，回傳對應JSX Element`
 <!--SR:!2022-12-28,6,248-->
 
 #🧠 react-router-dom：使用deferred promise + Suspense + Await的應用場景 ->->-> `1. Route執行Loader存在執行較慢的程式碼部分，致使元件渲染必須等到其完成才能渲染 2. 適用於不想讓整個頁面的每個頁面都相互等待才渲染，而是能先渲染的元件就先渲染給使用者看，而非等到所有元件都完成渲染才正式渲染給使用者瀏覽 3. 透過Route來實現資料載入、元件渲染載入中的畫面
-<!--SR:!2022-12-23,2,230-->
+<!--SR:!2022-12-29,6,230-->
 `
 
 

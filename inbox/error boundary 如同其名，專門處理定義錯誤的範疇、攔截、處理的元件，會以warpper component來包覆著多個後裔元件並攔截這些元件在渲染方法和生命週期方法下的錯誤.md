@@ -202,7 +202,7 @@ UsersFinder.js
 
 
 #🧠 React：error boundary是什麼？ （請說到為何包覆)->->-> `如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到`
-<!--SR:!2022-12-23,44,249-->
+<!--SR:!2023-04-15,113,249-->
 
 #🧠 React：error boundary是如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以empty warpper component來包覆著多個元件，請問被包覆的後裔元件會有什麼好處？->->-> `這些後裔元件只要在渲染方法或者所有生命週期函式執行時發生錯誤，即可被error-boundary 元件給攔截到`
 <!--SR:!2023-02-06,73,250-->
@@ -241,7 +241,7 @@ UsersFinder.js
 <!--SR:!2023-04-09,109,249-->
 
 #🧠 React： getDerivedStateFromError 觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
-<!--SR:!2022-12-23,44,249-->
+<!--SR:!2023-04-13,111,249-->
 
 #🧠 React：error-boundary 常見實作方式，請以Users元件作為錯誤物件的來源來說明 ->->-> `1. 先在建構式上定義hasError狀態，並設定初始值為false，表示一開始沒錯誤 2. 接著設定componentDidCatch 內增加setState，來讓hasError有機會轉換成true 3. 最後在render上設定能夠根據this.state.hasError是否為true來顯示錯誤訊息 4. 在UsersFinder中放置ErrorBoundary來包含想要攔截錯誤的後裔元件，在這裡會是Users元件`
 <!--SR:!2023-01-02,21,229-->
