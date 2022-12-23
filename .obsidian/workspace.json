@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md"
+                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md"
               }
             }
           }
@@ -229,8 +229,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f09a4b81fbd413c",
+  "active": "67fb532cb2e8aff5",
   "lastOpenFiles": [
+    "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
     "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
     "develop/React/deployment/react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及縮小程式碼量.md",
@@ -239,7 +240,6 @@
     "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
     "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
-    "develop/React/deployment/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md",
-    "develop/React/deployment/react 部署步驟：test code -> optimize code -> build app for production -> upload -> configure server.md"
+    "develop/React/deployment/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md"
   ]
 }
