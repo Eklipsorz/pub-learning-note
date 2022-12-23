@@ -59,6 +59,24 @@
         "currentTab": 3
       },
       {
+        "id": "c21e55e5521d71fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f09a4b81fbd413c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "2b5c7f6efd59853a",
         "type": "tabs",
         "children": [
@@ -141,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md"
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md"
               }
             }
           }
@@ -211,10 +229,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "67fb532cb2e8aff5",
+  "active": "3f09a4b81fbd413c",
   "lastOpenFiles": [
-    "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
     "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
+    "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
     "develop/React/deployment/react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及縮小程式碼量.md",
     "develop/React/deployment/react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及使產出程式碼的量減少.md",
     "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
