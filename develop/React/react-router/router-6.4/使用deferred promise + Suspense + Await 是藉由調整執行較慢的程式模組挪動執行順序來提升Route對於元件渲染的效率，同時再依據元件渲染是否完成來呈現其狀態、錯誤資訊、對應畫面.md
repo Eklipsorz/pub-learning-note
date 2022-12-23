@@ -197,10 +197,10 @@ suspense
 
 
 #🧠 React-router：Await 語法上為何需要Suspense元件？->->-> `確保還未完成的元件能先有個預設畫面來渲染`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-01,9,250-->
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的resolve會是什麼形式和作用？？ ->->-> ` resolve：形式會是promise。指定以哪個deferred 的promise非同步任務來正式執行和渲染`
-<!--SR:!2022-12-23,3,250-->
+<!--SR:!2023-01-02,10,250-->
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的errorElement會是什麼形式和作用？？ ->->-> `errorElement：形式為JSX Element。當依據deferred 的promise非同步任結果的元件渲染失敗後，就隨之要渲染的錯誤畫面 `
 <!--SR:!2023-01-01,9,250-->

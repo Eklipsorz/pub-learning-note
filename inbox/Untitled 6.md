@@ -31,7 +31,7 @@ A resource record, commonly referred to as an RR, is the unit of information ent
 
 ## 複習
 #🧠 Question :: ->->-> ``
-<!--SR:!2022-12-23,9,250-->
+<!--SR:!2023-01-18,26,250-->
 
 ---
 Status: #🌱 

@@ -226,7 +226,7 @@ export default Expenses;
 <!--SR:!2023-06-11,178,250-->
 
 #🧠 React：具體實現Conditional Rendering 的手段是什麼？->->-> `使用 條件式 ? 滿足條件式會有的渲染內容、使用 兩個條件式 && 滿足條件式會有的渲染內容來構成、從渲染層面移除條件判斷，在元件的業務邏輯下設定條件來指定要輸出的內容，並於渲染層級以輸出結果來渲染`
-<!--SR:!2022-12-23,74,250-->
+<!--SR:!2023-07-04,193,250-->
 
 
 #🧠 React：請用程式碼來展示Conditional Operator 如何實現Conditional Rendering  ->->-> `return ({enable ? <h1>enable</h1> : <h1>disable</h1>});`
