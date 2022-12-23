@@ -80,7 +80,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2023-02-08,63,250-->
 
 #🧠 absolute url 會以什麼位置來定位？->->-> `主要會以主機所在的網路位置為主來定位，即根目錄`
-<!--SR:!2022-12-23,11,229-->
+<!--SR:!2023-01-18,26,229-->
 
 #🧠 absolute URL：Full URL是什麼？由何種構成？ 格式？ ->->-> `	- 該資源在網路上的完整位置 - 主要由protocol、host、port、path所構成 - 格式：protocol://host:port/path`
 <!--SR:!2023-02-19,70,250-->

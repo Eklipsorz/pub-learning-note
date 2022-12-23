@@ -134,7 +134,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-06-08,171,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中的type、onClick屬性如何定義的？->->-> `styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute)`
-<!--SR:!2022-12-23,70,250-->
+<!--SR:!2023-06-20,179,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中是如何定義該元件所包含的子節點？->->-> `預設下會有依照要產生的元件種類來產生對應子節點來被包含，如<element> </element> 所包裹的props.children`
 <!--SR:!2022-12-27,73,250-->
