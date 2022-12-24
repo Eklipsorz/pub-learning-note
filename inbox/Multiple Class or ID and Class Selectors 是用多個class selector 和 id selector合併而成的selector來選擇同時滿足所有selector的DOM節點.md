@@ -44,7 +44,7 @@
 
 ## 複習
 #🧠 Multiple Class Selector 是什麼？ ->->-> `是用N個class selector 相接而成的selector，主要會選擇同時滿足N的class selector的DOM 節點`
-<!--SR:!2022-12-24,73,250-->
+<!--SR:!2023-07-02,190,250-->
 
 
 #🧠 Multiple Class Selector 和 ID and Class Selectors 如何形成，用程式碼表示 ->->-> `.class1.class2 {} 和 #id.class1 { }`

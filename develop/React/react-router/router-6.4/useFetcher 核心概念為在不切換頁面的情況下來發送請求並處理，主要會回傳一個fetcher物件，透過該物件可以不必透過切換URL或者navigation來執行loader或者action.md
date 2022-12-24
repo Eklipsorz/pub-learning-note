@@ -196,10 +196,10 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是什麼？ ->->-> `透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是透過該物件可以不必透過切換URL或者navigation來執行loader或者action，不必透過是什麼意思？或者如何實現 ->->-> `實際上是以path來綁定對應action、loader並用path來呼叫對應action、loader，如同函式呼叫，只是差別在於沒用導向來執行`
 <!--SR:!2022-12-24,3,250-->
@@ -240,7 +240,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，假設要提交email資料以及指定method為post、action為newsletter，請問具體如何設定語法 ->->-> ``
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式有什麼樣的流程？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader 2. 替action、loader建立一個component來定義 3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理`
