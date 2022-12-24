@@ -205,7 +205,7 @@ export default NewsletterSignup;
 <!--SR:!2023-01-01,8,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 核心概念為何？ ->->-> `在不切換頁面的情況下來發送請求並處理，使服務更像個SPA`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有哪兩個？ ->->-> `fetcher.Form 和 fetcher.submit方法`
@@ -244,7 +244,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式有什麼樣的流程？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader 2. 替action、loader建立一個component來定義 3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2022-12-26,2,230-->
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader，其流程會是什麼？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑：具體在Router的路徑陣列中增加一個路徑 2. 替新路徑設定path和action`
 <!--SR:!2023-01-03,10,250-->
@@ -260,7 +260,7 @@ export default NewsletterSignup;
 <!--SR:!2023-01-03,10,250-->
 
 #🧠 fetcher 會是什麼意思？ ->->-> ` fetcher 則是負責實現fetch這動作的一方`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-01,8,250-->
 
 #🧠 etch 本身是移動至特定地方並獲取東西的意思，fetcher 則是負責實現fetch這動作的一方，那麼react-router中的useFetcher會是指什麼？請用上述來解釋 ->->-> `在這就是指負責從特定端點對應的action/loader來獲取其回應的程式模組`
 <!--SR:!2023-01-02,9,250-->
