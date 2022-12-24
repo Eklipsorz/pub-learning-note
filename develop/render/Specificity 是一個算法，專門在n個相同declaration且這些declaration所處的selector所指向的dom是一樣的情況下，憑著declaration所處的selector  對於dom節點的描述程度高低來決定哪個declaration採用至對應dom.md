@@ -130,7 +130,7 @@ specific
 <!--SR:!2023-03-23,127,250-->
 
 #🧠 在CSS Specificity中，每一個declaration權重形式是三種欄位值，分別為id、class、type，形式為id-class-type，那麼type表示目前declaration 所在的 selector 有使用 type 來描述對應元件的具體程度，會用數字表示，具體如何用數字表示？ ->->-> `對應元件在同一個由多個selector構成的selector上相符N個type selector的描述，就0-0-+N、數字越高就表示在以用特定type形式描述該元件的具體程度就越高`
-<!--SR:!2022-12-24,74,250-->
+<!--SR:!2023-02-02,40,230-->
 
 
 #🧠 CSS specificitiy上的id-class-type，若要統一轉換成數字來看的話，可以是如何計算？？ 如何比較->->-> `id-class-type，1個id為100分、1個class為10分、1個type為1分，並將計算總分，將轉換分數通通加起來。比較的話，就挑出最大者的declaration來使用`

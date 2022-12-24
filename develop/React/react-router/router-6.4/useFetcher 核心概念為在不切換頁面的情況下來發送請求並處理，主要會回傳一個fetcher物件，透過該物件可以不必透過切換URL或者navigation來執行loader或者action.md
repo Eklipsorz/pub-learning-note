@@ -213,11 +213,11 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，具體適用於什麼場景->->-> `是由使用者互動本身就引發fetch，就使用fetcher.Form、若是想由程式碼引發fetch，就使用fetch.submit`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是什麼？->->-> ` <fetcher.Form method=method1 action=action1> ....</fetcher.Form>`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-02,9,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是`<fetcher.Form method=method1 action=action1> ....</fetcher.Form>`，其中method和action會是什麼形式和作用？ ->->-> `- method ：形式為字串，為指定轉遞表單資料方法 method - action ：形式為路徑字串，為指定處理接收轉遞表單資料`
 <!--SR:!2023-01-03,10,250-->
@@ -247,14 +247,14 @@ export default NewsletterSignup;
 <!--SR:!2022-12-24,3,250-->
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader，其流程會是什麼？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑：具體在Router的路徑陣列中增加一個路徑 2. 替新路徑設定path和action`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，隔離原因為何？->->-> `確保action、loader所在的path 不會受到Parent Route 給影響`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，請用程式碼來表示 ->->-> ``
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 #🧠 fetch 會是什麼意思？ ->->-> `fetch 本身是移動至特定地方並獲取東西的意思`
 <!--SR:!2023-01-03,10,250-->

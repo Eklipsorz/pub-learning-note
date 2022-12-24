@@ -144,7 +144,7 @@
 
 
 #🧠  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) 這會引發閃爍問題，請問如何解決？ ->->-> `將link標籤或者style標籤都放在所有DOM之前，比如head標籤`
-<!--SR:!2022-12-24,74,250-->
+<!--SR:!2023-07-05,193,250-->
 
 #🧠  若遇到link標籤或者style標籤之前就有DOM，瀏覽器會如何處理？->->-> ` 若遇到link標籤或者style標籤之前就有DOM，因爲它會認為沒有樣式要載入，所以就以預設的設定就先渲染`
 <!--SR:!2023-05-24,165,250-->

@@ -77,6 +77,24 @@
         ]
       },
       {
+        "id": "a2c8cbfbb2754aed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb182a41b58fd5d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "c21e55e5521d71fb",
         "type": "tabs",
         "children": [
@@ -177,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
+                "file": "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,7 +220,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
+                "file": "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,7 +243,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md"
+                "file": "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md"
               }
             }
           }
@@ -247,8 +265,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6b23558f528f054",
+  "active": "cb182a41b58fd5d9",
   "lastOpenFiles": [
+    "inbox/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
     "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
     "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
@@ -257,7 +276,6 @@
     "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "develop/React/React：render 函式能夠回傳的JSX Element可以是一般的JSX Element、條件式、陣列形式的JSX Element.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
-    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
-    "develop/React/deployment/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md"
+    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md"
   ]
 }
