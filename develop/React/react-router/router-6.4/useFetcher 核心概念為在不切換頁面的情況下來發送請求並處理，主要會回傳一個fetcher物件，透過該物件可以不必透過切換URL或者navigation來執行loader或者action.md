@@ -209,7 +209,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有哪兩個？ ->->-> `fetcher.Form 和 fetcher.submit方法`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，具體適用於什麼場景->->-> `是由使用者互動本身就引發fetch，就使用fetcher.Form、若是想由程式碼引發fetch，就使用fetch.submit`
@@ -220,7 +220,7 @@ export default NewsletterSignup;
 <!--SR:!2022-12-24,3,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是`<fetcher.Form method=method1 action=action1> ....</fetcher.Form>`，其中method和action會是什麼形式和作用？ ->->-> `- method ：形式為字串，為指定轉遞表單資料方法 method - action ：形式為路徑字串，為指定處理接收轉遞表單資料`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是什麼？->->-> `fetcher.submit(body, options)`
 <!--SR:!2022-12-25,3,250-->
@@ -232,7 +232,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，如何指定method和action？ ->->-> `obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件`
-<!--SR:!2022-12-24,3,250-->
+<!--SR:!2023-01-03,10,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，若沒在obj中設定acction和method，會正常執行嗎？為何 ->->-> `並不會，由於系統就是從obj中決定action和method，若不知道的話，就無法正常執行`
