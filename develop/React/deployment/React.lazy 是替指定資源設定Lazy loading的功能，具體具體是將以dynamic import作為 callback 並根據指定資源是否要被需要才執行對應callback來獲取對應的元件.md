@@ -80,7 +80,7 @@ React.lazy：
 <!--SR:!2023-01-02,8,250-->
 
 #💻 請在/githubRepo/react-builder/react-deployment-practice領取題目並切換lazy-loading-all-routes分支，請將App.js上的Route上元件設定成lazy-loading  ->->-> ``
-<!--SR:!2022-12-25,3,250-->
+<!--SR:!2023-01-03,9,250-->
 
 
 ---
