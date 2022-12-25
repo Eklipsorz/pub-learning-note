@@ -180,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,7 +228,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md"
+                "file": "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md"
               }
             }
           }
@@ -250,8 +250,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4cf41722f73b7eaf",
+  "active": "3f09a4b81fbd413c",
   "lastOpenFiles": [
+    "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "develop/React/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md",
@@ -260,7 +261,6 @@
     "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
     "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
-    "develop/React/deployment/react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及縮小程式碼量.md",
-    "develop/React/deployment/react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及使產出程式碼的量減少.md"
+    "develop/React/deployment/react-scripts start 為將code轉換成瀏覽器能夠讀懂的形式和執行伺服器程式來提供該上述形式，react-scripts build  為 將code轉換成瀏覽器能夠讀懂的形式，過程中會優化程式碼以及縮小程式碼量.md"
   ]
 }

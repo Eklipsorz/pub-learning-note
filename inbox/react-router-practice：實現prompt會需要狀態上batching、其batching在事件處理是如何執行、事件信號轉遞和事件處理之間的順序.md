@@ -145,7 +145,7 @@ submit
 
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的確保使用者正對表單頁面下的表單進行輸入並紀錄狀態，如何做？ ->->-> `在元件下註冊isEntering這狀態、在表單下的onFocus事件來設定該狀態為true，以此來表示表單正被輸入`
-<!--SR:!2022-12-25,26,250-->
+<!--SR:!2023-02-28,65,250-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的添加Prompt元件來當作警告訊息來阻擋和其Prompt元件必須要使用者是正輸入表單的情況下來阻擋URL Navigation，如何做？prompt程式碼會是什麼 ->->-> `使用react-router-dom所提供的prompt元件、根據Prompt的when是否true來啟用prompt來阻擋，若form發生focus事件就為true；反之就為false。若呈現prompt就以Are you sure這訊息來表示。<Prompt when={isEntering} message={(location) => 'Are you sure??'} />`
 <!--SR:!2023-01-05,13,230-->

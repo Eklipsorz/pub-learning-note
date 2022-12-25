@@ -223,7 +223,7 @@ export default NewsletterSignup;
 <!--SR:!2023-01-03,10,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是什麼？->->-> `fetcher.submit(body, options)`
-<!--SR:!2022-12-25,3,250-->
+<!--SR:!2023-01-01,7,250-->
 
 
 

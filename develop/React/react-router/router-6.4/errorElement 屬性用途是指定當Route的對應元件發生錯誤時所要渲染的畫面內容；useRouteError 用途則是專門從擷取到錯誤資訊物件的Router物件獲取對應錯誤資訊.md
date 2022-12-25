@@ -35,7 +35,7 @@ const error = useRouteError()
 ## 複習
 
 #🧠 react-router-dom v6.4 ：errorElement 在Route元件上是做什麼？ ->->-> `指定當Route的對應元件發生錯誤時所要渲染的畫面內容`
-<!--SR:!2022-12-25,9,250-->
+<!--SR:!2023-01-17,23,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 在Route元件上是指定當Route的對應元件發生錯誤時所要渲染的畫面內容，那麼它能夠攔截到哪種錯誤？？->->-> `Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤`
 <!--SR:!2023-01-16,23,250-->

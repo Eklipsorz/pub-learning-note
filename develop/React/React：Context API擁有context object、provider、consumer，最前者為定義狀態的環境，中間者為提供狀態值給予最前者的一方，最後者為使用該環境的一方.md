@@ -257,7 +257,7 @@ consume
 <!--SR:!2023-02-27,89,248-->
 
 #🧠 React：Context中的Provider 是負責提供特定狀態值至Context Object的Component，請問該Component會更新Context嗎？ 為什麼？->->-> `不會，因為Provider Component本身只是單方面提供值來設定對應Context`
-<!--SR:!2022-12-25,59,250-->
+<!--SR:!2023-05-20,146,250-->
 
 #🧠 React：Context中的Consumer 是什麼？(提示：聽一下，獲取一下)  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
 <!--SR:!2023-01-30,76,230-->
@@ -267,7 +267,7 @@ consume
 
 
 #🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
-<!--SR:!2022-12-25,26,170-->
+<!--SR:!2023-02-08,45,170-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
 <!--SR:!2023-01-15,74,250-->
