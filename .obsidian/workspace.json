@@ -20,6 +20,42 @@
             }
           }
         ]
+      },
+      {
+        "id": "96929c210593d767",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abcff79f9b626bf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router/router-6.4/react-router-6.4-practice：使用defer＋Await ＋ Suspense 方式來優化資料載入速度.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "46f93bf642d4f69f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bb9553d3c54d4d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
+                "file": "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
+                "file": "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md"
+                "file": "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md"
               }
             }
           }
@@ -156,17 +192,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c232a30f2088278",
+  "active": "0bb9553d3c54d4d7",
   "lastOpenFiles": [
-    "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
     "develop/React/react-router/router-6.4/react-router-6.4-practice：使用defer＋Await ＋ Suspense 方式來優化資料載入速度.md",
+    "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
+    "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現404網頁.md",
     "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
     "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
     "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md",
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
-    "develop/React/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md",
-    "inbox/react useEffect：當元件處於mounting時，就會建立對應effect hook函式物件來綁定在該元件，在發生unmount 就會移除舊有effect.md"
+    "develop/React/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md"
   ]
 }
