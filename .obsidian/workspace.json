@@ -94,8 +94,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "91323f7d2558d56f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.9"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "c21e55e5521d71fb",
@@ -270,7 +281,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06c444b9aac73384",
+  "active": "91323f7d2558d56f",
   "lastOpenFiles": [
     "develop/React/React Mounting 階段是對應元件轉換成對應DOM結構插入至目前DOM Tree來渲染.md",
     "develop/React/React：使用useState 來管理多個狀態的潛在問題會容易衍生難以控管、維護狀態且bug眾多的代碼.md",
