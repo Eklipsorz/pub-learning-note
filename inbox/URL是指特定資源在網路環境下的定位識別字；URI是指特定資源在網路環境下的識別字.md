@@ -56,7 +56,7 @@
 
 
 #🧠 https:\/\/zh.wikipedia.org:443\/w\/index.php?title=隨機頁面 為例，哪一段是URL？哪一段才是URI ->->-> `https://zh.wikipedia.org:443/w/index.php為URL，而https://zh.wikipedia.org:443/w/index.php?title=隨機頁面為URI`
-<!--SR:!2022-12-25,45,248-->
+<!--SR:!2023-04-21,117,248-->
 
 
 

@@ -14,7 +14,7 @@ react deployment steps：
 ## 複習
 
 #🧠 react app 的部署步驟為何？ ->->-> `test code -> optimize code -> build app for production -> upload -> configure server`
-<!--SR:!2022-12-25,3,250-->
+<!--SR:!2023-01-04,10,250-->
 
 #🧠 react app 的部署步驟為何？其中的test code為何？ ->->-> `具體會執行測試程式來確保部署前的應用程式會是沒問題`
 <!--SR:!2022-12-25,3,250-->
