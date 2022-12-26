@@ -150,13 +150,13 @@ submit
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的添加Prompt元件來當作警告訊息來阻擋和其Prompt元件必須要使用者是正輸入表單的情況下來阻擋URL Navigation，如何做？prompt程式碼會是什麼 ->->-> `使用react-router-dom所提供的prompt元件、根據Prompt的when是否true來啟用prompt來阻擋，若form發生focus事件就為true；反之就為false。若呈現prompt就以Are you sure這訊息來表示。<Prompt when={isEntering} message={(location) => 'Are you sure??'} />`
 <!--SR:!2023-01-05,13,230-->
 
-#🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，如何實現？->->-> `在提交按鈕的點擊事件添加狀態更新為false`
-<!--SR:!2022-12-26,27,250-->
+#🧠 React-router-dom：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，如何在prompt實現？->->-> `在提交按鈕的點擊事件添加狀態更新為false`
+<!--SR:!2023-01-10,15,230-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，以下為程式碼，請解釋為何可以實現 https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/17-preventing-unwanted-route-transitions/src/components/quotes/QuoteForm.js  ->->-> `在這裡按鈕發生點擊後，必須要執行完對應事件處理A才會轉遞submit信號至表格上，其中事件處理A會要求更新false的狀態，在這裡下一個會執行的事件處理會是表格的提交事件，而在這裡由於事件處理A要做完自己的處理後才傳遞submit信號才能做表格的提交事件處理，過程中的狀態更新會因為 **每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染** 而先在傳遞submit信號之前就處理狀態更新和渲染 。之後表格接收到submit信號並執行提交事件時，會是以最新渲染內容來執行目前事件處理，而表格提交事件處理會是從prompt所在的頁面跳轉至quotes頁面，然而prompt的when屬性是false，所以並不會以prompt來阻止，若沒在submit信號之前處理的話，那麼就會因為ture而被阻止。`
 <!--SR:!2023-02-23,63,250-->
 
-#🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，以下為程式碼 https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/17-preventing-unwanted-route-transitions/src/components/quotes/QuoteForm.js 這主要能實現歸功於?(batching、最後一行、轉遞順序) ->->-> `- 每個事件處理都各自處理自己的batching - 每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染 - submit信號傳遞要等到按鈕點擊事件完成後才轉遞`
+#🧠 React-router-dom：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，以下為程式碼 https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/17-preventing-unwanted-route-transitions/src/components/quotes/QuoteForm.js 這主要能實現歸功於?(batching、最後一行、轉遞順序) ->->-> `- 每個事件處理都各自處理自己的batching - 每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染 - submit信號傳遞要等到按鈕點擊事件完成後才轉遞`
 <!--SR:!2023-02-20,61,250-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，以下為程式碼 https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/17-preventing-unwanted-route-transitions/src/components/quotes/QuoteForm.js 這主要能實現歸功於? ->->-> `- 每個事件處理都各自處理自己的batching - 每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染 - submit信號傳遞要等到按鈕點擊事件完成後才轉遞`
