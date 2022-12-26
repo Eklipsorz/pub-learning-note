@@ -9,10 +9,10 @@
 > -   fault tolerance : The ability of software to withstand (and recover) from component, or environmental, failure.
 > -   recoverability : Ability to bring back a failed system to full operation, including data and network connections.
 
-
+[[@KeKaoDuWeiJiBaiKeZiYouDeBaiKeQuanShu]]
 > 可靠度（英語：Reliability），指產品在規定的條件下和規定的時間內，無差錯地完成規定任務的概率
 
-
+[[@RuanTiKeKaoXingRuanTiKeKaoXingYingWenMingChengsoftware]]
 > 軟體可靠性（英文名稱software reliability），計算機術語，指在規定的條件下和規定的時間內，軟體不引起系統故障的能力。軟體可靠性不但與軟體存在差錯有關，而且與系統輸入和系統使用有關。1983年美國IEEE計算機學會對“軟體可靠性”作出了明確定義，此後該定義被美國標準化研究所接受為國家標準，1989年中國也接受該定義為國家標準。
 
 
@@ -24,7 +24,10 @@
 
 
 重點：
-- Reliability 泛指著
+- Reliability 泛指著著特定軟體的可靠性，定義分別為為：
+	- 在規定條件下和規定的時間內，軟體不引起系統失效的機率 
+	- 在規定條件下和規定的時間內，軟體能夠得到正常功能結果的能力
+- 具體會以下列指令來衡量
 	- maturity ：是指特定應用程式所產生錯誤之頻率
 	- fault tolerance：是指特定應用程式承受故障並從中恢復正常功能的能力
 	- recoverability：能夠將故障的系統還原至該系統能夠完整提供功能和服務的能力
@@ -71,3 +74,5 @@ Tags:
 Links:
 References:
 [[@keesdijkAnswerAreTerms2012]]
+[[@KeKaoDuWeiJiBaiKeZiYouDeBaiKeQuanShu]]
+[[@RuanTiKeKaoXingRuanTiKeKaoXingYingWenMingChengsoftware]]
