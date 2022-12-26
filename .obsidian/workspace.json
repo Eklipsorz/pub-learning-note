@@ -4,60 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "2067dd7ffc906bce",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0c232a30f2088278",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "96929c210593d767",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "abcff79f9b626bf3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-6.4-practice：使用defer＋Await ＋ Suspense 方式來優化資料載入速度.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ee6768f8afe21093",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "acaa15e2e196f00a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "62e4af106bb500bb",
         "type": "tabs",
         "children": [
