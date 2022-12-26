@@ -114,7 +114,7 @@ export default NewQuote;
 
 
 #🧠 programmatic navigation 是以編碼的手段來直接將使用者導向至特定頁面，手段通常是什麼？ ->->-> `使用history API或者操縱history的API`
-<!--SR:!2022-12-26,28,250-->
+<!--SR:!2023-03-09,73,250-->
 
 
 #🧠 react-router-dom ：useHistory是什麼樣的hook ->->-> `專門回傳一個history 物件，該物件由另一個第三方而製成的history 物件，可藉由它來操縱瀏覽器的瀏覽紀錄`
@@ -164,7 +164,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack來調整瀏覽器時，是否可以回到原本的畫面來說，會是什麼？ ->->-> `前者可以；後者不行，由於網址會被取代掉`
-<!--SR:!2022-12-26,28,250-->
+<!--SR:!2023-03-10,74,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別，對於 使用stack的方式： ->->-> `前者是直接增加網址在最上面；後者則是將網址取代最上面`
