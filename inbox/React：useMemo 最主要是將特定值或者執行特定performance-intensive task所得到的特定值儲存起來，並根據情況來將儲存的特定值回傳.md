@@ -180,7 +180,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 適用場景為->->-> `經由複雜計算才能夠獲取到的內容，或者執行performance-intensive才能獲得的內容、props以物件為內容的元件並納入使用memo`
-<!--SR:!2022-12-26,25,250-->
+<!--SR:!2023-03-02,66,250-->
 
 
 #🧠 React useMemo 適用場景為 props以物件為內容的元件並納入使用memo，為什麼？ ->->-> `由於物件會因為渲染函式而重造並得到不同的記憶體位址，而無法正常使用memo的功能`
