@@ -48,11 +48,11 @@ Styled-Components 是 CSS-in-JS 概念的實現；CSS modules 則不是CSS-in-JS
 <!--SR:!2023-06-12,174,250-->
 
 #🧠 Styled-Components 和 CSS modules 之間的不同點為何？拿JS和樣式體系來說吧 ->->-> `Styled-Components 是將CSS原生語法納入至JS上，並不會區分JS語法體系和CSS語法體系、 CSS modules 是允許區分JS語法體系和CSS語法體系`
-<!--SR:!2022-12-26,72,250-->
+<!--SR:!2023-07-03,189,250-->
 
 
 #🧠 Styled-Components 和 CSS modules 之間的不同點為何？拿css-preprocessor 來說吧 ->->-> `Styled-Components 由於是直接將CSS原生語法納入至JS，對於產出CSS原生語法的CSS preprocessor本身語法沒辦法全面性支援；CSS modules 是允許區分JS語法體系和CSS語法體系，所以CSS部分可以採用css preprocessor 來產生的CSS`
-<!--SR:!2022-12-26,72,250-->
+<!--SR:!2023-07-02,188,250-->
 
 
 ---

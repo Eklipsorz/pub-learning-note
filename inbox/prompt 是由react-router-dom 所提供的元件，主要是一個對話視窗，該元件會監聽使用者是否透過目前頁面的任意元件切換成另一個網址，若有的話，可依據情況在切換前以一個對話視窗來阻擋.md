@@ -93,7 +93,7 @@
 
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會是什麼型別？做什麼？？  ->->-> `字串或者function， 主要是指定prompt的主體訊息是什麼`
-<!--SR:!2022-12-26,27,250-->
+<!--SR:!2023-03-07,71,250-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會採用function會是什麼？回傳什麼？ ->->-> ` location 是指使用者當前要跳轉的頁面位置、 action是指使用者當前對於瀏覽紀錄的操作是什麼。(location, action) => {}，會回傳字串或者true `
 <!--SR:!2023-02-27,66,250-->
