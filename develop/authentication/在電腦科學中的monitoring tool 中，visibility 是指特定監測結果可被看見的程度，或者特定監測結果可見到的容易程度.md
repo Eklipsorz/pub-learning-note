@@ -8,7 +8,7 @@
 
 
 重點：
-- 在monitoring environment中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度
+- 在電腦科學中的monitoring tool 中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度
 
 
 ### visibility 命名緣由
@@ -23,9 +23,9 @@
 
 ## 複習
 
-#🧠 Question :: ->->-> ``
+#🧠 visibility 命名緣由 ->->-> `visiblity 是看見事物的清楚程度 或者 特定資訊可被看見的程度 或者 特定資訊可見到的容易程度`
 
-#🧠 Question :: ->->-> ``
+#🧠 在電腦科學中的monitoring tool 中，visibility 會是指什麼？ ->->-> `在monitoring environment中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度`
 
 
 

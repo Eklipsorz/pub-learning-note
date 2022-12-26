@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled 4.md",
+                "file": "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled 5.md",
+                "file": "develop/authentication/Untitled 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled 5.md",
+                "file": "develop/authentication/Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,7 +202,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled 5.md",
+                "file": "develop/authentication/Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,7 +225,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled 5.md"
+                "file": "develop/authentication/Untitled 3.md"
               }
             }
           }
@@ -249,7 +249,8 @@
   },
   "active": "17c50f594b6ce85d",
   "lastOpenFiles": [
-    "develop/authentication/Untitled 4.md",
+    "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
+    "develop/authentication/在電腦科學中的monitoring tool 中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度.md",
     "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 2.md",
     "develop/authentication/Untitled 1.md",
@@ -257,7 +258,6 @@
     "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
     "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
-    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md",
-    "inbox/prompt 是由react-router-dom 所提供的元件，主要是一個對話視窗，該元件會監聽使用者是否透過目前頁面的任意元件切換成另一個網址，若有的話，可依據情況在切換前以一個對話視窗來阻擋.md"
+    "develop/React/react-router/router-6.4/loader 本身函式會是定義在每個Route元件上的loader屬性，其作用為在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件.md"
   ]
 }
