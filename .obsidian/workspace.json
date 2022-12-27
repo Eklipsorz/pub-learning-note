@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled 2.md"
+                "file": "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md"
               }
             }
           }
@@ -223,7 +223,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b8a48d6d164e33a",
+  "active": "17c50f594b6ce85d",
   "lastOpenFiles": [
     "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md",
     "develop/authentication/Untitled 2.md",

@@ -64,33 +64,47 @@ scalability 改善：
 ## 複習
 
 #🧠 stateful 在電腦科學裡會是指什麼意思？ ->->-> `特定系統或者特定程式會擁有狀態且會拿狀態進行處理`
+<!--SR:!2022-12-30,3,250-->
 
 #🧠 statelessness在電腦科學裡會是指什麼意思？ ->->-> `是指特定系統或者特定程式不會擁有任何狀態/擁有極少狀態且也不會依賴狀態來處理/極少機會會依賴狀態來處理`
+<!--SR:!2022-12-31,3,250-->
 
 #🧠 若API Server本身是statelessness或者stateless，這對於伺服器來說會是指什麼意思？->->-> `該API Server並不會儲存每次處理客戶端請求時的內容作為狀態並且也不會拿該狀態來處理客戶端的後續請求`
+<!--SR:!2022-12-31,3,250-->
 
 #🧠 若API Server本身是stateful，這對於伺服器來說會是指什麼意思？->->-> `會是指該API Server會儲存每次處理客戶端請求的內容作為狀態並且拿狀態來處理客戶端的後續請求`
+<!--SR:!2022-12-31,3,250-->
 
 #🧠 若API Server本身是statelessness或者stateless，戶端和伺服器的狀態儲存/處理責任歸屬範圍為何？ ->->-> `伺服器不儲存不處理客戶端請求狀態；客戶端儲存兼處理請求狀態`
+<!--SR:!2022-12-30,3,250-->
 
 #🧠 若API Server本身是stateful，戶端和伺服器的狀態儲存/處理責任歸屬範圍為何？ ->->-> `伺服器儲存兼處理客戶端請求狀態；客戶端儲存兼處理客戶端請求狀態`
+<!--SR:!2022-12-30,3,250-->
 
 #🧠 API Server 一定要是statelessness嗎？為何？->->-> `不一定，主要要依據場景來調整`
+<!--SR:!2022-12-31,3,250-->
 
 #🧠 API Server 不一定要滿足statelessness，主要要依據場景來調整，其場景為何？ ->->-> `場景要求以下指標改善的話：- Visibility - Reliability - Scalability`
+<!--SR:!2022-12-30,3,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是哪些？ ->->-> `visibility、scalability、reliability`
+<!--SR:!2022-12-31,3,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善visibility? 具體是什麼？ ->->-> `因為負責監聽執行情況的程式不必發送N個請求來完整理解1個會依賴這N個請求的處理狀態之請求。造成這現象的原因會是指處理方本身不會依據狀態來處理，自然而然，處理方的處理結果就不用先發送前置請求來得到特定請求的處理結果`
+<!--SR:!2022-12-30,3,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，visibilty可改善是因為負責監聽執行情況的程式不必發送N個請求來完整理解1個會依賴這N個請求的處理狀態之請求，那麼具體是 ->->-> `造成這現象的原因會是指處理方本身不會依據狀態來處理，自然而然，處理方的處理結果就不用先發送前置請求來得到特定請求的處理結果`
+<!--SR:!2022-12-31,3,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善reliability?  ->->-> `因為狀態處理的業務邏輯和狀態管理全轉由客戶端來處理，處理方並不會處理，這使得處理方在獲得預期結果、承受故障、從故障恢復的能力提升`
+<!--SR:!2022-12-30,3,250-->
 
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善Scalability? ->->-> `因為狀態處理的業務邏輯和狀態管理全轉由客戶端來處理，處理方並不會處理，進而讓處理方不必考量狀態依賴問題來增加擴展的容易程度`
+<!--SR:!2022-12-30,3,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善Scalability? 那麼原本是stateful時，會有怎麼樣關於scalability的問題？->->-> `處理方得考量擴展後的客戶端請求狀態要存在哪個主機、轉由哪個主機來處理等問題來擴展`
+<!--SR:!2022-12-30,3,250-->
 
 
 
