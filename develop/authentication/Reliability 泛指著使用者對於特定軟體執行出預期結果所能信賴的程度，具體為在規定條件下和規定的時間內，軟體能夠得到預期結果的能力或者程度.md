@@ -32,13 +32,16 @@
 >-   **Fault tolerance -** Degree to which a system, product or component operates as intended despite the presence of hardware or software faults.
 >-   **Recoverability -** Degree to which, in the event of an interruption or a failure, a product or system can recover the data directly affected and re-establish the desired state of the system.
 
+
+
+
 重點：
-- Reliability 泛指著著使用者對於特定軟體執行出預期結果所能信賴的程度，具體定義分別為：
+- Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體定義分別為：
 	- 在規定條件下和規定的時間內，軟體不引起系統失效的機率 
 	- 在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度
 - 通常會以第二者來衡量，具體會分成：
 	- maturity ：是指特定應用程式在正常執行情況下所能達到預期結果的程度
-	- availability：是指特定應用程式
+	- availability：是指當使用方需要特定應用程式的結果時，使用者獲取其結果的容易程度。
 	- fault tolerance：是指特定應用程式承受故障並從中恢復正常功能的能力
 	- recoverability：能夠將故障的系統還原至該系統能夠完整提供功能和服務的能力
 	- fault toerance vs. recoverability：前者強調面對故障還能正常服務的能力；後者則是從故障狀態恢復到提供完整正常功能的狀態
@@ -104,7 +107,12 @@
 #🧠 Reliability 在電腦科學上會是指使用者對於特定軟體執行出預期結果所能信賴的程度，為何要額外分成	- 在規定條件下和規定的時間內，軟體不引起系統失效的機率  - 在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度？ ->->-> `為了很好地評估而量化`
 
 
-#🧠 Reliability 在電腦科學上會是指使用者對於特定軟體執行出預期結果所能信賴的程度，具體會是在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度，這項準則還能切分出 ->->-> ``
+#🧠 Reliability 在電腦科學上會是指使用者對於特定軟體執行出預期結果所能信賴的程度，具體會是在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度，這項準則還能切分出 ->->-> `maturity、availabilty、fault tolerance、recoverability`
+
+#🧠 Reliability 在電腦科學上會是指使用者對於特定軟體執行出預期結果所能信賴的程度，具體會是在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度，這項準則還能切分出maturity、availabilty、fault tolerance、recoverability，他們各為什麼？ ->->-> `	- maturity ：是指特定應用程式在正常執行情況下所能達到預期結果的程度 - availability：是指當使用方需要特定應用程式的結果時，使用者獲取其結果的容易程度。 - fault tolerance：是指特定應用程式承受故障並從中恢復正常功能的能力 - recoverability：能夠將故障的系統還原至該系統能夠完整提供功能和服務的能力`
+
+#🧠 fault toerance vs. recoverability 在電腦應用程式的效能評估之不同為？->->-> `前者強調面對故障還能正常服務的能力；後者則是從故障狀態恢復到提供完整正常功能的狀態`
+
 
 
 
