@@ -114,7 +114,10 @@ statelessness 是指特定系統或者特定程式不會擁有任何狀態/擁�
 ---
 Status: #🌱 
 Tags:
-[[Authentication]]
+[[Authentication]] [[Operating System]]
 Links:
+[[在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度]]
+[[Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度]]
+[[在電腦科學中的monitoring tool 中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度]]
 References:
 [[@RestHowUnderstand]]
