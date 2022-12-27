@@ -239,7 +239,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2023-01-11,68,250-->
 
 #🧠 React：useImperativeHandle 用途是什麼？ ->->-> `具體是要以指定一組以DOM原生渲染指令為主的處理來賦予至對應ref物件上的current屬性`
-<!--SR:!2022-12-27,38,250-->
+<!--SR:!2023-04-01,95,250-->
 
 
 #🧠 React：useImperativeHandle命名緣由源自於？ ->->-> `一組以DOM原生渲染指令為主的處理`
