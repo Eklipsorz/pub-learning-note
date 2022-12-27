@@ -32,13 +32,32 @@ statelessness 意思為 每個HTTP請求在狀態上都皆為獨立的，沒有�
 [[@RestHowUnderstand]]
 > Visibility is improved because a monitoring system does not have to look beyond a single request datum in order to determine the full nature of the request. Reliability is improved because it eases the task of recovering from partial failures. Scalability is improved because not having to store state between requests allows the server component to quickly free resources, and further simplifies implementation because the server doesn't have to manage resource usage across requests.
 
+visibility 改善：
+因為負責監聽執行情況的程式不必發送N個請求來完整理解1個會依賴這N個請求的處理狀態之請求。 造成這現象的原因會是指處理方本身不會依據狀態來處理
+
+reliability 改善：
+因為狀態處理全轉由客戶端來處理，處理方並不會處理，這使得處理方在獲得預期結果、承受故障、從故障恢復的能力提升
+
+scalability 改善：
+因為狀態處理全轉由客戶端來處理，處理方並不會處理，進而讓處理方不必考量狀態依賴問題來增加擴展的容易程度，比如處理方得考量擴展後的客戶端請求狀態要存在哪個主機、轉由哪個主機來處理等問題來擴展。
+
 
 重點：
-- API Server 不一定要滿足statelessness，依據場景來調整
-- 若場景是要求提升
+- stateful 是指特定系統或者特定程式會擁有狀態且會拿狀態進行處理
+- statelessness 是指特定系統或者特定程式不會擁有任何狀態/擁有極少狀態且也不會依賴狀態來處理/極少機會會依賴狀態來處理。
+	- 若API Server本身是statelessness或者stateless，會是指該API Server並不會儲存每次處理客戶端請求時的內容作為狀態並且也不會拿該狀態來處理客戶端的後續請求。
+	- 若API Server本身是stateful，會是指該API Server會儲存每次處理客戶端請求的內容作為狀態並且拿狀態來處理客戶端的後續請求
+- 客戶端和伺服器的狀態儲存/處理歸屬範圍：
+- 
+- API Server 不一定要滿足statelessness，主要要依據場景來調整
+- 場景要求以下指標改善的話
 	- Visibility
 	- Reliability 
 	- Scalability
+- 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善：
+	- visibility 改善： 因為負責監聽執行情況的程式不必發送N個請求來完整理解1個會依賴這N個請求的處理狀態之請求。 造成這現象的原因會是指處理方本身不會依據狀態來處理
+	- reliability 改善：因為狀態處理全轉由客戶端來處理，處理方並不會處理，這使得處理方在獲得預期結果、承受故障、從故障恢復的能力提升
+	- scalability 改善：因為狀態處理全轉由客戶端來處理，處理方並不會處理，進而讓處理方不必考量狀態依賴問題來增加擴展的容易程度，比如處理方得考量擴展後的客戶端請求狀態要存在哪個主機、轉由哪個主機來處理等問題來擴展。
 
 
 ## 複習
