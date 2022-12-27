@@ -22,13 +22,22 @@
 > （1）在規定的條件下，在規定的時間內，軟體不引起系統失效的機率；
 > （2）在規定的時間周期內，在所述條件下程式執行所要求的功能的能力；
 
+[[@Reliability]]
+> # Reliability
+
+> Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time. This characteristic is composed of the following sub-characteristics:
+
+> -   **Maturity -** Degree to which a system, product or component meets needs for reliability under normal operation.
+>-   **Availability -** Degree to which a system, product or component is operational and accessible when required for use.
+>-   **Fault tolerance -** Degree to which a system, product or component operates as intended despite the presence of hardware or software faults.
+>-   **Recoverability -** Degree to which, in the event of an interruption or a failure, a product or system can recover the data directly affected and re-establish the desired state of the system.
 
 重點：
 - Reliability 泛指著著特定軟體的可靠性，定義分別為為：
 	- 在規定條件下和規定的時間內，軟體不引起系統失效的機率 
-	- 在規定條件下和規定的時間內，軟體能夠得到正常功能結果的能力
-- 具體會以下列指令來衡量
-	- maturity ：是指特定應用程式所產生錯誤之頻率
+	- 在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度
+- 通常會以第二者來衡量，具體會分成：
+	- maturity ：是指特定應用程式在正常執行情況下所能達到預期結果的程度
 	- fault tolerance：是指特定應用程式承受故障並從中恢復正常功能的能力
 	- recoverability：能夠將故障的系統還原至該系統能夠完整提供功能和服務的能力
 	- fault toerance vs. recoverability：前者強調面對故障還能正常服務的能力；後者則是從故障狀態恢復到提供完整正常功能的狀態
@@ -74,5 +83,5 @@ Tags:
 Links:
 References:
 [[@keesdijkAnswerAreTerms2012]]
-[[@KeKaoDuWeiJiBaiKeZiYouDeBaiKeQuanShu]]
-[[@RuanTiKeKaoXingRuanTiKeKaoXingYingWenMingChengsoftware]]
+[[@KeKaoDuWeiJiBaiKeZiYouDeBaiKeQuanShu]][[@RuanTiKeKaoXingRuanTiKeKaoXingYingWenMingChengsoftware]]
+[[@Reliability]]
