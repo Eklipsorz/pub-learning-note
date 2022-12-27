@@ -133,7 +133,7 @@ export async function action({ request }) {
 ## 複習
 
 #🧠 request物件的formData方法會是什麼？ ->->-> `將request包裝的body部分擷取並轉換成以多個key-value pairs形式的資料形式，該形式為formData物件`
-<!--SR:!2022-12-27,9,250-->
+<!--SR:!2023-01-20,24,250-->
 
 #🧠 request物件的formData方法會回傳什麼？ ->->-> `回傳FormData物件`
 <!--SR:!2022-12-28,10,250-->
@@ -148,22 +148,22 @@ export async function action({ request }) {
 <!--SR:!2023-01-19,23,250-->
 
 #🧠 處理提交表格資料(action)的端點可以是什麼？ ->->-> `與表格所在端點一樣的端點，但http動詞會是與獲取表格畫面的http動詞會是不同、 與表格所在的端點不一樣的端點`
-<!--SR:!2022-12-27,9,250-->
+<!--SR:!2023-01-22,26,250-->
 
 #🧠 處理提交表格資料(action)的端點可以是與表格所在端點一樣的端點，為何可以？->->-> `具體可以設定http動詞為不同來分別做呈現表格和提交`
 <!--SR:!2022-12-28,10,250-->
 
 #🧠 處理提交表格資料(action)的端點可以是與表格所在端點一樣的端點，為何可以的原因為設定http動詞為不同來分別做呈現表格和提交，具體會將呈現表格和提交設定什麼？->->-> `端點一樣，	 - post 為 轉遞表格資料並處理 - get 為 獲取表格畫面`
-<!--SR:!2022-12-27,9,250-->
+<!--SR:!2023-01-17,21,250-->
 
 #🧠 useActionData 在react-router 中會是什麼hook?  ->->-> `主要會將React-Router最近一次執行action所獲得的結果回傳至元件使用`
-<!--SR:!2022-12-27,9,250-->
+<!--SR:!2023-01-21,25,250-->
 
 #🧠 react-router-dom v6.4：action 本身回傳error 和拋出 error 之間不同 處在哪？->->-> `使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router的錯誤處理給攔截並處理。`
 <!--SR:!2022-12-28,10,250-->
 
 #🧠 react-router-dom v6.4： 以下為action定義，請問以下的回傳error和拋出error之間的不同處在哪？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671114108/blog/react/react-router/v6/action-function/action-function-return-vs-throw_tlgvpy.png) ->->-> ``
-<!--SR:!2022-12-27,9,250-->
+<!--SR:!2023-01-18,22,250-->
 
 
 

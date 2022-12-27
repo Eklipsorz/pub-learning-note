@@ -137,7 +137,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-06-20,179,250-->
 
 #🧠 在styled-components套件中，使用styled.\<element\>\`\<template-literal\>\`  後回傳的是React Element，其渲染內容為  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662214991/blog/react/style/css-in-js/styled-react-element_exjrbf.png) 中是如何定義該元件所包含的子節點？->->-> `預設下會有依照要產生的元件種類來產生對應子節點來被包含，如<element> </element> 所包裹的props.children`
-<!--SR:!2022-12-27,73,250-->
+<!--SR:!2023-07-07,192,250-->
 
 #🧠 使用styled-components 套件所建立的元件，預設下會有什麼？ ->->-> `- 每個元件的對應渲染內容會包含props.children或者子節點 - 每個元件的對應渲染內容的元件屬性名稱(attribute)和屬性值(attribute)會依據元件標籤所用的屬性名稱(attribute)和屬性值(attribute)`
 <!--SR:!2023-04-28,144,250-->
@@ -150,7 +150,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-01-09,14,246-->
 
 #🧠 React：若要替styled-component增加attribute，如何增加？請用程式碼來表示必須使component以wrapper形式來增加這概念 ->->-> `<Wrapper attribute1=value1 attribute2=value2 ....> </Wrapper>`
-<!--SR:!2022-12-27,6,246-->
+<!--SR:!2023-01-11,15,246-->
 
 
 ---
