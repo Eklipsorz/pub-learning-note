@@ -14,18 +14,8 @@
 	- 相較於使用固定字串來做為access來說，較不容易偽造其access
 - 帶來的壞處就是：
 	- 需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上
-	- 
-  
-
-適用場景為：
-
-  
-
-> it works great if your backend, your server and your front-end server are tightly coupled
-
-> but
-stateless 這規則不一定適用於所有API Server ，只是stateless給出的利會大於弊。
-
+	- Monitoring System上的Visibility、Reliability、Scalability會不容易提升。
+[[API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景]]
 
 
 

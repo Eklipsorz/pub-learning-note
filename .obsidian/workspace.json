@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "console.log('hi'",
+                "query": "json token",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -108,8 +108,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,7 +198,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d71bf5372c67166c",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
     "develop/authentication/Untitled 1.md",
