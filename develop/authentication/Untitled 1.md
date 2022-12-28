@@ -1,47 +1,30 @@
 ## 描述
 
 
-
-### server-side session
-
-> server-side session： the server generates and store some unique identifier
-> store unique identifier on server, send some identifier to client
+除了server-side session為主的登入驗證外，還有authentication tokens可以實現登入驗證
 
 
-重點：
-- server-side session：伺服器會替客戶端請求的處理內容儲存並產生獨特識別碼來記錄，接著賦予識別碼給予客戶端，以便下一次連接互動時，可繼續以上一個請求的處理內容來處理接下來的請求處理
-- 應用：
-	- 登入驗證
--  以server-side session為基礎的登入驗證所帶來的好處就是：
-	- 相較於使用固定字串來做為access來說，較不容易偽造其access
-- 以server-side session為基礎的登入驗證所帶來的壞處就是：
-	- 需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上
-	- Monitoring System上的Visibility、Reliability、Scalability會不容易提升。
-[[API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景]]
+### authentication tokens 概念
 
+1. 伺服器比對使用者所輸入的credential和資料庫上的credential是否一樣，若一樣就做下一步；若不一樣就不做
 
-### 登入驗證：獲取對應permission 或者 access的 流程
+2. 建立permission token 給予客戶端 (token 的製作會使用hashing algorithm 和key 搭配credential來產生獨特且不可反解的hash 字串)
 
-1. 客戶端先輸入自己的credential並傳遞給伺服器做驗證
-2. 伺服器收到就從資料庫獲取對應使用者的credential來比對輸入的credential是否一樣，若一樣就做下一步；若不一樣就報錯
-3. 伺服器建立session 來儲存credential並將該session儲存至伺服器上的session store
-4. 伺服器在回傳session id給客戶端，作為代表permission或者access，
-5. 此時客戶端收到會存放在自己的cookie並標記對應domain和path來表示這資料屬於哪個domain和path。
+  
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672251336/blog/authentication/server-side-authentication-session-generate_wmtpwy.png)
+permission token的構成會是由使用者識別用的資料(如帳號)以及hash 字串，其hash字串會是由伺服器的hashing algorithm和伺服器儲存的key搭配識別用的資料來組合成獨特且不可反解的hash字串。
 
+  
 
+驗證時，客戶端會拿著token(含有識別用的資料和hash字串)來發送，伺服器收到就會拿識別用的字串和key、hashing algorithm來產生對應hash字串，並比對hash 字串和客戶端的token內存的內容是否一樣，若一樣就表示這token是由伺服器所產生，且未竄改；若不一樣就表示這token不是由伺服器產生，或者被篡改過的。
 
-### 登入驗證：利用permission 或者access來索要受保護的資源之流程
+  
 
-1. 客戶端發送請求時，會根據請求端點和伺服器來從客戶端的cookie找到相對應的資料夾雜在請求封包內，在這裡會是session id
-2. 伺服器收到請求時，就會拿session id去從對應session store找到對應的session，若找到就得到對應的credential；若找不到就報錯
-3. 伺服器就將請求回應傳送給客戶端
+一樣的話，就會依照識別用的資料取得對應使用者的完整資料。
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672251336/blog/authentication/server-side-authentication-session-compare_g9vnft.png)
+  
 
-
-
+接著客戶端可以在request 封包內夾雜著permission token來向後端伺服器索要受保護的資源
 
 
 ## 複習
@@ -52,8 +35,5 @@ Status: #🌱
 Tags:
 [[Authentication]]
 Links:
-[[API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景]]
-[[在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度]]
-[[Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度]]
-[[在電腦科學中的monitoring tool 中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度]]
+[[登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取]]
 References:

@@ -4,23 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "62e4af106bb500bb",
+        "id": "9be0cd0359550e12",
         "type": "tabs",
         "children": [
           {
-            "id": "73fde1c8dfe12917",
+            "id": "2043954622255bf7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
+                "file": "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "333a64ccbd78c34b",
+            "id": "95097715e024d600",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,24 +33,6 @@
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "e60cc8a28599ed6e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4b8a48d6d164e33a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -187,17 +169,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "333a64ccbd78c34b",
+  "active": "95097715e024d600",
   "lastOpenFiles": [
+    "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
+    "develop/authentication/Untitled 1.md",
+    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
+    "develop/authentication/server-side session：伺服器會替客戶端請求的處理內容儲存，以session形式來儲存在session store並產生獨特識別碼來對應其session，接著賦予識別碼給予客戶端，以便下一次連接互動時，可繼續以上一個請求的處理內容來處理接下來的請求處理.md",
     "develop/authentication/Untitled.md",
     "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
-    "develop/authentication/Untitled 1.md",
     "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
     "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
-    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md",
-    "develop/authentication/在電腦科學中的monitoring tool 中，visibility 是指特定監測結果可被看見的程度，或者特定監測結果可見到的容易程度.md",
-    "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
-    "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md"
+    "develop/JavaScript/this-binding/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md"
   ]
 }
