@@ -12,9 +12,9 @@
 - server-side session：伺服器會替客戶端請求的處理內容儲存並產生獨特識別碼來記錄，接著賦予識別碼給予客戶端，以便下一次連接互動時，可繼續以上一個請求的處理內容來處理接下來的請求處理
 - 應用：
 	- 登入驗證
--  以server-side s帶來的好處就是：
+-  以server-side session為基礎的登入驗證所帶來的好處就是：
 	- 相較於使用固定字串來做為access來說，較不容易偽造其access
-- 帶來的壞處就是：
+- 以server-side session為基礎的登入驗證所帶來的壞處就是：
 	- 需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上
 	- Monitoring System上的Visibility、Reliability、Scalability會不容易提升。
 [[API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景]]
