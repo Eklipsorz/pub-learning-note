@@ -9,13 +9,38 @@
 
 
 重點：
-- server-side session：每到驗證成功就在server產生session並存放對應使用者資料、接著賦予session id給予客戶端，客戶端在請求封包裡夾雜session id，當伺服器要驗證id就會透過id去找尋對應session，進而獲取進一步的資料和驗證。
--  帶來的好處就是：
+- server-side session：伺服器會替客戶端請求的處理內容儲存並產生獨特識別碼來記錄，接著賦予識別碼給予客戶端，以便下一次連接互動時，可繼續以上一個請求的處理內容來處理接下來的請求處理
+- 應用：
+	- 登入驗證
+-  以server-side s帶來的好處就是：
 	- 相較於使用固定字串來做為access來說，較不容易偽造其access
 - 帶來的壞處就是：
 	- 需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上
 	- Monitoring System上的Visibility、Reliability、Scalability會不容易提升。
 [[API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景]]
+
+
+### 登入驗證：獲取對應permission 或者 access的 流程
+
+1. 客戶端先輸入自己的credential並傳遞給伺服器做驗證
+2. 伺服器收到就從資料庫獲取對應使用者的credential來比對輸入的credential是否一樣，若一樣就做下一步；若不一樣就報錯
+3. 伺服器建立session 來儲存credential並將該session儲存至伺服器上的session store
+4. 伺服器在回傳session id給客戶端，作為代表permission或者access，
+5. 此時客戶端收到會存放在自己的cookie並標記對應domain和path來表示這資料屬於哪個domain和path。
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672251336/blog/authentication/server-side-authentication-session-generate_wmtpwy.png)
+
+
+
+### 登入驗證：利用permission 或者access來索要受保護的資源之流程
+
+1. 客戶端發送請求時，會根據請求端點和伺服器來從客戶端的cookie找到相對應的資料夾雜在請求封包內，在這裡會是session id
+2. 伺服器收到請求時，就會拿session id去從對應session store找到對應的session，若找到就得到對應的credential；若找不到就報錯
+3. 伺服器就將請求回應傳送給客戶端
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672251336/blog/authentication/server-side-authentication-session-compare_g9vnft.png)
+
+
 
 
 
