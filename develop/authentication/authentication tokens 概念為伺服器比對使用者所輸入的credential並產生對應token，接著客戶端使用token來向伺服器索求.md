@@ -77,4 +77,5 @@ Tags:
 [[Authentication]]
 Links:
 [[登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取]]
+[[登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源]]
 References:
