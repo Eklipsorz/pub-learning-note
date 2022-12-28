@@ -180,7 +180,7 @@ export default NewQuote;
 <!--SR:!2023-01-17,26,230-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中字串是什麼？具體是 ->->-> `具體會是由URL構成的字串`
-<!--SR:!2022-12-28,22,250-->
+<!--SR:!2023-02-25,59,250-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中物件是什麼？具體是夾雜什麼屬性的型別 ->->-> `具體會是夾雜路徑資訊的物件，包含著代表路徑端點的pathname、代表query string的search屬性`
 <!--SR:!2022-12-29,23,250-->
