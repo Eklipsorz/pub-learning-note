@@ -75,7 +75,7 @@ useNavigation：
 
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，資料包含導向狀態、導向的目的地、請求內的body部分，請問formData會是什麼？->->-> `導向操作所夾帶的body部分`
-<!--SR:!2022-12-29,10,250-->
+<!--SR:!2023-01-25,27,250-->
 
 
 #🧠 react-router-dom 6.4： Navigate vs. useNavigate vs useNavigation 之間差異 ->->-> `1. Navigate 是元件，主要從元件角度實現將使用者導向至指定頁面 2. useNavigate 是hook，主要以程式編碼來將使用者導向至ㄙ指定頁面，會回傳函式物件來進行導向 3. useNavigation 是hook，主要是回傳目前router所攔截到的navigation 操作之目前狀態資料`
