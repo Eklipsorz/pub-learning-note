@@ -222,7 +222,7 @@ useEffect(() => {
 
 
 #🧠 若以useReducer 所回傳的狀態為useEffect 的 dependency，請問可以如何運用useReducer的歸納關係來使用->->-> `1. 使用useReducer的整個狀態來做為useEffect 的執行依據、2. 使用useReducer能回傳完整狀態的一部分`
-<!--SR:!2022-12-29,60,250-->
+<!--SR:!2023-05-27,149,250-->
 
 #🧠 若以useReducer回傳的整份狀態作為useEffect的dependency，會有什麼潛在問題？ ->->-> `當針對需要關注的狀態來觸發的話：整個狀態下的所有子狀態只要透過dispatch來改變狀態，那麼每個子狀態都能夠觸發side effect，而不是針對需要關注的狀態來觸發，這會造成不必要的效能浪費`
 <!--SR:!2023-01-13,74,250-->
