@@ -53,10 +53,10 @@ useNavigation：
 ## 複習
 
 #🧠 若要確保一旦提交就不會有額外的提交內容，手段可以是什麼？ ->->-> `一旦提交就關閉提交按鈕，按鈕顯示submitting`
-<!--SR:!2022-12-29,10,250-->
+<!--SR:!2023-01-25,27,250-->
 
 #🧠 表單一旦提交時，表單元件還能呈現什麼樣子？為什麼？->->-> `顯示不能提交，確保處理部分是以當時提交內容為主`
-<!--SR:!2022-12-29,10,250-->
+<!--SR:!2023-01-24,26,250-->
 
 #🧠 react-router-dom v6.4： useNavigation是什麼用途的hook->->-> `主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料`
 <!--SR:!2023-01-16,20,250-->
@@ -68,7 +68,7 @@ useNavigation：
 <!--SR:!2022-12-31,4,230-->
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，資料包含導向狀態、導向的目的地、請求內的body部分，請問導向狀態有什麼？ ->->-> `1. idle：表示目前沒任何navigation請求要做 2. submitting：表示目前攔截到提交時的navigation操作並做著對應的action 3. loading：表示目前攔截到目前router正執行loader來準備資料來給予對應元件做渲染`
-<!--SR:!2022-12-29,10,250-->
+<!--SR:!2023-01-25,27,250-->
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，資料包含導向狀態、導向的目的地、請求內的body部分，請問location會是什麼？->->-> `指定導向的目的地`
 <!--SR:!2022-12-29,10,250-->
@@ -79,7 +79,7 @@ useNavigation：
 
 
 #🧠 react-router-dom 6.4： Navigate vs. useNavigate vs useNavigation 之間差異 ->->-> `1. Navigate 是元件，主要從元件角度實現將使用者導向至指定頁面 2. useNavigate 是hook，主要以程式編碼來將使用者導向至ㄙ指定頁面，會回傳函式物件來進行導向 3. useNavigation 是hook，主要是回傳目前router所攔截到的navigation 操作之目前狀態資料`
-<!--SR:!2022-12-29,10,250-->
+<!--SR:!2023-01-26,28,250-->
 
 #🧠  react-router-dom 6.4：useNavigate vs useNavigation 之間差異 ->->-> `1. useNavigate 是hook，主要以程式編碼來將使用者導向至ㄙ指定頁面，會回傳函式物件來進行導向 2. useNavigation 是hook，主要是回傳目前router所攔截到的navigation 操作之目前狀態資料`
 <!--SR:!2023-01-23,26,250-->

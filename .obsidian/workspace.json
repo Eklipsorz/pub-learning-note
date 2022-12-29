@@ -11,8 +11,12 @@
             "id": "2329d91699231bec",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md"
+              }
             }
           }
         ]
