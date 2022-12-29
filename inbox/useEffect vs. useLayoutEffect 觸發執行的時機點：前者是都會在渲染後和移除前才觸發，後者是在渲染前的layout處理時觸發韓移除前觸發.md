@@ -115,7 +115,7 @@
 <!--SR:!2023-02-15,62,250-->
 
 #🧠 useEffect 在class-based component中觸發執行的時機點為 ->->-> `	- mounting 階段下的componentDidMount - updating 階段下的componentDidUpdate - unmounting 階段下的componentWillUnmount`
-<!--SR:!2022-12-29,31,248-->
+<!--SR:!2023-03-19,80,248-->
 
 
 #🧠 useLayoutEffect 在class-based component中觸發執行的時機點為？ ->->-> `在實際DOM節點進行渲染過程中的Layout階段`
