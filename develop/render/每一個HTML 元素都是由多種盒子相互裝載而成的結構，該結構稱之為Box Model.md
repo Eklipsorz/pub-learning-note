@@ -71,7 +71,7 @@
 
 
 #🧠 CSS Box Model 是什麼結構？ ->->-> `是由多種Box組合在一起的結構，這些盒子都負責裝載特定內容，分別有Content Box、Padding Box、Border Box、Margin Box`
-<!--SR:!2022-12-30,74,250-->
+<!--SR:!2023-07-12,194,250-->
 
 #🧠 在CSS Box Model，Content Box 是什麼？ ->->-> `裝載HTML 元素的主要內容`
 <!--SR:!2023-02-28,106,250-->
@@ -104,7 +104,7 @@
 <!--SR:!2023-06-17,177,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``
-<!--SR:!2022-12-30,74,250-->
+<!--SR:!2023-07-12,194,250-->
 
 
 

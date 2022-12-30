@@ -51,10 +51,10 @@ get(name)
 
 
 #🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者處理特定URL上的query string`
-<!--SR:!2022-12-30,27,250-->
+<!--SR:!2023-03-12,72,250-->
 
 #🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做什麼？ ->->-> `該介面是專門協助開發者處理特定URL上的query string`
-<!--SR:!2022-12-30,28,250-->
+<!--SR:!2023-03-13,73,250-->
 
 #🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做協助開發者處理特定URL上的query string，具體會如何協助，流程是？->->-> `		1. 先找到其URL的query string部分 2. 擷取query string 3. 將query string按照key-value pair來轉換成對應物件來讓該介面很好操作`
 <!--SR:!2023-02-26,63,250-->

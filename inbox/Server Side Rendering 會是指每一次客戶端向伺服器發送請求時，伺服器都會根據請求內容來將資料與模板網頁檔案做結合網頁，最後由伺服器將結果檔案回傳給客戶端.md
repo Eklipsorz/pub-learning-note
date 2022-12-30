@@ -76,7 +76,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 ## 複習
 
 #🧠 Server-Side Rendering 是什麼？(務必講到事物)->->-> `指的是 在Client-Server情景下，由伺服器主要負責建立可於瀏覽器視覺呈現的事物，事物會是指代表畫面的實體webpage文件`
-<!--SR:!2022-12-30,40,250-->
+<!--SR:!2023-04-09,100,250-->
 
 #🧠 Server-Side Rendering 是什麼？->->-> `指的是 在Client-Server情景下，由伺服器主要負責建立可於瀏覽器視覺呈現的事物，事物會是指代表畫面的實體webpage文件`
 <!--SR:!2023-02-13,70,250-->

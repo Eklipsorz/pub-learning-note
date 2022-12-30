@@ -216,7 +216,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2023-01-18,41,230-->
 
 #🧠 當系統解析JSX語法，會做什麼樣的轉換？->->-> `自動載入react import React from 'react'; 2. 轉換成React object的建立&對應DOM方法來得到對應畫面，比如
-<!--SR:!2022-12-30,75,230-->
+<!--SR:!2023-06-28,180,230-->
 `React.createElement(...)`
 
 

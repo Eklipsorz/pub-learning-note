@@ -93,7 +93,7 @@ console.log(bar.a)
 
 
 #🧠 JS：constructor call 回傳什麼？ ->->-> `物件`
-<!--SR:!2022-12-30,49,250-->
+<!--SR:!2023-05-01,122,250-->
 
 #🧠 JS：實務上的constructor call 構成？->->-> `new operator + function call `
 <!--SR:!2023-03-16,90,230-->
