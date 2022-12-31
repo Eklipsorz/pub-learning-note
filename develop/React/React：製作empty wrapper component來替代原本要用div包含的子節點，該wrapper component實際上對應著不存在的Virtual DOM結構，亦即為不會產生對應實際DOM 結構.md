@@ -121,7 +121,7 @@ return (
 <!--SR:!2023-03-15,113,250-->
 
 #🧠 React：下面是定義如何製作empty wrapper component，請問為何行得通？盡可能以簡短兩句來說明。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-constructor_hlbw9x.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662815861/blog/react/react-element/wrapper-for-div-hell/fake-wrapper-component-usage_gb9sqf.png) ->->-> `1. 憑藉著wrapper轉換語法是合法而對應不到DOM節點 2. wrapper單純包含子節點來回傳所有子節點`
-<!--SR:!2022-12-31,72,250-->
+<!--SR:!2023-07-06,187,250-->
 
 
 
