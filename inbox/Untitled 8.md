@@ -53,6 +53,10 @@ export default App;
 
 
 
+> If you're using a data router like createBrowserRouter it is uncommon to use this component as it does not participate in data loading.
+
+> Whenever the location changes, \<Routes\> looks through all its child routes to find the best match and renders that branch of the UI. \<Route\> elements may be nested to indicate nested UI, which also correspond to nested URL paths. Parent routes render their child routes by rendering an \<Outlet\>.
+
 
 ## 複習
 
