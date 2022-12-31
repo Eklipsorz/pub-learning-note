@@ -141,7 +141,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2023-01-02,74,250-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
-<!--SR:!2022-12-31,72,250-->
+<!--SR:!2023-07-08,189,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-top-case_vzczxd.png) ->->-> `是設定top:value1`
 <!--SR:!2023-03-25,120,250-->

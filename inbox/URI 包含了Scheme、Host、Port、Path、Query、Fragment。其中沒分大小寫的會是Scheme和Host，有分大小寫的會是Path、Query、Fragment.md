@@ -100,7 +100,7 @@ URI包含了：
 <!--SR:!2023-01-02,28,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否區分大小寫->->-> `1. Path 2. Query 3. Fragment`
-<!--SR:!2022-12-31,26,250-->
+<!--SR:!2023-03-10,69,250-->
 
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否沒區分大小寫 ->->-> `1. Scheme 2. Host`
