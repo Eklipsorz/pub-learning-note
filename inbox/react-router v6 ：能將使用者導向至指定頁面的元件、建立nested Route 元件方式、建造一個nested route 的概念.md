@@ -159,7 +159,7 @@ xxxx 元件下的路由
 <!--SR:!2023-01-09,23,250-->
 
 #🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將nested Route元件安置在component，再讓component被parent route元件所包含，具體流程是什麼？->->-> `- parent route元件的path要添加/* - nested route元件的path設定，具體會以瀏覽器目前頁面所在的位置來定位`
-<!--SR:!2022-12-31,17,250-->
+<!--SR:!2023-02-15,46,250-->
 
 #🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將nested Route元件安置在component，再讓component被parent route元件所包含，其nested route元件的path定位方式會是以誰為主？？->->-> `其path定位方式一律是以瀏覽器目前頁面所在的位置來定位或者以主機所在的位置來定位，也就是維持著瀏覽器的relative url 和 absolute url規則來定位`
 <!--SR:!2023-01-09,23,250-->

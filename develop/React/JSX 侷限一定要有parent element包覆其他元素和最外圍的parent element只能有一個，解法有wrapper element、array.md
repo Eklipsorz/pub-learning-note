@@ -181,7 +181,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662810542/blog/react/react-element/JSX-React-Simple-Example_irtno2.png) ->->-> `return (React.createElement(Element1, {}, ...) React.createElement(Element2, {}, ...))`
-<!--SR:!2022-12-31,71,250-->
+<!--SR:!2023-07-05,186,250-->
 
 
 #🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以程式碼來表示 ->->-> `React.createElement(Element1, {...}, ....)`
