@@ -17,26 +17,14 @@
 細節：
 	- 元件最多只會挑選一個元件來渲染
 	- 當nested Route所對應的path滿足使用者所輸入的URL時，會同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染：
-		- 以 parent route的對應元件為主，然後再由 parent route的對應元件指定哪個位置要渲染nested Route的對應元件。
+		- 以 parent route的對應元件為主，然後在 parent route的對應元件使用Outlet元件指定哪個位置要渲染nested Route的對應元件
+			- 若沒指定Layout元件就不渲染nested Route的對應元件
+			- 若指定Layout元件就渲染nested Route的對應元件
 
 
+### 案例：nested route 無法渲染問題
 
-```
-import MainNavigation from '../components/MainNavigation';
-
-function RootLayout({ children }) {
-  return (
-    <>
-      <MainNavigation />
-      <main>{children}</main>
-    </>
-  );
-}
-
-export default RootLayout;
-```
-
-
+當使用者切換至/blog這URL，會挑選到身為nested route 的元件來將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染
 
 ```
 import {
@@ -75,6 +63,26 @@ export default App;
 ```
 
 
+然而在這裡的parent route所對應的元件是以子元件來渲染剩下nested route所對應的元件，然而他們嚴格來說並不算是children 元件，只是單純以RootLayout為主並添加其他元件來渲染。
+
+```
+import MainNavigation from '../components/MainNavigation';
+
+function RootLayout({ children }) {
+  return (
+    <>
+      <MainNavigation />
+      <main>{children}</main>
+    </>
+  );
+}
+
+export default RootLayout;
+```
+
+
+#### 解法
+只需要在RootLayout添加Outlet元件來指定就能解決
 
 ```
 import MainNavigation from '../components/MainNavigation';
@@ -102,5 +110,7 @@ export default RootLayout;
 ---
 Status: 
 Tags:
+[[React]]
 Links:
+[[react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念]]
 References:
