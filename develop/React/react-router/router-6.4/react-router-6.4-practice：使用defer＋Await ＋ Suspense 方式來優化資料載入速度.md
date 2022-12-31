@@ -103,7 +103,7 @@ export async function loader() {
 ## 複習
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-in-slow-loading分支，接著到DeferredBlogPosts.jsx解決以下問題：在瀏覽/blog對應元件前，會花費至少2秒鐘的資料載入時間才能對對應URL的元件進行渲染，請試著優化其載入速度->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-adv`
-<!--SR:!2022-12-31,6,250-->
+<!--SR:!2023-01-16,15,250-->
 
 
 
