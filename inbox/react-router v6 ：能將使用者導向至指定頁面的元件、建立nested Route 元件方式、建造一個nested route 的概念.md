@@ -172,7 +172,7 @@ xxxx 元件下的路由
 <!--SR:!2023-01-10,24,250-->
 
 #🧠 react-router-dom v6 ：將nested Route元件安置在component，再讓component被parent route元件所包含，具體流程中的parent route元件的path可以省略\/\*？為什麼？->->-> `不能，因爲parent route包含的後裔元件並不是route元件，沒辦法直接省略`
-<!--SR:!2022-12-31,16,250-->
+<!--SR:!2023-01-10,10,230-->
 
 #🧠 react-router-dom v6 ：建立nested Route 元件有兩個方式，其中之一是將parent route元件直接包裹nested route元件，並搭配Outlet元件，其nested route元件的path定位方式會是以誰為主？->->-> `其path定位方式是以目前所處的Parent Route元件所擁有的path來定位`
 <!--SR:!2023-01-11,25,250-->
