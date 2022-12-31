@@ -13,10 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cb57b650bfb02d7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e27f150b5b3ba523",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -65,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md"
               }
             }
           }
@@ -157,8 +172,8 @@
   },
   "active": "5cbc3b5b3badbcef",
   "lastOpenFiles": [
+    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染，以 parent route的對應元件為主，然後在 parent route的對應元件使用Outlet元件指定.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
-    "inbox/Untitled 8.md",
     "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
     "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
     "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
