@@ -207,11 +207,11 @@ suspense
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children會是什麼形式和作用？？->->-> `形式為JSX Element或者會回傳JSX Element 或者 函式物件。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染`
-<!--SR:!2023-01-01,9,250-->
+<!--SR:!2023-01-23,22,250-->
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是JSX Element，會是什麼？ ->->-> `當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren的JSX Element來渲染`
-<!--SR:!2023-01-01,9,250-->
+<!--SR:!2023-01-25,24,250-->
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是函式物件，會是什麼？ 會回傳什麼？->->-> `若是函式物件的話，其引數會是該resolved的結果值，回傳對應JSX Element`
