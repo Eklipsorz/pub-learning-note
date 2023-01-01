@@ -105,7 +105,7 @@
 <!--SR:!2023-01-01,3,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問後者具體為何？:->->-> `憑藉著從Get access/permissionㄐ獲取到的access或者permission來向伺服器所求被保護的資料，伺服器收到會驗證access或者permission的合法性，若合法就允許存取；若不合法就不允許存取`
-<!--SR:!2023-01-01,3,250-->
+<!--SR:!2023-01-11,10,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請舉例來說明前者 ->->-> `認證方式通常會是使用帳號密碼來作為credential 證明自己是合法使用者的資料，若是的話，會事先將合法的帳號密碼儲存在後端伺服器或者資料庫來方便驗證使用者所輸入的帳密是否一致，一致就給予代表access或者permission的資料；不一致就報錯`
 <!--SR:!2023-01-01,3,250-->
@@ -119,7 +119,7 @@
 <!--SR:!2023-01-01,3,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，access/permission是什麼意思？ ->->-> `作為存取受保護資源的權力依據`
-<!--SR:!2023-01-01,2,230-->
+<!--SR:!2023-01-06,5,230-->
 
 #🧠 authentication的access/permission產生：為何出現以下這兩個方法- server-side session中的session id - authentication token中的token ->->-> `主要是為了檢測客戶端的資料被人惡意竄改而假冒他人`
 <!--SR:!2023-01-01,3,250-->
