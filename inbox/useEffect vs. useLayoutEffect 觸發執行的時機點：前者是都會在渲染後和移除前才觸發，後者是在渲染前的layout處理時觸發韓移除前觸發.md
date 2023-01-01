@@ -87,7 +87,7 @@
 
 
 #🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是什麼？->->-> `執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)`
-<!--SR:!2023-01-01,34,248-->
+<!--SR:!2023-03-28,86,248-->
 
 #🧠 React下的產出Virtaul DOM 的 render 至以Real DOM渲染畫面的流程 會是執行對應元件render function、比對virtual dom之間差異、以差異來轉換成real dom並更新現在的real dom tree、瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)，其中layout、paint會是什麼？ ->->-> `利用現在的樹狀結構來計算網頁元件實際會在頁面上擺放的位置、大小以及如何擺放、繪製過程會開始依據渲染樹指定的樣式來對頁面上的pixel來呈現每個元件的真實面貌`
 <!--SR:!2023-01-06,34,230-->
