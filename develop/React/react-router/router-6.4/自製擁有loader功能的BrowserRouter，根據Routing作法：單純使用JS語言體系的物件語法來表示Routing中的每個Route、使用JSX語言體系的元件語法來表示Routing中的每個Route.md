@@ -217,7 +217,7 @@ export default RootLayout;
 <!--SR:!2023-01-06,17,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，那麼它屬於？？ ->->-> `屬於react-router-dom函式庫中的函式`
-<!--SR:!2023-01-01,13,248-->
+<!--SR:!2023-02-05,35,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是什麼？ ->->-> `const router = createBrowserRouter(paths)`
 <!--SR:!2023-01-05,16,248-->

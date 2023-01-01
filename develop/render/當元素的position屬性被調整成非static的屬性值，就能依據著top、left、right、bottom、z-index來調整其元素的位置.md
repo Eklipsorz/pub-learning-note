@@ -97,7 +97,7 @@ position: sticky;
 
 
 #🧠 positioned element 是什麼->->-> `在CSS中，poitioned element  會是指該元素是可受到top、bottom、left、right、z-index這五種屬性值來調整其位置`
-<!--SR:!2023-01-01,74,250-->
+<!--SR:!2023-07-10,190,250-->
 
 #🧠 positioned element 是指該元素是可受到top、bottom、left、right這四種屬性值來調整其位置，具體是什麼？ ->->-> `通常會是指帶有poition：relative | absolute | fixed | sticky 的元素`
 <!--SR:!2023-01-15,75,230-->
@@ -122,7 +122,7 @@ position: sticky;
 <!--SR:!2023-01-01,74,250-->
 
 #🧠 CSS：z-index屬性會運用在哪個地方 ->->-> `多個元素呈現上重疊在一起的時候`
-<!--SR:!2023-01-01,74,250-->
+<!--SR:!2023-07-14,194,250-->
 
 #🧠 在多個元素呈現上重疊在一起的時候，z-index大小會如何控制呈現元素在深度這維度下的位置？->->-> `z-index數值越大的元素就越先呈現；其中z-index數值越小的元素就越後呈現`
 <!--SR:!2023-06-17,173,250-->

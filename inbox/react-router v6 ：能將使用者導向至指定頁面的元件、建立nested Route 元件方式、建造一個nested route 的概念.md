@@ -209,7 +209,7 @@ xxxx 元件下的路由
 <!--SR:!2023-01-11,25,250-->
 
 #🧠 react-router-dom v6：建造一個nested route 的概念為何？其中的替parent Route元件的path設定fuzzy match，具體為何？ ->->-> `由於每個Route的path為exact match，得設定成fuzzy match才能透過nested Route所設定的path值瀏覽到nested 元件和對應的路由設定`
-<!--SR:!2023-01-01,17,250-->
+<!--SR:!2023-02-17,47,250-->
 
 #🧠  react-router-dom v6：建造一個nested route 的概念為何？其中的替parent Route元件的path設定fuzzy match，具體實現為啥是設定fuzzy match ->->-> `由於每個Route的path為exact match，得設定成fuzzy match才能透過nested Route所設定的path值瀏覽到nested 元件和對應的路由設定`
 <!--SR:!2023-01-12,26,250-->

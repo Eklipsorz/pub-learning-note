@@ -23,7 +23,7 @@ working tree 會等同於 working directory
 ## 複習
 
 #🧠 working directory 和 working tree有什麼差別？ ->->-> `並不差別，兩者皆為一樣，只是tree特別以樹狀結構來強調著directory的結構`
-<!--SR:!2023-01-01,135,250-->
+<!--SR:!2023-12-05,338,250-->
 
 ---
 Status: #📥 

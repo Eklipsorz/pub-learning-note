@@ -102,7 +102,7 @@
 <!--SR:!2023-01-07,6,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問前者具體為何？ ->->-> `從特定認證方式輸入自己的credential來驗證，若驗證成功就獲取permission或者access；若驗證失敗就不允許獲取`
-<!--SR:!2023-01-01,3,250-->
+<!--SR:!2023-01-10,9,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問後者具體為何？:->->-> `憑藉著從Get access/permissionㄐ獲取到的access或者permission來向伺服器所求被保護的資料，伺服器收到會驗證access或者permission的合法性，若合法就允許存取；若不合法就不允許存取`
 <!--SR:!2023-01-11,10,250-->
@@ -111,12 +111,12 @@
 <!--SR:!2023-01-07,6,250-->
 
 #🧠 authentication 所採用的access/permission為何不能用固定字串和credential來表示？->->-> `很容易被人偽造身份`
-<!--SR:!2023-01-01,3,250-->
+<!--SR:!2023-01-09,8,250-->
 
 
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，能夠代表access/permission的事物會是什麼？ ->->-> `使用固定字串的回應、server-side session的session id、authentication token中的token`
-<!--SR:!2023-01-01,3,250-->
+<!--SR:!2023-01-11,10,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，access/permission是什麼意思？ ->->-> `作為存取受保護資源的權力依據`
 <!--SR:!2023-01-06,5,230-->

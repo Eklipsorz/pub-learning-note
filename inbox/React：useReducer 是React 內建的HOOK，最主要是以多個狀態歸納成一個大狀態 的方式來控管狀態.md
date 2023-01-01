@@ -308,7 +308,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的initialState, initFn 是什麼？用途是什麼？ 請先簡答 ->->-> `定義初始狀態、主要是定義如何設定初始值`
-<!--SR:!2023-01-01,67,250-->
+<!--SR:!2023-06-25,175,250-->
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的reducerFn 是什麼？用途是什麼？請先簡答 ->->-> `reducerFn 為 一個函式，具體會有兩個引數分別為prevState和action。用途為依據action指示的狀態更新請求內容來回傳新狀態、更新狀態、觸發渲染週期`
 <!--SR:!2023-01-07,70,250-->
