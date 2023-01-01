@@ -101,7 +101,7 @@
 
 
 #🧠 React：理論上useEffect 產生出的side effect 是在產生出Virtual DOM的render之後才執行，但沒有明確說之後是多久的事情，具體會是在什麼時候執行？ ->->-> `瀏覽器根據最新的DOM內容而渲染畫面 (layout、paint)之後執行`
-<!--SR:!2023-01-01,34,248-->
+<!--SR:!2023-03-29,87,248-->
 
 #🧠 React：useLayoutEffect 具體則是會在什麼時候執行->->-> `瀏覽器根據最新DOM內容而渲染畫面 (layout、paint)中的layout階段才執行`
 <!--SR:!2023-01-03,33,247-->
