@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "d950b7ecb279e9b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f90b9cf1de323d5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,15 +176,15 @@
   },
   "active": "22bc2e4a55310d0d",
   "lastOpenFiles": [
+    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
+    "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
     "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
     "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "inbox/await promise 會將後頭的多個任意語句全以promise.then來包裹住.md",
     "annotation/@AsyncFunctionJavaScriptMDN.md",
-    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
     "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
     "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
     "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染，以 parent route的對應元件為主，然後在 parent route的對應元件使用Outlet元件指定.md",
-    "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
-    "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md"
+    "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md"
   ]
 }
