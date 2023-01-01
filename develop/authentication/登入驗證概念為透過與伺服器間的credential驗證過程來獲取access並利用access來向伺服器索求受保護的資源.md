@@ -77,7 +77,7 @@
 ## 複習
 
 #🧠 authentication 命名緣由為何？ ->->-> `證明特定事物是正確、真的的過程`
-<!--SR:!2023-01-01,3,250-->
+<!--SR:!2023-01-10,9,250-->
 
 #🧠 credential 命名緣由為何？ ->->-> `用來證明合法使用者的資訊`
 <!--SR:!2023-01-10,9,250-->
@@ -122,7 +122,7 @@
 <!--SR:!2023-01-06,5,230-->
 
 #🧠 authentication的access/permission產生：為何出現以下這兩個方法- server-side session中的session id - authentication token中的token ->->-> `主要是為了檢測客戶端的資料被人惡意竄改而假冒他人`
-<!--SR:!2023-01-01,3,250-->
+<!--SR:!2023-01-08,7,250-->
 
 #🧠  authentication的access/permission產生：使用固定字串的回應、 server-side session中的session id、authentication token中的token，哪一個能解決若代表permission資料被其他惡意主機奪走？為何能解決？->->-> `都沒有，這些最主要面向於前端所儲存的資訊是否被人惡意竄改成其他人。`
 <!--SR:!2023-01-08,7,250-->

@@ -242,7 +242,7 @@ return defer({
 <!--SR:!2023-01-02,10,250-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為先渲染後發送請求，但仍是次優解，還有什麼解法？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> `	- 使用defer 來指定哪些本該要在loader的非同步任務是要推遲在render元件時執行 - 使用Await元件來包覆著被推遲的非同步任務 - Suspense元件包覆著Await元件，而Await元件則是定義著被推遲的任務內容如何執行、如何把請求回應轉送至目前所在、將回應結果渲染`
-<!--SR:!2023-01-01,9,250-->
+<!--SR:!2023-01-24,23,250-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，解決方案是採用defer、await、suspense 元件，那麼對於先渲染後發送有什麼改善點？？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> ` 資料索求請求並不會完全跟著其他任務排著隊輪流執行、抽離出來的代碼很容易從component和route進行切換`
 <!--SR:!2023-01-19,19,250-->

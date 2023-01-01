@@ -30,7 +30,7 @@ lazy loading & code splitting 適用場景為大型專案、擁有較多元件�
 ## 複習
 
 #🧠 react deployment中的optimize code目標為何？ ->->-> `效能提升`
-<!--SR:!2023-01-01,7,250-->
+<!--SR:!2023-01-19,18,250-->
 
 #🧠 react deployment中的optimize code目標為效能提升，具體手段為？ ->->-> `minify、refactor、memorized value、code spliting、lazy loading`
 <!--SR:!2023-01-03,9,250-->
