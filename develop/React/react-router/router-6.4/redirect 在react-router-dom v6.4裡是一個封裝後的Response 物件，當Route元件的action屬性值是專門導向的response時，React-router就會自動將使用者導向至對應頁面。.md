@@ -48,7 +48,7 @@ new Response(body, {
 <!--SR:!2023-01-11,19,250-->
 																													
 #🧠 react-router-dom v6.4：redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，其物件會是什麼？？ ->->-> ``
-<!--SR:!2023-01-02,8,230-->
+<!--SR:!2023-01-06,4,210-->
 
 #🧠 react-router-dom v6.4： Response 物件和 redirect 本身會直接讓使用者導向其頁面嗎？為什麼？->->-> `並不會，因為他們本身只是回應封包的物件`
 <!--SR:!2023-01-22,27,250-->

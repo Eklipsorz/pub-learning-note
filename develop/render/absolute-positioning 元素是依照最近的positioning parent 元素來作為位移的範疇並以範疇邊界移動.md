@@ -100,7 +100,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2023-06-22,176,250-->
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-top-case_y0kwrz.png): ->->-> `設定top為value1`
-<!--SR:!2023-01-02,74,250-->
+<!--SR:!2023-07-10,189,250-->
 
 #🧠 當對absolute-positioning 元素調整top、left、right、bottom屬性，怎麼調才能呈現如下，其中屬性值為正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662643905/blog/htmlPosition/absolute-position/absolute-positioning-bottom-case_evsu4h.png) ->->-> `設定bottom為value1`
 <!--SR:!2023-04-27,140,250-->
