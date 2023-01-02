@@ -125,10 +125,10 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2023-05-15,153,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
-<!--SR:!2023-01-02,74,250-->
+<!--SR:!2023-07-15,194,250-->
 
 #🧠 fixed positioning 的元件會從normal flow/flow layout移除，換言之，normal flow/flow layout會不考量fixed positionging來處理，比如不會做哪些事？ ->->-> `不會為了呈現它而特意留些空間`
-<!--SR:!2023-01-02,74,250-->
+<!--SR:!2023-07-06,185,250-->
 
 #🧠 fixed positioning 會以什麼為主來位移？->->-> `fixed positioning 是以viewport window 邊界為範圍來位移`
 <!--SR:!2023-04-27,143,250-->
@@ -138,7 +138,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 若瀏覽器有滾動軸，請問fixed positioning 還以什麼來位移？為什麼 ->->-> `以viewport來位移，因為滾動軸滾動本身就只是特定頁面內容，而那不是viewport的一部分。`
-<!--SR:!2023-01-02,74,250-->
+<!--SR:!2023-07-15,194,250-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
 <!--SR:!2023-07-08,189,250-->

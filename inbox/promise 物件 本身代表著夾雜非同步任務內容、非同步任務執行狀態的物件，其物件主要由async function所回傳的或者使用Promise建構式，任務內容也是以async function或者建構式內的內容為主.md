@@ -49,7 +49,7 @@ async function name([param[, param[, ... param]]]) {
 
 
 #🧠 javascript： 當將function設定為asynchronous  function時，該函式會有什麼功能->->-> `	- 以function內容來定義promise的任務內容並回傳promise物件 - 允許開發者在函式使用await語法糖`
-<!--SR:!2023-01-02,1,230-->
+<!--SR:!2023-01-04,2,230-->
 
 
 

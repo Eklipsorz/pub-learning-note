@@ -262,8 +262,8 @@ export default NewsletterSignup;
 #🧠 fetcher 會是什麼意思？ ->->-> ` fetcher 則是負責實現fetch這動作的一方`
 <!--SR:!2023-01-21,20,250-->
 
-#🧠 etch 本身是移動至特定地方並獲取東西的意思，fetcher 則是負責實現fetch這動作的一方，那麼react-router中的useFetcher會是指什麼？請用上述來解釋 ->->-> `在這就是指負責從特定端點對應的action/loader來獲取其回應的程式模組`
-<!--SR:!2023-01-02,9,250-->
+#🧠 fetch 本身是移動至特定地方並獲取東西的意思，fetcher 則是負責實現fetch這動作的一方，那麼react-router中的useFetcher會是指什麼？請用上述來解釋 ->->-> `在這就是指負責從特定端點對應的action/loader來獲取其回應的程式模組`
+<!--SR:!2023-01-28,26,250-->
 
 ---
 Status: #🌱 
