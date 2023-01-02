@@ -33,7 +33,7 @@ return (
 ## 複習
 
 #🧠  boolean expression && JSX element 在渲染層面下，什麼樣使用用法下會正常處理前面的語法？ ->->-> `boolean expression && JSX element 只會在render只回傳它、對著JSX元素{expression}替代expression本身才會正常作用`
-<!--SR:!2023-01-02,73,250-->
+<!--SR:!2023-07-03,182,250-->
 
 #🧠  boolean expression && JSX element 在渲染層面下，什麼樣使用用法下會正常處理前面的語法？請用程式碼來表示 ->->-> `return ( result && <ErrorModal onErrorModal={onErrorModalClickHandler}></ErrorModal>);`
 <!--SR:!2023-05-12,152,250-->
