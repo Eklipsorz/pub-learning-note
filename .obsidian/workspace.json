@@ -4,42 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "540e8f9b637a6469",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "22bc2e4a55310d0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f2987c1c13e5f092",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "44d796e1c2052a9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "0f729c9f77395d0d",
         "type": "tabs",
         "children": [
@@ -49,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "file": "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "outlet",
+                "query": "CIDR",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -119,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -140,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "file": "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+                "file": "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md"
+                "file": "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md"
               }
             }
           }
@@ -212,6 +175,8 @@
   },
   "active": "31051e56de9efea9",
   "lastOpenFiles": [
+    "develop/Network/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
+    "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
     "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
     "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
@@ -219,8 +184,6 @@
     "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
     "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "inbox/await promise 會將後頭的多個任意語句全以promise.then來包裹住.md",
-    "annotation/@AsyncFunctionJavaScriptMDN.md",
-    "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
-    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染，以 parent route的對應元件為主，然後在 parent route的對應元件使用Outlet元件指定.md"
+    "annotation/@AsyncFunctionJavaScriptMDN.md"
   ]
 }

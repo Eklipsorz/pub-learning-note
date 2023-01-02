@@ -143,7 +143,7 @@ console.log(age, newAge);
 <!--SR:!2023-02-13,80,249-->
 
 #🧠 JS的primitive data type 會有什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
-<!--SR:!2023-01-02,48,210-->
+<!--SR:!2023-01-29,27,190-->
 
 
 #🧠 NaN是屬於primitive data type嗎？為什麼？ ->->-> `NaN 是算primitive data type中的number`

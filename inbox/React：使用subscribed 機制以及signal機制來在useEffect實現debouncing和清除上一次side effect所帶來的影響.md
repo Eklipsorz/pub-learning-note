@@ -199,7 +199,7 @@ AbortController.abort()
 <!--SR:!2023-02-22,69,250-->
 
 #🧠 React： 以下為useEffect的實現代碼，請說明cleanup 函式如何正確執行？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `憑藉著函式物件擁有的closure，該closure會對應著當時非同步任務所採用的記憶體區塊，該記憶體區塊正是決定了非同步任務繼續執行的關鍵，所以只要改變該區塊內容就能讓非同步任務停止繼續執行`
-<!--SR:!2023-01-02,15,230-->
+<!--SR:!2023-02-10,39,230-->
 
 #🧠 React useEffect：紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容的潛在問題是什麼？->->-> `該方法只能阻止還沒正式執行的非同步任務，其餘較快執行的非同步任務無法被阻止。`
 <!--SR:!2023-03-01,73,250-->

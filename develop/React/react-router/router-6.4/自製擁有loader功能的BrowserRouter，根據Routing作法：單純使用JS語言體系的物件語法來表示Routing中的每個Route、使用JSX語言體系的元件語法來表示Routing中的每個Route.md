@@ -238,10 +238,10 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為允許開發者以JSX形式來定義Routing並建立對應的Router，具體是什麼？->->-> `具體是藉由將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件`
-<!--SR:!2023-01-02,14,248-->
+<!--SR:!2023-02-08,37,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為何？->->-> `createRoutesFromElements(JSX Element)`
-<!--SR:!2023-01-02,14,248-->
+<!--SR:!2023-02-07,36,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為`createRoutesFromElements(JSX Element)`，那麼JSX Element會是什麼？->->-> `其中JSX Element為JSX語言體系的JSX Element`
 <!--SR:!2023-01-11,20,250-->
