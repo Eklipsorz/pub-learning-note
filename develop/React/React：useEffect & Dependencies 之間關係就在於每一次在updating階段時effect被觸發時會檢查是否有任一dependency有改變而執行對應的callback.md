@@ -131,7 +131,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 
 
 #🧠 React：useEffect(callback, dependencies) 的dependency設定主要目的 ->->-> `Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段`
-<!--SR:!2023-01-03,35,249-->
+<!--SR:!2023-04-03,90,249-->
 
 #🧠 React：Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段，具體效能最佳化所要達到的目標會是什麼？  ->->-> `減少不必要的effect執行`
 <!--SR:!2023-01-21,47,249-->

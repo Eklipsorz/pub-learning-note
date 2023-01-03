@@ -182,7 +182,7 @@ console.log(member);
 
 
 #🧠 let name = 'John'; name.alias = 'Knight'; console.log(name.alias); JS執行起來會得到什麼？->->-> `由於name本身是stack記憶體區塊，本身無法在執行時增加屬性，所以會得到的值會是underfined`
-<!--SR:!2023-01-03,57,250-->
+<!--SR:!2023-05-20,137,250-->
 
 #🧠 let person = \{ name: 'John', age: 25 \}; let member = person; 請問person 和 member兩者的記憶體狀況和使用是如何？ ->->-> `兩者會是儲存同個物件的heap記憶體位址，所以在使用上，兩個識別字會對應相同的heap記憶體`
 <!--SR:!2023-01-27,73,250-->
