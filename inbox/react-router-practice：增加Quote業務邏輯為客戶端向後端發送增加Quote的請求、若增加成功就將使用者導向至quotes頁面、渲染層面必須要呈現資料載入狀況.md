@@ -86,7 +86,7 @@ export default NewQuote;
 <!--SR:!2023-01-22,19,190-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-add-quote分支，在那請使用useHttp和lib/api.js來在NewQuote頁面調用相關API來要求後端增加指定資料至後端資料庫，成功完成請求後請從NewQuote頁面導向至Quotes頁面 ->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/20-sending-getting-quote-data/src/pages/NewQuote.js`
-<!--SR:!2023-01-03,26,250-->
+<!--SR:!2023-03-10,66,250-->
 
 
 ---
