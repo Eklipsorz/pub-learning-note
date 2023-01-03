@@ -199,7 +199,7 @@ export default NewsletterSignup;
 <!--SR:!2023-01-03,10,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是什麼？ ->->-> `透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
-<!--SR:!2023-01-03,10,250-->
+<!--SR:!2023-01-31,28,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是透過該物件可以不必透過切換URL或者navigation來執行loader或者action，不必透過是什麼意思？或者如何實現 ->->-> `實際上是以path來綁定對應action、loader並用path來呼叫對應action、loader，如同函式呼叫，只是差別在於沒用導向來執行`
 <!--SR:!2023-01-22,21,250-->
@@ -209,11 +209,11 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有哪兩個？ ->->-> `fetcher.Form 和 fetcher.submit方法`
-<!--SR:!2023-01-03,10,250-->
+<!--SR:!2023-01-31,28,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，具體適用於什麼場景->->-> `是由使用者互動本身就引發fetch，就使用fetcher.Form、若是想由程式碼引發fetch，就使用fetch.submit`
-<!--SR:!2023-01-03,10,250-->
+<!--SR:!2023-01-31,28,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是什麼？->->-> ` <fetcher.Form method=method1 action=action1> ....</fetcher.Form>`
@@ -232,7 +232,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，如何指定method和action？ ->->-> `obj1 至 objN 的其中一個物件得有夾帶action屬性和method屬性的物件`
-<!--SR:!2023-01-03,10,250-->
+<!--SR:!2023-01-31,28,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，若沒在obj中設定acction和method，會正常執行嗎？為何 ->->-> `並不會，由於系統就是從obj中決定action和method，若不知道的話，就無法正常執行`
@@ -240,7 +240,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，假設要提交email資料以及指定method為post、action為newsletter，請問具體如何設定語法 ->->-> ``
-<!--SR:!2023-01-03,10,250-->
+<!--SR:!2023-01-31,28,250-->
 
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式有什麼樣的流程？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader 2. 替action、loader建立一個component來定義 3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理`
