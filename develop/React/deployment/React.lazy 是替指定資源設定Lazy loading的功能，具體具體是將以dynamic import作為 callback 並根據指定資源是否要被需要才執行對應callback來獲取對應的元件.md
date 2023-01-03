@@ -70,17 +70,16 @@ React.lazy：
 <!--SR:!2023-01-04,10,250-->
 
 #🧠 若要載入對應其被標記為lazy-loading的Component時，通常會遇到的問題是什麼？->->-> `由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件本身不存在而無法渲染，最後報錯`
-<!--SR:!2023-01-16,16,250-->
 
 
 #🧠 若要載入對應其被標記為lazy-loading的Component時，通常會遇到的問題是由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件本身不存在而無法渲染，最後報錯，那麼解法會是什麼？ ->->-> `使用Suspense元件來監測後裔元件是否能正常渲染並提供fallback畫面的元件`
-<!--SR:!2023-01-04,10,250-->
+
 
 #🧠 若要載入對應其被標記為lazy-loading的Component時，通常會遇到的問題是由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件本身不存在而無法渲染，最後報錯，那麼解法會是什麼？ 用程式碼舉例->->-> `<Suspense fallback={JSX Element}><Component /> </Suspense> 其中Component 為被標記使用lazy-loading的React Component`
 <!--SR:!2023-01-22,20,250-->
 
 #💻 請在/githubRepo/react-builder/react-deployment-practice領取題目並切換lazy-loading-all-routes分支，請將App.js上的Route上元件設定成lazy-loading  ->->-> ``
-<!--SR:!2023-01-03,9,250-->
+<!--SR:!2023-01-28,25,250-->
 
 
 ---
