@@ -285,7 +285,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空的話，不是指空陣列，會是指什麼？->->-> `若是沒設定任何dependency的話，就等同設定永遠改變的dependency`
-<!--SR:!2023-01-03,16,230-->
+<!--SR:!2023-02-12,40,230-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`

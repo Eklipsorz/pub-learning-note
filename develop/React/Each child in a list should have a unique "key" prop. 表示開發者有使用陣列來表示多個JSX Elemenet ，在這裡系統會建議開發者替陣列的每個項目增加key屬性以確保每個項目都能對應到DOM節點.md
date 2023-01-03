@@ -14,7 +14,7 @@
 ## 複習
 
 #🧠 若宿主環境下呈現 **Each child in a list should have a unique "key" prop.** 訊息，請問表示什麼？->->-> `開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會擔憂問題，而建議開發者替陣列的每個項目增加key屬性以確保每個項目都能對應到DOM節點`
-<!--SR:!2023-01-03,74,250-->
+<!--SR:!2023-07-15,193,250-->
 
 #🧠 若宿主環境下呈現 **Each child in a list should have a unique "key" prop.** 訊息 表示開發者有使用陣列來表示多個JSX Elemenet ，在這裡系統會擔憂以下問題，問題會是什麼？ ->->-> `- hooks 沒跟著資料一起調整DOM節點，- 每一次資料上的變更都要花O(N)，N是實際DOM的數量`
 <!--SR:!2023-07-12,190,250-->

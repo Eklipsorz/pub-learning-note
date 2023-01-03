@@ -176,7 +176,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 JSX 語法侷限有什麼？  ->->-> `一定要有最外圍的parent element包覆其他元素、最外圍的parent element只能有一個`
-<!--SR:!2023-01-03,74,250-->
+<!--SR:!2023-07-13,191,250-->
 
 
 
@@ -200,7 +200,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 
 
 #🧠 面對JSX 局限性問題，會有什麼方法來解決？其中若選擇使用利用React解析陣列的特性來使用陣列表示，還會遇到什麼潛在問題？ 遇到該如何解決->->-> `可能會遇到Each child in a list should have a unique "key" prop 這訊息，要解決的話，要對陣列的每個項目添加key屬性`
-<!--SR:!2023-01-03,74,250-->
+<!--SR:!2023-07-14,192,250-->
 
 #🧠 以下程式碼能夠正常執行嗎？不能的話，會是什麼問題？解決思維為何？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png) ->->-> `不能夠執行、最主要是沒有額外的parent element來包覆著ErrorModal和Card這兩個元件，解決思維則是建立一個新的parent element來包覆著、使用陣列來將他們包含`
 <!--SR:!2023-02-06,39,230-->
