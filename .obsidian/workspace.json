@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0f729c9f77395d0d",
+        "id": "9cd7bbce2b4cfe87",
         "type": "tabs",
         "children": [
           {
-            "id": "31051e56de9efea9",
+            "id": "dd0d8f756a2c3d54",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,34 +22,16 @@
         ]
       },
       {
-        "id": "3b434c15d40ca2ff",
+        "id": "e06f99cb249052c8",
         "type": "tabs",
         "children": [
           {
-            "id": "c7ed67d69518b144",
+            "id": "1af7005a926777f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "d950b7ecb279e9b0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f90b9cf1de323d5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
+                "file": "inbox/Untitled 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CIDR",
+                "query": "drilling",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,7 +83,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -121,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
+                "file": "inbox/Untitled 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
+                "file": "inbox/Untitled 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md"
+                "file": "inbox/Untitled 8.md"
               }
             }
           }
@@ -191,8 +174,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7ed67d69518b144",
+  "active": "1af7005a926777f2",
   "lastOpenFiles": [
+    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
+    "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
     "develop/Network/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
@@ -200,8 +185,6 @@
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
     "inbox/react-router-practice：使用query string來實現quotes排序功能.md",
     "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
-    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
-    "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
-    "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md"
+    "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md"
   ]
 }
