@@ -192,6 +192,6 @@ export default AuthForm;
 ---
 Status: #🌱 
 Tags:
-[[Firebase]] - [[Authentication]]
+[[Firebase]] - [[Authentication]] - [[React]]
 Links:
 References:
