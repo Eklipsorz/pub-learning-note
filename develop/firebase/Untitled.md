@@ -19,13 +19,13 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
 ##### 註冊端點使用案例
 
 ```
-  const submitHandler = (event) => {
+  const submitHandler = async (event) => {
     event.preventDefault();
     const enteredEmail = emailRef.current.value;
     const enteredPasssword = passwordRef.current.value;
     if (isLogin) {
     } else {
-      fetch(
+      const res = await fetch(
         'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]',
         {
           method: 'post',
@@ -36,14 +36,14 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
             returnSecureToken: true,
           }),
         },
-      ).then((res) => {
-        if (res.ok) {
-        } else {
-          return res.json((data) => {
-            console.log(data);
-          });
-        }
-      });
+      );
+
+      if (res.ok) {
+      } else {
+        const data = await res.json();
+        console.log(data)
+      }
+      console.log('successfully registered!!')
     }
   };
 ```
