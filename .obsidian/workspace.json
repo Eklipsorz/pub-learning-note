@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件或者props down.md",
+                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件.md",
                 "mode": "source",
                 "source": false
               }
@@ -41,12 +41,8 @@
             "id": "1af7005a926777f2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 8.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -116,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件.md"
               }
             }
           }
@@ -188,15 +184,15 @@
   },
   "active": "dd0d8f756a2c3d54",
   "lastOpenFiles": [
-    "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件或者props down.md",
-    "inbox/Untitled 8.md",
+    "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
+    "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它直接給予需要資料的元件.md",
+    "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，該行為會使得資料從來源元件放入洞口就能直通到目標元件這進行相關渲染和處理.md",
     "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
     "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/Network/CIDR 取代分類定址來實現子網域定義並彈性分配適當數量的IP給使用者.md",
     "develop/Network/CIDR 可以讓多個網域根據共同所擁有的序號來合併成另一個網域來代表多個網域.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
-    "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
-    "inbox/react-router-practice：使用query string來實現quotes排序功能.md"
+    "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md"
   ]
 }
