@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它給予需要資料的元件.md",
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
                 "mode": "source",
                 "source": false
               }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "drilling",
+                "query": "context",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -79,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它給予需要資料的元件.md",
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它給予需要資料的元件.md",
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它給予需要資料的元件.md"
+                "file": "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md"
               }
             }
           }
@@ -172,8 +171,8 @@
   },
   "active": "dd0d8f756a2c3d54",
   "lastOpenFiles": [
-    "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
     "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它給予需要資料的元件.md",
+    "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
     "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，該行為會使得資料從來源元件放入洞口就能直通到目標元件這進行相關渲染和處理.md",
     "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
     "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
