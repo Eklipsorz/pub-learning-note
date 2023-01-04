@@ -1,9 +1,8 @@
-## 描述
 
+## 描述
 
 ### Firebase Auth REST API
 1. firebase auth rest api 是一個簡單版的auth 認證後端伺服器，以REST風格來提供對應服務
-
 
 #### API 案例
 
@@ -15,10 +14,10 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
 
 
 
-
-##### 註冊端點使用案例
+### 註冊端點使用案例
  - 設定註冊請求
- ```
+
+```
  const res = await fetch(
         'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=xxx',
         {
@@ -30,7 +29,7 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
             returnSecureToken: true,
           }),
         },
-      );
+);
 ```
  - 註冊請求處理狀態-isLoading
  - 在表單提交事件設定isLoading
@@ -60,16 +59,7 @@ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
       console.log('successfully registered!!');
     }
 ```
-
 - 註冊失敗就顯示視窗來提示
-```
-if (res.ok) {
-} else {
-    const data = await res.json();
-    if (data && data.error && data.error.message) alert(data.error.message);
-}
-```
-- 根據註冊狀態isLoading來呈現註冊請求正在處理中
 ```
 return (
     <section className={classes.auth}>
@@ -103,7 +93,8 @@ return (
   );
 ```
 
-##### 完整代碼
+#### 完整代碼
+
 ```
 import { useState, useRef } from 'react';
 
@@ -183,17 +174,15 @@ const AuthForm = () => {
 
 export default AuthForm;
 ```
-
 ## 複習
 
 #💻 請到/githubRepo/react-builder/question-review/react-auth-question 領取題目並切換至build-registration-practice分支，請在/src/components/Auth下的AuthForm增加帳密註冊功能，請調用Firebase上的Authentication REST API來用 ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/03-showing-feedback`
 
-
-
-
 ---
 Status: #🌱 
 Tags:
-[[Firebase]] - [[Authentication]] - [[React]]
+[[React]] - [[Authentication]] - [[Firebase]]
 Links:
 References:
+
+

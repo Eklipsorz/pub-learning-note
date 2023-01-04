@@ -82,6 +82,7 @@ useEffect(() => {
 
 ## 複習
 
+
 #🧠 React：由於可以在class-based component的componentDidMount、componentDidUpdate、componentWillUnmount來實現useEffect的功能，我們可以說useEffect就是他們的語法糖嗎 ->->-> `並不能，兩者為獨立功能`
 <!--SR:!2023-02-02,53,250-->
 

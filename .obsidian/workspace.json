@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,19 +22,15 @@
         ]
       },
       {
-        "id": "e8ce4d7c4280d955",
+        "id": "5b2071af8824e36b",
         "type": "tabs",
         "children": [
           {
-            "id": "72246f0322cb8708",
+            "id": "865d7e13568f1210",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -103,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md"
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md"
               }
             }
           }
@@ -175,15 +172,15 @@
   },
   "active": "622823542e620692",
   "lastOpenFiles": [
-    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+    "develop/React/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+    "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
     "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
-    "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+    "develop/React/Untitled.md",
     "develop/React/class-based-component/useEffect 的運行模式可用compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md",
-    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
-    "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
-    "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md"
+    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md"
   ]
 }
