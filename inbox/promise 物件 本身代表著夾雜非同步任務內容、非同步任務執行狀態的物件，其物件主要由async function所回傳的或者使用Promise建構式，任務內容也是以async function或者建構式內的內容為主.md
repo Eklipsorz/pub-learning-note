@@ -41,7 +41,7 @@ async function name([param[, param[, ... param]]]) {
 <!--SR:!2023-01-04,3,250-->
 
 #🧠 javascript：async function vs. promise object 差異為何？ ->->-> `前者是函式本身主要是回傳promise物件的函式並定義非同步任務是什麼；後者則是實際以物件形式來執行對應非同步任務並回報執行狀態。`
-<!--SR:!2023-01-04,3,250-->
+<!--SR:!2023-01-13,9,250-->
 
 #🧠 javascript： 如何將function設定為asynchronous  function？ ->->-> `若function 前綴標記成async的話，就會使function構成async function`
 <!--SR:!2023-01-12,8,250-->
