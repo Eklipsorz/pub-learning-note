@@ -22,9 +22,9 @@ context 會有的狀態：
 	- 初始值：空字串
 2. isLoggedIn ：
 	- 型別：布林值
-	- 用途：若擁有任意token，就為true；若沒有任意token，就為false。主要讓元件從這狀態切換登入時或者未登入時的內容。
+	- 用途：若擁有任意token，就為true；若沒有任意token，就為false。主要讓元件了解目前狀態是否為登入或者未登入好切換內容
 	- 初始值：false
-4. 用來更改狀態的函式，如更改登入狀態的函式，login/logout
+3. 用來更改狀態的函式，如更改登入狀態的函式，login/logout
 
 ```
 import React from 'react';
@@ -93,7 +93,20 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示->->-> ``
 
+#🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中token的型別、用途、初始值為何？ ->->-> `	- 型別：字串 - 用途：從伺服器的登入驗證獲取出來的token - 初始值：空字串`
 
+#🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中token的型別、用途、初始值為何？ ->->-> `	- 型別：布林值 - 用途：若擁有任意token，就為true；若沒有任意token，就為false。主要讓元件了解目前狀態是否為登入或者未登入好切換內容 - 初始值：false`
+
+#🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中用來更改狀態的函式是為何？ ->->-> `login、logout`
+
+#🧠 在client-server間的authentication過程中獲取到toke之過程，isLoggedIn ：若擁有任意token，就為true；若沒有任意token，就為false這token對於使用者來說是合法的嗎？為什麼？ ->->-> `在這裡的任意token都為合法，因為取得任意token的唯一條件就是透過伺服器驗證成功並獲取到的token，所以只要不為null就為合法登入或者true；否則為未登入狀態或者false`
+
+
+#🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ ->->-> `利用permission/access來刷新目前介面`
+
+#🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ 利用permission/access來刷新目前介面，其中元件會是什麼？ ->->-> `navigation、header`
+
+#💻  請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件：AuthForm、MainNavigation ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/05-using-context-for-managing-auth-state`
 
 
 
@@ -102,4 +115,6 @@ Status: #🌱
 Tags:
 [[React]] - [[Authentication]]
 Links:
+[[Firebase Auth REST API + REACT 實現登入頁面]]
+[[Firebase Auth REST API + REACT 實現註冊頁面]]
 References:
