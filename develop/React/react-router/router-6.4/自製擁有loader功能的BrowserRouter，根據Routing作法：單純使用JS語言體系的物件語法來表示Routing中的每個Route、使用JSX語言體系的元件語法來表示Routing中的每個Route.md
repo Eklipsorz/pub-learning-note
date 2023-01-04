@@ -265,7 +265,7 @@ export default RootLayout;
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換至refactor-blogposts-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給blogposts-page對應元件來接收並渲染->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src`
-<!--SR:!2023-01-04,14,248-->
+<!--SR:!2023-02-12,39,248-->
 
 #🧠 請問以下JSX元素經過createRoutesFromElements轉換後，會是什麼樣的語法？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/js-route-with-loader-example-_fpms3k.png)`
 <!--SR:!2023-01-05,15,248-->
