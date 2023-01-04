@@ -125,6 +125,7 @@ useEffect(() => {
 <!--SR:!2023-03-04,74,250-->
 
 #🧠 React：componentDidUpdate(prevProps, prevState)的prevProps, prevState會是指什麼？ ->->-> `更新前的props資訊和更新前的state`
+<!--SR:!2023-01-07,3,250-->
 
 
 #🧠 componentDidMount、componentDidUpdate、componentWillUnmount 在正常情況下(mount->update->update->unmount)的執行次數會是如何 ->->-> `1、2、1`
