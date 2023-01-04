@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "c99bbcc7cabd53ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "158479e4027a4df8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+                "file": "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
+                "file": "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md"
+                "file": "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md"
               }
             }
           }
@@ -156,13 +174,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "622823542e620692",
+  "active": "158479e4027a4df8",
   "lastOpenFiles": [
+    "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
     "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md",
     "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
     "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
     "develop/authentication/在電腦科學中，scalability 是指當為了讓應用程式更能滿足需求而擴展硬體效能或者其他效能的情況下，特定電腦程式還能夠繼續正常執行的程度.md",
-    "develop/firebase/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md",
     "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
     "inbox/元件間的資料傳遞和狀態傳遞可使用prop drilling 或者 建構儲存所有狀態和資訊的共用元件並由它給予需要資料的元件.md",
     "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",

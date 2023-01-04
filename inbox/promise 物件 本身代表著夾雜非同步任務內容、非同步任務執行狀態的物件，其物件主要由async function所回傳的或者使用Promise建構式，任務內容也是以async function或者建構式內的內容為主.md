@@ -44,7 +44,7 @@ async function name([param[, param[, ... param]]]) {
 <!--SR:!2023-01-04,3,250-->
 
 #🧠 javascript： 如何將function設定為asynchronous  function？ ->->-> `若function 前綴標記成async的話，就會使function構成async function`
-<!--SR:!2023-01-04,3,250-->
+<!--SR:!2023-01-12,8,250-->
 
 
 

@@ -41,7 +41,7 @@ React.lazy：
 ## 複習
 
 #🧠 React.lazy的用途是什麼？ ->->-> `用途是替指定資源設定Lazy loading的功能`
-<!--SR:!2023-01-04,10,250-->
+<!--SR:!2023-02-01,28,250-->
 
 #🧠 React.lazy的用途是替指定資源設定Lazy loading的功能，具體是什麼？？ ->->-> `具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件`
 <!--SR:!2023-01-04,10,250-->
@@ -60,7 +60,7 @@ React.lazy：
 
 
 #🧠 React.lazy語法為`React.lazy(callback)`會回傳什麼？->->-> `回傳會是標示為lazy-loading的React Component`
-<!--SR:!2023-01-04,10,250-->
+<!--SR:!2023-02-01,28,250-->
 
 
 #🧠 React.lazy語法為`React.lazy(callback)`會回傳會是標示為lazy-loading的React Component，具體能像Component擺放嗎？執行到會如何？ ->->-> `可以， 當要載入對應其Component時，就會以非同步任務的形式來載入包含其資源的模組並獲取其中的對應Component。`
