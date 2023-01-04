@@ -53,7 +53,7 @@ React.lazy：
 <!--SR:!2023-01-23,21,250-->
 
 #🧠 React.lazy語法為`React.lazy(callback)`，那麼callback會是指什麼？ ->->-> `callback 為函式物件，得是回傳Resolve為包含特定資源/元件的模組的Promise 物件`
-<!--SR:!2023-01-04,10,250-->
+<!--SR:!2023-02-01,28,250-->
 
 #🧠 React.lazy語法為`React.lazy(callback)`，那麼callback該如何設定，舉例 ->->-> `React.lazy(() => import(....))`
 <!--SR:!2023-01-23,21,250-->
@@ -67,7 +67,7 @@ React.lazy：
 <!--SR:!2023-01-04,10,250-->
 
 #🧠 當React.lazy時就會替主要bundle做什麼？ ->->-> `透過webpack編譯時就會進行code spliting來分割好幾份模組`
-<!--SR:!2023-01-04,10,250-->
+<!--SR:!2023-02-01,28,250-->
 
 #🧠 若要載入對應其被標記為lazy-loading的Component時，通常會遇到的問題是什麼？->->-> `由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件本身不存在而無法渲染，最後報錯`
 
