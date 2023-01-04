@@ -45,7 +45,7 @@ useEffect(() => {
 	- 進入渲染週期，並執行到componentDidUpdate
 	- 執行effect內的觸發渲染函式
 	- .....
-其解法為使用componentDidUpdate內建函式所提供的preProps、prevState來比較更新前的資訊和更新後的資訊是否一致來實現useEffect的dependency功能
+其解法為使用componentDidUpdate內建函式所提供的prevProps、prevState來比較更新前的資訊和更新後的資訊是否一致來實現useEffect的dependency功能
 
 ##### 案例1：
 ```
@@ -124,6 +124,7 @@ useEffect(() => {
 #🧠  React：若要在class-based component 去實現useEffect會是什麼： 在class-based component 的實現在componentDidUpdate遇上無限循環問題，解法會是->->-> `在裡頭添加類似dependency的條件式就能解決`
 <!--SR:!2023-03-04,74,250-->
 
+#🧠 React：componentDidUpdate(prevProps, prevState)的prevProps, prevState會是指什麼？ ->->-> `更新前的props資訊和更新前的state`
 
 
 #🧠 componentDidMount、componentDidUpdate、componentWillUnmount 在正常情況下(mount->update->update->unmount)的執行次數會是如何 ->->-> `1、2、1`
