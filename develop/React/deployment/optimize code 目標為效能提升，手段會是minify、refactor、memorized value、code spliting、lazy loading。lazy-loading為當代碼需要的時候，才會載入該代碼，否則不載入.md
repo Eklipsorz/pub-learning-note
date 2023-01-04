@@ -25,7 +25,7 @@ lazy loading ：
 
 ### lazy loading & code splitting 適用場景
 
-lazy loading & code splitting 適用場景為大型專案、擁有較多元件的專案
+lazy loading & code splitting 適用場景為大型專案、擁有較多元件的專案、準備部署的專案
 
 ## 複習
 
@@ -55,7 +55,7 @@ lazy loading & code splitting 適用場景為大型專案、擁有較多元件�
 #🧠  react：會使用lazy-loading來部署是因爲客戶端不一定需要所有的服務，那麼具體會是什麼？？ ->->-> `客戶端所需要的畫面或者所做的互動不一定需要整個檔案的所有內容，或許只有一小部分會承擔這部分的業務`
 <!--SR:!2023-02-01,28,250-->
 
-#🧠  lazy loading & code splitting 適用場景為何？ ->->-> `lazy loading & code splitting 適用場景為大型專案、擁有較多元件的專案`
+#🧠  lazy loading & code splitting 適用場景為何？ ->->-> `lazy loading & code splitting 適用場景為大型專案、擁有較多元件的專案、準備部署的專案`
 <!--SR:!2023-02-01,28,250-->
 
 #🧠 lazy loading 需要splitting會為什麼？  ->->-> `將模組切分成好幾塊，以利根據所需來載入`
