@@ -35,7 +35,7 @@ async function name([param[, param[, ... param]]]) {
 ## 複習
 
 #🧠 promise 在JavaScript上是什麼？ ->->-> `promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件`
-<!--SR:!2023-01-04,3,250-->
+<!--SR:!2023-01-14,10,250-->
 
 #🧠 promise 在JavaScript上本身是代表著夾雜非同步任務內容、非同步任務執行狀態的物件，那麼物件是誰產生？任務內容又是誰決定 ->->-> `其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主。`
 <!--SR:!2023-01-13,9,250-->
@@ -49,7 +49,7 @@ async function name([param[, param[, ... param]]]) {
 
 
 #🧠 javascript： 當將function設定為asynchronous  function時，該函式會有什麼功能->->-> `	- 以function內容來定義promise的任務內容並回傳promise物件 - 允許開發者在函式使用await語法糖`
-<!--SR:!2023-01-04,2,230-->
+<!--SR:!2023-01-05,1,210-->
 
 
 
