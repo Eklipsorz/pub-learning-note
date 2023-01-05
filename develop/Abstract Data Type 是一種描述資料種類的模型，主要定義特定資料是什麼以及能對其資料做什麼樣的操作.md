@@ -49,9 +49,18 @@ isEmplty()
 isFull()
 ```
 
+### abstract 命名緣由為何
+
+> existing as an idea, feeling, or quality, not as a material object
+
+重點：
+- 以概念、毫無具體存在的
+
+
 ## 複習
 
-#🧠 Abstract Data Type 的 Abstract 是指什麼？ ->->-> `是強調Data Type會是以概念來描述，而非以實際的實現來描述`
+#🧠 Abstract Data Type 的 Abstract 是指什麼？ ->->-> `以概念、毫無具體存在的`
+<!--SR:!2023-01-08,3,250-->
 
 
 #🧠 Abstract Data Type 是什麼？ ->->-> `是一種對於資料種類的描述模型，其模型主要描述特定資料，描述特定資料的具體形式是什麼以及能對它做些什麼樣的操作，操作會是以函式來表示，主要會是表達函式回傳什麼、處理什麼、輸入是什麼`
