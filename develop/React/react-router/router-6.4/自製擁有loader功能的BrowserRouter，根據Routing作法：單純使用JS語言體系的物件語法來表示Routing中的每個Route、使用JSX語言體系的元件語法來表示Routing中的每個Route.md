@@ -220,7 +220,7 @@ export default RootLayout;
 <!--SR:!2023-02-05,35,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是什麼？ ->->-> `const router = createBrowserRouter(paths)`
-<!--SR:!2023-01-05,16,248-->
+<!--SR:!2023-02-14,40,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，那麼paths會是什麼？  ->->-> `引數為陣列，陣列中的每個項目皆為一個能代表Route元件的Route物件`
 <!--SR:!2023-01-06,17,248-->

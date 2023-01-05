@@ -372,7 +372,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-01-26,68,250-->
 
 #🧠 請問下面三個函式呼叫會是得到什麼this以及印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541020/blog/javascript/this-binding/explicit-binding/this-is-window-explicit-binding-example_ozqxrj.png)->->-> `this都為global object，而印出則是印出行星飛行，這是因為如果this設定為null或者undefined，那麼this就指向global object`
-<!--SR:!2023-01-05,53,250-->
+<!--SR:!2023-02-03,29,230-->
 
 
 #🧠 JS：bind所產生出來的新函式所擁有this為A，若經過call或者apply而將this更改成B，請問bind產生出來的新函式所擁有的this會是什麼？為什麼？->->-> `會是A，由於bind新函式的this會直接與當初設定的this綁死，無論事後以call或者apply來更改其this，都無法更改`
