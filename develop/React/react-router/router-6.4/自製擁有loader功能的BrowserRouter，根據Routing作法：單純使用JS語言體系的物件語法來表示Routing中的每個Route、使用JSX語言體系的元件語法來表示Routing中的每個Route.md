@@ -208,7 +208,7 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：使用createBrowserRouter 來自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？ ->->-> `- 單純使用JS語言體系的物件語法來表示Routing中的每個Route - 使用JSX語言體系的元件語法來表示Routing中的每個Route，然後再將JSX語言體系轉換成JS語言體系的物件語法。`
-<!--SR:!2023-01-05,16,248-->
+<!--SR:!2023-02-16,42,248-->
 
 #🧠 react-router-dom v6：使用createBrowserRouter 來自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？其中可以使用JSX語言體系的元件語法來表示Routing中的每個Route，那這樣就能定義了？還是要做什麼？ 沒做會如何？->->-> `還得將JSX語言體系轉換成JS語言體系的物件語法。沒做的話，系統會無法正常執行`
 <!--SR:!2023-02-13,40,248-->
