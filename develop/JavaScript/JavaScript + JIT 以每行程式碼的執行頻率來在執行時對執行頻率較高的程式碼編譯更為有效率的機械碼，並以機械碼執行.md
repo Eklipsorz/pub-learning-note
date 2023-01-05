@@ -247,7 +247,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript： 若optimizing compiler的假設成功率很高的話，會是什麼？為什麼呢？ ->->-> `代表著都一直執行非常有效率的機械碼，效能會非常好`
-<!--SR:!2023-01-05,101,248-->
+<!--SR:!2023-09-12,250,248-->
 
 #🧠 JIT版本的JavaScript： 若optimizing compiler的假設成功率很低的話，會是什麼？ ->->-> `效能會比沒有Optimizing compiler來得慢，因爲得經過優化，然後再轉為反優化的過程`
 <!--SR:!2023-05-05,178,250-->
