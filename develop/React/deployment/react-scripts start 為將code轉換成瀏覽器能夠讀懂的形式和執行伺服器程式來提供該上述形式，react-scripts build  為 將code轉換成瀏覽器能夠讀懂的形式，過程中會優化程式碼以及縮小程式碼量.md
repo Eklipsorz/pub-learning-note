@@ -41,7 +41,7 @@ npm run build => react-scripts build
 ## 複習
 
 #🧠  react-scripts 是CRA裡頭是做什麼？->->-> ` react-scripts 是CRA裡頭用來建構React App的程式`
-<!--SR:!2023-01-05,10,250-->
+<!--SR:!2023-02-02,28,250-->
 
 #🧠 react-scripts start 指令作用為何？->->-> `1. 將code轉換成瀏覽器能夠讀懂的形式 2. 執行伺服器程式來提供該上述形式`
 <!--SR:!2023-01-05,10,250-->
@@ -62,10 +62,10 @@ npm run build => react-scripts build
 
 
 #🧠  react：build 目錄存放什麼->->-> `存放npm run build/react-script build建構出來的代碼和目錄`
-<!--SR:!2023-01-05,10,250-->
+<!--SR:!2023-02-02,28,250-->
 
 #🧠 react：執行完畢npm run build之後，那要如何將程式碼轉移至伺服器？ ->->-> `就將build目錄的所有內容轉移至伺服器中`
-<!--SR:!2023-01-05,10,250-->
+<!--SR:!2023-01-11,6,230-->
 
 #🧠 react：/build/static存放什麼？ ->->-> `存放優化過的CSS代碼、JS代碼`
 <!--SR:!2023-01-26,23,250-->
