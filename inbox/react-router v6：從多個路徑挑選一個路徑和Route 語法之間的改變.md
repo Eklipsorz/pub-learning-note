@@ -135,7 +135,7 @@ v6：
 
 
 #🧠 假設目前是react-router v6，若URL切換至/products/edit的話，會呈現什麼畫面？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1669900964/blog/react/react-router/v6/react-router-v6-route-example_fhsfsi.png) ->->-> `但由於會比較具體程度，而最後一個Route設定的路徑是設定明確的路徑，所以會選擇它作為渲染元件。`
-<!--SR:!2023-01-05,22,250-->
+<!--SR:!2023-03-04,58,250-->
 
 
 

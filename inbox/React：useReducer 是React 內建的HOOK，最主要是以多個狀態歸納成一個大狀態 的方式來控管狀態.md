@@ -318,7 +318,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-02-24,95,249-->
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
-<!--SR:!2023-01-05,69,250-->
+<!--SR:!2023-07-05,181,250-->
 
 
 #🧠 React：reducerFn(prevState, action)如何被觸發執行？ ->->-> `只要一旦接收到由dispatch所製造的action 就自動執行`
