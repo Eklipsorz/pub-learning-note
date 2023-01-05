@@ -248,7 +248,7 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 會回傳什麼？->->-> `回傳代表存有Route物件的陣列`
-<!--SR:!2023-01-05,15,230-->
+<!--SR:!2023-02-13,39,230-->
 
 #🧠 react-router-dom v6：Route 元件添加index屬性會是代表什麼？->->-> `就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染`
 <!--SR:!2023-01-30,30,248-->
@@ -268,7 +268,7 @@ export default RootLayout;
 <!--SR:!2023-02-12,39,248-->
 
 #🧠 請問以下JSX元素經過createRoutesFromElements轉換後，會是什麼樣的語法？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/js-route-with-loader-example-_fpms3k.png)`
-<!--SR:!2023-01-05,15,248-->
+<!--SR:!2023-02-14,40,248-->
 
 ---
 Status: #🌱 
