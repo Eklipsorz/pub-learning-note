@@ -69,6 +69,7 @@ idToken  string  A Firebase Auth ID token for the authenticated user.
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-auth-question 領取題目並切換至build-register-and-login-practice分支，請在/src/components/Auth下的AuthForm增加帳密註冊、登入功能，請調用Firebase上的Authentication REST API來用，功能為：註冊、登入、顯示處理中 ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/04-adding-user-login`
+<!--SR:!2023-01-08,3,250-->
 
 
 
