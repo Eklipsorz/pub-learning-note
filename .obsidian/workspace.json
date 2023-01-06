@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5a2c8d87f317d642",
+        "id": "508c717bc310336d",
         "type": "tabs",
         "children": [
           {
-            "id": "011af927ab8e32f4",
+            "id": "f67028d69c404c91",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "async",
+                "query": "允許使用await",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -156,8 +155,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "011af927ab8e32f4",
+  "active": "f67028d69c404c91",
   "lastOpenFiles": [
+    "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
+    "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體.md",
     "develop/Abstract Data Type 是一種描述資料種類的模型，主要定義特定資料是什麼以及能對其資料做什麼樣的操作.md",
@@ -165,8 +166,6 @@
     "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
     "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
-    "develop/firebase/Firebase Auth REST API + REACT 實現登入頁面.md",
-    "develop/React/deployment/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md",
-    "develop/React/使用Firebase Authentication REST API + React 來實踐註冊帳號服務和頁面.md"
+    "develop/firebase/Firebase Auth REST API + REACT 實現登入頁面.md"
   ]
 }
