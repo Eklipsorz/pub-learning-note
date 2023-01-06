@@ -46,7 +46,7 @@ aud => token的接收者，會用特定獨特識別字來表示特定使用方�
 
 > One important claim is the `aud` claim. This claim defines the **audience** of the token, i.e., the web application that is meant to be **the final recipient of the token**. In the case of the ID token, its value is the client ID of the application that should consume the token.
 
-
+https://auth0.com/blog/id-token-access-token-what-is-the-difference/
 
 
 
