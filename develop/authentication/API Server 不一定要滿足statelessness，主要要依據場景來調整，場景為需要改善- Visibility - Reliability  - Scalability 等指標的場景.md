@@ -94,13 +94,13 @@ statelessness 是指特定系統或者特定程式不會擁有任何狀態/擁�
 <!--SR:!2023-01-09,9,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善visibility? 具體是什麼？ ->->-> `因為負責監聽執行情況的程式不必發送N個請求來完整理解1個會依賴這N個請求的處理狀態之請求。造成這現象的原因會是指處理方本身不會依據狀態來處理，自然而然，處理方的處理結果就不用先發送前置請求來得到特定請求的處理結果`
-<!--SR:!2023-01-06,7,250-->
+<!--SR:!2023-01-25,19,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，visibilty可改善是因為負責監聽執行情況的程式不必發送N個請求來完整理解1個會依賴這N個請求的處理狀態之請求，那麼具體是 ->->-> `造成這現象的原因會是指處理方本身不會依據狀態來處理，自然而然，處理方的處理結果就不用先發送前置請求來得到特定請求的處理結果`
 <!--SR:!2023-01-07,7,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善reliability?  ->->-> `因為狀態處理的業務邏輯和狀態管理全轉由客戶端來處理，處理方並不會處理，這使得處理方在獲得預期結果、承受故障、從故障恢復的能力提升`
-<!--SR:!2023-01-06,5,230-->
+<!--SR:!2023-01-16,10,230-->
 
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善Scalability? ->->-> `因為狀態處理的業務邏輯和狀態管理全轉由客戶端來處理，處理方並不會處理，進而讓處理方不必考量狀態依賴問題來增加擴展的容易程度`
