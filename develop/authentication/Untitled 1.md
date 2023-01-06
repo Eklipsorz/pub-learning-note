@@ -1,10 +1,6 @@
 ## 描述
 
 
-
-
-
-
 ### 後端的任一服務端點是否回傳新id token和refresh token
 
 > returnSecureToken 為 true
