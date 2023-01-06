@@ -41,6 +41,12 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbXktZG9tYWluLmF1dGgwLmN
 > These JSON properties are called **claims**, and they are **declarations about the user** and the token itself. The claims about the user define the user’s identity
 
 
+aud => token的接收者，會用特定獨特識別字來表示特定使用方，
+
+
+> One important claim is the `aud` claim. This claim defines the **audience** of the token, i.e., the web application that is meant to be **the final recipient of the token**. In the case of the ID token, its value is the client ID of the application that should consume the token.
+
+
 
 
 
