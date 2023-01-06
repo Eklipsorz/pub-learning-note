@@ -26,11 +26,6 @@ async function name([param[, param[, ... param]]]) {
 
 
 
-> ### Async function 及 Await
-
-> `async function` 可以用來定義一個非同步函式，讓這個函式本體是屬於非同步，但其內部以“**同步的方式運行非同步**”程式碼。
-
-
 重點：
 - 若function 前綴標記成async的話，就會使function構成async function物件，具有以下功能：
 	- 以promise物件來包裝回傳內容
@@ -48,9 +43,19 @@ async function name([param[, param[, ... param]]]) {
 ### 範例
 
 ```
-
+async function function1() {
+  console.log('start');
+  return 3
+}
+console.log(function1());
+console.log('end');
 ```
 
+```
+start
+Promise { 3 }
+end
+```
 
 
 ## 複習
@@ -62,6 +67,15 @@ async function name([param[, param[, ... param]]]) {
 
 
 #🧠 javascript：function前面添加async的話，會使function變成什麼物件？->->-> `async function物件`
+
+#🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件的執行方式是如何？ ->->-> `都皆為同步執行`
+
+#🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件 的相同點和不同點為何？？ ->->-> `相同點為都能同步執行，不同點為async function會將結果以promise物件來包裝以及允許使用await語法；後者並不會。`
+
+#🧠 請問結果會是如何？又為何？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成resolve狀態的promise來回傳並印出對應promise物件，最後在印出end`
+
+
+#🧠 請問function1()的回傳內容會是什麼？？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成resolve狀態的promise來回傳並印出對應promise物件`
 
 
 #🧠 javascript：async function vs. promise object 差異為何？ ->->-> `前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應非同步任務並回報執行狀態`

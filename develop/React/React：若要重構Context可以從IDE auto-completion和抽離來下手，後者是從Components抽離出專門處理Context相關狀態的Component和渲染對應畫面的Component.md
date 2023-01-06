@@ -362,7 +362,7 @@ Autocomplete
 <!--SR:!2023-04-14,124,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，會如何做？ ->->-> `1. 重新建立一個Component代表著專門處理狀態 2. 該Component以對應Context的Provider Component為主來構築 3. 其內容在搭載著與Context相關的狀態、更新狀態用的函式、Effect`
-<!--SR:!2023-01-06,67,250-->
+<!--SR:!2023-06-23,168,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，若從Components抽離出專門處理狀態的Component，那渲染對應元件的Component會如何做？->->-> `移除被抽離的狀態、更新狀態用的函式、Effect、將原本使用被抽離的狀態、函式的用法改從Context的Consumer物件來取出`
 <!--SR:!2023-01-13,71,250-->
