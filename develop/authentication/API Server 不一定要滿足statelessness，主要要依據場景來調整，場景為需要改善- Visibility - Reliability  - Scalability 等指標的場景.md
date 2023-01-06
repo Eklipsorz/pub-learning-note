@@ -104,7 +104,7 @@ statelessness 是指特定系統或者特定程式不會擁有任何狀態/擁�
 
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善Scalability? ->->-> `因為狀態處理的業務邏輯和狀態管理全轉由客戶端來處理，處理方並不會處理，進而讓處理方不必考量狀態依賴問題來增加擴展的容易程度`
-<!--SR:!2023-01-06,7,250-->
+<!--SR:!2023-01-24,18,250-->
 
 #🧠 若API Server是 statelessness或者stateless，那麼就能使以下指標得到改善，具體會是visibility、scalability、reliability，為何可以改善Scalability? 那麼原本是stateful時，會有怎麼樣關於scalability的問題？->->-> `處理方得考量擴展後的客戶端請求狀態要存在哪個主機、轉由哪個主機來處理等問題來擴展`
 <!--SR:!2023-01-09,10,250-->

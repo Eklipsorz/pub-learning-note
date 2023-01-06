@@ -81,7 +81,7 @@ export default Quote;
 
 
 #🧠 瀏覽單個Quote的業務邏輯，主要實現思路有哪些？ ->->-> `1.  用初始資訊來呈現畫面，在這裡使用pending這狀態來表現載入中 2. 發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料 3. 渲染部分則根據資料載入、錯誤來呈現狀況和載入到的資料。`
-<!--SR:!2023-01-06,26,250-->
+<!--SR:!2023-03-14,67,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question 領取題目並切換至build-get-single-quote 分支，在那請使用useHttp和lib/api.js來在Quote.js實現瀏覽單個Quote功能，請務必要有辦法顯示找不到對應Quote、找到Quote、載入中的畫面->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/20-sending-getting-quote-data/src/pages/QuoteDetail.js`
 <!--SR:!2023-01-06,27,250-->
