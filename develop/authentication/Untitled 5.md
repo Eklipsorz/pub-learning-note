@@ -2,6 +2,39 @@
 ## 描述
 
 
+###
+
+[[@OpenIDWikipedia]]
+> OpenID is an open standard and decentralized authentication protocol promoted by the non-profit OpenID Foundation. 
+> 
+> It allows users to be authenticated by co-operating sites (known as relying parties, or RP) using a third-party identity provider (IDP) service, eliminating the need for webmasters to provide their own ad hoc login systems, and allowing users to log in to multiple unrelated websites without having to have a separate identity and password for each.[1] 
+> 
+> Users create accounts by selecting an OpenID identity provider,[1] and then use those accounts to sign on to any website that accepts OpenID authentication. Several large organizations either issue or accept OpenIDs on their websites
+
+> OpenID Connect (OIDC)
+
+> Published in February 2014 by the OpenID Foundation, OpenID Connect is the third generation of OpenID technology. It is an authentication layer on top of the [OAuth 2.0](https://en.wikipedia.org/wiki/OAuth#OAuth_2.0 "OAuth") authorization framework
+
+
+[[@IBMDocumentation2022]]
+> OpenID Connect 是一種簡式身分通訊協定和開放式標準，以 OAuth 2.0 通訊協定為建置基礎，可讓用戶端應用程式根據「OpenID Connect 提供者」執行的鑑別，來驗證使用者的身分。
+
+> OpenID Connect 使用 OAuth 2.0 來進行鑑別和授權，然後建置用來唯一識別使用者的身份
+
+重點：
+- OpenID 是一個開放式協定和標準，定義如何建構分散式身份認證系統
+- 主要在特定應用服務上可用第三方認證服務來進行身份認證，以此消除應用服務本身對於認證
+	- 使用者可選擇任意的OpenID identity provider註冊帳號
+
+
+
+#### OpenID Connect vs. OpenID
+[[@AuthenticationWhenYou]]
+> OpenID Connect improved naming and structure of `OpenID 2.0` fields and parameters in order to be easier to use. I can easily read the `OpenID Connect` specification and understand what all the values are used for and what to set them to, but trying to read the `OpenID 2.0` specification is a bit more difficult and convoluted.
+
+> At this point the choice is easy, `OpenID 2.0` is deprecated. You should use `OpenID Connect`.
+
+
 
 
 
@@ -30,4 +63,7 @@ Tags:
 [[Authentication]] - [[Authorization]]
 Links:
 References:
+[[@OpenIDWikipedia]]
+[[@IBMDocumentation2022]]
+[[@AuthenticationWhenYou]]
 [[@OpenIDConnectShiShiMo]]
