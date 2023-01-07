@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled.md",
+                "file": "develop/authentication/Untitled 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,16 +47,16 @@
         "currentTab": 2
       },
       {
-        "id": "9fc70f1d8dd6dbec",
+        "id": "a8606cc61158669b",
         "type": "tabs",
         "children": [
           {
-            "id": "68380fe20387cd26",
+            "id": "40ac7583ecaf0925",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled.md",
+                "file": "develop/authentication/Untitled 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled.md",
+                "file": "develop/authentication/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled.md",
+                "file": "develop/authentication/Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled.md"
+                "file": "develop/authentication/Untitled 2.md"
               }
             }
           }
@@ -199,9 +199,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68380fe20387cd26",
+  "active": "40ac7583ecaf0925",
   "lastOpenFiles": [
-    "develop/authentication/Untitled.md",
+    "develop/authentication/JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值.md",
     "develop/authentication/Untitled 2.md",
     "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 1.md",

@@ -110,9 +110,12 @@ id token：可以拿來做什麼？
 
 
 ### id token 構成
-
+[[JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值]]
 id token 的構成會是以JWT 的Header、payload、Signature所構成：
-	- Header部分會是
+	- payload 夾雜著特定身分的驗證資料
+
+
+#
 
 
 
@@ -142,9 +145,10 @@ claim：
 ---
 Status: #🌱 
 Tags:
-[[Authentication]]
+[[Authentication]] - [[Authorization]]
 Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
+[[JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值]]
 References:
 [[@IDTokenAccess]]
 [[@OpenIDConnectShiShiMo]]
