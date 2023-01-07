@@ -1,7 +1,7 @@
 ## 描述
 
 
-###
+
 
 [[@OpenIDConnectShiShiMo]]
 
@@ -36,6 +36,8 @@
 - OAuth：
 	- 屬於標準、協定
 	- 定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。
+	- 代表權限的事物會是token，內容通常會是包含誰賦予誰權限、權限為何。
+
 
 ### OAuth 2.0 角色
 [[@OpenIDConnectShiShiMo]]
@@ -48,7 +50,15 @@
 重點：
 - OAuth 在Client-Server之間中，會有以下用語：
 	- Resource Server：儲存資源的伺服器
-	- Authorization Server：
+	- Authorization Server：驗證Resource Owner輸入的credential來發放Token 
+	- Client：以發放的Token來向Resource Server索要指定資源
+		- Client 相對於Resource Server的稱呼
+	- Resource Owner：在Resource Server上實際擁有資源的人
+- 流程會是：
+	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤
+	- Authorization Server發送token給予Resource Owner
+	- 由Resource Owner賦予token至Client
+	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
 
 
 ## 複習
