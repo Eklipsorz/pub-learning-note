@@ -23,10 +23,13 @@
 
 重點：
 - OpenID 是一個開放式協定和標準，定義如何建構分散式身份認證系統
-- 主要在特定應用服務上可用第三方認證服務來進行身份認證，以此消除應用服務本身對於認證
-	- 使用者可選擇任意的OpenID identity provider註冊帳號
+- 主要在特定應用服務A上可用第三方認證服務來進行身份認證，以此消除應用服務本身對於認證的建構需求以及使用第三方認證服務來認證：
+	- 若認證成功，就允許使用應用服務A；若認證失敗，就不允許使用
+- 使用者可選擇任意的OpenID identity provider註冊帳號，並且在支援OpenID認證協定的服務上來調用OpenID實現和帳號來登入
+- 稱之為分散式是因爲以任意特定應用服務A是拿多個外部伺服器來做認證系統，而非以應用服務A內部來建立認證系統
 
-
+- OpenID Connect 標準是 OpenID 2.0 標準的下一代標準：
+	- 主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發。
 
 #### OpenID Connect vs. OpenID
 [[@AuthenticationWhenYou]]
@@ -53,6 +56,15 @@
 
 > 因為 OpenID Connect 是以 OAuth 2.0 為基礎設計，因此使用方法上有很多的相似處。角色也是其中一個，只是在 OpenID Connect 中的 Client 有了一個新稱呼叫 Relying Party。Authorization Server 的新稱呼為 OpenID Provider，它除了可以發放 Access Token 外，同時也可以發放 ID Token。
 
+[[@RelyingParty2022]]
+> An identity provider (abbreviated IdP or IDP) is a system entity that creates, maintains, and manages identity information for principals and also provides authentication services to relying applications within a federation or distributed network
+
+
+
+重點：
+- OpenID / OpenID Connect 角色：
+	- Replying Party：
+	- OpenID Provider / OpenID identity Provider：負責
 
 ## 複習
 #🧠 Question :: ->->-> ``
@@ -67,3 +79,4 @@ References:
 [[@IBMDocumentation2022]]
 [[@AuthenticationWhenYou]]
 [[@OpenIDConnectShiShiMo]]
+[[@RelyingParty2022]]
