@@ -87,6 +87,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "50f0621da3ea038b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8efc67dabd34ae3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +196,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md"
+                "file": "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md"
               }
             }
           }
@@ -223,8 +241,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "16daf003d6061f95",
+  "active": "e8efc67dabd34ae3",
   "lastOpenFiles": [
+    "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 2.md",
     "develop/authentication/Untitled 1.md",
@@ -233,7 +252,6 @@
     "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體.md",
-    "develop/Abstract Data Type 是一種描述資料種類的模型，主要定義特定資料是什麼以及能對其資料做什麼樣的操作.md",
-    "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md"
+    "develop/Abstract Data Type 是一種描述資料種類的模型，主要定義特定資料是什麼以及能對其資料做什麼樣的操作.md"
   ]
 }
