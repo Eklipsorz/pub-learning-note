@@ -68,8 +68,9 @@
 
 重點：
 - OpenID / OpenID Connect 角色：
-	- Replying Party：
-	- OpenID Provider / OpenID identity Provider：負責
+	- Replying Party：主要依賴token和token夾雜的身分證明資料來向
+	- OpenID Provider / OpenID identity Provider：負責驗證使用者所輸入的內容並發放token、驗證token和token夾雜的身份證明資料
+	- Resource Server：負責對Replying Party/Client 所輸入的token進行驗證，若驗證通過就允許使用資源，不通過就不允許使用
 
 ## 複習
 #🧠 Question :: ->->-> ``
