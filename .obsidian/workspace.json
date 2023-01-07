@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled 2.md"
+                "file": "develop/authentication/Untitled 4.md"
               }
             }
           }
@@ -201,8 +201,8 @@
   },
   "active": "dc1236e260299ab5",
   "lastOpenFiles": [
-    "develop/authentication/authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程.md",
     "develop/authentication/Untitled 2.md",
+    "develop/authentication/authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程.md",
     "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 4.md",
     "develop/authentication/Untitled 1.md",

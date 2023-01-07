@@ -67,20 +67,35 @@ aud => token的接收者，會用特定獨特識別字來表示特定使用方�
 
 最重要的claim是aud claim，這定義token的audience，換言之就是網頁應用程式
 
-在這個情況，它的值會是能夠
+在ID token的情況，它的值會是能夠使用這個token的client_id。
 
 
     Remember this small detail about the audience claim because it will help you better understand what its correct use is later on.
 
 > The ID token may have additional information about the user, such as their email address, picture, birthday, and so on.
 
+
+id token 可能擁有額外資訊來包含使用者資訊，如email、圖片、生日。
+
 > Finally, maybe the most important thing: the ID token is signed by the issuer with its private key. This guarantees you the origin of the token and ensures that it has not been tampered with. You can verify these things by using the issuer's public key.
+
+最後：
 
 > Cool! Now you know what an ID token is. But what can you do with an ID token?
 
 > First, it demonstrates that the user has been authenticated by an entity you trust (the OpenID provider) and so you can trust the claims about their identity.
 
+
 > Also, your application can personalize the user’s experience by using the claims about the user that are included in the ID token. For example, you can show their name on the UI, or display a "best wishes" message on their birthday. The fun part is that you don’t need to make additional requests, so you may get a little gain in performance for your application.
+
+
+
+
+
+id token：可以拿來做什麼？
+1. 由於驗證使用者是合法的實物，所以你可以信任他們所說的事情
+2. 你的應用程式可以藉由增加更多使用資訊在token內來替應用者增加使用者體驗，比如你可以在特定UI展現出名字。
+
 
 
 
