@@ -108,7 +108,7 @@
 <!--SR:!2023-01-11,10,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請舉例來說明前者 ->->-> `認證方式通常會是使用帳號密碼來作為credential 證明自己是合法使用者的資料，若是的話，會事先將合法的帳號密碼儲存在後端伺服器或者資料庫來方便驗證使用者所輸入的帳密是否一致，一致就給予代表access或者permission的資料；不一致就報錯`
-<!--SR:!2023-01-07,6,250-->
+<!--SR:!2023-01-21,14,250-->
 
 #🧠 authentication 所採用的access/permission為何不能用固定字串和credential來表示？->->-> `很容易被人偽造身份`
 <!--SR:!2023-01-09,8,250-->
