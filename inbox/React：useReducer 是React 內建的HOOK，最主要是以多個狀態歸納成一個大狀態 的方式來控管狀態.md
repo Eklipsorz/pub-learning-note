@@ -311,7 +311,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-06-25,175,250-->
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的reducerFn 是什麼？用途是什麼？請先簡答 ->->-> `reducerFn 為 一個函式，具體會有兩個引數分別為prevState和action。用途為依據action指示的狀態更新請求內容來回傳新狀態、更新狀態、觸發渲染週期`
-<!--SR:!2023-01-07,70,250-->
+<!--SR:!2023-02-12,36,230-->
 
 
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
@@ -331,7 +331,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-05-15,145,250-->
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會產生出什麼效果？ ->->-> `會以auto-batching的方式，將狀態試著合併，最後再以最後合併結果來更新狀態、觸發渲染週期`
-<!--SR:!2023-01-07,64,230-->
+<!--SR:!2023-06-06,150,230-->
 
 
 #🧠 React：假設n個連續dispatch指令來派送action至reducer，這些reducerFn(prevState, action)被觸發執行後，會執行n次的狀態更新＋觸發渲染週期嗎？ ->->-> `並不會，而是會以auto-batching來執行`

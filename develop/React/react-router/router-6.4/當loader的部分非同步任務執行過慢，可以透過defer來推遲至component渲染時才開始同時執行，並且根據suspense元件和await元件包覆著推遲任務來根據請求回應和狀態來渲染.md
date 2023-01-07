@@ -220,7 +220,7 @@ return defer({
 <!--SR:!2023-01-28,26,250-->
 
 #🧠 react-router-dom：route 所執行的loader分成deferred 和 not deferred，not deferred 就意味著繼續在render前執行loader任務，具體會是什麼？ ->->-> `會是以await、指派語句、await promise後的剩餘代碼之間的關係，而剩餘代碼會是指Route執行render。藉此將指派語句、後頭語句由promise.then所包含，使得只有執行完Promise本身才有辦法繼續完成指派、Route執行render，而這情況剛好是由Route元件先執行Loader，再後執行render`
-<!--SR:!2023-01-07,12,249-->
+<!--SR:!2023-02-09,33,249-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> ` 將執行較慢的Loader部分放入component function做呼叫，並且先渲染component一開始的畫面，渲染完之後再觸發執行Loader的部分，等到請求回應到的時候，在重新渲染
 <!--SR:!2023-01-29,27,250-->
