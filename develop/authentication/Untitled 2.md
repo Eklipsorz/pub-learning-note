@@ -4,6 +4,9 @@
 
 > An ID token is an artifact that proves that the user has been authenticated. It was introduced by OpenID Connect (OIDC), an open standard for authentication used by many identity providers such as Google, Facebook, and, of course, Auth0. Check out this document for more details on OpenID Connect. Let's take a quick look at the problem OIDC wants to resolve.
 
+
+ID token 是一個用來證明使用者是受過認證
+
 ![](https://images.ctfassets.net/23aumh6u8s0i/4x34jgYBU7vjBYLumNr9Sg/57e0b420de0d27568981af4aef0ab27f/id-token-scenario.png)
 > Here, a user with their browser authenticates against an OpenID provider and gets access to a web application.
 
@@ -50,6 +53,7 @@ https://auth0.com/blog/id-token-access-token-what-is-the-difference/
 
 
 
+
 ## 複習
 
 
@@ -58,4 +62,5 @@ Status: #🌱
 Tags:
 [[Authentication]]
 Links:
+[[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 References:

@@ -30,14 +30,26 @@ assertion在OpenID 2.0 和  SAML 2.0中包含一個方法來識別這個assertio
 
 > We needed to add the appropriate security and semantics for authentication without compromising OAuth's functionality as a Authorization protocol.
 
-我們需要在不影響OAuthㄐ
+我們需要在不影響OAuth作為授權協定的基本功能之情況下去添加適合的安全性和語義化
 
-> One idea we explored was adding a audience claim to the protected resource(User Info Endpoint).
+> One idea we explored was adding a audience claim to the protected resource (User Info Endpoint).
+
+其中一個想法就是添加audience claim在token裡頭
+
 > This requires communicating the OAuth client_id from the authorization endpoint to the protected resource.  The biggest problem is that the RP is required to do a network operation in the background to get the user_id before logging the user in.
+
+這需要將源自授權方端點的client_id傳送至受保護資源那一方，這裡最大的問題就是要RP在背景中去做網路操作來在使用者登入前獲取user_id
+
+
+
 
 > Many RP including Facebook stated that the extra latency in the network round trip was unacceptable.
 
+大部分RP(包含FB)聲稱這會帶來難以接受的網路延遲
+
 > Now you are thinking how can that be if that is way Facebook is doing?
+
+
 
 > Well it turns out that they have some undocumented enhancements to get around the latency issue. They are using something they call signed-request.
 
