@@ -60,6 +60,11 @@
 > An identity provider (abbreviated IdP or IDP) is a system entity that creates, maintains, and manages identity information for principals and also provides authentication services to relying applications within a federation or distributed network
 
 
+[[@AuthenticationRelyingParty]]
+> The spec seems to call the identity provider "OpenID Provider" or "OP" representing the authorization server that issues tokens and verifies credentials of users and clients
+
+> The relying party is the client--the app that relies on the tokens and credential-validation of the OP
+
 
 重點：
 - OpenID / OpenID Connect 角色：
@@ -80,3 +85,4 @@ References:
 [[@AuthenticationWhenYou]]
 [[@OpenIDConnectShiShiMo]]
 [[@RelyingParty2022]]
+[[@AuthenticationRelyingParty]]
