@@ -67,7 +67,7 @@
 ---
 Status: #🌱 
 Tags:
-[[Authentication]]
+[[Authentication]] - [[Authorization]]
 Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 References:
