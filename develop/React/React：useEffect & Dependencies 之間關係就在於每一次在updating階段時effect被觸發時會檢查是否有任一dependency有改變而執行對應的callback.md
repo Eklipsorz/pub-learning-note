@@ -155,7 +155,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 
 
 #🧠 React：Dependencies 設定目的主要為效能最佳化，在updating階段的話，useEffect會做什麼？？ ->->-> `比對這次dependency指定的內容和上一次儲存的內容是否一致，若不一致就執行effect，然後儲存這次dependency內容；若一致就不執行`
-<!--SR:!2023-01-07,38,249-->
+<!--SR:!2023-04-14,97,249-->
 
 
 
@@ -221,7 +221,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 <!--SR:!2023-06-24,175,250-->
 
 #🧠 React：請問timerIsActive、timerDuration、setTimerIsActive、myTimer、setTimeout 可不可以放到dependency裡頭，為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663256225/blog/react/effect/react-use-effect-dependency-example_q3poat.png) ->->-> `- timerIsActive 本身是狀態，狀態本身只要更新就觸發更新和渲染而進入渲染週期，也就可以觸發useEffect，所以可以加入至dependency - timerDuration 本身是props的值，只要parent元件給定的資訊一改變，其元件就會跟著渲染而進入渲染週期，也就可以觸發useEffect，所以可以加入至dependency - setTimerIsActive 本身是狀態更新用的函式，就不會改變，無法代表目前元件的互動狀態，所以可以不用加入至dependency - myTimer 本身是元件外的變數，它的改變沒辦法代表目前元件的互動狀態，所以可以不用加入至dependency - setTimeOut 本身是非React的API，獨立於React，無法代表目前元件的互動狀態，所以不用加入dependency
-<!--SR:!2023-01-07,72,250-->
+<!--SR:!2023-07-08,182,250-->
 
 
 
