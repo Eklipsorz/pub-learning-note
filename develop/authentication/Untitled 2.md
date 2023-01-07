@@ -1,5 +1,7 @@
 ## 描述
 
+
+[[@IDTokenAccess]]
 > What Is an ID Token?
 
 > An ID token is an artifact that proves that the user has been authenticated. It was introduced by OpenID Connect (OIDC), an open standard for authentication used by many identity providers such as Google, Facebook, and, of course, Auth0. Check out this document for more details on OpenID Connect. Let's take a quick look at the problem OIDC wants to resolve.
@@ -97,12 +99,33 @@ id token：可以拿來做什麼？
 2. 你的應用程式可以藉由增加更多使用資訊在token內來替應用者增加使用者體驗，比如你可以在特定UI展現出名字。
 
 
+###
+
+[[@OpenIDConnectShiShiMo]]
+>  從 OAuth 2.0 到 OpenID Connect
+
+> 但是解決了一個問題，新的問題就又跑出來了。
+
+> 因為 OAuth 2.0 的便利性，就出現了很多將 OAuth 2.0 用為使用者登入驗證方式的服務。 但大家千萬不能忘記 OAuth 2.0 只是一個定義如何使用 Access Token 來授權的協議，內容是沒有提到如何去認證一個使用者的登入。因此如果使用 OAuth 2.0 做為使用者登入的認證機制，就會有很多意想不到的[資安問題](http://www.thread-safe.com/2012/01/problem-with-oauth-for-authentication.html)發生。而再次的有人想出了一個在現有 OAuth 2.0 的協議基礎下發放 ID Token 的方法來解決這個問題，這就是我們今天的主題所討論的 OpenID Connect。
+
+> ## 重新介紹今天的主角 -- OpenID Connect
+
+![](https://hennge.com/tw/blog/1_SQQwKPMtjPJbUKP2Z0R_Aw.png)
+
+> 因為 OpenID Connect 是以 OAuth 2.0 為基礎設計，因此使用方法上有很多的相似處。角色也是其中一個，只是在 OpenID Connect 中的 Client 有了一個新稱呼叫 Relying Party。Authorization Server 的新稱呼為 OpenID Provider，它除了可以發放 Access Token 外，同時也可以發放 ID Token。
 
 
+### 驗證方式
 
+[[@auth0ValidateIDTokens]]
 
-https://auth0.com/blog/id-token-access-token-what-is-the-difference/
+> If any of these checks fail, the token is considered invalid, and the request must be rejected.
 
+> 1. Validate the JWT.
+
+> 2. Check additional standard claims. If you've performed the standard JWT validation, you have already decoded the JWT's Payload and looked at its standard claims. Additional claims to verify for ID tokens include:
+		- Token audience (aud, string): The audience value for the token must match the client ID of the application as defined in your Application's Settings in the Client ID field.
+		- Nonce (nonce, string): Passing a nonce in the token request is recommended (required for the Implicit Flow) to help prevent replay attacks. The nonce value in the token must exactly match the original nonce sent in the request. See Mitigate Replay Attacks for details.
 
 
 
@@ -122,3 +145,6 @@ Tags:
 Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 References:
+[[@IDTokenAccess]]
+[[@OpenIDConnectShiShiMo]]
+[[@auth0ValidateIDTokens]]
