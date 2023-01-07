@@ -151,7 +151,7 @@ export default Quotes;
 <!--SR:!2023-03-11,65,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-get-all-quotes分支，在那請使用useHttp和lib/api.js來在Quotes頁面，調用相關API來要求後端獲取所有Quote資料，接著依據獲取狀況來印出初始資料、載入中、錯誤、載入後的資料呈現在畫面上 ->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/20-sending-getting-quote-data/src/pages/AllQuotes.js`
-<!--SR:!2023-01-07,28,250-->
+<!--SR:!2023-03-20,72,250-->
 
 
 
