@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4aa78859c993c8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Untitled 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "6cbbc6d7fac23f82",
@@ -128,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled 2.md"
+                "file": "develop/authentication/Untitled 5.md"
               }
             }
           }
@@ -198,16 +211,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "16daf003d6061f95",
+  "active": "b4aa78859c993c8b",
   "lastOpenFiles": [
+    "develop/authentication/Untitled.md",
+    "develop/authentication/Untitled 1.md",
+    "develop/authentication/Untitled 2.md",
     "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 4.md",
-    "develop/authentication/Untitled 2.md",
     "develop/authentication/authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程.md",
-    "develop/authentication/Untitled 1.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/firebase/Firebase Auth REST API + REACT 實現註冊頁面.md",
-    "develop/authentication/Untitled.md",
     "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "inbox/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md"
   ]
