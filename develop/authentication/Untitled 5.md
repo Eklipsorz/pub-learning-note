@@ -34,8 +34,9 @@
 重點：
 - OAuth 完整名稱為：Open Authorization
 - OAuth：
-	- 屬於標準、協定，專注在委派資源使用權限給特定服務。
-	- 目的是以不告知資源所在的伺服器所擁有的
+	- 屬於標準、協定
+	- 定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。
+
 ### OAuth 2.0 角色
 [[@OpenIDConnectShiShiMo]]
 > Access Token 就像是一張兌換卷，每一張 Access Token 上都有寫**「誰」「對誰」「給予什麼樣的權限」**，如此一來就可以在不告訴對方帳號密碼的情況下，給予對方最低限度需要的權限。這就是為什麼 OAuth 2.0 被稱為是一個授權的協議。
@@ -44,6 +45,10 @@
 
 > 在 OAuth 2.0 的世界中，我這個使用者被稱為 Resource Owner；第三方行事曆服務被稱之為 Client；有放我行事曆資訊的 Google Calendar 稱為 Resource Server；幫忙發 Access Token 的伺服器稱之為 Authorization Server，在這例子中就會是 Google。
 
+重點：
+- OAuth 在Client-Server之間中，會有以下用語：
+	- Resource Server：儲存資源的伺服器
+	- Authorization Server：
 
 
 ## 複習
