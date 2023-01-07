@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2d80be2f9822c805",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "b9058fdff98751af",
@@ -117,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled 2.md",
+                "file": "develop/authentication/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled 2.md"
+                "file": "develop/authentication/Untitled.md"
               }
             }
           }
@@ -187,10 +199,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97a725207fc67850",
+  "active": "2d80be2f9822c805",
   "lastOpenFiles": [
-    "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 2.md",
+    "develop/authentication/Untitled 3.md",
     "develop/authentication/Untitled 1.md",
     "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
     "develop/authentication/Untitled 4.md",

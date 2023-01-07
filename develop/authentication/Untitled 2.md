@@ -21,7 +21,7 @@ ID token 是一個用來證明使用者是受過認證的資訊，其概念是�
 > This provides a very basic idea of what an ID token is: proof of the user's authentication. Let’s see some other details.
 
 這提供一個最基本的id token 概念：
-- 使用者驗證證明
+- 使用者身分驗證證明
 
 > An ID token is **encoded as a JSON Web Token** (JWT), a standard format that allows your application to easily inspect its content, and make sure it comes from the expected issuer and that no one else changed it
 
@@ -100,8 +100,19 @@ id token：可以拿來做什麼？
 
 
 重點：
-- id token 本身是夾雜特特定身分證明資訊 和 代表特定資源之使用權限的資訊所構成的token，換言之，就是被
+- 使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token來代表其權限和使用者：
+	- 若token本身夾雜特定身分證明資訊 和 代表特定資源之使用權限的資訊，那麼就會是同時代表權限和使用者的id token
+	- 若token本身只有特定資源之使用權限的資訊，那麼就只能代表權限的access token
+- id token夾雜的身分證明資訊會是：
+	- client_id：特定身份在OpenID Provider所註冊的id
+	- 特定身分對應的email、圖片、生日等個人資料
 
+
+
+### id token 構成
+
+id token 的構成會是以JWT 的Header、payload、Signature所構成：
+	- Header部分會是
 
 
 
