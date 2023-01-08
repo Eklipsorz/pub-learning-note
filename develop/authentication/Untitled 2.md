@@ -154,12 +154,12 @@ https://juejin.cn/post/7131956073472196621
 > 第二种，上篇文章提到过payload载体是可以添加自己的逻辑的，那么我们可以赋予一个 version 作为token的版本信息。例如默认正常产生的token版，也可以是当前时间的时间戳，并记录到用户表或者用户缓存。当token被用户强制失效，或者管理员强制失效，则只需更改这个版本信息即可。认证的时候如果发现版本不一致，则token失效。
 
   
-1. 在Authorization Server或者openID Provider 中建立一個表格來儲存，查找是否存在時，就透過客戶端給予的aud claim來從表格找到對應token的aud是否還有原有的aud或者對應token是否存在
+1. 在Authorization Server或者openID Provider 中的使用者資料表格上或者建立以下表格來記錄，將申請id token的使用者標記上特定的client_id，並將該client_id寫入至JWT以做比對。當客戶端夾雜著JWT時，伺服器就會從aud claim獲取對應的client_id，接著在指定表格上找看看有沒有相符合，有的話就繼續讓JWT生效；沒的話就讓JWT失效
 ```
-token | aud
+user1 | client_id
 ------------
-token1  aud1
-token1  aud2
+user1  client_id1
+user2  client_id2
 ```
 2. 紀錄特定時間戳作為是版本分別在客戶端空間儲存和JWT儲存，接著拿兩地的時間戳內容進行比對，若一樣就繼續生效；若不一樣就失效，基於這點：
 	 - 客戶端若要自行失效，就修改客戶端空間內的時間戳內容
