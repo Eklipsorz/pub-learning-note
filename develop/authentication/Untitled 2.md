@@ -117,10 +117,16 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 
 #### payload 中的 aud claim
 
+[[@VerifyGoogleID]]
+
+> -   The value of `aud` in the ID token is equal to one of your app's client IDs. This check is necessary to prevent ID tokens issued to a malicious app being used to access data about the same user on your app's backend server.
+
+
+
 - aud 本身是指audience ，在這裡是用觀眾、聽眾的比喻來描述最後接收到特定資源權限的那一方，通常會是：
 	- 若是id token，aud 值會是代表特定身份的識別字，在這裡會是client_id
 	- 若是access token，aud 值會是代表relying party所要存取端點之識別字
-- aud claim 最主要是進行身份驗證，通常會拿JWT裡頭的aud claim 從openID Provider或者Authorization Server 中找到對應設定，若沒有就失效；若有就繼續生效
+- aud claim 最主要是進行透過身份驗證來控制token仍是分發給合法的使用者，通常會拿JWT裡頭的aud claim 從openID Provider或者Authorization Server 中找到對應設定，若沒有就失效；若有就繼續生效
 
 
 
@@ -182,6 +188,7 @@ Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 [[JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值]]
 References:
+[[@VerifyGoogleID]]
 [[@IDTokenAccess]]
 [[@OpenIDConnectShiShiMo]]
 [[@auth0ValidateIDTokens]]

@@ -1,7 +1,7 @@
 ## 描述
 
 
-
+[[@auth0.comJWTIOJSON]]
 > ## What is the JSON Web Token structure?
 
 > In its compact form, JSON Web Tokens consist of three parts separated by dots (`.`), which are:
@@ -154,3 +154,4 @@ Tags:
 [[JWT]]
 Links:
 References:
+[[@auth0.comJWTIOJSON]]
