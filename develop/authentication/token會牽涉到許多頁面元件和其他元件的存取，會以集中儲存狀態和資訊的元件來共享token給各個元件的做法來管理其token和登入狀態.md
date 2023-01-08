@@ -113,7 +113,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ ->->-> `儲存token，並且利用token來向伺服器獲取受保護的資源來刷新畫面`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-18,10,250-->
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ 利用permission/access來刷新目前元件，舉例來說會是什麼元件？ ->->-> `navigation、header`
 <!--SR:!2023-01-18,10,250-->
