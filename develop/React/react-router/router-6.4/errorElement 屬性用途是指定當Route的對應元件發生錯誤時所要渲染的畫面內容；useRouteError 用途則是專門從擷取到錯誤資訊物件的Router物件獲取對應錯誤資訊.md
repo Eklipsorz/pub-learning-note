@@ -47,7 +47,7 @@ const error = useRouteError()
 <!--SR:!2023-01-15,22,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 在Route元件上是指定當Route的對應元件發生錯誤時所要渲染的畫面內容，其中它能夠攔截渲染對應元件時的錯誤，請問元件的範疇會是什麼？ ->->-> `元件本身、元件所包含的後裔元件`
-<!--SR:!2023-01-08,17,250-->
+<!--SR:!2023-02-24,47,250-->
 
 #🧠 react-router-dom v6.4 ：useRouteError 用途為何？->->-> ` 專門從Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤來獲取對應的錯誤資訊物件`
 <!--SR:!2023-01-23,28,250-->
