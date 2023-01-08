@@ -118,7 +118,7 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 #### payload 中的 aud claim
 
 - aud 本身是指audience ，在這裡是用觀眾、聽眾的比喻來描述最後接收到特定資源權限的那一方，通常會是：
-	- 若是id token，aud 值會是client_id
+	- 若是id token，aud 值會是代表特定身份的識別字，在這裡會是client_id
 	- 若是access token，aud 值會是代表relying party所要存取端點之識別字
 - aud claim 最主要是進行身份驗證，通常會拿JWT裡頭的aud claim 從openID Provider或者Authorization Server 中找到對應設定，若沒有就失效；若有就繼續生效
 
@@ -140,10 +140,30 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 重點：
 - id token 驗證方式：若有任一步驟失敗，就會將token視為非法
 	- 驗證JWT
-	- 驗證解碼後的payload，如aud claim，就驗證其值是否還存在伺服器的驗證資料用的空間，還存在就繼續生效；否則失效
+	- 驗證解碼後的payload，如aud claim，就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效
 
+####  驗證aud claim 方式
+https://juejin.cn/post/7131956073472196621
 
+> 我这里有两种方案：
 
+> 第一种，是颁发token的时候有一个受众人aud ，也就是颁发给谁 ，我们颁发token的时候，每个用户根据 username+pwd+datetime.now() 的规则作为颁发受众人。
+
+> 这样如果更改了用户名或者密码则受众人就会变更，此时的token已经无效了需要刷新token。另外datetime.now()也可以存在缓存或者用户表，当用户退出登录，或者管理员取消其token有效，则只需更改用户的datetime时间即可，受众人发生变更，token无效。后台需配置ValidateAudience = true,进行认证受众人是否一致。
+
+> 第二种，上篇文章提到过payload载体是可以添加自己的逻辑的，那么我们可以赋予一个 version 作为token的版本信息。例如默认正常产生的token版，也可以是当前时间的时间戳，并记录到用户表或者用户缓存。当token被用户强制失效，或者管理员强制失效，则只需更改这个版本信息即可。认证的时候如果发现版本不一致，则token失效。
+
+  
+1. 在Authorization Server或者openID Provider 中建立一個表格來儲存，查找是否存在時，就透過客戶端給予的aud claim來從表格找到對應token的aud是否還有原有的aud或者對應token是否存在
+```
+token | aud
+------------
+token1  aud1
+token1  aud2
+```
+2. 紀錄特定時間戳作為是版本分別在客戶端空間儲存和JWT儲存，接著拿兩地的時間戳內容進行比對，若一樣就繼續生效；若不一樣就失效，基於這點：
+	 - 客戶端若要自行失效，就修改客戶端空間內的時間戳內容
+	 - 伺服器若要自行失效，就修改JWT中的時間戳內容
 
 ###  claim 命名緣由
 claim：
