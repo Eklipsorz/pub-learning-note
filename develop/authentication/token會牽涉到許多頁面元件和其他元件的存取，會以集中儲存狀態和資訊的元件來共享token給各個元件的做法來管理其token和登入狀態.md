@@ -90,17 +90,17 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-01-18,10,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，客戶端的React該如何儲存token，其中token適合儲存在React的Context API構建的儲存空間嗎？ 為何？->->-> `適合，由於認證狀態(含token) 本身並不會頻繁地更新，所以很適合使用在不利於頻繁更新場景的Context API`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-10,2,230-->
 
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ ->->-> `token、isLoggedIn、更新狀態函式有login、logout`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-16,8,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示->->-> ``
 <!--SR:!2023-01-16,8,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中token的型別、用途、初始值為何？ ->->-> `	- 型別：字串 - 用途：用來向伺服器索求受保護資料的識別資料 - 初始值：空字串`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-15,7,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中isLoggedIn的型別、用途、初始值為何？ ->->-> `	- 型別：布林值 - 用途：若擁有任意token，就為true；若沒有任意token，就為false。主要讓元件了解目前狀態是否為登入或者未登入好切換內容 - 初始值：false`
 <!--SR:!2023-01-16,8,250-->
