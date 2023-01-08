@@ -64,7 +64,7 @@
 
 
 #🧠 以server-side session為基礎來構建登入驗證服務：獲取對應permission 或者 access的 流程，請問流程會是什麼？ ->->-> `1. 客戶端先輸入自己的credential並傳遞給伺服器做驗證 2. 伺服器收到就從資料庫獲取對應使用者的credential來比對輸入的credential是否一樣，若一樣就做下一步；若不一樣就報錯 3. 伺服器建立session 來儲存credential並將該session儲存至伺服器上的session store 4. 伺服器在回傳session id給客戶端，作為代表permission或者access， 5. 此時客戶端收到會存放在自己的cookie並標記對應domain和path來表示這資料屬於哪個domain和path。`
-<!--SR:!2023-01-08,7,250-->
+<!--SR:!2023-01-27,19,250-->
 
 #🧠 以server-side session為基礎來構建登入驗證服務：獲取對應permission 或者 access的 流程，請問流程會是什麼？以畫圖表示->->-> ``
 <!--SR:!2023-01-22,15,250-->
