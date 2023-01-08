@@ -149,8 +149,8 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 	- 驗證解碼後的payload，如aud claim，就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效
 
 ####  驗證aud claim 方式
-https://juejin.cn/post/7131956073472196621
 
+[[@JWTShuiChuangZaoLiaoWoWoTingMingYuShui]]
 > 我这里有两种方案：
 
 > 第一种，是颁发token的时候有一个受众人aud ，也就是颁发给谁 ，我们颁发token的时候，每个用户根据 username+pwd+datetime.now() 的规则作为颁发受众人。
@@ -192,3 +192,4 @@ References:
 [[@IDTokenAccess]]
 [[@OpenIDConnectShiShiMo]]
 [[@auth0ValidateIDTokens]]
+[[@JWTShuiChuangZaoLiaoWoWoTingMingYuShui]]
