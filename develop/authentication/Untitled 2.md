@@ -115,7 +115,13 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 	- payload 夾雜著特定身分的驗證資料
 
 
-#
+#### payload 中的 aud claim
+
+- aud 本身是指audience ，在這裡是用觀眾、聽眾的比喻來描述最後接收到特定資源權限的那一方，通常會是：
+	- 若是id token，aud 值會是client_id
+	- 若是access token，aud 值會是代表relying party所要存取端點之識別字
+- aud claim 最主要是進行身份驗證，通常會拿JWT裡頭的aud claim 從openID Provider或者Authorization Server 中找到對應設定，若沒有就失效；若有就繼續生效
+
 
 
 
@@ -130,6 +136,12 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 > 2. Check additional standard claims. If you've performed the standard JWT validation, you have already decoded the JWT's Payload and looked at its standard claims. Additional claims to verify for ID tokens include:
 		- Token audience (aud, string): The audience value for the token must match the client ID of the application as defined in your Application's Settings in the Client ID field.
 		- Nonce (nonce, string): Passing a nonce in the token request is recommended (required for the Implicit Flow) to help prevent replay attacks. The nonce value in the token must exactly match the original nonce sent in the request. See Mitigate Replay Attacks for details.
+
+重點：
+- id token 驗證方式：若有任一步驟失敗，就會將token視為非法
+	- 驗證JWT
+	- 驗證解碼後的payload，如aud claim，就驗證其值是否還存在伺服器的驗證資料用的空間，還存在就繼續生效；否則失效
+
 
 
 
