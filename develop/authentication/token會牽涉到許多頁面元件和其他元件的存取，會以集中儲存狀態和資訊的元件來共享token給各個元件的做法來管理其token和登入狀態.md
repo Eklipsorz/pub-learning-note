@@ -84,7 +84,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-01-17,9,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，客戶端的React該如何儲存token，概念上會是會以app-wide形式的狀態來儲存token和其登入狀態，具體會是用什麼？ ->->-> `會使用集中儲存狀態和資訊的元件來共享token給各個元件，如 1. 使用context 2. 使用Redux`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-17,9,250-->
 
 #🧠  在client-server間的authentication過程中獲取到token，客戶端的React該如何儲存token，其中為何會使用集中儲存狀態和資訊的元件來共享token給各個元件？ ->->-> `以app-wide形式的狀態，在實作上會考量到涉及的頁面元件和元件數量較多，若貿然使用prop drilling可能使缺失因爲規模關係而放大`
 <!--SR:!2023-01-18,10,250-->
@@ -97,7 +97,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-01-08,3,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示->->-> ``
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-16,8,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中token的型別、用途、初始值為何？ ->->-> `	- 型別：字串 - 用途：用來向伺服器索求受保護資料的識別資料 - 初始值：空字串`
 <!--SR:!2023-01-08,3,250-->
@@ -106,10 +106,10 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-01-16,8,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中用來更改狀態的函式是為何？ ->->-> `login、logout`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-18,10,250-->
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，isLoggedIn ：若擁有任意token，就為true；若沒有任意token，就為false這token對於使用者來說是合法的嗎？為什麼？ ->->-> `在這裡的任意token都為合法，因為取得任意token的唯一條件就是透過伺服器驗證成功並獲取到的token，所以只要不為null就為合法登入或者true；否則為未登入狀態或者false`
-<!--SR:!2023-01-08,3,250-->
+<!--SR:!2023-01-17,9,250-->
 
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ ->->-> `儲存token，並且利用token來向伺服器獲取受保護的資源來刷新畫面`
