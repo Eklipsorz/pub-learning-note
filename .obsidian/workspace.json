@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "a03252847ceda993",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfbe50ffae01bb38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "ef457d1ab2d8ec1e",
         "type": "tabs",
         "children": [
@@ -104,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md"
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md"
               }
             }
           }
@@ -174,12 +192,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "50b8c0eb26d1c8d0",
+  "active": "bfbe50ffae01bb38",
   "lastOpenFiles": [
+    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
     "develop/authentication/JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值.md",
     "develop/Redis/redis key上的過期策略為active deletion + passive deletion.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "inbox/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
     "develop/JavaScript/this-binding/JS：implicit binding：以暗示的方式來表達this 設定成什麼，losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失binding.md",
