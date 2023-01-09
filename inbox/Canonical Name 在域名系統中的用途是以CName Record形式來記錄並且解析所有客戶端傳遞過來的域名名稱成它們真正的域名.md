@@ -64,7 +64,7 @@ bar.example.com.        CNAME  foo.example.com.
 <!--SR:!2023-01-16,24,250-->
 
 #🧠 若設定如下：bar.example.com.   CNAME  foo.example.com.，那麼系統會是如何解析？->->-> `會將bar.example.com 的真實名稱解析成foo.example.com，也就是看到bar.example.com，直接被系統看作是foo.example.com.`
-<!--SR:!2023-01-09,19,250-->
+<!--SR:!2023-03-02,52,250-->
 
 #🧠 DNS Record 會是什麼？ ->->-> `DNS Record 是DNS 系統用來解析接收過來域名會是什麼的紀錄內容`
 <!--SR:!2023-01-17,25,250-->
