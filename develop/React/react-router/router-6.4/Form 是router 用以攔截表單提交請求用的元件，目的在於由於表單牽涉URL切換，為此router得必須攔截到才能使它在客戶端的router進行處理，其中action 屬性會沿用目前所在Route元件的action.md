@@ -70,7 +70,7 @@ const callback = (params, request) => { ... }
 <!--SR:!2023-01-16,23,250-->
 
 #🧠  react-router-dom v6.4：若表單沒套用react-router的Form的話，其提交時的請求會是如何？  ->->-> `該提交時的請求會直接轉向伺服器來處理，由伺服器賦予對應頁面或者服務`
-<!--SR:!2023-01-09,17,250-->
+<!--SR:!2023-02-25,47,250-->
 
 #🧠 react-router-dom v6.4：Form 元件語法會是如何？ ->->-> `<Form method=method1 action=action1> </Form>`
 <!--SR:!2023-02-23,46,250-->

@@ -352,7 +352,7 @@ consume
 <!--SR:!2023-06-06,158,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
-<!--SR:!2023-01-09,69,250-->
+<!--SR:!2023-07-08,180,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
 <!--SR:!2023-06-10,160,250-->
