@@ -17,8 +17,10 @@ authoriziation
 
 ## 複習
 #🧠 authentication 是指什麼？ ->->-> `指特定事物被驗證是對、正確、合法事物之過程`
+<!--SR:!2023-01-11,2,248-->
 
 #🧠 authorization 是指什麼？ ->->-> `授與權力給特定事物去做特定事情之過程`
+<!--SR:!2023-01-10,1,230-->
 
 #🧠 authentication vs authorization ？ ->->-> ``
 <!--SR:!2023-01-12,3,250-->
