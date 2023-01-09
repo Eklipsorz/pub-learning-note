@@ -21,6 +21,7 @@ authoriziation
 #🧠 authorization 是指什麼？ ->->-> `授與權力給特定事物去做特定事情之過程`
 
 #🧠 authentication vs authorization ？ ->->-> ``
+<!--SR:!2023-01-12,3,250-->
 
 
 
