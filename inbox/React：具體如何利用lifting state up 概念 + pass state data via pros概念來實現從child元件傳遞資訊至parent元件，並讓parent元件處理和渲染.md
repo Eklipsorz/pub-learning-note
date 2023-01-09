@@ -59,7 +59,7 @@ So in that parent component which has access to both involved components by lift
 
 
 #🧠 React： lifting state up 概念是什麼？(請說到傳遞和接收者要做啥) ->->-> `將特定元件A的狀態往上傳遞至parent元件上，好讓parent元件接收並處理`
-<!--SR:!2023-01-09,70,250-->
+<!--SR:!2023-07-09,181,250-->
 
 
 #🧠 React： lifting state up 概念是什麼？ ->->-> `將特定元件A的狀態往上傳遞至parent元件上，好讓parent元件接收並處理`
