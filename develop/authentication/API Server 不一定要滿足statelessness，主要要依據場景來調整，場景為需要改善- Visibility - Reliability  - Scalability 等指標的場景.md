@@ -85,7 +85,7 @@ statelessness 是指特定系統或者特定程式不會擁有任何狀態/擁�
 <!--SR:!2023-01-28,21,250-->
 
 #🧠 API Server 一定要是statelessness嗎？為何？->->-> `不一定，主要要依據場景來調整`
-<!--SR:!2023-01-10,10,250-->
+<!--SR:!2023-02-07,28,250-->
 
 #🧠 API Server 不一定要滿足statelessness，主要要依據場景來調整，其場景為何？ ->->-> `場景要求以下指標改善的話：- Visibility - Reliability - Scalability`
 <!--SR:!2023-01-27,20,250-->
