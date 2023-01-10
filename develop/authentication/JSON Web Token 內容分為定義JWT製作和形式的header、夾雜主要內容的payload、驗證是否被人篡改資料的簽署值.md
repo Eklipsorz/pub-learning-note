@@ -1,6 +1,20 @@
 ## 描述
 
 
+### JWT 會是什麼？
+
+
+> JSON Web Token (JWT, pronounced /dʒɒt/, same as the word "jot") is a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key.
+
+重點：
+- JWT 是透過簽署算法得到的簽署值和加密後的payload組合而成的
+
+
+#### token 
+
+
+### 概念實現
+
 [[@auth0.comJWTIOJSON]]
 > ## What is the JSON Web Token structure?
 
