@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "b949d981a90be20c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b47e3078a1638e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "3f6a95e099bc14de",
         "type": "tabs",
         "children": [
@@ -121,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+                "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+                "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md"
+                "file": "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md"
               }
             }
           }
@@ -191,10 +209,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a155754bbd6abc6",
+  "active": "4b47e3078a1638e0",
   "lastOpenFiles": [
-    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
     "inbox/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
     "develop/React/React：dynamic context 是指在執行過程根據執行狀況來更改context的當前值，方法有將更新狀態用的函式添加至對應的context object中的provider component.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
