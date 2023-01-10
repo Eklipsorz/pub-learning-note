@@ -106,7 +106,7 @@ clearTimeout(timeoutID)
 
 
 #🧠 React：如何在useEffect的debouncing 實現是在useEffect 使用setTimemout 來夾雜side effect原本實現代碼，然後紀錄當前的timeout的任務ID，定義著useEffect的cleanup來依照timeoue任務ID來取消任務，那麼實際如何執行？如何確保就是最後一個請求？->->-> `首次元件開始mounting就生成setTimeout任務，並定義cleanup任務是要清除掉當前timeout的任務，接著若下一個effect被觸發就先執行cleanup任務來清除上一個timeout非同步任務，然後重新生成timeout任務，接著定義cleanup來清除這次生成的timeout任務，後面依此類推，直到沒觸發，代表當前timeout任務正執行著最後一個請求。`
-<!--SR:!2023-01-10,74,250-->
+<!--SR:!2023-07-20,191,250-->
 
 #🧠 React：在useEffect的debouncing 實現中，是如何實現每一次effect觸發就清除上一個effect觸發處理生成的非同步計時任務(timer task) ->->-> `以effect 的cleanup來實現，其identifier會是記錄上一個處理而生成的計時任務ID。定義effect的cleanup任務，內容為return () => { clearTimeout(identifier); }`
 <!--SR:!2023-01-10,74,250-->
@@ -119,7 +119,7 @@ clearTimeout(timeoutID)
 
 
 #🧠 React：請用setTimeout + cleanup 程式碼來實現effect的debouncing概念 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png)`
-<!--SR:!2023-01-10,74,250-->
+<!--SR:!2023-07-23,194,250-->
 
 ---
 Status: #🌱 
