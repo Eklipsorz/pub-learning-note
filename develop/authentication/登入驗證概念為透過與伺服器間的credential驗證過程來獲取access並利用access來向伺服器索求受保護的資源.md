@@ -80,7 +80,7 @@
 <!--SR:!2023-01-10,9,250-->
 
 #🧠 credential 命名緣由為何？ ->->-> `用來證明合法使用者的資訊`
-<!--SR:!2023-01-10,9,250-->
+<!--SR:!2023-02-05,26,250-->
 
 #🧠  伺服器和客戶端之間為何需要authentication？ ->->-> `內容肯定會有只限於特定人士才能存取和所有都能存取的`
 <!--SR:!2023-01-10,9,250-->
@@ -102,7 +102,7 @@
 <!--SR:!2023-01-22,15,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問前者具體為何？ ->->-> `從特定認證方式輸入自己的credential來驗證，若驗證成功就獲取permission或者access；若驗證失敗就不允許獲取`
-<!--SR:!2023-01-10,9,250-->
+<!--SR:!2023-02-04,25,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問後者具體為何？:->->-> `憑藉著從Get access/permissionㄐ獲取到的access或者permission來向伺服器所求被保護的資料，伺服器收到會驗證access或者permission的合法性，若合法就允許存取；若不合法就不允許存取`
 <!--SR:!2023-01-11,10,250-->

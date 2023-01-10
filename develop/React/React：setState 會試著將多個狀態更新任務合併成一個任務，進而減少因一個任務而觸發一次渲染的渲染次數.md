@@ -283,7 +283,7 @@ setLastName('Cheng');
 <!--SR:!2023-01-31,73,250-->
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並存在結果狀態物件的屬性中，那接下來如何做？->->-> `就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
-<!--SR:!2023-01-10,58,250-->
+<!--SR:!2023-06-04,145,250-->
 
 
 #🧠 請試著以functional component的方式來打造以下的狀態batching![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `const [firstName, setFirstName] = useState('');、const [lastName, setLastName] = useState('');、setFirstName('Morgan');setLastName('Cheng');`
