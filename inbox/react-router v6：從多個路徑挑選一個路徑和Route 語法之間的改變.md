@@ -131,7 +131,7 @@ v6：
 
 
 #🧠 react-router v6：Route語法標籤是`<Route path=path1 element={element1} />`，那麼path和element各為什麼？ ->->-> `	 - path 屬性是填入要比對的路徑  - element 屬性是填入要比對滿足後要渲染的元件`
-<!--SR:!2023-01-11,26,250-->
+<!--SR:!2023-03-21,69,250-->
 
 
 #🧠 假設目前是react-router v6，若URL切換至/products/edit的話，會呈現什麼畫面？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1669900964/blog/react/react-router/v6/react-router-v6-route-example_fhsfsi.png) ->->-> `但由於會比較具體程度，而最後一個Route設定的路徑是設定明確的路徑，所以會選擇它作為渲染元件。`
