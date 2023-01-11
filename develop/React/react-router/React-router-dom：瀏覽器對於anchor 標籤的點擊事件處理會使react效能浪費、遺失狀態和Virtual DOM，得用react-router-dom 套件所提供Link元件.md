@@ -205,7 +205,7 @@ export default MainHeader;
 <!--SR:!2023-04-15,102,249-->
 
 #🧠 react-router-dom Link 語法是什麼？ ->->-> `<Link to="xxxx">xxxx1</Link>`
-<!--SR:!2023-01-11,39,230-->
+<!--SR:!2023-04-11,90,230-->
 
 #🧠 react-router-dom Link 要如何載入？ ->->-> `import { Link } from 'react-router-dom';`
 <!--SR:!2023-03-18,86,249-->

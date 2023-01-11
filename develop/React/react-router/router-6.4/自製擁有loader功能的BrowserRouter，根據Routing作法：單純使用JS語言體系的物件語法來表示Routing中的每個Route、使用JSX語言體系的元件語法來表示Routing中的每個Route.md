@@ -244,7 +244,7 @@ export default RootLayout;
 <!--SR:!2023-02-07,36,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為`createRoutesFromElements(JSX Element)`，那麼JSX Element會是什麼？->->-> `其中JSX Element為JSX語言體系的JSX Element`
-<!--SR:!2023-01-11,20,250-->
+<!--SR:!2023-03-06,54,250-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 會回傳什麼？->->-> `回傳代表存有Route物件的陣列`

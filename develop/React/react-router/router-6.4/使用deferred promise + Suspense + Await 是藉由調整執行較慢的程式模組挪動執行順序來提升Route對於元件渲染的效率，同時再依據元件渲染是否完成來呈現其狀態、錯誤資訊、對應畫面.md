@@ -180,7 +180,7 @@ suspense
 <!--SR:!2023-01-13,16,248-->
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為deferred task，如何透過defer來用 ->->-> `defer({ attribute1: promise })`
-<!--SR:!2023-01-11,12,230-->
+<!--SR:!2023-02-10,30,230-->
 
 #🧠 React-router：defer 方法是主要指定哪些非同步任務為要延遲執行的任務並回傳deferred object，defer語法為？若要設定特定非同步為not-deferred task，如何透過defer來用 ->->-> `defer({ attribute1: await promise })`
 <!--SR:!2023-02-14,35,248-->
@@ -215,7 +215,7 @@ suspense
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children若是函式物件，會是什麼？ 會回傳什麼？->->-> `若是函式物件的話，其引數會是該resolved的結果值，回傳對應JSX Element`
-<!--SR:!2023-01-11,14,248-->
+<!--SR:!2023-02-17,37,248-->
 
 #🧠 react-router-dom：使用deferred promise + Suspense + Await的應用場景 ->->-> `1. Route執行Loader存在執行較慢的程式碼部分，致使元件渲染必須等到其完成才能渲染 2. 適用於不想讓整個頁面的每個頁面都相互等待才渲染，而是能先渲染的元件就先渲染給使用者看，而非等到所有元件都完成渲染才正式渲染給使用者瀏覽 3. 透過Route來實現資料載入、元件渲染載入中的畫面
 <!--SR:!2023-02-09,30,230-->
