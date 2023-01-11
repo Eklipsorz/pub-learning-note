@@ -114,7 +114,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2023-01-12,66,230-->
 
 #🧠 ES module：default exports 和 named exports  若擺放在同一個模組檔案，請問引入方還能正常引入嗎？ 那麼具體可引入哪種？->->-> `可以，兩邊都可以`
-<!--SR:!2023-01-11,71,250-->
+<!--SR:!2023-07-15,185,250-->
 
 #🧠 ES module：default exports 和 named exports  若擺放在同一個模組檔案，引入方兩邊都能引入，那麼如何引入？？->->-> `若要引入named exports，就以物件的解構來引入，若要引入default exports，就以單一值的形式來存放，如同變數儲存特定內容`
 <!--SR:!2023-01-14,73,250-->

@@ -89,7 +89,7 @@ const Quote = () => {
 <!--SR:!2023-02-28,60,250-->
 
 #🧠 react-router-dom：Route 會設定的path ，其寫法會是盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑，具體有何種實現概念？ 使用useLocation 會是實現方向，那麼具體是利用他的什麼來取得什麼？  ->->-> `useLocation 會從瀏覽器取得目前頁面的路徑資訊`
-<!--SR:!2023-01-11,32,250-->
+<!--SR:!2023-04-01,80,250-->
 
 
 #🧠 使用useRouteMatch 和 使用useLocation 的場景各是什麼？   ->->-> `1. useRouteMatch 只適用於被route 元件所包含的元件 2. useLocation 適用於任意元件，無論是否被route元件給包含`

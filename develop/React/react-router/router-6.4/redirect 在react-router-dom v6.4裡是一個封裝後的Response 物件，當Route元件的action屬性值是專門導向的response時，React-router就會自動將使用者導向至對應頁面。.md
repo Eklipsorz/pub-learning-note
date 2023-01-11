@@ -45,7 +45,7 @@ new Response(body, {
 ## 複習
 
 #🧠 react-router-dom v6.4：redirect 會是什麼？  ->->-> `redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件`
-<!--SR:!2023-01-11,19,250-->
+<!--SR:!2023-03-04,52,250-->
 																													
 #🧠 react-router-dom v6.4：redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，其物件會是什麼？？ ->->-> ``
 <!--SR:!2023-01-15,9,210-->
