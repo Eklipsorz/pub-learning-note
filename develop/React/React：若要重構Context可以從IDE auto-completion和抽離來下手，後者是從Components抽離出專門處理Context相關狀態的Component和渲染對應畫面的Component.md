@@ -368,7 +368,7 @@ Autocomplete
 <!--SR:!2023-01-13,71,250-->
 
 #🧠 為何要從Components抽離出專門處理狀態的Component和渲染對應元件的Component？ ->->-> `實現單一職責原則，管理狀態就由負責管理狀態的component來負責，負責對應元件渲染就由該component負責`
-<!--SR:!2023-01-11,70,250-->
+<!--SR:!2023-07-11,181,250-->
 
 #💻 請至/react-builder/question-review/useContext-Refactor-question下，請試著以抽離出專門處理Context狀態的Component和渲染對應畫面的Component ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/12-building-and-using-a-custom-context-provider-cmp/src`
 <!--SR:!2023-01-15,74,250-->

@@ -320,7 +320,7 @@ consume
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
 <!--SR:!2023-07-07,179,250-->
 
-#🧠 React：consumer 具體是什麼component->->-> `wrapper component`
+#🧠 React：context object 的 consumer 具體是什麼component->->-> `wrapper component`
 <!--SR:!2023-01-11,70,250-->
 
 #🧠 React：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`

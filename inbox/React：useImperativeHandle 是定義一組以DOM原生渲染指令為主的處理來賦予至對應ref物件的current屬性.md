@@ -236,7 +236,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 ## 複習
 
 #🧠 React：useImperativeHandle 在元件上是什麼？ ->->-> `useImperativeHandle 本身是一個HOOK，會註冊在元件上`
-<!--SR:!2023-01-11,68,250-->
+<!--SR:!2023-07-02,172,250-->
 
 #🧠 React：useImperativeHandle 用途是什麼？ ->->-> `具體是要以指定一組以DOM原生渲染指令為主的處理來賦予至對應ref物件上的current屬性`
 <!--SR:!2023-04-01,95,250-->

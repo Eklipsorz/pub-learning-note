@@ -294,7 +294,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-05-10,143,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
-<!--SR:!2023-01-11,73,250-->
+<!--SR:!2023-07-21,191,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式是物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
 <!--SR:!2023-06-28,175,250-->
