@@ -300,7 +300,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-06-28,175,250-->
 
 #🧠 React：用程式碼來調用useReducer中的dispatch派送type為increase，value為123的action->->-> `dispatch({type: 'increase', value: 123})`
-<!--SR:!2023-01-12,74,250-->
+<!--SR:!2023-07-25,194,250-->
 
 
 #🧠 useReducer 載入方式 ->->-> `import { useReducer } from 'react';`
