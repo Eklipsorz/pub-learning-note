@@ -9,10 +9,24 @@
 [[@pomingleeDrLeeBlog2013]]
 > 何謂 Bounce (彈跳)：   所謂的 Bounce 是指我們在按下電源開關時，電壓不會從 0 伏直接升到 VDD 伏。而是在 0 及 VDD 間震盪好幾次，最後才在 VDD 端穩定下來。
 
+
+> What is debouncing?
+
+> Debouncing is removing unwanted input noise from buttons, switches or other user input. 
+> 
+> Debouncing prevents extra activations or slow functions from triggering too often. 
+> 
+> Debouncing is used in hardware switches, programs and websites.
+
 重點：
 - bounce 是指特定事物只要經過特定反應，其位置會就以特定方向來回重複彈跳
-- 在電腦科學裡，會是形容函式和調用者之間的回應速率就如同球經過打擊後的剛開始來回重複彈跳的速率：調用者呼叫函式，函式馬上回應調用者，接著調用者馬上呼叫函式，函式馬上回應調用者這樣子，該現象持續重複一段時間
-- 請求方和處理方的回應速率是一個請求來臨，處理方就馬上處理當前請求的話，那麼在面對大量連續請求下，且目標是要取得最後一個請求作為處理，處理方在取得最後請求之前，會因為回應速率而產生以下現象：請求方發送一個請求，處理方接受到請求就處理；請求方又馬上發送請求，處理方接收到請求就馬上處理，後面以此類推。 該現象是bouncing
+- 在電腦科學裡的程式開發裡，bounce會是指特定程式模組A在獲得正式事件/正式信號來處理前所發生 **程式模組所重複執行的事件處理或者信號處理**
+-  **程式模組所重複執行的事件處理或者信號處理** 等同於以下動作的循環
+	- 程式模組接收信號來處理
+	- 發送信號方發送信號至程式模組
+	- 程式模組接收信號來處理
+	- 發送信號方發送信號至程式模組
+- 通常會將最後發送信號方所發送的事件或者信號正是正式事件/正式信號
 
 ### debouncing
 [[@geeksforgeeksDebouncingJavaScript2018]]
