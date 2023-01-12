@@ -144,7 +144,7 @@ const Element = styled.<element>`<template-literal>`
 
 
 #🧠 React：通常styled-component會是以什麼形式來表達其元件 ->->-> `以wrapper component`
-<!--SR:!2023-01-12,16,246-->
+<!--SR:!2023-02-24,43,246-->
 
 #🧠 React：若要替styled-component增加attribute，如何增加？ ->->-> `必須使component以wrapper形式來增加`
 <!--SR:!2023-02-16,38,246-->

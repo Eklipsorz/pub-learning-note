@@ -4,42 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "1dac6f6b6970e815",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "08cdf3671353f979",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "90767c3efdf970b6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0e8002811e23d3d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "1357ed604ef21d94",
         "type": "tabs",
         "children": [
@@ -58,16 +22,16 @@
         ]
       },
       {
-        "id": "ec7d9a5bb481e46c",
+        "id": "40e3cb9513e0820c",
         "type": "tabs",
         "children": [
           {
-            "id": "7445a6830369e713",
+            "id": "6e41e996d7291d19",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值.md",
+                "file": "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
                 "mode": "source",
                 "source": false
               }
