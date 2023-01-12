@@ -27,16 +27,16 @@
 ## 複習
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，請問具體位置為何？ ->->-> `header 部分、 body 部分、query string部分`
-<!--SR:!2023-01-12,3,250-->
+<!--SR:!2023-01-19,7,250-->
 
 #🧠 authentication token vs. access token 差別？ ->->-> `1. authentication token 泛指夾雜著身分證明資訊的且要求伺服器驗證其身份證明的token2. access token 單純是指代表特定資源之存取權限的資訊，誰擁有它誰就能存取特定資源`
-<!--SR:!2023-01-12,2,229-->
+<!--SR:!2023-01-17,5,229-->
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，若具體位置為header部分的話，具體會是什麼？？ ->->-> `增加Authentication header，對應內容為bearer token，token前面會有bearer標誌`
 <!--SR:!2023-01-18,6,230-->
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，若具體位置為body部分的話，具體會是什麼？？ ->->-> `以物件屬性來儲存token`
-<!--SR:!2023-01-12,3,250-->
+<!--SR:!2023-01-20,8,250-->
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，若具體位置為query string部分的話，具體會是什麼？？ ->->-> `以token作為key，value為對應token實際內容`
 <!--SR:!2023-01-21,9,250-->

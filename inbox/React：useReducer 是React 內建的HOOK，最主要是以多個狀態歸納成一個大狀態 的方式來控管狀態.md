@@ -274,7 +274,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-07-02,177,250-->
 
 #🧠 action 命名緣由？（請針對問題和困難來說) ->->-> `當要解決特定問題或者困難時所要做的行為`
-<!--SR:!2023-01-12,74,250-->
+<!--SR:!2023-07-24,193,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
 <!--SR:!2023-07-24,193,250-->
@@ -288,7 +288,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`
-<!--SR:!2023-01-12,74,250-->
+<!--SR:!2023-07-25,194,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
 <!--SR:!2023-05-10,143,250-->
