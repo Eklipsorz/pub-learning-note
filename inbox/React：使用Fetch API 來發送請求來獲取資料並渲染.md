@@ -240,7 +240,7 @@ function App() {
 
 
 #🧠 Fetch API 和 fetch() 差別為何？->->-> `1. Fetch API 是一個專門獲取資料的API，裡頭包含實際能獲取資料的方法、代表請求資訊的request object、代表回應資料的response object 2. fetch() 只是Fetch API內的其中一個方法`
-<!--SR:!2023-01-13,54,250-->
+<!--SR:!2023-05-27,134,250-->
 
 
 ---

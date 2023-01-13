@@ -90,7 +90,7 @@ end
 
 
 #🧠 javascript：async function vs. promise object 差異為何？ ->->-> `前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應非同步任務並回報執行狀態`
-<!--SR:!2023-01-13,5,246-->
+<!--SR:!2023-01-25,12,246-->
 
 
 #🧠 javascript： 如何將function設定為asynchronous  function？ ->->-> `若function 前綴標記成async的話，就會使function構成async function`
