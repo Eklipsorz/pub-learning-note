@@ -47,7 +47,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 <!--SR:!2023-05-18,138,250-->
 
 #🧠 為什麼component 會引入higher-order function呢？->->-> `在JS，component  本質上會是以名為component function來構成，所以才拿用higher-order function來改名成higher-order component`
-<!--SR:!2023-01-13,63,250-->
+<!--SR:!2023-06-24,162,250-->
 
 #🧠 higher-order component 會是什麼？ ->->-> `higher-order component 指的是一個專門以component C為參數作為處理並產出 component B為結果 的component A`
 <!--SR:!2023-06-12,152,250-->
