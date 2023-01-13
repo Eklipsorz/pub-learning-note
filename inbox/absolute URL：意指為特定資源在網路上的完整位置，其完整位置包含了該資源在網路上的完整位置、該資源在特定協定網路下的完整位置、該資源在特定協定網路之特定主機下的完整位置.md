@@ -92,7 +92,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2023-05-05,113,250-->
 
 #🧠 absolute URL： Implicit protocol 構成是如何？格式為？ ->->-> `主要由host、port、path所構成，格式為：//host:port/path`
-<!--SR:!2023-01-13,46,250-->
+<!--SR:!2023-05-08,115,250-->
 
 
 #🧠 absolute URL： implicit domain name 對於absolute URL是什麼？->->-> ` 以暗示方式說明特定協定網路之特定主機是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路之特定主機下的完整位置`
