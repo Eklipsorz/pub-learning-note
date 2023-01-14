@@ -67,7 +67,7 @@ end
 <!--SR:!2023-01-31,17,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，回傳內容的包裝方式會是如何？比如原本回傳非promise或者promise？promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以resolve狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
-<!--SR:!2023-01-14,6,246-->
+<!--SR:!2023-01-29,15,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，該物件回傳的promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以resolve狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
 <!--SR:!2023-01-24,11,246-->
@@ -82,7 +82,7 @@ end
 <!--SR:!2023-01-17,6,226-->
 
 #🧠 請問結果會是如何？又為何？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成resolve狀態的promise來回傳並印出對應promise物件，最後在印出end`
-<!--SR:!2023-01-14,6,246-->
+<!--SR:!2023-01-31,17,246-->
 
 
 #🧠 請問function1()的回傳內容會是什麼？？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成resolve狀態的promise來回傳並印出對應promise物件`
