@@ -229,7 +229,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 <!--SR:!2023-05-31,146,250-->
 
 #🧠 React.memo(A, B) 中的 A 和 B分別為何？ ->->-> `A會是指的是要暫存的指定元件A，具體會以component function來表示，B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false`
-<!--SR:!2023-01-14,64,250-->
+<!--SR:!2023-06-25,162,250-->
 
 #🧠 React.memo(A, B) 中的 A 和 B分別為何？B為callback，其定義是否要以緩存的Virtual DOM來使用的標準，其函式會回傳true或者false，那麼true和false會做什麼？ ->->-> `	- true，就通知React使用緩存的Virtual DOM來回傳，不執行對應元件的component function - false，就通知React直接執行對應元件的component function，不用緩存的Virtual DOM`
 <!--SR:!2023-01-20,68,250-->

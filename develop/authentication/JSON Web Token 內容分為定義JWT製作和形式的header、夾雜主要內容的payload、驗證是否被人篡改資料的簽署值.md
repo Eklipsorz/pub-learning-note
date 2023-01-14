@@ -196,14 +196,14 @@ HMACSHA256(
 <!--SR:!2023-01-19,7,250-->
 
 #🧠 JWT的Signature部分是檢測JWT是否被人篡改內部資料的簽署值，那麼簽署值算法製作簽署值的式子會是什麼？->->-> `HMACSHA256( base64UrlEncode(header) + "." + base64UrlEncode(payload),secret) 	- header：JWT夾雜的header內容，會用BASE64編碼 - payload：JWT夾雜的payload內容，會用BASE64編碼 - secret：伺服器用來執行hashing算法的密鑰`
-<!--SR:!2023-01-14,2,230-->
+<!--SR:!2023-01-20,6,230-->
 
 
 #🧠 JSON Web Token 概念是什麼？ ->->-> `是以JSON的開放標準為基礎並定義以JSON形式來包裝訊息並傳遞，接著搭配使用簽署來確保傳遞過程不會被人篡改`
 <!--SR:!2023-01-14,3,250-->
 
 #🧠 JSON Web Token 概念是以JSON的開放標準為基礎並定義以JSON形式來包裝訊息並傳遞，接著搭配使用簽署來確保傳遞過程不會被人篡改，具體實現會是？ ->->-> `JWT 具體是特定編碼下的JSON 形式payload 之對應編碼值和簽署值串連在一塊的字串。`
-<!--SR:!2023-01-14,3,250-->
+<!--SR:!2023-01-23,9,250-->
 
 
 #🧠  JSON Web Token 的payload會是什麼形式以及什麼內容？ ->->-> ` payload 主要儲存對於特定對象所宣稱的描述，具體會以JSON物件的屬性來分別描述`

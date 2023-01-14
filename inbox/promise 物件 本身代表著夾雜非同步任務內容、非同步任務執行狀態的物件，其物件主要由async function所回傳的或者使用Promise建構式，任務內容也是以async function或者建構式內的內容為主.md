@@ -76,7 +76,7 @@ end
 <!--SR:!2023-01-26,13,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件的執行方式是如何？ ->->-> `都皆為同步執行`
-<!--SR:!2023-01-14,6,246-->
+<!--SR:!2023-01-30,16,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件 的相同點和不同點為何？？ ->->-> `相同點為都能同步執行，不同點為async function會將結果以promise物件來包裝以及允許使用await語法；後者並不會。`
 <!--SR:!2023-01-17,6,226-->
