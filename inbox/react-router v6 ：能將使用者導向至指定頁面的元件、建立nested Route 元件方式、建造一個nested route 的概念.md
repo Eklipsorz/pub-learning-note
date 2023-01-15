@@ -170,7 +170,7 @@ xxxx 元件下的路由
 <!--SR:!2023-03-15,64,250-->
 
 #🧠 react-router-dom v6 ：將nested Route元件安置在component，再讓component被parent route元件所包含，具體流程中的parent route元件的path可以省略\/\*？為什麼？->->-> `不能，因爲parent route包含的後裔元件並不是route元件，沒辦法直接省略`
-<!--SR:!2023-01-15,5,210-->
+<!--SR:!2023-01-27,12,210-->
 
 
 
@@ -178,20 +178,20 @@ xxxx 元件下的路由
 <!--SR:!2023-03-06,58,250-->
 
 #🧠 react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含，語法會是什麼？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_ryhana.png)`
-<!--SR:!2023-01-15,28,250-->
+<!--SR:!2023-03-30,74,250-->
 
 #🧠 react-router-dom v6 ：第二、parent route元件直接包裹nested route元件，並搭配Outlet元件，語法會是什麼？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-parent-route_nk6b5b.png)`
 <!--SR:!2023-03-26,71,250-->
 
 #🧠 outlet 命名緣由是什麼？->->-> `Outlet 本身命名緣由為提供特定事物出去的通道`
-<!--SR:!2023-01-15,28,250-->
+<!--SR:!2023-03-27,71,250-->
 
 
 #🧠 react-router-dom：Outlet 是什麼樣用途的元件->->-> `主要用途為告知目前 nested route元件要在parent route對應的元件的哪處來渲染nested route所指定的element渲染內容`
 <!--SR:!2023-03-25,70,250-->
 
 #🧠  react-router-dom：Outlet 在 nested route 上會是以哪個頁面元件的特定位置來渲染？->->-> `直接以parent route對應的渲染元件為主`
-<!--SR:!2023-01-15,28,250-->
+<!--SR:!2023-03-29,73,250-->
 
 #🧠 react-router-dom：Outlet的存不存在 在 nested route 上會是什麼關係？ ->->-> `	- 若存在Outlet元件就以出現位置來呈現 - 若不存在就不呈現`
 <!--SR:!2023-03-03,56,250-->
