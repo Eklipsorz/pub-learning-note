@@ -270,7 +270,7 @@ consume
 <!--SR:!2023-02-08,45,170-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
-<!--SR:!2023-01-15,74,250-->
+<!--SR:!2023-07-23,189,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2023-07-05,176,250-->
@@ -300,7 +300,7 @@ consume
 
 
 #🧠 React：Context中的Provider Component 用途是將自己所提供的狀態值設定在對應的Context上，那麼具體設定流程為何？ ->->-> `1. 載入想存取狀態的Context import XXXContext from '....' 2. 利用XXXContext的Provider屬性來獲取對應Context之provider component包裹的元件，並指定value來設定目前Context的內容為一個裝載有state1屬性的物件，並讓後面的子節點可存取目前狀態值的Context <XXXContext.Provider value={{ state1: value1 }}> ... </XXXContext.Provider>`
-<!--SR:!2023-01-15,74,250-->
+<!--SR:!2023-07-24,190,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
 <!--SR:!2023-07-20,189,250-->
@@ -361,7 +361,7 @@ consume
 <!--SR:!2023-07-27,194,250-->
 
 #🧠 React：若有元件使用consumer 來存取對應context的值且有多個同個context的provider，請問具體來說它是如何存取context？ ->->-> `當React 開始渲染一個元件時，而該元件訂閱該context object，則會以讀取離它(Virtual DOM)較近的Provider元件來獲取目前context 內容`
-<!--SR:!2023-01-15,74,250-->
+<!--SR:!2023-07-22,188,250-->
 
 #💻 請使用useContext來讓App的登入狀態能夠共享給MainHeader元件下的Navigation元件，而非使用props chain，檔案在/react-builder/question-review/useContext-question ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/11-making-context-dynamic/src`
 <!--SR:!2023-02-15,90,249-->
