@@ -230,7 +230,7 @@ function App() {
 
 
 #🧠 Fetch API中的request object 是什麼？->->-> `表示請求封包`
-<!--SR:!2023-01-16,56,250-->
+<!--SR:!2023-06-05,140,250-->
 
 #🧠 Fetch API中的fetch方法要如何處理JSON格式的回應封包 ->->-> `針對回應的response object來使用底下的json方法來解析和轉換`
 <!--SR:!2023-02-09,73,250-->
