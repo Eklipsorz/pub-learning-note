@@ -69,15 +69,26 @@
 
 #🧠 Open Authorization 或者OAuth 會是什麼？ ->->-> `一種標準、協定。定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。`
 
-#🧠 Question :: ->->-> ``
 
-······
-#🧠 Question :: ->->-> ``
+#🧠 在Open Authorization 或者OAuth中，代表權限的事物會是什麼？ ->->-> `token`
 
 
+#🧠 在Open Authorization 或者OAuth中，代表權限的事物會是token，那麼該token會夾雜著什麼資訊？->->-> `內容通常會是包含誰賦予誰權限、權限為何。`
+
+
+#🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
+
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `- Resource Server：儲存資源的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
+
+#🧠 Question :: ->->-> ``
+
+
 #🧠 Question :: ->->-> ``
 
 #🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 
