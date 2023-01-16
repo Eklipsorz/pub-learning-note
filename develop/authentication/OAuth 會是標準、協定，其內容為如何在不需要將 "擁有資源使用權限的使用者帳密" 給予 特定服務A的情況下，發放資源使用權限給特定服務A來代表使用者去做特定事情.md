@@ -86,13 +86,17 @@
 ## 複習
 
 #🧠 OAuth 完整名稱是什麼？ ->->-> `Open Authorization`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 OAuth 完整名稱是Open Authentication 嗎？為什麼？ ->->-> `不是，會是Open Authorization`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 Open Authorization 或者OAuth 會是什麼？ ->->-> `一種標準、協定。定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。`
+<!--SR:!2023-01-19,3,250-->
 
 
 #🧠 在Open Authorization 或者OAuth中，代表權限的事物會是什麼？ ->->-> `token`
+<!--SR:!2023-01-19,3,250-->
 
 
 #🧠 在Open Authorization 或者OAuth中，代表權限的事物會是token，那麼該token會夾雜著什麼資訊？->->-> `內容通常會是包含誰賦予誰權限、權限為何。`
@@ -103,26 +107,33 @@
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `-管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server 對應的Client 會是什麼？  ->->-> `會是代表使用者User的應用程式或者服務`
 <!--SR:!2023-01-19,3,250-->
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？ ->->-> `	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤 - Authorization Server發送token給予Resource Owner - 由Resource Owner賦予token至Client - 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送 - Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤 - Resource Server 將指定Resource傳遞給Client使用`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server或者authentication server的伺服器`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會負責什麼？ ->->-> `管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器`
+<!--SR:!2023-01-19,3,250-->
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server和Authorization Server 之間差別是什麼？ ->->-> `- Resource Server：管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者是否相同 ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
+<!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？以圖來表示？->->-> ``
 <!--SR:!2023-01-19,3,250-->
