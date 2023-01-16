@@ -59,6 +59,7 @@ The JWT will contain an aud claim that specifies which Resource Servers the JWT 
 ```
 
 ```
+client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發送而產生出來的對應id
 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server就會從token提取aud的client_id是否存在於server中，若還存在的話，就合法；否則就不合法
 ```
 
