@@ -49,7 +49,7 @@
 
 重點：
 - OAuth 在Client-Server之間中，會有以下用語：
-	- Resource Server：儲存資源的伺服器
+	- Resource Server：儲存資源、驗證token來授與資源的伺服器
 	- Authorization Server：驗證Resource Owner輸入的credential來發放Token 
 	- Client：以發放的Token來向Resource Server索要指定資源
 		- Client 相對於Resource Server的稱呼
@@ -59,7 +59,8 @@
 	- Authorization Server發送token給予Resource Owner
 	- 由Resource Owner賦予token至Client
 	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
-
+	- Resource Server 驗證token，驗證成功就做下一步，失敗就回報錯誤
+	- Resource Server 將指定Resource傳遞給Client使用
 
 ## 複習
 
@@ -78,16 +79,21 @@
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
 
-#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `- Resource Server：儲存資源的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `- Resource Server 儲存資源、驗證token來授與資源的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
 
-#🧠 Question :: ->->-> ``
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server 對應的Client 會是什麼？  ->->-> `會是代表使用者User的應用程式或者服務`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
 
-#🧠 Question :: ->->-> ``
+#🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？ ->->-> `	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤 - Authorization Server發送token給予Resource Owner - 由Resource Owner賦予token至Client - 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送 - Resource Server 驗證token，驗證成功就做下一步，失敗就回報錯誤 - Resource Server 將指定Resource傳遞給Client使用`
 
-#🧠 Question :: ->->-> ``
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server和Authorization Server 之間差別是什麼？ ->->-> `	- Resource Server：儲存資源、驗證token來授與資源的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token `
+
+
+#🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？以圖來表示？->->-> ``
+
+#🧠 OAuth 最大好處是什麼 ->->-> ``
 
 
 ---
