@@ -49,8 +49,8 @@
 
 重點：
 - OAuth 在Client-Server之間中，會有以下用語：
-	- Resource Server：儲存資源、驗證token來授與資源的伺服器
-	- Authorization Server：驗證Resource Owner輸入的credential來發放Token 
+	- Resource Server：儲存資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器
+	- Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource驗證token是否為合法
 	- Client：以發放的Token來向Resource Server索要指定資源
 		- Client 相對於Resource Server的稱呼
 	- Resource Owner：在Resource Server上實際擁有資源的人
@@ -59,7 +59,7 @@
 	- Authorization Server發送token給予Resource Owner
 	- 由Resource Owner賦予token至Client
 	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
-	- Resource Server 驗證token，驗證成功就做下一步，失敗就回報錯誤
+	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤
 	- Resource Server 將指定Resource傳遞給Client使用
 
 ## 複習
