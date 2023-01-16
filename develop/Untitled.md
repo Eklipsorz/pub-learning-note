@@ -54,10 +54,18 @@ https://stackoverflow.com/questions/28418360/jwt-json-web-token-audience-aud-ver
 
 The JWT will contain an aud claim that specifies which Resource Servers the JWT is valid for
 
+```
+客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server此時會提取token的aud是否為對應端點，若是的話就合法；否則為不合法
+```
+
+```
+客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server就會從token提取aud的client_id是否存在於server中，若還存在的話，就合法；否則就不合法
+```
 
 JWT 将包含一个 aud 声明，指定 JWT 对哪些资源服务器有效
 
 https://5xruby.tw/posts/what-is-jwt
+
 
 -   **aud**：audience 的簡稱，用單字串(case-sensitive) 或 URI 或陣列表示這個 JWT 唯一識別的預期接收者。換句話說，當此聲明存在，則讀取此 JWT 中的數據的一方必須在 aud 中找到自己，或者無視 JWT 中包含的數據。與 iss 和 sub 要求的情況一樣，該權利要求是專用的。
 
