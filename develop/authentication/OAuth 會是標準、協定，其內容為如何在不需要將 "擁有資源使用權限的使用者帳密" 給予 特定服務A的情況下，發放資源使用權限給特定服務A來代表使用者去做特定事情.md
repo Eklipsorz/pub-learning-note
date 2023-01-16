@@ -49,7 +49,7 @@
 
 重點：
 - OAuth 在Client-Server之間中，會有以下用語：
-	- Resource Server：管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器
+	- Resource Server：管理資源、轉遞請求封包上的token至authorization server的伺服器
 	- Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法
 	- Client：以發放的Token來向Resource Server索要指定資源
 		- Client 相對於Resource Server的稱呼
@@ -106,7 +106,7 @@
 #🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
 <!--SR:!2023-01-19,3,250-->
 
-#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `-管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `-管理資源、轉遞請求封包上的token至authorization server的伺服器 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server 對應的Client 會是什麼？  ->->-> `會是代表使用者User的應用程式或者服務`
@@ -119,17 +119,17 @@
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？ ->->-> `	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤 - Authorization Server發送token給予Resource Owner - 由Resource Owner賦予token至Client - 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送 - Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤 - Resource Server 將指定Resource傳遞給Client使用`
 <!--SR:!2023-01-19,3,250-->
 
-#🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server或者authentication server的伺服器`
+#🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server的伺服器`
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
 <!--SR:!2023-01-19,3,250-->
 
-#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會負責什麼？ ->->-> `管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器`
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會負責什麼？ ->->-> `管理資源、轉遞請求封包上的token至authorization server的伺服器`
 <!--SR:!2023-01-19,3,250-->
 
 
-#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server和Authorization Server 之間差別是什麼？ ->->-> `- Resource Server：管理資源、轉遞請求封包上的token至authorization server或者authentication server的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
+#🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server和Authorization Server 之間差別是什麼？ ->->-> `- Resource Server：管理資源、轉遞請求封包上的token至authorization server的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者是否相同 ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
