@@ -4,78 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "1357ed604ef21d94",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a974bd9331f59803",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "b127e5a121ca7d87",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6eadc7ae780926a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "861dad7d6df9d803",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "60eab46c693e8853",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "0e6ff3d2286c95cf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "763e58d3d660771c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "6713e5d3dd84a631",
         "type": "tabs",
         "children": [
@@ -85,7 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
+                "file": "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "e7e736c51ce79058",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd2f13acd1e726f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
+                "file": "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
+                "file": "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md"
+                "file": "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md"
               }
             }
           }
@@ -228,17 +174,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "60eab46c693e8853",
+  "active": "fd2f13acd1e726f5",
   "lastOpenFiles": [
-    "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
-    "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
-    "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
-    "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
-    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-    "inbox/React：撰寫class-base component 注意事件處理器的this是否正確綁定？還是綁定在發生事件的dom節點本身.md",
-    "inbox/react-router-practice：對特定Quote增加評論功能.md",
+    "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
     "develop/authentication/JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值.md",
-    "inbox/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
-    "develop/React/React：在JSX中，當import的檔案是非JS檔案的話，會是告知webpack以模組來處理檔案，並於最後結果網頁加載其模組內容.md"
+    "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+    "develop/authentication/authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程.md",
+    "develop/authentication/Untitled 4.md",
+    "inbox/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
+    "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
+    "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+    "inbox/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
+    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md"
   ]
 }
