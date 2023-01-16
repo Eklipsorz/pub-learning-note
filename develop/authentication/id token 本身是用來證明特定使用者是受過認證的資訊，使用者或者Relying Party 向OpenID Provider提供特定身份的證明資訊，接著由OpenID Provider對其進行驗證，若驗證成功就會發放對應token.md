@@ -104,7 +104,7 @@ id token：可以拿來做什麼？
 	- 若token本身夾雜特定身分證明資訊 和 代表特定資源之使用權限的資訊，那麼就會是同時表示權限和使用者的id token
 	- 若token本身只有特定資源之使用權限的資訊，那麼就只能表示權限的access token
 - id token夾雜的身分證明資訊會是：
-	- 特定身分對應的client_id、識別字、名字、email、圖片、生日等個人資料
+	- 特定身分對應的client_id、驗證操用的識別字、名字、email、圖片、生日等個人資料
 - id token 本身是用來證明特定使用者是受過認證的資訊
 
 實際上來說，OpenID Connect 規格書不需要ID token 去擁有使用者的資訊，在最小的token架構中，是token內的資訊是沒有任何有關於使用者資訊，就只是關於驗證操作的資訊。
@@ -146,7 +146,7 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 
 重點：
 - id token 驗證方式：若有任一步驟失敗，就會將token視為非法
-	- 驗證JWT
+	- 先以JWT規則來驗證是否竄改
 	- 驗證解碼後的payload，如aud claim，就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效
 
 ####  驗證aud claim 方式
@@ -178,7 +178,34 @@ claim：
 
 重點：
 - 以特定角度來說明特定事物是對的描述，但對於其他人來說可能會不相信
+
 ## 複習
+
+#🧠 id token 以及 access token 各為什麼？ ->->-> `	- 若token本身夾雜特定身分證明資訊 和 代表特定資源之使用權限的資訊，那麼就會是同時表示權限和使用者的id token - 若token本身只有特定資源之使用權限的資訊，那麼就只能表示權限的access token`
+
+#🧠 若token本身夾雜特定身分證明資訊 和 代表特定資源之使用權限的資訊，那麼就會是同時表示權限和使用者的id token，其中id token夾雜的身分證名資訊會是？->->-> `特定身分對應的client_id、驗證操用的識別字、名字、email、圖片、生日等個人資料`
+
+#🧠 id token 以及 access token 如何獲取？ ->->-> `皆為使用者先向Authorization Server/OpenID Provider提供特定身份的證明資訊，Authorization Server/OpenID Provider對其進行驗證，若驗證成功就會根據是否綁定特定身份來發放id token 或者 access token，若綁定就id token；若沒綁定就access token`
+
+#🧠 id token 在最低程度下的實現下，請問token夾雜內容會是如下？->->-> `會沒包含任何明顯的身分驗證資訊，只會有驗證操作用的識別字，其識別字也不能從客戶端看出使用者是誰。`
+
+
+#🧠 id token 在最低程度下的實現下，請問token夾雜內容會是沒包含任何明顯的身分驗證資訊，只會有驗證操作用的識別字，其識別字在伺服器中會是如何進行驗證和表明對應使用者 ->->-> `會建立一個存有使用者資訊表格，並將識別字設定至對應使用者所在的列來`
+
+#🧠 id token 在最低程度下的實現下，請問token夾雜內容會是沒包含任何明顯的身分驗證資訊，只會有驗證操作用的識別字，能從客戶端和伺服器看到識別字夾雜什麼 ->->-> `其識別字也不能從客戶端看出使用者是誰，伺服器可以看出使用者是誰`
+
+
+
+
+#🧠 id token 會放在JWT的哪部分->->-> `payload`
+
+#🧠 id token 驗證方式為何？如何視為合法和非法 ->->-> `先以JWT規則來驗證是否竄改、驗證解碼後的payload，若任一項失敗，就將token視為非法；都通過就合法`
+
+#🧠 id token 驗證方式中的驗證解碼後的payload，會是如何進行，舉例->->-> `伺服器會從客戶端發送的token中提取aud claim對應內容看是否能在Server中的身份資訊表格找到對應內容，若不存在，就視為非法；若存在就合法。`
+
+#🧠  id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，舉例來說，順便說清楚如何生效和失效 ->->-> `在Authorization Server或者openID Provider 中的使用者資料表格上或者建立以下表格來記錄，將申請id token的使用者標記上特定的client_id，並將該client_id寫入至JWT以做比對。當客戶端夾雜著JWT時，伺服器就會從aud claim獲取對應的client_id，接著在指定表格上找看看有沒有相符合，有的話就繼續讓JWT生效；沒的話就讓JWT失效。`
+
+#🧠 id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，若想要從伺服器讓token失效的話  ->->-> `伺服器讓內部用來驗證的資料弄成為與JWT中的資料不一樣的內容。`
 
 
 ---
