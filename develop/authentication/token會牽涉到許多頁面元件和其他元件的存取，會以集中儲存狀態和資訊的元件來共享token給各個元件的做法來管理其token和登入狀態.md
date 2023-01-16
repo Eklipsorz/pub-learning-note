@@ -94,7 +94,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ ->->-> `token、isLoggedIn、更新狀態函式有login、logout`
-<!--SR:!2023-01-16,8,250-->
+<!--SR:!2023-02-08,23,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示->->-> ``
 <!--SR:!2023-01-16,8,250-->
