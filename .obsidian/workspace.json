@@ -6,6 +6,7 @@
       {
         "id": "6713e5d3dd84a631",
         "type": "tabs",
+        "dimension": 51.27860026917901,
         "children": [
           {
             "id": "652861cd2c8bf430",
@@ -37,6 +38,7 @@
       {
         "id": "e7e736c51ce79058",
         "type": "tabs",
+        "dimension": 48.721399730821,
         "children": [
           {
             "id": "fd2f13acd1e726f5",
@@ -187,7 +189,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a835e07ec8c740d",
+  "active": "fd2f13acd1e726f5",
   "lastOpenFiles": [
     "develop/authentication/Untitled.md",
     "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
