@@ -6,6 +6,7 @@
       {
         "id": "0bb5a2831d7196ae",
         "type": "tabs",
+        "dimension": 50.33647375504711,
         "children": [
           {
             "id": "9be2a2620fa5ddc0",
@@ -24,6 +25,7 @@
       {
         "id": "331c215d36445879",
         "type": "tabs",
+        "dimension": 49.66352624495289,
         "children": [
           {
             "id": "5002d84ad104d3ec",
@@ -174,7 +176,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5002d84ad104d3ec",
+  "active": "9be2a2620fa5ddc0",
   "lastOpenFiles": [
     "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
     "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
