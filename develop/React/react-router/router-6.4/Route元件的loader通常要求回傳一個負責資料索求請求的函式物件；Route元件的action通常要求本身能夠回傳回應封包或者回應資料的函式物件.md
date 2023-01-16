@@ -11,7 +11,7 @@ Route元件的action通常要求什麼樣的action?
 
 
 #🧠 react-router v6.4：Route元件的loader通常要求什麼樣的loader? ->->-> `回傳一個promise為主的資料索求請求的函式物件`
-<!--SR:!2023-01-16,23,250-->
+<!--SR:!2023-03-17,60,250-->
 
 
 ## 複習

@@ -66,8 +66,8 @@ const callback = (params, request) => { ... }
 #🧠 react-router-dom v6.4：Form 元件設計給router來提供的目的是什麼？ ->->-> `目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理`
 <!--SR:!2023-01-17,22,250-->
 
-#🧠 react-router-dom v6.4：若表單套用react-router的Form的話，其提交時的請求會是如何？ ->->-> `該提交時的請求會直接轉向router來處理並呈現對應頁面或者服務`
-<!--SR:!2023-01-16,23,250-->
+#🧠 react-router-dom v6.4：若表單套用react-router的Form的話，其提交後的請求會是如何？ ->->-> `該提交時的請求會直接轉向router來處理並呈現對應頁面或者服務`
+<!--SR:!2023-01-30,14,230-->
 
 #🧠  react-router-dom v6.4：若表單沒套用react-router的Form的話，其提交時的請求會是如何？  ->->-> `該提交時的請求會直接轉向伺服器來處理，由伺服器賦予對應頁面或者服務`
 <!--SR:!2023-02-25,47,250-->

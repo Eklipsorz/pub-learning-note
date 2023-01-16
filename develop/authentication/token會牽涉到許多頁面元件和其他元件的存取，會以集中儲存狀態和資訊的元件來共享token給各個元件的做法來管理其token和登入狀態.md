@@ -103,7 +103,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-02-04,20,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中isLoggedIn的型別、用途、初始值為何？ ->->-> `	- 型別：布林值 - 用途：若擁有任意token，就為true；若沒有任意token，就為false。主要讓元件了解目前狀態是否為登入或者未登入好切換內容 - 初始值：false`
-<!--SR:!2023-01-16,8,250-->
+<!--SR:!2023-02-08,23,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中用來更改狀態的函式是為何？ ->->-> `login、logout`
 <!--SR:!2023-01-18,10,250-->
