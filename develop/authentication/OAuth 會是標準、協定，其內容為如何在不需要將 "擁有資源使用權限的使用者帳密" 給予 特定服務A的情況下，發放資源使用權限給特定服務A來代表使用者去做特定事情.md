@@ -67,8 +67,8 @@
 	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
 	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為：
 		- 以JWT 驗證方式來驗證JWT是否被篡改
-		- 提取JWT的aud值並比對目前所存取的端點是否一樣，若一樣就做下一步，否則報錯
-		- 提取JWT的scope值並比對目前所要存取的端點之對應動作是否允許，若允許就驗證成功，否則報錯
+		- 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯
+		- 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
 	- Resource Server 將指定Resource傳遞給Client使用
 
 ####  Resource Server vs  Authorization Server 兩者是否相同
@@ -112,6 +112,8 @@
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式是什麼？ ->->-> `	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為： - 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作是否允許，若允許就驗證成功，否則報錯`
+
+#🧠 在Open Authorization 或者OAuth中，其中Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式會是比對Client所提供的aud和scope是否正確，具體會是拿什麼比對？ ->->-> `由Resource Server提供Client對於想存取的端點以及對對應端點想做的操作`
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
 <!--SR:!2023-01-19,3,250-->
