@@ -68,14 +68,17 @@
 
 
 重點：
-- 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內ㄨ
-	- 在ID token的情況下，aud值會是指token綁定的特定身分，通常會是以該身分在Authorization Server/OpenID Provider上的client_id或者識別字
-	- 在access token的情況下，aud值會是指，也就是OAuth的client或者OpenID Connect中的Replying Party。
-
-https://stackoverflow.com/questions/28418360/jwt-json-web-token-audience-aud-versus-client-id-whats-the-difference
+- 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容和檢測方式
+	- 在ID token的情況下，aud值會是指token綁定的特定身分所對應的識別字，通常會是以該身分在Authorization Server/OpenID Provider上的client_id或者識別字
+	- 在access token的情況下，aud值會是指允許能夠讀取JWT的Resource Server之端點，端點會是以路徑字串來表示，而端點又會是client當初註冊使用的Resource Server和其端點的路徑
 
 
-The JWT will contain an aud claim that specifies which Resource Servers the JWT is valid for
+[[@swainAnswerJWTJson2015]]
+> The JWT will contain an aud claim that specifies which Resource Servers the JWT is valid for
+> JWT 将包含一个 aud 声明，指定 JWT 对哪些资源服务器有效
+
+
+
 
 ```
 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server此時會提取token的aud是否為對應端點，若是的話就合法；否則為不合法
@@ -85,8 +88,6 @@ The JWT will contain an aud claim that specifies which Resource Servers the JWT 
 client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發送而產生出來的對應id
 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server就會從token提取aud的client_id是否存在於server中，若還存在的話，就合法；否則就不合法
 ```
-
-JWT 将包含一个 aud 声明，指定 JWT 对哪些资源服务器有效
 
 
 
@@ -118,4 +119,5 @@ References:
 [[@jonesJSONWebToken2015]]
 [[@ShiShuiZaiQiaoDaWoChuangShiMoShiJWT]]
 [[@WhatAudienceAuth0]]
+[[@swainAnswerJWTJson2015]]
 [[@SpectatorHeaudienceDeQuBieZhiHu]]
