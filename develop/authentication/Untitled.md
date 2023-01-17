@@ -45,8 +45,9 @@
 
 
 重點：
-- JWT 中的 aud 值會是 audience ，表明要將本JWT賦予給誰使用或者接收者
-	- 在ID token的情況下，aud值會是指被綁定的特定身分，通常會是以該身分在Authorization Server/OpenID Provider上的client_id或者識別字
+- JWT 中的 aud 值會是 audience claim，表明要將Token賦予給誰使用
+	- 在ID token的情況下，aud值會是指被綁定的特定身分
+	- ，，通常會是以該身分在Authorization Server/OpenID Provider上的client_id或者識別字
 	- 在access token的情況下，aud值會是被授權使用的應用程式，也就是OAuth的client或者OpenID Connect中的Replying Party。
 
 https://stackoverflow.com/questions/28418360/jwt-json-web-token-audience-aud-versus-client-id-whats-the-difference
@@ -70,6 +71,13 @@ https://5xruby.tw/posts/what-is-jwt
 
 -   **aud**：audience 的簡稱，用單字串(case-sensitive) 或 URI 或陣列表示這個 JWT 唯一識別的預期接收者。換句話說，當此聲明存在，則讀取此 JWT 中的數據的一方必須在 aud 中找到自己，或者無視 JWT 中包含的數據。與 iss 和 sub 要求的情況一樣，該權利要求是專用的。
 
+
+### audience 命名緣由
+
+> refer to readers of a newspaper, magazine, etc.
+
+重點：
+- 報章雜誌的閱讀者，也可以引申為讀取特定事物內容的一方。
 
 
 ## 複習
