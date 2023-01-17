@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "mode": "source",
                 "source": false
               }
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "async cleanup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,8 +101,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -122,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md"
+                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md"
               }
             }
           }
@@ -194,6 +193,8 @@
   },
   "active": "eb989a9216b13dd0",
   "lastOpenFiles": [
+    "inbox/React：useEffect 所生成的cleanupFn 本身會依賴著closure，藉此來影響每一個非同步任務所存取的記憶體區塊，因cleanupFn所擁有的closure正是對應每一次非同步任務所會使用到的記憶體區塊.md",
+    "inbox/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
     "develop/Untitled.md",
     "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
@@ -201,8 +202,6 @@
     "develop/authentication/JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值.md",
     "develop/authentication/Untitled 1.md",
     "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
-    "develop/authentication/Untitled 4.md",
-    "develop/authentication/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
-    "develop/authentication/authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程.md"
+    "develop/authentication/Untitled 4.md"
   ]
 }

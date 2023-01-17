@@ -20,7 +20,7 @@ side effect / effect 本身指由主要任務所帶來的任意額外任務，�
 useEffect 語法：
 - 第一個引數為callback，主要定義side effect的任務內容
 - 第一個引數的callback會回傳一個cleanup function，且每一次effect從那獲取對應cleanup function並在那執行指定清除上一次side effect所產生的影響 ，**好保證effect指定任務無論隨著render執行了多少次，effect都能按照資料來正確呈現和正常運作，不會因為上一個effect的影響結果而無法正常/正確呈現**，通常手段會是**清除上一次side effect所產生的非同步任務** 
-	- 該cleanup function 盡量別以asynchronous function來處理，避免沒辦法及時清除上一次effect所產生的影響，如清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務
+	- 該cleanup function 盡量別以asynchronous function來處理，會無法正常執行，由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行
 > a function that should be executed AFTER every component evaluation IF the specified dependencies changes
 -  第二個引數為設定哪些dependencies 改變才會觸發前面的callback，會用陣列來表示所有的dependencies
 [[React：擁有deps 機制的hook  想運用互動狀態的資訊來當deps之注意事項]]
@@ -301,8 +301,11 @@ this is use effect
 <!--SR:!2023-03-02,73,250-->
 
 
-#🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會出現沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2023-03-01,72,250-->
+#🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會無法正常執行cleanup`
+
+#🧠 React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有無法正常執行cleanup，主因會是什麼？ ->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
+
+該cleanup function 盡量別以asynchronous function來處理，會無法正常執行，由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行
 
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
