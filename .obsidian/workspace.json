@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "747332369379cdb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82cfd6a4ac70f10c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,7 +174,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "77229acd8634066c",
+  "active": "82cfd6a4ac70f10c",
   "lastOpenFiles": [
     "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
     "develop/authentication/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
