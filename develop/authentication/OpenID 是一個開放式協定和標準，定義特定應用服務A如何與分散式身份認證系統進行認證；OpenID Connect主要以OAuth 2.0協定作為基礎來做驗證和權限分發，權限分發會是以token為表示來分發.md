@@ -77,6 +77,7 @@
 ## 複習
 
 #🧠 OpenID 是什麼？ ->->-> `是一個協定、標準，定義特定應用服務A如何與分散式身份認證系統進行認證`
+<!--SR:!2023-01-19,2,247-->
 
 #🧠 OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證，為何要定義應用服務與分散式認證系統認證？->->-> `主要在特定應用服務A上可用第三方認證服務來進行身份認證，以此消除應用服務內部的認證開發需求`
 <!--SR:!2023-01-20,3,250-->
@@ -85,13 +86,16 @@
 <!--SR:!2023-01-18,1,230-->
 
 #🧠 OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證，具體如何實現？ ->->-> `使用者可選擇任意的OpenID identity provider註冊帳號，並且在支援OpenID認證協定的服務上來調用OpenID實現和帳號來登入`
+<!--SR:!2023-01-18,1,229-->
 
 #🧠 OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證，其中稱之為分散式是由於 ->->-> `是因爲以任意特定應用服務A是拿多個外部伺服器來做認證系統，而非集中在應用服務A內部來建立認證系統`
+<!--SR:!2023-01-18,1,227-->
 
 #🧠 OpenID Connect 標準是什麼？ ->->-> `主要是OpenID 2.0 標準的下一代`
 <!--SR:!2023-01-20,3,250-->
 
 #🧠 OpenID Connect 標準是OpenID 2.0 標準的下一代，其具體為？ ->->-> `主要以OAuth 2.0協定作為基礎來做身份驗證和權限分發，身份和權限分發會是以token為表示來分發。`
+<!--SR:!2023-01-18,1,228-->
 
 #🧠 OpenID / OpenID Connect 角色會有哪些？->->-> `Replying Party、OpenID Provider / OpenID identity Provider、Resource Server`
 <!--SR:!2023-01-20,3,250-->
@@ -100,6 +104,7 @@
 <!--SR:!2023-01-20,3,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中OpenID Provider / OpenID identity Provider / Authorization Server會是什麼？ ->->-> `負責註冊合法使用者、驗證使用者所輸入的內容並發放token、協助Resource Server做token的驗證，發放的token種類可以是id token、access token`
+<!--SR:!2023-01-19,2,248-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Resource Server會是什麼？->->-> `管理資源、將請求封包的token轉遞至Authorization Server來驗證的伺服器`
 <!--SR:!2023-01-20,3,250-->
