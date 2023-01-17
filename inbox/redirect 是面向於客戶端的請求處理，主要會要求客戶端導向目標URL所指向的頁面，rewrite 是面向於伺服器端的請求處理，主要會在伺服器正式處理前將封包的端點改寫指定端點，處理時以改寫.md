@@ -82,7 +82,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2023-01-17,74,250-->
 
 #🧠  請用以下例子來說明rewrite：localtest.me/articles/how-to-win-at-chess to localtest.me/articles.aspx?name=now-to-win-at-chess ->->-> `當瀏覽器對localtest.me對應伺服器以articles/how-to-win-at-chess端點發送請求，伺服器接收到並於正式處理前就直接更改成articles.aspx?name=now-to-win-at-chess，然後伺服器就以改寫後結果來處理。`
-<!--SR:!2023-01-17,74,250-->
+<!--SR:!2023-07-30,194,250-->
 
 #🧠 rewrite vs. redirect 誰會更改瀏覽器所顯示URL->->-> `redirect`
 <!--SR:!2023-01-17,74,250-->
