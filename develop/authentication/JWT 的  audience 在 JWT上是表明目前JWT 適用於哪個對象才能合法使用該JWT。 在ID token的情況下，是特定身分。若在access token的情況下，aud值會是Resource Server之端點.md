@@ -13,12 +13,13 @@
 
 
 
+
 [[@ShiShuiZaiQiaoDaWoChuangShiMoShiJWT]]
 -   **aud**：audience 的簡稱，用單字串(case-sensitive) 或 URI 或陣列表示這個 JWT 唯一識別的預期接收者。換句話說，當此聲明存在，則讀取此 JWT 中的數據的一方必須在 aud 中找到自己，或者無視 JWT 中包含的數據。與 iss 和 sub 要求的情況一樣，該權利要求是專用的。
 
 重點：
 - audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT
-- 每一個要求處理JWT驗證的principal 必須要能夠在audience claim存在對應principal的識別字，否則就拒絕JWT。
+- 每一個要求處理JWT驗證的principal 必須要能夠在audience claim存在對應principal的識別字才能使用JWT來驗證成功並獲取對應資源，否則就驗證失敗並拒絕讓對方使用JWT獲取對應資源。
 
 
 ### access token 上的aud claim
@@ -79,11 +80,14 @@
 
 
 
+#### 檢測方式
 
+- Access Token
 ```
 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server此時會提取token的aud是否為對應端點，若是的話就合法；否則為不合法
 ```
 
+- ID Token
 ```
 client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發送而產生出來的對應id
 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server就會從token提取aud的client_id是否存在於server中，若還存在的話，就合法；否則就不合法
@@ -107,8 +111,31 @@ client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發�
 - 委託他人代理他做事情的人
 
 ## 複習
-#🧠 Question :: ->->-> ``
-<!--SR:!2023-01-20,3,250-->
+
+#🧠 audience 命名緣由為何？ ->->-> `報章雜誌的閱讀者`
+
+#🧠 audience 命名緣由為報章雜誌的閱讀者，還可以引申為什麼？ ->->-> `也可以引申為讀取特定事物內容的一方`
+
+#🧠 principal 命名緣由為何？ ->->-> ` 委託他人代理他做事情的人`
+
+#🧠 JWT 技術中的audience 是表明什麼？->->-> ` audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT`
+
+
+#🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容，其中access token的情況下，aud值會是什麼形式以及內容？->->-> `字串，aud值會是指允許能夠讀取JWT的Resource Server之端點，端點會是以路徑字串來表示，而端點又會是client當初註冊使用的Resource Server和其端點的路徑`
+
+#🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容，其中ID token的情況下，aud值會是什麼形式以及內容？ ->->-> `字串，aud值會是指token綁定的特定身分所對應的識別字`
+
+
+#🧠 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，其合不合法實現概念會是？ ->->-> ` 每一個要求處理JWT驗證的principal 必須要能夠在audience claim存在對應principal的識別字才能使用JWT來驗證成功並獲取對應資源，否則就驗證失敗並拒絕讓對方使用JWT獲取對應資源`
+
+#🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容和檢測方式，請問其內容會各為什麼？->->-> `	- 在ID token的情況下，aud值會是指token綁定的特定身分所對應的識別字，通常會是以該身分在Authorization Server/OpenID Provider上的client_id或者識別字 - 在access token的情況下，aud值會是指允許能夠讀取JWT的Resource Server之端點，端點會是以路徑字串來表示，而端點又會是client當初註冊使用的Resource Server和其端點的路徑`
+
+#🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容和檢測方式，請問其檢測會各為什麼？->->-> `- Access Token：客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server此時會提取token的aud是否為對應端點，若是的話就合法；否則為不合法 - ID Token： 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server就會從token提取aud的client_id是否存在於server中，若還存在的話，就合法；否則就不合法`
+
+
+#🧠 ID Token中的client-id是如何產生的？ ->->-> `client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發送而產生出來的對應id`
+
+
 
 ---
 Status: #🌱 

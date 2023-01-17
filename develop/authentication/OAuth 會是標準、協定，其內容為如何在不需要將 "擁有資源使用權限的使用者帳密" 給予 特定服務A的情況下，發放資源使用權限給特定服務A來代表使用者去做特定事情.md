@@ -47,6 +47,12 @@
 
 > 在 OAuth 2.0 的世界中，我這個使用者被稱為 Resource Owner；第三方行事曆服務被稱之為 Client；有放我行事曆資訊的 Google Calendar 稱為 Resource Server；幫忙發 Access Token 的伺服器稱之為 Authorization Server，在這例子中就會是 Google。
 
+
+[[@auth0ValidateAccessTokens]] ：當client使用JWT存取resource server的
+>1.  Perform standard JWT validation. Because the access token is a JWT, you need to perform the standard JWT validation steps. See Validate JSON Web Tokens for details.
+> 2. Verify token audience claims. If you've performed the standard JWT validation, you have already decoded the JWT's payload and looked at its standard claims. The token audience claim (aud, array of strings) depends on the initial token request. The aud field could contain both an audience corresponding to your custom API and an audience corresponding to the /userinfo endpoint. At least one of the audience values for the token must match the unique identifier of the target API as defined in your API's Settings in the Identifier field. See Get Access Tokens for details.
+> 3. Verify permissions (scopes). Verify that the application has been granted the permissions required to access your API. To do so, you will need to check the scope claim (scope, space-separated list of strings) in the decoded JWT's payload. It should match the permissions required for the endpoint being accessed. For example, if your custom API provides three endpoints to read, create, or delete a user record, when you registered your API with Auth0, you created three corresponding permissions:
+
 重點：
 - OAuth 在Client-Server之間中，會有以下用語：
 	- Resource Server：管理資源、轉遞請求封包上的token至authorization server的伺服器
@@ -59,7 +65,10 @@
 	- Authorization Server發送token給予Resource Owner
 	- 由Resource Owner賦予token至Client
 	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
-	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤
+	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為：
+		- 以JWT 驗證方式來驗證JWT是否被篡改
+		- 提取JWT的aud值並比對目前所存取的端點是否一樣
+		- 
 	- Resource Server 將指定Resource傳遞給Client使用
 
 ####  Resource Server vs  Authorization Server 兩者是否相同
@@ -148,5 +157,6 @@ Tags:
 Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 References:
+[[@auth0ValidateAccessTokens]]
 [[@OAuth2023]]
 [[@OpenIDConnectShiShiMo]]
