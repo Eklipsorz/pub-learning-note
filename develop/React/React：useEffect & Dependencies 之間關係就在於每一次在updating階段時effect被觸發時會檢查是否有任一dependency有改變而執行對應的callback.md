@@ -127,7 +127,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 ## 複習
 
 #🧠 React：useEffect(callback, dependencies) 的callback設定目的->->-> `useEffect 的 callback則是定義side effect的內容、cleanup內容`
-<!--SR:!2023-01-17,43,249-->
+<!--SR:!2023-05-04,107,249-->
 
 
 #🧠 React：useEffect(callback, dependencies) 的dependency設定主要目的 ->->-> `Dependencies 設定目的主要為效能最佳化，並非邏輯上控制，換言之，一種資料是否同步到給effect來執行的手段`
@@ -212,7 +212,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 <!--SR:!2023-02-04,68,250-->
 
 #🧠 React：useEffect的deps設定中，哪些是不建議添加的？ ->->-> `更新狀態用的函式、其他非React能夠支援的API 或者對應函式、屬於其他元件或者元件以外的變數/函式、添加effect內部定義的變數/函式、effect內部定義的函式之引數`
-<!--SR:!2023-01-17,37,230-->
+<!--SR:!2023-04-12,85,230-->
 
 #🧠 React： 若useEffect 想運用互動狀態的資訊來渲染特定內容，那麼dependency可以添加effect內部定義的函式之引數嗎？為什麼 ->->-> `因為他們本身就無法代表元件的互動狀態，且只有effect執行時才有機會變動`
 <!--SR:!2023-02-12,74,250-->
