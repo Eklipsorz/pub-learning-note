@@ -209,7 +209,7 @@ const DUMMY_EXPENSES = [
 <!--SR:!2023-02-28,103,228-->
 
 #🧠 React：Keys 是用代表特定資料的識別字去對Virtual DOM和對應的實際DOM結構進行綁定，其好處是什麼？ ->->-> `只要讓系統能夠判別哪些DOM節點對應哪些特定資料的話，就能讓React針對需要處理的DOM節點來進行，而非是特定範圍內的所有DOM節點來進行`
-<!--SR:!2023-01-17,80,228-->
+<!--SR:!2023-07-22,186,228-->
 
 #🧠 React：當對著Virtual DOM設定Keys，那麼其實際DOM節點會是？ ->->-> `也會因此對應著特定資料。`
 <!--SR:!2023-06-05,173,250-->
@@ -266,7 +266,7 @@ const DUMMY_EXPENSES = [
 
 
 #🧠 React：如何使用Keys概念至Virtual DOM節點上？ 語法形式如何？->->-> `在對應component添加key屬性，其屬性值為對應某種資料的識別字：<Component key=identifier1 />`
-<!--SR:!2023-01-17,86,248-->
+<!--SR:!2023-08-19,214,248-->
 
 #🧠 React：使用\<Component key=identifier1 \/\> 來設定Component 對應著identifier1所對應的資料，那麼identifier1 主要是什麼？ 可填入什麼 ->->-> `主要是每個資料的識別字，可以填入字串、數字`
 <!--SR:!2023-02-16,104,248-->
