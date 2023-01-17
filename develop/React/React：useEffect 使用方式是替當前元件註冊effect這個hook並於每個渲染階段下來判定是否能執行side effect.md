@@ -302,21 +302,14 @@ this is use effect
 
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會無法正常執行cleanup`
+<!--SR:!2023-01-19,2,248-->
 
 #🧠 React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有無法正常執行cleanup，主因會是什麼？ ->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
+<!--SR:!2023-01-19,2,248-->
 
-該cleanup function 盡量別以asynchronous function來處理，會無法正常執行，由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行
+#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
+<!--SR:!2023-01-19,2,248-->
 
-
-#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `盡量以sync為主，避免沒辦法及時清除上一次effect所產生的影響`
-<!--SR:!2023-02-24,69,250-->
-
-
-
-#🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  若是async的話，潛在問題會是非同步任務而對錯誤的任務進行處理，那麼具體會是什麼？->->-> `清除到已經執行完畢的非同步任務、清除到正在執行但不是想要清除的任務`
-<!--SR:!2023-01-31,52,250-->
-
-``
 
 ---
 Status: #🌱 
