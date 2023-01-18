@@ -21,7 +21,14 @@
 > The client application can get a new access token as long as the refresh token is valid and unexpired. Consequently, a refresh token that has a very long lifespan could theoretically give infinite power to the token bearer to get a new access token to access protected resources anytime. The bearer of the refresh token could be a legitimate user or a malicious user. As such, security companies, such as Auth0, create mechanisms to ensure that this powerful token is mainly held and used continuously by the intended parties.
 
 重點：
-- refresh token 主要是提供Client/Replying Party向Authorization Server索要新的Token
+- refresh token 主要是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token
+- 其出現目的為：
+	- 盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源
+	- 讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token 
+- 其壽命來說：
+	- refresh token > access token / ID token 
+	- 其原因如目的。
+
 
 #### refresh 命名緣由
 
@@ -45,11 +52,10 @@ fresh 作為形容詞
 
 
 
-##
+### refresh token 獲取/使用流程
 
 
 [[@AccessTokenRefresh]]
-
 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png)
 
 > 上图中Authorization Server翻译为授权服务，负责Token的签发。Resource Server翻译为资源服务，也就是被授权访问的资源，比如API接口。在分布式应用中，他们应该分属不同的服务。 值得注意的是，资源服务器不签发Token，但是可以具备独立验证Access Token的能力。
