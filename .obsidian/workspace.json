@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
+                "file": "develop/authentication/Untitled 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
+                "file": "develop/authentication/Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
+                "file": "develop/authentication/Untitled 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md"
+                "file": "develop/authentication/Untitled 1.md"
               }
             }
           }
@@ -176,8 +176,8 @@
   },
   "active": "77229acd8634066c",
   "lastOpenFiles": [
-    "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
     "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
+    "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
     "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/authentication/Untitled 1.md",
     "develop/authentication/Untitled 4.md",
