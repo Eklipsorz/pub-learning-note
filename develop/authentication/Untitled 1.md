@@ -21,7 +21,7 @@
 > The client application can get a new access token as long as the refresh token is valid and unexpired. Consequently, a refresh token that has a very long lifespan could theoretically give infinite power to the token bearer to get a new access token to access protected resources anytime. The bearer of the refresh token could be a legitimate user or a malicious user. As such, security companies, such as Auth0, create mechanisms to ensure that this powerful token is mainly held and used continuously by the intended parties.
 
 重點：
-- refresh token 主要
+- refresh token 主要是提供Client/Replying Party向Authorization Server索要新的Token
 
 #### refresh 命名緣由
 
@@ -40,6 +40,9 @@ fresh 作為形容詞
 > new or different
 
 重點：
+- fresh 作為形容詞，會是指新的或者不同的； 作為動詞，會是指將特定事物變成新的事物
+- refresh 作為動詞，會是重新再將特定事物轉變成新的事物，在電腦科學上會是指將畫面轉變成最新版本的畫面。
+
 
 
 ##
