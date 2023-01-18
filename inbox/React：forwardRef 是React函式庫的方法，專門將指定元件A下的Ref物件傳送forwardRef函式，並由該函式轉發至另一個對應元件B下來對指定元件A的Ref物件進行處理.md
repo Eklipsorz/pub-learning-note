@@ -48,7 +48,7 @@ React.forwardRef(render)
 ## 複習
 
 #🧠 forwardRef 是React 函式庫的什麼？->->-> `是由React函式庫提供的方法之一`
-<!--SR:!2023-01-18,74,250-->
+<!--SR:!2023-07-31,194,250-->
 
 #🧠 React：forwardRef 最主要是做什麼？ ->->-> `最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理`
 <!--SR:!2023-05-08,136,250-->
@@ -57,19 +57,19 @@ React.forwardRef(render)
 <!--SR:!2023-01-28,15,210-->
 
 #🧠 React：forwardRef 最主要是將目前Ref物件傳送至指定元件，由forwardRef函式接收到，並轉發至其指定元件所對應的component function 來處理，若搭配useImperativeHandle會是什麼？  ->->-> `forwardRef + useImperativeHandle ：讓指定元件a的Ref 物件設定為指定元件B內的部分對應DOM指令處理`
-<!--SR:!2023-01-18,74,250-->
+<!--SR:!2023-07-31,194,250-->
 
 #🧠  React：forwardRef 語法形式->->-> `React.forwardRef(render)`
-<!--SR:!2023-01-18,74,250-->
+
 
 #🧠 React：forwardRef 語法形式的render是什麼？ ->->-> `render 是指對應元件的render或者component function，其function會是(props, refs)，props會是該元件的屬性，refs則是接收到的ref物件`
-<!--SR:!2023-03-06,75,230-->
 
 #🧠  React：forwardRef 語法形式回傳什麼 ->->-> `forwardRef 回傳React Component，但這個Component 可被Ref技術擷取到對應的實際DOM節點`
-<!--SR:!2023-01-18,74,250-->
+
+#🧠 React：若要讓元件A使用forwardRef將元件A的ref轉遞至元間B來處理，其概念要如何表示？請試著用程式碼來說明 ->->-> ``
 
 #🧠 React： ref 技術支援所有元件嗎？->->-> `只有支援原生HTML元件`
-<!--SR:!2023-01-18,74,250-->
+<!--SR:!2023-07-31,194,250-->
 
 #🧠 React： ref 技術支援自製元件嗎？如\<Componet \/\>->->-> `不支援`
 <!--SR:!2023-07-20,186,250-->
