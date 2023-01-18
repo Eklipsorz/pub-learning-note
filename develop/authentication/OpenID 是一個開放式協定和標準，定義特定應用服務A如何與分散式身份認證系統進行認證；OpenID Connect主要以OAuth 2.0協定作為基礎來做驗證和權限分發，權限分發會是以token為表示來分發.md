@@ -72,7 +72,7 @@
 - OpenID / OpenID Connect 角色：
 	- Replying Party：主要依賴token和token夾雜的身分證明資料和權限來向Resource Server獲取資源來加以應用的應用程式或者服務
 	- OpenID Provider / OpenID identity Provider / Authorization Server：負責註冊合法使用者、驗證使用者所輸入的內容並發放token、協助Resource Server做token的驗證，發放的token種類可以是id token、access token。
-	- Resource Server：管理資源、將請求封包的token轉遞至Authorization Server來驗證的伺服器
+	- Resource Server：管理資源、根據是否會驗證來覺ㄉㄧ將請求封包的token轉遞至Authorization Server來驗證的伺服器
 
 ## 複習
 
