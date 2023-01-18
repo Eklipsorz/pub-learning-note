@@ -236,7 +236,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，若沒在obj中設定acction和method，會正常執行嗎？為何 ->->-> `並不會，由於系統就是從obj中決定action和method，若不知道的話，就無法正常執行`
-<!--SR:!2023-01-18,18,250-->
+<!--SR:!2023-03-08,49,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，後者的具體語法會是`fetcher.submit(obj1, obj2,.... )`，假設要提交email資料以及指定method為post、action為newsletter，請問具體如何設定語法 ->->-> ``

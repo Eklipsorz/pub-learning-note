@@ -163,7 +163,7 @@ export async function action({ request }) {
 <!--SR:!2023-01-25,28,250-->
 
 #🧠 react-router-dom v6.4： 以下為action定義，請問以下的回傳error和拋出error之間的不同處在哪？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671114108/blog/react/react-router/v6/action-function/action-function-return-vs-throw_tlgvpy.png) ->->-> ``
-<!--SR:!2023-01-18,22,250-->
+<!--SR:!2023-03-17,58,250-->
 
 
 
