@@ -88,7 +88,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 會回傳什麼？(請盡量說到closure) ->->-> `根據[deps]來決定回傳新函式物件或者記憶體儲存的函式物件，其函式物件會夾帶closure，該closure的識別字會是特定執行時機下的記憶體區塊`
-<!--SR:!2023-01-18,66,250-->
+<!--SR:!2023-07-03,166,250-->
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`

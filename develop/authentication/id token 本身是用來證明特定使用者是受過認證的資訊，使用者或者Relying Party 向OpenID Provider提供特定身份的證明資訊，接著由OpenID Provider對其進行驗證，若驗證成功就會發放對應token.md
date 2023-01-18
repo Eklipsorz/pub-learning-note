@@ -188,7 +188,7 @@ claim：
 <!--SR:!2023-01-19,2,247-->
 
 #🧠 id token 以及 access token 如何獲取？ ->->-> `皆為使用者先向Authorization Server/OpenID Provider提供特定身份的證明資訊，Authorization Server/OpenID Provider對其進行驗證，若驗證成功就會根據是否綁定特定身份來發放id token 或者 access token，若綁定就id token；若沒綁定就access token`
-<!--SR:!2023-01-18,1,230-->
+<!--SR:!2023-01-20,2,230-->
 
 #🧠 id token 在最低程度下的實現下，請問token夾雜內容會是如下？->->-> `會沒包含任何明顯的身分驗證資訊，只會有驗證操作用的識別字，其識別字也不能從客戶端看出使用者是誰。`
 <!--SR:!2023-01-20,3,250-->
