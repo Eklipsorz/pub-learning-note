@@ -25,8 +25,21 @@
 
 #### refresh 命名緣由
 
+refresh ：
+>  to become fresh again
+
 > computing
-to display the latest updated version (of a web page or document)
+> to display the latest updated version (of a web page or document)
+
+
+
+fresh 作為動詞用
+> to make or become fresh
+
+fresh 作為形容詞
+> new or different
+
+重點：
 
 
 ##
