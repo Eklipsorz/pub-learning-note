@@ -227,6 +227,7 @@ Tags:
 Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 [[JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值]]
+[[JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點]]
 References:
 [[@VerifyGoogleID]]
 [[@IDTokenAccess]]
