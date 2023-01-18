@@ -73,8 +73,15 @@ fresh 作為形容詞
 
 > 我们总结几个点，Access Token作为请求资源的凭证，是使用最频繁的，但是有效期比较短，Refresh Token有效期较长，只会发给授权服务器，用来获取新的Access Token。
 
-  
-
+流程為：Resource Server被假定成具有驗證Access Token、回傳資源的功能
+A. Client 向 Authorization Server 索要Access Token
+B. Authorization Server 驗證客戶端身份無誤且請求資源是合理的，就頒發Access Token 和Refresh Token (這兩種Token都各綁定過期時間)
+C. Client 用Access Token向Resource Server 發送受保護資源的請求
+D. Resource Server 驗證Access Token有效並回傳受保護資源給Client
+E. 當 Client 想使用 Access Token 向Resource Server 發送受保護資源的請求時，就能發現Token過期或者快過期就跳到G，否則Client 就以過期或者快過期的Token 向Resource Server 發送
+F. Resource Server 檢驗Token時發現過期，就拒絕回傳受保護資源
+G. Client 自行使用Refresh Token 來向Authorization Server來獲取最新內容的Access Token
+H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Access Token(或者也會簽發一個新的Refresh Token)給Client
 
 ## 複習
 
