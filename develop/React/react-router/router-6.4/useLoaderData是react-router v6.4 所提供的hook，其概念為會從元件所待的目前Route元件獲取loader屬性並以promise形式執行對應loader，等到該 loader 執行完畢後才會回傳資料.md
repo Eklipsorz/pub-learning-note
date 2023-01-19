@@ -92,7 +92,7 @@ function App() {
 
 
 #🧠 useLoaderData 其概念為會從元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件，那麼loader會定義在哪？->->-> `通常會將特定頁面A或者服務A相關的loader定義在特定頁面A或者服務A所對應的元件內，然後以named export來匯出`
-<!--SR:!2023-01-19,26,250-->
+<!--SR:!2023-03-26,66,250-->
 
 
 

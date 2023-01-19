@@ -76,7 +76,7 @@ function App2() {
 
 
 #🧠 React spread attributes  用法為何？ ->->-> `const property = { propert1: value1, property2: value2 } <Component {...property} />`
-<!--SR:!2023-01-19,72,250-->
+<!--SR:!2023-07-19,181,250-->
 
 #🧠 React spread attributes ： const property = \{ propert1: value1, property2: value2 \} \<Component {...property} \/\> 相對於什麼樣的component ->->-> `<Component property1=value1 property2=value2 />`
 <!--SR:!2023-07-18,180,250-->

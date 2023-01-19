@@ -150,7 +150,7 @@ virtual adj
 
 
 #🧠 ReactJS以Virtual DOM來定義畫面，可Virtual DOM能夠讓瀏覽器轉換成渲染指令來渲染畫面嗎？ ->->-> `不能`
-<!--SR:!2023-01-19,70,250-->
+<!--SR:!2023-07-14,176,250-->
 
 
 #🧠 ReactJS以Virtual DOM來定義畫面，可Virtual DOM不能夠直接讓瀏覽器轉換成渲染指令來渲染畫面，那要如何做 ->->-> `在ReactJS層級上定義一個程式模組來幫助轉換成對應的Real DOM結構`

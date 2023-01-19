@@ -234,7 +234,7 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為何？ ->->-> `允許開發者以JSX形式來定義Routing並建立對應的Router`
-<!--SR:!2023-01-19,19,228-->
+<!--SR:!2023-03-06,46,228-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為允許開發者以JSX形式來定義Routing並建立對應的Router，具體是什麼？->->-> `具體是藉由將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件`

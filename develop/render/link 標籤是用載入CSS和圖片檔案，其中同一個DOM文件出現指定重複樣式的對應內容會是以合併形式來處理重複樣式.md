@@ -128,7 +128,7 @@
 #🧠 HTML ：link標籤時常載入哪些檔案？ ->->-> `css、圖片`
 <!--SR:!2023-06-16,186,250-->
 
-#🧠 HTML ：link標籤如何載入CSS檔案 ->->-> `<link rel="stylesheet" href="xxxx">`
+#🧠 HTML ：link標籤如何載入CSS檔案，以語法來表示 ->->-> `<link rel="stylesheet" href="xxxx">`
 <!--SR:!2023-01-19,71,230-->
 
 #🧠 同個css檔案出現重複樣式，而DOM文件載入css檔案，其test樣式為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png) ->->-> `.test { height: 20px; border-color: aqua; width: 10000px;}`
