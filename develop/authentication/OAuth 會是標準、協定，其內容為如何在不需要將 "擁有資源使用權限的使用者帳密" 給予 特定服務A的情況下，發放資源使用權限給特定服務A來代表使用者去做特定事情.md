@@ -101,7 +101,7 @@
 <!--SR:!2023-01-25,6,250-->
 
 #🧠 Open Authorization 或者OAuth 會是什麼？ ->->-> `一種標準、協定。定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。`
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-26,7,250-->
 
 
 #🧠 在Open Authorization 或者OAuth中，代表權限的事物會是什麼？ ->->-> `token`
@@ -120,7 +120,7 @@
 <!--SR:!2023-01-21,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-28,9,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `Resource Server：Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token。 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
 <!--SR:!2023-01-26,7,250-->
@@ -143,7 +143,7 @@
 <!--SR:!2023-01-19,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server的伺服器`
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-25,6,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
 <!--SR:!2023-01-29,10,250-->
