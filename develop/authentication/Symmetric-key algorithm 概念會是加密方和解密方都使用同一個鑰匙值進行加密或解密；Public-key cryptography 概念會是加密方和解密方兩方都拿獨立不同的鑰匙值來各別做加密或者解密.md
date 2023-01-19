@@ -1,7 +1,15 @@
 ## 描述
 
 
-## Symmetric-key algorithm
+### Symmetric-key algorithm 和 Public-key cryptography給定的鑰匙
+
+加密方和解密方會用到的鑰匙會從：
+1. 進行前事先定義
+2. 在過程中傳遞一組鑰匙來配合
+
+會這樣安排，主因為：
+1. 加解密需要鑰匙值來進行
+2. 加密方和解密方一開始不會有鑰匙值
 
 ### Symmetric-key algorithm
 
@@ -140,8 +148,10 @@ agreement
 
 #🧠 Symmetric-key algorithm 的加密/解密適合的場景 ->->-> `通訊雙方會事先定義好會使用相同的鑰匙，不需要在網路上另外傳遞`
 
+#🧠 Symmetric-key algorithm 和 Public-key cryptography給定的鑰匙皆從哪獲取？ ->->-> `1. 進行前事先定義2. 在過程中傳遞一組鑰匙來配合`
 
 
+#🧠 Symmetric-key algorithm 和 Public-key cryptography給定的鑰匙皆從哪獲取？1. 進行前事先定義2. 在過程中傳遞一組鑰匙來配合，為什麼會這樣安排？ ->->-> `1. 加解密需要鑰匙值來進行 2. 加密方和解密方一開始不會有鑰匙值`
 
 
 ---
