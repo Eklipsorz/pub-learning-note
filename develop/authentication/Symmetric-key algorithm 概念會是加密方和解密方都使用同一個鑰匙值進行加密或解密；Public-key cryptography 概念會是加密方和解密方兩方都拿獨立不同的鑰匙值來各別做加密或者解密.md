@@ -25,14 +25,26 @@
 > 相反，如果某一使用者使用他的私鑰加密明文，任何人都可以用該使用者的公鑰解密密文；由於私鑰只由該使用者自己持有，故可以肯定該檔案必定出自於該使用者
 
 
+
+
 重點：
 - 加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密/解密。
 	- 加密方使用密鑰，解密方使用公鑰
 	- 加密方使用公鑰，解密方使用密鑰
 - Public-key cryptography 可以實現：
 	- 內容加密和解密：加密方使用公鑰，解密方使用密鑰，在這裡使用公鑰加密過的任意秘文，只能用特定密鑰才能解密，一般公鑰無法解密
-	- 驗證是否竄改內容的簽署：加密方使用密鑰，解密方使用公鑰，由於只有加密方才能使用密鑰加密，換言之，只要有秘文且秘文與加密時的一樣就能確保出自於特定加密方
+	- 驗證是否竄改內容的數位簽章：加密方使用密鑰，解密方使用公鑰。
 
+
+#### 基於Public-key cryptography 的 數位簽章
+
+[[@ShuWeiQianZhangWeiJiBaiKeZiYouDeBaiKeQuanShu]]
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Digital_Signature_diagram_zh-tw.svg/1280px-Digital_Signature_diagram_zh-tw.svg.png)
+
+重點：
+- 數位簽章具體有簽名、驗證這兩個流程，簽名方和驗證方都擁有相同的hashing algorithm、相同的secret
+	- 簽名方簽名：會使用hashing algorithm 、secret、特定資料內容來生成簽署值，在使用私鑰加密簽署值，添加加密後簽署值和憑證資料至原資料上
+	- 驗證方驗證簽名：當接收到添加憑證的資料時，會分別使用公鑰解密出簽署值A和使用(與簽名方相同)的hashing algorithm、secret、接收到資料產生簽署值B，並比對簽署值A和簽署值B是否一樣，若一樣就
 
 #### public-key & private-key
 

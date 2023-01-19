@@ -10,7 +10,10 @@
 
 重點：
 - 由於授權的發送會是以JWT製成的token，其JWT本身就存在檢測是否竄改的簽署值以及搭配特定身分資訊，所以Resource Server可以只使用特定密鑰、製作簽署值的算法、請求端夾雜的token來驗證請求端是合法的：
-	- 特定密鑰：具體可以是以Symmetric-key algorithm
+	-  Resource Server - Authorization Server 之間具體的雙方特定密鑰：
+		- Resource Server 和 Authorization Server 皆使用相同密鑰來驗證簽署值
+		- Public-key algorithm 為基礎：Authorization Server使用私鑰發放token，Resource Server使用公鑰驗證
+	- 
 
 
 > ### Refresh Token机制如何提升安全？
