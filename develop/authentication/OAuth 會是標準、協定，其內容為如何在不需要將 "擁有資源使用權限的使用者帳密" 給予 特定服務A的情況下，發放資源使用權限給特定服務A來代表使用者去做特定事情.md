@@ -129,18 +129,21 @@
 <!--SR:!2023-01-27,8,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會有什麼樣的業務，請說明可能性？ ->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
+<!--SR:!2023-01-22,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Resource只會管理資源，那麼Resource Server會有什麼樣的業務 ->->-> `esource Server：管理資源、若不能的話就轉遞請求封包上的token至authorization server的伺服器`
+<!--SR:!2023-01-22,3,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Resource會管理資源和驗證Token，那麼Resource Server會有什麼樣的業務->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
+<!--SR:!2023-01-22,3,250-->
 
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-26,7,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？ ->->-> `	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤 - Authorization Server發送token給予Resource Owner - 由Resource Owner賦予token至Client - 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送 - Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤 - Resource Server 將指定Resource傳遞給Client使用`
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-27,8,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server的伺服器`
 <!--SR:!2023-01-25,6,250-->
@@ -156,10 +159,10 @@
 <!--SR:!2023-01-26,7,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者在實現上是否能一台主機擔任兩個角色？ ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-26,7,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？以圖來表示？->->-> ``
-<!--SR:!2023-01-19,3,250-->
+<!--SR:!2023-01-29,10,250-->
 
 
 

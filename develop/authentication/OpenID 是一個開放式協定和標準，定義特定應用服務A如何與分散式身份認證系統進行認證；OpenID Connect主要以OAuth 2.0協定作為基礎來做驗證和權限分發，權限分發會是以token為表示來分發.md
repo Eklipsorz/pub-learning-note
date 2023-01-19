@@ -104,14 +104,17 @@
 <!--SR:!2023-01-20,3,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中OpenID Provider / OpenID identity Provider / Authorization Server會是什麼？ ->->-> `負責註冊合法使用者、驗證使用者所輸入的內容並發放token、協助Resource Server做token的驗證，發放的token種類可以是id token、access token`
-<!--SR:!2023-01-19,2,248-->
+<!--SR:!2023-01-24,5,248-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Resource Server會是負責什麼？說明可能性->->-> ` Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器，若會驗證，就自行驗證Token`
+<!--SR:!2023-01-21,2,245-->
 
 
 #🧠 在OpenID / OpenID Connect 角色中，若Resource Server只會管理資源，其中Resource Server會是負責什麼？ ->->-> `Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器`
+<!--SR:!2023-01-21,2,245-->
 
 #🧠 在OpenID / OpenID Connect 角色中，若Resource Server會管理資源和驗證token，其中Resource Server會是負責什麼？ ->->-> ` Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器，若會驗證，就自行驗證Token`
+<!--SR:!2023-01-21,2,245-->
 
 
 
