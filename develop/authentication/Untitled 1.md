@@ -27,14 +27,20 @@
 
 重點：
 - 加密方和解密方兩方都拿獨立不同的密鑰來各別做加密/解密。
+	- 加密方使用密鑰，解密方使用公鑰
+	- 加密方使用公鑰，解密方使用密鑰
+- Public-key cryptography
 
 
-####
+#### public-key & private-key
 
 ![[Pasted image 20230119210755.png]]
 > 非對稱加密往往需要密碼學安全偽亂數生成器的協助來產生一對金鑰，其中一個可以隨便公開，稱為公鑰；另一個不公開，稱為私鑰，必須由使用者自行嚴格秘密保管，絕不透過任何途徑向任何人提供。
 
-
+重點：
+- key 可以搭配特定算法來進行加解密，根據是否開放公眾或者特定對象來分成兩種：
+	- public key：開放給大眾進行加解密的鑰匙值
+	- private key：僅開放給特定對象進行加解密的鑰匙值
 
 ### Symmetric vs. Asymmetric
 
@@ -49,6 +55,13 @@ Asymmetric
 重點：
 - symetric：涉及的事物在特定層面下是相同、類似的；涉及的事物在特定層面下是保持對等的
 - asymetric：涉及的事物在特定層面下是不同的；涉及的事物在特定層面下是保持不對等
+
+### cryptography 
+
+> More generally, cryptography is about constructing and analyzing protocols that prevent third parties or the public from reading private messages
+
+protocol 
+> 
 
 ## 複習
 
