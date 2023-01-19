@@ -11,6 +11,7 @@
 
 
 
+
 [[@WhatAreRefresh]]
 > As mentioned, for security purposes, access tokens may be valid for a short amount of time. Once they expire, client applications can use a refresh token to "refresh" the access token. That is, a refresh token is a credential artifact that lets a client application get new access tokens without having to ask the user to log in again.
 
@@ -20,8 +21,10 @@
 
 > The client application can get a new access token as long as the refresh token is valid and unexpired. Consequently, a refresh token that has a very long lifespan could theoretically give infinite power to the token bearer to get a new access token to access protected resources anytime. The bearer of the refresh token could be a legitimate user or a malicious user. As such, security companies, such as Auth0, create mechanisms to ensure that this powerful token is mainly held and used continuously by the intended parties.
 
+
+
 重點：
-- refresh token 主要是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token
+- refresh token 是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token
 - 其出現目的為：
 	- 盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源
 	- 讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token 
@@ -48,7 +51,7 @@ fresh 作為形容詞
 
 重點：
 - fresh 作為形容詞，會是指新的或者不同的； 作為動詞，會是指將特定事物變成新的事物
-- refresh 作為動詞，會是重新再將特定事物轉變成新的事物，在電腦科學上會是指將畫面轉變成最新版本的畫面。
+- refresh 作為動詞，會是重新再將特定事物轉變成新的事物，在網頁開發上會是指將畫面轉變成最新版本的畫面。
 
 
 
@@ -84,6 +87,37 @@ G. Client 自行使用Refresh Token 來向Authorization Server來獲取最新內
 H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Access Token(或者也會簽發一個新的Refresh Token)給Client
 
 ## 複習
+
+#🧠 fresh 作為動詞用的意思會是什麼？ ->->-> ` 作為動詞，會是指將特定事物變成新的事物`
+
+#🧠 fresh 作為形容詞用的意思會是什麼？ ->->-> `fresh 作為形容詞，會是指新的或者不同的`
+
+#🧠 refresh 作為動詞用的意思會是什麼？->->-> `會是重新再將特定事物轉變成新的事物`
+
+#🧠 refresh 作為動詞，會是重新再將特定事物轉變成新的事物，在網頁開發上會是什麼？ ->->-> `在電腦科學上會是指將畫面轉變成最新版本的畫面`
+
+
+#🧠 refresh token 會是什麼？ ->->-> ` 是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token`
+
+#🧠 refresh token 是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token，其出現目的為何？ ->->-> `- 盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源 - 讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token `
+
+#🧠 refresh token目的只有 **盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源** 嗎? 還有什麼？->->-> `讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token `
+
+#🧠 refresh token目的只有 **讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token** 嗎? 還有什麼？ ->->-> `盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源`
+
+
+#🧠 refresh token 和 access token/id token 相比較壽命來說會是什麼？為什麼？ ->->-> `	- refresh token > access token / ID token  - 其原因如目的。`
+
+#🧠 以下為access token 和 refresh token 獲取過程，請仔細說明，另外Resource Server被假定成具有驗證Access Token、回傳資源的功能![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png) ->->-> `A. Client 向 Authorization Server 索要Access Token。B. Authorization Server 驗證客戶端身份無誤且請求資源是合理的，就頒發Access Token 和Refresh Token (這兩種Token都各綁定過期時間) 。C. Client 用Access Token向Resource Server 發送受保護資源的請求 。D. Resource Server 驗證Access Token有效並回傳受保護資源給Client。E. 當 Client 想使用 Access Token 向Resource Server 發送受保護資源的請求時，就能發現Token過期或者快過期就跳到G，否則Client 就以過期或者快過期的Token 向Resource Server 發送 。F. Resource Server 檢驗Token時發現過期，就拒絕回傳受保護資源。G. Client 自行使用Refresh Token 來向Authorization Server來獲取最新內容的Access Token。H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Access Token(或者也會簽發一個新的Refresh Token)給Client`
+
+
+
+
+
+#🧠 請畫圖來描述access token 和 refresh token 獲取過程 ->->-> `![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png)`
+
+#🧠 以下為access token 和 refresh token 獲取過程，請仔細說明其中(E)、(F)驗證token是否過期的負責業務還可以是誰？，另外Resource Server被假定成具有驗證Access Token、回傳資源的功能。![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png) ->->-> `Client 可以在內部驗證是否過期再來決定發送、Client 並不會驗證而轉由Authorization Server驗證是否過期`
+
 
 
 ---
