@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/OS/async-task/Untitled.md",
+                "file": "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/OS/async-task/Untitled.md",
+                "file": "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/async-task/Untitled.md",
+                "file": "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/OS/async-task/Untitled.md",
+                "file": "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/OS/async-task/Untitled.md"
+                "file": "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md"
               }
             }
           }
@@ -199,7 +199,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6956fbe42bf795a",
+  "active": "8716309f14642118",
   "lastOpenFiles": [
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/authentication/Public key certificate 或者 digital certificate 概念為傳遞訊息者用以證明自己是公鑰擁有者的數位資料，並藉此向特定系統驗證並於驗證成功後獲取資源.md",
