@@ -35,16 +35,16 @@
         "currentTab": 1
       },
       {
-        "id": "136264176ee01d04",
+        "id": "7c7d176595ceba7c",
         "type": "tabs",
         "children": [
           {
-            "id": "44cc6ab3312dc16c",
+            "id": "fdebf292ddcdf6f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Redis/Key eviction 是Redis 釋放記憶體空間的策略.md",
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/Key eviction 是Redis 釋放記憶體空間的策略.md",
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Redis/Key eviction 是Redis 釋放記憶體空間的策略.md",
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Redis/Key eviction 是Redis 釋放記憶體空間的策略.md"
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md"
               }
             }
           }
@@ -187,17 +187,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44cc6ab3312dc16c",
+  "active": "1d5d9d0eb39d42f7",
   "lastOpenFiles": [
-    "inbox/React：form submission 實現.md",
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/Redis/Key eviction 是Redis 釋放記憶體空間的策略.md",
+    "inbox/React：form submission 實現.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/authentication/Untitled.md",
     "develop/authentication/Untitled 4.md",
     "develop/authentication/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
     "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
     "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
-    "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
-    "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md"
+    "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md"
   ]
 }

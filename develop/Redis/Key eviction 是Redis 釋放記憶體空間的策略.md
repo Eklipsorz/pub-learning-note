@@ -20,18 +20,19 @@
 > 6）**volatile-ttl**：從設定了過期時間的鍵空間中，有更早過期時間的key優先移除
 
 重點：
-- key eviction 是redis 釋放記憶體空間的策略，主要釋放key-value pairs
+- 是redis 在記憶體使用過多的情況所執行之釋放記憶體空間的策略，主要釋放key-value pairs
 - 其策略主要會依據著過期key、LRU、LFU來決定哪些KEY要被移除
 
 
 
 
 ## 複習
-#🧠 Redis key eviction 是什麼？  ->->-> `是redis 釋放記憶體空間的策略，主要釋放key-value pairs`
-<!--SR:!2023-03-18,173,250-->
+#🧠 Redis key eviction 是什麼？  ->->-> `是redis 在記憶體使用過多的情況所執行之釋放記憶體空間的策略`
+
+#🧠 Redis key eviction 是redis 在記憶體使用過多的情況所執行之釋放記憶體空間的策略，主要釋放什麼？  ->->-> `key-value pairs`
 
 #🧠 Redis key eviction決定哪些KEY要被移除的策略是 (過期key)->->-> `其策略主要會依據著過期key、LRU、LFU來決定哪些KEY要被移除`
-<!--SR:!2023-01-20,138,250-->
+
 
 
 
