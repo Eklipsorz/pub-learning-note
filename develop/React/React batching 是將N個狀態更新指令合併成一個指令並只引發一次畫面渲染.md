@@ -238,7 +238,7 @@ batch：
 <!--SR:!2023-06-24,192,250-->
 
 #🧠 React Batching 在React 18之前的版本為何？ ->->-> `主要依據著isBatchUpdate是否為true來決定是否執行Batching，若false，就不以Batching來執行；若true，就以Batching`
-<!--SR:!2023-01-20,38,230-->
+<!--SR:!2023-04-24,93,230-->
 
 #🧠 React Batching 在React 18之前的版本為何？ 會開放在事件處理上嗎？為什麼？ ->->-> `Batching 只開放在事件處理，理由為React可以直接從瀏覽器的事件擷取`
 <!--SR:!2023-06-19,188,250-->
