@@ -4,52 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b0bf049af5f626fb",
+        "id": "7516bfaea184e51d",
         "type": "tabs",
         "children": [
           {
-            "id": "88499db6ebee8d32",
+            "id": "85c9bbcbcfc63e0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "61f3a1b4ad579b14",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "eca6b8bd44005a22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "4552216e21ff9612",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "977d4512bb06a114",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "develop/JavaScript/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "develop/JavaScript/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "develop/JavaScript/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
+                "file": "develop/JavaScript/Untitled.md"
               }
             }
           }
@@ -192,10 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88499db6ebee8d32",
+  "active": "85c9bbcbcfc63e0d",
   "lastOpenFiles": [
-    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
     "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
