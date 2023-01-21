@@ -163,7 +163,7 @@ side effect也能夠運用props、狀態、其他還能觸發渲染週期的資�
 <!--SR:!2023-04-27,105,249-->
 
 
-#🧠 React：Dependencies 設定目的主要為效能最佳化，在updating階段的話，useEffect會做比對，按照結果執行對應effect，為啥不能直接做effect ->->-> `因為當時有事先儲存好的deps可以比對`
+#🧠 React：Dependencies 設定目的主要為效能最佳化，在updating階段的話，useEffect會做比對，按照結果執行對應effect，為啥不能在updating階段直接做effect ->->-> `因為當時有事先儲存好的deps可以比對`
 <!--SR:!2023-01-20,46,249-->
 
 
