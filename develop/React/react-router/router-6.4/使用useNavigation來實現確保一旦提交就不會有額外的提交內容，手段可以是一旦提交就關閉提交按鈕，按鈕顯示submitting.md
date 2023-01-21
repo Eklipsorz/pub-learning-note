@@ -58,18 +58,24 @@ useNavigation：
 #🧠 表單一旦提交時，表單元件還能呈現什麼樣子？為什麼？->->-> `顯示不能提交，確保處理部分是以當時提交內容為主`
 <!--SR:!2023-01-24,26,250-->
 
-#🧠 useNavigation ㄕ ->->-> ``
+#🧠 useNavigation 是屬於誰的hook?  ->->-> `react-router-dom`
 
-- 導向狀態有：navigation.state
-	1. idle：表示目前沒任何navigation請求要做
-	2. submitting：表示目前攔截到提交時的navigation操作並做著對應的action
-	3. loading：表示目前攔截到目前router正執行loader來準備資料來給予對應元件做渲染
+#🧠 useNavigation回傳的物件中，state有哪些狀態->->-> `idle、submitting、loading`
+
+#🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中idle狀態會是指什麼？ ->->-> `表示目前沒任何navigation請求要做`
+
+#🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中submitting狀態會是指什麼？ ->->-> `表示目前攔截到提交時的navigation操作並做著對應的action`
+
+
+#🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中loading狀態會是指什麼？ ->->-> `表示目前攔截到目前router正執行loader來準備資料來給予對應元件做渲染`
+
+
 
 #🧠 react-router-dom v6.4： useNavigation是什麼用途的hook->->-> `主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料`
 <!--SR:!2023-01-27,11,230-->
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，其中資料會有什麼？ ->->-> `導向狀態、導向的目的地、請求內的body部分`
-<!--SR:!2023-01-21,24,250-->
+<!--SR:!2023-02-04,14,230-->
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，其hook會回傳什麼？ ->->-> `夾帶著擁有state、location、formData屬性的物件`
 <!--SR:!2023-02-08,28,230-->
