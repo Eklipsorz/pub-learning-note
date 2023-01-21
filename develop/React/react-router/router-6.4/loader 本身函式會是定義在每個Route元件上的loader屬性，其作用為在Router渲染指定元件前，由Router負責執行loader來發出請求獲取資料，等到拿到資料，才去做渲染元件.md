@@ -49,7 +49,7 @@ params 是物件，裡面夾雜了目前所處Route所攔截到的URL參數部�
 ## 複習
 
 #🧠 react-router v6.4： loader 在Route元件上會是做什麼？->->-> `主要在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件`
-<!--SR:!2023-01-21,26,250-->
+<!--SR:!2023-03-30,68,250-->
 
 #🧠 react-router v6.4：loader 用途為主要在Router渲染指定元件前，由Router負責執行loader來發出請求獲取資料，等到拿到資料，才去做渲染元件，那麼它本身會如何設定在Route元件上？->->-> `每個Route元件的loader屬性(attribute)`
 <!--SR:!2023-01-23,28,250-->
