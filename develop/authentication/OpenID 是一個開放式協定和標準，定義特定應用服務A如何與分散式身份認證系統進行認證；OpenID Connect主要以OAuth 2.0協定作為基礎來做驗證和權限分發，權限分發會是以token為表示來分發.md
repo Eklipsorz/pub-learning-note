@@ -89,7 +89,7 @@
 <!--SR:!2023-01-22,1,209-->
 
 #🧠 OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證，其中稱之為分散式是由於 ->->-> `是因爲以任意特定應用服務A是拿多個外部伺服器來做認證系統，而非集中在應用服務A內部來建立認證系統`
-<!--SR:!2023-01-20,2,227-->
+<!--SR:!2023-01-28,7,227-->
 
 #🧠 OpenID Connect 標準是什麼？ ->->-> `主要是OpenID 2.0 標準的下一代`
 <!--SR:!2023-02-01,11,250-->
@@ -101,7 +101,7 @@
 <!--SR:!2023-02-01,11,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Replying Party會是什麼？ ->->-> `主要依賴token和token夾雜的身分證明資料和權限來向Resource Server獲取資源來加以應用的應用程式或者服務`
-<!--SR:!2023-01-20,3,250-->
+<!--SR:!2023-01-30,9,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中OpenID Provider / OpenID identity Provider / Authorization Server會是什麼？ ->->-> `負責註冊合法使用者、驗證使用者所輸入的內容並發放token、協助Resource Server做token的驗證，發放的token種類可以是id token、access token`
 <!--SR:!2023-01-24,5,248-->
