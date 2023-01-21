@@ -63,8 +63,10 @@ useNavigation：
 #🧠 useNavigation回傳的物件中，state有哪些狀態->->-> `idle、submitting、loading`
 
 #🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中idle狀態會是指什麼？ ->->-> `表示目前沒任何navigation請求要做`
+<!--SR:!2023-01-23,2,247-->
 
 #🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中submitting狀態會是指什麼？ ->->-> `表示目前攔截到提交時的navigation操作並做著對應的action`
+<!--SR:!2023-01-23,2,247-->
 
 
 #🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中loading狀態會是指什麼？ ->->-> `表示目前攔截到目前router正執行loader來準備資料來給予對應元件做渲染`

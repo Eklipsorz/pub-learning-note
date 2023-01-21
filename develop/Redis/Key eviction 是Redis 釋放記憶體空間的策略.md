@@ -30,6 +30,7 @@
 #🧠 Redis key eviction 是什麼？  ->->-> `是redis 在記憶體使用過多的情況所執行之釋放記憶體空間的策略`
 
 #🧠 Redis key eviction 是redis 在記憶體使用過多的情況所執行之釋放記憶體空間的策略，主要釋放什麼？  ->->-> `key-value pairs`
+<!--SR:!2023-01-24,3,250-->
 
 #🧠 Redis key eviction決定哪些KEY要被移除的策略是 (過期key)->->-> `其策略主要會依據著過期key、LRU、LFU來決定哪些KEY要被移除`
 
