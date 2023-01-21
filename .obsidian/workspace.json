@@ -45,6 +45,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "654595e6515d0933",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6956fbe42bf795a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/OS/async-task/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,7 +199,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8716309f14642118",
+  "active": "c6956fbe42bf795a",
   "lastOpenFiles": [
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/authentication/Public key certificate 或者 digital certificate 概念為傳遞訊息者用以證明自己是公鑰擁有者的數位資料，並藉此向特定系統驗證並於驗證成功後獲取資源.md",
