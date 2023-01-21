@@ -61,6 +61,7 @@ useNavigation：
 #🧠 useNavigation 是屬於誰的hook?  ->->-> `react-router-dom`
 
 #🧠 useNavigation回傳的物件中，state有哪些狀態->->-> `idle、submitting、loading`
+<!--SR:!2023-01-23,2,247-->
 
 #🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中idle狀態會是指什麼？ ->->-> `表示目前沒任何navigation請求要做`
 <!--SR:!2023-01-23,2,247-->

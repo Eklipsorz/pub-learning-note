@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3c894de011aaf22c",
+        "id": "8f31950ee799fe06",
         "type": "tabs",
         "children": [
           {
-            "id": "1247c63bd79b4356",
+            "id": "054e884a2733ce15",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,11 +22,11 @@
         ]
       },
       {
-        "id": "b6629daad9d402ad",
+        "id": "55e2000cbbeb37c4",
         "type": "tabs",
         "children": [
           {
-            "id": "d5f4c083be016cf3",
+            "id": "1c269f1d53dc89fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -40,16 +40,124 @@
         ]
       },
       {
-        "id": "ab66cd53aad83da1",
+        "id": "f2d7a44d451626ae",
         "type": "tabs",
         "children": [
           {
-            "id": "1d138e405fdb1979",
+            "id": "f2976e871fe9a288",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cc06635c34028656",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b55deb483b526f55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8bc345fc8b6ba51c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15c90448fdb15064",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "398bc422ef78e419",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84915c5d8dcc7a21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Public key certificate 或者 digital certificate 概念為傳遞訊息者用以證明自己是公鑰擁有者的數位資料，並藉此向特定系統驗證並於驗證成功後獲取資源.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "24fd2f006e178bdd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "760a28eb200ff822",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "07608e64b1265a40",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd262bc85249e745",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "14857229f14d40ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5643f5b39f12b38a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "develop/authentication/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +255,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "develop/authentication/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +278,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
+                "file": "develop/authentication/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md"
               }
             }
           }
@@ -192,17 +300,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d138e405fdb1979",
+  "active": "5643f5b39f12b38a",
   "lastOpenFiles": [
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/authentication/Public key certificate 或者 digital certificate 概念為傳遞訊息者用以證明自己是公鑰擁有者的數位資料，並藉此向特定系統驗證並於驗證成功後獲取資源.md",
-    "develop/authentication/Untitled.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+    "develop/authentication/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
+    "develop/authentication/Untitled.md",
     "develop/JavaScript/Untitled.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
     "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
-    "develop/render/原生HTML DOM元件都會有瀏覽器根據標準而開發出來的原生狀態管理實現，分別是將元件轉換成DOM物件來儲存狀態以及設定預設事件處理來變更狀態和渲染內容.md"
+    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md"
   ]
 }
