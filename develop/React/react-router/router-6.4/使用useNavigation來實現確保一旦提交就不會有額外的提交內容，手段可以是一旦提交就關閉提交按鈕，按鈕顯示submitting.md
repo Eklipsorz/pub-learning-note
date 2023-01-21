@@ -58,6 +58,13 @@ useNavigation：
 #🧠 表單一旦提交時，表單元件還能呈現什麼樣子？為什麼？->->-> `顯示不能提交，確保處理部分是以當時提交內容為主`
 <!--SR:!2023-01-24,26,250-->
 
+#🧠 useNavigation ㄕ ->->-> ``
+
+- 導向狀態有：navigation.state
+	1. idle：表示目前沒任何navigation請求要做
+	2. submitting：表示目前攔截到提交時的navigation操作並做著對應的action
+	3. loading：表示目前攔截到目前router正執行loader來準備資料來給予對應元件做渲染
+
 #🧠 react-router-dom v6.4： useNavigation是什麼用途的hook->->-> `主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料`
 <!--SR:!2023-01-27,11,230-->
 
