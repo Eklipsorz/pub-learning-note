@@ -78,7 +78,7 @@ function App() {
 ## 複習
 
 #🧠 react-router-dom v6：使用useLoaderData的目的為何？ ->->-> `由React-router負責根據使用者所切換的URL來發送對應請求來讓元件獲取資料或者服務，而非由元件負責發送請求。`
-<!--SR:!2023-01-22,28,250-->
+<!--SR:!2023-04-06,74,250-->
 
 #🧠  react-router-dom v6：useLoaderData 是什麼？用途是什麼？ ->->-> `react-router v6.4 所提供的hook、用途為在元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件`
 <!--SR:!2023-03-14,59,250-->
