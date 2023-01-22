@@ -99,7 +99,7 @@
 <!--SR:!2023-02-09,24,210-->
 
 #🧠 authentication 通用概念為何？->->-> `	- Get access/permission。 - Send request to protected resource with access/permission。`
-<!--SR:!2023-01-22,15,250-->
+<!--SR:!2023-03-05,42,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問前者具體為何？ ->->-> `從特定認證方式輸入自己的credential來驗證，若驗證成功就獲取permission或者access；若驗證失敗就不允許獲取`
 <!--SR:!2023-02-04,25,250-->

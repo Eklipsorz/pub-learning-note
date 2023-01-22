@@ -63,7 +63,7 @@ const item2Remove = remove.bind(null, id3)
 ## 複習
 
 #🧠 JS：function.protype.bind 用途為何？ ->->-> `透過this 和 引數來重新將舊函式轉換成專門以this和引數來處理的函式`
-<!--SR:!2023-01-22,74,250-->
+<!--SR:!2023-08-04,194,250-->
 
 #🧠 JS：function.protype.bind 用法為何？ ->->-> `function.bind(thisArg, arg1, arg2)`
 <!--SR:!2023-08-03,193,250-->
@@ -72,7 +72,7 @@ const item2Remove = remove.bind(null, id3)
 <!--SR:!2023-06-22,163,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 中的 arg1 - arg2 是什麼？ ->->-> `指定引數來綁定在轉換後的函式`
-<!--SR:!2023-01-22,74,250-->
+<!--SR:!2023-08-01,191,250-->
 
 #🧠 JS：function.bind(thisArg, arg1, arg2) 回傳什麼？ ->->-> `一個與thisArg 和 arg1-arg2相結合的新函式`
 <!--SR:!2023-04-13,119,250-->

@@ -250,7 +250,7 @@ return defer({
 
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，解決方案是採用defer、await、suspense 元件，擁有資料索求請求並不會完全跟著其他任務排著隊輪流執行這優點，其執行流程會是？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> `- 解析結果網頁並渲染 - 解析JS模組所在並加載初始畫面 - 根據使用者切換的URL來執行對應Route所要做的事情，如loader、render；在執行對應Route所要做的事情render時，就會發送資料索求請求`
-<!--SR:!2023-01-22,22,250-->
+<!--SR:!2023-03-21,58,250-->
 
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，解決方案是採用defer、await、suspense 元件，擁有抽離出來的代碼很容易從component和route進行切換點，其原理會是？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> `透過defer方法和await是否添加來決定是否其promise要在執行route時執行，還是在component執行：`
