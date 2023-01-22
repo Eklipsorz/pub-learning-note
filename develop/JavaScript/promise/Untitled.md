@@ -30,14 +30,14 @@ callback 本身為由特定程式模組A交由非同步任務處理完特定任�
 
 
 總結為：
-- inversion of control：任何種類的callback之執行
+- inversion of control：任何種類的callback之執行控制權從程式模組A反轉成不是由程式模組A來控制執行，而是轉由其他外部程式模組。在這裡會是指被接收callback的非同部任務來決定
 
 
 #### 案例
 
 假如公司要求購買每一項東西時，都要呼叫追蹤交易的第三方服務，然後指定callback來由它負責付款和顯示付款成功的畫面。
 
-然而第三方服務這時就
+然而callback的執行控制權會轉由第三方服務來執行，由它決定callback要執行幾次、執行時機、是否要執行。
 ```
 // 追蹤交易來統計的第三方服務
 analytics.trackPurchase(handler);
