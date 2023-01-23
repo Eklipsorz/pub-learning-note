@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md"
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
               }
             }
           }
@@ -204,8 +204,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e5672d7c31220ac",
+  "active": "eee2cfe1d32ebd37",
   "lastOpenFiles": [
+    "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
     "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md",
@@ -214,7 +215,6 @@
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
     "develop/authentication/Public key certificate 或者 digital certificate 概念為傳遞訊息者用以證明自己是公鑰擁有者的數位資料，並藉此向特定系統驗證並於驗證成功後獲取資源.md",
     "develop/authentication/數位簽章是一個帶有驗證內容真偽、驗證傳遞者是否合法的二進制資料；JWT的簽署 是單純驗證內容真偽的二進制資料.md",
-    "develop/JavaScript/promise/Untitled.md",
-    "develop/authentication/Untitled.md"
+    "develop/JavaScript/promise/Untitled.md"
   ]
 }

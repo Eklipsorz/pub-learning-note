@@ -88,7 +88,7 @@ export default CartButton;
 <!--SR:!2023-06-16,158,250-->
 
 #💻 請至/question-review/food-order-project-question領取題目並到add-item-animation分支，請試著在CartButton.js中實作出當購物車的項目數量至購物車的動畫，請務必注意每次數量有變動就每次呈現 ->->-> `https://github.com/Eklipsorz/food-order-project/blob/main/src/components/Cart/CartButton.js`
-<!--SR:!2023-01-22,73,250-->
+<!--SR:!2023-08-04,193,250-->
 
 
 
