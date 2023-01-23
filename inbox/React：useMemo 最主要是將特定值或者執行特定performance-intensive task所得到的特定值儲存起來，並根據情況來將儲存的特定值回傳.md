@@ -135,7 +135,7 @@ export default React.memo(DemoList);
 <!--SR:!2023-06-05,148,250-->
 
 #🧠 React useMemo 是什麼？做什麼？->->-> `最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳或者重新執行performance-intensive task來獲得特定值`
-<!--SR:!2023-01-23,69,250-->
+<!--SR:!2023-07-15,173,250-->
 
 #🧠 React useMemo 語法是什麼？ ->->-> `const memoizedValue = useMemo(createResultFn, [deps]);`
 <!--SR:!2023-01-30,74,250-->
@@ -158,7 +158,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，useMemo會如何做？ ->->-> `只回傳記憶體的目前內容，不執行createResultFn來產生結果值`
-<!--SR:!2023-01-23,69,250-->
+<!--SR:!2023-07-14,172,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，代表著什麼？ ->->-> `系統就認為會是一直變動的deps`
 <!--SR:!2023-06-26,161,250-->

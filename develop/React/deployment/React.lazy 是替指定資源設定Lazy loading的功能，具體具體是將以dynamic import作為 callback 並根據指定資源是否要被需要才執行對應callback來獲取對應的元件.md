@@ -56,7 +56,7 @@ React.lazy：
 <!--SR:!2023-02-01,28,250-->
 
 #🧠 React.lazy語法為`React.lazy(callback)`，那麼callback該如何設定，舉例 ->->-> `React.lazy(() => import(....))`
-<!--SR:!2023-01-23,21,250-->
+<!--SR:!2023-03-20,56,250-->
 
 
 #🧠 React.lazy語法為`React.lazy(callback)`會回傳什麼？->->-> `回傳會是標示為lazy-loading的React Component`

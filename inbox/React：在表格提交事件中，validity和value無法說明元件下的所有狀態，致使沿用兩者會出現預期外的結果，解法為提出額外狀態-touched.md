@@ -197,7 +197,7 @@ const SimpleInput = (props) => {
 <!--SR:!2023-02-02,66,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念會是以什麼作為核心？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> `提出另一個名為touched狀態來表示`
-<!--SR:!2023-01-23,59,250-->
+<!--SR:!2023-06-20,148,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念具體會是什麼？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> ` 註冊touched 狀態；設定可使touched為true的情況，在這裏是以表格提交事件來預設所有輸入欄皆為touched；渲染部分：設定條件來決定渲染部分`
 <!--SR:!2023-02-14,74,250-->
