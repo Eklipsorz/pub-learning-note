@@ -119,7 +119,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-02-15,28,250-->
 
 #💻  請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件：AuthForm、MainNavigation ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/05-using-context-for-managing-auth-state`
-<!--SR:!2023-01-21,11,250-->
+<!--SR:!2023-02-26,34,250-->
 
 
 
