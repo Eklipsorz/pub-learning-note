@@ -6,22 +6,10 @@
       {
         "id": "4ea6b50c98629036",
         "type": "tabs",
-        "dimension": 59.08013276434329,
+        "dimension": 30.888290713324363,
         "children": [
           {
             "id": "657674d6286ef448",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "79686c2020169ecd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,17 +23,55 @@
         ]
       },
       {
-        "id": "0461ec621d1e7c35",
+        "id": "1d5b966f26aca0d4",
         "type": "tabs",
-        "dimension": 40.91986723565672,
+        "dimension": 34.55585464333782,
         "children": [
           {
-            "id": "84711eb236bf357d",
+            "id": "32b566e4c086cca8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f0670117f6451a0f",
+        "type": "tabs",
+        "dimension": 17.27792732166891,
+        "children": [
+          {
+            "id": "a0ed365d4b62fe91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "bbf1a90c4d8c5a5f",
+        "type": "tabs",
+        "dimension": 17.27792732166891,
+        "children": [
+          {
+            "id": "6beb364c93277f64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md"
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md"
               }
             }
           }
@@ -188,17 +214,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84711eb236bf357d",
+  "active": "32b566e4c086cca8",
   "lastOpenFiles": [
-    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
+    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
-    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/food-order-project/food-order-project：由Cart 控管多個CartItem，並由它來面向context來處理，而非由CartItem，原因為Cart元件能夠取得Context較為完整內容，如總價錢、商品、購買量、價格，CartItem則是只有特定商品價格.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
     "develop/OS/async-task/concurrency 是指程式同時拆發(發生)成多個獨立執行的任務想在CPU上執行；parallelism 是指多個程式或者多個任務會同時在多個CPU上執行.md",
-    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
-    "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md"
+    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md"
   ]
 }
