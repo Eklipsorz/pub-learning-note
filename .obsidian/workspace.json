@@ -34,60 +34,6 @@
         ]
       },
       {
-        "id": "a69cf5a99490e14d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "cadc2a25f5adcd68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ff80f1c59b41bd46",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "156b024c61aa6f45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e11c1f8e5760acfd",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "01be08e6adfb0b8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "98f9796313acb560",
         "type": "tabs",
         "children": [
