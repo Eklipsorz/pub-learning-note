@@ -43,8 +43,24 @@ useEffect(async () => {
 
 > Usually the solution is to simply write the data fetching code inside the `useEffect` itself, like so:
 
+```jsx
+useEffect(() => {
+  // declare the data fetching function
+  const fetchData = async () => {
+    const data = await fetch('https://yourapi.com');
+  }
+
+  // call the function
+  fetchData()
+    // make sure to catch any error
+    .catch(console.error);
+}, [])
+```
+
+
 重點：
 - useEffect 預期callback會是回傳函式物件，但async會使得回傳promise 物件，這會無法正常執行
+- 若要運用async/await語法，替代方案為在callback內部定義async function來進行
 
 
 
@@ -330,6 +346,8 @@ this is use effect
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
 <!--SR:!2023-01-23,4,248-->
+
+#🧠 React：useEffect(callback, deps) 若要求callback能夠使用async/await語法，但callback本身不能是async，其替代方案為何 ->->-> `在callback內部定義另一個async function來使用`
 
 
 ---
