@@ -29,6 +29,7 @@ useEffect 語法：
 
 ##### useEffect 的callback不能是async的原因
 
+[[@HowUseAsync]]
 ```
 // ❌ don't do this
 useEffect(async () => {
@@ -360,5 +361,6 @@ Links:
 [[React：useEffect cleanup 技術主要是停止當前side effect所產生的非同步任務]]
 [[React：當元件上註冊了useEffect並觸發unmount，無論dependency是什麼，都會執行cleanup，而非side effect]]
 References:
+[[@HowUseAsync]]
 [[@ReactUseEffect]]
 [[@ithomeDay21UseEffect]]
