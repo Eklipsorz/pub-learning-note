@@ -155,7 +155,7 @@ const cartReducer = (prevState, action) => {
 
 
 #💻 請至/question-review/food-order-project-question領取題目並到add-item-to-cart分支，請試著在CartProvider.js中實作出增加項目至購物車的功能，請務必注意別讓購物車出現重複的項目。 ->->-> `https://github.com/Eklipsorz/food-order-project/blob/main/src/store/CartProvider.js`
-<!--SR:!2023-01-21,70,250-->
+<!--SR:!2023-07-26,184,250-->
 
 
 ---
