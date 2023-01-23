@@ -225,7 +225,7 @@ AbortController.abort()
 
 
 #🧠 React：以下為useEffect的實現，請問cleanup中發送的abort如何確保是發送signal至正確的非同步任務上來阻止執行？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png) ->->-> `最主要是透過cleanup的closure來記錄到非同步任務會用到的controller所在的記憶體區塊，這樣子可以致使cleanup能夠正確對當前所產生的非同步任務發送signal來阻止執行`
-<!--SR:!2023-01-23,49,250-->
+<!--SR:!2023-05-20,117,250-->
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼是什麼？(包含catch/try...catch) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667811905/blog/react/effect/useEffect/cleanup/AbortController-useEffect-cleanup_biqlup.png)`
 <!--SR:!2023-02-01,34,230-->
