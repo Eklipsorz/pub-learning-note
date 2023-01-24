@@ -258,7 +258,7 @@ batch：
 
 
 #🧠 React automatic batching 啟用條件為何？ ->->-> `automatic batching 只要使用createRoot來建立Virtual DOM的root節點，並於其節點建立子節點就會夠擁有automatic batching 特性`
-<!--SR:!2023-01-24,40,230-->
+<!--SR:!2023-04-28,94,230-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
 <!--SR:!2023-03-16,125,250-->

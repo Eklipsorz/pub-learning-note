@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "live bindings",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -155,7 +155,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "3561f24e270ef97c",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/CommonJS 模組解析全文.md",

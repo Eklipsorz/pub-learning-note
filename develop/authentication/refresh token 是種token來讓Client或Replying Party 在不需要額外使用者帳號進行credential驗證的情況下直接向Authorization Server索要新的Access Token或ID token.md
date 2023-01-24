@@ -89,13 +89,13 @@ H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Acces
 ## 複習
 
 #🧠 fresh 作為動詞用的意思會是什麼？ ->->-> ` 作為動詞，會是指將特定事物變成新的事物`
-<!--SR:!2023-01-24,3,250-->
+<!--SR:!2023-02-02,9,250-->
 
 #🧠 fresh 作為形容詞用的意思會是什麼？ ->->-> `fresh 作為形容詞，會是指新的或者不同的`
 <!--SR:!2023-01-24,3,250-->
 
 #🧠 refresh 作為動詞用的意思會是什麼？->->-> `會是重新再將特定事物轉變成新的事物`
-<!--SR:!2023-01-24,2,230-->
+<!--SR:!2023-01-30,6,230-->
 
 #🧠 refresh 作為動詞，會是重新再將特定事物轉變成新的事物，在網頁開發上會是什麼？ ->->-> `在電腦科學上會是指將畫面轉變成最新版本的畫面`
 <!--SR:!2023-01-24,3,250-->
@@ -111,14 +111,14 @@ H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Acces
 <!--SR:!2023-01-24,3,250-->
 
 #🧠 refresh token目的只有 **讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token** 嗎? 還有什麼？ ->->-> `盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源`
-<!--SR:!2023-01-24,3,250-->
+<!--SR:!2023-01-26,2,230-->
 
 
 #🧠 refresh token 和 access token/id token 相比較壽命來說會是什麼？為什麼？ ->->-> `	- refresh token > access token / ID token  - 其原因如目的。`
 <!--SR:!2023-01-24,3,250-->
 
 #🧠 以下為access token 和 refresh token 獲取過程，請仔細說明，另外Resource Server被假定成具有驗證Access Token、回傳資源的功能![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png) ->->-> `A. Client 向 Authorization Server 索要Access Token。B. Authorization Server 驗證客戶端身份無誤且請求資源是合理的，就頒發Access Token 和Refresh Token (這兩種Token都各綁定過期時間) 。C. Client 用Access Token向Resource Server 發送受保護資源的請求 。D. Resource Server 驗證Access Token有效並回傳受保護資源給Client。E. 當 Client 想使用 Access Token 向Resource Server 發送受保護資源的請求時，就能發現Token過期或者快過期就跳到G，否則Client 就以過期或者快過期的Token 向Resource Server 發送 。F. Resource Server 檢驗Token時發現過期，就拒絕回傳受保護資源。G. Client 自行使用Refresh Token 來向Authorization Server來獲取最新內容的Access Token。H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Access Token(或者也會簽發一個新的Refresh Token)給Client`
-<!--SR:!2023-01-24,3,250-->
+<!--SR:!2023-02-02,9,250-->
 
 
 
