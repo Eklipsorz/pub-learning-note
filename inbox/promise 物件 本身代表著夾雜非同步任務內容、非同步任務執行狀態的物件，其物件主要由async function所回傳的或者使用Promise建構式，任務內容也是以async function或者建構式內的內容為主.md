@@ -70,7 +70,7 @@ end
 <!--SR:!2023-01-29,15,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，該物件回傳的promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以resolve狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
-<!--SR:!2023-01-24,11,246-->
+<!--SR:!2023-02-23,30,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成什麼物件？->->-> `async function物件`
 <!--SR:!2023-01-26,13,246-->
@@ -99,7 +99,7 @@ end
 
 
 #🧠 javascript： 當將function設定為asynchronous  function時，該函式會有什麼功能->->-> `		- 以promise物件來包裝回傳內容 - 允許開發者在函式使用await語法糖`
-<!--SR:!2023-01-24,10,190-->
+<!--SR:!2023-02-13,20,190-->
 
 #🧠 javascript：async function是定義promise 為主的任務之內容嗎？為何？->->-> `並不是，最主要是由promise的建構式來定義內容`
 <!--SR:!2023-01-25,12,246-->
