@@ -24,6 +24,24 @@ let promise = new Promise(function(resolve, reject) {
 
 > So the executor eventually moves `promise` to one of these states:
 
+重點：
+- promise 建構式為
+	- 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
+		- state
+			- pending
+			- fulfilled
+			- rejected
+		- result：
+	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise所交代的任務已經
+```
+new Promise(fn)
+
+function fn(resolve, reject) {
+	// ...
+}
+```
+
+
 
 ## 複習
 
