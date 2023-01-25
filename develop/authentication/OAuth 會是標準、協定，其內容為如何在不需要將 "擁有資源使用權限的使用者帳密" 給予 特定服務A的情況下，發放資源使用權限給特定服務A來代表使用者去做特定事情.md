@@ -146,7 +146,7 @@
 <!--SR:!2023-01-27,8,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server的伺服器`
-<!--SR:!2023-01-25,6,250-->
+<!--SR:!2023-02-09,15,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
 <!--SR:!2023-01-29,10,250-->

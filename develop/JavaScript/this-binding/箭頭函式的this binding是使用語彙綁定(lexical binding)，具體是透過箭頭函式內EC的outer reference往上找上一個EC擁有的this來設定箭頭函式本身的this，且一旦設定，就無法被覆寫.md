@@ -250,7 +250,7 @@ foo.call(obj) // 2
 <!--SR:!2023-05-23,135,250-->
 
 #🧠 請問以下函式呼叫的this會是什麼？會印出什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665578883/blog/javascript/this-binding/arrow-function-this-binding/arrow-function-this-binding-example3_s3srqa.png) ->->-> `執行foo.call(obj)，會是以obj為this來呼叫並生成非同步計時任務，此計時任務也會因為語彙綁定往上找this而找上foo的this而設定成obj，並印出2`
-<!--SR:!2023-01-25,67,250-->
+<!--SR:!2023-07-12,168,250-->
 
 ---
 Status: #🌱 
