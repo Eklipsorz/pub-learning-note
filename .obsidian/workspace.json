@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6db8bf252a1b8eb7",
+        "id": "0652ea5476e5068e",
         "type": "tabs",
         "children": [
           {
-            "id": "f58a53ddaf5f28ed",
+            "id": "99e60892a6f27d98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
+                "file": "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md"
               }
             }
           }
@@ -155,17 +155,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f58a53ddaf5f28ed",
+  "active": "99e60892a6f27d98",
   "lastOpenFiles": [
-    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+    "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
+    "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "inbox/CommonJS 模組解析全文.md",
     "develop/module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
     "inbox/div 元素以block形式來將多個inline元素或block元素轉換成一個邏輯區塊，span則是以inline形式來將多個inline元素轉換成一個邏輯區塊.md",
-    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md"
+    "develop/React/react-router/router-6.4/errorElement 屬性用途是指定當Route的對應元件發生錯誤時所要渲染的畫面內容；useRouteError 用途則是專門從擷取到錯誤資訊物件的Router物件獲取對應錯誤資訊.md"
   ]
 }
