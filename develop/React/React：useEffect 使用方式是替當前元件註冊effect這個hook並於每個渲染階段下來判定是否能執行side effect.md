@@ -343,7 +343,7 @@ this is use effect
 <!--SR:!2023-02-03,11,248-->
 
 #🧠 React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有無法正常執行cleanup，主因會是什麼？ ->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
-<!--SR:!2023-01-25,6,248-->
+<!--SR:!2023-02-10,16,248-->
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
 <!--SR:!2023-02-04,12,248-->

@@ -20,78 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "ff929773466db8ef",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "110d4b3057ba62c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ac635d8b61a1f328",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0f302561c83a55d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "8162d39966aacad5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bee0cc28079bfb82",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "7378f5a675e9c8be",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0846902768ed535d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -227,7 +155,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0846902768ed535d",
+  "active": "f58a53ddaf5f28ed",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
