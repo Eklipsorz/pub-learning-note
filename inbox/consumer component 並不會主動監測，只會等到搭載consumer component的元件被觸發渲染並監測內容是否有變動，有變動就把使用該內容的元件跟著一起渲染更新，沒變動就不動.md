@@ -29,9 +29,11 @@
 <!--SR:!2023-08-05,192,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，且檢測到context object沒變動的話，會做什麼？ ->->-> `若沒有變動的話，並不會存取context object內容，並直接以目前資訊來渲染元件`
+<!--SR:!2023-01-28,3,250-->
 <!--SR:!2023-08-04,191,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，且檢測到context object沒變動的話，會做什麼？ ->->-> `若沒有變動的話，並不會存取context object內容，並直接以目前資訊來渲染元件`
+<!--SR:!2023-01-28,3,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，且檢測到context object變動以及沒變動的話，會是如何？ ->->-> `檢測對應context object 內容是否有變動，有變動才真正讓搭載consumer component的元件去使用新內容來更新渲染；若沒有變動的話，並不會存取context object內容，並直接以目前資訊來渲染元件`
 <!--SR:!2023-01-28,3,250-->

@@ -4,109 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0eda8c6e1fccc452",
+        "id": "b0c6303197fe610c",
         "type": "tabs",
         "children": [
           {
-            "id": "4444cfb67b4f669c",
+            "id": "231f19042f7d22fb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f96f8e20bf2dfb1e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0b444d627934e621",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "5d18a459bf5cafd2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2480eec84af15d74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "8f5de39412bc7ad6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "54e8f90f10e3cc37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "962a6a169aa27afd",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "33898181dc3c9aba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a5867954415c6a13",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2126ed753728e5ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -175,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -245,12 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33898181dc3c9aba",
+  "active": "231f19042f7d22fb",
   "lastOpenFiles": [
-    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-    "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
+    "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
     "develop/authentication/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
