@@ -32,7 +32,7 @@ let promise = new Promise(function(resolve, reject) {
 			- fulfilled
 			- rejected
 		- result：
-	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise所交代的任務已經
+	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise
 ```
 new Promise(fn)
 
