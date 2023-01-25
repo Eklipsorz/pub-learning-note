@@ -41,7 +41,10 @@ function fn(resolve, reject) {
 }
 ```
 
+### then 方法
 
+用途：
+- 定義目前promise為fulfilled狀態時 或者 目前 promise 為rejected狀態時 所會做的事情
 
 ## 複習
 
