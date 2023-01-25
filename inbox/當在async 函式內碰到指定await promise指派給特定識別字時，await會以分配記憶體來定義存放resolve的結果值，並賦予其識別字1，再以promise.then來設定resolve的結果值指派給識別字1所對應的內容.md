@@ -82,7 +82,7 @@ async function testAwaitFunction() {
 ## 複習
 
 #🧠 當在async 函式內設定以下指派內容的語法`let temp = await Promise...` 會解析成什麼？->->-> `	- 分配記憶體來定義存放resolve的結果值，並賦予其識別字1 - 以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容`
-<!--SR:!2023-01-25,24,250-->
+<!--SR:!2023-03-29,63,250-->
 
 #🧠 當在async 函式內設定以下指派內容的語法`let temp = await Promise...` 會解析成什麼？以程式碼來說明->->-> `// 分配記憶體 let temp = ''; Promise(....).then((ans) => { // 將resolve情況下的結果指派給temp temp = ans; })`
 <!--SR:!2023-01-29,27,250-->

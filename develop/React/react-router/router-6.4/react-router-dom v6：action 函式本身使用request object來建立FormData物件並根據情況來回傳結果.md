@@ -136,7 +136,7 @@ export async function action({ request }) {
 <!--SR:!2023-03-26,64,250-->
 
 #🧠 request物件的formData方法會回傳什麼？ ->->-> `回傳FormData物件`
-<!--SR:!2023-01-25,28,250-->
+<!--SR:!2023-04-08,73,250-->
 
 #🧠 request物件的formData方法會回傳的FormData物件會是什麼形式？ ->->-> `多個key-value pairs形式的資料形式`
 <!--SR:!2023-04-04,70,250-->
@@ -165,7 +165,7 @@ export async function action({ request }) {
 
 
 #🧠 react-router-dom v6.4：action 本身回傳error 和拋出 error 之間不同 處在哪？->->-> `使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router的錯誤處理給攔截並處理。`
-<!--SR:!2023-01-25,28,250-->
+<!--SR:!2023-04-09,74,250-->
 
 #🧠 react-router-dom v6.4： 以下為action定義，請問以下的回傳error和拋出error之間的不同處在哪？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671114108/blog/react/react-router/v6/action-function/action-function-return-vs-throw_tlgvpy.png) ->->-> ``
 <!--SR:!2023-03-17,58,250-->
