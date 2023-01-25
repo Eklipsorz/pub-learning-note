@@ -43,6 +43,7 @@ doQuack(dog)**
 
 #### type & typing 命名緣由
 
+[[@TypeSystemWikipedia]]
 > Assigning a data type, termed typing, gives meaning to a sequence of bits such as a value in memory or some object such as a variable. 
 
 重點：
@@ -78,5 +79,6 @@ Tags:
 [[JavaScript]]
 Links:
 References:
+[[@TypeSystemWikipedia]]
 [[@JinYiBuSiKaoDuckTypingIThome]]
 [[@YaZiXingBieWeiJiBaiKeZiYouDeBaiKeQuanShu]]
