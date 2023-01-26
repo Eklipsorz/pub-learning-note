@@ -250,7 +250,7 @@ batch：
 <!--SR:!2023-06-25,192,250-->
 
 #🧠 React automatic batching 是什麼？ ->->-> `不管是不是在事件處理執行N個狀態更新指令，只要在root節點下的子節點都直接自動以Batching來執行`
-<!--SR:!2023-01-26,41,230-->
+<!--SR:!2023-02-19,24,210-->
 
 
 #🧠 React automatic batching是為 **不管是不是在事件處理執行N個狀態更新指令，都直接自動以Batching來執行** ，換言之在Promise/setTimeOut/事件處理上出現N個狀態更新指令會是？  ->->-> `即使在Promise/setTimeOut中出現N個狀態更新指令，皆會像是在事件處理那樣可以被合併`

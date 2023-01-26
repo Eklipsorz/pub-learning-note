@@ -142,7 +142,7 @@ const Component1 = (props) => {
 <!--SR:!2023-02-20,70,250-->
 
 #🧠 當使用者輸入以下內容時：\/xxx1\/abc\/efg，如何在Component1擷取到\<Route path="\/xxx1\/\:something1\/\:something2\"\> \<Component1 \/\> \<\/Route\> 和abc和efg？->->-> `import { useParams } from 'react-router-dom'; const Component1 = (props) => {  const obj = useParams(); }`
-<!--SR:!2023-01-26,54,250-->
+<!--SR:!2023-06-14,139,250-->
 
 
 

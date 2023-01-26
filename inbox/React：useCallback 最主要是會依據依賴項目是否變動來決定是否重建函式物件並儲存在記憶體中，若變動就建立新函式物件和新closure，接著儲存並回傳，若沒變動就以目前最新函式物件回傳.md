@@ -81,7 +81,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2023-01-27,72,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的baseFunction 是什麼？用途是什麼？ ->->-> `是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction`
-<!--SR:!2023-01-26,72,250-->
+<!--SR:!2023-08-03,189,250-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的\[deps\] 是什麼？用途是什麼？->->-> `依賴項目所構成的陣列，決定是否要在基本函式架構baseFunction搭配目前的依賴項目來建立新的函式物件，其函式物件會擁有新的closure`
 <!--SR:!2023-04-29,125,250-->

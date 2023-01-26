@@ -148,7 +148,7 @@ suspense
 <!--SR:!2023-01-30,28,250-->
 
 #🧠  suspense命名緣由會是什麼？ ->->-> `- suspense 是指呈現被暫時/永久停止的狀態`
-<!--SR:!2023-01-26,8,170-->
+<!--SR:!2023-02-10,15,170-->
 
 #🧠 react：Suspense 元件是什麼用途？ ->->-> `用途為以特定內容元件形式來呈現出目前特定元件暫時停止渲染之狀態`
 <!--SR:!2023-02-10,33,248-->
@@ -197,7 +197,7 @@ suspense
 
 
 #🧠 React-router：Await 語法上為何需要Suspense元件？->->-> `確保還未完成的元件能先有個預設畫面來渲染`
-<!--SR:!2023-01-26,25,250-->
+<!--SR:!2023-04-01,65,250-->
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的resolve會是什麼形式和作用？？ ->->-> ` resolve：形式會是promise。指定以哪個deferred 的promise非同步任務來正式執行和渲染`
 <!--SR:!2023-01-30,28,250-->

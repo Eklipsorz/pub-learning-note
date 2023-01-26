@@ -22,7 +22,7 @@ componentDidUpdate(prevProps, prevState, snapshot)
 <!--SR:!2023-02-03,72,250-->
 
 #🧠 React：componentDidUpdate 語法為何？ ->->-> `componentDidUpdate(prevProps, prevState) {.....}`
-<!--SR:!2023-01-26,65,250-->
+<!--SR:!2023-07-11,166,250-->
 
 #🧠 React：componentDidUpdate 語法為componentDidUpdate(prevProps, prevState) {.....}，請問prevProps和preState是什麼？ ->->-> `	- prevProps ：更新前的props資訊 - preState：更新前的state 資訊`
 <!--SR:!2023-07-04,160,250-->
