@@ -101,7 +101,7 @@
 <!--SR:!2023-02-11,17,250-->
 
 #🧠 Open Authorization 或者OAuth 會是什麼？ ->->-> `一種標準、協定。定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。`
-<!--SR:!2023-01-26,7,250-->
+<!--SR:!2023-02-12,17,250-->
 
 
 #🧠 在Open Authorization 或者OAuth中，代表權限的事物會是什麼？ ->->-> `token`
@@ -123,7 +123,7 @@
 <!--SR:!2023-01-28,9,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `Resource Server：Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token。 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
-<!--SR:!2023-01-26,7,250-->
+<!--SR:!2023-02-15,20,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server 對應的Client 會是什麼？  ->->-> `會是代表使用者User的應用程式或者服務`
 <!--SR:!2023-01-27,8,250-->
@@ -159,7 +159,7 @@
 <!--SR:!2023-02-15,20,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者在實現上是否能一台主機擔任兩個角色？ ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
-<!--SR:!2023-01-26,7,250-->
+<!--SR:!2023-02-14,19,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？以圖來表示？->->-> ``
 <!--SR:!2023-01-29,10,250-->

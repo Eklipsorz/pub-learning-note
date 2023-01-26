@@ -111,7 +111,7 @@ H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Acces
 <!--SR:!2023-01-31,7,250-->
 
 #🧠 refresh token目的只有 **讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token** 嗎? 還有什麼？ ->->-> `盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源`
-<!--SR:!2023-01-26,2,230-->
+<!--SR:!2023-01-31,5,230-->
 
 
 #🧠 refresh token 和 access token/id token 相比較壽命來說會是什麼？為什麼？ ->->-> `	- refresh token > access token / ID token  - 其原因如目的。`

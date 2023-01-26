@@ -362,7 +362,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-05-12,129,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png)->->-> `第一個為global object，會印出行星飛行、第二個為obj1，會印出聽風是風、第三個為obj2，會印出時間跳躍、第四個為obj3，會印出echo`
-<!--SR:!2023-01-26,67,250-->
+<!--SR:!2023-07-19,174,250-->
 
 #🧠  JS：call 、 apply這兩者和this之間可以做什麼應用？  ->->-> `call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容`
 <!--SR:!2023-02-18,75,230-->
