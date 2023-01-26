@@ -121,7 +121,8 @@
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，access/permission是什麼意思？ ->->-> `作為存取受保護資源的權力依據`
 <!--SR:!2023-02-18,31,230-->
 
-#🧠 authentication的access/permission產生：為何出現以下這兩個方法- server-side session中的session id - authentication token中的token ->->-> `主要是為了檢測客戶端的資料被人惡意竄改而假冒他人`
+`````````````````````````````
+```#🧠 authentication的access/permission產生：為何出現以下這兩個方法- server-side session中的session id - authentication token中的token ->->-> `主要是為了檢測客戶端的資料被人惡意竄改而假冒他人`
 <!--SR:!2023-01-26,18,250-->
 
 #🧠  authentication的access/permission產生：使用固定字串的回應、 server-side session中的session id、authentication token中的token，哪一個能解決若代表permission資料被其他惡意主機奪走？為何能解決？->->-> `都沒有，這些最主要面向於前端所儲存的資訊是否被人惡意竄改成其他人。`

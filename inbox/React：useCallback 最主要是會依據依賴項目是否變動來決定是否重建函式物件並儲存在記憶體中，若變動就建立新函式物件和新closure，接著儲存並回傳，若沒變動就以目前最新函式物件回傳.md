@@ -100,7 +100,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2023-01-29,74,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，就表示什麼？ ->->-> `就會被系統認定為一直被改變的依賴項目`
-<!--SR:!2023-01-26,72,250-->
+<!--SR:!2023-08-02,188,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，其useCallback回傳什麼？->->-> `進而每一次執行都會重新以baseFunction為主來建立新的函式物件回傳`
 <!--SR:!2023-01-29,74,250-->

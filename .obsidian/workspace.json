@@ -6,7 +6,6 @@
       {
         "id": "d8663d3fb3484f25",
         "type": "tabs",
-        "dimension": 24.09152086137281,
         "children": [
           {
             "id": "e442dcad7f2572d2",
@@ -27,26 +26,6 @@
               "type": "markdown",
               "state": {
                 "file": "develop/JavaScript/promise/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "00f3650fbd4b65f5",
-        "type": "tabs",
-        "dimension": 75.90847913862719,
-        "children": [
-          {
-            "id": "5eb57264d2e265ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
                 "mode": "source",
                 "source": false
               }
@@ -119,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+                "file": "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+                "file": "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md"
+                "file": "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md"
               }
             }
           }
@@ -189,17 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5eb57264d2e265ed",
+  "active": "e442dcad7f2572d2",
   "lastOpenFiles": [
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+    "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md",
+    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
     "develop/JavaScript/promise/Untitled 1.md",
     "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
     "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格，風格主要是關注特定事物所具有的行為會做什麼，接著依據行為來判別是否為特定物件型別.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
-    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-    "develop/Redis/Hotspot Invalid 是指由於某個熱門的資料在緩存失效而導致大量索求該資料的請求直接被轉向至資料庫.md",
-    "inbox/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md"
+    "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md"
   ]
 }

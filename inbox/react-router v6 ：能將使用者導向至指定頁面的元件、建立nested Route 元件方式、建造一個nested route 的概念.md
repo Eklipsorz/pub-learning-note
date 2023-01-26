@@ -220,7 +220,7 @@ xxxx 元件下的路由
 <!--SR:!2023-01-31,14,246-->
 
 #🧠 react-router-dom v6：parent route元件直接包裹nested route元件，並搭配Outlet元件，其nested Route的path為何不用額外添加parent route的path就能延伸？ ->->-> `主要是定位就是以parent route的path為主`
-<!--SR:!2023-01-26,10,246-->
+<!--SR:!2023-02-22,27,246-->
 
 #🧠 react-router-dom v6：將nested Route元件安置在component，再讓component被parent route元件所包含，其nested Route的path為何不用額外添加parent route的path就能延伸？ ->->-> `主要是定位就是以parent route的path為主`
 <!--SR:!2023-02-04,17,246-->
