@@ -369,7 +369,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 為什麼fn.bind需要多一個括號？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png) ->->-> `因為bind會是回傳一個新的函式物件，要執行裡頭的內容，必需要多一個括號`
-<!--SR:!2023-01-26,68,250-->
+<!--SR:!2023-07-17,172,250-->
 
 #🧠 請問下面三個函式呼叫會是得到什麼this以及印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541020/blog/javascript/this-binding/explicit-binding/this-is-window-explicit-binding-example_ozqxrj.png)->->-> `this都為global object，而印出則是印出行星飛行，這是因為如果this設定為null或者undefined，那麼this就指向global object`
 <!--SR:!2023-02-03,29,230-->

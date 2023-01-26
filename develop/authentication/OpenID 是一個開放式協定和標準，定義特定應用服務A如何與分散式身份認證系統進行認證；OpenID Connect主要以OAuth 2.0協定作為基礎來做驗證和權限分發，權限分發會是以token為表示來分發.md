@@ -107,7 +107,7 @@
 <!--SR:!2023-02-06,13,248-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Resource Server會是負責什麼？說明可能性->->-> ` Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器，若會驗證，就自行驗證Token`
-<!--SR:!2023-01-26,5,245-->
+<!--SR:!2023-02-09,14,245-->
 
 
 #🧠 在OpenID / OpenID Connect 角色中，若Resource Server只會管理資源，其中Resource Server會是負責什麼？ ->->-> `Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器`
