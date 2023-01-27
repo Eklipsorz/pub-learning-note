@@ -69,7 +69,7 @@
 <!--SR:!2023-07-20,175,250-->
 
 #🧠 static memory allocation 是什麼？(簡述) ->->-> `相對於dynamic memory allocation來說，會以不透過執行程式來進行記憶體分配，換言之，就是在執行階段前做記憶體分配，而是單方面在執行之前分配好記憶題的變數或者函式`
-<!--SR:!2023-01-27,67,250-->
+<!--SR:!2023-03-06,38,230-->
 
 
 #🧠  static memory allocation 為什麼會有static來稱呼?  ->->-> `相對於dynamic memory allocation來說`
@@ -84,11 +84,11 @@
 #🧠 在JS中的class內部定義static method或者static property，其記憶體狀況為何？ ->->-> `代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配`
 <!--SR:!2023-03-21,75,230-->
 
-#🧠 在JS中的static method的用途為何？class對於method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
+#🧠 在JS中的static method的用途為何？class對於static method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
 <!--SR:!2023-02-06,74,250-->
 
-#🧠 在JS中的static property的用途為何？class對於 property的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
-<!--SR:!2023-01-27,66,250-->
+#🧠 在JS中的static property的用途為何？class對於static property的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
+<!--SR:!2023-03-03,35,230-->
 
 #🧠  static variable 中 的static 起源於什麼？ ->->-> `static variable 中 的static 起源於static memory allocation作法`
 <!--SR:!2023-02-06,74,250-->

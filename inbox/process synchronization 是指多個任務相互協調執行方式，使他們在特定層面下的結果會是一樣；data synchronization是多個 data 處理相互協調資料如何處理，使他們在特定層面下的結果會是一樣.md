@@ -37,8 +37,8 @@ synchronization ：synchronize 進行過程
 
 ## 複習
 
-#🧠 synchronization在電腦科學上可區分成哪兩種？->->-> `Data Synchronization、Process/Thread Synchronization`
-<!--SR:!2023-01-27,52,250-->
+#🧠 synchronization在電腦科學上可區分成哪兩種synchronization？->->-> `Data Synchronization、Process/Thread Synchronization`
+<!--SR:!2023-02-25,29,230-->
 
 #🧠 Data Synchronization 會是指什麼？ ->->-> `多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣`
 <!--SR:!2023-05-17,118,250-->

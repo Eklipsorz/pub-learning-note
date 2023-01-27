@@ -6,6 +6,7 @@
       {
         "id": "d8663d3fb3484f25",
         "type": "tabs",
+        "dimension": 20,
         "children": [
           {
             "id": "e442dcad7f2572d2",
@@ -47,8 +48,66 @@
         "currentTab": 1
       },
       {
+        "id": "27766fee07386fe2",
+        "type": "tabs",
+        "dimension": 20,
+        "children": [
+          {
+            "id": "36dee2502e422ddf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "836b57e97616ed7c",
+        "type": "tabs",
+        "dimension": 20,
+        "children": [
+          {
+            "id": "e09e395895ed7856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f015b2c4cb2268b6",
+        "type": "tabs",
+        "dimension": 23.973063973063972,
+        "children": [
+          {
+            "id": "1987be6186bf2af7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "2b4f3ff04121aa38",
         "type": "tabs",
+        "dimension": 16.026936026936024,
         "children": [
           {
             "id": "fd29d641fca157be",
@@ -129,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled 1.md",
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled 1.md",
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled 1.md"
+                "file": "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md"
               }
             }
           }
@@ -199,17 +258,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e7840fd1e17fd0be",
+  "active": "1987be6186bf2af7",
   "lastOpenFiles": [
-    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
+    "inbox/process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣.md",
     "develop/JavaScript/promise/Untitled 1.md",
+    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "develop/JavaScript/promise/duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格，風格主要是關注特定事物所具有的行為會做什麼，接著依據行為來判別是否為特定物件型別.md",
     "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md",
     "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
     "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
-    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-    "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md"
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
   ]
 }
