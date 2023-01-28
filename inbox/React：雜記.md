@@ -40,7 +40,7 @@
 #🧠 React： 假如useXXXX()會是印出XXXX，請問在functional component下若是以下面形式來執行useXXXX(); console.log('hi')  其執行順序和結果是？->->-> `會先執行useXXXX 在來執行console`
 <!--SR:!2023-02-16,73,250-->
 
-#🧠 React：以dom來看，則是hook註冊在特定dom節點，比如說 ->->-> `綁定特定資訊至對應dom節點`
+#🧠 React：以dom來看，react hook會是在做什麼？比如說 ->->-> `綁定特定資訊至對應dom節點`
 <!--SR:!2023-01-28,60,250-->
 
 ---

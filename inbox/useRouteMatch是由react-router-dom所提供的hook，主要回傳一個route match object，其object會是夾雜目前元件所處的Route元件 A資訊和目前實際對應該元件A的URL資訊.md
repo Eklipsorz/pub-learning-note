@@ -77,7 +77,7 @@ match.path 適用於以path為主的正規表達式來對應的場景
 <!--SR:!2023-03-20,74,250-->
 
 #🧠 運用useRouteMatch 回傳的 route match 物件 調用的概念有哪些？ ->->-> `使用placeholder來設定、使用具體的URL來對應`
-<!--SR:!2023-01-28,38,230-->
+<!--SR:!2023-02-17,20,210-->
 
 #🧠 useRouteMatch 回傳的 route match 物件 調用的概念會有使用placeholder來設定、使用具體的URL來對應 這些，那麼具體會是分別為何？ ->->-> `使用placeholder來設定：具體是用match.path、使用具體的URL來設定：具體適用match.url`
 <!--SR:!2023-03-17,72,250-->
