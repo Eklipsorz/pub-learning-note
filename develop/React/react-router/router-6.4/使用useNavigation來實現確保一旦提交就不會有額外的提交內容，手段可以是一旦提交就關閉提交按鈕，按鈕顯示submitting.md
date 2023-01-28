@@ -72,7 +72,7 @@ useNavigation：
 
 
 #🧠 useNavigation回傳的物件中，state有idle、submitting、loading，其中loading狀態會是指什麼？ ->->-> `表示目前攔截到目前router正執行loader來準備資料來給予對應元件做渲染`
-<!--SR:!2023-01-28,5,247-->
+<!--SR:!2023-02-11,14,247-->
 
 
 

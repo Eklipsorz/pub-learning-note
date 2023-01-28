@@ -150,8 +150,10 @@ immutable
 #🧠 React： useRef 是什麼？->->-> `useRef 是一種hook，綁定於特定元件下，建立一個特定物件去取得JSX元素的對應實際DOM節點，以此讓目前元件來操作實際DOM節點`
 <!--SR:!2023-02-09,92,248-->
 
-#🧠  React： useRef 會回傳什麼？ ->->-> `mutable 物件，裡面夾雜了current屬性，其current屬性值為對應參照的實際DOM節點`
+#🧠  React： useRef 會回傳什麼形式的內容，請盡量詳細說明？ ->->-> `mutable 物件，裡面夾雜了current屬性，其current屬性值為對應參照的實際DOM節點`
 <!--SR:!2023-01-28,84,248-->
+
+
 
 #🧠 React： const ref1 = useRef(initialValue) 中的initialValue都沒設定的話，會怎麼樣？ ->->-> `會設定undefined作為其初始值。`
 <!--SR:!2023-08-31,217,248-->
