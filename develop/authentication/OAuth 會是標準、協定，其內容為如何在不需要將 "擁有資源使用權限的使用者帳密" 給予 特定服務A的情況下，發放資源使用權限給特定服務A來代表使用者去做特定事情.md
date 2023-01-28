@@ -105,7 +105,7 @@
 
 
 #🧠 在Open Authorization 或者OAuth中，代表權限的事物會是什麼？ ->->-> `token`
-<!--SR:!2023-01-28,9,250-->
+<!--SR:!2023-02-22,25,250-->
 
 
 
@@ -120,7 +120,7 @@
 <!--SR:!2023-01-30,9,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
-<!--SR:!2023-01-28,9,250-->
+<!--SR:!2023-02-23,26,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `Resource Server：Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token。 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
 <!--SR:!2023-02-15,20,250-->
