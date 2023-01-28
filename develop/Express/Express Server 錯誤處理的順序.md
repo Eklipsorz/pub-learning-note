@@ -33,17 +33,22 @@
 當App層級以middleware的形式來掛載Router層級的所有middleware，那麼Router層級middleware發生錯誤的話，會先依序查看來執行：
 - 是否有同層級的錯誤處理middleware：假如有的話，就先執行同層級的middleware，其next順序如下，假如每個處理錯誤相關的middleware都有設定next的話，那麼順序會是：
 	```
-	Router 層級下的所有錯誤處理middleware(按出現順序) -> 預設錯誤處理之middleware
+	Router 層級下的所有錯誤處理middleware(按出現順序) -> 
+	接續Router之後的第一個app層級middleware ->
+	預設錯誤處理之middleware
 	```
 	若中間沒next的話，就停留在沒next的錯誤處理middleware
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674926792/blog/middleware/error-handling/error-handling-in-route-adv_p3pa72.png)
+
 - 自己被掛載到的層級是否有錯誤處理middleware：在這裡執行到這，就表示Router層級沒有專門處理錯誤的middleware，而轉由App層級的自製middleware執行，其next順序如下：
 	```
 	app層級第一個先處理到的自製錯誤處理middleware -> 預設錯誤處理之middleware
 	```
 	
 	若中間沒next的話，就停留在沒next的錯誤處理middleware
-- 跑到預設錯誤處理之middleware進行處理
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656854095/blog/middleware/error-handling/error-handling-in-route_cmpdyu.png)
+
+
+
 
 
 
@@ -78,7 +83,7 @@
 <!--SR:!2023-04-02,87,230-->
 
 
-#🧠 Express上router層級有許多自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `每個自製錯誤處理的middleware會先依出現順序來執行，最後自製的都處理完畢後，就接著執行系統預設的錯誤處理`
+#🧠 Express上router層級有許多自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `每個自製錯誤處理的middleware會先依出現順序來執行，最後自製的都處理完畢後，就接著執行app層級的第一個自製錯誤處理系統預設的錯誤處理`
 <!--SR:!2023-01-28,73,250-->
 
 
