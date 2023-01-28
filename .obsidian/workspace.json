@@ -4,70 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "03557c9422af68be",
+        "id": "3ceee1a0d59de6b4",
         "type": "tabs",
         "children": [
           {
-            "id": "5150910c76a1ca53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Express/Express Server 錯誤處理的順序.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "451eff521fdd778c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1c0c1c3528d955ea",
+            "id": "a8f3113451e8ea1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "00d358f4567b7a82",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1ebcbd0d32cb0f77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "d261cf1756331670",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ee2ea935c209b3f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Express/Express Server 錯誤處理的順序.md",
                 "mode": "source",
                 "source": false
               }
@@ -119,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -210,7 +155,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c0c1c3528d955ea",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",

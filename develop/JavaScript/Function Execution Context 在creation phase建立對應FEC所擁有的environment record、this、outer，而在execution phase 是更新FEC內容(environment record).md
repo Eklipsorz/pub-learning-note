@@ -110,7 +110,19 @@ FunctionExectionContext = {
 2. 在這裏主要會做：
 	- 更新Lexical Environment的對應值
 
+#### argument object in FEC vs global object in GEC
 
+[[@JavaScriptDeZhiXingJieDuanExecutionContext]]
+> 和 Global Execution Context 的區別，引用文獻解釋的比較清楚 :
+
+> The Function Execution Context is similar to the Global Execution Context, but instead of creating the `global` object, _**it creates the `arguments` object that contains a reference to all the parameters passed into the function.**_  
+> (引用自 JavaScript Execution Context )
+
+> 簡而言之，Execution Context在 creation phase 創造的不是`window`，而是**欲傳進函式的參數`arguments`物件。**
+
+
+重點：
+- 在Global Execution Context中，會建立一個global object來標記該執行還ㄧ，瀏覽器會以window物件來設定代表對應畫面的呈現元件
 
 ## 複習
 
