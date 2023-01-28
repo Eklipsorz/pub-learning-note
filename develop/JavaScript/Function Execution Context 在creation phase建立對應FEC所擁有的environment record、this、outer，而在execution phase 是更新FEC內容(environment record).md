@@ -120,11 +120,53 @@ FunctionExectionContext = {
 
 > 簡而言之，Execution Context在 creation phase 創造的不是`window`，而是**欲傳進函式的參數`arguments`物件。**
 
+> 於是我們在 Function Execution Context 在 _creation phase_ 會變成下列的狀態:
+```
+global object ：arguments
+this：window
+```
+
 
 重點：
-- 在Global Execution Context中，會建立一個global object來標記該執行還ㄧ，瀏覽器會以window物件來設定代表對應畫面的呈現元件
+- 在Global Execution Context中，會建立一個global object來標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容：
+	- 瀏覽器：window物件來設定，其代表對應畫面的呈現元件
+	- Node.js：global 物件來設定，其代表執行環境本身
+- 在Function Execution Context中，會建立一個argument object來標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容：
+	- argument object 本身會是想傳進函式的參數，並在執行階段時使用和存取
+	- argument object 本身是參數，但不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係
+	- 舉例：
+```
+function test(a, b, c) {
+	....
+}
+
+test(1, 3, 4)
+
+// result
+Arguments: {0: 1, 1: 3, 2: 4,length: 3},
+```
 
 ## 複習
+
+#🧠 在Global Execution Context 中的global object是什麼？ ->->-> `標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容的物件`
+
+#🧠 在Function Execution Context 中的argument object是什麼以及其用途為何？ ->->-> `標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容的物件`
+
+#🧠 在Function Execution Context 中的argument object 會是什麼樣子，以test(1, 3, 4)為例 ->->-> `Arguments: {0: 1, 1: 3, 2: 4,length: 3},`
+
+#🧠 function test(a, b, c) {}; test(1, 3, 4); 請問a、b、c在FEC建立的狀況為何->->-> `a: undefined、b：undefined、c：undefined`
+
+#🧠 在Function Execution Context中，argument object 本身會是想傳進函式的參數，並在執行階段時使用和存取，請問在FEC建立階段會是如何決定存取參數的識別字和其記憶體之間對應關係->->-> `不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係`
+
+
+#🧠 在Function Execution Context中， argument object在FEC建立時會放在哪->->-> `Arguments放在FEC中的LexicalEnvironment區塊`
+
+
+#🧠 在Function Execution Context 中的argument object 內容為何，通常會如何用？ ->->-> `本身會是想傳進函式的參數，並在執行階段時使用和存取`
+
+#🧠 在Global Execution Context 中的global object在瀏覽器和Node.js分別成什麼？又會是什麼？ ->->-> `	- 瀏覽器：window物件來設定，其代表對應畫面的呈現元件 - Node.js：global 物件來設定，其代表執行環境本身`
+
+
 
 #🧠 Function Execution Context的creation phase時機點為何？(ByteCode) ->->-> `在編譯時期先對所有EC準備建立EC所需的資料和對應的ByteCode後，並於執行之前先執行ByteCode來建立FEC`
 <!--SR:!2023-09-19,236,249-->
