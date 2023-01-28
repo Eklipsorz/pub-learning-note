@@ -30,7 +30,7 @@
 <!--SR:!2023-02-08,20,250-->
 
 #🧠 authentication token vs. access token 差別？ ->->-> `1. authentication token 泛指夾雜著身分證明資訊的且要求伺服器驗證其身份證明的token2. access token 單純是指代表特定資源之存取權限的資訊，誰擁有它誰就能存取特定資源`
-<!--SR:!2023-01-28,11,229-->
+<!--SR:!2023-02-25,28,229-->
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，若具體位置為header部分的話，具體會是什麼？？ ->->-> `增加Authentication header，對應內容為bearer token，token前面會有bearer標誌`
 <!--SR:!2023-02-03,16,230-->
