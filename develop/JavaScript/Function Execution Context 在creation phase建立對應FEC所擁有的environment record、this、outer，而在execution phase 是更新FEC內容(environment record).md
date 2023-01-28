@@ -134,6 +134,7 @@ this：window
 - 在Function Execution Context中，會建立一個argument object來標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容：
 	- argument object 本身會是想傳進函式的參數，並在執行階段時使用和存取
 	- argument object 本身是參數，但不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係
+	- 延續第二點，只有在execution phase，才會從arguments object當中賦予其內容至該識別字中
 	- 舉例：
 ```
 function test(a, b, c) {
@@ -149,22 +150,32 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 ## 複習
 
 #🧠 在Global Execution Context 中的global object是什麼？ ->->-> `標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容的物件`
+<!--SR:!2023-01-30,2,249-->
 
 #🧠 在Function Execution Context 中的argument object是什麼以及其用途為何？ ->->-> `標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容的物件`
+<!--SR:!2023-01-30,2,249-->
 
 #🧠 在Function Execution Context 中的argument object 會是什麼樣子，以test(1, 3, 4)為例 ->->-> `Arguments: {0: 1, 1: 3, 2: 4,length: 3},`
+<!--SR:!2023-01-30,2,249-->
 
 #🧠 function test(a, b, c) {}; test(1, 3, 4); 請問a、b、c在FEC建立的狀況為何->->-> `a: undefined、b：undefined、c：undefined`
+<!--SR:!2023-01-30,2,249-->
 
 #🧠 在Function Execution Context中，argument object 本身會是想傳進函式的參數，並在執行階段時使用和存取，請問在FEC建立階段會是如何決定存取參數的識別字和其記憶體之間對應關係->->-> `不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係`
+<!--SR:!2023-01-30,2,249-->
 
+#🧠 在Function Execution Context中的argument object不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係，那麼什麼階段才會賦予真正的參數值？ ->->-> `只有在execution phase，才會從arguments object當中賦予其內容至該識別字中`
+<!--SR:!2023-01-30,2,249-->
 
 #🧠 在Function Execution Context中， argument object在FEC建立時會放在哪->->-> `Arguments放在FEC中的LexicalEnvironment區塊`
+<!--SR:!2023-01-30,2,249-->
 
 
 #🧠 在Function Execution Context 中的argument object 內容為何，通常會如何用？ ->->-> `本身會是想傳進函式的參數，並在執行階段時使用和存取`
+<!--SR:!2023-01-30,2,249-->
 
 #🧠 在Global Execution Context 中的global object在瀏覽器和Node.js分別成什麼？又會是什麼？ ->->-> `	- 瀏覽器：window物件來設定，其代表對應畫面的呈現元件 - Node.js：global 物件來設定，其代表執行環境本身`
+<!--SR:!2023-01-30,2,249-->
 
 
 
@@ -181,7 +192,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 
 
 #🧠 Function Execution Context的creation phase：如何處理建立Arguments物件來儲存賦予對應函數的參數並放置FEC中的LexicalEnvironment區塊 以圖片為例子 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655278116/blog/javascript/lexical%20scope/function-execution-context-example_lnumes.png)(提示參數、參數長度) ->->-> `主要會包含參數、參數長度，以下面函式呼叫為例，當呼叫並執行test函式的第一段前會先建立對應的FEC，其中會先建立Arguments物件儲存1、3、4以及參數長度，其中0-2為代表著test呼叫中的argument1至argument3，而length則是代表著參數長度(如result那樣呈現)，而Arguments所儲存的變數皆為let類型的變數宣告，所以會將Arguments放在FEC中的LexicalEnvironment區塊`
-<!--SR:!2023-01-27,137,250-->
+<!--SR:!2023-04-09,71,230-->
 
 #🧠 function Execution Context的creation phase：會如何處理函式、const/let變數、var變數(提示：分別放哪個EnvironmentRecords) ->->-> `從FEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中、從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中。`
 <!--SR:!2023-03-21,159,230-->
