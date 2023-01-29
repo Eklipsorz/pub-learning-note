@@ -113,7 +113,7 @@ client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發�
 ## 複習
 
 #🧠 audience 命名緣由為何？ ->->-> `報章雜誌的閱讀者`
-<!--SR:!2023-01-29,8,250-->
+<!--SR:!2023-02-20,22,250-->
 
 #🧠 audience 命名緣由為報章雜誌的閱讀者，還可以引申為什麼？ ->->-> `也可以引申為讀取特定事物內容的一方`
 <!--SR:!2023-01-31,10,250-->
@@ -139,7 +139,7 @@ client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發�
 <!--SR:!2023-01-31,10,250-->
 
 #🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容和檢測方式，請問其檢測會各為什麼？->->-> `- Access Token：客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server此時會提取token的aud是否為對應端點，若是的話就合法；否則為不合法 - ID Token： 客戶端使用token向resource server發送請求，該server將token和客戶端要求的對應端點傳送給authorization server，authorization server就會從token提取aud的client_id是否存在於server中，若還存在的話，就合法；否則就不合法`
-<!--SR:!2023-01-29,8,250-->
+<!--SR:!2023-02-19,21,250-->
 
 #🧠  ID Token中的client-id就一定是資料庫表格的對應使用者之id嗎？ 為什麼？ ->->-> `不一定，具體會在發出token時會建立對應clientid來對應使用者`
 <!--SR:!2023-01-30,9,250-->
