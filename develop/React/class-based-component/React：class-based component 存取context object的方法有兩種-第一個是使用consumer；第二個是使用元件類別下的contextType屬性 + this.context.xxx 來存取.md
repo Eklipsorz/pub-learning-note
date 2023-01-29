@@ -160,7 +160,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2023-04-13,87,230-->
 
 #🧠 React 官方提供的語法要如何實際存取context object內容，假使已經設定contextType屬性->->-> `直接在class內使用this.context.xxxx，其中xxxx就是context object所能提供的屬性和方法。`
-<!--SR:!2023-01-29,69,250-->
+<!--SR:!2023-07-29,181,250-->
 
 #🧠 functional component 下的useContext 可以使用多少個context object ->->-> `N個`
 <!--SR:!2023-02-05,73,250-->

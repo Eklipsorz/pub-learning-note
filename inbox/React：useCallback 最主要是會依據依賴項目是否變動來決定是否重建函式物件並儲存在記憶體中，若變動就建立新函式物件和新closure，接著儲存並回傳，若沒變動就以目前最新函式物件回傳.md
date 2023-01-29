@@ -103,7 +103,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2023-08-02,188,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是沒填的話，其useCallback回傳什麼？->->-> `進而每一次執行都會重新以baseFunction為主來建立新的函式物件回傳`
-<!--SR:!2023-01-29,74,250-->
+<!--SR:!2023-08-10,193,250-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是填入\[a, b\]，就表示什麼？ ->->-> `會先判斷a或者b是否有任一變動，有變動才重新以baseFunction為主來建立新的函式物件回傳；沒變動就不執行，直接回傳記憶體內的目前最新函式物件`
 <!--SR:!2023-07-15,175,250-->

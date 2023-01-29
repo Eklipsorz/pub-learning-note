@@ -71,7 +71,7 @@ baz(); // baz 的呼叫地點
 <!--SR:!2023-03-15,84,230-->
 
 #🧠 call site在JS的用途是什麼？ ->->-> `判斷目前執行環境的this 會是什麼之依據 `
-<!--SR:!2023-01-29,70,250-->
+<!--SR:!2023-07-31,183,250-->
 
 #🧠 請問baz、bar、foo的 call site和call stack是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485554/blog/javascript/this-binding/call-site/call-site-example_nbpxxl.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485840/blog/javascript/this-binding/call-site/call-site-example-answer_bujtbo.png)`
 <!--SR:!2023-02-03,73,250-->
