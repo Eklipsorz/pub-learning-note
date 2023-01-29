@@ -350,7 +350,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 function.apply vs. function.call不同點是什麼->->-> `- 參數的不同，apply是使用陣列來包裹函式呼叫所需要的參數；call則是用a, b, c, d來呼叫 - call 效能會略高於apply，因為apply還得再執行進一步將陣列轉換成參數`
-<!--SR:!2023-01-29,70,250-->
+<!--SR:!2023-07-30,182,250-->
 
 #🧠 function.apply 為啥會比function.call還耗一點成本？ ->->-> `最主要要將陣列轉換成參數來呼叫，如function1.apply([arg1, arg2, ..., argN])->function1(arg1, arg2, ... , argN)`
 <!--SR:!2023-02-03,73,250-->
