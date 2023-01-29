@@ -95,7 +95,7 @@ async function testAwaitFunction() {
 <!--SR:!2023-03-23,57,250-->
 
 #🧠 Promise程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example3_rqdy8j.png) ->->-> `當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，await碰到指派語句，會因為其的轉換方式使得res獲取到resolve的10，接著印出obj時會是擁有10的物件，最後並回傳`
-<!--SR:!2023-01-29,28,250-->
+<!--SR:!2023-04-13,74,250-->
 
 
 
