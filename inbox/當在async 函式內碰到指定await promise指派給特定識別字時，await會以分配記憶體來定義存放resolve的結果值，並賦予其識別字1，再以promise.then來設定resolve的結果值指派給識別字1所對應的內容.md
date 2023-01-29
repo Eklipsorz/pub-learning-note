@@ -85,7 +85,7 @@ async function testAwaitFunction() {
 <!--SR:!2023-03-29,63,250-->
 
 #🧠 當在async 函式內設定以下指派內容的語法`let temp = await Promise...` 會解析成什麼？以程式碼來說明->->-> `// 分配記憶體 let temp = ''; Promise(....).then((ans) => { // 將resolve情況下的結果指派給temp temp = ans; })`
-<!--SR:!2023-01-29,27,250-->
+<!--SR:!2023-04-10,71,250-->
 
 
 #🧠 Promise程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example2_ee2qxh.png) ->->-> `首先先呼叫testAwaitFunction，而函式會回傳Promise物件並接著以非同步任務來做async函式內的程式碼，執行第一行時，由於沒await，res會直接獲取到promise物件，該物件會呈現pending，接著生成promise非同步任務，後頭的console和return全會以夾帶著pending狀態的promise為主。 最後隨著event loop而執行到promise內的非同步任務執行，這時才會回傳resolve情況下的1020。`
