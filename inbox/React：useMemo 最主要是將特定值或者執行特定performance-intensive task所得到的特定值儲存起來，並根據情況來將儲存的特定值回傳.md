@@ -180,7 +180,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是設定\[a, b\]，useMemo會如何做？  ->->-> `系統就以a、b來決定是否回傳記憶體的內容，若任一變動，就執行createResultFn來得到其回傳值，接著用回傳值來儲存在記憶體中；若沒變動，就回傳記憶體的內容`
-<!--SR:!2023-01-30,74,250-->
+<!--SR:!2023-08-12,194,250-->
 
 
 
