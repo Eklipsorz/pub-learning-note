@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c82ac41141a7168c",
+        "id": "505a8461c1d6c64d",
         "type": "tabs",
         "children": [
           {
-            "id": "4270214ddf2d38d5",
+            "id": "8a81944ca2f7483e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4270214ddf2d38d5",
+  "active": "8a81944ca2f7483e",
   "lastOpenFiles": [
     "inbox/React：form submission 實現.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
