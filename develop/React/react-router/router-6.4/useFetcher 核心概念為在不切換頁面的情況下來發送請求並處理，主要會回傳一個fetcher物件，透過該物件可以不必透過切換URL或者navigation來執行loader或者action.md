@@ -196,7 +196,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
-<!--SR:!2023-01-30,27,250-->
+<!--SR:!2023-04-12,72,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是什麼？ ->->-> `透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
 <!--SR:!2023-01-31,28,250-->
@@ -205,7 +205,7 @@ export default NewsletterSignup;
 <!--SR:!2023-03-17,54,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 核心概念為何？ ->->-> `在不切換頁面的情況下來發送請求並處理，使服務更像個SPA`
-<!--SR:!2023-01-30,27,250-->
+<!--SR:!2023-04-10,70,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有哪兩個？ ->->-> `fetcher.Form 和 fetcher.submit方法`

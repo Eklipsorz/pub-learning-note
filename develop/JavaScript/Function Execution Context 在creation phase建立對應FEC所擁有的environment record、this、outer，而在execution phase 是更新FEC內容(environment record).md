@@ -172,7 +172,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 
 
 #🧠 在Function Execution Context 中的Arguments object 內容為何，通常會如何用？ ->->-> `本身會是想傳進函式的參數，並在執行階段時使用和存取`
-<!--SR:!2023-01-30,2,249-->
+<!--SR:!2023-02-05,6,249-->
 
 #🧠 在Global Execution Context 中的global object在瀏覽器和Node.js分別成什麼？又會是什麼？ ->->-> `	- 瀏覽器：window物件來設定，其代表對應畫面的呈現元件 - Node.js：global 物件來設定，其代表執行環境本身`
 <!--SR:!2023-02-05,6,249-->
