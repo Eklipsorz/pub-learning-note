@@ -227,7 +227,7 @@ return defer({
 `
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為先渲染後發送請求，但仍是次優解，具體有哪些原因？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png)->->-> ` client-side 的資料索求過程必須得跟著其他任務排著隊輪流執行、抽離出來的loader代碼很難從component角度和route角度進行切換`
-<!--SR:!2023-01-30,28,250-->
+<!--SR:!2023-04-14,74,250-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為先渲染後發送請求，具體流程會是什麼？ ->->-> `	- 解析結果網頁並渲染 - 解析JS模組所在並加載初始畫面 - 根據使用者切換的URL來執行對應Route所要做的事情，如loader、render； - 執行完以上內容完之後在發送資料索求請求`
 <!--SR:!2023-04-08,70,250-->
@@ -239,7 +239,7 @@ return defer({
 <!--SR:!2023-04-14,74,250-->
 
 #🧠 Client-side navigation 在網頁會是什麼？ ->->-> `使用javascript而進行的頁面轉場過程`
-<!--SR:!2023-01-30,28,250-->
+<!--SR:!2023-02-13,14,230-->
 
 #🧠 問題描述為當要讓Router 執行對應Route的 特定元件PackageRoute渲染前會有個名為`getPackageLocation`的任務內容要執行，但該任務執行起來會較慢，可能會延遲該特定元件PackageRoute的渲染任務，這致使讓使用者的使用體驗很糟，初步解決方案為先渲染後發送請求，但仍是次優解，還有什麼解法？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671469407/blog/react/react-router/v6/loader/loader-refactor-example1_jwnc9x.png) ->->-> `	- 使用defer 來指定哪些本該要在loader的非同步任務是要推遲在render元件時執行 - 使用Await元件來包覆著被推遲的非同步任務 - Suspense元件包覆著Await元件，而Await元件則是定義著被推遲的任務內容如何執行、如何把請求回應轉送至目前所在、將回應結果渲染`
 <!--SR:!2023-03-25,60,250-->

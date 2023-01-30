@@ -138,7 +138,7 @@ export default React.memo(DemoList);
 <!--SR:!2023-07-15,173,250-->
 
 #🧠 React useMemo 語法是什麼？ ->->-> `const memoizedValue = useMemo(createResultFn, [deps]);`
-<!--SR:!2023-01-30,74,250-->
+<!--SR:!2023-08-11,193,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
 <!--SR:!2023-07-12,172,250-->

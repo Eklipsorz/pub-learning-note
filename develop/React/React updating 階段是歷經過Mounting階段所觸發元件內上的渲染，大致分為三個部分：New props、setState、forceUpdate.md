@@ -263,7 +263,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2023-03-25,82,248-->
 
 #🧠 react 生命週期中會用到的**render函式** 是會做什麼？(資訊和畫面)->->-> `- render 會以每個元件上的對應(render/渲染用的)函式來當作該元件對應的渲染內容，並且負責解析目前資訊並轉換成對應的Virtual DOM - 其render的元件渲染內容可由開發者來指定，至於解析和轉換由系統負責`
-<!--SR:!2023-01-30,90,230-->
+<!--SR:!2023-03-20,49,210-->
 
 
 #🧠 react 生命週期中會用到的**getSnapshotBeforeUpdate** 函式是會做什麼？ ->->-> `專門獲取元件A畫面更新前的資訊、狀態、props 來做處理`

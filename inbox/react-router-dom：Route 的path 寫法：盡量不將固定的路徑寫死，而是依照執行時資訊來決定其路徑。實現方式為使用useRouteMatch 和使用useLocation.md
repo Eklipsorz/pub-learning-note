@@ -77,7 +77,7 @@ const Quote = () => {
 
 
 #🧠 useRouteMatch 和 useLocation 取得對應路徑的方式各是什麼？ ->->-> `useRouteMatch 會從目前對應的parent route元件中取得它擁有的路徑資訊和實際路徑資訊；useLocation 會從瀏覽器取得目前頁面的路徑資訊`
-<!--SR:!2023-01-30,34,230-->
+<!--SR:!2023-04-20,80,230-->
 
 
 
