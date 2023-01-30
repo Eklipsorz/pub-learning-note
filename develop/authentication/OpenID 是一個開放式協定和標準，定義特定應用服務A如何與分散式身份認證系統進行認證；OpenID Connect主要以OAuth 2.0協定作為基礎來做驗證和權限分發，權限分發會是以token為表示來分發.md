@@ -101,7 +101,7 @@
 <!--SR:!2023-02-01,11,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Replying Party會是什麼？ ->->-> `主要依賴token和token夾雜的身分證明資料和權限來向Resource Server獲取資源來加以應用的應用程式或者服務`
-<!--SR:!2023-01-30,9,250-->
+<!--SR:!2023-02-25,26,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中OpenID Provider / OpenID identity Provider / Authorization Server會是什麼？ ->->-> `負責註冊合法使用者、驗證使用者所輸入的內容並發放token、協助Resource Server做token的驗證，發放的token種類可以是id token、access token`
 <!--SR:!2023-02-06,13,248-->
