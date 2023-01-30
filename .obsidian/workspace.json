@@ -56,6 +56,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "fe744b2df37cde8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0efb43ea6a877013",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md",
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md",
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router-practice：對特定Quote增加評論功能.md"
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md"
               }
             }
           }
@@ -191,10 +209,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f4d5e0f2926f8459",
+  "active": "0efb43ea6a877013",
   "lastOpenFiles": [
-    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "inbox/react-router-practice：對特定Quote增加評論功能.md",
+    "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/authentication/JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點.md",
     "inbox/React：form submission 實現.md",
