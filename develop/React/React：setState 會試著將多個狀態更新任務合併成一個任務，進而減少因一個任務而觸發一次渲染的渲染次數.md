@@ -200,7 +200,7 @@ setLastName('Cheng');
 <!--SR:!2023-06-17,154,250-->
 
 #🧠 React：在class-based component中的batching實際實現中， setState 的狀態是以單一值或者primitive data value，會如何進行狀態的batching？->->-> `若狀態是以單一值來儲存的話，就直接拿目前任務的請求狀態去覆蓋先前任務所記錄的狀態`
-<!--SR:!2023-01-31,73,250-->
+<!--SR:!2023-08-11,192,250-->
 
 
 #🧠 React： 在class-based component中的batching實際實現中， setState 的狀態是以物件，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
@@ -211,7 +211,7 @@ setLastName('Cheng');
 
 
 #🧠 React：無論是否為class-based componet 或者 functional component，請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令執行完畢，並且以batching形式來合併狀態，最後以最後合併狀態為結果狀態來進行一次狀態更新和出發渲染週期`
-<!--SR:!2023-01-31,73,250-->
+<!--SR:!2023-08-10,191,250-->
 
 #🧠 React：setState1(A) setState2(B) setState3(C)，請問最後的batching結果會是什麼 ->->-> `會是個{state1: A, state2: B, state3: C}的結果，並以這個狀態來更新狀態和觸發渲染`
 <!--SR:!2023-01-31,73,250-->
