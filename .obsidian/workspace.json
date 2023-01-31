@@ -74,6 +74,78 @@
             }
           }
         ]
+      },
+      {
+        "id": "67cc055eed8f7ba4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a67218e8a39e639d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "b261d45d3934034a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "054f2ffa402f6f86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f8abfc1274c99d9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f67e1d8fb266240",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "656c7cbe8f0f58a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa07fb4f1db4418e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,7 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +236,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +259,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md"
+                "file": "inbox/React：使用custom hook來重構表格案例-基本表格.md"
               }
             }
           }
@@ -209,17 +281,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0efb43ea6a877013",
+  "active": "aa07fb4f1db4418e",
   "lastOpenFiles": [
+    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+    "develop/React/deployment/React.lazy 是替指定資源設定Lazy loading的功能，具體具體是將以dynamic import作為 callback 並根據指定資源是否要被需要才執行對應callback來獲取對應的元件.md",
+    "inbox/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+    "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
     "inbox/react-router-practice：對特定Quote增加評論功能.md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/authentication/JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點.md",
     "inbox/React：form submission 實現.md",
-    "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
-    "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
-    "develop/React/React：當元件因為conditional rendering集中於同一個元件而變得臃腫，可以試著將負責處理condition rendering的部分抽離出成一個獨立元件，並讓原本元件去載入獨立元件.md",
-    "develop/React/deployment/optimize code 目標為效能提升，手段會是minify、refactor、memorized value、code spliting、lazy loading。lazy-loading為當代碼需要的時候，才會載入該代碼，否則不載入.md",
-    "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md"
+    "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md"
   ]
 }
