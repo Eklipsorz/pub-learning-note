@@ -61,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -147,7 +148,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68046896213af16a",
+  "active": "eafcf82bd388bed9",
   "lastOpenFiles": [
     "inbox/React：使用custom hook來重構表格案例-基本表格.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
