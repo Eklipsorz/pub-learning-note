@@ -207,14 +207,14 @@ setLastName('Cheng');
 <!--SR:!2023-02-01,74,250-->
 
 #🧠 React：無論狀態更新是否為class-based componet 或者 functional component，有誰能夠執行完setState便立刻更新state嗎 ->->-> `都沒有`
-<!--SR:!2023-01-31,73,250-->
+<!--SR:!2023-08-10,191,250-->
 
 
 #🧠 React：無論是否為class-based componet 或者 functional component，請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令執行完畢，並且以batching形式來合併狀態，最後以最後合併狀態為結果狀態來進行一次狀態更新和出發渲染週期`
 <!--SR:!2023-08-10,191,250-->
 
 #🧠 React：setState1(A) setState2(B) setState3(C)，請問最後的batching結果會是什麼 ->->-> `會是個{state1: A, state2: B, state3: C}的結果，並以這個狀態來更新狀態和觸發渲染`
-<!--SR:!2023-01-31,73,250-->
+<!--SR:!2023-08-09,190,250-->
 
 
 #🧠 React：setState1(A) setState2(B) setState1(A1) ，請問最後的batching結果會是什麼->->-> `會是個{state1: A1, state2: B}的結果，並以這個狀態來更新狀態和觸發渲染`
@@ -280,7 +280,7 @@ setLastName('Cheng');
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，那麼如何做？>->-> `若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，直接增加該屬性至結果狀態物件、 若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並沒有存在結果狀態物件的屬性中，那接下來如何做？ ->->-> `直接增加該屬性至結果狀態物件`
-<!--SR:!2023-01-31,73,250-->
+<!--SR:!2023-08-08,189,250-->
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並存在結果狀態物件的屬性中，那接下來如何做？->->-> `就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
 <!--SR:!2023-06-04,145,250-->
@@ -300,7 +300,7 @@ setLastName('Cheng');
 <!--SR:!2023-07-04,167,250-->
 
 #🧠 class-based component vs. functional component ： state  & setState 在 單個state 註冊範疇是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
-<!--SR:!2023-01-31,73,250-->
+<!--SR:!2023-08-10,191,250-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在 單個state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`

@@ -31,10 +31,10 @@ a++;
 <!--SR:!2023-02-09,9,250-->
 
 #🧠 Zalgo 意指為無法預期會如何執行的函式，通常意指為什麼？ 詳細說明->->-> `述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback`
-<!--SR:!2023-01-31,3,250-->
+<!--SR:!2023-02-10,10,250-->
 
 #🧠 面對接收callback來執行的函式Zalgo解法可以是什麼？->->-> `將callback的執行一律都設定成非同步執行`
-<!--SR:!2023-01-31,3,250-->
+<!--SR:!2023-02-09,9,250-->
 
 #🧠 請問result各以非同步執行和同步執行，兩者能夠印出的a會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674746837/blog/javascript/promise/Zalgo/zalgo-example_vame9u.png) ->->-> `若result為以同步執行的話，會印出a=0；若result為以非同步執行的話，會印出a=1。`
 <!--SR:!2023-02-10,10,250-->

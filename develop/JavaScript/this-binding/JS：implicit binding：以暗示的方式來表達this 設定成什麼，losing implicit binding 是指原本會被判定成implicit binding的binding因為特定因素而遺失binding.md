@@ -330,7 +330,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2023-05-22,135,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-變數賦值會是指什麼？ ->->-> `implicit binding的函式B以參照位置賦值至一個變數，而這個變數呼叫函式B的形式會致使函式B的this改變`
-<!--SR:!2023-01-31,72,250-->
+<!--SR:!2023-08-08,189,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding ，原本的binding會是指的是？ ->->-> `implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B；implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window`
 <!--SR:!2023-02-03,74,250-->

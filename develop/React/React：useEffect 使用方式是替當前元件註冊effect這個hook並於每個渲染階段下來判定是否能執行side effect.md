@@ -299,7 +299,7 @@ this is use effect
 <!--SR:!2023-02-05,56,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時是無視dependency，直接執行useEffect的cleanup function，為何要執行cleanup？  ->->-> `避免unmount之後還殘留side effect影響在那，所以要執行cleanup來還原`
-<!--SR:!2023-01-31,50,250-->
+<!--SR:!2023-06-08,128,250-->
 
 
 
@@ -349,7 +349,7 @@ this is use effect
 <!--SR:!2023-02-04,12,248-->
 
 #🧠 React：useEffect(callback, deps) 若要求callback能夠使用async/await語法，但callback本身不能是async，其替代方案為何 ->->-> `在callback內部定義另一個async function來使用`
-<!--SR:!2023-01-31,6,248-->
+<!--SR:!2023-02-17,17,248-->
 
 
 ---

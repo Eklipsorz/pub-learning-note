@@ -251,7 +251,7 @@ consume
 <!--SR:!2023-03-21,104,248-->
 
 #🧠 React：若沒被任意Provider component包覆著的元件想使用context object會獲取什麼內容->->-> `會存取到context object的預設值`
-<!--SR:!2023-01-31,75,248-->
+<!--SR:!2023-08-14,195,248-->
 
 #🧠  React：若沒被Provider component A包覆著但被Provider component B包覆的元件想使用context object會獲取什麼內容 ->->-> `Provider component B對於context object所設定的內容`
 <!--SR:!2023-02-27,89,248-->
