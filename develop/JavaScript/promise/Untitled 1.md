@@ -21,7 +21,7 @@ promise 提供uninversion of control 概念來解決 inversion of control問題�
 
 
 #### 具體實現
-將promise object 定調為特定任務會回傳未來值的憑據，該object會夾雜定義特定任務如何執行，並讓呼叫方監聽憑據兌現才執行對應的callback
+將promise object 定調為特定任務會回傳未來值的憑據，該object會夾雜定義特定任務如何執行和執行狀態，並讓呼叫方監聽憑據兌現才執行對應的callback
 
 
 特定任務上本身會區分成同步和非同步的執行模式，若為前者的話，很容易
