@@ -44,6 +44,10 @@ Promise(...)
 
 ### 呼叫callback的次數超過一次或者沒呼叫callback
 
+> 呼叫callback的次數超過一次或者沒呼叫callback
+
+callback適合的執行次數會是1次，而在Promise中，所有被Promise.then綁定的callback，只要該Promise被解析(resolve)，就只會執行
+
 
 ### 沒有傳入任何必要的參數
 
