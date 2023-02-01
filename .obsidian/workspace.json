@@ -162,6 +162,16 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "bfc337058508d859",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
           }
         ],
         "currentTab": 1
