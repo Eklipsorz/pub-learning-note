@@ -115,7 +115,7 @@ H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Acces
 
 
 #🧠 refresh token 和 access token/id token 相比較壽命來說會是什麼？為什麼？ ->->-> `	- refresh token > access token / ID token  - 其原因如目的。`
-<!--SR:!2023-02-01,8,250-->
+<!--SR:!2023-02-24,23,250-->
 
 #🧠 以下為access token 和 refresh token 獲取過程，請仔細說明，另外Resource Server被假定成具有驗證Access Token、回傳資源的功能![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png) ->->-> `A. Client 向 Authorization Server 索要Access Token。B. Authorization Server 驗證客戶端身份無誤且請求資源是合理的，就頒發Access Token 和Refresh Token (這兩種Token都各綁定過期時間) 。C. Client 用Access Token向Resource Server 發送受保護資源的請求 。D. Resource Server 驗證Access Token有效並回傳受保護資源給Client。E. 當 Client 想使用 Access Token 向Resource Server 發送受保護資源的請求時，就能發現Token過期或者快過期就跳到G，否則Client 就以過期或者快過期的Token 向Resource Server 發送 。F. Resource Server 檢驗Token時發現過期，就拒絕回傳受保護資源。G. Client 自行使用Refresh Token 來向Authorization Server來獲取最新內容的Access Token。H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Access Token(或者也會簽發一個新的Refresh Token)給Client`
 <!--SR:!2023-02-02,9,250-->

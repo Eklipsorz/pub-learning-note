@@ -75,7 +75,7 @@ position: sticky;
 ## 複習
 
 #🧠 Flow layout vs. data flow 在前端會是什麼？ ->->-> `前者為瀏覽器對於每個元素的預設排版方式；後者為資料和UI的改變方向`
-<!--SR:!2023-02-01,46,229-->
+<!--SR:!2023-05-17,105,229-->
 
 #🧠 CSS：positioned element的位移會考量到元素的border？margin? ->->-> `margin`
 <!--SR:!2023-06-06,165,250-->
