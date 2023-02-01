@@ -6,7 +6,7 @@
 - 太晚執行callback：callback本身會是非同步任務，任務A執行它就任由非同步來執行，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
 - 呼叫callback的次數超過一次或者沒呼叫callback
 - 沒有傳入任何必要的參數
-- 吞掉callback執行時拋出的錯誤或者例外
+- 吞掉callback執行時拋出的錯誤或者例外：非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理
 
 
 在Promise 中分別針對這幾個問題來增強執行callback的被信任程度
@@ -34,13 +34,23 @@ new Promise((resolve, reject) => {
 
 > 太晚執行callback：callback本身會是非同步任務，任務A執行它就任由非同步來執行，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
 
-在Promise中，無論callback本身是否為非同步而沒辦法在Promise指定任務完成後的指定時間內執行，都可以藉由promise.then給定的程式碼位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造resolvecallback1先執行，接著在執行callback2，最後在執行callback3
+在Promise中，無論callback本身是否為非同步而沒辦法在Promise指定任務完成後的指定時間內執行，都可以藉由promise.then給定的程式碼位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造resolved狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
 ```
 Promise(...)
-.then(calback1)
-.then(callback2)
-.then(callback3)
+.then(callback1, callback1)
+.then(callback2, callback2)
+.then(callback3, callback3)
 ```
+
+### 呼叫callback的次數超過一次或者沒呼叫callback
+
+
+### 沒有傳入任何必要的參數
+
+
+### 吞掉callback執行時拋出的錯誤或者例外
+
+
 
 ## 複習
 
