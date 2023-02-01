@@ -218,7 +218,7 @@ setLastName('Cheng');
 
 
 #🧠 React：setState1(A) setState2(B) setState1(A1) ，請問最後的batching結果會是什麼->->-> `會是個{state1: A1, state2: B}的結果，並以這個狀態來更新狀態和觸發渲染`
-<!--SR:!2023-02-01,74,250-->
+<!--SR:!2023-08-13,193,250-->
 
 
 
@@ -304,7 +304,7 @@ setLastName('Cheng');
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在 單個state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
-<!--SR:!2023-02-01,74,250-->
+<!--SR:!2023-08-13,193,250-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在單個setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
