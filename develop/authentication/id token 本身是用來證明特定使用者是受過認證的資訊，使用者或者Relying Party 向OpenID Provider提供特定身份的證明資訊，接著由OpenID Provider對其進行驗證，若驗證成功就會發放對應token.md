@@ -188,7 +188,7 @@ claim：
 <!--SR:!2023-02-07,14,247-->
 
 #🧠 id token 以及 access token 如何獲取？ ->->-> `皆為使用者先向Authorization Server/OpenID Provider提供特定身份的證明資訊，Authorization Server/OpenID Provider對其進行驗證，若驗證成功就會根據是否綁定特定身份來發放id token 或者 access token，若綁定就id token；若沒綁定就access token`
-<!--SR:!2023-02-01,4,210-->
+<!--SR:!2023-02-11,10,210-->
 
 #🧠 id token 在最低程度下的實現下，請問token夾雜內容會是如下？->->-> `會沒包含任何明顯的身分驗證資訊，只會有驗證操作用的識別字，其識別字也不能從客戶端看出使用者是誰。`
 <!--SR:!2023-02-26,26,250-->
@@ -210,7 +210,7 @@ claim：
 <!--SR:!2023-02-07,14,247-->
 
 #🧠  id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，舉例來說，順便說清楚如何生效和失效 ->->-> `在Authorization Server或者openID Provider 中的使用者資料表格上或者建立以下表格來記錄，將申請id token的使用者標記上特定的client_id，並將該client_id寫入至JWT以做比對。當客戶端夾雜著JWT時，伺服器就會從aud claim獲取對應的client_id，接著在指定表格上找看看有沒有相符合，有的話就繼續讓JWT生效；沒的話就讓JWT失效。`
-<!--SR:!2023-02-01,11,250-->
+<!--SR:!2023-03-04,31,250-->
 
 #🧠 id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，若想要從伺服器讓token失效的話  ->->-> `伺服器讓內部用來驗證的資料弄成為與JWT中的資料不一樣的內容。`
 <!--SR:!2023-02-09,14,230-->

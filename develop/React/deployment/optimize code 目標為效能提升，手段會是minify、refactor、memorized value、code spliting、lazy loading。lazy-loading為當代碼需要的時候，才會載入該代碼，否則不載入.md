@@ -56,7 +56,7 @@ lazy loading & code splitting 適用場景為大型專案、擁有較多元件�
 <!--SR:!2023-04-16,74,250-->
 
 #🧠  lazy loading & code splitting 適用場景為何？ ->->-> `lazy loading & code splitting 適用場景為大型專案、擁有較多元件的專案、準備部署的專案`
-<!--SR:!2023-02-01,28,250-->
+<!--SR:!2023-04-12,70,250-->
 
 #🧠 lazy loading 需要splitting會為什麼？  ->->-> `將模組切分成好幾塊，以利根據所需來載入`
 <!--SR:!2023-02-10,14,230-->

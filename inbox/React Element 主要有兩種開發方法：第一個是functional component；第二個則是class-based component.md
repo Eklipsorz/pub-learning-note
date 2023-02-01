@@ -109,7 +109,7 @@ hooks 是：
 
 
 #🧠 React：class-based component 和 functional component這兩種元件開發方式誰最先 ->->-> `class-based component`
-<!--SR:!2023-02-01,74,250-->
+<!--SR:!2023-08-14,194,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
 <!--SR:!2023-02-02,75,250-->

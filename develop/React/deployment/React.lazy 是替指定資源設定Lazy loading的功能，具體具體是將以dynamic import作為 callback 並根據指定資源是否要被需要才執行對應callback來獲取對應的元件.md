@@ -60,14 +60,14 @@ React.lazy：
 
 
 #🧠 React.lazy語法為`React.lazy(callback)`會回傳什麼？->->-> `回傳會是標示為lazy-loading的React Component`
-<!--SR:!2023-02-01,28,250-->
+<!--SR:!2023-04-16,74,250-->
 
 
 #🧠 React.lazy語法為`React.lazy(callback)`會回傳會是標示為lazy-loading的React Component，具體能像Component擺放嗎？執行到會如何？ ->->-> `可以， 當要載入對應其Component時，就會以非同步任務的形式來載入包含其資源的模組並獲取其中的對應Component。`
-<!--SR:!2023-02-01,28,250-->
+<!--SR:!2023-04-11,69,250-->
 
 #🧠 當React.lazy時就會替主要bundle做什麼？ ->->-> `透過webpack編譯時就會進行code spliting來分割好幾份模組`
-<!--SR:!2023-02-01,28,250-->
+<!--SR:!2023-04-16,74,250-->
 
 #🧠 若要載入對應其被標記為lazy-loading的Component時，通常會遇到的問題是什麼？->->-> `由於是以非同步任務形式來載入元件，所以在載入前可能會因為其元件本身不存在而無法渲染，最後報錯`
 <!--SR:!2023-02-03,20,250-->

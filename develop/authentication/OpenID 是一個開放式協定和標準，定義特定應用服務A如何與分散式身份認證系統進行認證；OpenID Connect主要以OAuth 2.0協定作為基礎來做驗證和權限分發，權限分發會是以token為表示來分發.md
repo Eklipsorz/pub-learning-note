@@ -98,7 +98,7 @@
 <!--SR:!2023-02-12,16,228-->
 
 #🧠 OpenID / OpenID Connect 角色會有哪些？->->-> `Replying Party、OpenID Provider / OpenID identity Provider、Resource Server`
-<!--SR:!2023-02-01,11,250-->
+<!--SR:!2023-03-03,30,250-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Replying Party會是什麼？ ->->-> `主要依賴token和token夾雜的身分證明資料和權限來向Resource Server獲取資源來加以應用的應用程式或者服務`
 <!--SR:!2023-02-25,26,250-->
@@ -120,7 +120,7 @@
 
 
 #🧠 OpenID Connect 的 authorization server / OpenID Identity Provider 所能給予的token種類為何？ ->->-> `id token、access token`
-<!--SR:!2023-02-01,11,250-->
+<!--SR:!2023-03-05,32,250-->
 
 
 #🧠 OpenID Connect 角色和OAuth 角色對應會是什麼，如驗證、資源、客戶端 ->->-> `客戶端應用程式：OAuth 為 client；OpenID Connect 為 Replying Party。驗證：OAuth 為 Authorization；OpenID Connect 為 OpenID Provider/OpenID identity Provider。資源則都是Resource Server`
