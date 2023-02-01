@@ -58,7 +58,7 @@ npm run build => react-scripts build
 
 
 #🧠 react-scripts build 指令作用 vs  react-scripts start 指令作用為何？->->-> `皆會產出瀏覽器能夠讀懂的形式，前者會進一步優化，後者並不會；前者並不會啟動伺服器來提供最後結果網頁，後者則會啟動伺服器來提供最後結果網頁`
-<!--SR:!2023-02-01,27,250-->
+<!--SR:!2023-04-10,68,250-->
 
 
 #🧠  react：build 目錄存放什麼->->-> `存放npm run build/react-script build建構出來的代碼和目錄`
