@@ -29,7 +29,7 @@ let promise = new Promise(function(resolve, reject) {
 	- 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
 		- state
 			- pending
-			- fulfilled
+			- fulfilled 
 			- rejected
 		- result：
 	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise

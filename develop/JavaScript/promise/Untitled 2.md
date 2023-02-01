@@ -34,7 +34,7 @@ new Promise((resolve, reject) => {
 
 > 太晚執行callback：callback本身會是非同步任務，任務A執行它就任由非同步來執行，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
 
-在Promise中，無論callback本身是否為非同步而沒辦法在Promise指定任務完成後的指定時間內執行，都可以藉由promise.then給定的程式碼位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造resolved狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
+在Promise中，無論callback本身是否為非同步而沒辦法在Promise指定任務完成後的指定時間內執行，都可以藉由promise.then給定的程式碼位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造fulfilled狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
 ```
 Promise(...)
 .then(callback1, callback1)
@@ -55,7 +55,7 @@ callback適合的執行次數會是1次，而在Promise中，所有被Promise.th
 
 > 沒有傳入任何必要的參數至callback
 
-在Promise中，都會將resolved狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定resolved狀態或者rejected狀態的內容，就能確保callback能獲取到參數來執行。
+在Promise中，都會將fulfilled狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定fulfilled狀態或者rejected狀態的內容，就能確保callback能獲取到參數來執行。
 
 ### 吞掉callback執行時拋出的錯誤或者例外
 
@@ -67,7 +67,7 @@ callback適合的執行次數會是1次，而在Promise中，所有被Promise.th
 在Promise中，會將所有發生在callback上的錯誤和執行錯誤全以rejected狀態的promise來回傳給下一個Promise.then或者Promise.catch來接收，當他們接收到時，就會以非同步任務的形式來執行錯誤處理，確保另一個潛在的問題- 錯誤處理會不會致使callback的執行變成Zalgo
 
 
-比如：當callback1執行時拋出錯誤時，這時系統會直接以rejected狀態的promise來呼叫它擁有的catch或者then來執行對應錯誤處理callback。
+比如：當callback1執行時拋出錯誤時，這時系統會直接以fullfilled狀態的promise來呼叫它擁有的catch或者then來執行對應錯誤處理callback。
 ```
 new Promise((resolve, reject) => {
 	resolve(10);
