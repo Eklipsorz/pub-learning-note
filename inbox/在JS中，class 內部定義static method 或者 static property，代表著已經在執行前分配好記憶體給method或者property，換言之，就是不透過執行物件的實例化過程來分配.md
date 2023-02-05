@@ -76,7 +76,7 @@
 <!--SR:!2023-02-05,6,246-->
 
 #🧠  dynamic memory allocation 為什麼會有dynamic來稱呼?  ->->-> `相對於static memory allocation來說`
-<!--SR:!2023-02-05,6,246-->
+<!--SR:!2023-02-20,15,246-->
 
 
 #🧠 dynamic memory allocation 是什麼？(簡述) ->->-> `相對於static memory allocation來說，會以透過執行程式來根據執行狀態作為記憶體分配的依據，換言之，就是在執行階段做記憶體分配，而是單方面在執行之前分配好記憶題的變數或者函式`

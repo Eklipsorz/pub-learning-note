@@ -118,7 +118,7 @@ HTTP/1.1 200 OK
 
 
 #🧠 伺服器和客戶端都支援著HATEOAS，那麼只要客戶端向伺服器發出查詢12345這銀行帳戶的資料，且客戶端的銀行帳戶是有錢的，上圖為客戶端向伺服器發送的請求端點和方法，下圖為結果，請試著說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1_ad6vh3.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1-with-money_yp1z7n.png)->->-> `伺服器和客戶端都支援著HATEOAS，那麼只要客戶端向伺服器發出查詢12345這帳戶的資料，就會呈現該帳號的資料以及一組連結、包含目前所在的狀態資訊-self資訊，連結會是伺服器根據客戶端對於其帳號相關聯的資源是否有權限而動態生成對應的連結，self資訊是用來告知彼此目前狀態或者目前處理的請求是什麼，在這是允許12345帳號是擁有存款(deposits)、提款(withdrawals)、轉帳(transfers)、關閉請求(close-requests)的請求，所以會生成四個連結，而self則是指的是/accounts/12345`
-<!--SR:!2023-02-05,72,250-->
+<!--SR:!2023-08-12,188,250-->
 
 
 #🧠 伺服器和客戶端都支援著HATEOAS，那麼只要客戶端向伺服器發出查詢12345這銀行帳戶的資料，且客戶端的銀行帳戶是沒錢的，上圖為客戶端向伺服器發送的請求端點和方法，下圖為結果，請試著說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1_ad6vh3.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665905332/blog/REST/HATEOAS-example1-without-money_sfjdmc.png)->->-> `假使12345帳戶沒錢的話的話，伺服器給定的連結會只剩下存款和關閉請求`

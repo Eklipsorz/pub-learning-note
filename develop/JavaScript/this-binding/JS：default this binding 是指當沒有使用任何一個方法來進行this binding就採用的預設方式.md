@@ -144,7 +144,7 @@ function fn() {
 <!--SR:!2023-02-18,79,248-->
 
 #🧠 default this binding 處於何種情況下才會將this設定成global object?  ->->-> `若目前執行環境下沒設定嚴格模式或者沒在全域環境下設定嚴格模式`
-<!--SR:!2023-02-03,74,250-->
+<!--SR:!2023-08-19,195,250-->
 
 #🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665410534/blog/javascript/this-binding/strict-default-this-binding-example1_rqracf.png) ->->-> `會印出undefined和報錯，因為處於嚴格模式下的default this binding，會預設將this導向至undefined`
 <!--SR:!2023-04-21,95,210-->

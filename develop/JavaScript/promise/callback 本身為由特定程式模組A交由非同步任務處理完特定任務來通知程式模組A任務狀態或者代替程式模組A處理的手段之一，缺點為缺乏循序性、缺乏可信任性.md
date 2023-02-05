@@ -96,7 +96,7 @@ function handler() {
 <!--SR:!2023-02-11,12,229-->
 
 #🧠 callback 在非同步任務的實現上具有兩大缺點，缺乏循序性是其中之一，若強迫若強迫每個callback為主的程式碼按照順序來執行，可以嗎？為什麼？  ->->-> `若強迫每個callback為主的程式碼按照預期順序來執行，容易提升開發/維護難度`
-<!--SR:!2023-02-04,10,250-->
+<!--SR:!2023-03-06,29,250-->
 
 #🧠 callback 在非同步任務的實現上具有兩大缺點， 缺乏可信任性是其中之一，請說明為何 ->->-> ` 無法確保callback轉交給非同步任務後，它會如何執行？比如- 非同步任務可以重複執行callback好幾次- 非同步任務可以選擇不執行callback- 非同步任務執行callback的時機點過早或者過晚`
 <!--SR:!2023-02-04,10,250-->
@@ -105,7 +105,7 @@ function handler() {
 <!--SR:!2023-02-04,10,250-->
 
 #🧠 若假如doA至doF皆為非同步任務，那麼各個函式的執行順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-1_phwg4u.png) ->->-> `doA() -> doF() -> doB() -> doC() -> doE() ->doD()`
-<!--SR:!2023-02-04,10,250-->
+<!--SR:!2023-03-03,26,250-->
 
 
 #🧠 若除了doA和doC為同步任務，剩下就皆為非同步任務，那麼各個函式的執行順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-1_phwg4u.png) ->->-> `doA() -> doB() -> doC() -> doD() -> doE() -> doF()`

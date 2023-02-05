@@ -387,7 +387,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 
 
 #🧠 為什麼第六至第八的呼叫會是obj1當this，並且印出聽風是風？而不是obj2當this，並且印出時間跳躍![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541827/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call-result_chx2cg.png) ->->-> `最主要是這些都源自於第五個函式所產生出來的新函式，這個新函式已經被綁死在obj1，所以即使事後對新函式做call、apply、bind都無法更改其this。`
-<!--SR:!2023-02-04,74,250-->
+<!--SR:!2023-08-17,193,250-->
 
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665543322/blog/javascript/this-binding/explicit-binding/call-apply-in-explicit-binding-example_deppqe.png)->->-> `this皆為this，會印出我是聽風是風,我的年齡是26，我非常帥`

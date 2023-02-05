@@ -165,14 +165,14 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 <!--SR:!2023-02-05,6,249-->
 
 #🧠 在Function Execution Context中的Arguments object不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係，那麼什麼階段才會賦予真正的參數值？ ->->-> `只有在execution phase，才會從arguments object當中賦予其內容至該識別字中`
-<!--SR:!2023-02-04,5,249-->
+<!--SR:!2023-02-19,14,249-->
 
 #🧠 在Function Execution Context中， Arguments object在FEC建立時會放在哪->->-> `Arguments放在FEC中的LexicalEnvironment區塊`
 <!--SR:!2023-02-05,6,249-->
 
 
 #🧠 在Function Execution Context 中的Arguments object 內容為何，通常會如何用？ ->->-> `本身會是想傳進函式的參數，並在執行階段時使用和存取`
-<!--SR:!2023-02-05,6,249-->
+<!--SR:!2023-02-22,17,249-->
 
 #🧠 在Global Execution Context 中的global object在瀏覽器和Node.js分別成什麼？又會是什麼？ ->->-> `	- 瀏覽器：window物件來設定，其代表對應畫面的呈現元件 - Node.js：global 物件來設定，其代表執行環境本身`
 <!--SR:!2023-02-08,3,229-->
