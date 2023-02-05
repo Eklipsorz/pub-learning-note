@@ -113,7 +113,7 @@ function handler() {
 
 
 #🧠 假如公司要求購買每一項東西時，都要呼叫追蹤交易的第三方服務，然後指定callback來由它負責付款和顯示付款成功的畫面，請問這會有啥潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-2_lrqyyv.png) ->->-> `難以信任第三方服務會正常執行callback，callback的執行控制權會轉由第三方服務來執行，由它決定callback要執行幾次、執行時機、是否要執行。`
-<!--SR:!2023-02-04,10,250-->
+<!--SR:!2023-03-04,27,250-->
 
 
 

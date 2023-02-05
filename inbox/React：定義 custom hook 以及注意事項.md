@@ -90,7 +90,7 @@ setInterval(callback, delay)
 <!--SR:!2023-07-20,169,250-->
 
 #🧠 JS：setInterval 是什麼 ->->-> `排定一個重複執行的計時任務，等到指定毫秒才執行一次callback，接著再重新等待指定毫秒就會執行一次callback，直到手動中斷`
-<!--SR:!2023-02-03,67,250-->
+<!--SR:!2023-07-28,173,250-->
 
 #🧠 JS：setInterval 語法為 ->->-> `setInterval(callback, delay)`
 <!--SR:!2023-02-11,73,250-->

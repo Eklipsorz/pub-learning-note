@@ -93,7 +93,7 @@
 
 
 #🧠 Express上router層級有許多自製的錯誤處理middleware，那麼假如Router層級的middleware發生錯誤，且每個相關的錯誤處理middleware都有呼叫next()，其順序會是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `每個自製錯誤處理的middleware會先依出現順序來執行，最後自製的都處理完畢後，就接著執行接著router之後的app層級的所有自製錯誤處理系統預設的錯誤處理，接著才執行系統預測的錯誤處理middleware`
-<!--SR:!2023-02-05,6,248-->
+<!--SR:!2023-02-20,15,248-->
 
 
 

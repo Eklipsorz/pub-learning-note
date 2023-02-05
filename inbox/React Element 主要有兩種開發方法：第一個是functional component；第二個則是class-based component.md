@@ -76,7 +76,7 @@ hooks 是：
 ## 複習
 
 #🧠 建立React Element 有哪兩種開發方法？ ->->-> `class-based component、functional component`
-<!--SR:!2023-02-02,75,250-->
+<!--SR:!2023-08-23,199,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
 <!--SR:!2023-03-17,47,210-->
@@ -129,7 +129,7 @@ hooks 是：
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
-<!--SR:!2023-02-02,75,250-->
+<!--SR:!2023-08-22,198,250-->
 
 #💻 請至/react-builder/question-review/class-based-component-question 領取題目，並到user-to-class分支，請將User轉換成class-based component，記住功能和渲染內容必須是一樣的 ->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/02-adding-a-first-class-based-cmp/src/components/User.js`
 <!--SR:!2023-03-17,97,249-->
