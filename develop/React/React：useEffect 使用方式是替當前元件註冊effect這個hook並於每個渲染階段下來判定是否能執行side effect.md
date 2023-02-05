@@ -346,7 +346,7 @@ this is use effect
 <!--SR:!2023-02-10,16,248-->
 
 #🧠 React：useEffect(callback, deps) 中的callback得是sync？還是async?  為什麼？->->-> `由於async function會將回傳內容以promise object來包裝，但useEffect並不支援提取promise object回傳的function來執行`
-<!--SR:!2023-02-04,12,248-->
+<!--SR:!2023-03-11,34,248-->
 
 #🧠 React：useEffect(callback, deps) 若要求callback能夠使用async/await語法，但callback本身不能是async，其替代方案為何 ->->-> `在callback內部定義另一個async function來使用`
 <!--SR:!2023-02-17,17,248-->
