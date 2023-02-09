@@ -130,7 +130,7 @@ useEffect(() => {
 
 
 #🧠 componentDidMount、componentDidUpdate、componentWillUnmount 在正常情況下(mount->update->update->unmount)的執行次數會是如何 ->->-> `1、2、1`
-<!--SR:!2023-02-06,74,250-->
+<!--SR:!2023-08-21,193,250-->
 
 
 #🧠 以下為React的class-base component，請問以下程式碼有何潛在問題？如何解決![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665664892/blog/react/life-cycle/componentDidUpdate/componentDidUpdate-loop-problem_tnvw8x.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665664892/blog/react/life-cycle/componentDidUpdate/componentDidUpdate-loop-problem_tnvw8x.png) ->->-> `具有無限迴圈的潛在問題。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665664892/blog/react/life-cycle/componentDidUpdate/componentDidUpdate-loop-solution_fivxhx.png)`
