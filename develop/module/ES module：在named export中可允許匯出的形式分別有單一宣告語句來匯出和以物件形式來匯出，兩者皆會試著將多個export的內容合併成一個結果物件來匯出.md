@@ -68,7 +68,7 @@ export { b1, b2, …, bN };
 <!--SR:!2023-03-28,64,230-->
 
 #🧠 ES module：在named export中可允許匯出的形式，其中以單一宣告語句來匯出的話，那麼`export let variable1 = xxxx; export function fn(...) {...};` 最後會是以什麼形式來匯出？ ->->-> `會替結果物件新增兩個屬性分別為variable和fn，其對應值為會是value和函式內容`
-<!--SR:!2023-02-07,45,250-->
+<!--SR:!2023-06-04,115,250-->
 
 
 #🧠 ES module：在named export中可允許匯出的形式，其中以物件形式來匯出的話，那麼`export { name1, name2, …, nameN };	` 最後會是以什麼形式來匯出？ ->->-> `結果物件的屬性分別有name1至nameN，對應值則為這些識別字對應的記憶體區塊內容`

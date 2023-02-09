@@ -258,7 +258,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒比較deps，為什麼？ ->->-> `此時沒有dependency事先儲存，所以也就不需要檢查dependency`
-<!--SR:!2023-02-06,57,250-->
+<!--SR:!2023-07-08,149,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是直接執行side effect，而沒執行cleanup，為什麼？ ->->-> `這是第一次執行side effect，本身就沒有上一個side effect，所以就不需要執行cleanup`
 <!--SR:!2023-02-16,64,250-->
