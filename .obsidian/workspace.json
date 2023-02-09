@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled 2.md",
+                "file": "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled 2.md",
+                "file": "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled 2.md"
+                "file": "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md"
               }
             }
           }
@@ -187,10 +187,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56cd5789f5601b00",
+  "active": "e07b924a9c9239bd",
   "lastOpenFiles": [
-    "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
     "develop/JavaScript/promise/Untitled 2.md",
+    "develop/authentication/登入驗證 server-side session vs. tokens：server-side session是需要伺服器為stateful；tokens則是可讓伺服器成為stateless.md",
     "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
