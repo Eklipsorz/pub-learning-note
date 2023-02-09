@@ -140,7 +140,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2023-07-17,170,250-->
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**在元件class或者元件對應函式添加contextType屬性來指定context object**這方法->->-> `class Component1 {} Component1.contextType = Context1`
-<!--SR:!2023-02-02,71,250-->
+<!--SR:!2023-03-20,39,230-->
 
 #🧠 JS ：class Component1 \{\} Component1.contextType = Context1等同於是什麼？程式碼會是什麼？ ->->-> `對著名為Component1的函式物件添加contextType屬性，程式碼會是const Component1 = (function () { } Component1.contextType = Context1`
 <!--SR:!2023-02-06,74,250-->
