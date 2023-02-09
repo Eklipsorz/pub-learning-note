@@ -57,7 +57,7 @@ new Response(body, {
 <!--SR:!2023-03-24,64,250-->
 
 #🧠 react-router-dom v6.4： Response 物件和 redirect 本身只是回應封包的物件，那要如何導向？請用語法來表示 ->->-> `<Route path=path1 element=element1 action=xxxx /> 其中xxxx為專門處理資料並建立回應封包的函式物件`
-<!--SR:!2023-02-05,14,230-->
+<!--SR:!2023-03-20,39,230-->
 
 #🧠  react-router-dom v6.4：Route元件的action若是專門處理資料並建立回應導向封包的函式物件，具體會在處理過程做些什麼？->->-> `接收回應封包，並根據導向地點來做導向`
 <!--SR:!2023-02-12,11,190-->

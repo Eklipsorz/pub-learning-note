@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tolerance",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,8 +101,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -192,7 +191,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "be1cc0e6ecc14096",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
     "develop/RWD/pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
