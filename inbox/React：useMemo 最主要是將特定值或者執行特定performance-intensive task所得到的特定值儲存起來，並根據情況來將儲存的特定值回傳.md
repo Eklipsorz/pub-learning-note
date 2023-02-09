@@ -153,11 +153,11 @@ export default React.memo(DemoList);
 <!--SR:!2023-02-23,18,249-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
-<!--SR:!2023-02-03,6,249-->
+<!--SR:!2023-03-03,22,249-->
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 若沒回傳手段的話，會得到什麼？ ->->-> `會將undefined當作useMemo的回傳值`
-<!--SR:!2023-02-03,6,249-->
+<!--SR:!2023-03-03,22,249-->
 <!--SR:!2023-01-27,72,250-->
 
 

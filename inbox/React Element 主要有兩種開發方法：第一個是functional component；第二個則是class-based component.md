@@ -92,7 +92,7 @@ hooks 是：
 
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \}  中沒有Constructor，請問能夠正常執行嗎？為什麼->->-> `能夠正常執行，系統會根據目前類別是否繼承其他類別而給予預設的constructor來方便建立對應類別的實例`
-<!--SR:!2023-02-02,75,250-->
+<!--SR:!2023-09-02,205,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
 <!--SR:!2023-07-16,173,250-->
