@@ -21,7 +21,7 @@
 
 ## 複習
 #🧠 JavaScript 的Scope是什麼意思？ 具體實現方式有哪些？ ->->-> `Scope指的是定義某識別字(identifier)對應特定實體的合法使用範圍，在JavaScript中，特定實體會是指變數、函式等，而實現Scope概念的方式具體有Static Scope和Dynamic Scope。`
-<!--SR:!2023-02-04,144,250-->
+<!--SR:!2024-02-11,367,250-->
 
 
 #🧠 JavaScript：Static Scope 和 Lexical Scope差別是？ ->->-> `都是一樣，Static Scope/Lexical Scope 則是在執行之前，先行對原始碼進行文字上的解析，會依據原始碼中變數位置和函式位置來定義識別字對應的實體是為何以及合法使用的範圍是是什麼`

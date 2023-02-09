@@ -238,7 +238,7 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為允許開發者以JSX形式來定義Routing並建立對應的Router，具體是什麼？->->-> `具體是藉由將JSX語言體系的 Route 元件轉換成 JS語言體系的 Route 物件`
-<!--SR:!2023-02-08,37,248-->
+<!--SR:!2023-05-12,92,248-->
 
 #🧠 react-router-dom v6：createRoutesFromElements 語法為何？->->-> `createRoutesFromElements(JSX Element)`
 <!--SR:!2023-02-07,36,248-->
