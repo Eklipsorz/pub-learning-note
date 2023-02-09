@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/RWD/pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
+                "file": "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/RWD/pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
+                "file": "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/RWD/pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md"
+                "file": "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md"
               }
             }
           }
@@ -174,8 +174,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b9191d1297da0d9",
+  "active": "c0cc9915a70c2460",
   "lastOpenFiles": [
+    "develop/RWD/pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md",
     "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
     "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
@@ -184,7 +185,6 @@
     "develop/JavaScript/promise/Untitled 2.md",
     "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
-    "develop/JavaScript/promise/Untitled 1.md",
-    "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md"
+    "develop/JavaScript/promise/Untitled 1.md"
   ]
 }

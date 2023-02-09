@@ -114,7 +114,7 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2023-02-11,65,250-->
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為../CSS/display，會找到哪個位置？為什麼？->->-> `以當前頁面所在目錄來位移：它會直接以hi.html所在的目錄路徑為參考點，也就是https://developer.mozilla.org/en-US/docs/Learn為參考點，然後往前位移一個目錄，也就是https://developer.mozilla.org/en-US/docs/，最後會是https://developer.mozilla.org/en-US/docs/CSS/display`
-<!--SR:!2023-02-02,59,250-->
+<!--SR:!2023-07-15,156,250-->
 
 
 
