@@ -114,7 +114,7 @@ thread C ---------------------------------->   ->|<------C----->|
 <!--SR:!2023-02-11,61,250-->
 
 #🧠 process/thread 的 asynchronous 或者 Asynchronisation 是什麼意思？  ->->-> `多個process/thread相互協調執行方式，使他們在特定層面下的結果會是不一樣`
-<!--SR:!2023-02-09,59,250-->
+<!--SR:!2023-07-09,149,250-->
 
 
 #🧠  process/thread 的 synchronous 或者 Synchronisation：多個process/thread相互協調執行方式，使他們在特定層面下的結果若會是一樣，就為同步，若為不一樣，就會是非同步， 該電腦科學裡的特定層面則通常是什麼？ ->->-> `是否滿足於每一個process/thread會等待前面的process/thread執行完才執行`
