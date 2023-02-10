@@ -114,7 +114,7 @@ useEffect(() => {
 
 
 #🧠 React：若要在class-based component 去實現useEffect會是什麼：在class-based component 的實現會不會在componentWillUnmount遇上無限循環問題？為什麼->->-> `會，具體是由於Mount只會因為從DOM Tree移除對應DOM才執行，若因為componentWillUnmount內有setState而執行渲染函式，其階段也會由於處於updating階段而不會執行componentWillUnmount，但之後肯定會遇到unmount階段來釋放，所以又會執行一次componentWillUnmount`
-<!--SR:!2023-02-05,52,250-->
+<!--SR:!2023-06-24,134,250-->
 
 
 

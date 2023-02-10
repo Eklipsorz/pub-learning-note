@@ -101,7 +101,7 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 <!--SR:!2023-02-09,66,250-->
 
 #🧠 Server-Side Rendering 在每個URL下都對應著什麼？需不需要由客戶端負責什麼？ ->->-> `對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext。`
-<!--SR:!2023-02-08,65,250-->
+<!--SR:!2023-08-01,172,250-->
 
 
 #🧠 Server-Side Rendering 的SEO 會一直比Client-Side Rendering 來得好嗎？為什麼 ->->-> `不一定，由於部分搜尋引擎的爬蟲有開始針對CSR而採取額外的措施來獲取內容，爬蟲執行JS來獲取主要內容，並針對內容進行分析`

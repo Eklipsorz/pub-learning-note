@@ -87,7 +87,7 @@
 <!--SR:!2023-03-21,75,230-->
 
 #🧠 在JS中的static method的用途為何？class對於static method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
-<!--SR:!2023-02-06,74,250-->
+<!--SR:!2023-08-27,198,250-->
 
 #🧠 在JS中的static property的用途為何？class對於static property的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
 <!--SR:!2023-03-03,35,230-->

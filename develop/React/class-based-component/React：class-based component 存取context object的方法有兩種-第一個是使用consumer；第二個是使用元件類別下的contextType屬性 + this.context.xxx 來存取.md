@@ -163,7 +163,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2023-07-29,181,250-->
 
 #🧠 functional component 下的useContext 可以使用多少個context object ->->-> `N個`
-<!--SR:!2023-02-05,73,250-->
+<!--SR:!2023-08-26,197,250-->
 
 
 

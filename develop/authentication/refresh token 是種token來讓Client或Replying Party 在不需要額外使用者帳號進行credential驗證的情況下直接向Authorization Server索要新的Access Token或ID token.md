@@ -102,7 +102,7 @@ H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Acces
 
 
 #🧠 refresh token 會是什麼？ ->->-> ` 是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token`
-<!--SR:!2023-02-02,9,250-->
+<!--SR:!2023-03-15,33,250-->
 
 #🧠 refresh token 是一種token，該token來讓Client/Replying Party **在不需要額外使用者帳號進行credential驗證的情況下** 直接向Authorization Server索要新的Access Token/ID token，其出現目的為何？ ->->-> `- 盡可能在減緩惡意使用者使用合法token 機會的情況下，讓獲取合法token的client保持更長的合法時間來獲取資源 - 讓獲取合法token的client 能從Authorization Server/OpenID Provider中獲取最新資訊的token `
 <!--SR:!2023-02-02,9,250-->
