@@ -143,7 +143,7 @@ Class1 { name: 'hi' } Class2 {}
 <!--SR:!2023-03-20,39,230-->
 
 #🧠 JS ：class Component1 \{\} Component1.contextType = Context1等同於是什麼？程式碼會是什麼？ ->->-> `對著名為Component1的函式物件添加contextType屬性，程式碼會是const Component1 = (function () { } Component1.contextType = Context1`
-<!--SR:!2023-02-06,74,250-->
+<!--SR:!2023-08-27,198,250-->
 
 
 #🧠 React 官方提供的語法-contextType 語法中，請用程式碼表示**允許在class添加一個名為contextType 的 static member variable來指定context object**這方法 ->->-> `class Component1 { static contextType = Context1 }`
