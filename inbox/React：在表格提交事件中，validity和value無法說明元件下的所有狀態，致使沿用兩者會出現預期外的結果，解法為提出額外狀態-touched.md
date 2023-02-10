@@ -211,7 +211,7 @@ const SimpleInput = (props) => {
 
 
 #🧠 React：若目前元件是active element，嚴格來說算是touched嗎？為什麼 ->->-> `不能算是，基本上會因為並未從active這狀態轉移，因此不算是`
-<!--SR:!2023-02-04,67,250-->
+<!--SR:!2023-08-12,183,250-->
 
 
 #🧠 React：touched/untouched 狀態 具體會由誰來決定？ ->->-> ``依據著開發者來指定或者程式來指定
