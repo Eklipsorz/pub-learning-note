@@ -137,7 +137,7 @@ export default App;
 
 
 #🧠 若要將component 以layout用途來區分的話，會放在哪個地方？ ->->-> `/src/components/layout、/src/components/Layout`
-<!--SR:!2023-02-06,53,250-->
+<!--SR:!2023-06-26,136,250-->
 
 
 
