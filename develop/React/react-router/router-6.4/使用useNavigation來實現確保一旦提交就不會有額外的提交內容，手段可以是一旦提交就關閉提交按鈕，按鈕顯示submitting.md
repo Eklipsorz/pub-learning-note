@@ -59,7 +59,7 @@ useNavigation：
 <!--SR:!2023-04-01,67,250-->
 
 #🧠 useNavigation 是屬於誰的hook?  ->->-> `react-router-dom`
-<!--SR:!2023-02-08,12,247-->
+<!--SR:!2023-03-18,35,247-->
 
 #🧠 useNavigation回傳的物件中，state有哪些狀態->->-> `idle、submitting、loading`
 <!--SR:!2023-02-15,17,247-->

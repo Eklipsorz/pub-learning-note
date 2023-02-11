@@ -73,7 +73,7 @@
 
 
 #🧠  static memory allocation 為什麼會有static來稱呼?  ->->-> `相對於dynamic memory allocation來說`
-<!--SR:!2023-02-05,6,246-->
+<!--SR:!2023-03-08,25,246-->
 
 #🧠  dynamic memory allocation 為什麼會有dynamic來稱呼?  ->->-> `相對於static memory allocation來說`
 <!--SR:!2023-02-20,15,246-->
@@ -99,7 +99,7 @@
 <!--SR:!2023-08-25,196,250-->
 
 #🧠 static function / static method是什麼？ ->->-> `static function / static method 意旨為在執行前就已經分配好記憶體給函式`
-<!--SR:!2023-02-06,74,250-->
+<!--SR:!2023-08-29,199,250-->
 
 #🧠 static variable 對於JS的class來說是什麼樣的記憶體區塊？->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶體的變數或者函式`
 <!--SR:!2023-02-05,64,230-->
