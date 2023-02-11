@@ -12,7 +12,7 @@
 
 ## 複習
 #🧠 serverless environment 、 compute engine vm instance、memorystore instance哪一個處於VPC的服務? 哪一個不處於VPC的服務->->-> `serverless environment 本身不是處於VPC，Compute Engine VM instance 、MemoryStore instance、其他擁有內部IP的資源(如serverless access connector)則是處於VPC下的服務`
-<!--SR:!2023-02-02,155,250-->
+<!--SR:!2023-05-01,79,230-->
 
 
 ---
