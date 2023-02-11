@@ -107,7 +107,7 @@
 <!--SR:!2023-02-13,74,250-->
 
 #🧠  React：表格下輸入欄位各有什麼狀態？ 是只有value和validity嗎？ 還有的話就提出來->->-> `沒，還有touched/untouched`
-<!--SR:!2023-02-03,67,250-->
+<!--SR:!2023-08-16,186,250-->
 
 #🧠 React：表格下輸入欄的狀態主要分為validity 、 value、touched/untouched 這三種，請問validity、value、touched/untouched各為什麼？ ->->-> `	- validity：輸入欄位值是否合法 - value：輸入欄位值本身 - 輸入欄位是否曾經為active element，若是就是touched；若不是就是untouched`
 <!--SR:!2023-08-02,178,250-->
