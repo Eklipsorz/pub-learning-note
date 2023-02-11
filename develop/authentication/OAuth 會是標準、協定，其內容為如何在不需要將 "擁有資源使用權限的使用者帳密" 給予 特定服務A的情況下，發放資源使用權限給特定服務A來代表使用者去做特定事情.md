@@ -126,7 +126,7 @@
 <!--SR:!2023-02-15,20,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server 對應的Client 會是什麼？  ->->-> `會是代表使用者User的應用程式或者服務`
-<!--SR:!2023-02-11,11,230-->
+<!--SR:!2023-03-11,28,230-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會有什麼樣的業務，請說明可能性？ ->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
 <!--SR:!2023-02-26,26,250-->
