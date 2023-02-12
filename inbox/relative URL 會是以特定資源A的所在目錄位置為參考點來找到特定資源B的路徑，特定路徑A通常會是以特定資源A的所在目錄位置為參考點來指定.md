@@ -92,7 +92,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 relative URL： 以當前頁面所在目錄來位移，relative URL指定路徑格式會是什麼？->->-> `路徑格式通常會是./或者../為開頭`
-<!--SR:!2023-02-12,27,230-->
+<!--SR:!2023-04-17,64,230-->
 
 #🧠  relative URL：以當前頁面所在目錄來位移，舉一個路徑案例 ->->-> `../file2 或 ./file2`
 <!--SR:!2023-02-23,74,250-->
@@ -111,7 +111,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為Skills/Infrastructure/Understanding_URLs，會找到哪個位置？為什麼？->->-> `直接從當前頁面所在目錄找：它會直接從hi.html所在的目錄找到以下內容，也就是https://developer.mozilla.org/en-US/docs/Learn/Skills/Infrastructure/Understanding_URLs`
-<!--SR:!2023-02-11,65,250-->
+<!--SR:!2023-07-27,165,250-->
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為../CSS/display，會找到哪個位置？為什麼？->->-> `以當前頁面所在目錄來位移：它會直接以hi.html所在的目錄路徑為參考點，也就是https://developer.mozilla.org/en-US/docs/Learn為參考點，然後往前位移一個目錄，也就是https://developer.mozilla.org/en-US/docs/，最後會是https://developer.mozilla.org/en-US/docs/CSS/display`
 <!--SR:!2023-07-15,156,250-->
