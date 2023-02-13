@@ -36,7 +36,7 @@
 <!--SR:!2023-03-25,44,230-->
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，若具體位置為body部分的話，具體會是什麼？？ ->->-> `以物件屬性來儲存token`
-<!--SR:!2023-02-13,23,250-->
+<!--SR:!2023-04-16,62,250-->
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，若具體位置為query string部分的話，具體會是什麼？？ ->->-> `以token作為key，value為對應token實際內容`
 <!--SR:!2023-02-16,26,250-->
