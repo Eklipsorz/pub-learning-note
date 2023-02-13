@@ -62,7 +62,7 @@
 <!--SR:!2023-02-17,25,230-->
 
 #🧠 以JWT為主的authentication tokens 通常需要什麼東西才能讓實現？ ->->-> `secret、hashing algorithm `
-<!--SR:!2023-02-08,28,250-->
+<!--SR:!2023-05-01,77,250-->
 
 #🧠 客戶端藉由tokens來實現從伺服器上獲取permission/access，具體流程會是什麼？->->-> `1. 客戶端輸入credential 來給伺服器做使用者驗證 2. 伺服器收到就從資料庫取得對應使用者的credential，看是否完全一樣，若一樣就做下一步；不一樣就告知登入失敗 3. 伺服器會產生一個識別字字串，該字串會由credential和hashing 字串構成，hashing 字串是由伺服器的hashing algorithm和伺服器儲存的secret搭配識別用的資料來組合成獨特且不可反解的hash字串。 4. 將識別字字串傳遞至客戶端 5. 客戶端收到就儲存在客戶端的cookie並用domain和path來標記該資料是屬於哪個伺服器和哪個端點。`
 <!--SR:!2023-04-18,67,250-->
