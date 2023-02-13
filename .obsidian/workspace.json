@@ -22,52 +22,16 @@
         ]
       },
       {
-        "id": "b3ed691bd9ca1e39",
+        "id": "f8555b6684e0dcb1",
         "type": "tabs",
         "children": [
           {
-            "id": "9c35e21ede146098",
+            "id": "845363532eed0b6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "605482ff7a2c772a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "80c62f195766ebc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Redis/redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "18f8685ace931f90",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c9e7692d8a80c947",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md"
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md"
               }
             }
           }
@@ -210,14 +174,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c9e7692d8a80c947",
+  "active": "4c98ca83d2c6378c",
   "lastOpenFiles": [
+    "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
+    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/Redis/redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
     "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
     "develop/render/parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染.md",
-    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
-    "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
     "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
     "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
     "inbox/React：定義 custom hook 以及注意事項.md",
