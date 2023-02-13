@@ -211,7 +211,7 @@ export default RootLayout;
 <!--SR:!2023-02-16,42,248-->
 
 #🧠 react-router-dom v6：使用createBrowserRouter 來自製擁有loader功能的BrowserRouter，根據Routing做法，可以有哪兩種做法？其中可以使用JSX語言體系的元件語法來表示Routing中的每個Route，那這樣就能定義了？還是要做什麼？ 沒做會如何？->->-> `還得將JSX語言體系轉換成JS語言體系的物件語法。沒做的話，系統會無法正常執行`
-<!--SR:!2023-02-13,40,248-->
+<!--SR:!2023-05-27,103,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途為何？->->-> `用途制定一組Routing來產生BrowserRouter`
 <!--SR:!2023-02-20,45,248-->
@@ -248,7 +248,7 @@ export default RootLayout;
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 會回傳什麼？->->-> `回傳代表存有Route物件的陣列`
-<!--SR:!2023-02-13,39,230-->
+<!--SR:!2023-05-10,86,230-->
 
 #🧠 react-router-dom v6：Route 元件添加index屬性會是代表什麼？->->-> `就會於當它所在的parent route被滿足時，會以標記index的Route元件所對應的頁面元件來預設渲染`
 <!--SR:!2023-04-18,78,248-->
