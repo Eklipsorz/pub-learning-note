@@ -257,7 +257,7 @@ export default RootLayout;
 <!--SR:!2023-05-13,92,248-->
 
 #🧠 請試著說明每個路徑能夠對應到什麼以及渲染什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png) ->->-> ``
-<!--SR:!2023-02-11,39,248-->
+<!--SR:!2023-05-25,101,248-->
 
 
 #🧠 裡頭的RootLayout元件對應的Route元件對於其他後裔元件來說，兩者渲染關係是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png)->->-> `在這裡會以RootLayout元件所對應的Route元件來當作是其他後裔Route元件的渲染參考頁面元件，並且會在RootLayout元件設定Outlet元件來告知React後裔Route元件的渲染可以在參考頁面上的哪個位置上做渲染`

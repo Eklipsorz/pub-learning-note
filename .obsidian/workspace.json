@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "49a25589b748334d",
+        "id": "8021a5af88e3b58e",
         "type": "tabs",
         "children": [
           {
-            "id": "1d79f9edd4bf3d6b",
+            "id": "4c98ca83d2c6378c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md",
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：定義 custom hook 以及注意事項.md"
+                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md"
               }
             }
           }
@@ -156,8 +156,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d79f9edd4bf3d6b",
+  "active": "4c98ca83d2c6378c",
   "lastOpenFiles": [
+    "inbox/React：定義 custom hook 以及注意事項.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
     "inbox/Client-Side Rendering 是指在Client-Server 場景下，由client端主要負責建立能在自身平台以視覺呈現的事物，該事物會以代表畫面的virtual DOM 或者 DOM來表示.md",
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
@@ -166,7 +167,6 @@
     "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
     "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
-    "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md",
-    "develop/RWD/pots/Node.js Buffer 是為JS提供能夠處理二進制資料的API.md"
+    "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md"
   ]
 }
