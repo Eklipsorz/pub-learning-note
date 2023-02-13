@@ -213,7 +213,7 @@ import styles from <css-file>
 
 
 #🧠 styled-components 和 CSS modules 對於防止CSS全域污染問題的解決概念是什麼？(CSSOM)->->-> `替每個元件正在使用的selector name在同一個CSSOM上是獨特不重複`
-<!--SR:!2023-02-12,76,247-->
+<!--SR:!2023-08-30,198,247-->
 
 ---
 Status: #🌱 
