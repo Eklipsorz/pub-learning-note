@@ -117,7 +117,7 @@ setInterval(callback, delay)
 #🧠 React：開發custom hook會是如何開發？(比如放哪？以何種形式) ->->-> `每一個custom hook會以一個檔案來儲存，其檔案會儲存在/src/hooks`
 <!--SR:!2023-08-20,189,250-->
 
-#🧠 React：custom hook 若以檔案來儲存，會和其他元件同在一檔案進行開發嗎？->->-> `並不會`
+#🧠 React：custom hook 若以檔案來儲存，會和其他元件同在同一個檔案進行開發嗎？->->-> `並不會`
 <!--SR:!2023-02-11,73,250-->
 
 
