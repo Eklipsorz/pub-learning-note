@@ -235,7 +235,7 @@ agreement
 #🧠 Symmetric-key algorithm 的加密/解密鑰匙通常會事先給定嗎？還是透過網路給定->->-> `通常會是事先給定`
 <!--SR:!2023-03-15,34,250-->
 
-#🧠 Symmetric-key algorithm 的加密/解密適合的場景 ->->-> `通訊雙方會事先定義好會使用相同的鑰匙，不需要在網路上另外傳遞`
+#🧠 Symmetric-key algorithm 的加密/解密上所要的鑰匙會是在哪取得？ ->->-> `通訊雙方會事先定義好會使用相同的鑰匙，不需要在網路上另外傳遞`
 <!--SR:!2023-03-06,29,250-->
 
 #🧠 Symmetric-key algorithm 和 Public-key cryptography給定的鑰匙皆從哪獲取？ ->->-> `1. 進行前事先定義2. 在過程中傳遞一組鑰匙來配合`
