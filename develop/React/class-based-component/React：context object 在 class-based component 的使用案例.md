@@ -117,7 +117,7 @@ export default UserFinder;
 ## 複習
 
 #💻 請到/react-builder/question-review/class-based-component-question 領取題目，並切換至context-to-class分支，接著在UserFinder.js實現由該UserFinder取得/src/store/users-context.js所製成的context object ->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/07-class-based-cmp-and-context/src/components/UserFinder.js`
-<!--SR:!2023-02-06,74,250-->
+<!--SR:!2023-09-05,203,250-->
 
 ---
 Status: #🌱 
