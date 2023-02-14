@@ -74,7 +74,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 
 #🧠  absolute URL 有哪三種形式表示？簡答 ->->-> `	- Full URL - Implicit Protocol - Implicit Domain Name`
-<!--SR:!2023-02-14,68,250-->
+<!--SR:!2023-08-09,176,250-->
 
 #🧠  absolute URL： Full URL 對於absolute URL是什麼？ ->->-> `該資源在網路上的完整位置、`
 <!--SR:!2023-07-18,159,250-->
