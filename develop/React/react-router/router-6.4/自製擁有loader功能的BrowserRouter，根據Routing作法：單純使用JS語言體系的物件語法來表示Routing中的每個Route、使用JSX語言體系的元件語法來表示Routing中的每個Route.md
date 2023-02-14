@@ -268,7 +268,7 @@ export default RootLayout;
 <!--SR:!2023-02-12,39,248-->
 
 #🧠 請問以下JSX元素經過createRoutesFromElements轉換後，會是什麼樣的語法？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/jsx-route-with-loader-example-_mhlbbh.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670856511/blog/react/react-router/Route-component/js-route-with-loader-example-_fpms3k.png)`
-<!--SR:!2023-02-14,40,248-->
+<!--SR:!2023-05-23,98,248-->
 
 ---
 Status: #🌱 

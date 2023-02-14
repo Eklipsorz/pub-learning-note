@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b1299983cd7ecbd6",
+        "id": "53658a754e7b0c63",
         "type": "tabs",
         "children": [
           {
-            "id": "e5d0a3796b6054b3",
+            "id": "bc8c1d208bea369c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md"
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
               }
             }
           }
@@ -156,14 +156,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5d0a3796b6054b3",
+  "active": "bc8c1d208bea369c",
   "lastOpenFiles": [
+    "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
     "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md",
     "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
-    "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
     "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md",
     "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
