@@ -114,7 +114,7 @@ export default SimpleInput;
 ## 複習
 
 #🧠 React：reload react app 的後果為何？->->-> `- 失去整個app的目前所有DOM - 失去整個app的目前所有狀態、Effect、Hook`
-<!--SR:!2023-02-14,74,250-->
+<!--SR:!2023-03-26,40,230-->
 
 #🧠 React：表格輸入欄位值存取方式有哪些？ ->->-> `- 使用事件(如change) ＋ state：使用state來替代輸入欄位的value屬性(attribute)，並於事件處理那邊使用setState來攔截資訊至state - 使用ref ：使用DOM節點所擁有的value來存取`
 <!--SR:!2023-02-15,74,250-->

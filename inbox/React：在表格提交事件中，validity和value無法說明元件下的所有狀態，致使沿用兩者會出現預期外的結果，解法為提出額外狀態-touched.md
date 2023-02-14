@@ -176,7 +176,7 @@ const SimpleInput = (props) => {
 <!--SR:!2023-08-13,183,250-->
 
 #🧠 React：實際表格能夠呈現的狀態數為何是無限？ ->->-> `實際表格會有的狀態取決於互動種類，而互動種類數本身在通常情況下(沒限制)而會是無限`
-<!--SR:!2023-02-14,74,250-->
+<!--SR:!2023-08-23,190,250-->
 
 #🧠 React： 在表格開發中，若目前開發者預期的表格狀態數不夠，其解法會是什麼？->->-> `新增狀態種類來處理`
 <!--SR:!2023-08-18,185,250-->
@@ -200,7 +200,7 @@ const SimpleInput = (props) => {
 <!--SR:!2023-06-20,148,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表value 和 validity 已經無法呈現表格目前的狀態，那麼解法概念具體會是什麼？？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png   ->->-> ` 註冊touched 狀態；設定可使touched為true的情況，在這裏是以表格提交事件來預設所有輸入欄皆為touched；渲染部分：設定條件來決定渲染部分`
-<!--SR:!2023-02-14,74,250-->
+<!--SR:!2023-08-24,191,250-->
 
 #🧠 React：touched/untouched 狀態各代表著什麼？ ->->-> `標明元件是否為曾經被使用者點選過或者曾經被使用者切換成active element；touched 狀態為該元件曾經被切換成active element； untouched 狀態為該元件從未被切換成active element`
 <!--SR:!2023-02-15,74,250-->
