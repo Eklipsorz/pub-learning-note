@@ -159,7 +159,7 @@
 <!--SR:!2023-02-15,20,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者在實現上是否能一台主機擔任兩個角色？ ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
-<!--SR:!2023-02-14,19,250-->
+<!--SR:!2023-04-03,48,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，其流程會是什麼？以圖來表示？->->-> ``
 <!--SR:!2023-02-24,26,250-->
