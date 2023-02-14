@@ -189,7 +189,7 @@ export default NewsletterSignup;
 ## 複習
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中submit來實現表單提交，記得設定action的path和action ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-adv/src`
-<!--SR:!2023-02-04,30,250-->
+<!--SR:!2023-05-13,88,250-->
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中Form元件來實現表單提交，記得設定action的path和action ->->-> ``
 <!--SR:!2023-02-05,31,250-->
