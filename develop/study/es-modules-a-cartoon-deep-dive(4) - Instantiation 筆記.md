@@ -196,7 +196,7 @@ console.log(testvar1)
 `
 
 #🧠 ES module：一旦建立live bindings，會有哪些限制 ->->-> `相對來說，ES 模組會使用live bindings技術來讓模組間的export和import所指的識別字都指向同個記憶體區塊，這表示只要在模組上更改值，就會使用import的那一方拿到變更後的值，但只有exporting module那一方才能更改對應的值，importing module不能夠更改import識別字上的對應實體物件(記憶體內容)，最多只能增加屬性至物件上。`
-<!--SR:!2023-02-14,14,247-->
+<!--SR:!2023-02-21,7,227-->
 
 
 #🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性嗎？ ->->-> `可以像存取到物件那樣去修改物件本身的屬性`

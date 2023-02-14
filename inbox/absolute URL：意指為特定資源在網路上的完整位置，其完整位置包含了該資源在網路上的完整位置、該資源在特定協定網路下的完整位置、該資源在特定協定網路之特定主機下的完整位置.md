@@ -103,7 +103,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2023-08-06,174,250-->
 
 #🧠 absolute URL：  implicit domain name的構成會是什麼？格式是什麼？ ->->-> `主要由path所構成，格式為/path`
-<!--SR:!2023-02-14,68,250-->
+<!--SR:!2023-08-11,178,250-->
 
 
 #🧠 假設目前存取的資源所擁有的protocol和domain會是https和developer.mozilla.org，\/en-US\/docs\/Learn 會對應到什麼位置？->->-> `https://developer.mozilla.org/en-US/docs/Learn`

@@ -203,7 +203,7 @@ boolean expression && JSX Element 可以被當作一種JSX元素，只有前者�
 <!--SR:!2023-07-14,192,250-->
 
 #🧠 以下程式碼能夠正常執行嗎？不能的話，會是什麼問題？解決思維為何？![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662812594/blog/react/react-element/JSX-limitations-problem_s9prey.png) ->->-> `不能夠執行、最主要是沒有額外的parent element來包覆著ErrorModal和Card這兩個元件，解決思維則是建立一個新的parent element來包覆著、使用陣列來將他們包含`
-<!--SR:!2023-02-06,39,230-->
+<!--SR:!2023-03-09,23,210-->
 
 
 

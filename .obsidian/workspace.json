@@ -4,93 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8021a5af88e3b58e",
+        "id": "b1299983cd7ecbd6",
         "type": "tabs",
-        "dimension": 24.98279421885754,
         "children": [
           {
-            "id": "4c98ca83d2c6378c",
+            "id": "e5d0a3796b6054b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f8537669efc2057e",
-        "type": "tabs",
-        "dimension": 24.98279421885754,
-        "children": [
-          {
-            "id": "2146f07655df08dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "d910b9551b0ab6dc",
-        "type": "tabs",
-        "dimension": 12.560220233998622,
-        "children": [
-          {
-            "id": "23d6460588e8df21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f1547041d25f4361",
-        "type": "tabs",
-        "dimension": 12.560220233998622,
-        "children": [
-          {
-            "id": "3373dd85b9bbd62a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f8555b6684e0dcb1",
-        "type": "tabs",
-        "dimension": 24.91397109428768,
-        "children": [
-          {
-            "id": "845363532eed0b6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
                 "mode": "source",
                 "source": false
               }
@@ -163,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md"
               }
             }
           }
@@ -233,17 +156,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3373dd85b9bbd62a",
+  "active": "e5d0a3796b6054b3",
   "lastOpenFiles": [
-    "develop/React/React：useEffect 使用方式是替當前元件註冊effect這個hook並於每個渲染階段下來判定是否能執行side effect.md",
-    "inbox/React：Context 命名法則 & 使用法則.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
-    "inbox/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
-    "inbox/React：forwardRef 是React函式庫的方法，專門將指定元件A下的Ref物件傳送forwardRef函式，並由該函式轉發至另一個對應元件B下來對指定元件A的Ref物件進行處理.md",
-    "develop/Redis/redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-    "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
-    "inbox/JavaScript 的 primitive data value 和 reference value 本身並不會有執行過程會變更大小的需求，所以會存放於stack記憶體區塊，並用變數名稱作為其區塊的識別名稱.md",
-    "develop/render/parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染.md",
-    "inbox/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md"
+    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+    "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
+    "develop/JavaScript/JavaScript Array.sort 需要一個比較標準compare來排序輪流對陣列的每個元素，不會是單純只排序一輪，而是按照目前陣列是否滿足標準才決定下一次的排序.md",
+    "develop/CSS-modules/CSS modules：form-control 案例 + 根據輸入欄位是否合法而變動的樣式屬性.md",
+    "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
+    "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md",
+    "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+    "develop/React/JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array.md",
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
   ]
 }
