@@ -177,7 +177,7 @@ export default AuthForm;
 ## 複習
 
 #💻 請到/githubRepo/react-builder/question-review/react-auth-question 領取題目並切換至build-registration-practice分支，請在/src/components/Auth下的AuthForm增加帳密註冊功能，請調用Firebase上的Authentication REST API來用，功能為：註冊、顯示處理中 ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/03-showing-feedback`
-<!--SR:!2023-02-09,24,250-->
+<!--SR:!2023-04-24,68,250-->
 
 ---
 Status: #🌱 
