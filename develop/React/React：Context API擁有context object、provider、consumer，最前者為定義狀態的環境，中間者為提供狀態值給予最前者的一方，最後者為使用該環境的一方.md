@@ -364,7 +364,7 @@ consume
 <!--SR:!2023-07-22,188,250-->
 
 #💻 請使用useContext來讓App的登入狀態能夠共享給MainHeader元件下的Navigation元件，而非使用props chain，檔案在/react-builder/question-review/useContext-question ->->-> `https://github.com/academind/react-complete-guide-code/tree/10-side-effects-reducers-context-api/code/11-making-context-dynamic/src`
-<!--SR:!2023-02-15,90,249-->
+<!--SR:!2023-09-27,224,249-->
 
 
 ---
