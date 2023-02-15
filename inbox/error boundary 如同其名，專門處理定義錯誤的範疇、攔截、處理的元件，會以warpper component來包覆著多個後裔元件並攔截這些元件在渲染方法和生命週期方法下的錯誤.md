@@ -247,7 +247,7 @@ UsersFinder.js
 <!--SR:!2023-02-22,51,229-->
 
 #💻 請至/react-builder/question-review/class-based-component-question領取題目，並切換至error-boundary-to-class分支，實現ErrorBoundary元件來防止Users.js的錯誤拋錯衍生出的網頁崩潰問題->->-> `https://github.com/academind/react-complete-guide-code/blob/13-class-based-cmp/code/08-finished/src/components/ErrorBoundary.js`
-<!--SR:!2023-02-07,74,250-->
+<!--SR:!2023-09-07,204,250-->
 
 #🧠 React：Error-boundary 元件 可以處理自己元件下的生命週期函式和渲染函式所拋出來的錯誤嗎？->->-> `並不能`
 <!--SR:!2023-05-06,94,229-->
