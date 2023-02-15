@@ -83,7 +83,7 @@ export default App;
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換成refactor-blogposts-and-post-page分支，請讓Router能夠根據切換URL來自行發送請求，並將請求回應丟給posts-page和post-detail-page對應元件來接收並渲染，記得要添加錯誤時會有的畫面 ->->-> `https://github.com/academind/react-router-6.4-intro/tree/react-router-6.4-basics/src/pages`
-<!--SR:!2023-02-06,23,250-->
+<!--SR:!2023-04-27,71,250-->
 
 
 #🧠 ES module：若要取出匯出物件中的屬性且要替屬性取別名來擷取，請問如何做 ->->-> `使用as`
