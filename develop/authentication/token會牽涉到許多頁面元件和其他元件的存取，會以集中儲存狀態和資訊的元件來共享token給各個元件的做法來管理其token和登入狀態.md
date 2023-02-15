@@ -106,7 +106,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-04-15,64,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中用來更改狀態的函式是為何？ ->->-> `login、logout`
-<!--SR:!2023-02-15,28,250-->
+<!--SR:!2023-04-26,70,250-->
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，isLoggedIn ：若擁有任意token，就為true；若沒有任意token，就為false這token對於使用者來說是合法的嗎？為什麼？ ->->-> `在這裡的任意token都為合法，因為取得任意token的唯一條件就是透過伺服器驗證成功並獲取到的token，所以只要不為null就為合法登入或者true；否則為未登入狀態或者false`
 <!--SR:!2023-04-19,67,250-->
@@ -116,7 +116,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-04-23,68,250-->
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ 利用permission/access來刷新目前元件，舉例來說會是什麼元件？ ->->-> `navigation、header`
-<!--SR:!2023-02-15,28,250-->
+<!--SR:!2023-04-25,69,250-->
 
 #💻  請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件：AuthForm、MainNavigation ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/05-using-context-for-managing-auth-state`
 <!--SR:!2023-02-26,34,250-->
