@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md"
+                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
               }
             }
           }
@@ -192,8 +192,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b142b7aacbacf4dd",
+  "active": "e9fd2877115c6fa3",
   "lastOpenFiles": [
+    "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/React/class-based-component/class-based-component：Uses轉換成class-based-component的過程.md",
@@ -202,7 +203,6 @@
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "inbox/React Portal 介面本身會是一個特定元件A的入口元件，在特定元件A掛載其他實際DOM節點的情況下，其他元件可以傳遞訊息至入口元件，而入口元件會轉遞訊息至特定元件A來處理資訊和渲染.md",
     "develop/React/react-router/quote-practice/react-router-practice：製作瀏覽單個quote、瀏覽所有quotes、建立新quote這三個頁面以及對應routing.md",
-    "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
-    "develop/React/react-router/router-6.4/react-router-practice：安裝post-detail-page對應元件.md"
+    "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md"
   ]
 }
