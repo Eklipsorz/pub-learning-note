@@ -122,7 +122,7 @@ N個模組要求模組做evaluation代表有N個任務會同時要求模組做ev
 
 
 #🧠 ES Module：會重新在挑模組來執行evaluation嗎？是的話，如何挑 ->->-> `要重新挑，這是為了確保exporting module都能確實使用它所依賴的模組來輸出內容至importing module，至於如何挑，會以DFS post-order traversal來從模組依賴關係圖來優先從底部挑選模組會是沒依賴任何模組的模組、 模組會是依賴著已經完成evaluation的模組的模組`
-<!--SR:!2023-02-16,122,250-->
+<!--SR:!2023-12-18,305,250-->
 
 
 
