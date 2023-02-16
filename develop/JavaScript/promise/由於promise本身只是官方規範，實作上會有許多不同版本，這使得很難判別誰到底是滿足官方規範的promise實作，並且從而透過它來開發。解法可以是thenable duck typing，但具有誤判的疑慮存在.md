@@ -46,6 +46,21 @@ if (
 
 ### thenable 定義
 
+> ### [Thenables](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#thenables)
+
+> The JavaScript ecosystem had made multiple Promise implementations long before it became part of the language. Despite being represented differently internally, at the minimum, all Promise-like objects implement the _Thenable_ interface. A thenable implements the [`.then()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) method, which is called with two callbacks: one for when the promise is fulfilled, one for when it's rejected. Promises are thenables as well.
+
+thenable 在這可以是形容詞或者名詞：
+- ES官方規範對於promise的then方法：
+	- resolve：將指定內容解析成
+```
+function then(resolve, reject) {
+	//...
+}
+```
+- 形容詞，描述對象具有then方法，該then實現ES官方規範對於promise的then方法
+- 名詞，指一種物件介面，該介面實現ES官方規範對於promise的then方法
+
 能夠擁有then方法的任何物件或者函式，且then必須是滿足promise規範，而這樣可稱之為thenable
 
 ## 複習
