@@ -221,7 +221,7 @@ const SimpleInput = (props) => {
 <!--SR:!2023-03-22,39,230-->
 
 #🧠 React touched/untouched  ：當表格發生提交時，表格下的所有元件都會被設定為touched，即使有部分輸入欄並沒變成active element，為什麼都設定為touched？ ->->-> `預設上就是輸入完這些輸入欄才會按下提交按鈕`
-<!--SR:!2023-02-16,75,250-->
+<!--SR:!2023-09-01,197,250-->
 
 ---
 Status: #🌱 

@@ -171,14 +171,14 @@ export default NewQuote;
 <!--SR:!2023-02-24,65,250-->
 
 #🧠 react-router-dom 所提供的 history 物件 可以移動至哪些地方？ ->->-> `path 可以是網站內部的位置或者網站外部的位置`
-<!--SR:!2023-02-16,2,249-->
+<!--SR:!2023-02-22,6,249-->
 <!--SR:!2023-03-12,29,230-->
 
 #🧠 react-router-dom 所提供的 history 物件 可以移動至哪些地方？(內部和外部) ->->-> `path 可以是網站內部的位置或者網站外部的位置`
 <!--SR:!2023-02-16,2,249-->
 
 #🧠 react-router-dom 所提供的 history 物件 可以移動至哪些地方？ ->->-> `path 可以是網站內部的位置或者網站外部的位置`
-<!--SR:!2023-02-16,2,249-->
+<!--SR:!2023-02-22,6,249-->
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-programmatic-navigation分支，在那請以programmatic navigation來實作成功提交新增quote會有的導向 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/16-implementing-programmatic-navigation`

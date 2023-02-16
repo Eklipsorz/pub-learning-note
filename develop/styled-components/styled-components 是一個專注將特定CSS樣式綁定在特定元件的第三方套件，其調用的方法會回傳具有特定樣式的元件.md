@@ -100,7 +100,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-06-13,174,250-->
 
 #🧠 Styled-components 如何防止CSS 全域污染問題->->-> `對綁定在特定元件A的樣式屬性區塊另外建立一個selector來包裝，其selector名稱會是獨特不重複，最後讓元件A的class連接至該selector`
-<!--SR:!2023-02-16,78,247-->
+<!--SR:!2023-09-04,200,247-->
 
 #🧠 styled-components 是官方套件嗎？ 如何安裝->->-> `是第三方套件，安裝得用npm install styled-components`
 <!--SR:!2023-03-19,113,247-->

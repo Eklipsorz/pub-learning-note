@@ -76,7 +76,7 @@ test <button id="test">
 <!--SR:!2023-08-11,180,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是命名函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
-<!--SR:!2023-02-16,72,250-->
+<!--SR:!2023-08-24,189,250-->
 
 
 #🧠 addEventListener(a, callback) 中的callback若是箭頭函式，其callback呼叫時的this會是什麼 ->->-> `會以箭頭函式的語彙綁定為主，並不會直接設定成發生事件的DOM節點`
