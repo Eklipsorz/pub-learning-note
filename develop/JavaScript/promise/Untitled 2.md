@@ -56,14 +56,37 @@ callback適合的執行次數會是1次，而在Promise中，所有經由Promise
 
 在Promise中，都會將fulfilled狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定fulfilled狀態或者rejected狀態的內容以及讓callback設定成合適形式的引數形式，就能確保callback能獲取到參數來執行。
 
-### 吞掉callback執行時拋出的錯誤或者例外
+
+### 因callback執行時拋出錯誤而產生預期外的結果
 
 
-> 吞掉callback執行時拋出的錯誤或者例外：非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理
+因callback執行時拋出錯誤而產生預期外的結果，比如吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo
+
+
+> 因callback執行時拋出錯誤而產生預期外的結果，比如吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo
+
+
+#### 未有對應錯誤處理來應對callback被執行時所拋出的錯誤
+
+
+問題描述：
+當包覆著對應callback的promise object被執行時，若拋出錯誤的話，很有可能會因為該object 未註冊著錯誤處理的callback而未能處理。
+
+
+解法：
+1. 註冊方只需要在後頭註冊負責錯誤處理的callback就能解決
+2. 直接修改以最一開始的Promise object所擁有的狀態為rejected，進而讓它執行該Promise object原本的錯誤處理。
+
+
+#### 因錯誤處理而使callback的執行方式會演變成Zalgo
+
+問題描述：
 
 預期情況下，還有衍生出Zalgo問題機會，比如由系統的內建錯誤處理攔截到錯誤，並且以同步形式來執行錯誤，若callback本身就是非同步執行，那麼會使整體的callback(含錯誤處理)在執行上變成難以區分其執行方式的Zalgo
 
-在Promise中，會將所有發生在callback上的錯誤和執行錯誤全以rejected狀態的promise來回傳給下一個Promise.then或者Promise.catch來接收，當他們接收到時，就會以非同步任務的形式來執行錯誤處理，確保另一個潛在的問題- 錯誤處理會不會致使callback的執行變成Zalgo
+解法：
+
+1. 在Promise中，會將所有發生在callback上的錯誤和執行錯誤全以rejected狀態的promise來回傳給下一個Promise.then或者Promise.catch來接收，當他們接收到時，就會以非同步任務的形式來執行錯誤處理，確保另一個潛在的問題- 錯誤處理會不會致使callback的執行變成Zalgo
 
 
 比如：當callback1執行時拋出錯誤時，這時系統會直接以fullfilled狀態的promise來呼叫它擁有的catch或者then來執行對應錯誤處理callback。
