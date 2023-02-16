@@ -33,12 +33,23 @@ let promise = new Promise(function(resolve, reject) {
 
 
 重點：
-- promise 建構式為
-	- 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
-		- state
-			- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行
-			- fulfilled： promise object 包裝的任務已成功完成執行 
-			- rejected：promise object 包裝的任務執行是失敗的
+- promise 本身以物件形式來包裝特定任務的執行過程，物件會包含任務內容、其對應執行狀態、其目前執行後的結果：
+	- 特定任務可以是以同步執行形式來執行的任務 或者 以非同步執行形式來執行的任務
+	- 狀態會由以下狀態所構成
+		- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行
+		- fulfilled： promise object 包裝的任務已成功完成執行 
+		- rejected：promise object 包裝的任務執行是失敗的
+- promise 語法形式會是：
+	- resolve：
+	- reject：
+```
+new Promise((resolve, reject) => {
+	//.....
+})
+```
+	
+ - 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
+
 		- result：
 	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise
 ```
@@ -58,6 +69,7 @@ function fn(resolve, reject) {
 
 ### 用語解釋
 
+#### 狀態
 pending：
 > about to happen or waiting to happen
 
@@ -81,6 +93,7 @@ rejected：
 ---
 Status: #🌱 
 Tags:
+[[JavaScript]] [[Promise]]
 Links:
 References:
 [[@javascript.infoPromise]]
