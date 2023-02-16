@@ -24,12 +24,20 @@ let promise = new Promise(function(resolve, reject) {
 
 > So the executor eventually moves `promise` to one of these states:
 
+
+> A `Promise` is in one of these states:
+
+> -   _pending_: initial state, neither fulfilled nor rejected.
+> -   _fulfilled_: meaning that the operation was completed successfully.
+> -   _rejected_: meaning that the operation failed.
+
+
 重點：
 - promise 建構式為
 	- 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
 		- state
-			- pending
-			- fulfilled 
+			- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行
+			- fulfilled： 
 			- rejected
 		- result：
 	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise
@@ -45,6 +53,16 @@ function fn(resolve, reject) {
 
 用途：
 - 定義目前promise為fulfilled狀態時 或者 目前 promise 為rejected狀態時 所會做的事情
+
+
+
+### 用語解釋
+
+pending：
+> about to happen or waiting to happen
+
+重點：
+- pending：將要發生或者等待發生的
 
 ## 複習
 
