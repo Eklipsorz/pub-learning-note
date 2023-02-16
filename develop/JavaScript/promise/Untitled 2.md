@@ -6,7 +6,7 @@
 - 太晚執行callback：若任務A是以非同步來執行callback，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
 - 呼叫callback的次數超過一次或者沒呼叫callback
 - 沒有傳入任何必要的參數至callback
-- 吞掉callback執行時拋出的錯誤或者例外：非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理
+- 因callback執行時拋出錯誤而產生預期外的結果，比如吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo
 
 
 在Promise 中分別針對這幾個問題來增強執行callback的被信任程度
@@ -46,8 +46,7 @@ Promise(...)
 
 > 呼叫callback的次數超過一次或者沒呼叫callback
 
-callback適合的執行次數會是1次，而在Promise中，所有被Promise.then綁定的callback，只要該Promise被解析(resolve)，其對應的callback就只會因為Promise.then而被執行一次。
-
+callback適合的執行次數會是1次，而在Promise中，所有經由Promise.then所註冊的callback，只要該Promise被解析(resolve)或者被拒絕(rejected)，其對應的callback就只會因為Promise.then而被執行一次。
 
 但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定
 
@@ -55,7 +54,7 @@ callback適合的執行次數會是1次，而在Promise中，所有被Promise.th
 
 > 沒有傳入任何必要的參數至callback
 
-在Promise中，都會將fulfilled狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定fulfilled狀態或者rejected狀態的內容，就能確保callback能獲取到參數來執行。
+在Promise中，都會將fulfilled狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定fulfilled狀態或者rejected狀態的內容以及讓callback設定成合適形式的引數形式，就能確保callback能獲取到參數來執行。
 
 ### 吞掉callback執行時拋出的錯誤或者例外
 
