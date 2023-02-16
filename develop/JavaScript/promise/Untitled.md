@@ -95,6 +95,7 @@ Status: #🌱
 Tags:
 [[JavaScript]] [[Promise]]
 Links:
+[[由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在]]
 References:
 [[@javascript.infoPromise]]
 [[@PromiseJavaScriptMDN2023]]

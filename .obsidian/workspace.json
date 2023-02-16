@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ff6424552aa57260",
@@ -116,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md"
+                "file": "develop/JavaScript/promise/Untitled.md"
               }
             }
           }
@@ -186,10 +185,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e99d75bcabe9d65a",
+  "active": "9a8585ea311085d6",
   "lastOpenFiles": [
-    "develop/JavaScript/promise/Untitled 3.md",
     "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
+    "develop/JavaScript/promise/Untitled 3.md",
     "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/Untitled 2.md",
     "develop/JavaScript/promise/Untitled 1.md",
