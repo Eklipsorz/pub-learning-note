@@ -1,7 +1,7 @@
 ## 描述
 
 
-
+[[@javascript.infoPromise]]
 
 ```
 let promise = new Promise(function(resolve, reject) {
@@ -24,7 +24,7 @@ let promise = new Promise(function(resolve, reject) {
 
 > So the executor eventually moves `promise` to one of these states:
 
-
+[[@PromiseJavaScriptMDN2023]]
 > A `Promise` is in one of these states:
 
 > -   _pending_: initial state, neither fulfilled nor rejected.
@@ -37,8 +37,8 @@ let promise = new Promise(function(resolve, reject) {
 	- 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
 		- state
 			- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行
-			- fulfilled： 
-			- rejected
+			- fulfilled： promise object 包裝的任務已成功完成執行 
+			- rejected：promise object 包裝的任務執行是失敗的
 		- result：
 	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise
 ```
@@ -61,8 +61,19 @@ function fn(resolve, reject) {
 pending：
 > about to happen or waiting to happen
 
+
+fulfilled：
+> completed or achieved
+
+
+rejected：
+> If you reject something such as a proposal, a request, or an offer, you do not accept it or you do not agree to it.
+
+
 重點：
 - pending：將要發生或者等待發生的
+- fulfilled：已完成/已達成的
+- rejected：描述特定事物無法接受/無法滿足的。
 
 ## 複習
 
@@ -72,3 +83,5 @@ Status: #🌱
 Tags:
 Links:
 References:
+[[@javascript.infoPromise]]
+[[@PromiseJavaScriptMDN2023]]

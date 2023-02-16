@@ -70,7 +70,7 @@ callback適合的執行次數會是1次，而在Promise中，所有經由Promise
 
 
 問題描述：
-當包覆著對應callback的promise object被執行時，若拋出錯誤的話，很有可能會因為該object 未註冊著錯誤處理的callback而未能處理。
+當包覆著對應callback的promise object被執行時，若拋出錯誤的話，promise 會自動將錯誤包裝成rejected狀態的promise來回傳，接著之後的錯誤處理很有可能會因為該object 未註冊著錯誤處理的callback而未能處理。
 
 
 解法：
