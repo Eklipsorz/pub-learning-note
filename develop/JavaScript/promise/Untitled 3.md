@@ -12,8 +12,24 @@ var rejectedPr = Promise.reject('Oops');
 ```
 
 
-Pro
+Promise.resolve(..) 創建一個會解析為所給的值的Promise。在這個例子中，42是一個普通的、非Promise、非thenable的值，所以就為42這個值創建了履行的承諾(fulfilled promise) fulfilledPr。Promise.reject('Oops')為'Oops' 這個理由創建了拒絕的承諾(rejected promise) rejectedPr。
 
+
+現在讓我們說明為何 **resolve** 這個用語 (如Promise.resolve(..) 中所用的) 更加清楚也確實更為精確，如果是明確用在可能產生fulfillment 或者rejection 任一者的情境下的話：
+
+```
+var rejectedTh = {
+	then: function(resolved, rejected) {
+		rejected('Oops');
+	}
+}
+
+var rejectedPr = Promise.resolve(rejectedTh);
+```
+
+如我們在本章前面討論過的，Promise.resolve(..) 會執行回傳所收到的真正Promise，或是解開收到的thenable。如果那個thenable的解開動作揭露出一個被拒絕的狀態，那麼從Promise.resolve(..)回傳的Promise實際上也會是相同的拒絕狀態。
+
+所以Promise.resolve(..)是這個API方法良好且精確的名稱，因為他實際上可能會產生fulfillment或者rejection任一個狀態
 
 ## 複習
 
