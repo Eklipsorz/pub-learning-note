@@ -2,8 +2,8 @@
 
 
 將callback交給非同步任務A來執行的問題：
-- 太早執行callback：callback本身會是同步任務，任務A執行它就任由同步來執行，使callback擷取目前的資訊來執行
-- 太晚執行callback：callback本身會是非同步任務，任務A執行它就任由非同步來執行，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
+- 太早執行callback：若任務A是以同步來執行callback，使callback擷取目前的資訊來執行
+- 太晚執行callback：若任務A是以非同步來執行callback，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
 - 呼叫callback的次數超過一次或者沒呼叫callback
 - 沒有傳入任何必要的參數至callback
 - 吞掉callback執行時拋出的錯誤或者例外：非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理
@@ -13,10 +13,10 @@
 
 ### 太早執行callback
 
-> 太早執行callback：callback本身會是同步任務，任務A執行它就任由同步來執行，使callback擷取目前的資訊來執行
+> 太早執行callback：若任務A是以同步來執行callback，使callback擷取目前的資訊來執行
 
 
-在Promise中，無論callback本身是否為同步，都會因爲Promise.then的緣故全都以非同步來執行callback，換言之，會先等待Promise指定任務完成，接著執行callback
+在Promise中，無論執行callback的方式是否為同步執行，都會因爲Promise.then的緣故全都以非同步來執行callback，換言之，會先等待Promise指定任務完成，接著執行callback
 ```
 Promise(...)
 .then(callback);
@@ -32,9 +32,9 @@ new Promise((resolve, reject) => {
 
 ### 太晚執行callback
 
-> 太晚執行callback：callback本身會是非同步任務，任務A執行它就任由非同步來執行，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。
+> 太晚執行callback：若任務A是以非同步來執行callback，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行
 
-在Promise中，無論callback本身是否為非同步而沒辦法在Promise指定任務完成後的指定時間內執行，都可以藉由promise.then給定的程式碼位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造fulfilled狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
+在Promise中，無論執行callback的方式是否為非同步而沒辦法在Promise指定任務完成後的指定時間內執行，都可以藉由promise.then給定的程式碼位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造fulfilled狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
 ```
 Promise(...)
 .then(callback1, callback1)
@@ -46,10 +46,10 @@ Promise(...)
 
 > 呼叫callback的次數超過一次或者沒呼叫callback
 
-callback適合的執行次數會是1次，而在Promise中，所有被Promise.then綁定的callback，只要該Promise被解析(resolve)，就只會執行一次。
+callback適合的執行次數會是1次，而在Promise中，所有被Promise.then綁定的callback，只要該Promise被解析(resolve)，其對應的callback就只會因為Promise.then而被執行一次。
 
-但不保證callback本身內容是否重複執行callback
 
+但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定
 
 ### 沒有傳入任何必要的參數至callback
 
