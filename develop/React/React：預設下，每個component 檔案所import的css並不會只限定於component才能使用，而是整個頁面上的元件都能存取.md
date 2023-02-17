@@ -91,7 +91,7 @@ CourseInput/CourseInput.css：
 
 
 #🧠 React：預設下，假如有兩個css檔案分別為css1、css2，並同時定義名為.goal-item的selector，請問在css1被特定component載入並使用goal-item，其component會是使用css1的.goal-item嗎？ (記住webpack)->->-> `不一定，主要看webpack如何對CSS、JS、加載如何處理`
-<!--SR:!2023-02-17,86,210-->
+<!--SR:!2023-08-21,185,210-->
 
 #🧠 React：預設下，假如有兩個css檔案分別為css1、css2，並同時定義名為.goal-item的selector，請問在css1被特定component載入並使用goal-item，其component會是使用css1的.goal-item嗎？ ->->-> `不一定，主要看webpack如何對CSS、JS、加載如何處理`
 <!--SR:!2023-08-24,211,246-->

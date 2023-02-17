@@ -59,7 +59,7 @@
 <!--SR:!2023-03-01,16,230-->
 
 #🧠 authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求，具體會是？？ ->->-> `1. 客戶端從伺服器上獲取permission/access：	- 伺服器比對使用者所輸入的credential和資料庫上的credential是否一樣，若一樣就做下一步；若不一樣就不做。- 建立permission token 給予客戶端 2. 客戶端藉由permission/access來向伺服器索求：- 客戶端使用token來發送請求索要所保護的資源。 - 伺服器驗證token是否合法，合法就允許使用；不合法不允許使用`
-<!--SR:!2023-02-17,25,230-->
+<!--SR:!2023-04-18,60,230-->
 
 #🧠 以JWT為主的authentication tokens 通常需要什麼東西才能讓實現？ ->->-> `secret、hashing algorithm `
 <!--SR:!2023-05-01,77,250-->

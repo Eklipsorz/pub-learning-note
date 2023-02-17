@@ -331,7 +331,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
-<!--SR:!2023-02-17,64,250-->
+<!--SR:!2023-07-29,162,250-->
 
 
 
@@ -353,7 +353,7 @@ this is use effect
 <!--SR:!2023-03-11,34,248-->
 
 #🧠 React：useEffect(callback, deps) 若要求callback能夠使用async/await語法，但callback本身不能是async，其替代方案為何 ->->-> `在callback內部定義另一個async function來使用`
-<!--SR:!2023-02-17,17,248-->
+<!--SR:!2023-04-04,46,248-->
 
 
 ---
