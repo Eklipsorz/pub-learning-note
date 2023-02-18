@@ -75,7 +75,7 @@ function App() {
 <!--SR:!2023-02-22,74,250-->
 
 #🧠 react-router-dom v5中：BrowserRouter 是一個component，主要提供client-side routing服務的component，那麼如何使元件們能享用這項服務，使用方式是？(包含載入)->->-> `import { BrowserRouter } from 'react-router-dom';  <BrowserRouter> <Component /> <BrowserRouter />`
-<!--SR:!2023-02-18,72,250-->
+<!--SR:!2023-08-24,186,250-->
 
 
 #🧠 react-router-dom v5中：BrowserRouter 要如何載入？ ->->-> `import { BrowserRouter } from 'react-router-dom'; `
