@@ -133,7 +133,7 @@ virtual adj
 <!--SR:!2023-08-06,194,250-->
 
 #🧠 Virtual DOM是由JS程式模組來打造，那麼其結構會是什麼？詳細說明 ->->-> `	- 主要會以JS物件來對應Real DOM節點 - 其屬性(property)會有對應Real DOM節點會有的資訊，如元素種類、屬性值(attribute)、包含的子節點會有什麼`
-<!--SR:!2023-02-18,37,230-->
+<!--SR:!2023-05-17,87,230-->
 
 #🧠 在ReactJS和瀏覽器這兩者中，誰專門識別並處理Virtual DOM和Real DOM ->->-> `ReactJS負責Virtual DOM；瀏覽器負責Real DOM`
 <!--SR:!2023-05-03,130,250-->
