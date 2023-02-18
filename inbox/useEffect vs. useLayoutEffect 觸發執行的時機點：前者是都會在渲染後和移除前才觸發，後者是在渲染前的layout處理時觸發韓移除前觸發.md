@@ -119,7 +119,7 @@
 
 
 #🧠 useLayoutEffect 在class-based component中觸發執行的時機點為？ ->->-> `在實際DOM節點進行渲染過程中的Layout階段`
-<!--SR:!2023-02-17,63,250-->
+<!--SR:!2023-07-30,163,250-->
 
 
 #🧠 useLayoutEffect 在class-based component中觸發執行的時機點是在實際DOM節點進行渲染過程中的Layout階段，具體是什麼？以生命週期來說 ->->-> `	- mounting 階段下的React Update DOM & refs(在實際DOM節點進行渲染過程中的Layout階段) - updating 階段下的React Update DOM & refs(在實際DOM節點進行渲染過程中的Layout階段) - unmount 階段下的componentWillUnmount`
