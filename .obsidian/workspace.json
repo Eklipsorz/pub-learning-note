@@ -4,60 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "12082b0eacd7542e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "042984295ed7960e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "77c0f2387fc51ae5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "35a7e63588f90b69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a7f9ca845a7bc6f6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bb8f1d3b19c35539",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "5ab4ed2a7707c469",
         "type": "tabs",
         "children": [
@@ -139,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md"
+                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md"
               }
             }
           }
@@ -209,8 +155,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bb8f1d3b19c35539",
+  "active": "bc293d6614a36e04",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
     "develop/React/React：useEffect在面臨連續發送事件觸發或請求的場景下是要取得最後一個請求資訊，那麼勢必得用debouncing才能在減少不必要的浪費下取得最後結果.md",
     "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
@@ -219,7 +166,6 @@
     "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
     "develop/JavaScript/promise/Untitled 3.md",
     "develop/JavaScript/promise/Untitled 2.md",
-    "develop/JavaScript/promise/Untitled 1.md",
-    "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md"
+    "develop/JavaScript/promise/Untitled 1.md"
   ]
 }
