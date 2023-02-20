@@ -217,7 +217,7 @@ this is use effect
 
 
 #🧠 React：useEffect的side effect 在 render 上來說是render執行完畢所應該要有的處理，那麼render和side effect之間的存在關係是什麼？->->-> `有render就會有side effect`
-<!--SR:!2023-02-20,67,250-->
+<!--SR:!2023-08-10,171,250-->
 
 #🧠 React：useEffect 語法是什麼？->->-> `useEffect(callback, [dependencies]`
 <!--SR:!2023-06-06,130,250-->

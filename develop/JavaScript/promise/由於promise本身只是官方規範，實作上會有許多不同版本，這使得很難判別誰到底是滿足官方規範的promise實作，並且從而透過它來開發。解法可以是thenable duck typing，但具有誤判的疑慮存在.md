@@ -71,7 +71,7 @@ if (
 <!--SR:!2023-03-01,9,250-->
 
 #🧠 thenable 在Promise API會是指什麼樣的形容詞？(務必說到then是什麼樣方法) ->->-> `形容詞，描述對象具有then方法，該then實現ES官方規範對於promise的then方法，該then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
-<!--SR:!2023-02-20,3,250-->
+<!--SR:!2023-02-28,8,250-->
 
 #🧠 thenable 在Promise API會是指什麼樣的名詞？(務必說到then是什麼樣方法) ->->-> `名詞，指一種物件介面，該介面擁有then方法，且實現ES官方規範對於promise的then方法，該then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
 <!--SR:!2023-02-28,8,250-->
