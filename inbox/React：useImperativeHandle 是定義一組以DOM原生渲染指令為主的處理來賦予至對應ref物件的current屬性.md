@@ -265,7 +265,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 
 
 #🧠 React：useImperativeHandle 語法的觸發處理時機點？ ->->-> `與useLayoutEffect一樣`
-<!--SR:!2023-02-19,74,250-->
+<!--SR:!2023-09-05,196,250-->
 
 
 #🧠 React：useImperativeHandle(ref, createHandle) 中的createHandler 用來決定渲染指令的函式，會用物件來回傳一組以DOM原生渲染指令為主的處理，請問它如何實現->->-> `直接在對應函式回傳任意形式的內容`

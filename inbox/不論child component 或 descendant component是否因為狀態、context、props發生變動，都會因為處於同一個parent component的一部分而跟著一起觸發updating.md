@@ -137,7 +137,7 @@ export default Wrapper;
 <!--SR:!2023-08-28,200,248-->
 
 #🧠 若parent component是由多個child component 或者由多個descendant component 所組成，當component發生updating時，不論child component/ descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating，其潛在問題是什麼？->->-> `過多實際沒有最新渲染內容的元件(function component)而被呼叫，且這些元件還會讓React去做多餘的diff 算法`
-<!--SR:!2023-02-21,85,248-->
+<!--SR:!2023-09-20,211,248-->
 
 #🧠 parent component帶動其內部的child component來執行，這會有潛在問題-過多實際沒有最新渲染內容的元件(function component)而被呼叫，浪費成本會是什麼？ ->->-> `執行對應元件的成本＋執行diff算法的成本 `
 <!--SR:!2023-03-07,95,248-->

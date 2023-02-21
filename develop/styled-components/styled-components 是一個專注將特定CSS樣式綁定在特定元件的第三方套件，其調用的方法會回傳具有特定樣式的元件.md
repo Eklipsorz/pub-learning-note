@@ -150,7 +150,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-05-19,92,246-->
 
 #🧠 React：若要替styled-component增加attribute，如何增加？請用程式碼來表示必須使component以wrapper形式來增加這概念 ->->-> `<Wrapper attribute1=value1 attribute2=value2 ....> </Wrapper>`
-<!--SR:!2023-02-20,40,246-->
+<!--SR:!2023-06-03,102,246-->
 
 
 ---
