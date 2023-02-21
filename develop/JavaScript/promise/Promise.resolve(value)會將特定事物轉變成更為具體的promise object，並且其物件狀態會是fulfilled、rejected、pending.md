@@ -144,34 +144,47 @@ new Promise((resolve, _) => {
 ## 複習
 
 #🧠 resolve 命名緣由為何？ ->->-> `解析、將特定事物轉換成更為清楚、更為具體的形式`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠  Promise API 的 resolve 意味著什麼？或者說為何取名為resolve？ ->->-> `意味著將指定事物轉變成更為具體、清楚的形式，也就是將指定事物轉變成promise object來包裝其事物的結果物件`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式會是什麼？ ->->-> `	- 具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable - 具有fulfilled狀態的promise object，其結果值會是原本的指定事物 - 具有rejected狀態的promise object，其結果值會是原本的指定事物`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？ ->->-> `但僅僅限定於thenable或者正在處於pending狀態的promise object`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？但僅僅限定於thenable或者正在處於pending狀態的promise object，前者原因為何？ ->->-> `由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending但僅僅限定於thenable或者正在處於pending狀態的promise object`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve(value)中的value 為thenable內容的話，會如何執行thenable？ ->->-> `只有經過resolve執行就會以非同步形式來呼叫thenable的then方法`
+<!--SR:!2023-02-24,3,250-->
 
 
 
 #🧠  Promise API 的 resolve 語法有哪些？ ->->-> `promise.resolve(value)、new Promise((resolve, _) => { /* ... */ resolve(value) })`
+<!--SR:!2023-02-24,3,250-->
 
-#🧠 Promise API 的 resolve 語法會回傳較為具體的promise object，請問其promise object會是哪些？ ->->-> `	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value - value 為thenable的內容，promise.resolve就會回傳pending狀態的promise object。 - value 為promise object的內容，promise.resolve就會直接回傳該promise object`
+#🧠 Promise API 的 resolve(value) 語法會回傳較為具體的promise object，請問其promise object會是哪些？ ->->-> `	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value - value 為thenable的內容，promise.resolve就會回傳pending狀態的promise object。 - value 為promise object的內容，promise.resolve就會直接回傳該promise object`
+<!--SR:!2023-02-24,3,250-->
 
 
 #🧠 Promise API 的 resolve(value)中的value會是哪些 ->->-> `value 為 非thenable的內容或者不為promise object、thenable的內容、promise object的內容`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是非thenable或者不為promise object，會回傳什麼？ ->->-> `promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是thenable，會回傳什麼？  ->->-> `promise.resolve就會回傳pending狀態的promise object`
+<!--SR:!2023-02-24,3,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是promise object，會回傳什麼？->->-> `promise.resolve就會直接回傳該promise object`
+<!--SR:!2023-02-24,3,250-->
 
 
 #🧠 `new Promise((resolve, _) => { /* ... */ resolve(value) }` 中的resolve為何要用resolve來取名，而非fulfilled？  ->->-> `由於其resolve功能本身就是將指定事物轉變成更為具體的事物，其事物可以fulfilled狀態或rejected或pending狀態的promise object，若是fulfilled的話，會無法說明其真正的用途`
+<!--SR:!2023-02-24,3,250-->
 
 
 
