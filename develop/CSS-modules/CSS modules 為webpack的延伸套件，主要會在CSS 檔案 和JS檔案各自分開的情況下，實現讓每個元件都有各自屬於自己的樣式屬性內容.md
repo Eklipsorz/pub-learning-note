@@ -206,7 +206,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1 .class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1.waer324  .class2 => .Button_class2.warewa32 結果為.class1 .class2 {...} => .Button_class1.waer324 .Button_class2.warewa32 {...}`
-<!--SR:!2023-02-21,104,247-->
+<!--SR:!2023-11-05,257,247-->
 
 #🧠 CSS modules 如何防止CSS全域污染問題 ->->-> `主要會讓元件A使用的CSS檔案所擁有的class selector name更名成獨特不重複的，最後再讓元件A使用該CSS檔案下的selector name轉換成更名後的樣子`
 <!--SR:!2023-03-25,100,247-->
