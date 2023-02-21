@@ -49,12 +49,42 @@ rejectedPr.then (
 );
 ```
 
+
+### 語法
+
+[[@PromiseResolveJavaScript2023]]
+> Syntax
+		Promise.resolve(value)
+
+> Parameters
+		value
+			Argument to be resolved by this Promise. Can also be a Promise or a thenable to resolve.
+
+
+>If a non-thenable value is passed, the returned promise is already fulfilled with that value.
+> 
+  If a thenable is passed, the returned promise will adopt the state of that thenable by calling the **"then method"** and passing a pair of resolving functions as arguments.
+
+
 重點：
 - Promise API 的 resolve 意味著將指定事物轉變成更為具體、清楚的形式
 - resolve 所能得到的形式會是以下任一形式：
 	- 具有fulfilled狀態的promise object，其結果值會是原本的指定事物
 	- 具有rejected狀態的promise object，其結果值會是原本的指定事物
-- 
+- 語法為：
+	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value
+	- value 為thenable的內容，就會
+	- value 為promise object的內容，promise.resolve就會直接回傳該promise object
+```
+語法1：
+promise.resolve(value)
+
+語法2：
+new Promise((resolve, _) => {
+	// ...
+	resolve(value)
+})
+```
 
 
 #### resolve 命名緣由
@@ -74,3 +104,4 @@ Tags:
 [[JavaScript]] [[Promise]]
 Links:
 References:
+[[@PromiseResolveJavaScript2023]]
