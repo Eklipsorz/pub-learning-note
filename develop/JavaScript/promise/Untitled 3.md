@@ -49,12 +49,21 @@ rejectedPr.then (
 );
 ```
 
+重點：
+- Promise API 的 resolve 意味著將指定事物轉變成更為具體、清楚的形式
+- resolve 所能得到的形式會是以下任一形式：
+	- 具有fulfilled狀態的promise object，其結果值會是原本的指定事物
+	- 具有rejected狀態的promise object，其結果值會是原本的指定事物
+- 
 
-### 
+
+#### resolve 命名緣由
 
 > If you resolve something into a clearer form, or if it resolves into a clearer form, its shape or the different parts it contains become clear.
 
 
+重點：
+- resolve 會是指將特定事物轉換成更為清楚、更為具體的形式
 
 ## 複習
 
