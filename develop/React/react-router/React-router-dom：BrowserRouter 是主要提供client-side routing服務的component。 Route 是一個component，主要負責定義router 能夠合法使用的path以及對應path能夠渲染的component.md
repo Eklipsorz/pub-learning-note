@@ -106,7 +106,7 @@ function App() {
 
 
 #🧠 react-router-dom v5中：Route 元件要如何被載入？ ->->-> `import { Route } from 'react-router-dom'; `
-<!--SR:!2023-02-21,73,250-->
+<!--SR:!2023-09-01,192,250-->
 
 
 #🧠 下面案例為已經使用BrowserRouter來建立的路徑，請說明該路由系統的那兩個路徑會是什麼意思？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667045564/blog/react/react-router/react-router-example_qbq28a.png): ->->-> ``

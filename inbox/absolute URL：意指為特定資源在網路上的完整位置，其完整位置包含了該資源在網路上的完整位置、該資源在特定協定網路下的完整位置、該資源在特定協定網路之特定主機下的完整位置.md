@@ -83,10 +83,10 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2023-03-22,63,229-->
 
 #🧠 absolute URL：Full URL是什麼？由何種構成？ 格式？ ->->-> `	- 該資源在網路上的完整位置 - 主要由protocol、host、port、path所構成 - 格式：protocol://host:port/path`
-<!--SR:!2023-02-19,70,250-->
+<!--SR:!2023-08-23,183,250-->
 
 #🧠 absolute URL： Implicit protocol對於absolute URL 是什麼？ ->->-> `以暗示方式說明protocol是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路下的完整位置`
-<!--SR:!2023-02-20,71,250-->
+<!--SR:!2023-08-22,182,250-->
 
 #🧠 absolute URL： Implicit protocol 以暗示方式說明protocol是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路下的完整位置，其中指定資源的protocol 是如何決定？->->-> `其中指定資源的protocol會採用目前所在的資源之完整位置所擁有的protocol`
 <!--SR:!2023-05-05,113,250-->
