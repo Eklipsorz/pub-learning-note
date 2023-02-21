@@ -66,6 +66,48 @@ rejectedPr.then (
   If a thenable is passed, the returned promise will adopt the state of that thenable by calling the **"then method"** and passing a pair of resolving functions as arguments.
 
 
+```
+// Resolving a thenable object
+var p1 = Promise.resolve({
+  then: function(onFulfill, onReject) { onFulfill('fulfilled!'); }
+});
+console.log(p1 instanceof Promise) // true, object casted to a Promise
+
+p1.then(function(v) {
+    console.log(v); // "fulfilled!"
+  }, function(e) {
+    // not called
+});
+
+// Thenable throws before callback
+// Promise rejects
+var thenable = { then: function(resolve) {
+  throw new TypeError('Throwing');
+  resolve('Resolving');
+}};
+
+var p2 = Promise.resolve(thenable);
+p2.then(function(v) {
+  // not called
+}, function(e) {
+  console.log(e); // TypeError: Throwing
+});
+
+// Thenable throws after callback
+// Promise resolves
+var thenable = { then: function(resolve) {
+  resolve('Resolving');
+  throw new TypeError('Throwing');
+}};
+
+var p3 = Promise.resolve(thenable);
+p3.then(function(v) {
+  console.log(v); // "Resolving"
+}, function(e) {
+  // not called
+});
+```
+
 重點：
 - Promise API 的 resolve 意味著將指定事物轉變成更為具體、清楚的形式
 - resolve 所能得到的形式會是以下任一形式：
@@ -73,7 +115,7 @@ rejectedPr.then (
 	- 具有rejected狀態的promise object，其結果值會是原本的指定事物
 - 語法為：
 	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value
-	- value 為thenable的內容，就會
+	- value 為thenable的內容，promise.resolve就會回傳pending狀態的promise object。
 	- value 為promise object的內容，promise.resolve就會直接回傳該promise object
 ```
 語法1：
@@ -85,6 +127,8 @@ new Promise((resolve, _) => {
 	resolve(value)
 })
 ```
+
+
 
 
 #### resolve 命名緣由
