@@ -111,7 +111,7 @@ p3.then(function(v) {
 重點：
 - Promise API 的 resolve 意味著將指定事物轉變成更為具體、清楚的形式，也就是將指定事物轉變成promise object來包裝其事物的結果物件
 - resolve 所能得到的形式會是以下任一形式：
-	- 具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable，由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending
+	- 具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable或者正在處於pending狀態的promise object，由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending
 	- 具有fulfilled狀態的promise object，其結果值會是原本的指定事物
 	- 具有rejected狀態的promise object，其結果值會是原本的指定事物
 - 語法為：
@@ -149,7 +149,13 @@ new Promise((resolve, _) => {
 
 #🧠 Promise API 的 resolve 所能得到的形式會是什麼？ ->->-> `	- 具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable - 具有fulfilled狀態的promise object，其結果值會是原本的指定事物 - 具有rejected狀態的promise object，其結果值會是原本的指定事物`
 
-#🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？原因為何 ->->-> `具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable，由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending`
+#🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？ ->->-> `但僅僅限定於thenable或者正在處於pending狀態的promise object`
+
+#🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？但僅僅限定於thenable或者正在處於pending狀態的promise object，前者原因為何？ ->->-> `由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending但僅僅限定於thenable或者正在處於pending狀態的promise object`
+
+#🧠 Promise API 的 resolve(value)中的value 為thenable內容的話，會如何執行thenable？ ->->-> `只有經過resolve執行就會以非同步形式來呼叫thenable的then方法`
+
+
 
 #🧠  Promise API 的 resolve 語法有哪些？ ->->-> `promise.resolve(value)、new Promise((resolve, _) => { /* ... */ resolve(value) })`
 
@@ -160,9 +166,9 @@ new Promise((resolve, _) => {
 
 #🧠 Promise API 的 resolve(value)中的value若是非thenable或者不為promise object，會回傳什麼？ ->->-> `promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value`
 
-#🧠 Promise API 的 resolve(value)中的value若是thenablet，會回傳什麼？  ->->-> `promise.resolve就會回傳pending狀態的promise object`
+#🧠 Promise API 的 resolve(value)中的value若是thenable，會回傳什麼？  ->->-> `promise.resolve就會回傳pending狀態的promise object`
 
-#🧠 Question :: ->->-> `promise.resolve就會直接回傳該promise object`
+#🧠 Promise API 的 resolve(value)中的value若是promise object，會回傳什麼？->->-> `promise.resolve就會直接回傳該promise object`
 
 
 
