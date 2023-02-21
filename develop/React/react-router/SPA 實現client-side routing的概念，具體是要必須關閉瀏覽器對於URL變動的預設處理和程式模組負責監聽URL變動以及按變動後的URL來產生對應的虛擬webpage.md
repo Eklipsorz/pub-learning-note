@@ -32,7 +32,7 @@ npm install react-router-dom
 <!--SR:!2023-08-10,177,250-->
 
 #🧠 Single-Page Application 若要實現Client-Side Routing 的話，具體概念是什麼？？ ->->-> `SPA + routing 本身來說會監聽URL變動，若變動就從客戶端的JS bundle 和 實體webpage檔案來產生對應的虛擬webpage頁面，並於瀏覽器直接呈現，在這裡，客戶端並不會為了URL而索要對應的實體webpage頁面`
-<!--SR:!2023-02-21,20,210-->
+<!--SR:!2023-04-08,46,210-->
 
 #🧠 Single-Page Application 若要實現Client-Side Routing 的話，具體概念是透過JS bundle 和實體webpage檔案來產生對應的虛擬webpage頁面，那麼若要實現的話，得做什麼？講概念就好->->-> `1. 必須關閉瀏覽器對於URL變動的預設處理 2. 要有程式模組負責監聽URL變動以及按變動後的URL來產生對應的虛擬webpage。`
 <!--SR:!2023-08-26,187,250-->

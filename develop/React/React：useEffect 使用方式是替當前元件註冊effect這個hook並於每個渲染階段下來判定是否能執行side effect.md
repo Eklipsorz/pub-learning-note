@@ -297,7 +297,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies)中的dependencies設定成特定內容的話，會如何執行callback  ->->-> `除了只會在元件的mounting階段下直接執行以外，updating階段下觸發，並檢查有任一dependencies是否有變動，有變動就執行，沒變動就不執行。`
-<!--SR:!2023-02-21,68,250-->
+<!--SR:!2023-08-14,174,250-->
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段時？ ->->-> `會無視dependency，直接執行useEffect的cleanup function`
 <!--SR:!2023-07-08,147,250-->
@@ -314,7 +314,7 @@ this is use effect
 <!--SR:!2023-02-24,69,250-->
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
-<!--SR:!2023-02-21,67,250-->
+<!--SR:!2023-08-16,176,250-->
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) dependency 主要是指哪些？ ->->-> `定義著callback所需要的狀態、props、其他代表互動且跟著互動而變動的資料`

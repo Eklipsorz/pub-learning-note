@@ -120,7 +120,7 @@ const Component1 = (props) => {
 
 
 #🧠 useParams  是React 內建hook嗎？還是什麼？ ->->-> `不是內建，而是react-router-dom所提供的自製hook`
-<!--SR:!2023-02-21,71,250-->
+<!--SR:!2023-08-25,185,250-->
 
 #🧠 react-router-dom：useParams是什麼？做什麼？  ->->-> `主要會回傳離它較近的Parent Route所獲取到的URL 參數資訊`
 <!--SR:!2023-04-30,107,249-->

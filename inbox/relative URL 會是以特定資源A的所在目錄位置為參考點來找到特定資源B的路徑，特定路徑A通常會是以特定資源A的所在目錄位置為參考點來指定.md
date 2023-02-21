@@ -74,7 +74,7 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2023-05-31,129,250-->
 
 #🧠 relative URL 對於URL構造來說，其path、protocol、host、port會如何被決定 ->->-> `在這裡除了path以外，其餘的protocol、host、port會和目前存取頁面的路徑擁有的protocol、host、port一樣。`
-<!--SR:!2023-02-20,72,250-->
+<!--SR:!2023-08-30,190,250-->
 
 
 #🧠 relative URL實現方式哪兩種？ ->->-> `直接從當前頁面所在目錄找、以當前頁面所在目錄來位移`
@@ -100,7 +100,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假如目前頁面路徑為path1/path2/file，那麼瀏覽器面對\.\.\/file2和\.\/file2這些路徑會如何找？ ->->-> `假如目前頁面路徑為path1/path2/file，那麼就會以path1/path2為參考點來位移，第一個則是朝著path1這目錄來找到file2，第二個則是以當前目錄所在來找到file2，也就是path2/file2`
-<!--SR:!2023-02-21,72,250-->
+<!--SR:!2023-08-29,189,250-->
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為exampledir/example1，那麼瀏覽器會解析成path1/path2/file/exampledir/example1嗎？ 為什麼？->->-> `並不對，它會看頁面所在的目錄所在，也就是path1/path2，所以當指定路徑為exampledir/example1，那麼就是在path1/path2找到exampledir目錄，然後再從那找到example1，也就是path1/path2/exampledir/example1`
 <!--SR:!2023-02-23,74,250-->

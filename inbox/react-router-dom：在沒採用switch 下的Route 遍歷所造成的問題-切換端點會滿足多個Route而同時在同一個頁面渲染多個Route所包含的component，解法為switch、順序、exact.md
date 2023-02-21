@@ -102,7 +102,7 @@ import { Switch } from 'react-router-dom';
 <!--SR:!2023-02-22,72,250-->
 
 #🧠 react-router-dom： 在沒採用switch 下的Route 遍歷所造成的問題會是什麼？ 與Route本身只會在遍歷完畢才停止有關->->-> `切換端點會滿足多個Route而致使在同一個頁面同時渲染多個Route所包含的component`
-<!--SR:!2023-02-20,70,250-->
+<!--SR:!2023-08-24,184,250-->
 
 #🧠 react-router-dom：上圖是客戶端要切換的端點，下面是目前客戶端所待著的webpage，其中有綁定router元件在那webpage，請問它會遇到什麼樣的問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667393069/blog/react/react-router/Switch-component/react-router-problem-without-switch_kxguyp.png)->->-> `若使用者對著以下端點進行切換的話，會因為會同時滿足第二個Route和第三個Route所設定的path而將Products元件和ProductDetails元件同時在目前webpage顯示`
 <!--SR:!2023-02-25,74,250-->

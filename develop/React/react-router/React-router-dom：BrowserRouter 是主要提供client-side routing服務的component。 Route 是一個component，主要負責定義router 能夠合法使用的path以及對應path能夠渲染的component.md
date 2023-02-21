@@ -98,10 +98,10 @@ function App() {
 <!--SR:!2023-02-22,74,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path 通常是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
-<!--SR:!2023-02-21,73,250-->
+<!--SR:!2023-08-31,191,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path設定為/apple，那react app URL位置為xxxx1.com，那麼URL是什麼才能到/apple所設定的路徑->->-> `xxxx1.com/apple 來看待。`
-<!--SR:!2023-02-21,73,250-->
+<!--SR:!2023-09-01,192,250-->
 
 
 
