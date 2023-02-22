@@ -32,15 +32,16 @@ let promise = new Promise(function(resolve, reject) {
 > -   _rejected_: meaning that the operation failed.
 
 
+
 重點：
-- promise 本身以物件形式來包裝特定任務的執行過程，物件會包含任務內容、其對應執行狀態、其目前執行後的結果：
+- promise 本身以物件形式來包裝特定任務、執行情況、其執行後的結果：
 	- promise object 主要有state、result這兩種屬性
 	- 特定任務可以是以同步執行形式來執行的任務 或者 以非同步執行形式來執行的任務
-	- 狀態會由以下狀態所構成
+	- 狀態主要定義任務執行時的狀況，會由以下狀態所構成
 		- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行
 		- fulfilled： promise object 包裝的任務已成功完成執行 
 		- rejected：promise object 包裝的任務執行是失敗的
-	- 結果值會是：根據promise object的狀態而決定
+	- 結果值會是目前任務執行時的結果：根據promise object的狀態而決定
 		- 若是pending狀態的，就沒結果值
 		- 若是fulfilled狀態，其結果值就為被解析出來的值
 		- 若是rejected狀態，其結果值就為被解析出來的值
@@ -115,8 +116,7 @@ p.catch((reason) => {
 		Returns a new Promise. This new promise is always pending when returned, regardless of the current promise's status. It's eventually rejected if onRejected throws an error or returns a Promise which is itself rejected; otherwise, it's eventually fulfilled.
 
 重點：
-- catch 會是Promise object的方法之一
-- 主要是替Promise object內部定義的任務註冊執行失敗時的事件處理
+- catch 會是Promise object的方法之一，主要是替Promise object內部定義的任務註冊執行失敗時的事件處理
 - 語法為
 	- onRejected：為callback，主要當監聽的Promise object p呈現的狀態是rejected就以非同步任務形式來執行
 	- onRejected 的callback引數為系統攔截到的錯誤訊息物件或者reject方法的引數
@@ -151,6 +151,56 @@ rejected：
 
 ## 複習
 
+#🧠 用語解釋：pending是什麼意思？ ->->-> `將要發生或者等待發生的`
+
+#🧠 用語解釋：fulfilled是什麼意思？ ->->-> `已完成/已達成的`
+
+#🧠 用語解釋：rejected是什麼意思？ ->->-> `描述特定事物無法接受/無法滿足的`
+
+#🧠 Promise API上的promise是什麼？ ->->-> `promise 本身以物件形式來包裝特定任務、執行情況、其執行後的結果`
+
+#🧠  Promise API上的promise object 主要包含什麼屬性？ ->->-> `promise object 主要有state、result這兩種屬性`
+
+#🧠 Promise API上的promise object 主要包含state、result這兩種屬性，這兩個屬性分別是什麼？ ->->-> `狀態主要定義任務執行時的狀況、結果值會是目前任務執行時的結果`
+
+#🧠 Promise API上的promise object 主要包含state、result這兩種屬性，狀態主要定義任務執行時的狀況，會由哪些狀態所構成 ->->-> `- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行 - fulfilled： promise object 包裝的任務已成功完成執行  - rejected：promise object 包裝的任務執行是失敗的`
+
+#🧠 Promise API上的promise object 主要包含state、result這兩種屬性，結果值會是目前任務執行時的結果，其結果會是？  ->->-> `	- 若是pending狀態的，就沒結果值 - 若是fulfilled狀態，其結果值就為被解析出來的值 - 若是rejected狀態，其結果值就為被解析出來的值`
+
+#🧠 promise 的建構式 語法形式會是什麼？ ->->-> ``
+
+#🧠  promise 的建構式 語法形式會是一個callback，其引數為兩個callback，分別為什麼？ ->->-> `resolve：為callback，主要將引數轉變成promise object，其狀態會是pending/fulfilled/rejected、reject：為callback，主要將引數轉變成rejected狀態的promise object`
+
+#🧠 Promise API上的promise object擁有的then方法會是？ ->->-> `then 方法為promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理`
+
+#🧠 Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理會是？->->-> `	- 註冊 **任務執行成功的事件發生時，做些什麼** - 註冊 **任務執行失敗的事件發生時，做些什麼**`
+
+#🧠  Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理若是以**任務執行成功的事件發生時，做些什麼** ，會是如何定義語法？ ->->-> `p.then((value) => { /* fulfillment handler */ })`
+
+
+#🧠  Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理若是以**註冊 **任務執行失敗的事件發生時，做些什麼** ，會是如何定義語法？ ->->-> `p.then((value) => { /* fulfillment handler */ }, (reason) => { .... })`
+
+#🧠 Promise API上的promise object擁有的then語法會是什麼？ ->->-> `p.then(onFulfilled[, onRejected]);`
+
+#🧠 Promise API上的promise object擁有的then語法會是`p.then(onFulfilled[, onRejected]);`，在這裡的onFulfilled和onRejected會是什麼？->->-> ` onFulfilled：為callback，當監聽到的Promise p呈現的狀態為fulfilled時就以非同步任務形式來執行、 onRejected：為callback，當監聽到的Promise p呈現的狀態為rejected時就以非同步任務形式來執行`
+
+#🧠 Promise API上的promise object擁有的then語法會是`p.then(onFulfilled[, onRejected]);`，在這裡的onFulfilled和onRejected為callback，這兩個callback的引數分別會是什麼？ ->->-> ` onFulfilled 和 onRejected 的callback引數分別為：前者為resolved value，後者為系統攔截到的錯誤訊息物件或者reject方法的引數`
+
+#🧠 Promise API上的promise object擁有的then語法回傳什麼？ ->->-> `then方法回傳promise物件`
+
+#🧠 Promise API上的promise object擁有的then語法回傳Promise object，其狀態為何？ ->->-> `其狀態通常會因為event loop的關係而會是pending狀態`
+
+#🧠 Promise API上的promise object擁有的catch 會是什麼？ ->->-> `catch 會是Promise object的方法之一，主要是替Promise object內部定義的任務註冊執行失敗時的事件處理`
+
+#🧠 Promise API上的promise object擁有的catch語法 會是什麼？ ->->-> `p.catch(onRejected)`
+
+#🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是什麼？？ ->->-> `onRejected：為callback，主要當監聽的Promise object p呈現的狀態是rejected就以非同步任務形式來執行`
+
+#🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是callback，其callback的引數會是什麼？？ ->->-> `onRejected 的callback引數為系統攔截到的錯誤訊息物件或者reject方法的引數`
+
+#🧠 Promise API上的promise object擁有的catch會回傳什麼？ ->->-> `回傳內容會是一個Promise object，其狀態會由於event loop的關係而總是pending狀態。`
+
+#🧠 Promise API上的promise object擁有的catch會回傳promise object，其狀態為何？ ->->-> `其狀態會由於event loop的關係而總是pending狀態。`
 
 ---
 Status: #🌱 
