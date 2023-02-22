@@ -154,6 +154,33 @@ p.catch((reason) => {
 ```
 
 
+### then 方法和catch 方法的執行方式
+
+監聽主要的promise object所擁有的狀態來執行，當狀態滿足時，就會以非同步來執行then或者catch所包含的callback
+
+
+#### 案例
+執行順序會是：
+	- 建立Promise object
+	- 執行command1
+	- 執行command2
+	- 建立非同步任務(不執行其任務內容)
+	- 執行command3
+	- 執行command4
+	- 執行callback
+```
+new Promise((resolve, reject) => {
+
+	// command1
+	// command2
+	// create a async task
+	// command3
+})
+.then(callback)
+
+// command4
+```
+
 ### 用語解釋
 
 #### 狀態
