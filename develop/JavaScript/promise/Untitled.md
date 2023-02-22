@@ -34,14 +34,19 @@ let promise = new Promise(function(resolve, reject) {
 
 重點：
 - promise 本身以物件形式來包裝特定任務的執行過程，物件會包含任務內容、其對應執行狀態、其目前執行後的結果：
+	- promise object 主要有state、result這兩種屬性
 	- 特定任務可以是以同步執行形式來執行的任務 或者 以非同步執行形式來執行的任務
 	- 狀態會由以下狀態所構成
 		- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行
 		- fulfilled： promise object 包裝的任務已成功完成執行 
 		- rejected：promise object 包裝的任務執行是失敗的
-- promise 語法形式會是：
-	- resolve：
-	- reject：
+	- 結果值會是：根據promise object的狀態而決定
+		- 若是pending狀態，就沒結果值
+		- 若是fulfilled狀態，其結果值就為
+- promise 的建構式 語法形式會是：
+	- resolve：為callback，主要將引數轉變成promise object，其狀態會是pending/fulfilled/rejected
+	[[Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending]]
+	- reject：為callback，主要將引數轉變成rejected狀態的promise object
 ```
 new Promise((resolve, reject) => {
 	//.....
@@ -96,6 +101,7 @@ Tags:
 [[JavaScript]] [[Promise]]
 Links:
 [[由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在]]
+[[Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending]]
 References:
 [[@javascript.infoPromise]]
 [[@PromiseJavaScriptMDN2023]]

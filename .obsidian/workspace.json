@@ -4,42 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "1269f83713a757ae",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d8c8ecfc4bcf86f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f0f47da27a5f6c06",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1df12f385c97ca75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Untitled 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "b3d4b1f6574b1fc6",
         "type": "tabs",
         "children": [
@@ -49,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,16 +22,16 @@
         ]
       },
       {
-        "id": "7ffd01d4f1d34025",
+        "id": "194243e11c4a98f1",
         "type": "tabs",
         "children": [
           {
-            "id": "e7b4118b4978552e",
+            "id": "27d81ecb6ef32c66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md"
+                "file": "develop/JavaScript/promise/Untitled.md"
               }
             }
           }
@@ -210,17 +174,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e45194a962d4190e",
+  "active": "27d81ecb6ef32c66",
   "lastOpenFiles": [
+    "develop/JavaScript/promise/Untitled 1.md",
     "develop/JavaScript/promise/Untitled 2.md",
+    "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/JavaScript/promise/duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格，風格主要是關注特定事物所具有的行為會做什麼，接著依據行為來判別是否為特定物件型別.md",
     "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md",
     "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由非同步任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
     "develop/JavaScript/promise/Promise 主要解決了callback上的問題： 使用callback來搭配非同步任務會缺乏循序、 缺乏可信任性.md",
-    "develop/JavaScript/promise/Untitled.md",
-    "develop/JavaScript/promise/Untitled 1.md",
-    "inbox/React：表格驗證可以使用多種驗證方式來組合出更為複雜的驗證方式或者打造出按照特定需求來驗證的系統.md"
+    "develop/JavaScript/promise/Untitled.md"
   ]
 }
