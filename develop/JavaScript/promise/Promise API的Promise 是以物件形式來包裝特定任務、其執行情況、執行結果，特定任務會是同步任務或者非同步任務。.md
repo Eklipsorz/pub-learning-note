@@ -169,6 +169,7 @@ p.catch((reason) => {
 	- 執行command2
 	- 建立非同步任務(不執行其任務內容)
 	- 執行command3
+	- 建立一個非同步任務來處理then的callback
 	- 執行command4
 	- 非同步任務執行
 	- 執行callback
@@ -286,14 +287,19 @@ rejected：
 
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-task_cmxcu3.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 執行command4 - 非同步任務執行`
+<!--SR:!2023-02-24,2,249-->
 
-#🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-then-callback-task_a1vrrb.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 執行command4 - 非同步任務執行 - 執行callback`
+#🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-then-callback-task_a1vrrb.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 建立一個非同步任務來處理then的callback - 執行command4 - 非同步任務執行 - 執行callback`
+<!--SR:!2023-02-24,2,249-->
 
 #🧠 只要一當對應promise object一被建立且該object為最一開始被建立的時候，其包裝的任務內容會是如何執行 ->->-> `只要一當對應promise object被建立，其包裝的任務內容會以同步形式來執行，如建立非同步任務(但不會立刻執行其非同步任務)`
+<!--SR:!2023-02-24,2,249-->
 
 #🧠 只要一當對應promise object被建立，其包裝的任務內容會以同步形式來執行，如建立非同步任務(但不會立刻執行其非同步任務)，promise object會限定於什麼條件才會這樣執行包裝的任務內容 ->->-> `這僅僅限定於最一開始被建立的Promise object`
+<!--SR:!2023-02-24,2,249-->
 
 #🧠 Promise API上的then 方法、catch方法的執行方式是如何？->->-> `監聽主要的promise object所擁有的狀態來執行，當狀態滿足時，就會以非同步來執行then或者catch所包含的callback`
+<!--SR:!2023-02-24,2,249-->
 
 
 ---
