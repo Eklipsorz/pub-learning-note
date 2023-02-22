@@ -27,7 +27,7 @@
 ## 複習
 
 #🧠 authentication token / access token 會夾雜在客戶端的請求中，請問具體位置為何？ ->->-> `header 部分、 body 部分、query string部分`
-<!--SR:!2023-02-22,11,230-->
+<!--SR:!2023-03-21,27,230-->
 
 #🧠 authentication token vs. access token 差別？ ->->-> `1. authentication token 泛指夾雜著身分證明資訊的且要求伺服器驗證其身份證明的token2. access token 單純是指代表特定資源之存取權限的資訊，誰擁有它誰就能存取特定資源`
 <!--SR:!2023-02-25,28,229-->

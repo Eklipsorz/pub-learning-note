@@ -72,7 +72,7 @@ function App() {
 <!--SR:!2023-08-06,176,250-->
 
 #🧠 react-router-dom v5中：BrowserRouter 是一個component，主要提供client-side routing服務的component，那麼如何使元件們能享用這項服務 ->->-> `以wrapper component形式來包含後裔元件或者子元件，使他們都能使用client-side routing服務`
-<!--SR:!2023-02-22,74,250-->
+<!--SR:!2023-09-04,194,250-->
 
 #🧠 react-router-dom v5中：BrowserRouter 是一個component，主要提供client-side routing服務的component，那麼如何使元件們能享用這項服務，使用方式是？(包含載入)->->-> `import { BrowserRouter } from 'react-router-dom';  <BrowserRouter> <Component /> <BrowserRouter />`
 <!--SR:!2023-08-24,186,250-->
@@ -95,7 +95,7 @@ function App() {
 
 
 #🧠  react-router-dom v5中：Route 元件的 path 格式是什麼？ ->->-> `path 要註冊的path 端點，格式會是absolute url 或者 relative url，詳細位置會是以瀏覽器的規則來解析決定`
-<!--SR:!2023-02-22,74,250-->
+<!--SR:!2023-09-03,193,250-->
 
 #🧠 react-router-dom v5中：Route 元件的 path 通常是以哪個實際path為主？ ->->-> `其端點以react app所在的實際URL位置為主`
 <!--SR:!2023-08-31,191,250-->
