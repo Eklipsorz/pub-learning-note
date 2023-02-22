@@ -1,6 +1,29 @@
 
 
 
+### Promises chaining
+
+
+由於Promise API本身具有以下特點：
+> 1. Promise 的 then 皆會回傳 Promise object
+> 2. 無論你從then呼叫的callback回傳了什麼值，都會自動被設定成鏈串中的下個Promise之fulfillment所擁有的引數
+
+
+致使可以藉由Promise本身和Promise API提供的then方法，來打造Promise Chain，而這個Chain專門依據特定Promise object的處理結果來進行後續處理，比如：
+- Promise 包裝的任務完成後，就會回傳另一個Promise object1
+- 第一個then會以回傳後的Promise object1來呼叫執行then以及對應callback：解開Promise object包裝的結果值作為callback的引數來處理，接著回傳另一個Promise object2
+- 第二個then會以回傳後的Promise object2來呼叫執行then以及對應callback
+- 後續依此類推
+```
+Promise()
+.then(callback1);
+.then(callback2);
+.then(callback3);
+.
+.
+.then(callbackN);
+```
+
 ### 若chain中出現錯誤或者rejected狀態的promise
 [[@PromisePrototypeThen2022]]
 
@@ -10,9 +33,6 @@
 > onRejected Optional
 		A Function asynchronously called if the Promise is rejected. This function has one parameter, the rejection reason. If it is not a function, it is internally replaced with a thrower function ((x) => { throw x; }) which throws the rejection reason it received.
 
-
-
-自動解開rejected狀態的promise所夾雜的錯誤資訊
 
 > 如果你在一個promise上呼叫 then(..)，而你只傳入一個fulfillment handler給它，它就會以一個預設的rejection handler來替補：
 ```
@@ -32,6 +52,17 @@ var p2 = p.then(
 )
 ```
 > 如你所見，預設的rejection handler 單純只會重新植出那個錯誤，最後迫使p2(鏈串的promise)因為同樣的錯誤而被拒絕。基本上，這讓錯誤能夠持續在一個promise串鏈中傳播，直到遭遇明確定義的rejection handler為止
+
+重點：
+- 若Promsie chain中的任一個Promise中拋出錯誤而構成rejected promise就會依據當前所在Promise來遍歷後續的chain結構，直到找到對應的rejection handler。
+- 具體實現則是依據著：
+	- then 若本身沒設定rejection handler，就會以預設的rejection handler來處理：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來拋出錯誤，然後再經過Promise API轉換成另一個rejected Promise 往下傳遞
+	```
+	// function(error) {
+	//     throw err;ㄈ
+	// }
+	```
+	- 設定專門攔截錯誤的then或者catch接收：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來處理
 
 ### 如果then 方法沒有對應的handler
 
@@ -59,7 +90,10 @@ p.then(
 )
 ```
 
-> 如你所見，這個預設的fullfillment handler 單純ㄏㄨ
+> 如你所見，這個預設的fullfillment handler 單純會把它所接受的任何值往下一個promise傳遞
+
+
+
 ## 描述
 
 ## 複習
