@@ -83,11 +83,16 @@ p.then(function(value) {
 - 語法為：
 	- onFulfilled：為callback，當監聽到的Promise p呈現的狀態為fulfilled時就以非同步任務形式來執行
 	- onRejected：為callback，當監聽到的Promise p呈現的狀態為rejected時就以非同步任務形式來執行
+	- onFulfilled 和 onRejected 的callback引數分別為：前者為resolved value，後者為系統攔截到的錯誤訊息物件或者reject方法的引數
 	- then方法回傳promise物件，其狀態通常會因為event loop的關係而會是pending狀態
 ```
 p.then(onFulfilled[, onRejected]);
-```
 
+p.then(
+  (value) => { /* fulfillment handler */ },
+  (reason) => { /* rejection handler */ },
+)
+```
 
 ### catch 方法
 [[@PromisePrototypeCatch]]
@@ -113,9 +118,14 @@ p.catch((reason) => {
 - catch 會是Promise object的方法之一
 - 主要是替Promise object內部定義的任務註冊執行失敗時的事件處理
 - 語法為
-
+	- onRejected：為callback，主要當監聽的Promise object p呈現的狀態是rejected就以非同步任務形式來執行
+	- onRejected 的callback引數為系統攔截到的錯誤訊息物件或者reject方法的引數
+	- 回傳內容會是一個Promise object，其狀態會由於event loop的關係而總是pending狀態。
 ```
 p.catch(onRejected)
+p.catch((reason) => {
+  // rejection handler
+})
 ```
 
 
