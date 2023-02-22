@@ -102,7 +102,7 @@ function ExpenseItem(props) {
 
 
 #🧠 在這裡按鈕綁定點擊事件的事件處理clickHandler，並且預期是透過點擊事件來變更title的內容，結果能實現嗎？ 為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `結果是點擊後毫無反應，這是因為1. 預設上只有使用對應元件的標籤，才會渲染一次初步畫面，接著就不會做任何重複渲染 2. title 是有變更，只是變更時機都是發生在初步畫面的渲染之後，且預設上不會有任何重複渲染，所以也就沒重新渲染成title內容被變更後的畫面`
-<!--SR:!2023-02-22,119,248-->
+<!--SR:!2023-12-14,295,248-->
 
 
 #🧠 在這裡按鈕綁定點擊事件的事件處理clickHandler，並且預期是透過點擊事件來變更title的內容，結果是不能實現，請問有何解法？ (概念) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660567783/blog/react/event/wrong-example-event-handler_wu8fha.png) ->->-> `解法1： 透過事件處理來擷取該節點，並更改其內容、解法2：先更改內容，然後以內容更改後的畫面來渲染`
