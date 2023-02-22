@@ -41,8 +41,9 @@ let promise = new Promise(function(resolve, reject) {
 		- fulfilled： promise object 包裝的任務已成功完成執行 
 		- rejected：promise object 包裝的任務執行是失敗的
 	- 結果值會是：根據promise object的狀態而決定
-		- 若是pending狀態，就沒結果值
-		- 若是fulfilled狀態，其結果值就為
+		- 若是pending狀態的，就沒結果值
+		- 若是fulfilled狀態，其結果值就為被解析出來的值
+		- 若是rejected狀態，其結果值就為被解析出來的值
 - promise 的建構式 語法形式會是：
 	- resolve：為callback，主要將引數轉變成promise object，其狀態會是pending/fulfilled/rejected
 	[[Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending]]
@@ -53,23 +54,69 @@ new Promise((resolve, reject) => {
 })
 ```
 	
- - 回傳內容為promise object，具有兩種屬性分別為 state 和 result：
-
-		- result：
-	- fn 為夾雜resolve和reject函式物件的函式，其中resolve用以告知目前promise
-```
-new Promise(fn)
-
-function fn(resolve, reject) {
-	// ...
-}
-```
-
 ### then 方法
+[[@PromisePrototypeThen]]
+> Parameters
+		onFulfilled Optional
+			A Function asynchronously called if the Promise is fulfilled. This function has one parameter, the fulfillment value. If it is not a function, it is internally replaced with an identity function ((x) => x) which simply passes the fulfillment value forward.
+
+>		onRejected Optional
+			A Function asynchronously called if the Promise is rejected. This function has one parameter, the rejection reason. If it is not a function, it is internally replaced with a thrower function ((x) => { throw x; }) which throws the rejection reason it received.
+
+
+```
+p.then(onFulfilled[, onRejected]);
+
+p.then(function(value) {
+  // fulfillment
+}, function(reason) {
+  // rejection
+});
+```
+
+> Returns a new Promise immediately. This new promise is always pending when returned, regardless of the current promise's status.
 
 用途：
-- 定義目前promise為fulfilled狀態時 或者 目前 promise 為rejected狀態時 所會做的事情
+- then 方法為promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理：
+	- 註冊 **任務執行成功的事件發生時，做些什麼**
+	- 註冊 **任務執行失敗的事件發生時，做些什麼**
+- 語法為：
+	- onFulfilled：為callback，當監聽到的Promise p呈現的狀態為fulfilled時就以非同步任務形式來執行
+	- onRejected：為callback，當監聽到的Promise p呈現的狀態為rejected時就以非同步任務形式來執行
+	- then方法回傳promise物件，其狀態通常會因為event loop的關係而會是pending狀態
+```
+p.then(onFulfilled[, onRejected]);
+```
 
+
+### catch 方法
+[[@PromisePrototypeCatch]]
+> The catch() method of a Promise object schedules a function to be called when the promise is rejected. 
+
+```
+p.catch(onRejected)
+
+p.catch((reason) => {
+  // rejection handler
+})
+```
+
+
+> Parameters
+		onRejected
+			A Function called when the Promise is rejected. This function has one parameter: the rejection reason.
+
+> Return value
+		Returns a new Promise. This new promise is always pending when returned, regardless of the current promise's status. It's eventually rejected if onRejected throws an error or returns a Promise which is itself rejected; otherwise, it's eventually fulfilled.
+
+重點：
+- catch 會是Promise object的方法之一
+- 主要是替Promise object內部定義的任務註冊執行失敗時的事件處理
+- 語法為
+
+```
+p.catch(onRejected)
+```
 
 
 ### 用語解釋
@@ -105,3 +152,5 @@ Links:
 References:
 [[@javascript.infoPromise]]
 [[@PromiseJavaScriptMDN2023]]
+[[@PromisePrototypeThen]]
+[[@PromisePrototypeCatch]]
