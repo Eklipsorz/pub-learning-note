@@ -172,6 +172,7 @@ rejected：
 #🧠  promise 的建構式 語法形式會是一個callback，其引數為兩個callback，分別為什麼？ ->->-> `resolve：為callback，主要將引數轉變成promise object，其狀態會是pending/fulfilled/rejected、reject：為callback，主要將引數轉變成rejected狀態的promise object`
 
 #🧠 Promise API上的promise object擁有的then方法會是？ ->->-> `then 方法為promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理`
+<!--SR:!2023-02-25,3,250-->
 
 #🧠 Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理會是？->->-> `	- 註冊 **任務執行成功的事件發生時，做些什麼** - 註冊 **任務執行失敗的事件發生時，做些什麼**`
 
@@ -197,6 +198,7 @@ rejected：
 #🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是什麼？？ ->->-> `onRejected：為callback，主要當監聽的Promise object p呈現的狀態是rejected就以非同步任務形式來執行`
 
 #🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是callback，其callback的引數會是什麼？？ ->->-> `onRejected 的callback引數為系統攔截到的錯誤訊息物件或者reject方法的引數`
+<!--SR:!2023-02-25,3,250-->
 
 #🧠 Promise API上的promise object擁有的catch會回傳什麼？ ->->-> `回傳內容會是一個Promise object，其狀態會由於event loop的關係而總是pending狀態。`
 
