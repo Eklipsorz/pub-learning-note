@@ -1,5 +1,5 @@
 
-
+## 描述
 
 ### Promises chaining
 
@@ -8,6 +8,8 @@
 > 1. Promise 的 then 皆會回傳 Promise object
 > 2. 無論你從then呼叫的callback回傳了什麼值，都會自動被設定成鏈串中的下個Promise之fulfillment所擁有的引數
 
+
+Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理
 
 致使可以藉由Promise本身和Promise API提供的then方法，來打造Promise Chain，而這個Chain專門依據特定Promise object的處理結果來進行後續處理，比如：
 - Promise 包裝的任務完成後，就會回傳另一個Promise object1
@@ -55,11 +57,12 @@ var p2 = p.then(
 
 重點：
 - 若Promsie chain中的任一個Promise中拋出錯誤而構成rejected promise就會依據當前所在Promise來遍歷後續的chain結構，直到找到對應的rejection handler。
+- 其目的在於將接收到的Promise object轉遞到promise chain的後續部分
 - 具體實現則是依據著：
 	- then 若本身沒設定rejection handler，就會以預設的rejection handler來處理：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來拋出錯誤，然後再經過Promise API轉換成另一個rejected Promise 往下傳遞
 	```
 	// function(error) {
-	//     throw err;ㄈ
+	//     throw err;
 	// }
 	```
 	- 設定專門攔截錯誤的then或者catch接收：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來處理
@@ -92,16 +95,43 @@ p.then(
 
 > 如你所見，這個預設的fullfillment handler 單純會把它所接受的任何值往下一個promise傳遞
 
+重點：
+- 若Promise API中的then方法並沒有fulfillment handler，那麼就以預設的fulfillment handler來處理：直接將接收到的Promise object，解開其值並重新包裝成fulfilled 狀態的
+- 其目的在於將接收到的Promise object轉遞到promise chain的後續部分
+- Promise object 的 預設fulfillment handler：
+```
+	// function(v) {
+	//    return v
+	// }
+```
 
 
-## 描述
 
 ## 複習
+#🧠 Promise API 的 promise chain 是什麼結構 ->->-> `Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構`
+
+#🧠 Promise API 的Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，用途為何？ ->->-> `定義以主要Promise object的處理結果來進行一系列的後續處理`
+
 #🧠 Question :: ->->-> ``
 
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+#🧠 Question :: ->->-> ``
+
+
+
 ---
-Status: 
+Status: #🌱 
 Tags:
+[[JavaScript]] - [[Promise]]
 Links:
 References:
 [[@PromisePrototypeThen2022]]
