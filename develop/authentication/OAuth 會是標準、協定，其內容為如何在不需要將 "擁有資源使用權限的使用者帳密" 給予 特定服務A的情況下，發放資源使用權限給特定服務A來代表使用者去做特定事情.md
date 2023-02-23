@@ -117,10 +117,10 @@
 <!--SR:!2023-02-24,10,210-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式會是比對Client所提供的aud和scope是否正確，具體會是拿什麼比對？更準確的說，拿什麼比對aud和scope會較為信任 ->->-> `由Resource Server提供Client對於想存取的端點以及對對應端點想做的操作`
-<!--SR:!2023-02-23,24,250-->
+<!--SR:!2023-04-26,62,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，會有什麼用語？ ->->-> `Resource Server、Authorization Server、Client、Resource Owner`
-<!--SR:!2023-02-23,26,250-->
+<!--SR:!2023-05-01,67,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server、Authorization Server、Client、Resource Owner各為什麼意思？ ->->-> `Resource Server：Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token。 Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法  - Client：以發放的Token來向Resource Server索要指定資源 - Client 相對於Resource Server的稱呼- Resource Owner：在Resource Server上實際擁有資源的人`
 <!--SR:!2023-04-08,52,250-->

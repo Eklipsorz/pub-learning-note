@@ -52,7 +52,7 @@
 
 
 #🧠 postprocessor 是指什麼？ ->->-> `若是探討postprocessor的話，會是指特定結果下的後製處理程式，在這裡會是指將程式B的處理結果當作執行程式C的輸入資料，並由程式C來處理最後的結果，而程式C會是指postprocessor`
-<!--SR:!2023-02-23,113,250-->
+<!--SR:!2023-12-03,283,250-->
 
 
 #🧠 CSS preprocessor 是什麼？ ->->-> `CSS preprocessor 是一個程式，能透過preprocessor提供的語法編譯成CSS的程式`

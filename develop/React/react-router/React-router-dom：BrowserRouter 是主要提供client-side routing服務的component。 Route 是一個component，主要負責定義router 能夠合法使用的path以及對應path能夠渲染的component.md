@@ -88,7 +88,7 @@ function App() {
 <!--SR:!2023-08-27,188,250-->
 
 #🧠 react-router-dom v5中：Route 元件如何定義path和對應的component？(包含載入) ->->-> `import { Route } from 'react-router-dom'; return ( <Route path="/xxx1"> <Component1 /> </Route>）`
-<!--SR:!2023-02-23,75,250-->
+<!--SR:!2023-09-08,197,250-->
 
 #🧠 react-router-dom v5中：Route 元件的path 和 Component1是什麼？ ->->-> ` path 要註冊的path 端點和Component1： 指定當客戶端的URL端點為path 時，要渲染的Component是什麼`
 <!--SR:!2023-08-25,186,250-->
@@ -114,7 +114,7 @@ function App() {
 
 
 #🧠 React：component 若要以虛擬webpage來呈現的話，開發者要如何區分？->->-> `將該component放置在/src/pages 或者 /src/screens`
-<!--SR:!2023-02-23,75,250-->
+<!--SR:!2023-09-06,195,250-->
 
 #🧠 React：\/src\/pages 存放什麼？  ->->-> `存放專門擔任對應頁面所對應的虛擬webpage之component`
 <!--SR:!2023-08-14,180,250-->

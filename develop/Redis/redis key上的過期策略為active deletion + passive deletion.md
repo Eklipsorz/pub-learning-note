@@ -89,7 +89,7 @@
 
 
 #🧠 使用著passive deletion和active deletion之後可能存在過期key仍未釋放的情況：解法朝著active deletion的方向，會構成什麼樣的解法(提示：記憶體遲早有一天會被塞爆) ->->-> `記憶體遲早有一天會被塞爆，那麼就從記憶體釋放來淘汰掉一些無法從passive deletion 和 active deletion機制刪掉的key`
-<!--SR:!2023-02-23,160,250-->
+<!--SR:!2024-03-29,400,250-->
 
 
 ---
