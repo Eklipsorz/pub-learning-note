@@ -103,7 +103,7 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2023-08-29,189,250-->
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為exampledir/example1，那麼瀏覽器會解析成path1/path2/file/exampledir/example1嗎？ 為什麼？->->-> `並不對，它會看頁面所在的目錄所在，也就是path1/path2，所以當指定路徑為exampledir/example1，那麼就是在path1/path2找到exampledir目錄，然後再從那找到example1，也就是path1/path2/exampledir/example1`
-<!--SR:!2023-02-23,74,250-->
+<!--SR:!2023-09-05,194,250-->
 
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為../dir1/example1，那麼瀏覽器會解析成path1/path2/dir1/example1嗎？ 為什麼？->->-> `並不對，它看頁面所在的目錄所在，也就是path1/path2，在這裡指定../，那麼就會在path1目錄找到dir1這目錄，然後從那找到example1，整體就是path1/dir1/example1`

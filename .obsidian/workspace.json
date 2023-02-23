@@ -30,19 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "4a70f8d62d58d83d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.15"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "b5b11b62665bac60",
@@ -215,7 +205,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a70f8d62d58d83d",
+  "active": "9b40a2fea56f0128",
   "lastOpenFiles": [
     "develop/JavaScript/promise/Untitled 2.md",
     "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
