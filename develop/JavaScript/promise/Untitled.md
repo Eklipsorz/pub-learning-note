@@ -5,7 +5,7 @@
 **其中被Promise object包含的任務可透過該Promise object所提供的resolve、reject方法** 中的Promise object會是對應先前建立的Promise object所在的記憶體位址
 
 ## 複習
-#🧠 Question :: ->->-> ``
+
 
 ---
 Status: #🌱 
