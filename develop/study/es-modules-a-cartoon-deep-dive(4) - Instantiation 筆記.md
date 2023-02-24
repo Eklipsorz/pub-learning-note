@@ -203,7 +203,7 @@ console.log(testvar1)
 <!--SR:!2023-04-25,116,247-->
 
 #🧠 ES module：一旦建立live bindings，原本是一旦live bindings建立後，importing module就不能修改exporting module所輸出的內容， importing module部分若存取到物件的話，可以修改物件的屬性，為什麼？ ->->-> `若內容會是物件的話，則可以透過參照關係來修改物件本身的內容，由於真正禁止不能修改的記憶體區塊是在stack記憶體區塊`
-<!--SR:!2023-02-24,76,247-->
+<!--SR:!2023-09-09,197,247-->
 
 #🧠 ES module：以下是建立live bindings，請問module2.mjs最後會印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666158493/blog/es-module/live-bindings-example_dxe2qu.png) ->->-> `{ test1: 'test1', test2: 'test1' } { test2: 'test1' }`
 <!--SR:!2023-03-21,93,247-->

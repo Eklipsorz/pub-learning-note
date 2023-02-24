@@ -134,7 +134,7 @@ export default RootLayout;
 
 
 #🧠 當使用者切換至/blog這URL時，會呈現什麼畫面？會遇到nested route對應元件無法正常渲染的問題，如何解決？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672511933/blog/react/react-router/v6/nested-route/outlet-error-example_gcu2ed.png)->->-> `只需要在RootLayout添加Outlet元件來指定就能解決`
-<!--SR:!2023-02-24,31,228-->
+<!--SR:!2023-05-09,74,228-->
 
 
 

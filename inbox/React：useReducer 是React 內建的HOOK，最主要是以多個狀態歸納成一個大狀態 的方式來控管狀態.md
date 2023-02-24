@@ -315,7 +315,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：reducerFn(prevState, action) 中的 prevState和action是什麼引數 ->->-> `prevState 為最近最新狀態的snapshot，其狀態會是指React 層級所管理的，action 則是reducer接收到的action，其action會由dispatchFn所產生`
-<!--SR:!2023-02-24,95,249-->
+<!--SR:!2023-10-19,237,249-->
 
 #🧠 React：reducerFn(prevState, action) 主要回傳什麼？ ->->-> `新狀態`
 <!--SR:!2023-07-05,181,250-->
