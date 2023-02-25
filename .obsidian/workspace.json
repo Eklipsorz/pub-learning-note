@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b37b7495c06175e8",
+        "id": "17275de20729afd6",
         "type": "tabs",
         "children": [
           {
-            "id": "5f33ce341d8093ce",
+            "id": "f1d31433ba24cb7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
+                "file": "develop/JavaScript/promise/Untitled 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
+                "file": "develop/JavaScript/promise/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
+                "file": "develop/JavaScript/promise/Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md"
+                "file": "develop/JavaScript/promise/Untitled 2.md"
               }
             }
           }
@@ -156,13 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f33ce341d8093ce",
+  "active": "f1d31433ba24cb7b",
   "lastOpenFiles": [
     "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
+    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/JavaScript/promise/Untitled 2.md",
     "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
-    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",

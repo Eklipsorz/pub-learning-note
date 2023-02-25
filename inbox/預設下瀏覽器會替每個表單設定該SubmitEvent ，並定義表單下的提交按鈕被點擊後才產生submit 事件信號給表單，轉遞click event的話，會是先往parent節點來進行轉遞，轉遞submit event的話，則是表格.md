@@ -60,7 +60,7 @@ form.dispatchEvent(submitEvent);
 
 
 #🧠 當按鈕發生點擊事件時，按鈕會接收點擊事件信號，接著處理點擊事件處理之後，再轉遞click event 和 submit event 信號，其傳送方向為何？ 畫圖表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668528410/blog/javascript/event/event-flow/form-event/submit-event-propagation_irthgj.png)`
-<!--SR:!2023-02-25,64,250-->
+<!--SR:!2023-08-04,160,250-->
 
 ---
 Status: #🌱 
