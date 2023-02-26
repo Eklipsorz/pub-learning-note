@@ -311,7 +311,7 @@ this is use effect
 <!--SR:!2023-05-18,148,250-->
 
 #🧠 React：useEffect(callback, dependencies)上的callback和dependencies之間的關係是哪個階段才能運作->->-> `updating階段下`
-<!--SR:!2023-02-24,69,250-->
+<!--SR:!2023-08-21,178,250-->
 
 #🧠  React：useEffect(callback, dependencies)在unmount階段沒辦法執行side effect? ->->-> `unmount 階段就沒render，所以也就沒有side effect`
 <!--SR:!2023-08-16,176,250-->

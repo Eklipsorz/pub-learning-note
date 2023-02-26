@@ -137,7 +137,7 @@ break：
 <!--SR:!2023-04-05,128,250-->
 
 #🧠 假設目前暫停在 A 行的 `double`，點擊step-over-next-function call 按鈕後會往哪裡走？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662387052/blog/debugger/browser_debugger_breakpoint_upj2ov.png) ->->-> ` 點擊圖示後會執行 `double` 內的所有程式碼並停在 D 行的 `console.log`。`
-<!--SR:!2023-02-24,105,250-->
+<!--SR:!2023-11-14,263,250-->
 
 
 ---

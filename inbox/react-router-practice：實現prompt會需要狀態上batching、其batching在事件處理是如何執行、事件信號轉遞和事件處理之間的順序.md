@@ -160,7 +160,7 @@ submit
 <!--SR:!2023-07-25,154,250-->
 
 #🧠 React：實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，以下為程式碼 https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/17-preventing-unwanted-route-transitions/src/components/quotes/QuoteForm.js 這主要能實現歸功於? ->->-> `- 每個事件處理都各自處理自己的batching - 每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染 - submit信號傳遞要等到按鈕點擊事件完成後才轉遞`
-<!--SR:!2023-02-24,64,250-->
+<!--SR:!2023-08-10,167,250-->
 
 #🧠 React：每個事件處理都有狀態更新指令或者函式，請問如何執行batching？ ->->-> `首先，每個事件處理都各自處理自己的batching、每個事件處理下的所有狀態更新指令，會等到最後一行執行結束後，就以目前結果狀態來更新狀態和渲染`
 <!--SR:!2023-02-28,67,250-->

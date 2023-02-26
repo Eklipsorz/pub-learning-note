@@ -4,127 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "49bd5a83b7bff90d",
+        "id": "5be4f82415832c25",
         "type": "tabs",
         "children": [
           {
-            "id": "2dbd4717ba4dd8fa",
+            "id": "a198b5028aefa992",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "baf9e0ff6537ec58",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dbc4f7c64df6af2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "6d01e5f2fe08d2c1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "82627a2fbc4f4bf3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "deef4dd079459d84",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5fbe4e1aa9feeec3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "9e40db4e13cf6683",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1c915b496cb889d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ce80513620dbdeea",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1b2b47bd81ecc300",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "46bd3f5f4da8754b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "570d1af3fd8f4b7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -178,7 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 423.5
+    "width": 638.5
   },
   "right": {
     "id": "1b728af4a278cee2",
@@ -194,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -264,17 +148,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "570d1af3fd8f4b7e",
+  "active": "a198b5028aefa992",
   "lastOpenFiles": [
-    "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
+    "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
+    "develop/JavaScript/promise/Untitled 2.md",
+    "inbox/react-router-dom：Router 元件的routing 功能是由Route元件來決定，具體的隸屬關係是Route本身會以最近的parent Router作為定義該Router的Routing功能.md",
+    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
-    "develop/JavaScript/promise/Untitled 2.md",
     "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/authentication/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
     "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
-    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/JavaScript/promise/Untitled 1.md",
     "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md",
     "develop/JavaScript/promise/duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格，風格主要是關注特定事物所具有的行為會做什麼，接著依據行為來判別是否為特定物件型別.md",
