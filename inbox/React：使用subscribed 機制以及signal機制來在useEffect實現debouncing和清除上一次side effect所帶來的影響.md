@@ -211,7 +211,7 @@ AbortController.abort()
 <!--SR:!2023-06-23,138,250-->
 
 #🧠 React useEffect：紀錄非同步任務ID並於cleanup移除指定任務的ID，這方法能完全阻止非同步任務嗎？為什麼？ ->->-> `可以，因可以直接強制中斷`
-<!--SR:!2023-02-27,72,250-->
+<!--SR:!2023-09-02,187,250-->
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體方式是什麼？ ->->-> `使用AbortController API來建立controller 和 signal接收處理物件；將signal 接收處理物件安裝至對應的非同步任務；設定cleanup任務：透過closure來專門對當時建立好的controller發送abort signal給搭載signal接收處理物件來讓它停止執行；設定catch或者try...catch等錯誤攔截`
