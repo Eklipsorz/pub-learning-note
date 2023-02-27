@@ -84,7 +84,7 @@ export default App;
 <!--SR:!2023-06-22,133,250-->
 
 #🧠 react-router-dom：\<Route path=\'\*\'\>\<Component1 \/\> \<\/Route\>中的*做什麼用？->->-> `表示用來攔截任意長度的任意內容，在這裡會是將所有任意URL指定渲染為Component1`
-<!--SR:!2023-02-27,67,250-->
+<!--SR:!2023-08-19,173,250-->
 
 #💻 react-router-v5 請到githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-not-found-page分支，請實現404網頁->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/15-adding-a-notfound-page/src`
 <!--SR:!2023-03-09,74,250-->

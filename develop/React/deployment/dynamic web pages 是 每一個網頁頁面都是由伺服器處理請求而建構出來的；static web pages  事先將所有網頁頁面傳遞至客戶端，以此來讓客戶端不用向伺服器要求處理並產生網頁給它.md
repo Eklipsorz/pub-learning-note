@@ -39,7 +39,7 @@ static web pages
 <!--SR:!2023-05-05,83,250-->
 
 #🧠  static web pages 組成會是? ->->-> `html + browser side JS + CSS`
-<!--SR:!2023-02-27,13,189-->
+<!--SR:!2023-03-24,25,189-->
 
 #🧠 static web pages 適合的伺服器會是什麼 ->->-> `static site host`
 <!--SR:!2023-05-03,83,250-->
