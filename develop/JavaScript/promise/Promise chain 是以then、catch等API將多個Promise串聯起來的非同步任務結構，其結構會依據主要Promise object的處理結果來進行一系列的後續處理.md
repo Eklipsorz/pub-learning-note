@@ -117,13 +117,13 @@ p.then(
 <!--SR:!2023-02-25,3,250-->
 
 #🧠 Promise API 的Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，用途為何？ ->->-> `定義以主要Promise object的處理結果來進行一系列的後續處理`
-<!--SR:!2023-02-25,3,250-->
+<!--SR:!2023-03-09,10,250-->
 
 #🧠 Promise API 的Promise chain範例： Promise().then(callback1).then(callback2)..... 試說明該chain結構的執行方式->->-> `- Promise 包裝的任務完成後，就會回傳另一個Promise object1 - 第一個then會以回傳後的Promise object1來呼叫執行then以及對應callback：解開Promise object包裝的結果值作為callback的引數來處理，接著回傳另一個Promise object2 - 第二個then會以回傳後的Promise object2來呼叫執行then以及對應callback - 後續依此類推`
 <!--SR:!2023-02-25,3,250-->
 
 #🧠 Promise API 的Promise chain：若chain中出現錯誤或者rejected狀態的promise，API會如何處理，以概念來說 ->->-> `若Promsie chain中的任一個Promise中拋出錯誤而構成rejected promise就會依據當前所在Promise來遍歷後續的chain結構，直到找到對應的rejection handler`
-<!--SR:!2023-02-25,3,250-->
+<!--SR:!2023-03-10,11,250-->
 
 #🧠 Promise API 的Promise chain：若chain中出現錯誤或者rejected狀態的promise，會依據當前所在Promise來遍歷後續的chain結構，直到找到對應的rejection handler，其具體實現是依據著什麼？ ->->-> `then 若本身沒設定rejection handler，就會以預設的rejection handler來處理：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來拋出錯誤，然後再經過Promise API轉換成另一個rejected Promise 往下傳遞、設定專門攔截錯誤的then或者catch接收：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來處理`
 <!--SR:!2023-02-25,3,250-->
@@ -135,13 +135,13 @@ p.then(
 <!--SR:!2023-02-25,3,250-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，那麼面對接收到的fulfilled promise會如何做？ ->->-> `若Promise API中的then方法並沒有fulfillment handler，那麼就以預設的fulfillment handler來處理：直接將接收到的Promise object，解開其值並重新包裝成fulfilled 狀態的`
-<!--SR:!2023-02-25,3,250-->
+<!--SR:!2023-03-11,12,250-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，那麼面對接收到的fulfilled promise會如何做？以程式碼來表示 ->->-> `function(v) { return v }`
 <!--SR:!2023-03-10,11,250-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，是以`function(v) { return v }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
-<!--SR:!2023-02-25,3,250-->
+<!--SR:!2023-03-08,9,250-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，是以`function(error) { throw err }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
 <!--SR:!2023-02-25,3,250-->
