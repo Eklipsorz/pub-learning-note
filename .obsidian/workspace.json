@@ -18,28 +18,33 @@
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "a77c7d14471059a7",
+        "type": "tabs",
+        "children": [
           {
-            "id": "92315e5a3b011939",
+            "id": "f0df0527f6d4d68f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/promise/Untitled.md",
+                "file": "inbox/CommonJS 模組如何載入模組.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "b1e2d61e1e2f3c21",
+        "id": "f3cffef0a85c6c58",
         "type": "tabs",
         "children": [
           {
-            "id": "33f74c3dc34a3567",
+            "id": "45b9e75a09d21564",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -205,14 +210,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33f74c3dc34a3567",
+  "active": "45b9e75a09d21564",
   "lastOpenFiles": [
+    "inbox/CommonJS 模組如何載入模組.md",
+    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/JavaScript/promise/Untitled.md",
     "inbox/React：hook.md",
     "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
     "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
     "develop/JavaScript/promise/Untitled 2.md",
-    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
