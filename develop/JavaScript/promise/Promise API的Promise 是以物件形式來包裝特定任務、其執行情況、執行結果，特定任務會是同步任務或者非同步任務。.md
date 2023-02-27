@@ -230,7 +230,7 @@ rejected：
 #🧠 Promise API上的promise object 主要包含state、result這兩種屬性，狀態主要定義任務執行時的狀況，會由哪些狀態所構成 ->->-> `- pending：promise object 原有初始狀態，表示該object包裝的任務正等待執行 - fulfilled： promise object 包裝的任務已成功完成執行  - rejected：promise object 包裝的任務執行是失敗的`
 <!--SR:!2023-02-25,3,250-->
 
-#🧠 Promise API上的promise object 主要包含state、result這兩種屬性，結果值會是目前任務執行時的結果，其結果會是？  ->->-> `	- 若是pending狀態的，就沒結果值 - 若是fulfilled狀態，其結果值就為被解析出來的值 - 若是rejected狀態，其結果值就為被解析出來的值`
+#🧠 Promise API上的promise object 主要包含state、result這兩種屬性，結果值會是目前任務執行時的結果，根據不同狀態下的promise object來說的話，其包含的結果會是？  ->->-> `	- 若是pending狀態的，就沒結果值 - 若是fulfilled狀態，其結果值就為被解析出來的值 - 若是rejected狀態，其結果值就為被解析出來的值`
 <!--SR:!2023-02-25,3,250-->
 
 #🧠 promise 的建構式 語法形式會是什麼？ ->->-> ``
