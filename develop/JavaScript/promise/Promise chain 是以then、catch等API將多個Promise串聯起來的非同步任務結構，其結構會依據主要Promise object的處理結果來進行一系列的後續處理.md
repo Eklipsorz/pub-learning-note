@@ -143,7 +143,7 @@ p.then(
 #🧠 Promise API 的then若沒有fulfillment handler的話，是以`function(v) { return v }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
 <!--SR:!2023-03-08,9,250-->
 
-#🧠 Promise API 的then若沒有fulfillment handler的話，是以`function(error) { throw err }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
+#🧠 Promise API 的then若沒有rejection handler的話，是以`function(error) { throw err }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
 <!--SR:!2023-02-25,3,250-->
 
 
