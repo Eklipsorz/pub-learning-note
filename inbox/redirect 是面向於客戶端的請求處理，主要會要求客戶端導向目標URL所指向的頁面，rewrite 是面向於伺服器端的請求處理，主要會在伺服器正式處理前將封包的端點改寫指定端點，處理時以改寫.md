@@ -62,7 +62,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 
 
 #🧠 redirect 用途是直接導向目標URL 所指向的頁面來發送請求，那具體還會修改什麼跟URL相關的？ ->->-> `會將瀏覽器上所顯示的URL更改成目標URL`
-<!--SR:!2023-02-27,41,230-->
+<!--SR:!2023-06-03,96,230-->
 
 #🧠 rewrite 是面向於什麼的處理->->-> `面向於伺服器的請求處理`
 <!--SR:!2023-07-30,194,250-->
