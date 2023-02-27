@@ -144,7 +144,7 @@ export default Wrapper;
 
 
 #🧠 請說明App元件和它的descendant component在App 元件發生state改變的話，會有什麼狀況![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651202/blog/react/life-cycle/together-update/question1-app-and-descendanent-component_ixumqg.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651202/blog/react/life-cycle/together-update/question1-descendanent-component_cnecsm.png)->->-> `在這裡App.js這個parent component包含了DemoOutput和Button這兩個descendant component，只要當parent component發生updating，parent component內含的descendant component就會跟著觸發渲染來得到對應的Virtual DOM。 其中DemoOutput和Button這兩個descendant component並沒有任何props、context、state的改變而觸發渲染，因而使得這兩個component所對應的real dom 並沒有任何變化`
-<!--SR:!2023-02-25,37,230-->
+<!--SR:!2023-05-25,87,230-->
 
 #🧠 請說明App元件的descendant component會是哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664651202/blog/react/life-cycle/together-update/question1-app-and-descendanent-component_ixumqg.png)->->-> `h1、DemoOutput、Button`
 <!--SR:!2023-08-07,194,250-->

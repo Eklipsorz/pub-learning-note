@@ -259,7 +259,7 @@ rejected：
 <!--SR:!2023-03-08,9,250-->
 
 #🧠 Promise API上的promise object擁有的then語法會是`p.then(onFulfilled[, onRejected]);`，在這裡的onFulfilled和onRejected為callback，這兩個callback的引數分別會是什麼？ ->->-> ` onFulfilled 和 onRejected 的callback引數分別為：前者為resolved value，後者為系統攔截到的錯誤訊息物件或者reject方法的引數`
-<!--SR:!2023-02-25,3,250-->
+<!--SR:!2023-03-09,10,250-->
 
 #🧠 Promise API上的promise object擁有的then語法回傳什麼？ ->->-> `then方法回傳promise物件`
 <!--SR:!2023-03-09,10,250-->
@@ -274,7 +274,7 @@ rejected：
 <!--SR:!2023-03-10,11,250-->
 
 #🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是什麼？？ ->->-> `onRejected：為callback，主要當監聽的Promise object p呈現的狀態是rejected就以非同步任務形式來執行`
-<!--SR:!2023-02-25,3,250-->
+<!--SR:!2023-03-11,12,250-->
 
 #🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是callback，其callback的引數會是什麼？？ ->->-> `onRejected 的callback引數為系統攔截到的錯誤訊息物件或者reject方法的引數`
 <!--SR:!2023-03-09,10,250-->
@@ -282,7 +282,7 @@ rejected：
 #🧠 Promise API上的promise object擁有的catch會回傳什麼？ ->->-> `回傳內容會是一個Promise object，其狀態會由於event loop的關係而總是pending狀態。`
 <!--SR:!2023-03-11,12,250-->
 
-#🧠 Promise API上的promise object擁有的catch會回傳promise object，其狀態為何？ ->->-> `其狀態會由於event loop的關係而總是pending狀態。`
+#🧠 Promise API上的promise object擁有的catch會回傳promise object，當獲取其object時的狀態為何？ ->->-> `其狀態會由於event loop的關係而總是pending狀態。`
 <!--SR:!2023-02-25,3,250-->
 
 

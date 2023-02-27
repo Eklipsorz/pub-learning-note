@@ -96,7 +96,7 @@
 <!--SR:!2023-03-07,71,250-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會採用function會是什麼？回傳什麼？ ->->-> ` location 是指使用者當前要跳轉的頁面位置、 action是指使用者當前對於瀏覽紀錄的操作是什麼。(location, action) => {}，會回傳字串或者true `
-<!--SR:!2023-02-27,66,250-->
+<!--SR:!2023-08-18,172,250-->
 
 #🧠 react-router-dom ：Prompt componet 的屬性主要有什麼，其中message會採用function的話，其回傳內容代表什麼，具體說明 ->->-> `當使用function可以根據使用者對於瀏覽紀錄的操作和位置來定義後續處理，回傳內容正是指定prompt的主體訊息，若為true就允許導向`
 <!--SR:!2023-05-14,110,249-->

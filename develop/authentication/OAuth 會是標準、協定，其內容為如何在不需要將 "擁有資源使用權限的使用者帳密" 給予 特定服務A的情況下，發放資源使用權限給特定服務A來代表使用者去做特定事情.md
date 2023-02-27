@@ -129,7 +129,7 @@
 <!--SR:!2023-03-11,28,230-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會有什麼樣的業務，請說明可能性？ ->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
-<!--SR:!2023-02-26,26,250-->
+<!--SR:!2023-05-04,66,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Resource Server只會管理資源，那麼Resource Server會有什麼樣的業務 ->->-> `esource Server：管理資源、若不能的話就轉遞請求封包上的token至authorization server的伺服器`
 <!--SR:!2023-04-21,59,250-->
@@ -149,7 +149,7 @@
 <!--SR:!2023-03-22,41,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
-<!--SR:!2023-02-26,28,250-->
+<!--SR:!2023-05-12,74,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會負責什麼？ ->->-> `管理資源、轉遞請求封包上的token至authorization server的伺服器`
 <!--SR:!2023-04-24,63,250-->

@@ -157,7 +157,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace用法會是什麼？ ->->-> `history.replace(path)`
-<!--SR:!2023-02-26,67,250-->
+<!--SR:!2023-08-17,171,250-->
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace:  push vs. replace 差別 (有兩個)->->-> `使用stack來調整瀏覽器時，是否可以回到原本的畫面：前者可以；後者不行，由於網址會被取代掉、方式：前者是直接增加網址在最上面；後者則是將網址取代最上面`
 <!--SR:!2023-06-01,122,250-->
