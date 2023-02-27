@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
+                "file": "develop/JavaScript/promise/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md"
+                "file": "develop/JavaScript/promise/Untitled.md"
               }
             }
           }
@@ -187,10 +187,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "01b10f1f66ca9c63",
+  "active": "92315e5a3b011939",
   "lastOpenFiles": [
-    "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
+    "develop/JavaScript/promise/Untitled.md",
     "develop/JavaScript/promise/Untitled 2.md",
     "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
