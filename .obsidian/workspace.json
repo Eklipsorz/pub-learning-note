@@ -4,88 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "89314e602ef706ca",
+        "id": "3477f6777eb7506d",
         "type": "tabs",
         "children": [
           {
-            "id": "149ec3c78ddceb82",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a67376db83124494",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2045e1d841114159",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "66070e56f4c68025",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "39ba9cf76ee06746",
+            "id": "63b55bc9a0d8dc91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "6aac2382026a0a4d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c4c49d620af00ed1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "2b43d304d1076420",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9b539d06834e91bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
                 "mode": "source",
                 "source": false
               }
@@ -160,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 638.5
+    "width": 216.5
   },
   "right": {
     "id": "1b728af4a278cee2",
@@ -176,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md"
+                "file": "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md"
               }
             }
           }
@@ -246,11 +174,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c4c49d620af00ed1",
+  "active": "63b55bc9a0d8dc91",
   "lastOpenFiles": [
+    "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
-    "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "develop/authentication/JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點.md",
     "develop/render/parser blocking 是瀏覽器的HTML內容解析器因特定原因而被其他元件給停止解析，render blocking 是瀏覽器的渲染器元件因特定原因而被其他元件給停止渲染.md",
     "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",

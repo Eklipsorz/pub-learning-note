@@ -101,11 +101,11 @@ end
 #🧠 javascript： 當將function設定為asynchronous  function時，該函式會有什麼功能->->-> `		- 以promise物件來包裝回傳內容 - 允許開發者在函式使用await語法糖`
 <!--SR:!2023-03-27,42,190-->
 
-#🧠 javascript：async function是定義promise 為主的任務之內容嗎？為何？->->-> `並不是，最主要是由promise的建構式來定義內容`
-<!--SR:!2023-03-16,17,226-->
+#🧠 javascript：async function是定義promise 為主的任務之內容嗎？為何？->->-> `並不是，async function主要是以promise object來包裝其函式的回傳內容，而非定義`
+<!--SR:!2023-03-02,2,243-->
 
-#🧠 javascript：promise為主的任務內容誰負責定義？->->-> `會是由promise物件或者promise建構式來定義其內容`
-<!--SR:!2023-02-28,34,246-->
+#🧠 javascript：promise為主的任務內容誰負責定義？->->-> `主要由外部程式來定義其內容或者由開發者定義API下的callback`
+<!--SR:!2023-03-17,17,226-->
 
 
 ---
