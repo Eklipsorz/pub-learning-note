@@ -126,7 +126,7 @@ client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發�
 
 
 #🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容，其中access token的情況下，aud值會是什麼形式以及內容？->->-> `字串，aud值會是指允許能夠讀取JWT的Resource Server之端點，端點會是以路徑字串來表示，而端點又會是client當初註冊使用的Resource Server和其端點的路徑`
-<!--SR:!2023-02-28,28,250-->
+<!--SR:!2023-05-10,71,250-->
 
 #🧠 由於 audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT，該audience claim在ID token 和 access token都有各自的內容，其中ID token的情況下，aud值會是什麼形式以及內容？ ->->-> `字串，aud值會是指token綁定的特定身分所對應的識別字`
 <!--SR:!2023-02-28,19,230-->
