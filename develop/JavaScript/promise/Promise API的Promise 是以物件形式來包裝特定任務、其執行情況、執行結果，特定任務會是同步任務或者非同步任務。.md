@@ -287,7 +287,7 @@ rejected：
 
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-task_cmxcu3.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 執行command4 - 非同步任務執行`
-<!--SR:!2023-02-28,4,249-->
+<!--SR:!2023-03-12,12,249-->
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-then-callback-task_a1vrrb.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 建立一個非同步任務來處理then的callback - 執行command4 - 非同步任務執行 - 執行callback`
 <!--SR:!2023-03-01,5,249-->
