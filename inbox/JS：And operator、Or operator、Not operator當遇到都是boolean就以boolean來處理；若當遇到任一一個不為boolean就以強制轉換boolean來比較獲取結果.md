@@ -72,7 +72,7 @@
 
 
 #🧠  JS： expr1 || expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value ->->-> `expr1  或者 expr2 有任一者為true的話，就expr1 || expr2 結果為true；其餘狀況皆回傳false`
-<!--SR:!2023-03-01,74,250-->
+<!--SR:!2023-09-10,193,250-->
 
 #🧠 JS： expr1 || expr2 會如何處理和回傳？若expr1 和 expr2 這兩者有任一個不為boolean value的話->->-> `- expr1 可經由轉換而判定成true，就會回傳(沒經由&&轉換的版本)expr1 - 否則皆回傳expr2`
 <!--SR:!2023-09-01,186,250-->
