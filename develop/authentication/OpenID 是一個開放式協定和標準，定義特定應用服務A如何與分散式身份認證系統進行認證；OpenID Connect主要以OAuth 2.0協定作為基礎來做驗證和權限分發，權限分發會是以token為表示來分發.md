@@ -124,7 +124,7 @@
 
 
 #🧠 OpenID Connect 角色和OAuth 角色對應會是什麼，如驗證、資源、客戶端 ->->-> `客戶端應用程式：OAuth 為 client；OpenID Connect 為 Replying Party。驗證：OAuth 為 Authorization；OpenID Connect 為 OpenID Provider/OpenID identity Provider。資源則都是Resource Server`
-<!--SR:!2023-03-01,28,250-->
+<!--SR:!2023-05-14,74,250-->
 
 
 

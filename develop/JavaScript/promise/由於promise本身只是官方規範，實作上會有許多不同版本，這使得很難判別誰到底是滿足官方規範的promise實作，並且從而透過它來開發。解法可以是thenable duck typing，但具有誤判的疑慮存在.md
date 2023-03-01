@@ -68,7 +68,7 @@ if (
 ## 複習
 
 #🧠 thenable 在Promise API會是指什麼？ ->->-> `thenable 在這可以是形容詞或者名詞，形容詞，描述對象具有then方法，該then實現ES官方規範對於promise的then方法、名詞，指一種物件介面，該介面擁有then方法，且實現ES官方規範對於promise的then方法`
-<!--SR:!2023-03-01,9,250-->
+<!--SR:!2023-03-22,21,250-->
 
 #🧠 thenable 在Promise API會是指什麼樣的形容詞？(務必說到then是什麼樣方法) ->->-> `形容詞，描述對象具有then方法，該then實現ES官方規範對於promise的then方法，該then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
 <!--SR:!2023-03-20,20,250-->
@@ -77,7 +77,7 @@ if (
 <!--SR:!2023-03-21,21,250-->
 
 #🧠 ES官方規範對於Promise API的then方法會有什麼樣引數 ->->-> `then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
-<!--SR:!2023-03-01,9,250-->
+<!--SR:!2023-03-25,24,250-->
 
 
 #🧠 JS 的 promise 會是統一的版本嗎？為什麼？->->-> `並不是， promise 本身是一個概念，具體實現會有以下幾個版本的promise實作，甚至有不支援promise的瀏覽器：1. 特定瀏覽器所提供的promise 2. 特定函式庫所提供的promise 3. ES6 官方提供的promise`

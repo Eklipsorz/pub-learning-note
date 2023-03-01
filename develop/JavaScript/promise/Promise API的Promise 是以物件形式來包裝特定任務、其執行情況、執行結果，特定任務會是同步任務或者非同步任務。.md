@@ -243,7 +243,7 @@ rejected：
 <!--SR:!2023-03-07,8,250-->
 
 #🧠 Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理會是？->->-> `	- 註冊 **任務執行成功的事件發生時，做些什麼** - 註冊 **任務執行失敗的事件發生時，做些什麼**`
-<!--SR:!2023-03-01,2,230-->
+<!--SR:!2023-03-06,5,230-->
 
 #🧠  Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理若是以**任務執行成功的事件發生時，做些什麼** ，會是如何定義語法？ ->->-> `p.then((value) => { /* fulfillment handler */ })`
 <!--SR:!2023-03-10,11,250-->
@@ -283,23 +283,23 @@ rejected：
 <!--SR:!2023-03-11,12,250-->
 
 #🧠 Promise API上的promise object擁有的catch會回傳promise object，當獲取其object時的狀態為何？ ->->-> `其狀態會由於event loop的關係而總是pending狀態。`
-<!--SR:!2023-03-01,2,230-->
+<!--SR:!2023-03-05,4,230-->
 
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-task_cmxcu3.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 執行command4 - 非同步任務執行`
 <!--SR:!2023-03-12,12,249-->
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-then-callback-task_a1vrrb.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 建立一個非同步任務來處理then的callback - 執行command4 - 非同步任務執行 - 執行callback`
-<!--SR:!2023-03-01,5,249-->
+<!--SR:!2023-03-13,12,249-->
 
 #🧠 只要一當對應promise object一被建立且該object為最一開始被建立的時候，其包裝的任務內容會是如何執行 ->->-> `只要一當對應promise object被建立，其包裝的任務內容會以同步形式來執行，如建立非同步任務(但不會立刻執行其非同步任務)`
 <!--SR:!2023-03-02,6,249-->
 
 #🧠 只要一當對應promise object被建立，其包裝的任務內容會以同步形式來執行，如建立非同步任務(但不會立刻執行其非同步任務)，promise object會限定於什麼條件才會這樣執行包裝的任務內容 ->->-> `這僅僅限定於最一開始被建立的Promise object`
-<!--SR:!2023-03-01,5,249-->
+<!--SR:!2023-03-13,12,249-->
 
 #🧠 Promise API上的then 方法、catch方法的執行方式是如何？->->-> `監聽主要的promise object所擁有的狀態來執行，當狀態滿足時，就會以非同步來執行then或者catch所包含的callback`
-<!--SR:!2023-03-01,5,249-->
+<!--SR:!2023-03-15,14,249-->
 
 
 ---
