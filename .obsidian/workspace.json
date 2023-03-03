@@ -54,19 +54,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "455929d3a566d693",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "05f8659d292127d6",
@@ -221,7 +210,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "455929d3a566d693",
+  "active": "3c592d97c5be3f69",
   "lastOpenFiles": [
     "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
