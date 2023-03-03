@@ -65,7 +65,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 ## 複習
 #🧠  import 'xxxx'且xxxx為JS檔案 使用 是做什麼用的？ ->->-> `這類型import用途會是：import 到的模組會作為產生副作用或者修改主要importing module會用到的資源`
-<!--SR:!2023-03-03,90,230-->
+<!--SR:!2023-10-01,212,230-->
 
 
 #🧠  在React中， import 'xxxx' 使用且xxxx為非JS檔案 是做什麼用的？ ->->-> `告知webpack哪些模組要被處理`

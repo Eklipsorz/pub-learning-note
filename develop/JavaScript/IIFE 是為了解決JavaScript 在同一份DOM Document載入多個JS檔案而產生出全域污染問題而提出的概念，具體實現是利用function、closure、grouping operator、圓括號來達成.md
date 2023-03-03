@@ -281,7 +281,7 @@ a * c + b * c // 9
 
 
 #🧠 Grouping Operator 是什麼樣的運算子，參數是什麼？回傳什麼？ ->->-> `grouping operator 是一種運算子，主要參數為一個expression，形式會是如下，最後回傳的值會是expression`
-<!--SR:!2023-03-02,137,250-->
+<!--SR:!2024-02-13,347,250-->
 
 #🧠  Grouping Operator 用途是什麼？ ->->-> `強制使語法轉換成expression 形式、在混雜其他expression中，會將指定的expression的執行權提高至最高，換言之，優先被解析器邊解析邊執行`
 <!--SR:!2023-05-20,190,250-->
