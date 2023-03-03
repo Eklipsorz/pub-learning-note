@@ -250,11 +250,11 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 在理論上會何時執行? ->->-> `effects 會是在每次render之後被執行`
-<!--SR:!2023-03-02,10,248-->
+<!--SR:!2023-03-31,28,248-->
 <!--SR:!2023-07-21,157,250-->
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect 在理論上會何時執行? ->->-> `effects 會是在每次render之後被執行`
-<!--SR:!2023-03-02,10,248-->
+<!--SR:!2023-03-31,28,248-->
 
 
 #🧠 React：useEffect(callback, dependecies) 產生出來的effect會是在每次render之後被執行，在mounting階段會是做什麼？->->-> `在mounting 階段進行useEffect的hook綁定，並因為render執行完畢會連帶執行side effect，接著將指定dependency事先儲存下來，好做下一次的比較`
@@ -340,7 +340,7 @@ this is use effect
 <!--SR:!2023-07-06,182,250-->
 
 #🧠 React：useEffect(callback, deps) 中的callback回傳的是什麼？會由誰處理？ ->->-> `主要會回傳cleanup function，由React來執行`
-<!--SR:!2023-03-02,73,250-->
+<!--SR:!2023-09-12,193,250-->
 
 
 #🧠  React：useEffect(callback, deps) 中的callback若是asynchronous 的話，會有什麼問題？ ->->-> `會無法正常執行cleanup`
