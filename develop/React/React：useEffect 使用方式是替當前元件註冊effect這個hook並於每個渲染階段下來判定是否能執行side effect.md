@@ -322,7 +322,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\])  的dependencies 是空陣列的話，會是指什麼？ ->->-> `若是空陣列[] 的話，就等同設定永不改變的dependency`
-<!--SR:!2023-03-03,74,250-->
+<!--SR:!2023-09-12,193,250-->
 
 
 

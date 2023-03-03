@@ -114,7 +114,7 @@ render
 <!--SR:!2023-03-06,42,210-->
 
 #🧠 React：useEffect(callback, \[deps\]) 的callback、deps在functional component是按照生命週期函式執行？還是如何？ ->->-> `而callback、deps則是render之後就會執行`
-<!--SR:!2023-03-03,74,250-->
+<!--SR:!2023-09-12,193,250-->
 
 
 #🧠 React：useEffect 本身和useEffect(callback, \[deps\])中的callback、deps之間的執行順序差異為何？ ->->-> `useEffect本身在functional component會是個函式呼叫，執行到就呼叫，而callback、deps則是render之後就會執行。`
