@@ -22,34 +22,16 @@
         ]
       },
       {
-        "id": "643ba9a5cc3cc6f1",
+        "id": "bae2e2f839cb47d6",
         "type": "tabs",
         "children": [
           {
-            "id": "5e35467e7b7d8d50",
+            "id": "bfcbf431e14cf879",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "92ba9f6a0530a092",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3c592d97c5be3f69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md"
+                "file": "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md"
               }
             }
           }
@@ -210,8 +192,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3c592d97c5be3f69",
+  "active": "bfcbf431e14cf879",
   "lastOpenFiles": [
+    "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
     "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
     "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
@@ -236,7 +219,6 @@
     "develop/authentication/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/authentication/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
     "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
-    "develop/JavaScript/promise/Untitled 1.md",
-    "develop/React/React：conditional rendering 是根據執行狀態來調整渲染內容的技術.md"
+    "develop/JavaScript/promise/Untitled 1.md"
   ]
 }
