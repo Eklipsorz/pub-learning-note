@@ -56,7 +56,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 React useCallback 在元件上來說是什麼？(別說用途)  ->->-> `useCallback本身是一個內建Hook，註冊在元件上`
-<!--SR:!2023-03-02,39,230-->
+<!--SR:!2023-06-06,95,230-->
 
 #🧠 React useCallback 的用途為何 ->->-> `最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前記憶體的最新函式物件來回傳`
 <!--SR:!2023-07-18,177,250-->
