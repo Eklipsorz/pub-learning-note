@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "50fbeac551548513",
+        "id": "66c00ec707244436",
         "type": "tabs",
         "children": [
           {
-            "id": "6df568b73a908191",
+            "id": "d643bdb3d15810a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md"
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
               }
             }
           }
@@ -156,12 +156,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6df568b73a908191",
+  "active": "d643bdb3d15810a6",
   "lastOpenFiles": [
+    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
     "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
     "annotation/@IllegalInvocationErrors.md",
-    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
     "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",

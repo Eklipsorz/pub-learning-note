@@ -103,7 +103,7 @@ coupling
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `模組A 單方面存取 模組B 以及 模組B 單方面存取 模組B`
 <!--SR:!2023-03-11,145,250-->
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-Coupling_t2ncqi.png)->->-> `當A去存取B時有可能改變著B的預期結果，而B可能會因預期結果的改變而變更存取 A的方式，使B可能使用錯誤的存取方式來改變著A，甚至A下次執行時存取B會使情況更加惡化。`
-<!--SR:!2023-03-04,140,250-->
+<!--SR:!2024-02-18,351,250-->
 
 #🧠 請問每個模組都由什麼什麼東西來組成？會不會這些基本組成單位就會有coupling問題(提示：程式區塊) ->->-> `由於每一個模組會由許多程式區塊所組成，每個程式區塊都有可能使用另一個模組下的程式區塊或者同一個模組下的程式區塊`
 <!--SR:!2023-05-06,182,250-->
