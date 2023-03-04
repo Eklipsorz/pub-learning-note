@@ -4,88 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "66c00ec707244436",
+        "id": "44ee4f655a781308",
         "type": "tabs",
         "children": [
           {
-            "id": "d643bdb3d15810a6",
+            "id": "1535e375ae8d29f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "d8875f01ebf1fa50",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8a58728a6b665cab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f1f862cdac96942a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2eacf7fa941c2366",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ff34b41c1676d7b9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "06f2a9c0d491d76f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/styled-components/styled-components：在template literal 添加media query.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "c52aa35b2ed6d54a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d5e85191569a91f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/CommonJS 模組如何載入模組.md",
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
+                "file": "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md"
               }
             }
           }
@@ -228,13 +156,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d643bdb3d15810a6",
+  "active": "1535e375ae8d29f4",
   "lastOpenFiles": [
     "inbox/CommonJS 模組如何載入模組.md",
+    "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
+    "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md",
+    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
     "develop/styled-components/styled-components：在template literal 添加media query.md",
     "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md",
-    "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
-    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
     "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "develop/JavaScript/promise/Promise API的Promise 是以物件形式來包裝特定任務、其執行情況、執行結果，特定任務會是同步任務或者非同步任務。.md",
     "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
@@ -254,7 +183,6 @@
     "develop/JavaScript/promise/Untitled.md",
     "inbox/React：hook.md",
     "inbox/RESTful API：端點命名法則通常會因為URI的域名限制而一律使用Spinal Case.md",
-    "develop/JavaScript/promise/Untitled 2.md",
-    "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md"
+    "develop/JavaScript/promise/Untitled 2.md"
   ]
 }

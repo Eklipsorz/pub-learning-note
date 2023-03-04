@@ -87,10 +87,13 @@ Login.js:106 Uncaught TypeError: Illegal invocation
 #🧠 illegal invocation 在 JS的函式呼叫中通常會是什麼問題？ ->->-> `若執行函式呼叫時，代表對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件`
 
 #🧠 illegal invocation 在 JS的函式呼叫中通常會是若執行函式呼叫時，代表對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件，那麼貿然執行會是如何？ ->->-> `若堅持執行會發生預期外的錯誤`
+<!--SR:!2023-03-07,3,250-->
 
 #🧠 請問以下程式碼為何會出現illegal invocation？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677862783/blog/javascript/this-binding/illegal-invocation-function/illegal-invocation-function-problem_u3slap.png)->->-> `由於inputRef.current.focus 的 this 是指向inputRef.current對應的記憶體區塊，但因為被當成函式物件來傳遞其記憶體位址給予focus方法，所以就使focus的method失去原有的this - inputRef.current對應的記憶體區塊`
+<!--SR:!2023-03-07,3,250-->
 
 #🧠 請說明為何以下寫法可以解決focus: inputRef.current.focus所造成的illegal invocation 問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677862782/blog/javascript/this-binding/illegal-invocation-function/illegal-invocation-function-solution_ibtac4.png) ->->-> `由於利用function的closure將focus的this鎖定在inputRef.current，這樣以後給其他元件呼叫時，就固定以該this來執行`
+<!--SR:!2023-03-07,3,250-->
 
 
 #🧠 請問以下程式碼為何會出現illegal invocation？其原因為由於inputRef.current.focus 的 this 是指向inputRef.current對應的記憶體區塊，但因為被當成函式物件來傳遞其記憶體位址給予focus方法，所以就使focus的method失去原有的this - inputRef.current對應的記憶體區塊，所以解法概念為何？具體為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677862783/blog/javascript/this-binding/illegal-invocation-function/illegal-invocation-function-problem_u3slap.png)->->-> `- focus的method失去原有的this - inputRef.current對應的記憶體區塊 解法概念：讓focus的this以inputRef.current對應的記憶體區塊為主。具體做法之一： - 新增一個新的函式呼叫，並在內部定義 函式的closure來將inputRef.current對應至目前元件所對應的記憶體位址 + implicit this bind 來呼叫其focus`
