@@ -31,7 +31,7 @@ Status: #🌱
 Tags:
 [[JavaScript]]
 Links:
-[[shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現]]
+[[shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取]]
 References:
 [[@PolyfillMDNWeb]]
 [[@ianPolyfillShiShiMo2022]]

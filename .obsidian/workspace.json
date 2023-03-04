@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
+                "file": "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
+                "file": "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
+                "file": "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md",
+                "file": "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/shim 是向舊版環境提供新功能的程式代碼，但沒有依據正式公佈的規範來實現.md"
+                "file": "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md"
               }
             }
           }
@@ -173,7 +173,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3dc24bd5d7782a4",
+  "active": "b86b7c2cad1ea966",
   "lastOpenFiles": [
     "annotation/@DianPianChengShiSheJiWeiJiBaiKe.md",
     "annotation/@ShimComputing2023.md",
