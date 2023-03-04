@@ -1,7 +1,7 @@
 
 ## 描述
 
-
+[[@arnoldQuickIntroReact2018]]
 > ### What even is ‘children’?
 
 > The [React docs](https://facebook.github.io/react/docs/composition-vs-inheritance.html) say that you can use `props.children` on components that represent ‘generic boxes’ and that ‘don’t know their children ahead of time’. For me, that didn’t really clear things up. I’m sure for some, that definition makes perfect sense but it didn’t for me.
@@ -46,10 +46,15 @@ const Picture = (props) => {
 
 
 重點：
-- 
+- 特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並且直接將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們
 
 ## 複習
-#🧠 Question :: ->->-> ``
+#🧠  React ：特定元件單獨回傳props.children，在這裏會觸發JSX的語法問題嗎？ ->->-> `並不會，由於他們本身並不會以react element 或者JSX看待它們，而是以placeholder來表示特定元件所包含的內容，等到內容確定就會將內容直接覆蓋`
+<!--SR:!2023-03-07,3,250-->
+
+#🧠 React ：特定元件單獨回傳props.children 會如何被解析 ->->-> `特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並且直接將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們`
+<!--SR:!2023-03-07,3,250-->
+
 
 ---
 Status: #🌱 
@@ -57,3 +62,4 @@ Tags:
 [[React]] - [[JavaScript]]
 Links:
 References:
+[[@arnoldQuickIntroReact2018]]

@@ -40,6 +40,7 @@ return (React.createElement(Wrapper,{}, React.createElemennt('div',{}....)))
 製作empty wrapper component是：
 1. 憑藉著wrapper轉換語法是合法而對應不到DOM節點
 2. wrapper單純包含子節點來回傳所有子節點
+3. [[特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們]]
 
 
 #### 案例
@@ -132,6 +133,9 @@ return (
 #🧠 以下是繼續使用真的wrapper component來解決JSX侷限問題，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816316/blog/react/react-element/wrapper-for-div-hell/div-hell-origin_mcd2hk.png) ->->-> `使用div元件繼續當wrapper component，會在section和card元件之間多一個div![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
 <!--SR:!2023-07-16,194,250-->
 
+#🧠 React：製作empty wrapper component 的成功原因為何？ ->->-> `： 1. 憑藉著wrapper轉換語法是合法而對應不到DOM節點 2. wrapper單純包含子節點來回傳所有子節點 3. 特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們`
+<!--SR:!2023-03-07,3,250-->
+
 
 
 
@@ -141,6 +145,7 @@ Status: #🌱
 Tags:
 [[React]]
 Links:
+[[特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們]]
 [[empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件]]
 [[JSX 侷限一定要有parent element包覆其他元素和最外圍的parent element只能有一個，解法有wrapper element、array]]
 [[React：過度使用wrapper element來解決JSX侷限問題，會產生兩大問題，第一會破壞CSS選擇器所選擇的節點、第二瀏覽器會渲染出不必要出現的HTML元素，甚至會重複渲染]]
