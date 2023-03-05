@@ -220,7 +220,7 @@ function App() {
 #🧠 請使用Fetch API的fetch語法來發送xxx端點，請求封包規格為：post、application/json、主要資料為email、password這兩個資料->->-> `fetch(xxx , { method: 'post', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email: email1, password: password1 }) `
 
 
-#🧠 使用Fetch API 語法的fetch來發送xxx端點，請問fetch(a,b)中的body為何要JSON.stringify ? ->->-> `最主要對方玉ㄕㄜ`
+#🧠 使用Fetch API 語法的fetch來發送xxx端點，請問fetch(a,b)中的body為何要JSON.stringify ? ->->-> `最主要對方預設是以application/json的body格式來接收，但JSON本身仍是物件，無法以字串形式來傳遞，必須將其直接字串化才能傳遞，等到接收到再讓接收方依據JSON來轉換成JSON物件`
 
 
 
