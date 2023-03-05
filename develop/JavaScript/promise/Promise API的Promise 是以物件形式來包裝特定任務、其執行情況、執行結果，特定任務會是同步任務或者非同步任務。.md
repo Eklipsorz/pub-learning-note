@@ -283,7 +283,7 @@ rejected：
 <!--SR:!2023-03-11,12,250-->
 
 #🧠 Promise API上的promise object擁有的catch會回傳promise object，當獲取其object時的狀態為何？ ->->-> `其狀態會由於event loop的關係而總是pending狀態。`
-<!--SR:!2023-03-05,4,230-->
+<!--SR:!2023-03-14,9,230-->
 
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-task_cmxcu3.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 執行command4 - 非同步任務執行`

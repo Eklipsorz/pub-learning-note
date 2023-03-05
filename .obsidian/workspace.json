@@ -52,16 +52,16 @@
         ]
       },
       {
-        "id": "79478715f5438ee7",
+        "id": "8c879b305bf9549a",
         "type": "tabs",
         "children": [
           {
-            "id": "1839891025697f41",
+            "id": "9a6f6921ff431876",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
+                "file": "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
                 "mode": "source",
                 "source": false
               }
@@ -70,16 +70,16 @@
         ]
       },
       {
-        "id": "f6f1705e69a74fd0",
+        "id": "a0143df90faab7a9",
         "type": "tabs",
         "children": [
           {
-            "id": "d9b6760be31c5690",
+            "id": "e034ea6bb59593a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+                "file": "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
+                "file": "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -194,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
+                "file": "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md"
+                "file": "inbox/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md"
               }
             }
           }
@@ -239,10 +239,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1839891025697f41",
+  "active": "e034ea6bb59593a0",
   "lastOpenFiles": [
-    "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+    "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
     "inbox/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
+    "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md",
     "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
     "develop/React/特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們.md",
@@ -265,7 +266,6 @@
     "develop/Stripe/Stripe Payment Intents 是後端伺服器給予付款權利至客戶端，讓它自行決定何時付款.md",
     "develop/Redis/RedisJSON JSONPath 是RedisJSON開發人員所針對JSONPath概念而開發出來的產品.md",
     "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
-    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
-    "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md"
+    "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md"
   ]
 }
