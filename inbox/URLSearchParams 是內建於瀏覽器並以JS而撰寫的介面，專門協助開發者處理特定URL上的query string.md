@@ -72,7 +72,7 @@ get(name)
 <!--SR:!2023-03-09,70,250-->
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
-<!--SR:!2023-03-05,68,250-->
+<!--SR:!2023-08-26,174,250-->
 
 
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`
