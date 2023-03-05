@@ -142,7 +142,7 @@ export default App;
 
 
 #🧠 layout component 開發時會要注意什麼？ ->->-> `盡量讓layout component 本身為可重復性使用的元件`
-<!--SR:!2023-03-05,72,250-->
+<!--SR:!2023-09-08,187,250-->
 
 
 ---
