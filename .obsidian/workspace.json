@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md"
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
               }
             }
           }
@@ -174,10 +174,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce3af64d1b126f9d",
+  "active": "830830c44918d9a8",
   "lastOpenFiles": [
-    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
     "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
     "annotation/@sharpWhatPolyfill2010.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
     "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
