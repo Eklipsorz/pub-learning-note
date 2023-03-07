@@ -103,14 +103,19 @@ new Promise((resolve, reject) => {
 ## 複習
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關 ->->-> `太早執行callback、太晚執行callback、呼叫callback的次數超過一次或者沒呼叫callback、沒有傳入任何必要的參數和環境給callback、因callback執行時拋出錯誤而產生預期外的結果`
+<!--SR:!2023-03-10,3,250-->
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中太早執行callback是指什麼？ ->->-> `當執行任務A時，callback是否就跟著任務A的執行而跟著執行？`
+<!--SR:!2023-03-10,3,250-->
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中太晚執行callback是指什麼？->->-> `若任務A是以非同步來執行callback，會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。`
+<!--SR:!2023-03-10,3,250-->
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中沒有傳入任何必要的參數和環境給callback是指什麼？ ->->-> `若callback是以非同步任務來執行，其參數是否會以任務A的執行結果為主並加以處理？`
+<!--SR:!2023-03-10,3,250-->
 
 #🧠  JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中因callback執行時拋出錯誤而產生預期外的結果是指什麼？->->-> `吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo`
+<!--SR:!2023-03-10,3,250-->
 
 
 
