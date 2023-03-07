@@ -243,7 +243,7 @@ rejected：
 <!--SR:!2023-03-29,22,250-->
 
 #🧠 Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理會是？->->-> `	- 註冊 **任務執行成功的事件發生時，做些什麼** - 註冊 **任務執行失敗的事件發生時，做些什麼**`
-<!--SR:!2023-03-06,5,230-->
+<!--SR:!2023-03-20,13,230-->
 
 #🧠  Promise API上的promise object擁有的then方法會是promise object所擁有的方法之一，最主要是替 promise object 所定義的任務內容 註冊對應的事件處理，其事件處理若是以**任務執行成功的事件發生時，做些什麼** ，會是如何定義語法？ ->->-> `p.then((value) => { /* fulfillment handler */ })`
 <!--SR:!2023-03-10,11,250-->

@@ -234,7 +234,7 @@ wrapper
 <!--SR:!2023-07-01,183,250-->
 
 #🧠 React： props.children 會是什麼 ->->-> `- props 會是每個元件對應函式的參數props - 其props.children的children是保留字，會直接指向該元件所包含的內容 -  內容會是多個獨立元件所構成的結構體`
-<!--SR:!2023-03-07,125,250-->
+<!--SR:!2024-01-14,313,250-->
 
 #🧠  React：請說明它使用哪個composition的技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-card_fajbai.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-expense-item_lcxg8f.png)->->-> `使用了containment，在這裡會以Card元件來以標籤包含每一筆消費紀錄(ExpenseItem)的資訊：日期、描述、並且在Card Component 上使用props.children 來找到Card 所包含的多個元件，並放到另一個div 元件上，從React角度來看，會是由Card元件來擁有日期元件、描述元件，並構成混雜其元件的組合物。`
 <!--SR:!2023-06-19,194,250-->

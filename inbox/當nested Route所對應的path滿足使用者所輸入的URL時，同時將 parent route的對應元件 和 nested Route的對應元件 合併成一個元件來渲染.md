@@ -130,7 +130,7 @@ export default RootLayout;
 
 
 #🧠 當使用者切換至/blog這URL時，會呈現什麼畫面？會遇到什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672511933/blog/react/react-router/v6/nested-route/outlet-error-example_gcu2ed.png)->->-> `當使用者切換至/blog這URL，會挑選到身為nested route 的元件來將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染，然而在這裡的parent route所對應的元件是以子元件來渲染剩下nested route所對應的元件，然而他們嚴格來說並不算是children 元件，只是單純以RootLayout為主並用Outlet添加其他元件來渲染。實際上在這裡並未使用Outlet元件來渲染，以至於無法渲染nested route所對應的元件，只有parent route所對應的元件`
-<!--SR:!2023-03-06,41,248-->
+<!--SR:!2023-06-14,99,248-->
 
 
 #🧠 當使用者切換至/blog這URL時，會呈現什麼畫面？會遇到nested route對應元件無法正常渲染的問題，如何解決？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672511933/blog/react/react-router/v6/nested-route/outlet-error-example_gcu2ed.png)->->-> `只需要在RootLayout添加Outlet元件來指定就能解決`
