@@ -200,12 +200,14 @@ function App() {
 <!--SR:!2023-08-24,194,250-->
 
 #🧠 Fetch API 是瀏覽器內建的API，其中發送請求的方法為fetch(a, b)，該方法主要會如何做發送請求&接收回應 ->->-> `主要產生promise為主的非同步任務來做發送請求&接收回應`
+<!--SR:!2023-03-09,2,246-->
 
 
 #🧠 Fetch API中的response object 是什麼？ ->->-> `response 物件本身代表著回應封包`
 
 
 #🧠 Fetch API中的request object 是什麼？->->-> `表示請求封包`
+<!--SR:!2023-03-09,2,246-->
 
 
 #🧠 Fetch API中的fetch方法要如何處理JSON格式的回應封包 ->->-> `針對回應的response object來使用底下的json方法來解析和轉換`

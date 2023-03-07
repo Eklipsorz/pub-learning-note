@@ -6,6 +6,7 @@
       {
         "id": "65c6f76f0b0c57e6",
         "type": "tabs",
+        "dimension": 40,
         "children": [
           {
             "id": "ae721872e752ca1c",
@@ -22,16 +23,17 @@
         ]
       },
       {
-        "id": "3ca8764efeadf85e",
+        "id": "86fd1cdb6e415a6d",
         "type": "tabs",
+        "dimension": 30.149253731343286,
         "children": [
           {
-            "id": "b0df9d26c9adc13d",
+            "id": "830830c44918d9a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,6 +44,7 @@
       {
         "id": "baa36c6d1c92af5b",
         "type": "tabs",
+        "dimension": 29.850746268656717,
         "children": [
           {
             "id": "09780ab3dfc2c348",
@@ -54,21 +57,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c833983b49bd1832",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md"
+                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
               }
             }
           }
@@ -205,11 +195,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae721872e752ca1c",
+  "active": "830830c44918d9a8",
   "lastOpenFiles": [
+    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+    "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
     "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md",
-    "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
     "develop/React/特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們.md",
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
@@ -231,7 +222,6 @@
     "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
     "inbox/CommonJS 模組如何載入模組.md",
     "develop/styled-components/styled-components：在template literal 添加media query.md",
-    "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md",
-    "inbox/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md"
+    "develop/JavaScript/this 關鍵字的歷史是輸入物件的指定屬性至方法、輸入指定物件至方法、不需要載入指定物件至方法，而將其改造成是以指定物件呼叫的方法.md"
   ]
 }
