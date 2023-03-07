@@ -34,7 +34,7 @@ new Promise((resolve, reject) => {
 
 > 太晚執行callback：若任務A是以非同步來執行callback，這會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行
 
-在Promise中，非同步任務的排程會按照then、catch、finally的出現順序來進行，也就是可以藉由promise.then給定的API位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造fulfilled狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
+在Promise中，非同步任務的排程會按照then、catch、finally的出現順序來決定，也就是可以藉由promise.then給定的API位置來由上至下按照位置順序去排程非同步任務callback，如下：Promise會製造fulfilled狀態或者rejected狀態的promise，並且呼叫其promise的then來讓callback1先執行，接著在執行callback2，最後在執行callback3
 ```
 Promise(...)
 .then(callback1, callback1)
@@ -48,7 +48,7 @@ Promise(...)
 
 callback適合的執行次數會是1次，而在Promise中，所有經由Promise.then所註冊的callback，只要該Promise被解析(resolve)或者被拒絕(rejected)，其對應的callback就只會因為Promise.then而被執行一次。
 
-但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定
+但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的任務A來決定
 
 ### 沒有傳入任何必要的參數至callback
 
@@ -116,6 +116,35 @@ new Promise((resolve, reject) => {
 
 #🧠  JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中因callback執行時拋出錯誤而產生預期外的結果是指什麼？->->-> `吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo`
 <!--SR:!2023-03-10,3,250-->
+
+
+#🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太早執行callback?->->-> `在Promise中，callback只要放入Promise API下的then、catch、finally這些語法的話，就會以非同步來執行callback，另外即使Promise指定任務是立即會履行的任務，callback仍以非同步任務型式來被排程去執行。`
+
+#🧠 `new Promise((resolve, reject) => { resolve(10); }).then(callback); ` 請問callback會以何種方式執行？ ->->-> ``
+
+
+#🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太晚執行callback? ->->-> `在Promise中，非同步任務的排程會按照then、catch、finally的出現順序來決定，也就是可以藉由promise.then給定的API位置來由上至下按照位置順序去排程非同步任務callback`
+
+#🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太晚執行callback? 請舉例來說，以三個callback 來說明 ->->-> ``
+
+#🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback?  ->->-> `在Promise中，所有經由Promise.then所註冊的callback，只要該Promise被解析(resolve)或者被拒絕(rejected)，其對應的callback就只會因為Promise.then而被執行一次。`
+
+#🧠 JavaScript：callback本身執行次數在理論上的執行次數會是多少？ ->->-> `1次`
+
+#🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback? 但能夠完全保證嗎？ 其原因為何 ->->-> `不能，但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
