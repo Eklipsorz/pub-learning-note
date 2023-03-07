@@ -111,7 +111,7 @@ URI包含了：
 
 
 #🧠 除了scheme 、Host 以外的內容會分大小寫的原因 ->->-> `剩下則是由主要應用伺服器來決定大小寫而區分`
-<!--SR:!2023-03-06,66,250-->
+<!--SR:!2023-08-18,164,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，那麼格式會是什麼？ ->->-> ` scheme:[//host[:port]][/]path[?query][#fragment]`
 <!--SR:!2023-08-14,164,250-->

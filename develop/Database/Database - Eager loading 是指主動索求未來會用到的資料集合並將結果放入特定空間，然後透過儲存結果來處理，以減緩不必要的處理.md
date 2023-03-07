@@ -125,7 +125,7 @@ console.log('Amount of Sails:', awesomeCaptain.ship.amountOfSails);
 
 
 #🧠 Database：sequelize 如何在find系列操作觸發eager loading ->->-> `添加options.include就能觸發`
-<!--SR:!2023-03-06,165,250-->
+<!--SR:!2024-04-24,414,250-->
 
 #🧠 sequelize find 系列的 include 語法 為何可以觸發eager loading? ->->-> `對應著SQL裡頭的 JOIN查詢，通常該查詢在對應資料庫系統中是以eager loading來處理`
 <!--SR:!2023-03-31,180,250-->
