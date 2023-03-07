@@ -153,7 +153,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-03-30,25,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？ ->->-> `promise object包裝的任務本身會是非同步任務，該任務目前處於被排程且還未被執行，因此處於pending`
-<!--SR:!2023-03-06,10,250-->
+<!--SR:!2023-04-03,27,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？但僅僅限定於thenable或者正在處於pending狀態的promise object，前者原因為何？ ->->-> `由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending但僅僅限定於thenable或者正在處於pending狀態的promise object`
 <!--SR:!2023-03-08,4,230-->

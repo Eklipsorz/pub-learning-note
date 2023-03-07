@@ -175,7 +175,7 @@ xxxx 元件下的路由
 
 
 #🧠  react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含；第二、parent route元件直接包裹nested route元件，並搭配Outlet元件。這兩種方法通常會使用哪種，為什麼  ->->-> `通常會選擇第二種，由於可以將路由設定集中在同一個檔案，比較容易維護`
-<!--SR:!2023-03-06,58,250-->
+<!--SR:!2023-07-26,141,250-->
 
 #🧠 react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含，語法會是什麼？ ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_ryhana.png)`
 <!--SR:!2023-03-30,74,250-->
