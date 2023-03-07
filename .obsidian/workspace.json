@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "86fd1cdb6e415a6d",
+        "id": "4dbaa4b9a382e56c",
         "type": "tabs",
         "children": [
           {
-            "id": "830830c44918d9a8",
+            "id": "0b62bb453cff2293",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "97f45cc69bdcc880",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ce3af64d1b126f9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+                "file": "develop/JavaScript/promise/Untitled 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
+                "file": "develop/JavaScript/promise/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
+                "file": "develop/JavaScript/promise/Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
+                "file": "develop/JavaScript/promise/Untitled 2.md"
               }
             }
           }
@@ -174,10 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "830830c44918d9a8",
+  "active": "0b62bb453cff2293",
   "lastOpenFiles": [
-    "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
+    "develop/JavaScript/promise/Untitled 1.md",
+    "develop/JavaScript/promise/Untitled 2.md",
+    "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
     "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md",
+    "develop/React/react-router/quote-practice/react-router-practice：製作MainNavigation以及對應Layout Component來放置畫面上的頂部區塊.md",
     "annotation/@sharpWhatPolyfill2010.md",
     "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
     "inbox/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
@@ -198,9 +183,6 @@
     "inbox/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
     "inbox/React Fragment 是指某塊完整物品的一小部分，在這裡指的是分組，會將多個子節點納入成同一組，並且與其他節點合併起來。.md",
     "annotation/@DianPianChengShiSheJiWeiJiBaiKe.md",
-    "annotation/@ShimComputing2023.md",
-    "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
-    "develop/React/deployment/dynamic web pages 是 每一個網頁頁面都是由伺服器處理請求而建構出來的；static web pages  事先將所有網頁頁面傳遞至客戶端，以此來讓客戶端不用向伺服器要求處理並產生網頁給它.md",
-    "inbox/CommonJS 模組如何載入模組.md"
+    "annotation/@ShimComputing2023.md"
   ]
 }
