@@ -117,7 +117,7 @@ verb
 <!--SR:!2023-08-06,194,250-->
 
 #🧠 Virtual DOM 中的 patch algorithm是什麼？ ->->-> `將差異轉換成對應Real DOM來更新DOM Tree的算法`
-<!--SR:!2023-03-06,95,249-->
+<!--SR:!2023-10-31,238,249-->
 
 
 #🧠 Virtual DOM 中的 patch algorithm用途是什麼？->->-> `將diff algorithm得到的差異搭配特定模組對應Real DOM來更新Tree`
