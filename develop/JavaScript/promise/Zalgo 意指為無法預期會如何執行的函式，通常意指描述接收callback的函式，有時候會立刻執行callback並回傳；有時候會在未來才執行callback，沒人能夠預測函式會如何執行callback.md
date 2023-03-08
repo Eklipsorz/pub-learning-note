@@ -51,7 +51,7 @@ a++;
 
 
 #🧠 請問result各以非同步執行和同步執行，兩者能夠印出的a會是什麼？各為1和0，為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674746837/blog/javascript/promise/Zalgo/zalgo-example_vame9u.png) ->->-> `主要非同步執行的話，任務排程會被放進queue等待callstack執行完畢才執行，所以會比較晚執行，至少會是在a++做完之後才有辦法輪到它執行；同步執行的話，會直接執行callback，而直接取得a=0來印出。`
-<!--SR:!2023-03-08,26,250-->
+<!--SR:!2023-05-14,67,250-->
 
 
 ---
