@@ -182,7 +182,7 @@ export default NewQuote;
 
 
 #💻 請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-programmatic-navigation分支，在那請以programmatic navigation來實作成功提交新增quote會有的導向 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/16-implementing-programmatic-navigation`
-<!--SR:!2023-03-09,74,250-->
+<!--SR:!2023-09-19,194,250-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是什麼型別？ ->->-> `字串、物件`
 <!--SR:!2023-03-21,63,230-->
