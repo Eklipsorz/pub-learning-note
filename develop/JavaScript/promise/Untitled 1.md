@@ -10,7 +10,7 @@
 
 原本在Promise時代之前，呼叫端所定義的程式碼會由呼叫端來決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。
 
-promise 面對inversion of control 問題之概念：
+promise 面對inversion of control 問題之概念 或者uninversion：
 - promise概念為將inversion of control的概念在進行inverse，讓呼叫端主導callback的執行控制
 - 原本實作前：
 	- 呼叫端委派callback給指定任務來執行，不等任務完成
