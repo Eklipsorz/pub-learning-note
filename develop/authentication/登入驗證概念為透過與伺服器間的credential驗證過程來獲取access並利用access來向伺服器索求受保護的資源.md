@@ -126,7 +126,7 @@
 <!--SR:!2023-01-26,18,250-->
 
 #🧠  authentication的access/permission產生：使用固定字串的回應、 server-side session中的session id、authentication token中的token，哪一個能解決若代表permission資料被其他惡意主機奪走？為何能解決？->->-> `都沒有，這些最主要面向於前端所儲存的資訊是否被人惡意竄改成其他人。`
-<!--SR:!2023-03-09,44,250-->
+<!--SR:!2023-06-28,111,250-->
 
 
 

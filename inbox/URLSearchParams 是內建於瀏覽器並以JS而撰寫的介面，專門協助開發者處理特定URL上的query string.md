@@ -69,7 +69,7 @@ get(name)
 <!--SR:!2023-09-02,179,250-->
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，回傳會是什麼？ ->->-> `回傳query string 物件`
-<!--SR:!2023-03-09,70,250-->
+<!--SR:!2023-09-08,183,250-->
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
 <!--SR:!2023-08-26,174,250-->
