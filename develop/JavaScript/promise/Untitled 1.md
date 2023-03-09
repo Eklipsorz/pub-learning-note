@@ -2,7 +2,6 @@
 
 
 
-
 ### promise 所給予的inversion施加在inversion of control
 
 
