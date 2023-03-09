@@ -98,7 +98,7 @@
 <!--SR:!2023-06-10,200,249-->
 
 #🧠 Lua 是直譯語言？還是編譯語言？->->-> `Lua 不是傳統的直譯語言，擁有編譯、直譯特性的直譯語言，主要有： - 先將Lua語法轉換成ByteCode，接著從ByteCode解析執行 - 執行前先將Lua語法轉換成ByteCode，然後執行時丟進Lua 虛擬機邊解析邊執行 - 直接以Lua語法來邊解析邊執行 - 先將Lua語法轉換成ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行`
-<!--SR:!2023-03-08,57,230-->
+<!--SR:!2023-07-19,132,230-->
 
 
 #🧠 假設正式執行前不先將Lua編譯成ByteCode且想以ByteCode來執行，那麼具體來說是如何編譯和執行 ->->-> ` 當偵測到Lua語法時，就會先將Lua原始碼編譯成ByteCode，並放入宿主環境下的記憶體或者緩存，接著以緩存或者記憶體的ByteCode，並將儲存在宿主環境之記憶體或者快取中的ByteCode丟進虛擬機邊解析成機械碼邊執行![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1657555608/blog/compilation/LuaCode-ByteCode-Execute_znwxg0.png)`
@@ -131,7 +131,7 @@
  
 
 #🧠 Lua 虛擬機是做什麼？ 若考量到JIT Compiler的話->->-> `在事先先將Lua轉換成ByteCode的情況下，會根據執行情況來編譯成較為有效率的machine code`
-<!--SR:!2023-03-08,42,224-->
+<!--SR:!2023-03-30,21,204-->
 
 
 
@@ -153,7 +153,7 @@
 #🧠 先將Lua語法轉換至ByteCode，接著再透過compiler從ByteCode轉換成機械碼來執行，具體來說是如何編譯和執行，時機點為何？ ->->-> `通常整體編譯時機點- 會是要執行Lua Code前就編譯 `
 <!--SR:!2023-08-07,235,249-->
 
- 
+
  
 
 
