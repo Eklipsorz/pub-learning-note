@@ -7,11 +7,17 @@
 
 ### promise 所給予的inversion施加在inversion of control
 
-promise 提供uninversion of control 概念來解決 inversion of control問題：
-- 原本在Promise之前，開發者所定義的程式碼會由開發者來決定何時執行，但在非同步任務和callback處理時，會將callback轉由
-- 概念為將inversion of control的概念在進行inverse，讓呼叫端主導callback的執行控制
-- 原本實作前：呼叫端委派callback給指定非同步任務來執行，並且不等待非同步任務完成
-- 原作實作後：呼叫端等待非同步任務完成，並由自己來執行callback
+
+原本在Promise時代之前，呼叫端所定義的程式碼會由呼叫端來決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。
+
+promise 面對inversion of control 問題之概念：
+- promise概念為將inversion of control的概念在進行inverse，讓呼叫端主導callback的執行控制
+- 原本實作前：
+	- 呼叫端委派callback給指定任務來執行，不等任務完成
+	- 使callback的執行權由任務來決定
+- 原作實作後：
+	- 呼叫端等待任務完成，並由呼叫端來執行callback
+	- 使callback的執行權由呼叫端來決定
 
 
 
