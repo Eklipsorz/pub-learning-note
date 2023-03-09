@@ -158,7 +158,7 @@ function outerFunction() {
 <!--SR:!2023-05-26,106,228-->
 
 #🧠 nested function 是什麼？ ->->-> `是指被另一個函式所包含著的函式`
-<!--SR:!2023-03-09,77,248-->
+<!--SR:!2023-09-22,197,248-->
 
 #🧠  nested function：會是指被另一個函式所包含著的函式function outerFunction() \{  function innerFunction() \{  \} } 哪個才是nested function？為什麼？->->-> `innerFunction正是nested function。`
 <!--SR:!2023-04-10,97,248-->
