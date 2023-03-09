@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/Untitled 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +44,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "develop/OS/虛擬機除了單純模擬實體電腦以外，在程式碼執行層面來說，Virtual Machine 是一種程式模組，主要提供一個平台和獨立語言體系來允許特定程式碼能夠不受到任何平台的解讀限制來被執行.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 8.md",
+                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Untitled 8.md"
+                "file": "inbox/Untitled 6.md"
               }
             }
           }
@@ -187,10 +187,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2fca637a0642cbf6",
+  "active": "a9ee683581611087",
   "lastOpenFiles": [
+    "develop/OS/虛擬機除了單純模擬實體電腦以外，在程式碼執行層面來說，Virtual Machine 是一種程式模組，主要提供一個平台和獨立語言體系來允許特定程式碼能夠不受到任何平台的解讀限制來被執行.md",
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
-    "inbox/Untitled 8.md",
     "annotation/@VmImplementationInterpreters.md",
     "inbox/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
