@@ -70,7 +70,7 @@ export default Quote;
 ## 複習
 
 #💻 請至/react-builder/question-review/react-router-question領取題目並切換成implement-all-pages這個分支，請實現瀏覽所有quote的頁面、瀏覽單個quote的頁面、新增單個quote的頁面，其中第一個會用到QuoteList現成元件、第二個則是會用到HighLightedQuote現成元件(注意若沒有對應quoteId就顯示沒東西)、第三個則是會用到QuoteForm這現成元件，quote資料放在dummy-data.js那 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/13-adding-dummy-data-and-more-content/src/pages`
-<!--SR:!2023-03-10,74,250-->
+<!--SR:!2023-09-20,194,250-->
 
 
 
