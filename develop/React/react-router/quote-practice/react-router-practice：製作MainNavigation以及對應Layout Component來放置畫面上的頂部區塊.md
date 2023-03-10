@@ -85,7 +85,7 @@ export default MainNavigation;
 ## 複習
 
 #💻 請至/react-builder/question-review/react-router-question領取題目並切換成build-navigation分支，在/src/layout製作一個layout component，其component會是具有Great Quote這logo名稱且具有兩個hyperlink，分別為能夠瀏覽所有Quote的頁面和建立一個Quote的頁面之連結，主要會新增Layout、MainNavigation這兩個元件 ->->-> `https://github.com/academind/react-complete-guide-code/tree/20-building-mpas-with-react-router/code/12-adding-a-layout-wrapper`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-20,10,250-->
 
 
 ---
