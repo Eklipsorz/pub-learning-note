@@ -130,7 +130,7 @@ new Promise((resolve, reject) => {
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太晚執行callback? ->->-> `在Promise中，非同步任務的排程會按照then、catch、finally的出現順序來決定，也就是可以藉由promise.then給定的API位置來由上至下按照位置順序去排程非同步任務callback`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-17,7,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太晚執行callback? 請舉例來說，以三個callback 來說明 ->->-> ``
 <!--SR:!2023-03-10,3,250-->
@@ -146,7 +146,7 @@ new Promise((resolve, reject) => {
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-沒有傳入任何必要的參數至callback?  ->->-> `在Promise中，都會將fulfilled狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定fulfilled狀態或者rejected狀態的內容以及讓callback設定成合適形式的引數形式，就能確保callback能獲取到參數來執行。、其次可以利用函式本身的closure來記錄特定時期的記憶體區塊來進行處理`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-19,9,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-因callback執行時拋出錯誤而產生預期外的結果，先以吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理來說 ->->-> `當包覆著對應callback的promise object被執行時，若拋出錯誤的話，promise 會自動將錯誤包裝成rejected狀態的promise來回傳， 註冊方只需要在後頭註冊負責錯誤處理的callback就能解決`
 <!--SR:!2023-03-18,8,250-->

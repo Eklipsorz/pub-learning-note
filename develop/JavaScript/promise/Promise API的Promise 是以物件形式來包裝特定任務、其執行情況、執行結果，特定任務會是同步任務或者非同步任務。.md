@@ -271,7 +271,7 @@ rejected：
 <!--SR:!2023-03-30,23,250-->
 
 #🧠 Promise API上的promise object擁有的catch語法 會是什麼？ ->->-> `p.catch(onRejected)`
-<!--SR:!2023-03-10,11,250-->
+<!--SR:!2023-04-09,30,250-->
 
 #🧠 Promise API上的promise object擁有的catch語法 會是`p.catch(onRejected)`，那麼onRejected會是什麼？？ ->->-> `onRejected：為callback，主要當監聽的Promise object p呈現的狀態是rejected就以非同步任務形式來執行`
 <!--SR:!2023-03-11,12,250-->

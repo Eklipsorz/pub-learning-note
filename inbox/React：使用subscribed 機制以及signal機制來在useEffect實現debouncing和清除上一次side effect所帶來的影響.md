@@ -168,7 +168,7 @@ AbortController.abort()
 <!--SR:!2023-03-16,78,249-->
 
 #🧠 React：請問紀錄非同步任務ID並於cleanup移除指定任務的ID，能實現什麼樣的cleanup?->->-> `清除上一次side effect所帶來的影響、debouncing`
-<!--SR:!2023-03-10,75,249-->
+<!--SR:!2023-09-21,195,249-->
 
 
 #🧠 React：useEffect 要如何實現debouncing和清除上一次side effect所帶來的影響所需的cleanup? 手段有哪些？ ->->-> `紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容、紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal、紀錄非同步任務ID並於cleanup移除指定任務的ID`

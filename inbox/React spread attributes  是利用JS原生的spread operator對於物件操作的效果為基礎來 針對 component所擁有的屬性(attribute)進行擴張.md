@@ -72,7 +72,7 @@ function App2() {
 <!--SR:!2023-07-07,174,250-->
 
 #🧠 原生JS：...object 執行起來會有什麼效果 ->->-> `property1:value1, property2:value2, ....`
-<!--SR:!2023-03-10,77,230-->
+<!--SR:!2023-09-11,185,230-->
 
 
 #🧠 React spread attributes  用法為何？ ->->-> `const property = { propert1: value1, property2: value2 } <Component {...property} />`
