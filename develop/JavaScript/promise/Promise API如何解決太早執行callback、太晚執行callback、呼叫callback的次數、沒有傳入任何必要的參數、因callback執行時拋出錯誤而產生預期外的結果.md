@@ -142,7 +142,7 @@ new Promise((resolve, reject) => {
 <!--SR:!2023-03-10,3,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback? 但能夠完全保證嗎？ 其原因為何 ->->-> `不能，但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-20,10,250-->
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-沒有傳入任何必要的參數至callback?  ->->-> `在Promise中，都會將fulfilled狀態或者rejected狀態的內容當作callback的參數來填入，所以只要設定fulfilled狀態或者rejected狀態的內容以及讓callback設定成合適形式的引數形式，就能確保callback能獲取到參數來執行。、其次可以利用函式本身的closure來記錄特定時期的記憶體區塊來進行處理`
