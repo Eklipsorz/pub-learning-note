@@ -41,7 +41,7 @@ doQuack(dog)**
 	- dynamic typing
 	- static typing
 
-#### type & typing 命名緣由
+#### type & typing  在電腦科學上的命名緣由
 
 [[@TypeSystemWikipedia]]
 > Assigning a data type, termed typing, gives meaning to a sequence of bits such as a value in memory or some object such as a variable. 
@@ -54,10 +54,10 @@ doQuack(dog)**
 
 ## 複習
 
-#🧠 type 命名緣由為何->->-> `type 賦予特定資料型別至一組二進制序列、記憶體內容、內容`
+#🧠 type 在電腦科學上的命名緣由為何？以動詞來說->->-> `type 賦予特定資料型別至一組二進制序列、記憶體內容、內容`
 <!--SR:!2023-03-10,29,250-->
 
-#🧠 typing 命名緣由為何 ->->-> ` typing 則是強調 **賦予型別至特定內容** 的方法或者過程`
+#🧠 typing  在電腦科學上的命名緣由為何  ->->-> ` typing 則是強調 **賦予型別至特定內容** 的方法或者過程`
 <!--SR:!2023-04-25,53,230-->
 
 #🧠 duck typing 是什麼東西？->->-> `duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格`
@@ -73,7 +73,7 @@ doQuack(dog)**
 <!--SR:!2023-03-13,29,250-->
 
 #🧠 duck typing 典故為何？->->-> `當看到一隻鳥走起來像鴨子、游泳起來像鴨子、叫起來也像鴨子，那麼這隻鳥就可以被稱為鴨子。`
-<!--SR:!2023-03-10,29,250-->
+<!--SR:!2023-05-22,73,250-->
 
 
 
