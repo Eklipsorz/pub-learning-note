@@ -22,6 +22,24 @@
         ]
       },
       {
+        "id": "7e7be07cfa00cf61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1763b080c134ae72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "74545073413d23f4",
         "type": "tabs",
         "children": [
@@ -104,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
+                "file": "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
+                "file": "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md"
+                "file": "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md"
               }
             }
           }
@@ -174,11 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61cc638ec3898203",
+  "active": "1763b080c134ae72",
   "lastOpenFiles": [
+    "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
     "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
-    "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
     "develop/Redis/redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
     "develop/JavaScript/promise/duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格，風格主要是關注特定事物所具有的行為會做什麼，接著依據行為來判別是否為特定物件型別.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
