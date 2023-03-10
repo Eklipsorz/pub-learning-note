@@ -61,7 +61,7 @@ key1=value1&key2=value2
 <!--SR:!2023-07-13,142,250-->
 
 #🧠 Query string 別名為何？ ->->-> `Query String 又名為 Search Parameter`
-<!--SR:!2023-03-10,71,250-->
+<!--SR:!2023-09-12,186,250-->
 
 
 

@@ -107,19 +107,19 @@ new Promise((resolve, reject) => {
 ## 複習
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關 ->->-> `太早執行callback、太晚執行callback、呼叫callback的次數超過一次或者沒呼叫callback、沒有傳入任何必要的參數和環境給callback、因callback執行時拋出錯誤而產生預期外的結果`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-16,6,250-->
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中太早執行callback是指什麼？ ->->-> `當執行任務A時，callback是否就跟著任務A的執行而跟著執行？`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-19,9,250-->
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中太晚執行callback是指什麼？->->-> `若任務A是以非同步來執行callback，會因爲排程緣故而使callback的執行被排到很後頭，甚至被其他任務給插隊執行，無法及時以適當的時機點執行。`
 <!--SR:!2023-03-20,10,250-->
 
 #🧠 JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中沒有傳入任何必要的參數和環境給callback是指什麼？ ->->-> `若callback是以非同步任務來執行，其參數是否會以任務A的執行結果為主並加以處理？`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-17,7,250-->
 
 #🧠  JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中因callback執行時拋出錯誤而產生預期外的結果是指什麼？->->-> `吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-18,8,250-->
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太早執行callback?->->-> `在Promise中，callback只要放入Promise API下的then、catch、finally這些語法的話，就會以非同步來執行callback，另外即使Promise指定任務是立即會履行的任務，callback仍以非同步任務型式來被排程去執行。`
@@ -136,10 +136,10 @@ new Promise((resolve, reject) => {
 <!--SR:!2023-03-10,3,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback?  ->->-> `在Promise中，所有經由Promise.then所註冊的callback，只要該Promise被解析(resolve)或者被拒絕(rejected)，其對應的callback就只會因為Promise.then而被執行一次。`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-20,10,250-->
 
 #🧠 JavaScript：callback本身執行次數在理論上的執行次數會是多少？ ->->-> `1次`
-<!--SR:!2023-03-10,3,250-->
+<!--SR:!2023-03-20,10,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback? 但能夠完全保證嗎？ 其原因為何 ->->-> `不能，但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定`
 <!--SR:!2023-03-20,10,250-->
