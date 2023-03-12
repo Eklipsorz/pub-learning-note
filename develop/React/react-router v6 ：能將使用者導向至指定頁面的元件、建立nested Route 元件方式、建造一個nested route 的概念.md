@@ -146,7 +146,7 @@ xxxx 元件下的路由
 
 
 #🧠  react-router-dom v6：如何透過Navigate語法來以push方式變動瀏覽紀錄，其語法是？ ->->-> `	<Navigate to=xxxxx />`
-<!--SR:!2023-03-11,62,250-->
+<!--SR:!2023-08-21,162,250-->
 
 
 #🧠  react-router-dom v6：建立nested Route 元件方式，其原理有哪些？ ->->-> `1. 將nested Route元件安置在component，再讓component被parent route元件所包含、2.  parent route元件直接包裹nested route元件，並搭配Outlet元件`
