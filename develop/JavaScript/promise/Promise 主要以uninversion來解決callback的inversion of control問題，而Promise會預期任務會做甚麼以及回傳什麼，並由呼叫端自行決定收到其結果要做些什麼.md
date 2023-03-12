@@ -46,10 +46,10 @@ promise 面對inversion of control 問題之概念 或者uninversion：
 <!--SR:!2023-03-12,3,250-->
 
 #🧠 JavaScript： Promise 面對inversion of control 問題之概念 或者uninversion會是什麼？->->-> `Promise概念為將inversion of control的概念再次進行inverse，讓呼叫端主導callback的執行控制`
-<!--SR:!2023-03-12,3,250-->
+<!--SR:!2023-03-21,9,250-->
 
 #🧠  JavaScript： Promise 面對inversion of control 問題之概念 或者uninversion會是inversion of control的概念再次進行inverse，讓呼叫端主導callback的執行控制，那麼實作前和實作後會是什麼模式？請以呼叫端、callback、指定任務來說明->->-> `- 原本實作前： - 呼叫端委派callback給指定任務來執行，不等任務完成 - 使callback的執行權由任務來決定。原作實作後： - 呼叫端等待任務完成，並由呼叫端來執行callback  - 使callback的執行權由呼叫端來決定`
-<!--SR:!2023-03-12,3,250-->
+<!--SR:!2023-03-21,9,250-->
 
 
 #🧠 promise 命名緣由會是什麼？？ ->->-> `promise 是指特定事物A聲稱特定事物A一定會去做特定事情的行為`
