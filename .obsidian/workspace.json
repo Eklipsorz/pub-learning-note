@@ -22,24 +22,6 @@
         ]
       },
       {
-        "id": "fee3e0c47bf8422d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "94cfec570934ced4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "74545073413d23f4",
         "type": "tabs",
         "children": [
@@ -122,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md"
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md"
               }
             }
           }
@@ -192,8 +174,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94cfec570934ced4",
+  "active": "61cc638ec3898203",
   "lastOpenFiles": [
+    "develop/React/react-router-practice：對特定Quote增加評論功能.md",
+    "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
     "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
@@ -204,7 +188,6 @@
     "develop/OS/虛擬機除了單純模擬實體電腦以外，在程式碼執行層面來說，Virtual Machine 是一種程式模組，主要提供一個平台和獨立語言體系來允許特定程式碼能夠不受到任何平台的解讀限制來被執行.md",
     "develop/React/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
     "inbox/focus事件為特定元件轉變成active element的時機點.md",
-    "develop/React/react-router-practice：對特定Quote增加評論功能.md",
     "develop/React/useHttp 專注於如何管理元件上的請求載入、錯誤、資料狀態，handler負責專注於發送請求、處理回應，接著useHttp並以handler為參數來構建成對應函式物件，過程中會負責更新狀態.md",
     "develop/React/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
     "develop/React/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
@@ -219,7 +202,6 @@
     "develop/Language/strong typing 和 weak typing 的 強弱是相對的，沒有絕對的定義，需要拿其他語言特性來比較目前語言特性才有強弱之分，越強就代表資料型別越明確，越弱就代表資料型別越不明確.md",
     "develop/React/query string 會以URL的特定部分作為其內容，通常會搭配問號來作為區隔。問號左半邊為伺服器端點；右半邊為query string的區段部分。主要是來向特定伺服器索要特定資源的請求字串.md",
     "develop/JavaScript/promise/Promise API如何解決太早執行callback、太晚執行callback、呼叫callback的次數、沒有傳入任何必要的參數、因callback執行時拋出錯誤而產生預期外的結果.md",
-    "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
-    "develop/polyfill 是一個依據正式規範來實現瀏覽器未曾實現功能的程式代碼.md"
+    "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md"
   ]
 }

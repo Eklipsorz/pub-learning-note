@@ -67,7 +67,7 @@ end
 <!--SR:!2023-03-18,45,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，回傳內容的包裝方式會是如何？比如原本回傳非promise或者promise？promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以fulfilled狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
-<!--SR:!2023-03-11,41,246-->
+<!--SR:!2023-06-22,102,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，該物件回傳的promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以fulfilled狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
 <!--SR:!2023-05-07,73,246-->
@@ -76,7 +76,7 @@ end
 <!--SR:!2023-05-29,87,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件的執行方式是如何？ ->->-> `都皆為同步執行`
-<!--SR:!2023-03-12,41,246-->
+<!--SR:!2023-06-21,101,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件 的相同點和不同點為何？？ ->->-> `相同點為都能同步執行，不同點為async function會將結果以promise物件來包裝以及允許使用await語法；後者並不會。`
 <!--SR:!2023-03-21,44,226-->
