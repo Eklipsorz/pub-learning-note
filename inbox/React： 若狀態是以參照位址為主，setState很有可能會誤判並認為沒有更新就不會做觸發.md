@@ -59,7 +59,7 @@ setState(object)
 <!--SR:!2023-05-29,162,250-->
 
 #🧠 React：以下程式碼不能夠渲染出新增的項目，請問如何改善，才能秀出新增的內容？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662403267/blog/react/state/object-wrong-useState-example_jwtgvz.png)->->-> ``
-<!--SR:!2023-03-12,115,250-->
+<!--SR:!2023-12-28,291,250-->
 
 
 ---

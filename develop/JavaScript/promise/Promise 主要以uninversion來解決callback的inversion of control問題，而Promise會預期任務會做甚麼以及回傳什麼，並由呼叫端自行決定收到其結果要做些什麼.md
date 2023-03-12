@@ -43,7 +43,7 @@ promise 面對inversion of control 問題之概念 或者uninversion：
 ## 複習
 
 #🧠 JavaScript： 請描述在Promise 時代前所發生的callback問題 - inversion of control->->-> `原本在Promise時代之前，呼叫端所定義的程式碼會由呼叫端來決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。`
-<!--SR:!2023-03-12,3,250-->
+<!--SR:!2023-03-22,10,250-->
 
 #🧠 JavaScript： Promise 面對inversion of control 問題之概念 或者uninversion會是什麼？->->-> `Promise概念為將inversion of control的概念再次進行inverse，讓呼叫端主導callback的執行控制`
 <!--SR:!2023-03-21,9,250-->
@@ -62,7 +62,7 @@ promise 面對inversion of control 問題之概念 或者uninversion：
 <!--SR:!2023-03-21,9,250-->
 
 #🧠 inversion of control 在電腦科學會是指什麼？->->-> `總結起來會是指 誰決定誰的反轉 / 誰執行誰的反轉 ，比如程式區塊A執行程式區塊B，反轉後會是程式區塊B 執行 程式區塊 A、類別A繼承(使用)類別B，反轉後會是類別B繼承(使用)類別A。`
-<!--SR:!2023-03-12,3,250-->
+<!--SR:!2023-03-21,9,250-->
 
 #🧠 inversion of control 在電腦科學會是指會是指 誰決定誰的反轉 / 誰執行誰的反轉，那麼會涉及哪些程式語言的範疇->->-> `OOP的繼承、模組間的依賴或者調用`
 <!--SR:!2023-03-12,3,250-->
