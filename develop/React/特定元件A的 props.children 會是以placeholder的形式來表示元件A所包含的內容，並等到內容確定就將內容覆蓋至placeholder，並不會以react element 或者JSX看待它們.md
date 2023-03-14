@@ -53,7 +53,7 @@ const Picture = (props) => {
 <!--SR:!2023-03-15,8,250-->
 
 #🧠 React ：特定元件單獨回傳props.children 會如何被解析 ->->-> `特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並且直接將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們`
-<!--SR:!2023-03-14,7,250-->
+<!--SR:!2023-04-02,19,250-->
 
 
 ---
