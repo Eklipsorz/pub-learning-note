@@ -176,7 +176,7 @@ AbortController.abort()
 
 
 #🧠 React：useEffect 要如何實現debouncing和清除上一次side effect所帶來的影響所需的cleanup？ 其中的 **紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容** 是如何實現的？->->-> `在生成非同步任務前，先分配名為subscribed 的記憶體區塊，並設定為true；非同步任務設定以subscribed 對應內容是否為true來執行任務內容：- 若為true，就執行 - 若為false，就不執行；設定cleanup函式：專門設定當前subscribed對應的記憶體區塊為false的任務`
-<!--SR:!2023-03-14,77,249-->
+<!--SR:!2023-10-01,201,249-->
 
 
 #🧠 React：useEffect 要如何實現debouncing和清除上一次side effect所帶來的影響所需的cleanup？ 其中的 **紀錄非同步任務會用到的subscribed對應的記憶體區塊並於cleanup設定該區塊內容** 是如何設定cleanup程式碼？->->-> `return () => { subscribed = false  } `
