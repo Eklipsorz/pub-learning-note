@@ -227,7 +227,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2023-11-17,261,249-->
 
 #🧠 每個JSX元素語法-\<Element1\>.... \<\/Element1\>被React看作是？以文字來描述 ->->-> `被看作以React函式庫的createElement語法來建立對應元件。`
-<!--SR:!2023-03-14,114,249-->
+<!--SR:!2024-01-01,293,249-->
 
 #🧠 以下是JSX語法，系統會自動解析成什麼？請用程式碼表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485660/blog/react/react-element/JSX-React-Element_xk0slt.png) ->->-> `( React.createElement('h2', {}, ...) React.createElement(Expenses, { expenses }, ....) )`
 <!--SR:!2023-11-25,266,249-->
