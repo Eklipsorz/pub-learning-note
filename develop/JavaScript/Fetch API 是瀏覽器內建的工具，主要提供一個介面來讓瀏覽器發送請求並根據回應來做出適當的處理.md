@@ -204,7 +204,7 @@ function App() {
 
 
 #🧠 Fetch API中的response object 是什麼？ ->->-> `response 物件本身代表著回應封包`
-<!--SR:!2023-03-14,5,246-->
+<!--SR:!2023-03-26,12,246-->
 
 
 #🧠 Fetch API中的request object 是什麼？->->-> `表示請求封包`

@@ -290,7 +290,7 @@ rejected：
 <!--SR:!2023-04-12,31,249-->
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-then-callback-task_a1vrrb.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 建立一個非同步任務來處理then的callback - 執行command4 - 非同步任務執行 - 執行callback`
-<!--SR:!2023-03-13,12,249-->
+<!--SR:!2023-04-18,35,249-->
 
 #🧠 只要一當對應promise object一被建立且該object為最一開始被建立的時候，其包裝的任務內容會是如何執行 ->->-> `只要一當對應promise object被建立，其包裝的任務內容會以同步形式來執行，如建立非同步任務(但不會立刻執行其非同步任務)`
 <!--SR:!2023-03-19,16,249-->
