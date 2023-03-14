@@ -81,7 +81,7 @@ function App() {
 <!--SR:!2023-04-06,74,250-->
 
 #🧠  react-router-dom v6：useLoaderData 是什麼？用途是什麼？ ->->-> `react-router v6.4 所提供的hook、用途為在元件所待的目前Route元件獲取loader屬性(attribute)，並以promise形式執行對應loader，等到該 loader 執行完畢後才會回傳資料給對應元件`
-<!--SR:!2023-03-14,59,250-->
+<!--SR:!2023-10-09,209,270-->
 
 #🧠 react-router-dom v6：useLoaderData語法是什麼？ ->->-> `const loadedData = useLoaderData()`
 <!--SR:!2023-04-04,72,250-->
