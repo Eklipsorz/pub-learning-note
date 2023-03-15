@@ -82,7 +82,7 @@ end
 <!--SR:!2023-03-21,44,226-->
 
 #🧠 請問結果會是如何？又為何？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成fulfilled狀態的promise來回傳並印出對應promise物件，最後在印出end`
-<!--SR:!2023-03-15,43,246-->
+<!--SR:!2023-06-29,106,246-->
 
 
 #🧠 請問function1()的回傳內容會是什麼？？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成fulfilled狀態的promise來回傳並印出對應promise物件`
