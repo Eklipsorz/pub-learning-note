@@ -174,7 +174,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "321acc66fa31bb7f",
+  "active": "b58a0bd8dbda63a4",
   "lastOpenFiles": [
     "develop/React/render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何.md",
     "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
