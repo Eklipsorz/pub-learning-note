@@ -16,7 +16,7 @@ import { render } from 'react-dom';const domNode = document.getElementById('root
 重點：
 - render 是React 函式庫中的Virtual DOM物件所擁有的方法
 	- 主要為定義對應個Virtual DOM 物件要有的渲染畫面為何
-	- 每個Virtual DOM 物件都會對應到實際存在的Real DOM物件
+	- 每個Virtual DOM 物件都會對應到實際存在的Real DOM物件之內部
 
 ###  root 層級的Virtual DOM範例
 
@@ -32,10 +32,17 @@ root.render(
 ## 複習
 
 #🧠 React：render 對於Virtual DOM物件來說是什麼？ 用途為何->->-> `render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何`
+<!--SR:!2023-03-19,3,250-->
 
 #🧠 React： 這是一段調用React函式庫的代碼，請問這做了什麼？`const root = ReactDOM.createRoot(document.getElementById('root')); root.render(...)`  ->->-> ``
+<!--SR:!2023-03-19,3,250-->
 
-#🧠 render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何，這樣指定渲染畫面又是為何？ ->->-> `主要定義對應的Real DOM所要呈現的樣子是如何`
+#🧠 render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何，這樣指定渲染畫面又是為何？ ->->-> `每個Virtual DOM 物件都會對應到實際存在的Real DOM物件之內部`
+<!--SR:!2023-03-19,3,250-->
+
+#🧠 React 函式庫中的Virtual DOM物件 主要對應著Real DOM的什麼？ ->->-> `其本身和其內部`
+<!--SR:!2023-03-19,3,250-->
+
 
 ---
 Status: #🌱 
