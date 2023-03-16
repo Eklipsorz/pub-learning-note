@@ -261,7 +261,7 @@ batch：
 <!--SR:!2023-04-28,94,230-->
 
 #🧠 React automatic batching 啟用條件為何？用程式碼來表示 ->->-> `const root = ReactDOM.createRoot(document.getElementById('root')); root.render(	<React.StrictMode> <App /> </React.StrictMode>);`
-<!--SR:!2023-03-16,125,250-->
+<!--SR:!2024-01-24,314,250-->
 
 
 #🧠 React18: 若N個狀態更新指令遍佈在多個生命週期函式下的事件處理，這N個狀態可以被合併成一個指令嗎？ ->->-> `並不會，只會針對同一個生命週期函式內含事件處理下的多個狀態更新指令來合併`
