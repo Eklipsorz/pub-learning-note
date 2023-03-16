@@ -128,7 +128,7 @@ element1.addEventListener('click', handler);
 <!--SR:!2023-08-03,161,250-->
 
 #🧠 請問最後印出的結果是什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668434243/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-explicit-binding_eubb8t.png) ->->-> `global object和global object為主的屬性`
-<!--SR:!2023-03-16,77,250-->
+<!--SR:!2023-10-02,200,250-->
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668434243/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example2-with-explicit-binding_zeya6q.png) ->->-> `object和object為主的屬性`
 <!--SR:!2023-09-26,195,250-->

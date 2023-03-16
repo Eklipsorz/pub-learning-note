@@ -116,7 +116,7 @@ button.addEventListener('click', debounce(function() {
 
 
 #🧠 de-bounce的de本身放在動詞前面，會是指去除/緩解動詞所要描述的現象，那麼debounce會是？->->-> `去除bounce或者緩解bounce的現象`
-<!--SR:!2023-03-16,39,248-->
+<!--SR:!2023-06-20,96,248-->
 
 
 #🧠 在電腦科學裡的程式開發中的debounce，主要是為了什麼目標而出現以及實現？ ->->-> `debounce 主要目的是效能優化`
