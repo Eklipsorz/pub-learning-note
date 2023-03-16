@@ -86,7 +86,7 @@ end
 
 
 #🧠 請問function1()的回傳內容會是什麼？？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成fulfilled狀態的promise來回傳並印出對應promise物件`
-<!--SR:!2023-03-16,44,246-->
+<!--SR:!2023-07-02,108,246-->
 
 
 #🧠 javascript：async function vs. promise object 差異為何？ ->->-> `前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應非同步任務並回報執行狀態`

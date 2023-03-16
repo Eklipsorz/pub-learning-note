@@ -92,7 +92,7 @@
 <!--SR:!2023-03-28,42,227-->
 
 #🧠 OpenID Connect 標準是什麼？ ->->-> `主要是OpenID 2.0 標準的下一代`
-<!--SR:!2023-03-16,13,230-->
+<!--SR:!2023-04-19,34,230-->
 
 #🧠 OpenID Connect 標準是OpenID 2.0 標準的下一代，其具體為？ ->->-> `主要以OAuth 2.0協定作為基礎來做身份驗證和權限分發，身份和權限分發會是以token為表示來分發。`
 <!--SR:!2023-03-16,22,208-->
@@ -111,7 +111,7 @@
 
 
 #🧠 在OpenID / OpenID Connect 角色中，若Resource Server只會管理資源，其中Resource Server會是負責什麼？ ->->-> `Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器`
-<!--SR:!2023-03-16,31,225-->
+<!--SR:!2023-05-28,73,225-->
 
 #🧠 在OpenID / OpenID Connect 角色中，若Resource Server會管理資源和驗證token，其中Resource Server會是負責什麼？ ->->-> ` Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器，若會驗證，就自行驗證Token`
 <!--SR:!2023-05-26,79,245-->
