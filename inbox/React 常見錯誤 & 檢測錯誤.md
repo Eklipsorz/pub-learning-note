@@ -112,7 +112,7 @@ export default App;
 
 ## 複習
 #🧠 如果React 專案出現以下訊息：Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment adjacent, which means side-by-side JSX elements, must be wrapped in an in closing tag ，這代表什麼？->->-> `JSX 元件沒用額外的parent 元件來包覆著`
-<!--SR:!2023-03-17,116,250-->
+<!--SR:!2024-01-13,302,250-->
 
 #🧠 如果React 專案出現以下訊息：'addGoalaHandler' is not defined，這代表什麼？ ->->-> `使用沒定義的識別字`
 <!--SR:!2023-05-30,163,250-->
