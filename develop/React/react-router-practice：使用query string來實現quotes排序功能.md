@@ -157,7 +157,7 @@ export default QuoteList;
 <!--SR:!2023-09-03,180,250-->
 
 #💻 請至/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-sort-with-query-string分支，請於/components/quotes/QuoteList.js實現根據query string來對quotes排序，其端點會是/quotes?sort=xxxx->->-> `https://github.com/academind/react-complete-guide-code/blob/20-building-mpas-with-react-router/code/18-working-with-query-params/src/components/quotes/QuoteList.js`
-<!--SR:!2023-03-15,73,250-->
+<!--SR:!2023-09-25,192,250-->
 
 
 
