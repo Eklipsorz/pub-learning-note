@@ -35,7 +35,8 @@
 - OAuth 完整名稱為：Open Authorization
 - OAuth：
 	- 屬於標準、協定
-	- 定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。
+	- 定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情：
+		- 具體則是
 	- 代表權限的事物會是token，內容通常會是包含誰賦予誰權限、權限為何。
 
 
@@ -82,7 +83,8 @@
 > 7. The Siebel Server returns the requested resource.
 
 
-流程會是：這裡假定Resource Server 只會管理資源，不會驗證Token
+流程會是：當使用者想要使用特定服務時，可以選擇使用授權
+	- ，就會點選
 	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤
 	- Authorization Server發送token給予Resource Owner
 	- 由Resource Owner賦予token至Client
@@ -92,6 +94,9 @@
 		- 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯
 		- 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
 	- Resource Server 將指定Resource傳遞給Client使用
+
+
+
 
 
 ## 複習
