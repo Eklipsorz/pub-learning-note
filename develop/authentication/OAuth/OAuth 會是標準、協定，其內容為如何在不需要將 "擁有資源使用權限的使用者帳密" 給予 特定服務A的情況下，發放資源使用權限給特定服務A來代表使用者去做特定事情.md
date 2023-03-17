@@ -60,22 +60,12 @@
 	- Client：以發放的Token來向Resource Server索要指定資源
 		- Client 相對於Resource Server的稱呼
 	- Resource Owner：在Resource Server上實際擁有資源的人
-- 流程會是：這裡假定Resource Server 只會管理資源，不會驗證Token
-	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤
-	- Authorization Server發送token給予Resource Owner
-	- 由Resource Owner賦予token至Client
-	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
-	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為：
-		- 以JWT 驗證方式來驗證JWT是否被篡改
-		- 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯
-		- 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
-	- Resource Server 將指定Resource傳遞給Client使用
 
 ####  Resource Server vs  Authorization Server 兩者是否相同
 1. 可以同時是Resource Server 和 Authorization Server
 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server
 
-### 案例
+### OAuth 流程
 
 
 
@@ -90,6 +80,18 @@
 > 5. The Siebel server validates the access token with the OAuth server.
 > 6. If the access token is authorized by the OAuth server, then access is granted to the Siebel resource.
 > 7. The Siebel Server returns the requested resource.
+
+
+流程會是：這裡假定Resource Server 只會管理資源，不會驗證Token
+	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤
+	- Authorization Server發送token給予Resource Owner
+	- 由Resource Owner賦予token至Client
+	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
+	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為：
+		- 以JWT 驗證方式來驗證JWT是否被篡改
+		- 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯
+		- 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
+	- Resource Server 將指定Resource傳遞給Client使用
 
 
 ## 複習

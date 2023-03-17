@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md"
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md"
               }
             }
           }
@@ -158,9 +158,12 @@
   },
   "active": "321acc66fa31bb7f",
   "lastOpenFiles": [
+    "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
+    "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+    "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
+    "develop/authentication/OAuth",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/firebase/Firebase Auth REST API + REACT 實現登入頁面.md",
-    "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
     "develop/React/render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何.md",
     "develop/api-design",
     "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
@@ -183,8 +186,6 @@
     "inbox/promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "develop/React/react-router-practice：增加Quote業務邏輯為客戶端向後端發送增加Quote的請求、若增加成功就將使用者導向至quotes頁面、渲染層面必須要呈現資料載入狀況.md",
     "develop/React/react-router/quote-practice/react-router-practice：實現瀏覽所有quotes、新增單個quote、瀏覽單個quote這三個頁面功能.md",
-    "develop/Redis/redis  的多執行緒會負責處理網路請求IO、檔案回寫、記憶體回收、關閉檔案.md",
-    "develop/JavaScript/promise/duck typing 主要用來決定特定事物是屬於哪一種物件型別的風格，風格主要是關注特定事物所具有的行為會做什麼，接著依據行為來判別是否為特定物件型別.md",
     "Pasted image 20230119210755.png"
   ]
 }
