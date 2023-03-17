@@ -170,7 +170,7 @@ export default MainHeader;
 <!--SR:!2023-07-20,161,250-->
 
 #🧠 瀏覽器對於anchor element所實現的URL變動事件處理具體會是什麼？ ->->-> `點擊事件後，瀏覽器會重新會對對應端點發送新的請求來索求新的網頁`
-<!--SR:!2023-03-17,85,249-->
+<!--SR:!2023-10-15,212,249-->
 
 #🧠 React：瀏覽器對於anchor 標籤的點擊事件處理：對特定頁面端點發送請求來索要全新的webpage，這對於React的component來說什麼，是什麼？請以unmount和mount來說明？ ->->-> `對特定頁面端點發送請求來索要全新的webpage，相當於是要求React unmount目前畫面上的所有元件，並向指定path的對應component進行mount`
 <!--SR:!2023-09-15,196,249-->
