@@ -107,7 +107,7 @@
 
 
 重點：
-- OAuth 概念 的 基本實現會有的流程：當使用者要授權給A來獲取Resource Server的服務時
+- OAuth 概念 的 基本實現會有的流程：當使用者要授權給應用程式A來獲取Resource Server的服務時
 	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權
 	- 使用者同意並給予授權資料至應用程式A
 	- 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token
@@ -218,7 +218,30 @@
 #🧠  OAuth 的 token 中的權限和有效期會是由誰來決定 ->->-> `通常是由授予權限的使用者來決定或者其發放token的server來決定`
 
 
-#🧠 Question :: ->->-> ``
+#🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端)和服務提供商來說明，請畫圖來說明->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679061043/blog/OAuth/OAuth-Simple-Concept_vrcj0d.png)`
+
+#🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說 ->->-> `	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權 - 使用者同意並給予授權資料至應用程式A - 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token - Authorization Server認證授權資料並確認無誤，就發放其token - 客戶端使用token來向Resource Server來申請獲取資源 - Resource Server 確認token 無誤就發放資源給客戶端`
+
+#🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請問普遍來說，**使用者同意並給予授權資料至應用程式A** 這步驟為什麼會有一些安全性疑慮？ ->->-> `由於Resource Server/Authorization Server無法識別出該授權資料會是合法的使用者提供的？以及其內容是否合法？，因此不能貿然以該資料來發放token，必須得用一些值得信任的方式來識別並發放`
+
+
+#🧠 OAuth 概念下的實際會有授權方式會有哪四種？ ->->-> `authorization code、implicit、resource owner password credentials、client credentials`
+
+
+#🧠 OAuth 概念下的實際會有授權方式會有哪四種，其中不論哪一種，哪一個server會負責驗證客戶端傳過來的token？->->-> `resource server 或者 由resource server轉發token至authorization server來驗證`
+
+#🧠 OAuth 概念下的實際會有授權方式會有哪四種，其中不論哪一種，server驗證token是否為合法的方式為何？在這裡假定使用JWT來表示token->->-> `- 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
+`
+
+
+
+
+
+
+
+
+
+
 
 
 
