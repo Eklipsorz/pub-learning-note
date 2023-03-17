@@ -66,37 +66,6 @@
 1. 可以同時是Resource Server 和 Authorization Server
 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server
 
-### OAuth 流程
-
-
-
-![](https://docs.oracle.com/cd/E74890_01/books/RestAPI/images/OAuth2leg_V.gif)
-
-> The steps in client credentials grant authentication flow process shown in Figure 2 are:
-
-> 1. The business client application makes a call to the Siebel Server to request some business information by passing an access token. Since there is no end user intervention, the client is pre-authorized to have access to the resource.
-> 2. The request is redirected to the OAuth server for authentication.
-> 3. The OAuth server returns an access token.
-> 4. The client server sends a request to the resource server. The request includes the access token in the HTTP header. Siebel looks for USERID from the token to establish a Siebel Server session.
-> 5. The Siebel server validates the access token with the OAuth server.
-> 6. If the access token is authorized by the OAuth server, then access is granted to the Siebel resource.
-> 7. The Siebel Server returns the requested resource.
-
-
-流程會是：當使用者想要使用特定服務時，可以選擇使用授權
-	- ，就會點選
-	- 由Resource Owner 輸入credential至 Authorization Server 來做驗證，成功就做下一步，失敗就回報錯誤
-	- Authorization Server發送token給予Resource Owner
-	- 由Resource Owner賦予token至Client
-	- 由Client夾雜token來向Resource Server 發送請求以此代表Resource Owner發送
-	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為：
-		- 以JWT 驗證方式來驗證JWT是否被篡改
-		- 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯
-		- 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
-	- Resource Server 將指定Resource傳遞給Client使用
-
-
-
 
 
 ## 複習
