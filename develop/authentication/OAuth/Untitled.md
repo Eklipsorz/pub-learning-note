@@ -15,8 +15,11 @@
 > （D）客户端收到授权码，附上早先的"重定向URI"，向认证服务器申请令牌。这一步是在客户端的后台的服务器上完成的，对用户不可见。
 > （E）认证服务器核对了授权码和重定向URI，确认无误后，向客户端发送访问令牌（access token）和更新令牌（refresh token）。
 
-> 下面是上面这些步骤所需要的参数。
 
+
+###  步驟A所需的參數
+
+[[@LiJieOAuthRuanYiFengDeWangLuoRiZhi]]
 > A步骤中，客户端申请认证的URI，包含以下参数：
 
 > -   response_type：表示授权类型，必选项，此处的值固定为"code"
@@ -33,6 +36,8 @@ GET /authorize?response_type=code&client_id=s6BhdRkqt3&state=xyz
 Host: server.example.com
 ```
 
+
+###  步驟C所需的參數
 > C步骤中，服务器回应客户端的URI，包含以下参数：
 
 > -   code：表示授权码，必选项。该码的有效期应该很短，通常设为10分钟，客户端只能使用该码一次，否则会被授权服务器拒绝。该码与客户端ID和重定向URI，是一一对应关系。
@@ -44,6 +49,8 @@ HTTP/1.1 302 Found
 Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
 ```
 
+
+### 步驟D所需的參數
 > D步骤中，客户端向认证服务器申请令牌的HTTP请求，包含以下参数：
 
 > -   grant_type：表示使用的授权模式，必选项，此处的值固定为"authorization_code"。
@@ -62,6 +69,8 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA&redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb 
 ```
 
+
+### 步驟E所需的參數
 > E步骤中，认证服务器发送的HTTP回复，包含以下参数：
 
 > -   access_token：表示访问令牌，必选项。
