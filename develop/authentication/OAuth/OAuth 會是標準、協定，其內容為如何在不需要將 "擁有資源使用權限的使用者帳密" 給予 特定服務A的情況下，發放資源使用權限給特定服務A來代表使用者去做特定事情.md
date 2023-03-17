@@ -2,25 +2,6 @@
 
 
 
-
-[[@OpenIDConnectShiShiMo]]
-
-
-> 先讓我來舉一個簡單的例子。
-
-> 現在有一個使用者，就假定是我自己本身。我的行事曆資訊都放在我的 Google Calendar 上。我現在想要使用一個可以做到比 Google Calendar 還要多功能的第三方行事曆服務。這時候我就會想要讓這第三方行事曆服務得到我在 Google Calendar 上的行事曆資訊。
-
-![](https://hennge.com/tw/blog/1_X0LkXQ0w5JxyZP5zPmATlg.png)
-
-> 而如果是在一個只有帳號跟密碼的世界上，我就必須要把我的 Google 帳號和密碼告訴給這第三方服務行事曆服務，它才有辦法取得這些資訊。但如果我把帳號密碼告訴了第三方，它可能就可以在暗地裡竊取行事曆以外的資訊，像是在 Gmail 裡的機密資訊。這時候就出現了使用 Access Token 來解決這個問題的協議，OAuth 2.0。
-
-![](https://hennge.com/tw/blog/1_KkGjPLwd-FibZnYcKsAnAw.png)
-
-> ＊關於此途中的 Access Token 的發放方式，為幫助理解細節有做簡化，敬請見諒。
-
-> Access Token 就像是一張兌換卷，每一張 Access Token 上都有寫**「誰」「對誰」「給予什麼樣的權限」**，如此一來就可以在不告訴對方帳號密碼的情況下，給予對方最低限度需要的權限。這就是為什麼 OAuth 2.0 被稱為是一個授權的協議。
-
-
 ### OAuth 是什麼？
 
 [[@OAuth2023]]
@@ -94,10 +75,40 @@
 
 
 重點：
-- 讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，只允許客戶端拿著代表使用者特定權限的資料來登入授權層並獲取服務提供商的資源
-- 代表使用者特定權限的資料本身會是由使用者來發放，並決定其權限範疇和有效期，好讓授權層依據權限範疇和有效期來安全存取服務提供商的資源
+- 讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，這僅能讓客戶端拿著代表使用者特定權限的資料-token來登入授權層並獲取服務提供商的資源。
+	- 授權層不接受特定身份的帳密來驗證，僅接受token來做驗證和授權
+- token會是由使用者來發放給特定應用程式A，並由它決定其權限範疇和有效期，好讓授權層依據權限範疇和有效期來安全存取服務提供商的資源
 
-#### 實際擁有的授權流程
+
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679061043/blog/OAuth/OAuth-Simple-Concept_vrcj0d.png)
+
+
+
+### OAuth 概念 的 基本實現
+> ## 四、运行流程
+
+> OAuth 2.0的运行流程如下图，摘自RFC 6749。
+
+![OAuth运行流程](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051203.png)
+
+> （A）用户打开客户端以后，客户端要求用户给予授权。
+> 
+> （B）用户同意给予客户端授权。
+> 
+> （C）客户端使用上一步获得的授权，向认证服务器申请令牌。
+> 
+> （D）认证服务器对客户端进行认证以后，确认无误，同意发放令牌。
+> 
+> （E）客户端使用令牌，向资源服务器申请获取资源。
+> 
+> （F）资源服务器确认令牌无误，同意向客户端开放资源。
+
+> 不难看出来，上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。
+
+
+
+
+#### 實際擁有的授權方式
 
 [[@LiJieOAuthRuanYiFengDeWangLuoRiZhi]]
 > 客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0定义了四种授权方式。
@@ -107,15 +118,18 @@
 > -   密码模式（resource owner password credentials）
 > -   客户端模式（client credentials）
 
-基本上會有四種：
-1. authorization code grant
-2. 
+基本上會有四種授權方式：
+1. authorization code grant type
+2. implicit grant type
+3. resource owner password credentials grant type
+4. client credentials grant type
 
 
+#### 不論哪一種，server驗證token的方式
+
+不論哪一種，Resource Server 或者 幫助Resource Server 來驗證Token是否合法時，其驗證方式為：
 - 以JWT 驗證方式來驗證JWT是否被篡改
-
 - 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯
-
 - 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
 
 
@@ -203,5 +217,4 @@ Links:
 References:
 [[@auth0ValidateAccessTokens]]
 [[@OAuth2023]]
-[[@OpenIDConnectShiShiMo]]
 [[@LiJieOAuthRuanYiFengDeWangLuoRiZhi]]
