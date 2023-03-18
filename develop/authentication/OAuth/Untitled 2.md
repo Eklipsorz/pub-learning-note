@@ -199,6 +199,7 @@ Pragma: no-cache
 <!--SR:!2023-03-21,3,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，導向和主要目的的關係是如何？ ->->-> `透過導向方式來間接要求使用者發送授權成功的結果資料傳遞給應用服務A`
+<!--SR:!2023-03-21,3,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，導向和主要目的的關係是如何？->->-> `讓應用服務A向認證授權伺服器發送索要token的請求`
 
@@ -215,6 +216,7 @@ Pragma: no-cache
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所發送的請求是從何而來？發送至哪 ->->-> `從應用服務A發送過來的請求，以指定的請求封包內容來要求使用者向認證授權伺服器發送。會發送至認證授權伺服器`
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數為何？ ->->-> `response_type：申請什麼樣的授權類型 - client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id - redirect_uri：申請之後應用程式接收code的重導向頁面 - scope：申請授權資料所能擁有的權限為何 - state：表示客戶端的應用程式A所擁有的狀態`
+<!--SR:!2023-03-21,3,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-response_type、client_id、redirect_uri、scope、state是為何？ ->->-> `response_type：申請什麼樣的授權類型 - client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id - redirect_uri：申請之後應用程式接收code的重導向頁面 - scope：申請授權資料所能擁有的權限為何 - state：表示客戶端的應用程式A所擁有的狀態`
 <!--SR:!2023-03-21,3,250-->
