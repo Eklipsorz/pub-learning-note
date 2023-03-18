@@ -11,8 +11,30 @@
             "id": "58d9626e3a2a1e16",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/OAuth/Untitled 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "f015ee678aa27462",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8f1b7bd090f6d71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/OAuth/Untitled 2.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/authentication/OAuth/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/authentication/OAuth/Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +151,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/authentication/OAuth/Untitled 2.md"
+              }
             }
           }
         ]
@@ -148,7 +174,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58d9626e3a2a1e16",
+  "active": "f8f1b7bd090f6d71",
   "lastOpenFiles": [
     "develop/authentication/OAuth/Untitled 1.md",
     "develop/authentication/OAuth/Untitled 2.md",
