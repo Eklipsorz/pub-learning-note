@@ -200,6 +200,7 @@ Pragma: no-cache
 <!--SR:!2023-03-21,3,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時 ，請畫圖來表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679145847/blog/OAuth/OAuth-with-code_bn5ih9.png)`
+<!--SR:!2023-03-21,3,250-->
 
 
 
