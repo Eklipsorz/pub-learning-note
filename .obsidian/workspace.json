@@ -40,11 +40,11 @@
         ]
       },
       {
-        "id": "f015ee678aa27462",
+        "id": "026614b8955d9058",
         "type": "tabs",
         "children": [
           {
-            "id": "f8f1b7bd090f6d71",
+            "id": "df655893f7dd0428",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -192,7 +192,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "05358020e7e8fc4a",
+  "active": "df655893f7dd0428",
   "lastOpenFiles": [
     "develop/authentication/OAuth/Untitled 1.md",
     "develop/authentication/OAuth/Untitled 2.md",
