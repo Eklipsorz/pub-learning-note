@@ -4,46 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "42a56bbe28cc92f9",
+        "id": "51f0ac9d9b6eb9d8",
         "type": "tabs",
         "children": [
           {
-            "id": "321acc66fa31bb7f",
+            "id": "58d9626e3a2a1e16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15458b553681e60c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/OAuth/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "9497f71d614581c1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7b9f65b997c5f88f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/OAuth/Untitled.md",
+                "file": "develop/authentication/OAuth/Untitled 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "self、me",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +56,7 @@
             }
           },
           {
-            "id": "bfc337058508d859",
+            "id": "dba5e16eed67c4ca",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -116,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled.md",
+                "file": "develop/authentication/OAuth/Untitled 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled.md",
+                "file": "develop/authentication/OAuth/Untitled 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled.md"
+                "file": "develop/authentication/OAuth/Untitled 2.md"
               }
             }
           }
@@ -186,18 +156,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "321acc66fa31bb7f",
+  "active": "58d9626e3a2a1e16",
   "lastOpenFiles": [
-    "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+    "develop/authentication/OAuth/Untitled 1.md",
+    "develop/authentication/OAuth/Untitled 2.md",
+    "develop/Untitled.md",
+    "develop/authentication/Untitled.md",
+    "develop/authentication/Untitled 4.md",
     "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
-    "develop/authentication/OAuth/Untitled.md",
+    "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/JavaScript/promise/Promise API如何解決太早執行callback、太晚執行callback、呼叫callback的次數、沒有傳入任何必要的參數、因callback執行時拋出錯誤而產生預期外的結果.md",
     "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
     "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
     "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/React/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
-    "develop/authentication/OAuth/Untitled 1.md",
     "annotation/@LiJieOAuthRuanYiFengDeWangLuoRiZhi.md",
     "annotation/@OAuthGrantTypes.md",
     "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
@@ -213,9 +186,6 @@
     "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "inbox/React：form submission 實現.md",
     "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
-    "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
-    "develop/React/特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們.md",
-    "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md",
     "Pasted image 20230119210755.png"
   ]
 }
