@@ -35,16 +35,16 @@
         "currentTab": 1
       },
       {
-        "id": "42d3e987e1aad7a8",
+        "id": "ebdf3b2495aecb47",
         "type": "tabs",
         "children": [
           {
-            "id": "82c6608edd510498",
+            "id": "1e5e0c2a34c1cec7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
+                "file": "develop/JavaScript/promise/Promise API如何解決太早執行callback、太晚執行callback、呼叫callback的次數、沒有傳入任何必要的參數、因callback執行時拋出錯誤而產生預期外的結果.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
+                "file": "develop/authentication/OAuth/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
+                "file": "develop/authentication/OAuth/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md"
+                "file": "develop/authentication/OAuth/Untitled.md"
               }
             }
           }
@@ -186,12 +186,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "82c6608edd510498",
+  "active": "15458b553681e60c",
   "lastOpenFiles": [
-    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
     "develop/JavaScript/promise/Promise API如何解決太早執行callback、太晚執行callback、呼叫callback的次數、沒有傳入任何必要的參數、因callback執行時拋出錯誤而產生預期外的結果.md",
-    "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
     "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
+    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
+    "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/authentication/OAuth/Untitled.md",
     "develop/React/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
