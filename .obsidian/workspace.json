@@ -51,24 +51,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "0e45e9b5df82ae39",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "261590a1ca7a26ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/OAuth/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "deferred",
+                "query": "self、me",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -114,8 +96,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -207,6 +188,10 @@
   },
   "active": "82c6608edd510498",
   "lastOpenFiles": [
+    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
+    "develop/JavaScript/promise/Promise API如何解決太早執行callback、太晚執行callback、呼叫callback的次數、沒有傳入任何必要的參數、因callback執行時拋出錯誤而產生預期外的結果.md",
+    "develop/JavaScript/this、self、me等關鍵字在電腦語言中是指目前執行的代碼屬於哪一個實體物件.md",
+    "develop/JavaScript/promise/由Promise 物件所包覆的任務是以該Promise所提供的API來對該物件下進行狀態和結果的寫入以便通知和執行對應事件處理.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/authentication/OAuth/Untitled.md",
     "develop/React/react-router-practice：瀏覽單個Quote的業務邏輯有用初始資訊來呈現畫面、發送請求索要單個Quote的資訊，當請求回應到了就重新渲染資料、渲染部分則根據資料載入來呈現.md",
@@ -231,10 +216,6 @@
     "develop/render/Data flow & Data binding 是指資料與UI之間的變動關係，分別為資料一變動、UI就跟著資料變動和UI一變動、資料就跟著UI變動.md",
     "develop/React/特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並等到內容確定就將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們.md",
     "develop/JavaScript/promise/Zalgo 意指為無法預期會如何執行的函式，通常意指描述接收callback的函式，有時候會立刻執行callback並回傳；有時候會在未來才執行callback，沒人能夠預測函式會如何執行callback.md",
-    "develop/JavaScript/promise/由於promise本身只是官方規範，實作上會有許多不同版本，這使得很難判別誰到底是滿足官方規範的promise實作，並且從而透過它來開發。解法可以是thenable duck typing，但具有誤判的疑慮存在.md",
-    "develop/shim 是一種小型函式庫，擺放在程式模組A和程式模組B的呼叫關係之間並進行攔截和修改，並讓他們都能合法呼叫和獲取.md",
-    "develop/JavaScript/IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成.md",
-    "develop/React/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
     "Pasted image 20230119210755.png"
   ]
 }

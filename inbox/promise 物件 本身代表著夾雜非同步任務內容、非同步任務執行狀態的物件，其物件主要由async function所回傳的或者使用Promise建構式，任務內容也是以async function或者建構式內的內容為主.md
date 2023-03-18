@@ -64,7 +64,7 @@ end
 <!--SR:!2023-04-25,73,250-->
 
 #🧠 promise 在JavaScript上本身是代表著夾雜非同步任務內容、非同步任務執行狀態的物件，那麼物件是誰產生？任務內容又是誰決定 ->->-> `其物件主要由async function所回傳的或者使用Promise建構式，任務內容是以建構式內的內容為主。`
-<!--SR:!2023-03-18,45,246-->
+<!--SR:!2023-07-07,111,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，回傳內容的包裝方式會是如何？比如原本回傳非promise或者promise？promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以fulfilled狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
 <!--SR:!2023-06-22,102,246-->
