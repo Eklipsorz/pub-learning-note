@@ -15,16 +15,18 @@
 > （D）客户端收到授权码，附上早先的"重定向URI"，向认证服务器申请令牌。这一步是在客户端的后台的服务器上完成的，对用户不可见。
 > （E）认证服务器核对了授权码和重定向URI，确认无误后，向客户端发送访问令牌（access token）和更新令牌（refresh token）。
 
-重點
+重點：
+- 在這裡會以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程
 - 當使用者授與存取網路服務提供商的權利給應用服務A來存取時，其流程為：
 	- A. 使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器
-		- 導向目的為要求使用者發送相同同樣請求來向認證授權伺服器表示授權申請
+		- 主要目的：透過導向方式來間接要求使用者發送相同同樣請求來向認證授權伺服器表示授權申請
 		- 其導向請求會以URL (含URL參數)、封包 來進行，主要內容為授權種類、權限、申請授權作為認證用的重導向URL，並且轉由使用者發送同樣的請求至認證授權伺服器
 	- B. 使用者在認證頁面同意授權給應用服務A
 	- C. 假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼
-		- 導向目的為要求使用者發送授權成功的結果資料傳遞給應用服務A
+		- 主要目的：透過導向方式來間接要求使用者發送授權成功的結果資料傳遞給應用服務A
 		- 其導向請求會是以URL (含URL參數) 來進行，並且轉由使用者發送同樣的請求至客戶端的應用服務A
 	- D. 身為客戶端的應用服務A會從URL接收到授權碼，並向認證授權伺服器發送請求
+		- 主要目的：讓應用服務A向認證授權伺服器發送索要token的請求
 		- 其請求會是以URL和其URL參數、封包來進行，主要會附加授權碼和當初申請授權碼的重導向URL
 	- E. 認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token。
 
@@ -56,7 +58,7 @@ Host: server.example.com
 	- 參數會有：
 		- response_type：申請什麼樣的授權類型
 		- client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id
-		- redirect_uri：申請之後認證用以及發送授權資料的導向頁面為何
+		- redirect_uri：申請之後應用程式接收code的重導向頁面
 		- scope：申請授權資料所能擁有的權限為何
 		- state：表示客戶端的應用程式A所擁有的狀態
 	- 細節：
@@ -86,13 +88,17 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
 - 步驟C：假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼
 	- 請求形式為：URI(含URI參數)、封包
 	- 參數會有：
-		- code：表示認證授權伺服器授與的授權代碼，主要是要讓應用服務A申請token
+		- code：表示認證授權伺服器授與的授權碼，主要是要讓應用服務A申請token
 		- state：客戶端目前所處的狀態，會延續上一個步驟A所傳遞過來的
-```
-HTTP/1.1 302 Found
-Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
-```
-	- 
+	```
+	HTTP/1.1 302 Found
+	Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
+	```
+	- 參數細節：
+		- 導向的端點正是為客戶端用來接收code的重導向URI
+		- 授權碼code 和 代表權限的 token 是不一樣，前者是用來申請token。
+		- 授權碼的限制為：有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次，若違反限制，就會在申請token過程中被拒絕
+
 ### 步驟D所需的參數
 > D步骤中，客户端向认证服务器申请令牌的HTTP请求，包含以下参数：
 
@@ -101,7 +107,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
 > -   redirect_uri：表示重定向URI，必选项，且必须与A步骤中的该参数值保持一致。
 > -   client_id：表示客户端ID，必选项。
 
-下面是一个例子。
+> 下面是一个例子。
 
 ```http
 POST /token HTTP/1.1
@@ -111,6 +117,23 @@ Content-Type: application/x-www-form-urlencoded
 
 grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA&redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb 
 ```
+
+重點：
+- 步驟D：身為客戶端的應用服務A會從URL接收到授權碼，並向認證授權伺服器發送請求
+	- 請求形式為：URI(含URI參數)、封包
+	- 參數會有：
+		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code
+		- code：用來申請token用的授權碼
+		- redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致
+		- client_id：應用程式A在認證授權伺服器中所註冊的client_id
+	```
+	POST /token HTTP/1.1
+	Host: server.example.com
+	Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
+	Content-Type: application/x-www-form-urlencoded
+	
+	grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA&redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb 
+	```
 
 
 ### 步驟E所需的參數
@@ -140,6 +163,27 @@ Pragma: no-cache
 
 > 从上面代码可以看到，相关参数使用JSON格式发送（Content-Type: application/json）。此外，HTTP头信息中明确指定不得缓存。
 
+重點：
+- 步驟E：認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token。
+- 主要會回傳一份回應封包，裡面會有：
+	- access_token：表示其使用者授予權限的token
+	- token_type：表示token種類，可以是bearer類型
+	- expires_in：表示過期時間，單位為秒
+	- refresh_token：表示用來申請access-token的token
+	- scope：表示access_token被授與的權限為何
+```
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Cache-Control: no-store
+Pragma: no-cache
+{
+	"access_token":"2YotnFZFEjr1zCsicMWpAA",
+	"token_type":"example",
+	"expires_in":3600,
+	"refresh_token":"tGzv3JOkF0XG5Qx2TlKWIA",
+	"example_parameter":"example_value"
+} 
+```
 ## 複習
 
 
