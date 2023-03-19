@@ -43,7 +43,7 @@
 	- implicit grant type 這模式還分出兩個版本：
 		- 第一個版本：redirect_uri 是用來提供獲取Token的script
 		- 第二個版本為： redirect_uri 是用來接收token的地點
-		[[develop/authentication/OAuth/Untitled 1]]
+		[[implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client]]
 
 
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version1_a4o6wt.png)
