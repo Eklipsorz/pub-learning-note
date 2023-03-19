@@ -17,6 +17,9 @@
 > 6.  **Return Resource**: If the access token is valid, the resource server returns the resources that the user authorized the app to receive.
 
 
+![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version2_euhcgr.png)
+
+
 ## 複習
 
 
@@ -25,4 +28,5 @@ Status: #🌱
 Tags:
 [[OAuth]]
 Links:
+[[implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token]]
 References:
