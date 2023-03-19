@@ -27,6 +27,16 @@
 > （G）浏览器将令牌发给客户端。
 
 
+重點：
+- C. 假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)
+	- User Agent 會將Fragment 部分儲存在本身的儲存系統，並不會因重導向URI而發送向對應端點該部分內容。
+	- 重導向URI通常會是指Client 或者 Resource Server
+- D.  使用者透過瀏覽器向指定的重導向URI發送請求，但不包含先前的Fragment
+- E.  對應URI/Client/Resource Server 會回傳一份夾雜Script的網頁至User Agent
+- F.  執行上一步獲得的Script，來從C步驟獲得的Fragment解開Token以及其相關資訊
+- G. 將上一步解開的結果物-Token 發給Client端
+
+
 ###
 
 > A步骤中，客户端发出的HTTP请求，包含以下参数：
