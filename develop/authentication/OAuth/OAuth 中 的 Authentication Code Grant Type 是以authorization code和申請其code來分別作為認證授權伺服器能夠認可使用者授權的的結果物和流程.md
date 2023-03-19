@@ -192,6 +192,8 @@ Pragma: no-cache
 ## 複習
 
 
+#🧠 authorization code grant type 在OAuth  流程中的 "使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權" ，請問主要參數的response_type為申請授權類型，若是authorization code grant type 版本，得填寫什麼？->->-> `code`
+
 #🧠 authorization code grant type 在OAuth 上是以什麼形式來讓認證授權伺服器認可為使用者合法授權的結果以及其授權結果的流程大綱？ ->->-> `以authorization code的形式以及申請其code`
 <!--SR:!2023-03-21,3,250-->
 
