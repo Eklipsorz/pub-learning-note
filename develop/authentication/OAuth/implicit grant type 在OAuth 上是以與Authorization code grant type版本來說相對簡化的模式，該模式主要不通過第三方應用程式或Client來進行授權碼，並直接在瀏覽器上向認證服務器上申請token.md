@@ -113,29 +113,40 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 
 ## 複習
 #🧠 implicit grant type 在OAuth 上會是指什麼？ ->->-> `implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式/Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token。`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠  implicit grant type 在OAuth 中為何被稱之為implitic ？ ->->-> `implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本 ->->-> `	- A. 使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問 - B. 使用者通過身份認證並確定授權 - C. 假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token) 	- D.  使用者透過瀏覽器向指定的重導向URI發送請求，但不包含先前的Fragment - E.  對應URI/Client/Resource Server 會回傳一份夾雜Script的網頁至User Agent - F.  執行上一步獲得的Script，來從C步驟獲得的Fragment解開Token以及其相關資訊 - G. 將上一步解開的結果物-Token 發給Client端`
 <!--SR:!2023-03-22,3,250-->
 
 #🧠 implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本，在這裡請畫圖來表示 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version1_a4o6wt.png)`
+<!--SR:!2023-03-22,3,250-->
 
 pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的Fragment 會如何被處理？？ ->->-> `User Agent 會將Fragment 部分儲存在本身的儲存系統，並不會因重導向URI而發送向對應端點該部分內容，等到之後獲取提取用的Script，接著提取並轉交給Client`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的重導向URI會是做什麼以及指向哪裡？？？ ->->-> `在這裡會是指定哪個端點會提供提取工具的script，至於指向哪，重導向URI通常會是指Client 或者 Resource Server`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳 ->->-> `以URI Fragment形式來回傳token`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳，請舉一個URI作為例子 ->->-> `http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&token_type=example&expires_in=3600`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 implicit grant type 在OAuth 中存在兩個主要版本，主要會是什麼？ ->->-> `- 第一個版本：redirect_uri 是用來提供獲取Token的script - 第二個版本為： redirect_uri 是用來接收token的地點`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問請求封包源自於哪裡？發送至哪？形式為何？ ->->-> `形式為URI(URI參數)、封包，源自於客戶端所發送的請求封包，發送至認證伺服器`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數為何？做什麼用 ->->-> `	- response_type： 表示授權類型為何 - client_id：表示客戶端應用程式在認證伺服器上所註冊的client_id - redirect_uri：定義哪邊提供Script或者哪邊接收token - scope：定義申請的權限範疇`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數的response_type為申請授權類型，若是implicit版本，得填寫什麼？->->-> `token`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數-response_type、client_id、redirect_uri、scope為何？ ->->-> `- response_type： 表示授權類型為何 - client_id：表示客戶端應用程式在認證伺服器上所註冊的client_id - redirect_uri：定義哪邊提供Script或者哪邊接收token - scope：定義申請的權限範疇`
 <!--SR:!2023-03-22,3,250-->
@@ -144,8 +155,10 @@ pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器
 <!--SR:!2023-03-22,3,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，主要內容為何？ ->->-> `- access_token：表示token - token_type：表示token種類 - expires_in：表示過期時間 - scope：表示token所擁有的使用權限`
+<!--SR:!2023-03-22,3,250-->
 
 #🧠 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，主要參數-access_token、token_type、expires_in、scope是為何？ ->->-> `- access_token：表示token - token_type：表示token種類 - expires_in：表示過期時間 - scope：表示token所擁有的使用權限`
+<!--SR:!2023-03-22,3,250-->
 
 
 
