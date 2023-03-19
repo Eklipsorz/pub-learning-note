@@ -61,7 +61,7 @@ const callback = (params, request) => { ... }
 ## 複習
 
 #🧠 react-router-dom v6.4：Form 元件會是做什麼？->->-> ` router 用以攔截表單提交請求用的元件`
-<!--SR:!2023-03-19,62,250-->
+<!--SR:!2023-08-27,161,250-->
 
 #🧠 react-router-dom v6.4：Form 元件設計給router來提供的目的是什麼？ ->->-> `目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理`
 <!--SR:!2023-08-08,146,250-->

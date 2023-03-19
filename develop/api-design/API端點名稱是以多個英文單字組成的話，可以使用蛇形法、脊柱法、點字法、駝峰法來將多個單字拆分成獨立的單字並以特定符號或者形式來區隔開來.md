@@ -50,7 +50,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 ## 複習
 
 #🧠 API端點名稱是以多個英文單字組成的話，要怎麼做才能使端點更容易讓人類讀取？其概念為 ->->-> `將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來`
-<!--SR:!2023-03-19,3,250-->
+<!--SR:!2023-03-28,9,250-->
 
 
 #🧠 API端點名稱是以多個英文單字組成的話，可以使用什麼方法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來 ->->-> `Snake Case、 Camel Case、Spinal Case、 Dot Notation Case`
@@ -64,10 +64,10 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 
 
 #🧠 Spinal Case 是什麼樣的命名法則 ->->-> `單字間使用連字號來相連`
-<!--SR:!2023-03-19,3,250-->
+<!--SR:!2023-03-26,7,250-->
 
 #🧠 Dot Notation Case 是什麼樣的命名法則 ->->-> `單字間使用點字號來相連`
-<!--SR:!2023-03-19,3,250-->
+<!--SR:!2023-03-28,9,250-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Snake Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user_timeline`
@@ -78,7 +78,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Lower Camel Case命名->->-> `http://api.example.com/v1/users/12345/statuses/userTimeline`
-<!--SR:!2023-03-19,3,250-->
+<!--SR:!2023-03-28,9,250-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Upper Camel Case命名->->-> `http://api.example.com/v1/users/12345/statuses/UserTimeline`
@@ -86,7 +86,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Dot Notation Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user.timeline`
-<!--SR:!2023-03-19,3,250-->
+<!--SR:!2023-03-29,10,250-->
 
 
 ---
