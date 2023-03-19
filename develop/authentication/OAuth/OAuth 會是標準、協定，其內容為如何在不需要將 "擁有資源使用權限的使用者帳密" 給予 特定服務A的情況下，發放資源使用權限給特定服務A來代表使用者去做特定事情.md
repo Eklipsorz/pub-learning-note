@@ -241,7 +241,7 @@
 
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種，其中不論哪一種，哪一個server會負責驗證客戶端傳過來的token？->->-> `resource server 或者 由resource server轉發token至authorization server來驗證`
-<!--SR:!2023-03-19,2,247-->
+<!--SR:!2023-03-25,6,247-->
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種，其中不論哪一種，server驗證access token是否為合法的方式為何？在這裡假定使用JWT來表示token->->-> `- 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
 <!--SR:!2023-03-19,2,247-->
