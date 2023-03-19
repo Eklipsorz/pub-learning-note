@@ -227,7 +227,7 @@ xxxx 元件下的路由
 
 
 #🧠 react-router-dom v6：假若要設定/path1/path2 對應元件為xxxxx1，就直接將nested route的path設定成/path2，那麼那要如何瀏覽到nested route的對應渲染元件xxxxx1![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670250102/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_clqra8.png) ->->-> ``
-<!--SR:!2023-03-19,65,250-->
+<!--SR:!2023-09-04,169,250-->
 
 ---
 Status: #🌱 

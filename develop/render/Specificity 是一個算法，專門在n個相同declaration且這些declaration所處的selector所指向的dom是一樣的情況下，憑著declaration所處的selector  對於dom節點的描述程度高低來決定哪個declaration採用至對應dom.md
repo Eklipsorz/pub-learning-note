@@ -134,7 +134,7 @@ specific
 
 
 #🧠 CSS specificitiy上的id-class-type，若要統一轉換成數字來看的話，可以是如何計算？？ 如何比較->->-> `id-class-type，1個id為100分、1個class為10分、1個type為1分，並將計算總分，將轉換分數通通加起來。比較的話，就挑出最大者的declaration來使用`
-<!--SR:!2023-03-19,122,250-->
+<!--SR:!2024-01-20,307,250-->
 
 #🧠 在CSS Specificity中的id-class-type 計算中，那如何將特例下的!important、inline style計算權重？那id、class、type的分數是如何？->->-> `每個!important 為10000分、每個inline style為1000分。每一個id、每一個class、每一個type分數分別為100、10、1分`
 <!--SR:!2023-03-31,130,250-->

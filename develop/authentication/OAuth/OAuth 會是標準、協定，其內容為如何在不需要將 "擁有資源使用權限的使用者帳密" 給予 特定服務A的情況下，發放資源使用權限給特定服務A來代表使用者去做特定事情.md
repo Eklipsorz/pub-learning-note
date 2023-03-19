@@ -215,17 +215,17 @@
 
 
 #🧠 OAuth 的授權思路會是什麼？其中讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，授權層會只接受什麼？面向於誰 ->->-> `僅面向於應用程式A，只接受於token來透過它獲取服務提供商的資源`
-<!--SR:!2023-03-19,2,247-->
+<!--SR:!2023-03-24,5,247-->
 
 #🧠  OAuth 的 token 中的權限和有效期會是由誰來決定 ->->-> `通常是由授予權限的使用者來決定或者其發放token的server來決定`
 <!--SR:!2023-03-24,5,247-->
 
 
 #🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端)和服務提供商來說明，請畫圖來說明->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679061043/blog/OAuth/OAuth-Simple-Concept_vrcj0d.png)`
-<!--SR:!2023-03-19,2,247-->
+<!--SR:!2023-03-24,5,247-->
 
 #🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說 ->->-> `	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權 - 使用者同意並給予授權資料至應用程式A - 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token - Authorization Server認證授權資料並確認無誤，就發放其token - 客戶端使用token來向Resource Server來申請獲取資源 - Resource Server 確認token 無誤就發放資源給客戶端`
-<!--SR:!2023-03-19,2,247-->
+<!--SR:!2023-03-23,4,247-->
 
 #🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請畫圖來說明 ->->-> ``
 <!--SR:!2023-03-19,2,247-->
@@ -233,7 +233,7 @@
 
 
 #🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請問普遍來說，**使用者同意並給予授權資料至應用程式A** 這步驟為什麼會有一些安全性疑慮？ ->->-> `由於Resource Server/Authorization Server無法識別出該授權資料會是合法的使用者提供的？以及其內容是否合法？，因此不能貿然以該資料來發放token，必須得用一些值得信任的方式來識別並發放`
-<!--SR:!2023-03-19,2,247-->
+<!--SR:!2023-03-25,6,247-->
 
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種？ ->->-> `authorization code、implicit、resource owner password credentials、client credentials`

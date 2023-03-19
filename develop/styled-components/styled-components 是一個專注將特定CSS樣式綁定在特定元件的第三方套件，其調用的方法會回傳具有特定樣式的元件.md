@@ -103,7 +103,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-09-04,200,247-->
 
 #🧠 styled-components 是官方套件嗎？ 如何安裝->->-> `是第三方套件，安裝得用npm install styled-components`
-<!--SR:!2023-03-19,113,247-->
+<!--SR:!2023-12-21,277,247-->
 
 #🧠 安裝styled-components好，若要使用其套件，要如何做？ ->->-> `先載入import styled from 'styled-components'; 然後該函式庫語法來將對應CSS內容和對應元件結合成syled-comoonents`
 <!--SR:!2023-07-12,140,227-->
