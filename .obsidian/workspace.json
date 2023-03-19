@@ -6,14 +6,34 @@
       {
         "id": "51f0ac9d9b6eb9d8",
         "type": "tabs",
+        "dimension": 85.08575689783744,
         "children": [
           {
-            "id": "58d9626e3a2a1e16",
+            "id": "bf7239ece9f3c735",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled 2.md",
+                "file": "develop/authentication/OAuth/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fc02f89bc1c2131b",
+        "type": "tabs",
+        "dimension": 14.914243102162567,
+        "children": [
+          {
+            "id": "3c89b278e2a837e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/authentication/OAuth/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled 2.md",
+                "file": "develop/authentication/OAuth/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled 2.md",
+                "file": "develop/authentication/OAuth/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OAuth/Untitled 2.md"
+                "file": "develop/authentication/OAuth/Untitled.md"
               }
             }
           }
@@ -156,12 +176,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58d9626e3a2a1e16",
+  "active": "3c89b278e2a837e9",
   "lastOpenFiles": [
+    "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
+    "develop/authentication/OAuth/Untitled.md",
     "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/Redis/Redis Scan 是按依據數量來對資料庫的資料來分頁並且提供開發者以指定cursor來導向對應的資料群組.md",
     "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
-    "develop/authentication/OAuth/Untitled 2.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
@@ -185,7 +206,6 @@
     "develop/api-design",
     "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
     "develop/React/react-router-dom：Route 的path 寫法：盡量不將固定的路徑寫死，而是依照執行時資訊來決定其路徑。實現方式為使用useRouteMatch 和使用useLocation.md",
-    "annotation/@RenderReact.md",
     "Pasted image 20230119210755.png"
   ]
 }
