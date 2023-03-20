@@ -39,19 +39,24 @@
 just
 > only; simply
 
+[[@YingWenPianYuTimeTimeYouShiMoBuTong]]
 in-time
 > **in time 及時地**
 > 跟 “on time” 不一樣，
+> in time 有**及時趕上、剛好壓線**的意思。
 
-in time 有**及時趕上、剛好壓線**的意思。
 
+重點：
+- just ：為只有、唯獨
+- in-time：為在特定時間A之前出現特定預期結果，但通常強調在特定時間A出現特定預期結果，而非在時間A之前出現
+- just-in-time：合在一起就是指定特定事物就唯獨在特定時間A出現特定結果，不會是其他時間點出現
 
 ## 複習
 #🧠 Just-In-Time Compilation  是什麼樣的編譯->->-> `Just-In-Time Compilation 是指當特定代碼被需要執行時才會編譯成機械碼並存放在快取或者緩存上，接著執行，而不是泛指執行整個檔案之前才編譯，平時不需要時並不會編譯。`
 <!--SR:!2023-09-19,196,247-->
 
 #🧠 Just-In-Time Compilation  是執行整個檔案之前才編譯，平時不需要時並不會編譯嗎？為什麼？ ->->-> `並不是，主要會是特定代碼需要時才會被編譯`
-<!--SR:!2023-03-20,85,247-->
+<!--SR:!2023-05-05,46,227-->
 
 #🧠 Just-In-Time Compilation 是指當特定代碼被需要執行時才會編譯成機械碼並執行，請問能夠在編譯時獲取到的資訊會是什麼？ ->->-> `執行時的狀態資訊、執行前的狀態資訊`
 <!--SR:!2023-03-23,87,247-->
@@ -80,6 +85,24 @@ in time 有**及時趕上、剛好壓線**的意思。
 #🧠 Java 和JVM為例子分成兩個方向： 說明從 ByteCode -> JIT Compiler如何執行 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c) ->->-> `ByteCode -> JIT Compiler ： Java 檔案會經由Java Compiler 而編譯成Java ByteCode，並丟入JVM中的JIT Compiler 來將ByteCode編譯成目前執行環境下的machine code，最後丟給OS和硬體來執行`
 <!--SR:!2023-04-21,174,250-->
 
+
+#🧠 just-in-time 的just會是什麼意思？ ->->-> `為只有、唯獨`
+<!--SR:!2023-03-22,2,246-->
+
+
+#🧠 just-in-time 的in-time會是什麼意思？->->-> `為在特定時間A之前出現特定預期結果，但通常強調在特定時間A出現特定預期結果，而非在時間A之前出現`
+<!--SR:!2023-03-22,2,246-->
+
+#🧠 just-in-time 的in-time 是指在特定時間A之前出現特定預期結果，還有沒有其他可能的意思？->->-> `有，但通常強調在特定時間A出現特定預期結果，而非在時間A之前出現`
+<!--SR:!2023-03-22,2,246-->
+
+#🧠 just-in-time 的just 和 in-time合併再一起會是什麼意思？ ->->-> `合在一起就是指定特定事物就唯獨在特定時間A出現特定結果，不會是其他時間點出現`
+<!--SR:!2023-03-22,2,246-->
+
+#🧠 just-in-time 的in-time為何還需要just來強調->->-> `由於會有特定時間A之前、之後、剛好這三個時段，在這裡採用just來決定僅用剛好或者之前，但在這裡會只有剛好`
+<!--SR:!2023-03-22,2,246-->
+
+
 ---
 Status: #🌱 
 Tags:
@@ -89,3 +112,4 @@ References:
 [[@thakurAnswerWhatDoes2013]]
 [[@cidadeAnswerWhatDoes2008]]
 [[@wikidataJustintimeCompilation2022]]
+[[@YingWenPianYuTimeTimeYouShiMoBuTong]]

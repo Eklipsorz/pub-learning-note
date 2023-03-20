@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " Just-In-Time Compilation  是執行整個檔案之前才編譯，平時不需要時並不會編譯嗎？為什麼？",
+                "query": " just-in-time 的just 和 in-time合併再一起會是什麼意思？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -176,6 +176,9 @@
   },
   "active": "bf7239ece9f3c735",
   "lastOpenFiles": [
+    "develop/React/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
+    "inbox/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
+    "annotation/@YingWenPianYuTimeTimeYouShiMoBuTong.md",
     "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
@@ -200,10 +203,7 @@
     "annotation/@OAuthGrantTypes.md",
     "develop/api-design/API端點名稱是以多個英文單字組成的話，可以使用蛇形法、脊柱法、點字法、駝峰法來將多個單字拆分成獨立的單字並以特定符號或者形式來區隔開來.md",
     "develop/authentication/OAuth",
-    "develop/firebase/Firebase Auth REST API + REACT 實現登入頁面.md",
-    "develop/React/render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何.md",
     "develop/api-design",
-    "develop/OS/非阻塞模型是指任務發送IO請求，在獲取結果之前，任務可以做自己的事情，但必須輪詢、由負責處理的那一方來幫助獲取結果.md",
     "Pasted image 20230119210755.png"
   ]
 }
