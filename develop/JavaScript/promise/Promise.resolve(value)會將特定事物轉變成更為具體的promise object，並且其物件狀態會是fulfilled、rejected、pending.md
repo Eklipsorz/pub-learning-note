@@ -180,7 +180,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-03-31,26,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是promise object，會回傳什麼？->->-> `promise.resolve就會直接回傳該promise object`
-<!--SR:!2023-03-20,17,250-->
+<!--SR:!2023-05-04,45,250-->
 
 
 #🧠 `new Promise((resolve, _) => { /* ... */ resolve(value) }` 中的resolve為何要用resolve來取名，而非fulfilled？  ->->-> `由於其resolve功能本身就是將指定事物轉變成更為具體的事物，其事物可以fulfilled狀態或rejected或pending狀態的promise object，若是fulfilled的話，會無法說明其真正的用途`
