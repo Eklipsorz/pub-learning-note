@@ -72,7 +72,7 @@ inline ：
 <!--SR:!2023-05-02,160,250-->
 
 #🧠 \<div onclick="function();"\> \<\/div\> 和 \<div onclick="function"\> \<\/div\> 這兩者有啥差別->->-> `前者是事件發生時就執行function()；後者則是事件發生時就執行function`
-<!--SR:!2023-03-20,51,230-->
+<!--SR:!2023-07-15,117,230-->
 
 ---
 Status: #🌱 
