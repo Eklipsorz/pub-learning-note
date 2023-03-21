@@ -185,7 +185,7 @@ export default NewQuote;
 <!--SR:!2023-09-19,194,250-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是什麼型別？ ->->-> `字串、物件`
-<!--SR:!2023-03-21,63,230-->
+<!--SR:!2023-08-18,150,230-->
 
 #🧠 react-router-dom所提供的history物件：push方法和replace方法會用到的path會是字串、物件型別，其中字串是什麼？具體是 ->->-> `具體會是由URL構成的字串`
 <!--SR:!2023-07-24,149,250-->

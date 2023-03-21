@@ -195,7 +195,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 <!--SR:!2023-04-09,71,230-->
 
 #🧠 function Execution Context的creation phase：會如何處理函式、const/let變數、var變數(提示：分別放哪個EnvironmentRecords) ->->-> `從FEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中、從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中。`
-<!--SR:!2023-03-21,159,230-->
+<!--SR:!2024-03-21,366,230-->
 
 #🧠 function Execution Context的creation phase ：outer 會指向什麼？->->-> `outer會是指向呼叫該EC的EC，也就是代表從全域呼叫的GlobalExectionContext或者代表從其他函式呼叫的EC`
 <!--SR:!2023-04-20,193,250-->
