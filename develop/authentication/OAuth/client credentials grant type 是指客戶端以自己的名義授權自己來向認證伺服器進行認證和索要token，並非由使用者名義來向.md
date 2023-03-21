@@ -114,6 +114,9 @@
 
 #🧠 client credential grant type 在OAuth下："認證伺服器確認身份資訊無誤之後，就會回傳token至客戶端"，步驟B所要回傳的內容為何 ->->-> `- access_token：代表特定身份權限的token - token_type：token的種類 - expires_in：token的有限時間`
 
+#🧠  client credential grant type 在OAuth下，通常會是以什麼http動詞來讓客戶端索求token？請舉例->->-> `POST /token`
+
+
 
 
 ---
