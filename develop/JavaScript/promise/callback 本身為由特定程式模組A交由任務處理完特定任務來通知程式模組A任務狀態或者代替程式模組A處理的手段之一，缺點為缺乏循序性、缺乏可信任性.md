@@ -66,7 +66,11 @@ doF();
 
 
 總結為：
-- inversion of control：任何種類的callback之執行控制權從程式模組A反轉成不是由程式模組A來控制執行，而是轉由其他外部程式模組。在這裡會是指被接收callback的非同部任務來決定
+- inversion of control：呼叫端所定義的程式碼-callback本身是由呼叫端構成，所以預期會是由呼叫端本身決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。
+- 細節：
+	- callback會是呼叫端的一部分
+	- 當哪個程式碼決定callback的執行，就是由該程式碼決定呼叫端的程式碼執行
+
 
 
 #### 案例
@@ -114,6 +118,10 @@ function handler() {
 
 #🧠 假如公司要求購買每一項東西時，都要呼叫追蹤交易的第三方服務，然後指定callback來由它負責付款和顯示付款成功的畫面，請問這會有啥潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-2_lrqyyv.png) ->->-> `難以信任第三方服務會正常執行callback，callback的執行控制權會轉由第三方服務來執行，由它決定callback要執行幾次、執行時機、是否要執行。`
 <!--SR:!2023-05-11,68,250-->
+
+#🧠 callback 會有 inversion of control 嗎？仔細說明，以呼叫端、callback、特定任務來舉例 ->->-> `inversion of control：呼叫端所定義的程式碼-callback本身是由呼叫端構成，所以預期會是由呼叫端本身決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。`
+
+#🧠 callback 會呈現出 inversion of control ，那麼callback和呼叫端之間的關係是如何 以及誰執行callback又是代表著 ->->-> `- callback會是呼叫端的一部分- 當哪個程式碼決定callback的執行，就是由該程式碼決定呼叫端的程式碼執行`
 
 
 
