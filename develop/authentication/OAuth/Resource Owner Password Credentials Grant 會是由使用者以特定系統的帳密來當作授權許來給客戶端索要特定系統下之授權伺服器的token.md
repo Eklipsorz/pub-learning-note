@@ -1,6 +1,6 @@
 ## 描述
 
-
+[[@LiJieOAuthRuanYiFengDeWangLuoRiZhi]]
 > 密码模式（Resource Owner Password Credentials Grant）中，用户向客户端提供自己的用户名和密码。客户端使用这些信息，向"服务商提供商"索要授权。
 
 > 在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。
@@ -76,7 +76,7 @@ Pragma: no-cache
 重點：
 - 步驟C：認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端
 - 請求方式：URI(含URI參數)、封包
-- 主要參數
+- 主要回應內容：
 	- token_type：token 種類
 	- access_token：代表特定身份下所擁有的權限結果物 access token 
 	- refresh_token：用以申請新的access token和refresh token的token
@@ -132,3 +132,4 @@ Tags:
 Links:
 [[OAuth 會是標準、協定，其內容為如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情]]
 References:
+[[@LiJieOAuthRuanYiFengDeWangLuoRiZhi]]
