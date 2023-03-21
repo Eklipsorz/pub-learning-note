@@ -94,7 +94,7 @@ coupling
 <!--SR:!2023-04-28,176,250-->
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling程度會影響結果嗎？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/A-to-B-Coupling_uvdngb.png) ->->-> `，當A去存取B時有可能改變著B的預期結果，因A有可能改變著決定結果的因素，而因素就在B裡頭`
-<!--SR:!2023-03-21,150,250-->
+<!--SR:!2024-03-30,375,250-->
 
 #🧠  電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何 	![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/B-to-A-Coupling_kyjuju.png)->->-> `模組B 單方面存取 模組A 意旨為 模組B 單方面依賴 模組A`
 <!--SR:!2023-03-25,153,250-->

@@ -264,7 +264,7 @@ UsersFinder.js
 
 
 #🧠 componentDidUpdate 參數 vs componentDidCatch參數之間差別是什麼？ ->->-> `前者是(prevProps, prevState)；後者是(error)`
-<!--SR:!2023-03-21,54,228-->
+<!--SR:!2023-07-22,123,228-->
 
 ---
 Status: #🌱 

@@ -94,7 +94,7 @@ _Fig. 2: Colored Scope Bubbles_
 
 
 #🧠 JavaScript 什麼時候生成對應的GEC和FEC？（具體說明) ->->-> `執行階段中，快要執行GEC對應的scope才會執行對應的bytecode來生成對應EC，而FEC則是快要執行FEC對應的scope才會執行對行對應的bytecode來生成對應的FEC`
-<!--SR:!2023-03-21,106,247-->
+<!--SR:!2023-12-08,262,247-->
 
 
 
