@@ -83,26 +83,39 @@ Pragma: no-cache
 ## 複習
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是什麼？->->-> `Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是以什麼形式來當作使用者同意授權的資料？ ->->-> `使用者的帳密`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在OAuth 下的適用場景為何？ ->->-> `	- 由於是使用者提供高度敏感的帳密，所以客戶端必須是值得信任，比如客戶端為作業系統的一部分或者由一個著名公司出品的客戶端 - 其他授權模式無法實現才會選擇本方案`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？->->-> `A. 使用者直接向客戶端提供特定系統的帳號和密碼、 B. 客戶端憑藉著使用者的帳密來向認證伺服器索要token、C. 認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？畫圖來說明 ->->-> ![密码模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051206.png)
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程中，其中`A. 使用者直接向客戶端提供特定系統的帳號和密碼` 的帳號和密碼是做什麼目的？ ->->-> `主要目的為：將帳密作為使用者的授權許可之證明`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端發送的請求會是什麼形式？->->-> `URI(URI參數)、封包為形式`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端的請求封包之主要內容為何->->-> `- grant_type：授權種類，在這裡會是填寫password - username：表示特定系統下的帳號 - password：表示特定系統下的帳號所擁有的密碼 - scope：表示索要的token要什麼樣的scope`
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `URI(含URI參數)、封包`
+<!--SR:!2023-03-24,3,250-->
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `URI(含URI參數)、封包`
+<!--SR:!2023-03-24,3,250-->
+<!--SR:!2023-03-24,3,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應內容會是什麼 ->->-> `- token_type：token 種類 - access_token：代表特定身份下所擁有的權限結果物 access token  - refresh_token：用以申請新的access token和refresh token的token - expires_in：access token的有效時間`
+<!--SR:!2023-03-22,1,230-->
 
 
 
