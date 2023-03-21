@@ -202,7 +202,7 @@ Pragma: no-cache
 <!--SR:!2023-03-30,9,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時 ，請畫圖來表示->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679145847/blog/OAuth/OAuth-with-code_bn5ih9.png)`
-<!--SR:!2023-03-21,3,250-->
+<!--SR:!2023-03-27,6,250-->
 
 
 
@@ -284,6 +284,8 @@ Pragma: no-cache
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token"，認證授權伺服器發送過來的回應封包會有哪些內容？ ->->-> `	- access_token：表示其使用者授予權限的token - token_type：表示token種類，可以是bearer類型 - expires_in：表示過期時間，單位為秒 - refresh_token：表示用來申請access-token的token - scope：表示access_token被授與的權限為何`
 <!--SR:!2023-03-29,8,250-->
+
+#🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，其中的grant_type 會是定義為？ ->->-> ` authorization_code`
 
 
 
