@@ -161,7 +161,7 @@ pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器
 <!--SR:!2023-03-22,3,250-->
 
 
-#🧠  implicit grant type 在"，其中的grant_type 會是定義為？ ->->-> ` authorization_code`
+#🧠  implicit grant type 在OAuth下會需要設定grant_type？為什麼？ ->->-> `並不會，由於grant_type會是得讓使用者的授權同意授與客戶端來讓它發送索要token的請求，但該type並沒有，只是全都在使用者的瀏覽器進行授權同意和索要token`
 
 
 

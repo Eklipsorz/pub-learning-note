@@ -2,7 +2,7 @@
 ## 描述
 
 
-由於會讓客戶端憑著使用者授權來索要token，所以
+由於會讓客戶端憑著使用者同意授權來索要token，所以
 - authorization code grant type：會讓客戶端憑著使用者授權的資料來索要
 	- 使用者授權的資料：authorization code 
 	- grant_type：authorization_code
@@ -13,6 +13,8 @@
 
 
 ## 複習
+
+
 
 ---
 Status: #🌱 
