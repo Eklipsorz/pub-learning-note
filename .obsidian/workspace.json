@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
+                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "redirect_uri 是用來接收token的地點： implicit grant type 在OAuth上的流程為何？ 請畫圖來表示",
+                "query": "id token",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
+                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
+                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md"
+                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md"
               }
             }
           },
@@ -176,12 +176,14 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
+    "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
+    "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/authentication/OAuth/Untitled 1.md",
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "develop/authentication/OAuth/client credentials grant type 是指客戶端以自己的名義授權自己來向認證伺服器進行認證和索要token，並非由使用者名義來向.md",
     "develop/authentication/OAuth/Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token.md",
-    "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
     "annotation/@ClientCredentialsOAuth.md",
     "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
@@ -200,8 +202,6 @@
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/Untitled.md",
-    "develop/authentication/Untitled.md",
-    "develop/authentication/Untitled 4.md",
     "develop/authentication/OAuth",
     "develop/api-design",
     "Pasted image 20230119210755.png"

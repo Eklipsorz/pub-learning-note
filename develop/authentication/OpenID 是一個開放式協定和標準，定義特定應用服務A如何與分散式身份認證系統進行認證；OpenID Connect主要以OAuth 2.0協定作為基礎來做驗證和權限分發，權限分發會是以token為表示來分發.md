@@ -128,12 +128,14 @@
 
 
 
+
 ---
 Status: 
 Tags:
 [[Authentication]] - [[Authorization]]
 Links:
 [[JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點]]
+
 References:
 [[@OpenIDWikipedia]]
 [[@IBMDocumentation2022]]
