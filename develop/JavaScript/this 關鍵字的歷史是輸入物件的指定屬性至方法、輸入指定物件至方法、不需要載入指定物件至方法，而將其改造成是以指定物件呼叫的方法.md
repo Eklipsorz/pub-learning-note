@@ -205,7 +205,7 @@ function sayBye() {
 <!--SR:!2023-04-23,193,250-->
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，還存在著什麼樣的缺點 （提示：呼叫形式好像很多餘) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   對於人類開發而言，這種呼叫形式是很累贅的，因為.前面就有person，參數卻還要填入person物件`
-<!--SR:!2023-03-22,170,250-->
+<!--SR:!2024-05-20,425,250-->
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，那麼若想透過person所擁有的name、age、phone來處理和印出的話，請問該如何做，能否不用參數就能索要？ (提示：this)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655534693/blog/javascript/object/object-self-example1_bcjr5l.png)  ->->-> `將原本語法形式改造成不需要參數的語法形式，使其讓人類變得很容易理解和使用，比如依然採用將想要存取的物件當作參數來載入但不顯示，這樣每次呼叫下的方法都不會呈現出需要多一個物件參數，但在執行函式時會以一個隱藏變數this來表示對應被隱藏的參數物件，換言之，this等同於呼叫該方法的物件，或者說要存取的物件被載入特定物件的方法來處理`

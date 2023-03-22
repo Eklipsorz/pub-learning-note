@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "implicit grant type 在OAuth 中為何被稱之為implitic",
+                "query": "implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本，在這裡請畫圖來表示",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -174,7 +174,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4977511a540843e5",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/authentication/OAuth/Untitled 1.md",
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
