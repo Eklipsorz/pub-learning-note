@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
+                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本，在這裡請畫圖來表示",
+                "query": "redirect_uri 是用來接收token的地點： implicit grant type 在OAuth上的流程為何？ 請畫圖來表示",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
+                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
+                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md"
+                "file": "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md"
               }
             }
           },
@@ -174,13 +174,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/authentication/OAuth/Untitled 1.md",
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "develop/authentication/OAuth/client credentials grant type 是指客戶端以自己的名義授權自己來向認證伺服器進行認證和索要token，並非由使用者名義來向.md",
     "develop/authentication/OAuth/Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token.md",
-    "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
     "annotation/@ClientCredentialsOAuth.md",

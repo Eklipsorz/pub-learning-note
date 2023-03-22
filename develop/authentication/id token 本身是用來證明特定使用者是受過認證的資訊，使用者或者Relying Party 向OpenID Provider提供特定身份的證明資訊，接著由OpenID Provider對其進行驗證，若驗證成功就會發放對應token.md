@@ -185,7 +185,7 @@ claim：
 <!--SR:!2023-04-30,65,250-->
 
 #🧠 若token本身夾雜特定身分證明資訊 和 代表特定資源之使用權限的資訊，那麼就會是同時表示權限和使用者的id token，其中id token夾雜的身分證明資訊會是？->->-> `特定身分對應的client_id、驗證操用的識別字、名字、email、圖片、生日等個人資料`
-<!--SR:!2023-03-22,41,247-->
+<!--SR:!2023-04-12,21,227-->
 
 #🧠 id token 以及 access token 如何獲取？ ->->-> `皆為使用者先向Authorization Server/OpenID Provider提供特定身份的證明資訊，Authorization Server/OpenID Provider對其進行驗證，若驗證成功就會根據是否綁定特定身份來發放id token 或者 access token，若綁定就id token；若沒綁定就access token`
 <!--SR:!2023-04-25,49,210-->
