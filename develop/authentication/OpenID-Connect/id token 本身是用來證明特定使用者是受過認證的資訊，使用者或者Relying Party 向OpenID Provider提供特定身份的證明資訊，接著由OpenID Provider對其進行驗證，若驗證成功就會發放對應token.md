@@ -179,15 +179,7 @@ claim：
 重點：
 - 以特定角度來說明特定事物是事實的描述，但對於其他人來說可能會不相信
 
-### id token 的發放和驗證流程
 
-
-由於id token 是基於OpenID Connenct 協議，該協議會是以OAuth 2.0的token發放和驗證流程為主，只是token會是以夾雜特定身份資訊的token。
-
-[[implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token]]
-[[OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程]]
-[[Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token]]
-[[client credentials grant type 是指客戶端以自己的名義授權自己來向認證伺服器進行認證和索要token，並非由使用者名義來向]]
 
 
 ## 複習
@@ -230,28 +222,17 @@ claim：
 <!--SR:!2023-06-26,98,247-->
 
 
-#🧠 id token 的發放和驗證流程為何？ ->->-> `會是以OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主`
-
-#🧠 id token 的發放和驗證流程為OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主，為何以他們為主？->->-> `由於id token本身是由OpenId Connect標準提出，該標準又是以OAuth為基礎`
-
-#🧠  OpenID Connect下的 id token 和 OAuth 2.0下的access_token 之間有何種差異->->-> ``
-
-
-
 
 
 ---
 Status: #🌱 
 Tags:
-[[Authentication]] - [[Authorization]]
+[[Authentication]] - [[Authorization]] - [[OpenID-Connect]]
 Links:
 [[authentication 是指特定事物被驗證是對、正確、合法事物之過程；authorization 是指授與權力給特定事物去做特定事情之過程]]
 [[JSON Web Token 內容分為定義JWT製作和形式的header、夾雜主要內容的payload、驗證是否被人篡改資料的簽署值]]
 [[JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點]]
-[[implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token]]
-[[OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程]]
-[[Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token]]
-[[client credentials grant type 是指客戶端以自己的名義授權自己來向認證伺服器進行認證和索要token，並非由使用者名義來向]]
+
 References:
 [[@VerifyGoogleID]]
 [[@IDTokenAccess]]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
+                "file": "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
                 "mode": "source",
                 "source": false
               }
@@ -83,7 +83,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
+                "file": "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
+                "file": "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md"
+                "file": "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md"
               }
             }
           },
@@ -176,8 +177,12 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
-    "develop/authentication/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
-    "develop/authentication/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
+    "develop/authentication/OpenID-Connect/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
+    "annotation/@TokenTypesAuthentication.md",
+    "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
+    "develop/authentication/OpenID-Connect/OpenID 是一個開放式協定和標準，定義特定應用服務A如何與分散式身份認證系統進行認證；OpenID Connect主要以OAuth 2.0協定作為基礎來做驗證和權限分發，權限分發會是以token為表示來分發.md",
+    "develop/authentication/OpenID-Connect",
+    "develop/authentication/OAuth/Untitled",
     "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/authentication/OAuth/Untitled 1.md",
@@ -200,8 +205,6 @@
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
     "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "develop/Untitled.md",
     "develop/authentication/OAuth",
     "develop/api-design",
     "Pasted image 20230119210755.png"
