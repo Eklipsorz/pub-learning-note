@@ -103,7 +103,7 @@ element1 -> element2 -> element3
 <!--SR:!2023-09-21,193,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，請問其事件處理的順序和接收順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/bubbling-phase-execution-order_zzygfc.png))->->-> `(隔了 1s 之後出現) handler <div id="element3" class="child"> (隔了 1s 之後出現) handler <div id="element2" class="parent"> (隔了 1s 之後出現) handler <div id="element1" class="grandpa">`
-<!--SR:!2023-03-22,81,250-->
+<!--SR:!2023-10-17,209,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，請問其事件處理的順序和接收順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/capture-phase-execution-order_dwacbc.png) ->->-> `(隔了 1s 之後出現) handler <div id="element1" class="grandpa"> (隔了 1s 之後出現) handler <div id="element2" class="parent"> (隔了 1s 之後出現) handler <div id="element3" class="child">`
 <!--SR:!2023-08-30,180,250-->
