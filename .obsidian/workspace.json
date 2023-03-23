@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "authorization code grant type 在OAuth 上的授權流程中：\"身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求\"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？",
+                "query": "Resource Server 確認token 無誤就發放資源給客戶端",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -83,8 +83,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -104,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md"
+                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md"
               }
             }
           },
@@ -175,7 +174,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4977511a540843e5",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",

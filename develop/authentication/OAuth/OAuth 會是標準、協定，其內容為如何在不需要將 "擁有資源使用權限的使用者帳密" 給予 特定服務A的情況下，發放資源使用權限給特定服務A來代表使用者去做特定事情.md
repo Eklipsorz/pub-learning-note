@@ -107,7 +107,7 @@
 
 
 重點：
-- OAuth 概念 的 基本實現會有的流程：當使用者要授權給應用程式A來獲取Resource Server的服務時
+- OAuth 概念 的 基本實現會有的執行流程：當使用者要授權給應用程式A來獲取Resource Server的服務時
 	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權
 	- 使用者同意並給予授權資料至應用程式A
 	- 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token
@@ -224,8 +224,9 @@
 #🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端)和服務提供商來說明，請畫圖來說明->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679061043/blog/OAuth/OAuth-Simple-Concept_vrcj0d.png)`
 <!--SR:!2023-03-24,5,247-->
 
-#🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說 ->->-> `	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權 - 使用者同意並給予授權資料至應用程式A - 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token - Authorization Server認證授權資料並確認無誤，就發放其token - 客戶端使用token來向Resource Server來申請獲取資源 - Resource Server 確認token 無誤就發放資源給客戶端`
-<!--SR:!2023-03-23,4,247-->
+#🧠 OAuth 概念 的 基本實現會有的執行流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說 ->->-> `	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權 - 使用者同意並給予授權資料至應用程式A - 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token - Authorization Server認證授權資料並確認無誤，就發放其token - 客戶端使用token來向Resource Server來申請獲取資源 - Resource Server 確認token 無誤就發放資源給客戶端`
+<!--SR:!2023-03-24,1,226-->
+
 
 #🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請畫圖來說明 ->->-> ``
 <!--SR:!2023-03-24,5,247-->
