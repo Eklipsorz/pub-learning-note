@@ -93,16 +93,16 @@
 <!--SR:!2023-03-24,3,250-->
 
 #🧠 client credential grant type 在OAuth 下，client會以誰授權誰的結果來索要token？ ->->-> `client本身 授權 自己 的結果來索要token`
-<!--SR:!2023-03-23,2,248-->
+<!--SR:!2023-03-27,4,248-->
 
 #🧠 client credential grant type 在OAuth 下的流程會是什麼？ ->->-> `	- 客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** 並以此向認證伺服器索要token - 認證伺服器確認身份資訊無誤之後，就會回傳token至客戶端`
 <!--SR:!2023-03-23,2,248-->
 
 #🧠 client credential grant type 在OAuth 下的流程會是什麼？畫圖表示 ->->-> ![客户端模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051207.png)
-<!--SR:!2023-03-23,2,248-->
+<!--SR:!2023-03-29,6,248-->
 
 #🧠 client credential grant type 在OAuth 下嚴格來說，會是使用者授權嗎？為什麼 ->->-> `不屬於，只是單純是客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** `
-<!--SR:!2023-03-23,2,248-->
+<!--SR:!2023-03-29,6,248-->
 
 #🧠 client credential grant type 在OAuth下："客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** 並以此向認證伺服器索要token"，其請求會是什麼形式 ->->-> `封包`
 <!--SR:!2023-03-24,2,230-->
@@ -123,7 +123,7 @@
 
 
 #🧠 client credential grant type 在OAuth下："認證伺服器確認身份資訊無誤之後，就會回傳token至客戶端"，其回應封包所要回傳的內容為何 ->->-> `- access_token：代表特定身份權限的token - token_type：token的種類 - expires_in：token的有限時間`
-<!--SR:!2023-03-23,2,248-->
+<!--SR:!2023-03-27,4,248-->
 
 #🧠  client credential grant type 在OAuth下，通常會是以什麼http動詞來讓客戶端索求token？請舉例->->-> `POST /token`
 <!--SR:!2023-03-24,3,250-->
