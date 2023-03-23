@@ -28,7 +28,7 @@
 
 
 #🧠 Atomicity 施加在 Database Transaction 的話，若協議部分任務執行失敗的話，資料庫結果會是如何？  協議會重新執行嗎？ ->->-> `其內容會還原成未執行整個transaction前的資料庫內容，並依據開發者或者系統是否允許重新執行transaction或者跳出整個transaction`
-<!--SR:!2023-03-23,165,250-->
+<!--SR:!2024-05-13,417,250-->
 
 
 #🧠 Atomicity 施加在 Database Transaction 的話，若協議只有部分任務執行成功的話，資料庫結果會是如何？  協議會重新執行嗎？ ->->-> `其內容會還原成未執行整個transaction前的資料庫內容，並依據開發者或者系統是否允許重新執行transaction或者跳出整個transaction`

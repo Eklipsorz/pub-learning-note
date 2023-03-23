@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",
+                "file": "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "id token",
+                "query": "authorization code grant type 在OAuth 上的授權流程中：\"身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求\"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -177,6 +177,8 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
+    "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",
     "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
     "develop/authentication/OpenID-Connect/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
     "annotation/@TokenTypesAuthentication.md",
@@ -185,8 +187,6 @@
     "develop/authentication/OAuth/Untitled",
     "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
-    "develop/authentication/OAuth/OAuth 差異：客戶端是否憑著使用者同意授權來索要token 和 流程下所會用到的http動詞和資料形式.md",
-    "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "develop/authentication/OAuth/client credentials grant type 是指客戶端以自己的名義授權自己來向認證伺服器進行認證和索要token，並非由使用者名義來向.md",
     "develop/authentication/OAuth/Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token.md",
     "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
