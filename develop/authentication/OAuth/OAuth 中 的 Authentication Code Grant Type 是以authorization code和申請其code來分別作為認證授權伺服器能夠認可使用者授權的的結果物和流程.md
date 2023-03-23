@@ -222,7 +222,7 @@ Pragma: no-cache
 <!--SR:!2023-03-28,7,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，使用者向客戶端發送封包，請問HTTP動詞是為何？ ->->-> `GET`
-<!--SR:!2023-03-23,2,249-->
+<!--SR:!2023-03-27,4,249-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？->->-> `其請求會是以封包來進行，主要會在封包內部附加授權碼、當初申請授權碼的重導向URL、當初申請授權碼的client_id`
