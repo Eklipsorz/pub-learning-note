@@ -190,6 +190,7 @@
   },
   "active": "40198c15260ad3a7",
   "lastOpenFiles": [
+    "annotation/@RegisterSignLog2021.md",
     "develop/authentication/Untitled 4.md",
     "develop/authentication/Untitled 1.md",
     "develop/authentication/Untitled.md",
@@ -218,7 +219,6 @@
     "inbox/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
     "inbox/React：React.memo 將特定props之指定元件A的對應Virtual DOM儲存在緩存或者記憶體中，並比較每一次渲染觸發時的props資訊是否和儲存記憶體的資訊一致，一致就用記憶體，不一致就執行function.md",
     "develop/React/react-router v6：從多個路徑挑選一個路徑和Route 語法之間的改變.md",
-    "annotation/@YingWenPianYuTimeTimeYouShiMoBuTong.md",
     "develop/authentication/OAuth",
     "develop/api-design",
     "Pasted image 20230119210755.png"

@@ -2,6 +2,7 @@
 
 
 ### log in
+[[@RegisterSignLog2021]]
 > **Log in**
 
 > Let us begin with the **phrasal verb** “log in.” This expression means to gain permission to use a computer system. Logging in usually requires a username and password. When a user logs in, the computer system keeps a record, or “log,” of that user’s **session** on the system. We can also use the single word “login” as a noun to describe such a session on a computer.
@@ -12,7 +13,7 @@
 - log in 可以替換成login這名詞
 
 ### sign in
-
+[[@RegisterSignLog2021]]
 > **Sign in**
 
 > We can use the phrasal verb “sign in” in the same way as “log in.” But unlike “log in,” “sign in” is common outside of the computer world. As part of security measures in an office building or school, you may have to provide information about yourself before you enter. That could mean writing your name (or “signing” your name) on a paper or showing an identity card. This creates a record of visitors to a place.
@@ -54,3 +55,4 @@ Tags:
 [[Authentication]] - [[Authorization]]
 Links:
 References:
+[[@RegisterSignLog2021]]
