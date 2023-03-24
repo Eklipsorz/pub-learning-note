@@ -193,7 +193,7 @@ suspense
 
 
 #🧠 React-router：Await 語法為何？ ->->-> `<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>`
-<!--SR:!2023-03-24,59,250-->
+<!--SR:!2023-08-24,153,250-->
 
 
 #🧠 React-router：Await 語法上為何需要Suspense元件？->->-> `確保還未完成的元件能先有個預設畫面來渲染`
