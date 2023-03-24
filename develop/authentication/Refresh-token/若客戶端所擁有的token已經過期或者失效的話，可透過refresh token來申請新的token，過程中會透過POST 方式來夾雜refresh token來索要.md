@@ -43,16 +43,22 @@ grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
 ## 複習
 
 #🧠 token based authentication/OAuth：若客戶端所擁有的token已經過期或者失效的話，客戶端可以做些什麼來獲取token ->->-> `1. 利用refresh token來申請新的token 2. 重新獲得授權同意並拿同意來索求token`
+<!--SR:!2023-03-27,3,250-->
 
 #🧠 token based authentication/OAuth：使用refresh token來申請token請求的封裝形式為何？->->-> `封包`
+<!--SR:!2023-03-27,3,250-->
 
 #🧠 token based authentication/OAuth：使用refresh token來申請token請求之主要流程為何？ ->->-> `	- 客戶端憑藉refresh token直接向認證伺服器來索要token - 認證伺服器驗證refresh token無誤後，就產生新的token和refresh token至客戶端 - 客戶端利用新的token重新對resource server發送索要資源的請求`
+<!--SR:!2023-03-27,3,250-->
 
 #🧠 使用refresh token來申請token請求之主要流程："客戶端憑藉refresh token直接向認證伺服器來索要token"，這步驟所需要的請求封包會需要什麼參數？ ->->-> `	- grant_type： 表示授權種類為何，若用refresh token來申請就填寫為refresh_token- refresh_token：用來申請新的token的token - scope：申請新token的權限，通常來說不可超出上次申請的權限範疇`
+<!--SR:!2023-03-27,3,250-->
 
 #🧠 使用refresh token來申請token請求之主要流程："客戶端憑藉refresh token直接向認證伺服器來索要token"，通常會用什麼http動詞來索要？->->-> `POST`
+<!--SR:!2023-03-27,3,250-->
 
 #🧠 使用refresh token來申請token請求之主要流程："客戶端憑藉refresh token直接向認證伺服器來索要token"，通常會用什麼http動詞以及端點會是什麼？請舉例來說？->->-> `POST /token`
+<!--SR:!2023-03-27,3,250-->
 
 
 
