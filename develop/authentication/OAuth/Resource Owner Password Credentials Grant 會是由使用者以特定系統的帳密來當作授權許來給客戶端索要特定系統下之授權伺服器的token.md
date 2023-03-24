@@ -94,7 +94,7 @@ Pragma: no-cache
 <!--SR:!2023-03-24,3,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？->->-> `A. 使用者直接向客戶端提供特定系統的帳號和密碼、 B. 客戶端憑藉著使用者的帳密來向認證伺服器索要token、C. 認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端`
-<!--SR:!2023-03-24,3,250-->
+<!--SR:!2023-04-03,10,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？畫圖來說明 ->->-> ![密码模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051206.png)
 <!--SR:!2023-03-24,3,250-->
