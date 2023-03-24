@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Untitled 1.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,16 +35,16 @@
         "currentTab": 1
       },
       {
-        "id": "ab2a7d9f4584e589",
+        "id": "41a31d884a6dd5a2",
         "type": "tabs",
         "children": [
           {
-            "id": "0208f4ef8df7eb24",
+            "id": "32ff7c61fb8084ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Refresh-token/若客戶端所擁有的token已經過期或者失效的話，可透過refresh token來申請新的token，過程中會透過POST 方式來夾雜refresh token來索要.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Untitled 1.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Untitled 1.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Untitled 1.md"
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md"
               }
             }
           },
@@ -188,10 +188,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72ef0deaec8d631a",
+  "active": "32ff7c61fb8084ae",
   "lastOpenFiles": [
+    "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
-    "develop/authentication/Untitled 1.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄動作.md",
     "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者名稱和其對應密碼來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者本意進入需要安全措施的建築物和機構前所必須提供使用者資訊並驗證.md",
