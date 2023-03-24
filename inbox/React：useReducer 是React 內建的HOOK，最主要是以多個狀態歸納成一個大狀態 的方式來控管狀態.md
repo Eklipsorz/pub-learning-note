@@ -338,7 +338,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-05-15,146,250-->
 
 #🧠 React：reducerFn主要會是什麼樣子的函式，其函式內容為何？用程式碼表示一下 ->->-> `(prevState, action) => { return new-state }`
-<!--SR:!2023-03-24,113,250-->
+<!--SR:!2024-01-01,283,250-->
 
 #🧠 React：reducerFn(prevState, action)的preState 會是最近最新的狀態？為什麼？ ->->-> `同一個 useReducer 控管的所有state 被保證一定是目前最新的狀態，原因為：1. 目前狀態都會被React 儲存管理。 2. 狀態更新都是在dispatch 所發送的action 或者 由React內部提供。 3. 狀態都歸納成同一個狀態，不會有依賴舊有狀態的問題。`
 <!--SR:!2023-07-24,193,250-->
