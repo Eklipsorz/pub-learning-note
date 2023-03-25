@@ -238,7 +238,7 @@
 
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種？ ->->-> `authorization code、implicit、resource owner password credentials、client credentials`
-<!--SR:!2023-03-25,5,227-->
+<!--SR:!2023-04-05,11,227-->
 
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種，其中不論哪一種，哪一個server會負責驗證客戶端傳過來的token？->->-> `resource server 或者 由resource server轉發token至authorization server來驗證`
