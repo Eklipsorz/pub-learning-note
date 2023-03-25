@@ -233,8 +233,9 @@
 
 
 
-#🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請問普遍來說，**使用者同意並給予授權資料至應用程式A** 這步驟為什麼會有一些安全性疑慮？ ->->-> `由於Resource Server/Authorization Server無法識別出該授權資料會是合法的使用者提供的？以及其內容是否合法？，因此不能貿然以該資料來發放token，必須得用一些值得信任的方式來識別並發放`
-<!--SR:!2023-03-25,6,247-->
+#🧠 針對OAuth 概念 所實現的基本流程中，其中會有客戶端詢問使用者獲取授權同意的手段並以授權來申請使用resource server，普遍來說， 授權同意會不會具有一些安全性疑慮？有的話，會是什麼？ ->->-> `由於Resource Server/Authorization Server無法識別出該授權資料會是合法的使用者提供的？以及其內容是否合法？，因此不能貿然以該資料來發放token，必須得用一些值得信任的方式來識別並發放`
+<!--SR:!2023-03-27,2,245-->
+
 
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種？ ->->-> `authorization code、implicit、resource owner password credentials、client credentials`
