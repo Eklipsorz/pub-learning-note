@@ -133,7 +133,7 @@ export async function action({ request }) {
 ## 複習
 
 #🧠 request物件的formData方法會是什麼？ ->->-> `將request包裝的body部分擷取並轉換成以多個key-value pairs形式的資料形式，該形式為formData物件`
-<!--SR:!2023-03-26,64,250-->
+<!--SR:!2023-09-10,168,250-->
 
 #🧠 request物件的formData方法會回傳什麼？ ->->-> `回傳FormData物件`
 <!--SR:!2023-04-08,73,250-->
