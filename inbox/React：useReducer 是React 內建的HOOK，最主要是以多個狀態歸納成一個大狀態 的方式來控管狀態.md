@@ -362,7 +362,7 @@ initFn：主要是定義如何設定初始值
 #🧠 React：請問useReducer的狀態更新支不支援auto-batching ->->-> `支援`
 <!--SR:!2023-06-30,177,250-->
 
-#🧠 React：請問useReducer的派送action和處理action支不支援auto-batching ->->-> `都不支援`
+#🧠 React：請問useReducer的派送action和處理action這兩個本身支不支援auto-batching ->->-> `都不支援`
 <!--SR:!2023-03-26,115,250-->
 
 #🧠 React useReducer 何時觸發執行？->->-> `每一次執行元件的render函式就會執行useReducer`
