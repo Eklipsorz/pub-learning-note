@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
+                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
+                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md"
+                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md"
               }
             }
           },
@@ -187,15 +187,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72ef0deaec8d631a",
+  "active": "32ff7c61fb8084ae",
   "lastOpenFiles": [
+    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
     "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
     "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
     "develop/React/react-router/router-6.4/使用useNavigation來實現確保一旦提交就不會有額外的提交內容，手段可以是一旦提交就關閉提交按鈕，按鈕顯示submitting.md",
     "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md",
-    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
     "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
