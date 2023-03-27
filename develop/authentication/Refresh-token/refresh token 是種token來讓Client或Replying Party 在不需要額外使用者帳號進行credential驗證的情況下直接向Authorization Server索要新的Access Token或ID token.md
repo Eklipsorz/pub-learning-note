@@ -124,8 +124,8 @@ H. Authorization Server驗證Refresh Token，若驗證成功就簽發新的Acces
 
 
 
-#🧠 請畫圖來描述access token 和 refresh token 獲取過程 ->->-> `![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png)`
-<!--SR:!2023-03-26,40,249-->
+#🧠 請畫圖來描述access token 和 refresh token 獲取過程以及使用他們的過程 ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png)
+<!--SR:!2023-04-16,20,229-->
 
 #🧠 以下為access token 和 refresh token 獲取過程，請仔細說明其中(E)、(F)驗證token是否過期的負責業務還可以是誰？，另外Resource Server被假定成具有驗證Access Token、回傳資源的功能。![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674049658/blog/authentication/refresh-token-and-token-flow_fhv9nl.png) ->->-> `Client 可以在內部驗證是否過期再來決定發送、Client 並不會驗證而轉由Authorization Server驗證是否過期`
 <!--SR:!2023-06-06,84,250-->

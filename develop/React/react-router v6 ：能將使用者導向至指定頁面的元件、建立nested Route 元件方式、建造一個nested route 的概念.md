@@ -150,7 +150,7 @@ xxxx 元件下的路由
 
 
 #🧠  react-router-dom v6：建立nested Route 元件方式，其原理有哪些？ ->->-> `1. 將nested Route元件安置在component，再讓component被parent route元件所包含、2.  parent route元件直接包裹nested route元件，並搭配Outlet元件`
-<!--SR:!2023-03-27,72,250-->
+<!--SR:!2023-09-30,187,250-->
 
 #🧠  react-router-dom v6：建立nested Route 元件方式，其中之一為parent route元件直接包裹nested route元件，該方法能順利讓nested route 元件渲染對應的元件嗎 ->->-> `通常沒搭配Outlet元件，沒辦法順利渲染`
 <!--SR:!2023-05-13,78,230-->
@@ -181,7 +181,7 @@ xxxx 元件下的路由
 <!--SR:!2023-03-30,74,250-->
 
 #🧠 react-router-dom v6 ：第二、parent route元件直接包裹nested route元件，並搭配Outlet元件，語法會是什麼？ ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-parent-route_nk6b5b.png)
-<!--SR:!2023-03-26,71,250-->
+<!--SR:!2023-09-28,185,250-->
 
 #🧠 outlet 命名緣由是什麼？->->-> `Outlet 本身命名緣由為提供特定事物出去的通道`
 <!--SR:!2023-09-27,184,250-->
