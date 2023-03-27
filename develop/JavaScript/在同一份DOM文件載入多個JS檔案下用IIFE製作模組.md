@@ -124,6 +124,7 @@
 
 
 #🧠 (重複)如何在將由IIFE結構所構成的特定模組A來載入jQuery之情況下，來將特定模組A輸出至全域環境下，請用程式碼來表示->->-> `(function (window, $) { function changeColor() { console.log(++_count);  $('body').css('background', 'red') } window.module1 = {  // ES6 增強語法 changeColor } })(window, jQuery)`
+<!--SR:!2023-03-29,2,245-->
 
 
 #🧠 如何在HTML載入以IIFE為主且以全域變數來輸出功能的模組 ->->-> ` <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-=QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>`
@@ -153,7 +154,7 @@
 
 
 #🧠 IIFE模組化載入的模組越多，效能會發生什麼？ ->->-> `即使只有部分模組要載入依賴模組，但由於沒載入模組的管理(來按需載入)，還是得載入全部的依賴模組，這使得每次DOM Document的渲染 很有可能會讓所有對應依賴模組重新載入一次，進而使效能發生不必要的耗損`
-<!--SR:!2023-03-27,87,248-->
+<!--SR:!2023-05-13,47,228-->
 
 
 
