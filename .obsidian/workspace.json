@@ -56,7 +56,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
+                "file": "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "具體會是將資料以二進制切分好幾個區塊，並為每個區塊標記傳輸順序，接著就會按照順序來傳輸區塊。",
+                "query": "register 命名緣由為何？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
+                "file": "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
+                "file": "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md"
+                "file": "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md"
               }
             }
           },
@@ -199,8 +199,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54a6b49c5586f376",
+  "active": "32ff7c61fb8084ae",
   "lastOpenFiles": [
+    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
+    "develop/OS/stream 是指資料上的流動，pipe則是導向資料上的流動至特定方向的介面，pipeline則是由多個pipe所構成的介面，每個pipe都各將資料以stream導向至另一方.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "inbox/React：useReducer 是React 內建的HOOK，最主要是以多個狀態歸納成一個大狀態 的方式來控管狀態.md",
     "develop/JavaScript/在同一份DOM文件載入多個JS檔案下用IIFE製作模組.md",
@@ -212,7 +214,6 @@
     "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
     "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/authentication/Untitled 1.md",
-    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
     "develop/authentication/register 和 sign up 是指首次在使用特定電腦系統時來提供使用者個人資訊來紀錄在電腦系統以此下次能用該使用者資訊來登入系統獲取權限.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄動作.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者名稱和其對應密碼來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者本意進入需要安全措施的建築物和機構前所必須提供使用者資訊並驗證.md",
@@ -229,7 +230,6 @@
     "develop/authentication/OpenID-Connect",
     "develop/authentication/OAuth/Untitled",
     "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
-    "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/authentication/OAuth",
     "develop/api-design",
     "Pasted image 20230119210755.png"
