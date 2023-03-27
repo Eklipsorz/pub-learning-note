@@ -147,7 +147,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-04-05,29,250-->
 
 #🧠  Promise API 的 resolve 意味著什麼？或者說為何取名為resolve？ ->->-> `意味著將指定事物轉變成更為具體、清楚的形式，也就是將指定事物轉變成promise object來包裝其事物的結果物件`
-<!--SR:!2023-03-27,23,250-->
+<!--SR:!2023-05-24,58,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式會是什麼？ ->->-> `	- 具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable - 具有fulfilled狀態的promise object，其結果值會是原本的指定事物 - 具有rejected狀態的promise object，其結果值會是原本的指定事物`
 <!--SR:!2023-03-30,25,250-->

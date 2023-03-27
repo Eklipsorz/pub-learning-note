@@ -157,7 +157,7 @@ export async function action({ request }) {
 <!--SR:!2023-08-06,145,250-->
 
 #🧠 useActionData 在react-router 中會是什麼hook?  ->->-> `主要會將React-Router最近一次執行action所獲得的結果回傳至元件使用`
-<!--SR:!2023-03-27,65,250-->
+<!--SR:!2023-09-13,170,250-->
 
 
 #🧠 useActionData 在react-router 中會回傳action的執行結果，具體會是什麼時間的結果  ->->-> `主要會將React-Router最近一次執行action所獲得的結果回傳至元件使用`
