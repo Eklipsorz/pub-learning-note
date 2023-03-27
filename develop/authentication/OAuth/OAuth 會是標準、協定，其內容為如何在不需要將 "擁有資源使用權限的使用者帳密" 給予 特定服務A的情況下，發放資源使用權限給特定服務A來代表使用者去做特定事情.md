@@ -225,7 +225,7 @@
 <!--SR:!2023-03-27,3,227-->
 
 #🧠 OAuth 概念 的 基本實現會有的執行流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說 ->->-> `	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權 - 使用者同意並給予授權資料至應用程式A - 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token - Authorization Server認證授權資料並確認無誤，就發放其token - 客戶端使用token來向Resource Server來申請獲取資源 - Resource Server 確認token 無誤就發放資源給客戶端`
-<!--SR:!2023-03-26,2,226-->
+<!--SR:!2023-04-02,6,226-->
 
 
 #🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請畫圖來說明 ->->-> ``
