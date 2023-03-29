@@ -14,7 +14,7 @@ useLocation：
 <!--SR:!2023-09-17,189,250-->
 
 #🧠 useLocation回傳的location物件所擁有的資訊會是源自於？ ->->-> `其location資訊源自於從瀏覽器獲取`
-<!--SR:!2023-03-29,78,250-->
+<!--SR:!2023-10-10,195,250-->
 
 #🧠 react-router-dom：useLocation會是做什麼？ ->->-> `該hook 會回傳location object`
 <!--SR:!2023-08-25,175,250-->
