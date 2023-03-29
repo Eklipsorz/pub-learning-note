@@ -84,7 +84,7 @@
 
 
 #🧠 在JS中的class內部定義static method或者static property，其記憶體狀況為何？ ->->-> `代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配`
-<!--SR:!2023-03-28,5,246-->
+<!--SR:!2023-04-11,13,246-->
 
 
 #🧠 在JS中的static method的用途為何？class對於static method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`

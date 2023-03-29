@@ -159,7 +159,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-04-12,25,230-->
 
 #🧠 Promise API 的 resolve(value)中的value 為thenable內容的話，會如何執行thenable？ ->->-> `只有經過resolve執行就會以非同步形式來呼叫thenable的then方法`
-<!--SR:!2023-03-29,24,250-->
+<!--SR:!2023-05-28,60,250-->
 
 
 
@@ -174,7 +174,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-04-02,26,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是非thenable或者不為promise object，會回傳什麼？ ->->-> `promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value`
-<!--SR:!2023-03-28,23,250-->
+<!--SR:!2023-05-27,59,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是thenable，會回傳什麼？  ->->-> `promise.resolve就會回傳pending狀態的promise object`
 <!--SR:!2023-03-31,26,250-->

@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
+                "file": "develop/render/每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：universal selector、type selector、id selector、class selector.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "React：consumer component用途是什麼？",
+                "query": " 每個CSS rule 上的selector 部分，主要可以用四種形式來描述所要選擇的DOM節點會是什麼",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md"
+                "file": "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md"
               }
             }
           },
@@ -186,15 +186,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "32ff7c61fb8084ae",
+  "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "develop/render/每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：universal selector、type selector、id selector、class selector.md",
+    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
+    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
+    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
+    "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
+    "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "templates/🧠.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
     "Untitled",
-    "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
@@ -210,11 +215,6 @@
     "develop/Lua/Lua 是一種擁有直譯、編譯特性的直譯語言，其主要是將宿主環境的c語言包裝成另一個自製語法來黏貼在宿主環境下的宿主程式.md",
     "develop/React/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
     "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
-    "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 \"擁有資源使用權限的使用者帳密\" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
-    "develop/authentication/Untitled 1.md",
-    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄動作.md",
-    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者名稱和其對應密碼來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者本意進入需要安全措施的建築物和機構前所必須提供使用者資訊並驗證.md",
-    "annotation/@RegisterSignLog2021.md",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
     "develop/authentication/OAuth/Untitled",

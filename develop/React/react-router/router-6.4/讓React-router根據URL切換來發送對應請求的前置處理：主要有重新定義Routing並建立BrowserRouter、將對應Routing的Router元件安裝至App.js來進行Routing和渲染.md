@@ -23,17 +23,17 @@ loader 和 useLoaderData 技術不被預設的BrowserRouter所支援，換言之
 
 ## 複習
 
-#🧠 讓React-router根據URL切換來發送對應請求在react-router-dom v6的原生BrowserRoute可實現嗎？ ->->-> `不能`
-<!--SR:!2023-03-28,68,250-->
+#🧠 react-router-dom v6的原生BrowserRouter可根據URL切換來替元件發送索取資料或者資料處理的請求嗎？ ->->-> `不能`
+<!--SR:!2023-05-02,34,230-->
 
-#🧠 讓React-router根據URL切換來發送對應請求在react-router-dom v6的原生BrowserRoute是不可實現的，那麼原因是？？->->-> `本身不支援讓Router負責根據切換URL而發送對應請求，並將請求回應給元件來做渲染`
+#🧠 react-router-dom v6的原生BrowserRouter不可根據URL切換來替元件發送索取資料或者資料處理的請求，那麼原因是？？->->-> `本身不支援讓Router負責根據切換URL而發送對應請求，並將請求回應給元件來做渲染`
 <!--SR:!2023-08-09,148,250-->
 
-#🧠 讓React-router根據URL切換來發送對應請求在react-router-dom v6的原生BrowserRoute是不可實現的，那麼解法會是？？ ->->-> `重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些Route是要以Loader來執行。`
+#🧠 react-router-dom v6的原生BrowserRouter不可根據URL切換來替元件發送索取資料或者資料處理的請求，那麼解法會是？？ ->->-> `重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些Route是要以Loader來執行。`
 <!--SR:!2023-04-06,67,230-->
 
 
-#🧠 讓React-router根據URL切換來發送對應請求在react-router-dom v6的原生BrowserRoute是不可實現的，那麼解法會是重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些Route是要以Loader來執行。建立自製且擁有Loader功能的Router之步驟會是什麼？ ->->-> `- [[自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route]] - 將對應Routing的Router元件安裝至App.js來進行Routing和渲染： - 將Router物件安裝至RouterProvider元件，使Router物件能夠正常在對應元件進行Routing和渲染 - 對應RouterProvider安裝至App.js`
+#🧠 react-router-dom v6的原生BrowserRouter不可根據URL切換來替元件發送索取資料或者資料處理的請求，那麼解法會是重新定義Routing並建立BrowserRouter，其中Routing中的每個Route都會有對應Loader來告知React哪些Route是要以Loader來執行。建立自製且擁有Loader功能的Router之步驟會是什麼？ ->->-> `- [[自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route]] - 將對應Routing的Router元件安裝至App.js來進行Routing和渲染： - 將Router物件安裝至RouterProvider元件，使Router物件能夠正常在對應元件進行Routing和渲染 - 對應RouterProvider安裝至App.js`
 <!--SR:!2023-04-01,25,170-->
 
 

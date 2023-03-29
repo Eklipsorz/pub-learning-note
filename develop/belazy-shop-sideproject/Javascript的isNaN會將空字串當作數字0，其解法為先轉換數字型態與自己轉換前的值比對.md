@@ -43,7 +43,7 @@ static isNaN(value) {
 <!--SR:!2023-04-11,191,250-->
 
 #🧠 由於JavaScript 的 isNaN 會將字串誤判數字，請試著撰寫能夠解決這樣問題的isNaN 函式->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)
-<!--SR:!2023-03-29,180,250-->
+<!--SR:!2024-06-21,450,250-->
 
 #🧠 由於JavaScript 的 isNaN 會將字串誤判數字，其解法會是如圖![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)，請說明解法是怎麼樣的思路(提示 NaN、Number回傳) ->->-> `若value真是數字的話，經過Number重複轉換肯定也會是數字；否則會因不是數字而不會與轉換前的數值相同 以及 **若value本身是NaN，會因為NaN不等於NaN而不產生例外**`
 <!--SR:!2024-03-04,382,250-->
