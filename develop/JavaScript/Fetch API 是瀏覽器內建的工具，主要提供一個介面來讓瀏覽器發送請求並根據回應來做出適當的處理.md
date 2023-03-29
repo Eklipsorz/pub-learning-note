@@ -227,7 +227,7 @@ function App() {
 
 
 #🧠 使用Fetch API 語法的fetch來發送xxx端點，請問fetch(a,b)中的body為何要JSON.stringify ? ->->-> `最主要對方預設是以application/json的body格式來接收，但JSON本身仍是物件，傳遞封包上無法以物件形式來傳遞，只允許已字串形式來傳遞，所以必須將其直接字串化才能傳遞，等到接收到再讓接收方依據JSON來轉換成JSON物件`
-<!--SR:!2023-03-28,14,246-->
+<!--SR:!2023-05-04,36,246-->
 
 
 
