@@ -281,7 +281,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數- grant_type 、code、redirect_uri、client_id是什麼？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
-<!--SR:!2023-03-28,7,250-->
+<!--SR:!2023-04-17,19,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數為何需要redirect_uri、client、code ->->-> `需要驗證該應用服務是否為當初向使用者發送授權申請`
 <!--SR:!2023-03-30,9,250-->
@@ -290,11 +290,11 @@ Pragma: no-cache
 <!--SR:!2023-04-21,23,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，其中的grant_type 會是定義為？ ->->-> ` authorization_code`
-<!--SR:!2023-03-29,6,249-->
+<!--SR:!2023-04-15,17,249-->
 
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以code、redirect_uri、client_id發送索要token請求"，其中應用程式A會以什麼http動詞來向伺服器發送token索求 ->->-> `POST`
-<!--SR:!2023-03-28,5,249-->
+<!--SR:!2023-04-14,16,249-->
 
 
 
