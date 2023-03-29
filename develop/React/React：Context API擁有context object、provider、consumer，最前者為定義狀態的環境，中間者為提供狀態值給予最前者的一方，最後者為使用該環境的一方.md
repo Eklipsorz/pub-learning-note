@@ -324,7 +324,7 @@ consume
 <!--SR:!2023-05-10,83,230-->
 
 #🧠 React Context：consumer component用途是什麼？ ->->-> `訂閱/監聽對應context的值的值、提供特定方法讓被包含的元件能夠存取對應的context所擁有的值`
-<!--SR:!2023-03-28,91,230-->
+<!--SR:!2023-10-29,214,230-->
 
 #🧠 React Context：consumer component 如何提供特定方法讓被包含的元件能夠存取對應的context所擁有的值？ ->->-> `	- 以 {}+ callback + 第一個引數為context object本身，callback函式內容會是原本JSX元件，context object本身屬性值會是代表著狀態、更新用狀態函式`
 <!--SR:!2023-07-28,194,250-->

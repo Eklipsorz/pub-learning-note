@@ -32,7 +32,7 @@
 <!--SR:!2023-03-28,3,250-->
 
 #🧠 id token 的發放和驗證流程會是哪些？？->->-> `會是以OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主`
-<!--SR:!2023-03-28,3,250-->
+<!--SR:!2023-04-09,11,250-->
 
 #🧠 id token 的發放和驗證流程為OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主，為何以這四種流程為主？->->-> `由於id token本身是由OpenId Connect標準提出，該標準又是以OAuth為基礎`
 <!--SR:!2023-04-04,10,250-->
