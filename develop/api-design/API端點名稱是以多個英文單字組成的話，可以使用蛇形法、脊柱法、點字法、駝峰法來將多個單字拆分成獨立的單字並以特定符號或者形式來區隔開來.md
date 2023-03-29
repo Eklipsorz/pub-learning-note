@@ -60,21 +60,21 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 <!--SR:!2023-04-15,19,250-->
 
 #🧠 Camel Case 是什麼樣的命名法則 ->->-> `單字間不用任何符號，而是以單字的首字為大寫，其餘則為小寫，但根據第一個單字的首字是否為大寫而區分為Lower Camel Case以及Upper Camel Case`
-<!--SR:!2023-03-29,10,250-->
+<!--SR:!2023-04-25,27,250-->
 
 
 #🧠 Spinal Case 是什麼樣的命名法則 ->->-> `單字間使用連字號來相連`
 <!--SR:!2023-04-17,21,250-->
 
 #🧠 Dot Notation Case 是什麼樣的命名法則 ->->-> `單字間使用點字號來相連`
-<!--SR:!2023-03-28,9,250-->
+<!--SR:!2023-04-23,25,250-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Snake Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user_timeline`
 <!--SR:!2023-04-11,16,250-->
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Spinal Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user-timeline`
-<!--SR:!2023-03-28,9,250-->
+<!--SR:!2023-04-24,26,250-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Lower Camel Case命名->->-> `http://api.example.com/v1/users/12345/statuses/userTimeline`

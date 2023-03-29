@@ -42,7 +42,7 @@ static isNaN(value) {
 #🧠 JavaScript 的 isNaN 會將字串誤判數字是出於本身問題？->->-> `這類型的問題是出自於 IEEE-754規範，並非實際isNaN實現上的錯誤，而是規範上的解釋`
 <!--SR:!2023-04-11,191,250-->
 
-#🧠 由於JavaScript 的 isNaN 會將字串誤判數字，請試著撰寫能夠解決這樣問題的isNaN 函式->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)`
+#🧠 由於JavaScript 的 isNaN 會將字串誤判數字，請試著撰寫能夠解決這樣問題的isNaN 函式->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)
 <!--SR:!2023-03-29,180,250-->
 
 #🧠 由於JavaScript 的 isNaN 會將字串誤判數字，其解法會是如圖![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654768947/blog/javascript/Number/isNaN-solution_mzj0ym.png)，請說明解法是怎麼樣的思路(提示 NaN、Number回傳) ->->-> `若value真是數字的話，經過Number重複轉換肯定也會是數字；否則會因不是數字而不會與轉換前的數值相同 以及 **若value本身是NaN，會因為NaN不等於NaN而不產生例外**`

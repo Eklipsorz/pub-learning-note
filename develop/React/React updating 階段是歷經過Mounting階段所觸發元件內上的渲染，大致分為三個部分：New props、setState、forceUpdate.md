@@ -273,7 +273,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2023-06-16,188,250-->
 
 #🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
-<!--SR:!2023-03-29,135,250-->
+<!--SR:!2024-02-29,337,250-->
 
 #🧠 react 生命週期中會用到的componentDidUpdate函式 是會做什麼？ ->->-> `主要指定在更新對應元件的畫面後要做些什麼`
 <!--SR:!2023-07-20,195,230-->
