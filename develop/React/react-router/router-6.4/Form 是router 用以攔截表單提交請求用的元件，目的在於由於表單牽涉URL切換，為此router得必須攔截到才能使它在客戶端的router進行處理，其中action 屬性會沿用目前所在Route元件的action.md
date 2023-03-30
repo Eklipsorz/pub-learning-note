@@ -81,8 +81,8 @@ const callback = (params, request) => { ... }
 #🧠 react-router-dom v6.4：Form 元件語法會是`<Form method=method1 action=action1> </Form>`，其中的action是可填入該請求要發送至哪個端點 ，請問又可以定義成什麼？ ->->-> `指名哪裡是負責處理傳遞資料的地方`
 <!--SR:!2023-08-20,153,250-->
 
-#🧠 react-router-dom v6.4：router的Form 元件與其他Form套件相比，會是什麼？->->-> `主要差別在於router的Form元件專注在URL切換都轉交由router來處理，不專注資料驗證和狀態管理，後者則是專注在資料驗證和狀態管理`
-<!--SR:!2023-03-30,68,250-->
+#🧠 react-router-dom v6.4：router的Form 元件與原生HTML元件上的form相比，會是什麼？->->-> `主要差別在於router的Form元件專注在URL切換都轉交由router來處理，不專注資料驗證和狀態管理，後者則是專注在資料驗證和狀態管理`
+<!--SR:!2023-09-23,177,250-->
 
 #🧠  react-router-dom v6.4：action 本身是什麼？->->-> `夾帶著一個引數的函式物件`
 <!--SR:!2023-04-30,74,230-->
