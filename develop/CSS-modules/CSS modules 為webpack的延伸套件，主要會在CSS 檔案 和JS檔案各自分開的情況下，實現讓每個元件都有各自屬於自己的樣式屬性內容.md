@@ -188,7 +188,7 @@ import styles from <css-file>
 <!--SR:!2023-04-12,134,250-->
 
 
-#🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
+#🧠 CSS module：假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS module，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
 <!--SR:!2023-03-30,88,210-->
 
 
