@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
+                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react-router-dom v6.4：router的Form 元件與其他Form套件相比，會是什麼？",
+                "query": "react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含，語法會是什麼？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
+                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
+                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md"
+                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md"
               }
             }
           },
@@ -188,6 +188,9 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "develop/JavaScript/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
+    "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
+    "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
     "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md",
     "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "develop/React/React：使用如Redux或者Context這種集中狀態機制是為了讓多個元件下能夠彼此共享狀態和彼此觸發渲染週期.md",
@@ -203,7 +206,6 @@
     "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：RouterProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
     "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
-    "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
@@ -212,9 +214,7 @@
     "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "templates/🧠.md",
-    "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
     "Untitled",
-    "develop/Redis/Redis- String適用場景為讀取場景較多，且更新快取不頻繁；Hash適用場景為更新較為頻繁(尤其是指定特定key)，或者讀取特定key值.md",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
     "develop/authentication/OAuth/Untitled",
