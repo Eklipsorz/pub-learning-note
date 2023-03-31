@@ -16,8 +16,8 @@ Route元件的action通常要求什麼樣的action?
 
 ## 複習
 
-#🧠 react-router-v6.4：Route元件的loader通常要求什麼樣的loader? ->->-> `回傳一個負責資料索求請求的函式物件`
-<!--SR:!2023-03-31,69,250-->
+#🧠 react-router-v6.4：Route元件的屬性(attribute) - loader 會是做什麼？ ->->-> `用作於定義專門獲取特定元件所需要資料的任務`
+<!--SR:!2023-09-26,179,250-->
 
 #🧠 react-router-v6.4：Route元件的action通常要求什麼樣的action?->->-> `本身能夠回傳回應封包或者回應資料的函式物件`
 <!--SR:!2023-04-03,70,250-->

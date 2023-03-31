@@ -207,7 +207,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，導向和主要目的的關係是如何？ ->->-> `透過導向方式來間接要求使用者發送相同同樣請求來向認證授權伺服器表示授權申請`
-<!--SR:!2023-03-31,10,250-->
+<!--SR:!2023-04-28,28,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，導向和主要目的的關係是如何？ ->->-> `透過導向方式來間接要求使用者發送授權成功的結果資料傳遞給應用服務A`
 <!--SR:!2023-04-22,23,250-->
@@ -246,14 +246,14 @@ Pragma: no-cache
 <!--SR:!2023-04-25,26,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-scope為何是可選填參數？ ->->-> `申請授權資料所能擁有的權限為何`
-<!--SR:!2023-03-31,10,250-->
+<!--SR:!2023-04-28,28,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，從應用服務A發送過來的導向請求會是什麼？舉例來說，假如認證授權伺服器為server.example.com，端點為authorize ->->-> `GET server.example.com/authorize?response_type=type1&client_id=id1&redirect_uri=uri1`
 <!--SR:!2023-04-05,6,230-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，該步驟所需要的參數會是什麼？->->-> `		- code：表示認證授權伺服器授與的授權碼，主要是要讓應用服務A申請token - state：客戶端目前所處的狀態，會延續上一個步驟A所傳遞過來的`
-<!--SR:!2023-03-31,10,250-->
+<!--SR:!2023-04-27,27,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，其授權碼就是代表使用者權限的token嗎？->->-> `並不是`
 <!--SR:!2023-04-23,24,250-->
@@ -265,15 +265,15 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 使用限制是什麼？ ->->-> `有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次`
-<!--SR:!2023-03-31,10,250-->
+<!--SR:!2023-04-27,27,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 使用限制是有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次，若違反限制的話，會如何？ ->->-> `若違反限制，就會在申請token過程中被拒絕`
-<!--SR:!2023-03-31,10,250-->
+<!--SR:!2023-04-27,27,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，其導向請求源自哪裡？ 會發送至哪？->->-> `源自於認證授權伺服器發過來的導向請求，會發送至client指定接收code的地點`
-<!--SR:!2023-03-31,10,250-->
+<!--SR:!2023-04-28,28,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，請求中的參數會是如何？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`

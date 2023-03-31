@@ -137,7 +137,7 @@ specific
 <!--SR:!2024-01-20,307,250-->
 
 #🧠 在CSS Specificity中的id-class-type 計算中，那如何將特例下的!important、inline style計算權重？那id、class、type的分數是如何？->->-> `每個!important 為10000分、每個inline style為1000分。每一個id、每一個class、每一個type分數分別為100、10、1分`
-<!--SR:!2023-03-31,130,250-->
+<!--SR:!2024-02-26,332,250-->
 
 #🧠 在CSS specificity中，多個屬性名稱上起衝突的declaration / 多個屬性名稱上是一樣的declaration，declaration都拿到一樣的權重，會如何決定最後的declaration? ->->-> `就挑選最後出現的declaration為主`
 <!--SR:!2023-06-03,169,250-->
