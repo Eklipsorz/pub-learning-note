@@ -188,6 +188,8 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "annotation/@XMLProcessors.md",
+    "annotation/@XMLDeclaration.md",
     "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
     "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
@@ -212,8 +214,6 @@
     "inbox/RESTful API：簡易版設計準則.md",
     "inbox/Untitled 6.md",
     "develop/authentication/Untitled 1.md",
-    "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
-    "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
