@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+                "file": "develop/React/react-router/router-6.4/Route元件的loader通常要求回傳一個負責資料索求請求的函式物件；Route元件的action通常要求本身能夠回傳回應封包或者回應資料的函式物件.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含，語法會是什麼？",
+                "query": "react-router-v6.4：Route元件的loader通常要求什麼樣的loader?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+                "file": "develop/React/react-router/router-6.4/Route元件的loader通常要求回傳一個負責資料索求請求的函式物件；Route元件的action通常要求本身能夠回傳回應封包或者回應資料的函式物件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+                "file": "develop/React/react-router/router-6.4/Route元件的loader通常要求回傳一個負責資料索求請求的函式物件；Route元件的action通常要求本身能夠回傳回應封包或者回應資料的函式物件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md"
+                "file": "develop/React/react-router/router-6.4/Route元件的loader通常要求回傳一個負責資料索求請求的函式物件；Route元件的action通常要求本身能夠回傳回應封包或者回應資料的函式物件.md"
               }
             }
           },
@@ -188,6 +188,9 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "inbox/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
+    "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
+    "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "develop/JavaScript/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
     "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
     "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
@@ -211,9 +214,6 @@
     "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
     "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
-    "develop/belazy-shop-sideproject/Javascript的isNaN會將空字串當作數字0，其解法為先轉換數字型態與自己轉換前的值比對.md",
-    "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
-    "templates/🧠.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
