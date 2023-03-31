@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
+                "file": "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react v5：運用useRouteMatch 回傳的 route match 物件 調用的概念有哪些？",
+                "query": "JSON 和 XML ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
+                "file": "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
+                "file": "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md"
+                "file": "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md"
               }
             }
           },
@@ -188,6 +188,14 @@
   },
   "active": "4977511a540843e5",
   "lastOpenFiles": [
+    "inbox/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+    "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
+    "develop/設定Serverless VPC access connector 本身- 設定IP範圍、附加VPC、connector本身規格.md",
+    "develop/Serverless VPC access connector 是轉遞無伺服器環境和指定VPC兩者之間的封包傳遞.md",
+    "inbox/React：使用Fetch API 來發送請求，且於獲取資料過程中發生錯誤所需要呈現的額外呈現效果.md",
+    "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
+    "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
+    "develop/React/useRouteMatch是由react-router-dom所提供的hook，主要回傳一個route match object，其object會是夾雜目前元件所處的Route元件 A資訊和目前實際對應該元件A的URL資訊.md",
     "develop/React/react-router/router-6.4/Route元件的loader通常要求回傳一個負責資料索求請求的函式物件；Route元件的action通常要求本身能夠回傳回應封包或者回應資料的函式物件.md",
     "inbox/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
     "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
@@ -201,19 +209,11 @@
     "develop/render/每個CSS rule 上的selector 部分，主要可以用下面形式來描述所要選擇的DOM節點會是什麼：universal selector、type selector、id selector、class selector.md",
     "develop/React/deployment/當客戶端輸入完整路徑來發送請求(完整路徑會包含host、scheme、port)的話，就會讓客戶向伺服器發送請求。在SPA，上述互動恐怕會使得客戶端獲取到錯誤的回應，甚至不會是結果網頁.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
-    "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "inbox/RESTful API：簡易版設計準則.md",
     "inbox/Untitled 6.md",
     "develop/authentication/Untitled 1.md",
     "develop/authentication/OAuth/implicit grant type的 第二個版本為，主要利用 redirect_uri 來將token傳遞至client.md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
-    "develop/React/debouncing 在電腦開發實踐的手段，在連續發送事件觸發的場景下，以確保能取得最後的事件觸發資訊的形式來降低請求方和處理方之間的回應速度。.md",
-    "develop/React/react-router/router-6.4/react-router-dom v6：RouterProvider 元件用途為Provider形式來管理對應Routing並設定誰能夠使用對應Routing進行渲染.md",
-    "develop/render/CSSOM 本身由於本身並不像HTML能夠邊解析邊生成DOM，只能對整份CSS檔案進行處理才能獲取CSSOM，換言之，在處理完之前是不會有CSSOM.md",
-    "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
-    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
-    "inbox/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
-    "develop/React/react-router/router-6.4/讓React-router根據URL切換來發送對應請求的前置處理：主要有重新定義Routing並建立BrowserRouter、將對應Routing的Router元件安裝至App.js來進行Routing和渲染.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",

@@ -177,7 +177,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-05-27,59,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是thenable，會回傳什麼？  ->->-> `promise.resolve就會回傳pending狀態的promise object`
-<!--SR:!2023-03-31,26,250-->
+<!--SR:!2023-06-04,65,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是promise object，會回傳什麼？->->-> `promise.resolve就會直接回傳該promise object`
 <!--SR:!2023-05-04,45,250-->
