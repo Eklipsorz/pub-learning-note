@@ -51,7 +51,7 @@ new Response(body, {
 <!--SR:!2023-04-07,53,210-->
 
 #🧠 react-router-dom v6.4： Response 物件和 redirect 本身會直接讓使用者導向其頁面嗎？為什麼？->->-> `並不會，因為他們本身只是回應封包的物件`
-<!--SR:!2023-04-01,69,250-->
+<!--SR:!2023-09-30,181,250-->
 
 #🧠 react-router-dom v6.4： Response 物件和 redirect 本身只是回應封包的物件，那要如何導向？->->-> `只有讓React-router收到專門導向的response，React-router就會自動將使用者導向至對應頁面`
 <!--SR:!2023-09-07,167,250-->

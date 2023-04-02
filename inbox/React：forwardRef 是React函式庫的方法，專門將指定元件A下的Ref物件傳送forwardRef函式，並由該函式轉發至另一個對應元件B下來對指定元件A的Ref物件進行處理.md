@@ -64,7 +64,7 @@ React.forwardRef(render)
 
 
 #🧠 React：forwardRef 語法形式的render是什麼？ ->->-> `render 是指對應元件的render或者component function，其function會是(props, refs)，props會是該元件的屬性，refs則是接收到的ref物件`
-<!--SR:!2023-04-01,46,247-->
+<!--SR:!2023-07-24,113,247-->
 
 #🧠  React：forwardRef 語法形式回傳什麼 ->->-> `forwardRef 回傳React Component，但這個Component 可被Ref技術擷取到對應的實際DOM節點`
 <!--SR:!2023-04-04,47,247-->

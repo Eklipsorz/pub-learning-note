@@ -131,7 +131,7 @@ pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器
 <!--SR:!2023-04-01,10,250-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳 ->->-> `以URI Fragment形式來回傳token`
-<!--SR:!2023-04-01,10,250-->
+<!--SR:!2023-04-30,28,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳，請舉一個URI作為例子 ->->-> `http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&token_type=example&expires_in=3600`
 <!--SR:!2023-04-26,26,250-->
@@ -155,7 +155,7 @@ pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器
 <!--SR:!2023-04-01,10,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，請求封包源自於哪裡？發送至哪？  ->->-> `源自於認證伺服器，發送至重導向URI`
-<!--SR:!2023-04-01,10,250-->
+<!--SR:!2023-04-29,27,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)，請問會是以什麼http動詞來讓使用者向客戶端發送 ->->-> `GET`
 <!--SR:!2023-04-28,26,250-->

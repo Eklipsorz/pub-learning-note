@@ -99,7 +99,7 @@ DOM是種：
 
 
 #🧠 若伺服器傳遞一份HTML至瀏覽器，瀏覽器會如何解析成DOM？其結果會是？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658586368/blog/RenderingPath/dom-example-code_pxoigr.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629973153/blog/RenderingPath/domTreeExample_ep0cvp.png)`
-<!--SR:!2023-04-02,155,250-->
+<!--SR:!2024-04-24,388,250-->
 
 
 ---
