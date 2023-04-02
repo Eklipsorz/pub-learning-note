@@ -185,7 +185,7 @@ console.log(testvar1)
 <!--SR:!2023-04-01,149,250-->
 
 #🧠 ES Module：從模組依賴關係圖要找到沒使用任何依賴或者使用著已經完成實例化模組的模組，那麼如何找？ ->->-> `模組依賴關係圖底部或者越往底部正是那些，所以會使用Depth First Post-Order Travesal來從模組依賴關係圖的起始點轉移至圖的底部，試圖先實例化沒有任何依賴的模組群組A，接著實例化依賴著模組群組A的模組群組B，然後一直往上實例，直到遍歷完所有模組並做完所有模組的實例`
-<!--SR:!2023-04-01,148,250-->
+<!--SR:!2024-04-07,371,250-->
 
 
 #🧠 用這兩張圖來說明ES module 的實例化，其中右邊是main.js，左邊由先至後是counter.js和render.js，主要main.js會依賴這兩個模組![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_01-768x316.png) ![](https://hacks.mozilla.org/files/2018/03/30_live_bindings_02-768x316.png)->->-> ``

@@ -116,7 +116,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-04-21,22,250-->
 
 #🧠  implicit grant type 在OAuth 中為何被稱之為implicit ？ ->->-> `implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式`
-<!--SR:!2023-04-01,10,250-->
+<!--SR:!2023-05-01,29,250-->
 
 #🧠 implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本 ->->-> `	- A. 使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問 - B. 使用者通過身份認證並確定授權 - C. 假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token) 	- D.  使用者透過瀏覽器向指定的重導向URI發送請求，但不包含先前的Fragment - E.  對應URI/Client/Resource Server 會回傳一份夾雜Script的網頁至User Agent - F.  執行上一步獲得的Script，來從C步驟獲得的Fragment解開Token以及其相關資訊 - G. 將上一步解開的結果物-Token 發給Client端`
 <!--SR:!2023-04-01,10,250-->
@@ -158,7 +158,7 @@ pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器
 <!--SR:!2023-04-01,10,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)，請問會是以什麼http動詞來讓使用者向客戶端發送 ->->-> `GET`
-<!--SR:!2023-04-02,9,250-->
+<!--SR:!2023-04-28,26,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，主要內容為何？ ->->-> `- access_token：表示token - token_type：表示token種類 - expires_in：表示過期時間 - scope：表示token所擁有的使用權限`
 <!--SR:!2023-04-01,10,250-->

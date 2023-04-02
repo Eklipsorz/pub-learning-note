@@ -88,7 +88,7 @@ Pragma: no-cache
 <!--SR:!2023-04-20,20,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是以什麼形式來當作使用者同意授權的資料？ ->->-> `使用者的帳密`
-<!--SR:!2023-04-02,9,250-->
+<!--SR:!2023-04-28,26,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在OAuth 下的適用場景為何？ ->->-> `	- 由於是使用者提供高度敏感的帳密，所以客戶端必須是值得信任，比如客戶端為作業系統的一部分或者由一個著名公司出品的客戶端 - 其他授權模式無法實現才會選擇本方案`
 <!--SR:!2023-04-02,9,250-->
@@ -110,7 +110,7 @@ Pragma: no-cache
 
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端的請求封包之主要內容為何->->-> `- grant_type：授權種類，在這裡會是填寫password - username：表示特定系統下的帳號 - password：表示特定系統下的帳號所擁有的密碼 - scope：表示索要的token要什麼樣的scope`
-<!--SR:!2023-04-02,9,250-->
+<!--SR:!2023-04-26,24,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `封包`
 <!--SR:!2023-04-08,12,249-->

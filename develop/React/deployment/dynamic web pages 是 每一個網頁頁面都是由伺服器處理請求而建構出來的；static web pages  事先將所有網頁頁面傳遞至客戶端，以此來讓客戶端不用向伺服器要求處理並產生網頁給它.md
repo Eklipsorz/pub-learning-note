@@ -55,7 +55,7 @@ static web pages
 
 
 #🧠 static web pages 適合的伺服器會是static site host且目前想要上傳production code是SPA，其伺服器所要提供功能必須是 ->->-> `	- 將所有已經優化過的結果網頁傳遞至客戶端 - 若是SPA的話，還必須要能夠伺服器內部改寫客戶端發送請求的任一端點和動詞`
-<!--SR:!2023-04-02,63,250-->
+<!--SR:!2023-09-14,165,250-->
 
 
 #🧠 static web pages 適合的伺服器會是static site host且目前想要上傳production code是SPA，其伺服器所要提供功能必須是還必須要能夠伺服器內部改寫客戶端發送請求的任一端點和動詞，為何要？ ->->-> `以避免讓客戶端從伺服器取得錯誤的結果，畢竟頁面都轉交給client來處理。`

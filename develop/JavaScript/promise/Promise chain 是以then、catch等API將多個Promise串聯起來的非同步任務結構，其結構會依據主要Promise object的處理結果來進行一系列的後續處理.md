@@ -120,7 +120,7 @@ p.then(
 <!--SR:!2023-04-04,26,250-->
 
 #🧠 Promise API 的Promise chain範例： Promise().then(callback1).then(callback2)..... 試說明該chain結構的執行方式->->-> `- Promise 包裝的任務完成後，就會回傳另一個Promise object1 - 第一個then會以回傳後的Promise object1來呼叫執行then以及對應callback：解開Promise object包裝的結果值作為callback的引數來處理，接著回傳另一個Promise object2 - 第二個then會以回傳後的Promise object2來呼叫執行then以及對應callback - 後續依此類推`
-<!--SR:!2023-04-02,25,250-->
+<!--SR:!2023-06-03,62,250-->
 
 #🧠 Promise API 的Promise chain：若chain中出現錯誤或者rejected狀態的promise，API會如何處理，以概念來說 ->->-> `若Promsie chain中的任一個Promise中拋出錯誤而構成rejected promise就會依據當前所在Promise來遍歷後續的chain結構，直到找到對應的rejection handler`
 <!--SR:!2023-04-07,28,250-->
@@ -141,7 +141,7 @@ p.then(
 <!--SR:!2023-04-09,30,250-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，是以`function(v) { return v }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
-<!--SR:!2023-04-02,25,250-->
+<!--SR:!2023-06-05,64,250-->
 
 #🧠 Promise API 的then若沒有rejection handler的話，是以`function(error) { throw err }`，為何這樣定義？ ->->-> `其目的在於將接收到的Promise object盡量保持原樣來轉遞到promise chain的後續部分`
 <!--SR:!2023-04-03,26,250-->
