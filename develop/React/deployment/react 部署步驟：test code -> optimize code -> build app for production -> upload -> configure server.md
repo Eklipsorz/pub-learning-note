@@ -21,7 +21,7 @@ react deployment steps：
 
 
 #🧠 react app 的部署步驟為何？ 其中的optimize code為何？->->-> `執行特定script來產出一組指定優化代碼`
-<!--SR:!2023-04-01,62,250-->
+<!--SR:!2023-09-10,161,250-->
 
 #🧠 react app 的部署步驟為何？ 其中的optimize code的具體手段為何？->->-> `minify、automatically optimized、Code Splitting 和 Lazy-loading`
 <!--SR:!2023-04-14,72,250-->

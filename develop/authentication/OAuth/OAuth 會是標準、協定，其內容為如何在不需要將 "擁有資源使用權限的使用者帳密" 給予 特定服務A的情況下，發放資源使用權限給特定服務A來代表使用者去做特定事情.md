@@ -190,7 +190,7 @@
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
-<!--SR:!2023-04-02,48,250-->
+<!--SR:!2023-07-25,114,250-->
 
 
 
