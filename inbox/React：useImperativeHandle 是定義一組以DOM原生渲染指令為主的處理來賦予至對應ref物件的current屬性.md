@@ -275,7 +275,7 @@ const FancyInput = React.forwardRef(function FancyInput(props, ref) {
 <!--SR:!2023-09-03,195,250-->
 
 #🧠 React：useImperativeHandle在mounting 階段和updating階段會是什麼？ ->->-> `首次在mounting階段時，會因為沒有事先存下的deps資訊而先執行createHandle，接著將對應deps資訊和handle儲存起來好比對和回傳。 在updating階段時，每一次執行到都會比對目前deps內容是否與上一次render最近儲存到的deps一樣，若不一樣的話，就執行createHandle，接著將對應的deps資訊和handle儲存起來好比對和回傳；若一樣的話，就回傳最近的handle給ref物件之current屬性`
-<!--SR:!2023-04-02,90,249-->
+<!--SR:!2023-05-17,45,229-->
 
 #🧠 React：useImperativeHandle在mounting 階段會是什麼？->->-> `首次在mounting階段時，會因為沒有事先存下的deps資訊而先執行createHandle，接著將對應deps資訊和handle儲存起來好比對和回傳
 <!--SR:!2023-04-16,97,249-->
