@@ -124,8 +124,8 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 #🧠 implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本，在這裡請畫圖來表示 ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version1_a4o6wt.png)
 <!--SR:!2023-04-03,4,230-->
 
-pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的Fragment 會如何被處理？？ ->->-> `User Agent 會將Fragment 部分儲存在本身的儲存系統，並不會因重導向URI而發送向對應端點該部分內容，等到之後獲取提取用的Script，接著提取並轉交給Client`
-<!--SR:!2023-04-01,10,250-->
+#🧠   implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的Fragment 會如何被處理？？ ->->-> `User Agent 會將Fragment 部分儲存在本身的儲存系統，並不會因重導向URI而發送向對應端點該部分內容，等到之後獲取提取用的Script，接著提取並轉交給Client`
+<!--SR:!2023-04-07,5,230-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的重導向URI會是做什麼以及指向哪裡？？？ ->->-> `在這裡會是指定哪個端點會提供提取工具的script，至於指向哪，重導向URI通常會是指Client 或者 Resource Server`
 <!--SR:!2023-04-30,28,250-->
@@ -146,13 +146,13 @@ pe 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器
 <!--SR:!2023-04-03,10,250-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數為何？做什麼用 ->->-> `	- response_type： 表示授權類型為何 - client_id：表示客戶端應用程式在認證伺服器上所註冊的client_id - redirect_uri：定義哪邊提供Script或者哪邊接收token - scope：定義申請的權限範疇`
-<!--SR:!2023-04-01,10,250-->
+<!--SR:!2023-05-01,29,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數的response_type為申請授權類型，若是implicit版本，得填寫什麼？->->-> `token`
 <!--SR:!2023-04-26,26,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數-response_type、client_id、redirect_uri、scope為何？ ->->-> `- response_type： 表示授權類型為何 - client_id：表示客戶端應用程式在認證伺服器上所註冊的client_id - redirect_uri：定義哪邊提供Script或者哪邊接收token - scope：定義申請的權限範疇`
-<!--SR:!2023-04-01,10,250-->
+<!--SR:!2023-04-08,6,230-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，請求封包源自於哪裡？發送至哪？  ->->-> `源自於認證伺服器，發送至重導向URI`
 <!--SR:!2023-04-29,27,250-->

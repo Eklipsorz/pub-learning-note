@@ -171,7 +171,7 @@ new Promise((resolve, _) => {
 
 
 #🧠 Promise API 的 resolve(value)中的value會是哪些 ->->-> `value 為 非thenable的內容或者不為promise object、thenable的內容、promise object的內容`
-<!--SR:!2023-04-02,26,250-->
+<!--SR:!2023-06-06,65,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是非thenable或者不為promise object，會回傳什麼？ ->->-> `promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value`
 <!--SR:!2023-05-27,59,250-->
