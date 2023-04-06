@@ -94,7 +94,7 @@ end
 
 
 #🧠 javascript： 如何將function設定為asynchronous  function？ ->->-> `若function 前綴標記成async的話，就會使function構成async function`
-<!--SR:!2023-04-04,58,250-->
+<!--SR:!2023-09-06,153,250-->
 
 
 

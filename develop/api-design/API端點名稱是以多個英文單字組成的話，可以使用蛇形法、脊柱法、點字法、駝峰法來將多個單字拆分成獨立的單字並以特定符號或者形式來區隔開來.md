@@ -82,7 +82,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Upper Camel Case命名->->-> `http://api.example.com/v1/users/12345/statuses/UserTimeline`
-<!--SR:!2023-04-03,5,230-->
+<!--SR:!2023-04-22,16,230-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Dot Notation Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user.timeline`

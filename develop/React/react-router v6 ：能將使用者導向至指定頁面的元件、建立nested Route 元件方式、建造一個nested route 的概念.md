@@ -223,7 +223,7 @@ xxxx 元件下的路由
 <!--SR:!2023-04-29,66,246-->
 
 #🧠 react-router-dom v6：將nested Route元件安置在component，再讓component被parent route元件所包含，其nested Route的path為何不用額外添加parent route的path就能延伸？ ->->-> `主要是定位就是以parent route的path為主`
-<!--SR:!2023-04-06,52,246-->
+<!--SR:!2023-08-18,134,246-->
 
 
 #🧠 react-router-dom v6：假若要設定/path1/path2 對應元件為xxxxx1，就直接將nested route的path設定成/path2，那麼那要如何瀏覽到nested route的對應渲染元件xxxxx1![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670250102/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_clqra8.png) ->->-> ``

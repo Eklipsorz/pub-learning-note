@@ -32,7 +32,7 @@ prompt 在 v6 被移除
 <!--SR:!2023-07-09,102,210-->
 
 #🧠 react-router-dom v6 中還有沒有useHistory和prompt元件，若沒有的話有何種替代->->-> `版本5沒有useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用`
-<!--SR:!2023-04-03,72,250-->
+<!--SR:!2023-10-07,184,250-->
 
 #🧠 react-router-dom v6 ：useNavigate 是什麼？ ->->-> `在v6給予開發者一個藉由執行程式碼讓使用者導向至特定頁面`
 <!--SR:!2023-10-03,184,250-->
