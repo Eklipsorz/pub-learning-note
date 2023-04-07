@@ -106,7 +106,7 @@ Pragma: no-cache
 <!--SR:!2023-04-12,14,249-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端向認證伺服器索求token的http動詞會是什麼？ ->->-> `通常會是POST`
-<!--SR:!2023-04-07,11,249-->
+<!--SR:!2023-05-05,28,249-->
 
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端的請求封包之主要內容為何->->-> `- grant_type：授權種類，在這裡會是填寫password - username：表示特定系統下的帳號 - password：表示特定系統下的帳號所擁有的密碼 - scope：表示索要的token要什麼樣的scope`

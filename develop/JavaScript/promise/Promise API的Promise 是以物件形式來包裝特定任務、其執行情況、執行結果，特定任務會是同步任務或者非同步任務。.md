@@ -259,7 +259,7 @@ rejected：
 <!--SR:!2023-04-03,26,250-->
 
 #🧠 Promise API上的promise object擁有的then語法會是`p.then(onFulfilled[, onRejected]);`，在這裡的onFulfilled和onRejected為callback，這兩個callback的引數分別會是什麼？ ->->-> ` onFulfilled 和 onRejected 的callback引數分別為：前者為resolved value，後者為系統攔截到的錯誤訊息物件或者reject方法的引數`
-<!--SR:!2023-04-06,28,250-->
+<!--SR:!2023-06-18,72,250-->
 
 #🧠 Promise API上的promise object擁有的then語法回傳什麼？ ->->-> `then方法回傳promise物件`
 <!--SR:!2023-04-22,28,230-->
