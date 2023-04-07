@@ -41,7 +41,7 @@ const error = useRouteError()
 <!--SR:!2023-08-25,160,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 會是哪一種元件的屬性？ ->->-> `Route`
-<!--SR:!2023-04-05,72,250-->
+<!--SR:!2023-10-10,186,250-->
 
 #🧠  react-router-dom v6.4 ：errorElement 會是Route元件的屬性，請問其語法會是什麼？ ->->-> `<Route .... errorElement={JSX Element} />`
 <!--SR:!2023-08-11,149,250-->
