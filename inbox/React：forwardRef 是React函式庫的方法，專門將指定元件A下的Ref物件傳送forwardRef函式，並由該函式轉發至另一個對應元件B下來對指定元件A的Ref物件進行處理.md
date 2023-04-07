@@ -47,6 +47,8 @@ React.forwardRef(render)
 
 ## 複習
 
+#🧠 forwardRef 語法在React框架會是隸屬於哪個函式庫 ->->-> `React`
+
 #🧠 forwardRef 是React 函式庫的什麼？->->-> `是由React函式庫提供的方法之一`
 <!--SR:!2023-07-31,194,250-->
 

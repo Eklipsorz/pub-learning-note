@@ -89,7 +89,7 @@ useNavigation：
 <!--SR:!2023-04-26,43,210-->
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，資料包含導向狀態、導向的目的地、請求內的body部分，請問location會是什麼？->->-> `指定導向的目的地`
-<!--SR:!2023-04-07,72,250-->
+<!--SR:!2023-10-08,184,250-->
 
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，資料包含導向狀態、導向的目的地、請求內的body部分，請問formData會是什麼？->->-> `導向操作所夾帶的body部分`

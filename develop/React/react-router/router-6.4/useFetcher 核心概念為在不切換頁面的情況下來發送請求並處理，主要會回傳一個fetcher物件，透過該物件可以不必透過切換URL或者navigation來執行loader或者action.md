@@ -217,7 +217,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是什麼？->->-> ` <fetcher.Form method=method1 action=action1> ....</fetcher.Form>`
-<!--SR:!2023-04-05,67,250-->
+<!--SR:!2023-10-02,178,250-->
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是`<fetcher.Form method=method1 action=action1> ....</fetcher.Form>`，其中method和action會是什麼形式和作用？ ->->-> `- method ：形式為字串，為指定轉遞表單資料方法 method - action ：形式為路徑字串，為指定處理接收轉遞表單資料`
 <!--SR:!2023-04-15,74,250-->

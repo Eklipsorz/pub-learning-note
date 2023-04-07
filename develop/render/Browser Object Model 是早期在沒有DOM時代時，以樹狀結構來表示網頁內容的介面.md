@@ -62,7 +62,7 @@
 <!--SR:!2023-05-07,178,250-->
 
 
-#🧠 請畫圖來表示BOM和DOM之間的關係？用樹狀圖->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1630066487/blog/dom/bomHierarchy_kp1icw.png)`
+#🧠 請畫圖來表示BOM和DOM之間的關係？用樹狀圖->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1630066487/blog/dom/bomHierarchy_kp1icw.png)
 <!--SR:!2023-04-03,155,250-->
 
 

@@ -115,7 +115,7 @@
 
 
 
-#🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，能夠代表access/permission的事物會是什麼？ ->->-> `使用固定字串的回應、server-side session的session id、authentication token中的token`
+#🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，能夠代表access/permission的事物具體可以會是什麼？ ->->-> `使用固定字串的回應、server-side session的session id、authentication token中的token`
 <!--SR:!2023-04-06,40,230-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，access/permission是什麼意思？ ->->-> `作為存取受保護資源的權力依據`
