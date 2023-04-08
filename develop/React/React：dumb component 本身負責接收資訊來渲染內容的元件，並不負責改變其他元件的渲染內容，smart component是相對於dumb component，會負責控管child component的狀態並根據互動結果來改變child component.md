@@ -66,7 +66,7 @@ class App extends Component {
 <!--SR:!2023-05-14,152,230-->
 
 #🧠 在React 上， smart component  的別名是什麼？->->-> `container component`
-<!--SR:!2023-04-03,51,228-->
+<!--SR:!2023-05-04,26,208-->
 
 ---
 Status: #🌱 
