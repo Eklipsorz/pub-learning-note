@@ -53,7 +53,7 @@ useNavigation：
 ## 複習
 
 #🧠 若要確保一旦提交就不會有額外的提交內容，手段可以是什麼？ ->->-> `一旦提交就關閉提交按鈕，按鈕顯示submitting`
-<!--SR:!2023-04-06,71,250-->
+<!--SR:!2023-10-06,181,250-->
 
 #🧠 表單一旦提交時，表單元件還能呈現什麼樣子？為什麼？->->-> `顯示不能提交，確保處理部分是以當時提交內容為主`
 <!--SR:!2023-05-08,36,230-->
@@ -93,7 +93,7 @@ useNavigation：
 
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，資料包含導向狀態、導向的目的地、請求內的body部分，請問formData會是什麼？->->-> `導向操作所夾帶的body部分`
-<!--SR:!2023-04-07,72,250-->
+<!--SR:!2023-10-07,182,250-->
 
 
 #🧠 react-router-dom 6.4： Navigate vs. useNavigate vs useNavigation 之間差異 ->->-> `1. Navigate 是元件，主要從元件角度實現將使用者導向至指定頁面 2. useNavigate 是hook，主要以程式編碼來將使用者導向至ㄙ指定頁面，會回傳函式物件來進行導向 3. useNavigation 是hook，主要是回傳目前router所攔截到的navigation 操作之目前狀態資料`
