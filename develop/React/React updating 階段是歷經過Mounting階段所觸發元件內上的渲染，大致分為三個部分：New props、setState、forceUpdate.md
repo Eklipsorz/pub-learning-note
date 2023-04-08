@@ -250,7 +250,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2023-06-10,72,230-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate回傳false就還做不做狀態更新 ->->-> `做`
-<!--SR:!2023-04-04,87,248-->
+<!--SR:!2023-11-15,221,248-->
 
 
 #🧠 react 生命週期中會用到的shouldComponentUpdate採用預設的話，會是什麼？ ->->-> `會直接回傳true`

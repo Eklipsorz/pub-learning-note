@@ -196,7 +196,7 @@ Pragma: no-cache
 <!--SR:!2023-04-17,19,250-->
 
 #🧠 authorization code grant type 在OAuth 上是以什麼形式來讓認證授權伺服器認可為使用者合法授權的結果？ ->->-> `以authorization code的形式`
-<!--SR:!2023-04-08,6,248-->
+<!--SR:!2023-04-25,17,248-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時->->-> `使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權 -> 使用者在認證頁面同意授權給應用服務A -> 假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼 -> 身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要tokem請求 -> 認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token。`
@@ -223,7 +223,7 @@ Pragma: no-cache
 <!--SR:!2023-04-18,20,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，使用者向客戶端發送封包，請問HTTP動詞是為何？ ->->-> `GET`
-<!--SR:!2023-04-08,12,249-->
+<!--SR:!2023-05-10,32,249-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？->->-> `其請求會是以封包來進行，主要會在封包內部附加授權碼、當初申請授權碼的重導向URL、當初申請授權碼的client_id`
