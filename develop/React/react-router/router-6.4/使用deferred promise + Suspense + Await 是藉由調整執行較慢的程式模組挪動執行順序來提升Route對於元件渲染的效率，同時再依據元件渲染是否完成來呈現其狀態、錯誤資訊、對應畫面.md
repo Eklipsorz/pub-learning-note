@@ -203,7 +203,7 @@ suspense
 <!--SR:!2023-04-12,72,250-->
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的errorElement會是什麼形式和作用？？ ->->-> `errorElement：形式為JSX Element。當依據deferred 的promise非同步任結果的元件渲染失敗後，就隨之要渲染的錯誤畫面 `
-<!--SR:!2023-04-04,67,250-->
+<!--SR:!2023-10-04,179,250-->
 
 
 #🧠 React-router：Await 語法為`<Suspense> <Await resolve=xxxx1 errorElement=xxxx2> <Children> </Await> </Suspense>` ，其中的Children會是什麼形式和作用？？->->-> `形式為JSX Element或者會回傳JSX Element 或者 函式物件。當deferred的promise非同步任務是以resolve情況下獲得結果，就直接以Cildren來渲染`
