@@ -265,7 +265,7 @@ rejected：
 <!--SR:!2023-04-22,28,230-->
 
 #🧠 Promise API上的promise object擁有的then語法回傳Promise object，通常取得該object的狀態為何？ ->->-> `其狀態通常會因為event loop的關係而會是pending狀態`
-<!--SR:!2023-04-06,28,250-->
+<!--SR:!2023-06-20,73,250-->
 
 #🧠 Promise API上的promise object擁有的catch 會是什麼？ ->->-> `catch 會是Promise object的方法之一，主要是替Promise object內部定義的任務註冊執行失敗時的事件處理`
 <!--SR:!2023-05-26,57,250-->
@@ -283,7 +283,7 @@ rejected：
 <!--SR:!2023-04-16,35,250-->
 
 #🧠 Promise API上的promise object擁有的catch會回傳promise object，當獲取其object時的狀態為何？ ->->-> `其狀態會由於event loop的關係而總是pending狀態。`
-<!--SR:!2023-04-05,22,230-->
+<!--SR:!2023-05-31,53,230-->
 
 
 #🧠 這些指令、promise建立的執行順序是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1677055220/blog/promise/execution/promise-object-task_cmxcu3.png) ->->-> `	- 建立Promise object - 執行command1 - 執行command2 - 建立非同步任務(不執行其任務內容) - 執行command3 - 執行command4 - 非同步任務執行`

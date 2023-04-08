@@ -113,7 +113,7 @@ Pragma: no-cache
 <!--SR:!2023-04-26,24,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `封包`
-<!--SR:!2023-04-08,12,249-->
+<!--SR:!2023-05-12,34,249-->
 
 
 
@@ -123,7 +123,7 @@ Pragma: no-cache
 
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下，客戶端對於使用者提供的帳密會如何處理？(儲存) ->->-> `1. 會拿來索要token  並且通常來說，必須規定在過程中客戶端不得儲存使用者任何帳密`
-<!--SR:!2023-04-07,11,249-->
+<!--SR:!2023-05-07,29,249-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下，客戶端對於使用者提供的帳密會如何處理？->->-> `1. 會拿來索要token  並且通常來說，必須規定在過程中客戶端不得儲存使用者任何帳密`
 <!--SR:!2023-04-08,12,249-->

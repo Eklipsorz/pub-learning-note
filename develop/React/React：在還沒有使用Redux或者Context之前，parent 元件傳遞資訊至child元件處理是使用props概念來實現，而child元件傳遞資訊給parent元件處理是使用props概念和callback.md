@@ -40,7 +40,7 @@ A->C
 <!--SR:!2023-04-03,138,250-->
 
 #🧠 React： 為了讓child元件存取到parent元件所給予的資訊，並於child元件內處理資訊，請問實現方式為何？ ->->-> `- 藉由props概念來去實現： 1. parent 元件將自己所擁有的資訊藉由props概念往下傳遞至child元件 2. child元件使用自己的props來接收其資訊並做處理`
-<!--SR:!2023-04-08,73,210-->
+<!--SR:!2023-09-12,157,210-->
 
 #🧠 React： 為了讓parent元件存取到child元件所給予的資訊，並於parent元件內處理資訊，請問實現方式為何？ ->->-> `- 藉由props概念＋callback來實現： - 具體在parent元件上建立callback**來叫child元件去做parent接收到資料時會做的事情**，並以props給予child元件 - child元件呼叫callback即可，就會去做parent接收到資料時會做的事情。`
 <!--SR:!2023-04-07,138,250-->
