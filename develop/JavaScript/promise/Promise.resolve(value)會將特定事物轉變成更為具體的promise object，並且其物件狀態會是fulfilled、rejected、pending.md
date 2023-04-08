@@ -184,7 +184,7 @@ new Promise((resolve, _) => {
 
 
 #🧠 `new Promise((resolve, _) => { /* ... */ resolve(value) }` 中的resolve為何要用resolve來取名，而非fulfilled？  ->->-> `由於其resolve功能本身就是將指定事物轉變成更為具體的事物，其事物可以fulfilled狀態或rejected或pending狀態的promise object，若是fulfilled的話，會無法說明其真正的用途`
-<!--SR:!2023-04-04,28,250-->
+<!--SR:!2023-04-25,17,230-->
 
 
 

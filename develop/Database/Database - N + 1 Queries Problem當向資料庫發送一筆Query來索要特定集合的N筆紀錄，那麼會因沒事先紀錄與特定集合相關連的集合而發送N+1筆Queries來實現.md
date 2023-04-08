@@ -133,7 +133,7 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 
 
 #🧠 Database：若排除掉資料庫系統、開發者的問題外，N+1 問題發生在哪個常見場合  ->->-> `一般來說，SQL官方提供的語法都會特別事先紀錄相關連的表格，但若考慮ORM需要從應用程式層面來轉換SQL語法的話，就不一定能夠特別關注這問題，因此常見的問題乃是因為 **ORM 是否會事先儲存相關連的表格來做處理**
-<!--SR:!2023-04-03,183,250-->
+<!--SR:!2023-07-10,93,230-->
 `
 
 #🧠 以下為N+1 Queries Problems 的範例，請說明為何是N+1 Queries Problem? ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example1_xqkmom.png)->->-> `案例中是先從客戶端對資料庫發送索要歲數要大於18的使用者集合，然後在客戶端遍歷那集合上的每個使用者來向資料庫發送索要balance集合、 一開始索要使用者集合的Query 是算一個，並且那集合上的使用者總數為N，那麼每個使用者都各向資料庫發送索要balance集合，所以總共有N個Query，再加上最前面一個，所以算是N+1 個Queries。`
