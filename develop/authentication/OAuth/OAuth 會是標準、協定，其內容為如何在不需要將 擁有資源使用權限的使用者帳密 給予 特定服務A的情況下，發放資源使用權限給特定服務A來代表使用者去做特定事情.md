@@ -222,7 +222,7 @@
 
 
 #🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端), 授權伺服器, 和授權層級，請畫圖來說明->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679061043/blog/OAuth/OAuth-Simple-Concept_vrcj0d.png)
-<!--SR:!2023-04-04,8,227-->
+<!--SR:!2023-04-30,22,227-->
 
 #🧠 OAuth 概念 的 基本實現會有的執行流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說 ->->-> `	- 使用者打開特定應用程式A (Client) ，應用程式A要求使用者給予授權 - 使用者同意並給予授權資料至應用程式A - 客戶端使用上一個獲取到的授權資料來向Authorization Server申請token - Authorization Server認證授權資料並確認無誤，就發放其token - 客戶端使用token來向Resource Server來申請獲取資源 - Resource Server 確認token 無誤就發放資源給客戶端`
 <!--SR:!2023-04-18,16,226-->
@@ -250,7 +250,7 @@
 `
 
 #🧠 User Agent 在網頁上會泛指什麼？ ->->-> `會是指代理使用者來獲取/發送對於網頁請求的程式模組，如瀏覽器`
-<!--SR:!2023-04-06,13,247-->
+<!--SR:!2023-05-14,36,247-->
 
 
 ---
