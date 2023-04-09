@@ -12,7 +12,7 @@
 
 ## 複習
 #🧠 React：為何functional component寫法較為流行？->->-> `1. 彈性較為足夠 2. 短小且易讀`
-<!--SR:!2023-04-09,84,230-->
+<!--SR:!2023-10-24,198,230-->
 
 #🧠 React：functional component寫法能否取代class-based component寫法？為什麼 ->->-> `並不能，主要是- 個人喜好 - 工作團隊共同使用- 建立 error boundary`
 <!--SR:!2023-06-27,96,230-->
