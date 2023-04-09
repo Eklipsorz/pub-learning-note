@@ -149,7 +149,7 @@ new Promise((resolve, reject) => {
 <!--SR:!2023-04-11,23,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-因callback執行時拋出錯誤而產生預期外的結果，先以吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理來說 ->->-> `當包覆著對應callback的promise object被執行時，若拋出錯誤的話，promise 會自動將錯誤包裝成rejected狀態的promise來回傳， 註冊方只需要在後頭註冊負責錯誤處理的callback就能解決`
-<!--SR:!2023-04-07,20,250-->
+<!--SR:!2023-06-03,55,250-->
 
 
 #🧠  JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-因錯誤處理而使callback的執行方式會演變成Zalgo->->-> `在Promise中，會將所有發生在callback上的錯誤和執行錯誤全以rejected狀態的promise來回傳給下一個Promise.then或者Promise.catch來接收，當他們接收到時，就會以非同步任務的形式來執行錯誤處理，確保另一個潛在的問題- 錯誤處理會不會致使callback的執行變成Zalgo`
