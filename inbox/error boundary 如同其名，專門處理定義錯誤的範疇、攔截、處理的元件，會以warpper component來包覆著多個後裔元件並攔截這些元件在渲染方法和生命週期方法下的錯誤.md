@@ -238,7 +238,7 @@ UsersFinder.js
 <!--SR:!2023-08-25,197,250-->
 
 #🧠 React： componentDidCatch  觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
-<!--SR:!2023-04-09,109,249-->
+<!--SR:!2024-01-05,271,249-->
 
 #🧠 React： getDerivedStateFromError 觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
 <!--SR:!2023-04-13,111,249-->

@@ -34,7 +34,7 @@
 ## 複習
 
 #🧠 redirect_uri 是用來接收token的地點： implicit grant type 在OAuth上的流程為何？ ->->-> `	- A. 使用者訪問客戶端 - B. 客戶端將使用者導向認證伺服器進行身份認證、授權詢問 - C. 使用者同意授權並發送至認證伺服器 - D. 認證伺服器向使用者發送一個導向URI以及Token - E. 使用者藉由導向URI發送token至Client - F. Client 透過Token來向資源伺服器索要資源 - G. 資源伺服器回傳資源至Client`
-<!--SR:!2023-04-01,3,230-->
+<!--SR:!2023-04-25,16,230-->
 
 #🧠  redirect_uri 是用來接收token的地點： implicit grant type 在OAuth上的流程為何？ 請畫圖來表示->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version2_euhcgr.png)
 <!--SR:!2023-04-27,18,230-->

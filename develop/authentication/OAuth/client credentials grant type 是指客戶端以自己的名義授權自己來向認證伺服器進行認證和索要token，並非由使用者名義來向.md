@@ -96,7 +96,7 @@
 <!--SR:!2023-05-08,30,248-->
 
 #🧠 client credential grant type 在OAuth 下的流程會是什麼？ ->->-> `	- 客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** 並以此向認證伺服器索要token - 認證伺服器確認身份資訊無誤之後，就會回傳token至客戶端`
-<!--SR:!2023-04-08,12,248-->
+<!--SR:!2023-05-14,35,248-->
 
 #🧠 client credential grant type 在OAuth 下的流程會是什麼？畫圖表示 ->->-> ![客户端模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051207.png)
 <!--SR:!2023-04-13,15,248-->

@@ -15,7 +15,7 @@
 <!--SR:!2023-07-03,95,230-->
 
 #🧠 在publish-subscribe模式中，請問Publisher 要如何傳遞訊息至Subscriber，另外也定義一下Publisher 和 Subscriber 誰是sender和receiver ![](https://i.morioh.com/b6c9d9a00e.png) ->->-> `Publisher 是傳遞訊息至receiver的sender，而Subscriber則是接收自sender傳遞過來的訊息之receviver，Publisher 只需要將訊息傳遞至特定頻道，而接收者就從眾多頻道中挑選出想要接收的頻道，就即可收到對應頻道內所拿到的訊息。`
-<!--SR:!2023-04-05,192,250-->
+<!--SR:!2024-08-06,485,250-->
 
 
 
