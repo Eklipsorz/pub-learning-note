@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -156,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "dba5e16eed67c4ca",
   "lastOpenFiles": [
     "develop/React/react-router/router-6.4/React-router 6.4 提出loader 和action是為了讓元件本身的業務邏輯更為簡單，而從元件的業務邏輯抽離出請求處理種類的業務邏輯.md",
     "develop/authentication/Untitled 1.md",
