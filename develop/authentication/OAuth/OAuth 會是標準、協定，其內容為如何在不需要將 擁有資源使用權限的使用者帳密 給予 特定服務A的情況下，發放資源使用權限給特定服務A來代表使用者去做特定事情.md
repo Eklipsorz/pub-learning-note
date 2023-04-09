@@ -205,13 +205,13 @@
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server和Authorization Server 之間差別是什麼？ ->->-> `- Resource Server：管理資源、轉遞請求封包上的token至authorization server的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
-<!--SR:!2023-04-09,53,250-->
+<!--SR:!2023-08-24,137,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者在實現上是否能一台主機擔任兩個角色？ ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
 <!--SR:!2023-05-03,25,230-->
 
-#🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端)和服務提供商來說明 ->->-> `讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，並只提供這種方式來讓客戶端進行登入和獲取資源，服務提供商拿著代表使用者特定權限的資料-token來登入授權層並獲取服務提供商的資源。`
-<!--SR:!2023-04-09,15,247-->
+#🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端), 服務提供商和授權層來說明 ->->-> `讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，並只提供這種方式來讓客戶端進行登入和獲取資源，服務提供商拿著代表使用者特定權限的資料-token來登入授權層並獲取服務提供商的資源。`
+<!--SR:!2023-04-18,9,227-->
 
 
 #🧠 OAuth 的授權思路會是什麼？其中讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，授權層會只接受什麼？面向於誰 ->->-> `僅面向於應用程式A，只接受於token來透過它獲取服務提供商的資源`

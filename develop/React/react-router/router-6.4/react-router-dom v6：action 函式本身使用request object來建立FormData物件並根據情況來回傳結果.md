@@ -151,7 +151,7 @@ export async function action({ request }) {
 <!--SR:!2023-05-05,35,230-->
 
 #🧠 處理提交表格資料(action)的端點可以是與表格所在端點一樣的端點，為何可以？->->-> `具體可以設定http動詞為不同來分別做呈現表格和提交`
-<!--SR:!2023-04-09,74,250-->
+<!--SR:!2023-10-19,193,250-->
 
 #🧠 處理提交表格資料(action)的端點可以是與表格所在端點一樣的端點，為何可以的原因為設定http動詞為不同來分別做呈現表格和提交，具體會將呈現表格和提交設定什麼？->->-> `端點一樣，	 - post 為 轉遞表格資料並處理 - get 為 獲取表格畫面`
 <!--SR:!2023-08-06,145,250-->
@@ -165,7 +165,7 @@ export async function action({ request }) {
 
 
 #🧠 react-router-dom v6.4：action 本身回傳error 和拋出 error 之間不同 處在哪？->->-> `使用return error 會是將錯誤物件回傳給元件，若是throw error則是被router的錯誤處理給攔截並處理。`
-<!--SR:!2023-04-09,74,250-->
+<!--SR:!2023-10-18,192,250-->
 
 #🧠 react-router-dom v6.4： 以下為action定義，請問以下的回傳error和拋出error之間的不同處在哪？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671114108/blog/react/react-router/v6/action-function/action-function-return-vs-throw_tlgvpy.png) ->->-> ``
 <!--SR:!2023-08-14,150,250-->
