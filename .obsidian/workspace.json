@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OAuth 的授權思路會是什麼？請以特定應用程式(客服端)和服務提供商來說明",
+                "query": "Global Execution Context (Creation phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：建立)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
+                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md"
+                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "eeaf668ffa0fbdfb",
   "lastOpenFiles": [
+    "develop/React/React - 可使用function 和 class 來建構react component.md",
+    "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/React/react-router/router-6.4/React-router 6.4 提出loader 和action是為了讓元件本身的業務邏輯更為簡單，而從元件的業務邏輯抽離出請求處理種類的業務邏輯.md",
     "develop/authentication/Untitled 1.md",
     "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
@@ -182,8 +184,6 @@
     "inbox/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
     "develop/JavaScript/Fetch API 是瀏覽器內建的工具，主要提供一個介面來讓瀏覽器發送請求並根據回應來做出適當的處理.md",
-    "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
-    "develop/authentication/Reliability 泛指著使用者對於特定軟體執行出預期結果所能信賴的程度，具體為在規定條件下和規定的時間內，軟體能夠得到預期結果的能力或者程度.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",

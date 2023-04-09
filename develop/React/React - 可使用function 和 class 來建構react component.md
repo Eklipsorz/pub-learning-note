@@ -69,7 +69,10 @@ const result = instance.render(); // <p>Hello</p>
 #🧠 React element 語法形式是什麼？ ->->-> `以XML語法為主`
 <!--SR:!2023-06-14,193,250-->
 
-#🧠 每一個React element 相當於Virtual DOM的什麼東西？ ->->-> `相當於Virtual DOM節點`
+#🧠 每一個React element 在 JS 語言體系下會是甚麼?->->-> `相當於Virtual DOM物件`
+<!--SR:!2023-04-08,147,250-->
+
+#🧠 (重複)每一個React element 在 JS 語言體系下會是甚麼?->->-> `相當於Virtual DOM物件`
 <!--SR:!2023-04-08,147,250-->
 
 #🧠 React：如何構建一個function component? ->->-> `使用function以及function回傳著react element構成的元件`

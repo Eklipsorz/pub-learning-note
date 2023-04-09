@@ -112,7 +112,7 @@ Process Description:
 
 
 #🧠 多執行緒的redis版本下，如何處理每個請求的？ 先說明如何制定連線？(提示：請考量socket、io執行緒、queue、緩衝區buffer、回寫) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187884/blog/database/caching/redis/multithread-how-redis-works-part1_iuozuf.png)->->-> `1. 客戶端向redis建立連接 2. redis主執行緒收到便將對應socket放置佇列，該佇列會由負責管理網路請求I/O的模組A來負責處理 3. 放置完，主執行緒就保持等待，由模組A負責分配網路請求I/O執行緒來對這些socket 進行綁定-換言之，在這裡有三個客戶端，共有3個socket，在這裡會拿三個執行緒透過這三個socket接收源自於各自對應的客戶端之封包`
-<!--SR:!2023-04-05,182,250-->
+<!--SR:!2023-07-14,96,230-->
 
 
 #🧠 多執行緒的redis版本下，如何處理每個請求的？ (不提如何建立連線) (提示：請考量socket、io執行緒、queue、緩衝區buffer、回寫) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187884/blog/database/caching/redis/multithread-how-redis-works-part2_xx6bd2.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655187883/blog/database/caching/redis/multithread-how-redis-works-part3_tpblc2.png) ->->-> `1. 客戶端就會透過socket發送封包至對應的I/O網路請求執行緒 2. 由I/O執行緒從封包內解析指令並放置至Task Queue 3. 當所有指令都被解析完成並全都放入Task Queue後，就會喚醒主要執行緒去從Task Queue挑指令來執行 4. 主執行緒每一次執行完指令就會將結果和socket放置在等待I/O佇列 5. 等待所有指令都執行完畢並都放到佇列時，就由負責處理I/O執行緒的模組來分配原有綁定socket的執行緒來回寫至socket 6. 透過I/O執行緒回傳socket內容至客戶端`

@@ -188,10 +188,10 @@ GlobalExectionContext = {
 #🧠 Global Execution Context ：Lexical Environment 中的Environment Records 是什麼(在Creation phase和Execution phase) ->->-> `一開始在Creation 階段中，EnvironmentRecord的Type可以定義為Declarative或者Object來決定EnvironmentRecord的類型是什麼，最後Lexical Environment主要定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式，在Execution 階段中，會是JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
 <!--SR:!2023-05-12,76,230-->
 
-#🧠 Global Execution Context  (Creation phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：建立)  ->->-> `定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式`
+#🧠 Global Execution Context  (Creation phase)：Lexical Environment 中的Environment Records在建立時期當下 會有什麼樣的變化  ->->-> `定義該Execution Context能夠使用的識別名字是為何以及對應何種變數、函式`
 <!--SR:!2023-04-09,185,250-->
 
-#🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 會有什麼樣的變化(提示：更新) ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
+#🧠 Global Execution Context  (Execution phase)：Lexical Environment 中的Environment Records 在建立時期後會有什麼樣的變化 ->->-> `建立完GEC後，JavaScript 引擎隨後就會在GEC的環境下一行又一行執行程式碼，並根據執行結果來更新Lexical Environment內某個特定名稱的對應值或者調用其他區塊或者其他函式，使其產生該區塊或者該函式的execution context`
 <!--SR:!2023-06-28,226,248-->
 
 
