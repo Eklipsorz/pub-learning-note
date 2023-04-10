@@ -128,7 +128,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 <!--SR:!2023-05-01,113,250-->
 
 #🧠 Client-Side Rendering適用場景為何 ->->-> `適用於高頻切換不同頁面且不需要SEO的網頁`
-<!--SR:!2023-04-10,101,250-->
+<!--SR:!2023-12-19,253,250-->
 
 #🧠 為何與Server-Side Rendering 相比，CSR的webpage所需要載入的額外資料會比較多 ->->-> `CSR本身是憑藉著webpage所包含的JS bundle 來建立大部分虛擬page/webpage，JS bundle 在這會為了能建立所有webpage，會包含建立這些webpage的邏輯，致使JS bundle 與SSR 每一次載入網頁所需要載入的JS 來得大、剩下CSS和圖片的載入，通常會為了快速建立webpage而預先加載未來會用到的所有CSS和圖片`
 <!--SR:!2023-09-03,194,250-->
