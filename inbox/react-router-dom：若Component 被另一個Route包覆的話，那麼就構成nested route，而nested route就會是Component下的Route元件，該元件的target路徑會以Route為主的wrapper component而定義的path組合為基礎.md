@@ -161,7 +161,7 @@ function outerFunction() {
 <!--SR:!2023-09-22,197,248-->
 
 #🧠  nested function：會是指被另一個函式所包含著的函式function outerFunction() \{  function innerFunction() \{  \} } 哪個才是nested function？為什麼？->->-> `innerFunction正是nested function。`
-<!--SR:!2023-04-10,97,248-->
+<!--SR:!2023-12-07,241,248-->
 
 #🧠 nested route 概念是什麼？->->-> `以Route結構所包裝的另外一個Route結構`
 <!--SR:!2023-04-17,99,248-->

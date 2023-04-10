@@ -97,7 +97,7 @@ useNavigation：
 
 
 #🧠 react-router-dom 6.4： Navigate vs. useNavigate vs useNavigation 之間差異 ->->-> `1. Navigate 是元件，主要從元件角度實現將使用者導向至指定頁面 2. useNavigate 是hook，主要以程式編碼來將使用者導向至ㄙ指定頁面，會回傳函式物件來進行導向 3. useNavigation 是hook，主要是回傳目前router所攔截到的navigation 操作之目前狀態資料`
-<!--SR:!2023-04-10,74,250-->
+<!--SR:!2023-10-21,194,250-->
 
 #🧠  react-router-dom 6.4：useNavigate vs useNavigation 之間差異 ->->-> `1. useNavigate 是hook，主要以程式編碼來將使用者導向至ㄙ指定頁面，會回傳函式物件來進行導向 2. useNavigation 是hook，主要是回傳目前router所攔截到的navigation 操作之目前狀態資料`
 <!--SR:!2023-09-16,171,250-->
