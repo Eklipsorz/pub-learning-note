@@ -123,7 +123,7 @@ new Promise((resolve, reject) => {
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太早執行callback?->->-> `在Promise中，callback只要放入Promise API下的then、catch、finally這些語法的話，就會以非同步來執行callback，另外即使Promise指定任務是立即會履行的任務，callback仍以非同步任務型式來被排程去執行。`
-<!--SR:!2023-04-10,23,250-->
+<!--SR:!2023-06-07,58,250-->
 
 #🧠 `new Promise((resolve, reject) => { resolve(10); }).then(callback); ` 請問callback會以何種方式執行？ ->->-> ``
 <!--SR:!2023-04-14,26,250-->
