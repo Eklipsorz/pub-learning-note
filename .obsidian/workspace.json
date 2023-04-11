@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "authentication tokens 的驗證概念為何？",
+                "query": "在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md"
+                "file": "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md"
               }
             }
           },
@@ -158,8 +158,8 @@
   },
   "active": "eeaf668ffa0fbdfb",
   "lastOpenFiles": [
-    "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
     "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+    "develop/React/React：setState從要求更改狀態至完成狀態改變&渲染之間是有時間差，若面對大量更改狀態要求的情況下，會使得時間差加重.md",
     "develop/JavaScript/JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
     "inbox/CSS 開發常用使用法則.md",
     "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",

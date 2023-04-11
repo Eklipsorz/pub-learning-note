@@ -96,7 +96,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ ->->-> `token、isLoggedIn、更新狀態函式有login、logout`
 <!--SR:!2023-04-12,61,250-->
 
-#🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示->->-> ``
+#🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ 以程式碼來表示->->-> `React.createContext({ token: '',  isLoggedIn: false,  login: (token) => {}, logout: () => {}, });`
 <!--SR:!2023-04-11,61,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中token的型別、用途、初始值為何？ ->->-> `	- 型別：字串 - 用途：用來向伺服器索求受保護資料的識別資料 - 初始值：空字串`
