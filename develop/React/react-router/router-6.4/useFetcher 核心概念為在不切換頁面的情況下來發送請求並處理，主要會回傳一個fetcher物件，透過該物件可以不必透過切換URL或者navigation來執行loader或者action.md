@@ -198,7 +198,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
-<!--SR:!2023-04-12,72,250-->
+<!--SR:!2023-05-21,38,230-->
 
 #🧠 react-router-dom 6.4：useFetcher 回傳的fetcher物件是什麼？ ->->-> `透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
 <!--SR:!2023-04-15,74,250-->
@@ -215,7 +215,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，具體適用於什麼場景->->-> `是由使用者互動本身就引發fetch，就使用fetcher.Form、若是想由程式碼引發fetch，就使用fetch.submit`
-<!--SR:!2023-04-12,71,250-->
+<!--SR:!2023-05-22,39,230-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，前者的具體語法會是什麼？->->-> ` <fetcher.Form method=method1 action=action1> ....</fetcher.Form>`
