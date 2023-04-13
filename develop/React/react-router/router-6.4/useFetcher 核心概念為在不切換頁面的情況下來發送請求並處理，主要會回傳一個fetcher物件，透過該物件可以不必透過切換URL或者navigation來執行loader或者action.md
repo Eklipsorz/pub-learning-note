@@ -194,6 +194,8 @@ export default NewsletterSignup;
 #💻 請到/githubRepo/react-builder/question-review/react-router-6.4-adv領取題目並切換至refactor-with-useFetcher-imp分支，在NewsletterSignup.jsx內使用useFetcher中Form元件來實現表單提交，記得設定action的path和action ->->-> ``
 <!--SR:!2023-05-16,90,250-->
 
+#🧠 react-router-dom 6.4﹔useFetcher 可以允許元件不必透過切換URL或者navigation來執行甚甚麼樣的業務邏輯，而該邏輯是屬於Router->->-> `loader 或者 action`
+
 
 #🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
 <!--SR:!2023-04-12,72,250-->
