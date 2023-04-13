@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請問以下程式碼為何會出現illegal invocation？",
+                "query": "react-router-dom 6.4：useFetcher 是什麼樣的hook？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md"
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "eeaf668ffa0fbdfb",
   "lastOpenFiles": [
+    "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
+    "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
     "develop/Redis/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
     "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
     "develop/authentication/authentication tokens 概念為伺服器比對使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
@@ -182,8 +184,6 @@
     "develop/render/Browser Object Model 是早期在沒有DOM時代時，以樹狀結構來表示網頁內容的介面.md",
     "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
     "develop/authentication/OAuth/implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式或Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token.md",
-    "develop/JSON 和 XML 差別在於XML擁有declaration區塊以及用root元素包含所有元素.md",
-    "annotation/@XMLProcessors.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
