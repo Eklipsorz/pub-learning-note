@@ -253,7 +253,7 @@ rejected：
 <!--SR:!2023-06-21,73,250-->
 
 #🧠 Promise API上的promise object擁有的then語法會是什麼？ ->->-> `p.then(onFulfilled[, onRejected]);`
-<!--SR:!2023-04-14,33,250-->
+<!--SR:!2023-07-06,83,250-->
 
 #🧠 Promise API上的promise object擁有的then語法會是`p.then(onFulfilled[, onRejected]);`，在這裡的onFulfilled和onRejected會是什麼？->->-> ` onFulfilled：為callback，當監聽到的Promise p呈現的狀態為fulfilled時就以非同步任務形式來執行、 onRejected：為callback，當監聽到的Promise p呈現的狀態為rejected時就以非同步任務形式來執行`
 <!--SR:!2023-06-19,72,250-->

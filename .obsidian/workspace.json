@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Database： Durability 在Transaction是什麼樣的規則？修改內容會以什麼為主？",
+                "query": "Promise程式碼的執行情況是什麼？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md"
+                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "eeaf668ffa0fbdfb",
   "lastOpenFiles": [
+    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
+    "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
@@ -182,8 +184,6 @@
     "develop/React/React - 可使用function 和 class 來建構react component.md",
     "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
-    "develop/React/react-router/router-6.4/React-router 6.4 提出loader 和action是為了讓元件本身的業務邏輯更為簡單，而從元件的業務邏輯抽離出請求處理種類的業務邏輯.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
