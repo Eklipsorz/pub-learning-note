@@ -184,8 +184,8 @@ import styles from <css-file>
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式名稱會是什麼形式？ ->->-> `<component-name>_<class-selector-name>_<unique-hash-value>`
 <!--SR:!2023-07-08,191,250-->
 
-#🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 經由webpack和CSS modules的轉換後的CSS內容為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> ``
-<!--SR:!2023-04-12,134,250-->
+#🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 經由webpack和CSS modules的轉換後的CSS內容為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681480906/blog/css/css-module/css-module-result_w0wi6k.png)
+<!--SR:!2023-06-20,67,230-->
 
 
 #🧠 CSS module：假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS module，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
