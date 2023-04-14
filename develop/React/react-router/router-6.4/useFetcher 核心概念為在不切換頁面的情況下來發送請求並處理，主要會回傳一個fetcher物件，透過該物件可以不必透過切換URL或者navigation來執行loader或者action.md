@@ -212,7 +212,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有哪兩個？ ->->-> `fetcher.Form 和 fetcher.submit方法`
-<!--SR:!2023-04-14,73,250-->
+<!--SR:!2023-10-21,190,250-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 負責指定action的主要語法有fetcher.Form 和 fetcher.submit方法這兩個，具體適用於什麼場景->->-> `是由使用者互動本身就引發fetch，就使用fetcher.Form、若是想由程式碼引發fetch，就使用fetch.submit`

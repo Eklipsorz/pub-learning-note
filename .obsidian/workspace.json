@@ -158,6 +158,8 @@
   },
   "active": "eeaf668ffa0fbdfb",
   "lastOpenFiles": [
+    "develop/render/box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性.md",
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "develop/Database/Transaction - Durability 是指當成功執行Transaction，其資料庫的修改內容將會以Transaction指令修改內容來永久性儲存.md",
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
@@ -182,8 +184,6 @@
     "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
     "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "develop/React/React - 可使用function 和 class 來建構react component.md",
-    "develop/authentication/登入驗證概念為透過與伺服器間的credential驗證過程來獲取access並利用access來向伺服器索求受保護的資源.md",
-    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
