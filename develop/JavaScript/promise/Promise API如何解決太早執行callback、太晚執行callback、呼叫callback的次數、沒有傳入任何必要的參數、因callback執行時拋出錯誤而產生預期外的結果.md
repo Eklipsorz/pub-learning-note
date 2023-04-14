@@ -126,7 +126,7 @@ new Promise((resolve, reject) => {
 <!--SR:!2023-06-07,58,250-->
 
 #🧠 `new Promise((resolve, reject) => { resolve(10); }).then(callback); ` 請問callback會以何種方式執行？ ->->-> ``
-<!--SR:!2023-04-14,26,250-->
+<!--SR:!2023-06-21,68,250-->
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太晚執行callback? ->->-> `在Promise中，非同步任務的排程會按照then、catch、finally的出現順序來決定，也就是可以藉由promise.then給定的API位置來由上至下按照位置順序去排程非同步任務callback`

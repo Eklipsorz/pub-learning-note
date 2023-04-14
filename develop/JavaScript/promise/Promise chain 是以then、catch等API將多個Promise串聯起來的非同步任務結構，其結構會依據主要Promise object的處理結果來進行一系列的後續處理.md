@@ -135,7 +135,7 @@ p.then(
 <!--SR:!2023-07-01,82,250-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，那麼面對接收到的fulfilled promise會如何做？ ->->-> `若Promise API中的then方法並沒有fulfillment handler，那麼就以預設的fulfillment handler來處理：直接將接收到的Promise object，解開其值並重新包裝成fulfilled 狀態的`
-<!--SR:!2023-04-14,33,250-->
+<!--SR:!2023-05-01,17,230-->
 
 #🧠 Promise API 的then若沒有fulfillment handler的話，那麼面對接收到的fulfilled promise會如何做？以程式碼來表示 ->->-> `function(v) { return v }`
 <!--SR:!2023-06-24,76,250-->

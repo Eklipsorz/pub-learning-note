@@ -99,7 +99,7 @@
 <!--SR:!2023-05-14,35,248-->
 
 #🧠 client credential grant type 在OAuth 下的流程會是什麼？畫圖表示 ->->-> ![客户端模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051207.png)
-<!--SR:!2023-04-13,15,248-->
+<!--SR:!2023-05-25,41,248-->
 
 #🧠 client credential grant type 在OAuth 下嚴格來說，會是使用者授權嗎？為什麼 ->->-> `不屬於，只是單純是客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** `
 <!--SR:!2023-04-15,17,248-->
