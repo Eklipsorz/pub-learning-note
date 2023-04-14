@@ -30,7 +30,7 @@
 <!--SR:!2023-05-03,193,250-->
 
 #🧠 Database： Durability 在Transaction是什麼樣的規則？修改內容會以什麼為主？ ->->-> `-  Durability 意旨為當成功執行Transaction，其資料庫的修改內容將會以Transaction指定修改的內容來永久性儲存`
-<!--SR:!2023-04-14,178,250-->
+<!--SR:!2023-07-15,92,230-->
 
 #🧠 Database：若給你Commit 和Rollback的話， 會如何描述Durability 在Transaction是什麼樣的規則   ->->-> ` Durability 性質是保證協議只要執行到commit從而使資料庫內容轉換成永久性修改時，其內容將會永久存在，不會還原`
 <!--SR:!2023-05-04,194,250-->

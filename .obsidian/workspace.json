@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Promise程式碼的執行情況是什麼？",
+                "query": "以下程式碼的執行情況是什麼？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -156,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eeaf668ffa0fbdfb",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/render/box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
