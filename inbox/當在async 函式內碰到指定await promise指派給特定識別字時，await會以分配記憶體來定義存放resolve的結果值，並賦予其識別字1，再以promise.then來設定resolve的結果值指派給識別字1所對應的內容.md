@@ -64,7 +64,8 @@ console.log(testAwaitFunction());
 
 
 執行情況：
-當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，await碰到指派語句，會因為其的轉換方式使得res獲取到resolve的10，接著印出obj時會是擁有10的物件，最後並回傳
+當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，使後續的程式碼(包含res屬性的內容指派，console以及obj的回傳)被promise.then所包含，而產生非同步任務來排程，在還沒開始排程時，其promise狀態會是pending，等到開始排程非同步任務時就會執行其指派，console和obj的回傳
+
 ```
 async function testAwaitFunction() {
   const obj = {
@@ -94,8 +95,9 @@ async function testAwaitFunction() {
 #🧠  以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example1_apykcx.png) ->->-> `執行情況：首先先呼叫testAwaitFunction，而函式會回傳Promise物件並接著以非同步任務來做async函式內的程式碼，執行第一行時會先分配記憶體給res這個識別字，接著再將res的內容指派和await後續程式碼以promise.then來包覆著他們來執行。當執行完promise時，就會以resolve情況下的1020指派給res這識別字，接著就印出1020和它會是數字，接著並以1020來回傳。`
 <!--SR:!2023-08-12,142,250-->
 
-#🧠 以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example3_rqdy8j.png) ->->-> `當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，await碰到指派語句，會因為其的轉換方式使得res獲取到resolve的10，接著印出obj時會是擁有10的物件，最後並回傳`
-<!--SR:!2023-04-13,74,250-->
+#🧠 以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example3_rqdy8j.png) ->->-> `當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，使後續的程式碼(包含res屬性的內容指派，console以及obj的回傳)被promise.then所包含，而產生非同步任務來排程，在還沒開始排程時，其promise狀態會是pending，等到開始排程非同步任務時就會執行其指派，console和obj的回傳`
+<!--SR:!2023-04-17,3,250-->
+
 
 
 
