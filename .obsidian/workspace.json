@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Redis SCAN COUNT參數是做什麼用",
+                "query": "react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，請用程式碼來表示",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md"
+                "file": "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "eeaf668ffa0fbdfb",
   "lastOpenFiles": [
+    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+    "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/render/box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性.md",
@@ -182,8 +184,6 @@
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/authentication/OAuth/OAuth 適用於授權的場景，優點為安全、分攤壓力、管理授權。缺點為協定為概念，實作會因平台不同而不同、token本身並不保證夾雜使用者資訊.md",
-    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
-    "develop/JavaScript/promise/Promise chain 是以then、catch等API將多個Promise串聯起來的非同步任務結構，其結構會依據主要Promise object的處理結果來進行一系列的後續處理.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",

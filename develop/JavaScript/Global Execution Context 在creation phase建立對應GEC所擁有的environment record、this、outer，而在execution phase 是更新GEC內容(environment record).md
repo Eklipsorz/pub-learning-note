@@ -169,7 +169,7 @@ GlobalExectionContext = {
 <!--SR:!2023-08-11,253,248-->
 
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？(提示：請以資料結構來看待Lexical Environment)->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
-<!--SR:!2023-04-15,171,228-->
+<!--SR:!2023-07-12,88,208-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間`
 <!--SR:!2023-05-09,200,248-->

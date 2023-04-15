@@ -256,7 +256,7 @@ export default NewsletterSignup;
 <!--SR:!2023-10-15,186,250-->
 
 
-#🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，請用程式碼來表示 ->->-> ``
+#🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式為什麼？設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader ，請用程式碼來表示 ->->-> `   createBrowserRouter([ // 主要服務/頁面 {   path: '/', element: <RootLayout />, errorElement: <ErrorPage />, children: [ ..... ] }, // 隔離的頁面位址  {  path: '/newsletter', action: newsletterAction, }])`
 <!--SR:!2023-04-15,74,250-->
 
 #🧠 fetch 會是什麼意思？ ->->-> `fetch 本身是移動至特定地方並獲取東西的意思`
