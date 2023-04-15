@@ -75,7 +75,7 @@ empty
 
 
 #🧠  Redis SCAN Cursor  COUNT xxx 中的Count參數是做什麼用 ->->-> `參數是用來指定每一次呼叫從key 集合獲取的key數量，也就是每個呼叫所要負責比對的key數量`
-<!--SR:!2023-04-15,193,250-->
+<!--SR:!2023-07-21,97,230-->
 
 
 #🧠  Redis SCAN Cursor  COUNT xxx 中的Cursor參數是做什麼用 ->->-> `主要將Cursor對應的資料集合做一次遍歷和篩選`

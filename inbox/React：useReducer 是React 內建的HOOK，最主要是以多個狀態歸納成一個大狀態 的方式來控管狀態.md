@@ -349,7 +349,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：reducerFn定義上通常會如何開發？考慮它會在哪以及誰會去用useReducer，用程式碼表示 ->->-> `const reducerFn = (prevState, action) => { //..... return new-state} function Component(props) { const [state, dispatch] = useReducer(reducerFn) //..... } export default Componet`
-<!--SR:!2023-04-15,128,250-->
+<!--SR:!2024-02-29,320,250-->
 
 #🧠 React：假設派遣過來的action會是type為increase或者descrease，並且預期當reducer接收到increase就替狀態上的counter進行遞增以及當reducer接收到descrease就替狀態上的counter進行遞減，其餘則是發出錯誤，請問如何用程式碼表示 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663519501/blog/react/state/useReducer/useReducer-usage1_q8tnw6.png)`
 <!--SR:!2023-06-04,158,250-->
