@@ -209,7 +209,7 @@ useEffect(() => {
 <!--SR:!2023-07-03,178,250-->
 
 #🧠 useReducer 所回傳的狀態是由誰負責的？ ->->-> `useReducer(reducer, init, initFn)中的reducer、init、initFn`
-<!--SR:!2023-04-15,43,210-->
+<!--SR:!2023-05-09,24,190-->
 
 #🧠 useReducer 所回傳的狀態在渲染週期是如何回傳新狀態作為snapshot，假設只有useReducer這個狀態管理工具 ->->-> `mounting 階段下的componentDidMount來以init或者initFn來給定，而updating階段則是以componentDidUpdate來以reducer回傳的新狀態為主。`
 <!--SR:!2023-05-07,139,250-->

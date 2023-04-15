@@ -195,7 +195,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 適用場景為 props以物件為內容的元件且該元件使用React.memo，為什麼？ ->->-> `由於物件會因為渲染函式而重造並得到不同的記憶體位址，而無法正常使用memo的功能`
-<!--SR:!2023-04-15,39,230-->
+<!--SR:!2023-07-16,92,230-->
 
 
 #💻 請至/react-builder/question-review/useMemo-question領取題目，並到fix-items-problem分支，現在想要在App元件減少DemoList重複性渲染，但現實上的實現代碼並沒辦法做到，請試著解決 ->->-> `https://github.com/academind/react-complete-guide-code/blob/12-a-look-behind-the-scenes/code/07-finished/src/App.js`
