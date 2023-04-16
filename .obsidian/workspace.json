@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Expression Language",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md"
+                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md"
               }
             }
           },
@@ -174,10 +174,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0012fe64d02bf6a",
+  "active": "5e2718e57889fae3",
   "lastOpenFiles": [
-    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
+    "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
@@ -201,7 +202,6 @@
     "inbox/CSS 開發常用使用法則.md",
     "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
     "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
