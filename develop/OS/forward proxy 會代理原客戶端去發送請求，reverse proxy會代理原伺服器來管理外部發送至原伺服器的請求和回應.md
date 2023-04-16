@@ -81,7 +81,7 @@ authority：
 
 
 #🧠 請用下圖來說明forward-proxy 在做什麼？(請務必說到客戶端A和伺服器B) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656430766/blog/network/proxy/forward-proxy_sdzx6e.png) ->->-> `1. 是指客戶端A授與權力給代理伺服器去幫忙做(客戶端A原本要做的事情-客戶端A向伺服器B發送回應) 2. 當客戶端A向伺服器B發送請求，會委託代理伺服器幫忙轉遞請求A，接著代理伺服器接收到請求A並轉遞至伺服器B進行處理，等到伺服器B處理完畢後，就將結果回傳給代理伺服器，最後代理伺服器收到回應後，並轉達回應給客戶端A`
-<!--SR:!2023-04-16,179,250-->
+<!--SR:!2024-07-12,453,250-->
 
 #🧠 請用下圖來說明reverse-proxy 在做什麼？(請務必說到客戶端A和伺服器B)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656430766/blog/network/proxy/reverse-proxy_irssw8.png) ->->-> `當外部主機(如客戶端A)向代理伺服器發送請求時，其代理伺服器就會將該請求導向至伺服器B，使伺服器B去處理，處理完畢後再由伺服器B將回應結果給代理伺服器，最後由代理伺服器把回應給外部主機(如客戶端A)`
 <!--SR:!2023-05-29,201,248-->
