@@ -8,6 +8,7 @@
 
 ### token-based authentication 概念
 
+0. 將token 視為permission/access的形式之一
 1. 客戶端從認證授權用的伺服器上獲取permission/access：
 	- 伺服器比對使用者所輸入的credential和資料庫上的credential是否一樣，若一樣就做下一步；若不一樣就不做
 	 - 建立permission token 給予客戶端
@@ -19,26 +20,29 @@
 
 ### 客戶端從伺服器上獲取permission/access
 
-1. 客戶端輸入credential 來給伺服器做使用者驗證
-2. 伺服器收到就從資料庫取得對應使用者的credential，看是否完全一樣，若一樣就做下一步；不一樣就告知登入失敗
-3. 伺服器會產生一個識別字字串，該字串會由credential和hashing 字串構成，hashing 字串是由伺服器的hashing algorithm和伺服器儲存的secret搭配識別用的資料來組合成獨特且不可反解的hash字串。
-4. 將識別字字串傳遞至客戶端
-5. 客戶端收到就儲存在客戶端的cookie並用domain和path來標記該資料是屬於哪個伺服器和哪個端點。
+1. 使用者向客戶端提供credential 
+2. 客戶端利用使用者提供的credential 來申請對應的token
+3. 伺服器收到就進行驗證: 
+	- 若驗證成功的話，就產生token
+	- 若驗證失敗的話，就回報錯誤訊息
+4. 假如驗證成功的話，就將token 轉發給client
 
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672252937/blog/authentication/authentication-tokens-generate_n3vrxj.png)
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-token_crodax.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-token_crodax.png)
 
 
 
 
 ###  客戶端藉由permission/access來向伺服器索求
 
-1. 客戶端藉由識別字字串來向伺服器索求受保護的資源。
-2. 伺服器收到就會拿識別用的字串和key、hashing algorithm來產生對應hash字串，並比對hash 字串和客戶端的token內存的內容是否一樣，若一樣就表示這token是由伺服器所產生，且未竄改，那麼就做下一步；若不一樣就表示這token不是由伺服器產生，或者被篡改過的，那麼就告知登入失敗。
-3. 伺服器將受保護的資源回傳給客戶端
+1. 客戶端利用上一個階段獲取到的token來向管理資源的伺服器申請受保護的資源
+2. 伺服器進行驗證
+	- 若驗證成功，就回報資源
+	- 若驗證失敗，就回報錯誤訊息
+3. 若伺服器驗證成功的話，就將資源回送給客戶端
 
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1672252937/blog/authentication/authentication-tokens-compare_yld5da.png)
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png)
 
 
 ## 複習
