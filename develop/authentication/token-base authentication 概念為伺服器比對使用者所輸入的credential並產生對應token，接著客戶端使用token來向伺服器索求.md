@@ -2,24 +2,18 @@
 
 
 登入驗證本身會有
-1. server-side session為主的登入驗證
-2. authentication tokens，如JWT技術
+1. session-based authentication
+2. token-based authentication
 
 
+### token-based authentication 概念
 
-### authentication tokens 概念
-
-1. 客戶端從伺服器上獲取permission/access：
+1. 客戶端從認證授權用的伺服器上獲取permission/access：
 	- 伺服器比對使用者所輸入的credential和資料庫上的credential是否一樣，若一樣就做下一步；若不一樣就不做
 	 - 建立permission token 給予客戶端
- 2. 客戶端藉由permission/access來向伺服器索求
+ 2. 客戶端藉由permission/access來向管理資源的伺服器索求資源
 	- 客戶端使用token來發送請求索要所保護的資源
 	- 伺服器驗證token是否合法，合法就允許使用；不合法不允許使用
-
-
-### 實現所需
-
-1. 伺服器會需要定義secret、hashing algorithm 來產生hashing key
 
 
 
