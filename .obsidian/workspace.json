@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2739ab8718d43788",
+        "id": "1c6c6b8295f8892b",
         "type": "tabs",
         "children": [
           {
-            "id": "5e2718e57889fae3",
+            "id": "8aa3f75b3bb2793c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "20cf7f6f370e3422",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f0012fe64d02bf6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+                "file": "develop/React/React ：Offscreen API 是允許Component 在面臨mount=unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Expression Language",
+                "query": "Offscreen API",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
+                "file": "develop/React/React ：Offscreen API 是允許Component 在面臨mount=unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
+                "file": "develop/React/React ：Offscreen API 是允許Component 在面臨mount=unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md"
+                "file": "develop/React/React ：Offscreen API 是允許Component 在面臨mount=unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md"
               }
             }
           },
@@ -174,10 +156,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e2718e57889fae3",
+  "active": "8aa3f75b3bb2793c",
   "lastOpenFiles": [
-    "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
+    "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
+    "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
@@ -201,7 +184,6 @@
     "develop/JavaScript/JavaScript - var 變數是出自於ES6之前的變數型別，會依據所處環境來變動自身的scope為global scope或者function scope.md",
     "inbox/CSS 開發常用使用法則.md",
     "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
-    "inbox/react-router-dom：若Component 被另一個Route包覆的話，那麼就構成nested route，而nested route就會是Component下的Route元件，該元件的target路徑會以Route為主的wrapper component而定義的path組合為基礎.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
