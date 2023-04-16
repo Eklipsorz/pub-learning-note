@@ -137,7 +137,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-04-26,26,250-->
 
 #🧠 implicit grant type 在OAuth 中存在兩個主要版本，主要會是什麼？ ->->-> `- 第一個版本：redirect_uri 是用來提供獲取Token的script - 第二個版本為： redirect_uri 是用來接收token的地點`
-<!--SR:!2023-04-16,18,250-->
+<!--SR:!2023-05-31,45,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問請求封包源自於哪裡？發送至哪？形式為何？ ->->-> `形式為URI(URI參數)、封包，源自於客戶端所發送的請求封包，發送至認證伺服器`
 <!--SR:!2023-04-22,15,230-->
