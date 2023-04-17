@@ -193,7 +193,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth  流程中的 "使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權" ，請問主要參數的response_type為申請授權類型，若是authorization code grant type 版本，得填寫什麼？->->-> `code`
-<!--SR:!2023-04-17,19,250-->
+<!--SR:!2023-06-05,49,250-->
 
 #🧠 authorization code grant type 在OAuth 上是以什麼形式來讓認證授權伺服器認可為使用者合法授權的結果？ ->->-> `以authorization code的形式`
 <!--SR:!2023-04-25,17,248-->
@@ -282,7 +282,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數- grant_type 、code、redirect_uri、client_id是什麼？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
-<!--SR:!2023-04-17,19,250-->
+<!--SR:!2023-06-04,48,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數為何需要redirect_uri、client、code ->->-> `需要驗證該應用服務是否為當初向使用者發送授權申請`
 <!--SR:!2023-04-22,23,250-->
