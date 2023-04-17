@@ -1,6 +1,9 @@
 
 ## 描述
 
+
+[[@http___zotero.org_users_local_gXnyYX7A_items_JZVJ3IU8]]
+
 > ## [Unhandled rejections](https://javascript.info/promise-error-handling#unhandled-rejections)
 
 > What happens when an error is not handled? For instance, we forgot to append `.catch` to the end of the chain, like here:
@@ -15,7 +18,8 @@
 
 > The JavaScript engine tracks such rejections and generates a global error in that case. You can see it in the console if you run the example above.
 
-
+重點:
+- 當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之
 
 ## 複習
 #🧠 JavaScript : 在Promise API時代中，若Promise內部執行的任務或者排程的任務拋出錯誤的話，系統會如何處理? (請考量到是否有Promise API語法所建立的錯誤處理)  ->->-> ``
@@ -35,3 +39,4 @@ Tags:
 [[Promise]]
 Links:
 References:
+[[@http___zotero.org_users_local_gXnyYX7A_items_JZVJ3IU8]]
