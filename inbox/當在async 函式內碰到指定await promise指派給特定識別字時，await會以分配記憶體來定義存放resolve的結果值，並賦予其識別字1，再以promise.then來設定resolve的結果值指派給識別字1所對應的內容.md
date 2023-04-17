@@ -85,6 +85,9 @@ async function testAwaitFunction() {
 #🧠 當在async 函式內設定以下指派內容的語法`let temp = await Promise...` 會解析成什麼？->->-> `	- 分配記憶體來定義存放resolve的結果值，並賦予其識別字1 - 以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體內容`
 <!--SR:!2023-09-08,163,250-->
 
+#🧠 javascript：await 在 async 函式下有何作用? ->->-> `- 將後續的程式碼以promise.then來包裹著 - 當promise包裹的任務確定結果值就會把結果值擷取出來指派`
+<!--SR:!2023-04-20,3,250-->
+
 #🧠 當在async 函式內設定以下指派內容的語法`let temp = await Promise...` 會解析成什麼？以程式碼來說明->->-> `// 分配記憶體 let temp = ''; Promise(....).then((ans) => { // 將resolve情況下的結果指派給temp temp = ans; })`
 <!--SR:!2023-10-12,185,250-->
 
@@ -96,7 +99,7 @@ async function testAwaitFunction() {
 <!--SR:!2023-08-12,142,250-->
 
 #🧠 以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example3_rqdy8j.png) ->->-> `當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，使後續的程式碼(包含res屬性的內容指派，console以及obj的回傳)被promise.then所包含，而產生非同步任務來排程，在還沒開始排程時，其promise狀態會是pending，等到開始排程非同步任務時就會執行其指派，console和obj的回傳`
-<!--SR:!2023-04-17,3,250-->
+<!--SR:!2023-04-26,9,250-->
 
 
 
