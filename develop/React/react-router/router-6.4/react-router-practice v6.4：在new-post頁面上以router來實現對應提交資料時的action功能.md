@@ -84,6 +84,14 @@ export default NewPostForm;
 <!--SR:!2023-04-21,3,250-->
 
 
+#🧠 若form的action是由react-router-dom來定義且action會是由client-side router來實現的話的話，此時若發生表格提交的話，能夠正常執行嗎? ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681820842/blog/react/form/origin-form-component-in-react_ftgfnj.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681820842/blog/react/form/origin-form-component-in-react_ftgfnj.png)->->-> `那麼使用HTML原生的form元件去實現action，會直接向目前所在的端點發送post請求，即 post http://localhost/blog/new然而該localhost本身並不會提供對應的端點處理，所以會出現404的錯誤訊息。`
+
+
+#🧠 若form的action是由react-router-dom來定義且action會是由client-side router來實現的話的話，此時若發生表格提交的話，能夠正常執行嗎? 若有問題的話，解法概念為何? ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681820842/blog/react/form/origin-form-component-in-react_ftgfnj.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681820842/blog/react/form/origin-form-component-in-react_ftgfnj.png)->->-> `必須將請求導向至client-side router來處理`
+
+
+
+
 ---
 Status: #🌱 
 Tags:
