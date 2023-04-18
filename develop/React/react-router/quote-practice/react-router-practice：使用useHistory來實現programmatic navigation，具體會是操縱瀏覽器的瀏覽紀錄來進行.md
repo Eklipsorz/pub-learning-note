@@ -114,7 +114,7 @@ export default NewQuote;
 
 
 #🧠 programmatic navigation 是以編碼的手段來直接將使用者導向至特定頁面，手段通常是什麼？ ->->-> `使用history API或者操縱history的API`
-<!--SR:!2023-04-18,40,230-->
+<!--SR:!2023-05-11,23,210-->
 
 
 #🧠 react-router-dom ：useHistory是什麼樣的hook ->->-> `專門回傳一個history 物件，該物件由另一個第三方而製成的history 物件，可藉由它來操縱瀏覽器的瀏覽紀錄`

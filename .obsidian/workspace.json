@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "react-router-dom v6.4：action 本身是夾帶著一個引數的函式物件，這ㄧ個引數是什麼？？若是物件的話，請說明params、request屬性是什麼？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md"
+                "file": "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "77678ce50f55a0b1",
   "lastOpenFiles": [
+    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/Redis/Redis Simple Dynamic String會根據實際儲存字串的內容來調整其記憶體空間.md",
@@ -183,7 +184,6 @@
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
     "develop/Express/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md",
     "develop/JavaScript/JavaScript 是一個具有編譯、直譯特性的直譯語言，執行前會先編譯中間碼然後邊解析邊執行.md",
-    "develop/React/illegal invocation 在 JS的函式呼叫中通常會是對應的函式所擁有的this已經不是指向原本它所指向的記憶體位置或者原本的物件.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
