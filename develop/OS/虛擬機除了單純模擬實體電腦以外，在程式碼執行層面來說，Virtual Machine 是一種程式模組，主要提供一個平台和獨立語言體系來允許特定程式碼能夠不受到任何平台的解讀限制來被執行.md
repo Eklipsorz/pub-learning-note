@@ -32,7 +32,7 @@
 
 
 #🧠 請用下面圖來說明Virtual Machine 做了什麼![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c) ->->-> ``
-<!--SR:!2023-04-18,27,250-->
+<!--SR:!2023-06-27,70,250-->
 
 
 #🧠 在程式碼執行層面來說，Virtual Machine 是一種程式模組，主要為 - 允許production code擁有跨平台執行的功能，其跨平台的好處是什麼？ ->->-> `主要省去將code編譯成該機台能夠執行成功的代碼形式`
