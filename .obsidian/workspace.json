@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，哪些條件會是什麼？",
+                "query": "請到/githubRepo/react-builder/question-review/react-router-6.4-intro領取題目並切換至refactor-new-post，請在new-post頁面上以router來實現對應提交資料時的action功能，若提交成功就將使用者導向至/blog，若提交內容有誤就在表格上顯示錯誤，若提交失敗就顯示錯誤畫面",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md"
+                "file": "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "77678ce50f55a0b1",
   "lastOpenFiles": [
+    "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/React/react-router/router-6.4/useFetcher 核心概念為在不切換頁面的情況下來發送請求並處理，主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action.md",
@@ -183,7 +184,6 @@
     "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
     "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
     "develop/JavaScript/promise/Promise.resolve(value)會將特定事物轉變成更為具體的promise object，並且其物件狀態會是fulfilled、rejected、pending.md",
-    "develop/Express/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
