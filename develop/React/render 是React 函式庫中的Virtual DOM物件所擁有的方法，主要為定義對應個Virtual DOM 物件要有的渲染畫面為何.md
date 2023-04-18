@@ -32,7 +32,7 @@ root.render(
 ## 複習
 
 #🧠 React：render 對於Virtual DOM物件來說是什麼？ 用途為何->->-> `render 是React 函式庫中的Virtual DOM物件所擁有的方法，主要為定義對應個Virtual DOM 物件要有的渲染畫面為何`
-<!--SR:!2023-04-18,22,250-->
+<!--SR:!2023-06-11,54,250-->
 
 #🧠 React： 這是一段調用React函式庫的代碼，請問這做了什麼？`const root = ReactDOM.createRoot(document.getElementById('root')); root.render(...)`  ->->-> ``
 <!--SR:!2023-04-19,23,250-->

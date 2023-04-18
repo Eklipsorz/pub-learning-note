@@ -48,7 +48,7 @@ return (
 
 
 #🧠 在渲染層面下，使用boolean expression && JSX element元件分別使用在兩種場景下：沒混雜其他元件和混雜其他元件，請問哪張是沒混雜的版本？哪張是混雜的版本，原因又是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662743572/blog/frontend/conditional-rendering/boolean-expression-and-jsx-element-valid_lyilq3.png)  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662743573/blog/frontend/conditional-rendering/boolean-expression-and-jsx-element-invalid_xgb64i.png)->->-> ``
-<!--SR:!2023-04-18,134,250-->
+<!--SR:!2024-03-18,335,250-->
 
 #🧠 請用程式碼來舉例以表示在渲染層面下，boolean expression && JSX element 若搭配其他元件的話，來變成一般字串和一般React Element->->-> ``
 <!--SR:!2023-05-10,151,250-->
