@@ -78,7 +78,7 @@
 
 
 #🧠 token-based authentication:  客戶端從伺服器上獲取permission/access，具體流程會是什麼？畫圖表示 ->->->![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-token_crodax.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-token_crodax.png)
-<!--SR:!2023-04-19,3,250-->
+<!--SR:!2023-04-29,10,250-->
 
 
 
