@@ -55,7 +55,7 @@
 <!--SR:!2023-06-05,97,250-->
 
 #🧠 token-based authentication 的驗證概念為何？ ->->-> `將token 視為permission/access的形式之一，token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求`
-<!--SR:!2023-04-19,3,250-->
+<!--SR:!2023-04-25,6,250-->
 
 #🧠 在token-based authentication 的驗證概念中，甚麼東西會被當成permission/access?   ->->-> `token`
 <!--SR:!2023-04-29,10,250-->
@@ -83,7 +83,7 @@
 
 
 #🧠 token-based authentication: 客戶端藉由permission/access來向伺服器索求資源，具體流程會是什麼？畫圖表示 ->->->![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png)
-<!--SR:!2023-04-19,3,250-->
+<!--SR:!2023-04-27,8,250-->
 
 
 ---

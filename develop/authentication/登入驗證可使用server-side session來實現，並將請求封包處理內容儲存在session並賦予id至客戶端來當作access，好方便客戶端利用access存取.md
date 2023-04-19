@@ -86,7 +86,7 @@
 
 
 #🧠 server-side session作為登入驗證方法，請問它隸屬於哪一種類的技術? 是屬於token based? 還是session based? ->->-> `session based authentication`
-<!--SR:!2023-04-19,3,250-->
+<!--SR:!2023-04-26,7,250-->
 
 ---
 Status: #🌱 
