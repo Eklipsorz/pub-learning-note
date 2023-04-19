@@ -62,7 +62,7 @@ promise 面對inversion of control 問題之概念 或者uninversion：
 
 
 #🧠 promise 命名緣由會是什麼？？ ->->-> `promise 是指特定事物A聲稱特定事物A一定會去做特定事情的行為`
-<!--SR:!2023-04-19,28,250-->
+<!--SR:!2023-06-29,71,250-->
 
 #🧠 JavaScript： Promise 面對inversion of control 問題之概念 或者uninversion會是inversion of control的概念再次進行inverse。上述若以程式來開發的話，其實現概念為何？->->-> `1. 預期特定任務回傳東西至特定程式模組(呼叫方) 2. 藉由呼叫方根據回傳結果來自行處理，從而不把程式的continuation交給另一方執行`
 <!--SR:!2023-06-07,55,250-->
