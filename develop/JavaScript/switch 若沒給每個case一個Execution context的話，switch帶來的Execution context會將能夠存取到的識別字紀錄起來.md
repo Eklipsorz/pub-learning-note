@@ -134,7 +134,7 @@ switch (..) {
 
 ## 複習
 #🧠 請問這段JavaScript程式碼若被執行的話，會得到什麼? 說明為什麼會這樣？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193210/blog/javascript/lexical%20scope/switch-lexcial-scope-1_rryoim.png) ->->-> `會跑出系統找到識別字但卻還沒有初始化的訊息，這是因爲switch 的execution context會以{}為主來識別他擁有的識別字，其中會包含foo，所以只要在switch內的context執行就會找到該識別字`
-<!--SR:!2023-04-19,193,250-->
+<!--SR:!2023-07-29,100,230-->
 
 #🧠  請問這段JavaScript程式碼若被執行的話，會得到什麼? 說明為什麼會這樣![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193339/blog/javascript/lexical%20scope/switch-lexcial-scope-2_wpzxli.png)->->-> `hihi，這是因爲switch 的execution context會以{}為主來識別他擁有的識別字，其中會包含testConsole，所以只要在switch內的context執行就會找到該識別字`
 <!--SR:!2023-09-06,270,250-->
