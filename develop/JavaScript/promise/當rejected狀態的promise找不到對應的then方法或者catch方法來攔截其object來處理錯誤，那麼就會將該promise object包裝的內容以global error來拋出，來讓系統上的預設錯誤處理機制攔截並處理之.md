@@ -23,14 +23,14 @@
 
 ## 複習
 #🧠 JavaScript : 在Promise API時代中，若Promise內部執行的任務或者排程的任務拋出錯誤的話，系統會如何處理? (請考量到是否有Promise API語法所建立的錯誤處理)  ->->-> `首先會自動包裝成rejected狀態的promise object，然後找尋後面chain結構上是否存在then方法或者catch方法來處理錯誤處理，若沒有的話，那麼就會以正常拋出錯誤的形式來讓系統上的預設錯誤處理來攔截進行處理。`
-<!--SR:!2023-04-20,3,250-->
+<!--SR:!2023-04-30,10,250-->
 
 
 
 
 
 #🧠 JavaScript : 以下p1為包裝特定任務的Promise object，若註冊後的事件處理拋出錯誤的話，那麼最後會如何執行![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681735097/blog/javascript/promise/Zalgo/promise-with-error-handler_vecbs1.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681735097/blog/javascript/promise/Zalgo/promise-with-error-handler_vecbs1.png) ->->-> `將拋出的錯誤包裝成rejected狀態的promise object，然後以該object來執行catch進行錯誤處理`
-<!--SR:!2023-04-20,3,250-->
+<!--SR:!2023-04-30,10,250-->
 
 
 #🧠 JavaScript : 以下p1為包裝特定任務的Promise object，若註冊後的事件處理拋出錯誤的話，那麼最後會如何執行![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681735097/blog/javascript/promise/Zalgo/promise-without-error-handler_avjoze.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681735097/blog/javascript/promise/Zalgo/promise-without-error-handler_avjoze.png) ->->-> `將拋出的錯誤包裝成rejected狀態的promise object，但由於後續沒catch或者then所構成的錯誤處理，這會使得該promise object轉變成正常的錯誤來讓系統上的預設錯誤處理來攔截並處理`
