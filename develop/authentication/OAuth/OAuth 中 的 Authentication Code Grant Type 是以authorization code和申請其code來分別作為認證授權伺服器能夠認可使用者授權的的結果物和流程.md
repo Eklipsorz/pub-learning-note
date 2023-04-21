@@ -214,7 +214,7 @@ Pragma: no-cache
 <!--SR:!2023-04-22,23,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，主要目的的關係是如何？->->-> `讓應用服務A向認證授權伺服器發送索要token的請求`
-<!--SR:!2023-04-21,23,250-->
+<!--SR:!2023-06-19,59,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？對於使用者來說是什麼意思 ->->-> `其導向請求會是以URL (含URL參數)、封包 來進行，主要內容為授權申請的資料，透過導向方式來間接要求使用者發送相同同樣請求來向認證授權伺服器表示授權申請`
 <!--SR:!2023-05-26,43,250-->
@@ -288,7 +288,7 @@ Pragma: no-cache
 <!--SR:!2023-04-22,23,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token"，認證授權伺服器發送過來的回應封包會有哪些內容？ ->->-> `	- access_token：表示其使用者授予權限的token - token_type：表示token種類，可以是bearer類型 - expires_in：表示過期時間，單位為秒 - refresh_token：表示用來申請access-token的token - scope：表示access_token被授與的權限為何`
-<!--SR:!2023-04-21,23,250-->
+<!--SR:!2023-06-20,60,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，其中的grant_type 會是定義為？ ->->-> ` authorization_code`
 <!--SR:!2023-05-29,44,249-->

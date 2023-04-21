@@ -113,7 +113,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 
 ## 複習
 #🧠 implicit grant type 在OAuth 上會是指什麼？ ->->-> `implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式，該模式主要不通過第三方應用程式/Client來進行授權碼，並直接在瀏覽器上向認證服務器上申請token。`
-<!--SR:!2023-04-21,22,250-->
+<!--SR:!2023-06-15,55,250-->
 
 #🧠  implicit grant type 在OAuth 中為何被稱之為implicit ？ ->->-> `implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式`
 <!--SR:!2023-05-01,29,250-->
