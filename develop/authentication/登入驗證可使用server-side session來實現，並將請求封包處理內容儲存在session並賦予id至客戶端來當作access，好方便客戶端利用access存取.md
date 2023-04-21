@@ -66,7 +66,7 @@
 <!--SR:!2023-07-27,128,250-->
 
 #🧠 以server-side session為基礎的應用所帶來的壞處就是？（提示：有兩大點） ->->-> `需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上、Monitoring System上的Visibility、Reliability、Scalability會不容易提升`
-<!--SR:!2023-04-21,71,250-->
+<!--SR:!2023-05-30,39,230-->
 
 #🧠 以server-side session為基礎的應用所帶來的壞處就是？ ->->-> `需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上、Monitoring System上的Visibility、Reliability、Scalability會不容易提升`
 <!--SR:!2023-05-03,79,250-->
