@@ -216,7 +216,7 @@ UsersFinder.js
 #🧠 React：通常error boundary會是用什麼寫法來開發 ？為什麼？->->-> `class-based component，目前functional component並沒有componentDidCatch的替代方案，故此要實現error boundary只能在class-based component`
 <!--SR:!2023-06-26,156,250-->
 
-#🧠 React：error boundary 元件的定義是什麼？ ->->-> `- 必須是class-based component - 定義componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError`
+#🧠 React：error boundary 元件 是如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，該元件如何被建立出來？ ->->-> `- 必須是class-based component - 定義componentDidCatch 這生命週期方法（lifecycle method) 或者 static getDerivedStateFromError`
 <!--SR:!2023-04-20,44,229-->
 
 

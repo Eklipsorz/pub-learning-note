@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
+                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "React：在functional component中的batching實際實現下，一開始剛開始執行batching會做什麼？",
+                "query": "React：error boundary 元件的定義是什麼？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
+                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
+                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md"
+                "file": "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "77678ce50f55a0b1",
   "lastOpenFiles": [
+    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "develop/React/react-router/router-6.4/react-router-practice v6.4：在new-post頁面上以router來實現對應提交資料時的action功能.md",
     "develop/study/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/React/react-router/router-6.4/Form 是router 用以攔截表單提交請求用的元件，目的在於由於表單牽涉URL切換，為此router得必須攔截到才能使它在客戶端的router進行處理，其中action 屬性會沿用目前所在Route元件的action.md",
@@ -183,7 +184,6 @@
     "develop/React/react-router/router-6.4/當loader的部分非同步任務執行過慢，可以透過defer來推遲至component渲染時才開始同時執行，並且根據suspense元件和await元件包覆著推遲任務來根據請求回應和狀態來渲染.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
     "develop/React/React：製作empty wrapper component來替代原本要用div包含的子節點，該wrapper component實際上對應著不存在的Virtual DOM結構，亦即為不會產生對應實際DOM 結構.md",
-    "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",

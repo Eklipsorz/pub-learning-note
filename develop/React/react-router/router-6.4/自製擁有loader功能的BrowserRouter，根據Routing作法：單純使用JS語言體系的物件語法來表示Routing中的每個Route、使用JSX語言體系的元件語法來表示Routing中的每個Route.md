@@ -230,7 +230,7 @@ export default RootLayout;
 <!--SR:!2023-05-19,97,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是`const router = createBrowserRouter(paths)`，那麼paths會是為陣列，陣列中的每個項目皆為一個能代表Route元件的Route物件，每個Route物件會是擁有什麼屬性？->->-> `	- path 為指定哪個path要比對和渲染 - element：當目前URL切換到Route物件所對應的path時，所要渲染的元件內容 - loader：當目前URL切換到Route物件所對應的path時，所要執行的資料載入或者對特定伺服器發送索要資料的請求，並於渲染之前回傳結果給元件 - children：以陣列來表示該對應Route元件所擁有的後裔Route元件。`
-<!--SR:!2023-04-20,26,208-->
+<!--SR:!2023-06-14,54,208-->
 
 
 #🧠 react-router-dom v6：createRoutesFromElements 用途為何？ ->->-> `允許開發者以JSX形式來定義Routing並建立對應的Router`

@@ -249,7 +249,7 @@ AbortController.abort()
 <!--SR:!2023-08-20,178,250-->
 
 #🧠 JS： AbortController interface 是什麼？用途是什麼？ ->->-> `是定義一個控制器物件來搭載在支援AbortController介面的非同步任務上，使他們能夠接收外部傳送過來的Abort Signal，收到後就變中斷目前任務`
-<!--SR:!2023-04-20,100,250-->
+<!--SR:!2023-12-28,251,250-->
 
 
 
