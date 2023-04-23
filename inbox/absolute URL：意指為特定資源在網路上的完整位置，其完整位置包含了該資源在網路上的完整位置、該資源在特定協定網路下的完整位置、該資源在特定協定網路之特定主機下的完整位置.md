@@ -70,7 +70,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 <!--SR:!2023-08-29,189,250-->
 
 #🧠  absolute URL 是為特定資源在網路上的完整位置，它包含了什麼？->->-> `該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置`
-<!--SR:!2023-04-22,24,170-->
+<!--SR:!2023-06-07,45,170-->
 
 
 #🧠  absolute URL 有哪三種形式表示？簡答 ->->-> `	- Full URL - Implicit Protocol - Implicit Domain Name`

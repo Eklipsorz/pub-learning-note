@@ -83,7 +83,7 @@
 <!--SR:!2023-05-13,35,230-->
 
 #🧠  伺服器和客戶端之間為何需要authentication？ ->->-> `內容肯定會有只限於特定人士才能存取和所有都能存取的`
-<!--SR:!2023-04-22,71,250-->
+<!--SR:!2023-10-20,180,250-->
 
 #🧠 伺服器和客戶端之間的內容肯定會有只限於特定人士才能存取和所有都能存取的，那麼要如何實現限制呢？ ->->-> `authentication概念來實現`
 <!--SR:!2023-06-16,62,230-->
@@ -119,7 +119,7 @@
 <!--SR:!2023-04-30,23,210-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，access/permission是什麼意思？ ->->-> `作為存取受保護資源的權力依據`
-<!--SR:!2023-04-23,42,210-->
+<!--SR:!2023-05-16,23,190-->
 
 `````````````````````````````
 ```#🧠 authentication的access/permission產生：為何出現以下這兩個方法- server-side session中的session id - authentication token中的token ->->-> `主要是為了檢測客戶端的資料被人惡意竄改而假冒他人`

@@ -202,7 +202,7 @@ function sayBye() {
 
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，並由函式本身自己向物件索要想要的屬性，這和單純要N個屬性就載入N個參數的形式相比，有什麼樣改善？(提示：所需的屬性數) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   函式所需的參數再也不會依據物件上的屬性數量來決定，比如說物件上的屬性數量是N個，那麼函式所需的參數最多會是N個(考量實際運用)。-   依據想要的person物件來填入，所以參數量只會是一個`
-<!--SR:!2023-04-23,193,250-->
+<!--SR:!2024-08-18,483,250-->
 
 #🧠 假如在person物件下定義兩個方法sayHi和sayBye，並且定義兩個函式宣告是以函式所需要的物件來宣告，還存在著什麼樣的缺點 （提示：呼叫形式好像很多餘) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655535068/blog/javascript/object/object-self-method2_q19eld.png) ->->-> `-   對於人類開發而言，這種呼叫形式是很累贅的，因為.前面就有person，參數卻還要填入person物件`
 <!--SR:!2024-05-20,425,250-->

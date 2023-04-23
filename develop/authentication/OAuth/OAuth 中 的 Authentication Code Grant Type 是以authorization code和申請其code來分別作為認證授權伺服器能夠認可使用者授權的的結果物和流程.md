@@ -257,7 +257,7 @@ Pragma: no-cache
 <!--SR:!2023-04-27,27,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，其授權碼就是代表使用者權限的token嗎？->->-> `並不是`
-<!--SR:!2023-04-23,24,250-->
+<!--SR:!2023-06-23,61,250-->
 
 
 
@@ -285,7 +285,7 @@ Pragma: no-cache
 <!--SR:!2023-06-04,48,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數為何需要redirect_uri、client、code ->->-> `需要驗證該應用服務是否為當初向使用者發送授權申請`
-<!--SR:!2023-04-22,23,250-->
+<!--SR:!2023-06-21,59,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token"，認證授權伺服器發送過來的回應封包會有哪些內容？ ->->-> `	- access_token：表示其使用者授予權限的token - token_type：表示token種類，可以是bearer類型 - expires_in：表示過期時間，單位為秒 - refresh_token：表示用來申請access-token的token - scope：表示access_token被授與的權限為何`
 <!--SR:!2023-06-20,60,250-->

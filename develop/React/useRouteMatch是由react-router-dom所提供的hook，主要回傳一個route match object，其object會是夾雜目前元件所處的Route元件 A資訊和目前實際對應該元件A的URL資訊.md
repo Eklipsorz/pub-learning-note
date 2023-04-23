@@ -77,7 +77,7 @@ match.path 適用於以path為主的正規表達式來對應的場景
 <!--SR:!2023-09-29,193,250-->
 
 #🧠 react v5：運用useRouteMatch 回傳的 route match 物件 所能夠定義的路徑方式會是什麼？ ->->-> `使用placeholder來設定、使用具體的URL來對應`
-<!--SR:!2023-04-23,23,190-->
+<!--SR:!2023-06-06,44,190-->
 
 #🧠 react v5：useRouteMatch 回傳的 route match 物件 調用的概念會有使用placeholder來設定、使用具體的URL來對應 這些，那麼具體會是分別為何？ ->->-> `使用placeholder來設定：具體是用match.path、使用具體的URL來設定：具體適用match.url`
 <!--SR:!2023-09-21,188,250-->

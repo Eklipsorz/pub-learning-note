@@ -168,7 +168,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 
 
 #🧠  implicit grant type 在OAuth下會需要設定grant_type？為什麼？ ->->-> `並不會，由於grant_type會是得讓使用者的授權同意授與客戶端來讓它發送索要token的請求，但該type並沒有，只是全都在使用者的瀏覽器進行授權同意和索要token`
-<!--SR:!2023-04-23,21,250-->
+<!--SR:!2023-06-16,54,250-->
 
 
 
