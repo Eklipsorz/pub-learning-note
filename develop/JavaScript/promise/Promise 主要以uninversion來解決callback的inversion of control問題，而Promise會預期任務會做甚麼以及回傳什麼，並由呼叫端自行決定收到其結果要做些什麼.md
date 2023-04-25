@@ -78,7 +78,7 @@ promise 面對inversion of control 問題之概念 或者uninversion：
 
 
 #🧠 callback 產生出來的inversion of control 會是什麼？ ->->-> `原本在Promise時代之前，呼叫端所定義的程式碼-callback本身是由呼叫端構成，所以預期會是由呼叫端本身決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。`
-<!--SR:!2023-04-24,22,250-->
+<!--SR:!2023-06-20,56,250-->
 
 
 

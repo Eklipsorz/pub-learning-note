@@ -41,7 +41,7 @@ npm run build => react-scripts build
 ## 複習
 
 #🧠  react-scripts 是CRA裡頭是做什麼？->->-> ` react-scripts 是CRA裡頭用來建構React App的程式`
-<!--SR:!2023-04-24,78,250-->
+<!--SR:!2023-06-03,39,230-->
 
 #🧠 react-scripts start 指令作用為何？->->-> `1. 將code轉換成瀏覽器能夠讀懂的形式 2. 執行伺服器程式來提供該上述形式`
 <!--SR:!2023-08-27,153,250-->

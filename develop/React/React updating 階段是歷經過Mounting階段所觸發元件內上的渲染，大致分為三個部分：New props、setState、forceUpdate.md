@@ -241,7 +241,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2023-04-28,157,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate是做什麼用的？ ->->-> `做render之前的確認，如果shouldComponentUpdate回傳true就表示確定要做渲染；反之，若是false就表示確定不做渲染`
-<!--SR:!2023-04-23,150,250-->
+<!--SR:!2024-05-06,377,250-->
 
 #🧠 react 生命週期中會用到的 shouldComponentUpdate函式回傳true就表示？ ->->-> `做渲染`
 <!--SR:!2023-06-17,189,250-->

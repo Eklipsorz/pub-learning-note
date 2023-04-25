@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "promise 在JavaScript上是什麼？",
+                "query": "log in vs. sign in 不同點為何？",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md"
+                "file": "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "77678ce50f55a0b1",
   "lastOpenFiles": [
+    "inbox/React：Context 命名法則 & 使用法則.md",
+    "inbox/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
     "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
@@ -182,8 +184,6 @@
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
     "develop/CSS-modules/CSS modules 為webpack的延伸套件，主要會在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容.md",
-    "develop/render/box-sizing 屬性是設定以哪個盒子的總高寬來當作元素的width、height這兩個屬性.md",
-    "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",

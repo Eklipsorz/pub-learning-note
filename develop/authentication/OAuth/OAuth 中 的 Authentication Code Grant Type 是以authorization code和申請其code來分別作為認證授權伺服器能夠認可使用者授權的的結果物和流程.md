@@ -196,7 +196,7 @@ Pragma: no-cache
 <!--SR:!2023-06-05,49,250-->
 
 #🧠 authorization code grant type 在OAuth 上是以什麼形式來讓認證授權伺服器認可為使用者合法授權的結果？ ->->-> `以authorization code的形式`
-<!--SR:!2023-04-25,17,248-->
+<!--SR:!2023-06-07,43,248-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時->->-> `使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權 -> 使用者在認證頁面同意授權給應用服務A -> 假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼 -> 身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要tokem請求 -> 認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token。`
@@ -234,7 +234,7 @@ Pragma: no-cache
 <!--SR:!2023-06-21,61,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數為何？ ->->-> `response_type：申請什麼樣的授權類型 - client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id - redirect_uri：申請之後應用程式接收code的重導向頁面 - scope：申請授權資料所能擁有的權限為何 - state：表示客戶端的應用程式A所擁有的狀態`
-<!--SR:!2023-04-24,25,250-->
+<!--SR:!2023-05-09,14,230-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-response_type、client_id、redirect_uri、scope、state是為何？ ->->-> `response_type：申請什麼樣的授權類型 - client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id - redirect_uri：申請之後應用程式接收code的重導向頁面 - scope：申請授權資料所能擁有的權限為何 - state：表示客戶端的應用程式A所擁有的狀態`
 <!--SR:!2023-05-24,40,230-->
@@ -244,7 +244,7 @@ Pragma: no-cache
 <!--SR:!2023-06-11,53,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-redirect_uri為何是可選填參數？ ->->-> `redirect_uri為可選，可以在網路服務提供商那邊事先申請`
-<!--SR:!2023-04-25,26,250-->
+<!--SR:!2023-06-29,65,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-scope為何是可選填參數？ ->->-> `申請授權資料所能擁有的權限為何`
 <!--SR:!2023-04-28,28,250-->
