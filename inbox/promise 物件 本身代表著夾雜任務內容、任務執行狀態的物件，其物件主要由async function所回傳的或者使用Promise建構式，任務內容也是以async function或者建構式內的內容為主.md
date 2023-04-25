@@ -30,8 +30,9 @@ async function name([param[, param[, ... param]]]) {
 - 若function 前綴標記成async的話，就會使function構成async function物件，具有以下功能：
 	- 以promise物件來包裝回傳內容
 	- 允許開發者在函式使用await語法糖
-- promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容是以建構式的定義內容為主。
-	- async function vs. promise object：前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應非同步任務並回報執行狀態。
+- promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容是以建構式的定義內容為主。
+	- 在這裡的任務可以是非同步執行模式的任務或者同步執行模式的任務
+	- async function vs. promise object：前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應任務並回報執行狀態。
 - 若function 前綴標記成async的話，就會使function構成async function物件：
 	- 若與一般的function比較起來，執行模式會是一樣，但除了回傳內容的包裝方式。
 		- 若回傳內容是非promise的話，會以fulfilled狀態的promise物件來包裝回傳內容來回傳
@@ -60,10 +61,12 @@ end
 
 ## 複習
 
-#🧠 promise 在JavaScript上是什麼？ ->->-> `promise 物件 本身代表著夾雜非同步任務內容、非同步任務執行狀態的物件`
+#🧠 promise 在JavaScript上是什麼？ ->->-> `promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件`
 <!--SR:!2023-04-25,73,250-->
 
-#🧠 promise 在JavaScript上本身是代表著夾雜非同步任務內容、非同步任務執行狀態的物件，那麼物件是誰產生？任務內容又是誰決定 ->->-> `其物件主要由async function所回傳的或者使用Promise建構式，任務內容是以建構式內的內容為主。`
+#🧠 promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其中任務會是甚麼樣執行模式? ->->-> ` 在這裡的任務可以是非同步執行模式的任務或者同步執行模式的任務`
+
+#🧠 promise 在JavaScript上本身是代表著夾雜任務內容、任務執行狀態的物件，那麼物件是誰產生？任務內容又是誰決定 ->->-> `其物件主要由async function所回傳的或者使用Promise建構式，任務內容是以建構式內的內容為主。`
 <!--SR:!2023-07-07,111,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，回傳內容的包裝方式會是如何？比如原本回傳非promise或者promise？promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以fulfilled狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
@@ -89,7 +92,7 @@ end
 <!--SR:!2023-07-02,108,246-->
 
 
-#🧠 javascript：async function vs. promise object 差異為何？ ->->-> `前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應非同步任務並回報執行狀態`
+#🧠 javascript：async function vs. promise object 差異為何？ ->->-> `前者是以promise物件來包裝回傳內容；後者則是實際以物件形式來執行對應任務並回報執行狀態`
 <!--SR:!2023-07-20,103,226-->
 
 

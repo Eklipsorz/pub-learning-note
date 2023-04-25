@@ -89,7 +89,7 @@ export default NewPostForm;
 
 
 #🧠 若form的action是由react-router-dom來定義且action會是由client-side router來實現的話的話，此時若發生表格提交的話，能夠正常執行嗎? 若有問題的話，解法概念為何? ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681820842/blog/react/form/origin-form-component-in-react_ftgfnj.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681820842/blog/react/form/origin-form-component-in-react_ftgfnj.png)->->-> `必須將請求導向至client-side router來處理`
-<!--SR:!2023-04-24,3,250-->
+<!--SR:!2023-05-04,9,250-->
 
 
 
