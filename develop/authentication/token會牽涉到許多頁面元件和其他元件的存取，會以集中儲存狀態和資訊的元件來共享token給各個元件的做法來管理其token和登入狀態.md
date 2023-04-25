@@ -116,7 +116,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-10-10,170,250-->
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，若取得token的話，接下來要做什麼？ 利用permission/access來刷新目前元件，舉例來說會是什麼元件？ ->->-> `navigation、header`
-<!--SR:!2023-04-25,69,250-->
+<!--SR:!2023-10-21,179,250-->
 
 #💻  請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件：AuthForm、MainNavigation ->->-> `https://github.com/academind/react-complete-guide-code/tree/22-authentication/code/05-using-context-for-managing-auth-state`
 <!--SR:!2023-06-03,92,250-->
