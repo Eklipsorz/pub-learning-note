@@ -105,7 +105,7 @@
 <!--SR:!2023-04-26,74,250-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請問後者具體為何？:->->-> `憑藉著從Get access/permissionㄐ獲取到的access或者permission來向伺服器所求被保護的資料，伺服器收到會驗證access或者permission的合法性，若合法就允許存取；若不合法就不允許存取`
-<!--SR:!2023-04-25,75,250-->
+<!--SR:!2023-06-10,37,230-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，請舉例來說明前者 ->->-> `認證方式通常會是使用帳號密碼來作為credential 證明自己是合法使用者的資料，若是的話，會事先將合法的帳號密碼儲存在後端伺服器或者資料庫來方便驗證使用者所輸入的帳密是否一致，一致就給予代表access或者permission的資料；不一致就報錯`
 <!--SR:!2023-06-04,96,250-->
