@@ -48,7 +48,7 @@
 ## 複習
 
 #🧠 登入驗證的實現方式有哪些？ ->->-> `1. session-based authentication 2. token-based authentication`
-<!--SR:!2023-04-29,10,250-->
+<!--SR:!2023-06-08,35,250-->
 
 
 #🧠 登入驗證的實現方式有1. session-based authentication為主的登入驗證 2. token-based authentication，其中token會用什麼技術來製作？ ->->-> `JWT`
@@ -83,7 +83,7 @@
 
 
 #🧠 token-based authentication: 客戶端藉由permission/access來向伺服器索求資源，具體流程會是什麼？畫圖表示 ->->->![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png)
-<!--SR:!2023-04-27,8,250-->
+<!--SR:!2023-05-31,27,250-->
 
 
 ---
