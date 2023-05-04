@@ -43,7 +43,7 @@
 <!--SR:!2023-05-11,33,250-->
 
 #🧠 OAuth ：authorization code grant type 、implicit grant type、resource owner password credentials grant type、client credentials grant type 這四個種類會填寫的grant_type會是什麼 ->->-> ` authorization code grant type：authorization_code、implicit grant type：由於不會讓客戶端憑著使用者授權，只是單方面在瀏覽器進行授權和索要token、resource owner password credentials grant type：password、 client credentials grant type：client_credentials`
-<!--SR:!2023-04-27,25,250-->
+<!--SR:!2023-07-13,70,250-->
 
 
 #🧠 OAuth流程下所會用到的http動詞和資料形式：對於所有指示特定對象導向至特定頁面會是什麼http動詞以及封裝形式？->->-> `	- http 動詞：GET - 封裝請求資料/結果資料形式：以URI、封包為主`
