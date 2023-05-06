@@ -258,7 +258,7 @@ a * c + b * c // 9
 <!--SR:!2023-05-12,184,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
-<!--SR:!2023-05-01,178,250-->
+<!--SR:!2024-07-30,451,250-->
 
 #🧠 要用IIFE來實現模組，對他而言的模組化目標為？ (函式可以重複呼叫誒、函式得宣告才能使用)->->-> `1. 只需要載入/執行一次，就能用對應功能  2. 載入動作只需要一個指令就能完成`
 <!--SR:!2023-06-24,199,249-->

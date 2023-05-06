@@ -235,7 +235,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 <!--SR:!2023-07-11,171,250-->
 
 #🧠 React.memo(A, B) 回傳內容為何？ ->->-> `React.memo(A, B)回傳內容是支援memorized 功能的component`
-<!--SR:!2023-04-29,76,230-->
+<!--SR:!2023-11-07,185,230-->
 
 
 
