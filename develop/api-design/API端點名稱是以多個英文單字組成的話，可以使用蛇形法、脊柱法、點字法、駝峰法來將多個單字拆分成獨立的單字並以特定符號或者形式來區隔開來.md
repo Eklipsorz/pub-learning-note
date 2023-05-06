@@ -67,7 +67,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 <!--SR:!2023-06-09,53,250-->
 
 #🧠 Dot Notation Case 是什麼樣的命名法則 ->->-> `單字間使用點字號來相連`
-<!--SR:!2023-04-23,25,250-->
+<!--SR:!2023-07-26,81,250-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Snake Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user_timeline`
