@@ -29,7 +29,7 @@
 - id token 本身夾雜的內容會特定身份有關；access token本身夾雜的內容則是無或者就是誰授權予誰的資訊
 ## 複習
 #🧠 id token 的發放和驗證流程會是哪些？？請以OAuth 來思考 ->->-> `會是以OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主`
-<!--SR:!2023-05-04,18,230-->
+<!--SR:!2023-06-23,48,230-->
 
 #🧠 id token 的發放和驗證流程會是哪些？？->->-> `會是以OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主`
 <!--SR:!2023-05-07,28,250-->
@@ -44,7 +44,7 @@
 <!--SR:!2023-05-09,31,250-->
 
 #🧠  OpenID Connect下的 id token 和 OAuth 2.0下的access_token 之間有何種夾雜的內容差異->->-> ` id token 由於是JWT，所以本身會夾雜內容；access token由於不一定會是JWT，所以本身不一定夾雜額外內容`
-<!--SR:!2023-05-06,30,250-->
+<!--SR:!2023-07-24,79,250-->
 
 
 #🧠 OpenID Connect下的 id token 和 OAuth 2.0下的access_token 這兩種token本身會夾雜什麼內容？->->-> `id token 本身夾雜的內容會特定身份有關；access token本身夾雜的內容則是無或者就是誰授權予誰的資訊`

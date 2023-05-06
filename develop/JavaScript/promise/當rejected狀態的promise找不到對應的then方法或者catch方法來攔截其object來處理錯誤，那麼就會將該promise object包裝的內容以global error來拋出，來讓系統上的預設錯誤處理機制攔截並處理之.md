@@ -34,7 +34,7 @@
 
 
 #🧠 JavaScript : 以下p1為包裝特定任務的Promise object，若註冊後的事件處理拋出錯誤的話，那麼最後會如何執行![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681735097/blog/javascript/promise/Zalgo/promise-without-error-handler_avjoze.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681735097/blog/javascript/promise/Zalgo/promise-without-error-handler_avjoze.png) ->->-> `將拋出的錯誤包裝成rejected狀態的promise object，但由於後續沒catch或者then所構成的錯誤處理，這會使得該promise object轉變成正常的錯誤來讓系統上的預設錯誤處理來攔截並處理`
-<!--SR:!2023-04-30,10,250-->
+<!--SR:!2023-06-08,33,250-->
 
 #🧠   JavaScript : 以下p1為包裝特定任務的Promise object，若註冊後的事件處理拋出錯誤的話，那麼最後會如何執行 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681740441/blog/javascript/promise/Zalgo/task-in-first-promise-without-error-handler_whihet.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681740441/blog/javascript/promise/Zalgo/task-in-first-promise-without-error-handler_whihet.png) ->->-> `將拋出的錯誤包裝成rejected狀態的promise object，但由於後續沒catch或者then所構成的錯誤處理，這會使得該promise object轉變成正常的錯誤來讓系統上的預設錯誤處理來攔截並處理`
 <!--SR:!2023-05-01,10,250-->
