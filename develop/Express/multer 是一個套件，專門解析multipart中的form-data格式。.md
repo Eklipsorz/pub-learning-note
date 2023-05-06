@@ -27,7 +27,7 @@ multer 是一個套件，專門解析multipart中的form-data格式，並將解�
 <!--SR:!2024-05-04,411,250-->
 
 #🧠 前端表格如何設定成multipart/form-data？ ->->-> `在表格元件上加入enctype屬性來設定，如<form action="/admin/restaurants" method="POST" enctype="multipart/form-data">`
-<!--SR:!2023-04-23,189,250-->
+<!--SR:!2024-09-06,489,250-->
 
 #🧠 express框架 本身能夠解析multipart/form-data格式嗎 ->->-> `不能解析，需要載入專門解析其格式的套件，如multer`
 <!--SR:!2023-07-25,97,230-->
