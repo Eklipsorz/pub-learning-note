@@ -46,7 +46,7 @@ grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
 <!--SR:!2023-04-27,14,230-->
 
 #🧠 token based authentication/OAuth：使用refresh token來申請token請求的封裝形式為何？->->-> `封包`
-<!--SR:!2023-05-05,27,250-->
+<!--SR:!2023-05-21,13,230-->
 
 #🧠 token based authentication/OAuth：使用refresh token來申請token請求之主要流程為何？ ->->-> `	- 客戶端憑藉refresh token直接向認證伺服器來索要token - 認證伺服器驗證refresh token無誤後，就產生新的token和refresh token至客戶端 - 客戶端利用新的token重新對resource server發送索要資源的請求`
 <!--SR:!2023-05-06,28,250-->
