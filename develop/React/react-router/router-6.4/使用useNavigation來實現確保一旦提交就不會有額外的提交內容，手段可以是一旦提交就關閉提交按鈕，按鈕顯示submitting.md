@@ -77,7 +77,7 @@ useNavigation：
 
 
 #🧠 react-router-dom v6.4： useNavigation是什麼用途的hook->->-> `主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料`
-<!--SR:!2023-04-27,63,230-->
+<!--SR:!2023-10-17,162,230-->
 
 #🧠 react-router-dom v6.4： useNavigation是主要回傳目前router所攔截到navigation 操作/請求的目前狀態資料的hook，其中資料會有什麼？ ->->-> `導向狀態、導向的目的地、請求內的body部分`
 <!--SR:!2023-06-10,50,210-->

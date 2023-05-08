@@ -270,7 +270,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 使用限制是有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次，若違反限制的話，會如何？ ->->-> `若違反限制，就會在申請token過程中被拒絕`
-<!--SR:!2023-04-27,27,250-->
+<!--SR:!2023-08-01,85,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，其導向請求源自哪裡？ 會發送至哪？->->-> `源自於認證授權伺服器發過來的導向請求，會發送至client指定接收code的地點`
