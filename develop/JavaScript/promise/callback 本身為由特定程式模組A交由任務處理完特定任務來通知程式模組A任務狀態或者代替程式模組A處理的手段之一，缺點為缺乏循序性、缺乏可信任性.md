@@ -109,7 +109,7 @@ function handler() {
 <!--SR:!2023-06-03,81,250-->
 
 #🧠 若假如doA至doF皆為非同步任務，那麼各個函式的執行順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-1_phwg4u.png) ->->-> `doA() -> doF() -> doB() -> doC() -> doE() ->doD()`
-<!--SR:!2023-05-06,64,250-->
+<!--SR:!2023-10-25,170,250-->
 
 
 #🧠 若除了doA和doC為同步任務，剩下就皆為非同步任務，那麼各個函式的執行順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-1_phwg4u.png) ->->-> `doA() -> doB() -> doC() -> doD() -> doE() -> doF()`

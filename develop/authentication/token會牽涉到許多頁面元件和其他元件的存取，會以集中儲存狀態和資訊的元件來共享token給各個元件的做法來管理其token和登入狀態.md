@@ -106,7 +106,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-09-28,166,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，其中用來更改狀態的函式是為何？ ->->-> `login、logout`
-<!--SR:!2023-04-26,70,250-->
+<!--SR:!2023-11-14,190,250-->
 
 #🧠 在client-server間的authentication過程中獲取到toke之過程，isLoggedIn ：若擁有任意token，就為true；若沒有任意token，就為false這token對於使用者來說是合法的嗎？為什麼？ ->->-> `在這裡的任意token都為合法，因為取得任意token的唯一條件就是透過伺服器驗證成功並獲取到的token，所以只要不為null就為合法登入或者true；否則為未登入狀態或者false`
 <!--SR:!2023-10-14,176,250-->

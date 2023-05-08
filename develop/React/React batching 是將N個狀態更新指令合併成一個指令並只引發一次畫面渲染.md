@@ -301,7 +301,7 @@ batch：
 <!--SR:!2023-06-27,194,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-promise-example_oc4lrv.png)->->-> `會合併成一個狀態更新指令，來觸發`
-<!--SR:!2023-05-06,157,250-->
+<!--SR:!2024-06-07,396,250-->
 
 #🧠 React batching：請問目前版本為react 18，請問該渲染狀態更新指令會如何處理 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661174173/blog/react/batching/react-batching-handler-example_pjtidy.png) ->->-> `會合併成一個狀態更新指令，來觸發`
 <!--SR:!2023-05-18,164,250-->
