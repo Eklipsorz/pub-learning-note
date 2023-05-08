@@ -162,7 +162,7 @@ flow
 
 
 #🧠 以下面為例，請問印出順序會是什麼？  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example2_xuyml4.png) ->->-> `before -> end -> setTimeout -> after-1 -> after-2 -> .... -> after-5`
-<!--SR:!2023-05-03,115,250-->
+<!--SR:!2024-03-03,300,250-->
 
 
 #🧠 以下面為例，請問印出順序會是什麼？   ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666701344/blog/javascript/promise/await/await-then-example3_l1luwz.png) ->->-> `before -> end -> setTimeout -> 報錯`
