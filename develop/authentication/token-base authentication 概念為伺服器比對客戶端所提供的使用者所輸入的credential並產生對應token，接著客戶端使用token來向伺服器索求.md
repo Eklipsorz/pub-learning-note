@@ -65,7 +65,7 @@
 
 
 #🧠 以JWT為主的token-based authentications 通常需要什麼東西才能讓實現？ ->->-> `secret、hashing algorithm `
-<!--SR:!2023-05-01,77,250-->
+<!--SR:!2023-12-03,209,250-->
 
 #🧠 token-based authentication: 客戶端藉由tokens來實現從伺服器上獲取permission/access，具體流程會是什麼？->->-> `1. 使用者向客戶端提供credential  2. 客戶端利用使用者提供的credential 來申請對應的token 3. 伺服器收到就進行驗證:  - 若驗證成功的話，就產生token - 若驗證失敗的話，就回報錯誤訊息 4. 假如驗證成功的話，就將token 轉發給client`
 <!--SR:!2023-04-26,7,250-->
