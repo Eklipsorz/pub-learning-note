@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
+                "file": "inbox/CommonJS 模組如何載入模組.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "authentication token vs. access token 差別？",
+                "query": "用下圖來說明如何",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
+                "file": "inbox/CommonJS 模組如何載入模組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
+                "file": "inbox/CommonJS 模組如何載入模組.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md"
+                "file": "inbox/CommonJS 模組如何載入模組.md"
               }
             }
           },
@@ -179,6 +179,7 @@
   },
   "active": "642e90c95a8be67b",
   "lastOpenFiles": [
+    "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
     "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
     "develop/authentication/log in 和 sign in 兩者皆引申為提供使用者資訊來依此進入特定電腦系統來獲取權限。前者本意會是指特定使用者(相關)資訊寫入至系統內部當中，後者提供使用者填寫資訊並對其進行驗證的紀錄.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
@@ -204,7 +205,6 @@
     "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
     "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "develop/Redis/Redis SCAN 指令會根據cursor所對應的原集合中對應子集合來進行元素的遍歷，檢查看看每個在子集合的元素是否滿足pattern，最後執行該指令的結果會回傳另一個cursor和滿足pattern的結果.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
