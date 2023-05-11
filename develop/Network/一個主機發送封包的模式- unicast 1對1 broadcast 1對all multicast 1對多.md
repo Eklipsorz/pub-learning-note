@@ -50,7 +50,7 @@ Multicast ：
 - multicast 會是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方：
 	- N 和 M 會是至少1個
 	- 特定群組A和特定群組B所在網路可以是不一樣或者一樣
-	- 能夠構築的傳遞形式為：one-to-many、many-to-one、many-to-many
+	- 能夠構築的傳遞形式為：one-to-one、one-to-many、many-to-one、many-to-many
 - one-to-many 形式為：1個傳送方傳送資料至特定群組的N個接收方
 - many-to-one 形式為：位於特定群組A的N個傳送方傳送資料至特定群組B的1個接收方
 - many-to-many 形式為：
@@ -130,8 +130,8 @@ Multicast ：
 #🧠 Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，隸屬網路為何？ ->->-> `特定群組A和特定群組B所在網路可以是不一樣或者一樣`
 <!--SR:!2023-10-09,183,250-->
 
-#🧠 Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，能夠構築的傳遞形式會是什麼？->->-> `one-to-many、many-to-one、many-to-many`
-<!--SR:!2023-11-17,190,230-->
+#🧠 Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，能夠構築的傳遞形式會是什麼？->->-> `one-to-one、one-to-many、many-to-one、many-to-many`
+
 
 #🧠 Multicast  是指位處於特定群組A的N個傳送方傳送資料至特定群組B的M個接收方，能夠構築的傳遞形式會是什麼？其中的one-to-many會是什麼？ ->->-> `1個傳送方傳送資料至特定群組的N個接收方`
 <!--SR:!2023-09-05,164,250-->
