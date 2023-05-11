@@ -158,7 +158,7 @@ function DoubleIncreaser() {
 <!--SR:!2023-06-25,192,250-->
 
 #🧠 若要以下面形式callback作為setCount的參數，來修改以下count狀態更新都必須以1、2來分別修改，那麼要如何修改 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png)->->-> `將setCount的參數都設定為(count) => count + 1`
-<!--SR:!2023-05-07,157,250-->
+<!--SR:!2024-06-11,397,250-->
 
 
 #🧠 請說明當發生點擊事件時，會是如何更新狀態和渲染？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-solution_mbe5uf.png) ->->-> `第一次執行下面時，setCount 會拿目前的狀態值來當作actualCount並進行疊加，而得到1，其1會成為新的目前狀態值。第二次執行類似語法時，setCount會拿目前的狀態值1來當作actualCount並進行疊加，而得到2，其2會成為新的目前狀態值。最後沒setCount等狀態更新指令，就執行目前狀態值2來更新和渲染`

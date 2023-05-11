@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+                "file": "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Cache 讀取策略：Read Aside 中是否能讓客戶端選擇回寫資料至緩存或者不回寫",
+                "query": "請畫圖描述 Multicast",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+                "file": "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
+                "file": "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md"
+                "file": "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md"
               }
             }
           },
@@ -179,6 +179,7 @@
   },
   "active": "642e90c95a8be67b",
   "lastOpenFiles": [
+    "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
     "inbox/CommonJS 模組如何載入模組.md",
@@ -204,7 +205,6 @@
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_JZVJ3IU8.md",
     "develop/React/React ：Offscreen API 是允許Component 在面臨mount=unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
     "develop/authentication/token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求.md",
-    "develop/Expression Language 是建立電腦可解析(解釋)成特定資訊的表示語法來從大量資訊找到特定資訊內容.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
