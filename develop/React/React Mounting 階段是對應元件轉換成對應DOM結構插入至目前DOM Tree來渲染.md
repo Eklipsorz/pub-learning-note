@@ -92,7 +92,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2023-06-26,194,250-->
 
 #🧠 React Mounting 階段在class-based component的流程有什麼 ->->-> `constructor、getDerivedStateFromProps、render、React updates DOM & refs、componentDidMount`
-<!--SR:!2023-05-03,45,190-->
+<!--SR:!2023-06-03,23,170-->
 
 #🧠 constructor、getDerivedStateFromProps、render、React updates DOM & refs、componentDidMount 是函式嗎？ ->->-> `對`
 <!--SR:!2023-11-18,275,250-->
