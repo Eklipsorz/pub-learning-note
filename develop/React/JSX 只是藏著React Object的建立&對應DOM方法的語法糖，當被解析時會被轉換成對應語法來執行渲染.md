@@ -210,7 +210,7 @@ return React.createElement(Expenses, { items: expenses });
 
 
 #🧠 JSX 實際上來說是什麼？->->-> `是一個包裝建立&對應Virtual DOM原生方法的語法糖`
-<!--SR:!2023-04-22,95,230-->
+<!--SR:!2024-01-06,240,230-->
 
 #🧠 JSX 實際上包裝了什麼來做成語法糖？ ->->-> `建立&對應Virtual DOM的React原生方法`
 <!--SR:!2023-04-23,95,230-->

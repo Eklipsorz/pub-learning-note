@@ -154,7 +154,7 @@ flow
 <!--SR:!2023-06-07,137,250-->
 
 #🧠 以下面為例，請問印出順序會是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `before -> end -> setTimeout -> after`
-<!--SR:!2023-05-08,117,250-->
+<!--SR:!2024-03-05,299,250-->
 
 #🧠 以下面為例，請問印出順序會是before -> setTimeout -> after -> end嗎？為什麼 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666700967/blog/javascript/promise/await/await-then-example1_uyqdc3.png) ->->-> `並不是，實際正確順序為before -> end -> setTimeout -> after，這是因為await實際上會把後頭的程式碼全都會被該promise的then語法包裹住，以至於會先印出before之後，執行new promise來產生非同步任務，然後執行完畢之後，接著就印出end，最後promise中的時間到了就印setTimeout，最後有了resolve，then就跟著被觸發而執行after`
 <!--SR:!2023-07-01,153,250-->

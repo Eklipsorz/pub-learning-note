@@ -156,7 +156,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 <!--SR:!2023-06-06,31,229-->
 
 #🧠 在Function Execution Context 中的Arguments object 會是什麼樣子，以test(1, 3, 4)為例 ->->-> `Arguments: {0: 1, 1: 3, 2: 4,length: 3},`
-<!--SR:!2023-04-30,57,249-->
+<!--SR:!2023-10-18,160,249-->
 
 #🧠 function test(a, b, c) {}; test(1, 3, 4); 請問a、b、c在FEC建立的狀況為何->->-> `a: undefined/uninitialized、b：undefined/uninitialized、c：undefined/uninitialized`
 <!--SR:!2023-07-10,93,229-->
