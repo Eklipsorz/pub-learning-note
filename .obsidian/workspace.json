@@ -30,19 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9032a79bdd01413e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.8"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9032a79bdd01413e",
+  "active": "642e90c95a8be67b",
   "lastOpenFiles": [
     "inbox/CommonJS 模組如何載入模組.md",
     "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
