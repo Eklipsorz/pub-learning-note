@@ -291,7 +291,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2023-07-25,194,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action會是什麼？->->-> ` 本身主要是定義如何更新狀態`
-<!--SR:!2023-05-10,143,250-->
+<!--SR:!2024-05-04,359,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
 <!--SR:!2023-07-21,191,250-->
