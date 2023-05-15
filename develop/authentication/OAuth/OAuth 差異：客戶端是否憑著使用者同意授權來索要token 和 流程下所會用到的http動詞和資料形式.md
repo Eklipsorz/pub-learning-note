@@ -56,7 +56,7 @@
 <!--SR:!2023-07-22,77,250-->
 
 #🧠 OAuth流程下所會用到的http動詞和資料形式：resource owner password credentials grant type 以授權同意結果來向認證伺服器索求token會是以什麼http動詞和封裝形式 ->->-> `- http 動詞：POST - 封裝請求資料/結果資料形式：以封包為主`
-<!--SR:!2023-05-13,35,250-->
+<!--SR:!2023-08-16,93,250-->
 
 #🧠 OAuth流程下所會用到的http動詞和資料形式：client credentials grant type 授權同意結果來向認證伺服器索求token會是以什麼http動詞和封裝形式 ->->-> `- http 動詞：POST - 封裝請求資料/結果資料形式：以封包為主`
 <!--SR:!2023-08-15,92,250-->
