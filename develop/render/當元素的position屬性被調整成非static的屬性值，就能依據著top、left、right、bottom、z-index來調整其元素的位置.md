@@ -112,7 +112,7 @@ position: sticky;
 <!--SR:!2023-06-13,170,250-->
 
 #🧠 CSS：top、bottom這兩個屬性是什麼？ ->->-> `top、bottom主要調整positioned element的垂直位置，即為上下這兩個方向`
-<!--SR:!2023-05-15,94,230-->
+<!--SR:!2023-12-25,224,230-->
 
 #🧠 CSS：right、left這兩個屬性是什麼？ ->->-> ` right、left主要調整positioned element的水平位置，即為左右這兩個方向`
 <!--SR:!2023-06-27,182,250-->

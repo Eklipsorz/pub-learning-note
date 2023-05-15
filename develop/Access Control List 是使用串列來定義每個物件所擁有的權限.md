@@ -28,7 +28,7 @@ note:
 
 ## 複習
 #🧠 Access Control List 是什麼？ ->->-> `ACL 是 Access Control List 的縮寫，以鏈結串列(linked list)來定義在特定系統上，特定物件A對於特定資源B的存取權限`
-<!--SR:!2023-05-15,220,250-->
+<!--SR:!2024-11-15,550,250-->
 
 #🧠 Access Control List：試著用這張圖說明s1對於資源的權限 ![](https://www.researchgate.net/profile/James-Joshi/publication/27233516/figure/fig1/AS:638408414220289@1529219835691/An-access-control-matrix-and-its-access-control-list-and-capability-list.png)  ->->-> `以下圖為例，假若在特定系統存在著三個特定物件s1、s2、s3能夠存取資源，而資源會有f1、f2、f3、f4、f5、f6，在這裡會先定義s1這物件對f2、f3的存取權限是有 **擁有者、讀取、寫入**這些權限，且對於f5的存取權限只有 **寫入** 這權限。 那麼在ACM中會是如下圖的表格上顯示，其中s1對於f1、s1對於f4、s1對於f6的欄位值會是空白，表示沒任何權限。  若改以ACL來顯示的話，那麼就會以該物件能夠存取的資源為主，也就是會f2、f3、f5`
 <!--SR:!2024-03-28,409,250-->

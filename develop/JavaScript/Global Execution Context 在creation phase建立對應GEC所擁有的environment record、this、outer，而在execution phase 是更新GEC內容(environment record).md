@@ -172,7 +172,7 @@ GlobalExectionContext = {
 <!--SR:!2023-07-12,88,208-->
 
 #🧠 JavaScript Lexical Environment  是什麼？ ->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間`
-<!--SR:!2023-05-09,200,248-->
+<!--SR:!2024-09-30,504,248-->
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariableEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`

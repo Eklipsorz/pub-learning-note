@@ -73,7 +73,7 @@ end
 <!--SR:!2023-06-22,102,246-->
 
 #🧠 若function 前綴標記成async的話，就會使function構成async function物件，該物件回傳的promise狀態又是如何？ ->->-> `- 若回傳內容是非promise的話，會以fulfilled狀態的promise物件來包裝回傳內容來回傳 - 若回傳內容是promise A的話，就該promise A的狀態為主來回傳`
-<!--SR:!2023-05-07,73,246-->
+<!--SR:!2023-11-21,190,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成什麼物件？->->-> `async function物件`
 <!--SR:!2023-05-29,87,246-->

@@ -94,7 +94,7 @@ URI包含了：
 <!--SR:!2023-09-24,191,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Query String對於URI會是什麼？ ->->-> `對於索要的資源進行額外的要求字串`
-<!--SR:!2023-04-23,38,230-->
+<!--SR:!2023-09-07,115,230-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Fragment對於URI會是什麼？ ->->-> `在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部分`
 <!--SR:!2023-09-27,194,250-->
