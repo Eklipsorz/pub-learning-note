@@ -122,7 +122,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2023-05-28,150,230-->
 
 #🧠 電腦科學 的 viewport套用在瀏覽器，則會是指什麼？ ->->-> `若進一步套用在瀏覽器的話，瀏覽器中用呈現畫面的部分就是viewport`
-<!--SR:!2023-05-15,153,250-->
+<!--SR:!2024-06-01,383,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
 <!--SR:!2023-07-15,194,250-->
