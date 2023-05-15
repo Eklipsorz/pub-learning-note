@@ -195,7 +195,7 @@ export default NewsletterSignup;
 <!--SR:!2023-05-16,90,250-->
 
 #🧠 react-router-dom 6.4﹔useFetcher 可以允許元件不必透過切換URL或者navigation來執行甚甚麼樣的業務邏輯，而該邏輯是屬於Router->->-> `loader 或者 action`
-<!--SR:!2023-05-03,13,247-->
+<!--SR:!2023-07-03,49,247-->
 
 
 #🧠 react-router-dom 6.4：useFetcher 是什麼樣的hook？ ->->-> `主要會回傳一個fetcher物件，透過該物件可以不必透過切換URL或者navigation來執行loader或者action`
