@@ -106,7 +106,7 @@ position: sticky;
 <!--SR:!2023-06-29,183,250-->
 
 #🧠 position 為static的元素 是什麼？會不會受到top、left、right、bottom、z-index這五個屬性的影響 ->->-> `意旨為遵從文件上的預設排版方式來排版，並且不會被top、left、right、bottom、z-index這五個屬性來調整其位置。`
-<!--SR:!2023-05-10,89,230-->
+<!--SR:!2023-12-17,216,230-->
 
 #🧠 top、right、bottom、left、z-index能夠調整non-positioned element的位置嗎？ ->->-> `並不能`
 <!--SR:!2023-06-13,170,250-->

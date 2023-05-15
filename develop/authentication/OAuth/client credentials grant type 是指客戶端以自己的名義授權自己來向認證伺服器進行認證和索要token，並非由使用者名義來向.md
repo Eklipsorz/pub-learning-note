@@ -93,7 +93,7 @@
 <!--SR:!2023-06-08,49,250-->
 
 #🧠 client credential grant type 在OAuth 下，client會以誰授權誰的結果來索要token？ ->->-> `client本身 授權 自己 的結果來索要token`
-<!--SR:!2023-05-08,30,248-->
+<!--SR:!2023-08-06,83,248-->
 
 #🧠 client credential grant type 在OAuth 下的流程會是什麼？ ->->-> `	- 客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** 並以此向認證伺服器索要token - 認證伺服器確認身份資訊無誤之後，就會回傳token至客戶端`
 <!--SR:!2023-05-14,35,248-->
@@ -112,7 +112,7 @@
 
 
 #🧠 client credential grant type 在OAuth下："客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** 並以此向認證伺服器索要token"，其請求的grant_type會是什麼？ ->->-> `	- grant_type：授權種類，在這裡會是client_credentials`
-<!--SR:!2023-05-10,33,250-->
+<!--SR:!2023-08-15,92,250-->
 
 #🧠 client credential grant type 在OAuth下："客戶端憑藉自己平台的身份資訊作為 **自己平台** 授權 **自己** 並以此向認證伺服器索要token"，其中發送的請求會在哪裡存放著身份資訊來做驗證 ->->-> `封包的header或者body部分`
 <!--SR:!2023-06-16,41,208-->
