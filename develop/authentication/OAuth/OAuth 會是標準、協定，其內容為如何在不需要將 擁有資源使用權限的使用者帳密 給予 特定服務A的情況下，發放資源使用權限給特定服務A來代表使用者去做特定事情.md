@@ -198,7 +198,7 @@
 <!--SR:!2023-07-04,104,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
-<!--SR:!2023-05-12,74,250-->
+<!--SR:!2023-11-20,189,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server會負責什麼？ ->->-> `管理資源、轉遞請求封包上的token至authorization server的伺服器`
 <!--SR:!2023-10-05,163,250-->

@@ -235,7 +235,7 @@ a * c + b * c // 9
 ## 複習
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第一個圓括號是做什麼 ->->-> `讓系統能將function看待成function expression`
-<!--SR:!2023-05-09,182,250-->
+<!--SR:!2024-08-20,463,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)中的第二個圓括號是做什麼，與前面括號有什麼關係 ->->-> `第一個括號讓系統能將function看待成function expression，而第二個括號則是將expression當作函式來呼叫`
 <!--SR:!2024-06-01,413,250-->

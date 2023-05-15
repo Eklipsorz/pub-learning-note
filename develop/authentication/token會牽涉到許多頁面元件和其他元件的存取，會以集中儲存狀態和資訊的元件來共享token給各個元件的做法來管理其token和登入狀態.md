@@ -81,7 +81,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 ## 複習
 
 #🧠 在client-server間的authentication過程中獲取到token，客戶端的React該如何儲存？先說概念 ->->-> `會以app-wide形式的狀態來儲存token和其登入狀態`
-<!--SR:!2023-04-24,70,250-->
+<!--SR:!2023-12-02,201,250-->
 
 #🧠 在client-server間的authentication過程中獲取到token，客戶端的React該如何儲存token，概念上會是會以app-wide形式的狀態來儲存token和其登入狀態，具體會是用什麼？ ->->-> `會使用集中儲存狀態和資訊的元件來共享token給各個元件，如 1. 使用context 2. 使用Redux`
 <!--SR:!2023-10-01,165,250-->

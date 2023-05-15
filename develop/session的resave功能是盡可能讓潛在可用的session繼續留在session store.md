@@ -21,7 +21,7 @@
 <!--SR:!2023-10-01,295,250-->
 
 #🧠 express-session上的resave機制上目的是什麼 ->->-> `session的resave功能是盡可能讓潛在可用的session繼續留在session store，繼而延續先前處理結果來增加效率`
-<!--SR:!2023-05-10,200,230-->
+<!--SR:!2024-08-23,466,230-->
 
 #🧠 express-session上的resave功能是什麼？->->-> ` resave功能是只要與client進行連線，那伺服器就會根據對應client的session內容重新寫進另一份session至store，最新的session會綁定新的過期時間，舊的session則會因為舊的過期時間而被釋放或者是直接被刪除`
 <!--SR:!2024-05-30,443,250-->
