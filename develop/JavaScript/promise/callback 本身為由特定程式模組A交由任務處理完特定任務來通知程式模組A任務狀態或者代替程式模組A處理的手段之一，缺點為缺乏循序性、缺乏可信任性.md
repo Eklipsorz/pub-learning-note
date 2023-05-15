@@ -123,7 +123,7 @@ function handler() {
 <!--SR:!2023-05-25,41,248-->
 
 #🧠 callback 會呈現出 inversion of control ，那麼callback和呼叫端之間的關係是如何 以及誰執行callback又是代表著 ->->-> `- callback會是呼叫端的一部分- 當哪個程式碼決定callback的執行，就是由該程式碼決定呼叫端的程式碼執行`
-<!--SR:!2023-05-14,34,248-->
+<!--SR:!2023-08-12,89,248-->
 
 
 

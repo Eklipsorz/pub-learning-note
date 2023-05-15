@@ -24,7 +24,7 @@ loader 和 useLoaderData 技術不被預設的BrowserRouter所支援，換言之
 ## 複習
 
 #🧠 react-router-dom v6的原生BrowserRouter可根據URL切換來替元件發送索取資料或者資料處理的請求嗎？ ->->-> `不能`
-<!--SR:!2023-05-02,34,230-->
+<!--SR:!2023-08-20,97,230-->
 
 #🧠 react-router-dom v6的原生BrowserRouter不可根據URL切換來替元件發送索取資料或者資料處理的請求，那麼原因是？？->->-> `本身不支援讓Router負責根據切換URL而發送對應請求，並將請求回應給元件來做渲染`
 <!--SR:!2023-08-09,148,250-->

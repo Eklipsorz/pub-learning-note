@@ -110,7 +110,7 @@ Pragma: no-cache
 
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端的請求封包之主要內容為何->->-> `- grant_type：授權種類，在這裡會是填寫password - username：表示特定系統下的帳號 - password：表示特定系統下的帳號所擁有的密碼 - scope：表示索要的token要什麼樣的scope`
-<!--SR:!2023-04-26,24,250-->
+<!--SR:!2023-08-10,87,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `封包`
 <!--SR:!2023-05-12,34,249-->
