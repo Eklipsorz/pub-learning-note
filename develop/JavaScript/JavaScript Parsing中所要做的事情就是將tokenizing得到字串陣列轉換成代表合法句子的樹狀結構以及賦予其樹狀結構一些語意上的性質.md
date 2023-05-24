@@ -52,7 +52,7 @@
 
 
 #🧠 JavaScript 編譯時期中的Parsing 會是執行什麼？ ->->-> `會先將tokenizing獲取到的token陣列 經過 Grammar Parser 來檢查是否能夠組成合法的statement、expression、declaration，若能的話，就是一個樹狀結構來代表他們，若不能就報錯，最後再經過semantic analyer來解析結構上那些還未明語意的文字是什麼意思，具體會是賦予變數、常數、回傳值、宣告的資料型別是什麼`
-<!--SR:!2023-05-22,190,250-->
+<!--SR:!2024-10-02,497,250-->
 
 
 #🧠 JavaScript 編譯時期中的Grammar Parser 是什麼？ ->->-> `主要會解析字串是否為程式語言能夠識別的語法以及是否能與其他文字組裝成合法的statement、expression、declaration`

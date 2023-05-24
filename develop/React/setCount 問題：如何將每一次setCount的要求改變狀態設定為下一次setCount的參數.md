@@ -149,7 +149,7 @@ function DoubleIncreaser() {
 
 
 #🧠 執行第一個狀態更新就使0->1，執行第二個狀態更新就使1->2的話來改造下面的話，解法有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661184977/blog/react/batching/setCounter/setState-expected-value-problem_zfagua.png) ->->-> `以callback作為setCount的引數、先處理兩次count疊加的邏輯計算並且以其結果來渲染和更新`
-<!--SR:!2023-05-20,165,250-->
+<!--SR:!2024-07-15,418,250-->
 
 #🧠 setState 參數為callback，會是如何進行的？->->-> `預設setState會將目前得到的狀態值來當callback的參數使用，其回傳值會成為setState新的狀態值`
 <!--SR:!2023-06-28,194,250-->
