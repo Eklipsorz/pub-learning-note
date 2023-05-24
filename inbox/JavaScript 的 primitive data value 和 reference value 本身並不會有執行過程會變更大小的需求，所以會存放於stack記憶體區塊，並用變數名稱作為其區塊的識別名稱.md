@@ -153,7 +153,7 @@ console.log(age, newAge);
 <!--SR:!2024-01-28,265,248-->
 
 #🧠 NaN 是算primitive data type中的number，請問NaN的全名是什麼？->->-> `Not-A-Number`
-<!--SR:!2023-05-19,114,248-->
+<!--SR:!2024-03-20,301,248-->
 
 #🧠 primitive data value 以及 reference value 會存放在哪種記憶體區塊？stack ? heap? 為什麼？->->-> `因為本身並不會在執行過程改變記憶體區塊大小而直接存放在專門儲存固定大小的stack記憶體區塊`
 <!--SR:!2023-10-24,231,249-->

@@ -255,7 +255,7 @@ a * c + b * c // 9
 <!--SR:!2023-04-27,44,210-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為何採用function ->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope`
-<!--SR:!2023-05-12,184,250-->
+<!--SR:!2024-09-20,485,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
 <!--SR:!2024-07-30,451,250-->

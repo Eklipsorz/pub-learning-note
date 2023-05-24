@@ -168,7 +168,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 <!--SR:!2023-07-07,99,249-->
 
 #🧠 在Function Execution Context中， Arguments object在FEC建立時會放在哪->->-> `Arguments放在FEC中的LexicalEnvironment區塊`
-<!--SR:!2023-05-07,61,249-->
+<!--SR:!2023-11-18,178,249-->
 
 
 #🧠 在Function Execution Context 中的Arguments object 內容為何，通常會如何用？ ->->-> `本身會是想傳進函式的參數，並在執行階段時使用和存取`
