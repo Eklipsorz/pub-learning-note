@@ -241,7 +241,7 @@ a * c + b * c // 9
 <!--SR:!2024-06-01,413,250-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為了解決什麼樣的問題而被提出的？ ->->-> `JavaScript 在 **同一份DOM Document載入多個JS檔案而產生出全域污染問題** 而提出的概念`
-<!--SR:!2023-05-24,193,250-->
+<!--SR:!2024-09-27,492,250-->
 
 #🧠  IIFE (Immediately Invoked Function Expression) 具體是什麼？它是函式嗎？ ->->-> `IIFE實際上是一個function一被定義/宣告就直接執行`
 <!--SR:!2023-07-13,205,230-->
