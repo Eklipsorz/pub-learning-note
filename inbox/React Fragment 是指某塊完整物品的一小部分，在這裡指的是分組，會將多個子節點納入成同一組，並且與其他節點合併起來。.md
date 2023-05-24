@@ -87,7 +87,7 @@ fragment
 
 
 #🧠 fragment 在React上是指什麼意思？ ->->-> `fragment 是指某塊完整物品的一小部分，在這裡會是包含多個元件的邏輯區塊或者邏輯元件。`
-<!--SR:!2023-05-16,153,250-->
+<!--SR:!2024-06-20,393,250-->
 
 #🧠 fragment 在React上是什麼Component？(請用簡短的話來說) ->->-> `empty wrapper component`
 <!--SR:!2023-07-18,194,250-->
