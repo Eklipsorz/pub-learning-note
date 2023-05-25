@@ -84,7 +84,7 @@ coupling
 <!--SR:!2023-05-31,192,250-->
 
 #🧠 電腦科學裡的coupling：依賴會是什麼意思 ->->-> `存取、使用`
-<!--SR:!2023-05-17,189,250-->
+<!--SR:!2024-10-05,498,250-->
 
 
 #🧠 電腦科學裡的coupling：假如有模組A和模組B，其依賴狀況為如下，請問有coupling嗎？為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658066921/blog/SoftwareEngineering/AB-NoCoupling_wrtd6f.png)->->-> `並沒有coupling， 由於模組A 和 模組B 任一個模組都沒存取另一個，`
