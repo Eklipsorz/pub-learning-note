@@ -135,7 +135,7 @@
 <!--SR:!2024-05-18,376,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話 ->->-> `就會阻塞打造Rendering Tree以及後續的渲染任務，直到CSSOM建立完成`
-<!--SR:!2023-05-19,160,250-->
+<!--SR:!2024-07-24,425,250-->
 
 #🧠 HTML解析成DOM之後會搭配，CSSOM來打造Rendering Tree，接著執行渲染內容的任務(layout & paint)，那麼若CSSOM還未建立完成的話，那就會就會阻塞打造Rendering Tree以及後續的渲染任務，如何做才會繼續停止阻塞？ ->->-> `直到CSSOM建立完成`
 <!--SR:!2023-06-15,181,250-->
