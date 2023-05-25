@@ -217,7 +217,7 @@ export default RootLayout;
 <!--SR:!2023-06-12,112,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，那麼它屬於？？ ->->-> `屬於react-router-dom函式庫中的函式`
-<!--SR:!2023-05-11,91,248-->
+<!--SR:!2024-01-24,243,248-->
 
 #🧠  react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，語法會是什麼？ ->->-> `const router = createBrowserRouter(paths)`
 <!--SR:!2024-01-25,246,248-->
@@ -257,7 +257,7 @@ export default RootLayout;
 <!--SR:!2024-01-01,231,248-->
 
 #🧠 請試著說明每個路徑能夠對應到什麼以及渲染什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png) ->->-> ``
-<!--SR:!2023-05-25,101,248-->
+<!--SR:!2024-02-02,252,248-->
 
 
 #🧠 裡頭的RootLayout元件對應的Route元件對於其他後裔元件來說，兩者渲染關係是如何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670789378/blog/react/react-router/v6/index-route/react-router-v6.4-with-index-route-example_rltcow.png)->->-> `在這裡會以RootLayout元件所對應的Route元件來當作是其他後裔Route元件的渲染參考頁面元件，並且會在RootLayout元件設定Outlet元件來告知React後裔Route元件的渲染可以在參考頁面上的哪個位置上做渲染`

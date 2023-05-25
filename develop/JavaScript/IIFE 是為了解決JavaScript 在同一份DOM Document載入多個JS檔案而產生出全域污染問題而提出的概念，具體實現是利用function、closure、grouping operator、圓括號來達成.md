@@ -277,7 +277,7 @@ a * c + b * c // 9
 <!--SR:!2024-01-20,331,250-->
 
 #🧠 以下為IIFE的雛型，但解析器會把function視為function declaration而報錯，請問如何改善？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658248963/blog/javascript/lexical%20scope/iife-draft_pllabp.png)->->-> `為了強制將可以被當作expression而被誤會成declaration的function轉成function expression，會使用()這個grouping expression來強制系統先以expression 來看待function，也就是如同下面的形式：當解析器讀到括號時，會先以expression的形式來執行其包含內容，此時內容是function(){}，那麼就會使該function轉換成function expression，接著再透過expression之後放置圓括號的特性就能讓轉換成function expression的function以被呼叫的函式來執行，並將圓括號內的參數視為函式要用的參數來使用`
-<!--SR:!2023-05-25,194,250-->
+<!--SR:!2024-10-03,496,250-->
 
 
 #🧠 Grouping Operator 是什麼樣的運算子，參數是什麼？回傳什麼？ ->->-> `grouping operator 是一種運算子，主要參數為一個expression，形式會是如下，最後回傳的值會是expression`
