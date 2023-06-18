@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c7ba2c63fa6467cc",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.3.5"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,7 +164,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7ba2c63fa6467cc",
+  "active": "77678ce50f55a0b1",
   "lastOpenFiles": [
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
