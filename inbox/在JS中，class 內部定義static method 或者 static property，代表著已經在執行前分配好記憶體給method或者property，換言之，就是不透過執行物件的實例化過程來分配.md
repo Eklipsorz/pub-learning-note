@@ -69,7 +69,7 @@
 <!--SR:!2023-07-20,175,250-->
 
 #🧠 static memory allocation 是什麼？(簡述) ->->-> `相對於dynamic memory allocation來說，會以不透過執行程式來進行記憶體分配，換言之，就是在執行階段前做記憶體分配，而是單方面在執行之前分配好記憶題的變數或者函式`
-<!--SR:!2023-05-09,43,210-->
+<!--SR:!2023-11-10,141,210-->
 
 
 #🧠  static memory allocation 為什麼會有static來稱呼?  ->->-> `相對於dynamic memory allocation來說`

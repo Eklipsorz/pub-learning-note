@@ -59,7 +59,7 @@ const error = useRouteError()
 <!--SR:!2023-07-01,100,230-->
 
 #🧠 react-router-dom v6.4 ：useRouteError 是專門回傳錯誤資訊物件，請問從哪裡獲取到的錯誤資訊物件？ ->->-> `從Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤資訊來獲取和轉換`
-<!--SR:!2023-06-07,108,250-->
+<!--SR:!2023-08-21,60,230-->
 
 #🧠 react-router-dom v6.4 ：useRouteError和 Route元件上的errorElement 屬性都取自於哪些錯誤資訊？->->-> `從Route執行對應loader時的錯誤、Route執行渲染對應元件時的錯誤、Route執行對應action時的錯誤資訊來獲取和轉換`
 <!--SR:!2023-07-10,103,249-->

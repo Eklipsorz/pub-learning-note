@@ -75,7 +75,7 @@ myTag`that ${ person } is a ${ age }`
 <!--SR:!2023-07-04,190,250-->
 
 #🧠 myTag\`that \$\{ person \} is a \$\{ age \}\` ，以這個為例，說明一下哪個是tag function，如何取參數？->->-> `myTag會是函式，其宣告為function myTag(strings, argu1, argu2, ...)、沒用\$\{\}特別包住的字串結合成一個字串當作特定函式A的第一個參數，that is a ，該字串會用字串陣列來儲存、第二個參數就取\$\{person\}、第三個參數就取\$\{age\}`
-<!--SR:!2023-05-25,163,250-->
+<!--SR:!2024-09-07,443,250-->
 
 
 #🧠 tagged template literal中的tag function會是回傳什麼型別的資料？ ->->-> `任意型別的資料`

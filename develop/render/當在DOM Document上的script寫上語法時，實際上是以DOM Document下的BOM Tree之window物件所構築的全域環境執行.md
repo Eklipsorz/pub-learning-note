@@ -50,7 +50,7 @@ console.log(window.testvar) // 5
 <!--SR:!2023-11-25,300,250-->
 
 #🧠 declaration for var、declaration for function 在同一個DOM Document執行會是替window物件做什麼？ ->->-> `替同個window物件增加屬性來存放對應的函式物件、var變數宣告`
-<!--SR:!2023-06-10,193,250-->
+<!--SR:!2024-11-01,498,250-->
 
 #🧠 若在script標籤內寫下var x = 5，請問會相當於什麼 ->->-> `替window物件增加x屬性`
 <!--SR:!2023-05-29,194,250-->
