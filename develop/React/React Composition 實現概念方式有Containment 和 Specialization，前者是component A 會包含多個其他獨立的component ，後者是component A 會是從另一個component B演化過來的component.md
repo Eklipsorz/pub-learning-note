@@ -206,7 +206,7 @@ wrapper
 <!--SR:!2023-06-02,181,250-->
 
 #🧠 在React 的 composition：containment 概念為component A 會包含多個其他獨立的component，實現手段會有什麼？ ->->-> `props 和 component 之間的關係是：props會被React視作為component 物件的屬性、利用 props.children 來表示其對應標籤所包含的內容、被包含的內容會是多個獨立的Component`
-<!--SR:!2023-06-10,185,250-->
+<!--SR:!2024-10-16,482,250-->
 
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Specialization 實現概念是什麼？ ->->-> `Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A`
