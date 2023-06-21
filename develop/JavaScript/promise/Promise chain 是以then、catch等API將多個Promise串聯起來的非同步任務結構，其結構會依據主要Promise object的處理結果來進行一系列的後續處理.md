@@ -129,7 +129,7 @@ p.then(
 <!--SR:!2023-06-25,30,210-->
 
 #🧠 Promise API 的then若沒有rejection handler的話，那麼面對接收到的rejected promise會如何做？ ->->-> ` then 若本身沒設定rejection handler，就會以預設的rejection handler來處理：解開接收到的rejected promise所夾雜的錯誤資訊，然後作為引數來拋出錯誤，然後再經過Promise API轉換成另一個rejected Promise 往下傳遞`
-<!--SR:!2023-06-13,68,250-->
+<!--SR:!2023-12-29,190,250-->
 
 #🧠 Promise API 的then若沒有rejection handler的話，那麼面對接收到的rejected promise會如何做？以程式碼來表示->->-> `function(error) {  throw err; }`
 <!--SR:!2023-07-01,82,250-->
