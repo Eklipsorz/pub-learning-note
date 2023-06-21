@@ -77,7 +77,7 @@ if (
 <!--SR:!2023-06-07,23,230-->
 
 #🧠 ES官方規範對於Promise API的then方法會有什麼樣引數 ->->-> `then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
-<!--SR:!2023-05-28,64,250-->
+<!--SR:!2023-12-30,191,250-->
 
 
 #🧠 JS 的 promise 會是統一的版本嗎？為什麼？->->-> `並不是， promise 本身是一個概念，具體實現會有以下幾個版本的promise實作，甚至有不支援promise的瀏覽器：1. 特定瀏覽器所提供的promise 2. 特定函式庫所提供的promise 3. ES6 官方提供的promise`

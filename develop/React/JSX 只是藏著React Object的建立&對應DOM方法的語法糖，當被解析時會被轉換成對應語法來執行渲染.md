@@ -206,7 +206,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2023-06-13,187,250-->
 
 #🧠 React：在沒有使用JSX的時期，如何使用React函式庫來轉換以下對應DOM結構？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485103/blog/react/react-element/react-expected-result_cpazde.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485104/blog/react/react-element/react-actual-result_ajx4rn.png)`
-<!--SR:!2023-06-20,194,250-->
+<!--SR:!2023-09-29,99,230-->
 
 
 #🧠 JSX 實際上來說是什麼？->->-> `是一個包裝建立&對應Virtual DOM原生方法的語法糖`
