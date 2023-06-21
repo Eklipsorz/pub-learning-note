@@ -83,7 +83,7 @@ function Component(props) {
 <!--SR:!2023-06-18,195,250-->
 
 #🧠 React：請問透過props來傳遞資料至component的形式為？ ->->-> `對代表指定元間的標籤設定屬性名稱和屬性值(attribute)，<Component attribute1=value1 ..../> 或者<Component attribute1=value1 .....> <Component />`
-<!--SR:!2023-05-31,181,250-->
+<!--SR:!2024-10-26,492,250-->
 
 #🧠 React：假設要傳入title=title1、amount=amount1、date=date1 給CourseGoalItem這自製的component，如何用代碼來表示->->-> `<CourseGoalItem title=title1 amount=amount1 date=date1 />`
 <!--SR:!2023-06-07,184,250-->

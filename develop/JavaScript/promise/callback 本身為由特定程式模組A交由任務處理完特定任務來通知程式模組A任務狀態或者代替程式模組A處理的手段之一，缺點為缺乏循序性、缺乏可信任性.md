@@ -120,7 +120,7 @@ function handler() {
 <!--SR:!2023-05-11,68,250-->
 
 #🧠 callback 會有 inversion of control 嗎？仔細說明，以呼叫端、callback、特定任務來舉例 ->->-> `inversion of control：呼叫端所定義的程式碼-callback本身是由呼叫端構成，所以預期會是由呼叫端本身決定何時執行，但在將callback給予特定任務來處理時，會將callback轉由任務執行，這等同於變相地，由程式碼/第三方程式碼來決定呼叫端所定義的程式碼何時執行。`
-<!--SR:!2023-05-25,41,248-->
+<!--SR:!2023-11-05,136,248-->
 
 #🧠 callback 會呈現出 inversion of control ，那麼callback和呼叫端之間的關係是如何 以及誰執行callback又是代表著 ->->-> `- callback會是呼叫端的一部分- 當哪個程式碼決定callback的執行，就是由該程式碼決定呼叫端的程式碼執行`
 <!--SR:!2023-08-12,89,248-->
