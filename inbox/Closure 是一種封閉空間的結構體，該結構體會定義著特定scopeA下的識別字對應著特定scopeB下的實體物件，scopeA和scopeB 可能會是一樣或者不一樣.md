@@ -180,7 +180,7 @@ https://zh.m.wikipedia.org/zh-tw/闭包_(计算机科学)
 <!--SR:!2024-09-24,489,250-->
 
 #🧠 以JS為例， garbage collector 如何判定哪些記憶體區塊是還在使用？並根據使用情況釋放？ ->->-> `- 編譯時來查看是否後續會被使用- 執行時根據演算法來確定，根據判定結果來判定未來後續是否被使用，沒被使用就被釋放，有被使用就保留`
-<!--SR:!2023-05-30,194,250-->
+<!--SR:!2024-11-17,514,250-->
 
 #🧠 在沒有gc等記憶體保留政策下，請說明以下closure關係中的a在呼叫foo()時和之後的情況 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658674564/blog/javascript/closure/closure-garbage-collector-example_aszlox.png) ->->-> `當透過baz 來接收foo()所回傳的函式物件時，並且以該函式物件來呼叫時，而函式物件本身使用著foo下的a所對應的實體物件，理論上只要呼叫完foo，foo內的記憶體區塊將會被釋放，換言之，a也會被釋放，所以baz所印出的a會報錯`
 <!--SR:!2023-05-27,192,250-->

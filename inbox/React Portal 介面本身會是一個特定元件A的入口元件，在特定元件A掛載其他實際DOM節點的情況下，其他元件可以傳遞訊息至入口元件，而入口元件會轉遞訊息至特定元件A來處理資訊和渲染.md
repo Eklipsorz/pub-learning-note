@@ -190,7 +190,7 @@ portal：
 
 
 #🧠 React：建立Portal 介面的語法是什麼 ->->-> `使用React-DOM librar下的createPortal 來實現`
-<!--SR:!2023-06-11,64,230-->
+<!--SR:!2023-07-28,36,210-->
 
 #🧠 ReactDOM.createPortal(children, container) 中的引數分別是做什麼？->->-> `	- 第一個引數：以JSX 語法為主，定義要渲染至特定實際DOM節點之下的的對應Virtual DOM內容 - 第二個引數：以pointer為主，專門接收特定實際DOM節點的記憶體位址，通常使用DOM API來抓取其特定DOM節點的參照位置`
 <!--SR:!2023-07-19,194,250-->
