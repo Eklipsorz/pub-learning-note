@@ -244,7 +244,7 @@ consume
 <!--SR:!2023-07-27,194,250-->
 
 #🧠 React：Context中的Provider 是什麼？ ->->-> `是一個Component，負責提供特定狀態值至Context Object`
-<!--SR:!2023-06-08,159,250-->
+<!--SR:!2024-08-27,427,250-->
 
 
 #🧠 React：Context中的Provider component用途是什麼？->->-> `- 由於Context Object的具體內容會由Provider component所提供的狀態值，所以它本身可以代表著Context object的component - 被它包覆著的Component都允許可見到它對於Context Object的設定內容(PS. 只是允許，而非真的存取)`
