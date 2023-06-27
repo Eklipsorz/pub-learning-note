@@ -125,7 +125,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-04-27,18,230-->
 
 #🧠   implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的Fragment 會如何被處理？？ ->->-> `User Agent 會將Fragment 部分儲存在本身的儲存系統，並不會因重導向URI而發送向對應端點該部分內容，等到之後獲取提取用的Script，接著提取並轉交給Client`
-<!--SR:!2023-05-26,35,230-->
+<!--SR:!2023-10-22,117,230-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的重導向URI會是做什麼以及指向哪裡？？？ ->->-> `在這裡會是指定哪個端點會提供提取工具的script，至於指向哪，重導向URI通常會是指Client 或者 Resource Server`
 <!--SR:!2023-05-30,15,230-->

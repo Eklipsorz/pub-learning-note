@@ -270,7 +270,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2023-05-26,174,250-->
 
 #🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate 函式 採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
-<!--SR:!2023-06-16,188,250-->
+<!--SR:!2024-10-27,488,250-->
 
 #🧠 react 生命週期中會用到的 React updates DOM and refs 是會做什麼？ ->->-> `比較差異：拿render獲取到的Virtual DOM與目前的Virtual DOM做比較差異、針對差異來更新實際DOM：直接拿差異結果來以實際DOM節點轉換成對應渲染指令，接著執行`
 <!--SR:!2024-02-29,337,250-->

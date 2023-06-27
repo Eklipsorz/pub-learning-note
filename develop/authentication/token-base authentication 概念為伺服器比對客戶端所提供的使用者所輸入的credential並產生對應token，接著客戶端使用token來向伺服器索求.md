@@ -58,7 +58,7 @@
 <!--SR:!2023-06-07,32,250-->
 
 #🧠 在token-based authentication 的驗證概念中，甚麼東西會被當成permission/access?   ->->-> `token`
-<!--SR:!2023-06-22,42,250-->
+<!--SR:!2023-10-16,111,250-->
 
 #🧠 authentication tokens 概念為token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求，具體會是？？ ->->-> `1. 客戶端從伺服器上獲取permission/access：	- 伺服器比對使用者所輸入的credential和資料庫上的credential是否一樣，若一樣就做下一步；若不一樣就不做。- 建立permission token 給予客戶端 2. 客戶端藉由permission/access來向伺服器索求：- 客戶端使用token來發送請求索要所保護的資源。 - 伺服器驗證token是否合法，合法就允許使用；不合法不允許使用`
 <!--SR:!2023-06-05,30,250-->
