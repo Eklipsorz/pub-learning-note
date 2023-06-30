@@ -211,7 +211,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 <!--SR:!2024-03-22,350,250-->
 
 #🧠 歷經Mounting階段後，會有四個途徑來變更元件A在實際DOM樹上的DOM節點，請問四途徑之一的 **forceUpdate()** 拿什麼資料來渲染畫面？ ->->-> `由props和state以外的資料來渲染`
-<!--SR:!2023-06-24,193,250-->
+<!--SR:!2024-11-10,499,250-->
 
 
 #🧠 react updating 階段若使用new props的流程會是什麼？ ->->-> ` - getDerviedStateFromPorps、- shouldComponentUpdate - 更新狀態 - render - getSnapshotBeforeUpdate - 實際DOM節點渲染畫面 - componentDidUpdate`
