@@ -106,7 +106,7 @@ function handler() {
 <!--SR:!2023-06-02,80,250-->
 
 #🧠 callback 在任務執行的實現上具有兩大缺點， 缺乏可信任性是其中之一，而這歸咎於Inversion of control，請問它是什麼？->->-> `任何種類的callback之執行控制權從程式模組A反轉成不是由程式模組A來控制執行，而是轉由其他外部程式模組。在這裡會是指被接收callback的非同部任務來決定`
-<!--SR:!2023-06-03,81,250-->
+<!--SR:!2024-02-22,237,250-->
 
 #🧠 若假如doA至doF皆為非同步任務，那麼各個函式的執行順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1674351614/blog/promise/callback/callback-problem-1_phwg4u.png) ->->-> `doA() -> doF() -> doB() -> doC() -> doE() ->doD()`
 <!--SR:!2023-10-25,170,250-->

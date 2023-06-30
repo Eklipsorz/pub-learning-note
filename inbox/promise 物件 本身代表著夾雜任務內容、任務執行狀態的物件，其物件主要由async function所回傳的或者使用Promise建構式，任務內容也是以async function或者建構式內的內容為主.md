@@ -76,7 +76,7 @@ end
 <!--SR:!2023-11-21,190,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成什麼物件？->->-> `async function物件`
-<!--SR:!2023-05-29,87,246-->
+<!--SR:!2024-03-09,253,246-->
 
 #🧠 javascript：function前面添加async的話，會使function變成async function物件，那麼該物件和一般的function 物件的執行方式是如何？ ->->-> `都皆為同步執行`
 <!--SR:!2023-06-21,101,246-->
@@ -85,7 +85,7 @@ end
 <!--SR:!2023-06-29,100,226-->
 
 #🧠 請問結果會是如何？又為何？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成fulfilled狀態的promise來回傳並印出對應promise物件，最後在印出end`
-<!--SR:!2023-06-29,106,246-->
+<!--SR:!2024-03-18,262,246-->
 
 
 #🧠 請問function1()的回傳內容會是什麼？？`async function function1() { console.log('start'); return 3 } console.log(function1()); console.log('end');`->->-> `首先async function和一般function的執行方式一樣，會先印出start、最後將3包裝成fulfilled狀態的promise來回傳並印出對應promise物件`
