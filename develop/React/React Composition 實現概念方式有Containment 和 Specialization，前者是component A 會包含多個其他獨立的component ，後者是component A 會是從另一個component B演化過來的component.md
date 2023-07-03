@@ -210,7 +210,7 @@ wrapper
 
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Specialization 實現概念是什麼？ ->->-> `Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A`
-<!--SR:!2023-06-09,184,250-->
+<!--SR:!2023-10-05,94,230-->
 
 #🧠 在React 的 composition ： Specialization 概念為 component A 會是從另一個component B演化過來的component，在這裡會以一個獨立的component 實例B來作為基礎來開發component A，具體會是？結構？ ->->-> `- **建立一個component A，其component A會透過載入來擁有一個獨立的component 實例B並以此作為基礎來開發** - 開發過程不會破壞component 實例B結構，但會將component 實例B當作函式呼叫，並夾雜對應資料來當參數來得到 **內容不一樣的的component 實例B**`
 <!--SR:!2023-05-19,170,250-->
