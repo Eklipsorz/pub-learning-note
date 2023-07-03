@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "record",
+                "query": "ES module 的載入：模組實例化是會做什麼？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md"
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md"
               }
             }
           },
@@ -166,8 +166,8 @@
   },
   "active": "8023756690640bca",
   "lastOpenFiles": [
-    "DNS.md",
     "inbox/Canonical Name 在域名系統中的用途是以CName Record形式來記錄並且解析所有客戶端傳遞過來的域名名稱成它們真正的域名.md",
+    "DNS.md",
     "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
     "develop/JavaScript/promise/callback 本身為由特定程式模組A交由任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",

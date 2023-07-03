@@ -11,7 +11,7 @@
 
 比如說：專案最一開始想要載入counter.js和display.js，在這裡建立main.js來控管他們，以main.js作為依賴counter.js模組和display.js模組的模組來構成模組依賴關係圖(graph)
 
-[![A module with two dependencies. The top module is the entry. The other two are related using import statements](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph-500x291.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph.png)
+[![A module with two dependencies. The top module is the entry. The other two are related using import statements](https://hacks.mozilla.org/files/2018/03/04_import_graph-768x447.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/04_import_graph.png)
 
 > But files themselves aren’t something that the browser can use. It needs to parse all of these files to turn them into data structures called Module Records. That way, it actually knows what’s going on in the file.
 
@@ -21,7 +21,7 @@
 
 > 把解析出来的模块构成表 称为 Module Record（模块记录）。  Module Record 包含了当前模块的 AST，引用了哪些模块的变量，以及一些特定属性和方法。
 
-[![A module record with various fields, including RequestedModules and ImportEntries](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record-500x287.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record.png)
+[![A module record with various fields, including RequestedModules and ImportEntries](https://hacks.mozilla.org/files/2018/03/05_module_record-768x441.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/05_module_record.png)
 
 > After that, the module record needs to be turned into a module instance. An instance combines two things: the code and state.
 
@@ -37,7 +37,7 @@ state 則是代表著特定時機點下特定變數所擁有的實際值，也�
 
 > So the module instance combines the code (the list of instructions) with the state (all the variables’ values).
 
-[![A module instance combining code and state](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/06_module_instance-500x372.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/06_module_instance.png)
+[![A module instance combining code and state](https://hacks.mozilla.org/files/2018/03/06_module_instance-768x572.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/06_module_instance.png)
 
 > What we need is a module instance for each module. The process of module loading is going from this entry point file to having a full graph of module instances.
 
@@ -60,7 +60,7 @@ ES module 在模組的載入上具體有三個步驟：
 在這裏，模組實例化就已經確保其模組已經載入，並開始供其他模組使用並透過evaluation來確定模組下的每個識別字對應的記憶體區塊存放內容
 
 
-[![The three phases. Construction goes from a single JS file to multiple module records. Instantiation links those records. Evaluation executes the code.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/07_3_phases-500x184.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/07_3_phases.png)
+[![The three phases. Construction goes from a single JS file to multiple module records. Instantiation links those records. Evaluation executes the code.](https://hacks.mozilla.org/files/2018/03/07_3_phases-768x282.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/07_3_phases.png)
 
 > People talk about ES modules being asynchronous. You can think about it as asynchronous because the work is split into these three different phases — loading, instantiating, and evaluating — and those phases can be done separately.
 
@@ -91,14 +91,14 @@ ES Module 標準是說程式該如何解析ES模組成模組紀錄、如何實�
 這對於模組載入來說，獲取檔案/ES模組會是載入階段中的首要任務，通常瀏覽器會建立loader來負責載入各種檔案，並從而根據檔案種類來進行處理以及對於模組的載入工作，然而每一個瀏覽器的loader都基於不同的標準，通常會採用於HTML spec，該標準會使用自己內定的模組載入方式來處理，若採用不同標準的loader來載入ES模組，很有可能無法如同ECAMScript標準那樣實現模組載入
 
 
-[![Two cartoon figures. One represents the spec that says how to load modules (i.e., the HTML spec). The other represents the ES module spec.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/07_loader_vs_es-500x286.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/07_loader_vs_es.png)
+[![Two cartoon figures. One represents the spec that says how to load modules (i.e., the HTML spec). The other represents the ES module spec.](https://hacks.mozilla.org/files/2018/03/07_loader_vs_es-768x439.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/07_loader_vs_es.png)
 
 > The loader also controls exactly how the modules are loaded. It calls the ES module methods — `ParseModule`, `Module.Instantiate`, and `Module.Evaluate`. It’s kind of like a puppeteer controlling the JS engine’s strings.
 
 
 瀏覽器會為了能夠處理ES模組，會將支援ES module spec - 如何解析、實例化、確定/判定值這些階段處理的實現納入至基於HTML spec的loader改造成當載入ES模組時，就呼叫對應方法來做每個模組下的階段任務
 
-[![The loader figure acting as a puppeteer to the ES module spec figure.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_loader_as_puppeteer-500x330.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_loader_as_puppeteer.png)
+[![The loader figure acting as a puppeteer to the ES module spec figure.](https://hacks.mozilla.org/files/2018/03/08_loader_as_puppeteer-768x507.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_loader_as_puppeteer.png)
 
 
 ## 複習
