@@ -102,7 +102,7 @@ end
 
 
 #🧠 javascript： 當將function設定為asynchronous  function時，該函式會有什麼功能->->-> `		- 以promise物件來包裝回傳內容 - 允許開發者在函式使用await語法糖`
-<!--SR:!2023-06-15,80,190-->
+<!--SR:!2023-12-22,172,190-->
 
 #🧠 javascript：async function是定義promise 為主的任務之內容嗎？為何？->->-> `並不是，async function主要是以promise object來包裝其函式的回傳內容，而非定義`
 <!--SR:!2023-08-23,107,243-->

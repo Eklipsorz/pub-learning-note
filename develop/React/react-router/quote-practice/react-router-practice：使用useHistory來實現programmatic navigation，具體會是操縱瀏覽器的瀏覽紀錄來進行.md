@@ -153,7 +153,7 @@ export default NewQuote;
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace會是什麼？ ->->-> `將指定頁面取代page stack的最上面來當作目前頁面的路徑`
-<!--SR:!2023-05-21,115,250-->
+<!--SR:!2024-06-09,342,250-->
 
 
 #🧠 react-router-dom 所提供的 history 物件常見方法有push和replace，其中replace用法會是什麼？ ->->-> `history.replace(path)`
