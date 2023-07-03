@@ -91,7 +91,7 @@
 <!--SR:!2023-06-07,69,230-->
 
 #🧠 Master-Slave Replication 技術應用 - read-write splitting 下的Slave主機的權限為何？ ->->-> `slave 主機只會有讀取資料的權限`
-<!--SR:!2023-06-26,192,250-->
+<!--SR:!2024-11-02,488,250-->
 
 #🧠 Master-Slave Replication 技術應用 - read-write splitting 下的Master主機的業務內容為何？ ->->-> `	- 因權限而負責處理同份資料的寫入請求 - 因權限而負責處理同份資料的讀取請求 - 因權限而負責處理同份資料的同步資料副本至其他slave主機`
 <!--SR:!2023-07-09,55,190-->

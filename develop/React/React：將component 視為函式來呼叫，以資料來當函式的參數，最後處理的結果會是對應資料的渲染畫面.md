@@ -86,7 +86,7 @@ function Component(props) {
 <!--SR:!2024-10-26,492,250-->
 
 #🧠 React：假設要傳入title=title1、amount=amount1、date=date1 給CourseGoalItem這自製的component，如何用代碼來表示->->-> `<CourseGoalItem title=title1 amount=amount1 date=date1 />`
-<!--SR:!2023-06-07,184,250-->
+<!--SR:!2024-11-07,493,250-->
 
 
 #🧠 React：請問從component如何接收到attributes來當參數？ ->->-> `在對應component的function以物件來當參數接收所有attributes，每一個物件上的屬性(property)名稱皆對應著傳過來的屬性attribute名稱，其值根據屬性名稱來設定`

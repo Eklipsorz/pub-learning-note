@@ -74,7 +74,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 <!--SR:!2023-05-23,42,250-->
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Spinal Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user-timeline`
-<!--SR:!2023-07-03,69,250-->
+<!--SR:!2023-12-23,173,250-->
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Lower Camel Case命名->->-> `http://api.example.com/v1/users/12345/statuses/userTimeline`
