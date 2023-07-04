@@ -284,7 +284,7 @@ initFn：主要是定義如何設定初始值
 
 
 #🧠 React：const \[state, dispatchFn\] = useReducer(reducerFn, initialState, initFn); 中的state、dispatchFn 是什麼？請先簡答->->-> `state 會是取得目前狀態值的變數，dispatchFn 是派送特定行動函式，其行動會是指定狀態要如何更新`
-<!--SR:!2023-05-23,150,250-->
+<!--SR:!2024-09-13,437,250-->
 
 
 #🧠 React： useReducer 中的 dispatchFn 會發送action至reducerFn，請問會如何發送->->-> `將action當dipatchFn的引數來呼叫dipatchFn(action)`

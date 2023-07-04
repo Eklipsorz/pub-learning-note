@@ -214,7 +214,7 @@ export default RootLayout;
 <!--SR:!2023-05-27,103,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途為何？->->-> `用途制定一組Routing來產生BrowserRouter`
-<!--SR:!2023-06-12,112,248-->
+<!--SR:!2024-04-28,299,248-->
 
 #🧠 react-router-dom v6：createBrowserRouter 用途是制定一組Routing來產生BrowserRouter，那麼它屬於？？ ->->-> `屬於react-router-dom函式庫中的函式`
 <!--SR:!2024-01-24,243,248-->

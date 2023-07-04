@@ -73,7 +73,7 @@
 
 
 #🧠  static memory allocation 為什麼會有static來稱呼?  ->->-> `相對於dynamic memory allocation來說`
-<!--SR:!2023-05-09,62,246-->
+<!--SR:!2024-02-10,221,246-->
 
 #🧠  dynamic memory allocation 為什麼會有dynamic來稱呼?  ->->-> `相對於static memory allocation來說`
 <!--SR:!2023-07-12,101,246-->
