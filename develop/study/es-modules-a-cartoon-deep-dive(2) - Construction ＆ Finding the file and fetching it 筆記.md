@@ -28,7 +28,7 @@
 
 > The loader will take care of finding the file and downloading it. First it needs to find the entry point file. In HTML, you tell the loader where to find it by using a script tag.
 
-[![A script tag with the type=module attribute and a src URL. The src URL has a file coming from it which is the entry](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_script_entry-500x188.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_script_entry.png)
+[![A script tag with the type=module attribute and a src URL. The src URL has a file coming from it which is the entry](https://hacks.mozilla.org/files/2018/03/08_script_entry-768x288.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/08_script_entry.png)
 
 > But how does it find the next bunch of modules — the modules that `main.js` directly depends on?
 
