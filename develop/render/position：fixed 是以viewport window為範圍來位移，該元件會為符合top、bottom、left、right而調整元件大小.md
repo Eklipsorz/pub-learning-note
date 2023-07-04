@@ -173,7 +173,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2024-08-30,435,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-right-negative-case_kd9g5w.png) ->->-> `right屬性值為負的value1`
-<!--SR:!2023-07-04,183,250-->
+<!--SR:!2024-10-03,457,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是負值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662575597/blog/htmlPosition/fixed-position/fixed-position-top-negative-case_a3xrje.png) ->->-> `top屬性值為負的value1`
 <!--SR:!2024-08-31,436,250-->

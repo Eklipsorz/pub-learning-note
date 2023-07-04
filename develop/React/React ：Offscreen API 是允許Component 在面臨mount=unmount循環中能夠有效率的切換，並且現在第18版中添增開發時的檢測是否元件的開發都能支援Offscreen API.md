@@ -106,7 +106,7 @@ off-screen
 <!--SR:!2023-07-26,197,230-->
 
 #🧠 React：為了能添加Offscreen API 來給Component支援，必須要讓Component開發上遵守什麼？  ->->-> `Component 在面對多次的 mount => unmount => mount 的循環中仍然保有原有元件的業務邏輯功能和渲染內容`
-<!--SR:!2023-06-13,184,250-->
+<!--SR:!2024-10-30,484,250-->
 
 
 
