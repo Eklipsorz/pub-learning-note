@@ -97,7 +97,7 @@ const Element = styled.<element>`<template-literal>`
 ## 複習
 
 #🧠 styled-components 是什麼樣技術概念的實現？ ->->-> `CSS-in-JS`
-<!--SR:!2023-06-13,174,250-->
+<!--SR:!2024-10-05,459,250-->
 
 #🧠 Styled-components 如何防止CSS 全域污染問題->->-> `對綁定在特定元件A的樣式屬性區塊另外建立一個selector來包裝，其selector名稱會是獨特不重複，最後讓元件A的class連接至該selector`
 <!--SR:!2023-09-04,200,247-->
