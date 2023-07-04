@@ -247,7 +247,7 @@ export default NewsletterSignup;
 
 
 #🧠 react-router-dom 6.4：通常設置action專用的useFetcher 方式有什麼樣的流程？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑來賦予至action、loader所在的path和對應action、loader 2. 替action、loader建立一個component來定義 3. 讓想用該action和loader的元件透過useFetcher來建立不透過navigation的表單元件或者透過相關提交方法來處理`
-<!--SR:!2023-05-16,84,230-->
+<!--SR:!2024-03-04,244,230-->
 
 #🧠 react-router-dom 6.4：通常設置指派給action進行處理的路徑，該action 會是由useFetcher來調用， 其流程會是什麼？ ->->-> `1. 設定能與主要服務/頁面隔離的路徑：具體在Router的路徑陣列中增加一個路徑 2. 替新路徑設定path和action`
 <!--SR:!2023-10-23,123,230-->
