@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "develop/win-development/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "develop/win-development/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "develop/win-development/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
+                "file": "develop/win-development/Untitled.md"
               }
             }
           },
@@ -166,6 +167,10 @@
   },
   "active": "8023756690640bca",
   "lastOpenFiles": [
+    "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
+    "develop/win-development/Untitled.md",
+    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+    "develop/win-development",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
@@ -189,9 +194,6 @@
     "inbox/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
     "develop/React/react-router/router-6.4/react-router-dom v6：action 函式本身使用request object來建立FormData物件並根據情況來回傳結果.md",
-    "inbox/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-    "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
