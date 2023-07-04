@@ -119,7 +119,7 @@ const Element = styled.<element>`<template-literal>`
 <!--SR:!2023-06-01,166,250-->
 
 #🧠 styled-components 在實際DOM節點上，會綁定什麼樣class來當作class 屬性(attribute)值？ ->->-> `1. 自動替已經註冊在特定元件下的樣式內容生成一個獨特隨機名稱的className 2. 讓該元件的class屬性綁定於獨特隨機的className`
-<!--SR:!2023-05-02,147,250-->
+<!--SR:!2023-09-27,85,230-->
 
 #🧠 styled-components 在實際DOM節點上，自動替已經註冊在特定元件下的樣式內容生成一個獨特隨機名稱的className 讓該元件的class屬性綁定於獨特隨機的className，請問目的為何？->->-> `在每個元件都能共享的CSSOM下，保證每個元件所使用的className 都對應著獨特且不重複的class selector `
 <!--SR:!2023-08-21,202,230-->
