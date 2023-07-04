@@ -83,7 +83,7 @@
 
 
 #🧠 token-based authentication: 客戶端藉由permission/access來向伺服器索求資源，具體流程會是什麼？畫圖表示 ->->->![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-resource_jx4bxp.png)
-<!--SR:!2023-05-31,27,250-->
+<!--SR:!2023-10-21,109,250-->
 
 
 ---

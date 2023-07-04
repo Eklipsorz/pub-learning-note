@@ -98,7 +98,7 @@ div {
 <!--SR:!2023-08-02,36,210-->
 
 #🧠 每個CSS rule 上的selector 部分，universal selector、type selector、id selector、class selector主要是用來做什麼？ ->->-> `用四種形式來描述所要選擇的DOM節點會是什麼`
-<!--SR:!2023-07-02,191,250-->
+<!--SR:!2024-10-26,480,250-->
 
 #🧠 type selector 是什麼樣的selector->->-> `type selector  是用DOM節點種類來選擇相符的DOM節點`
 <!--SR:!2024-01-21,307,250-->

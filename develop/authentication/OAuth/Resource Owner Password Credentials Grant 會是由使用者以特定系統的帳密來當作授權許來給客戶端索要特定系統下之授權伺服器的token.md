@@ -118,7 +118,7 @@ Pragma: no-cache
 
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應內容會是什麼 ->->-> `- token_type：token 種類 - access_token：代表特定身份下所擁有的權限結果物 access token  - refresh_token：用以申請新的access token和refresh token的token - expires_in：access token的有效時間`
-<!--SR:!2023-05-17,34,230-->
+<!--SR:!2023-07-27,23,210-->
 
 
 
