@@ -34,7 +34,7 @@
 
 > This is where import statements come in. One part of the import statement is called the module specifier. It tells the loader where it can find each next module.
 
-[![An import statement with the URL at the end labeled as the module specifier](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/09_module_specifier-500x105.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/09_module_specifier.png)
+[![An import statement with the URL at the end labeled as the module specifier](https://hacks.mozilla.org/files/2018/03/09_module_specifier-768x161.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/09_module_specifier.png)
 
 > One thing to note about module specifiers: they sometimes need to be handled differently between browsers and Node. Each host has its own way of interpreting the module specifier strings. To do this, it uses something called a module resolution algorithm, which differs between platforms. Currently, some module specifiers that work in Node won’t work in the browser, but there is [ongoing work to fix this](https://github.com/domenic/package-name-maps).
 
@@ -53,13 +53,13 @@
 
 瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。
 
-[![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction.png)
+[![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://hacks.mozilla.org/files/2018/03/10_construction-768x464.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction.png)
 
 > If the main thread were to wait for each of these files to download, a lot of other tasks would pile up in its queue.
 > 
 > That’s because when you’re working in a browser, the downloading part takes a long time.
 
-![A chart of latencies showing that if a CPU cycle took 1 second, then main memory access would take 6 minutes, and fetching a file from a server across the US would take 4 years](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/11_latency-500x270.png)  
+![A chart of latencies showing that if a CPU cycle took 1 second, then main memory access would take 6 minutes, and fetching a file from a server across the US would take 4 years](https://hacks.mozilla.org/files/2018/03/11_latency-768x415.png)  
 
 
 > Blocking the main thread like this would make an app that uses modules too slow to use. This is one of the reasons that the ES module spec splits the algorithm into multiple phases. Splitting out construction into its own phase allows browsers to fetch files and build up their understanding of the module graph before getting down to the synchronous work of instantiating.
@@ -94,7 +94,7 @@ CommonJS 本身是源自於伺服器端的模組化標準，其模組皆源自�
     
 4.  模組的依賴關係遍歷會是DFS
 
-[![A diagram showing a Node module evaluating up to a require statement, and then Node going to synchronously load and evaluate the module and any of its dependencies](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/12_cjs_require-500x298.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/12_cjs_require.png)
+[![A diagram showing a Node module evaluating up to a require statement, and then Node going to synchronously load and evaluate the module and any of its dependencies](https://hacks.mozilla.org/files/2018/03/12_cjs_require-768x457.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/12_cjs_require.png)
 
 > The CommonJS approach has a few implications, and I will explain more about those later. But one thing that it means is that in Node with CommonJS modules, you can use variables in your module specifier. You are executing all of the code in this module (up to the `require` statement) before you look for the next module. That means the variable will have a value when you go to do module resolution.
 
@@ -105,7 +105,7 @@ CommonJS 模組是指需求方只要以JS檔案來執行其模組，其模組本
 而ES 模組 本身是在主程式和模組這兩者的編譯/解析期間就載入模組內容至需求方，所以在真正模組執行的時候就已經按照定義好的依賴關係(順序)來執行，換言之，本身無法在執行期間透過執行狀態來改變載入模組
 
 
-[![A require statement which uses a variable is fine. An import statement that uses a variable is not.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import-500x146.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import.png)
+[![A require statement which uses a variable is fine. An import statement that uses a variable is not.](https://hacks.mozilla.org/files/2018/03/13_static_import-768x225.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import.png)
 
 > But sometimes it is really useful to use variables for module paths. For example, you might want to switch which module you load depending on what the code is doing or what environment it is running in.
 
@@ -121,7 +121,7 @@ import(module_path/module1)
 ```
 
 
-[![Two module graphs with a dependency between them, labeled with a dynamic import statement](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/14dynamic_import_graph-500x389.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/14dynamic_import_graph.png)
+[![Two module graphs with a dependency between them, labeled with a dynamic import statement](https://hacks.mozilla.org/files/2018/03/14dynamic_import_graph-768x597.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/14dynamic_import_graph.png)
 
 > One thing to note, though — any module that is in both of these graphs is going to share a module instance. This is because the loader caches module instances. For each module in a particular global scope, there will only be one module instance.
 
@@ -133,7 +133,7 @@ import(module_path/module1)
 
 
 
-[![The loader figure filling in a Module Map chart, with the URL of the main module on the left and the word fetching being filled in on the right](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map-500x170.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map.png)
+[![The loader figure filling in a Module Map chart, with the URL of the main module on the left and the word fetching being filled in on the right](https://hacks.mozilla.org/files/2018/03/15_module_map-768x261.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/15_module_map.png)
 
 > What happens if another module depends on the same file? The loader will look up each URL in the module map. If it sees `fetching` in there, it will just move on to the next URL.
 
@@ -209,7 +209,7 @@ module map 主要的用途為：
 
 
 
-#🧠 ES module：以圖中例子來說說明模組的建構階段 ![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/10_construction-500x302.png) ->->-> `瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。`
+#🧠 ES module：以圖中例子來說說明模組的建構階段 ![A diagram that shows one file being fetched and then parsed, and then two more files being fetched and then parsed](https://hacks.mozilla.org/files/2018/03/10_construction-768x464.png) ->->-> `瀏覽器會使用URL作為module specifier，模組的依賴關係會從從對應主機獲取(fetch)對應main.js模組，然後解析成對應module record來找到main.js模組依賴的模組是哪些，然後再從模組的module specifier找對對應主機獲取(fetch)對應依賴模組，接著在解析成對應module record，找到是否有依賴模組。`
 <!--SR:!2023-06-16,195,248-->
 
 
