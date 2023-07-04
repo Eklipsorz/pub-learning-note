@@ -4,7 +4,6 @@
     "flashcardGoodText": "Good",
     "flashcardHardText": "Hard",
     "flashcardTags": [
-      "#🧠",
       "#💻"
     ],
     "convertFoldersToDecks": false,
@@ -44,7 +43,7 @@
     "singlelineCardSeparator": "->->->",
     "singlelineReversedCardSeparator": ":::"
   },
-  "buryDate": "2023-03-20",
+  "buryDate": "2023-07-04",
   "buryList": [],
-  "historyDeck": "🧠"
+  "historyDeck": ""
 }
