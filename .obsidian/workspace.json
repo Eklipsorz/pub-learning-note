@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
+                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
+                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md"
               }
             }
           },
@@ -166,12 +167,12 @@
   },
   "active": "8023756690640bca",
   "lastOpenFiles": [
+    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "templates/🧠.md",
     "templates/💻.md",
     "develop/JavaScript/promise/當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之.md",
     "develop/win-development/Untitled.md",
     "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
-    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "develop/win-development",
     "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",

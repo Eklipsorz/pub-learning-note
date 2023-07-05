@@ -5,9 +5,9 @@
     "flashcardHardText": "Hard",
     "flashcardTags": [
       "#🧠",
-      "#test"
+      "#💻"
     ],
-    "convertFoldersToDecks": false,
+    "convertFoldersToDecks": true,
     "cardCommentOnSameLine": false,
     "burySiblingCards": false,
     "showContextInCards": true,
@@ -39,9 +39,9 @@
     "easyBonus": 1.3,
     "maximumInterval": 36525,
     "maxLinkFactor": 1,
-    "showDebugMessages": false
+    "showDebugMessages": true
   },
   "buryDate": "2023-07-05",
   "buryList": [],
-  "historyDeck": null
+  "historyDeck": ""
 }
