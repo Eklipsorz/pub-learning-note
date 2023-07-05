@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "989ab75e807efbac",
+        "id": "7fc21c96719c827a",
         "type": "tabs",
         "children": [
           {
-            "id": "8023756690640bca",
+            "id": "002f844e6a70a901",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md"
+                "file": "inbox/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md"
               }
             }
           },
@@ -165,8 +165,14 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "8023756690640bca",
+  "active": "002f844e6a70a901",
   "lastOpenFiles": [
+    "inbox/HSCAN 是針對value為hash的SCAN指令.md",
+    "inbox/redis + node.js 實作購物車機制.md",
+    "inbox/小數點計算比整數計算還需要成本嗎？.md",
+    "inbox/sequelize model 面向應用程式那面要設定主鍵的話，請在對應model檔案設定.md",
+    "inbox/Untitled 3.md",
+    "inbox/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
     "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
     "templates/🧠.md",
     "templates/💻.md",
@@ -188,12 +194,6 @@
     "develop/Network/一個主機發送封包的模式- unicast 1對1 broadcast 1對all multicast 1對多.md",
     "develop/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
-    "develop/React/React：Context 侷限為目前沒有針對狀態上的高頻率變動做出較為優化的實現，目前停留在適用於狀態變動頻率較低的場景下.md",
-    "inbox/CommonJS 模組如何載入模組.md",
-    "develop/authentication/token 是由客戶端用來向伺服器索求受保護資源的驗證資料，該驗證資料會夾雜在客戶端的請求中，其夾雜的位置會是請求封包內的 header 部分、body部分、query string部分.md",
-    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
-    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
-    "inbox/React：Context 命名法則 & 使用法則.md",
     "Untitled",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
