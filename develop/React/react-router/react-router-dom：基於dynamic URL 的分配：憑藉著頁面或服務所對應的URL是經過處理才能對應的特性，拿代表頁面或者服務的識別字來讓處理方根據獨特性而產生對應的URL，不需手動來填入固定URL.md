@@ -109,10 +109,10 @@ const Component1 = (props) => {
 <!--SR:!2023-12-29,179,210-->
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 dynamic URL 的手段會是什麼？ ->->-> `以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理`
-<!--SR:!2023-07-05,150,250-->
+<!--SR:!2024-07-16,376,250-->
 
 #🧠 對於分配URL至多個頁面/服務的方式，基於 static URL 的分配 vs. 基於 dynamic URL 的分配 最大差別是什麼？ ->->-> `1. 前者的URL對應關係必須手動分配 2. 其URL對應關係不受到請求處理方而改變； 1. 後者的URL對應關係會按照請求處理方來決定對應 2. 其URL對應關係會受到請求處理方而改變`
-<!--SR:!2023-05-27,48,210-->
+<!--SR:!2023-11-26,143,210-->
 
 
 #🧠 對於分配URL至多個頁面/服務的方式， 基於 dynamic URL 的手段會是以Path版本的正規表達式來擷取滿足表達式的內容作為參數處理，舉例 ->->-> `/xxx1/:something，在這裡的固定路徑會是xxx1，專擷取著/xxx1/為開頭的任意語句，並把xxx1/後頭的內容擷取出來，並存放至名為something的空間或者變數 `
@@ -142,7 +142,7 @@ const Component1 = (props) => {
 <!--SR:!2023-08-19,179,250-->
 
 #🧠 當使用者輸入以下內容時：\/xxx1\/abc\/efg，如何在Component1擷取到\<Route path="\/xxx1\/\:something1\/\:something2\"\> \<Component1 \/\> \<\/Route\> 和abc和efg？->->-> `import { useParams } from 'react-router-dom'; const Component1 = (props) => {  const obj = useParams(); }`
-<!--SR:!2023-06-14,139,250-->
+<!--SR:!2023-09-19,75,230-->
 
 
 
