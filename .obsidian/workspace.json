@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev-practice/Practice - React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "dev-practice/Practice - React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev-practice/Practice - React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "dev-practice/Practice - React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a463207d1c96ecb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -51,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#💻",
+                "query": "React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -107,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev-practice/Practice - React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "develop/React/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev-practice/Practice - React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+                "file": "develop/React/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev-practice/Practice - React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md"
+                "file": "develop/React/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md"
               }
             }
           },
@@ -178,10 +190,21 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "bc16a90e2fe3b1af",
+  "active": "dba5e16eed67c4ca",
   "lastOpenFiles": [
-    "inbox/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+    "dev-practice/Practice - React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
+    "develop/React/React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "dev-practice/Practice - React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
+    "develop/React/React：使用dynamic inline style 來根據執行情況於元件下設定該元件的style.md",
+    "develop/React/consumer component 並不會主動監測，只會等到搭載consumer component的元件被觸發渲染並監測內容是否有變動，有變動就把使用該內容的元件跟著一起渲染更新，沒變動就不動.md",
+    "develop/Redis/假設某個資料存在Redis，當我在後端更新了資料，如何保證客戶端讀取的是最新的資料？.md",
+    "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
+    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+    "develop/React/React：替 food-order project 添加checkout form.md",
+    "develop/React/react-router/router-6.4/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
+    "draft/Switch(true) 寫法.md",
+    "develop/React/React：higher-order-component 是指專門以component function C 為參數作為處理並產出component function B為結果的 component function A.md",
+    "develop/React/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "draft/HSCAN 是針對value為hash的SCAN指令.md",
     "draft/redis + node.js 實作購物車機制.md",
     "draft/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
@@ -198,17 +221,7 @@
     "templates/🧠.md",
     "templates/💻.md",
     "develop/JavaScript/promise/當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之.md",
-    "develop/win-development/Untitled.md",
-    "develop/JSONPath 是基於JSON樹狀結構而提供一系列語法來找尋對應樹狀節點的語言.md",
     "develop/win-development",
-    "develop/JavaScript/JavaScript 的 Execution context 是指目前程式執行時的環境，該環境會包含著執行時所需的參數、狀態.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "develop/study/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
-    "develop/render/link 標籤是用載入CSS和圖片檔案，其中同一個DOM文件出現指定重複樣式的對應內容會是以合併形式來處理重複樣式.md",
-    "develop/JavaScript/promise/callback 本身為由特定程式模組A交由任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
-    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
-    "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
-    "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
     "develop/authentication/OAuth/Untitled",

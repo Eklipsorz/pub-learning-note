@@ -1,6 +1,8 @@
 
+## 描述
 
-[[React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向]]
+
+## 複習
 
 
 #💻 請至/react-builder/question-review/custom-hook-project-adv領取題目，並切換至hook-wiht-parameter分支，請製作一個hook能夠頂替App.js發送請求的功能，請務必讓hook能夠插入引數 ->->-> `/react-builder/custom-hook-project-adv下 切換至without-deps-decrement分支即可看到答案`
@@ -11,3 +13,14 @@
 
 
 
+
+
+
+
+
+---
+Status: #🌱 
+Tags: [[React]]
+Links:
+[[React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向]]
+References:
