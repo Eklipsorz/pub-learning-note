@@ -131,7 +131,7 @@ console.log('Amount of Sails:', awesomeCaptain.ship.amountOfSails);
 <!--SR:!2024-06-23,450,250-->
 
 #🧠 請使用eager loading來說明sequelize這段語法(提示：船和船長) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654935202/blog/database/orm/sequelize-eager-loading-example_k9neij.png)->->-> `案例說明：假設會有船長表格和船表格，在sequelize eager loading中，會先向資料庫索取船表格並儲存在名為Ship的儲存空間，然後再從船長表格取出資料來遍歷每個船長來從傳的儲存結果找到對應的船資訊`
-<!--SR:!2023-07-04,140,230-->
+<!--SR:!2024-05-25,324,230-->
 
 
 ---
