@@ -128,7 +128,7 @@ function fn() {
 <!--SR:!2023-08-30,198,248-->
 
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於嚴格模式 ->->-> `this 會被設定成undefined`
-<!--SR:!2023-07-06,165,250-->
+<!--SR:!2024-08-24,415,250-->
 
 #🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `會印出2。 首先當foo執行時，會先依序以下面方式來嘗試確定foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
 <!--SR:!2023-09-19,209,248-->
@@ -150,7 +150,7 @@ function fn() {
 <!--SR:!2023-11-13,206,210-->
 
 #🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665410534/blog/javascript/this-binding/strict-default-this-binding-example2_fa4qff.png) ->->-> `會印出global object的資訊。這是因為目前執行環境或者全域執行環境沒設定嚴格模式，這使得default this binding會直接將this設定為global object`
-<!--SR:!2023-06-01,54,228-->
+<!--SR:!2023-12-16,163,228-->
 
 
 

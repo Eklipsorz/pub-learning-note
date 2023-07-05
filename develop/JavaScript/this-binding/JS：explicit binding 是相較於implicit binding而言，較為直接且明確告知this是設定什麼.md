@@ -365,7 +365,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-07-19,174,250-->
 
 #🧠  JS：call 、 apply這兩者和this之間可以做什麼應用？  ->->-> `call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容`
-<!--SR:!2023-07-05,90,210-->
+<!--SR:!2023-08-24,49,190-->
 
 
 #🧠 為什麼fn.bind需要多一個括號？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png) ->->-> `因為bind會是回傳一個新的函式物件，要執行裡頭的內容，必需要多一個括號`
@@ -379,7 +379,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2023-07-23,177,250-->
 
 #🧠 function1.apply(this, \[arg1, ..., argN\]) 在JS的函式呼叫上會被看作是什麼？ ->->-> `function1(arg1, ... argN)`
-<!--SR:!2023-06-20,155,250-->
+<!--SR:!2024-08-16,407,250-->
 
 #🧠 以下程式碼的呼叫，所擁有this會是什麼以及印出什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665541826/blog/javascript/this-binding/explicit-binding/explicit-binding-function-call_xgowfl.png) ->->-> `第一個會是obj1，會印出聽風是風、第二個會是global object，會印出行星飛行、第三個會是obj2，會印出時間跳躍、第四個會是global object，會印出行星飛行、第五至第八都會是obj1，會印出聽風是風`
 <!--SR:!2023-08-28,199,250-->
