@@ -10,8 +10,6 @@
 
 > The `Install-Module` cmdlet gets one or more modules that meet specified criteria from an online repository. The cmdlet verifies that search results are valid modules and copies the module folders to the installation location
 
-重點:
--
 
 
 ## 複習
