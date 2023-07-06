@@ -71,7 +71,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假如目前存取頁面是/path1/path2/file，那麼relative URL會以什麼做為參考點？ ->->-> `/path1/path2為參考點`
-<!--SR:!2023-05-31,129,250-->
+<!--SR:!2024-07-10,369,250-->
 
 #🧠 relative URL 對於URL構造來說，其path、protocol、host、port會如何被決定 ->->-> `在這裡除了path以外，其餘的protocol、host、port會和目前存取頁面的路徑擁有的protocol、host、port一樣。`
 <!--SR:!2023-08-30,190,250-->
