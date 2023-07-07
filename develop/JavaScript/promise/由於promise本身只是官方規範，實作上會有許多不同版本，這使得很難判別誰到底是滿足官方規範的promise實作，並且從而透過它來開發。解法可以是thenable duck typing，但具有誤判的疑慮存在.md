@@ -71,7 +71,7 @@ if (
 <!--SR:!2023-10-31,158,250-->
 
 #🧠 thenable 在Promise API會是指什麼樣的形容詞？(務必說到then是什麼樣方法) ->->-> `形容詞，描述對象具有then方法，該then實現ES官方規範對於promise的then方法，該then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
-<!--SR:!2023-05-08,49,250-->
+<!--SR:!2024-01-20,197,250-->
 
 #🧠 thenable 在Promise API會是指什麼樣的名詞？(務必說到then是什麼樣方法) ->->-> `名詞，指一種物件介面，該介面擁有then方法，且實現ES官方規範對於promise的then方法，該then具有兩個callback，一個負責解析/轉換成fulfilled狀態的promise，另一個負責解析/轉換成rejected狀態的promise`
 <!--SR:!2023-09-11,76,230-->
@@ -81,7 +81,7 @@ if (
 
 
 #🧠 JS 的 promise 會是統一的版本嗎？為什麼？->->-> `並不是， promise 本身是一個概念，具體實現會有以下幾個版本的promise實作，甚至有不支援promise的瀏覽器：1. 特定瀏覽器所提供的promise 2. 特定函式庫所提供的promise 3. ES6 官方提供的promise`
-<!--SR:!2023-05-29,78,250-->
+<!--SR:!2024-03-06,243,250-->
 
 #🧠 JS 的 promise 在實作上有何版本，若有沒有支援也請說出 ->->-> `1. 特定瀏覽器所提供的promise 2. 特定函式庫所提供的promise 3. ES6 官方提供的promise 4. 沒有支援任何promise實作的瀏覽器`
 <!--SR:!2023-11-03,172,250-->
@@ -92,7 +92,7 @@ if (
 <!--SR:!2023-08-28,132,250-->
 
 #🧠 JS 的 promise 在實作上是充斥著不同的版本，若貿然不管，無法確保promise在執行上是按照ES6 官方規範下的promise，可以使用什麼解法，舉例->->-> `thenable duck typing，	- 判別特定物件是否為object或者function - 檢測特定物件是否擁有function型別的then 方法`
-<!--SR:!2023-05-16,44,230-->
+<!--SR:!2023-12-15,161,230-->
 
 #🧠 JS 的 promise 在實作上是充斥著不同的版本，若貿然不管，無法確保promise在執行上是按照ES6 官方規範下的promise，可以使用什麼解法，再進一步假設解法為thenable duck typing，會是完善的嗎？為什麼？ ->->-> `並不完善，原因為很容易被其他具有then方法但卻不是promise的物件給誤判
 <!--SR:!2023-06-18,34,230-->
