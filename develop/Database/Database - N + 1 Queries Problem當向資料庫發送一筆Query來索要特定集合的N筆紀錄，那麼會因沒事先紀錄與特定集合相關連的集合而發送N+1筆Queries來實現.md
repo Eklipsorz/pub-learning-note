@@ -145,7 +145,7 @@ N + 1 Queries Problem 描述著額外產出的Query，而Query越多，資料庫
 
 
 #🧠 Database : N+1 Queries Problems 解法為何？ ->->-> `人為因素：改寫程式碼，先向資料庫系統索求相關連的集合然後儲存起來，接著再從該儲存結果找到相關連紀錄、系統因素：尋找可以直接引發eager loading語法或者功能，比如讓ORM轉換成JOIN查詢，該查詢本身會是eager loading`
-<!--SR:!2023-07-09,92,230-->
+<!--SR:!2024-02-07,213,230-->
 
 ---
 Status: #🌱 
