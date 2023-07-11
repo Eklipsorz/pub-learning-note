@@ -90,7 +90,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false)
 <!--SR:!2023-07-13,92,230-->
 
 #🧠 在client-server間的authentication過程中獲取到token，客戶端的React該如何儲存token，其中token適合儲存在React的Context API構建的儲存空間嗎？ 為何？->->-> `適合，由於認證狀態(含token) 本身並不會頻繁地更新，所以很適合使用在不利於頻繁更新場景的Context API`
-<!--SR:!2023-06-16,94,230-->
+<!--SR:!2024-03-12,245,230-->
 
 
 #🧠 在client-server間的authentication過程中獲取到token，若定義context object的話，會有什麼樣的狀態和狀態更新函式？ ->->-> `token、isLoggedIn、更新狀態函式有login、logout`

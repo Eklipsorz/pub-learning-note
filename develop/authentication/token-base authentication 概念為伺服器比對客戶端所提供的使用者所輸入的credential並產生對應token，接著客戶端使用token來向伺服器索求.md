@@ -48,14 +48,14 @@
 ## 複習
 
 #🧠 登入驗證的實現方式有哪些？ ->->-> `1. session-based authentication 2. token-based authentication`
-<!--SR:!2023-06-08,35,250-->
+<!--SR:!2023-11-20,132,250-->
 
 
 #🧠 登入驗證的實現方式有1. session-based authentication為主的登入驗證 2. token-based authentication，其中token會用什麼技術來製作？ ->->-> `JWT`
-<!--SR:!2023-06-05,97,250-->
+<!--SR:!2024-04-19,283,250-->
 
 #🧠 token-based authentication 的驗證概念為何？ ->->-> `將token 視為permission/access的形式之一，token-base authentication 概念為伺服器比對客戶端所提供的使用者所輸入的credential並產生對應token，接著客戶端使用token來向伺服器索求`
-<!--SR:!2023-06-07,32,250-->
+<!--SR:!2023-11-11,123,250-->
 
 #🧠 在token-based authentication 的驗證概念中，甚麼東西會被當成permission/access?   ->->-> `token`
 <!--SR:!2023-10-16,111,250-->
@@ -68,7 +68,7 @@
 <!--SR:!2023-12-03,209,250-->
 
 #🧠 token-based authentication: 客戶端藉由tokens來實現從伺服器上獲取permission/access，具體流程會是什麼？->->-> `1. 使用者向客戶端提供credential  2. 客戶端利用使用者提供的credential 來申請對應的token 3. 伺服器收到就進行驗證:  - 若驗證成功的話，就產生token - 若驗證失敗的話，就回報錯誤訊息 4. 假如驗證成功的話，就將token 轉發給client`
-<!--SR:!2023-06-28,44,250-->
+<!--SR:!2023-11-14,126,250-->
 
 
 
@@ -78,7 +78,7 @@
 
 
 #🧠 token-based authentication:  客戶端從伺服器上獲取permission/access，具體流程會是什麼？畫圖表示 ->->->![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-token_crodax.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681637521/blog/authentication/token-based-auth-request-token_crodax.png)
-<!--SR:!2023-04-29,10,250-->
+<!--SR:!2023-11-05,117,250-->
 
 
 
