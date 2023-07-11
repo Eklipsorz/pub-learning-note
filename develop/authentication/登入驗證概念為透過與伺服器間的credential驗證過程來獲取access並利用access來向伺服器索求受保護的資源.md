@@ -116,10 +116,10 @@
 
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，能夠代表access/permission的事物具體可以會是什麼？ ->->-> `使用固定字串的回應、server-side session的session id、authentication token中的token`
-<!--SR:!2023-04-30,23,210-->
+<!--SR:!2023-11-16,128,210-->
 
 #🧠 authentication 通用概念為- Get access/permission。 - Send request to protected resource with access/permission，access/permission是什麼意思？ ->->-> `作為存取受保護資源的權力依據`
-<!--SR:!2023-05-16,23,190-->
+<!--SR:!2023-10-16,97,190-->
 
 `````````````````````````````
 ```#🧠 authentication的access/permission產生：為何出現以下這兩個方法- server-side session中的session id - authentication token中的token ->->-> `主要是為了檢測客戶端的資料被人惡意竄改而假冒他人`
