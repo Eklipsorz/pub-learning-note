@@ -56,7 +56,7 @@ setState(object)
 <!--SR:!2023-06-30,186,250-->
 
 #🧠 React：請問這能正常渲染出新增的項目嗎？ 為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662403267/blog/react/state/object-wrong-useState-example_jwtgvz.png) ->->-> `不能，由於狀態是以物件為主，所以會以參照位址的不同來區分是否狀態改變，若不一樣就狀態改變；反之，若一樣就狀態不改變，在這裡是屬於後者，使用相同的記憶體位址來增加新元素。`
-<!--SR:!2023-05-29,162,250-->
+<!--SR:!2024-09-23,440,250-->
 
 #🧠 React：以下程式碼不能夠渲染出新增的項目，請問如何改善，才能秀出新增的內容？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662403267/blog/react/state/object-wrong-useState-example_jwtgvz.png)->->-> ``
 <!--SR:!2023-12-28,291,250-->

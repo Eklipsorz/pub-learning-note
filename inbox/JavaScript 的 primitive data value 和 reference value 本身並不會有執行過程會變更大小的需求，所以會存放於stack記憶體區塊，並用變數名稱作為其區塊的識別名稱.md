@@ -177,7 +177,7 @@ console.log(age, newAge);
 <!--SR:!2023-12-05,257,249-->
 
 #🧠 JS ：儲存primitive data value 和 reference value的記憶體區塊傳遞方式，其語法會是什麼？ ->->-> `variableA = variableB`
-<!--SR:!2023-05-07,131,250-->
+<!--SR:!2024-08-25,411,250-->
 
 #🧠 JS ：儲存primitive data value 和 reference value的記憶體區塊傳遞方式，其語法會是variableA = variableB，那麼這在系統解析上會是什麼？ ->->-> `	- variableA 會是指專門儲存primitive data value的stack記憶體區塊，該區塊的名稱為variableA - variableB 會是指專門接收並儲存variableB的stack記憶體區塊，記憶體區塊，該區塊的名稱為variableB`
 <!--SR:!2023-06-14,154,250-->
