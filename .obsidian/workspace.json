@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "draft/Untitled.md",
+                "file": "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
                 "mode": "source",
                 "source": false
               }
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback",
+                "query": "scalability",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -98,8 +98,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -119,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "draft/Untitled.md",
+                "file": "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "draft/Untitled.md",
+                "file": "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "draft/Untitled.md"
+                "file": "develop/authentication/API Server 不一定要滿足statelessness，主要要依據場景來調整，場景為需要改善- Visibility - Reliability  - Scalability 等指標的場景.md"
               }
             }
           },
@@ -192,6 +191,8 @@
   },
   "active": "a463207d1c96ecb2",
   "lastOpenFiles": [
+    "develop/authentication/登入驗證可使用server-side session來實現，並將請求封包處理內容儲存在session並賦予id至客戶端來當作access，好方便客戶端利用access存取.md",
+    "draft/Untitled.md",
     "dev-practice/Practice - React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
     "inbox/CSS 開發常用使用法則.md",
     "inbox/不論child component 或 descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating.md",
@@ -217,8 +218,6 @@
     "develop/React/React：替 food-order project 添加checkout form.md",
     "develop/React/react-router/router-6.4/當nested Route所對應的path滿足使用者所輸入的URL時，同時將 parent route的對應元件 和 nested Route的對應元件 合併成一個元件來渲染.md",
     "draft/Switch(true) 寫法.md",
-    "develop/React/React：higher-order-component 是指專門以component function C 為參數作為處理並產出component function B為結果的 component function A.md",
-    "develop/React/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "draft",
     "dev-practice",
     "develop/dns",
