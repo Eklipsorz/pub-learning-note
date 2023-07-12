@@ -88,7 +88,7 @@ toggleParagraphHandler 會因為deps是空陣列的緣故而不更動，僅繼�
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 的 deps 用途為何->->-> `useCallback 只會回傳擁有特定時機下之closure的函式物件，而非根據實際執行情況來重新建立新的closure來賦予對應以baseFunction為主的新函式物件`
-<!--SR:!2023-06-10,153,250-->
+<!--SR:!2023-10-01,80,230-->
 
 #🧠 由於useCallback 回傳的函式是函式物件，所以會擁有closure概念，那麼就代表著每個函式搭配closure會是？ ->->-> `每個函式物件會透過closure來對應特定執行時間點下的渲染函式所產生出來的記憶體區塊`
 <!--SR:!2023-08-11,194,250-->

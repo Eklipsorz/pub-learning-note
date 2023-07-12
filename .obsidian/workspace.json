@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
+                "file": "inbox/React：state 更新方式.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
+                "file": "inbox/React：state 更新方式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
+                "file": "inbox/React：state 更新方式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md"
+                "file": "inbox/React：state 更新方式.md"
               }
             }
           },
@@ -204,6 +204,8 @@
   },
   "active": "140b92ddebc6fb7b",
   "lastOpenFiles": [
+    "inbox/Untitled 6.md",
+    "inbox/React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
     "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
     "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
     "inbox/express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md",
@@ -228,8 +230,6 @@
     "inbox/Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
     "inbox/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "inbox/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
-    "draft/How to cite and highlight in obsidian.md",
-    "inbox/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
     "develop/css-style",
     "develop/browser",
     "draft",

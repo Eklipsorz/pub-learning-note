@@ -48,7 +48,7 @@
 <!--SR:!2023-07-06,174,250-->
 
 #🧠 selector1 selector2 { }這類的selector會選擇什麼？ ->->-> `挑選滿足selector2的DOM節點，且會是DOM節點A的後裔節點，該節點A會滿足selector1`
-<!--SR:!2023-06-29,171,250-->
+<!--SR:!2024-09-30,445,250-->
 
 
 #🧠 selector1 selector2 selector3 { } 這類的selector會選擇什麼？ ->->-> `挑選滿足selector2的DOM節點，且會是DOM節點A的後裔節點，該節點A會滿足selector1和selector2`
