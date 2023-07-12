@@ -170,7 +170,7 @@ const xxx = require(moduleA)
 
 
 #🧠 以三個環狀依賴結構為例子，來說明CommonJS 模組是如何面對cyclic dependency問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203325/blog/javascript/module/cyclic-dependecy-example_dmfgnv.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659203324/blog/javascript/module/cyclic-dependecy-solution-example_y97fcp.png)`
-<!--SR:!2023-06-01,189,250-->
+<!--SR:!2024-12-28,535,250-->
 
 
 
