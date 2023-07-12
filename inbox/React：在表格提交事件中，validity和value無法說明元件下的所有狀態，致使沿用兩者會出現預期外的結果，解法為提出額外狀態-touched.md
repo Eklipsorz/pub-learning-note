@@ -191,7 +191,7 @@ const SimpleInput = (props) => {
 <!--SR:!2023-04-26,72,230-->
 
 #🧠 React：以下為一個表格的實現代碼，請問為什麼enteredNameIsValid一開始會是true，而不是反映目前狀態為false？ https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `主要是為了使渲染部分能夠正確按照情況下來印出對應畫面，而非是印出非法內容，換言之，若一開始將validity設定為false，就會讓畫面印出非法的樣式`
-<!--SR:!2023-06-06,139,250-->
+<!--SR:!2024-08-13,398,250-->
 
 #🧠 React：以下為一個表格的實現代碼，validity的初始狀態值為true或者false都會出現有問題，那麼這會是代表著？  https://res.cloudinary.com/dqfxgtyoi/image/upload/v1666410154/blog/react/form/validity-and-value-true-boolean-example_oap1fp.png  ->->-> `value 和 validity 已經無法呈現表格目前的狀態`
 <!--SR:!2023-08-12,183,250-->
@@ -215,7 +215,7 @@ const SimpleInput = (props) => {
 
 
 #🧠 React：touched/untouched 狀態 具體會由誰來決定？ ->->-> ``依據著開發者來指定或者程式來指定
-<!--SR:!2023-06-22,90,230-->
+<!--SR:!2024-02-29,232,230-->
 
 #🧠 React：touched/untouched 狀態值具體會依據著開發者來指定或者程式來指定，請以開發者來決定為例子來說明 ->->-> `當表格發生提交時，表格下的所有元件都會被設定為touched，預設上就是輸入完這些輸入欄才會按下提交按鈕，雖然實際上可能會有部分輸入欄是因為可選擇不輸入而沒變成active element`
 <!--SR:!2024-01-31,212,230-->

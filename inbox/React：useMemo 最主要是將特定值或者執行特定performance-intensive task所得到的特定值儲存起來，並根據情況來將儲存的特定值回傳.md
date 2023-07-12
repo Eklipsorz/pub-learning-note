@@ -141,7 +141,7 @@ export default React.memo(DemoList);
 <!--SR:!2023-08-11,193,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
-<!--SR:!2023-07-12,172,250-->
+<!--SR:!2024-09-14,430,250-->
 
 #🧠 React React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn 注意事項是什麼 ->->-> `函式物件得要有return 特定值的手段`
 <!--SR:!2023-08-11,120,249-->
