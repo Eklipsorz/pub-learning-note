@@ -141,7 +141,7 @@ export default useCounter;
 <!--SR:!2023-10-12,216,248-->
 
 #🧠 React：若custom hook 的引數放在custom hook中的useEffect來使用，需要添加其為deps嗎？ 為什麼->->-> `視情況需要，本質上custom hook若被componentA使用，肯定會夥同內部的useEffect一同註冊componentA，換言之，皆為在元件內部，若引數本質上是代表著元件互動，那麼勢必很有可能得放在deps來滿足其目標。`
-<!--SR:!2023-05-03,24,208-->
+<!--SR:!2023-11-19,127,208-->
 
 
 

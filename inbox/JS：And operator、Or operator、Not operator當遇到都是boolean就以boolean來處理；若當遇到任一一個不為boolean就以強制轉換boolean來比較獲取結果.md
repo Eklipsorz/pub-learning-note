@@ -50,7 +50,7 @@
 
 ## 複習
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 本身是boolean value->->-> `		- expr1 和 expr2 同為true，就expr1 && expr2 結果為true - 其餘狀況皆回傳false`
-<!--SR:!2023-06-13,135,250-->
+<!--SR:!2024-07-27,378,250-->
 
 #🧠 JS： expr1 && expr2 會如何處理和回傳？若expr1 和 expr2 這兩者有任一個不為boolean value的話 ->->-> `		- expr1 可經由Boolean強制轉換而判定成false，就會回傳(沒經由&&轉換的版本)expr1 - 除此之外皆為回傳expr2`
 <!--SR:!2023-09-11,194,250-->
