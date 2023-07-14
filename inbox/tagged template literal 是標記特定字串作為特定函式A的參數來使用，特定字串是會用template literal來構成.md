@@ -66,7 +66,7 @@ myTag`that ${ person } is a ${ age }`
 <!--SR:!2024-10-14,472,250-->
 
 #🧠 tagged template literal 的形式是什麼->->-> `functionName(反引號)<template literal>(反引號)`
-<!--SR:!2023-06-25,184,250-->
+<!--SR:!2024-11-27,501,250-->
 
 #🧠 tagged template literal 是由什麼構成 ->->-> `tag function和特定字串`
 <!--SR:!2024-11-24,501,250-->

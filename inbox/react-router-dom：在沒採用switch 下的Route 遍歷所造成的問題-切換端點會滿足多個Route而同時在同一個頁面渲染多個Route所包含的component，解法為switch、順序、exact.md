@@ -96,7 +96,7 @@ import { Switch } from 'react-router-dom';
 <!--SR:!2023-08-13,178,250-->
 
 #🧠 react-router-dom：switch  如何載入？ ->->-> `import { Switch } from 'react-router-dom';`
-<!--SR:!2023-05-30,127,250-->
+<!--SR:!2024-07-23,374,250-->
 
 #🧠 react-router-dom：switch  使用方式如何？ ->->-> `<Switch> <Route path=path1 /> <Route path=path2 /> . . </Switch>`
 <!--SR:!2023-08-28,187,250-->
