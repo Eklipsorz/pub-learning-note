@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7fc21c96719c827a",
+        "id": "5a81e63a58965913",
         "type": "tabs",
         "children": [
           {
-            "id": "002f844e6a70a901",
+            "id": "07ce251534f7b4b7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -38,7 +34,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "實現表單頁面離開前警告提示，所需要會用到的實現概念中的輸入完表單後並按下按鈕點擊提交時就可正常導向，如何在prompt實現",
+                "query": "React：使用custom hook來重構表格案例-基本表格",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -73,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -93,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "inbox/react-router-practice：實現prompt會需要狀態上batching、其batching在事件處理是如何執行、事件信號轉遞和事件處理之間的順序.md"
-              }
+              "state": {}
             }
           },
           {
@@ -164,34 +157,34 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "002f844e6a70a901",
+  "active": "07ce251534f7b4b7",
   "lastOpenFiles": [
+    "dev-practice/Practice - React：使用custom hook來重構表格案例-基本表格.md",
+    "develop/React/React：使用custom hook來重構表格案例-基本表格.md",
+    "develop/OS/process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣.md",
+    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
+    "develop/React/React：useEffect 的callback並不會實際如同函式呼叫那樣會按照順序執行，而是只會在render之後執行.md",
+    "develop/React/React - modal 實作案例.md",
+    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
+    "develop/React/React.memo 效能成本取決於儲存空間成本和計算成本，前者會是props數量、對應元件的Virtual DOM結構、其descendant component的Virtual DOM結構，後者會是props比對成本.md",
+    "inbox/javascript - var變數在解析之前就分配記憶體？.md",
+    "develop/browser/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
+    "develop/React/React：使用custom hook來重構表格.md",
+    "dev-practice/Practice - React：使用custom hook來重構表格.md",
     "dev-practice/Practice - React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
-    "develop/React/react-router/quote-practice/react-router-practice：使用useHistory來實現programmatic navigation，具體會是操縱瀏覽器的瀏覽紀錄來進行.md",
-    "develop/React/react-router/quote-practice/react-router-practice：實現404網頁.md",
-    "develop/React/react-router-practice：使用react-router方法：使用route + exact來實現 當點擊Load Comments按鈕後，就呈現comments，但不想在呈現comments的情況下還呈現按鈕.md",
-    "develop/React/react-router-practice：使用query string來實現quotes排序功能.md",
-    "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
-    "templates/💻.md",
+    "inbox/preventDefault 得放在開頭.md",
+    "develop/React/React：決定整體表單的validity.md",
+    "develop/React/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
+    "develop/React/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
+    "develop/JavaScript/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
+    "develop/api-design/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md",
+    "develop/React/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
+    "draft/同步 和 互斥是不同的.md",
+    "develop/React/React.memo 比對方式會採用於JS的currProp === prevProp 而衍生出props對應著物件的元件a會因為渲染函式一直邊呼叫邊重建物件而無法讓元件a能夠正常使用memo.md",
+    "develop/React/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
+    "develop/React/在定義react element的for屬性時，由於for本身是JS的保留字且react element是JS延伸語法，貿然使用會有衝突的可能，所以會用htmlFor來替代for屬.md",
+    "inbox/Express Middleware Function 是客戶端特定請求至伺服器特定回應之間的處理函式.md",
     "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-    "inbox/React：state 更新方式.md",
-    "inbox/Untitled 6.md",
-    "inbox/React：props概念可以延伸至Parent Element、其Parent Element之下的Child Element.md",
-    "inbox/JS：由於物件本身會因為屬性會在執行期間進行任何變動，所以會將物件內容本身儲存在heap記憶體區塊，然後並於stack記憶體區塊儲存對應heap 記憶體位址.md",
-    "inbox/Database - 若沒在資料庫系統設定外鍵的話，資料庫系統就無法保證外鍵在參考表格上能否找到對應紀錄以及無法清楚資料表格間的關係.md",
-    "inbox/express-session的cookie建立會依據當前與客戶端連線是否為https，若不是就不發送SET-COOKIE封包給客戶端.md",
-    "inbox/await promise 會將後頭的多個任意語句全以promise.then來包裹住.md",
-    "inbox/React：useCallback 最主要是會依據依賴項目是否變動來決定是否重建函式物件並儲存在記憶體中，若變動就建立新函式物件和新closure，接著儲存並回傳，若沒變動就以目前最新函式物件回傳.md",
-    "inbox/URL輸入參數會遇到的問題.md",
-    "inbox/React spread attributes  是利用JS原生的spread operator對於物件操作的效果為基礎來 針對 component所擁有的屬性(attribute)進行擴張.md",
-    "inbox/React：hook.md",
-    "inbox/React： useState 案例.md",
-    "inbox/React：food-order project 發送請求來獲取meals和建立order.md",
-    "inbox/belazy shop 作品集 - reply 路徑設計.md",
-    "inbox/Multiple Class or ID and Class Selectors 是用多個class selector 和 id selector合併而成的selector來選擇同時滿足所有selector的DOM節點.md",
-    "inbox/React：雜記.md",
-    "inbox/(草稿)分散式鎖.md",
-    "inbox/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
     "develop/css-style",
     "develop/browser",
     "draft",
