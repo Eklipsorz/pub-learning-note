@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79a49d4af35ad5fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "以下程式碼的執行情況是什麼",
+                "query": "請至/react-builder/question-review/food-order-project-question領取題目並切換至develop-checkout-form 分支，實現一個checkout form 會有的功能-付款功能、付款資料表單和按鈕之間的切換、付款成功的視窗、付款載入狀況、付款錯誤顯示",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
+                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md"
+                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md"
               }
             }
           },
@@ -166,6 +178,9 @@
   },
   "active": "397b1abbf8333bb7",
   "lastOpenFiles": [
+    "inbox/React：food-order project  建立order所需要做的處理.md",
+    "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
+    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "dev-practice/Practice - React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
@@ -189,9 +204,6 @@
     "draft/session 和 redis 會根據cookie是否設定expires來順便設定對應session的過期時間.md",
     "inbox/Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
     "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
-    "inbox/React：age-list-react-practice 改良.md",
-    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing和清除上一次side effect所帶來的影響.md",
-    "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "develop/css-style",
     "develop/browser",
     "draft",
