@@ -93,13 +93,13 @@ async function testAwaitFunction() {
 
 
 #🧠 以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example2_ee2qxh.png) ->->-> `首先先呼叫testAwaitFunction，而函式會回傳Promise物件並接著以非同步任務來做async函式內的程式碼，執行第一行時，由於沒await，res會直接獲取到promise物件，該物件會呈現pending，接著生成promise非同步任務，後頭的console和return全會以夾帶著pending狀態的promise為主。 最後隨著event loop而執行到promise內的非同步任務執行，這時才會回傳resolve情況下的1020。`
-<!--SR:!2023-05-07,82,250-->
+<!--SR:!2023-09-11,54,230-->
 
 #🧠  以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example1_apykcx.png) ->->-> `執行情況：首先先呼叫testAwaitFunction，而函式會回傳Promise物件並接著以非同步任務來做async函式內的程式碼，執行第一行時會先分配記憶體給res這個識別字，接著再將res的內容指派和await後續程式碼以promise.then來包覆著他們來執行。當執行完promise時，就會以resolve情況下的1020指派給res這識別字，接著就印出1020和它會是數字，接著並以1020來回傳。`
 <!--SR:!2023-08-12,142,250-->
 
 #🧠 以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example3_rqdy8j.png) ->->-> `當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，使後續的程式碼(包含res屬性的內容指派，console以及obj的回傳)被promise.then所包含，而產生非同步任務來排程，在還沒開始排程時，其promise狀態會是pending，等到開始排程非同步任務時就會執行其指派，console和obj的回傳`
-<!--SR:!2023-04-26,9,250-->
+<!--SR:!2023-08-04,16,230-->
 
 
 
