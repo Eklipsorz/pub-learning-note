@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5a81e63a58965913",
+        "id": "e675918799a1a4eb",
         "type": "tabs",
         "children": [
           {
-            "id": "07ce251534f7b4b7",
+            "id": "397b1abbf8333bb7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md"
+              }
             }
           },
           {
@@ -157,34 +165,34 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "07ce251534f7b4b7",
+  "active": "397b1abbf8333bb7",
   "lastOpenFiles": [
-    "dev-practice/Practice - React：使用custom hook來重構表格案例-基本表格.md",
-    "develop/React/React：使用custom hook來重構表格案例-基本表格.md",
-    "develop/OS/process synchronization 是指多個任務相互協調執行方式，使他們在特定層面下的結果會是一樣；data synchronization是多個 data 處理相互協調資料如何處理，使他們在特定層面下的結果會是一樣.md",
-    "inbox/Server-Side Rendering 是指由伺服器主要負責建立一組能夠在客戶端以視覺上呈現的事物；Client-Side Rendering 是指客戶端主要負責建立一組能夠在自己上以視覺上呈現的事物.md",
-    "develop/React/React：useEffect 的callback並不會實際如同函式呼叫那樣會按照順序執行，而是只會在render之後執行.md",
-    "develop/React/React - modal 實作案例.md",
-    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
-    "develop/React/React.memo 效能成本取決於儲存空間成本和計算成本，前者會是props數量、對應元件的Virtual DOM結構、其descendant component的Virtual DOM結構，後者會是props比對成本.md",
-    "inbox/javascript - var變數在解析之前就分配記憶體？.md",
-    "develop/browser/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
-    "develop/React/React：使用custom hook來重構表格.md",
-    "dev-practice/Practice - React：使用custom hook來重構表格.md",
-    "dev-practice/Practice - React： 針對useReducer 所擁有的大狀態下的一小部分狀態來作為useEffect的depenedency，並且它們只要變動的話，就會在updating階段觸發時檢查到dependency變動而執行callback.md",
-    "inbox/preventDefault 得放在開頭.md",
-    "develop/React/React：決定整體表單的validity.md",
-    "develop/React/React：hook 是一個特殊的函式，能夠在內部調用其他hook和管理狀態，custom hook主要用途為將元件的業務邏輯抽離出來並以一個模組(函式)來管理.md",
-    "develop/React/empty wrapper component實質上不會有任何對應Virtual DOM和對應實際DOM節點，憑藉著滿足JSX語法上的侷限-要有一個JSX parent 元件來包含子元件來包含(wrap)多個子元件來一次性回傳多個子元件.md",
-    "develop/JavaScript/JS：closure會有對應的bytecode來建立，來替每個函式A所回傳的函式物件B建立closure，執行時會掃描函式B的scope和其他scope來幫助建立識別字和實體物件之間的關係.md",
-    "develop/api-design/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md",
-    "develop/React/class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上.md",
-    "draft/同步 和 互斥是不同的.md",
-    "develop/React/React.memo 比對方式會採用於JS的currProp === prevProp 而衍生出props對應著物件的元件a會因為渲染函式一直邊呼叫邊重建物件而無法讓元件a能夠正常使用memo.md",
-    "develop/React/若元件本身依賴於URL下的URL parameters 來處理，方法有使用useParams來擷取、 使用props來從parent元件獲取.md",
-    "develop/React/在定義react element的for屬性時，由於for本身是JS的保留字且react element是JS延伸語法，貿然使用會有衝突的可能，所以會用htmlFor來替代for屬.md",
-    "inbox/Express Middleware Function 是客戶端特定請求至伺服器特定回應之間的處理函式.md",
-    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+    "dev-practice/Practice - React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+    "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
+    "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
+    "develop/React/React：chart 案例.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+    "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
+    "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+    "develop/JavaScript/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
+    "inbox/Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
+    "develop/React/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
+    "develop/React/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
+    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+    "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
+    "develop/React/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
+    "develop/JavaScript/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
+    "inbox/React：使用Fetch API來發送請求來增加資料.md",
+    "develop/Language/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
+    "inbox/redis 分散式鎖 - 釋放.md",
+    "draft/Belazy - 庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
+    "draft/session 和 redis 會根據cookie是否設定expires來順便設定對應session的過期時間.md",
+    "inbox/Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
+    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
+    "inbox/React：age-list-react-practice 改良.md",
+    "inbox/React：使用subscribed 機制以及signal機制來在useEffect實現debouncing和清除上一次side effect所帶來的影響.md",
+    "inbox/React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "develop/css-style",
     "develop/browser",
     "draft",
