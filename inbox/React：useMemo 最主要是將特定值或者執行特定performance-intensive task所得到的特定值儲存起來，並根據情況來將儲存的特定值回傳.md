@@ -169,7 +169,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，useMemo會如何做？ ->->-> `只回傳記憶體的目前內容，不執行createResultFn來產生結果值`
-<!--SR:!2023-07-14,172,250-->
+<!--SR:!2024-09-25,435,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是沒設定，代表著什麼？ ->->-> `系統就認為會是一直變動的deps`
 <!--SR:!2024-09-07,423,250-->

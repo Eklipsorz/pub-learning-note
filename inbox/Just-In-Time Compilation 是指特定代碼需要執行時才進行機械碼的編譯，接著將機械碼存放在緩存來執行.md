@@ -80,7 +80,7 @@ in-time
 <!--SR:!2025-01-18,550,250-->
 
 #🧠 Java 和JVM為例子分成兩個方向： 說明從  ByteCode -> Java Interpreter如何執行 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c)->->-> `Java 檔案會經由Java Compiler而編譯成Java ByteCode，並丟入JVM中的Java Interpreter來邊解析邊轉換成機械碼來給OS和硬體來執行`
-<!--SR:!2023-05-10,189,250-->
+<!--SR:!2025-01-26,558,250-->
 
 #🧠 Java 和JVM為例子分成兩個方向： 說明從 ByteCode -> JIT Compiler如何執行 ![](https://pic2.zhimg.com/80/fc2d6adee7cfd35cd691b0a419dcd1a2_720w.jpg?source=1940ef5c) ->->-> `ByteCode -> JIT Compiler ： Java 檔案會經由Java Compiler 而編譯成Java ByteCode，並丟入JVM中的JIT Compiler 來將ByteCode編譯成目前執行環境下的machine code，最後丟給OS和硬體來執行`
 <!--SR:!2024-06-29,435,250-->

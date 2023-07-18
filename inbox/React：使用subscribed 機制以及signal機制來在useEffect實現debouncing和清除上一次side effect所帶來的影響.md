@@ -219,7 +219,7 @@ AbortController.abort()
 
 
 #🧠 React：紀錄安裝至非同步任務上的signal 接收處理器對應的記憶體區塊並於cleanup向著接收處理器發送signal，具體程式碼如何安置signal和發送signal ->->-> `  const controller = new AbortController(); const signal = controller.signal something(…, signal)  return () => { controller.abort() } `
-<!--SR:!2023-06-03,47,210-->
+<!--SR:!2023-12-11,146,210-->
 
 
 
@@ -234,7 +234,7 @@ AbortController.abort()
 <!--SR:!2023-11-28,136,230-->
 
 #🧠 AbortController 方法 - abort 語法是？->->-> `AbortController.abort()`
-<!--SR:!2023-07-16,154,250-->
+<!--SR:!2024-08-16,395,250-->
 
 #🧠 JS：AbortController interface 如何建構對應類別的物件？ ->->-> `new AbortController()`
 <!--SR:!2023-07-25,160,250-->
