@@ -62,7 +62,7 @@ handlers:
 
 
 #🧠 app.yaml 中的handlers 是做什麼用的->->-> `是在app.yaml定義了app engine所要處理的URL是哪些(會以app engine所在的DOMAIN為主)以及這些URL該如何處理`
-<!--SR:!2023-05-04,193,250-->
+<!--SR:!2025-02-13,576,250-->
 
 #🧠 app.yaml 中的handlers 以什麼來區分各個需要處理的URL，會用到什麼語法(正規？) ->->-> `使用- url: 正規表達式`
 <!--SR:!2024-04-03,388,250-->

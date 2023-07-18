@@ -98,7 +98,7 @@
 ## 複習
 
 #🧠 react hook functions的官方準則主要定義了哪裏可以允許使用hook、 在允許函式下的哪個區塊能用，請問具體會是什麼？ ->->-> `哪裏可以允許使用hook：只能react functions(function component/react componet function) 或者 custom hook function 才能調用hook function、在允許函式下的哪個區塊能用：只能在componet function或者custom hook function的最一開始執行的地方才能呼叫hook`
-<!--SR:!2023-06-01,153,250-->
+<!--SR:!2024-10-01,441,250-->
 
 #🧠 react hook functions的官方準則大致上分為哪兩種 ->->-> `哪裏可以允許使用hook、 在允許函式下的哪個區塊能用`
 <!--SR:!2023-07-29,194,250-->
