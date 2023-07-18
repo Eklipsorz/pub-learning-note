@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e675918799a1a4eb",
+        "id": "ee8dbe8045d65aab",
         "type": "tabs",
         "children": [
           {
-            "id": "397b1abbf8333bb7",
+            "id": "eb131ba4890d1a18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "79a49d4af35ad5fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/React：food-order project  建立order所需要做的處理.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -50,7 +34,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請至/react-builder/question-review/food-order-project-question領取題目並切換至develop-checkout-form 分支，實現一個checkout form 會有的功能-付款功能、付款資料表單和按鈕之間的切換、付款成功的視窗、付款載入狀況、付款錯誤顯示",
+                "query": "請至/react-builder/question-review/http-req-practice 領取題目，切換至fetch-data-full分支，在那請用Fetch API在app.js完成對於所有電影的資料載入和渲染，其中要有辦法能夠在元件掛載後以及按下按鈕就能載入資料和渲染，另外當出現錯誤或者沒資料渲染也要呈現其錯誤訊息，獲取電影的後端端點為",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -105,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md"
-              }
+              "state": {}
             }
           },
           {
@@ -176,10 +157,14 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "397b1abbf8333bb7",
+  "active": "eb131ba4890d1a18",
   "lastOpenFiles": [
-    "inbox/React：food-order project  建立order所需要做的處理.md",
+    "dev-practice/Practice - React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
+    "develop/React/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
+    "dev-practice/Practice - React：Input component 重構.md",
+    "develop/React/React：Input component 重構.md",
     "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
+    "develop/React/React：food-order project  建立order所需要做的處理.md",
     "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的內容.md",
     "develop/React/React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "dev-practice/Practice - React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
@@ -200,10 +185,6 @@
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
     "develop/Language/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
     "inbox/redis 分散式鎖 - 釋放.md",
-    "draft/Belazy - 庫存量只有讀取和管理修改庫存量才會直接執行檢查和同步資料庫.md",
-    "draft/session 和 redis 會根據cookie是否設定expires來順便設定對應session的過期時間.md",
-    "inbox/Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
-    "inbox/error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/css-style",
     "develop/browser",
     "draft",
