@@ -110,7 +110,7 @@
 <!--SR:!2023-12-12,154,230-->
 
 #🧠 react hook functions ：除了官方那兩大準則以外，還有非官方準則適用於useEffect，具體是確保你總是以effect內部使用的東西做為dependency，系統如何判定？->->-> `在這裏系統會預判哪些內部內容是得添加至dependency，通常第三方API、元件外的變數是可允許不被添加`
-<!--SR:!2023-05-09,138,250-->
+<!--SR:!2024-09-23,433,250-->
 
 #🧠 React：對於使用hook的第一準則而言，只能在react functions(function component/react componet function) 或者 custom hook function 才能調用hook function，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-block-scope-with-hook_fzb7bf.png)`
 <!--SR:!2023-07-26,191,250-->

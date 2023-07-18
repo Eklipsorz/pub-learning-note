@@ -79,7 +79,7 @@ hooks 是：
 <!--SR:!2023-08-23,199,250-->
 
 #🧠 React：class-based component 是什麼？ ->->-> `class-based component 是以JS class語法建立而成的元件類別，最主要會有render方法並且繼承react.Component 這個基本類別所擁有的方法和屬性`
-<!--SR:!2023-06-23,98,210-->
+<!--SR:!2024-03-06,232,210-->
 
 #🧠 React：functional component  是什麼？ ->->-> `會是一般函式宣告，其回傳內容為JSX Element`
 <!--SR:!2023-07-28,183,250-->
