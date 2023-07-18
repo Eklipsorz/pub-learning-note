@@ -85,7 +85,7 @@ hooks 是：
 <!--SR:!2023-07-28,183,250-->
 
 #🧠 React：functional component  的語法是什麼？ ->->-> `function Component1() { ... return (JSX Element ) }`
-<!--SR:!2023-06-26,150,230-->
+<!--SR:!2024-07-22,370,230-->
 
 #🧠 React：class-based component 搭配render 的基本語法是什麼？ ->->-> `class Component1 extends React.Component { render() { ... } }`
 <!--SR:!2023-08-18,194,250-->
