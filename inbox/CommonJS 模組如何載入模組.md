@@ -21,8 +21,8 @@ CommonJS 本身是源自於伺服器端的模組化標準，由於那時其模�
 ### 單個CommonJS模組的載入
 > The CommonJS approach has a few implications, and I will explain more about those later. But one thing that it means is that in Node with CommonJS modules, you can use variables in your module specifier. You are executing all of the code in this module (up to the `require` statement) before you look for the next module. That means the variable will have a value when you go to do module resolution.
 
+![](https://hacks.mozilla.org/files/2018/03/13_static_import-768x225.png)
 
-[![A require statement which uses a variable is fine. An import statement that uses a variable is not.](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import-500x146.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/13_static_import.png)
 
 當需求方以Require來指定特定JS檔案，就會將JS檔案視為CommonJS模組檔案，這時JS引擎會先於編譯期間做：
 - 分配記憶體空間給模組下的模組實例module物件、var變數宣告、函式宣告
@@ -88,19 +88,22 @@ CommonJS 模組是指需求方只要以JS檔案來執行其模組，其模組本
 
 > Let’s look at how this would work with CommonJS modules. First, the main module would execute up to the require statement. Then it would go to load the counter module.
 
-[![A commonJS module, with a variable being exported from main.js after a require statement to counter.js, which depends on that import](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/41_cyclic_graph-500x281.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/41_cyclic_graph.png)
+
+![](https://hacks.mozilla.org/files/2018/03/41_cyclic_graph-768x432.png)
 
 > The counter module would then try to access `message` from the export object. But since this hasn’t been evaluated in the main module yet, this will return undefined. The JS engine will allocate space in memory for the local variable and set the value to undefined.
 
-[![Memory in the middle with no connection between main.js and memory, but an importing link from counter.js to a memory location which has undefined](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/42_cjs_variable_2-500x113.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/42_cjs_variable_2.png)
+![](https://hacks.mozilla.org/files/2018/03/42_cjs_variable_2-768x174.png)
 
-Evaluation continues down to the end of the counter module’s top level code. We want to see whether we’ll get the correct value for message eventually (after main.js is evaluated), so we set up a timeout. Then evaluation resumes on `main.js`.
 
-[![counter.js returning control to main.js, which finishes evaluating](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/43_cjs_cycle-500x224.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/43_cjs_cycle.png)
+>Evaluation continues down to the end of the counter module’s top level code. We want to see whether we’ll get the correct value for message eventually (after main.js is evaluated), so we set up a timeout. Then evaluation resumes on `main.js`.
+
+![](https://hacks.mozilla.org/files/2018/03/43_cjs_cycle-768x344.png)
 
 > The message variable will be initialized and added to memory. But since there’s no connection between the two, it will stay undefined in the required module.
 
-**[![main.js getting its export connection to memory and filling in the correct value, but counter.js still pointing to the other memory location with undefined in it](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/44_cjs_variable_2-500x216.png)](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/44_cjs_variable_2.png)**
+
+![](https://hacks.mozilla.org/files/2018/03/44_cjs_variable_2-768x331.png)
 
 
 重點：
@@ -174,7 +177,7 @@ const xxx = require(moduleA)
 
 
 
-#🧠 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js，其中setTimeout任務的執行順序會是如何？會是印出什麼？![counter.js returning control to main.js, which finishes evaluating](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/43_cjs_cycle-500x224.png) ->->-> `由於call stack還有module的載入和執行，所以非同步任務放到最後，counter undefined -> main 5 -> async task undefined`
+#🧠 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js，其中setTimeout任務的執行順序會是如何？會是印出什麼？![](https://hacks.mozilla.org/files/2018/03/43_cjs_cycle-500x224.png) ->->-> `由於call stack還有module的載入和執行，所以非同步任務放到最後，counter undefined -> main 5 -> async task undefined`
 <!--SR:!2023-05-02,40,247-->
 
 

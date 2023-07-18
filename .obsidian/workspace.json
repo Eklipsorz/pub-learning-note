@@ -11,8 +11,12 @@
             "id": "eb131ba4890d1a18",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "inbox/CommonJS 模組如何載入模組.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -34,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請至/react-builder/question-review/http-req-practice 領取題目，切換至fetch-data-full分支，在那請用Fetch API在app.js完成對於所有電影的資料載入和渲染，其中要有辦法能夠在元件掛載後以及按下按鈕就能載入資料和渲染，另外當出現錯誤或者沒資料渲染也要呈現其錯誤訊息，獲取電影的後端端點為",
+                "query": " 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js，其中setTimeout任務的執行順序會是如何",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -90,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "inbox/CommonJS 模組如何載入模組.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "inbox/CommonJS 模組如何載入模組.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "inbox/CommonJS 模組如何載入模組.md"
+              }
             }
           },
           {
