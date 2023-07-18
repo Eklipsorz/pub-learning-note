@@ -124,7 +124,7 @@ const xxx = require(moduleA)
 <!--SR:!2024-06-06,408,250-->
 
 #🧠 CommonJS 是什麼加載？同步？非同步？ ->->-> `目前模組的載入必須等待前面模組的載入階段都完成才能做`
-<!--SR:!2023-04-29,167,250-->
+<!--SR:!2024-12-19,519,250-->
 
 #🧠 CommonJS 會用到模組依賴關係圖嗎？主要是用啥 ->->-> `會，主要用來遍歷模組來找到需要處理的模組以及檢測是否發生環狀依賴關係結構`
 <!--SR:!2024-08-18,409,230-->
@@ -157,7 +157,7 @@ const xxx = require(moduleA)
 <!--SR:!2025-01-07,539,250-->
 
 #🧠 CommonJS模組：main 模組依賴著M1模組、M2模組、M3模組；M1 模組依賴M4 模組、M5模組；M2 模組依賴M6模組，那麼當載入main模組時，JS引擎會如何處理？順序是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1659287023/blog/javascript/module/commonjs-module-example_vovrps.png) ->->-> `首先一開始從main.js執行，並且為了載入module1而執行對應Module1模組來獲取對應模組輸出內容，接著module1模組在一開始表明依賴著module4，所以就轉而去執行module4來獲取其模組輸出內容，由於Module4模組沒再依賴任何模組，所以就直接印出this is module4並輸出指定 內容給module1當module4所參照的物件，接著執行權就從M4回轉至M1，並由M1來執行module5來獲取對應輸出內容，而module5並沒有任何依賴模組的需求就直接印出this is module5 並輸出指定內容給M1，接著執行權回到M1，M1已經載入完成，就印出this is module1，接著就輸出自己模組的內容至main模組所要參照的模組物件。 執行權回到main.js，並轉由執行module2來獲取其模組輸出內容，而module2依賴著Module6，因而執行module6來獲取其模組輸出內容，module6並沒有依賴模組，所以就執行印出this is module6，然後就輸出模組內容至module2當參照物件，接著執行權回到M2，M2也載入所有依賴模組，就直接印出this is module2，接著輸出自己模組內容至main.js當參照內容，執行權回到main.js，而main.js此時只剩module3還未載入，就執行Module3來獲取對應模組內容，module3本身沒有依賴模組，所以只需要執行印出this is module3，然後輸出自己模組內容至main.js當參照物件，最後執行權回到main.js，main.js也載入所有依賴模組，這時就會執行main.js的內容，也就是this is main。所以順序會是：this is module 4 -> this is module 5 -> this is module 1 -> this is module 6 -> this is module 2 -> this is module 3 -> this is main`
-<!--SR:!2023-07-04,80,230-->
+<!--SR:!2024-02-05,201,230-->
 
 #🧠 CommonJS 模組若沒有手段去面對cyclic dependency問題時，會出現什麼樣的問題？ ->->-> `肯定會因為DFS的關係要繞好幾圈，導致無法正常產生模組實例給需求方`
 <!--SR:!2024-04-22,380,250-->
