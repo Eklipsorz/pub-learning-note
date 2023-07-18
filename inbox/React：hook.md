@@ -122,7 +122,7 @@ hook 名詞：
 <!--SR:!2024-12-29,535,250-->
 
 #🧠 在電腦科學裡，引入hook時會是如何？請用下圖的after來說明 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660573336/blog/react/hook/hook-before-after_gnjt9w.png) ->->-> `就如同下圖中的下面一樣，每個模組間的呼叫都有另一個模組C攔截，當模組A想呼叫模組B，必須透過模組C才能呼叫，模組B想呼叫模組A，就必須透過呼叫模組C才能呼叫模組A。`
-<!--SR:!2023-06-21,193,250-->
+<!--SR:!2024-12-18,518,250-->
 
 
 

@@ -185,7 +185,7 @@ export default React.memo(DemoList);
 
 
 #🧠 假設有個App.js，預期它會渲染出特定幾個數字排列後的清單，該元件夾雜著DemoList 和 Button 這兩個元件，在這裡App元件會賦予一系列沒排列好的數字給DemoList元件來排序並要求它呈現最後排序後的樣子，原本想利用useMemo來解決React.memo無法正常作用的問題，但現在出了問題，請問是什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665078609/blog/react/useMemo/useMemo-app-example_e9bxym.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665078608/blog/react/useMemo/useMemo-DemoList-example_av5abf.png)->->-> `實際上若直接在DemoList.js使用useMemo並以items作為deps，會因為每次接收到的items記憶體位址而不同，沒辦法以記憶體儲存的結果來回傳，換言之，沒使用到useMemo的正常好處`
-<!--SR:!2023-07-19,178,250-->
+<!--SR:!2024-10-06,445,250-->
 
 
 
