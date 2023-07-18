@@ -119,7 +119,7 @@
 <!--SR:!2023-07-28,193,250-->
 
 #🧠 React：對於使用hook的第三準則而言，確保你總是以effect內部使用的東西做為dependency，請舉一個錯誤案例 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663873168/blog/react/hook/principle/wrong-case-dependency-effect_wetmfo.png)`
-<!--SR:!2023-07-01,172,250-->
+<!--SR:!2024-10-12,452,250-->
 
 
 ---

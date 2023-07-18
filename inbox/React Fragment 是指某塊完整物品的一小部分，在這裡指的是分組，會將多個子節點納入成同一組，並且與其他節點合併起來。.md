@@ -105,7 +105,7 @@ fragment
 
 
 #🧠 React fragment 語法會有哪些形式(提示兩個) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>) 和 return ( <> <children> </> )`
-<!--SR:!2023-07-18,194,250-->
+<!--SR:!2024-12-02,503,250-->
 
 #🧠 這是React fragment 語法嗎？ 還是什麼(嚴格來說)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662894948/blog/react/fragment/react-fragment-sugar_xcazre.png) ->->-> `算是，但嚴格來說是fragment 的語法糖`
 <!--SR:!2023-07-18,194,250-->

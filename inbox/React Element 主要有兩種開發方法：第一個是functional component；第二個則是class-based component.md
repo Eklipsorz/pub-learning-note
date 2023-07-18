@@ -95,7 +95,7 @@ hooks 是：
 <!--SR:!2023-09-02,205,250-->
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \} 中的render 是做什麼？ ->->-> `具體定義該元件的渲染內容或者對應Virtual DOM結構`
-<!--SR:!2023-07-16,173,250-->
+<!--SR:!2024-09-21,431,250-->
 
 #🧠 當元件類別Component1以標籤來使用，如\<Component1 \/\> React會如何處理該元件 ->->-> `會以Component1 這類別來建構對應實例，並呼叫該實例的render方法`
 <!--SR:!2023-08-05,187,250-->
