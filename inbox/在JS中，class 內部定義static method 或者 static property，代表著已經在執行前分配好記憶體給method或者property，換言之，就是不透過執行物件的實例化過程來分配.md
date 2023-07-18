@@ -91,7 +91,7 @@
 <!--SR:!2023-08-27,198,250-->
 
 #🧠 在JS中的static property的用途為何？class對於static property的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
-<!--SR:!2023-05-26,84,230-->
+<!--SR:!2024-03-26,252,230-->
 
 #🧠  static variable 中 的static 起源於什麼？ ->->-> `static variable 中 的static 起源於static memory allocation作法`
 <!--SR:!2023-08-24,196,250-->
@@ -112,7 +112,7 @@
 <!--SR:!2023-07-07,164,250-->
 
 #🧠 請問若JS class的實例化執行好N次，請問class 下的static property會有幾份副本？為什麼？->->-> `都各1份，因為就以單方面在執行之前分配好記憶題的變數或者函式，所以即使重複執行多次 new function() 也不會替static method / property製作成副本`
-<!--SR:!2023-07-08,164,250-->
+<!--SR:!2024-09-13,423,250-->
 
 
 ---
