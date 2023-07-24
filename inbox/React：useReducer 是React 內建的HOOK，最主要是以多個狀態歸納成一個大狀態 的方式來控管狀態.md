@@ -277,7 +277,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2024-11-19,484,250-->
 
 #🧠 useReducer 語法形式是什麼？回傳什麼？ ->->-> `const [state, dispatchFn] = useReducer(reducerFn, initialState, initFn); 回傳會是兩個元素的陣列`
-<!--SR:!2023-07-24,193,250-->
+<!--SR:!2023-11-01,100,230-->
 
 #🧠 useReducer 在元件上做了什麼？用途是什麼？ ->->-> `useReducer 會註冊一個hook 在目前元件上，並且主要以 **多個狀態歸納成一個大狀態** 的方式來控管狀態。`
 <!--SR:!2023-08-12,192,230-->
@@ -294,7 +294,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2024-05-04,359,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action能填入什麼？->->-> `	- 字串，如'NEW_EMAIL_VALUE' - 數字 - 物件`
-<!--SR:!2023-07-21,191,250-->
+<!--SR:!2024-11-24,489,250-->
 
 #🧠 React： 在useReducer 中的dipatchFn(action)，action最常用的形式是物件，請問如何用物件來表示action->->-> `屬性會有type和payload：	- type 是描述哪一種狀態更新 - payload 則是狀態更新的目標狀態`
 <!--SR:!2024-10-11,456,250-->
@@ -341,7 +341,7 @@ initFn：主要是定義如何設定初始值
 <!--SR:!2024-01-01,283,250-->
 
 #🧠 React：reducerFn(prevState, action)的preState 會是最近最新的狀態？為什麼？ ->->-> `同一個 useReducer 控管的所有state 被保證一定是目前最新的狀態，原因為：1. 目前狀態都會被React 儲存管理。 2. 狀態更新都是在dispatch 所發送的action 或者 由React內部提供。 3. 狀態都歸納成同一個狀態，不會有依賴舊有狀態的問題。`
-<!--SR:!2023-07-24,193,250-->
+<!--SR:!2023-11-02,101,230-->
 
 #🧠 React：reducerFn定義上通常會在哪裡進行？ 為什麼？->->-> `useReducer 中的 reducerFn 定義會另外定義成named function 並放在component之外。 原因是：- 增加為了確保不被重複定義	- reducerFn 並不會接收到component 裡頭的資料，因為沒必要去與component裡頭的資料進行互動 - 會用到全域或者reducer函式內所定義/接收到的資料`
 <!--SR:!2023-08-29,183,230-->

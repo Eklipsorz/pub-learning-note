@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/CommonJS 模組如何載入模組.md",
+                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " 用下圖來說明如何解決cyclic dependency問題，在這裏main.js和counter.js互為依賴，並且先執行main.js，其中setTimeout任務的執行順序會是如何",
+                "query": "前後端開發中，前端、請求、畫面、後端通常如何協作才能提升使用者體驗",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/CommonJS 模組如何載入模組.md",
+                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/CommonJS 模組如何載入模組.md",
+                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/CommonJS 模組如何載入模組.md"
+                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md"
               }
             }
           },
@@ -164,8 +164,9 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "eb131ba4890d1a18",
   "lastOpenFiles": [
+    "inbox/CommonJS 模組如何載入模組.md",
     "dev-practice/Practice - React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "develop/React/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "dev-practice/Practice - React：Input component 重構.md",
@@ -191,7 +192,6 @@
     "develop/JavaScript/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
     "develop/Language/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
-    "inbox/redis 分散式鎖 - 釋放.md",
     "develop/css-style",
     "develop/browser",
     "draft",
