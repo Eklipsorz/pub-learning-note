@@ -182,7 +182,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式名稱會是什麼形式？ ->->-> `<component-name>_<class-selector-name>_<unique-hash-value>`
-<!--SR:!2023-07-08,191,250-->
+<!--SR:!2023-10-30,98,230-->
 
 #🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 經由webpack和CSS modules的轉換後的CSS內容為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681480906/blog/css/css-module/css-module-result_w0wi6k.png)
 <!--SR:!2024-02-02,193,230-->
@@ -201,7 +201,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 且以Button這元件來載入CSS module時，假如內容有.class1.class2 {...}，請問轉換結果為？->->-> `.class1 => .Button_class1_waer324  .class2 => .Button_class2_warewa32 結果為.class1.class2 {...} => .Button_class1_waer324..Button_class2_warewa32 {...}`
-<!--SR:!2023-07-03,107,228-->
+<!--SR:!2024-04-17,268,228-->
 
 
 
