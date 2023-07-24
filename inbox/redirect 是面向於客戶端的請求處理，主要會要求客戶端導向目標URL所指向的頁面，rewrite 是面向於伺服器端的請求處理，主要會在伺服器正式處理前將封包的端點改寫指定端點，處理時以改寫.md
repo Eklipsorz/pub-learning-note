@@ -69,7 +69,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 
 
 #🧠 rewrite 用途是做了什麼？ ->->-> `主要會在伺服器接收到封包時，在正式處理前會將封包指示的端點改寫成指定端點，然後在正式處理就以改寫後的端點來處理`
-<!--SR:!2023-07-21,185,250-->
+<!--SR:!2024-11-08,473,250-->
 
 #🧠 rewrite 用途是主要會在伺服器接收到封包時，在正式處理前會將封包指示的端點改寫成指定端點，然後在正式處理就以改寫後的端點來處理，會直接修改瀏覽器的顯示URL嗎？為什麼？ ->->-> `不會，具體因爲這是發生在伺服器內部上的轉換`
 <!--SR:!2023-07-25,189,250-->
@@ -79,7 +79,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 
 
 #🧠 請用以下例子來說明redirect： yourdomain.com to www.yourdomain.com ->->-> `當瀏覽器對yourdomain.com對應伺服器以/發送請求，瀏覽器就直接被導向至www.yourdomain.com`
-<!--SR:!2023-07-23,187,250-->
+<!--SR:!2024-11-07,472,250-->
 
 #🧠  請用以下例子來說明rewrite：localtest.me/articles/how-to-win-at-chess to localtest.me/articles.aspx?name=now-to-win-at-chess ->->-> `當瀏覽器對localtest.me對應伺服器以articles/how-to-win-at-chess端點發送請求，伺服器接收到並於正式處理前就直接更改成articles.aspx?name=now-to-win-at-chess，然後伺服器就以改寫後結果來處理。`
 <!--SR:!2023-07-30,194,250-->
