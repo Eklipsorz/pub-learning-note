@@ -153,7 +153,7 @@ import styles from <css-file>
 <!--SR:!2024-12-20,515,250-->
 
 #🧠 CSS modules 用途是什麼？ 請強調在什麼情況....->->-> `在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容`
-<!--SR:!2023-07-08,192,250-->
+<!--SR:!2023-11-03,102,230-->
 
 #🧠 CSS modules 在什麼情況下確保每個元件都有各自屬於自己的樣式屬性內容(提示：檔案) ->->-> `在CSS 檔案 和JS檔案各自分開的情況下`
 <!--SR:!2023-09-23,221,230-->
@@ -163,10 +163,10 @@ import styles from <css-file>
 <!--SR:!2023-08-12,195,228-->
 
 #🧠 CSS modules 具體是什麼套件？ 就說明它源自哪裡->->-> ` 具體會是 webpack 延伸套件`
-<!--SR:!2023-06-23,181,250-->
+<!--SR:!2024-11-28,493,250-->
 
 #🧠 CSS modules 具體是 webpack 延伸套件，所以要用的話，那如何做？->->-> `若要使用的話，得確保webpack是否支援該套件以及相關設定檔案`
-<!--SR:!2023-07-05,189,250-->
+<!--SR:!2023-10-29,97,230-->
 
 #🧠 CSS modules 由於會將載入的CSS檔案做轉換來給予JS來存取，所以要如何確保webpack不會把一般毫無關係的CSS檔案參與處理？ ->->-> `改成以下形式：origin-file-name為原本檔案名，後面的module.css則是後綴字，並且讓webpack以此作為特別的CSS來處理，就能避免`
 <!--SR:!2024-05-05,367,250-->
@@ -185,7 +185,7 @@ import styles from <css-file>
 <!--SR:!2023-07-08,191,250-->
 
 #🧠 假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS檔案，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 經由webpack和CSS modules的轉換後的CSS內容為何？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1681480906/blog/css/css-module/css-module-result_w0wi6k.png)
-<!--SR:!2023-06-20,67,230-->
+<!--SR:!2024-02-02,193,230-->
 
 
 #🧠 CSS module：假若CSS 檔案內容為如下，並且在React的層級讓Button元件使用該CSS module，定義使用button這class selector作為button的外觀設定 \<button className=\{styles.button\} \/\> 而對應button的實際DOM節點所獲取到的class會是 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662292995/blog/react/style/css%20module/CSS-modules-button-example_jdsi6s.png)->->-> `<button class="Button_button_wae1232wer"></button>`
