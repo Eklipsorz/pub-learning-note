@@ -236,7 +236,7 @@ foo.call(obj) // 2
 
 
 #🧠 箭頭函式的this binding 方式是什麼？ ->->-> `箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫`
-<!--SR:!2023-07-24,178,250-->
+<!--SR:!2024-10-13,447,250-->
 
 #🧠 箭頭函式的通常使用場景為 ->->-> `- 事件處理器 - 計時器`
 <!--SR:!2023-09-18,74,230-->
@@ -250,7 +250,7 @@ foo.call(obj) // 2
 <!--SR:!2024-07-01,375,250-->
 
 #🧠 請問以下函式呼叫的this會是什麼？會印出什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665578883/blog/javascript/this-binding/arrow-function-this-binding/arrow-function-this-binding-example3_s3srqa.png) ->->-> `執行foo.call(obj)，會是以obj為this來呼叫並生成非同步計時任務，此計時任務也會因為語彙綁定往上找this而找上foo的this而設定成obj，並印出2`
-<!--SR:!2023-07-12,168,250-->
+<!--SR:!2024-09-26,430,250-->
 
 ---
 Status: #🌱 

@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "implicit binding",
+                "query": " implicit this binding 是依據呼叫的物件來決定其this ，這句話是對的? 還是錯誤的?",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
