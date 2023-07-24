@@ -150,7 +150,7 @@ import styles from <css-file>
 ## 複習
 
 #🧠 CSS modules  是 CSS-in-JS 的實現嗎？ 為什麼->->-> `並不是，主因為css內容並未納入至js語法的延伸語法，不會根據js的執行狀況來更改css樣式屬性`
-<!--SR:!2023-06-28,185,250-->
+<!--SR:!2024-12-20,515,250-->
 
 #🧠 CSS modules 用途是什麼？ 請強調在什麼情況....->->-> `在CSS 檔案 和JS檔案各自分開的情況下，實現讓每個元件都有各自屬於自己的樣式屬性內容`
 <!--SR:!2023-07-08,192,250-->
@@ -172,7 +172,7 @@ import styles from <css-file>
 <!--SR:!2024-05-05,367,250-->
 
 #🧠 CSS modules 使用方式是如何？ 以一個裝載button樣式的test.module.css和class選擇器為button為例(載入、參考)->->-> `載入特定 module.css 並以其CSS內容作為物件來存取，並且讓styles參照該物件：import styles from <css-file>。依據著對應內容上的class-selector來選擇想要使用的樣式名稱，每個class-selector會是styles物件下的屬性。：<button className={styles.button} />`
-<!--SR:!2023-05-18,97,230-->
+<!--SR:!2023-09-20,58,210-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會在開發階段下如何看待和處理 ->->-> `- 會將對應的css檔案視作為JS下的object - 每個object的屬性會是該css下的class selector name`
 <!--SR:!2024-03-27,271,230-->
