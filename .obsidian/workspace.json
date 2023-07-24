@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " implicit this binding 是依據呼叫的物件來決定其this ，這句話是對的? 還是錯誤的?",
+                "query": "inversion of control 在電腦科學會是指會是指 誰決定誰的反轉 / 誰執行誰的反轉，那麼會涉及哪些程式語言用語範疇",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md"
+                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md"
               }
             }
           },
@@ -166,6 +166,7 @@
   },
   "active": "eb131ba4890d1a18",
   "lastOpenFiles": [
+    "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
     "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
     "inbox/CommonJS 模組如何載入模組.md",
     "dev-practice/Practice - React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
@@ -191,7 +192,6 @@
     "develop/React/擁有deps機制的hook擁有特性共同有的特性：利用deps機制來做效能優化、優化手段會是以儲存deps資訊來比較當前deps為主、優化手段中若選擇忽略不執行hook通常會是以過去處理過的結果來回傳.md",
     "develop/JavaScript/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
     "inbox/React：使用Fetch API來發送請求來增加資料.md",
-    "develop/Language/first-class citizen 為一種實體，可以在特定程式語言下被當作是物件或值來看待，並且可以用物件和值所支援的操作來將實體和其他物件或值進行處理.md",
     "develop/css-style",
     "develop/browser",
     "draft",
