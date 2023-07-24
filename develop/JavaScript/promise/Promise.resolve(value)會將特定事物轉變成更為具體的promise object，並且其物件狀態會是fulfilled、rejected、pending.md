@@ -153,7 +153,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-08-22,88,230-->
 
 #🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？ ->->-> `promise object包裝的任務本身會是非同步任務，該任務目前處於被排程且還未被執行，因此處於pending`
-<!--SR:!2023-06-16,71,250-->
+<!--SR:!2024-03-13,233,250-->
 
 #🧠 Promise API 的 resolve(thenable) 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？ ->->-> `由於只有經過resolve執行就會以非同步形式來呼叫thenable的then方法，而獲取該promise object若是在call stack還有任務的情況下取得，那麼勢必為pending但僅僅限定於thenable或者正在處於pending狀態的promise object`
 <!--SR:!2023-10-28,113,210-->
@@ -171,10 +171,10 @@ new Promise((resolve, _) => {
 
 
 #🧠 Promise API 的 resolve(value)中的value會是哪些 ->->-> `value 為 非thenable的內容或者不為promise object、thenable的內容、promise object的內容`
-<!--SR:!2023-06-06,65,250-->
+<!--SR:!2024-02-28,219,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是非thenable或者不為promise object，會回傳什麼？ ->->-> `promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value`
-<!--SR:!2023-05-27,59,250-->
+<!--SR:!2024-02-29,220,250-->
 
 #🧠 Promise API 的 resolve(value)中的value若是thenable，會回傳什麼？  ->->-> `promise.resolve就會回傳pending狀態的promise object`
 <!--SR:!2024-01-18,199,250-->

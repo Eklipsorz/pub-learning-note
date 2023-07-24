@@ -134,13 +134,13 @@ new Promise((resolve, reject) => {
 <!--SR:!2023-12-02,163,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太晚執行callback? 請舉例來說，以三個callback 來說明 ->->-> ``
-<!--SR:!2023-06-16,64,250-->
+<!--SR:!2024-02-15,206,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback?  ->->-> `在Promise中，所有經由Promise.then所註冊的callback，只要該Promise被解析(resolve)或者被拒絕(rejected)，其對應的callback就只會因為Promise.then而被執行一次。`
 <!--SR:!2024-01-17,194,250-->
 
 #🧠 JavaScript：callback本身執行次數在理論上的執行次數會是多少？ ->->-> `1次`
-<!--SR:!2023-06-23,68,250-->
+<!--SR:!2024-02-18,209,250-->
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-呼叫callback的次數超過一次或者沒呼叫callback? 但能夠完全保證嗎？ 其原因為何 ->->-> `不能，但不保證將相同callback註冊在多個Promise.then而產生出超過一次的callback之執行次數，然而執行次數的決定會是由註冊方來決定，而非交由原本無法信任的非同步任務A來決定`
 <!--SR:!2023-12-05,166,250-->

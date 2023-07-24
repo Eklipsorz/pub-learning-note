@@ -65,7 +65,7 @@ promise 面對inversion of control 問題之概念 或者uninversion：
 <!--SR:!2023-06-29,71,250-->
 
 #🧠 JavaScript： Promise 面對inversion of control 問題之概念 或者uninversion會是inversion of control的概念再次進行inverse。上述若以程式來開發的話，其實現概念為何？->->-> `1. 預期特定任務回傳東西至特定程式模組(呼叫方) 2. 藉由呼叫方根據回傳結果來自行處理，從而不把程式的continuation交給另一方執行`
-<!--SR:!2023-06-07,55,250-->
+<!--SR:!2024-02-04,195,250-->
 
 #🧠 inversion of control 中的 inversion 和 control 各為什麼意思？ ->->-> `	- Inversion：特定事物在特定層面下的相反情況  - Control：誰決定誰的過程、方法，在一般開發上，常會將決定當成執行/使用，也就是誰執行/使用誰的過程、方法 `
 <!--SR:!2023-10-27,116,230-->
