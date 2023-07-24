@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -164,7 +165,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "eb131ba4890d1a18",
+  "active": "dba5e16eed67c4ca",
   "lastOpenFiles": [
     "inbox/CommonJS 模組如何載入模組.md",
     "dev-practice/Practice - React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
