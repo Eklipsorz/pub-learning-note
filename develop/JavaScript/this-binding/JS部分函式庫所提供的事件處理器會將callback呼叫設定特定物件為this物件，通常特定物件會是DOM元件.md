@@ -62,11 +62,11 @@ test <button id="test">
 <!--SR:!2023-08-23,195,250-->
 
 #🧠 JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件，請舉例 ->->-> `	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點 - HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點`
-<!--SR:!2023-07-08,54,229-->
+<!--SR:!2023-12-13,142,229-->
 
 
 #🧠 JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件，請舉例 ->->-> `	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點 - HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點`
-<!--SR:!2023-07-08,54,229-->
+<!--SR:!2023-12-13,142,229-->
 
 
 #🧠 HTML DOM 標籤上所提供onxxx標籤和事件處理的callback有何關係？->->-> `首先在這裡已定義好事件處理的函式本身，標籤是指定其函式內容`

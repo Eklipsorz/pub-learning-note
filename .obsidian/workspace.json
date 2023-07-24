@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
+                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "前後端開發中，前端、請求、畫面、後端通常如何協作才能提升使用者體驗",
+                "query": "implicit binding",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
+                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
+                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md"
+                "file": "develop/JavaScript/this-binding/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding  implicit binding  default binding 和 new binding  implicit binding  default binding.md"
               }
             }
           },
@@ -165,8 +164,9 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "dba5e16eed67c4ca",
+  "active": "eb131ba4890d1a18",
   "lastOpenFiles": [
+    "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
     "inbox/CommonJS 模組如何載入模組.md",
     "dev-practice/Practice - React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "develop/React/React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
@@ -181,7 +181,6 @@
     "develop/React/React：chart 案例.md",
     "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
-    "inbox/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
     "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "develop/JavaScript/JS 物件上的屬性名稱可以是字串、單純名稱、單純數字，至於開放原因為：屬性名稱本質上是字串，只是額外開放其他可以直接被轉換成字串的資料型別來表示屬性名稱.md",
     "inbox/Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
