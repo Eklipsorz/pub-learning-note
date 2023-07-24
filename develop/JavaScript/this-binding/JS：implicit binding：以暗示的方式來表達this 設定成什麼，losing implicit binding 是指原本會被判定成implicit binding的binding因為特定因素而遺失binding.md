@@ -336,7 +336,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2023-09-01,203,250-->
 
 #🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-param-implicit-binding-example_evxxwu.png) ->->-> `window，且印出行星飛行。在這裡由於obj.fn 會被當成參數放進fn呼叫，但其實只是將obj.fn的參照位址丟進fn1的param來讓fn1呼叫它，而在這裡並沒有足夠的特徵能讓它以explicit binding、new binding、implicit binding來決定，所以最後只能選擇使用default binding來以global object來呼叫param()`
-<!--SR:!2023-07-22,176,250-->
+<!--SR:!2023-10-24,92,230-->
 
 
 #🧠 請問最後的fn1呼叫後，this會是什麼？ 為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-variable-implicit-binding-example_scvv3n.png) ->->-> `window，會印出行星飛行。在這裡會是將obj.fn的參照位址儲存在fn1變數上，並以fn1來呼叫，這使得系統會直接採用default binding所設定的global object來呼叫fn1`
