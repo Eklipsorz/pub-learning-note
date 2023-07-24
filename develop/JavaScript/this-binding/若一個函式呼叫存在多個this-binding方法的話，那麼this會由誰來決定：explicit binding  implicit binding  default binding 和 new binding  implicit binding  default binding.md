@@ -121,8 +121,9 @@ echo.name;//聽風是風
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼! ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563938/blog/javascript/this-binding/new-binding/new-and-explicit-binding-example_tmm8oa.png) ->->-> `會報錯，最主要這裡有new binding和explicit binding，然而程式本身不允許這兩者同時出現，所以會報錯`
 <!--SR:!2024-04-26,336,250-->
 
-#🧠 Question :: ->->-> ``
+#🧠 假若implicit this binding 是依據呼叫的物件來決定其this，請問執行以下代碼會得到甚麼? 為什麼? ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1690191858/blog/javascript/this-binding/implicit-this-binding/implicit-this-binding-error-example_brlx2l.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1690191858/blog/javascript/this-binding/implicit-this-binding/implicit-this-binding-error-example_brlx2l.png)->->-> `會得到錯誤，因為implicit this binding是限定於該物件所能夠擁有的方法來決定，而obj1並未存在著callThisExample這個方法，所以會因為不存在而無法呼叫成功`
 
+#🧠 implicit this binding 是依據呼叫的物件來決定其this ，這句話是對的? 還是錯誤的? ->->-> `錯誤的，是以該物件所能夠擁有的方法來決定，若本來就不存在該方法就無法決定`
 
 
 ---
