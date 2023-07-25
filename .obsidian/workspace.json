@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "optmizing compiler ",
+                "query": "JIT版本的JavaScript：假設超過x1且不超過x2就為warm，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引會如何執行？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -164,7 +164,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "eb131ba4890d1a18",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/JavaScript/IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成.md",
     "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",

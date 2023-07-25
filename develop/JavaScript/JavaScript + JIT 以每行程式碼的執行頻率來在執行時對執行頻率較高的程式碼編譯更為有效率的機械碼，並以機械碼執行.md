@@ -178,118 +178,116 @@ function arraySum(arr) {
 
 ## 複習
 #🧠 JavaScript 在JIT之前，是如何編譯和執行(不用講得太仔細)->->-> `JavaScript 在JIT之前，是將原始碼編譯成中間碼，並存於記憶體或者緩存，接著再邊轉中間碼為機械碼邊執行`
-<!--SR:!2023-06-20,201,248-->
+
 
 
 
 #🧠 JavaScript 加入 JIT時，使用哪種辦法來應用JIT？->->-> `JavaScript 會依據每個程式碼的執行頻率來進一步將執行頻率較高的程式碼編譯成更為效率的程式碼`
-<!--SR:!2023-06-15,196,248-->
+
 
 
 #🧠 JavaScript 加入 JIT時，會使用什麼來觀察每個程式碼的執行頻率，具體怎麼計算？->->-> `monitor，觀察正在執行的程式碼，並將為每段程式碼的**行數**和**所用到的資料類型**作為索引，並以此計算程式碼的執行次數`
-<!--SR:!2023-07-24,221,248-->
+
 
 #🧠 JavaScript 的 JIT：如何區分哪些程式碼的執行頻率為稍高、高 ->->-> `當程式碼的執行次數高於x1時，就設定為代表稍高的warm，若執行次數高於x1且高於x2的話，就將對應的程式碼設為代表高的hot`
-<!--SR:!2023-05-20,171,228-->
+
 
 #🧠 JavaScript的JIT：當被標記為warm的程式碼，會如何做優化？ 誰負責優化->->-> `將對應的ByteCode放置Baseline Compiler，由它編譯成平時在interpreter編譯的機械碼版本並於monitor上的紀錄中找到對應索引，接著將機械碼放置對應索引的程式碼欄位，當下一次遇到同樣索引的ByteCode，就直接紀錄對應的機械碼取出並執行，不用重新編譯和執行`
-<!--SR:!2023-07-09,200,228-->
+
 
 #🧠 JavaScript的JIT：當被標記為hot的程式碼，會如何做優化？ 誰負責優化 ->->-> `將對應的bytecode放置optimizing compiler，由它以目前執行行數作為索引，並以目前處理的bytecode型別作為使用優化版本機械碼的憑證，接著將對應bytecode以及根據執行資訊編譯為更為有效率的機械碼版本並放置對應索引的機械碼，如(line)->(type, code)，當下一次執行同樣行數，就會檢查其型別是否和optimizing compiler一樣，若一樣就執行對應的機械碼`
-<!--SR:!2023-07-22,216,248-->
+
 
 #🧠 整體來說，在JIT版本的JavaScript中，monitor具體會以什麼做為資料上紀錄的索引->->-> `目前程式碼的行數和目前行數程式碼所擁有的型別`
-<!--SR:!2023-05-19,109,228-->
+
 
 #🧠 整體來說，在JIT版本的JavaScript中，monitor具體會以目前程式碼的行數和目前行數原始碼程式碼所擁有的型別做為資料上紀錄的索引，那麼型別會是指什麼？ ->->-> `原始碼轉換成bytecode並執行時所獲取的變數型別`
-<!--SR:!2023-11-19,296,248-->
+
 
 
 #🧠 整體來說，在JIT版本的JavaScript中，optimizing compiler具體會以什麼做為資料上紀錄的索引？ 以什麼標準作為可使用對應機械碼的許可->->-> `會以行數作為索引，並以設定的前提標準來當作標準，具體會是起初該行數被執行時的變數資料型別為標準，看每次同一行的資料型別是否和先前一樣，若一樣就核可。`
-<!--SR:!2023-07-21,71,208-->
+
 
 #🧠 JIT版本的JavaScript：以什麼標籤作為放進baseline compiler 的處理標準 ->->-> `擁有warm標籤的索引`
-<!--SR:!2023-06-07,194,248-->
+
 
 #🧠 JIT版本的JavaScript：以什麼標籤作為放進optiziming compiler 的處理標準 ->->-> `擁有hot標籤的索引`
-<!--SR:!2024-11-05,469,228-->
+
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode時，且此時為剛執行的階段，那麼JavaScript會如何執行ByteCode? 紀錄次數？ ->->-> `由於每段程式碼都是剛執行，所以一開始都會按照解釋器邊將BytecCode 轉換成機械碼 邊執行，每段程式碼都會在執行時都根據行數、資料類型來當索引在monitor那邊更新對應的執行次數`
-<!--SR:!2024-05-21,376,228-->
+
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode並執行時，會如何monitor計數執行次數？ ->->-> `如果索引在monitor是不存在的話，就建立索引以及對應的執行次數為1、如果索引在monitor是存在的話，就以對應索引來增加對應執行次數，如count = count + 1`
-<!--SR:!2023-10-09,267,248-->
+
 
 
 #🧠 JIT版本的JavaScript：試說明以下紀錄是如何產生的![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/first-count-example_mbzuwv.png)->->-> `scope是指處於哪一個scope，如特定function或者global，line是指scope下的第幾行，type是該行數的程式碼是用哪些型別，count是對應程式碼被執行了多少次，在這裏是在arraySum函式下執行它的內容並從執行過程獲取出來的資料`
-<!--SR:!2023-06-21,37,210-->
 
 #🧠 JIT版本的JavaScript：假設超過x1且不超過x2就為warm，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引會如何執行？ ->->-> ` 會將對應的bytecode編譯成機械碼並跟索引來將機械碼放置monitor紀錄上，接著直接以該機械碼執行，未來碰上相同的索引就會以monitor能夠對應到的機械碼來執行，不用重新編譯並且執行`
-<!--SR:!2023-07-15,217,248-->
+
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上沒任何紀錄，但monitor有紀錄且有warm，請問每一次程式碼的執行會如何進行？（考慮為warm和不為warm的情況下) ->->-> `每一次執行就會以目前執行行數和型別來構成索引來從monitor找到對應紀錄，看是否為warm，若warm的話，就取出對應的機械碼執行，若不是的話，就交給interpreter邊轉化機械碼邊執行`
-<!--SR:!2024-08-17,460,250-->
+
 
 #🧠 JIT版本的JavaScript：試說明被標記為warm的原始碼發生了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/baseline-compiler-example_ofixlw.png)->->-> `在這裡由於arraySum函式的由(行數, 型別)所構成的索引之執行次數達標，所以就將對應的bytecode放到baseline compiler編譯成機械碼，然後根據索引來將機械碼更新至monitor上的紀錄，就如同最右邊的code，下次碰上相同的索引就以monitor上的紀錄來找到對應的機械碼執行`
-<!--SR:!2024-08-15,458,250-->
+
 
 #🧠 JIT版本的JavaScript：假設超過x2就為hot，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引(optimizing compiler)的話，會如何處理？ ->->-> `會以目前索引下的行數作為optimizing compiler的紀錄索引，並用目前索引下的型別作為前提或者假設，接著再將索引對應的bytecode和目前執行情況編譯成更為有效率的機械碼並依據行數來將機械碼放置optimizing compiler的對應紀錄上，最後以機械碼執行，下次當執行的程式碼行數是能夠在optimizing compiler紀錄能夠找到，就會比對其型別是否和前提一樣，若一樣從optimizing compiler取出對應行數的機械碼來執行`
-<!--SR:!2024-06-27,420,248-->
+
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上有任何紀錄，請問每一次程式碼的執行會如何進行？ ->->-> `每次執行就去會利用目前執行行數作為索引去在optimizing compiler找到相對應的紀錄，若找到對應行數，就會比對目前執行的程式碼所擁有的型別是否和紀錄上的假設一樣，若一樣就執行對應的機械碼，若不一樣的話，就要看看目前行數和目前型別是否能夠在baseline compiler找到對應紀錄，有的話，就以baseline compiler的機械碼為主，沒的話，就將對應bytecode丟進interpreter來邊轉換成機械碼邊執行`
-<!--SR:!2025-01-30,555,248-->
+
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設，會如何？->->-> `會計算不符合的次數，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
-<!--SR:!2023-08-09,230,248-->
+
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設的次數達到某種程度時，會是？->->-> `當違反假設超過一定次數時，就捨棄目前索引對應的機械碼，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
-<!--SR:!2023-07-06,213,248-->
+
 
 
 #🧠 JIT版本的JavaScript： 若optimizing compiler的假設成功率很高的話，會是什麼？為什麼呢？ ->->-> `代表著都一直執行非常有效率的機械碼，效能會非常好`
-<!--SR:!2023-09-12,250,248-->
+
 
 #🧠 JIT版本的JavaScript： 若optimizing compiler的假設成功率很低的話，會是什麼？ ->->-> `效能會比沒有Optimizing compiler來得慢，因爲得經過優化，然後再轉為反優化的過程`
-<!--SR:!2023-08-04,88,230-->
+
 
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上有任何紀錄的話 ->->-> `每次執行時就去透過目前執行行數來在optimizing compiler紀錄上試著找到相對應的紀錄 -> 若找不到就看看目前執行行數和資料型別所構成的索引是否被標記warm -> 在沒有就去邊解析邊執行`
-<!--SR:!2023-11-02,263,228-->
+
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上沒有任何紀錄的話->->-> `每一次就透過目前行數和資料型別所構成的索引看是否標記warm -> 在沒有就去邊解析邊執行`
-<!--SR:!2023-07-04,213,248-->
+
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，若對應索引為使用次數沒超過x1的話，流程會是什麼？ ->->-> `生成bytecode -> interepeter (邊編譯邊執行) -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2024-12-14,529,248-->
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若使用次數超過x1就且沒超過x2，且未使用baseline compiler生成機械碼，流程會是什麼？->->-> `生成bytecode -> 經過baseline compiler編譯成機械碼 -> 根據索引將機械碼紀錄至對應紀錄上的欄位 -> 以機械碼執行  ->  紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-06-05,193,248-->
+
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若使用次數超過x1就且沒超過x2，已用baseline compiler 生成機械碼，流程會是什麼？ ->->-> `生成bytecode ->  透過索引從monitor紀錄表格中找到對應機械碼 -> 以機械碼執行 ->  紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-07-26,221,248-->
+
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，且未使用optimizing compiler生成機械碼，流程會是什麼？->->-> `生成bytecode -> 經過optimizing compiler來根據目前執行狀態來編譯成更為有效執行的機械碼 ->將目前索引上的行數索引，並以型別作為是否能使用的假設標準 -> 以行數作為索引來儲存對應的機械碼：(line -> (type, code)) -> 以optimizing compiler對應的機械碼來執行->  紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-06-19,201,248-->
+
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optimizing compiler 且假設成立，流程會是什麼？ ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 -> 比較目前索引的型別是否與假設一樣 -> 若一樣的話，就以optimizing compiler對應的機械碼來執行 ->  紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-06-22,201,248-->
+
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且假設錯誤，流程會是什麼？(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot) ->->-> `(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot) 生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-08-28,241,248-->
+
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且假設錯誤，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行 -> 紀錄錯誤 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-06-02,193,248-->
+
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-08-25,234,246-->
+
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話) ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-07-18,218,248-->
+
 
 
 ---
