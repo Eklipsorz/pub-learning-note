@@ -18,7 +18,7 @@ ReferenceError: can't access lexical declaration 'X' before initialization
 
 ## 複習
 #🧠 在JS中，let/const 宣告會是包含哪些動作？ ->->-> `分配記憶體給對應識別字、分配初始值至對應記憶體區塊`
-<!--SR:!2023-05-04,169,250-->
+<!--SR:!2024-12-31,525,250-->
 
 #🧠 在JS中，顯示以下訊息 ReferenceError: can't access lexical declaration 'X' before initialization 這代表著什麼？ ->->-> `代表著識別字X的宣告還未做完就先存取其識別字對應的記憶體區塊內容`
 <!--SR:!2023-05-24,182,250-->

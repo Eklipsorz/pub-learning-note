@@ -150,10 +150,10 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 ## 複習
 
 #🧠 在Global Execution Context 中的global object是什麼？ ->->-> `標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容的物件`
-<!--SR:!2023-06-19,80,229-->
+<!--SR:!2024-03-06,225,229-->
 
 #🧠 在Function Execution Context 中的Arguments object是什麼以及其用途為何？ ->->-> `標記該執行環境是隸屬於誰並以其資訊來決定環境、如何執行內容的物件`
-<!--SR:!2023-06-06,31,229-->
+<!--SR:!2023-11-30,128,229-->
 
 #🧠 在Function Execution Context 中的Arguments object 會是什麼樣子，以test(1, 3, 4)為例 ->->-> `Arguments: {0: 1, 1: 3, 2: 4,length: 3},`
 <!--SR:!2023-10-18,160,249-->

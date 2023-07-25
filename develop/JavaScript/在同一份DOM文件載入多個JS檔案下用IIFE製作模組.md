@@ -119,12 +119,12 @@
 
 
 #🧠 如何在將由IIFE結構所構成的特定模組A來載入jQuery之情況下，來將特定模組A輸出至全域環境下，請用程式碼來表示->->-> `(function (window, $) { function changeColor() { console.log(++_count);  $('body').css('background', 'red') } window.module1 = {  // ES6 增強語法 changeColor } })(window, jQuery)`
-<!--SR:!2023-05-26,18,190-->
+<!--SR:!2023-08-11,17,170-->
 
 
 
 #🧠 (重複)如何在將由IIFE結構所構成的特定模組A來載入jQuery之情況下，來將特定模組A輸出至全域環境下，請用程式碼來表示->->-> `(function (window, $) { function changeColor() { console.log(++_count);  $('body').css('background', 'red') } window.module1 = {  // ES6 增強語法 changeColor } })(window, jQuery)`
-<!--SR:!2023-05-24,13,225-->
+
 
 
 #🧠 如何在HTML載入以IIFE為主且以全域變數來輸出功能的模組 ->->-> ` <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-=QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>`
