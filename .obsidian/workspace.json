@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+                "file": "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "LexicalEnvironment",
+                "query": "optmizing compiler ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+                "file": "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
+                "file": "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md"
+                "file": "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md"
               }
             }
           },
@@ -166,6 +166,8 @@
   },
   "active": "eb131ba4890d1a18",
   "lastOpenFiles": [
+    "develop/JavaScript/IIFE 是為了解決JavaScript 在同一份DOM Document載入多個JS檔案而產生出全域污染問題而提出的概念，具體實現是利用function、closure、grouping operator、圓括號來達成.md",
+    "develop/JavaScript/Global Execution Context 在creation phase建立對應GEC所擁有的environment record、this、outer，而在execution phase 是更新GEC內容(environment record).md",
     "develop/JavaScript/Function Execution Context 在creation phase建立對應FEC所擁有的environment record、this、outer，而在execution phase 是更新FEC內容(environment record).md",
     "develop/JavaScript/JavaScript + JIT 以每行程式碼的執行頻率來在執行時對執行頻率較高的程式碼編譯更為有效率的機械碼，並以機械碼執行.md",
     "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
@@ -190,8 +192,6 @@
     "inbox/Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
     "develop/React/React：useEffect 和 生命週期兩者是不一樣的，它的運作原理更像是資料上的同步化：將源自於props、state等其他地方的資料轉換成對應畫面並從中藉使畫面呈現的資料弄成一樣.md",
     "develop/React/React： 若狀態是以參照位址為主，setState很有可能會誤判並認為沒有更新就不會做觸發.md",
-    "inbox/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
-    "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
     "develop/css-style",
     "develop/browser",
     "draft",

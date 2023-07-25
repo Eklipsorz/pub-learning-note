@@ -74,7 +74,7 @@ var test = 123
 <!--SR:!2024-11-18,515,250-->
 
 #🧠 JS的hoisting背後潛藏的技術是什麼？不是指字面上的意思  ->->-> `在編譯期間，會對var變數宣告、函式宣告做以下事情，在執行時就已經獲取對應的記憶體空間和初始值 - 分配記憶體並放置初始值至對應記憶體，var拿到的初始值為undefined，函式拿到的初始值為存放函式內容的記憶體空間`
-<!--SR:!2023-05-27,193,250-->
+<!--SR:!2025-01-31,556,250-->
 
 #🧠 JS的hoisting優點是什麼？(效能) ->->-> `在正式使用特定程式碼下的識別字之前，就分配記憶體和指定初始值，最後讓識別字去對應記憶體區塊，以試著增加執行時的效能`
 <!--SR:!2024-05-21,404,250-->
@@ -83,7 +83,7 @@ var test = 123
 <!--SR:!2024-03-20,364,250-->
 
 #🧠 請問會印出什麼東西？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658494293/blog/javascript/hoisting/var-hoisting-example_ikc1rt.png) ->->-> `會印出undefined，這是因為在編譯期間就已經替var變數宣告分配記憶體，接著在賦予undefined這初始值，所以在執行前，test就是undefined的內容，只是還沒執行到修改123就先印出，所以為undefined`
-<!--SR:!2023-05-25,192,250-->
+<!--SR:!2025-02-02,558,250-->
 
 #🧠 請問會印出什麼東西？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658494293/blog/javascript/hoisting/function-hoisting-example_hfomaw.png) ->->-> `My cat's name is Tigger，這是因為在正式執行前就已經function宣告分配記憶體，接著在賦予一塊記憶體空間以及放置對應函式內容至其記憶體，接著再接catName這識別字對應這函式，所以在執行前就已經定義好了，只是現在拿現有的識別字對應內容來呼叫，也就是拿目前函式內容呼叫。`
 <!--SR:!2024-05-12,399,250-->
