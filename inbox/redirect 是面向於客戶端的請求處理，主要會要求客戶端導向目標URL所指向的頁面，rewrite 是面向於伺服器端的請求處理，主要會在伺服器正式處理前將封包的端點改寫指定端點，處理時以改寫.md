@@ -55,7 +55,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 ## 複習
 
 #🧠 redirect 是面向於什麼的處理？ ->->-> `面向於客戶端的請求處理`
-<!--SR:!2023-07-30,194,250-->
+<!--SR:!2024-12-07,495,250-->
 
 #🧠 redirect 用途是做了什麼？ ->->-> `主要會是要求客戶端直接導向目標URL 所指向的頁面來發送請求`
 <!--SR:!2024-02-20,243,230-->
@@ -65,7 +65,7 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2024-04-26,282,230-->
 
 #🧠 rewrite 是面向於什麼的處理->->-> `面向於伺服器的請求處理`
-<!--SR:!2023-07-30,194,250-->
+<!--SR:!2024-12-22,510,250-->
 
 
 #🧠 rewrite 用途是做了什麼？ ->->-> `主要會在伺服器接收到封包時，在正式處理前會將封包指示的端點改寫成指定端點，然後在正式處理就以改寫後的端點來處理`
@@ -82,10 +82,10 @@ http://localtest.me/articles/how-to-win-at-chess is a friendly URL for http://lo
 <!--SR:!2024-11-07,472,250-->
 
 #🧠  請用以下例子來說明rewrite：localtest.me/articles/how-to-win-at-chess to localtest.me/articles.aspx?name=now-to-win-at-chess ->->-> `當瀏覽器對localtest.me對應伺服器以articles/how-to-win-at-chess端點發送請求，伺服器接收到並於正式處理前就直接更改成articles.aspx?name=now-to-win-at-chess，然後伺服器就以改寫後結果來處理。`
-<!--SR:!2023-07-30,194,250-->
+<!--SR:!2024-12-12,500,250-->
 
 #🧠 rewrite vs. redirect 誰會更改瀏覽器所顯示URL->->-> `redirect`
-<!--SR:!2023-07-30,194,250-->
+<!--SR:!2024-12-11,499,250-->
 
 
 ---

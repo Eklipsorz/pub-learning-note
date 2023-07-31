@@ -101,7 +101,7 @@ fragment
 
 
 #🧠 React Fragment 如何用程式碼表示它本身？ ->->-> `const Fragment = (props) => { return props.children;  }; export default Fragment;`
-<!--SR:!2023-07-27,99,210-->
+<!--SR:!2023-09-21,52,190-->
 
 
 #🧠 React fragment 語法會有哪些形式(提示兩個) ->->-> `return (<React.Fragment> <childrean> </React.Fragment>) 和 return ( <> <children> </> )`
