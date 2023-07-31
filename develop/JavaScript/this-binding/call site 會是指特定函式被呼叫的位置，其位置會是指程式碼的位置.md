@@ -65,13 +65,13 @@ baz(); // baz 的呼叫地點
 <!--SR:!2023-08-04,185,250-->
 
 #🧠 電腦科學裡的call site 是指特定函式被呼叫的位置，其位置是什麼？->->-> `其位置會是指程式碼的位置`
-<!--SR:!2023-07-30,183,250-->
+<!--SR:!2024-11-01,459,250-->
 
 #🧠 JS ： 用來判斷目前執行環境的this 會是什麼之依據 是哪些？->->-> `call site、call stack`
 <!--SR:!2023-10-04,202,230-->
 
 #🧠 call site在JS的用途是什麼？ ->->-> `判斷目前執行環境的this 會是什麼之依據 `
-<!--SR:!2023-07-31,183,250-->
+<!--SR:!2024-10-31,458,250-->
 
 #🧠 請問baz、bar、foo的 call site和call stack是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485554/blog/javascript/this-binding/call-site/call-site-example_nbpxxl.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665485840/blog/javascript/this-binding/call-site/call-site-example-answer_bujtbo.png)`
 <!--SR:!2023-08-16,192,250-->
