@@ -146,8 +146,8 @@ GlobalExectionContext = {
 <!--SR:!2023-09-30,241,247-->
 
 
-#🧠 GEC - creation phase 的範疇是哪些？ ->->-> `檔案裡的最外圍scope`
-<!--SR:!2023-07-29,246,248-->
+#🧠 GEC (Global Execution Context) 的紀錄範疇是哪些？ ->->-> `檔案裡的最外圍scope`
+<!--SR:!2025-04-04,613,248-->
 
 #🧠 GEC - creation phase 的製作流程是哪些(提示：先從建立GEC這物件說起，全域物件、this變數、建立所謂的Lexical Environment)->->-> `建立一個全域物件：在瀏覽器會是名為window的全域物件，在Node.js會是名為global的全域物件、建立this物件並決定this參照於誰：在這裡建立完會去指向當前被建立的全域物件、建立Lexical Environment`
 <!--SR:!2023-09-28,283,250-->
@@ -181,7 +181,7 @@ GlobalExectionContext = {
 <!--SR:!2023-09-06,105,228-->
 
 #🧠 Global Execution Context ：LexicalEnvironment 主要記錄著什麼？ ->->-> ` LexicalEnvironment 從GEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
-<!--SR:!2023-05-16,201,248-->
+<!--SR:!2025-03-15,593,248-->
 
 #🧠 Global Execution Context ：VariablEenvironment 主要記錄著什麼？ ->->-> `從GEC收集var形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中`
 <!--SR:!2025-01-12,559,248-->
@@ -199,7 +199,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context ：Lexical Environment 中的Outer reference 是什麼？ 做什麼用？->->-> `Outer reference是用來實現scope chain，當目前EC找不到對應名稱時就會往outer所指向的EC來尋找，主要會指向呼叫建立目前EC的EC，比如GEC呼叫一個函式，那麼其函式的FEC之outer就會是指向於呼叫FEC的GEC`
-<!--SR:!2023-07-28,244,248-->
+<!--SR:!2025-03-31,609,248-->
 
 #🧠 Global Execution Context ：Lexical Environment 中的ThisBinding 是什麼？ 做什麼用？那麼指向什麼? (提示：以瀏覽器或者Node.js來說明)->->-> `指定This變數要指定哪個對象，在GEC的話會是指向於GEC特有的全域物件，比如在瀏覽器就是名為window的全域物件，在Node.js就中就是名為global的全域物件`
 <!--SR:!2025-02-28,584,248-->
