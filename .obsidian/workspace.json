@@ -13,25 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "develop/React/React：使用useHttp hook至增加任務的元件之案例.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f09871f45a19be3d",
+            "id": "c27a43d082961d15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：使用Fetch API來發送請求來增加資料.md",
+                "file": "dev-practice/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c39a22ec553fe419",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/Untitled 6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
+                "file": "inbox/Untitled 6.md"
               }
             }
           },
@@ -177,35 +190,36 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "cca3a10dd7b332dc",
+  "active": "c39a22ec553fe419",
   "lastOpenFiles": [
-    "dev-practice/Practice - React：使用Fetch API 來發送請求來獲取資料並渲染.md",
-    "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
-    "inbox/google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
-    "develop/React/React：Context 命名法則 & 使用法則.md",
-    "develop/React/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
-    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
-    "inbox/Simple Mail Transfer Protocol 是專門用作於以email傳遞為主的服務協定.md",
-    "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
-    "dev-practice/Practice - React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
-    "develop/JavaScript/tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
-    "inbox/實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
-    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
-    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
-    "inbox/redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
-    "develop/html/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
-    "develop/React/React：使用Fetch API來發送請求來增加資料.md",
-    "develop/html/Untitled.md",
-    "develop/html",
-    "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
-    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "inbox/Redis 為何會採用Lua來實現原子化？.md",
-    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
-    "inbox/Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
-    "develop/browser/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
-    "develop/React/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
     "inbox/redis 分散式鎖 - 釋放.md",
-    "inbox/Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
+    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
+    "inbox/實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
+    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
+    "inbox/(待查)Router 元件負責定義basepath.md",
+    "develop/medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數.md",
+    "inbox/process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
+    "develop/React/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
+    "develop/React/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
+    "develop/React/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
+    "inbox/email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
+    "inbox/redis 分散式鎖 - 上鎖.md",
+    "develop/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
+    "inbox/CSS：使用specificity 過高的declaration 會破壞原有模組所要負責的declaration定義.md",
+    "develop/Database/SQL 語法中的JOIN 查詢 皆先將相關連的表格連結再一起並另外儲存，然後再從中讓集合的每個元素去從儲存結果找到相關連的紀錄.md",
+    "inbox/多執行緒同時搶到鎖會因為硬體、鎖算法、效能而導致只會有一個執行緒搶到鎖.md",
+    "develop/React/food-order-project：input 構建實現概念和程式碼.md",
+    "develop/html/div soup 最主要是指被div 巢狀結構所內含的內容，由於巢狀結構會構成像碗的形狀，而內容就好比碗裡的湯，因此才將div 巢狀結構所內含的內容稱之為div soup.md",
+    "inbox/CommonJS 模組解析全文.md",
+    "develop/React/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
+    "develop/React/food-order-project：Cart Context 構建.md",
+    "inbox/redis expire 指令設定指定Key的過期時間.md",
+    "inbox/金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
+    "develop/json",
+    "develop/html",
     "promise",
     "develop/css-style",
     "develop/browser",
@@ -214,7 +228,6 @@
     "develop/dns",
     "develop/win-development",
     "develop/authentication/Refresh-token",
-    "develop/authentication/OpenID-Connect",
     "Pasted image 20230119210755.png"
   ]
 }

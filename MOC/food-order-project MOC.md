@@ -8,7 +8,7 @@
 
 [[food-order-project：Cart Context 構建]]
 
-[[food-order-project：Input 構建實現概念和程式碼]]
+[[food-order-project：input 構建實現概念和程式碼]]
 
 [[food-order-project：Cart 構建實現概念和程式碼 版本二]]
 
