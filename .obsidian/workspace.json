@@ -8,23 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eb131ba4890d1a18",
+            "id": "cca3a10dd7b332dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：ref 主要是建立一個物件來參照特定JSX節點的實際DOM節點，以此讓目前元件來操作實際DOM節點.md",
+                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "10a0c864631c5815",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -33,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
+                "file": "develop/React/React：使用Fetch API來發送請求來增加資料.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
+                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md",
+                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router/react-router-dom v6 中取消掉useHistory和prompt元件，替代方案為使用useNavigate和自製一個prompt元件來使用.md"
+                "file": "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md"
               }
             }
           },
@@ -186,34 +177,35 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "dba5e16eed67c4ca",
+  "active": "cca3a10dd7b332dc",
   "lastOpenFiles": [
-    "inbox/express app 所建立的middleware和router獨立建立的middleware是獨立的.md",
-    "develop/css-style/element.class selector  是一種選擇器，專門選擇同時符合type selector以及class selector的DOM節點.md",
-    "develop/JavaScript/JS：And operator、Or operator、Not operator當遇到都是boolean就以boolean來處理；若當遇到任一一個不為boolean就以強制轉換boolean來比較獲取結果.md",
-    "develop/browser/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
-    "inbox/當在async 函式內碰到指定await promise指派給特定識別字時，await會以分配記憶體來定義存放resolve的結果值，並賦予其識別字1，再以promise.then來設定resolve的結果值指派給識別字1所對應的記憶體.md",
-    "develop/React/React：使用hook function有三大準則，第一只有function component和custom hook 才能呼叫hook，第二只能在前兩者一進入就會執行的地方地方，第三確保執行effect的內容為dependency.md",
-    "inbox/React：替 food-order project 添加custom-hook來發送請求.md",
-    "inbox/express未給予回應至請求，並不會發送set-cookie封包或者回應封包給客戶端.md",
-    "inbox/express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
-    "inbox/Lock & Table lock & row lock.md",
-    "develop/JavaScript/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
-    "develop/browser/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
-    "develop/React/React：由於useCallback會是回傳函式物件，所以會透過函式物件特有的closure來對應執行時間點下的渲染函式所產生出來的記憶體區塊.md",
-    "develop/React/useState使用場景運用在狀態間並無關係且狀態更新較為單一簡單，useReducer使用場景運用在狀態間有關係且狀態更新較為複雜.md",
-    "develop/React/React：為何直接更改元件下的內容而得不到對應渲染畫面？這是因為內容有更新，但沒自動重新執行對應函式來重新渲染成內容更新後的元件樣貌.md",
-    "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染所需要的載入效果以及沒載入但卻沒資料時的額外呈現效果.md",
-    "inbox/focus事件為特定元件轉變成active element的時機點.md",
-    "inbox/ioredis 回傳結果會依據著redis指令原本指定的回傳來決定，成功就1，失敗就0.md",
-    "inbox/金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
-    "inbox/redis expire 指令設定指定Key的過期時間.md",
-    "develop/css-style/descendant combinator 會是利用DOM節點之間的parent-child關係來選擇child dom節點或者後裔dom 節點.md",
-    "inbox/food-order-project：Cart Context 構建.md",
-    "inbox/Sequelize 定義一組邏輯運算語法Operators來幫助開發者.md",
-    "develop/JavaScript/named parameters 或 named argument 是指作為參數來進行特定處理的內容，其內容會以特定名稱來命名標記，以便能在處理時方便辨認.md",
-    "inbox/CommonJS 模組解析全文.md",
-    "inbox/div soup 最主要是指被div 巢狀結構所內含的內容，由於巢狀結構會構成像碗的形狀，而內容就好比碗裡的湯，因此才將div 巢狀結構所內含的內容稱之為div soup.md",
+    "dev-practice/Practice - React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+    "develop/React/React：使用Fetch API 來發送請求來獲取資料並渲染.md",
+    "inbox/google cloud 上的memorystore for redis 服務並無法提供載入module的功能.md",
+    "develop/React/React：Context 命名法則 & 使用法則.md",
+    "develop/React/React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
+    "inbox/react development tools：components tab 是以React的角度來觀看和編輯網頁結構.md",
+    "inbox/Simple Mail Transfer Protocol 是專門用作於以email傳遞為主的服務協定.md",
+    "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
+    "dev-practice/Practice - React：custom hook 在component使用就如同函式呼叫那樣使用，其搭載的hook和custom hook會註冊在該component上.md",
+    "develop/JavaScript/tagged template literal 是標記特定字串作為特定函式A的參數來使用，特定字串是會用template literal來構成.md",
+    "inbox/實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
+    "inbox/Cloud Storage 是Google 用來儲存資料的雲端服務.md",
+    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+    "inbox/redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
+    "develop/html/header 是一個網頁元素，主要會以網頁畫面上的頂部區塊呈現引導使用者進入應用程式的區塊.md",
+    "develop/React/React：使用Fetch API來發送請求來增加資料.md",
+    "develop/html/Untitled.md",
+    "develop/html",
+    "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
+    "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
+    "inbox/Redis 為何會採用Lua來實現原子化？.md",
+    "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
+    "inbox/Database Replication  是將資料進行同結構同內容的複製來製作成多個副本分發至其他系統上.md",
+    "develop/browser/瀏覽器發送後端請求，回應之前，會先有預設畫面瀏覽給客戶端來增加使用體驗，而非等到回應才渲染，隨後等到回應到來後，就重新渲染.md",
+    "develop/React/React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
+    "inbox/redis 分散式鎖 - 釋放.md",
+    "inbox/Cloud Build要付費才能啟用private pool來與VPC下的 redis 連接.md",
     "promise",
     "develop/css-style",
     "develop/browser",
@@ -223,7 +215,6 @@
     "develop/win-development",
     "develop/authentication/Refresh-token",
     "develop/authentication/OpenID-Connect",
-    "develop/authentication/OAuth/Untitled",
     "Pasted image 20230119210755.png"
   ]
 }
