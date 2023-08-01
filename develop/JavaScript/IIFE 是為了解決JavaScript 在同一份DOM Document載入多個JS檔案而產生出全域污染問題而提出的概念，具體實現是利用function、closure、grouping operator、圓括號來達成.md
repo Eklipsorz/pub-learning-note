@@ -244,12 +244,12 @@ a * c + b * c // 9
 <!--SR:!2024-09-27,492,250-->
 
 #🧠  IIFE (Immediately Invoked Function Expression) 具體是什麼？它是函式嗎？ ->->-> `IIFE實際上是一個function一被定義/宣告就直接執行`
-<!--SR:!2023-08-02,2,247-->
+<!--SR:!2023-08-06,4,247-->
 
 
 
 #🧠 IIFE (Immediately Invoked Function Expression)是官方標準所提出的？ ->->-> `Ben Alman，並非標準下所提供的語法`
-<!--SR:!2023-08-02,2,247-->
+<!--SR:!2023-08-06,4,247-->
 
 
 
@@ -257,14 +257,14 @@ a * c + b * c // 9
 <!--SR:!2024-01-26,185,210-->
 
 #🧠 IIFE (Immediately Invoked Function Expression) 為何採用function ->->-> `藉由scope分開來解決：憑藉function 可以將scope分成global scope 和 function scope`
-<!--SR:!2023-08-02,2,247-->
+<!--SR:!2023-08-07,5,247-->
 
 
 #🧠 IIFE (Immediately Invoked Function Expression)  為何使用closure ? 可以的話，舉一個例子來表示 ->->-> `具體是以function closure來打造專屬於特定模組下所能擁有的函式、資料，拿以下作為例子，xxx為模組，而xxx1和xxx2則是模組能提供的功能區塊，而data則是專屬於xxx模組下的資料 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658247098/blog/javascript/lexical%20scope/closure-result_xtdlgu.png)`
 <!--SR:!2024-07-30,451,250-->
 
 #🧠 要用IIFE來實現模組，對他而言的模組化目標為？ (函式可以重複呼叫誒、函式得宣告才能使用)->->-> `1. 模組的引入要單一簡單: 引入動作就只需要一個指令就能完成。 2. 要確保引入模組的方式就只有合法的方式能夠引入。`
-<!--SR:!2023-08-02,2,247-->
+<!--SR:!2023-08-07,5,247-->
 
 
 
