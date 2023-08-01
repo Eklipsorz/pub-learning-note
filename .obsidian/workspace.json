@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "ee8dbe8045d65aab",
+        "id": "8820974993dcb552",
         "type": "tabs",
         "children": [
           {
-            "id": "cca3a10dd7b332dc",
+            "id": "45458e879806375a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/React/React：使用useHttp hook至增加任務的元件之案例.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c27a43d082961d15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev-practice/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c39a22ec553fe419",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "inbox/Untitled 6.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "inbox/Untitled 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +106,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "inbox/Untitled 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,9 +127,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "inbox/Untitled 6.md"
-              }
+              "state": {}
             }
           },
           {
@@ -190,8 +157,12 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "c39a22ec553fe419",
+  "active": "45458e879806375a",
   "lastOpenFiles": [
+    "2023-08-01.md",
+    "develop/React/React：使用useHttp hook至增加任務的元件之案例.md",
+    "dev-practice/Untitled.md",
+    "inbox/Untitled 6.md",
     "inbox/redis 分散式鎖 - 釋放.md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
     "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
@@ -214,10 +185,6 @@
     "develop/React/food-order-project：input 構建實現概念和程式碼.md",
     "develop/html/div soup 最主要是指被div 巢狀結構所內含的內容，由於巢狀結構會構成像碗的形狀，而內容就好比碗裡的湯，因此才將div 巢狀結構所內含的內容稱之為div soup.md",
     "inbox/CommonJS 模組解析全文.md",
-    "develop/React/food-order-project：將CartProvider納入在要對購物車進行處理的介面-清單.md",
-    "develop/React/food-order-project：Cart Context 構建.md",
-    "inbox/redis expire 指令設定指定Key的過期時間.md",
-    "inbox/金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
     "develop/json",
     "develop/html",
     "promise",
