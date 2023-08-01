@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/OS/memory/Untitled.md",
+                "file": "develop/OS/memory/Memory leak 是指原本可用的記憶體資源因受到特定方式而轉變(流失)成不可使用的記憶體資源.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/memory/Untitled.md",
+                "file": "develop/OS/memory/Memory leak 是指原本可用的記憶體資源因受到特定方式而轉變(流失)成不可使用的記憶體資源.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/OS/memory/Untitled.md",
+                "file": "develop/OS/memory/Memory leak 是指原本可用的記憶體資源因受到特定方式而轉變(流失)成不可使用的記憶體資源.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/OS/memory/Untitled.md"
+                "file": "develop/OS/memory/Memory leak 是指原本可用的記憶體資源因受到特定方式而轉變(流失)成不可使用的記憶體資源.md"
               }
             }
           },
@@ -172,7 +172,7 @@
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_2GU6KYIP.md",
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_QNAFQUSD.md",
     "develop/Express/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md",
-    "develop/OS/memory/Untitled.md",
+    "develop/OS/memory/Memory leak 是指原本可用的記憶體資源因受到特定方式而轉變(流失)成不可使用的記憶體資源.md",
     "develop/OS/memory",
     "develop/JavaScript/promise/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "2023-08-01.md",
