@@ -63,7 +63,7 @@
 
 
 #🧠 以server-side session為基礎的應用所帶來的好處為何就是較不容易偽造其代表access的識別字 ->->-> `因為可以在伺服器內使用亂數來產生，外部的人並不會知道`
-<!--SR:!2023-07-27,128,250-->
+<!--SR:!2024-06-29,332,250-->
 
 #🧠 以server-side session為基礎的應用所帶來的壞處就是？（提示：有兩大點） ->->-> `需要伺服器額外處理空間成本和時間成本在session的儲存、管理、獲取、驗證上、Monitoring System上的Visibility、Reliability、Scalability會不容易提升`
 
@@ -82,7 +82,7 @@
 #🧠 以server-side session為基礎來構建登入驗證服務：利用permission 或者access來索要受保護的資源之流程是什麼？ ->->-> `1. 客戶端發送請求時，會根據請求端點和伺服器來從客戶端的cookie找到相對應的資料夾雜在請求封包內，在這裡會是session id 2. 伺服器收到請求時，就會拿session id去從對應session store找到對應的session，若找到就得到對應的credential；若找不到就報錯 3. 伺服器就將請求回應傳送給客戶端`
 <!--SR:!2024-06-27,330,250-->
 #🧠 以server-side session為基礎來構建登入驗證服務：利用permission 或者access來索要受保護的資源之流程，請問流程會是什麼？以畫圖表示->->-> ``
-<!--SR:!2023-08-01,130,250-->
+<!--SR:!2024-06-28,331,250-->
 
 
 #🧠 server-side session作為登入驗證方法，請問它隸屬於哪一種類的技術? 是屬於token based? 還是session based? ->->-> `session based authentication`
