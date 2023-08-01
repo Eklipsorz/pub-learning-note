@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/promise/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/OS/memory/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "creation phase 的範",
+                "query": "tag:#🌱",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/OS/memory/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
+                "file": "develop/OS/memory/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md"
+                "file": "develop/OS/memory/Untitled.md"
               }
             }
           },
@@ -165,8 +164,12 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "dba5e16eed67c4ca",
+  "active": "45458e879806375a",
   "lastOpenFiles": [
+    "develop/Express/express-session 內建的MemoryStore由於不會監測每個session的狀態來進行記憶體釋放或者管理，所以不適合做真正的session store.md",
+    "develop/OS/memory/Untitled.md",
+    "develop/OS/memory",
+    "develop/JavaScript/promise/promise 物件 本身代表著夾雜任務內容、任務執行狀態的物件，其物件主要由async function所回傳的或者使用Promise建構式，任務內容也是以async function或者建構式內的內容為主.md",
     "2023-08-01.md",
     "develop/React/React：使用useHttp hook至增加任務的元件之案例.md",
     "dev-practice/Untitled.md",
@@ -190,9 +193,6 @@
     "inbox/CSS：使用specificity 過高的declaration 會破壞原有模組所要負責的declaration定義.md",
     "develop/Database/SQL 語法中的JOIN 查詢 皆先將相關連的表格連結再一起並另外儲存，然後再從中讓集合的每個元素去從儲存結果找到相關連的紀錄.md",
     "inbox/多執行緒同時搶到鎖會因為硬體、鎖算法、效能而導致只會有一個執行緒搶到鎖.md",
-    "develop/React/food-order-project：input 構建實現概念和程式碼.md",
-    "develop/html/div soup 最主要是指被div 巢狀結構所內含的內容，由於巢狀結構會構成像碗的形狀，而內容就好比碗裡的湯，因此才將div 巢狀結構所內含的內容稱之為div soup.md",
-    "inbox/CommonJS 模組解析全文.md",
     "develop/json",
     "develop/html",
     "promise",
@@ -202,7 +202,6 @@
     "dev-practice",
     "develop/dns",
     "develop/win-development",
-    "develop/authentication/Refresh-token",
     "Pasted image 20230119210755.png"
   ]
 }
