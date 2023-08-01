@@ -166,6 +166,8 @@
   },
   "active": "45458e879806375a",
   "lastOpenFiles": [
+    "annotation/@http___zotero.org_users_9524198_items_HFWS9Q6M.md",
+    "annotation/@http___zotero.org_users_9524198_items_QNAFQUSD.md",
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_HFWS9Q6M.md",
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_2GU6KYIP.md",
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_QNAFQUSD.md",
@@ -191,8 +193,6 @@
     "develop/React/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
     "develop/React/React：layout component 會是以元件來表示一個多個固定元件的固定擺放配置，並允許接收props資訊來從其他元件中接收資訊並來構成適合該元件使用的元件.md",
     "inbox/email 內容依據格式分為兩種-HTML email和 Plain Text Email，前者是以HTML標籤語言來撰寫的內容格式，後者則是純文字內容.md",
-    "inbox/redis 分散式鎖 - 上鎖.md",
-    "develop/Just-In-Time Compilation 是指特定代碼需要執行時才進行機械碼的編譯，接著將機械碼存放在緩存來執行.md",
     "develop/json",
     "develop/html",
     "promise",
