@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "dev-practice/Practice - React：Input component 重構.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "請到/react-builder/question-review/refactor-Input-question領取題目，請將/components/Login/Login.js中的input組合元件做出可重複使用的元件",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "dev-practice/Practice - React：Input component 重構.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
+                "file": "dev-practice/Practice - React：Input component 重構.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md"
+                "file": "dev-practice/Practice - React：Input component 重構.md"
               }
             }
           },
@@ -166,6 +166,9 @@
   },
   "active": "c95d65a1de739cdd",
   "lastOpenFiles": [
+    "develop/React/React：Input component 重構.md",
+    "dev-practice/Practice - React：Input component 重構.md",
+    "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
     "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
     "develop/browser/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
@@ -190,9 +193,6 @@
     "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
     "inbox/(待查)Router 元件負責定義basepath.md",
     "develop/medium 為傳遞或表達特定事物的任一方法或形式，比如表達資訊的圖片、報紙、影片，其中media為單數，medium為複數.md",
-    "inbox/process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
-    "develop/React/React：useImperativeHandle 是定義一組以DOM原生渲染指令為主的處理來賦予至對應ref物件的current屬性.md",
-    "develop/React/React.memo 適用場景為不常變更的元件內容、規模較大的專案，不適用場景為時常變更的元件、props為基礎來重複使用的元件、規模較小的專案.md",
     "develop/json",
     "develop/html",
     "promise",
