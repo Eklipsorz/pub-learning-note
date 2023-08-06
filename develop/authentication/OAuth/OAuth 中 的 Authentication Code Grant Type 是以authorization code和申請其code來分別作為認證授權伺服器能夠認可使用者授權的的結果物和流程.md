@@ -262,29 +262,29 @@ Pragma: no-cache
 
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中：token 和 authorization code 之間的差別是什麼？->->-> `前者是代表特定身份所擁有的使用權限，後者則是用來申請token的代碼，其本身代表著使用者對於授權的許可證明`
-<!--SR:!2023-07-02,55,230-->
+<!--SR:!2024-01-19,165,230-->
 
 
-#🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 使用限制是什麼？ ->->-> `有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次`
+#🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 本身限制是什麼？ ->->-> `有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次`
 <!--SR:!2023-05-23,17,230-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 使用限制是有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次，若違反限制的話，會如何？ ->->-> `若違反限制，就會在申請token過程中被拒絕`
-<!--SR:!2023-08-01,85,250-->
+<!--SR:!2024-03-14,220,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，其導向請求源自哪裡？ 會發送至哪？->->-> `源自於認證授權伺服器發過來的導向請求，會發送至client指定接收code的地點`
 <!--SR:!2023-07-29,84,250-->
 
 
-#🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，請求中的參數會是如何？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
+#🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code來向認證伺服器索要token請求"，請求中的參數會是如何？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
 <!--SR:!2023-05-22,14,230-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數- grant_type 、code、redirect_uri、client_id是什麼？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
 <!--SR:!2023-11-12,143,250-->
 
-#🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數為何需要redirect_uri、client、code ->->-> `需要驗證該應用服務是否為當初向使用者發送授權申請`
+#🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該redirect_uri、client_id發送索要token請求"，請求中的參數為何需要redirect_uri、client、code ->->-> `需要驗證該應用服務是否為當初向使用者發送授權申請`
 <!--SR:!2023-06-21,59,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token"，認證授權伺服器發送過來的回應封包會有哪些內容？ ->->-> `	- access_token：表示其使用者授予權限的token - token_type：表示token種類，可以是bearer類型 - expires_in：表示過期時間，單位為秒 - refresh_token：表示用來申請access-token的token - scope：表示access_token被授與的權限為何`

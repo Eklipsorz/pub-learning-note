@@ -85,7 +85,7 @@ Pragma: no-cache
 ## 複習
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是什麼？->->-> `Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token`
-<!--SR:!2023-06-09,50,250-->
+
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是以什麼形式來當作使用者同意授權的資料？ ->->-> `使用者的帳密`
 <!--SR:!2023-07-19,76,250-->
@@ -94,7 +94,7 @@ Pragma: no-cache
 <!--SR:!2023-08-08,85,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？->->-> `A. 使用者直接向客戶端提供特定系統的帳號和密碼、 B. 客戶端憑藉著使用者的帳密來向認證伺服器索要token、C. 認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端`
-<!--SR:!2023-07-26,79,250-->
+<!--SR:!2023-09-20,44,230-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？畫圖來說明 ->->-> ![密码模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051206.png)
 <!--SR:!2023-08-02,83,250-->
@@ -113,7 +113,7 @@ Pragma: no-cache
 <!--SR:!2023-08-10,87,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `封包`
-<!--SR:!2023-05-12,34,249-->
+<!--SR:!2024-02-14,191,249-->
 
 
 
