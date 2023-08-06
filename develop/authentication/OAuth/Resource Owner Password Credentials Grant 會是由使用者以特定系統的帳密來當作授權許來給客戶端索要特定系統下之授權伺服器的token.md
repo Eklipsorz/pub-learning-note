@@ -88,7 +88,7 @@ Pragma: no-cache
 
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是以什麼形式來當作使用者同意授權的資料？ ->->-> `使用者的帳密`
-<!--SR:!2023-07-19,76,250-->
+<!--SR:!2024-03-12,218,250-->
 
 #🧠 Resource Owner Password Credentials Grant 在OAuth 下的適用場景為何？ ->->-> `	- 由於是使用者提供高度敏感的帳密，所以客戶端必須是值得信任，比如客戶端為作業系統的一部分或者由一個著名公司出品的客戶端 - 其他授權模式無法實現才會選擇本方案`
 <!--SR:!2023-08-08,85,250-->
