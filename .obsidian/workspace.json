@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件",
+                "query": "redirect",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md"
+                "file": "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md"
               }
             }
           },
@@ -166,12 +166,17 @@
   },
   "active": "c95d65a1de739cdd",
   "lastOpenFiles": [
+    "develop/browser/redirect 是面向於客戶端的請求處理，主要會要求客戶端導向目標URL所指向的頁面，rewrite 是面向於伺服器端的請求處理，主要會在伺服器正式處理前將封包的端點改寫指定端點，處理時以改寫.md",
+    "develop/React/react-router/router-6.4/redirect 在react-router-dom v6.4裡是一個封裝後的Response 物件，當Route元件的action屬性值是專門導向的response時，React-router就會自動將使用者導向至對應頁面。.md",
+    "develop/Express/express - return res.send() vs res.send 問題 ，前者可以中斷目前的執行，後者則是執行完res.send就執行後續.md",
+    "develop/React/react-router/router-6.4/使用useNavigation來實現確保一旦提交就不會有額外的提交內容，手段可以是一旦提交就關閉提交按鈕，按鈕顯示submitting.md",
+    "develop/JavaScript/promise/callback 本身為由特定程式模組A交由任務處理完特定任務來通知程式模組A任務狀態或者代替程式模組A處理的手段之一，缺點為缺乏循序性、缺乏可信任性.md",
+    "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
     "develop/JavaScript/javascript - function 語法有分為function declaration 、function expression.md",
     "dev-practice/Practice - React：Input component 重構.md",
     "develop/React/React：Input component 重構.md",
     "develop/authentication/Symmetric-key algorithm 概念會是加密方和解密方都使用同一個鑰匙值進行加密或解密；Public-key cryptography 概念會是加密方和解密方兩方都拿獨立不同的鑰匙值來各別做加密或者解密.md",
     "develop/authentication/token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
-    "dev-practice/Practice - token會牽涉到許多頁面元件和其他元件的存取，會以集中儲存狀態和資訊的元件來共享token給各個元件的做法來管理其token和登入狀態.md",
     "develop/browser/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
     "develop/OS/memory/Memory leak 是指原本可用的記憶體資源因受到特定方式而轉變(流失)成不可使用的記憶體資源.md",
     "annotation/@http___zotero.org_users_9524198_items_HFWS9Q6M.md",
@@ -188,11 +193,6 @@
     "inbox/redis 分散式鎖 - 釋放.md",
     "inbox/Google Cloud Memorystore 是以提供記憶體儲存空間為主的服務.md",
     "inbox/gsutil 是用來遠端操控Cloud Storage的工具.md",
-    "inbox/node.js 透過node-redis程式來與redis server連線並下達對應資料庫指令.md",
-    "inbox/實體資料庫系統不需要外鍵的主因有減少不必要檢查、容納舊資料和缺失資料.md",
-    "inbox/使用Google API必須透過建立對應權限的帳號並從中對應帳號的access-token(key).md",
-    "inbox/RedisJSON 讓Redis 伺服器能夠以JSON形式來處理每個key上的value.md",
-    "inbox/(待查)Router 元件負責定義basepath.md",
     "develop/json",
     "develop/html",
     "promise",
