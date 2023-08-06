@@ -148,7 +148,7 @@
 <!--SR:!2023-10-22,171,250-->
 
 #🧠 OAuth 完整名稱是Open Authentication 嗎？為什麼？ ->->-> `不是，會是Open Authorization`
-<!--SR:!2023-07-13,108,250-->
+<!--SR:!2024-06-03,301,250-->
 
 #🧠 Open Authorization 或者OAuth 會是什麼？ ->->-> `一種標準、協定。定義如何在不需要將 "擁有資源使用權限的使用者帳密" 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情。`
 <!--SR:!2023-07-17,110,250-->
@@ -187,6 +187,7 @@
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Resource會管理資源和驗證Token，那麼Resource Server會有什麼樣的業務->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
 <!--SR:!2023-08-18,130,250-->
 
+#🧠 在Open Authorization中，response_type會是指甚麼意思?  ->->-> `會是指給予請求者的回應結果形式`
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`

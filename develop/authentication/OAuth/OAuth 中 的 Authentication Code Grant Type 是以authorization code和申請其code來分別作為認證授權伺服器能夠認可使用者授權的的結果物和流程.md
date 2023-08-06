@@ -208,7 +208,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，導向和主要目的的關係是如何？ ->->-> `透過導向方式來間接要求使用者發送相同同樣請求來向認證授權伺服器表示授權申請`
-<!--SR:!2023-04-28,28,250-->
+<!--SR:!2024-02-19,196,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，導向和主要目的的關係是如何？ ->->-> `透過導向方式來間接要求使用者發送授權成功的結果資料傳遞給應用服務A`
 <!--SR:!2023-06-22,60,250-->
@@ -291,7 +291,7 @@ Pragma: no-cache
 <!--SR:!2023-06-20,60,250-->
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，其中的grant_type 會是定義為？ ->->-> ` authorization_code`
-<!--SR:!2023-05-29,44,249-->
+<!--SR:!2024-02-13,190,249-->
 
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以code、redirect_uri、client_id發送索要token請求"，其中應用程式A會以什麼http動詞來向伺服器發送token索求 ->->-> `POST`
