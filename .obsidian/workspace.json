@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件：AuthForm、MainNavigation",
+                "query": "請切換/githubRepo/react-builder/question-review/react-auth-question並切換至finish-login-and-logout-function 分支，在那請用context-obect來儲存token、登入狀態、更新登入狀態函式並運用至涉及元件",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
