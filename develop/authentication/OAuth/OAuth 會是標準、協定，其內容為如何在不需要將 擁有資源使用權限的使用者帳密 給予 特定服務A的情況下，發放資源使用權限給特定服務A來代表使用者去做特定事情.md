@@ -164,7 +164,7 @@
 <!--SR:!2023-09-22,155,250-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將access token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式是什麼？ ->->-> `	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為： - 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作是否允許，若允許就驗證成功，否則報錯`
-<!--SR:!2023-07-16,66,190-->
+<!--SR:!2023-09-15,40,170-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式會是比對Client所提供的aud和scope是否正確，具體會是拿什麼比對？更準確的說，拿什麼比對aud和scope會較為信任 ->->-> `由Resource Server提供Client對於想存取的端點以及對對應端點想做的操作`
 <!--SR:!2023-10-31,176,250-->
@@ -208,10 +208,10 @@
 <!--SR:!2023-08-24,137,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者在實現上是否能一台主機擔任兩個角色？ ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
-<!--SR:!2023-07-26,72,230-->
+<!--SR:!2024-01-30,177,230-->
 
 #🧠 OAuth 的授權思路會是什麼？請以特定應用程式(客服端), 服務提供商和授權層來說明 ->->-> `讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，並只提供這種方式來讓客戶端進行登入和獲取資源，服務提供商拿著代表使用者特定權限的資料-token來登入授權層並獲取服務提供商的資源。`
-<!--SR:!2023-05-10,22,227-->
+<!--SR:!2023-08-31,25,207-->
 
 
 #🧠 OAuth 的授權思路會是什麼？其中讓特定應用程式A(客戶端)和服務提供商之間設定一個授權層，授權層會只接受什麼？面向於誰 ->->-> `僅面向於應用程式A，只接受於token來透過它獲取服務提供商的資源`
