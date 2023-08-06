@@ -38,7 +38,7 @@ function name(param0, param1, /* … ,*/ paramN) {
 
 重點：
 - function expression 在程式語言中是以 由 function 關鍵字和語法 來代表其對應function之回傳值  或者 以整個函式來表達整個函式
-- 在JavaScript 中，通常是由function 這關鍵字搭配以下參數來代表其對應function 之回傳值或者代表整個函式：
+- 在JavaScript 中，通常是由function 這關鍵字搭配以下內容來代表其對應function 之回傳值或者代表整個函式：
 	- 函式名稱：可選擇不填入，來當作匿名函式
 	- 函式引數(function argument)
 	- 函式內部執行語句
@@ -104,7 +104,7 @@ function name(param0, param1, /* … ,*/ paramN) {
 #🧠 function expression 是什麼？ ->->-> `function expression 在程式語言中是以 由 function 關鍵字和語法 來代表其對應function之回傳值  或者 以整個函式來表達整個函式`
 <!--SR:!2024-08-11,458,250-->
 
-#🧠 在JavaScript 中，通常是由function 這關鍵字搭配哪些參數來代表其對應function 之回傳值或者代表整個函式 ->->-> `函式名稱：可選擇不填入，來當作匿名函式、函式引數(function argument)、函式內部執行語句`
+#🧠 在JavaScript 中，通常是由function 這關鍵字搭配哪些內容來代表其對應function 之回傳值或者代表整個函式 ->->-> `函式名稱：可選擇不填入，來當作匿名函式、函式引數(function argument)、函式內部執行語句`
 <!--SR:!2023-08-06,90,230-->
 
 
