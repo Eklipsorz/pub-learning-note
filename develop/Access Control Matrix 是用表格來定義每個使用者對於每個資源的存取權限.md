@@ -34,7 +34,7 @@ ACM 是 Access Control Matrix 的縮寫，定義在特定系統上，某些特�
 ## 複習
 
 #🧠 Access Control Matrix 是用來做什麼？->->-> `定義在特定系統上，某些特定物件A對於特定資源B上所擁有的權限，會是以矩陣的形式或者以表格形式來表示`
-<!--SR:!2023-07-31,278,270-->
+<!--SR:!2025-09-12,764,270-->
 
 #🧠  能試著說明第一列第二欄是指什麼意思？第一列第一欄是指什麼意思？ ![](https://www.researchgate.net/profile/James-Joshi/publication/27233516/figure/fig1/AS:638408414220289@1529219835691/An-access-control-matrix-and-its-access-control-list-and-capability-list.png) ->->-> `若(1,2)的話就表示特定物件s1 對於f2的存取是擁有權限、讀寫權限，若(1,1)的話，就代表著特定物件s1對於f1的存取是毫無權限的。`
 <!--SR:!2023-09-03,300,270-->
