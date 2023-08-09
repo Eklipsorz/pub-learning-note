@@ -204,7 +204,7 @@ function App() {
 
 
 #🧠 Fetch API中的response object 是什麼？ ->->-> `response 物件本身代表著回應封包`
-<!--SR:!2023-08-10,94,246-->
+<!--SR:!2024-03-31,234,246-->
 
 
 #🧠 Fetch API中的request object 是什麼？->->-> `表示請求封包`
@@ -212,7 +212,7 @@ function App() {
 
 
 #🧠 Fetch API中的fetch方法要如何處理JSON格式的回應封包 ->->-> `針對回應的response object來使用底下的json方法來解析和轉換`
-<!--SR:!2023-08-08,92,246-->
+<!--SR:!2024-03-30,233,246-->
 
 #🧠 Fetch API 是瀏覽器內建的API，其中發送請求的方法為fetch(a, b)，b參數是設定請求封包 ，具體會是？->->-> `HTTP請求方法(預設是GET)、狀態碼、多增加header`
 <!--SR:!2024-07-13,348,230-->
