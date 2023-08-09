@@ -330,7 +330,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2024-05-03,343,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-變數賦值會是指什麼？ ->->-> `implicit binding的函式B以參照位置賦值至一個變數，而這個變數呼叫函式B的形式會致使函式B的this改變`
-<!--SR:!2023-08-08,189,250-->
+<!--SR:!2024-11-27,475,250-->
 
 #🧠 losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding ，原本的binding會是指的是？ ->->-> `implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為B；implicit binding的函式A所擁有的this是設定為A，遺失的話，就是設定為window`
 <!--SR:!2023-09-01,203,250-->
@@ -340,7 +340,7 @@ obj1.fn(); //時間跳躍
 
 
 #🧠 請問最後的fn1呼叫後，this會是什麼？ 為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491353/blog/javascript/this-binding/implicit-this-binding/pass-variable-implicit-binding-example_scvv3n.png) ->->-> `window，會印出行星飛行。在這裡會是將obj.fn的參照位址儲存在fn1變數上，並以fn1來呼叫，這使得系統會直接採用default binding所設定的global object來呼叫fn1`
-<!--SR:!2023-08-09,189,250-->
+<!--SR:!2023-11-13,95,230-->
 
 #🧠 請問最後的obj.fn呼叫後，this會是什麼？ 為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665491631/blog/javascript/this-binding/implicit-this-binding/pass-variable-implicit-binding-example2_kwr0ty.png) ->->-> `在這裡將obj.fn的參照位址儲存在obj1的fn變數上，並讓有用obj1的fn來呼叫，這會使得fn的this變成以obj1為this來呼叫。`
 <!--SR:!2024-08-28,419,250-->
