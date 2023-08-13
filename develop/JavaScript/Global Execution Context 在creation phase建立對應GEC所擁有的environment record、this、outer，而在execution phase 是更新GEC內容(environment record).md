@@ -166,7 +166,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context 的Lexical Environment 分為哪兩個？(提示：紀錄種類，哪個紀錄const？哪個紀錄var)->->-> ` LexicalEnvironment、VariablEenvironment，這些都含有Environment Records、Outer reference、Thisbinding`
-<!--SR:!2023-08-11,253,248-->
+<!--SR:!2025-05-04,630,248-->
 
 #🧠 JavaScript 的Lexical Environment  和LexicalEnvironment/VariableEnvironment 有何關係？(提示：請以資料結構來看待Lexical Environment)->->-> `Lexical Environment本身是種資料結構，是在儲存每個識別字對應的物件是什麼以及識別空間，而LexicalEnvironment/VariableEnvironment 只是前者所包含的內容`
 <!--SR:!2023-09-13,50,188-->

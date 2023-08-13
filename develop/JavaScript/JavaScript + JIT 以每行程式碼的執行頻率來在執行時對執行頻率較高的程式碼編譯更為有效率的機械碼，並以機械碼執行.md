@@ -178,13 +178,13 @@ function arraySum(arr) {
 
 ## 複習
 #🧠 JavaScript 在JIT之前，是如何編譯和執行(不用講得太仔細)->->-> `JavaScript 在JIT之前，是將原始碼編譯成中間碼，並存於記憶體或者緩存，接著再邊轉中間碼為機械碼邊執行`
-<!--SR:!2023-08-12,9,250-->
+<!--SR:!2023-09-09,27,250-->
 
 
 
 
 #🧠 JavaScript 加入 JIT時，使用哪種辦法來應用JIT？->->-> `JavaScript 會依據每個程式碼的執行頻率來進一步將執行頻率較高的程式碼編譯成更為效率的程式碼`
-<!--SR:!2023-08-13,10,250-->
+<!--SR:!2023-09-10,28,250-->
 
 
 
@@ -193,7 +193,7 @@ function arraySum(arr) {
 
 
 #🧠 JavaScript 的 JIT：如何區分哪些程式碼的執行頻率為稍高、高 ->->-> `當程式碼的執行次數高於x1時，就設定為代表稍高的warm，若執行次數高於x1且高於x2的話，就將對應的程式碼設為代表高的hot`
-<!--SR:!2023-08-12,9,250-->
+<!--SR:!2023-09-07,25,250-->
 
 
 #🧠 JavaScript的JIT：當被標記為warm的程式碼，會如何做優化？ 誰負責優化->->-> `將對應的ByteCode放置Baseline Compiler，由它編譯成平時在interpreter編譯的機械碼版本並於monitor上的紀錄中找到對應索引，接著將機械碼放置對應索引的程式碼欄位，當下一次遇到同樣索引的ByteCode，就直接紀錄對應的機械碼取出並執行，不用重新編譯和執行`
@@ -201,11 +201,11 @@ function arraySum(arr) {
 
 
 #🧠 JavaScript的JIT：當被標記為hot的程式碼，會如何做優化？ 誰負責優化 ->->-> `將對應的bytecode放置optimizing compiler，由它以目前執行行數作為索引，並以目前處理的bytecode型別作為使用優化版本機械碼的憑證，接著將對應bytecode以及根據執行資訊編譯為更為有效率的機械碼版本並放置對應索引的機械碼，如(line)->(type, code)，當下一次執行同樣行數，就會檢查其型別是否和optimizing compiler一樣，若一樣就執行對應的機械碼`
-<!--SR:!2023-08-11,8,250-->
+<!--SR:!2023-09-05,23,250-->
 
 
 #🧠 整體來說，在JIT版本的JavaScript中，monitor具體會以什麼做為資料上紀錄的索引->->-> `目前程式碼的行數和目前行數程式碼所擁有的型別`
-<!--SR:!2023-08-12,9,250-->
+<!--SR:!2023-09-09,27,250-->
 
 
 #🧠 整體來說，在JIT版本的JavaScript中，monitor具體會以目前程式碼的行數和目前行數原始碼程式碼所擁有的型別做為資料上紀錄的索引，那麼型別會是指什麼？ ->->-> `原始碼轉換成bytecode並執行時所獲取的變數型別`
@@ -254,7 +254,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上有任何紀錄，請問每一次程式碼的執行會如何進行？ ->->-> `每次執行就去會利用目前執行行數作為索引去在optimizing compiler找到相對應的紀錄，若找到對應行數，就會比對目前執行的程式碼所擁有的型別是否和紀錄上的假設一樣，若一樣就執行對應的機械碼，若不一樣的話，就要看看目前行數和目前型別是否能夠在baseline compiler找到對應紀錄，有的話，就以baseline compiler的機械碼為主，沒的話，就將對應bytecode丟進interpreter來邊轉換成機械碼邊執行`
-<!--SR:!2023-08-13,10,250-->
+<!--SR:!2023-09-10,28,250-->
 
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設，會如何？->->-> `會計算不符合的次數，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
@@ -276,7 +276,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上有任何紀錄的話 ->->-> `每次執行時就去透過目前執行行數來在optimizing compiler紀錄上試著找到相對應的紀錄 -> 若找不到就看看目前執行行數和資料型別所構成的索引是否被標記warm -> 在沒有就去邊解析邊執行`
-<!--SR:!2023-08-11,8,250-->
+<!--SR:!2023-09-04,22,250-->
 
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上沒有任何紀錄的話->->-> `每一次就透過目前行數和資料型別所構成的索引看是否標記warm -> 在沒有就去邊解析邊執行`
@@ -288,7 +288,7 @@ function arraySum(arr) {
 <!--SR:!2023-08-24,14,250-->
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若使用次數超過x1就且沒超過x2，且未使用baseline compiler生成機械碼，流程會是什麼？->->-> `生成bytecode -> 經過baseline compiler編譯成機械碼 -> 根據索引將機械碼紀錄至對應紀錄上的欄位 -> 以機械碼執行  ->  紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-08-11,8,250-->
+<!--SR:!2023-09-06,24,250-->
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若使用次數超過x1就且沒超過x2，已用baseline compiler 生成機械碼，流程會是什麼？ ->->-> `生成bytecode ->  透過索引從monitor紀錄表格中找到對應機械碼 -> 以機械碼執行 ->  紀錄對應索引(line, type)的執行次數`
@@ -311,12 +311,12 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且假設錯誤，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行 -> 紀錄錯誤 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-08-13,10,250-->
+<!--SR:!2023-09-07,25,250-->
 
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-08-12,9,250-->
+<!--SR:!2023-09-08,26,250-->
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話) ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
