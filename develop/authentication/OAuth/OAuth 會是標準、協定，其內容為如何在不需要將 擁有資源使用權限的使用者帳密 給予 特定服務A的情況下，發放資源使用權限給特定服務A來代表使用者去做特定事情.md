@@ -191,12 +191,12 @@
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
-<!--SR:!2023-07-25,114,250-->
+<!--SR:!2024-06-17,309,250-->
 
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Client 獲取到token並向著Resource Server發送索要資料的請求，那麼Resource Server接收到會做什麼？ ->->-> `轉遞請求封包上的token至authorization server的伺服器`
-<!--SR:!2023-07-04,104,250-->
+<!--SR:!2024-06-14,306,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Authorization Server會負責什麼？ ->->-> `驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
 <!--SR:!2023-11-20,189,250-->
@@ -230,7 +230,7 @@
 
 
 #🧠 OAuth 概念 的 基本實現會有的流程，就以 **當使用者要授權給應用程式A來獲取Resource Server的服務時** 來說，請畫圖來說明 ->->-> ``
-<!--SR:!2023-05-19,40,247-->
+<!--SR:!2024-03-05,205,247-->
 
 
 

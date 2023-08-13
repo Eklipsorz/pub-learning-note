@@ -40,7 +40,7 @@
 ## 複習
 
 #🧠 OAuth ：authorization code grant type 、implicit grant type、resource owner password credentials grant type、client credentials grant type 這四個種類實際會憑藉著什麼樣的授權同意結果來在客戶端發送索求token的請求？->->-> `authorization code grant type：會讓客戶端憑著使用者授權的資料來索要、主要以authorization code ，代表著使用者授權同意。implicit grant type：由於不會讓客戶端憑著使用者授權，只是單方面在瀏覽器進行授權和索要token。 resource owner password credentials grant type：會讓客戶端憑著代表使用者授權的資料來索要，授權的資料： resource owner password credential，代表著使用者授權同意。client credentials grant type：本身並不會依據使用者同意授權來索要，而是以client 授權 自己的結果來索求token，授權的資料：client credentials ，代表著客戶端授權同意自己。`
-<!--SR:!2023-08-10,87,250-->
+<!--SR:!2024-03-24,224,250-->
 
 #🧠 OAuth ：authorization code grant type 、implicit grant type、resource owner password credentials grant type、client credentials grant type 這四個種類會填寫的grant_type會是什麼 ->->-> ` authorization code grant type：authorization_code、implicit grant type：由於不會讓客戶端憑著使用者授權，只是單方面在瀏覽器進行授權和索要token、resource owner password credentials grant type：password、 client credentials grant type：client_credentials`
 <!--SR:!2023-07-13,70,250-->
