@@ -73,7 +73,7 @@ test <button id="test">
 <!--SR:!2024-02-26,294,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是匿名函式，其callback呼叫時的this會是什麼->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
-<!--SR:!2023-08-11,180,250-->
+<!--SR:!2024-11-28,473,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是命名函式，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
 <!--SR:!2023-08-24,189,250-->
@@ -83,7 +83,7 @@ test <button id="test">
 <!--SR:!2024-11-16,464,250-->
 
 #🧠 addEventListener(a, callback) 中的callback若是函式物件，其callback呼叫時的this會是什麼 ->->-> `會被系統以explicit binding設定成發生事件時的DOM節點`
-<!--SR:!2023-08-12,180,250-->
+<!--SR:!2024-11-19,464,250-->
 
 #🧠 HTML上有這段\<button onclick="console.log('this', this);"\>hi\<\/button\> ，請問this會是什麼？為什麼？->->-> `button。由於onclick本身就是在定義好的callback function設定其內容，所以當callback被呼叫時，就會以發生事件的dom節點為this`
 <!--SR:!2024-07-14,374,250-->
