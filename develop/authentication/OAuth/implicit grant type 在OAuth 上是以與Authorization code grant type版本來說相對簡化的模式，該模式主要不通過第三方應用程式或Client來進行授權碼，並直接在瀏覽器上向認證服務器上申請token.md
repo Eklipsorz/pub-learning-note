@@ -116,7 +116,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2024-02-21,199,250-->
 
 #🧠  implicit grant type 在OAuth 中為何被稱之為implicit ？ ->->-> `implicit grant type 在OAuth 上是以與Authorization code grant type版本來說相對簡化的模式`
-<!--SR:!2023-07-30,83,250-->
+<!--SR:!2024-04-05,234,250-->
 
 #🧠 implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本 ->->-> `	- A. 使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問 - B. 使用者通過身份認證並確定授權 - C. 假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token) 	- D.  使用者透過瀏覽器向指定的重導向URI發送請求，但不包含先前的Fragment - E.  對應URI/Client/Resource Server 會回傳一份夾雜Script的網頁至User Agent - F.  執行上一步獲得的Script，來從C步驟獲得的Fragment解開Token以及其相關資訊 - G. 將上一步解開的結果物-Token 發給Client端`
 <!--SR:!2023-09-08,33,230-->
@@ -131,7 +131,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-11-26,111,230-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳 ->->-> `以URI Fragment形式來回傳token`
-<!--SR:!2023-08-13,90,250-->
+<!--SR:!2024-04-04,233,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳，請舉一個URI作為例子 ->->-> `http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&token_type=example&expires_in=3600`
 <!--SR:!2023-04-26,26,250-->
@@ -140,7 +140,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-05-31,45,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問請求封包源自於哪裡？發送至哪？形式為何？ ->->-> `形式為URI(URI參數)、封包，源自於客戶端所發送的請求封包，發送至認證伺服器`
-<!--SR:!2023-06-02,38,230-->
+<!--SR:!2024-02-03,172,230-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問使用者向認證伺服器發送授權請求的http動詞會是什麼？ ->->-> `GET`
 <!--SR:!2023-08-17,94,250-->

@@ -86,7 +86,7 @@ http://api.example.com/v1/users/12345/statuses/user.timeline
 
 
 #🧠 以下面使用者的user timeline端點為範例 `http://api.example.com/v1/users/12345/`  來用Dot Notation Case命名->->-> `http://api.example.com/v1/users/12345/statuses/user.timeline`
-<!--SR:!2023-07-28,83,250-->
+<!--SR:!2024-04-03,232,250-->
 
 
 ---
