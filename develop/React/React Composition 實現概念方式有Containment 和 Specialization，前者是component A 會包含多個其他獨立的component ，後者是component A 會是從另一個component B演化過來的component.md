@@ -18,6 +18,12 @@
 - Containment：概念為 component A 會包含多個其他獨立的component 
 - Specialization：概念為 component A 會是從另一個component B演化過來的component
 
+## composition 意義
+
+> the way that people or things are arranged in a painting or photograph
+
+意義:
+- composition 是指多個人事物組合成特定事物的過程或者方式
 
 ### Containment 實現概念
 Containment 概念為 component A 會包含多個其他獨立的component ，具體會是：
@@ -190,6 +196,8 @@ wrapper
 
 ## 複習
 
+#🧠 Composition 含意是甚麼? ->->-> `composition 是指多個人事物組合成特定事物的過程或者方式`
+
 #🧠 Specialization 命名緣由->->-> `specialize 是指朝著特定目標前進，在這裡會是以生物學來說明，生物 **朝著適應環境來演化身體結構**，specialization 則是指 **朝著適應環境來演化身體結構** 的過程、行為`
 <!--SR:!2023-07-19,154,230-->
 
@@ -197,7 +205,7 @@ wrapper
 <!--SR:!2023-04-30,159,250-->
 
 #🧠 在React 的 composition 具體實現方法 有哪兩種？->->-> `Containment、Specialization`
-<!--SR:!2023-07-24,70,210-->
+<!--SR:!2023-09-24,40,190-->
 
 #🧠 在React 的 composition 具體實現方法有Containment、Specialization，其中Containment 實現概念是什麼？ ->->-> `component A 會包含多個其他獨立的component`
 <!--SR:!2023-12-05,288,250-->

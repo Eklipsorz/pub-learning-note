@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/react-router-practice：對特定Quote增加評論功能.md",
+                "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "請到/githubRepo/react-builder/question-review/react-router-question領取題目並切換至build-add-quote-comment分支，在那請使用useHttp和src/api.js來在/src/component/comment中實現增加評論和增加評論後會呈現的成功內容(按鈕按完後保持按鈕和最新評論都在同一畫面)、所有評論的功能，主要在NewCommentForm和CommentsList元件實現，提交的評論格式為quoteId、commentData，該commentData夾雜著text屬性",
+                "query": "在React 的 composition 具體實現方法 有哪兩種？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/react-router-practice：對特定Quote增加評論功能.md",
+                "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/react-router-practice：對特定Quote增加評論功能.md",
+                "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/react-router-practice：對特定Quote增加評論功能.md"
+                "file": "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md"
               }
             }
           },
@@ -166,6 +166,7 @@
   },
   "active": "c95d65a1de739cdd",
   "lastOpenFiles": [
+    "develop/React/react-router-practice：對特定Quote增加評論功能.md",
     "develop/React/React 生命階段：mounting、updating、unmounting 還可以再切分三個子階段分別為render phase、pre-commit phase、commit phase.md",
     "develop/authentication/OAuth/client credentials grant type 是指客戶端以自己的名義授權自己來向認證伺服器進行認證和索要token，並非由使用者名義來向.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
@@ -191,7 +192,6 @@
     "dev-practice/Practice - React Element 主要有兩種開發方法：第一個是functional component；第二個則是class-based component.md",
     "dev-practice/Practice - React：使用Fetch API來發送請求來增加資料.md",
     "dev-practice/Practice - React：useMemo 最主要是將特定值或者執行特定performance-intensive task所得到的特定值儲存起來，並根據情況來將儲存的特定值回傳.md",
-    "dev-practice/Practice - error boundary 如同其名，專門處理定義錯誤的範疇、攔截、處理的元件，會以warpper component來包覆著多個後裔元件並攔截這些元件在渲染方法和生命週期方法下的錯誤.md",
     "develop/OS/memory",
     "develop/json",
     "develop/html",

@@ -99,7 +99,7 @@ useEffect：cleanup function執行時機：
 
 
 #🧠 React：useEffect cleanup的使用場景為何？ cleanup又負責做些什麼？->->-> `使用場景為effect會產生額外的非同步任務，而cleanup負責清除多出來的非同步任務、 effect會產生出影響，而cleanup是清除那影響`
-<!--SR:!2023-08-12,170,250-->
+<!--SR:!2024-10-17,429,250-->
 
 
 
