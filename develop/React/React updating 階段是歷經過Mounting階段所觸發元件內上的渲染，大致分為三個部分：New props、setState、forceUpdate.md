@@ -267,7 +267,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 #🧠 react 生命週期中會用到的**getSnapshotBeforeUpdate** 函式是會做什麼？ ->->-> `專門獲取元件A畫面更新前的資訊、狀態、props 來做處理`
-<!--SR:!2023-05-26,174,250-->
+<!--SR:!2025-02-01,536,250-->
 
 #🧠 react 生命週期中會用到的 getSnapshotBeforeUpdate 函式 採用預設的話，會是什麼？ ->->-> `預設上是沒有任何處理內容`
 <!--SR:!2024-10-27,488,250-->
