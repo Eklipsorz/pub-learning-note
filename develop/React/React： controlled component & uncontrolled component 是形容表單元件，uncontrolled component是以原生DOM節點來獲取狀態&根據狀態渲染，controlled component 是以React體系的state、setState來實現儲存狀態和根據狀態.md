@@ -264,7 +264,7 @@ setState
 
 
 #🧠 React ：React 和 controlled component 的控管關係會是如何？ ->->-> `使用React的體系去管理元件的狀態和根據狀態渲染畫面`
-<!--SR:!2023-06-04,173,250-->
+<!--SR:!2025-01-18,522,250-->
 
 #🧠 React ：React 和 uncontrolled component的控管關係會是如何？ ->->-> `使用原生DOM元素本身擁有的方式，但這很難從React去控管它的狀態、根據狀態來渲染`
 <!--SR:!2024-07-20,421,250-->
