@@ -13,12 +13,13 @@
 	- cache如何處理cache miss、cache hit、write miss、write hit這四種狀況
 - 對於 **使用資料的那一方會如何讀取/寫入資料**之實際情況: 
 	- 得由開發者告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入
-		- 通常告知方式為下達代表特定目標的程式碼來完成 - cache server或後備存儲資料的伺服器收到該指令就解析成一系列如何實現該目標的指令來執行
+		- 通常告知方式為下達代表特定目標的指令來完成 - cache server或後備存儲資料的伺服器收到該指令就解析成一系列如何實現該目標的指令來執行
 	- 開發者不用在cache或者後備存儲資料的地方事先定義cache miss、cache hit、write miss、write hit這四種狀況
 - 對於 **cache會如何處理cache miss、cache hit、write miss、write hit這四種狀況**
-	- 得由開發者自行定義cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況
+	- 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況
 		- 若資料不在伺服器上的話，得由cache server向後備存儲資料的地方索要
-		- 通常告知方式為指定一系列指令
+		- 通常告知方式為如何處理來達成目標的風格，而非指定目標
+	- 開發者不需要應用程式
 
 ## 複習
 
