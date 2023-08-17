@@ -32,24 +32,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "b42d14440240674f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a59e32b94f73c106",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -186,7 +168,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "dba5e16eed67c4ca",
+  "active": "c95d65a1de739cdd",
   "lastOpenFiles": [
     "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "develop/React/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
