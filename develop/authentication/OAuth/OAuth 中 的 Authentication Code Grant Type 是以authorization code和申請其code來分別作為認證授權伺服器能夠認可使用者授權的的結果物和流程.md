@@ -200,10 +200,10 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時->->-> `使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權 -> 使用者在認證頁面同意授權給應用服務A -> 假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼 -> 身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要tokem請求 -> 認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token。`
-<!--SR:!2023-06-28,64,250-->
+<!--SR:!2024-04-01,228,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時 ，請畫圖來表示->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679145847/blog/OAuth/OAuth-with-code_bn5ih9.png)
-<!--SR:!2023-05-27,44,250-->
+<!--SR:!2024-03-17,213,250-->
 
 
 
@@ -211,7 +211,7 @@ Pragma: no-cache
 <!--SR:!2024-02-19,196,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，導向和主要目的的關係是如何？ ->->-> `透過導向方式來間接要求使用者發送授權成功的結果資料傳遞給應用服務A`
-<!--SR:!2023-06-22,60,250-->
+<!--SR:!2024-04-03,230,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，主要目的的關係是如何？->->-> `讓應用服務A向認證授權伺服器發送索要token的請求`
 <!--SR:!2023-06-19,59,250-->
@@ -278,7 +278,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code來向認證伺服器索要token請求"，請求中的參數會是如何？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
-<!--SR:!2023-05-22,14,230-->
+<!--SR:!2023-09-02,16,210-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要token請求"，請求中的參數- grant_type 、code、redirect_uri、client_id是什麼？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`
