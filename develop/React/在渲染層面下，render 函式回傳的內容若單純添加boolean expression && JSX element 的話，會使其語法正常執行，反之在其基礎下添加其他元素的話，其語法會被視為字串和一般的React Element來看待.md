@@ -43,7 +43,7 @@ return (
 <!--SR:!2025-01-22,526,250-->
 
 #🧠  boolean expression && JSX element 若搭配其他元件的話，boolean expression && JSX element 還能正常運作嗎？為什麼？ ->->-> `若混雜其他元件的話，boolean expression && 將被視為一般字串，而非boolean expression，而後者的JSX Element將會直接被當作內容而被渲染`
-<!--SR:!2023-06-25,181,250-->
+<!--SR:!2025-02-05,538,250-->
 
 
 
