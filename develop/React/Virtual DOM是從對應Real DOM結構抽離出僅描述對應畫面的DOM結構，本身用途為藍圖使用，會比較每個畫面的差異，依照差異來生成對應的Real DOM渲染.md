@@ -163,7 +163,7 @@ virtual adj
 <!--SR:!2023-06-02,149,250-->
 
 #🧠 Real DOM vs. Virtual DOM，誰能直接告知瀏覽器如何渲染->->-> `Real DOM 能直接指示 ； Virtual DOM沒辦法`
-<!--SR:!2023-08-05,193,250-->
+<!--SR:!2025-01-08,510,250-->
 
 #🧠 Real DOM vs. Virtual DOM，如何指示瀏覽器來渲染畫面，不分直接或者間接 ->->-> `Real DOM 能直接指示 ； Virtual DOM 先轉換成對應Real DOM，然後以Real DOM來指示渲染畫面`
 <!--SR:!2023-07-24,184,250-->

@@ -131,7 +131,7 @@ export default Wrapper;
 <!--SR:!2023-08-12,183,230-->
 
 #🧠 假設component1為parent component，那麼請試著畫component來表示它descendant component 會是什麼？->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664648962/blog/react/life-cycle/%E6%88%AA%E5%9C%96_2022-10-02_%E4%B8%8A%E5%8D%882.25.24_rmntcb.png)`
-<!--SR:!2023-08-03,190,250-->
+<!--SR:!2025-01-09,511,250-->
 
 #🧠 若parent component是由多個child component 或者由多個descendant component 所組成，當component發生updating時，不論child component/ descendant component是否因為狀態、context、props發生變動，都會因為處於同一個parent component的一部分而跟著一起觸發updating，其潛在問題是什麼？ (浪費會是主要什麼？) ->->-> `過多實際沒有最新渲染內容的元件(function component)而被呼叫，且這些元件還會讓React去做多餘的diff 算法`
 <!--SR:!2023-08-28,200,248-->

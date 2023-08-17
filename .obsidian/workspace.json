@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧠",
+                "query": "Outlet",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md"
+                "file": "develop/React/react-router/router-6.4/自製擁有loader功能的BrowserRouter，根據Routing作法：單純使用JS語言體系的物件語法來表示Routing中的每個Route、使用JSX語言體系的元件語法來表示Routing中的每個Route.md"
               }
             }
           },
@@ -184,9 +184,10 @@
   },
   "active": "c95d65a1de739cdd",
   "lastOpenFiles": [
+    "develop/React/react-router v6 ：能將使用者導向至指定頁面的元件、建立nested Route 元件方式、建造一個nested route 的概念.md",
+    "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "annotation/@http___zotero.org_users_9524198_items_4GBXZ7K7.md",
     "develop/OS/caching/cache hit為主的方法是從緩存存取資料但很容易被人忽略同步問題，cache miss為主的方法是從資料庫讀取資料但能選擇同步.md",
-    "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "develop/OS/caching",
     "develop/Untitled",
     "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
@@ -211,7 +212,6 @@
     "dev-practice/Practice - React：forwardRef + useImperativeHandler 實現由parent元件的ref去呼叫child元件所提供的方法.md",
     "dev-practice/Practice - React：food-order project 建立order所需要做的處理.md",
     "dev-practice/Practice - React：Input component 重構.md",
-    "dev-practice/Practice - React：使用Fetch API來發送請求- 只要頁面載入後就向伺服器發送請求來索要資料並渲染.md",
     "develop/OS/memory",
     "develop/json",
     "develop/html",
