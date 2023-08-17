@@ -52,7 +52,7 @@ get(name)
 
 #🧠 http://xxxx/path?key1=xxx1&key2=xxx2 中，其中的key1和key2的key-value pair會是甚麼? (請說出兩種別名)->->-> `query string`
 
-#🧠 query string 和 URL parameters之間的差別是甚麼? ->->-> `前者是以問號開頭的key-value pairs作為參數；後者則是以URL格式`
+#🧠 query string 和 URL parameters之間的差別是甚麼? ->->-> `前者是以問號開頭的key-value pairs作為參數；後者則是以URL格式下的特定path做為placeholder來當作成參數`
 
 #🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者處理特定URL上的query string`
 <!--SR:!2023-09-15,187,250-->
