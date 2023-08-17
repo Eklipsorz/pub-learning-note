@@ -45,6 +45,7 @@
 #🧠 look-aside caching 為什麼叫做look-aside?  ->->-> `因為整體架構下，每個元件都可以向任意一邊進行相連來進行操作`
 
 #🧠 inline caching 和 look-aside caching最大的不同在於甚麼地方? ->->-> `資料上的管理`
+<!--SR:!2023-08-20,3,250-->
 
 #🧠 inline caching 和 look-aside caching最大的不同在於資料上的管理，請詳細解釋?->->-> `- 使用資料的那一方會如何讀取/寫入資料 - cache如何處理cache miss、cache hit、write miss、write hit這四種狀況 - 由於前兩者對於如何實現而構成的結構`
 
