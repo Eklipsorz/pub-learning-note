@@ -102,7 +102,7 @@ console.log(bar.a)
 <!--SR:!2024-02-03,288,250-->
 
 #🧠 function 會是指特定函式，function()為特定函式的呼叫，若前面添加new這operator就是從函式呼叫轉換成建構式呼叫(constructor call)，那麼function會是做什麼用的？ ->->-> `具體定義物件會有什麼樣屬性和方法`
-<!--SR:!2023-08-16,192,250-->
+<!--SR:!2024-12-10,481,250-->
 
 #🧠 JS：constructor call 具體流程為何？->->-> `	- 建立一個新空白物件 - 設定該物件的protype屬性 - 將新空白物件設定成function呼叫的this - 執行function好讓this和參數設定對應物件 - 若constructor 沒有手動回傳物件，則自動回傳目前設定好的物件`
 <!--SR:!2024-10-07,441,250-->

@@ -89,7 +89,7 @@ test <button id="test">
 <!--SR:!2024-07-14,374,250-->
 
 #🧠 HTML上有這段\<button onclick="(function test() \{console.log('test', this)\})()"\>hi\<\/button\> ，請問this會是什麼？為什麼？->->-> `結果為：test Window。由於onclick本身就是在定義好的callback function設定其內容，但在這裡又是在callback function進行另一個函式的呼叫，其呼叫形式會被JS解析器判定成default binding而以window來執行`
-<!--SR:!2023-08-17,181,250-->
+<!--SR:!2024-11-12,453,250-->
 
 #🧠 \<button id="test"\>hi\<\/button\> dom.addEventListener('click', function test() \{   console.log('test', this) \}) 請問this會是什麼？->->-> `test <button id="test">`
 <!--SR:!2024-11-15,463,250-->
