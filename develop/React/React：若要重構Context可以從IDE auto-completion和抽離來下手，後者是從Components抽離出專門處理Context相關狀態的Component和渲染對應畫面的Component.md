@@ -377,7 +377,7 @@ Autocomplete
 <!--SR:!2023-08-02,193,250-->
 
 #🧠 在這裡會將AuthContextProvider包住App 元件，這相當於包含App下的所有元件，接著當AuthContextProvider註冊/管理的狀態發生更動時，App下的所有元件會如何渲染？ ->->-> `AuthContextProvider在觸發過程中，更新context上的狀態和觸發渲染週期，接著由他將資訊透過props往下傳遞至App下的所有子元件，被它包含的子元件會因而重新執行渲染週期，且過程中會存取context的新狀態而更新。`
-<!--SR:!2023-07-19,183,250-->
+<!--SR:!2025-01-15,517,250-->
 
 
 ---
