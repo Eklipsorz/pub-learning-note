@@ -131,7 +131,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2023-05-19,151,230-->
 
 #🧠 React Mounting 階段下的子階段pre-commit有什麼 ->->-> `沒`
-<!--SR:!2023-06-26,193,250-->
+<!--SR:!2025-03-12,573,250-->
 
 #🧠 React Mounting 階段下的子階段commit有什麼 ->->-> `React Updates DOM & refs、componentDidMount`
 <!--SR:!2023-07-11,189,230-->

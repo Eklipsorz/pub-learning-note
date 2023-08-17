@@ -269,7 +269,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, dependecies) 在unmount階段會執行什麼？ ->->-> `useEffect的cleanup函式`
-<!--SR:!2023-08-02,168,250-->
+<!--SR:!2024-10-29,439,250-->
 
 
 
