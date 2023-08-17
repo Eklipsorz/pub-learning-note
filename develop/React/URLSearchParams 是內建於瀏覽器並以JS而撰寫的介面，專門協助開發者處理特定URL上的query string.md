@@ -50,6 +50,10 @@ get(name)
 ## 複習
 
 
+#🧠 http://xxxx/path?key1=xxx1&key2=xxx2 中，其中的key1和key2的key-value pair會是甚麼? (請說出兩種別名)->->-> `query string`
+
+#🧠 query string 和 URL parameters之間的差別是甚麼? ->->-> `前者是以問號開頭的key-value pairs作為參數；後者則是以URL格式`
+
 #🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者處理特定URL上的query string`
 <!--SR:!2023-09-15,187,250-->
 
@@ -78,7 +82,7 @@ get(name)
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`
 
 #🧠 URLSearchParams的get用法是什麼？ ->->-> `URLSearchParams.get(name)`
-<!--SR:!2023-08-12,164,250-->
+<!--SR:!2023-11-08,83,230-->
 
 
 #🧠 URLSearchParams.get(name)會是以指定的參數名數來回傳它第一個找到的參數值，其中name會是？？ ->->-> `要擷取的參數名稱`
