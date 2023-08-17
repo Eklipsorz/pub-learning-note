@@ -83,7 +83,7 @@ if (NaN)
 
 
 #🧠  哪些內容會在JS中被當作falsy value (提示：數字、字串、布林值、物件)->->-> `	- false - 物件參照(位置)內容為null的物件：null- 數字內容為0的數字：0- 字串內容為空字串的字串：雙引號、單引號、反引號 - undefined、NaN也即為被當作false`
-<!--SR:!2023-08-17,45,210-->
+<!--SR:!2023-11-20,95,210-->
 
 
 #🧠 JS：請問0是算falsy value？還是truthy value？ ->->-> `算falsy value`
