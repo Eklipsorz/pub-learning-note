@@ -64,11 +64,6 @@ cache hit 和 cache miss 原為CPU對於緩存能不能找到想要東西的用�
 
 ## 複習
 
-#🧠 write-miss 下有哪些策略可用 ->->-> `allocate no write、allocate on write`
-
-#🧠 write-hit下有哪些策略可用 ->->-> `write through、write behind`
-
-#🧠 cache-miss下有哪些策略可用 ->->-> `read through、read aside`
 
 
 #🧠 Cache hit & Cache miss: Read Aside 原意是什麼？ (提示：當讀取不到東西的話，旁邊還有東西可以讀，那你會怎麼做？)->->-> `當讀取不到就讀取另一邊東西`
