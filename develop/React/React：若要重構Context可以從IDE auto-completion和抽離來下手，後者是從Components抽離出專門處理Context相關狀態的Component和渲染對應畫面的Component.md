@@ -353,7 +353,7 @@ Autocomplete
 <!--SR:!2023-11-23,196,230-->
 
 #🧠 提出single responsibility principle 是為了什麼？ ->->-> `提升易讀性和降低維護/開發難度`
-<!--SR:!2023-07-21,189,250-->
+<!--SR:!2025-01-10,512,250-->
 
 #🧠 React：假如以Context為主的管理狀態業務邏輯和其他Components寫在一塊，那麼還能有什麼樣重構方法？->->-> `從Components抽離出專門處理狀態的Component，分別為1. 專門處理狀態的Component 2. 渲染對應元件的Component`
 <!--SR:!2023-05-08,139,250-->

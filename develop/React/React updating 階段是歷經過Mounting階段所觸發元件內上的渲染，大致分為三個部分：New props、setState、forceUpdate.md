@@ -222,7 +222,7 @@ ReactDOM.render(<Header favcol="yellow"/>, document.getElementById('root'));
 
 
 #🧠 react updating 子階段中的pre-commit包含哪些步驟？ ->->-> `getSnapshotBeforeUpdate`
-<!--SR:!2023-06-25,194,250-->
+<!--SR:!2025-03-11,572,250-->
 
 #🧠 react updating 子階段中的commit包含哪些步驟？->->-> `React updates DOM and refs、componentDidUpdate`
 <!--SR:!2023-05-03,160,250-->

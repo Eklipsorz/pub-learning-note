@@ -162,7 +162,7 @@ export default React.memo(DemoList);
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是什麼？->->-> `第二個參數為依賴項目所構成的陣列，主要依據他們來決定是否回傳記憶體儲存的內容，`
-<!--SR:!2023-08-10,192,250-->
+<!--SR:!2025-01-11,513,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，代表著什麼？ ->->-> `系統就認為不會有任何變動的deps`
 <!--SR:!2023-08-09,192,250-->
