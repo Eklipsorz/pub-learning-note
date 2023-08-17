@@ -193,7 +193,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth  流程中的 "使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權" ，請問主要參數的response_type為申請授權類型，若是authorization code grant type 版本，得填寫什麼？->->-> `code`
-<!--SR:!2023-06-05,49,250-->
+<!--SR:!2024-03-18,214,250-->
 
 #🧠 authorization code grant type 在OAuth 上是以什麼形式來讓認證授權伺服器認可為使用者合法授權的結果？ ->->-> `以authorization code的形式`
 <!--SR:!2023-06-07,43,248-->
@@ -223,7 +223,7 @@ Pragma: no-cache
 <!--SR:!2023-11-17,148,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，使用者向客戶端發送封包，請問HTTP動詞是為何？ ->->-> `GET`
-<!--SR:!2023-08-13,90,249-->
+<!--SR:!2024-04-08,235,249-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？->->-> `其請求會是以封包來進行，主要會在封包內部附加授權碼、當初申請授權碼的重導向URL、當初申請授權碼的client_id`
@@ -234,14 +234,14 @@ Pragma: no-cache
 <!--SR:!2023-06-21,61,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數為何？ ->->-> `response_type：申請什麼樣的授權類型 - client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id - redirect_uri：申請之後應用程式接收code的重導向頁面 - scope：申請授權資料所能擁有的權限為何 - state：表示客戶端的應用程式A所擁有的狀態`
-<!--SR:!2023-06-17,37,230-->
+<!--SR:!2024-01-19,155,230-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-response_type、client_id、redirect_uri、scope、state是為何？ ->->-> `response_type：申請什麼樣的授權類型 - client_id：指定客戶端的應用程式A在網路服務提供商所註冊的client_id - redirect_uri：申請之後應用程式接收code的重導向頁面 - scope：申請授權資料所能擁有的權限為何 - state：表示客戶端的應用程式A所擁有的狀態`
 <!--SR:!2023-11-14,137,230-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的必填參數會是什麼？ ->->-> `response_type、client_id`
-<!--SR:!2023-06-11,53,250-->
+<!--SR:!2024-03-20,216,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-redirect_uri為何是可選填參數？ ->->-> `redirect_uri為可選，可以在網路服務提供商那邊事先申請`
 <!--SR:!2023-06-29,65,250-->

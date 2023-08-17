@@ -146,7 +146,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-08-17,94,250-->
 
 #🧠  以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數為何？做什麼用 ->->-> `	- response_type： 表示授權類型為何 - client_id：表示客戶端應用程式在認證伺服器上所註冊的client_id - redirect_uri：定義哪邊提供Script或者哪邊接收token - scope：定義申請的權限範疇`
-<!--SR:!2023-07-20,77,250-->
+<!--SR:!2023-09-28,42,230-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數的response_type為申請授權類型，若是implicit版本，得填寫什麼？->->-> `token`
 <!--SR:!2023-09-21,45,230-->
@@ -164,7 +164,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-09-03,73,230-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，主要參數-access_token、token_type、expires_in、scope是為何？ ->->-> `- access_token：表示token - token_type：表示token種類 - expires_in：表示過期時間 - scope：表示token所擁有的使用權限`
-<!--SR:!2023-08-11,88,250-->
+<!--SR:!2024-04-07,234,250-->
 
 
 #🧠  implicit grant type 在OAuth下會需要設定grant_type？為什麼？ ->->-> `並不會，由於grant_type會是得讓使用者的授權同意授與客戶端來讓它發送索要token的請求，但該type並沒有，只是全都在使用者的瀏覽器進行授權同意和索要token`
