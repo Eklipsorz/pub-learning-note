@@ -2,8 +2,8 @@
 ## 描述
 
 
-[[@http___zotero.org_users_local_gXnyYX7A_items_JZVJ3IU8]]
 
+[[@ErrorHandlingPromises]]
 > ## [Unhandled rejections](https://javascript.info/promise-error-handling#unhandled-rejections)
 
 > What happens when an error is not handled? For instance, we forgot to append `.catch` to the end of the chain, like here:
@@ -46,4 +46,4 @@ Tags:
 [[Promise]]
 Links:
 References:
-[[@http___zotero.org_users_local_gXnyYX7A_items_JZVJ3IU8]]
+[[@ErrorHandlingPromises]]
