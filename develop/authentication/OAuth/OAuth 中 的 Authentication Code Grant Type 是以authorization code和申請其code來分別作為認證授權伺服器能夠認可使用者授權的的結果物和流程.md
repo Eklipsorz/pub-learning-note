@@ -274,7 +274,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼"，其導向請求源自哪裡？ 會發送至哪？->->-> `源自於認證授權伺服器發過來的導向請求，會發送至client指定接收code的地點`
-<!--SR:!2023-07-29,84,250-->
+<!--SR:!2024-04-21,246,250-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code來向認證伺服器索要token請求"，請求中的參數會是如何？ ->->-> `		- grant_type：定義要使用何種方式來授權，這裡會是authorization_code - code：用來申請token用的授權碼 - redirect_uri：是指當初應用程式A接收code用的重導向URI，主要會與步驟A、步驟C的重導向URI保持一致 - client_id：應用程式A在認證授權伺服器中所註冊的client_id`

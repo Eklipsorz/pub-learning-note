@@ -98,7 +98,7 @@ Pragma: no-cache
 <!--SR:!2023-09-20,44,230-->
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程為何？畫圖來說明 ->->-> ![密码模式](https://www.ruanyifeng.com/blogimg/asset/2014/bg2014051206.png)
-<!--SR:!2023-08-02,83,250-->
+<!--SR:!2024-04-11,236,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下 所擁有的流程中，其中`A. 使用者直接向客戶端提供特定系統的帳號和密碼` 的帳號和密碼是做什麼目的？ ->->-> `主要目的為：將帳密作為使用者的授權許可之證明`
 <!--SR:!2024-02-15,193,250-->
@@ -111,7 +111,7 @@ Pragma: no-cache
 
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："客戶端憑藉著使用者的帳密來向認證伺服器索要token"，客戶端的請求封包之主要內容為何->->-> `- grant_type：授權種類，在這裡會是填寫password - username：表示特定系統下的帳號 - password：表示特定系統下的帳號所擁有的密碼 - scope：表示索要的token要什麼樣的scope`
-<!--SR:!2023-08-10,87,250-->
+<!--SR:!2024-04-14,239,250-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下："認證伺服器確認無誤使用者的帳密後，就會將token回傳給客戶端"，其中的回應會是什麼形式 ->->-> `封包`
 <!--SR:!2024-02-14,191,249-->
@@ -127,7 +127,7 @@ Pragma: no-cache
 <!--SR:!2024-03-11,218,249-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下，客戶端對於使用者提供的帳密會如何處理？->->-> `1. 會拿來索要token  並且通常來說，必須規定在過程中客戶端不得儲存使用者任何帳密`
-<!--SR:!2023-08-09,86,249-->
+<!--SR:!2024-04-10,235,249-->
 
 #🧠 在Resource Owner Password Credentials Grant 在 OAuth 下，客戶端對於使用者提供的帳密會儲存起來嗎？ 為什麼？->->-> `並不會儲存，確保帳密安全`
 <!--SR:!2024-03-31,227,249-->
