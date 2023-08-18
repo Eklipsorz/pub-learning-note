@@ -324,7 +324,7 @@ obj1.fn(); //時間跳躍
 <!--SR:!2024-07-26,395,250-->
 
 #🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其因素通常是什麼？(簡要說明)->->-> `參數傳遞、變數賦值`
-<!--SR:!2023-08-18,194,250-->
+<!--SR:!2024-12-17,486,250-->
 
 #🧠  losing implicit binding 是指原本會被判定成implicit binding的binding因為特定因素而遺失 原本的binding，其特定因素之一-參數傳遞會是指什麼？ ->->-> `implicit binding的函式B以參數傳遞至一個特定函式A並在那呼叫參數，該函式A呼叫函式B的形式會致使函式B的this改變`
 <!--SR:!2024-05-03,343,250-->

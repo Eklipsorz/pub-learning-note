@@ -142,6 +142,17 @@
 - 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
 
 
+#### response_type vs. grant_type
+
+
+response_type會是指甚麼意思?  ->->-> `客戶端指定Owner導向至認證伺服器所要獲得的授權同意形式會是甚麼?`
+<!--SR:!2023-08-21,2,242-->
+
+grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的授權同意形式來向認證伺服器索要TOKEN`
+<!--SR:!2023-08-21,2,242-->
+
+
+
 ## 複習
 
 #🧠 OAuth 完整名稱是什麼？ ->->-> `Open Authorization`
@@ -187,7 +198,13 @@
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Resource會管理資源和驗證Token，那麼Resource Server會有什麼樣的業務->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
 <!--SR:!2023-08-18,130,250-->
 
-#🧠 在Open Authorization中，response_type會是指甚麼意思?  ->->-> `會是指給予請求者的回應結果形式`
+#🧠 在Open Authorization中，response_type會是指甚麼意思?  ->->-> `客戶端指定Owner導向至認證伺服器所要獲得的授權同意形式會是甚麼?`
+<!--SR:!2023-08-21,2,242-->
+<!--SR:!2023-08-21,2,242-->
+
+
+#🧠 在Open Authorization中，grant_type會是指甚麼意思?->->-> `grant_type: 客戶端要以甚麼樣的授權同意形式來向認證伺服器索要TOKEN`
+<!--SR:!2023-08-21,2,242-->
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
