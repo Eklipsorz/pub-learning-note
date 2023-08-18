@@ -1,6 +1,6 @@
 
 ## 描述
-[[@http___zotero.org_users_9524198_items_4GBXZ7K7]]
+[[@IntroductionLookAsideCaching]]
 > ## More Control in the Application Layer
 
 > In contrast to inline caching, look-aside caching is declarative - the developer tells the application what to cache, not how to do it. For example, with inline caching, the developer must deploy code to the cache server. The developer must also imperatively handle cache misses. The developer optionally deploys code to allow writes to the cache to be pushed into the backing-store either synchronously or asynchronously.
@@ -93,5 +93,5 @@ Status: #🌱
 Tags:
 [[Caching]] - [[OS]]
 Links:
-[[@http___zotero.org_users_9524198_items_4GBXZ7K7]]
+[[@IntroductionLookAsideCaching]]
 References:
