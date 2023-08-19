@@ -121,7 +121,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2023-06-09,180,250-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式主要用途是做什麼？ ->->-> `	- 從該元件的props物件獲取狀態 - 並用獲取到的狀態值更新目前元件的狀態`
-<!--SR:!2023-07-25,80,230-->
+<!--SR:!2024-03-21,215,230-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
 <!--SR:!2023-06-23,192,250-->

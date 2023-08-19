@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？畫圖來表示",
+                "query": "React：component的最佳實踐是什麼？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md"
+                "file": "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md"
               }
             }
           },
@@ -177,6 +177,8 @@
   },
   "active": "a1bb0e5ae51dbc12",
   "lastOpenFiles": [
+    "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+    "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
     "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "develop/JavaScript/promise/當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之.md",
     "annotation/@https___stackoverflow.com_questions_3264514_in-php-what-does-it-mean-by-a-function-being-binary-safePHPWhatDoes.md",
@@ -201,8 +203,6 @@
     "develop/authentication/OAuth/OAuth 會是標準、協定，其內容為如何在不需要將 擁有資源使用權限的使用者帳密 給予 特定服務A的情況下，發放資源使用權限給特定服務A來代表使用者去做特定事情.md",
     "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
     "develop/React/React：Context 命名法則 & 使用法則.md",
-    "develop/React/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
-    "develop/browser/URL都泛指著特定頁面或服務所會對應的URL，其URL對應關係是否會依據著請求處理方的處理執行狀況而產生對應關係，而分成Dynamic URL或者Static URL.md",
     "develop/OS/caching",
     "develop/Untitled",
     "develop/OS/memory",
