@@ -11,8 +11,12 @@
             "id": "a1bb0e5ae51dbc12",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "@http",
+                "query": "橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom被設定為正值的value1，其黑點和其元素會在哪裡？為什麼",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md"
+              }
             }
           },
           {
@@ -148,7 +157,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "a1bb0e5ae51dbc12",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "develop/JavaScript/promise/當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之.md",

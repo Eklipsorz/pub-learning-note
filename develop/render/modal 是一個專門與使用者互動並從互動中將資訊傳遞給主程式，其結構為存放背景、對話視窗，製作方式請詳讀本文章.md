@@ -280,7 +280,7 @@ modal ：對話窗內容
 <!--SR:!2024-01-09,295,250-->
 
 #🧠 在modal主體架構中，modal-footer 的html結構是什麼? 假使要存按鈕 ->->-> `      <div className={styles['modal-footer']}> <Button onClick={clickHandler}>Okay</Button> </div>`
-<!--SR:!2023-07-09,188,250-->
+<!--SR:!2025-02-12,543,250-->
 
 
 
