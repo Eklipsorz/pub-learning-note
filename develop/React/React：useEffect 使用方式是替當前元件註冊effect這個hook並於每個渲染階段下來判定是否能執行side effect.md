@@ -331,7 +331,7 @@ this is use effect
 
 
 #🧠 React：useEffect(callback, \[dependencies\]) 在進行mounting的時候，會判斷任一dependency是否變動而執行callback？ ->->-> `並不會，會直接執行callback`
-<!--SR:!2023-07-29,162,250-->
+<!--SR:!2024-10-25,432,250-->
 
 
 
