@@ -185,11 +185,10 @@
 #🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值(提示：以屬性共存來說) ->->-> `會選top和left這兩種屬性`
 
 
-#🧠 在position：relative的元素下，若都設置著top、bottom：會挑選top的原因會是
-採取normal flow所預設的排版方向，由上而下來排
+#🧠 在position：relative的元素下，若都設置著top、bottom：會挑選top的原因會是甚麼?  ->->-> `採取normal flow所預設的排版方向，由上而下來排`
 
-##### left 和 right 共存：會挑選left的原因
-採取normal flow所預設的排版方向，由左而右來排 ->->-> ``
+
+#🧠 在position：relative的元素下，若都設置著left、right：會挑選left的原因會是甚麼?  ->->-> `採取normal flow所預設的排版方向，由左而右來排`
 
 
 
