@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#在position：relative的元素下都設置著top、bottom：會挑選top的原因",
+                "query": "若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？畫圖來表示",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -175,7 +175,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "a1bb0e5ae51dbc12",
   "lastOpenFiles": [
     "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "develop/JavaScript/promise/當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之.md",
