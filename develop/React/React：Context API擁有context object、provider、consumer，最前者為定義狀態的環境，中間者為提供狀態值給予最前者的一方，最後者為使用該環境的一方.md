@@ -278,8 +278,8 @@ consume
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2023-07-25,192,250-->
 
-#🧠 React：Context中的Provider 具體是什麼Component？->->-> `wrapper component`
-<!--SR:!2023-07-24,191,250-->
+#🧠 React：Context中的Provider 在形式上是什麼Component？->->-> `wrapper component`
+<!--SR:!2023-08-21,2,249-->
 
 
 
@@ -336,7 +336,7 @@ consume
 <!--SR:!2024-05-07,358,250-->
 
 #🧠  React：consumer component 如何存取context的目前所擁有的值？流程和程式碼會是？ ->->-> `載入想存取狀態的Context import XXXContext from '....' 利用對應Context的consumer屬性來獲取對應Comsumer Component來包裹一個{callback} return ( <XXXContext.Consumer> {callback} </XXXContext.Consumer> );`
-<!--SR:!2023-05-08,84,230-->
+<!--SR:!2023-10-12,54,210-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
 <!--SR:!2023-07-19,185,250-->
