@@ -6,50 +6,46 @@
 
 
 重點：
-- 當被設定position：relative，其元素的位置參考點會以position：static元素的放置起點為主
+- 當被設定position：relative，其元素的位置參考點會以position：static元素的各個邊界為主
 - 其top、right、bottom、left 會是指定被位移後的元素會離位移前之間有多少位移量，其方向是如何
 - 其元素的高寬不會因為為了滿足top、right、bottom、left而變化
 - relative positioning 的元素仍會受到normal flow/flow layout而控制，並在那情況下調整位置
 ### position：relative
 
-
-若position 設定為relative時，其定位參考會是以static模式下的元素所在的各個邊界為基準點(下圖橘點)來定位，並且relative的元素會與
+若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'
 
 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png)
 
-### value1為正值時
 
-1. 當top被設定為value1時，為了讓被位移後的元素離橘點擁有value1 px的上方偏移量，而讓元素的黑點會以橘點為起始點向下移動value1 px
-2. 當bottom被設定為value1時，為了讓被位移後的元素離橘點擁有value1 px的下方偏移量，而讓元素的黑點會以橘點為起始點向上移動value1 px
-3. 當left被設定為value1時，為了讓被位移後的元素離橘點擁有value1 px的左方偏移量，而讓元素的黑點會以橘點為起始點向右移動value1 px
-4. 當right被設定value1時，為了讓被位移後的元素離橘點擁有value1 px的右方偏移量，而讓元素的黑點會以橘點為起始點向左移動至value1 px 
+#### 當設定top為value1時
 
+會讓元素A的上邊界和元素A'的上邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往下移動；數值越小的話，會使灰色部分往上移動
 
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png)
 
 
-### value1 為負值時
+#### 當設定right為value1時
 
-當value1為負值時，top、bottom、left、right的移動方向會變成反方向，比如當top被設定為目前為負值的value1時，元素的黑點會以橘點為中心向上移動至value1。
-
-
-### 總結：value1 正值 和 value2 負值
-
-如果是調整top屬性的話，其屬性值value1若是正的話，就會將元素往下偏移；其屬性值若是負的話，就會將元素往上偏移。
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-top-offset_qybhfg.png)
-
-如果是調整bottom屬性的話，其屬性值value1若是正的話，就會將元素往上偏移；其屬性值若是負的話，就會將元素往下偏移。
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-bottom-offset_x0jc6r.png)
+會讓元素A的右邊界和元素A'的右邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往左邊移動；數值越小的話，會使灰色部分往右邊移動
 
 
-如果是調整right屬性的話，其屬性值value1若是正的話，就會將元素往左偏移；其屬性值若是負的話，就會將元素往右偏移。
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-right-offset_au8dxj.png)
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png)
 
-如果是調整left屬性的話，其屬性值value1若是正的話，就會將元素往右偏移；其屬性值若是負的話，就會將元素往左偏移。
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-left-offset_k59p4g.png)
+#### 當設定bottom為value1時
+
+會讓元素A的下邊界和元素A'的下邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往上邊移動；數值越小的話，會使灰色部分往下邊移動
+
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png)
 
 
+#### 當設定left為value1時
 
-c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高的方向來調整：我們以下圖的relative元素作為例子，而所有元素皆以position: static為主：
+會讓元素A的左邊界和元素A'的左邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往右邊移動；數值越小的話，會使灰色部分往左邊移動
+
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png)
+
+
+### 若兩個彼此為相反方向共存的話，只會挑選優先權比較高的方向來調整：我們以下圖的relative元素作為例子，而所有元素皆以position: static為主：
 
   
 
@@ -150,65 +146,51 @@ c. 若兩個彼此為相反方向共存的話，只會挑選優先權比較高�
 #🧠 具有position：relative的元素A 高寬和元素A的top、right、bottom、left這四種屬性之間的關係是如何？ (會不會改變之類的)->->-> `其元素的高寬不會因為為了滿足top、right、bottom、left而變化`
 <!--SR:!2023-09-02,217,248-->
 
-#🧠 當被設定position：relative時，其位置會以什麼點做標準來位移？->->-> `其元素的位置參考點會以position：static元素的放置起點為主`
-<!--SR:!2023-08-12,205,248-->
+#🧠 當被設定position：relative時，其位置會以什麼點做標準來位移？->->-> `當被設定position：relative，其元素的位置參考點會以position：static元素的各個邊界為主`
 
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的上方偏移量，而讓元素的黑點會以橘點為起始點向下移動value1 px`
-<!--SR:!2023-09-08,209,228-->
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定top為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的上邊界和元素A'的上邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往下移動；數值越小的話，會使灰色部分往上移動`
 
 
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的下方偏移量，而讓元素的黑點會以橘點為起始點向上移動value1 px`
-<!--SR:!2023-07-14,194,250-->
+
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的左邊界和元素A'的左邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往右邊移動；數值越小的話，會使灰色部分往左邊移動`
+
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定right為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的右邊界和元素A'的右邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往左邊移動；數值越小的話，會使灰色部分往右邊移動`
 
 
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定left被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `為了讓被位移後的元素離橘點擁有value1 px的左方偏移量，而讓元素的黑點會以橘點為起始點向右移動value1 px`
-<!--SR:!2023-09-26,229,248-->
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定bottom為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的右邊界和元素A'的下邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往上邊移動；數值越小的話，會使灰色部分往下邊移動`
 
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定right被設定為正值的value1，其黑點和其元素會在哪裡？為什麼![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> ->->-> `為了讓被位移後的元素離橘點擁有value1 px的右方偏移量，而讓元素的黑點會以橘點為起始點向左移動至value1 px `
-<!--SR:!2023-09-06,208,228-->
-
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定top為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往上位移-value1`
-<!--SR:!2023-05-22,94,227-->
-
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定bottom為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往下位移-value1`
-<!--SR:!2023-08-16,121,228-->
-
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定right為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往右位移-value1`
-<!--SR:!2023-07-14,194,250-->
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定top為value1時，其黑點和其元素會在哪裡？畫圖來表示 ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png)
 
 
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問若只設定left為負值的value1，其黑點和其元素會在哪裡？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png) ->->-> `會往左位移-value1`
-<!--SR:!2023-12-11,278,248-->
-
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往下，為負就往上![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-top-offset_qybhfg.png)->->-> `如果是調整top屬性的話，其屬性值value1若是正的話，就會將元素往下偏移；其屬性值若是負的話，就會將元素往上偏移。`
-<!--SR:!2023-06-13,116,208-->
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定right為value1時，其黑點和其元素會在哪裡？畫圖來表示 ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png)
 
 
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往上，為負就往下 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-bottom-offset_x0jc6r.png)->->-> `如果是調整bottom屬性的話，其屬性值value1若是正的話，就會將元素往上偏移；其屬性值若是負的話，就會將元素往下偏移。`
-<!--SR:!2023-07-25,196,248-->
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定bottom為value1時，其黑點和其元素會在哪裡？畫圖來表示 ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png)
 
-
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往左，為負就往右![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-right-offset_au8dxj.png)->->-> `如果是調整right屬性的話，其屬性值value1若是正的話，就會將元素往左偏移；其屬性值若是負的話，就會將元素往右偏移。`
-<!--SR:!2023-10-07,236,248-->
-
-#🧠 橘點是position: static的元素A開始渲染的起始點，黑點為設定relative的元素A，請問要如何調整top、left、bottom、right值為正就往右，為負就往左![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662565106/blog/htmlPosition/relative-direction/relative-left-offset_k59p4g.png) ->->-> `如果是調整left屬性的話，其屬性值value1若是正的話，就會將元素往右偏移；其屬性值若是負的話，就會將元素往左偏移。`
-<!--SR:!2023-08-22,213,248-->
+#🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？畫圖來表示 ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png)
 
 
 #🧠 在position：relative的元素下都設置著left、right這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄right這屬性，改選left為主`
-<!--SR:!2023-06-18,173,250-->
+
 
 #🧠 在position：relative的元素下都設置著top、bottom這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄bottom這屬性，改選top為主`
-<!--SR:!2024-06-03,385,250-->
+
 
 #🧠  在position：relative的元素下，top 和 bottom 中會挑選top的原因->->-> `採取normal flow所預設的排版方向，由上而下來排`
-<!--SR:!2023-07-13,193,250-->
+
 
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排`
-<!--SR:!2023-07-31,197,248-->
+
 
 #🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值(提示：以屬性共存來說) ->->-> `會選top和left這兩種屬性`
-<!--SR:!2023-08-02,195,247-->
+
+
+#🧠 在position：relative的元素下，若都設置著top、bottom：會挑選top的原因會是
+採取normal flow所預設的排版方向，由上而下來排
+
+##### left 和 right 共存：會挑選left的原因
+採取normal flow所預設的排版方向，由左而右來排 ->->-> ``
+
 
 
 ---
