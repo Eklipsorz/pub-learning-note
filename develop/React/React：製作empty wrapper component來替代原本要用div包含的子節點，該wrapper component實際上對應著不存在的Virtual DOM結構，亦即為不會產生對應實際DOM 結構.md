@@ -127,7 +127,7 @@ return (
 
 
 #🧠 以下是使用empty wrapper component來解決JSX侷限問題，wrapper component本身並沒有實際的元件，只包含子節點，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816315/blog/react/react-element/wrapper-for-div-hell/div-hell-solution-with-fake-component_ghxk5y.png) ->->-> `使用empty parent element來充當wrapper component，並不會讓section和card元件多一個div元件![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
-<!--SR:!2023-06-15,171,250-->
+<!--SR:!2025-02-01,531,250-->
 
 
 #🧠 以下是繼續使用真的wrapper component來解決JSX侷限問題，並且由section來包含以下內容，請問最後的DOM節點會是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662816316/blog/react/react-element/wrapper-for-div-hell/div-hell-origin_mcd2hk.png) ->->-> `使用div元件繼續當wrapper component，會在section和card元件之間多一個div![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662745521/blog/frontend/conditional-rendering/before-wrapper_fbmo12.png)`
