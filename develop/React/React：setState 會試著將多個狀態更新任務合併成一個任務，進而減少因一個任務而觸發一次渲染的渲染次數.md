@@ -204,14 +204,14 @@ setLastName('Cheng');
 
 
 #🧠 React： 在class-based component中的batching實際實現中， setState 的狀態是以物件，會如何進行狀態的batching？ ->->-> `一開始會定義結果狀態為空物件、將setState設定的狀態(物件的屬性)去追加/覆蓋至結果狀態物件上的屬性`
-<!--SR:!2023-08-13,193,250-->
+<!--SR:!2024-12-26,494,250-->
 
 #🧠 React：無論狀態更新是否為class-based componet 或者 functional component，有誰能夠執行完setState便立刻更新state嗎 ->->-> `都沒有`
 <!--SR:!2023-08-10,191,250-->
 
 
 #🧠 React：無論是否為class-based componet 或者 functional component，請問setState 每一次呼叫時會立刻更新state嗎？ 為何？->->-> `並不會，具體要等所有狀態更新指令執行完畢，並且以batching形式來合併狀態，最後以最後合併狀態為結果狀態來進行一次狀態更新和出發渲染週期`
-<!--SR:!2023-08-10,191,250-->
+<!--SR:!2024-12-27,495,250-->
 
 #🧠 React：setState1(A) setState2(B) setState3(C)，請問最後的batching結果會是什麼 ->->-> `會是個{state1: A, state2: B, state3: C}的結果，並以這個狀態來更新狀態和觸發渲染`
 <!--SR:!2023-08-09,190,250-->
@@ -237,7 +237,7 @@ setLastName('Cheng');
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以單一值來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-value-example_tw7yp7.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為 2、執行第二個this.setState指令任務，會先將結果物件設定為 3、執行第三個this.setState指令任務，會先將結果物件設定為 4、做完發現沒了，就直接負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
-<!--SR:!2023-08-07,189,250-->
+<!--SR:!2024-12-28,496,250-->
 
 
 #🧠 React18：class-based component 假如系統執行以下setState，而狀態會是以物件來表示，那麼過程會是如何執行狀態更新![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `執行第一個this.setState指令任務，會先將結果物件設定為空物件，並將該任務要求更改的狀態值追加至空物件，做完就做第二個。執行第二個this.setState指令任務，會先將任務要求更改的狀態追加/覆蓋至空物件，做完就看有沒有第三個。做完發現沒了，就直接讓負責處理佇列的非同步任務X來對夾帶著特定狀態值的合併後任務進行狀態更新&渲染`
