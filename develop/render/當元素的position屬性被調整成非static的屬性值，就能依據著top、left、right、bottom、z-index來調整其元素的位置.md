@@ -109,7 +109,7 @@ position: sticky;
 <!--SR:!2023-12-17,216,230-->
 
 #🧠 top、right、bottom、left、z-index能夠調整non-positioned element的位置嗎？ ->->-> `並不能`
-<!--SR:!2023-06-13,170,250-->
+<!--SR:!2025-01-19,519,250-->
 
 #🧠 CSS：top、bottom這兩個屬性是什麼？ ->->-> `top、bottom主要調整positioned element的垂直位置，即為上下這兩個方向`
 <!--SR:!2023-12-25,224,230-->
