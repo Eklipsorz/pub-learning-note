@@ -13,12 +13,9 @@
 ### position：relative
 
 
-若position 設定為relative時，其容器大小並不會跟著內容而變化，而定位方式會從static改變，且以static模式下的元素所在的各個邊界為定位參考點為基準點(下圖橘點)來定位，並且relative的元素會與
+若position 設定為relative時，其定位參考會是以static模式下的元素所在的各個邊界為基準點(下圖橘點)來定位，並且relative的元素會與
 
-![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1629707392/blog/htmlPosition/relativeStartPoint_nsc1nk.png)
-
-  
-而top、bottom、left、right在這裡的表現，會以橘點為主：
+![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png)
 
 ### value1為正值時
 
