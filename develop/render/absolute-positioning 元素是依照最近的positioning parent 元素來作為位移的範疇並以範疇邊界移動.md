@@ -85,7 +85,7 @@ b. 當對absolute-positioning 元素的bottom為value1，其元素的下邊界�
 <!--SR:!2024-09-18,446,250-->
 
 #🧠 absolute-positioning 元素大小和top、bottom、left、right之間的關係是什麼？->->-> `absolute-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬`
-<!--SR:!2023-07-15,194,250-->
+<!--SR:!2025-02-19,548,250-->
 
 #🧠 當對absolute-positioning 元素的top為value1，會是代表著什麼？->->-> `其元素的上邊界和parent元素A的上邊界之間會保持著value1的距離`
 <!--SR:!2025-02-09,540,250-->

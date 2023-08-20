@@ -119,7 +119,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2023-12-01,102,230-->
 
 #🧠 viewport 在電腦科學會是指什麼？->->-> `就是指window，會是以一個固定大小的可視區塊來呈現特定渲染內容，其中該區塊會以邊線來表示區塊的範疇`
-<!--SR:!2023-05-28,150,230-->
+<!--SR:!2023-11-18,89,210-->
 
 #🧠 電腦科學 的 viewport套用在瀏覽器，則會是指什麼？ ->->-> `若進一步套用在瀏覽器的話，瀏覽器中用呈現畫面的部分就是viewport`
 <!--SR:!2024-06-01,383,250-->
@@ -141,7 +141,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2023-07-15,194,250-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
-<!--SR:!2023-07-08,189,250-->
+<!--SR:!2025-02-20,549,250-->
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-top-case_vzczxd.png) ->->-> `是設定top:value1`
 <!--SR:!2024-01-19,300,250-->
