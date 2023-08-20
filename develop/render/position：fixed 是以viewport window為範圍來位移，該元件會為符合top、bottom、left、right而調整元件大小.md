@@ -125,7 +125,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2024-06-01,383,250-->
 
 #🧠 normal flow/flow layout 會如何考量fixed positioning 的元件是如何排版？->->-> `fixed positioning 的元件會脫離normal flow/flow layout所控制，換言之，normal flow/flow layout會不考量fixed positionging來處理，也不會為了呈現它而特意留些空間`
-<!--SR:!2023-07-15,194,250-->
+<!--SR:!2025-02-11,540,250-->
 
 #🧠 fixed positioning 的元件會從normal flow/flow layout移除，換言之，normal flow/flow layout會不考量fixed positionging來處理，比如不會做哪些事？ ->->-> `不會為了呈現它而特意留些空間`
 <!--SR:!2023-07-06,185,250-->
@@ -159,7 +159,7 @@ viewport 就是瀏覽器的最大可視範圍：
 <!--SR:!2024-02-07,311,250-->
 
 #🧠 當對fixed positioning的元件設定正值的value1給left屬性，會是代表著？ ->->-> `元素的左邊界(border-left)會跟viewport的左邊界在viewport內部保持value1的距離`
-<!--SR:!2023-06-09,171,250-->
+<!--SR:!2025-02-09,538,250-->
 
 
 #🧠 當對fixed positioning的元件設定top、bottom、left、right屬性時會呈現以下結果，請問是設定了哪個屬性？其屬性值是正值 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662576226/blog/htmlPosition/fixed-position/fixed-positoning-right-case_xa3f8t.png) ->->-> `設定right屬性為value1`
