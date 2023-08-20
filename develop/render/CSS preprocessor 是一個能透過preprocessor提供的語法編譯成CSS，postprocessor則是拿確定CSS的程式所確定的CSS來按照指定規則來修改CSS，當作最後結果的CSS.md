@@ -56,7 +56,7 @@
 
 
 #🧠 CSS preprocessor 是什麼？ ->->-> `CSS preprocessor 是一個程式，能透過preprocessor提供的語法編譯成CSS的程式`
-<!--SR:!2023-06-07,191,250-->
+<!--SR:!2023-12-04,105,230-->
 
 #🧠 請從為何取preprocessor 來說明CSS preprocessor是什麼？ ->->-> `具體會是會於確定CSS檔案的程式之前，來將preprocessor提供的語法所構成的檔案經過preprocesssor處理後而產生出對應的CSS`
 <!--SR:!2024-07-21,433,250-->
