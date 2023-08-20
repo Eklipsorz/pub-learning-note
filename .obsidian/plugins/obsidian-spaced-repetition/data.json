@@ -11,8 +11,8 @@
     "cardCommentOnSameLine": false,
     "burySiblingCards": false,
     "showContextInCards": true,
-    "flashcardHeightPercentage": 80,
-    "flashcardWidthPercentage": 40,
+    "flashcardHeightPercentage": 100,
+    "flashcardWidthPercentage": 100,
     "randomizeCardOrder": true,
     "convertHighlightsToClozes": true,
     "convertBoldTextToClozes": false,
@@ -41,7 +41,7 @@
     "maxLinkFactor": 1,
     "showDebugMessages": true
   },
-  "buryDate": "2023-07-05",
+  "buryDate": "2023-08-21",
   "buryList": [],
-  "historyDeck": ""
+  "historyDeck": "render"
 }
