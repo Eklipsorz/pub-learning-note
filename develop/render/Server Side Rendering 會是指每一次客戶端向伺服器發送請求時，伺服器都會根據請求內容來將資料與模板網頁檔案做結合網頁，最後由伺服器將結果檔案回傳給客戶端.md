@@ -91,14 +91,14 @@ Server-Side Rendering 指的是 在Client-Server情景下，由伺服器主要�
 <!--SR:!2024-08-20,399,250-->
 
 #🧠 Server Side Rendering 在client-server情景下所擁有的優點是什麼？(共三個)->->-> `SEO 會比Client-Side Rendering 來得好、對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext、 與Client-Side Rendering 相比，webpage所需要載入的JS、CSS、圖片(等另外發送請求載入的資源)的成本會比較少`
-<!--SR:!2023-08-17,161,230-->
+<!--SR:!2024-09-01,376,230-->
 
 
 
 
 
 #🧠  Server Side Rendering 在client-server情景下為何會比Client Side Rendering 擁有較好的SEO???? ->->-> `SEO 會比Client-Side Rendering 來得好：由於搜尋引擎會利用爬蟲程式來對網頁內容來決定與哪些關鍵字有關聯，通常會比對網頁的靜態內容：不需要執行JS來獲取主要渲染內容，而SSR憑藉以現成的靜態內容而比CSR擁有更好的SEO`
-<!--SR:!2023-08-02,173,250-->
+<!--SR:!2024-11-20,456,250-->
 
 #🧠 Server-Side Rendering 在每個URL下都對應著什麼？需不需要由客戶端負責什麼？ ->->-> `對應URL都會對應著實體hypertext文件，不需要透過客戶端執行JS來產生對應的虛擬hypertext。`
 <!--SR:!2023-08-01,172,250-->

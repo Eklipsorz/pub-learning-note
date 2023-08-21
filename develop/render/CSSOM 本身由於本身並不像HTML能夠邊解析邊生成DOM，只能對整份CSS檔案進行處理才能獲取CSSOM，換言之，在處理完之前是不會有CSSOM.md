@@ -125,7 +125,7 @@
 <!--SR:!2023-06-03,66,230-->
 
 #🧠 當瀏覽器的HTML 解析器解析HTML內容，若發現 link標籤或者style標籤時，如果是指定CSS檔案，會做什麼？ (重複)->->-> `就會生成非同步任務A去負責載入CSS檔案、解析其內容轉成CSSOM、以該CSS來作為CSSOM的主要內容`
-<!--SR:!2023-07-01,38,227-->
+<!--SR:!2024-01-14,145,227-->
 
 
 #🧠 CSSOM的構建任務會不會阻塞DOM的建立 ->->-> `不會`
@@ -144,7 +144,7 @@
 <!--SR:!2023-10-19,148,230-->
 
 #🧠   請問這會引發什麼問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) ->->-> `若遇到link標籤或者style標籤之前就有DOM，那麼瀏覽器會在那之前執行該DOM結構上的渲染內容使其出現畫面，接著讀取DOM之後的link標籤或者style標籤的話，就會觸發CSSOM的建立任務，而當完成之後，會重新刷新DOM之前的畫面，這時會有閃爍的效果`
-<!--SR:!2023-07-02,74,230-->
+<!--SR:!2024-04-17,239,230-->
 
 
 #🧠  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661937279/blog/cssTag/flash-problem_i3dfmz.png) 這會引發閃爍問題，請問如何解決？ ->->-> `將link標籤或者style標籤都放在所有DOM之前，比如head標籤`
