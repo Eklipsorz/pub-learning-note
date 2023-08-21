@@ -138,7 +138,7 @@ export default React.memo(DemoList);
 <!--SR:!2024-09-29,439,250-->
 
 #🧠 React useMemo 語法是什麼？ ->->-> `const memoizedValue = useMemo(createResultFn, [deps]);`
-<!--SR:!2023-08-11,193,250-->
+<!--SR:!2023-12-01,101,230-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的createResultFn是什麼？ ->->-> `第一個參數為專門定義所要儲存的結果值，會以函式物件來表示如何產生對應的結果值`
 <!--SR:!2024-09-14,430,250-->
@@ -165,7 +165,7 @@ export default React.memo(DemoList);
 <!--SR:!2025-01-11,513,250-->
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，代表著什麼？ ->->-> `系統就認為不會有任何變動的deps`
-<!--SR:!2023-08-09,192,250-->
+<!--SR:!2024-12-30,496,250-->
 
 
 #🧠 React useMemo 語法useMemo(createResultFn,\[deps\]); 中的 deps是空陣列，useMemo會如何做？ ->->-> `只回傳記憶體的目前內容，不執行createResultFn來產生結果值`

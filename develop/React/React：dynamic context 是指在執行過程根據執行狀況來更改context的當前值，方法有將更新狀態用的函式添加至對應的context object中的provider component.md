@@ -56,7 +56,7 @@ const Navigation = (props) => {
 ## 複習
 
 #🧠 React Context：dynamic context 是什麼？ ->->-> `在執行過程中來根據執行狀況來更改context的當前狀態值`
-<!--SR:!2023-07-27,194,250-->
+<!--SR:!2025-01-20,517,250-->
 
 #🧠 React Context：dynamic context 如何實現？ ->->-> `1. 將更新狀態用的函式添加至指定context object中的provider component之value 2. 再讓想修改其context上的狀態的元件透過context object的consumer component語法糖採用ctx的目前狀態值-onLogout 好讓當前元件B透過自己的角度來改變context當前的狀態`
 <!--SR:!2023-09-04,202,230-->
