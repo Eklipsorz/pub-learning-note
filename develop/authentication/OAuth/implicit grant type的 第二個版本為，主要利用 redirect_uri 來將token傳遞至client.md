@@ -37,7 +37,7 @@
 <!--SR:!2024-01-16,162,230-->
 
 #🧠  redirect_uri 是用來接收token的地點： implicit grant type 在OAuth上的流程為何？ 請畫圖來表示->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version2_euhcgr.png)
-<!--SR:!2023-04-27,18,230-->
+<!--SR:!2024-02-16,177,230-->
 
 
 ---
