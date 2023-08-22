@@ -134,7 +134,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2024-04-04,233,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI"，在這個階段會回傳token，請問它會如何回傳，請舉一個URI作為例子 ->->-> `http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&token_type=example&expires_in=3600`
-<!--SR:!2023-04-26,26,250-->
+<!--SR:!2024-03-24,214,250-->
 
 #🧠 implicit grant type 在OAuth 中存在兩個主要版本，主要會是什麼？ ->->-> `- 第一個版本：redirect_uri 是用來提供獲取Token的script - 第二個版本為： redirect_uri 是用來接收token的地點`
 <!--SR:!2024-03-19,213,250-->
