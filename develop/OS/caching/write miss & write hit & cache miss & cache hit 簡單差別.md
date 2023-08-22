@@ -40,7 +40,7 @@
 <!--SR:!2023-09-05,13,250-->
 
 #🧠 read through 對於client、cache、backup storage環境下，通常會對cache和backup storage構成甚麼樣的架構? 為什麼 ->->-> `inline caching，因為會需要前者`
-<!--SR:!2023-08-20,3,250-->
+<!--SR:!2023-09-05,13,250-->
 
 #🧠 read aside 對於client、cache、backup storage環境下，通常會對cache和backup storage構成甚麼樣的架構 ->->-> `look-aside caching`
 <!--SR:!2023-09-02,10,250-->
@@ -55,10 +55,10 @@
 <!--SR:!2023-09-03,11,250-->
 
 #🧠 inline caching 和 look-aside caching最大的不同在於資料上的管理，請詳細解釋?->->-> `- 使用資料的那一方會如何讀取/寫入資料 - cache如何處理cache miss、cache hit、write miss、write hit這四種狀況 - 由於前兩者對於如何實現而構成的結構`
-<!--SR:!2023-08-20,3,250-->
+<!--SR:!2023-09-01,9,250-->
 
 #🧠  inline caching 和 look-aside caching:  對於 **使用資料的那一方會如何讀取/寫入資料**之實際情況而言會是? ->->-> `look-aside caching 得由開發者事先告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入； inline caching 開發者不需要在應用程式去處理cache miss、cache hit、write miss、write hit這四種狀況`
-<!--SR:!2023-08-20,3,250-->
+<!--SR:!2023-09-02,10,250-->
 
 #🧠  inline caching 和 look-aside caching:  對於 **cache會如何處理cache miss、cache hit、write miss、write hit這四種狀況**之實際情況而言會是? ->->-> `look-aside caching: 開發者不用在cache或者後備存儲資料的地方事先定義cache miss、cache hit、write miss、write hit這四種狀況； inline caching: 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況`
 <!--SR:!2023-09-04,12,250-->
@@ -67,6 +67,7 @@
 <!--SR:!2023-09-01,9,250-->
 
 #🧠  look-aside caching- 得由開發者事先告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入之代碼風格為何? 為什麼是xx? ->->-> `declarative 風格，因為要保持該應用程式的易讀性，所以會以該應用程式所用的程式語言來表達其目標，而非以額外的語言形式來表達。`
+<!--SR:!2023-08-25,2,248-->
 
 
 
@@ -78,7 +79,7 @@
 
 
 #🧠 inline caching上，若以client、cache server、database server為例來畫該架構圖 ->->-> ![](https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzU4OWUzYTI0MTA5MTUucG5nJnZlcnNpb249MDAwMCZzaWc9ZjAzYzE4NGI2MzkwNjRiYThiNTQ0YjZhMzc2NzBiOTE%253D)
-<!--SR:!2023-08-20,3,250-->
+<!--SR:!2023-09-04,12,250-->
 
 #🧠 在look-aside caching上，若以client、cache server、database server為例來畫該架構圖  ->->-> ![](https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzU4OWUzYTBmZjJkMGQucG5nJnZlcnNpb249MDAwMCZzaWc9NGRlMTVhODA3NmFlYTdhNDMxOGU1MmQ0OTc2ZWY2ZDI%253D)
 <!--SR:!2023-09-03,11,250-->

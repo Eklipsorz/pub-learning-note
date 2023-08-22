@@ -20,24 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "121e6e2f3551c6e4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b585831a7ab2da10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/browser/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -177,9 +159,10 @@
   },
   "active": "a1bb0e5ae51dbc12",
   "lastOpenFiles": [
+    "annotation/@mdnWhatURLLearn.md",
     "develop/browser/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
-    "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
     "develop/React/Context/每次useReducer中的reducer執行狀態更新時，會將先前狀態物件儲存起來，若下次沒觸發dispatch就回傳事先儲存的物件.md",
+    "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
     "develop/React/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "develop/React/Context",
     "develop/React/React：Effect 等同於 Side Effect，effect 本身是指執行主要處理(結果)所帶來的任意額外處理(結果)，主要處理(結果)會是指元件渲染(render)任務。任意額外處理(結果)指useEffect所定義的執行處理.md",
@@ -203,7 +186,6 @@
     "annotation/@MemoryLeak2023.md",
     "annotation/@http___zotero.org_users_9524198_items_4GBXZ7K7.md",
     "annotation/@http___zotero.org_users_9524198_items_2GU6KYIP.md",
-    "annotation/@IntroductionLookAsideCaching.md",
     "develop/OS/caching",
     "develop/Untitled",
     "develop/OS/memory",
