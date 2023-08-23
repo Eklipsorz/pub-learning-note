@@ -150,7 +150,7 @@ new Promise((resolve, _) => {
 <!--SR:!2023-12-27,188,250-->
 
 #🧠 Promise API 的 resolve 所能得到的形式會是什麼狀態的promise？ ->->-> `	- 具有pending狀態的promise object，其結果值會是無，但僅僅限定於thenable - 具有fulfilled狀態的promise object，其結果值會是原本的指定事物 - 具有rejected狀態的promise object，其結果值會是原本的指定事物`
-<!--SR:!2023-08-22,88,230-->
+<!--SR:!2024-03-16,205,230-->
 
 #🧠 Promise API 的 resolve 所能得到的形式若是具有pending狀態的promise object，那麼其可能性會是什麼？ ->->-> `promise object包裝的任務本身會是非同步任務，該任務目前處於被排程且還未被執行，因此處於pending`
 <!--SR:!2024-03-13,233,250-->

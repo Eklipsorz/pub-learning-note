@@ -184,7 +184,7 @@ console.log(age, newAge);
 
 
 #🧠 JS ：儲存primitive data value 和 reference value的記憶體區塊傳遞方式，其語法會是variableA = variableB，那麼一旦他們做完，兩者內容之間的關係為何 ->->-> `兩者所存的內容皆為獨立，互不影響。`
-<!--SR:!2023-08-21,135,247-->
+<!--SR:!2024-07-26,337,247-->
 
 
 #🧠 let age = 25; let newAge = age; newAge = newAge + 1; 在JS中的記憶體處理會是如何？請說明 ->->-> `- 在這裡先分配一個固定大小的stack記憶體區塊來存放25這值，其區塊的對應名稱為age - 接著由於下面語法，是要複製age對應的記憶體內容至另一個stack記憶體區塊，所以會特意建立一個記憶體區塊且名為newAge，其內容會是25。 - 接著由於age和newAge本身是兩個獨立記憶體區塊，所以僅會針對newAge所儲存的內容進行+1，age內容並不會有任何變化。`

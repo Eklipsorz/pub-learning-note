@@ -120,7 +120,7 @@ new Promise((resolve, reject) => {
 <!--SR:!2023-12-30,176,250-->
 
 #🧠  JavaScript：在Promise API時代前，callback交給任務A來執行所帶有的疑慮有哪些，主要講信任相關，其中因callback執行時拋出錯誤會有什麼疑慮？->->-> `吞掉callback執行時拋出的錯誤或者例外，非同步任務A執行callback時拋出錯誤，但沒有錯誤處理來處理、因系統接受到錯誤而採取預設的錯誤處理，而錯誤處理是以同步執行來執行，而callback是以非同步來執行，顯然會使callback整體變成Zalgo`
-<!--SR:!2023-08-24,63,210-->
+<!--SR:!2024-01-03,132,210-->
 
 
 #🧠 JavaScript：在Promise API時代中，它是如何面對先前沒Promise時所會有的疑慮-太早執行callback?->->-> `在Promise中，callback只要放入Promise API下的then、catch、finally這些語法的話，就會以非同步來執行callback，另外即使Promise指定任務是立即會履行的任務，callback仍以非同步任務型式來被排程去執行。`
