@@ -325,7 +325,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2024-10-02,436,250-->
 
 #🧠 JS部分API會不會使用explicit binding方法來設定，舉例來說->->-> `forEach`
-<!--SR:!2023-08-24,196,250-->
+<!--SR:!2025-01-16,511,250-->
 
 #🧠 function.protype.call() 是什麼？用途是什麼 ->->-> `設定一個明確的物件來設定該函式的this，設定完就直接呼叫`
 <!--SR:!2023-11-06,184,230-->
@@ -365,7 +365,7 @@ fn.apply(obj,['26','帥']);//我是聽風是風,我的年齡是26，我非常帥
 <!--SR:!2024-10-11,445,250-->
 
 #🧠  JS：call 、 apply這兩者和this之間可以做什麼應用？  ->->-> `call 和 apply 設定this並呼叫的方法可以讓函式本身自行根據this為何而決定要執行什麼樣的內容`
-<!--SR:!2023-08-24,49,190-->
+<!--SR:!2023-11-25,93,190-->
 
 
 #🧠 為什麼fn.bind需要多一個括號？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665540282/blog/javascript/this-binding/explicit-binding/explicit-binding-example_u5m3ld.png) ->->-> `因為bind會是回傳一個新的函式物件，要執行裡頭的內容，必需要多一個括號`
