@@ -59,7 +59,7 @@ test <button id="test">
 ## 複習
 
 #🧠 JS部分函式庫所提供的事件處理器和this物件之間的關係 ->->-> `JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件`
-<!--SR:!2023-08-23,195,250-->
+<!--SR:!2025-01-15,510,250-->
 
 #🧠 JS部分函式庫所提供的事件處理器會將callback呼叫設定特定物件為this物件，通常特定物件會是DOM元件，請舉例 ->->-> `	- addEventListener：會將callback呼叫的this設定成發生事件的DOM節點 - HTML DOM 標籤上所提供onxxx標籤來填入對應callback執行內容，xxx為事件名稱：會將callback呼叫的this設定成發生事件的DOM節點`
 <!--SR:!2023-12-13,142,229-->
