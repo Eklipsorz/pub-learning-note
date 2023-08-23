@@ -189,7 +189,7 @@ event.stopPropagation()
 <!--SR:!2023-06-29,194,250-->
 
 #🧠 event.preventDefault() 是做什麼？ ->->-> `撤銷掉目前發生事件的元件所要做的預設事件處理`
-<!--SR:!2023-06-29,194,250-->
+<!--SR:!2025-03-11,565,250-->
 
 #🧠 event.preventDefault() 會停止事件訊號傳遞嗎？若沒，該如何改善 ->->-> `並不會停止，若要停止caturing 和 bubble這兩種事件訊號傳遞，可以額外添加event.stopPropagation()`
 <!--SR:!2023-12-12,287,250-->
