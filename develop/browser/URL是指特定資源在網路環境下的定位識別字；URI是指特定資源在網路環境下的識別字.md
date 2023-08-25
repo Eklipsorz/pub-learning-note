@@ -33,11 +33,30 @@
 - URI (Uniform Resource Identifier) 是指特定資源在網路環境下的識別字，其識別字會是由schema、host、port、path、query string、#fragment 所構成
 - path 本身是指資源所在的絕對路徑，該路徑會以伺服器本身網路位置來定位，由目錄和檔案所構成
 
+
+#### locator 意義是甚麼? 
+
+> a device or system for finding something
+
+>  one that locates something (such as a mining claim or the course of a road)
+
+locate:
+> to determine or indicate the place, site, or limits of xxxx
+
+重點:
+- locator :
+	- 用來探尋特定人事物位置的裝置或者系統
+	- 用來確定或者指示特定事物位置的裝置/系統/事物
+
 ## 複習
+
+#🧠 URL 中的locator 意思是甚麼?  ->->-> `用來指示特定事物A位置的裝置/系統/事物`
+<!--SR:!2023-08-27,2,244-->
+
 
 
 #🧠 URL 完整名稱為->->-> `Uniform Resource Locator`
-<!--SR:!2023-08-23,195,250-->
+<!--SR:!2023-12-02,99,230-->
 
 #🧠 URI 完整名稱為 ->->-> `Uniform Resource Identifier`
 <!--SR:!2023-09-24,164,210-->
