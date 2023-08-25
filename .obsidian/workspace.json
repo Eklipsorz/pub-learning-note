@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "1b728af4a278cee2",
@@ -157,7 +158,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "a1bb0e5ae51dbc12",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "annotation/@mdnWhatURLLearn.md",
     "develop/browser/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",

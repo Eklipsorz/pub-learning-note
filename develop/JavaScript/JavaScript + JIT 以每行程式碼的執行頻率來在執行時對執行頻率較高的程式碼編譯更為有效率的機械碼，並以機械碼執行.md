@@ -222,7 +222,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：以什麼標籤作為放進optiziming compiler 的處理標準 ->->-> `擁有hot標籤的索引`
-<!--SR:!2023-08-25,15,250-->
+<!--SR:!2023-10-02,38,250-->
 
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode時，且此時為剛執行的階段，那麼JavaScript會如何執行ByteCode? 紀錄次數？ ->->-> `由於每段程式碼都是剛執行，所以一開始都會按照解釋器邊將BytecCode 轉換成機械碼 邊執行，每段程式碼都會在執行時都根據行數、資料類型來當索引在monitor那邊更新對應的執行次數`
@@ -306,7 +306,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且假設錯誤，流程會是什麼？(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot) ->->-> `(若行數和對應的型別所構成的索引能夠在monitor找到對應紀錄且記錄為hot) 生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以baseline compiler的機械碼為主-> 紀錄錯誤次數 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-08-25,15,250-->
+<!--SR:!2023-10-01,37,250-->
 
 
 

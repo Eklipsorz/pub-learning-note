@@ -97,7 +97,7 @@
 <!--SR:!2025-01-12,507,250-->
 
 #🧠 static variable 是什麼？->->-> `static variable 意旨為在執行前就已經分配好記憶體給變數`
-<!--SR:!2023-08-25,196,250-->
+<!--SR:!2025-01-18,512,250-->
 
 #🧠 static function / static method是什麼？ ->->-> `static function / static method 意旨為在執行前就已經分配好記憶體給函式`
 <!--SR:!2023-08-29,199,250-->
