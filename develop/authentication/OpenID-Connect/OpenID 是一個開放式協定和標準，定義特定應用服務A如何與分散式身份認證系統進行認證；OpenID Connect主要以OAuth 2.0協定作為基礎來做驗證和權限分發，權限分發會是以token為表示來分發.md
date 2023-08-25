@@ -114,7 +114,7 @@
 <!--SR:!2024-01-22,203,225-->
 
 #🧠 在OpenID / OpenID Connect 角色中，若Resource Server會管理資源和驗證token，其中Resource Server會是負責什麼？ ->->-> ` Resource Server：管理資源、根據是否會驗證Token來決定，若不會驗證就將請求封包的token轉遞至Authorization Server來驗證的伺服器，若會驗證，就自行驗證Token`
-<!--SR:!2023-05-26,79,245-->
+<!--SR:!2023-10-16,51,225-->
 
 
 

@@ -149,7 +149,7 @@ response_type會是指甚麼意思?  ->->-> `客戶端指定Owner導向至認證
 <!--SR:!2023-09-08,13,242-->
 
 grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的授權同意形式來向認證伺服器索要TOKEN`
-<!--SR:!2023-08-21,2,242-->
+<!--SR:!2023-09-08,13,242-->
 
 
 
@@ -223,7 +223,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server和Authorization Server 之間差別是什麼？ ->->-> `- Resource Server：管理資源、轉遞請求封包上的token至authorization server的伺服器 - Authorization Server：驗證Resource Owner輸入的credential來發放Token 、幫忙Resource Server驗證token是否為合法`
-<!--SR:!2023-08-24,137,250-->
+<!--SR:!2023-11-02,68,230-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Resource Server vs  Authorization Server 兩者在實現上是否能一台主機擔任兩個角色？ ->->-> `實作上，可以是1. 可以同時是Resource Server 和 Authorization Server 2. 可以分出兩種伺服器：一個是Resource Server、另一個為Authorization Server`
 <!--SR:!2024-01-30,177,230-->
@@ -252,7 +252,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 
 
 #🧠 針對OAuth 概念 所實現的基本流程中，其中會有客戶端詢問使用者獲取授權同意的手段並以授權來申請使用resource server，普遍來說， 授權同意會不會具有一些安全性疑慮？有的話，會是什麼？ ->->-> `由於Resource Server/Authorization Server無法識別出該授權資料會是合法的使用者提供的？以及其內容是否合法？，因此不能貿然以該資料來發放token，必須得用一些值得信任的方式來識別並發放`
-<!--SR:!2023-05-28,41,245-->
+<!--SR:!2023-09-30,35,225-->
 
 
 
@@ -261,7 +261,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 
 
 #🧠 OAuth 概念下的實際會有授權方式會有哪四種，其中不論哪一種，哪一個server會負責驗證客戶端傳過來的token？->->-> `resource server 或者 由resource server轉發token至authorization server來驗證`
-<!--SR:!2023-08-18,95,247-->
+<!--SR:!2023-10-14,49,227-->
 
 #🧠 OAuth 概念下的實際會有授權方式會有四種，其中不論哪一種，server驗證access token是否為合法的方式為何？在這裡假定使用JWT來表示token->->-> `- 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點(由Resource Server提供Client想要存取的端點)是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作(由Resource Server提供Client於存取端點想做的操作)是否允許，若允許就驗證成功，否則報錯
 <!--SR:!2023-12-04,154,247-->
