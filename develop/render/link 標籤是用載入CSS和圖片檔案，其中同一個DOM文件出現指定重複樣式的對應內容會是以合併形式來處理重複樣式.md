@@ -139,7 +139,7 @@
 
 
 #🧠 同一個DOM文件出現指定重複樣式的對應內容，為何CSS會將![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/a-css-inside-same-dom_hptxjr.png)解析成![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661091574/blog/cssTag/css-inside-same-dom-result_vhks4m.png)->->-> `由於會使用相同的CSSOM，這使得它會採用css specificity來決定每個declaration的去留`
-<!--SR:!2023-06-04,170,250-->
+<!--SR:!2025-02-05,529,250-->
 
 
 

@@ -138,7 +138,7 @@ viewport 就是瀏覽器的最大可視範圍：
 
 
 #🧠 若瀏覽器有滾動軸，請問fixed positioning 還以什麼來位移？為什麼 ->->-> `以viewport來位移，因為滾動軸滾動本身就只是特定頁面內容，而那不是viewport的一部分。`
-<!--SR:!2023-07-15,194,250-->
+<!--SR:!2023-12-06,102,230-->
 
 #🧠 fixed positioning 的top、bottom、left、right的屬性值帶來的位移和 元素大小之間有何關係？->->-> `fixed-positioning 元素在沒特別設定width、height的情況下，會為了滿足top、bottom、left、right而調整其元素的高寬。`
 <!--SR:!2025-02-20,549,250-->
