@@ -67,7 +67,7 @@
 <!--SR:!2023-09-05,208,230-->
 
 #🧠 每一個HTML元素在CSS上會被當成是什麼？ ->->-> `CSS box model`
-<!--SR:!2023-08-04,195,249-->
+<!--SR:!2023-12-03,100,229-->
 
 
 #🧠 CSS Box Model 是什麼結構？ ->->-> `是由多種Box組合在一起的結構，這些盒子都負責裝載特定內容，分別有Content Box、Padding Box、Border Box、Margin Box`

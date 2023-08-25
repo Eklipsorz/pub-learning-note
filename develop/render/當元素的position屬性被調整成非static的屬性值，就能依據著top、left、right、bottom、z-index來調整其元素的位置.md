@@ -103,7 +103,7 @@ position: sticky;
 <!--SR:!2024-02-03,218,210-->
 
 #🧠 position 為static的元素是算positioned element？還是non-positioned element?  ->->-> `non-positioned element`
-<!--SR:!2023-06-29,183,250-->
+<!--SR:!2025-02-28,553,250-->
 
 #🧠 position 為static的元素 是什麼？會不會受到top、left、right、bottom、z-index這五個屬性的影響 ->->-> `意旨為遵從文件上的預設排版方式來排版，並且不會被top、left、right、bottom、z-index這五個屬性來調整其位置。`
 <!--SR:!2023-12-17,216,230-->
