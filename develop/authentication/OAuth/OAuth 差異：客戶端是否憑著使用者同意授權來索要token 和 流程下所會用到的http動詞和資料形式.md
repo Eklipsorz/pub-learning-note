@@ -50,7 +50,7 @@
 <!--SR:!2024-03-10,217,250-->
 
 #🧠 OAuth流程下所會用到的http動詞和資料形式：authorization code grant type 以授權同意結果來向認證伺服器索求token 會是以什麼http動詞以及封裝形式->->-> `	- http 動詞：POST - 封裝請求資料/結果資料形式：以封包為主`
-<!--SR:!2023-07-22,75,250-->
+<!--SR:!2024-04-23,241,250-->
 
 #🧠 OAuth流程下所會用到的http動詞和資料形式：implicit grant type會用什麼http動詞以及什麼資料封裝形式 ->->-> ` implitic grant type 皆以GET為http 動詞，並以URI、封包為主`
 <!--SR:!2024-03-15,221,250-->

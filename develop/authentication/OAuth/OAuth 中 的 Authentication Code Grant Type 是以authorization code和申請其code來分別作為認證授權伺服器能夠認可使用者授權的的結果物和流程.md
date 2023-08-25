@@ -196,7 +196,7 @@ Pragma: no-cache
 <!--SR:!2024-03-18,214,250-->
 
 #🧠 authorization code grant type 在OAuth 上是以什麼形式來讓認證授權伺服器認可為使用者合法授權的結果？ ->->-> `以authorization code的形式`
-<!--SR:!2023-06-07,43,248-->
+<!--SR:!2024-03-22,209,248-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程為何？在這裡會有(網路服務提供商)Authorization Server、(應用服務A)Client、(使用者)Resource Owner、User Agent 以及 當使用者授與存取網路服務提供商的權利給應用服務A來存取時->->-> `使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權 -> 使用者在認證頁面同意授權給應用服務A -> 假設使用者同意授權，認證授權伺服器會將使用者導向客戶端事先指定的URI並附上授權碼 -> 身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該token、redirect_uri、client_id發送索要tokem請求 -> 認證授權用的伺服器會從中驗證授權碼和當初申請授權碼的重導向URL是否正確無誤，若無誤，就會向客戶端的應用服務A發送access token和refresh token。`
@@ -214,7 +214,7 @@ Pragma: no-cache
 <!--SR:!2024-04-03,230,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以該code、redirect_uri、client_id發送索要token請求"，主要目的的關係是如何？->->-> `讓應用服務A向認證授權伺服器發送索要token的請求`
-<!--SR:!2023-06-19,59,250-->
+<!--SR:!2024-04-22,240,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，應用服務A發送過來的導向請求形式會是什麼？內容又會是什麼？對於使用者來說是什麼意思 ->->-> `其導向請求會是以URL (含URL參數)、封包 來進行，主要內容為授權申請的資料，透過導向方式來間接要求使用者發送相同同樣請求來向認證授權伺服器表示授權申請`
 <!--SR:!2024-03-27,218,250-->
@@ -244,10 +244,10 @@ Pragma: no-cache
 <!--SR:!2024-03-20,216,250-->
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-redirect_uri為何是可選填參數？ ->->-> `redirect_uri為可選，可以在網路服務提供商那邊事先申請`
-<!--SR:!2023-06-29,65,250-->
+<!--SR:!2023-10-06,41,230-->
 
-#🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-scope為何是可選填參數？ ->->-> `申請授權資料所能擁有的權限為何`
-<!--SR:!2023-08-07,88,250-->
+#🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，這步驟所需要的參數-scope為何是可選填參數？ ->->-> `可以在網路服務提供商那邊事先申請`
+
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中："使用者訪問身為客戶端的應用服務A，應用服務A將使用者導向網路服務提供商之認證授權伺服器來認證使用者、詢問授權範疇、是否授權"，從應用服務A發送過來的導向請求會是什麼？舉例來說，假如認證授權伺服器為server.example.com，端點為authorize ->->-> `GET server.example.com/authorize?response_type=type1&client_id=id1&redirect_uri=uri1`
@@ -266,7 +266,7 @@ Pragma: no-cache
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 本身限制是什麼？ ->->-> `有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次`
-<!--SR:!2023-05-23,17,230-->
+<!--SR:!2024-01-21,148,230-->
 
 
 #🧠 authorization code grant type 在OAuth 上的授權流程中：authorization code 使用限制是有效時間通常很短，如10分鐘、用碼申請token的次數是有限的，如1次，若違反限制的話，會如何？ ->->-> `若違反限制，就會在申請token過程中被拒絕`
@@ -295,7 +295,7 @@ Pragma: no-cache
 
 
 #🧠  authorization code grant type 在OAuth 上的授權流程中："身為客戶端的應用服務A會從URI接收到授權碼，並向認證授權伺服器以code、redirect_uri、client_id發送索要token請求"，其中應用程式A會以什麼http動詞來向伺服器發送token索求 ->->-> `POST`
-<!--SR:!2023-05-26,42,249-->
+<!--SR:!2024-04-10,228,249-->
 
 
 
