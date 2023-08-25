@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+                "file": "develop/Language/null 是表示任意型別的空值，而非是表示物件型別上的空值.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+                "file": "develop/Language/null 是表示任意型別的空值，而非是表示物件型別上的空值.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+                "file": "develop/Language/null 是表示任意型別的空值，而非是表示物件型別上的空值.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md"
+                "file": "develop/Language/null 是表示任意型別的空值，而非是表示物件型別上的空值.md"
               }
             }
           },
@@ -156,8 +156,11 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "dba5e16eed67c4ca",
+  "active": "a1bb0e5ae51dbc12",
   "lastOpenFiles": [
+    "annotation/@Null2023.md",
+    "develop/Language/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
+    "develop/Language/null 是表示任意型別的空值，而非是表示物件型別上的空值.md",
     "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/Express/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
     "develop/browser/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
@@ -182,14 +185,11 @@
     "annotation/@http___zotero.org_users_local_gXnyYX7A_items_2GU6KYIP.md",
     "annotation/@http___zotero.org_users_9524198_items_VFQP63MJ.md",
     "annotation/@http___zotero.org_users_9524198_items_HFWS9Q6M.md",
-    "annotation/@WhatMemoryLeak2010.md",
-    "annotation/@http___zotero.org_users_9524198_items_QNAFQUSD.md",
-    "[[@MemoryLeak2023.md",
     "develop/OS/caching",
     "develop/Untitled",
     "develop/OS/memory",
-    "develop/json",
-    "develop/json/html",
+    "develop/Language/json",
+    "develop/Language/json/html",
     "promise",
     "develop/css-style",
     "develop/browser",
