@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "分類定址(Classful Addressing) 具體用途是什麼？如何做？",
+                "query": "JSON 能夠表示undefined、NULL嗎",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
+                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md"
+                "file": "develop/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md"
               }
             }
           },
@@ -157,8 +156,9 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "a1bb0e5ae51dbc12",
+  "active": "dba5e16eed67c4ca",
   "lastOpenFiles": [
+    "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/Express/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
     "develop/browser/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
     "develop/React/Context/每次useReducer中的reducer執行狀態更新時，會將先前狀態物件儲存起來，若下次沒觸發dispatch就回傳事先儲存的物件.md",
@@ -185,7 +185,6 @@
     "annotation/@WhatMemoryLeak2010.md",
     "annotation/@http___zotero.org_users_9524198_items_QNAFQUSD.md",
     "[[@MemoryLeak2023.md",
-    "annotation/@MemoryLeak2023.md",
     "develop/OS/caching",
     "develop/Untitled",
     "develop/OS/memory",
