@@ -104,7 +104,7 @@
 <!--SR:!2025-02-17,546,250-->
 
 #🧠 Box Model用這個例子來說明盒子有哪些？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662475900/blog/css/box-model/box-model-question_abqeis.png) ->->-> ``
-<!--SR:!2023-07-12,194,250-->
+<!--SR:!2023-12-07,103,230-->
 
 
 

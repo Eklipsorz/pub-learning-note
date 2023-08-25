@@ -95,7 +95,7 @@ div {
 ## 複習
 
 #🧠 每個CSS rule 上的selector 部分，請舉例說明是哪四種形式可以描述所要選擇的DOM節點會是什麼 ->->-> `universal selector、type selector、id selector、class selector`
-<!--SR:!2023-08-02,36,210-->
+<!--SR:!2023-09-18,23,190-->
 
 #🧠 每個CSS rule 上的selector 部分，universal selector、type selector、id selector、class selector主要是用來做什麼？ ->->-> `用四種形式來描述所要選擇的DOM節點會是什麼`
 <!--SR:!2024-10-26,480,250-->
