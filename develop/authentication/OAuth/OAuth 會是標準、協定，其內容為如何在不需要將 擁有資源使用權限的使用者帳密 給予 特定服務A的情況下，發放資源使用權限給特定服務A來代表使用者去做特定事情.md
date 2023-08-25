@@ -196,7 +196,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 <!--SR:!2023-09-23,155,250-->
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，若Resource會管理資源和驗證Token，那麼Resource Server會有什麼樣的業務->->-> `Resource Server：管理資源、看本身能不能驗證Token，若不能的話就轉遞請求封包上的token至authorization server的伺服器，否則就自己驗證Token`
-<!--SR:!2023-08-18,130,250-->
+<!--SR:!2024-07-25,334,250-->
 
 #🧠 在Open Authorization中，response_type會是指甚麼意思?  ->->-> `客戶端指定Owner導向至認證伺服器所要獲得的授權同意形式會是甚麼?`
 <!--SR:!2023-09-08,13,242-->
