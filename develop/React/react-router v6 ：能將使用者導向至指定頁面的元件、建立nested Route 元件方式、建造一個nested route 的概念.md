@@ -196,7 +196,7 @@ xxxx 元件下的路由
 <!--SR:!2023-10-04,189,250-->
 
 #🧠 react-router-dom：Outlet的存不存在 在 nested route 上會是什麼關係？ ->->-> `	- 若存在Outlet元件就以出現位置來呈現 - 若不存在就不呈現`
-<!--SR:!2023-07-14,133,250-->
+<!--SR:!2023-11-06,71,230-->
 
 #🧠 以下為 react-router-dom v6的範例，請說明nested route在parent route的對應元件之間的關係，最好要搭配有沒有outlet來說明![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670249192/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-outlet_cuogqg.png) ->->-> `比如底下設定new-user的Route擁有welcome string這字串當作JSX元件，但router不知道要如何把這元件渲染在目前頁面的何處，目前頁面元件會是Welcome，就會在裡頭檢查是否存在Outlet這元件，若存在就以出現位置來呈現welcome string這字串；若不存在就不呈現`
 <!--SR:!2023-07-05,130,250-->
