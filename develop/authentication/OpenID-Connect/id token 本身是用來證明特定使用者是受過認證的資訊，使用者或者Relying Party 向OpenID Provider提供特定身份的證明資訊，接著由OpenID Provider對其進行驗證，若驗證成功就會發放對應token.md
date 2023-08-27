@@ -188,7 +188,7 @@ claim：
 <!--SR:!2023-11-03,179,250-->
 
 #🧠 若token本身夾雜特定身分證明資訊 和 代表特定資源之使用權限的資訊，那麼就會是同時表示權限和使用者的id token，其中id token夾雜的身分證明資訊會是？->->-> `特定身分對應的client_id、驗證操用的識別字、名字、email、圖片、生日等個人資料`
-<!--SR:!2023-05-30,48,227-->
+<!--SR:!2024-03-23,209,227-->
 
 #🧠 id token 以及 access token 如何獲取？ ->->-> `皆為使用者先向Authorization Server/OpenID Provider提供特定身份的證明資訊，Authorization Server/OpenID Provider對其進行驗證，若驗證成功就會根據是否綁定特定身份來發放id token 或者 access token，若綁定就id token；若沒綁定就access token`
 <!--SR:!2024-04-29,246,210-->
@@ -215,7 +215,7 @@ claim：
 #🧠  id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，舉例來說，順便說清楚如何生效和失效 ->->-> `在Authorization Server或者openID Provider 中的使用者資料表格上或者建立以下表格來記錄，將申請id token的使用者標記上特定的client_id，並將該client_id寫入至JWT以做比對。當客戶端夾雜著JWT時，伺服器就會從aud claim獲取對應的client_id，接著在指定表格上找看看有沒有相符合，有的話就繼續讓JWT生效；沒的話就讓JWT失效。`
 <!--SR:!2023-12-15,203,250-->
 
-#🧠 id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，若想要從伺服器讓token失效的話  ->->-> `伺服器讓內部用來驗證的資料弄成為與JWT中的資料不一樣的內容。`
+#🧠 id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，若想要從伺服器讓token失效的話  ->->-> `直接在伺服器設定該client-id為非法使用者或者從允許使用名單下剔除掉該client-id`
 <!--SR:!2023-06-10,85,230-->
 
 #🧠 claim 命名緣由為何？->->-> `- 以特定角度來說明特定事物是事實的描述，但對於其他人來說可能會不相信`
