@@ -147,7 +147,9 @@ id token 的構成會是以JWT 的Header、payload、Signature所構成：
 重點：
 - id token 驗證方式：若有任一步驟失敗，就會將token視為非法
 	- 先以JWT規則來驗證是否竄改
-	- 驗證解碼後的payload，如aud claim，就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效
+	- 驗證解碼後的payload，如aud claim
+		- 就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效
+		- 比對audience claim 下的client-id 和使用者提供的client-id 是否一樣，若不一樣的話，就失效；若一樣的話，就視為合法使用者
 
 ####  驗證aud claim 方式
 
@@ -209,14 +211,15 @@ claim：
 #🧠 id token 驗證方式為何？如何視為合法和非法 ->->-> `先以JWT規則來驗證是否竄改、驗證解碼後的payload，若任一項失敗，就將token視為非法；都通過就合法`
 <!--SR:!2023-10-03,38,207-->
 
-#🧠 id token 驗證方式中，會對解碼後的payload進行額外身分及權限驗證，會是如何進行，舉例->->-> `伺服器會從客戶端發送的token中提取aud claim對應內容看是否能在Server中的身份資訊表格找到對應內容，若不存在，就視為非法；若存在就合法。`
+#🧠 id token 驗證方式中，會對解碼後的payload進行額外身分及權限驗證，會是如何進行，舉例 (有兩個)->->-> `		- 就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效- 比對audience claim 下的client-id 和使用者提供的client-id 是否一樣，若不一樣的話，就失效；若一樣的話，就視為合法使用者`
+<!--SR:!2023-08-29,2,241-->
 
 
 #🧠  id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，舉例來說，順便說清楚如何生效和失效 ->->-> `在Authorization Server或者openID Provider 中的使用者資料表格上或者建立以下表格來記錄，將申請id token的使用者標記上特定的client_id，並將該client_id寫入至JWT以做比對。當客戶端夾雜著JWT時，伺服器就會從aud claim獲取對應的client_id，接著在指定表格上找看看有沒有相符合，有的話就繼續讓JWT生效；沒的話就讓JWT失效。`
 <!--SR:!2023-12-15,203,250-->
 
 #🧠 id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，若想要從伺服器讓token失效的話  ->->-> `直接在伺服器設定該client-id為非法使用者或者從允許使用名單下剔除掉該client-id`
-<!--SR:!2023-06-10,85,230-->
+<!--SR:!2023-10-20,54,210-->
 
 #🧠 claim 命名緣由為何？->->-> `- 以特定角度來說明特定事物是事實的描述，但對於其他人來說可能會不相信`
 <!--SR:!2024-03-10,251,247-->
