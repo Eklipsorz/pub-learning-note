@@ -235,7 +235,7 @@ UsersFinder.js
 
 
 #🧠 React：componentDidCatch 生命週期函式的通常開發方式是？->->-> `依據錯誤種類來產生不同的狀態和觸發渲染`
-<!--SR:!2023-08-25,197,250-->
+<!--SR:!2023-12-01,96,230-->
 
 #🧠 React： componentDidCatch  觸發時間點 ->->-> `只要其後裔元件的渲染方法和任一生命週期方法拋出錯誤，就會執行error-boundary下的componentDidCatch`
 <!--SR:!2024-01-05,271,249-->

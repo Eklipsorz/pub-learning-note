@@ -288,7 +288,7 @@ batch：
 
 
 #🧠 React18: 在同一個生命週期函式下，那麼如果發生多個夾雜狀態更新指令的setTimeOut，會如何處理batching？->->-> `多個夾雜狀態更新指令的setTimeOut都算在一起做batching`
-<!--SR:!2023-06-27,194,250-->
+<!--SR:!2023-12-14,109,230-->
 
 #🧠 React18: 考慮以下事件處理，請問react batching 會如何處理這內含的case1-case6，目前react是18![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661171193/blog/react/batching/batching-example_hhfzvj.png) ->->-> `- case 1 會和 case 3 合併 - case 2 會和 case 5 合併 - case 4 會和 case 6 合併`
 <!--SR:!2023-06-01,177,250-->

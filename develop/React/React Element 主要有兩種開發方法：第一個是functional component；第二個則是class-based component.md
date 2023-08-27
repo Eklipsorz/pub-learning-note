@@ -112,7 +112,7 @@ hooks 是：
 <!--SR:!2023-08-14,194,250-->
 
 #🧠  React：class-based component 和 functional component這兩種元件開發方式誰最為流行  ->->-> `functional component`
-<!--SR:!2023-08-27,199,250-->
+<!--SR:!2025-01-23,515,250-->
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`

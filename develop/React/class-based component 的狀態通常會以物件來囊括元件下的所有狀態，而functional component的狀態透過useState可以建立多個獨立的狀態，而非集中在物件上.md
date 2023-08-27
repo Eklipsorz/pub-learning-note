@@ -35,7 +35,7 @@ class-bassed component 的狀態：
 
 
 #🧠 React：function component 狀態和class-based component狀態之間差別->->-> `class-based component 的狀態通常會以物件來囊括元件下的所有狀態，而functional component的狀態透過useState可以建立多個獨立的狀態，而非集中在物件上`
-<!--SR:!2023-07-25,181,250-->
+<!--SR:!2023-11-27,92,230-->
 
 
 

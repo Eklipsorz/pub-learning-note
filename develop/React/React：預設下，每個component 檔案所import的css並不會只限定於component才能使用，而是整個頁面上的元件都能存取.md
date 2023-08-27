@@ -84,7 +84,7 @@ CourseInput/CourseInput.css：
 <!--SR:!2025-01-25,529,250-->
 
 #🧠 React：預設下，每個對應component 的JS檔案所import 的css 不會限定於該component才能存取，為什麼？ ->->-> `其css的作用域最後會是由webpack來決定，預設下，代表所有component的JS模組會合併成一個JS檔案並加載至HTML DOM文件A、每個component所載入的CSS會分別合併成一個CSS檔案並加載至HTML DOM文件A，當瀏覽器解析HTML文件A時，就會將CSS轉換成CSSOM、HTML轉換成DOM、將CSSOM和DOM合併成Rendering Tree、渲染(layout & paint)。在同個DOM的情況下，每個經由JS模組產生出來的DOM節點都會共享著同一個CSSOM的內容來渲染，換言之，每個component都會因為js模組和css模組都合併在HTML DOM文件而共享著每個component的CSS`
-<!--SR:!2023-07-08,194,250-->
+<!--SR:!2025-03-16,567,250-->
 
 #🧠 React：預設下，每個對應component 的JS檔案所import 的css 不會限定於該component才能存取，為什麼？(簡答) ->->-> `其css的作用域最後會是由webpack來決定，預設下，所有component 和 所有css 會因爲處於同一個HTML DOM下而使得所有component都共享著所有CSS`
 <!--SR:!2024-10-21,475,250-->

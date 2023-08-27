@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react updating 子階段中的render包含哪些步驟？",
+                "query": "react updating 階段若使用setState的流程會是什麼？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,

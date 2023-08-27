@@ -267,7 +267,7 @@ consume
 
 
 #🧠 React：Context中的Consumer 是什麼？  ->->-> `是一個Component，負責向Context Object訂閱/監聽並存取Context Object上的狀態值`
-<!--SR:!2023-06-29,45,150-->
+<!--SR:!2023-12-20,115,150-->
 
 #🧠 React：Context Object的屬性與provider、consumer有什麼關聯？ ->->-> `每個Context object都擁有對應的Provider、Consumer屬性`
 <!--SR:!2025-01-04,508,250-->
@@ -339,7 +339,7 @@ consume
 <!--SR:!2023-10-12,54,210-->
 
 #🧠 React：consuming component 是什麼？具體是什麼？ ->->-> `使用對應Context對應值的component，具體是搭載consumer component來實現。`
-<!--SR:!2023-07-19,185,250-->
+<!--SR:!2025-01-26,518,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
 <!--SR:!2023-07-27,194,250-->

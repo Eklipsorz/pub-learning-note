@@ -54,7 +54,7 @@ return (
 <!--SR:!2023-05-10,151,250-->
 
 #🧠 render函式若單獨回傳boolean expression && jsx element的話，其boolean expression && jsx element整體會被如何處理？？ ->->-> `根據boolean expression是否回傳true來決定是否回傳jsx element`
-<!--SR:!2023-07-20,194,250-->
+<!--SR:!2023-12-10,105,230-->
 
 
 #🧠 render函式若回傳boolean expression && jsx element的同時夾雜其他元件，其boolean expression && jsx element整體會被看作什麼東西？ ->->-> `boolean expression && 會被當作一般字串，而後頭JSX Element就以JSX元素來看待`
