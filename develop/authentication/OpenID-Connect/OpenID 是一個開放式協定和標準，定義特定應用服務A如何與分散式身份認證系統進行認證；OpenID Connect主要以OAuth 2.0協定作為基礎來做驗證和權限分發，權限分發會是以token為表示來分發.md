@@ -95,7 +95,7 @@
 <!--SR:!2023-07-06,78,230-->
 
 #🧠 OpenID Connect 標準是OpenID 2.0 標準的下一代，其具體為？ ->->-> `主要以OAuth 2.0協定作為基礎來做身份驗證和權限分發，身份和權限分發會是以token為表示來分發。`
-<!--SR:!2023-08-12,98,208-->
+<!--SR:!2023-10-18,52,188-->
 
 #🧠 OpenID / OpenID Connect 角色會有哪些？->->-> `Replying Party、OpenID Provider / OpenID identity Provider、Resource Server`
 <!--SR:!2023-10-17,51,230-->
@@ -120,11 +120,11 @@
 
 
 #🧠 OpenID Connect 的 authorization server / OpenID Identity Provider 所能給予的token種類為何？ ->->-> `id token、access token`
-<!--SR:!2023-05-25,81,250-->
+<!--SR:!2024-07-12,320,250-->
 
 
 #🧠 OpenID Connect 角色和OAuth 角色對應會是什麼，如驗證、資源、客戶端 ->->-> `客戶端應用程式：OAuth 為 client；OpenID Connect 為 Replying Party。驗證：OAuth 為 Authorization；OpenID Connect 為 OpenID Provider/OpenID identity Provider。資源則都是Resource Server`
-<!--SR:!2023-05-14,74,250-->
+<!--SR:!2023-10-15,49,230-->
 
 
 
