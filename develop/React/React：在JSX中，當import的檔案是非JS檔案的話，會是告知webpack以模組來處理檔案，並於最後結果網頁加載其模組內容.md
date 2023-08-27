@@ -92,7 +92,7 @@ https://create-react-app.dev/docs/adding-a-stylesheet/
 
 
 #🧠 React：為何不讓JSX中的XML表達元件使用class？ ->->-> `由於XML是JSX語言的一部分，且class會跟JavaScript原生語法中的class起衝突，所以React會以className來替代指定每個元件的樣式`
-<!--SR:!2023-07-08,201,248-->
+<!--SR:!2025-03-19,570,248-->
 
 ---
 Status: #🌱 

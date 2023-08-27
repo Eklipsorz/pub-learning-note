@@ -52,7 +52,7 @@ const value = useContext(context)
 <!--SR:!2023-07-29,194,250-->
 
 #🧠 useContext 語法為何？->->-> `const value = useContext(context)`
-<!--SR:!2023-07-29,194,250-->
+<!--SR:!2025-02-02,525,250-->
 
 #🧠 useContext 語法是const value = useContext(context)，其中context和value會是指什麼？->->-> `context是指定要存取的context object是哪個，value會是對應context object的目前狀態值，其值會以離目前元件較近的Provider Component所提供或者由createContext的預設值所提供`
 <!--SR:!2023-07-29,194,250-->

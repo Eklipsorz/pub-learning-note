@@ -26,7 +26,7 @@
 <!--SR:!2023-08-07,194,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，會做什麼 ->->-> `若執行能夠觸發渲染週期的話，每個使用context object存放狀態的元件A會因為consumer component監測到有變動，而因而觸發元件A的渲染；若沒有變動的話，並不會存取context object內容，並直接以目前資訊來渲染元件`
-<!--SR:!2023-08-05,192,250-->
+<!--SR:!2025-02-03,526,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，且檢測到context object沒變動的話，會做什麼？ ->->-> `若沒有變動的話，並不會存取context object內容，並直接以目前資訊來渲染元件`
 <!--SR:!2023-05-30,79,250-->
@@ -43,7 +43,7 @@
 <!--SR:!2023-08-07,194,250-->
 
 #🧠 React：搭載 consumer component 的元件中，若consumer component功能開始觸發的話，且檢測到context object變動的話，搭載其consumer component的元件會用什麼更新自己元件內容->->-> `主要會用context object內容`
-<!--SR:!2023-08-07,194,250-->
+<!--SR:!2025-01-28,520,250-->
 
 
 ---

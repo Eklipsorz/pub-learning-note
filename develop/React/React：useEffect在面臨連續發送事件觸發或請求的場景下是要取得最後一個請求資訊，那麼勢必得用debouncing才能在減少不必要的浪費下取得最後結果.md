@@ -115,7 +115,7 @@ clearTimeout(timeoutID)
 <!--SR:!2025-01-26,530,250-->
 
 #🧠 React：以下是使用setTimeout + cleanup 來實現的debouncing代碼，請問其中的clearTimeout的identifier會是什麼？，若下一個side effect執行時執行cleanup又是指哪個identifier![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png) ->->-> `會是設定當前產生出來timeout任務ID，並於下一個side effect執行前就執行cleanup的identifier會是指上一個effect產生出來的timeout任務ID`
-<!--SR:!2023-08-10,196,247-->
+<!--SR:!2025-01-30,522,247-->
 
 
 #🧠 React：請用setTimeout + cleanup 程式碼來實現effect的debouncing概念 ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663348476/blog/react/effect/setTimeout_cleanup_debouncing_vgcmnr.png)`

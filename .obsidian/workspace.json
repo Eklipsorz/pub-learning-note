@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+                "file": "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "react updating 階段若使用setState的流程會是什麼？",
+                "query": " Real DOM vs. Virtual DOM 差別(請簡答，共三個)",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+                "file": "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
+                "file": "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md"
+                "file": "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "647c50c7418eab99",
   "lastOpenFiles": [
+    "develop/React/setCount 問題：如何將每一次setCount的要求改變狀態設定為下一次setCount的參數.md",
+    "develop/React/React updating 階段是歷經過Mounting階段所觸發元件內上的渲染，大致分為三個部分：New props、setState、forceUpdate.md",
     "develop/React/React Composition 實現概念方式有Containment 和 Specialization，前者是component A 會包含多個其他獨立的component ，後者是component A 會是從另一個component B演化過來的component.md",
     "develop/browser/預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格.md",
     "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
@@ -184,8 +186,6 @@
     "develop/React/React Componet 傳統命名是以upper camel case，且App.js會是主要Virtual DOM中的根節點.md",
     "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
     "develop/JavaScript/promise/當rejected狀態的promise找不到對應的then方法或者catch方法來攔截其object來處理錯誤，那麼就會將該promise object包裝的內容以global error來拋出，來讓系統上的預設錯誤處理機制攔截並處理之.md",
-    "annotation/@https___stackoverflow.com_questions_3264514_in-php-what-does-it-mean-by-a-function-being-binary-safePHPWhatDoes.md",
-    "annotation/@http___zotero.org_users_local_gXnyYX7A_items_QNAFQUSD.md",
     "develop/OS/caching",
     "develop/Untitled",
     "develop/OS/memory",

@@ -168,7 +168,7 @@ virtual adj
 #🧠 Real DOM vs. Virtual DOM，如何指示瀏覽器來渲染畫面，不分直接或者間接 ->->-> `Real DOM 能直接指示 ； Virtual DOM 先轉換成對應Real DOM，然後以Real DOM來指示渲染畫面`
 <!--SR:!2023-07-24,184,250-->
 
-#🧠 Real DOM vs. Virtual DOM 差別(請簡答，共三個)->->-> `用途、誰能直接告知瀏覽器如何渲染、如何指示瀏覽器來渲染畫面，不分直接或者間接`
+#🧠 Real DOM vs. Virtual DOM 差別)->->-> `Real DOM 能直接指示 ； Virtual DOM 先轉換成對應Real DOM，然後以Real DOM來指示渲染畫面`
 <!--SR:!2023-08-06,194,250-->
 
 

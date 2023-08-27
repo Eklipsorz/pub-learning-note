@@ -63,7 +63,7 @@ React.forwardRef(render)
 <!--SR:!2024-12-14,502,250-->
 
 #🧠  React：forwardRef 語法形式->->-> `React.forwardRef(render)`
-<!--SR:!2023-08-23,89,227-->
+<!--SR:!2024-03-26,212,227-->
 
 
 #🧠 React：forwardRef 語法形式的render是什麼？ ->->-> `render 是指對應元件的render或者component function，其function會是(props, refs)，props會是該元件的屬性，refs則是接收到的ref物件`

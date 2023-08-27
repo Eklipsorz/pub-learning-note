@@ -318,7 +318,7 @@ consume
 
 
 #🧠 React：context object 只能有一個Provider component 嗎？ ->->-> `每個 context object 都可以擁有多個Provider component`
-<!--SR:!2023-07-07,179,250-->
+<!--SR:!2025-02-01,524,250-->
 
 #🧠 React：context object 的 consumer 具體是什麼component，以元件結構本來說，而非用途->->-> `wrapper component`
 <!--SR:!2023-05-10,83,230-->

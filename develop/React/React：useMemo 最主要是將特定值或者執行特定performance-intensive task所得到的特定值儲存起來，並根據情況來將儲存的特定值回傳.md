@@ -126,7 +126,7 @@ export default React.memo(DemoList);
 ## 複習
 
 #🧠 React useMemo 什麼時候執行觸發 ->->-> `useMemo 在對應元件的render function執行時，才會被執行`
-<!--SR:!2023-08-03,187,250-->
+<!--SR:!2025-01-06,498,250-->
 
 #🧠 React useMemo 所儲存的內容為何 ->->-> `- 若為物件的話，就以物件的識別字來找到stack記憶體區塊，並以區塊內容中的reference value來比較 - 若為primitivie data value，就以識別字來找到stack記憶體區塊，並以區塊內容的primitive data value 來比較`
 <!--SR:!2023-10-22,90,230-->

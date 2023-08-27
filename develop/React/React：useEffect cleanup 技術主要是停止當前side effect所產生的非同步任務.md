@@ -88,7 +88,7 @@ useEffect：cleanup function執行時機：
 
 
 #🧠 React：useEffect cleanup 何時執行？ ->->-> `除了mounting 所觸發執行的side effect以外，執行每個side effect之前都會先執行cleanup 以及 component 被unmount前就執行清除`
-<!--SR:!2023-08-09,168,250-->
+<!--SR:!2024-11-10,441,250-->
 
 
 #🧠 React：useEffect cleanup  的執行時機是除了第一次side effect函式之前不會執行cleanup以外，在其他下一次side effect執行之前就清除，那麼第一次side effectc函式是指什麼？  ->->-> `該元件的mounting階段所觸發執行的side effect`
