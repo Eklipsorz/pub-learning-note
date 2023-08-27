@@ -178,7 +178,7 @@ xxxx 元件下的路由
 <!--SR:!2023-07-26,141,250-->
 
 #🧠 react-router-dom v6 ：第一、將nested Route元件安置在component，再讓component被parent route元件所包含，語法會是什麼？ ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-component_ryhana.png)
-<!--SR:!2023-05-08,39,230-->
+<!--SR:!2023-10-01,35,210-->
 
 #🧠 react-router-dom v6 ：第二、parent route元件直接包裹nested route元件，並搭配Outlet元件，語法會是什麼？ ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1670246075/blog/react/react-router/v6/nested-route/react-router-v6-nested-route-with-parent-route_nk6b5b.png)
 <!--SR:!2023-09-28,185,250-->

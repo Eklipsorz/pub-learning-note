@@ -88,7 +88,7 @@ hooks 是：
 <!--SR:!2024-07-22,370,230-->
 
 #🧠 React：class-based component 搭配render 的基本語法是什麼？ ->->-> `class Component1 extends React.Component { render() { ... } }`
-<!--SR:!2023-08-18,194,250-->
+<!--SR:!2023-12-03,98,230-->
 
 
 #🧠 class Component1 extends React.Component \{ render() \{ ... \} \}  中沒有Constructor，請問能夠正常執行嗎？為什麼->->-> `能夠正常執行，系統會根據目前類別是否繼承其他類別而給予預設的constructor來方便建立對應類別的實例`
@@ -129,7 +129,7 @@ hooks 是：
 
 
 #🧠 functional component 能否和class-based component 混搭使用？->->-> `functional component 和 class-based component 兩者寫法可以混搭在整個專案上`
-<!--SR:!2023-08-22,198,250-->
+<!--SR:!2025-01-22,514,250-->
 
 
 

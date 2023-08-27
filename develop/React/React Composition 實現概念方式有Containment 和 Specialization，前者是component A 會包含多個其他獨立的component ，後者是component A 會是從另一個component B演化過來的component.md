@@ -199,7 +199,7 @@ wrapper
 #🧠 Composition 含意是甚麼? ->->-> `composition 是指多個人事物組合成特定事物的過程或者方式`
 
 #🧠 Specialization 命名緣由->->-> `specialize 是指朝著特定目標前進，在這裡會是以生物學來說明，生物 **朝著適應環境來演化身體結構**，specialization 則是指 **朝著適應環境來演化身體結構** 的過程、行為`
-<!--SR:!2023-07-19,154,230-->
+<!--SR:!2023-11-15,80,210-->
 
 #🧠 Containment  命名緣由 ->->-> `containment 是指被包含和包含的行為、過程`
 <!--SR:!2023-04-30,159,250-->
@@ -227,7 +227,7 @@ wrapper
 #🧠 React Specialization：當要載入來擁有component B 來當作基礎開發另一個component A，會修改到component B的結構嗎？->->-> `並不會`
 <!--SR:!2024-01-03,306,250-->
 
-#🧠 在React 的 compositio：Specialization的 實現手段會有什麼？ (關係、載入、資訊)->->-> `- props 和 component 之間的關係是：props會被React視作為component 物件的屬性 - 載入特定元件B來讓目前元件A擁有元件B - 元件B 有提供props 來讓元件A以特定資訊來得到不同內容的元件B`
+#🧠 在React 的 composition：Specialization的 實現手段會有什麼？ (關係、載入、資訊)->->-> `- props 和 component 之間的關係是：props會被React視作為component 物件的屬性 - 載入特定元件B來讓目前元件A擁有元件B - 元件B 有提供props 來讓元件A以特定資訊來得到不同內容的元件B`
 <!--SR:!2023-06-26,74,230-->
 
 

@@ -283,7 +283,7 @@ setLastName('Cheng');
 <!--SR:!2023-08-08,189,250-->
 
 #🧠 React：在functional component中的batching實際實現是如何進行batching，一開始會定義結果狀態為空物件，接著根據狀態的屬性是否存在來處理，若要求更改狀態的屬性本身並存在結果狀態物件的屬性中，那接下來如何做？->->-> `就直接以目前要求更改的狀態覆蓋至結果物件上的相對應屬性`
-<!--SR:!2023-06-04,145,250-->
+<!--SR:!2024-12-08,469,250-->
 
 
 #🧠 請試著以functional component的方式來打造以下的狀態batching![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661180158/blog/react/batching/handler-multiple-setState-object-example_lcz6tg.png) ->->-> `const [firstName, setFirstName] = useState('');、const [lastName, setLastName] = useState('');、setFirstName('Morgan');setLastName('Cheng');`
@@ -304,11 +304,11 @@ setLastName('Cheng');
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在 單個state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
-<!--SR:!2023-08-13,193,250-->
+<!--SR:!2023-12-04,99,230-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在單個setState 註冊範疇之差別 是什麼？說明清楚 ->->-> `class-based component 的 單個setState 負責元件下的所有狀態之更新；functional component 的 單個setState  原則元件下的一個特定狀態之更新`
-<!--SR:!2023-07-13,170,250-->
+<!--SR:!2023-11-25,90,230-->
 
 #🧠 class-based component vs. functional component ： 單個 state  & setState 對於單個setState 更新狀態方式之差別 是什麼？ (提示子狀態、以什麼為主來延伸)說明清楚 ->->-> `class-based component 的 單個setState 更新方式會是先以前一個狀態為基礎來增加額外狀態成為裡頭的子狀態或者覆蓋狀態內的子狀態；functuonal component 的 單個setState 更新狀態方式會是直接覆蓋前一個setState狀態或者前一個狀態`
 <!--SR:!2023-08-13,193,250-->

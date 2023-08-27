@@ -112,7 +112,7 @@ function Child(props) {
 
 
 #🧠 若設定dependency為空陣列的話，當元件上註冊了useEffect並觸發unmount上時，會執行useEffect的side effect實現代碼嗎？為什麼？ ->->-> `不會，因為只會無條件執行cleanup function`
-<!--SR:!2023-08-15,176,250-->
+<!--SR:!2023-11-21,86,230-->
 
 
 

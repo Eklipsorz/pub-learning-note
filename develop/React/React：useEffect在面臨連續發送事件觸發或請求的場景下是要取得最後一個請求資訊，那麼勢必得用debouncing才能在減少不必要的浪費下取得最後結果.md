@@ -95,7 +95,7 @@ clearTimeout(timeoutID)
 ## 複習
 
 #🧠 React：若要以非同步計時任務來實現debouncing的概念，具體要做什麼？ ->->-> `每一次事件觸發的處理會是以： - 清除上一個處理所產生的非同步計時任務(timer task) - 生成一個非同步計時任務 (timer task)。 每一次事件觸發的處理會是以： - 清除上一個處理所產生的非同步任務 - 生成一個非同步任務`
-<!--SR:!2023-07-26,182,230-->
+<!--SR:!2023-11-30,95,210-->
 `
 
 #🧠  React：如何在useEffect實現以下debouncing的概念：每一次事件觸發的處理會是以 - 清除上一個處理所產生的非同步計時任務(timer task) - 生成一個非同步計時任務 (timer task)->->-> `在useEffect 使用setTimemout 來夾雜side effect原本實現代碼，然後紀錄當前的timeout的任務ID，定義著useEffect的cleanup來依照timeoue任務ID來取消任務。`
