@@ -98,7 +98,7 @@
 <!--SR:!2023-08-12,98,208-->
 
 #🧠 OpenID / OpenID Connect 角色會有哪些？->->-> `Replying Party、OpenID Provider / OpenID identity Provider、Resource Server`
-<!--SR:!2023-05-19,77,250-->
+<!--SR:!2023-10-17,51,230-->
 
 #🧠 在OpenID / OpenID Connect 角色中，其中Replying Party會是什麼？ ->->-> `主要依賴token和token夾雜的身分證明資料和權限來向Resource Server獲取資源來加以應用的應用程式或者服務`
 <!--SR:!2023-11-01,179,250-->
