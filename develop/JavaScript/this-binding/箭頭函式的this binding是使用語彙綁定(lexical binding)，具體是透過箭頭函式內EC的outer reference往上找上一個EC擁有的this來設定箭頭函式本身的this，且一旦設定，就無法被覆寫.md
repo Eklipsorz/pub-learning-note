@@ -232,7 +232,7 @@ foo.call(obj) // 2
 
 
 #🧠 箭頭函式的this binding 一旦經由語彙綁定來決定this，爾後還能更改其this嗎？->->-> `不能`
-<!--SR:!2023-08-26,198,250-->
+<!--SR:!2023-12-06,99,230-->
 
 
 #🧠 箭頭函式的this binding 方式是什麼？ ->->-> `箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫`

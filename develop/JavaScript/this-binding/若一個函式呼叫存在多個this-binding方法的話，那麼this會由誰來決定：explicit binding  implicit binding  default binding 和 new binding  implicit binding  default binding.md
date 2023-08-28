@@ -116,7 +116,7 @@ echo.name;//聽風是風
 <!--SR:!2024-10-27,454,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼!![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/new-and-implicit-binding-example_vgfvkc.png) ->->-> `在這裡會是new 所建立的物件，印出聽風是風。原因在於在這裡混雜new binding 和implicit binding，根據優先權會先選擇new binding來決定。`
-<!--SR:!2023-08-26,198,250-->
+<!--SR:!2025-01-09,499,250-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼! ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563938/blog/javascript/this-binding/new-binding/new-and-explicit-binding-example_tmm8oa.png) ->->-> `會報錯，最主要這裡有new binding和explicit binding，然而程式本身不允許這兩者同時出現，所以會報錯`
 <!--SR:!2024-04-26,336,250-->
