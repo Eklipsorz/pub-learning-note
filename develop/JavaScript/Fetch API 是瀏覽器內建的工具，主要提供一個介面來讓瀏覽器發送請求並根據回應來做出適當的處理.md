@@ -222,7 +222,7 @@ function App() {
 <!--SR:!2024-09-18,415,250-->
 
 #🧠 請使用Fetch API的fetch語法來發送xxx端點，請求封包規格為：post、application/json、主要資料為email、password這兩個資料->->-> `fetch(xxx , { method: 'post', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email: email1, password: password1 }) `
-<!--SR:!2023-08-27,33,226-->
+<!--SR:!2023-11-14,77,226-->
 
 
 

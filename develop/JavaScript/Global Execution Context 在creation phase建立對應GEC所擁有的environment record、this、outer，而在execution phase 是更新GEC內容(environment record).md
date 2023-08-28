@@ -175,7 +175,7 @@ GlobalExectionContext = {
 <!--SR:!2024-09-30,504,248-->
 
 #🧠  JavaScript : 請用物件的形式來表達Execution Context 和 Lexical Environment的結構  ->->-> ``
-<!--SR:!2023-08-27,17,245-->
+<!--SR:!2023-10-12,44,245-->
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariableEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`

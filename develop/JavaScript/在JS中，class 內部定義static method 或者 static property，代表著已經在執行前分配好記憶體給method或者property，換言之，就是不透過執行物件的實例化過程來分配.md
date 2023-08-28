@@ -88,7 +88,7 @@
 
 
 #🧠 在JS中的static method的用途為何？class對於static method的描述會是什麼？ ->->-> `作為utility function來使用，而class名稱就表明該function的隸屬`
-<!--SR:!2023-08-27,198,250-->
+<!--SR:!2023-12-09,102,230-->
 
 #🧠 在JS中的static property的用途為何？class對於static property的描述會是什麼？->->-> `作為特定設定資料的緩存，而class名稱就表明這份資料的隸屬`
 <!--SR:!2024-03-26,252,230-->
@@ -100,7 +100,7 @@
 <!--SR:!2025-01-18,512,250-->
 
 #🧠 static function / static method是什麼？ ->->-> `static function / static method 意旨為在執行前就已經分配好記憶體給函式`
-<!--SR:!2023-08-29,199,250-->
+<!--SR:!2023-12-11,104,230-->
 
 #🧠 static variable 對於JS的class來說是什麼樣的記憶體區塊？->->-> `就是不透過執行物件的實例化過程來分配，而是單方面在執行之前分配好記憶體的變數或者函式`
 <!--SR:!2024-07-10,358,230-->
