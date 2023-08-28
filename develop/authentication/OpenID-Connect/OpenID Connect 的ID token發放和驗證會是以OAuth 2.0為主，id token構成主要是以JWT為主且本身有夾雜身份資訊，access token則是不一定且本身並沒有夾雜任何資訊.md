@@ -35,7 +35,7 @@
 <!--SR:!2023-09-28,32,230-->
 
 #🧠 OpenID Connect 的 token 發放和驗證流程為OAuth 2.0中的authorization code grant type、implicit grant type、resource owner password credentials grant type、client credentials grant type為主，為何以這四種流程為主？->->-> `由於id token本身是由OpenId Connect標準提出，該標準又是以OAuth為基礎`
-<!--SR:!2023-08-29,2,238-->
+<!--SR:!2023-09-03,5,238-->
 
 #🧠  OpenID Connect下的 id token 和 OAuth 2.0下的access_token 之間有何種差異? 有三者->->-> `- id token 本身是self-containned 的JWT而構成；access token 本身不一定會是self-containned的JWT而構成  - id token 由於是JWT，所以本身會夾雜內容；access token由於不一定會是JWT，所以本身不一定夾雜額外內容 - id token 本身夾雜的內容會特定身份有關；access token本身夾雜的內容則是無或者就是誰授權予誰的資訊`
 <!--SR:!2023-09-27,31,230-->
