@@ -113,7 +113,7 @@ Client-Side Rendering 是指在Client-Server 場景下，由client端主要負�
 
 
 #🧠 Client-Side Rendering 的缺點是什麼？(共兩個) ->->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`
-<!--SR:!2023-08-29,185,250-->
+<!--SR:!2024-12-10,469,250-->
 
 
 #🧠 Client-Side Rendering 的缺點是什麼？>->-> `與Server-Side Rendering 相比，webpage所需要載入的額外資料會比較多、SEO 會比Server-Side Rendering 來得差`

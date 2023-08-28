@@ -214,7 +214,7 @@ function arraySum(arr) {
 
 
 #🧠 整體來說，在JIT版本的JavaScript中，optimizing compiler具體會以什麼做為資料上紀錄的索引？ 以什麼標準作為可使用對應機械碼的許可->->-> `會以行數作為索引，並以設定的前提標準來當作標準，具體會是起初該行數被執行時的變數資料型別為標準，看每次同一行的資料型別是否和先前一樣，若一樣就核可。`
-<!--SR:!2023-08-26,16,250-->
+<!--SR:!2023-10-08,40,250-->
 
 
 #🧠 JIT版本的JavaScript：以什麼標籤作為放進baseline compiler 的處理標準 ->->-> `擁有warm標籤的索引`
@@ -235,7 +235,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：試說明以下紀錄是如何產生的![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/first-count-example_mbzuwv.png)->->-> `scope是指處於哪一個scope，如特定function或者global，line是指scope下的第幾行，type是該行數的程式碼是用哪些型別，count是對應程式碼被執行了多少次，在這裏是在arraySum函式下執行它的內容並從執行過程獲取出來的資料`
-<!--SR:!2023-08-28,18,250-->
+<!--SR:!2023-10-14,46,250-->
 
 #🧠 JIT版本的JavaScript：假設超過x1且不超過x2就為warm，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引會如何執行？ ->->-> ` 會將對應的bytecode編譯成機械碼並跟索引來將機械碼放置monitor紀錄上，接著直接以該機械碼執行，未來碰上相同的索引就會以monitor能夠對應到的機械碼來執行，不用重新編譯並且執行`
 <!--SR:!2023-08-29,19,250-->
@@ -258,7 +258,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設，會如何？->->-> `會計算不符合的次數，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`
-<!--SR:!2023-08-29,19,250-->
+<!--SR:!2023-10-15,47,250-->
 
 
 #🧠 JIT版本的JavaScript： 若目前程式碼能夠依照行數從目前optimizing compiler到對應的假設和機械碼，但目前型別不符合假設的次數達到某種程度時，會是？->->-> `當違反假設超過一定次數時，就捨棄目前索引對應的機械碼，並且轉換成baseline compiler版本的機械碼或者交由interpreter來邊編譯邊執行`

@@ -86,7 +86,7 @@ _Fig. 2: Colored Scope Bubbles_
 
 
 #🧠 JavaScript 編譯的bytecode會分配記憶體const/let變數宣告嗎？->->-> `不分配記憶體給const/let變數宣告`
-<!--SR:!2023-08-28,200,247-->
+<!--SR:!2025-01-05,495,247-->
 
 
  #🧠 JavaScript 編譯的bytecode會分配記憶體var變數/函式宣告嗎？->->-> `分配記憶體給var變數和函式宣告`
