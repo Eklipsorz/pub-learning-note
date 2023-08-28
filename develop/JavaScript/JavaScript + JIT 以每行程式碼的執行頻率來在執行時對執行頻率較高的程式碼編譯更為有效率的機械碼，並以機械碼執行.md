@@ -189,7 +189,7 @@ function arraySum(arr) {
 
 
 #🧠 JavaScript 加入 JIT時，會使用什麼來觀察每個程式碼的執行頻率，具體怎麼計算？->->-> `monitor，觀察正在執行的程式碼，並將為每段程式碼的**行數**和**所用到的資料類型**作為索引，並以此計算程式碼的執行次數`
-<!--SR:!2023-08-28,18,250-->
+<!--SR:!2023-10-17,49,250-->
 
 
 #🧠 JavaScript 的 JIT：如何區分哪些程式碼的執行頻率為稍高、高 ->->-> `當程式碼的執行次數高於x1時，就設定為代表稍高的warm，若執行次數高於x1且高於x2的話，就將對應的程式碼設為代表高的hot`
@@ -238,7 +238,7 @@ function arraySum(arr) {
 <!--SR:!2023-10-14,46,250-->
 
 #🧠 JIT版本的JavaScript：假設超過x1且不超過x2就為warm，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引會如何執行？ ->->-> ` 會將對應的bytecode編譯成機械碼並跟索引來將機械碼放置monitor紀錄上，接著直接以該機械碼執行，未來碰上相同的索引就會以monitor能夠對應到的機械碼來執行，不用重新編譯並且執行`
-<!--SR:!2023-08-29,19,250-->
+<!--SR:!2023-10-19,51,250-->
 
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上沒任何紀錄，但monitor有紀錄且有warm，請問每一次程式碼的執行會如何進行？（考慮為warm和不為warm的情況下) ->->-> `每一次執行就會以目前執行行數和型別來構成索引來從monitor找到對應紀錄，看是否為warm，若warm的話，就取出對應的機械碼執行，若不是的話，就交給interpreter邊轉化機械碼邊執行`
@@ -246,7 +246,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：試說明被標記為warm的原始碼發生了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1658511913/blog/javascript/compile/JIT/baseline-compiler-example_ofixlw.png)->->-> `在這裡由於arraySum函式的由(行數, 型別)所構成的索引之執行次數達標，所以就將對應的bytecode放到baseline compiler編譯成機械碼，然後根據索引來將機械碼更新至monitor上的紀錄，就如同最右邊的code，下次碰上相同的索引就以monitor上的紀錄來找到對應的機械碼執行`
-<!--SR:!2023-08-27,17,250-->
+<!--SR:!2023-10-11,43,250-->
 
 
 #🧠 JIT版本的JavaScript：假設超過x2就為hot，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引(optimizing compiler)的話，會如何處理？ ->->-> `會以目前索引下的行數作為optimizing compiler的紀錄索引，並用目前索引下的型別作為前提或者假設，接著再將索引對應的bytecode和目前執行情況編譯成更為有效率的機械碼並依據行數來將機械碼放置optimizing compiler的對應紀錄上，最後以機械碼執行，下次當執行的程式碼行數是能夠在optimizing compiler紀錄能夠找到，就會比對其型別是否和前提一樣，若一樣從optimizing compiler取出對應行數的機械碼來執行`
@@ -271,7 +271,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript： 若optimizing compiler的假設成功率很低的話，會是什麼？ ->->-> `效能會比沒有Optimizing compiler來得慢，因爲得經過優化，然後再轉為反優化的過程`
-<!--SR:!2023-08-29,19,250-->
+<!--SR:!2023-09-10,12,230-->
 
 
 
