@@ -81,7 +81,7 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2023-09-12,16,249-->
 
 #🧠 relative URL： 直接從當前頁面所在目錄找， relative URL指定路徑格式會是什麼->->-> `路徑格式會是開頭不夾帶/`
-<!--SR:!2023-08-29,189,250-->
+<!--SR:!2024-12-16,474,250-->
 
 #🧠  relative URL：路徑格式會是開頭不夾帶\/，舉一個路徑案例->->-> `dir/file`
 <!--SR:!2024-11-06,447,250-->
@@ -100,7 +100,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假如目前頁面路徑為path1/path2/file，那麼瀏覽器面對\.\.\/file2和\.\/file2這些路徑會如何找？ ->->-> `假如目前頁面路徑為path1/path2/file，那麼就會以path1/path2為參考點來位移，第一個則是朝著path1這目錄來找到file2，第二個則是以當前目錄所在來找到file2，也就是path2/file2`
-<!--SR:!2023-08-29,189,250-->
+<!--SR:!2024-12-15,473,250-->
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為exampledir/example1，那麼瀏覽器會解析成path1/path2/file/exampledir/example1嗎？ 為什麼？->->-> `並不對，它會看頁面所在的目錄所在，也就是path1/path2，所以當指定路徑為exampledir/example1，那麼就是在path1/path2找到exampledir目錄，然後再從那找到example1，也就是path1/path2/exampledir/example1`
 <!--SR:!2023-09-05,194,250-->
