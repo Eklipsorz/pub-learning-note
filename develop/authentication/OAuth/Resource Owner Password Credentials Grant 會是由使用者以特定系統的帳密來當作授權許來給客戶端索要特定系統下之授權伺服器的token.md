@@ -85,7 +85,7 @@ Pragma: no-cache
 ## 複習
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是什麼？->->-> `Resource Owner Password Credentials Grant 會是由使用者以特定系統的帳密來當作授權許來給客戶端索要特定系統下之授權伺服器的token`
-<!--SR:!2023-08-30,7,247-->
+<!--SR:!2023-09-17,18,247-->
 
 
 #🧠 Resource Owner Password Credentials Grant 在 OAuth 下會是以什麼形式來當作使用者同意授權的資料？ ->->-> `使用者的帳密`
