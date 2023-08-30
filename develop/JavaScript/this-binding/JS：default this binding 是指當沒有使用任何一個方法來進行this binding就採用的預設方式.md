@@ -125,7 +125,7 @@ function fn() {
 
 
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於非嚴格模式 ->->-> `this 會被設定成 global object，瀏覽器中會是指window，nodejs則是指global`
-<!--SR:!2023-08-30,198,248-->
+<!--SR:!2025-01-03,491,248-->
 
 #🧠 JS：default this binding  方式為何？若執行環境(Exection Context)下是處於嚴格模式 ->->-> `this 會被設定成undefined`
 <!--SR:!2024-08-24,415,250-->
