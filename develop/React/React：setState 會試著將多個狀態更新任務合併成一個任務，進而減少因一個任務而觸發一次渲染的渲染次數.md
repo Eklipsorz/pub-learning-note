@@ -300,7 +300,7 @@ setLastName('Cheng');
 <!--SR:!2023-07-04,167,250-->
 
 #🧠 class-based component vs. functional component ： state  & setState 在 單個state 註冊範疇是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`
-<!--SR:!2023-08-10,191,250-->
+<!--SR:!2023-12-11,102,230-->
 
 
 #🧠 class-based component vs. functional component ： state  & setState 對於在 單個state 註冊範疇之差別是什麼？說明清楚 ->->-> `class-based component 的 單個state 註冊元件下的所有狀態；functional component 的 單個state 註冊元件下的一個特定狀態`

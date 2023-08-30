@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
+                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做協助開發者處理特定URL上的query string，具體會如何協助，流程是？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
+                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
+                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md"
+                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "6941822edf359a99",
   "lastOpenFiles": [
+    "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
+    "develop/React/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/JavaScript/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
@@ -183,8 +185,6 @@
     "develop/React/Context/每次useReducer中的reducer執行狀態更新時，會將先前狀態物件儲存起來，若下次沒觸發dispatch就回傳事先儲存的物件.md",
     "annotation/@mdnWhatURLLearn.md",
     "develop/browser/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
-    "develop/render/具有position：relative 的元素A會以position：static的元素A的放置起點來作為位移的起始點，可透過top、left、right、bottom來位移.md",
-    "develop/React/React：custom hook function之開發策略可根據hook function是否加入引數而分為兩個開發策略-僅保持通用和邊保持通用邊盡可能減少hook內部的deps需求方向.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",
