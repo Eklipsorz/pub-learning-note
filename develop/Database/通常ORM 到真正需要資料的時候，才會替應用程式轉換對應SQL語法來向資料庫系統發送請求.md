@@ -43,7 +43,7 @@ foreach($users as $user){
 <!--SR:!2024-02-24,215,230-->
 
 #🧠 以下為應用程式對於ORM下物件的語法，請說明ORM會如何處理應用程式所發送的請求？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example2_dme7so.png)->->-> `- 當應用程式執行第一行來請求ORM時，ORM並不會直接轉換對應SQL來索求所有文章- 等到真正需要所有文章的資料時，也就是透過每篇文章的資訊來找相關文章的擁有人資訊，ORM才會轉換對應SQL來索求`
-<!--SR:!2023-08-30,270,250-->
+<!--SR:!2024-01-13,135,230-->
 
 
 #🧠 以下為應用程式對於ORM下物件的語法，請說明ORM會如何處理應用程式所發送的請求？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1654927260/blog/database/query/N_1-Problem-Example1_xqkmom.png)->->-> `- 當應用程式執行第一行來請求ORM時，ORM也並不會直接轉換對應SQL來索求所有使用者 - 等到真正需要使用者的資料，也就是透過每個使用者的資訊來找相關存款的資訊，ORM才會轉換成對應SQL來索求`
