@@ -120,8 +120,8 @@ rendering content under certain conditions
 <!--SR:!2024-08-18,423,250-->
 
 
-#🧠 React：請問React如何解析這表達式，請用程式碼來表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/expense-array-example_ev6kko.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/expense-array-to-template-example_nzrrbf.png)`
-<!--SR:!2023-06-02,163,250-->
+#🧠 React：請問React如何解析這表達式，請用程式碼來表示 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/expense-array-example_ev6kko.png) ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1662818572/blog/react/dynamic-list/expense-array-to-template-example_nzrrbf.png)
+<!--SR:!2023-12-02,93,230-->
 
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
+                "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做協助開發者處理特定URL上的query string，具體會如何協助，流程是？",
+                "query": "React：請問React如何解析這表達式，請用程式碼來表示",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
+                "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
+                "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md"
+                "file": "develop/React/渲染部分{expression}中的expression是指陣列的話，React 會直接將陣列上的每個元素當成react element 來並排當作渲染內容.md"
               }
             }
           },
@@ -157,8 +157,9 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "647c50c7418eab99",
   "lastOpenFiles": [
+    "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
     "develop/React/prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，該洞會從來源元件通到目標元件，只要資料放入洞口就能傳遞目標.md",
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
@@ -184,7 +185,6 @@
     "develop/browser/URL是指特定資源在網路環境下的定位識別字；URI是指特定資源在網路環境下的識別字.md",
     "develop/React/Context/每次useReducer中的reducer執行狀態更新時，會將先前狀態物件儲存起來，若下次沒觸發dispatch就回傳事先儲存的物件.md",
     "annotation/@mdnWhatURLLearn.md",
-    "develop/browser/relative URL 會是以特定資源A的所在目錄位置為參考點來找到特定資源B的路徑，特定路徑A通常會是以特定資源A的所在目錄位置為參考點來指定.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",
