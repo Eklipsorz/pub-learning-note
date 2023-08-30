@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "React：prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，具體為何？畫圖表示",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -157,7 +157,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "647c50c7418eab99",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/React/React：Context API擁有context object、provider、consumer，最前者為定義狀態的環境，中間者為提供狀態值給予最前者的一方，最後者為使用該環境的一方.md",
     "develop/JavaScript/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
