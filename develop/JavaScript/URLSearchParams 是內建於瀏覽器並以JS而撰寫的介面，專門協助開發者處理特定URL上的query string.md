@@ -78,6 +78,11 @@ get(name)
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
 <!--SR:!2023-09-02,2,248-->
 
+#🧠 new URLSearchParams('http://host/path?khttp://host/path?key1=value1ey1=value1') 能夠正常作用嗎? 為何->->-> `並不能，因為該介面僅能夠將query string格式的字串轉換成query string物件`
+<!--SR:!2023-09-02,2,246-->
+
+#🧠 new URLSearchParams('http://host/path?key1=value1').get('key1')是甚麼? 為何->->-> `null，因為該介面僅能夠將query string格式的字串轉換成query string物件`
+<!--SR:!2023-09-02,2,246-->
 
 
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`
