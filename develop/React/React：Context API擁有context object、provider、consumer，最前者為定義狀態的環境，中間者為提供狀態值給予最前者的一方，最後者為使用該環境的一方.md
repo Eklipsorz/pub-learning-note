@@ -305,7 +305,7 @@ consume
 #🧠 React：Context中的Provider Component 所擁有的value props是做什麼用的？ ->->-> `用以設定對應Context的狀態值`
 <!--SR:!2023-07-20,189,250-->
 
-#🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容(不是指物件、值、字串) ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
+#🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼為了能用React體系的狀態，通常value會填入什麼內容->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
 <!--SR:!2023-05-25,150,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`

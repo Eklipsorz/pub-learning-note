@@ -91,8 +91,8 @@ drill
 #🧠 React：prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，具體為何？ ->->-> `來源元件和目標元件間有多個元件，來源元件會將資訊傳遞至元件1的attribute作為它的props，接著元件1轉遞資訊至下一個元件的attribute來作為它的props，最後轉遞資訊至目標元件作為其props來處理來源元件對於目標元件所想要達成的渲染畫面和服務。`
 <!--SR:!2023-10-28,186,250-->
 
-#🧠 React：prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，具體為何？畫圖表示 ->->-> `![](https://media.geeksforgeeks.org/wp-content/uploads/20210618101141/Untitled.png)`
-<!--SR:!2023-06-30,108,248-->
+#🧠 React：prop drilling 概念為使用元件的props概念來對來源元件和目標元件之間的元件進行打洞的行為，具體為何？畫圖表示 ->->-> ![](https://media.geeksforgeeks.org/wp-content/uploads/20210618101141/Untitled.png)
+<!--SR:!2023-11-01,62,228-->
 
 #🧠 React：prop drilling應用在哪？ ->->-> `通常使用在元件間的資料傳遞、狀態資料傳遞`
 <!--SR:!2024-08-03,342,248-->

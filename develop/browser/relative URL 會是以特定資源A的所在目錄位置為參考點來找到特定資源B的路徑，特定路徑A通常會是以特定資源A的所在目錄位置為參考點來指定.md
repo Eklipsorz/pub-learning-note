@@ -74,7 +74,7 @@ Skills/Infrastructure/Understanding_URLs
 <!--SR:!2024-07-10,369,250-->
 
 #🧠 relative URL 對於URL構造來說，其path、protocol、host、port會如何被決定 ->->-> `在這裡除了path以外，其餘的protocol、host、port會和目前存取頁面的路徑擁有的protocol、host、port一樣。`
-<!--SR:!2023-08-30,190,250-->
+<!--SR:!2023-12-08,99,230-->
 
 
 #🧠 relative URL實現方式哪兩種？ ->->-> `直接從當前頁面所在目錄找、以當前頁面所在目錄來位移`

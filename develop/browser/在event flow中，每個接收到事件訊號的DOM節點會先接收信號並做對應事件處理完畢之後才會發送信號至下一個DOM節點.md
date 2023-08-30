@@ -106,7 +106,7 @@ element1 -> element2 -> element3
 <!--SR:!2023-10-17,209,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，請問其事件處理的順序和接收順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/capture-phase-execution-order_dwacbc.png) ->->-> `(隔了 1s 之後出現) handler <div id="element1" class="grandpa"> (隔了 1s 之後出現) handler <div id="element2" class="parent"> (隔了 1s 之後出現) handler <div id="element3" class="child">`
-<!--SR:!2023-08-30,180,250-->
+<!--SR:!2024-11-16,443,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，其事件處理的順序和接收順序是element3 -> element2 -> element1，具體會是，又是什麼phase？？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/bubbling-phase-execution-order_zzygfc.png) ->->-> `由於是採用bubbling phase來接收，所以就是： element3 一接收信號就執行自己的事件處理，執行完再發送信號至parent element的element2 - element2 一接收到信號就執行自己的事件處理，執行完再發送信號至parent element的element1 - element1 一接收到信號就執行自己的事件處理，執行完再發送信號`
 <!--SR:!2023-09-22,194,250-->

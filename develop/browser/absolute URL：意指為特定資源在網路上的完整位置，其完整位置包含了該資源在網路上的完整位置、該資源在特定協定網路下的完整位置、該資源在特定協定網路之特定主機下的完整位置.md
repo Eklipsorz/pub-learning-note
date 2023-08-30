@@ -96,7 +96,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 
 #🧠 absolute URL： implicit domain name 對於absolute URL是什麼？->->-> ` 以暗示方式說明特定協定網路之特定主機是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路之特定主機下的完整位置`
-<!--SR:!2023-08-31,190,250-->
+<!--SR:!2023-12-07,98,230-->
 
 
 #🧠  absolute URL：  implicit domain name 以暗示方式來指定特定協定網路之特定主機是什麼的情況下來指定其資源所在的完整位置，即為指定該資源在特定協定網路之特定主機下的完整位置，他如何決定protocol和domain name?->->-> `其中指定資源的protocol 和 domain name會採用於目前所在的資源之完整位置所擁有的protocol、domain name`
