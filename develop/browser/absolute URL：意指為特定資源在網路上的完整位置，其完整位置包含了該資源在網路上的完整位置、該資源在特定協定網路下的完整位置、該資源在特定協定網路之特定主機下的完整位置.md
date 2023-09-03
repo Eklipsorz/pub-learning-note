@@ -107,7 +107,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 
 #🧠 假設目前存取的資源所擁有的protocol和domain會是https和developer.mozilla.org，\/en-US\/docs\/Learn 會對應到什麼位置？->->-> `https://developer.mozilla.org/en-US/docs/Learn`
-<!--SR:!2023-09-01,191,250-->
+<!--SR:!2024-12-26,480,250-->
 
 
 #🧠 假設目前存取的資源所擁有的protocol會是https，因此會是對應到第一個URL，\/\/developer.mozilla.org\/en-US\/docs\/Learn 會對應到什麼位置？ ->->-> `https://developer.mozilla.org/en-US/docs/Learn`

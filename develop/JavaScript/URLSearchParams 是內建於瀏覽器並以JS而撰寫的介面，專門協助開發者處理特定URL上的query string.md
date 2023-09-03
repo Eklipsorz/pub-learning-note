@@ -50,7 +50,7 @@ get(name)
 <!--SR:!2023-09-23,23,250-->
 
 #🧠 query string 和 URL parameters之間的差別是甚麼? ->->-> `前者是以問號開頭的key-value pairs作為參數；後者則是以URL格式下的特定path做為placeholder來當作成參數，並從placeholder所在的位置取出確定內容`
-<!--SR:!2023-09-03,3,230-->
+<!--SR:!2023-09-11,8,230-->
 
 #🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者以物件的形式來處理query string`
 <!--SR:!2023-09-02,2,248-->
@@ -64,7 +64,7 @@ get(name)
 <!--SR:!2023-11-21,82,230-->
 
 #🧠  URLSearchParams 建構式用法是什麼->->-> `new URLSearchParams(options)`
-<!--SR:!2023-09-02,2,248-->
+<!--SR:!2023-09-10,7,248-->
 
 
 #🧠 URLSearchParams 建構式是做什麼？ ->->-> `專門將指定的query string轉換成query string物件`
@@ -82,7 +82,7 @@ get(name)
 <!--SR:!2023-09-02,2,246-->
 
 #🧠 new URLSearchParams('http://host/path?key1=value1').get('key1')是甚麼? 為何->->-> `null，因為該介面僅能夠將query string格式的字串轉換成query string物件`
-<!--SR:!2023-09-02,2,246-->
+<!--SR:!2023-09-10,7,246-->
 
 
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`

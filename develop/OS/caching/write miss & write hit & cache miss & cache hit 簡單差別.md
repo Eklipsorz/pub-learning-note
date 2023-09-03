@@ -55,7 +55,7 @@
 <!--SR:!2023-09-03,11,250-->
 
 #🧠 inline caching 和 look-aside caching最大的不同在於資料上的管理，請詳細解釋?->->-> `- 使用資料的那一方會如何讀取/寫入資料 - cache如何處理cache miss、cache hit、write miss、write hit這四種狀況 - 由於前兩者對於如何實現而構成的結構`
-<!--SR:!2023-09-01,9,250-->
+<!--SR:!2023-09-28,25,250-->
 
 #🧠  inline caching 和 look-aside caching:  對於 **使用資料的那一方會如何讀取/寫入資料**之實際情況而言會是? ->->-> `look-aside caching 得由開發者事先告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入； inline caching 開發者不需要在應用程式去處理cache miss、cache hit、write miss、write hit這四種狀況`
 <!--SR:!2023-09-02,10,250-->
