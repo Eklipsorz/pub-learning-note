@@ -43,7 +43,7 @@
 <!--SR:!2023-09-05,13,250-->
 
 #🧠 read aside 對於client、cache、backup storage環境下，通常會對cache和backup storage構成甚麼樣的架構 ->->-> `look-aside caching`
-<!--SR:!2023-09-02,10,250-->
+<!--SR:!2023-09-30,27,250-->
 
 #🧠 inline caching 為什麼叫做inline ? ->->-> `因為整體架構下的每個元件會並排一塊，每個元件會與較近的元件相連`
 <!--SR:!2023-09-05,13,250-->
@@ -52,13 +52,13 @@
 <!--SR:!2023-09-29,26,250-->
 
 #🧠 inline caching 和 look-aside caching最大的不同在於甚麼地方? ->->-> `資料上的管理`
-<!--SR:!2023-09-03,11,250-->
+<!--SR:!2023-10-04,31,250-->
 
 #🧠 inline caching 和 look-aside caching最大的不同在於資料上的管理，請詳細解釋?->->-> `- 使用資料的那一方會如何讀取/寫入資料 - cache如何處理cache miss、cache hit、write miss、write hit這四種狀況 - 由於前兩者對於如何實現而構成的結構`
 <!--SR:!2023-09-28,25,250-->
 
 #🧠  inline caching 和 look-aside caching:  對於 **使用資料的那一方會如何讀取/寫入資料**之實際情況而言會是? ->->-> `look-aside caching 得由開發者事先告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入； inline caching 開發者不需要在應用程式去處理cache miss、cache hit、write miss、write hit這四種狀況`
-<!--SR:!2023-09-02,10,250-->
+<!--SR:!2023-10-01,28,250-->
 
 #🧠  inline caching 和 look-aside caching:  對於 **cache會如何處理cache miss、cache hit、write miss、write hit這四種狀況**之實際情況而言會是? ->->-> `look-aside caching: 開發者不用在cache或者後備存儲資料的地方事先定義cache miss、cache hit、write miss、write hit這四種狀況； inline caching: 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況`
 <!--SR:!2023-09-04,12,250-->
