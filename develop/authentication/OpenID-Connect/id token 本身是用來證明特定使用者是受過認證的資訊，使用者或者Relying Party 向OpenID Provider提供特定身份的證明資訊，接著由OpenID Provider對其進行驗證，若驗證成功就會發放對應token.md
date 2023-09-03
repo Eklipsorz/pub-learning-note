@@ -212,7 +212,7 @@ claim：
 <!--SR:!2023-10-03,38,207-->
 
 #🧠 id token 驗證方式中，會對解碼後的payload進行額外身分及權限驗證，會是如何進行，舉例 (有兩個)->->-> `		- 就驗證其值是否還存在Authorization Server或者openID Provider的驗證資料用的空間，還存在就繼續生效；否則失效- 比對audience claim 下的client-id 和使用者提供的client-id 是否一樣，若不一樣的話，就失效；若一樣的話，就視為合法使用者`
-<!--SR:!2023-09-02,4,241-->
+<!--SR:!2023-09-15,12,241-->
 
 
 #🧠  id token 驗證方式中的驗證解碼後的payload，若會是以aud claim來驗證，會是如何進行，舉例來說，順便說清楚如何生效和失效 ->->-> `在Authorization Server或者openID Provider 中的使用者資料表格上或者建立以下表格來記錄，將申請id token的使用者標記上特定的client_id，並將該client_id寫入至JWT以做比對。當客戶端夾雜著JWT時，伺服器就會從aud claim獲取對應的client_id，接著在指定表格上找看看有沒有相符合，有的話就繼續讓JWT生效；沒的話就讓JWT失效。`

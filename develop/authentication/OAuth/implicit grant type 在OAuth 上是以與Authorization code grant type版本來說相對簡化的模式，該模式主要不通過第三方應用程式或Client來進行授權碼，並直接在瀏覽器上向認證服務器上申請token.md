@@ -122,7 +122,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-09-08,33,230-->
 
 #🧠 implicit grant type 在OAuth 上的流程為何？以redirect_uri 是用來提供獲取Token的script作為主要解說版本，在這裡請畫圖來表示 ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1679229338/blog/OAuth/OAuth-implicit-version1_a4o6wt.png)
-<!--SR:!2023-09-01,25,210-->
+<!--SR:!2023-09-16,13,190-->
 
 #🧠   implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，其中的Fragment 會如何被處理？？ ->->-> `User Agent 會將Fragment 部分儲存在本身的儲存系統，並不會因重導向URI而發送向對應端點該部分內容，等到之後獲取提取用的Script，接著提取並轉交給Client`
 <!--SR:!2023-10-22,117,230-->
@@ -161,7 +161,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2024-04-12,237,250-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，主要內容為何？ ->->-> `- access_token：表示token - token_type：表示token種類 - expires_in：表示過期時間 - scope：表示token所擁有的使用權限`
-<!--SR:!2023-09-03,73,230-->
+<!--SR:!2024-02-10,160,230-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，主要參數-access_token、token_type、expires_in、scope是為何？ ->->-> `- access_token：表示token - token_type：表示token種類 - expires_in：表示過期時間 - scope：表示token所擁有的使用權限`
 <!--SR:!2024-04-07,234,250-->
