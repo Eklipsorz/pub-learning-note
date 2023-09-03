@@ -72,11 +72,11 @@ get(name)
 
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，回傳會是什麼？ ->->-> `特定query string內容之 物件`
-<!--SR:!2023-09-02,2,248-->
+<!--SR:!2023-09-10,7,248-->
 
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
-<!--SR:!2023-09-02,2,248-->
+<!--SR:!2023-09-09,6,248-->
 
 #🧠 new URLSearchParams('http://host/path?khttp://host/path?key1=value1ey1=value1') 能夠正常作用嗎? 為何->->-> `並不能，因為該介面僅能夠將query string格式的字串轉換成query string物件`
 <!--SR:!2023-09-09,6,246-->
