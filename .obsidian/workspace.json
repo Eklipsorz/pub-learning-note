@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5592ef0aa5857dc7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.5"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,7 +157,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "5592ef0aa5857dc7",
+  "active": "647c50c7418eab99",
   "lastOpenFiles": [
     "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
     "develop/React/React：useEffect & Dependencies 之間關係就在於每一次在updating階段時effect被觸發時會檢查是否有任一dependency有改變而執行對應的callback.md",
