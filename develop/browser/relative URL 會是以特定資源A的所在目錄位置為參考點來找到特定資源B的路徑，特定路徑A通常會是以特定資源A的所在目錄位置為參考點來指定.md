@@ -107,7 +107,7 @@ Skills/Infrastructure/Understanding_URLs
 
 
 #🧠 假如目前頁面路徑為path1/path2/file，目前指定路徑為../dir1/example1，那麼瀏覽器會解析成path1/path2/dir1/example1嗎？ 為什麼？->->-> `並不對，它看頁面所在的目錄所在，也就是path1/path2，在這裡指定../，那麼就會在path1目錄找到dir1這目錄，然後從那找到example1，整體就是path1/dir1/example1`
-<!--SR:!2023-09-02,192,250-->
+<!--SR:!2024-12-27,481,250-->
 
 
 #🧠 假設頁面路徑為https://developer.mozilla.org/en-US/docs/Learn/hi.html，請問當指定為Skills/Infrastructure/Understanding_URLs，會找到哪個位置？為什麼？->->-> `直接從當前頁面所在目錄找：它會直接從hi.html所在的目錄找到以下內容，也就是https://developer.mozilla.org/en-US/docs/Learn/Skills/Infrastructure/Understanding_URLs`
