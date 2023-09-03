@@ -152,7 +152,7 @@ Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA &state=xyz&t
 <!--SR:!2023-09-21,45,230-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "使用者訪問客戶端，客戶端將使用者導向認證伺服器來進行身份認證、授權詢問" ，請問主要參數-response_type、client_id、redirect_uri、scope為何？ ->->-> `- response_type： 表示授權類型為何 - client_id：表示客戶端應用程式在認證伺服器上所註冊的client_id - redirect_uri：定義哪邊提供Script或者哪邊接收token - scope：定義申請的權限範疇`
-<!--SR:!2023-09-04,28,210-->
+<!--SR:!2023-11-04,61,210-->
 
 #🧠 以redirect_uri 是用來提供獲取Token的script作為主要解說版本：implicit grant type 在OAuth 流程中的 "假設使用者允許授權並發送至認證伺服器，認證伺服器就將使用者導向客戶端是先指定的重導向URI，並在URI添加Fragment (裡面夾雜Hash格式構成的access token)"，請求封包源自於哪裡？發送至哪？  ->->-> `源自於認證伺服器，發送至重導向URI`
 <!--SR:!2024-03-13,219,250-->

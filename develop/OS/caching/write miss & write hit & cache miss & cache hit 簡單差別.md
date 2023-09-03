@@ -61,7 +61,7 @@
 <!--SR:!2023-10-01,28,250-->
 
 #🧠  inline caching 和 look-aside caching:  對於 **cache會如何處理cache miss、cache hit、write miss、write hit這四種狀況**之實際情況而言會是? ->->-> `look-aside caching: 開發者不用在cache或者後備存儲資料的地方事先定義cache miss、cache hit、write miss、write hit這四種狀況； inline caching: 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況`
-<!--SR:!2023-09-04,12,250-->
+<!--SR:!2023-10-08,34,250-->
 
 #🧠 inline caching - 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況，其指令的風格為何? 為什麼是xx?->->-> `imperative 風格，因為沒必要額外定義代表目標的指令以及解析其指令的成本`
 <!--SR:!2023-09-27,24,250-->
@@ -77,18 +77,18 @@
 <!--SR:!2023-10-03,30,250-->
 
 #🧠 inline caching 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況，其中指令的代碼形式為什麼? ->->-> `通常會是該server能夠直接解析的形式`
-<!--SR:!2023-09-04,12,250-->
+<!--SR:!2023-10-05,31,250-->
 
 
 #🧠 inline caching上，若以client、cache server、database server為例來畫該架構圖 ->->-> ![](https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzU4OWUzYTI0MTA5MTUucG5nJnZlcnNpb249MDAwMCZzaWc9ZjAzYzE4NGI2MzkwNjRiYThiNTQ0YjZhMzc2NzBiOTE%253D)
-<!--SR:!2023-09-04,12,250-->
+<!--SR:!2023-10-07,33,250-->
 
 #🧠 在look-aside caching上，若以client、cache server、database server為例來畫該架構圖  ->->-> ![](https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzU4OWUzYTBmZjJkMGQucG5nJnZlcnNpb249MDAwMCZzaWc9NGRlMTVhODA3NmFlYTdhNDMxOGU1MmQ0OTc2ZWY2ZDI%253D)
 <!--SR:!2023-10-05,32,250-->
 
 
 #🧠 在inline-caching 中，為何通常不用特定在應用程式端點指示如何處理write-hit、write-miss、cache-hit、cache-miss ->->-> `因為應用程式端點會受限於結構上而無法輕易存取後備資料中心的資料，導致沒辦法妥善處理那四種狀況`
-<!--SR:!2023-09-04,1,228-->
+<!--SR:!2023-09-06,2,228-->
 
 
 

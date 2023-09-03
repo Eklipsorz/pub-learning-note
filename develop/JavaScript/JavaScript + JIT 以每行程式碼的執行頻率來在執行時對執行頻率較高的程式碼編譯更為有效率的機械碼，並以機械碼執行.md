@@ -230,7 +230,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：當JavaScript被編譯成ByteCode並執行時，會如何monitor計數執行次數？ ->->-> `如果索引在monitor是不存在的話，就建立索引以及對應的執行次數為1、如果索引在monitor是存在的話，就以對應索引來增加對應執行次數，如count = count + 1`
-<!--SR:!2023-09-04,22,250-->
+<!--SR:!2023-10-30,56,250-->
 
 
 
@@ -276,7 +276,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上有任何紀錄的話 ->->-> `每次執行時就去透過目前執行行數來在optimizing compiler紀錄上試著找到相對應的紀錄 -> 若找不到就看看目前執行行數和資料型別所構成的索引是否被標記warm -> 在沒有就去邊解析邊執行`
-<!--SR:!2023-09-04,22,250-->
+<!--SR:!2023-10-29,55,250-->
 
 
 #🧠 JIT版本的JavaScript：檢查紀錄的優先權，若optimizing compiler上沒有任何紀錄的話->->-> `每一次就透過目前行數和資料型別所構成的索引看是否標記warm -> 在沒有就去邊解析邊執行`
