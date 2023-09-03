@@ -105,7 +105,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2023-09-11,243,250-->
 
 #🧠 ES module：相對於default export，named export會輸出和引入會是？ ->->-> `	- 以物件形式來輸出模組內容，其屬性為主要內容，這使得每個主要內容都會被特定屬性名稱給綁定或者替該內容命名為該屬性名稱，而命名為named import - 引入方必須以物件形式的特定屬性名稱才能取得內容`
-<!--SR:!2023-06-22,168,250-->
+<!--SR:!2023-12-06,93,230-->
 
 #🧠 ES module： named exports 是強制開發者要引用(import)的識別字必須是當初exporting module所輸出(export)出來的識別字，具體如何實現？ ->->->`強制輸出的內容放置空物件中來當屬性，其中屬性名稱會是輸出的識別字，屬性值是對應識別字的內容，取出的時候就用物件存取屬性方式來取`
 <!--SR:!2024-07-08,420,250-->
@@ -132,7 +132,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 <!--SR:!2024-04-27,378,250-->
 
 #🧠 ES module：同一個模組的export來說，named export形式可以輸出幾個？default export形式可以輸出幾個 ->->-> `named 可以輸出多個named形式，default形式只能允許一個`
-<!--SR:!2023-07-28,194,250-->
+<!--SR:!2023-12-16,103,230-->
 
 #🧠 ES module：同一個模組的export來說 ，named export形式可以輸出多個嗎？->->-> `可以`
 <!--SR:!2024-11-27,492,250-->

@@ -31,7 +31,7 @@ render()
 ## 複習
 
 #🧠 react：render函式還能夠回傳的JSX元素形式會有哪些？(搭配JS) ->->-> `單純JSX語法的元素、搭配JS Expression的JSX Element、使用陣列包含多個React Element的形式`
-<!--SR:!2023-08-26,178,230-->
+<!--SR:!2023-12-03,90,210-->
 
 #🧠  react：render函式還能夠回傳的JSX元素形式會有哪些？ ->->-> `單純JSX語法的元素、搭配JS Expression的JSX Element、使用陣列包含多個React Element的形式`
 <!--SR:!2023-12-21,171,190-->
