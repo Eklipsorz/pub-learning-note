@@ -49,7 +49,7 @@
 <!--SR:!2023-09-05,13,250-->
 
 #🧠 look-aside caching 為什麼叫做look-aside?  ->->-> `因為整體架構下，每個元件都可以向任意一邊進行相連來進行操作`
-<!--SR:!2023-09-02,10,250-->
+<!--SR:!2023-09-29,26,250-->
 
 #🧠 inline caching 和 look-aside caching最大的不同在於甚麼地方? ->->-> `資料上的管理`
 <!--SR:!2023-09-03,11,250-->
@@ -64,17 +64,17 @@
 <!--SR:!2023-09-04,12,250-->
 
 #🧠 inline caching - 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況，其指令的風格為何? 為什麼是xx?->->-> `imperative 風格，因為沒必要額外定義代表目標的指令以及解析其指令的成本`
-<!--SR:!2023-09-01,9,250-->
+<!--SR:!2023-09-27,24,250-->
 
 #🧠  look-aside caching- 得由開發者事先告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入之代碼風格為何? 為什麼是xx? ->->-> `declarative 風格，因為要保持該應用程式的易讀性，所以會以該應用程式所用的程式語言來表達其目標，而非以額外的語言形式來表達。`
 <!--SR:!2023-09-11,12,248-->
 
 #🧠 在look-aside caching中，為何開發者不用特定設定cache server或者後備資料中心面對cache miss、cache hit、write miss、write hit這四種狀況，而是直接從應用程式來指示?  ->->-> `1. 讓cache server或者後備資料中心的可重複使用率提升 `
-<!--SR:!2023-09-01,2,248-->
+<!--SR:!2023-09-12,9,248-->
 
 
 #🧠  look-aside caching- 得由開發者事先告知應用程式如何合法從cache或者後備存儲資料的地方進行讀取或者寫入，其中事先告知/發送請求的代碼形式會是? 若server收到該請求會如何執行->->-> `通常會是以應用程式下的程式語言來構築，應用程式當發送時會轉換成該server能解析的形式，然後當server收到對應指令時會進一步解析成一系列如何實現該目標的指令來執行`
-<!--SR:!2023-09-03,11,250-->
+<!--SR:!2023-10-03,30,250-->
 
 #🧠 inline caching 得由開發者自行定義一系列指令在cache server如何處理cache miss、cache hit、write miss、write hit這四種狀況，其中指令的代碼形式為什麼? ->->-> `通常會是該server能夠直接解析的形式`
 <!--SR:!2023-09-04,12,250-->
@@ -84,11 +84,11 @@
 <!--SR:!2023-09-04,12,250-->
 
 #🧠 在look-aside caching上，若以client、cache server、database server為例來畫該架構圖  ->->-> ![](https://content.cdntwrk.com/files/aHViPTYzOTc1JmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzU4OWUzYTBmZjJkMGQucG5nJnZlcnNpb249MDAwMCZzaWc9NGRlMTVhODA3NmFlYTdhNDMxOGU1MmQ0OTc2ZWY2ZDI%253D)
-<!--SR:!2023-09-03,11,250-->
+<!--SR:!2023-10-05,32,250-->
 
 
 #🧠 在inline-caching 中，為何通常不用特定在應用程式端點指示如何處理write-hit、write-miss、cache-hit、cache-miss ->->-> `因為應用程式端點會受限於結構上而無法輕易存取後備資料中心的資料，導致沒辦法妥善處理那四種狀況`
-<!--SR:!2023-09-01,2,248-->
+<!--SR:!2023-09-04,1,228-->
 
 
 
