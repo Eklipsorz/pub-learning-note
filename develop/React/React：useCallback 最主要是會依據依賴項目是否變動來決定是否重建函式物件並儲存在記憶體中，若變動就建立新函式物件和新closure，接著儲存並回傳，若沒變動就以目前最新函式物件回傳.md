@@ -78,7 +78,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 <!--SR:!2024-09-18,431,250-->
 
 #🧠 React useCallback 語法會是什麼？ ->->-> `useCallback(baseFunction, [deps])`
-<!--SR:!2023-08-04,189,250-->
+<!--SR:!2023-12-11,98,230-->
 
 #🧠 React useCallback 語法會是useCallback(baseFunction, \[deps\])中的baseFunction 是什麼？用途是什麼？ ->->-> `是用函式物件來定義每一次所建立的函式物件之基本函式架構-baseFunction`
 <!--SR:!2023-12-10,101,230-->
@@ -94,7 +94,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`
 <!--SR:!2025-02-13,528,250-->
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback回傳什麼？ ->->-> `回傳的函式物件就會以記憶體內的目前最新函式物件回傳，而不重新以baseFunction為主來從而建立新函式物件`
-<!--SR:!2023-08-08,192,250-->
+<!--SR:!2023-12-16,103,230-->
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback會重新建立函式物件嗎 ->->-> `並不會`
 <!--SR:!2025-01-27,519,250-->

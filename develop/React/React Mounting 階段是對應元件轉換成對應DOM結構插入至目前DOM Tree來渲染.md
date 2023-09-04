@@ -124,7 +124,7 @@ React updates DOM and refs 主要用途為：
 <!--SR:!2024-03-21,215,230-->
 
 #🧠 React Mounting 階段下的getDerivedStateFormProps函式預設是做什麼？ ->->-> `預設沒有任何處理內容。`
-<!--SR:!2023-06-23,192,250-->
+<!--SR:!2023-12-22,109,230-->
 
 
 #🧠 React Mounting 階段下的子階段render有什麼 ->->-> `constructor、getDerivedStateFromProps、render`

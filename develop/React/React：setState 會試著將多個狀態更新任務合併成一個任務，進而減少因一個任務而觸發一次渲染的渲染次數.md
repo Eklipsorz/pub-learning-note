@@ -248,7 +248,7 @@ setLastName('Cheng');
 
 
 #🧠 React：setState1(\{firstName: \'Morgan\' \}); setState1(\{lastName:\'Cheng\'\}) 請問最後結果會是什麼？為什麼->->-> `最後結果為{lastName: 'Cheng'}，因為這是functional component，而setState1則是對於同一個狀態的狀態更新函式，換言之，就是同一個狀態，所以這對於batching的結果狀態物件來說，只是對同一種屬性的覆寫`
-<!--SR:!2023-08-02,185,250-->
+<!--SR:!2023-12-13,100,230-->
 
 
 
