@@ -273,7 +273,7 @@ consume
 <!--SR:!2025-01-04,508,250-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？(誰擁有誰)->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
-<!--SR:!2023-07-05,176,250-->
+<!--SR:!2023-12-06,93,230-->
 
 #🧠 React：Context、provider component、consumer component 三者間的關係為何？->->-> `每種Context 都各有provider component 來設定自己的Context當前內容以及consumer component來給特定元件存取Context`
 <!--SR:!2023-07-25,192,250-->
@@ -309,7 +309,7 @@ consume
 <!--SR:!2023-05-25,150,250-->
 
 #🧠 React：Context中的Provider Component 所擁有的value props是用以設定對應Context的狀態值，那麼value會填入什麼內容 ->->-> `內容會由useState或者useReducer所回傳的狀態值snapshot以及更新狀態用的函式`
-<!--SR:!2023-08-11,196,248-->
+<!--SR:!2025-02-14,529,248-->
 
 
 
@@ -352,7 +352,7 @@ consume
 <!--SR:!2024-08-09,414,250-->
 
 #🧠 React.createContext(defaultValue); 語法是做什麼？ ->->-> `建立一個context 物件`
-<!--SR:!2023-07-08,180,250-->
+<!--SR:!2025-02-15,530,250-->
 
 #🧠 React.createContext(defaultValue); 的defaultValue是用作什麼？ ->->-> `當如果沒有任何Provider Component，才會將createContext(defaultValue)中的defaultValue設定為目前context object的狀態值`
 <!--SR:!2024-08-10,415,250-->
