@@ -116,7 +116,7 @@ hooks 是：
 
 
 #🧠 React： class-based component 能夠使用hook嗎->->-> `class-based component 無法使用react hooks`
-<!--SR:!2023-08-11,192,250-->
+<!--SR:!2025-02-12,527,250-->
 
 
 #🧠  React：functional component 的hook 和class-based-component的語法之間的關係來說是什麼？為什麼 ->->-> `毫無相關，functional component 的hook 和 class-based component 都是獨立功能，只是使用相同React核心程式碼來實現各自目的的功能`

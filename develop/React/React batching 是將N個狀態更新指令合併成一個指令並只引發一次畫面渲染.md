@@ -235,7 +235,7 @@ batch：
 <!--SR:!2023-06-26,193,250-->
 
 #🧠 React Batching 好處是什麼？ ->->-> `透過合併來減少大量重複渲染的操作：每一個狀態更新指令(setState)就會引發一次updating的渲染`
-<!--SR:!2023-06-24,192,250-->
+<!--SR:!2023-12-21,108,230-->
 
 #🧠 React Batching 在React 18之前的版本為何？ ->->-> `主要依據著isBatchUpdate是否為true來決定是否執行Batching，若false，就不以Batching來執行；若true，就以Batching`
 <!--SR:!2024-04-24,295,230-->

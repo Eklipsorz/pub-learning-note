@@ -92,7 +92,7 @@ const callbackResult = useCallback(baseFunction, [a, b])
 
 
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，就表示什麼？ ->->-> `就會被系統認定不會被改變的依賴項目`
-<!--SR:!2023-08-01,187,250-->
+<!--SR:!2025-02-13,528,250-->
 #🧠 useCallback(baseFunction, \[deps\]) 中的第二參數是空陣列，其useCallback回傳什麼？ ->->-> `回傳的函式物件就會以記憶體內的目前最新函式物件回傳，而不重新以baseFunction為主來從而建立新函式物件`
 <!--SR:!2023-08-08,192,250-->
 

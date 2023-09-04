@@ -73,7 +73,7 @@ const result = instance.render(); // <p>Hello</p>
 <!--SR:!2024-04-12,369,250-->
 
 #🧠 (重複)每一個React element 在 JS 語言體系下會是甚麼?->->-> `相當於Virtual DOM物件`
-<!--SR:!2023-05-28,33,250-->
+<!--SR:!2023-10-06,32,230-->
 
 
 #🧠 React：如何構建一個function component? ->->-> `使用function以及function回傳著react element構成的元件`

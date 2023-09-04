@@ -127,7 +127,7 @@ v6：
 <!--SR:!2023-11-18,75,230-->
 
 #🧠 react-router v6：Route語法標籤是什麼？ ->->-> `<Route path=path1 element={element1} />`
-<!--SR:!2023-08-30,169,250-->
+<!--SR:!2023-11-25,82,230-->
 
 
 #🧠 react-router v6：Route語法標籤是`<Route path=path1 element={element1} />`，那麼path和element各為什麼？ ->->-> `	 - path 屬性是填入要比對的路徑  - element 屬性是填入要比對滿足後要渲染的元件`

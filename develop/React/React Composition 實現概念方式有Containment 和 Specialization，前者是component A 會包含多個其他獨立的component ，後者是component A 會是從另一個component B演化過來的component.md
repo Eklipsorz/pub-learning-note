@@ -245,7 +245,7 @@ wrapper
 <!--SR:!2024-01-14,313,250-->
 
 #🧠  React：請說明它使用哪個composition的技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-card_fajbai.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/containment-expense-item_lcxg8f.png)->->-> `使用了containment，在這裡會以Card元件來以標籤包含每一筆消費紀錄(ExpenseItem)的資訊：日期、描述、並且在Card Component 上使用props.children 來找到Card 所包含的多個元件，並放到另一個div 元件上，從React角度來看，會是由Card元件來擁有日期元件、描述元件，並構成混雜其元件的組合物。`
-<!--SR:!2023-06-19,194,250-->
+<!--SR:!2023-12-25,112,230-->
 
 #🧠 React：請說明使用composition的哪個技術，以及做了什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-dialog_rx2lo0.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660405942/blog/react/composition/specialization-welcome-dialog_q2cdwu.png)->->-> `使用了specialization，在這裡會有Dialog.js 和 WelcomeDialog.js ，前者是代表通用Dialog元件，後者是經由通用Dialog元件而改造的元件。然而，在這裡並不是選擇繼承，而是打造一個WelcomDialog 這元件擁有通用Dialog 元件，並將特定資訊以attribute輸入給對應Dialog元件的函式來產生不同內容的Dialog元件，接著在不修改擁有的Dialog元件下，添加內容來開發WelcomDialog`
 <!--SR:!2023-10-14,99,230-->

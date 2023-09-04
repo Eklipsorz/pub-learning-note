@@ -112,7 +112,7 @@ button.addEventListener('click', debounce(function() {
 
 
 #🧠 de-bounce的de本身放在動詞前面，de會是指什麼意思？ ->->-> `去除/緩解動詞所要描述的現象`
-<!--SR:!2023-08-03,123,248-->
+<!--SR:!2024-08-14,345,248-->
 
 
 #🧠 de-bounce的de本身放在動詞前面，會是指去除/緩解動詞所要描述的現象，那麼debounce會是？->->-> `去除bounce或者緩解bounce的現象`
