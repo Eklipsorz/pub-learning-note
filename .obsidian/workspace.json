@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
+                "file": "develop/React/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inversion of control 在電腦科學會是指會是指 誰決定誰的反轉 / 誰執行誰的反轉，那麼會涉及哪些程式語言用語範疇",
+                "query": "react-router-dom：useLocation會回傳location object是什麼？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
+                "file": "develop/React/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
+                "file": "develop/React/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md"
+                "file": "develop/React/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md"
               }
             }
           },
@@ -159,6 +159,7 @@
   },
   "active": "647c50c7418eab99",
   "lastOpenFiles": [
+    "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
     "develop/JavaScript/JS class 建構式是每個類別的特殊方法，用來根據資訊來建立對應類別下物件並初始化，若沒設定的話，系統會預設設定指定的constructor給開發者來執行.md",
     "develop/Database/Master-Slave Replication 是允許一台主要資料庫伺服器將特定資料複製成副本分給多個資料庫系統的資料庫來儲存.md",
     "develop/render/HTML 的script 能夠允許瀏覽器邊解析DOM邊執行對應的程式碼，通常為JS，每個文件都會有各自的JS全域執行環境.md",
@@ -184,7 +185,6 @@
     "develop/Language/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "develop/Language/null 是表示任意型別的空值，而非是表示物件型別上的空值.md",
     "annotation/@Null2023.md",
-    "develop/Network/分類定址是將IP分個群組來重新定義使用者能用的IP群組是什麼.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",

@@ -18,7 +18,7 @@
 ## 複習
 
 #🧠 react-router 所提供的 history.push & replace，會不會每一次對stack的最上面元素做push或replace，而產生unmount和mount？為什麼？->->-> `並不會，每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換`
-<!--SR:!2023-07-05,139,250-->
+<!--SR:!2023-11-16,73,230-->
 
 #🧠 react-router 所提供的 history.push & replace，若對stack的最上面元素做push或replace，所產生的切換會是？->->-> `每一次對stack的最上面元素做push或replace，會針對切換前後的畫面之間差異來切換`
 <!--SR:!2023-09-04,181,250-->

@@ -76,7 +76,7 @@ const Home = (props) => {
 <!--SR:!2023-08-30,200,230-->
 
 #🧠 React：上圖是使用props來實現登出按鈕，下圖是改用context來將登出功能寫在按鈕元件上，請問下圖有什麼潛在問題？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-props-case_xzkuzp.png) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663766887/blog/react/context/when-to-use/using-context-case_zhkupg.png)->->-> `這使得通用按鈕變成專門登出的按鈕，這讓其他元件很難透過這元件來打造其他元件，也就是可重複性降低。`
-<!--SR:!2023-07-18,184,250-->
+<!--SR:!2023-12-11,98,230-->
 
 ---
 Status: #🌱 

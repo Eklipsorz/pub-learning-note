@@ -135,7 +135,7 @@ xxxx 元件下的路由
 <!--SR:!2023-06-28,125,250-->
 
 #🧠 react-router-dom ：v6是使用Navigate元件來實現能將使用者導向至指定頁面的功能，請問主要導向原理是什麼？ ->->-> `將指定頁面的網址推到瀏覽紀錄stack之最上面`
-<!--SR:!2023-07-04,130,250-->
+<!--SR:!2023-11-15,72,230-->
 
 
 #🧠 react-router-dom ：v6是使用Navigate元件來實現能將使用者導向至指定頁面的功能，主要導向原理是將指定頁面的網址推到瀏覽紀錄stack之最上面，具體實現會是哪兩種方法去實現 ->->-> `主要是用push方式或者replace方式來調整瀏覽紀錄`
@@ -217,7 +217,7 @@ xxxx 元件下的路由
 <!--SR:!2023-07-08,109,246-->
 
 #🧠 react-router-dom v6：將nested Route元件安置在component，再讓component被parent route元件所包含，其nested Route的path定位方式會是如何？ ->->-> `其path定位方式是以目前所處的Parent Route元件所擁有的path來定位 ，是直接假定parent route所設定的path來定位並當作開頭，所以不需要額外添加。 `
-<!--SR:!2023-06-11,94,246-->
+<!--SR:!2023-11-01,58,226-->
 
 #🧠 react-router-dom v6：parent route元件直接包裹nested route元件，並搭配Outlet元件，其nested Route的path為何不用額外添加parent route的path就能延伸？ ->->-> `主要是定位就是以parent route的path為主`
 <!--SR:!2023-12-08,196,246-->

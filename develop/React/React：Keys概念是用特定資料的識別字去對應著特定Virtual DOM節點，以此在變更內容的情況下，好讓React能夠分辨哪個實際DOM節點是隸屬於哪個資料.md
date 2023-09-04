@@ -212,7 +212,7 @@ const DUMMY_EXPENSES = [
 <!--SR:!2023-07-22,186,228-->
 
 #🧠 React：當對著Virtual DOM設定Keys，那麼其實際DOM節點會是？ ->->-> `也會因此對應著特定資料。`
-<!--SR:!2023-06-05,173,250-->
+<!--SR:!2023-12-14,101,230-->
 
 #🧠 React：Keys概念的適用場景為何？ ->->-> `開發清單的CRUD`
 <!--SR:!2023-08-07,197,230-->
@@ -258,7 +258,7 @@ const DUMMY_EXPENSES = [
 
 
 #🧠 React：未使用Keys之前會有潛在問題之一：原有DOM節點上的狀態註冊會繼續保留在原有DOM節點上，不會根據實際轉換的位置來重新撤銷和註冊，舉例說明一下 ->->-> `以兩個項目內容的清單來說明，其中第一個項目Toilet Paper被註冊了特定狀態，那麼就表示對應該內容的第一個DOM節點會註冊那個狀態1，而當新資料進來時，第一個DOM節點內容會是新資料，而第二個DOM節點內容才是Toilet Paper，其中狀態1仍註冊在第一個DOM節點，而非轉移至第二個DOM節點。`
-<!--SR:!2023-06-18,182,250-->
+<!--SR:!2023-12-18,105,230-->
 
 
 #🧠 React：最左邊是要插入的資料，Before是實際建立的DOM節點，目前按照順序填入資料，After 是使用Keys技術，請詳細說明使用之後的概念![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1661613698/blog/react/dynamic-list-rendering/before-vs-after-with-keys_cedmf3.png) ->->-> ``

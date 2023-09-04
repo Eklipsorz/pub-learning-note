@@ -353,7 +353,7 @@ this is use effect
 <!--SR:!2024-06-11,299,248-->
 
 #🧠 React：useEffect(callback, deps) 若要求callback能夠使用async/await語法，但callback本身不能是async，其替代方案為何 ->->-> `在callback內部定義另一個async function來使用`
-<!--SR:!2023-08-02,117,248-->
+<!--SR:!2023-11-05,62,228-->
 
 
 ---
