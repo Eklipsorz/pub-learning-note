@@ -244,7 +244,7 @@ tell React that is should only re-execute this DemoOutput component under certai
 
 
 #🧠 React.memo 和 useMemo 之間差異是如何？ ->->-> `前者是針對component的virtual dom 進行記憶體儲存來並根據情況來回傳記憶體內容或者執行對應渲染函式；後者則是針對特定結果值進行記憶體儲存並根據情況來回傳記憶體內容或者執行對應值的複雜操作`
-<!--SR:!2023-08-09,190,250-->
+<!--SR:!2023-12-15,102,230-->
 
 ---
 Status: #🌱 
