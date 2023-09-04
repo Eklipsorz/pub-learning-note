@@ -45,7 +45,7 @@ removeItem：專門指定哪個項目要從購物車移除
 #🧠 React：以下是用CartContext而製作成的Provider，請問這有什麼潛在問題嗎？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384045/blog/react/food-order/anti-pattern/cart-context-provider-question_bu7sfz.png) ->->-> `value給定的狀態值一直維持在items為空陣列以及totalAmount為0`
 <!--SR:!2024-03-08,318,250-->
 
-#🧠 React：以下是用CartContext而製作成的Provider，裡面有著狀態值一直被固定的問題，請問如何解決？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384045/blog/react/food-order/anti-pattern/cart-context-provider-question_bu7sfz.png) ->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384052/blog/react/food-order/anti-pattern/cart-context-provider-question-solution_imc2ok.png)`
+#🧠 React：以下是用CartContext而製作成的Provider，裡面有著狀態值一直被固定的問題，請問如何解決？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384045/blog/react/food-order/anti-pattern/cart-context-provider-question_bu7sfz.png) ->->-> ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664384052/blog/react/food-order/anti-pattern/cart-context-provider-question-solution_imc2ok.png)
 <!--SR:!2023-08-02,192,250-->
 
 ---

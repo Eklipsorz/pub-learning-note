@@ -88,7 +88,7 @@ Button RUNNING
 <!--SR:!2024-12-29,502,250-->
 
 #🧠 React.memo 比對props的方式會是什麼？ 若比較對象是primitive data value的話 ->->-> `就會以識別字來找到對應的stack記憶體區塊，並取出它的內容-primitive data value 來比較是否一樣`
-<!--SR:!2023-08-02,188,250-->
+<!--SR:!2023-12-12,99,230-->
 
 
 #🧠 React：上圖為App，下圖為Button.js，請問button的memo有發揮正常作用嗎？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664983692/blog/react/memo/react-memo-prop-function-app_q4tddw.png)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1664982245/blog/react/memo/react-memo-prop-function-button_ufrc9q.png) ->->-> `並沒有，由於每一次渲染函式的執行都會生成新的函式物件來傳遞至Button的prop，比較起來的話，會一直比較著該物件的新heap 記憶體位址，這造成memo一直判定prop跟先前的prop不同而一直執行button的渲染函式`
