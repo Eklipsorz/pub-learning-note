@@ -179,7 +179,7 @@ GlobalExectionContext = {
 
 
 #🧠 Global Execution Context ： LexicalEnvironment 和VariableEenvironment 物件各有什麼樣屬性 ？->->-> ` EnvironmentRecord、outer、ThisBinding`
-<!--SR:!2023-09-06,105,228-->
+<!--SR:!2023-11-02,57,208-->
 
 #🧠 Global Execution Context ：LexicalEnvironment 主要記錄著什麼？ ->->-> ` LexicalEnvironment 從GEC收集函式宣告、let/const形式的變數宣告並以下面形式來存放在EnvironmentRecord屬性中
 <!--SR:!2025-03-15,593,248-->
