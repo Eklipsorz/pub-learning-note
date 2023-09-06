@@ -147,7 +147,7 @@
 <!--SR:!2023-12-22,110,228-->
 
 #🧠 當被設定position：relative時，其位置會以什麼點做標準來位移？->->-> `當被設定position：relative，其元素的位置參考點會以position：static元素的各個邊界為主`
-<!--SR:!2023-09-05,10,249-->
+<!--SR:!2023-10-05,28,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定top為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的上邊界和元素A'的上邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往下移動；數值越小的話，會使灰色部分往上移動`
 <!--SR:!2023-09-09,14,249-->
@@ -162,14 +162,14 @@
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定bottom為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的右邊界和元素A'的下邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往上邊移動；數值越小的話，會使灰色部分往下邊移動`
-<!--SR:!2023-09-07,12,249-->
+<!--SR:!2023-10-07,30,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定top為value1時，其黑點和其元素會在哪裡？畫圖來表示![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png)
 <!--SR:!2023-09-12,16,249-->
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定right為value1時，其黑點和其元素會在哪裡？畫圖來表示 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png)->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png)
-<!--SR:!2023-09-06,12,249-->
+<!--SR:!2023-10-10,33,249-->
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定bottom為value1時，其黑點和其元素會在哪裡？畫圖來表示 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png)->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png)
@@ -180,11 +180,11 @@
 
 
 #🧠 在position：relative的元素下都設置著left、right這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄right這屬性，改選left為主`
-<!--SR:!2023-09-06,12,249-->
+<!--SR:!2023-10-08,31,249-->
 
 
 #🧠 在position：relative的元素下都設置著top、bottom這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄bottom這屬性，改選top為主`
-<!--SR:!2023-09-06,12,249-->
+<!--SR:!2023-10-08,31,249-->
 
 
 #🧠  在position：relative的元素下，top 和 bottom 中會挑選top的原因->->-> `採取normal flow所預設的排版方向，由上而下來排，上的方向擁有的優先權比較高`
@@ -192,7 +192,7 @@
 
 
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排，做的方向擁有的優先權比較高`
-<!--SR:!2023-09-07,12,249-->
+<!--SR:!2023-10-07,30,249-->
 
 
 #🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值(提示：以屬性共存來說) ->->-> `會選top和left這兩種屬性`
@@ -200,7 +200,7 @@
 
 
 #🧠 在position：relative的元素下，若都設置著top、bottom：會挑選top的原因會是甚麼?  ->->-> `採取normal flow所預設的排版方向，由上而下來排，上的方向擁有的優先權比較高`
-<!--SR:!2023-09-07,12,249-->
+<!--SR:!2023-10-09,32,249-->
 
 
 #🧠 在position：relative的元素下，若都設置著left、right：會挑選left的原因會是甚麼?  ->->-> `採取normal flow所預設的排版方向，由左而右來排，左的方向擁有的優先權比較高
