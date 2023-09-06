@@ -137,7 +137,7 @@ switch (..) {
 <!--SR:!2024-03-27,240,230-->
 
 #🧠  請問這段JavaScript程式碼若被執行的話，會得到什麼? 說明為什麼會這樣![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193339/blog/javascript/lexical%20scope/switch-lexcial-scope-2_wpzxli.png)->->-> `hihi，這是因爲switch 的execution context會以{}為主來識別他擁有的識別字，其中會包含testConsole，所以只要在switch內的context執行就會找到該識別字`
-<!--SR:!2023-09-06,270,250-->
+<!--SR:!2025-07-14,676,250-->
 
 
 #🧠 JavaScript：若不想讓每個case都能存取其他case的識別字，該如何做？(提示：也建立環境吧) ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193210/blog/javascript/lexical%20scope/switch-lexcial-scope-1_rryoim.png) 和  ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1655193339/blog/javascript/lexical%20scope/switch-lexcial-scope-2_wpzxli.png)->->-> `替每個case增加execution context，也就是用{}`
