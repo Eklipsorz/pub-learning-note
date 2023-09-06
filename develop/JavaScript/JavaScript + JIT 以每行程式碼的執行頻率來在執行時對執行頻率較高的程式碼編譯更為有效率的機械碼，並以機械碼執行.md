@@ -193,7 +193,7 @@ function arraySum(arr) {
 
 
 #🧠 JavaScript 的 JIT：如何區分哪些程式碼的執行頻率為稍高、高 ->->-> `當程式碼的執行次數高於x1時，就設定為代表稍高的warm，若執行次數高於x1且高於x2的話，就將對應的程式碼設為代表高的hot`
-<!--SR:!2023-09-07,25,250-->
+<!--SR:!2023-11-10,64,250-->
 
 
 #🧠 JavaScript的JIT：當被標記為warm的程式碼，會如何做優化？ 誰負責優化->->-> `將對應的ByteCode放置Baseline Compiler，由它編譯成平時在interpreter編譯的機械碼版本並於monitor上的紀錄中找到對應索引，接著將機械碼放置對應索引的程式碼欄位，當下一次遇到同樣索引的ByteCode，就直接紀錄對應的機械碼取出並執行，不用重新編譯和執行`
@@ -311,7 +311,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且假設錯誤，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話)  ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行 -> 紀錄錯誤 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-09-07,25,250-->
+<!--SR:!2023-11-11,65,250-->
 
 
 
@@ -320,7 +320,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設x1為warm的標準，x2為hot的標準，若索引的使用次數超過x2，已用optmizing compiler 且錯誤次數達標，流程會是什麼？(若行數和對應的型別所構成的索引沒能在monitor標記warm或者沒在裡頭紀錄的話) ->->-> `生成bytecode -> 透過目前索引的行數試著能夠在optimizing compiler中找到對應的機械碼 ->  比較目前索引的型別是否與假設一樣 -> 若不一樣的話，就以對應的bytecode丟進邊將bytecode 轉成machine code邊執行的元件來執行-> 紀錄錯誤次數 -> 刪除對應行數的optimizing compiler之機械碼紀錄 -> 紀錄對應索引(line, type)的執行次數`
-<!--SR:!2023-09-07,25,250-->
+<!--SR:!2023-11-12,66,250-->
 
 
 

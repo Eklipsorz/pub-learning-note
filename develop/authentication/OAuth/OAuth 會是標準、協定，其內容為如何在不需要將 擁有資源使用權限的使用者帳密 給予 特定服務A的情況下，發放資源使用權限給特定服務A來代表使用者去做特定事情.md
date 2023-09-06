@@ -204,7 +204,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 
 
 #🧠 在Open Authorization中，grant_type會是指甚麼意思?->->-> `grant_type: 客戶端要以甚麼樣的授權同意形式來向認證伺服器索要TOKEN`
-<!--SR:!2023-09-07,12,242-->
+<!--SR:!2023-10-06,29,242-->
 
 
 #🧠 在Open Authorization 或者OAuth的Client-Server中，Client 和 Resource Owner 之間的差別。 ->->-> `Resource Owner 是代表擁有特定資源的擁有人或者使用者，而Client則是應用程式或者服務，會被授與Resource Owner擁有資源的權利來存取對應資源`
