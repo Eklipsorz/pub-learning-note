@@ -94,13 +94,13 @@ URI包含了：
 <!--SR:!2023-09-24,191,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Query String對於URI會是什麼？ ->->-> `對於索要的資源進行額外的要求字串`
-<!--SR:!2023-09-07,115,230-->
+<!--SR:!2024-05-29,265,230-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Fragment對於URI會是什麼？ ->->-> `在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部分`
 <!--SR:!2023-09-27,194,250-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否區分大小寫->->-> `1. Path 2. Query 3. Fragment`
-<!--SR:!2023-09-06,180,250-->
+<!--SR:!2024-12-01,451,250-->
 
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，哪些是否沒區分大小寫 ->->-> `1. Scheme 2. Host`

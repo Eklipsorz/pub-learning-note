@@ -37,16 +37,16 @@
 <!--SR:!2023-09-20,20,230-->
 
 #🧠 cache-miss下有哪些策略可用 ->->-> `read through、read aside`
-<!--SR:!2023-09-05,13,250-->
+<!--SR:!2023-10-09,32,250-->
 
 #🧠 read through 對於client、cache、backup storage環境下，通常會對cache和backup storage構成甚麼樣的架構? 為什麼 ->->-> `inline caching，因為會需要前者`
-<!--SR:!2023-09-05,13,250-->
+<!--SR:!2023-10-12,35,250-->
 
 #🧠 read aside 對於client、cache、backup storage環境下，通常會對cache和backup storage構成甚麼樣的架構 ->->-> `look-aside caching`
 <!--SR:!2023-09-30,27,250-->
 
 #🧠 inline caching 為什麼叫做inline ? ->->-> `因為整體架構下的每個元件會並排一塊，每個元件會與較近的元件相連`
-<!--SR:!2023-09-05,13,250-->
+<!--SR:!2023-10-11,34,250-->
 
 #🧠 look-aside caching 為什麼叫做look-aside?  ->->-> `因為整體架構下，每個元件都可以向任意一邊進行相連來進行操作`
 <!--SR:!2023-09-29,26,250-->
@@ -88,7 +88,7 @@
 
 
 #🧠 在inline-caching 中，為何通常不用特定在應用程式端點指示如何處理write-hit、write-miss、cache-hit、cache-miss ->->-> `因為應用程式端點會受限於結構上而無法輕易存取後備資料中心的資料，導致沒辦法妥善處理那四種狀況`
-<!--SR:!2023-09-06,2,228-->
+<!--SR:!2023-09-14,7,228-->
 
 
 

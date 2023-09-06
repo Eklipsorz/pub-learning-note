@@ -111,7 +111,7 @@ https://developer.mozilla.org/en-US/docs/Learn
 
 
 #🧠 假設目前存取的資源所擁有的protocol會是https，因此會是對應到第一個URL，\/\/developer.mozilla.org\/en-US\/docs\/Learn 會對應到什麼位置？ ->->-> `https://developer.mozilla.org/en-US/docs/Learn`
-<!--SR:!2023-09-05,194,250-->
+<!--SR:!2025-01-20,501,250-->
 
 #🧠 https\:\/\/developer\.mozilla\.org\/en-US\/docs\/Learn 會是什麼種類URL決定方式？ ->->-> `absolute url`
 <!--SR:!2024-11-11,450,250-->
