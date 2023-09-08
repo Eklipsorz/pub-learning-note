@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/food-order-project：Cart Context 構建.md",
+                "file": "templates/📖 +🤔.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/food-order-project：Cart Context 構建.md",
+                "file": "templates/📖 +🤔.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/food-order-project：Cart Context 構建.md",
+                "file": "templates/📖 +🤔.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/food-order-project：Cart Context 構建.md"
+                "file": "templates/📖 +🤔.md"
               }
             }
           },
@@ -159,6 +158,10 @@
   },
   "active": "647c50c7418eab99",
   "lastOpenFiles": [
+    "2023-08-01.md",
+    "templates/📖 +🤔.md",
+    "develop/React/food-order-project：Cart Context 構建.md",
+    "[[@MemoryLeak2023.md",
     "develop/React/React ：Offscreen API 是允許Component 在面臨mount=unmount循環中能夠有效率的切換，並且現在第18版中添增開發時的檢測是否元件的開發都能支援Offscreen API.md",
     "develop/React/useLocation會回傳location object，而該物件夾帶著目前載入的頁面所擁有的資訊(含URL部分).md",
     "develop/JavaScript/promise/Promise 主要以uninversion來解決callback的inversion of control問題，而Promise會預期任務會做甚麼以及回傳什麼，並由呼叫端自行決定收到其結果要做些什麼.md",
@@ -181,10 +184,6 @@
     "develop/browser/預設下瀏覽器會替每個表單設定該SubmitEvent ，並定義表單下的提交按鈕被點擊後才產生submit 事件信號給表單，轉遞click event的話，會是先往parent節點來進行轉遞，轉遞submit event的話，則是表格.md",
     "develop/authentication/Refresh-token/refresh token 是種token來讓Client或Replying Party 在不需要額外使用者帳號進行credential驗證的情況下直接向Authorization Server索要新的Access Token或ID token.md",
     "develop/authentication/OpenID-Connect/id token 本身是用來證明特定使用者是受過認證的資訊，使用者或者Relying Party 向OpenID Provider提供特定身份的證明資訊，接著由OpenID Provider對其進行驗證，若驗證成功就會發放對應token.md",
-    "develop/authentication/OpenID-Connect/OpenID Connect 的ID token發放和驗證會是以OAuth 2.0為主，id token構成主要是以JWT為主且本身有夾雜身份資訊，access token則是不一定且本身並沒有夾雜任何資訊.md",
-    "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
-    "develop/authentication/OAuth/OAuth 中 的 Authentication Code Grant Type 是以authorization code和申請其code來分別作為認證授權伺服器能夠認可使用者授權的的結果物和流程.md",
-    "develop/Language/json/JSON 語法本身以成為JavaScript 資料表示語法中的子集合為目標而設計的資料表示法.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",
