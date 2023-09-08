@@ -68,7 +68,7 @@ get(name)
 
 
 #🧠 URLSearchParams 建構式是做什麼？ ->->-> `專門將指定的query string轉換成query string物件`
-<!--SR:!2023-09-08,5,248-->
+<!--SR:!2023-09-22,14,248-->
 
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，回傳會是什麼？ ->->-> `特定query string內容之 物件`
