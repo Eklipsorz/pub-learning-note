@@ -34,11 +34,11 @@ Set-Cookie: sessionId=<session id>.<signature>
 
 ## 複習
 
-#🧠 express.session 為什麼需要密鑰？ ->->-> `防止客戶端 發出的請求是以其他客戶端和伺服器的狀態來進行`
-<!--SR:!2023-08-28,3,250-->
+#🧠 express.session 為什麼需要密鑰？ ->->-> `防止客戶端的cookie被竄改或者`
+<!--SR:!2023-09-29,21,250-->
 
 #🧠 express-session 具體拿密鑰是如何防偽 ->->-> `首先當session一被建立，伺服器就會拿到對應的session id並且拿密鑰和session id進行hash算法來得到簽署值，接著拿session id和簽署值合併成一個新字串給客戶端當cookie的內容，當客戶端再次向同樣伺服器發送請求並夾帶著上次cookie內容時，伺服器就會拿cookie內容中的session Id和伺服器握有的密鑰進行再一次hash比對cookie內容中的簽署值是否一樣，若一樣的話，就表示客戶端cookie未被人惡意竄改，若不一樣就表示竄改`
-<!--SR:!2023-08-28,3,250-->
+<!--SR:!2023-09-28,20,250-->
 
 
 ---
