@@ -138,7 +138,7 @@
 ## 複習
 
 #🧠 relative positioning 的元素和flow layout之間的關係？ ->->-> `relative positioning 的元素仍會受到normal flow/flow layout而控制，並在那情況下調整位置`
-<!--SR:!2023-09-08,219,246-->
+<!--SR:!2023-12-28,111,226-->
 
 #🧠 具有position：relative的元素A會不會因為滿足top、right、bottom、left而改變元素A的高寬？ ->->-> `不會`
 <!--SR:!2023-12-02,105,228-->
@@ -173,7 +173,7 @@
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定bottom為value1時，其黑點和其元素會在哪裡？畫圖來表示 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png)->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453960/blog/htmlPosition/relative-direction/relative-position-example-bottom_xgeiqe.png)
-<!--SR:!2023-09-08,13,249-->
+<!--SR:!2023-10-11,33,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？畫圖來表示![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png)
 <!--SR:!2023-09-13,17,249-->
