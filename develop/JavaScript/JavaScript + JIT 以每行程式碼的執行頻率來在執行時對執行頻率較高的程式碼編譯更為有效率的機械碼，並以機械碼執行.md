@@ -250,7 +250,7 @@ function arraySum(arr) {
 
 
 #🧠 JIT版本的JavaScript：假設超過x2就為hot，那麼假使某索引的程式碼的執行次數剛好符合，請問會如何執行對應程式碼？ 若下次相同索引(optimizing compiler)的話，會如何處理？ ->->-> `會以目前索引下的行數作為optimizing compiler的紀錄索引，並用目前索引下的型別作為前提或者假設，接著再將索引對應的bytecode和目前執行情況編譯成更為有效率的機械碼並依據行數來將機械碼放置optimizing compiler的對應紀錄上，最後以機械碼執行，下次當執行的程式碼行數是能夠在optimizing compiler紀錄能夠找到，就會比對其型別是否和前提一樣，若一樣從optimizing compiler取出對應行數的機械碼來執行`
-<!--SR:!2023-09-08,26,250-->
+<!--SR:!2023-11-12,65,250-->
 
 
 #🧠 JIT版本的JavaScript：假設目前optimizing compiler上有任何紀錄，請問每一次程式碼的執行會如何進行？ ->->-> `每次執行就去會利用目前執行行數作為索引去在optimizing compiler找到相對應的紀錄，若找到對應行數，就會比對目前執行的程式碼所擁有的型別是否和紀錄上的假設一樣，若一樣就執行對應的機械碼，若不一樣的話，就要看看目前行數和目前型別是否能夠在baseline compiler找到對應紀錄，有的話，就以baseline compiler的機械碼為主，沒的話，就將對應bytecode丟進interpreter來邊轉換成機械碼邊執行`
