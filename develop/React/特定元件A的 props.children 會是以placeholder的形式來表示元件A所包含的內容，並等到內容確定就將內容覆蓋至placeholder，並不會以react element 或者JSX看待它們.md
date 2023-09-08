@@ -50,7 +50,7 @@ const Picture = (props) => {
 
 ## 複習
 #🧠  React ：特定元件單獨回傳props.children，在這裏會觸發JSX的語法問題嗎？ ->->-> `並不會，由於他們本身並不會以react element 或者JSX看待它們，而是以placeholder來表示特定元件所包含的內容，等到內容確定就會將內容直接覆蓋`
-<!--SR:!2023-07-31,34,230-->
+<!--SR:!2023-09-30,22,210-->
 
 #🧠 React ：特定元件單獨回傳props.children 會如何被解析 ->->-> `特定元件A的 props.children 會是以placeholder的形式來表示元件A所包含的內容，並且直接將內容覆蓋至placeholder，並不會以react element 或者JSX看待它們`
 <!--SR:!2023-10-04,38,230-->

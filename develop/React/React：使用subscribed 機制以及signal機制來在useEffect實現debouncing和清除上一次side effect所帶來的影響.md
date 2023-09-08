@@ -192,7 +192,7 @@ AbortController.abort()
 
 
 #🧠 React： 以下為useEffect的實現代碼，請用mount階段來說明他們做了什麼？（務必請說明到記憶體和cleanup)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `mount階段時會是先執行： - 分配新記憶體來存放true，名為subscribed - 生成非同步任務，任務執行以subscribed是否為true來執行 - 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊
-<!--SR:!2023-08-22,181,250-->
+<!--SR:!2024-12-24,473,250-->
 `
 
 #🧠 React： 以下為useEffect的實現代碼，請用update階段來說明他們做了什麼？（務必請說明到記憶體和cleanup)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1667809557/blog/react/effect/useEffect/cleanup/promise-useEffect-cleanup-based-on-subscribed_g6nm9m.png)->->-> `update 階段會是： - 執行目前所擁有的cleanup，這時的closure和函式內容會是以上一個非同步任務產生時的記憶體區塊情況為主 - 分配新記憶體來存放true，名為subscribed，但會與上一次建立的區塊不同，是一塊全新的內容 - 生成非同步任務，任務執行以subscribed是否為true來執行 - 建立cleanup任務：專門清除目前subscribed所指向的記憶體區塊`
