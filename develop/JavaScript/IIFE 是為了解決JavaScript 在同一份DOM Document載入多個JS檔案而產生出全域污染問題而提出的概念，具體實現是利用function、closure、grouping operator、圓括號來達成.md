@@ -249,7 +249,7 @@ a * c + b * c // 9
 
 
 #🧠 IIFE (Immediately Invoked Function Expression)是官方標準所提出的？ ->->-> `Ben Alman，並非標準下所提供的語法`
-<!--SR:!2023-09-09,25,247-->
+<!--SR:!2023-11-10,61,247-->
 
 
 

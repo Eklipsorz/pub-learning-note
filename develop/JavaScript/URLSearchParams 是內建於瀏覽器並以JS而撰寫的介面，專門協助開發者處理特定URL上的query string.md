@@ -53,7 +53,7 @@ get(name)
 <!--SR:!2023-09-11,8,230-->
 
 #🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者以物件的形式來處理query string`
-<!--SR:!2023-09-10,7,248-->
+<!--SR:!2023-09-27,17,248-->
 
 
 #🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做什麼？ ->->-> `該介面是專門協助開發者以物件的形式來處理query string`
@@ -64,7 +64,7 @@ get(name)
 <!--SR:!2023-11-21,82,230-->
 
 #🧠  URLSearchParams 建構式用法是什麼->->-> `new URLSearchParams(options)`
-<!--SR:!2023-09-10,7,248-->
+<!--SR:!2023-09-27,17,248-->
 
 
 #🧠 URLSearchParams 建構式是做什麼？ ->->-> `專門將指定的query string轉換成query string物件`
@@ -72,17 +72,17 @@ get(name)
 
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，回傳會是什麼？ ->->-> `特定query string內容之 物件`
-<!--SR:!2023-09-10,7,248-->
+<!--SR:!2023-09-26,16,248-->
 
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，options會是什麼？ ->->-> `指定要轉換的query string是什麼`
-<!--SR:!2023-09-09,6,248-->
+<!--SR:!2023-09-25,15,248-->
 
 #🧠 new URLSearchParams('http://host/path?khttp://host/path?key1=value1ey1=value1') 能夠正常作用嗎? 為何->->-> `並不能，因為該介面僅能夠將query string格式的字串轉換成query string物件`
-<!--SR:!2023-09-09,6,246-->
+<!--SR:!2023-09-26,16,246-->
 
 #🧠 new URLSearchParams('http://host/path?key1=value1').get('key1')是甚麼? 為何->->-> `null，因為該介面僅能夠將query string格式的字串轉換成query string物件`
-<!--SR:!2023-09-10,7,246-->
+<!--SR:!2023-09-29,19,246-->
 
 
 #🧠 URLSearchParams.get()會是做什麼？ ->-> `以指定的參數名數來回傳它第一個找到的參數值`

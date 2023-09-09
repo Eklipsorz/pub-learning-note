@@ -140,7 +140,7 @@ console.log(age, newAge);
 
 
 #🧠 JS變數儲存的Primitive data type 或者 Reference value  (對應其物件的記憶體位址)，其儲存資料的記憶體會擁有什麼特性？ ->->-> `- 在編譯時就確定其資料大小  - 執行過程中並不會調整其資料所存放的記憶體區塊大小，即確定後大小就固定大小不動`
-<!--SR:!2023-09-09,208,249-->
+<!--SR:!2023-12-28,109,229-->
 
 #🧠 JS的primitive data type 會有什麼？ ->->-> `null、undefined、boolean、number、string、symbol、BigInt`
 <!--SR:!2023-09-23,20,130-->
