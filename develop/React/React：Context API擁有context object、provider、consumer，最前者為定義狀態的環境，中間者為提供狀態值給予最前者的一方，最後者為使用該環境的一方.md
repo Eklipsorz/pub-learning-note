@@ -342,7 +342,7 @@ consume
 <!--SR:!2025-01-26,518,250-->
 
 #🧠 React：每個context object 可以擁有多少個consumer component和provider component ->->-> `可以多個`
-<!--SR:!2023-07-27,194,250-->
+<!--SR:!2023-12-24,105,230-->
 
 #🧠 以下是搭載Context的consumer component的component，請問裡頭ctx是指什麼？會回傳什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1663773552/blog/react/context/context-consumer-callback_l1a7xv.png)->->-> `{callback} 形式會是(ctx) => {} ，引數為對應Context的Provider Component所提供的value數性(attribute)，並且會回傳對應React Virtual DOM`
 <!--SR:!2023-07-28,194,250-->
