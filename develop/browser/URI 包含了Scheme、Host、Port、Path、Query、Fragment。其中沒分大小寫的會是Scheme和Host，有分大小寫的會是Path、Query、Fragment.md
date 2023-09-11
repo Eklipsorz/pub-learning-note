@@ -84,7 +84,7 @@ URI包含了：
 ## 複習
 
 #🧠 URI 包含了什麼？ ->->-> ` Scheme、Host、Port、Path、Query、Fragment`
-<!--SR:!2023-09-09,169,230-->
+<!--SR:!2023-12-06,85,210-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，請問這分別是什麼意思？ ->->-> `1. Scheme：網路協定 2. Host ：主機名稱 3. Port：主機埠號 4. Path：向主機索要的資源位置，其位置會是該主機下的完整路徑 5. Query：對於索要的資源進行額外的要求字串 6. Fragment：在Path 對應的主資源中，指定哪個部分為要真正擷取和使用的資源部份`
 <!--SR:!2024-05-10,318,250-->
