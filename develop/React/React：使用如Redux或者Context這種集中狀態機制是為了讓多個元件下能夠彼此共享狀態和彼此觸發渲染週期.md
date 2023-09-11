@@ -122,7 +122,7 @@
 <!--SR:!2023-12-19,106,229-->
 
 #🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？利用將所有child元件狀態註冊在parent元件 + props 傳遞->->-> `在parent 元件註冊，由parent將狀態以props來傳遞至所有child元件、更新用狀態函式則是以props+callback來傳遞至所有child元件`
-<!--SR:!2023-09-12,215,249-->
+<!--SR:!2023-12-31,110,229-->
 
 
 #🧠 若沒採用Redux/Context/集中狀態機制的話，在元件間(A、B)存在parent-child關係的情況下，多個元件間要如何交流彼此所擁有的狀態和資料？利用lifting state up + props 傳遞->->-> `假設元件A為parent元件，剩餘元件會透過Lifting state up 途經的parent 元件提供callback往上傳遞資訊(狀態、更新狀態用的函式)，最後元件A所提供的callback會是直接更新狀態和觸發週期，並藉props概念將元件AB狀態資訊、更新狀態用的函式傳遞各個元件`

@@ -203,7 +203,7 @@ return React.createElement(Expenses, { items: expenses });
 <!--SR:!2023-06-20,194,250-->
 
 #🧠 React.createElement(A,B,C) 語法中的A、B和C各是做什麼的？ 簡述一下用途？ ->->-> `A指定建立後的DOM種類為何、B則是指定DOM節點會有什麼樣的attributes、C是指定DOM節點所包含的子節點`
-<!--SR:!2023-06-13,187,250-->
+<!--SR:!2023-12-29,108,230-->
 
 #🧠 React：在沒有使用JSX的時期，如何使用React函式庫來轉換以下對應DOM結構？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485103/blog/react/react-element/react-expected-result_cpazde.png)->->-> `![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1660485104/blog/react/react-element/react-actual-result_ajx4rn.png)`
 <!--SR:!2023-09-29,99,230-->

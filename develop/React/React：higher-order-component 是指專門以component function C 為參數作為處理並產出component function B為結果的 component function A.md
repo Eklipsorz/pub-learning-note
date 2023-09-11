@@ -38,7 +38,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ## 複習
 
 #🧠 higher-order-component 中的higher-order 命名緣由為何？ ->->-> `源自於higher-order function，該函式一個以函式C作為輸入參數的函式A，其函式A輸出的結果會是另一個函式B，在這裡的函式A、B、C都為函式`
-<!--SR:!2023-05-15,135,250-->
+<!--SR:!2025-02-01,508,250-->
 
 #🧠 higher-order function是一個以函式C作為輸入參數的函式A，其函式A輸出的結果會是另一個函式B，請問輸入函式、專門接收函式並處理的函式，輸出的函式結果在結構會是什麼？(函式嗎？)->->-> `都為函式`
 <!--SR:!2023-08-01,188,250-->
