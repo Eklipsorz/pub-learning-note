@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "React：當使用者輸入完輸入欄位或者從特定輸入欄位失去焦點就驗證，優缺點是什麼",
+                "query": "支援ASCII編碼和UTF編碼的URL編碼，其保留字元的解碼是？",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
+                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md"
+                "file": "develop/Network/QueryString 加號問題 - 伺服器在解析query參數時就會自動以無UTF8形式來解碼，其+被解出來會是空白.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "647c50c7418eab99",
   "lastOpenFiles": [
+    "develop/Language/json/html/DOM.focus() 會指在同一份文件下，將特定元件標記為active element。一份文件裡只會有0~1個active element.md",
+    "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "develop/Express/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
     "develop/api-design/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
     "develop/api-design/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
@@ -183,8 +185,6 @@
     "develop/JavaScript/Closure 是一種封閉空間的結構體，該結構體會定義著特定scopeA下的識別字對應著特定scopeB下的實體物件，scopeA和scopeB 可能會是一樣或者不一樣.md",
     "develop/Database/Database Cursor 是一個用字串或數字去對應過去處理結果並透過該索引值來將呈現資料導向成對應處理結果之機制.md",
     "develop/OS/caching/write miss & write hit & cache miss & cache hit 簡單差別.md",
-    "develop/inline Caching 是客戶端直接以cache為主要儲存系統的風格 ，Look-Aside Caching 則是先以cache來處理，再來以DB作處理的風格.md",
-    "develop/React/Virtual DOM是從對應Real DOM結構抽離出僅描述對應畫面的DOM結構，本身用途為藍圖使用，會比較每個畫面的差異，依照差異來生成對應的Real DOM渲染.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",
