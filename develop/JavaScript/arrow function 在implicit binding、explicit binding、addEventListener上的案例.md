@@ -117,7 +117,7 @@ element1.addEventListener('click', handler);
 
 
 #🧠 請問最後印出的結果是什麼？為什麼？ ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668432831/blog/javascript/this-binding/arrow-function-this-binding/example/arrow-function-this-binding-example1-with-implicity-binding_edoiom.png) ->->-> `首先在建立testhandler 所對應函式物件時，由於是箭頭函式，其this 綁定會以建立時的環境來設定，在這裡會因為scope chain而找到全域環境的this來設定成global object，建立箭頭函式為主的函式物件之後，其函式的this會一直固定在global object。 之後不論怎麼改this，都因 **一旦設定，就無法被覆寫** 這特性而無法更改，所以在這裡會印出global object和它的屬性`
-<!--SR:!2023-09-12,188,250-->
+<!--SR:!2024-12-26,471,250-->
 
 
 #🧠 arrow function 的this binding 綁定後還能再修改嗎？->->-> `一旦設定，就無法被覆寫`

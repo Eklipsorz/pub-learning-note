@@ -50,7 +50,7 @@ get(name)
 <!--SR:!2023-09-23,23,250-->
 
 #🧠 query string 和 URL parameters之間的差別是甚麼? ->->-> `前者是以問號開頭的key-value pairs作為參數；後者則是以URL格式下的特定path做為placeholder來當作成參數，並從placeholder所在的位置取出確定內容`
-<!--SR:!2023-09-11,8,230-->
+<!--SR:!2023-10-02,20,230-->
 
 #🧠 URLSearchParams 是什麼？用途是什麼？ ->->-> `一個內建於瀏覽器並以JS而撰寫的介面，該介面是專門協助開發者以物件的形式來處理query string`
 <!--SR:!2023-09-27,17,248-->
