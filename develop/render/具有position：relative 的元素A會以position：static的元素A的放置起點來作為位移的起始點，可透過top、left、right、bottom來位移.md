@@ -150,22 +150,22 @@
 <!--SR:!2023-10-05,28,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定top為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的上邊界和元素A'的上邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往下移動；數值越小的話，會使灰色部分往上移動`
-<!--SR:!2023-09-09,14,249-->
+<!--SR:!2023-10-25,43,249-->
 
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的左邊界和元素A'的左邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往右邊移動；數值越小的話，會使灰色部分往左邊移動`
-<!--SR:!2023-09-11,15,249-->
+<!--SR:!2023-10-21,39,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定right為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的右邊界和元素A'的右邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往左邊移動；數值越小的話，會使灰色部分往右邊移動`
-<!--SR:!2023-09-09,14,249-->
+<!--SR:!2023-10-23,41,249-->
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定bottom為value1時，其黑點和其元素會在哪裡？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> `會讓元素A的右邊界和元素A'的下邊界之間保持著value1的距離，數值越大的話，會使灰色部分越往上邊移動；數值越小的話，會使灰色部分往下邊移動`
 <!--SR:!2023-10-07,30,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定top為value1時，其黑點和其元素會在哪裡？畫圖來表示![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-top_cluoij.png)
-<!--SR:!2023-09-12,16,249-->
+<!--SR:!2023-10-24,42,249-->
 
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定right為value1時，其黑點和其元素會在哪裡？畫圖來表示 ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png)->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-right_exkpls.png)
@@ -188,7 +188,7 @@
 
 
 #🧠  在position：relative的元素下，top 和 bottom 中會挑選top的原因->->-> `採取normal flow所預設的排版方向，由上而下來排，上的方向擁有的優先權比較高`
-<!--SR:!2023-09-09,14,249-->
+<!--SR:!2023-10-20,38,249-->
 
 
 #🧠 在position：relative的元素下，left 和 right 中會挑選left的原因 ->->-> `採取normal flow所預設的排版方向，由左而右來排，做的方向擁有的優先權比較高`
