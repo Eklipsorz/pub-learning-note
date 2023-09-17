@@ -175,7 +175,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 <!--SR:!2023-09-22,155,250-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將access token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式是什麼？ ->->-> `	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為： - 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作是否允許，若允許就驗證成功，否則報錯`
-<!--SR:!2023-09-15,40,170-->
+<!--SR:!2023-11-22,66,170-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式會是比對Client所提供的aud和scope是否正確，具體會是拿什麼比對？更準確的說，拿什麼比對aud和scope會較為信任 ->->-> `由Resource Server提供Client對於想存取的端點以及對對應端點想做的操作`
 <!--SR:!2023-10-31,176,250-->
