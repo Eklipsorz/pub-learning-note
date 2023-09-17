@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "efe37f06a712af48",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.10"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,7 +167,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "efe37f06a712af48",
+  "active": "647c50c7418eab99",
   "lastOpenFiles": [
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
