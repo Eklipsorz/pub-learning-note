@@ -99,7 +99,7 @@ async function testAwaitFunction() {
 <!--SR:!2023-10-26,74,230-->
 
 #🧠 以下程式碼的執行情況是什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1671465407/blog/javascript/promise/await/await-with-assignment-statement-example3_rqdy8j.png) ->->-> `當testAwaitFunction執行起來時，會定義一個物件obj，其中的res屬性會接著await promise，使後續的程式碼(包含res屬性的內容指派，console以及obj的回傳)被promise.then所包含，而產生非同步任務來排程，在還沒開始排程時，其promise狀態會是pending，等到開始排程非同步任務時就會執行其指派，console和obj的回傳`
-<!--SR:!2023-09-17,42,230-->
+<!--SR:!2023-12-31,103,230-->
 
 
 

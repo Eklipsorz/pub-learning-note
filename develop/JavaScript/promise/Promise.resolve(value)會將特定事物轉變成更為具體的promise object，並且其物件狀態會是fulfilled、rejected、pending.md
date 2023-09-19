@@ -166,8 +166,8 @@ new Promise((resolve, _) => {
 #🧠  Promise API 的 resolve 語法有哪些？ ->->-> `promise.resolve(value)、new Promise((resolve, _) => { /* ... */ resolve(value) })`
 <!--SR:!2024-04-27,310,270-->
 
-#🧠 Promise API 的 resolve(value) 語法會回傳較為具體的promise object，請問根據value的不同，其promise object會是哪些？ ->->-> `	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value - value 為thenable的內容，promise.resolve就會回傳pending狀態的promise object。 - value 為promise object的內容，promise.resolve就會直接回傳該promise object`
-<!--SR:!2023-09-15,127,250-->
+#🧠 Promise API 的 resolve(value) 語法會回傳較為具體的promise object，請問根據value的不同，其promise object的resolve或者reject可以會是哪些？ ->->-> `	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value - value 為thenable的內容，promise.resolve就會回傳pending狀態的promise object。 - value 為promise object的內容，promise.resolve就會直接回傳該promise object`
+<!--SR:!2024-08-07,323,250-->
 
 
 #🧠 Promise API 的 resolve(value)中的value會是哪些 ->->-> `value 為 非thenable的內容或者不為promise object、thenable的內容、promise object的內容`

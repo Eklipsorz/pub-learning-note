@@ -159,7 +159,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 <!--SR:!2023-10-18,160,249-->
 
 #🧠 function test(a, b, c) {}; test(1, 3, 4); 請問a、b、c在FEC建立的狀況為何->->-> `a: undefined/uninitialized、b：undefined/uninitialized、c：undefined/uninitialized`
-<!--SR:!2023-09-15,51,209-->
+<!--SR:!2024-01-08,111,209-->
 
 #🧠 在Function Execution Context中，Arguments object 本身會是想傳進函式的參數，並在執行階段時使用和存取，請問在FEC建立階段會是如何決定存取參數的識別字和其記憶體之間對應關係->->-> `不會在FEC建立階段替函式內存放參數的識別字分配值，而是看是否為var形式還是let，來決定識別字和記憶體區塊的對應關係`
 <!--SR:!2024-05-07,281,249-->
@@ -180,7 +180,7 @@ Arguments: {0: 1, 1: 3, 2: 4,length: 3},
 
 
 #🧠 Function Execution Context的creation phase時機點為何？(ByteCode) ->->-> `在編譯時期先對所有EC準備建立EC所需的資料和對應的ByteCode後，並於執行之前先執行ByteCode來建立FEC`
-<!--SR:!2023-09-19,236,249-->
+<!--SR:!2025-04-29,588,249-->
 
 
 #🧠 Function Execution Context 的 FEC範圍是？->->-> `以區塊內或者函式內的所有區域變數、函式為主、不包含內部額外的函式，不包含額外用區塊和函式包住的程式碼`
