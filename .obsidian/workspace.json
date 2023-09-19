@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "- 直接解析原始碼並執行：直接將原始碼丟進虛擬機/解釋器來邊轉換機械碼邊執行 - 將原始碼先轉換成成中間碼(ByteCode)並立即執行：將原始碼丟進編譯器轉換中間碼(介於原始碼和機械碼之間，並且只有虛擬機能解析的形式)，並存放在記憶體或者緩存，接著丟進虛擬機邊轉換機械碼邊執行 - 先透過compiler將所有的原始碼編譯成中間碼，接著再丟進interpreter轉換成機械碼並立即執行：將中間碼丟進編譯器轉換成機械碼，並存放在記憶體或者緩存，接著丟進虛擬機執行",
+                "query": "bytecode",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -180,7 +180,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "0d8bbb67a1692287",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/React/React： controlled component & uncontrolled component 是形容表單元件，uncontrolled component是以原生DOM節點來獲取狀態&根據狀態渲染，controlled component 是以React體系的state、setState來實現儲存狀態和根據狀態.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",

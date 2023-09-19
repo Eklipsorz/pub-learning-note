@@ -131,7 +131,7 @@ function fn() {
 <!--SR:!2024-08-24,415,250-->
 
 #🧠 執行以下JS程式碼後，其console會印出什麼？為什麼？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665409945/blog/javascript/this-binding/default-this-binding-example1_xcvvzd.png) ->->-> `會印出2。 首先當foo執行時，會先依序以下面方式來嘗試確定foo裡頭的this是什麼 - explicit binding  - implicit binding - default binding 。結果最後是以default binding 來確定this會指向為global object`
-<!--SR:!2023-09-19,209,248-->
+<!--SR:!2024-01-02,105,228-->
 
 
 #🧠 若目前執行環境或者全域環境下設定成嚴格模式，default this binding 會變成如何設定？ ->->-> `就會讓default binding 改指向為undefined`
