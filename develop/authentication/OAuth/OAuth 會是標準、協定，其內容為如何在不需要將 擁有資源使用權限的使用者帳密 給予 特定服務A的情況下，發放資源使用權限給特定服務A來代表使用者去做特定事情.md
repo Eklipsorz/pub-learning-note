@@ -172,7 +172,7 @@ grant_type會是指甚麼意思? ->->-> `grant_type: 客戶端要以甚麼樣的
 
 
 #🧠 在Open Authorization 或者OAuth中，代表權限的事物會是token，那麼該token會夾雜著什麼資訊？->->-> `內容通常會是包含誰賦予誰權限、權限為何。`
-<!--SR:!2023-09-22,155,250-->
+<!--SR:!2023-12-09,78,230-->
 
 #🧠 在Open Authorization 或者OAuth中，其中Resource Server 將access token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，在這裡的驗證方式是什麼？ ->->-> `	- Resource Server 將token轉遞至Authorization Server，驗證成功就做下一步，失敗就回報錯誤，其驗證方式為： - 以JWT 驗證方式來驗證JWT是否被篡改 - 提取JWT的aud值並比對目前所存取的端點是否一樣，若一樣就做下一步，否則報錯 - 提取JWT的scope值並比對目前所要存取的端點之對應動作是否允許，若允許就驗證成功，否則報錯`
 <!--SR:!2023-11-22,66,170-->

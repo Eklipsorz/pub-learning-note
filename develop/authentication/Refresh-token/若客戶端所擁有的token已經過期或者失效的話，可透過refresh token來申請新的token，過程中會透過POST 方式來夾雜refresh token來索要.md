@@ -43,7 +43,7 @@ grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
 ## 複習
 
 #🧠 token based authentication/OAuth：若客戶端所擁有的token已經過期或者失效的話，客戶端可以做些什麼來獲取token ->->-> `1. 利用refresh token來申請新的token 2. 重新獲得授權同意並拿同意來索求token`
-<!--SR:!2023-09-20,24,190-->
+<!--SR:!2023-11-09,48,190-->
 
 #🧠 token based authentication/OAuth：使用refresh token來申請token請求的封裝形式為何？->->-> `封包`
 <!--SR:!2023-10-27,40,210-->
