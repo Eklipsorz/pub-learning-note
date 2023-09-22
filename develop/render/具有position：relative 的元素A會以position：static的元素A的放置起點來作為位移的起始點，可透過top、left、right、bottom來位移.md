@@ -176,7 +176,7 @@
 <!--SR:!2023-10-11,33,249-->
 
 #🧠 若position 設定為relative時，其定位參考會是以static模式下的元素A所在的各個邊界為基準點，在這裡會將同個元素A從static設定為relative，接著令其元素會是元素A'，請問若當relative positioned element設定left為value1時，其黑點和其元素會在哪裡？畫圖來表示![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-origin_qcjlfu.png) ->->-> ![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1692453961/blog/htmlPosition/relative-direction/relative-position-example-left_tg8fbk.png)
-<!--SR:!2023-09-13,17,249-->
+<!--SR:!2023-11-15,54,249-->
 
 
 #🧠 在position：relative的元素下都設置著left、right這兩個屬性，請問會如何決定偏移值 ->->-> `會捨棄right這屬性，改選left為主`
@@ -196,7 +196,7 @@
 
 
 #🧠 在position：relative的元素下都設置著top、bottom、left、right這四種屬性，請問會如何決定偏移值(提示：以屬性共存來說) ->->-> `會選top和left這兩種屬性`
-<!--SR:!2023-09-13,17,249-->
+<!--SR:!2023-11-14,53,249-->
 
 
 #🧠 在position：relative的元素下，若都設置著top、bottom：會挑選top的原因會是甚麼?  ->->-> `採取normal flow所預設的排版方向，由上而下來排，上的方向擁有的優先權比較高`
@@ -204,7 +204,7 @@
 
 
 #🧠 在position：relative的元素下，若都設置著left、right：會挑選left的原因會是甚麼?  ->->-> `採取normal flow所預設的排版方向，由左而右來排，左的方向擁有的優先權比較高
-<!--SR:!2023-09-14,16,248-->
+<!--SR:!2023-11-11,50,248-->
 `
 <!--SR:!2023-08-21,2,249-->
 

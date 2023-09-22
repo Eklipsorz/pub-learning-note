@@ -85,7 +85,7 @@ DOM是種：
 
 
 #🧠 DOM是種樹狀結構的模型，能簡單描述它常見的結構嗎？以一份html檔案為主，其檔案擁有html標籤、head標籤、body標籤 ->->-> `其根節點是目前網站的檔案本身-document，它的子節點會是html標籤，而html標籤下的子節點就是人人熟知的head節點和body節點，再往下細分的話，也就是分別為head內含的meta資料(註1)和body內含的實際網頁呈現資料。![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1630065451/blog/dom/domHierarchy_tpuaxj.png)`
-<!--SR:!2023-09-21,154,230-->
+<!--SR:!2023-12-08,77,210-->
 
 #🧠 DOM模型中，除了document這節點，其餘節點會是網頁的什麼？(畫面？) ->->-> `其document對應文件的各個標籤`
 <!--SR:!2024-12-11,527,250-->
