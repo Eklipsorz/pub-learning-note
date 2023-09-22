@@ -28,7 +28,7 @@ HTMLElement.focus()
 <!--SR:!2024-12-18,506,250-->
 
 #🧠 HTML元件的focus是將特定元件被標記為active element的行為，那麼active element會被瀏覽器設定甚麼來表現？ ->->-> `而被標記的元件會以特定樣式、事件處理來呈現`
-<!--SR:!2023-09-14,2,245-->
+<!--SR:!2023-10-05,13,245-->
 
 
 #🧠 HTML元件被focus標記上active element的話，會有什麼限制？ ->->-> `在同一份文件，只會允許0~1個元件為active element`

@@ -160,7 +160,7 @@ import styles from <css-file>
 
 
 #🧠 當要對特定CSS檔案進行CSS module的實際轉換，得滿足什麼條件？ ->->-> `1. 特定CSS檔案名稱為\<file\>.module.css 2. 要有元件去載入\<file\>.module.css `
-<!--SR:!2023-08-12,195,228-->
+<!--SR:!2024-01-03,103,208-->
 
 #🧠 CSS modules 具體是什麼套件？ 就說明它源自哪裡->->-> ` 具體會是 webpack 延伸套件`
 <!--SR:!2024-11-28,493,250-->
@@ -172,13 +172,13 @@ import styles from <css-file>
 <!--SR:!2024-05-05,367,250-->
 
 #🧠 CSS modules 使用方式是如何？ 以一個裝載button樣式的test.module.css和class選擇器為button為例(載入、參考)->->-> `載入特定 module.css 並以其CSS內容作為物件來存取，並且讓styles參照該物件：import styles from <css-file>。依據著對應內容上的class-selector來選擇想要使用的樣式名稱，每個class-selector會是styles物件下的屬性。：<button className={styles.button} />`
-<!--SR:!2023-09-20,58,210-->
+<!--SR:!2023-10-21,29,190-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會在開發階段下如何看待和處理 ->->-> `- 會將對應的css檔案視作為JS下的object - 每個object的屬性會是該css下的class selector name`
 <!--SR:!2024-03-27,271,230-->
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式會是如何？(增加命名和載入) ->->-> `會為CSS檔案內容的所有class selector生成一個獨立且隨機的識別字來重新命名這些class selector名稱，包括以下形式的class，皆會生成獨立且隨機的識別字來重新命名，接著若元件的樣式是以物件形式來取得裡頭的class selector，實際上對應DOM節點的class屬性值會以class selector的對應識別字`
-<!--SR:!2023-07-29,197,247-->
+<!--SR:!2024-01-05,105,227-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，那麼經過webpack處理後的樣式名稱會是什麼形式？ ->->-> `<component-name>_<class-selector-name>_<unique-hash-value>`
@@ -193,7 +193,7 @@ import styles from <css-file>
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理時，會替CSS內部和引用方做哪些事情 ->->-> `針對class selector和替換class selector`
-<!--SR:!2023-09-18,219,247-->
+<!--SR:!2024-01-09,109,227-->
 
 
 #🧠 當webpack 將特定CSS以CSS Modules 來載入處理且以Button這元件來載入CSS module時，假如內容有.class1 {...}，請問轉換結果為？ ->->-> `.class1 => .Button_class1_waer324 結果為.class1 {...} => .Button_class1_waer324 {...}`
@@ -213,7 +213,7 @@ import styles from <css-file>
 
 
 #🧠 styled-components 和 CSS modules 對於防止CSS全域污染問題的解決概念是什麼？(CSSOM)->->-> `替每個元件正在使用的selector name在同一個CSSOM上是獨特不重複`
-<!--SR:!2023-08-30,198,247-->
+<!--SR:!2024-01-02,102,227-->
 
 ---
 Status: #🌱 

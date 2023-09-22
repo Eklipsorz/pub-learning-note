@@ -102,7 +102,7 @@ export { import1 as name1, import2 as name2, …, nameN } from …;
 
 ## 複習
 #🧠 ES module：有哪兩種方式來輸出(export)模組內容？ ->->-> `named export 和 default export`
-<!--SR:!2023-09-11,243,250-->
+<!--SR:!2024-01-23,123,230-->
 
 #🧠 ES module：相對於default export，named export會輸出和引入會是？ ->->-> `	- 以物件形式來輸出模組內容，其屬性為主要內容，這使得每個主要內容都會被特定屬性名稱給綁定或者替該內容命名為該屬性名稱，而命名為named import - 引入方必須以物件形式的特定屬性名稱才能取得內容`
 <!--SR:!2023-12-06,93,230-->
