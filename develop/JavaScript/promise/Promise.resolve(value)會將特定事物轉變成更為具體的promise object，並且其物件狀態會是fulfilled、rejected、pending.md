@@ -167,7 +167,7 @@ new Promise((resolve, _) => {
 <!--SR:!2024-04-27,310,270-->
 
 #🧠 Promise API 的 resolve(value) 語法會回傳較為具體的promise object，請問根據value的不同，其promise object可以會是哪些？ ->->-> `	- value 為 非thenable的內容或者不為promise object的話，promise.resolve就會回傳fulfilled狀態的promise object，其結果值會是value - value 為thenable的內容，promise.resolve就會回傳pending狀態的promise object。 - value 為promise object的內容，promise.resolve就會直接回傳該promise object`
-<!--SR:!2023-09-21,2,247-->
+<!--SR:!2023-09-28,6,247-->
 
 
 #🧠 Promise API 的 resolve(value)中的value會是哪些 ->->-> `value 為 非thenable的內容或者不為promise object、thenable的內容、promise object的內容`

@@ -77,7 +77,7 @@
 
 
 #🧠 Express上若App 層級上的middleware出現錯誤時，假如其middleware架構會是如下圖，在這裡若所有相關的錯誤處理middleware都有next，那麼會是什麼順序？(請考慮沒有自製和有自製的情形)![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1656852567/blog/middleware/error-handling/error-handling-sample_nv3br8.png) ->->-> `若有自製的app層級錯誤處理middleware，那麼當他執行next，只會告訴系統後續執行第二個層級，還有next一直到最後一個層級，都會使用app層級，直到最後app層級自製的middleware呼叫next才系統預設的錯誤處理middleware；若沒有自製的app層級錯誤處理middleware，那麼直接執行系統預設的錯誤處理middleware`
-<!--SR:!2023-09-13,141,248-->
+<!--SR:!2024-09-13,357,248-->
 
 
 

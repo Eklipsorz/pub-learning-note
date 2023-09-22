@@ -57,7 +57,7 @@ get(name)
 
 
 #🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，其介面是做什麼？ ->->-> `該介面是專門協助開發者以物件的形式來處理query string`
-<!--SR:!2023-09-22,14,248-->
+<!--SR:!2023-10-29,37,248-->
 
 
 #🧠 URLSearchParams 是個內建於瀏覽器並以JS而撰寫的介面，它含有什麼？(屬..方)->->-> `屬性和數個方法來操作攔截到的query string`
@@ -68,7 +68,7 @@ get(name)
 
 
 #🧠 URLSearchParams 建構式是做什麼？ ->->-> `專門將指定的query string轉換成query string物件`
-<!--SR:!2023-09-22,14,248-->
+<!--SR:!2023-10-28,36,248-->
 
 
 #🧠 URLSearchParams 建構式用法是new URLSearchParams(options)，回傳會是什麼？ ->->-> `特定query string內容之 物件`

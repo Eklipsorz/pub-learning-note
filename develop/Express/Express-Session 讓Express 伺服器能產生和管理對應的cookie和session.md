@@ -75,7 +75,7 @@ app.method(path, callback)
 
 ## 複習
 #🧠 Express-Session 是Express 框架的模組，用途是什麼？->->-> `主要幫助開發者產生/管理對應的cookie和session，具體是以middleware來攔截每個請求來管理/產生session，並且要求客戶端儲存對應的session id當作其cookie的內容、等到客戶端持著夾帶合法session id的cookie來向伺服器發送請求，伺服器上該套件就會攔截並輸出對應的session內容至req.session來給後續middleware使用`
-<!--SR:!2023-09-19,48,188-->
+<!--SR:!2023-12-25,94,188-->
 
 #🧠  session(options)的options是 ->->-> `是藉由物件來設定Express-Session所提供的middleware`
 <!--SR:!2023-09-23,290,248-->
