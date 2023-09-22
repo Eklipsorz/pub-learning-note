@@ -100,7 +100,7 @@ element1 -> element2 -> element3
 <!--SR:!2023-11-06,83,230-->
 
 #🧠 在event flow中，每個接收到事件信號的DOM節點會做什麼->->-> `接收事件信號->執行對應事件處理->處理完並轉遞信號`
-<!--SR:!2023-09-21,193,250-->
+<!--SR:!2025-02-04,501,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，請問其事件處理的順序和接收順序為何？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/bubbling-phase-execution-order_zzygfc.png))->->-> `(隔了 1s 之後出現) handler <div id="element3" class="child"> (隔了 1s 之後出現) handler <div id="element2" class="parent"> (隔了 1s 之後出現) handler <div id="element1" class="grandpa">`
 <!--SR:!2023-10-17,209,250-->
@@ -109,7 +109,7 @@ element1 -> element2 -> element3
 <!--SR:!2024-11-16,443,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，其事件處理的順序和接收順序是element3 -> element2 -> element1，具體會是，又是什麼phase？？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/bubbling-phase-execution-order_zzygfc.png) ->->-> `由於是採用bubbling phase來接收，所以就是： element3 一接收信號就執行自己的事件處理，執行完再發送信號至parent element的element2 - element2 一接收到信號就執行自己的事件處理，執行完再發送信號至parent element的element1 - element1 一接收到信號就執行自己的事件處理，執行完再發送信號`
-<!--SR:!2023-09-22,194,250-->
+<!--SR:!2025-02-06,503,250-->
 
 #🧠 程式碼如下，假設對element3按下點擊，其事件處理的順序和接收順序是element1 -> element2 -> element3，具體是什麼，又是什麼phase？![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1668439773/blog/javascript/event/event-flow/capture-phase-execution-order_dwacbc.png)->->-> `由於是採用capture phase，所以就是	- element1 一接收信號就執行自己的事件處理，執行完再發送信號至element2 - element2 一接收到信號就執行自己的事件處理，執行完再發送信號至element3 - element3 一接收到信號就執行自己的事件處理，執行完再發送信號`
 <!--SR:!2023-10-05,198,250-->
