@@ -59,9 +59,11 @@
 
 
 #🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
+<!--SR:!2023-09-26,2,249-->
 
 
 #🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://hacks.mozilla.org/files/2018/03/25_module_map-768x367.png) ->->-> ``
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
@@ -85,9 +87,11 @@
 
 
 #🧠  ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，得用ES Module Spec 來處理->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，若要載入模組依賴的模組，那麼如何以ES Module Spec 來處理 ->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
+<!--SR:!2023-09-25,1,230-->
 
 
 #🧠 ES Module：從獲取檔案，並解析對應檔案，請問最後解析結果是什麼？取得又會做什麼？->->-> `- 每個獲取到的模組都轉換成模組紀錄 - 更新對應模組在module map上的狀態，其狀態為對應模組的module record`
