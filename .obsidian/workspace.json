@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/study/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md"
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md"
               }
             }
           },

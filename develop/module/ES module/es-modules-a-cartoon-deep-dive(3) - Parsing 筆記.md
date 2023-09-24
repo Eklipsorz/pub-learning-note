@@ -51,44 +51,43 @@
 ## 複習
 
 #🧠 ES module：當平台獲取到檔案時，會如何解析檔案？ (提示：系統有內建、目標和平台)->->-> `首先系統本身內建設定不同的parse goal所要處理的解析方式，並且根據檔案本身的特性來判定其parse goal是什麼，然後挑選對應的解析方式來實現解析`
-<!--SR:!2023-08-13,110,226-->
+
 
  #🧠 ES module：當平台獲取到檔案時，會如何解析檔案？ ->->-> `首先系統本身內建設定不同的parse goal所要處理的解析方式，並且根據檔案本身的特性來判定其parse goal是什麼，然後挑選對應的解析方式來實現解析`
-<!--SR:!2023-07-08,101,226-->
+
 
 
 
 #🧠 ES Module：一旦完成解析，將模組轉換成模組紀錄，就會在module map做什麼 ->->-> `更新對應模組在module map上的狀態，其狀態為對應模組的module record`
-<!--SR:!2023-06-09,63,208-->
 
-#🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/25_module_map-500x239.png) ->->-> ``
-<!--SR:!2023-06-06,190,248-->
+
+#🧠  ES Module：請說明Module Map上的每個module的狀況 ![The “fetching” placeholders in the module map chart being filled in with module records](https://hacks.mozilla.org/files/2018/03/25_module_map-768x367.png) ->->-> ``
+
 
 #🧠 ES Module：parse goal 是什麼？->->-> `定義特定檔案被解析後的目標形式會是如何`
-<!--SR:!2023-06-14,191,247-->
+
 
 #🧠  ES Module： 如果在兩個同一種檔案呈現出兩種對應parse goal的話，這兩個關係是？ ->->-> `會依據parse goal定義的形式來將檔案轉換成另一個形式，並不會因為同一種檔案轉換成一樣。`
-<!--SR:!2024-05-05,318,245-->
-<!--SR:!2023-01-02,39,230-->
+
 
 #🧠  ES Module： 如果在兩個同一種檔案呈現出兩種對應parse goal的話，這兩個關係是？ ->->-> `會依據parse goal定義的形式來將檔案轉換成另一個形式，並不會因為同一種檔案轉換成一樣。`
-<!--SR:!2024-05-05,318,245-->
+
 
 
 #🧠 ES Module：前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES Module，得用ES Module Spec 來處理 ->->-> `在script 標籤上設定type="module"`
-<!--SR:!2023-08-02,221,248-->
+
 
 #🧠 前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
-<!--SR:!2023-06-26,78,230-->
+
 
 #🧠  ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，得用ES Module Spec 來處理->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
-<!--SR:!2023-06-30,178,230-->
+
 
 #🧠 ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，若要載入模組依賴的模組，那麼如何以ES Module Spec 來處理 ->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
-<!--SR:!2023-05-31,189,250-->
+
 
 #🧠 ES Module：從獲取檔案，並解析對應檔案，請問最後解析結果是什麼？取得又會做什麼？->->-> `- 每個獲取到的模組都轉換成模組紀錄 - 更新對應模組在module map上的狀態，其狀態為對應模組的module record`
-<!--SR:!2023-07-08,160,208-->
+
 
 
 ---
