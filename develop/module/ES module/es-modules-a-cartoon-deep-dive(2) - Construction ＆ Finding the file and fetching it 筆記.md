@@ -206,9 +206,11 @@ module map 主要的用途為：
 
 
 #🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> ` module resolution algorithm 是每個平台主要用來解析module specifier所在的算法`
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES module：module resolution algorithm主要解決什麼？->->-> `統一平台對於es module specifier 的解析`
+<!--SR:!2023-09-25,1,230-->
 
 
 
@@ -232,6 +234,7 @@ module map 主要的用途為：
 
 
 #🧠 ES module：能否依據執行情況來載入特定模組，不考慮動態載入的話 ->->-> `不能，執行情況來載入特定模組代表著要執行才能確定要載入什麼，然後早已在編譯期間就確定所要載入的模組有哪些，執行只是執行top-level code`
+<!--SR:!2023-09-27,3,250-->
 
 
 

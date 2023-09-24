@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？",
+                "query": "ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -77,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",

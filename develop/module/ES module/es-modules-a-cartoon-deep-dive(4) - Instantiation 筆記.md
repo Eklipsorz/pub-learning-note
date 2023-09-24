@@ -189,10 +189,12 @@ console.log(testvar1)
 <!--SR:!2024-02-03,337,250-->
 
 #🧠 ES module的live bindings是什麼？ ->->-> `概念上會是exporting module輸出的識別字和importing module引用的識別字都各自指向相同的記憶體區塊，當exporting module改變識別字對應的記憶體區塊內容，importing module就會馬上看到其識別字對應的(記憶體區塊)內容`
+<!--SR:!2023-09-27,3,250-->
 
 `
 
 #🧠 ES module：一旦建立live bindings，會有哪些限制 ->->-> `相對來說，ES 模組會使用live bindings技術來讓模組間的export和import所指的識別字都指向同個記憶體區塊，這表示只要在模組上更改值，就會使用import的那一方拿到變更後的值，但只有exporting module那一方才能更改對應的值，importing module不能夠更改import識別字上的對應實體物件(記憶體內容)，最多只能增加屬性至物件上。`
+<!--SR:!2023-09-27,3,250-->
 
 
 
