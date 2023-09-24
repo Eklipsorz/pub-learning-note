@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md"
+                "file": "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md"
               }
             }
           },
@@ -181,9 +181,9 @@
   },
   "active": "647c50c7418eab99",
   "lastOpenFiles": [
+    "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(3) - Parsing 筆記.md",
     "develop/study/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
-    "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/software engineering/環狀依賴結構會是指多個模組因為彼此依賴而在依賴關係上構成多個模組構成的環狀依賴結構.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/React/前端框架放置靜態資源的地方為public和src目錄下的assets，前者並不會受到webpack給處理，後者可能會因模組依賴關係圖而跟著被轉換和處理.md",
