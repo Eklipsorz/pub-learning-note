@@ -91,7 +91,7 @@ URI包含了：
 
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，請問Query String通常會以什麼符號作為開頭和結尾->->-> `開頭會是用問號？結尾是用井字號`
-<!--SR:!2023-09-24,191,250-->
+<!--SR:!2024-01-01,99,230-->
 
 #🧠 URI 包含了Scheme、Host、Port、Path、Query、Fragment，Query String對於URI會是什麼？ ->->-> `對於索要的資源進行額外的要求字串`
 <!--SR:!2024-05-29,265,230-->

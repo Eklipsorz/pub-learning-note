@@ -38,7 +38,7 @@ Set-Cookie: sessionId=<session id>.<signature>
 <!--SR:!2023-09-29,21,250-->
 
 #🧠 express.session 為什麼需要密鑰？其中的防止客戶端的cookie被竄改或者使用非法的session會是指甚麼? ->->-> `前者是客戶端的cookie內容被人修改，後者則是客戶端想用其他狀態`
-<!--SR:!2023-09-23,11,250-->
+<!--SR:!2023-10-26,32,250-->
 
 #🧠 express-session 具體拿密鑰是如何防偽 ->->-> `首先當session一被建立，伺服器就會拿到對應的session id並且拿密鑰和session id進行hash算法來得到簽署值，接著拿session id和簽署值合併成一個新字串給客戶端當cookie的內容，當客戶端再次向同樣伺服器發送請求並夾帶著上次cookie內容時，伺服器就會拿cookie內容中的session Id和伺服器握有的密鑰進行再一次hash比對cookie內容中的簽署值是否一樣，若一樣的話，就表示客戶端cookie未被人惡意竄改，若不一樣就表示竄改`
 <!--SR:!2023-09-28,20,250-->

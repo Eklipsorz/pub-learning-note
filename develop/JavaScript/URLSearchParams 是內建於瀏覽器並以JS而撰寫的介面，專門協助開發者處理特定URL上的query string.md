@@ -46,8 +46,8 @@ get(name)
 ## 複習
 
 
-#🧠 http://xxxx/path?key1=xxx1&key2=xxx2 中，其中的key1和key2的key-value pair會是甚麼? (請說出兩種別名)->->-> `query string`
-<!--SR:!2023-09-23,23,250-->
+#🧠 http://xxxx/path?key1=xxx1&key2=xxx2 中，其中的key1和key2的key-value pair會是甚麼? ->->-> `query string`
+<!--SR:!2023-10-06,12,230-->
 
 #🧠 query string 和 URL parameters之間的差別是甚麼? ->->-> `前者是以問號開頭的key-value pairs作為參數；後者則是以URL格式下的特定path做為placeholder來當作成參數，並從placeholder所在的位置取出確定內容`
 <!--SR:!2023-10-02,20,230-->

@@ -110,7 +110,7 @@ echo.name;//聽風是風
 <!--SR:!2024-08-10,401,250-->
 
 #🧠 若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定，在這裡會分成兩個場景，在new binding + implicit binding + default binding 優先權會是？ ->->-> `new binding > implicit binding > default binding`
-<!--SR:!2023-09-23,79,230-->
+<!--SR:!2024-03-29,187,230-->
 
 #🧠 請問函式呼叫的this-binding的結果會是誰當fn的this？為什麼![https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1665563331/blog/javascript/this-binding/new-binding/explicit-and-implicit-binding-example_laasdh.png) ->->-> `obj1，會印出時間跳躍，在這裡出現了explicit binding和implicit binding，優先權會先以explicit binding為主，因此才選上obj1`
 <!--SR:!2024-10-27,454,250-->

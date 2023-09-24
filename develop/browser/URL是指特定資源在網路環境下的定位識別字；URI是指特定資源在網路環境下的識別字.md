@@ -59,7 +59,7 @@ locate:
 <!--SR:!2023-12-02,99,230-->
 
 #🧠 URI 完整名稱為 ->->-> `Uniform Resource Identifier`
-<!--SR:!2023-09-24,164,210-->
+<!--SR:!2023-12-17,84,190-->
 
 #🧠 URL (Uniform Resource Locator) 是什麼？由什麼構成？->->-> `特定資源在網路環境下的定位識別字，其識別字會是由schema、host、port、path 所構成`
 <!--SR:!2024-08-24,403,250-->

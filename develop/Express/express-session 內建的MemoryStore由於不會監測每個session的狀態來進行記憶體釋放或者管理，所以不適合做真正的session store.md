@@ -28,7 +28,7 @@ session store主要有三種形式來實現：
 
 
 #🧠 session store主要有三種形式來實現 (提示：硬碟、記憶體) ->->-> `以硬碟為主的資料庫來管理session：MongoDB、以記憶體為主的資料庫來管理session：Redis、以記憶體空間來管理session：Memcached`
-<!--SR:!2023-09-23,53,208-->
+<!--SR:!2024-01-13,111,208-->
 
 ---
 Status: #🌱 
