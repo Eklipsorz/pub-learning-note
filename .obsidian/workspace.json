@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼",
+                "query": "module resolution",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -179,7 +179,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "647c50c7418eab99",
+  "active": "6941822edf359a99",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",

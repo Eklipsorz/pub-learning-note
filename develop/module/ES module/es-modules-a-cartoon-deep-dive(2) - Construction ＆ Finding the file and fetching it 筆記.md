@@ -41,10 +41,7 @@
 關於ES module specifier的細節：
 
 1.  ES module specifier可以是使用URL、本地端的相對路徑和絕對路徑
-2.  ES module specifier 不一定能夠在瀏覽器和伺服器端都能支援，主要是每個平台各有自己的方法來解析module specifier
-
-解法：
- module resolution algorithm 是每個平台主要用來解析ES module specifier所在的算法
+2.  ES module specifier 在瀏覽器和伺服器端上所解析的方式會是不同的，這些平台會使用module resolution algorithm來因應平台的不同來正確解析ES Module模組之所在
 
 
 > Until that’s fixed, browsers only accept URLs as module specifiers. They will load the module file from that URL. But that doesn’t happen for the whole graph at the same time. You don’t know what dependencies the module needs you to fetch until you’ve parsed the file… and you can’t parse the file until you fetched it.
@@ -205,12 +202,17 @@ module map 主要的用途為：
 
 
 
-#🧠 ES module：為了解決每個平台對於module specifier的解析不同，而提出什麼 ->->-> ` module resolution algorithm 是每個平台主要用來解析module specifier所在的算法`
-<!--SR:!2023-09-27,3,250-->
+#🧠 module specifier 在瀏覽器和伺服器端上所解析的方式會是不同的，若貿然不管會衍生成甚麼問題->->-> `不能夠保證其解析的結果會是符合預期的`
+<!--SR:!2023-09-28,3,250-->
 
 
-#🧠 ES module：module resolution algorithm主要解決什麼？->->-> `統一平台對於es module specifier 的解析`
-<!--SR:!2023-09-25,1,230-->
+#🧠 module specifier 在瀏覽器和伺服器端上所解析的方式會是不同的，通常會使用甚麼確保能夠正確解析成預期結果物->->-> `使用module resolution algorithm`
+<!--SR:!2023-09-28,3,250-->
+
+
+#🧠 module resolution algorithm主要解決什麼？->->-> ` ES module specifier 在瀏覽器和伺服器端上所解析的方式會是不同的，這些平台會使用module resolution algorithm來因應平台的不同來正確解析ES Module模組之所在`
+<!--SR:!2023-09-28,3,250-->
+
 
 
 

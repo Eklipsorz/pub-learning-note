@@ -86,7 +86,7 @@
 
 
 #🧠 前端開發者如何設定 parse goal 來告知瀏覽器檔案是ES ：若以type=module來載入main.js，但他依賴著counter.js，那麼counter.js會如何解析？->->-> `也會以type="module"來定義`
-<!--SR:!2023-09-25,1,229-->
+<!--SR:!2023-09-27,2,229-->
 
 
 #🧠  ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，得用ES Module Spec 來處理->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
@@ -94,7 +94,7 @@
 
 
 #🧠 ES Module：後端開發者如何設定 parse goal 來告知伺服器這是ES Module，若要載入模組依賴的模組，那麼如何以ES Module Spec 來處理 ->->-> `解析目標設定方法為在要成為JS模組的JS檔案設定副檔名為mjs`
-<!--SR:!2023-09-25,1,230-->
+<!--SR:!2023-09-27,2,230-->
 
 
 #🧠 ES Module：從獲取檔案，並解析對應檔案，請問最後解析結果是什麼？取得又會做什麼？->->-> `- 每個獲取到的模組都轉換成模組紀錄 - 更新對應模組在module map上的狀態，其狀態為對應模組的module record`
