@@ -107,9 +107,13 @@ client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發�
 
 > a person who engages another to act as his or her agent
 
+> a person who has controlling authority or is in a leading position
+
+
+
 重點：
 - 委託他人代理他做事情的人
-
+- 擁有控制權的人事物
 ## 複習
 
 #🧠 audience 命名緣由為何？ ->->-> `報章雜誌的閱讀者`
@@ -118,8 +122,12 @@ client-id 並非是指使用者在資料庫上的識別字，而是經由JWT發�
 #🧠 audience 命名緣由為報章雜誌的閱讀者，還可以引申為什麼？ ->->-> `也可以引申為讀取特定事物內容的一方`
 <!--SR:!2023-11-07,119,230-->
 
-#🧠 排除掉原則的意思，JWT的principal 命名緣由為何？ ->->-> ` 委託他人代理他做事情的人`
-<!--SR:!2023-09-23,48,230-->
+#🧠 排除掉原則的意思，JWT的principal 命名緣由為何？ ->->-> ` 委託他人代理他做事情的人、擁有控制權的人事物`
+<!--SR:!2023-09-26,2,244-->
+
+
+#🧠 principal 在 JWT中會是指甚麼意思？ ->->-> `擁有控制權的人事物`
+<!--SR:!2023-09-26,2,244-->
 
 #🧠 JWT 技術中的audience 是表明什麼？->->-> ` audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT`
 <!--SR:!2023-10-30,177,250-->
