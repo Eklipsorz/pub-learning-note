@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " CSS modules",
+                "query": "CSS modules 在什麼情況下確保每個元件都有各自屬於自己的樣式屬性內容(提示：檔案)",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
