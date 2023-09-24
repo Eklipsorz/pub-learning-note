@@ -164,15 +164,18 @@ console.log(testvar1)
 
 ## 複習
 #🧠 ES Module：請問instantiation階段需要等待全部模組都完成construction階段？為何 ->->-> `對，這是要為了確保多個非同步任務在同時執行的過程只會侷限於instantiation 階段，避免有不一致的問題`
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES 模組各有5種狀態會紀錄每個模組的目前載入狀況，並記錄在module record，請問是哪五種狀態？具體做什麼？ ->->-> `	- unlinked：未被進行模組上初始化和識別字連接 - linking：正在進行模組上的初始化和識別字連接 - linked：已完成模組上的初始化和識別字連接 - evaluating：已完成實例化這步驟，並正在執行對應模組的top-level code - evaluated：已完成實例化這部分，且也完成了對應模組上top-level code的執行`
+<!--SR:!2023-09-27,3,250-->
 
 #🧠 ES Module：經過建構後的模組紀錄，在一開始進入實例化前會拿到什麼狀態？ ->->-> `unlinked`
 <!--SR:!2024-11-12,504,250-->
 
 
 #🧠 ES Module： 每一個模組的實例會如何做？(提示：有六個步驟)->->-> `	- 更改對應module record上的狀態：unlinked -> linking - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 建立module environment record來紀錄每個模組下的每個識別字以及對應識別字的實體物件 - 藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 更改對應module record的狀態：linking->linked`
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES Module：從模組依賴關係圖要找到什麼才開始實例化->->-> `沒使用任何依賴或者使用著已經完成實例化模組的模組`
@@ -201,13 +204,16 @@ console.log(testvar1)
 <!--SR:!2023-11-06,230,247-->
 
 #🧠 ES Module：  N個不同模組會是替相同模組做N個重複性實例化？請說明可能性 ->->-> `通常會以模組依賴關係圖來找模組，依賴關係圖中會有被依賴的模組A和依賴模組A的模組B，當出現時，系統會為了方便實例化兩個模組，會先從被依賴的模組A開始實例化，換言之就是會產生任務去對模組A做實例化，若有N個模組要同樣的模組A，即為發送N個任務來對模組A做實例化，將會有N個相同模組下的實例，然而，實際上也只需要一個實例，所以這對於瀏覽器來說，是種浪費，也是一種效能改善的方向`
+<!--SR:!2023-09-27,3,250-->
 
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，那要如何設定上鎖條件/解鎖條件？ ->->-> `每一個首次要求做對應模組實例的任務會先對module map對應模組進行上鎖，並檢查以下條件是否滿足： - module map的對應模組紀錄沒對應到environment record？ - module map的對應模組紀錄是unlinked? 若滿足的話，就將module map的對應模組紀錄狀態更改：unlinked -> linking，接著解鎖；反之若不滿足的話，就解鎖然後就挑下一個要實例化的模組`
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，哪些條件會是什麼？ ->->-> ` - module map的對應模組紀錄是unlinked?`
+<!--SR:!2023-09-27,3,250-->
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，若滿足的話，會做什麼 ->->-> `- 將module map的對應模組紀錄狀態更改：unlinked -> linking - 對module map的對應紀錄上解鎖 - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 替對應模組建立environment record -  藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 將module map的對應模組紀錄狀態更改：linking -> linked`
