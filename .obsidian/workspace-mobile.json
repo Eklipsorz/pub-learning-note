@@ -1,18 +1,22 @@
 {
   "main": {
-    "id": "6d8cc76c7f85bcaa",
+    "id": "75a80fb55962ede0",
     "type": "split",
     "children": [
       {
-        "id": "8d69996c5a52a50e",
+        "id": "735a11e538dfff19",
         "type": "tabs",
         "children": [
           {
-            "id": "2d528c83794bb733",
+            "id": "294c8ed655be5314",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -21,23 +25,21 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "5591e30c8352540f",
+    "id": "c0db9f7182313810",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "c5238071a6e1f996",
+        "id": "432176d7325f3aab",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "file-explorer",
           "state": {
-            "file": "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
-            "mode": "source",
-            "source": false
+            "sortOrder": "alphabetical"
           }
         }
       },
       {
-        "id": "807b5d3263a5ffae",
+        "id": "99b0e94bd6416c84",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -52,7 +54,7 @@
         }
       },
       {
-        "id": "e0f7737a729790ba",
+        "id": "2ba57b94dc64c68b",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -63,36 +65,27 @@
         }
       },
       {
-        "id": "7ca18c5ed2a2f887",
+        "id": "fd9d0c9178f60256",
         "type": "leaf",
         "state": {
-          "type": "starred",
+          "type": "bookmarks",
           "state": {}
-        }
-      },
-      {
-        "id": "da370a0c26e73f6b",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {
-            "sortOrder": "byCreatedTime"
-          }
         }
       }
     ],
     "currentTab": 0
   },
   "right": {
-    "id": "a4bffa3aff10e725",
+    "id": "331f795799f95b4c",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "8746c0e6e2d70f81",
+        "id": "4f4bc6be59643616",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
+            "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -104,26 +97,29 @@
         }
       },
       {
-        "id": "d88e2304aab7773b",
+        "id": "aeb2087bc51f4972",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
         }
       },
       {
-        "id": "de4733973b8c15ab",
+        "id": "530d2146a23f8634",
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md"
+          }
         }
       },
       {
-        "id": "11ee2b65fab83617",
+        "id": "3fcb44d563a976eb",
         "type": "leaf",
         "state": {
           "type": "review-queue-list-view",
@@ -133,17 +129,54 @@
     ],
     "currentTab": 0
   },
-  "active": "2d528c83794bb733",
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "294c8ed655be5314",
   "lastOpenFiles": [
-    "inbox/absolute URL：意指為特定資源在網路上的完整位置，其完整位置包含了該資源在網路上的完整位置、該資源在特定協定網路下的完整位置、該資源在特定協定網路之特定主機下的完整位置.md",
-    "inbox/useEffect 在class-based component 的實現是在compoentDidMount、componentDidUpdate、componentWillUnmount來進行對應的實現.md",
-    "inbox/functional component寫法流行是因為彈性、短小、易讀；class-based component則是個人喜好、工作團隊、建立error boundary.md",
-    "inbox/在JS中，class 內部定義static method 或者 static property，代表著已經在執行前分配好記憶體給method或者property，換言之，就是不透過執行物件的實例化過程來分配.md",
-    "inbox/React：context object 在 class-based component 的使用案例.md",
-    "inbox/React：useEffect 對於class-based-component的轉換案例- UserFinder.js 的class-based component 實現.md",
-    "inbox/React：class-based component 存取context object的方法有兩種-第一個是使用consumer；第二個是使用元件類別下的contextType屬性 + this.context.xxx 來存取.md",
-    "inbox/若一個函式呼叫存在多個this-binding方法的話，那麼this會由誰來決定：explicit binding > implicit binding > default binding 和 new binding > implicit binding > default binding.md",
-    "inbox/箭頭函式的this binding是使用語彙綁定(lexical binding)，具體是透過箭頭函式內EC的outer reference往上找上一個EC擁有的this來設定箭頭函式本身的this，且一旦設定，就無法被覆寫.md",
-    "inbox/當執行Bytecode來決定this binding時，若是遇到：非箭頭函式呼叫，就分別以new binding、implicit binding、explicit binding、default binding來決定他們函式呼叫時的this 是什麼；箭頭函式呼叫，就以語彙綁定.md"
+    "inbox/Redis Lua 程式碼.md",
+    "develop/styled-components/styled-components：在template literal 添加media query.md",
+    "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.element 所建立的元件.md",
+    "how-to-note/Zotero + Better JSON 來隨時整理出Obsidian 能夠引用的文獻參考資料.md",
+    "develop/render/modal 是一個專門與使用者互動並從互動中將資訊傳遞給主程式，其結構為存放背景、對話視窗，製作方式請詳讀本文章.md",
+    "templates/📝.md",
+    "develop/styled-components/styled-components 的目標元件本身是原生HTML DOM元件的話，會把元件標籤上所設定的屬性(attributes)執行賦予至對應實際DOM節點上所擁有的屬性(attribute).md",
+    "inbox/redis 斷線前會先將資料以檔案形式存放在硬碟上，做完才會斷線.md",
+    "draft/javascript - worker 以filename作爲執行緒的任務內容，並以workData作為任務會用到參數.md",
+    "draft/ES module 若要引入named export的內容，可以替對應的識別字取一個別名來使用.md",
+    "develop/webpack/webpack 技術提出原因為解決JavaScript 的模組化問題和新技術載入的問題.md",
+    "inbox/redis expire 指令設定指定Key的過期時間.md",
+    "templates/💻.md",
+    "inbox/(草稿)views 那邊目錄是指的是瀏覽器代替我們發送請求至伺服器，伺服器會負責產出頁面，這時它會參考views和資料來做，做完就回傳給瀏覽器瀏覽器屆時收到就將請求回應和端點打造成檔案.md",
+    "how-to-note/Zettelkasten 筆記法會有的形式是什麼.md",
+    "inbox/redis.conf 是設定Redis 伺服器預設要執行的參數.md",
+    "inbox/express - 伺服器所擁有的session 和 客戶端所要有的cookie 設定皆只能夠在middleware設定.md",
+    "how-to-note/Evergreen Note 的撰寫原則是隨時保持迭代、維持原子和獨特、與其他筆記連結.md",
+    "develop/webpack/webpack 具體會是將開發階段的多個與JS相關的模組(圖片、CSS、JS)分別按照模組種類來進行轉換以建立打包所需的基本元件，然後再將基本元件包在一塊以構成單個bundle或者數個bundle.md",
+    "develop/study/es-modules-a-cartoon-deep-dive  - module map.md",
+    "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
+    "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
+    "develop/render/一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
+    "draft/Untitled.md",
+    "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
+    "inbox/process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
+    "develop/testfile~",
+    "develop/testfile",
+    "develop/styled-components",
+    "develop",
+    "MOC",
+    "develop/authentication/OAuth",
+    "develop/authentication",
+    "develop/webpack",
+    "develop/Database",
+    "inbox"
   ]
 }

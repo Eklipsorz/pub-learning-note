@@ -99,7 +99,7 @@ _Fig. 2: Colored Scope Bubbles_
 
 
 #🧠 lexically scoped language 在編譯時期會做些什麼？ (scope、生成)->->-> `確定所有種類的lexical scope 和 生成對應的ByteCode`
-<!--SR:!2023-09-27,21,168-->
+<!--SR:!2023-11-01,35,168-->
 
 ---
 Status: #🌱 
