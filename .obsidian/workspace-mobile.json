@@ -11,12 +11,8 @@
             "id": "294c8ed655be5314",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,9 +107,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md"
-          }
+          "state": {}
         }
       },
       {
@@ -142,6 +134,9 @@
   },
   "active": "294c8ed655be5314",
   "lastOpenFiles": [
+    "develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
+    "/develop/module/ES module/ES module：在named export中可允許匯出的形式分別有單一宣告語句來匯出和以物件形式來匯出，兩者皆會試著將多個export的內容合併成一個結果物件來匯出.md",
+    "/develop/module/ES module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
     "inbox/Redis Lua 程式碼.md",
     "develop/styled-components/styled-components：在template literal 添加media query.md",
     "develop/styled-components/styled-components：在template-literal使用&表示目前透過style.element 所建立的元件.md",
@@ -165,9 +160,6 @@
     "inbox/gcp - app.yaml 透過handler、url、secure來將http請求導向成https請求.md",
     "develop/study/深入分析JavaScript模块循环引用 - es module vs. commonjs 三大差異 - 筆記.md",
     "develop/render/一個CSS rule 是由可以選擇哪個種類的HTML元素來指定樣式內容的selector和實際定義樣式內容為何的declaration block.md",
-    "draft/Untitled.md",
-    "inbox/gcloudignore造成.env檔案無法正常上傳至app engine.md",
-    "inbox/process.argv 以陣列儲存以node.js執行目前程式所賦予給node.js的參數.md",
     "develop/testfile~",
     "develop/testfile",
     "develop/styled-components",
