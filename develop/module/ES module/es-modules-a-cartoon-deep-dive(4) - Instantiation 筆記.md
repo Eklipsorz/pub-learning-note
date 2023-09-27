@@ -189,7 +189,7 @@ console.log(testvar1)
 <!--SR:!2024-02-03,337,250-->
 
 #🧠 ES module的live bindings是什麼？ ->->-> `概念上會是exporting module輸出的識別字和importing module引用的識別字都各自指向相同的記憶體區塊，當exporting module改變識別字對應的記憶體區塊內容，importing module就會馬上看到其識別字對應的(記憶體區塊)內容`
-<!--SR:!2023-09-27,3,250-->
+<!--SR:!2023-10-08,10,250-->
 
 `
 
@@ -215,7 +215,7 @@ console.log(testvar1)
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，哪些條件會是什麼？ ->->-> ` - module map的對應模組紀錄是unlinked?`
-<!--SR:!2023-09-27,3,250-->
+<!--SR:!2023-10-06,8,250-->
 
 
 #🧠 ES Module：如何避免N個不同模組會替相同模組做N個重複性實例化？假設使用module map＋上鎖/解鎖的機制，每一個首次要求做對應模組實例的任務會先對module map對應模組紀錄進行上鎖，並檢查一些條件是否滿足，若滿足的話，會做什麼 ->->-> `- 將module map的對應模組紀錄狀態更改：unlinked -> linking - 對module map的對應紀錄上解鎖 - 會分配記憶體來提供每一個實例所要輸出的內容，並分配初始值：輸出函式就分配存放函式內容的記憶體；替輸出var變數宣告分配一塊記憶體，初始值為undefined - 替對應模組建立environment record -  藉由模組所在的位置來從module map上找到對應模組的紀錄，並將**module record 的屬性environment去指向module environment record** - 替當前的模組處理 export 和 import：將export的識別字和import的識別字分別指向於模組A所要輸出的內容以及其他模組依賴於模組A的輸出內容，兩者都會指向存放目前模組A的輸出內容之記憶體區塊 - 將module map的對應模組紀錄狀態更改：linking -> linked`
