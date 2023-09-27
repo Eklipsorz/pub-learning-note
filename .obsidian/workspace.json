@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -144,14 +143,6 @@
             }
           },
           {
-            "id": "de133f679a2497dd",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
-          },
-          {
             "id": "a977471d728a33d1",
             "type": "leaf",
             "state": {
@@ -160,9 +151,17 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "01fc3f2d7b6ad344",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -182,6 +181,8 @@
   },
   "active": "0d8bbb67a1692287",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "develop/module/ES module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive  - 用語介紹.md",
@@ -192,7 +193,6 @@
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(1) - How ES modules work 筆記.md",
     "develop/React/React：setState 會試著將多個狀態更新任務合併成一個任務，進而減少因一個任務而觸發一次渲染的渲染次數.md",
-    "develop/module/ES module/ES module：exports 有兩種方式，一種為named export來強制將輸入內容存放至空物件並強制引用方得按照識別字來取出，而default export專門定義若沒用named形式來引入所預設會輸出的模組內容.md",
     "develop/module/ES module",
     "develop/authentication/JWT 的  audience 在 JWT上是表明目前JWT 適用於哪個對象才能合法使用該JWT。 在ID token的情況下，是特定身分。若在access token的情況下，aud值會是Resource Server之端點.md",
     "develop/JavaScript/URLSearchParams 是內建於瀏覽器並以JS而撰寫的介面，專門協助開發者處理特定URL上的query string.md",
@@ -208,7 +208,6 @@
     "develop/api-design/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
     "develop/api-design/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "develop/api-design/RESTful API：簡易版設計準則.md",
-    "develop/api-design/理論上當URL端點會是 A-B 和 A_B時，瀏覽器、伺服器會正常解讀，其中A和B為不同的單字，但會影響著Google SEO 爬蟲抓取index的數量和評分.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",
