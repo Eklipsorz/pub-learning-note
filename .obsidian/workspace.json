@@ -30,8 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f6851d85dab97c0b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,7 +190,7 @@
       "switcher:Open quick switcher": false
     }
   },
-  "active": "6941822edf359a99",
+  "active": "f6851d85dab97c0b",
   "lastOpenFiles": [
     "develop/study/es-modules-a-cartoon-deep-dive(5) - Evaluation 筆記.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(4) - Instantiation 筆記.md",
