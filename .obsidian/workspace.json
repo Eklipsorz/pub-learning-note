@@ -176,8 +176,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "647c50c7418eab99",
+  "active": "14dc2b11adccda86",
   "lastOpenFiles": [
+    "base-skill-record",
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
     "develop/以write-miss為主的策略有write around 和allocate on write，兩者皆對資料庫進行寫入，前者是不同步緩存，後者是同步緩存.md",
@@ -205,7 +206,6 @@
     "develop/React/React：表格製作的難點為表格本身具有較多狀態要管理和控制.md",
     "develop/Express/Express-session 會替要傳給客戶端當cookie內容的session做簽署以防竄改.md",
     "develop/api-design/HATEOAS 是以超媒體來表示整個網頁應用程式目前所存取的狀態以及可用狀態會是什麼，其狀態會是指Resource Representation State ，意指為特定時間下的特定具體資源(所在)會有的內容.md",
-    "develop/api-design/REST是一種 以資源為中心，用HTTP方法操作資源，並且最終目標為打造出滿足於HATEOAS之產品的網路軟體開發風格.md",
     "develop/React/Context",
     "develop/OS/caching",
     "develop/Untitled",
