@@ -27,7 +27,7 @@ write throguh：如同字面上的意思，客戶端會透過(穿過)緩存來�
 - 步驟二、緩存想同步東西A至資料庫，所以緩存對資料庫發送新增/變更東西A的請求，
 - 步驟三、資料庫成功同步後，緩存就告知客戶端已完成寫入
 ![](https://res.cloudinary.com/dqfxgtyoi/image/upload/v1653832279/blog/database/caching/Write-Through-Steps_atyh3p.png)
-
+asd
 #### 缺點
 1. 由於新增/變更東西A的地方會是緩存和資料庫，所以會比沒有緩存的情況下還要更慢
 #### 優點

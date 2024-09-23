@@ -14,8 +14,8 @@
 - SMTP 是指Simple Mail Transfer Protocol
 - 主要用作於Email的傳遞服務協定，包含著寄信和接收信，但大部分情況下都是用作於寄信
 ## 複習
-#🧠  SMTP 是什麼協定，主要用作於？ ->->-> `Simple Mail Transfer Protocol，Email的傳遞服務協定，包含著寄信和接收信，但大部分情況下都是用作於寄信`
-<!--SR:!2024-05-03,408,250-->
+SMTP 是什麼協定，主要用作於？ ->->-> `Simple Mail Transfer Protocol，Email的傳遞服務協定，包含著寄信和接收信，但大部分情況下都是用作於寄信`
+<!--SR:!2025-04-25,214,230-->
 
 ---
 Status: #🌱 

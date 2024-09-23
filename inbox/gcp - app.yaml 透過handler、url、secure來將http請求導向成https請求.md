@@ -67,8 +67,8 @@ handlers:
 #🧠 app.yaml 中的handlers 以什麼來區分各個需要處理的URL，會用到什麼語法(正規？) ->->-> `使用- url: 正規表達式`
 <!--SR:!2024-04-03,388,250-->
 
-#🧠 app.yaml 中的secure 是做什麼用的 ->->-> ` 是指定要不要將http請求導向成https，若是always就是會把http請求自動導向https`
-<!--SR:!2023-12-11,321,250-->
+app.yaml 中的secure 是做什麼用的 ->->-> ` 是指定要不要將http請求導向成https，若是always就是會把http請求自動導向https`
+<!--SR:!2025-03-09,167,230-->
 
 ---
 Status: #🌱 
