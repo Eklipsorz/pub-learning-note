@@ -18,20 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "0d8bbb67a1692287",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "inbox/金流服務 - 輸入信用卡資料和確認付款這兩項動作是可以分開.md",
-                "staged": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "develop/module/ES module/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md"
+              }
             }
           },
           {
@@ -184,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0d8bbb67a1692287",
+  "active": "647c50c7418eab99",
   "lastOpenFiles": [
     "develop/以write-hit為主的write through和write back(write behind)這兩種寫入策略通常會為了一致性而與資料庫同步資料.md",
     "develop/module/ES module/es-modules-a-cartoon-deep-dive(2) - Construction ＆ Finding the file and fetching it 筆記.md",
