@@ -50,8 +50,8 @@ JSON 和 XML 主要差別在於：
 <!--SR:!2023-12-22,134,222-->
 
 
-#🧠  XML 的 declaration  是什麼？->->-> `告知XML processor 如何解析目前XML 文件`
-<!--SR:!2023-11-09,129,241-->
+XML 的 declaration  是什麼？->->-> `告知XML processor 如何解析目前XML 文件`
+<!--SR:!2026-01-02,311,241-->
 
 #🧠 XML declaration 主要是告知XML processor 如何解析目前XML 文件，其中的XML processor會是什麼？ ->->-> `是一個解析器，會讀取XML文件內容，並將內部內容轉換成特定程式語言下的能夠解讀之形式`
 <!--SR:!2024-02-04,178,241-->
